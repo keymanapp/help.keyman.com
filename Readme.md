@@ -7,7 +7,7 @@ for compatibility.
 
 For Windows 10:
 
-0. Make a local copy of the repository by running `git clone https://github.com/sillsdev/keyman-help.keyman.com` (or, if you want to use a different folder name, use something like `git clone https://github.com/sillsdev/keyman-help.keyman.com keyman-help`)
+0. Make a local copy of the repository by running `git clone https://github.com/keymanapp/help.keyman.com` (or, if you want to use a different folder name, use something like `git clone https://github.com/keymanapp/help.keyman.com keyman-help`)
 1. In Control Panel\Programs\Programs and Features, click Turn Windows features on or off
 2. In the Windows Features dialog, select "Internet Information Services".
 3. Use the Web Platform Components Installer https://www.microsoft.com/web/downloads/platform.aspx to install PHP 5.6 or later and URL Rewrite. To do this, first install the Web Platform Installer extension, then open "Microsoft Web Platform Installer" and under "Products" select PHP (version 5.6 or later) and click "Add", then select "URL Rewrite" and click "Add", then "Install". (If the Web Platform Installer is unable to install URL Rewrite, try looking for an .msi file at https://www.iis.net/downloads/microsoft/url-rewrite#additionalDownloads .)
