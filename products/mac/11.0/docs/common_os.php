@@ -1,0 +1,8 @@
+<?php
+  require_once('includes/template.php');
+
+  head([
+    'title' => "Which versions does Keyman for macOS work with?"
+  ]);
+?>
+<div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Which versions does Keyman for macOS work with?</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="common.php">Prev</a> </td><th width="60%" align="center">Chapter 3. Common Questions</th><td width="20%" align="right"> <a accesskey="n" href="common_requirements.php">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both" id="common_os">Which versions does Keyman for macOS work with?</h2></div></div></div><p>Keyman for macOS supports following Mac operating systems:</p><div class="itemizedlist"><ul type="disc"><li><p>Mac OS X Lion (10.7)</p></li><li><p>Mac OS X Mountain Lion (10.8)</p></li><li><p>Mac OS X Mavericks (10.9)</p></li><li><p>Mac OS X Yosemite (10.10)</p></li><li><p>Mac OS X El Capitan (10.11)</p></li><li><p>macOS Sierra (10.12)</p></li><li><p>macOS High Sierra (10.13)</p></li><li><p>macOS Mojave (10.14)</p></li></ul></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="common.php">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="common.php">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="common_requirements.php">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 3. Common Questions </td><td width="20%" align="center"><a accesskey="h" href="index.php">Home</a></td><td width="40%" align="right" valign="top"> What are Keyman's hardware requirements?</td></tr></table></div>

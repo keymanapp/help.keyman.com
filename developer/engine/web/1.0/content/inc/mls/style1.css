@@ -1,0 +1,619 @@
+body { background-image: url(/images/bg.jpg); background-repeat: repeat-x; background-color: #dadada; background-position:left top; margin: 0 auto 0 auto; 
+font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt;color: #464646;}
+
+body.product_keymandesktop,
+body.product_keymandeveloper { background-image: none; background-color: white; }
+
+h1, h2, h3{color: #a64826; font-weight: bold;}
+h2 {font-size: 14pt; }
+
+.clr {clear: both; }
+a:link {color: #c06060; text-decoration: underline;}
+a:visited {text-decoration: underline; color: #804040;}
+a:hover {text-decoration: underline !important; color: #f04040; }
+img {border: none; }
+p {font-size: 10pt; }
+
+#title a, #footer a { color: white; text-decoration: none }
+
+#container {margin: 0 auto 0 auto; width: 960px; background-color:#FFFFFF;}
+
+/*Top Nav*/
+.product_keymanweb #banner {background-image: url(/images/banner.png); background-repeat: no-repeat; height: 110px; margin-top: 1px}
+.product_keymandesktop #banner,
+.product_keymandeveloper #banner
+{
+  width:960px;
+  height:80px;
+  text-align:right;
+  background:url("/images/t_banner.png") no-repeat;
+  background-color:#6a2915;
+}
+
+#topBar {clear: both;}
+
+.product_keymandesktop #title,
+.product_keymandeveloper #title { float: right; padding: 32px 20px 0 20px }
+.product_keymanweb #title { padding: 42px 20px 0 0; float: right; }
+#title {color: #FFF; font:16pt Verdana }
+#title a {color: #FFF;}
+.topButtons a:link, .topButtons a:visited {text-decoration: none; color: #FFF; font-size: 14px; font-weight: bold;}
+.topButtons a:hover {text-decoration: none; }
+.topButtons {float: left; margin-top: 6px; margin-left: 25px;}
+.topButtons div { float: left; }
+.whiteText {color: #FFF; padding-top: 1px; }
+.separator {float: left; margin-left: 15px; margin-right: 15px; }
+.whiteText .separator { visibility: hidden }
+
+.mainColumn_content { padding: 16px 30px; }
+
+/*Footer*/
+
+.product_keymanweb #footer {float: left; background-color: #6a2915; width: 100%; text-align: center; color:#FFFFFF; padding-top: 20px; padding-bottom: 20px; font-size: 9pt;}
+
+.product_keymandesktop #footer,
+.product_keymandeveloper #footer {
+  clear:both;
+  color: white;
+  background:url("/images/t_footer.png") repeat-x;
+  background-color:#ad4a28;
+  padding:4px;
+  margin-top: 12px;
+  font: 10.7px Tahoma;
+  text-align: left;
+  -moz-border-radius: 8px 8px 0 0;
+  -khtml-border-radius: 8px 8px 0 0;
+  -o-border-radius: 8px 8px 0 0;
+  border-radius: 8px 8px 0 0;
+}
+
+
+/* footer */
+#prefooter, #postfooter {
+  clear:both;
+  }
+  
+#copyright {
+  padding: 0 8px 2px 0;
+  clear: both;
+  color: #bb8888;
+  float: right;
+  font-size: 9.3px;
+}
+
+#footer_tav_logo
+{
+  float: left;
+  width: 128px;
+  height: 55px;
+  background:url("/images/logo-white-transparent.png") no-repeat;
+  margin: 26px 4px 0 24px;
+}
+
+#footer_base
+{
+  float: left;
+}
+
+#footer_base ul 
+{
+  margin: 0;
+  padding: 0;
+}
+#footer_base ul li a {
+  color: #bb8888;
+}
+#footer_base ul li
+{
+  list-style: none;
+  float: left;
+  font-size: 9.3px;
+  margin: 0 0 0 8px;
+}
+
+#footer_logos img
+{
+  float: right; border: none;
+}
+
+#footer_links {
+  float: left;
+  padding-left: 32px;
+}
+
+#footer_links p {
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+
+#footer_links ul {
+  float: left;
+  padding-right: 32px;
+}
+
+#footer_links ul {
+  margin-top: 2px;
+  list-style: none;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+#footer_links li {
+  list-style: none;
+  line-height: 16px;
+  margin: 0;
+}
+
+#footer_links a {
+  color: #cccccc;
+}
+
+#footer_searchbox { line-height: 24px; margin-top: 6px }
+
+#footer_links #footer_updates ul li a { margin: 4px 0; padding: 1px 0 1px 0px; line-height: 1.4em; display: block; height: 14px; }
+#footer_twitter { background: transparent url('/images/t_mini-b.png') no-repeat scroll 0 0; }
+#footer_facebook { background: transparent url('/images/facebook.png') no-repeat scroll 0 0; }
+#footer_blog { background: transparent url('/images/blog-icon-box-orange-16.png') no-repeat scroll 0 0; }
+
+#footer_links div { float: left }
+
+/* Display tables */
+
+table.display { font-size: 0.8em; border-collapse:	collapse; }
+table.display tr td { padding: 2px 8px; }
+table.display tr th { padding: 2px 8px; background: #f3e5de }
+
+#osk { font-size: 18pt; margin-top: 4px }
+#osk h3 { width: 25.38em; margin: 12px 0 0 0; background: #ad4a28; font-size: 18pt; border: solid 4px #ad4a28; -moz-border-radius-topleft: 6px; -moz-border-radius-topright: 6px; }
+#osk h3 span { font-size: 12pt; margin: 4px; color: white }
+#osk_caption { font-size: 10pt; padding: 4px; border: 0; margin-bottom: 8px }
+#osk .osk_bottom_border { -moz-border-radius-bottomleft: 6px;  -moz-border-radius-bottomright: 6px; }
+
+  .body_text h1 { 
+	font: 36pt Tahoma; 
+	text-align: left; 
+	margin: 16px 0 24px 0; 
+	color: #000000 
+	}
+  .body_text h2 { 
+	font: 30pt Tahoma; 
+	text-align: left; 
+	margin: 16px 0 24px 0; 
+	color: #000000 
+	}
+  .body_text h3 { 
+	font: Bold 20pt Tahoma; 
+	text-align: left; 
+	margin: 16px 0 16px 0; 
+	color:black 
+	}
+  .body_text h4 { 
+	font: Bold 14pt Tahoma; 
+	text-align: left; 
+	margin: 24px 0 8px 0; 
+	color: #000000 
+	}
+  .body_text h5 { 
+	font: Bold 12pt Tahoma; 
+	text-align: left; 
+	margin: 16px 0 8px 0; 
+	color: #000000 
+	}
+  .body_text p { 
+	font-size: 10pt; 
+	text-align: left; 
+	margin: 0 0 8px 0; 
+	color:#000000 
+	}
+  .body_text table { 
+	font-size: 10pt; 
+	text-align: left; 
+	margin: 8px 8px 8px 8px; 
+	color:#000000 
+	}
+  .body_text p.question { 
+	text-align: left; 
+	margin: 24px 0 8px 32px; 
+	font: Bold 12pt Tahoma;
+	font-style: italic; 
+	font-weight: bold; 
+	color:#A94827 
+	}
+  .body_text p.answer { 
+	text-align: left; 
+	margin: 0 0 8px 32px; 
+	font-weight: normal; 
+	color:#000000 
+	}
+	
+	.body_text li {
+	margin-bottom: 8pt;
+	font-size: 10pt;
+	}
+
+	/* Right Menu */
+
+#rightbar
+{
+  float: right;
+  margin: 32px 0 0px 16px;
+  width: 212px;
+}
+
+.menu a { text-decoration: none }
+.menu a:hover { text-decoration: underline }
+
+.menu
+{
+  width: 212px;
+  border: solid 1px #e1e2e4;
+  padding: 0px;
+  margin: 0 0 16px 0;
+}
+.menu h2
+{
+  font: bold 11pt Tahoma;
+  color: black;
+  text-align: center;
+  padding: 4px 8px 4px 8px;
+  margin: 0;
+  background: #e1e2e4;
+}
+
+.menu ul
+{
+  margin: 12px 0;
+  list-style: none;
+  padding-left: 8px;
+}
+.menu li
+{
+  font-size: 9pt;
+  margin: 2px 0;
+}
+
+.menu ul li a
+{
+  color: #404040;
+}
+
+.menu ul li.navtitle > a
+{
+  font-weight: bold !important;
+  color: #a04040 !important;
+  font-size: 9pt !important;
+}
+
+.menu li.navtitle ul
+{
+  margin: 0 0 8px 0;
+}
+
+/* Promotional icons */
+
+.promo
+{
+  width: 212px;
+  height: 82px;
+  background: url('/images/promobg.png') no-repeat;
+  cursor: pointer;
+  float: right;
+  clear: right;
+  margin-bottom: 16px;
+}
+
+.promotitle
+{
+  padding: 4px 4px 2px 4px;
+  font: bold 12pt Tahoma;
+  color: #606060;
+  text-align: center;
+}
+
+.promotext
+{
+  color: #606060;
+  margin-top: 3px;
+  font: 9pt Tahoma;
+}
+
+.promoicon
+{
+  float: left;
+  margin: 4px 8px;
+  width: 32px;
+  height: 32px;
+}
+
+#promoicon_kd
+{
+  background: url('/images/promokd.png') no-repeat;
+}
+
+ul#index ul { margin-top: 8px; margin-bottom: 24px }
+/*ul#index li { list-style: url('/images/greenx.gif'); }
+ul#index li.incomplete { list-style: url('/images/yellowx.gif'); }  
+ul#index li.notstarted { list-style: url('/images/redx.gif'); }  */
+
+
+/* API examples */
+
+textarea.html
+{
+  width: 620px; margin: 8px 0;
+  overflow-y: visible;
+  height: 4px;
+  background: #eeffee;
+  border: solid 1px #80ff80;
+  padding: 4px;
+  font: 9pt Consolas, Lucida Console, Courier New;
+}
+
+div.hint
+{
+  border: solid 1px #CCCCCC;
+  background: #FFFFCC;
+  margin: 8px;
+  padding: 8px;
+  width: 70%;
+}
+
+li { margin-bottom: 8px; margin-top: 8px; }
+
+
+
+/* example and key images */
+
+.highlightExample table { border-collapse: collapse; }
+.highlightExample {color: blue; font-weight: bold; white-space: nowrap }
+.highlightKeys {color: blue; font-weight: bold;}
+#keymanExample {clear: both; color: #000080; border: 1px solid #8080ff; background-color: #e0e0ff; margin-top: 15px; font-size: 10pt }
+#keymanExample h3 { color: white; display: block; margin: 0; padding: 2px 5px; background: #8080ff }
+#keymanExample div { padding: 10px 5px; }
+#keymanExample td { padding: 10px 5px; }
+#keymanExample th { padding: 2px 5px; text-align: left; }
+
+.highlightKeys .key-print { display: none }
+.highlightKeys img { vertical-align: baseline; margin: 0 2px 0 0; background-image: url('/images/keys3.gif'); height: 15px; width: 15px; }
+.key-grp { margin: 0 2px 0 0px; }
+.key-shift { width: 41px !important; margin-right: 0px !important; background-position: 0 -45px; }
+.key-ctrl { width: 33px !important; margin-right: 0px !important; background-position: -41px -45px; }
+.key-alt { width: 32px !important; margin-right: 0px !important; background-position: -74px -45px; }
+.key-32 { width: 37px !important; }
+
+.key-33 { background-position: -37px 0px; }
+.key-34 { background-position: -52px 0px; }
+.key-35 { background-position: -67px 0px; }
+.key-36 { background-position: -82px 0px; }
+.key-37 { background-position: -97px 0px; }
+.key-38 { background-position: -112px 0px; }
+.key-39 { background-position: -127px 0px; }
+.key-40 { background-position: -142px 0px; }
+.key-41 { background-position: -157px 0px; }
+.key-42 { background-position: -172px 0px; }
+.key-43 { background-position: -187px 0px; }
+.key-44 { background-position: -202px 0px; }
+.key-45 { background-position: -217px 0px; }
+.key-46 { background-position: -232px 0px; }
+.key-47 { background-position: -247px 0px; }
+.key-48 { background-position: -262px 0px; }
+.key-49 { background-position: -277px 0px; }
+.key-50 { background-position: -292px 0px; }
+.key-51 { background-position: -307px 0px; }
+.key-52 { background-position: -322px 0px; }
+.key-53 { background-position: -337px 0px; }
+.key-54 { background-position: -352px 0px; }
+.key-55 { background-position: -367px 0px; }
+.key-56 { background-position: -382px 0px; }
+.key-57 { background-position: -397px 0px; }
+.key-58 { background-position: -412px 0px; }
+.key-59 { background-position: -427px 0px; }
+.key-60 { background-position: -442px 0px; }
+.key-61 { background-position: -457px 0px; }
+.key-62 { background-position: -472px 0px; }
+.key-63 { background-position: -487px 0px; }
+.key-64 { background-position: 0px -15px; }
+.key-65 { background-position: -15px -15px; }
+.key-66 { background-position: -30px -15px; }
+.key-67 { background-position: -45px -15px; }
+.key-68 { background-position: -60px -15px; }
+.key-69 { background-position: -75px -15px; }
+.key-70 { background-position: -90px -15px; }
+.key-71 { background-position: -105px -15px; }
+.key-72 { background-position: -120px -15px; }
+.key-73 { background-position: -135px -15px; }
+.key-74 { background-position: -150px -15px; }
+.key-75 { background-position: -165px -15px; }
+.key-76 { background-position: -180px -15px; }
+.key-77 { background-position: -195px -15px; }
+.key-78 { background-position: -210px -15px; }
+.key-79 { background-position: -225px -15px; }
+.key-80 { background-position: -240px -15px; }
+.key-81 { background-position: -255px -15px; }
+.key-82 { background-position: -270px -15px; }
+.key-83 { background-position: -285px -15px; }
+.key-84 { background-position: -300px -15px; }
+.key-85 { background-position: -315px -15px; }
+.key-86 { background-position: -330px -15px; }
+.key-87 { background-position: -345px -15px; }
+.key-88 { background-position: -360px -15px; }
+.key-89 { background-position: -375px -15px; }
+.key-90 { background-position: -390px -15px; }
+.key-91 { background-position: -405px -15px; }
+.key-92 { background-position: -420px -15px; }
+.key-93 { background-position: -435px -15px; }
+.key-94 { background-position: -450px -15px; }
+.key-95 { background-position: -465px -15px; }
+.key-96 { background-position: 0px -30px; }
+.key-97 { background-position: -15px -30px; }
+.key-98 { background-position: -30px -30px; }
+.key-99 { background-position: -45px -30px; }
+.key-100 { background-position: -60px -30px; }
+.key-101 { background-position: -75px -30px; }
+.key-102 { background-position: -90px -30px; }
+.key-103 { background-position: -105px -30px; }
+.key-104 { background-position: -120px -30px; }
+.key-105 { background-position: -135px -30px; }
+.key-106 { background-position: -150px -30px; }
+.key-107 { background-position: -165px -30px; }
+.key-108 { background-position: -180px -30px; }
+.key-109 { background-position: -195px -30px; }
+.key-110 { background-position: -210px -30px; }
+.key-111 { background-position: -225px -30px; }
+.key-112 { background-position: -240px -30px; }
+.key-113 { background-position: -255px -30px; }
+.key-114 { background-position: -270px -30px; }
+.key-115 { background-position: -285px -30px; }
+.key-116 { background-position: -300px -30px; }
+.key-117 { background-position: -315px -30px; }
+.key-118 { background-position: -330px -30px; }
+.key-119 { background-position: -345px -30px; }
+.key-120 { background-position: -360px -30px; }
+.key-121 { background-position: -375px -30px; }
+.key-122 { background-position: -390px -30px; }
+.key-123 { background-position: -405px -30px; }
+.key-124 { background-position: -420px -30px; }
+.key-125 { background-position: -435px -30px; }
+.key-126 { background-position: -450px -30px; }
+
+
+.key-shift2 { width: 30px !important; margin-right: 0px !important; background-position: 0 -45px; }
+.key-ctrl2  { width: 22px !important; margin-right: 0px !important; background-position: -41px -45px; }
+.key-alt2   { width: 20px !important; margin-right: 0px !important; background-position: -74px -45px; }
+.key-pgup   { width: 28px !important; margin-right: 0px !important; background-position: -236px -45px; }
+.key-pgdn   { width: 28px !important; margin-right: 0px !important; background-position: -208px -45px; }
+.key-up     { width: 15px !important; margin-right: 0px !important; background-position: -309px -45px; }
+.key-down   { width: 15px !important; margin-right: 0px !important; background-position: -294px -45px; }
+.key-left   { width: 15px !important; margin-right: 0px !important; background-position: -279px -45px; }
+.key-right  { width: 15px !important; margin-right: 0px !important; background-position: -264px -45px; }
+.key-ins    { width: 20px !important; margin-right: 0px !important; background-position: -147px -45px; }
+.key-del    { width: 20px !important; margin-right: 0px !important; background-position: -167px -45px; }
+.key-home   { width: 32px !important; margin-right: 0px !important; background-position: -324px -45px; }
+.key-end    { width: 21px !important; margin-right: 0px !important; background-position: -187px -45px; }
+.key-enter  { width: 30px !important; margin-right: 0px !important; background-position: -356px -45px; }
+.key-esc    { width: 20px !important; margin-right: 0px !important; background-position: -106px -45px; }
+.key-tab    { width: 21px !important; margin-right: 0px !important; background-position: -126px -45px; }
+.key-caps   { width: 28px !important; margin-right: 0px !important; background-position: -386px -45px; }
+.key-bksp   { width: 29px !important; margin-right: 0px !important; background-position: -414px -45px; }
+
+
+#global_nav { height: 26px; }
+#global_nav ul{
+  font-weight:normal;
+  font-size:13.3px;
+}
+
+#global_nav li a{
+  text-decoration:none;
+  color:#ffffff;
+  font-weight:bold;
+  text-size:13.3px !important;
+}
+
+#global_nav li a:hover{
+  color:black; background:white; //#333333;
+  display:block
+}
+
+#global_nav li a .sel { display: none; border: none }
+#global_nav li a .unsel { display: block; border: none }
+#global_nav li a:hover .sel { display: block; border: none }
+#global_nav li a:hover .unsel { display: none; border: none }
+
+/*  start drop down menu  */
+
+#nav li {
+  float:left; list-style:none; display:block; padding:0 0 0px 0px; background: #ad4a28;
+   position:relative; text-align:center; cursor:default; margin:0;}  
+
+#nav li a { display: block;
+  text-decoration: none; font-family:Tahoma, Arial, Helvetica, sans-serif;  font-weight:bold;
+  padding: 5px 10px; margin:0;}
+
+#nav li ul {
+  display:none; position:absolute; top:100%;left:0; margin:0; border: solid 1px #888888; 
+  -moz-box-shadow: 0 3px 8px 3px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 3px 8px 3px rgba(0,0,0,0.5);
+  box-shadow: 0 3px 8px 3px rgba(0,0,0,0.5);
+  padding:0 0 0 0;
+  float:none; clear:both; font-weight: normal; font-size: 10.7px; z-index: 200;
+  
+}
+
+#nav li ul li  {clear:both; float:none;}  
+#nav li ul li  {padding:0; position:relative; margin:0; }  
+#nav li ul li a {
+  display:block; font-weight: normal; color:black; padding:4px 16px 4px 12px; margin:0; width: 170px; white-space: nowrap; text-align:left;
+  background:none white;}
+#nav li ul li a:hover {color:black; background:#f3e5de;}
+
+#nav li ul  {clear:both; float:none;}
+/* #nav li>ul {top:auto; left:auto;}*/
+#nav li:hover ul, #nav li.over ul {display:block}
+/* Fix IE. Hide from IE Mac \*/
+* html #nav ul li {float:left; height:1%;}
+* html #nav ul li a {height:1%;}  /* End */
+/*  end drop down menu  */
+
+#nav li ul li a#kbdlink { font-weight: bold }
+#nav li ul li a#getstartedlink { font-weight: bold }
+
+#global_nav{
+  background:url('/images/topbar_bg.jpg') repeat-x;
+  background-color:#868686;
+  -moz-border-radius: 0 0 8px 8px;
+  border-radius: 0 0 8px 8px;
+  -webkit-border-radius: 0 0 8px 8px;
+}
+
+#global_nav ul{
+  list-style:none;
+  background: none;
+  margin:0px;
+  padding:0px;
+}
+
+#global_nav li{  
+  display:inline;
+  background: none;
+  padding:0;
+  margin:0;
+}
+
+#topicresponse { display: none }
+.navheader { display: none }
+/* .navfooter { display: none } */
+.titlepage h2 { clear: none !important }
+.list-of-tables { display: none }
+
+#breadcrumbs {
+  clear: left;
+  float: left;
+  margin: 3px 4px 1px 12px;
+  padding: 2px 4px;
+  -moz-border-radius: 4px;
+  border: 1px solid #c0c0c0;
+  color: #c0c0c0;
+  font-size: 10.7px;
+  text-align: left;
+}
+
+#breadcrumbs a, 
+#breadcrumbs a:visited {
+  color: #808080;
+  text-decoration: none;
+}
+
+#breadcrumbs a:active,
+#breadcrumbs a:hover {
+  color: #808080;
+  text-decoration: underline;
+}
+
+/* .guibutton {border:solid 1px #6B6867; background:#cccccc; margin:0px 1px; padding:1px 2px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;} */
+.guibutton {border:solid 1px #707070; background: #D4D4D4; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.15, #F2F2F2), color-stop(0.47, #EBEBEB), color-stop(0.48, #DDDDDD), color-stop(0.9, #CFCFCF)); background-image: -webkit-linear-gradient(top, #F2F2F2 15%, #EBEBEB 47%, #DDDDDD 48%, #CFCFCF 90%); background-image: -moz-linear-gradient(top, #F2F2F2 15%, #EBEBEB 47%, #DDDDDD 48%, #CFCFCF 90%); background-image: -ms-linear-gradient(top, #F2F2F2 15%, #EBEBEB 47%, #DDDDDD 48%, #CFCFCF 90%); background-image: -o-linear-gradient(top, #F2F2F2 15%, #EBEBEB 47%, #DDDDDD 48%, #CFCFCF 90%); background-image: linear-gradient(top, #F2F2F2 15%, #EBEBEB 47%, #DDDDDD 48%, #CFCFCF 90%); margin:0px 1px; padding:1px 2px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; white-space: nowrap}
+
+.keycap {border-style:solid; border-width:1px 1px 2px; border-color: #6B6867 #6B6867 #111111; background:#dddddd; margin:0px 1px; padding:1px 2px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;}
+
+.section li, 
+.section p { line-height: 1.5em; }

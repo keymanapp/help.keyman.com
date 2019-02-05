@@ -1,0 +1,10 @@
+<?php
+  require_once('includes/template.php');
+
+  head([
+    'title' => "IKeymanError::ErrorCode"
+  ,'css' => ['template.css','keyboard.css','keys.css']]);
+?>
+<div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">IKeymanError::ErrorCode</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="comapi_interface_IKeymanError_Description.php">Prev</a> </td><th width="60%" align="center">IKeymanError Interface</th><td width="20%" align="right"> <a accesskey="n" href="comapi_interface_IKeymanError_Parameter.php">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h5 class="title" id="comapi_interface_IKeymanError_ErrorCode"><a class="link" href="comapi_interface_IKeymanError.php" title="IKeymanError Interface">IKeymanError</a>::ErrorCode</h5></div></div></div><p>
+            A unique code for the error.  Error codes defined by Keyman COM API are listed in the appendix.
+          </p><h6><a name="id621173"></a>Declaration</h6><pre class="programlisting">Property Get ErrorCode As Long</pre><h6><a name="id621179"></a>Parameters</h6><table id="id621181"><tr><th>No</th><th>Name</th><th>Type</th><th>Description</th></tr></table><h6><a name="id621193"></a>Return Value</h6>Long<h6><a name="id621197"></a>Example Code</h6><pre class="programlisting"></pre></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="comapi_interface_IKeymanError_Description.php">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="comapi_interface_IKeymanError.php">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="comapi_interface_IKeymanError_Parameter.php">Next</a></td></tr><tr><td width="40%" align="left" valign="top">IKeymanError::Description </td><td width="20%" align="center"><a accesskey="h" href="index.php">Home</a></td><td width="40%" align="right" valign="top"> IKeymanError::Parameter</td></tr></table></div>

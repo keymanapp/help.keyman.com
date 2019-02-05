@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KeymanWeb 2.0 - A First Example</title>
+
+  <script src='https://s.keyman.com/kmw/engine/426/keymanweb.js'></script>
+  <script src='https://s.keyman.com/kmw/engine/426/kmwuitoggle.js'></script>
+  <script>
+      (function(kmw) {
+          kmw.init({attachType:'auto'});
+          kmw.addKeyboards('@eng'); // Loads default English keyboard from Keyman Cloud (CDN)
+          kmw.addKeyboards('@tha'); // Loads default Thai keyboard from Keyman Cloud (CDN)
+      })(tavultesoft.keymanweb);
+  </script>
+</head>
+<body>
+<p>Click me and type: <input placeholder="Hello World"/></p>
+</body>
+</html>

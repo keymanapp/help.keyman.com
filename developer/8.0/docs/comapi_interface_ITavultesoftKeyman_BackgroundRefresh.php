@@ -1,0 +1,10 @@
+<?php
+  require_once('includes/template.php');
+
+  head([
+    'title' => "ITavultesoftKeyman::BackgroundRefresh"
+  ,'css' => ['template.css','keyboard.css','keys.css']]);
+?>
+<div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">ITavultesoftKeyman::BackgroundRefresh</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="comapi_interface_ITavultesoftKeyman_Addins.php">Prev</a> </td><th width="60%" align="center">ITavultesoftKeyman Interface</th><td width="20%" align="right"> <a accesskey="n" href="comapi_interface_ITavultesoftKeyman_Control.php">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h5 class="title" id="comapi_interface_ITavultesoftKeyman_BackgroundRefresh"><a class="link" href="comapi_interface_ITavultesoftKeyman.php" title="ITavultesoftKeyman Interface">ITavultesoftKeyman</a>::BackgroundRefresh</h5></div></div></div><p>
+            This should be set to True in Keyman Engine 7.0.
+          </p><h6><a name="id625956"></a>Declaration</h6><pre class="programlisting">Property Get/Let BackgroundRefresh As Boolean</pre><h6><a name="id625962"></a>Parameters</h6><table id="id625964"><tr><th>No</th><th>Name</th><th>Type</th><th>Description</th></tr></table><h6><a name="id625976"></a>Return Value</h6>Boolean<h6><a name="id625980"></a>Example Code</h6><pre class="programlisting"></pre></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="comapi_interface_ITavultesoftKeyman_Addins.php">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="comapi_interface_ITavultesoftKeyman.php">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="comapi_interface_ITavultesoftKeyman_Control.php">Next</a></td></tr><tr><td width="40%" align="left" valign="top">ITavultesoftKeyman::Addins </td><td width="20%" align="center"><a accesskey="h" href="index.php">Home</a></td><td width="40%" align="right" valign="top"> ITavultesoftKeyman::Control</td></tr></table></div>

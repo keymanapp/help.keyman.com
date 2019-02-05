@@ -1,0 +1,10 @@
+# top-most EditorConfig file
+root = true
+
+; applies to all files
+[*]
+indent_style = space
+
+[*.{java, sh, php, css, html, xml}]
+indent_size = 4
+

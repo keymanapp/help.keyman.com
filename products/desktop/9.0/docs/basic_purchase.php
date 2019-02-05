@@ -1,0 +1,14 @@
+<?php
+  require_once('includes/template.php');
+
+  head([
+    'title' => "Software Task - Purchase Keyman Desktop Professional Edition"
+  ]);
+?>
+<div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Software Task - Purchase Keyman Desktop Professional Edition</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="basic_newways.php">Prev</a> </td><th width="60%" align="center">Chapter 3. Basic Help</th><td width="20%" align="right"> <a accesskey="n" href="basic_activate.php">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both" id="basic_purchase">Software Task - Purchase Keyman Desktop Professional Edition</h2></div></div></div><p>To access additional features and remove the keyboard limit, you must upgrade Keyman Desktop Free Edition by purchasing a license.</p><h3><a name="id582115"></a>Where to buy a licence</h3><p>You can purchase a licence of Keyman Desktop from the Keyman Desktop splash screen by clicking the <span class="guibutton">Upgrade to Pro</span> button, or clicking the <span class="guibutton">Upgrade to Pro</span> button in the Keyman menu.</p><p>
+			<span class="inlinemediaobject"><img src="desktop_images/menu-free.png"></span>
+		</p><p>You can also purchase a licence from the <a class="ulink" href="https://secure.tavultesoft.com/buy/" target="_blank">Tavultesoft Online Store</a>.</p><h3><a name="id582466"></a>How to buy a licence</h3><p>We recommend purchasing licences of Keyman Desktop with credit card or PayPal.</p><p>If you are unable to purchase Keyman Desktop by either of these methods, contact <a class="ulink" href="mailto:sales@keyman.com" target="_blank">sales@keyman.com</a> for more help.</p><h3><a name="id582502"></a>Related Topics</h3><div class="itemizedlist"><ul type="disc"><li><p>
+        <a class="xref" href="about_purchase.php" title="Licensing Information">Licensing Information</a>
+      </p></li><li><p>
+        <a class="xref" href="basic_activate.php" title="Software Task - Upgrade From Free To Professional Edition">Software Task - Upgrade From Free To Professional Edition</a>
+      </p></li></ul></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="basic_newways.php">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="basic.php">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="basic_activate.php">Next</a></td></tr><tr><td width="40%" align="left" valign="top">New Ways to Use Keyman Desktop </td><td width="20%" align="center"><a accesskey="h" href="index.php">Home</a></td><td width="40%" align="right" valign="top"> Software Task - Upgrade From Free To Professional Edition</td></tr></table></div>

@@ -1,0 +1,10 @@
+<?php
+  require_once('includes/template.php');
+
+  head([
+    'title' => "IKeymanKeyboards::IndexOf"
+  ,'css' => ['template.css','keyboard.css','keys.css']]);
+?>
+<div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">IKeymanKeyboards::IndexOf</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="comapi_interface_IKeymanKeyboards.php">Prev</a> </td><th width="60%" align="center">IKeymanKeyboards Interface</th><td width="20%" align="right"> <a accesskey="n" href="comapi_interface_IKeymanKeyboardsPackage.php">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h5 class="title" id="comapi_interface_IKeymanKeyboards_IndexOf"><a class="link" href="comapi_interface_IKeymanKeyboards.php" title="IKeymanKeyboards Interface">IKeymanKeyboards</a>::IndexOf</h5></div></div></div><p>
+            Returns the 1-based index of the keyboard identified by Name.  Returns 0 if the keyboard cannot be found.
+          </p><h6><a name="id613246"></a>Declaration</h6><pre class="programlisting">Function IndexOf(Name As String) As Long</pre><h6><a name="id613252"></a>Parameters</h6><table id="id613254"><tr><th>No</th><th>Name</th><th>Type</th><th>Description</th></tr><tr><td>1</td><td>Name</td><td>String</td><td>The Name of the keyboard to find</td></tr></table><h6><a name="id613277"></a>Return Value</h6>Long<h6><a name="id613281"></a>Example Code</h6><pre class="programlisting"></pre></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="comapi_interface_IKeymanKeyboards.php">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="comapi_interface_IKeymanKeyboards.php">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="comapi_interface_IKeymanKeyboardsPackage.php">Next</a></td></tr><tr><td width="40%" align="left" valign="top">IKeymanKeyboards Interface </td><td width="20%" align="center"><a accesskey="h" href="index.php">Home</a></td><td width="40%" align="right" valign="top"> IKeymanKeyboardsPackage Interface</td></tr></table></div>

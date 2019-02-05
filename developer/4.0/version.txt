@@ -1,0 +1,46 @@
+VERSION INFORMATION
+===================
+
+TAVULTESOFT KEYBOARD MANAGER 4.01
+=================================
+
+13 June 1999
+
+New Features in Tavultesoft Keyboard Manager 4.0
+------------------------------------------------
+
+Keyman 4.0 has been totally rewritten from the ground up to support Windows 95, 98 and NT 4.  
+This means that this version of Keyman will not run under Windows 3.1 or Windows for 
+Workgroups.  There are a number of new features:
+
+* Integration with the Windows 95/NT language interface.  This means that you will 
+  select your languages from the task bar, as in standard Windows 95.  It also means 
+  that your word processor will be able to automatically switch languages when you 
+  select a Keyman keyboard.
+* Separation of the keyboard language from the main Keyman program.  This means you 
+  don't have the overhead of an interpreter/compiler in the Keyman program, but rather 
+  compile the keyboards in a separate program.
+* Shareware registration.  Keyman 4.0 is not a freeware product, but is now shareware.  
+  The cost is US$30/license.  See LICENSE.TXT for more details.
+
+
+Bugs fixed in version 4.01
+--------------------------
+
+* Virtual key codes were not accepted for input.
+* Numeric keypad characters werer incorrectly translated when numlock on.
+* Using a capital 'C' for a comment caused the compiler to hang.
+* Custom language ids were unreliable in some circumstances.
+* Sublanguage ids above x20 didn't work.
+* Uninstall functionality now removes keyboards correctly, and can remove Windows keyboards as well as Keyman ones.
+* Uninstall does not use a secondary, unnecessary dialog now.
+* Language selection menu works correctly if cancelled.
+* Install keyboard works correctly if existing keyboards were previously installed in the same language.
+* Language selection menu works shows all items correctly under Windows NT.
+* The language icon shows the correct icon more accurately now.
+
+
+Other changes in version 4.01
+-----------------------------
+
+* The keyman compiler (KMCOMP) will now work under the evaluation license.

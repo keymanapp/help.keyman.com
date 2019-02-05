@@ -1,0 +1,1385 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Language Reference</TITLE>
+</HEAD>
+<BODY>
+
+<B><FONT FACE="Arial" SIZE=4><P>Language change summary from version 3.x to 4.0</P>
+</B></FONT><FONT SIZE=2><P>For full details on any of the changes, see the appropriate reference page.</P>
+
+<UL>
+</FONT><FONT FACE="Courier New" SIZE=2><LI>BITMAPS</FONT><FONT SIZE=2> header statement is now </FONT><FONT FACE="Courier New" SIZE=2>BITMAP</FONT><FONT SIZE=2>; only one bitmap is required.</LI>
+</FONT><FONT FACE="Courier New" SIZE=2><LI>VERSION 3.2</FONT><FONT SIZE=2> header statement is now </FONT><FONT FACE="Courier New" SIZE=2>VERSION 4.0</FONT><FONT SIZE=2>.</LI>
+<LI>A new header statement, </FONT><FONT FACE="Courier New" SIZE=2>LANGUAGE</FONT><FONT SIZE=2>, is required; see language codes on page 2 for details.</LI>
+<LI>Other optional new header statements are: </FONT><FONT FACE="Courier New" SIZE=2>LAYOUT</FONT><FONT SIZE=2>, </FONT><FONT FACE="Courier New" SIZE=2>COPYRIGHT</FONT><FONT SIZE=2> and </FONT><FONT FACE="Courier New" SIZE=2>MESSAGE</FONT><FONT SIZE=2>.</LI>
+<LI>The plus (+) character is now required in any key-based rules (</FONT><FONT FACE="Courier New" SIZE=2>context + key &gt; output</FONT><FONT SIZE=2>).</LI></UL>
+
+</FONT><B><FONT FACE="Arial" SIZE=4><P>Language Reference</P>
+</B></FONT><FONT SIZE=2><P>This language reference describes the keyboard programming language of Tavultesoft Keyboard Manager.</P>
+<P>You can check for the latest version of this document at <U>http://www.tavultesoft.com/keyman/docs/</U>.</P>
+<P>The layout of a keyboard file is organized in two distinct parts: the header, and the body of the code.</P>
+</FONT><B><FONT FACE="Arial"><P>Header</P>
+</B></FONT><FONT SIZE=2><P>The header consists of statements that provide information about the keyboard: the name, version of Keyman it was created for, hotkeys, and title bar icons.  The header must come at the start of the file.  The statements should be entered uppercase so as to distinguish them from statements in the main body of the code; however, Keyman will recognize them anyway.</P>
+</FONT><B><FONT FACE="Arial"><P>Body</P>
+</B></FONT><FONT SIZE=2><P>The body of the keyboard can contain <I>stores</I> and <I>groups</I> of rules.</P>
+<I><P>Stores</I> are used to keep a table of keys which can be referenced to a second table of output characters.  <I>Rules</I> are the heart of a keyboard file.  They describe the action Keyman should take when processing a key combination.  They can be dependent on the context of characters before them and produce any characters that you wish.</P>
+<P>Rules are placed in <I>groups</I>.  Each group can contain one or more rules; a group is similar in many ways to a subroutine or procedure in Visual Basic.  Most keyboards will not need multiple groups.  See the <B>use</B> statement for more information about groups.</P>
+<P>Stores are described in more detail in the <B>store</B> statement reference.</P>
+<P>Each rule consists of three parts: the context, keystroke, and output.  Either the context or the keystroke are optional in some situations.  The context is what is compared to characters already on the screen.  The keystroke is compared to the key you type, and the output is what will replace and supplement the context on the screen.</P>
+<P>Keyman has a buffer for the screen characters of 64 bytes.  The length of the context and the output is by default 16 bytes for each.  These limits can be set in the [Advanced] section of KEYMAN.INI.  See the Keyman User’s Manual for more information on KEYMAN.INI.</P>
+<P>Rules can have an optional context.  The base context is the characters that were output to the screen after Keyman translated them.  The base context is usually 64 characters long and the rule context is usually 16 characters long, although both are modifiable.  You can compare the rule context to the base context; if it matches (and the key too), that rule will be used in the output of the new string.  The context, output and keystroke are specified in ExtendedString format.</P>
+<P>The three parts of a rule (context, key, and output) are put together in a style similar to SIL CC:</P>
+<P>Context + Key &gt; Output</P>
+<P>The '+' is an optional character; it is just supplied to make it easier to see the break between context and key.  <B>Note: The plus character ('+') may be required in later versions of Keyman.</B>  The simplest type of rule is simply one-to-one key mapping.  The most complex can have a table of keys which can be referenced in many different ways to match the context.</P>
+</FONT><B><FONT FACE="Arial"><P>Variable Types</P>
+</B></FONT><FONT SIZE=2><P>The different types of variables/constants and the prefixes usually used when describing them are:</P></FONT>
+<P ALIGN="LEFT"><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=7 WIDTH=428>
+<TR><TD WIDTH="31%" VALIGN="TOP">
+<I><FONT SIZE=2><P>TextString</I> (ts...)</FONT></TD>
+<TD WIDTH="69%" VALIGN="TOP">
+<FONT SIZE=2><P>A string of text enclosed by double quotes</FONT></TD>
+</TR>
+<TR><TD WIDTH="31%" VALIGN="TOP">
+<I><FONT SIZE=2><P>StoreName</I> (sn...)</FONT></TD>
+<TD WIDTH="69%" VALIGN="TOP">
+<FONT SIZE=2><P>The name of a store in that file (no quotes)</FONT></TD>
+</TR>
+<TR><TD WIDTH="31%" VALIGN="TOP">
+<I><FONT SIZE=2><P>Number</I> (n)</FONT></TD>
+<TD WIDTH="69%" VALIGN="TOP">
+<FONT SIZE=2><P>A number such as an offset</FONT></TD>
+</TR>
+<TR><TD WIDTH="31%" VALIGN="TOP">
+<I><FONT SIZE=2><P>ExtendedString</I> (xs)</FONT></TD>
+<TD WIDTH="69%" VALIGN="TOP">
+<FONT SIZE=2><P>A string that can have "", '', d..., x..., ....</FONT></TD>
+</TR>
+<TR><TD WIDTH="31%" VALIGN="TOP">
+<I><FONT SIZE=2><P>Identifier</I> (i)</FONT></TD>
+<TD WIDTH="69%" VALIGN="TOP">
+<FONT SIZE=2><P>A string not enclosed by quotes; file names.</FONT></TD>
+</TR>
+</TABLE>
+</P>
+
+<B><FONT FACE="Arial"><P>ExtendedString/Char format</P>
+</B></FONT><FONT SIZE=2><P>The ExtendedString and ExtendedChar formats are strings/characters that can be written as a quoted string and/or decimal/hexadecimal/octal codes.  An extended string can be made up of any amount of these different codes.  There are five ways of representing any character in the string; these are shown in the table below:</P></FONT>
+<P ALIGN="RIGHT"><TABLE BORDER CELLSPACING=2 CELLPADDING=7 WIDTH=517>
+<TR><TD WIDTH="13%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Code</B></FONT></TD>
+<TD WIDTH="66%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Description</B></FONT></TD>
+<TD WIDTH="21%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Example</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="13%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>'A'</FONT></TD>
+<TD WIDTH="66%" VALIGN="TOP">
+<FONT SIZE=2><P>In single quotes (you can represent a double quote character (") inside single quotes)</FONT></TD>
+<TD WIDTH="21%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>+ 'C' &gt; 'X'</FONT></TD>
+</TR>
+<TR><TD WIDTH="13%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>"A"</FONT></TD>
+<TD WIDTH="66%" VALIGN="TOP">
+<FONT SIZE=2><P>In double quotes (you can represent a single quote character (') inside double quotes)</FONT></TD>
+<TD WIDTH="21%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>+ "'" &gt; '"'</FONT></TD>
+</TR>
+<TR><TD WIDTH="13%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>d65</FONT></TD>
+<TD WIDTH="66%" VALIGN="TOP">
+<FONT SIZE=2><P>As a decimal (useful for upper-ascii numbers and codes like optional hyphen (d31).</FONT></TD>
+<TD WIDTH="21%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>+ d66 &gt; d74</FONT></TD>
+</TR>
+<TR><TD WIDTH="13%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>x41</FONT></TD>
+<TD WIDTH="66%" VALIGN="TOP">
+<FONT SIZE=2><P>As a hexadecimal (base 16) code (mostly useful for people used to programming with hexadecimal numbers)</FONT></TD>
+<TD WIDTH="21%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>+ x50 &gt; x88</FONT></TD>
+</TR>
+<TR><TD WIDTH="13%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>101</FONT></TD>
+<TD WIDTH="66%" VALIGN="TOP">
+<FONT SIZE=2><P>As an octal (base 8) code (to provide compatibility with SIL-CC)</FONT></TD>
+<TD WIDTH="21%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>+ 124 &gt; 204</FONT></TD>
+</TR>
+</TABLE>
+</P>
+
+<FONT SIZE=2><P>The extended string format can also include statements such as <B>any</B> and <B>index</B> that will be converted and/or expanded to the correct sequences in memory when the keyboard is loaded.</P>
+</FONT><B><FONT FACE="Arial"><P>Comments</P>
+</B></FONT><FONT SIZE=2><P>A comment can be inserted in a line by preceding it with a 'c' identifier.  The identifier must be preceded and followed with a space character.  The comment continues until the end of the line.</P>
+</FONT><B><FONT FACE="Arial"><P>Language Codes</P>
+</B></FONT><FONT SIZE=2><P>Windows 95 and NT have a standard definition for languages that Keyman 4 integrates with.  Each language is given a code (shown in the table below), and dialects of this language are given sub-codes.  The standard defined languages are shown below; for other, undefined languages, either use a new sub-langauge code in an existing, related language, or use the user-defined language codes x200 to x3ff and sub-language codes x20 through x3f.</P>
+</FONT><B><FONT FACE="Arial" SIZE=2><P>User-defined language codes</P>
+</B></FONT><FONT SIZE=2><P>If you decide to use a user-defined code, you can request a unique code for your language at <U>http://www.tavultesoft.com/keyman/langcode/</U>.  Tavultesoft will then keep track of the languages by assigning codes to ensure that Keyman keyboards will not conflict with each other.  If you do not plan to use the keyboard in conjunction with any others, or to distribute it to other people, it is safe to use any language code you wish.</P>
+</FONT><B><FONT FACE="Arial" SIZE=2><P ALIGN="CENTER">Language and sub-language codes</P></B></FONT>
+<TABLE CELLSPACING=0 BORDER=0 WIDTH=264>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x36</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Afrikaans</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>South Africa</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x1c</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Albanian</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Albania</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x01</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Arabic</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Saudi Arabia</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x02</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Iraq</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x03</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Egypt</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x04</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Libya</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x05</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Algeria</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x06</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Morocco</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x07</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Tunisia</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x08</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Oman</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x09</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Yemen</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x0a</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Syria</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x0b</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Jordan</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x0c</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Lebanon</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x0d</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Kuwait</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x0e</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>United Arab Emirates</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x0f</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Bahrain </FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x10</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Qatar</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x2d</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Basque</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Spain</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x23</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Belarussian</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Belarus</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x02</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Bulgarian</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Bulgaria</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x03</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Catalan</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Spain</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x04</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Chinese</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Taiwan</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x02</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>PRC </FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x03</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Hong Kong</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x04</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Singapore</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x05*</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Macao</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x1a</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Croatian</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Croatia</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x02</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Serbia (Latin)</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x03</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Serbia (Cyrillic)</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x05</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Czech</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Czech Republic</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x06</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Danish</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Denmark</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x13</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Dutch</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Netherlands</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x02</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Belgium</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x09</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>English</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>United States</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x02</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>United Kingdom</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x03</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Australia</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x04</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Canada</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x05</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>New Zealand</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x06</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Ireland</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x07</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>South Africa</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x08</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Jamaica</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x09</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Caribbean</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x0a</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Belize</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x0b</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Trinidad</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x0c*</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Zimbabwe</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x0d*</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Philippines</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x25</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Estonian</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Estonia</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x38</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Faeroese</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Faeroe Islands</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x29  </B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Farsi</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Iran</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x0b</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Finnish</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Finland</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x0c</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>French</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>France</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x02</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Belgium</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x03</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Canada</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x04</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Switzerland</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x05</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Luxembourg</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x06*</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Monaco</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x3c</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Gaelic</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01*</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Scots</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x02*</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Irish</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x07</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>German</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Germany</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x02</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Switzerland</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x03</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Austria</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x04</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Luxembourg</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x05</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Liechtenstein</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x08</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Greek</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Greece</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x0d</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Hebrew</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Israel</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x39</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Hindi</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01*</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Hindi</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x0e</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Hungarian</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Hungary</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x0f</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Icelandic</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Iceland</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x21</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Indonesian</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Indonesia</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x10</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Italian</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Italy</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x02</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Switzerland</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x11</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Japanese</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Japan</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x2c</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Kampuchean</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Cambodia</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x12</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Korean</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP"><DIR>
+
+<FONT SIZE=2><P>(Extended Wansung) - Korea</DIR>
+</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x02</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>(Johab) - Korea</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x2b</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Laotian</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Laos</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x26</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Latvian</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Latvia</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x27</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Lithuanian</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Lithuania</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x2f </B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Macedonian</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01*</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Macedonian</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x3e</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Malay</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01*</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Malaysian</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x02*</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Brunei</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x3a</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Maltese</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01*</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Maltese</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x28</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Maori</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>New Zealand</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x14</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Norwegian</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Norway (Bokmal)</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x02</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Norway (Nynorsk)</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x15</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Polish</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Poland</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x16</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Portuguese</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Brazil</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x02</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Portugal</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x17*</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Rhaeto-Romanic</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01*</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Rhaeto-Romanic</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x18</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Romanian</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Romania</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x02*</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Moldavia</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x19</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Russian</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Russia</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x02*</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Moldavia</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x3b</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Saami</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01*</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Saami (Lappish)</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x1b</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Slovak</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Slovakia</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x24</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Slovene</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Slovenia</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x2e</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Sorbian</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01*</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Sorbian</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x0a</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Spanish</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Spain (Traditional Sort) </FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x02</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Mexico</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x03</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Spain (Modern Sort) </FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x04</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Guatemala</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x05</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Costa Rica</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x06</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Panama</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x07</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Dominican Republic</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x08</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Venezuela</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x09</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Colombia</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x0a</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Peru</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x0a</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Argentina</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x0c</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Ecuador</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x0d</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Chile</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x0e</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Uruguay</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x0f</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Paraguay</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x10</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Bolivia</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x11</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>El Salvador</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x12</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Honduras</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x13</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Nicaragua</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x14</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Puerto Rico</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x30</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Sutu</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01*</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Sutu</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x41</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Swahili</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01*</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Kenya</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x1d</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Swedish</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Sweden</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x02</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Finland</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x1e</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Thai</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Thailand</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x31</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Tsonga</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01*</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Tsonga</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x32</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Tswana</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01*</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Tswana</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x1f</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Turkish</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Turkey</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x22</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Ukrainian</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Ukraine</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x20</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Urdu</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01*</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Urdu</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x33</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Venda</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01*</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Venda</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x2a</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Vietnamese</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Vietnam</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x34</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Xhosa</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01*</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Xhosa</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x3d</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Yiddish</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01*</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Yiddish</FONT></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<B><FONT SIZE=2><P>x35</B></FONT></TD>
+<TD WIDTH="30%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Zulu</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP">
+<FONT SIZE=2><P>x01*</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2><P>Zulu</FONT></TD>
+</TR>
+</TABLE>
+
+<B><FONT SIZE=2><P>Examples:</P>
+</B></FONT><FONT FACE="Courier New" SIZE=2><P>LANGUAGE x2b, x01&#9;&#9;c Laotian standard</P>
+<P>LANGUAGE x0d, x04&#9;&#9;c Hebrew standard</P>
+<P>LANGUAGE x200, x20&#9;c User-defined language</P>
+
+</FONT><B><FONT FACE="Arial" SIZE=4><P>&nbsp;</P>
+<P>Header Statement Reference</P>
+</FONT><FONT FACE="Arial"><P>begin</P><DIR>
+
+</B></FONT><FONT FACE="Courier New" SIZE=2><P>begin &gt; use(<I>gnGroup</I>)</P></DIR>
+
+</FONT><FONT SIZE=2><P>The </FONT><FONT FACE="Courier New" SIZE=2>begin</FONT><FONT SIZE=2> statement tells Keyman which group should be processed first when it receives a keystroke.  This line originated in SIL-CC, and a simplified version was used in Keyman for consistency.</P><DIR>
+
+<B><P>Example:&#9;</B></FONT><FONT FACE="Courier New" SIZE=2>begin &gt; use(main)</P></DIR>
+
+</FONT><B><FONT FACE="Arial"><P>BITMAP</P><DIR>
+
+</B></FONT><FONT FACE="Courier New" SIZE=2><P>BITMAP <I>bmpFile</P></DIR>
+
+</I></FONT><FONT SIZE=2><P>This statement replaces the </FONT><FONT FACE="Courier New" SIZE=2>BITMAPS</FONT><FONT SIZE=2> statement from Keyman 3.x.  Keyman 4 only requires one bitmap, to indicate that the keyboard is active.  The bitmap is displayed at the bottom right of the screen, in the <I>tool tray</I>.  This is a required statement.</P>
+</FONT><B><FONT FACE="Arial"><P>COPYRIGHT</P><DIR>
+
+</B></FONT><FONT FACE="Courier New" SIZE=2><P>COPYRIGHT <I>tsCopyrightMessage</P></DIR>
+
+</I></FONT><FONT SIZE=2><P>Keyman 4 keyboards have a provision to display a copyright message when they are installed.  This statement is optional.</P>
+</FONT><B><FONT FACE="Arial"><P>HOTKEY header statement</P><DIR>
+
+</B></FONT><FONT FACE="Courier New" SIZE=2><P>HOTKEY <I>tsHotKey</P></DIR>
+
+</I></FONT><FONT SIZE=2><P>The HOTKEY statement specifies the hotkey that Keyman will use to turn the keyboard on.  When this hotkey is pressed, any active keyboard will be turned off and the new keyboard will be turned on.</P>
+<P>The hotkey can be any letter key, with any of the Shift,Control and/or Alt keys also held down.  The specification of the HOTKEY statement follows the Microsoft standard for hotkeys in Windows.  Inside a double-quoted string, you can combine the letter key with special characters to identify the shift state:</P></FONT>
+<P ALIGN="CENTER"><CENTER><TABLE BORDER CELLSPACING=2 CELLPADDING=7 WIDTH=341>
+<TR><TD WIDTH="44%" VALIGN="TOP">
+<B><FONT SIZE=2><P>To Combine With</B></FONT></TD>
+<TD WIDTH="56%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Precede the letter-key by:</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="44%" VALIGN="TOP">
+<FONT SIZE=2><P>Shift</FONT></TD>
+<TD WIDTH="56%" VALIGN="TOP">
+<FONT SIZE=2><P>+ (plus sign)</FONT></TD>
+</TR>
+<TR><TD WIDTH="44%" VALIGN="TOP">
+<FONT SIZE=2><P>Ctrl</FONT></TD>
+<TD WIDTH="56%" VALIGN="TOP">
+<FONT SIZE=2><P>^ (caret sign)</FONT></TD>
+</TR>
+<TR><TD WIDTH="44%" VALIGN="TOP">
+<FONT SIZE=2><P>Alt</FONT></TD>
+<TD WIDTH="56%" VALIGN="TOP">
+<FONT SIZE=2><P>% (percent sign)</FONT></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<FONT SIZE=2><P>Starting with version 3.1, the hotkey can also be in Virtual Key format, so that you can use any key on the keyboard.</P>
+</FONT><FONT FACE="Courier New" SIZE=2><P>HOTKEY "^+A"&#9;&#9;&#9;c Ctrl+Shift+A</P>
+<P>HOTKEY [Alt Shift K_PAUSE]&#9;c Alt+Shift+Pause</P>
+</FONT><B><FONT FACE="Arial"><P>LANGUAGE</P><DIR>
+
+</B></FONT><FONT FACE="Courier New" SIZE=2><P>LANGUAGE <I>nLang</I>, <I>nSubLang</P></DIR>
+
+</I></FONT><FONT SIZE=2><P>The </FONT><FONT FACE="Courier New" SIZE=2>LANGUAGE</FONT><FONT SIZE=2> statement tells Keyman which language to associate the keyboard file with.  See the <B>Language Codes</B> section for details on what the </FONT><FONT FACE="Courier New" SIZE=2>nLang</FONT><FONT SIZE=2> and </FONT><FONT FACE="Courier New" SIZE=2>nSubLang</FONT><FONT SIZE=2> parameters mean, and how to use them.  The </FONT><FONT FACE="Courier New" SIZE=2>LANGUAGE</FONT><FONT SIZE=2> statement is required.</P>
+</FONT><B><FONT FACE="Arial"><P>LAYOUT</P><DIR>
+
+</B></FONT><FONT FACE="Courier New" SIZE=2><P>LAYOUT <I>nID</P></DIR>
+
+</I></FONT><FONT SIZE=2><P>The </FONT><FONT FACE="Courier New" SIZE=2>LAYOUT</FONT><FONT SIZE=2> statement must be used when you are redefining a standard Windows keyboard layout.  For instance, if you wanted to create an alternative English layout, you'd use </FONT><FONT FACE="Courier New" SIZE=2>LAYOUT x5</FONT><FONT SIZE=2>.  The majority of languages should be able to use layout </FONT><FONT FACE="Courier New" SIZE=2>x1</FONT><FONT SIZE=2>, but if in doubt, just use a higher number.  English has four alternatives already, so you'll need start at </FONT><FONT FACE="Courier New" SIZE=2>x5</FONT><FONT SIZE=2>; Portuguese, Italian, and German all has a single alternative layout, so for them start at </FONT><FONT FACE="Courier New" SIZE=2>x2</FONT><FONT SIZE=2>.</P>
+</FONT><B><FONT FACE="Arial"><P>MESSAGE</P><DIR>
+
+</B></FONT><FONT FACE="Courier New" SIZE=2><P>MESSAGE <I>tsMessage</P></DIR>
+
+</I></FONT><FONT SIZE=2><P>This is a generic message, such as a shareware notice that you can display when the keyboard is installed.  This statement is optional.</P>
+<B><P>Example:&#9;</B></FONT><FONT FACE="Courier New" SIZE=2>MESSAGE "This keyboard is freely redistributable."</P>
+</FONT><B><FONT FACE="Arial"><P>NAME</P><DIR>
+
+</B></FONT><FONT FACE="Courier New" SIZE=2><P>NAME <I>tsKeyboardName</P></DIR>
+
+</I></FONT><FONT SIZE=2><P>The NAME statement lets you give a more descriptive name to your keyboard than just the file name.  If </FONT><FONT FACE="Courier New" SIZE=2>NAME</FONT><FONT SIZE=2> isn't specified in the keyboard file, Keyman will use the filename of the keyboard, excluding the extension, so the </FONT><FONT FACE="Courier New" SIZE=2>NAME</FONT><FONT SIZE=2> statement is optional.</P>
+</FONT><B><FONT FACE="Arial"><P>VERSION</P><DIR>
+
+</B></FONT><FONT FACE="Courier New" SIZE=2><P>VERSION <I>nKeyboardVersion</P></DIR>
+
+</I></FONT><FONT SIZE=2><P>The </FONT><FONT FACE="Courier New" SIZE=2>VERSION</FONT><FONT SIZE=2> statement was added to Keyman 3.0 to allow later versions to easily distinguish what version of Keyman the keyboard was written for and handle it as such.  The </FONT><FONT FACE="Courier New" SIZE=2>VERSION</FONT><FONT SIZE=2> statement is required.</P>
+<P>You must specify version </FONT><FONT FACE="Courier New" SIZE=2>4.0</FONT><FONT SIZE=2> for Keyman 4.0 keyboards.</P>
+</FONT><B><FONT FACE="Arial" SIZE=4>
+<P>Body Statement Reference</P>
+</FONT><FONT FACE="Arial"><P>any statement</P><DIR>
+
+</B></FONT><FONT FACE="Courier New" SIZE=2><P>any(<I>snStore</I>)</P></DIR>
+
+</FONT><FONT SIZE=2><P>The any statement will, in effect, return true if the character input is in the store <I>snStore</I>.  The character input is implied.  This statement is only valid on the left side of a rule; the index statement is used to output the results of an any in the output.  If an any is used in the key, it will be expanded out to include one rule for each character in the store.  The any statement remembers the offset in the store where the match for later use with the index statement.</P>
+<I><P>snStore</I><B>:</B>&#9;The name of the store to check in</P><DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>+ any(keys) &gt; index(output,1)</P></DIR>
+
+</FONT><B><FONT FACE="Arial"><P>beep statement</P><DIR>
+
+</B></FONT><FONT FACE="Courier New" SIZE=2><P>beep</P></DIR>
+
+</FONT><FONT SIZE=2><P>The beep statement produces a beep at the system speaker when the rule is matched.  If you have a sound driver installed, beep will produce the sound specified by &quot;Asterisk&quot; in the Sounds option in Control Panel.  When using the <B>beep</B> statement, <I>remember that it can delete all that was matched on the left side of the rule if you don't precede it with <B>context</B> or appropriate characters</I>.  The <B>beep</B> statement is only valid in the output.  The example given below will, if it receives a key that is in the <I>key</I> group, and the context ends with a <I>cons</I> character, ignore the <I>key</I> and leave the context alone.</P>
+<B><P>no parameters</P><DIR>
+
+</B></FONT><FONT FACE="Courier New" SIZE=2><P>any(cons) + any(key) &gt; context beep</P></DIR>
+
+</FONT><B><FONT FACE="Arial"><P>context statement</P><DIR>
+
+</B></FONT><FONT FACE="Courier New" SIZE=2><P>context</P></DIR>
+
+</FONT><FONT SIZE=2><P>The context statement simply reproduces the context stored from the rule match into the output.  Use the context statement as much as possible as it is significantly faster than using the index statement.</P>
+<B><P>no parameters</P><DIR>
+
+</B></FONT><FONT FACE="Courier New" SIZE=2><P>any(cons) "W" + any(key) &gt; context index(keyout,3)</P></DIR>
+
+</FONT><B><FONT FACE="Arial"><P>deadkey statement</P><DIR>
+
+</B></FONT><FONT FACE="Courier New" SIZE=2><P>deadkey(<I>nKey</I>)</P></DIR>
+
+</FONT><FONT SIZE=2><P>The deadkey statement lets you program a deadkey in your keyboard.  The deadkey will be the same as a normal character, but it won't come up on the screen.  You can have up to 254 deadkeys, from 1 to 255.</P>
+<I><P>nKey</I><B>:</B>&#9;A number from 1 to 255 that identifies the deadkey</P>
+</FONT><FONT FACE="Courier New" SIZE=2><P>+ '`' &gt; deadkey(1)</P>
+<P>deadkey(1) + 'e' &gt; '&egrave;'</P>
+</FONT><B><FONT FACE="Arial"><P>group statement</P><DIR>
+
+</B></FONT><FONT FACE="Courier New" SIZE=2><P>group(<I>gnGroup</I>) [using keys]</P></DIR>
+
+</FONT><FONT SIZE=2><P>group tells Keyman that a new group has started.  There are two sorts of groups: key processing groups, and context processing groups.  Key processing groups can include context checking, but context processing groups cannot include key checking.  Keyman will use first the group specified in the begin statement, and move from there onto other groups.  The keystroke received by Keyman is the same for all groups with key processing.  </P>
+<P>To tell Keyman that the group should include key processing, you should include the using&nbsp;keys section of the statement; it that is left out, Keyman assumes the group checks the context only.  The keystroke will remain the same during processing; you can have many groups that each use using&nbsp;keys, and the keystroke will be the same for all of them.   If you leave out the using&nbsp;keys bit, you have to also leave out the '+' and the keystroke, because if you leave them in, the keystroke will be regarded as part of the context.</P>
+<I><P>gnGroup</I><B>:</B>&#9;The name of the new group.</P>
+</FONT><FONT FACE="Courier New" SIZE=2><P>group(main) using keys</P>
+<P>group(syllablecheck)</P>
+</FONT><B><FONT FACE="Arial"><P>index statement</P><DIR>
+
+</B></FONT><FONT FACE="Courier New" SIZE=2><P>index(<I>snStore</I>,<I>nOffset</I>)</P></DIR>
+
+</FONT><FONT SIZE=2><P>The index statement gets the offset of the character from the left side of the rule at offset <I>nOffset</I>.  The offset refers to the position, including other characters, to the any statement which has saved the offset which it found the character in.  The index will output the character at that offset from the store <I>snStore</I>.  If used carefully, the index and any combination can be very powerful.  The index statement is only valid in the output.</P>
+<I><P>snStore</I><B>:</B>&#9;The store to output from</P>
+<I><P>nOffset</I><B>:</B>&#9;The offset in the input to retrieve the any information from.</P><DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>any(cons) "W" + any(key) &gt; index(keyout,3) "w" index(cons,1)</P></DIR>
+
+</FONT><B><FONT FACE="Arial"><P>match rule</P><DIR>
+
+</B></FONT><FONT FACE="Courier New" SIZE=2><P>match &gt; <I>esString</P></DIR>
+
+</I></FONT><FONT SIZE=2><P>In each group, if Keyman finds a match rule, it will use it when a rule in the group was matched.  A match rule can include use, return, beep and normal characters.</P>
+<I><P>esString</I><B>:&#9;</B>The extended string to output, including the statements mentioned above.</P><DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>match &gt; use(AdjustVowels)</P></DIR>
+
+</FONT><B><FONT FACE="Arial"><P>nomatch rule</P><DIR>
+
+</B></FONT><FONT FACE="Courier New" SIZE=2><P>nomatch &gt; <I>esString</P></DIR>
+
+</I></FONT><FONT SIZE=2><P>nomatch is similar to match, but instead of the rule being used when a rule was matched, it will be used when a rule isn't matched in the group. A nomatch rule can include use, return, beep and normal characters.</P>
+<I><P>esString</I><B>:&#9;</B>The extended string to output, including the statements mentioned above.</P><DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>nomatch &gt; beep</P></DIR>
+
+</FONT><B><FONT FACE="Arial"><P>nul statement</P><DIR>
+
+</B></FONT><FONT FACE="Courier New" SIZE=2><P>nul</P></DIR>
+
+</FONT><FONT SIZE=2><P>The nul statement will delete the context and key on the left hand side of the rule from the output; it is equivalent to having an empty output (which is not allowed).  The nul statement probably will not be used often, because there are not many times you would want to delete the context and keystroke.  The <B>nul</B> command must be the only character or command on the right hand side of the rule</P>
+<P>no parameters</P><DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>any(cons) + any(key) &gt; nul&#9; c delete consonant and next key</P></DIR>
+
+</FONT><B><FONT FACE="Arial"><P>outs statement</P><DIR>
+
+</B></FONT><FONT FACE="Courier New" SIZE=2><P>outs(<I>snStore</I>)</P></DIR>
+
+</FONT><FONT SIZE=2><P>The outs statement simply copies the store <I>snStore</I> into the position in which it has been inserted.  Most of the time this is used only in stores but it can be used in the context and output as well.</P>
+<I><P>snStore</I><B>:</B>&#9;The store to expand</P><DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>store(key) "ABC" outs(DEFstore)</P></DIR>
+
+</FONT><B><FONT FACE="Arial"><P>return statement commstasssand</P>
+</B></FONT><FONT SIZE=2><P>return will tell Keyman to stop processing rules and wait for the next keystroke to come.  Keyman will not return to process other groups that called the one with the return statement.</P>
+<P>no parameters</P><DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>nomatch &gt; return</P></DIR>
+
+</FONT><B><FONT FACE="Arial"><P>store command</P><DIR>
+
+</B></FONT><FONT FACE="Courier New" SIZE=2><P>store(<I>snStore</I>) <I>xsData</P></DIR>
+
+</I></FONT><FONT SIZE=2><P>The <I>store</I> statement lets you store a string of characters or keys in a buffer which can then be referenced with any and index.  Proper use of store can reduce many keyboards down to a few rules.  A store is terminated at the end of the line (or continuation lines).</P>
+<I><P>snStore</I><B>:</B>&#9;The name of the store to use</P>
+<I><P>xsData</I><B>:</B>&#9;The data to place into the store <I>snStore</P><DIR>
+
+</I></FONT><FONT FACE="Courier New" SIZE=2><P>store(keys) "ABCDEFG"</P></DIR>
+
+</FONT><B><FONT FACE="Arial"><P>use command</P><DIR>
+
+</B></FONT><FONT FACE="Courier New" SIZE=2><P>use(<I>gnGroup</I>)</P></DIR>
+
+</FONT><FONT SIZE=2><P>The use statement tells Keyman to switch processing to a new group; after Keyman has gone through the new group, and any other nested groups, it will return to the previous one.  The use statement can be used with the match and nomatch rules; it will work the same way.</P>
+<I><P>gnGroup</I><B>:</B>&#9;The name of the group to switch control to.</P><DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>any(Vowel) + any(DiacriticKey) &gt; use(AdjustVowels)</P></DIR>
+</FONT></BODY>
+</HTML>

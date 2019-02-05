@@ -1,0 +1,82 @@
+<?php
+  require_once('includes/template.php');
+
+  head([
+    'title' => "Using the Keyboard Editor"
+  ]);
+?>
+
+<h1>Using the Keyboard Editor</h1>
+
+<p>The Keyboard Editor Design Mode gives you a simple interface to quickly create a keyboard using a visual representation of a computer keyboard. You can drag and drop characters from a character map, and create Unicode keyboard layouts. You cannot access most of Keyman's more powerful features from the Keyboard Editor Design Mode, but it will be useful to get you started on your design, and for simple keyboards. You
+can swap from Design Mode to Source Mode in Keyman Developer.</p>
+
+<h2>Create a keyboard in Keyman Developer</h2>
+
+<ol>
+  <li>If you have not already done so, create a new project (<strong>Project/New Project</strong>).</li>
+  
+  <li>
+    If the project is not visible, select <strong>View/Project</strong>. 
+    <img src="<?=cdn('img/developer/90/guide/project.png')?>" alt="Project View" />
+  </li>
+    
+  <li>
+    Select the <strong>Keyboards</strong> tab and click <strong>New Keyboard</strong>.
+    <img src="<?=cdn('img/developer/90/guide/newkeyboard.png')?>" alt="New Keyboard dialog" />
+  </li>
+</ol>
+
+  <para role="RHC.NumberedPoint\p"><phrase role="RHC.\span">1.<phrase role="RHC.rml10_2\span">            </phrase></phrase> <phrase role="RHC.\span">Select the <inlinemediaobject><imageobject><imagedata role="RHC.rml10_3\img" fileref="Project%20-%20Keyboard%20Component_files/image002.jpg" depth="77" width="71"/></imageobject></inlinemediaobject> tab.</phrase></para>
+
+  <para role="RHC.NumberedPoint\p">2.<phrase role="RHC.rml10_4\span">            </phrase> Click on <inlinemediaobject><imageobject><imagedata role="RHC.rml10_5\img" fileref="Project%20-%20Keyboard%20Component_files/image004.jpg" depth="23" width="117"/></imageobject></inlinemediaobject>.</para>
+
+  <para role="RHC.Indented\p">The New File dialog box is displayed:</para>
+
+  <para role="RHC.Indented\p"><inlinemediaobject><imageobject><imagedata role="RHC.rml10_6\img" fileref="Project%20-%20Keyboard%20Component_files/image006.jpg" depth="137" width="399"/></imageobject></inlinemediaobject></para>
+
+  <para role="RHC.NumberedPoint\p">3.<phrase role="RHC.rml10_7\span">            </phrase> Type in the <phrase role="RHC.Bold\span">filename</phrase> for your new keyboard.</para>
+
+  <para role="RHC.INDENTED\p">Click on the Browse button to change the location of the new keyboard.</para>
+
+  <para role="RHC.NumberedPoint\p">4.<phrase role="RHC.rml10_8\span">            </phrase> Click on <phrase role="RHC.Bold\span">OK</phrase>.</para>
+
+  <para role="RHC.Indented\p">A new tab is created with the extension <phrase role="RHC.Bold\span"><phrase role="RHC.\span">.kmn</phrase></phrase> <phrase role="RHC.\span">at the end of the tab name.</phrase></para>
+
+  <para role="RHC.Picture\p"><inlinemediaobject><imageobject><imagedata role="RHC.rml10_9\img" fileref="Project%20-%20Keyboard%20Component_files/image008.jpg" depth="23" width="102"/></imageobject></inlinemediaobject><phrase role="RHC.\span"> </phrase></para>
+
+  <para role="RHC.Indented\p">The Welcome to Keyboard Editor screen is displayed:</para>
+
+  <para role="RHC.Picture\p"><inlinemediaobject><imageobject><imagedata role="RHC.rml10_10\img" fileref="Project%20-%20Keyboard%20Component_files/image010.jpg" depth="557" width="648"/></imageobject></inlinemediaobject></para>
+
+  <para role="RHC.Indented\p">There are six tabs displayed at the bottom of the screen:</para>
+
+  <para role="RHC.Picture\p"><inlinemediaobject><imageobject><imagedata role="RHC.rml10_11\img" fileref="Project%20-%20Keyboard%20Component_files/image012.jpg" depth="63" width="508"/></imageobject></inlinemediaobject></para>
+
+  <para role="RHC.rml10_12__RelatedTopics\p">Related Topics</para>
+
+  <itemizedlist>
+    <listitem role="RHC.rml10_13__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_14__BULLETEDPOINT\p"><ulink url="Developer_-_Creating_a_New_Keyboard.xml"><phrase role="RHC.rml10_15\span">Creating a New Keyboard</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_16__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_17__BULLETEDPOINT\p"><ulink url="Keyboard___Using_the_Keyboard_Wizard.xml"><phrase role="RHC.rml10_18\span">Using the Keyboard Wizard</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_19__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_20__BULLETEDPOINT\p"><ulink url="Step_1_Keyboard_Details.xml"><phrase role="RHC.rml10_21\span">Step 1: Keyboard Details</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_22__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_23__BULLETEDPOINT\p"><ulink url="Step_2_Keyboard_Layout.xml"><phrase role="RHC.rml10_24\span">Step 2: Keyboard Layout</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_25__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_26__BULLETEDPOINT\p"><ulink url="Step_3_Keyboard_Icon.xml"><phrase role="RHC.rml10_27\span">Step 3: Keyboard Icon</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_28__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_29__BULLETEDPOINT\p"><ulink url="Step_4_Keyboard_Compile.xml"><phrase role="RHC.rml10_30\span">Step 4: Keyboard Compile</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_31__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_32__BULLETEDPOINT\p"><ulink url="Keyboard_Options.xml"><phrase role="RHC.rml10_33\span">Keyboard Options</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_34__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_35__BULLETEDPOINT\p"><ulink url="On_Screen_Keyboard.xml"><phrase role="RHC.rml10_36\span">On screen keyboard</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_37__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_38__BULLETEDPOINT\p"><ulink url="Using_the_Keyman_Keyboard_Language.xml"><phrase role="RHC.rml10_39\span">Using the Keyman Keyboard Language</phrase></ulink></para></listitem>
+  </itemizedlist>
+
+  <para role="RHC.RelatedTopics\p"><ulink role="RHC.rml10_40\a" url="Home.xml">Table of Contents</ulink></para>
+
+  <para role="RHC.backto\p"> </para>
+<!--_ROBOML_TOPICLIST_START_ {step_3_keyboard_icon.htm|on_screen_keyboard.htm|home.htm|step_2_keyboard_layout.htm|step_1_keyboard_details.htm|step_4_keyboard_compile.htm|using_the_keyman_keyboard_language.htm|keyboard_options.htm|keyboard___using_the_keyboard_wizard.htm|developer_-_creating_a_new_keyboard.htm|} _ROBOML_TOPICLIST_END_-->
+</section>

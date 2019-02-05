@@ -1,0 +1,11 @@
+<?php
+  require_once('includes/template.php');
+
+  head([
+    'title' => "IKeymanPackageInstalled::InstalledByAdmin"
+  ,'css' => ['template.css','keyboard.css','keys.css']]);
+?>
+<div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">IKeymanPackageInstalled::InstalledByAdmin</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="comapi_interface_IKeymanPackageInstalled.php">Prev</a> </td><th width="60%" align="center">IKeymanPackageInstalled Interface</th><td width="20%" align="right"> <a accesskey="n" href="comapi_interface_IKeymanPackageInstalled_Uninstall.php">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h5 class="title" id="comapi_interface_IKeymanPackageInstalled_InstalledByAdmin"><a class="link" href="comapi_interface_IKeymanPackageInstalled.php" title="IKeymanPackageInstalled Interface">IKeymanPackageInstalled</a>::InstalledByAdmin</h5></div></div></div><p>
+            Returns True if the package was installed by an administrator.  If True, then the package is available to all users and must 
+            be uninstalled by an administrator.
+          </p><h6><a name="id602373"></a>Declaration</h6><pre class="programlisting">Property Get InstalledByAdmin As Boolean</pre><h6><a name="id602379"></a>Parameters</h6><table id="id602381"><tr><th>No</th><th>Name</th><th>Type</th><th>Description</th></tr></table><h6><a name="id602393"></a>Return Value</h6>Boolean<h6><a name="id602397"></a>Example Code</h6><pre class="programlisting"></pre></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="comapi_interface_IKeymanPackageInstalled.php">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="comapi_interface_IKeymanPackageInstalled.php">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="comapi_interface_IKeymanPackageInstalled_Uninstall.php">Next</a></td></tr><tr><td width="40%" align="left" valign="top">IKeymanPackageInstalled Interface </td><td width="20%" align="center"><a accesskey="h" href="index.php">Home</a></td><td width="40%" align="right" valign="top"> IKeymanPackageInstalled::Uninstall</td></tr></table></div>

@@ -1,0 +1,8 @@
+<?php
+  require_once('includes/template.php');
+
+  head([
+    'title' => "KeymanWeb 1.0"
+  ]);
+?>
+<div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">KeymanWeb 1.0</th></tr><tr><td width="20%" align="left"> </td><th width="60%" align="center">Reference</th><td width="20%" align="right"> <a accesskey="n" href="reference_kmw.php">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both" id="reference_kmw_index">KeymanWeb 1.0</h2></div></div></div><div class="toc"><dl><dt><span class="section"><a href="reference_kmw.php">Class: KeymanWeb</a></span></dt><dt><span class="section"><a href="reference_kmw_KeyboardInfo.php">Class: KeyboardInfo</a></span></dt><dt><span class="section"><a href="reference_kmw__keyboarddesign.php">Keyboard Design</a></span></dt><dt><span class="section"><a href="reference_kmw__css.php">CSS classes for Visual Keyboard</a></span></dt><dt><span class="section"><a href="reference_kmw__uimodes.php">User Interface Modes</a></span></dt><dt><span class="section"><a href="reference_kmw__variables.php">Global Variables</a></span></dt><dt><span class="section"><a href="reference_kmw__version.php">Release History</a></span></dt></dl></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"> </td><td width="20%" align="center"> </td><td width="40%" align="right"> <a accesskey="n" href="reference_kmw.php">Next</a></td></tr><tr><td width="40%" align="left" valign="top"></td><td width="20%" align="center"></td><td width="40%" align="right" valign="top"> Class: KeymanWeb</td></tr></table></div>

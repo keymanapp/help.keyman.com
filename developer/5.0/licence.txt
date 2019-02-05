@@ -1,0 +1,99 @@
+Tavultesoft Keyboard Manager 5.0
+Copyright (C) 2000 Tavultesoft.
+10 Corby Ave, West Hobart, TAS 7000 AUSTRALIA
+
+LICENSE AGREEMENT
+=================
+
+You should carefully read the following terms and conditions
+before using this software.  Unless you have a different license
+agreement signed by Tavultesoft, your use of this software indicates 
+your acceptance of this license agreement and warranty.
+
+TERMS
+=====
+
+The names "Tavultesoft Keyboard Manager" and "Keyman" are used 
+interchangeably.
+
+Tavultesoft Keyboard Manager 5.0, full version, includes the TIKE 
+development environment, the KMComp compiler and the development 
+documentation.
+
+Tavultesoft Keyboard Manager 5.0, redistributable version, refers to 
+the self-extracting install package that is created by TIKE.  This 
+version does not contain any of the development tools.
+
+DISCLAIMER OF WARRANTY
+======================
+
+THIS SOFTWARE AND THE ACCOMPANYING FILES ARE SOLD "AS IS" AND 
+WITHOUT WARRANTIES AS TO PERFORMANCE OR MERCHANTABILITY OR ANY 
+OTHER WARRANTIES WHETHER EXPRESSED OR IMPLIED.
+
+-----------------------------------
+           Full Version
+-----------------------------------
+ 
+EVALUATION
+==========
+
+This is not free software.  Tavultesoft Keyboard Manager 5.0 is a shareware 
+program.  This means that you may download and evaluate it for period of 30
+days.  If you use this software after the 30 day evaluation period a 
+registration fee is required.  Unregistered use of Tavultesoft Keyboard 
+Manager after the 30 day evaluation period is in violation of U.S. and
+international copyright laws.
+
+DISTRIBUTION
+============
+
+You are permitted and encouraged to distribute the original setup archive for
+Tavultesoft Keyboard Manager 5.0, WITHOUT ANY MODIFICATIONS WHATSOEVER.  
+
+You are specifically prohibited from charging, or requesting donations, for any 
+such copies, however made; and from distributing the software and/or 
+documentation with other products (commercial or otherwise) without prior 
+written permission.
+
+You may not distribute any keyboards, packages, self extracting installers or
+any other files created with the unregistered version of Keyman.  There are 
+no limitations or royalties on distribution of keyboards, packages, self-extracting 
+installers or other files created with the registered version of Keyman.
+
+You are not permitted to distribute any other components of Keyman separately.
+
+REGISTERED VERSION
+==================
+
+A registered copy of Tavultesoft Keyboard Manager 4.0 may be used at a single
+workstation.  There are no royalties of any kind on keyboard files created with
+Keyman.  This is subject to the following condition:
+
+ * A separate registered copy of Tavultesoft Keyboard Manager must be
+   obtained for each workstation on which Tavultesoft Keyboard Manager
+   will be used, even if such use is only temporary.  This is not a 
+   "concurrent use" license.
+
+-----------------------------------
+    Redistributable Version
+-----------------------------------
+
+EVALUATION
+==========
+
+You are permitted to use the redistributable version of Keyman 5.0 for personal
+use without registration.  Any other use requires payment of the registration 
+fee after a 30 day evaluation period.  Unregistered use of Tavultesoft 
+Keyboard Manager after the 30 day evaluation period is in violation of U.S. 
+and international copyright laws.
+
+Users who register the redistributable version are entitled to a free upgrade to
+the full version.
+
+DISTRIBUTION
+============
+
+You are permitted and encouraged to distribute the self-extracting archive for
+the distributable version of Keyman.
+

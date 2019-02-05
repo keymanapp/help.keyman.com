@@ -1,0 +1,8 @@
+<?php
+  require_once('includes/template.php');
+
+  head([
+    'title' => "IMX Developers Guide"
+  ,'css' => ['template.css','keyboard.css','keys.css']]);
+?>
+<div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">IMX Developers Guide</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="guide_kmw_defaults.php">Prev</a> </td><th width="60%" align="center">Chapter 2. Keyman Developer Guide</th><td width="20%" align="right"> <a accesskey="n" href="guide_imx_imxdll.php">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both" id="index_guide_imx">IMX Developers Guide</h2></div></div></div><div class="toc"><dl><dt><span class="section"><a href="guide_imx_imxdll.php">DLL Exports</a></span></dt><dt><span class="section"><a href="guide_imx.php">DLL Interface for Keyman - Introduction</a></span></dt><dt><span class="section"><a href="guide_imx_imxlib.php">The imlib.cpp library module</a></span></dt></dl></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="guide_kmw_defaults.php">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="guide.php">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="guide_imx_imxdll.php">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Changing KeymanWeb's Defaults </td><td width="20%" align="center"><a accesskey="h" href="index.php">Home</a></td><td width="40%" align="right" valign="top"> DLL Exports</td></tr></table></div>

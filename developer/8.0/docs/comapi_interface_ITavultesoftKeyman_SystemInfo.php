@@ -1,0 +1,10 @@
+<?php
+  require_once('includes/template.php');
+
+  head([
+    'title' => "ITavultesoftKeyman::SystemInfo"
+  ,'css' => ['template.css','keyboard.css','keys.css']]);
+?>
+<div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">ITavultesoftKeyman::SystemInfo</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="comapi_interface_ITavultesoftKeyman_Refresh.php">Prev</a> </td><th width="60%" align="center">ITavultesoftKeyman Interface</th><td width="20%" align="right"> <a accesskey="n" href="comapi_interface_IKeymanHotkey.php">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h5 class="title" id="comapi_interface_ITavultesoftKeyman_SystemInfo"><a class="link" href="comapi_interface_ITavultesoftKeyman.php" title="ITavultesoftKeyman Interface">ITavultesoftKeyman</a>::SystemInfo</h5></div></div></div><p>
+            Returns an interface to the KeymanSystemInfo object.
+          </p><h6><a name="id626388"></a>Declaration</h6><pre class="programlisting">Property Get SystemInfo As IKeymanSystemInfo</pre><h6><a name="id626394"></a>Parameters</h6><table id="id626396"><tr><th>No</th><th>Name</th><th>Type</th><th>Description</th></tr></table><h6><a name="id626408"></a>Return Value</h6><a class="link" href="comapi_interface_IKeymanSystemInfo.php" title="IKeymanSystemInfo Interface">IKeymanSystemInfo</a><h6><a name="id626414"></a>Example Code</h6><pre class="programlisting"></pre></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="comapi_interface_ITavultesoftKeyman_Refresh.php">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="comapi_interface_ITavultesoftKeyman.php">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="comapi_interface_IKeymanHotkey.php">Next</a></td></tr><tr><td width="40%" align="left" valign="top">ITavultesoftKeyman::Refresh </td><td width="20%" align="center"><a accesskey="h" href="index.php">Home</a></td><td width="40%" align="right" valign="top"> IKeymanHotkey Interface</td></tr></table></div>

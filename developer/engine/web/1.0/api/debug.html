@@ -1,0 +1,13 @@
+<html lang="en">
+<head>
+    <title>KeymanWeb Debug Frame</title>
+</head>
+<script type="text/javascript">
+
+  frame = location.search.substr(1);
+  
+  document.write("<frameset rows='200,*' frameborder=1 border=1 framespacing=4><frame name='debug' src='debugframe.html' \/>");
+  document.write("<frame name='base' src='"+frame+"' \/><\/frameset>");
+
+</script>
+</html>

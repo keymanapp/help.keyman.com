@@ -1,0 +1,13 @@
+<?php
+  require_once('includes/template.php');
+
+  head([
+    'title' => "IKeymanPackageSubFile::CopyLocation"
+  ,'css' => ['template.css','keyboard.css','keys.css']]);
+?>
+<div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">IKeymanPackageSubFile::CopyLocation</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="comapi_interface_IKeymanPackageSubFile_AsStream.php">Prev</a> </td><th width="60%" align="center">IKeymanPackageSubFile Interface</th><td width="20%" align="right"> <a accesskey="n" href="comapi_interface_IKeymanPackageSubFile_Description.php">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h5 class="title" id="comapi_interface_IKeymanPackageSubFile_CopyLocation"><a class="link" href="comapi_interface_IKeymanPackageSubFile.php" title="IKeymanPackageSubFile Interface">IKeymanPackageSubFile</a>::CopyLocation</h5></div></div></div><p>
+            Returns the location that the file will be copied to if the package is installed: 
+              pfclPackage: the default location, where the package is installed to
+              pfclKeymanDir: the Keyman program folder (deprecated)
+              pfclInstallTemp: the file is not copied in the installation process but is just used for install (e.g. readme file or the install graphic)
+          </p><h6><a name="id609218"></a>Declaration</h6><pre class="programlisting">Property Get CopyLocation As tagKeymanPackageSubFileCopyLocation</pre><h6><a name="id609224"></a>Parameters</h6><table id="id609226"><tr><th>No</th><th>Name</th><th>Type</th><th>Description</th></tr></table><h6><a name="id609238"></a>Return Value</h6><a class="link" href="comapi_enumeration_tagKeymanPackageSubFileCopyLocation.php" title="tagKeymanPackageSubFileCopyLocation Enumeration">tagKeymanPackageSubFileCopyLocation</a><h6><a name="id609244"></a>Example Code</h6><pre class="programlisting"></pre></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="comapi_interface_IKeymanPackageSubFile_AsStream.php">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="comapi_interface_IKeymanPackageSubFile.php">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="comapi_interface_IKeymanPackageSubFile_Description.php">Next</a></td></tr><tr><td width="40%" align="left" valign="top">IKeymanPackageSubFile::AsStream </td><td width="20%" align="center"><a accesskey="h" href="index.php">Home</a></td><td width="40%" align="right" valign="top"> IKeymanPackageSubFile::Description</td></tr></table></div>

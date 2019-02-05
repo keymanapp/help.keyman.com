@@ -1,0 +1,8 @@
+<?php
+  require_once('includes/template.php');
+
+  head([
+    'title' => "Chapter 3. Tutorials"
+  ,'css' => ['template.css','keyboard.css','keys.css']]);
+?>
+<div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 3. Tutorials</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="guide_imx_imxlib.php">Prev</a> </td><th width="60%" align="center"> </th><td width="20%" align="right"> <a accesskey="n" href="tutorial_keyboard.php">Next</a></td></tr></table><hr></div><div class="chapter" lang="en" id="tutorials"><div class="titlepage"><div><div><h2 class="title">Chapter 3. Tutorials</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="tutorial_keyboard.php">Keyboard Tutorial</a></span></dt><dt><span class="section"><a href="tutorial_package.php">Package Tutorial</a></span></dt><dt><span class="section"><a href="tutorial_branding.php">Branding Tutorial</a></span></dt><dt><span class="section"><a href="tutorial_distribution.php">Distribution Tutorial</a></span></dt><dt><span class="section"><a href="tutorial_crm.php">CRM Tutorial</a></span></dt></dl></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="guide_imx_imxlib.php">Prev</a> </td><td width="20%" align="center"> </td><td width="40%" align="right"> <a accesskey="n" href="tutorial_keyboard.php">Next</a></td></tr><tr><td width="40%" align="left" valign="top">The imlib.cpp library module </td><td width="20%" align="center"><a accesskey="h" href="index.php">Home</a></td><td width="40%" align="right" valign="top"> Keyboard Tutorial</td></tr></table></div>

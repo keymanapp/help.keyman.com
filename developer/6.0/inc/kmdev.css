@@ -1,0 +1,48 @@
+P.Code
+{
+  font: normal x-small "Courier New", courier;
+}
+  P.Code SPAN.CodeChar
+  {
+    font-weight: bold;
+  }
+  P.Code SPAN.Ident
+  {
+    font-weight: normal;
+    font-style: italic;
+  }
+
+Pre.Example
+{
+  font: normal x-small "Courier New", courier;
+}
+
+Pre.TuteCode
+{
+  font: normal x-small "Courier New", courier;
+}
+
+DIV.Body TABLE.DescLinksList
+{
+  font: normal x-small Verdana, sans-serif;
+    border-left: 0px solid #AC472C;
+    border-right: 0px solid #AC472C;
+    border-top: 0px solid #AC472C;
+    border-bottom: 0px solid #AC472C;
+}
+  DIV.Body TABLE.DescLinksList TD
+  {
+    font: normal x-small Verdana, sans-serif;
+    text-align: left;
+    padding-left: 8px;
+    padding-right: 4px;
+    border-left: 0px solid #AC472C;
+    border-right: 0px solid #AC472C;
+    border-top: 0px solid #AC472C;
+    border-bottom: 0px solid #AC472C;
+  }  
+
+CODE
+{
+  font: normal x-small "Courier New", courier;
+}

@@ -1,0 +1,1228 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Tavultesoft Keyboard Manager</TITLE>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=7><P ALIGN="RIGHT"></P>
+<P ALIGN="RIGHT">&nbsp;</P>
+<P ALIGN="CENTER">Tavultesoft Keyboard Manager</P>
+</FONT><FONT SIZE=1>
+<P>&nbsp;</P>
+</FONT><FONT SIZE=7><P>&nbsp;</P>
+</FONT><FONT SIZE=7><P ALIGN="CENTER">User’s Guide and Reference</P>
+</FONT><FONT SIZE=6><P ALIGN="CENTER"></P>
+<P ALIGN="CENTER">&nbsp;</P>
+<P ALIGN="CENTER">&nbsp;</P>
+<P ALIGN="CENTER">VERSION 4.0</P>
+<P ALIGN="CENTER"></P>
+<P ALIGN="CENTER">&nbsp;</P>
+</FONT><FONT SIZE=7><P ALIGN="CENTER">Tavultesoft</P>
+</B></FONT><FONT SIZE=2>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>This documentation may be freely copied, but the copyright notice must not be altered or removed.  No part of this documentation may be modified or edited.  Tavultesoft holds no responsibility for any errors in this documentation or the use of its software.</P>
+<P>&copy; 1999 Marc Durdin / Tavultesoft.  All rights reserved.</P>
+
+<P>This documentation was created in MS Office 97.  It is available online at <U>http://www.tavultesoft.com/keyman/docs/</U>.</P>
+
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>Microsoft, Word for Windows, Access, and Excel are registered trademarks, and Windows is a trademark of Microsoft Corporation.</P>
+<P>Ami Pro is a registered trademark of Lotus Corp.</P>
+<P>Compaq is a registered trademark of Compaq Computer Corporation.</P>
+<P>Any other trademarks referred to remain the property of their respective holders.</P>
+<P><B>Chapter 1</B>  Introduction&#9;</FONT><A HREF="#_Toc446344226">*</A><DIR>
+
+<FONT SIZE=2><P>New Features in Tavultesoft Keyboard Manager 4.0&#9;</FONT><A HREF="#_Toc446344227">*</A></P>
+<FONT SIZE=2><P>Documentation included in this distribution&#9;</FONT><A HREF="#_Toc446344228">*</A></P>
+<FONT SIZE=2><P>Contacting Tavultesoft&#9;</FONT><A HREF="#_Toc446344229">*</A></P>
+<FONT SIZE=2><P>Registering Keyman&#9;</FONT><A HREF="#_Toc446344230">*</A></P></DIR>
+
+<B><FONT SIZE=2><P>Chapter 2  </B>Starting to use Keyman&#9;</FONT><A HREF="#_Toc446344231">*</A></P><DIR>
+
+<FONT SIZE=2><P>The Keyman Window&#9;</FONT><A HREF="#_Toc446344232">*</A></P>
+<FONT SIZE=2><P>Installing new keyboards&#9;</FONT><A HREF="#_Toc446344233">*</A></P>
+<FONT SIZE=2><P>The Tavultesoft keyboard repository&#9;</FONT><A HREF="#_Toc446344234">*</A></P>
+<FONT SIZE=2><P>Using Keyman keyboards in Windows&#9;</FONT><A HREF="#_Toc446344235">*</A></P>
+<FONT SIZE=2><P>Differences between 95 and NT&#9;</FONT><A HREF="#_Toc446344236">*</A></P>
+<FONT SIZE=2><P>Advanced options&#9;</FONT><A HREF="#_Toc446344237">*</A></P></DIR>
+
+<B><FONT SIZE=2><P>Chapter 3  </B>Writing a Simple Keyboard Program&#9;</FONT><A HREF="#_Toc446344238">*</A></P><DIR>
+
+<FONT SIZE=2><P>Overview&#9;</FONT><A HREF="#_Toc446344239">*</A></P>
+<FONT SIZE=2><P>Arranging the Layout on the Keyboard&#9;</FONT><A HREF="#_Toc446344240">*</A></P>
+<FONT SIZE=2><P>Writing the Keyboard Program&#9;</FONT><A HREF="#_Toc446344241">*</A></P>
+<FONT SIZE=2><P>Comments and Blank Lines&#9;</FONT><A HREF="#_Toc446344242">*</A></P>
+<FONT SIZE=2><P>The Header&#9;</FONT><A HREF="#_Toc446344243">*</A></P>
+<FONT SIZE=2><P>The Rules&#9;</FONT><A HREF="#_Toc446344244">*</A></P></DIR>
+
+<B><FONT SIZE=2><P>Chapter 4  </B>Further Programming&#9;</FONT><A HREF="#_Toc446344245">*</A></P><DIR>
+
+<FONT SIZE=2><P>Multiple Groups&#9;</FONT><A HREF="#_Toc446344246">*</A></P>
+<FONT SIZE=2><P>The use Statement&#9;</FONT><A HREF="#_Toc446344247">*</A></P>
+<FONT SIZE=2><P>The return Statement&#9;</FONT><A HREF="#_Toc446344248">*</A></P>
+<FONT SIZE=2><P>The match and nomatch Rules&#9;</FONT><A HREF="#_Toc446344249">*</A></P>
+<FONT SIZE=2><P>Summing Up&#9;</FONT><A HREF="#_Toc446344250">*</A></P>
+<FONT SIZE=2><P>Constraints&#9;</FONT><A HREF="#_Toc446344251">*</A></P>
+<FONT SIZE=2><P>Groups Without the &quot;using keys&quot; Keyword&#9;</FONT><A HREF="#_Toc446344252">*</A></P>
+<FONT SIZE=2><P>Virtual Keys&#9;</FONT><A HREF="#_Toc446344253">*</A></P>
+<FONT SIZE=2><P>Other Features&#9;</FONT><A HREF="#_Toc446344254">*</A></P>
+<FONT SIZE=2><P>Other Header Statements&#9;</FONT><A HREF="#_Toc446344255">*</A></P>
+<FONT SIZE=2><P>nul In the Context&#9;</FONT><A HREF="#_Toc446344256">*</A></P>
+<FONT SIZE=2><P>The outs Statement&#9;</FONT><A HREF="#_Toc446344257">*</A></P>
+<FONT SIZE=2><P>Long Rules&#9;</FONT><A HREF="#_Toc446344258">*</A></P>
+<FONT SIZE=5></DIR>
+Chapter 1</P>
+</FONT><B><FONT FACE="Arial" SIZE=6><P><A NAME="_Toc446344226">Introduction</A></P>
+</B></FONT><FONT SIZE=2><P>Welcome to the Tavultesoft Keyboard Manager.  With the Tavultesoft Keyboard Manager (Keyman), it becomes practical to enter and edit documents that use languages and scripts other than English, for a wide variety of Windows application programs such as word processors, spreadsheets, databases, and desktop publishers.</P>
+<P>Keyman has been developed with particular reference to the languages of South-East Asia and their scripts, but it can be readily adapted for many other languages.  Keyman will allow you to mix many languages in one document, in your favorite word processor.</P>
+<P>The most important feature of Keyman is the keyboard definition language that lets you develop your own keyboard layouts for just about any language.</P>
+<P>This manual will guide you through the basics of using Keyman and writing keyboards for it, and explain the more advanced options that Keyman gives you.  Reference information is given in the <I>Reference Documentation</I>.</P>
+</FONT><B><FONT FACE="Arial" SIZE=4><P><A NAME="_Toc446344129"><A NAME="_Toc446344227">New Features in Tavultesoft Keyboard Manager 4.0</A></A></P>
+</B></FONT><FONT SIZE=2><P>Keyman 4.0 has been totally rewritten from the ground up to support Windows 95, 98 and NT 4.  This means that this version of Keyman will not run under Windows 3.1 or Windows for Workgroups.  There are a number of new features:</P>
+
+<UL>
+<LI>Integration with the Windows 95/NT language interface.  This means that you will select your languages from the task bar, as in standard Windows 95.  It also means that your word processor will be able to automatically switch languages when you select a Keyman keyboard.</LI>
+<LI>Separation of the keyboard language from the main Keyman program.  This means you don't have the overhead of an interpreter/compiler in the Keyman program, but rather compile the keyboards in a separate program.</LI>
+<LI>Shareware registration.  Keyman 4.0 is not a freeware product, but is now shareware.  The cost is US$30/license.  See LICENSE.TXT for more details.</LI></UL>
+
+</FONT><B><FONT FACE="Arial" SIZE=4><P><A NAME="_Toc446344130"><A NAME="_Toc446344228">Documentation included in this distribution</A></A></P>
+</B></FONT><FONT SIZE=2><P>The following documents should be included with your Keyman distribution:</P>
+
+<UL>
+<LI>User documentation (Keyman40.doc)</LI>
+<LI>Keyboard definition language reference (Km40lang.doc)</LI>
+<LI>Language code sheet (Langcode.doc)</LI>
+<LI>Keyboard template sheet (Keys.doc)</LI>
+<LI>Version information sheet (Version.txt)</LI>
+<LI>License information (License.txt)</LI></UL>
+
+<P>Other documentation may become available and can be downloaded from <U>http://www.tavultesoft.com/keyman/docs/</U>.</P>
+</FONT><B><FONT FACE="Arial" SIZE=4><P><A NAME="_Toc446344131"><A NAME="_Toc446344229">Contacting Tavultesoft</A></A></P>
+</B></FONT><FONT SIZE=2><P>The Tavultesoft website, <U>http://www.tavultesoft.com/</U> has support information and contact details.</P>
+</FONT><B><FONT FACE="Arial" SIZE=4><P><A NAME="_Toc446344132"><A NAME="_Toc446344230">Registering Keyman</A></A></P>
+</B></FONT><FONT SIZE=2><P>The evaluation version of Keyman is licensed for 30 days use only.  If you choose not to register Keyman after that time, you must uninstall Keyman from your computer.  The evaluation version is also restricted in the following ways:</P>
+
+<UL>
+<LI>You cannot develop and compile your own keyboard layouts.</LI></UL>
+
+<P>You can register Keyman 4.0 online at <U>http://www.tavultesoft.com/keyman/register/</U>.  Other methods of registration can be arranged if necessary; contact <U>support@tavultesoft.com</U> for details.</P>
+<P>After you have registered Keyman, you will receive a registration code.  From the Keyman window, select <B>About</B> and then click on <B>Register</B> to enter this registration code.</P>
+<P>More details on Keyman registration can be found in LICENSE.TXT.</P>
+</FONT><FONT SIZE=5><P>Chapter 2</P>
+</FONT><B><FONT FACE="Arial" SIZE=6><P><A NAME="_Toc446344231">Starting to use Keyman</A></P>
+</B></FONT><FONT SIZE=2><P>The Keyman distribution should be a single executable file <B>keyman40.exe</B>.   Run this program to install Keyman.  The setup program is straightforward and you should have no troubles installing.  <B>Note: </B>If you are installing Keyman on Windows NT, you should be logged in as Administrator, as Keyman will need to modify the registry to install.</P>
+</FONT><B><FONT FACE="Arial" SIZE=4><P><A NAME="_Toc446344133"><A NAME="_Toc446344232">The Keyman Window</A></A></P>
+</B></FONT><FONT SIZE=2><P>After installation, you can start Keyman from the Start Menu.  If you have the unregistered version, you will have to wait several seconds for the initial splash screen to disappear; otherwise, the window will only appear briefly before Keyman starts.</P>
+<P>In a new installation, the main Keyman window should appear.  If it doesn't, or you have already been using Keyman, you can make it appear in the following different ways:</P>
+<OL>
+
+<LI>Use your right mouse button on the Keyman icon in the task bar, which should look something like this: <IMG SRC="Image10.gif" WIDTH=12 HEIGHT=12>.  A menu will appear; select <B>Show Keyman</B>.</LI>
+<LI>When Keyman is already running, select the Keyman icon in the Start Menu to display the main window.</LI></OL>
+
+<P>The main window will look like the picture below.  If you are running on Windows NT, you will not have the <B>Define Languages </B>option.  See the section <B>Differences between 95 and NT</B> for more information.</P>
+<P ALIGN="CENTER"><IMG SRC="Image11.gif" WIDTH=243 HEIGHT=225></P>
+<B><P ALIGN="CENTER">The main Keyman window</P>
+</B><P>The two options, <B>Start on boot</B> and <B>Hide on startup</B> are fairly self-explanatory, and are the only options available in Keyman 4.0.  If you click the <B>Hide</B> button, you can display Keyman with either of the two methods listed above.</P>
+</FONT><B><FONT FACE="Arial" SIZE=4><P><A NAME="_Toc446344134"><A NAME="_Toc446344233">Installing new keyboards</A></A></P>
+</B></FONT><FONT SIZE=2><P>The initial Keyman distribution that you received will not have any keyboards included.  You can download Keyman keyboards from the Internet.  Keyman 4.0 keyboards have the file extension <B>.kmx</B>.  Once downloaded, you should click the <B>Install Keyboard...</B> button in Keyman and select the keyboard you downloaded.  The following dialog box will appear.</P>
+<P ALIGN="CENTER"><IMG SRC="Image12.gif" WIDTH=240 HEIGHT=271></P>
+<P>Usually, you will want to copy the keyboard into the Keyman directory so that you won't accidentally delete it.  If the language the keyboard is designed for is not already defined, you can define it in this dialog box; usually the given name is correct and you shouldn't modify it.</P>
+<P>After you click OK, the keyboard will be installed ready for use.</P>
+</FONT><B><I><FONT FACE="Arial"><P><A NAME="_Toc446344135"><A NAME="_Toc446344234">The Tavultesoft keyboard repository</A></A></P>
+</B></I></FONT><FONT SIZE=2><P>Tavultesoft has a web page where keyboards have been collected and placed in one easy location: <U>http://www.tavultesoft.com/keyman/keyboards/</U>.  It is a good idea to look there first if you are trying to find a keyboard.  Other places where Keyman keyboards may be found are also listed on this page.</P>
+</FONT><B><FONT FACE="Arial" SIZE=4><P><A NAME="_Toc446344136"><A NAME="_Toc446344235">Using Keyman keyboards in Windows</A></A></P>
+</B></FONT><FONT SIZE=2><P>Using the Keyman keyboards in Windows is simple: simply click the Keyman icon in the task bar, and select the appropriate language.</P>
+<P>The Keyman icon will be located at the bottom right of the screen, in the following Window (Note: the icons you see may be different to the ones here):</P>
+<P ALIGN="CENTER"><IMG SRC="Image13.gif" WIDTH=76 HEIGHT=23></P>
+<P>The Keyman icon changes to show your current Keyboard.  The standard English icon is <IMG SRC="Image10.gif" WIDTH=12 HEIGHT=12>.  Other languages may use a two letter code like this, or a different symbol altogether.  When you left-click the icon, a menu will appear, looking like this:</P>
+<P ALIGN="CENTER"><IMG SRC="Image14.gif" WIDTH=97 HEIGHT=43></P>
+<P>Simply click the language you wish to use.  You may need to select an appropriate font in your application as well.</P>
+<P>You can also change keyboards by pressing <B>Left Alt+Shift</B> or <B>Ctrl+Shift</B>.  You can select the hotkey combination from the standard Keyboard Control Panel applet.  See <B>Advanced options</B> for more information on this.</P>
+</FONT><B><FONT FACE="Arial" SIZE=4><P><A NAME="_Toc446344137"><A NAME="_Toc446344236">Differences between 95 and NT</A></A></P>
+</B></FONT><FONT SIZE=2><P>There are several minor differences between Windows 95 and NT.  The primary difference is that under NT, you cannot fully define your own languages.  Keyman will let you type in those languages, but they will not be visible to Control Panel.  This is unfortunately a limitation of the way in which Windows NT works.  The second, minor, difference is that Microsoft-defined Windows NT keyboards have a <B>.dll</B> extension instead of a <B>.kbd</B> extension.  Note that this does <B>not</B> refer to Keyman keyboards, which always have a <B>.kmx</B> extension.</P>
+</FONT><B><FONT FACE="Arial" SIZE=4><P><A NAME="_Toc446344138"><A NAME="_Toc446344237">Advanced options</A></A></P>
+</B></FONT><FONT SIZE=2><P>Because of the way Keyman integrates into the Windows language interface, you can also use the Windows 95 Keyboard Control Panel applet to change many of your keyboard options.  The most important option is the ability to change the language a Keyman keyboard is associated with.  To do this, install the keyboard in the normal way, and then in the Keyboard Control Panel, select Language Properties to change the default keyboard associations.  However this is not usually recommended, as it will reduce the usefulness of the Windows multi-language interface.</P>
+</FONT><FONT SIZE=5><P><A NAME="_Toc306248910">Chapter 3</P>
+</FONT><B><FONT FACE="Arial" SIZE=6><P><A NAME="_Toc446344238">Writing a Simple Keyboard Program</A></A></P>
+</B></FONT><FONT SIZE=2><P>There are two main steps to writing a keyboard program.  The first step is to arrange the layout of the characters on the keyboard.  Then, you enter the keyboard program according to your layout.</P>
+<P>This chapter shows you the basic steps in writing a keyboard program; we will be using a simplified French keyboard as an example to follow through.</P>
+<P>It is important to remember that a Keyman keyboard has a source file and a compiled file.  The source file has the extension <B>.kmn</B>.  The compiled file has the extension <B>.kmx</B>.  You cannot installed a source file into Keyman 4.0, and you cannot edit a compiled file.  See the section <B>Compiling Keyboards</B> for information on how to convert a source file into a compiled file.</P>
+<OL>
+
+<LI>Even if you have some experience in writing CC tables, you should still read this chapter, as it shows you the basic steps and structure of a keyboard file, which is slightly different to CC tables.  However, your experience should help you learn the format more quickly.</LI></OL>
+
+</FONT><B><FONT FACE="Arial" SIZE=4><P><A NAME="_Toc306248911"><A NAME="_Toc446344139"><A NAME="_Toc446344239">Overview</A></A></A></P>
+</B></FONT><FONT SIZE=2><P>You will be designing a simplified French keyboard for people who don’t know the standard French keyboard layout; you will have to go through both steps mentioned above.  This French keyboard (Quick French) doesn’t follow the standard French layout; instead, it uses a basic English keyboard with some deadkeys to define vowel diacritics and other French characters needed.</P>
+<P>You will need to know the character codes in the font that goes with this keyboard (for Quick French, Times New Roman and Arial work fine); the characters you will be using may be upper-ascii.  If you do not have a font for the language you will be working with, you will need to obtain or create one; Keyman does not do anything about fonts.</P>
+</FONT><B><FONT FACE="Arial" SIZE=4><P><A NAME="_Toc306248912"><A NAME="_Toc446344140"><A NAME="_Toc446344240">Arranging the Layout on the Keyboard</A></A></A></P>
+</B></FONT><FONT SIZE=2><P>First of all, you have to know what codes are used for the characters you are mapping with your keyboard program.  (You can use the Character Map application that is provided with Windows to help you find these codes.)</P>
+<P>For the Quick French keyboard, you will need all the vowels with different diacritics, some French symbols, and c-cedilla (upper and lower case); the codes needed are listed below, along with some others that are used by other European languages:</P></FONT>
+<TABLE BORDER CELLSPACING=2 CELLPADDING=7 WIDTH=582>
+<TR><TD WIDTH="8%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Char</B></FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Code</B></FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Char</B></FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Code</B></FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Char</B></FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Code</B></FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Char</B></FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Code</B></FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Char</B></FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Code</B></FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Char</B></FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Code</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&Agrave;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>192</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&Egrave;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>200</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&Igrave;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>204</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&Ograve;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>210</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&Ugrave;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>217</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="9%" VALIGN="TOP">&nbsp;</TD>
+</TR>
+<TR><TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&agrave;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>224</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&egrave;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>232</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&igrave;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>236</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&ograve;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>242</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&ugrave;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>249</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="9%" VALIGN="TOP">&nbsp;</TD>
+</TR>
+<TR><TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&Aacute;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>193</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&Eacute;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>201</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&Iacute;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>205</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&Oacute;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>211</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&Uacute;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>218</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&Yacute;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>221</FONT></TD>
+</TR>
+<TR><TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&aacute;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>225</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&eacute;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>233</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&iacute;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>237</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&oacute;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>243</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&uacute;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>250</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&yacute;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>253</FONT></TD>
+</TR>
+<TR><TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&Acirc;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>194</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&Ecirc;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>202</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&Icirc;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>206</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&Ocirc;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>212</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&Ucirc;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>219</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&Ccedil;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>199</FONT></TD>
+</TR>
+<TR><TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&acirc;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>226</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&ecirc;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>234</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&icirc;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>238</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&ocirc;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>244</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&ucirc;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>251</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&ccedil;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>254</FONT></TD>
+</TR>
+<TR><TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&Auml;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>196</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&Euml;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>203</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&Iuml;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>207</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&Ouml;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>214</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&Uuml;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>220</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>«</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>171</FONT></TD>
+</TR>
+<TR><TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&auml;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>228</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&euml;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>235</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&iuml;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>239</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&ouml;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>246</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>&uuml;</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>252</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">
+<FONT SIZE=2><P>»</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=2><P>187</FONT></TD>
+</TR>
+</TABLE>
+
+<FONT SIZE=2>
+<P>Now that you know the character codes needed, you must decide how you want to key them.  For the purposes of this example, the codes will be keyed according to the following table:</P></FONT>
+<TABLE BORDER CELLSPACING=2 CELLPADDING=7 WIDTH=582>
+<TR><TD WIDTH="12%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Code</B></FONT></TD>
+<TD WIDTH="88%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Keys to create code</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="12%" VALIGN="TOP">
+<FONT SIZE=2><P>&agrave;, &Agrave;, ...</FONT></TD>
+<TD WIDTH="88%" VALIGN="TOP">
+<FONT SIZE=2><P>backquote (`), followed by the corresponding vowel key</FONT></TD>
+</TR>
+<TR><TD WIDTH="12%" VALIGN="TOP">
+<FONT SIZE=2><P>&aacute;, &Aacute;, ...</FONT></TD>
+<TD WIDTH="88%" VALIGN="TOP">
+<FONT SIZE=2><P>quote ('), followed by the corresponding vowel key</FONT></TD>
+</TR>
+<TR><TD WIDTH="12%" VALIGN="TOP">
+<FONT SIZE=2><P>&acirc;, &Acirc;, ...</FONT></TD>
+<TD WIDTH="88%" VALIGN="TOP">
+<FONT SIZE=2><P>caret (^, shift+6), followed by the corresponding vowel key</FONT></TD>
+</TR>
+<TR><TD WIDTH="12%" VALIGN="TOP">
+<FONT SIZE=2><P>&auml;, &Auml;, ...</FONT></TD>
+<TD WIDTH="88%" VALIGN="TOP">
+<FONT SIZE=2><P>double quote ("), followed by the corresponding vowel key</FONT></TD>
+</TR>
+<TR><TD WIDTH="12%" VALIGN="TOP">
+<FONT SIZE=2><P>&ccedil;, &Ccedil;</FONT></TD>
+<TD WIDTH="88%" VALIGN="TOP">
+<FONT SIZE=2><P>quote ('), followed by small or capital C.</FONT></TD>
+</TR>
+<TR><TD WIDTH="12%" VALIGN="TOP">
+<FONT SIZE=2><P>«,»</FONT></TD>
+<TD WIDTH="88%" VALIGN="TOP">
+<FONT SIZE=2><P>double less-than symbol (&lt;&lt;) or double more-than symbol (&gt;&gt;)</FONT></TD>
+</TR>
+</TABLE>
+
+<FONT SIZE=2>
+<P>The basic design of the keyboard is done.  There will be more to come, but first you are going to write the first version of the keyboard program.</P>
+</FONT><B><FONT FACE="Arial" SIZE=4><P><A NAME="_Toc306248913"><A NAME="_Toc446344141"><A NAME="_Toc446344241">Writing the Keyboard Program</A></A></A></P>
+</B></FONT><FONT SIZE=2><P>Before you start this section, start a text editor (such as Windows Notepad), and begin editing a new file.  The Tavultesoft Integrated Keyboard Editor has been designed for this purpose and works closely with Keyman (see chapter&nbsp;6). (DOS text editors are okay, too, but not quite as convenient.)</P>
+<P>A keyboard program is divided into two sections: the header, and the rules.  The header lets you define the name of the keyboard, hotkeys, and other general settings.  The rules are divided into groups where you define how the keyboard responds to keystrokes.  Every keyboard program must have both of these sections.  A keyboard program normally has the extension .KMN and is an ANSI text file.</P>
+<OL>
+
+<LI>A keyboard program is in ANSI text format, not ASCII text format, because Windows uses the ANSI character set.  If you are using a DOS text editor, you must remember that the characters you see on the screen aren’t necessarily the same as the ones you’d see if you used a Windows text editor, such as Notepad.</LI></OL>
+
+</FONT><B><I><FONT FACE="Arial"><P><A NAME="_Toc306248914"><A NAME="_Toc446344142"><A NAME="_Toc446344242">Comments and Blank Lines</A></A></A></P>
+</B></I></FONT><FONT SIZE=2><P>A Keyboard Program can have a comment at any point.  The comment is identified by a letter ‘c’, with a space on either side (unless the comment is at the start of the line, in which case you only need a space on the right).  The end of the line marks the end of the comment.</P>
+<P>Blank lines are ignored by Keyman; you can have them anywhere in a keyboard program.</P>
+<P>Examples:</P><DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>c This is a comment</P>
+
+<P>... c This is a comment, also</P>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>It is a good idea to use comments to document your keyboard program.  They will help you remember why you did something in a particular way, and they will also help other people understand the program.</P>
+<P>Add some comments to the start of the Quick French keyboard program, in your text editor, describing who wrote it, when it was written, and anything else needed, such as instructions on how to use the keyboard (from the tables above).  You could even add a copyright notice, for a keyboard that uses complex algorithms, for example.</P>
+<P>Example:</P><DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>c</P>
+<P>c Simplified French Keyboard Program for Keyman 3.1</P>
+<P>c</P>
+<P>c This keyboard program uses a simplified set of keys</P>
+<P>c for typing French, especially for those who don’t know </P>
+<P>c the standard French keyboard.</P>
+<P>c</P>
+<P>c NOTE: This keyboard was created from the Keyman keyboard</P>
+<P>c programming tutorial.</P>
+<P>c</P>
+<P>c Written by Anybody, March, 1999</P>
+<P>c</P>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><B><I><FONT FACE="Arial"><P><A NAME="_Toc306248915"><A NAME="_Toc446344143"><A NAME="_Toc446344243">The Header</A></A></A></P>
+</B></I></FONT><FONT SIZE=2><P>The header is easy to create; it consists of statements that help Keyman identify the keyboard and set default options for it.  Each statement in the header must be on a separate line and is usually written with capital letters, although that is not required.  Keeping the statements in the header in upper case helps you identify them easily, and keeps them consistent with keyboard programs other people might write.</P>
+<P>Five statements are required in the header.  Some other optional statements are described in later chapters.  The required statements are: </FONT><FONT FACE="Courier New" SIZE=2>NAME</FONT><FONT SIZE=2>, </FONT><FONT FACE="Courier New" SIZE=2>BITMAP</FONT><FONT SIZE=2>, </FONT><FONT FACE="Courier New" SIZE=2>LANGUAGE</FONT><FONT SIZE=2>, </FONT><FONT FACE="Courier New" SIZE=2>VERSION</FONT><FONT SIZE=2>, and </FONT><FONT FACE="Courier New" SIZE=2>begin</FONT><FONT SIZE=2>.  The </FONT><FONT FACE="Courier New" SIZE=2>begin</FONT><FONT SIZE=2> statement is usually written in lower case.</P>
+</FONT><B><FONT FACE="Arial" SIZE=2><P><A NAME="_Toc446344144">The NAME Statement</A></P>
+</B></FONT><FONT SIZE=2><P>The </FONT><FONT FACE="Courier New" SIZE=2>NAME</FONT><FONT SIZE=2> statement tells Keyman the long descriptive name of the keyboard, which can be as long as eighty characters.  This name is used in the Keyman menu, and in the Options dialog box.  The name must be enclosed in double quotes (").  Any character except the double quote is legal within the name.</P>
+<P>For our Quick French keyboard, we will use the name &quot;Quick French.&quot;  Add the </FONT><FONT FACE="Courier New" SIZE=2>NAME</FONT><FONT SIZE=2> statement to the keyboard program, as follows:</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>NAME "Quick French"</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>You can give your keyboard program a different name, if you wish.</P>
+</FONT><B><FONT FACE="Arial" SIZE=2><P><A NAME="_Toc446344145">The BITMAP Statement</A></P>
+</B></FONT><FONT SIZE=2><P>The </FONT><FONT FACE="Courier New" SIZE=2>BITMAP</FONT><FONT SIZE=2> statement tells Keyman which bitmap file is used for the keyboard icon.  The bitmap uses the standard Windows .BMP format; you can create them using Paintbrush.  You should make it 16x16 pixels, as that will be the final display size.  The bitmap can be monochrome or color, but the final .BMP file must be less than 64 kilobytes.  The </FONT><FONT FACE="Courier New" SIZE=2>BITMAP</FONT><FONT SIZE=2> statement accepts the name of the bitmap file, in upper or lower case, with or without the .BMP extension included.  The file name is <B>not</B> enclosed in quotes.</P>
+<P>Add the </FONT><FONT FACE="Courier New" SIZE=2>BITMAP</FONT><FONT SIZE=2> statement, as follows:</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>BITMAP FrKey</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><B><FONT FACE="Arial" SIZE=2><P><A NAME="_Toc446344146">The VERSION Statement</A></P>
+</B></FONT><FONT SIZE=2><P>The </FONT><FONT FACE="Courier New" SIZE=2>VERSION</FONT><FONT SIZE=2> statement is the simplest statement; for a keyboard intended for version 4.0 of Keyman, simply add <B>4.0</B> to the end of the line.</P>
+<P>The Quick French keyboard is intended to be used in Keyman 4.0.  Therefore, add the following line to your program:</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>VERSION 4.0</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><B><FONT FACE="Arial" SIZE=2><P><A NAME="_Toc446344147">The LANGUAGE and LAYOUT Statement</A>s</P>
+</B></FONT><FONT SIZE=2><P>Conversely, the </FONT><FONT FACE="Courier New" SIZE=2>LANGUAGE</FONT><FONT SIZE=2> statement is the most difficult header statement to understand.  For the purposes of this example, we will just give you the complete statement.  You will need a </FONT><FONT FACE="Courier New" SIZE=2>LAYOUT</FONT><FONT SIZE=2> statement as well, as this is an alternative to the standard French keyboard. These statements are described fully in the Language Reference.</P><DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>LANGUAGE x0c, x01&#9;&#9;c French (France)</P>
+<P>LAYOUT x01</P>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><B><FONT FACE="Arial" SIZE=2><P><A NAME="_Toc446344148">The begin Statement</A></P>
+</B></FONT><FONT SIZE=2><P>The </FONT><FONT FACE="Courier New" SIZE=2>begin</FONT><FONT SIZE=2> statement tells Keyman which group to start processing with when it receives a keystroke.  Later on you will learn how to use multiple groups to process keystrokes, but at present all you need to know is to include this line in the header.</P>
+<P>For the Quick French keyboard, add the following line to tell Keyman to start in the </FONT><FONT FACE="Courier New" SIZE=2>Main</FONT><FONT SIZE=2> group:</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>begin &gt; use(Main)</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><B><FONT FACE="Arial" SIZE=2><P><A NAME="_Toc446344149">Conclusion</A></P>
+</B></FONT><FONT SIZE=2><P>Those five statements are the only ones required in the header.  You can add comments to the ends of the statements to help other people understand them.</P>
+<P>Your Quick French keyboard should so far look like this:</P><DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>c</P>
+<P>c Simplified French Keyboard Program for Keyman 4.0</P>
+<P>c</P>
+<P>c This keyboard program uses a simplified set of keys</P>
+<P>c for typing French, especially for those who don’t know the</P>
+<P>c standard French keyboard.</P>
+<P>c</P>
+<P>c NOTE: This keyboard was created from the Keyman keyboard</P>
+<P>c programming tutorial.</P>
+<P>c</P>
+<P>c Written by Anybody, March, 1999</P>
+<P>c</P>
+
+<P>NAME "Quick French"</P>
+<P>BITMAP FrKey</P>
+<P>LANGUAGE x0c, x01</P>
+<P>VERSION 4.0</P>
+
+<P>begin &gt; use(Main)</P>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><B><I><FONT FACE="Arial"><P><A NAME="_Toc306248916"><A NAME="_Toc446344150"><A NAME="_Toc446344244">The Rules</A></A></A></P>
+</B></I></FONT><FONT SIZE=2><P>Before we start on the rules, we will define some terms:</P></FONT>
+<TABLE BORDER CELLSPACING=3 CELLPADDING=7 WIDTH=519>
+<TR><TD WIDTH="50%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Term</B></FONT></TD>
+<TD WIDTH="50%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Definition</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="50%" VALIGN="TOP">
+<FONT SIZE=2><P>rule</FONT></TD>
+<TD WIDTH="50%" VALIGN="TOP">
+<FONT SIZE=2><P>A rule tells Keyman what output is associated with a keystroke under certain conditions; it is divided into three parts: the context, key, and output</FONT></TD>
+</TR>
+<TR><TD WIDTH="50%" VALIGN="TOP">
+<FONT SIZE=2><P>context</FONT></TD>
+<TD WIDTH="50%" VALIGN="TOP">
+<FONT SIZE=2><P>The context specifies the conditions under which the rule is acted upon.  It is compared with the most recent characters output.</FONT></TD>
+</TR>
+<TR><TD WIDTH="50%" VALIGN="TOP">
+<FONT SIZE=2><P>key</FONT></TD>
+<TD WIDTH="50%" VALIGN="TOP">
+<FONT SIZE=2><P>The key is the code for a single keystroke that the rule acts on.</FONT></TD>
+</TR>
+<TR><TD WIDTH="50%" VALIGN="TOP">
+<FONT SIZE=2><P>output</FONT></TD>
+<TD WIDTH="50%" VALIGN="TOP">
+<FONT SIZE=2><P>The output is the part of the rule that defines what characters are to be put on the screen when the rule’s conditions are met.</FONT></TD>
+</TR>
+</TABLE>
+
+<B><FONT FACE="Arial" SIZE=2><P><A NAME="_Toc446344151">The Groups</A></P>
+</B></FONT><FONT SIZE=2><P>The first thing to do is to define the group.  There are two types of groups: one that processes the key pressed and the context and another that does further processing using only the context.  For most purposes, the first type of group will do all you need.  The group of rules ends at the next </FONT><FONT FACE="Courier New" SIZE=2>group</FONT><FONT SIZE=2> statement or at the end of the file if there are no more </FONT><FONT FACE="Courier New" SIZE=2>group</FONT><FONT SIZE=2> statements. We said in the section about the header that the group to be processed first would be identified by the </FONT><FONT FACE="Courier New" SIZE=2>begin</FONT><FONT SIZE=2> statement.</P>
+<P>The </FONT><FONT FACE="Courier New" SIZE=2>begin</FONT><FONT SIZE=2> statment defined the first group as </FONT><FONT FACE="Courier New" SIZE=2>Main</FONT><FONT SIZE=2>.  In your program, add a new line:</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>group(Main) using keys</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+<P>using keys</FONT><FONT SIZE=2> tells Keyman that the group processes keystrokes as well as context.  If you leave this out, the keystrokes will be ignored.</P>
+</FONT><B><FONT FACE="Arial" SIZE=2><P><A NAME="_Toc446344152">Simple Rules</A></P>
+</B></FONT><FONT SIZE=2><P>The simplest rule you can have tells Keyman to convert one key into another.  A rule of this sort is represented in Keyman in the following way:</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>+ <I>key</I> &gt; <I>output</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</I></FONT><FONT SIZE=2><P>where </FONT><I><FONT FACE="Courier New" SIZE=2>key</I></FONT><FONT SIZE=2> is the key to be translated, and </FONT><I><FONT FACE="Courier New" SIZE=2>output</I></FONT><FONT SIZE=2> is the character to be output.  The plus sign (</FONT><FONT FACE="Courier New" SIZE=2>+</FONT><FONT SIZE=2>), is required, and shows you that the next character in the string is the keystroke.  <B>Note:</B> <I>This has changed from Keyman 3.x, where the plus sign was optional.</I>  More complex rules can have characters before the plus sign (the context).  The right angle-bracket (</FONT><FONT FACE="Courier New" SIZE=2>&gt;</FONT><FONT SIZE=2>) tells Keyman which part of the rule is output and which part is the key and context.  Single characters can be represented in several different ways; the possible methods are listed below:</P></FONT>
+<TABLE BORDER CELLSPACING=3 CELLPADDING=7 WIDTH=486>
+<TR><TD WIDTH="56%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Representation</B></FONT></TD>
+<TD WIDTH="44%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Example of the character &quot;x&quot;</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="56%" VALIGN="TOP">
+<FONT SIZE=2><P>Inside single quotes</FONT></TD>
+<TD WIDTH="44%" VALIGN="TOP">
+<FONT SIZE=2><P>'x'</FONT></TD>
+</TR>
+<TR><TD WIDTH="56%" VALIGN="TOP">
+<FONT SIZE=2><P>Inside double quotes</FONT></TD>
+<TD WIDTH="44%" VALIGN="TOP">
+<FONT SIZE=2><P>"x"</FONT></TD>
+</TR>
+<TR><TD WIDTH="56%" VALIGN="TOP">
+<FONT SIZE=2><P>As a decimal number (base-10)</FONT></TD>
+<TD WIDTH="44%" VALIGN="TOP">
+<FONT SIZE=2><P>d120</FONT></TD>
+</TR>
+<TR><TD WIDTH="56%" VALIGN="TOP">
+<FONT SIZE=2><P>As a hexadecimal number (base-16)</FONT></TD>
+<TD WIDTH="44%" VALIGN="TOP">
+<FONT SIZE=2><P>x78</FONT></TD>
+</TR>
+<TR><TD WIDTH="56%" VALIGN="TOP">
+<FONT SIZE=2><P>As an octal number (base-8)</FONT></TD>
+<TD WIDTH="44%" VALIGN="TOP">
+<FONT SIZE=2><P>170</FONT></TD>
+</TR>
+</TABLE>
+
+<FONT SIZE=2><P>These different ways of representing a single character follow the SIL-CC conventions.  The first three ways are the most often used, and octal representation is rarely used.  Multiple characters (a <DFN>string</DFN>) can be represented in quotes simply by having more than one character in the string.  You can have any combination of these representations in a rule, with spaces between them.</P>
+<P>For example, to convert the key &quot;a&quot; to the character &quot;z&quot;, you would include the following line in your keyboard program:</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>+ 'a' &gt; 'z'</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>Or, to convert &quot;?&quot; to &quot;Hello World!&quot;, you would have this line:</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>+ "?" &gt; "Hello World!"</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>You can use either single or double quotes.</P>
+<P>A use of the decimal representation is, for example, in the British English keyboard, where the hash sign (#) is converted into a pounds sign (£, decimal code 163):</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>+ '#' &gt; d163</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><B><FONT FACE="Arial" SIZE=2><P><A NAME="_Toc446344153">Using the Context in More Complex Rules</A></P>
+</B></FONT><FONT SIZE=2><P>Often you will want to know the previous characters that have been typed and translate the keystrokes accordingly.  <I>Keyman remembers the characters that came out on the screen, and not the actual keys typed.</I>  It is important to remember this, because some programs such as SIL’s Keyswap (for DOS) work with sequences of keys rather than characters.  The characters that came out on the screen are called the <DFN>context</DFN>.  The context is represented in a rule to the left of the keystroke, before the plus sign.  For example,</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>"^" + "e" &gt; "&ecirc;"</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>In this example, if you type a &quot;^&quot; (caret) followed by the letter &quot;e&quot;, it will come out with the European letter &quot;&ecirc;&quot;.  The caret is the context, the letter &quot;e&quot; is the key, and the letter &quot;&ecirc;&quot; is the output.</P>
+<P>You can add some of the rules to the Quick French keyboard program now.  Add the rules for all the &quot;a&quot;-related characters; you will quickly see how many rules it would require for a complex keyboard.  Another example rule for the Quick French keyboard program is:</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>'`' + 'a' &gt; '&agrave;'</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><B><FONT FACE="Arial" SIZE=2><P><A NAME="_Toc446344154">The Any, Index, and Store Statements</A></P>
+</B></FONT><FONT SIZE=2><P>Keyman lets you translate a group of characters in one rule.  It does this with the </FONT><FONT FACE="Courier New" SIZE=2>any</FONT><FONT SIZE=2>, </FONT><FONT FACE="Courier New" SIZE=2>index</FONT><FONT SIZE=2>, and </FONT><FONT FACE="Courier New" SIZE=2>store</FONT><FONT SIZE=2> statements.  A </FONT><FONT FACE="Courier New" SIZE=2>store</FONT><FONT SIZE=2> statement creates a set of characters that can be operated on together under a name.  The </FONT><FONT FACE="Courier New" SIZE=2>any</FONT><FONT SIZE=2> statement lets you match a character in a store and the </FONT><FONT FACE="Courier New" SIZE=2>index</FONT><FONT SIZE=2> statement lets you output a selected character from it.</P>
+<P>A </FONT><FONT FACE="Courier New" SIZE=2>store</FONT><FONT SIZE=2> statement comes between the </FONT><FONT FACE="Courier New" SIZE=2>begin</FONT><FONT SIZE=2> statement and the first group.  It must all be on one line.  (No </FONT><FONT FACE="Courier New" SIZE=2>endstore</FONT><FONT SIZE=2> statement is required as in SIL-CC; in fact, it is not supported.)  The statement has the following syntax:</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>store(<I>name</I>) <I>string</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+<P>name</I></FONT><FONT SIZE=2> is the name to give to the store.  A store name can be up to 16 letters long, but it is usually best to keep it short.  The name can be any combination of letters and numbers; spaces and punctuation characters are illegal.  The second part of the statement, </FONT><I><FONT FACE="Courier New" SIZE=2>string</I></FONT><FONT SIZE=2>, is the string to put in the store; it can use any combination of the character representations talked about in the previous sections.  An example:</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>store(lwrvowel) 'aeiou'</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>In this example, Keyman will create a store called &quot;lwrvowel&quot;, and make the contents of the store equal to &quot;aeiou&quot;.</P>
+<P>To use a store, you must have an </FONT><FONT FACE="Courier New" SIZE=2>any</FONT><FONT SIZE=2> statement on the left hand side of a rule, and, optionally, a corresponding </FONT><FONT FACE="Courier New" SIZE=2>index</FONT><FONT SIZE=2> statement on the right hand side.</P>
+<P>An </FONT><FONT FACE="Courier New" SIZE=2>any</FONT><FONT SIZE=2> statement allows you to designate a set of characters instead of a single character for the key or, as part of the context.  The syntax of the statement is:</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>any(<I>storename</I>)</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>For example, you could have the following:</P><DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>store(stops) '!.?'</P>
+<P>.</P>
+<P>.</P>
+<P>.</P>
+<P>+ any(stops) &gt; 'GO!'</P></DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>This example would convert any of the characters &quot;!&quot;, &quot;.&quot;, and &quot;?&quot; to a &quot;GO!&quot;.  (This example is actually not very useful.)</P>
+<P>But, to make the </FONT><FONT FACE="Courier New" SIZE=2>any</FONT><FONT SIZE=2> statement useful, you really need to have a statement that lets you know the matched character.  The </FONT><FONT FACE="Courier New" SIZE=2>index</FONT><FONT SIZE=2> statement lets you do that.</P>
+<P>The </FONT><FONT FACE="Courier New" SIZE=2>index</FONT><FONT SIZE=2> statement lets you output a character in a store that is at the same position as the matched character from the equivalent </FONT><FONT FACE="Courier New" SIZE=2>any</FONT><FONT SIZE=2> statement’s store.   The </FONT><FONT FACE="Courier New" SIZE=2>index</FONT><FONT SIZE=2> statement has the following syntax:</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>index(<I>storename</I>,<I>offset</I>)</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>The </FONT><I><FONT FACE="Courier New" SIZE=2>storename</I></FONT><FONT SIZE=2> is obvious; however, the </FONT><I><FONT FACE="Courier New" SIZE=2>offset</I></FONT><FONT SIZE=2> part needs some explaining.  As Keyman allows you to have more than one </FONT><FONT FACE="Courier New" SIZE=2>any</FONT><FONT SIZE=2> statement in a single rule, the </FONT><FONT FACE="Courier New" SIZE=2>index</FONT><FONT SIZE=2> statements in that rule need to know which </FONT><FONT FACE="Courier New" SIZE=2>any</FONT><FONT SIZE=2> statement they are to take their matched character information from.  The </FONT><I><FONT FACE="Courier New" SIZE=2>offset</I></FONT><FONT SIZE=2> parameter tells Keyman the position of the character of the </FONT><FONT FACE="Courier New" SIZE=2>any</FONT><FONT SIZE=2> statement that is to be used, with the first character of the context having the offset 1.  For example,</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>+ any(lwrvowel) &gt; index(uprvowel,1)</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>This rule would convert all lower case vowels to upper case.  Or,</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>any(stops) + any(lwrvowel) &gt; index(stops,1) index(uprvowel,2)</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>This one capitalizes any lower-case vowel following a full-stop, question, or exclamation mark.</P>
+</FONT><B><FONT FACE="Arial" SIZE=2><P><A NAME="_Toc446344155">The context Statement</A></P>
+</B></FONT><FONT SIZE=2><P>If the context of the rule is not modified in the output, then you can replace the </FONT><FONT FACE="Courier New" SIZE=2>index</FONT><FONT SIZE=2> statements on the RHS of the rule with a </FONT><FONT FACE="Courier New" SIZE=2>context</FONT><FONT SIZE=2> statement.  For example, the previous rule becomes:</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>any(stops) + any(lwrvowel) &gt; context index(uprvowel,2)</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>This is faster and, for more complex rules, easier to read.  Use the </FONT><FONT FACE="Courier New" SIZE=2>context</FONT><FONT SIZE=2> statement wherever possible in preference to using </FONT><FONT FACE="Courier New" SIZE=2>index</FONT><FONT SIZE=2> statements.</P>
+<P>The Quick French example keyboard can make use of this quite easily; an example will be shown for &quot;^&quot; and a vowel:</P><DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>store(vowel) 'aeiouAEIOU'</P>
+<P>store(caret) '&acirc;&ecirc;&icirc;&ocirc;&ucirc;&Acirc;&Ecirc;&Icirc;&Ocirc;&Ucirc;'</P>
+<P>.</P>
+<P>.</P>
+<P>.</P>
+<P>'^' + any(vowel) &gt; index(caret,2)</P></DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>You should be able to add all the rest of the rules fairly easily.  At present, leave out the &quot;«&quot;, &quot;»&quot;, and c-cedilla rules.  For the &quot;&yacute;&quot; and &quot;&Yacute;&quot;, just add a single rule (don’t use </FONT><FONT FACE="Courier New" SIZE=2>any</FONT><FONT SIZE=2> and </FONT><FONT FACE="Courier New" SIZE=2>index</FONT><FONT SIZE=2>).  You can now delete the single rules applying to &quot;a&quot;.</P>
+<P>So far, your Quick French keyboard should look like this:</P><DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>c</P>
+<P>c Simplified French Keyboard Program for Keyman 4.0</P>
+<P>c</P>
+<P>c This keyboard program uses a simplified set of keys</P>
+<P>c for typing French, especially for those who don’t know the</P>
+<P>c standard French keyboard.</P>
+<P>c</P>
+<P>c NOTE: This keyboard was created from the Keyman keyboard</P>
+<P>c programming tutorial.</P>
+<P>c</P>
+<P>c Written by Nobody, March 1999</P>
+<P>c</P>
+
+<P>NAME "Quick French"</P>
+<P>BITMAP FrKey</P>
+<P>LANGUAGE x0c, x01</P>
+<P>VERSION 4.0</P>
+
+<P>begin &gt; use(Main)</P>
+
+<P>store(vowel) 'aeiouAEIOU'</P>
+<P>store(caret) '&acirc;&ecirc;&icirc;&ocirc;&ucirc;&Acirc;&Ecirc;&Icirc;&Ocirc;&Ucirc;'</P>
+<P>store(acute) '&aacute;&eacute;&iacute;&oacute;&uacute;&Aacute;&Eacute;&Iacute;&Oacute;&Uacute;'</P>
+<P>store(grave) '&agrave;&egrave;&igrave;&ograve;&ugrave;&Agrave;&Egrave;&Igrave;&Ograve;&Ugrave;'</P>
+<P>store(colon) '&auml;&euml;&iuml;&ouml;&uuml;&Auml;&Euml;&Iuml;&Ouml;&Uuml;'</P>
+
+<P>group(main) using keys</P>
+
+<P>"'" + 'y' &gt; '&yacute;'</P>
+<P>"'" + 'Y' &gt; '&Yacute;'</P>
+<P>"^" + any(vowel) &gt; index(caret,2)</P>
+<P>"'" + any(vowel) &gt; index(acute,2)</P>
+<P>"`" + any(vowel) &gt; index(grave,2)</P>
+<P>'"' + any(vowel) &gt; index(colon,2)</P>
+
+<P>c End of file</P>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><B><FONT FACE="Arial" SIZE=2><P><A NAME="_Toc446344156">Testing the Keyboard</A></P>
+</B></FONT><FONT SIZE=2><P>Before you go any further, you should test your keyboard.  Save your file, and start a command prompt.  Type the following command from the Keyman directory to compile your keyboard:</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>KMCOMP QFrench.kmn QFrench.kmx</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>If any errors occur, refer to the section <B>Compiling Keyboards</B>.</P>
+<P>After this, open Keyman and install the keyboard.  You should be able to use the keyboard in a word processor now. </P>
+<P>Load a text-editor or word-processor, such as Notepad, or WinWord.  Select the Quick French keyboard and try it out.  Type sequences like <B>^a^e’a’e</B>.  Once you are sure that that is all right, then try typing something like this:<B> "A problem in the keyboard."</B>  (Include the quotes.)  You can see the problem: when you type something in quotes, if the letter after the quote character is a vowel, it will be converted.</P>
+</FONT><B><FONT FACE="Arial" SIZE=2><P><A NAME="_Toc446344157">Fixing the Problems</A></P>
+</B></FONT><FONT SIZE=2><P>Open up your keyboard program again.  The problem exists with two lines; both of the lines regarding quotes will need to be changed.  But first you have to decide how you are going to represent the quote character when it is to be used as a quote character.  Probably the easiest way is just to type it twice.</P>
+<P>The line you need to add is this; this will fix it for double quotes; add another line to fix it for single quotes.</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>'""' + any(vowel) &gt; '"' index(vowel, 3)</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>Another thing that would be nice is to make the diacritics as <DFN>deadkeys</DFN>.  A deadkey is a key that does not come out on the screen when it is pressed, but is still remembered in the context.  Many European keyboards use deadkeys.</P>
+<P>We will show you the line needed; you will need to remove the old rule to do with carets and explain it for the caret (^) character:</P><DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>+ '^' &gt; deadkey(1)</P>
+<P>deadkey(1) + any(vowel) &gt; index(caret,2)</P>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>The </FONT><FONT FACE="Courier New" SIZE=2>deadkey</FONT><FONT SIZE=2>, or </FONT><FONT FACE="Courier New" SIZE=2>dk</FONT><FONT SIZE=2> statement accepts a number identifying it; it will not appear on the screen, but it does stay in the context.  You can have up to 254 different deadkeys, starting from 1.</P>
+<P>You will want to add the deadkey rules for all the other characters; don’t forget to use a different deadkey identifying number for each one.  You will also need to modify the quote modification statements talked about above, to work with the deadkey better; it becomes simpler, as shown below:</P><DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>dk(2) + '"' &gt; '"'</P>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>You should add this sort of statement for all the diacritics, in case you wish to use the original character.</P>
+<P>There are some other characters we haven’t got support for yet: «, », &ccedil;, and &Ccedil;.  We decided to represent the &quot;«&quot; and &quot;»&quot; characters with double less-than and double more-than symbols.  You should be able to add rules for these, as well as for the &quot;&ccedil;&quot; and &quot;&Ccedil;&quot; symbols.</P>
+<P>But what if someone wanted to type &quot;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&nbsp;*** &gt;&gt;&gt;&gt;&gt;&gt;&gt;&quot;, for instance,  as a divider to a section of a book.  They wouldn’t want it to come out as &quot;«««&lt; *** »»»&gt;&quot;.  So we will make use of a deadkey to have it come out correctly, as shown below:</P><DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>"«" + "&lt;" &gt; "&lt;&lt;" dk(5)</P>
+<P>"»" + "&gt;" &gt; "&gt;&gt;" dk(5)</P>
+<P>dk(5) + "&lt;" &gt; "&lt;" dk(5)</P>
+<P>dk(5) + "&gt;" &gt; "&gt;" dk(5)</P>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>You should be able to see what this does.  Test your keyboard again; there should not be any more problems.  You have completed the Keyman keyboard tutorial.</P>
+<P>The following chapter will explain some of the more advanced features of the Keyman keyboard language; you could use them to extend this keyboard.</P>
+</FONT><FONT SIZE=5><P>Chapter 4</P>
+</FONT><B><FONT FACE="Arial" SIZE=6><P><A NAME="_Toc306248917"><A NAME="_Toc446344245">Further Programming</A></A></P>
+</B></FONT><FONT SIZE=2><P>This chapter will build on what you have already learnt from chapter 4; it will be assumed that you understand the basic Keyman keyboard program format.</P>
+<P>The following subjects will be discussed in this chapter:</P>
+
+<UL><DIR>
+<DIR>
+
+
+<UL>
+<LI>Compiling keyboards</LI>
+<LI>Multiple groups</LI>
+<LI>Constraints</LI>
+<LI>Groups without the &quot;using keys&quot; keywords</LI>
+<LI>Virtual keys</LI>
+<LI>Other features</LI></UL>
+</DIR>
+</DIR>
+</UL>
+
+</FONT><B><FONT FACE="Arial" SIZE=4><P><A NAME="_Toc306248918"><A NAME="_Toc446344158"><A NAME="_Toc446344246">Compiling Keyboards</P>
+</B></FONT><FONT SIZE=2><P>A command-line program, KMCOMP, is included in this version of Keyman.  Later versions will probably include an updated version of TIKE, the Tavultesoft Integrated Keyboard Editor.  As Keyman is not in the path by default, it is often easiest to copy the KMCOMP program using Explorer into the directory in which you do the development of your keyboard layouts.  For instance, I use the directory </FONT><FONT FACE="Courier New" SIZE=2>c:\keyman\keyboards</FONT><FONT SIZE=2> to develop my keyboard layouts, so I have copied KMCOMP.EXE from </FONT><FONT FACE="Courier New" SIZE=2>C:\Program Files\Tavultesoft\Keyman</FONT><FONT SIZE=2> to this location.</P>
+<P>You should start a DOS session by: clicking on Start Menu, selecting Run, and typing in either </FONT><FONT FACE="Courier New" SIZE=2>COMMAND</FONT><FONT SIZE=2> for Windows 95/98 or </FONT><FONT FACE="Courier New" SIZE=2>CMD</FONT><FONT SIZE=2> for Windows NT.  This will open a window with a DOS session in it.  Change to your development directory with the command </FONT><FONT FACE="Courier New" SIZE=2>CD</FONT><FONT SIZE=2>, for example:</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>CD \keyman\keyboards</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>You can then compile your keyboards as follows:</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>kmcomp example.kmn example.kmx</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>Any error messages will be reported in the window for you to read.  If too many messages scroll past, you may wish to use the utility <I>more</I>, included with Windows, as follows:</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>kmcomp example.kmn example.kmx | more</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><B><FONT FACE="Arial" SIZE=4><P>Multiple Groups</A></A></A></P>
+</B></FONT><FONT SIZE=2><P>In chapter 4, you learnt how to create a file with one group.  Multiple groups can be useful for doing further processing such as changing characters in certain contexts, or, as is done for some South-East Asian languages, syllable splitting.</P>
+</FONT><B><I><FONT FACE="Arial"><P><A NAME="_Toc446344159"><A NAME="_Toc446344247">The use Statement</A></A></P>
+</B></I></FONT><FONT SIZE=2><P>A group can be added with the </FONT><FONT FACE="Courier New" SIZE=2>group</FONT><FONT SIZE=2> statement; the previous group ends at the line before the statement.  However, to use the group, you must have a way of jumping from one group to another.  The </FONT><FONT FACE="Courier New" SIZE=2>use</FONT><FONT SIZE=2> statement lets you do this.  This statement is legal on the right hand side of a rule; you can put it anywhere in the string, with one limitation: no </FONT><FONT FACE="Courier New" SIZE=2>index</FONT><FONT SIZE=2> or </FONT><FONT FACE="Courier New" SIZE=2>context</FONT><FONT SIZE=2> statements are allowed after the </FONT><FONT FACE="Courier New" SIZE=2>use</FONT><FONT SIZE=2> statement; using them will cause run-time errors.</P>
+<P>Any output in a group will affect groups called by it, as well as groups after it.  The current context will be modified to add the changes made by a group, before returning to the previous group, or jumping to another one.</P>
+<P>The </FONT><FONT FACE="Courier New" SIZE=2>use</FONT><FONT SIZE=2> statement has the following syntax:</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>use(<I>groupname</I>)</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>Where </FONT><I><FONT FACE="Courier New" SIZE=2>groupname</I></FONT><FONT SIZE=2> is the name of the group to jump to.  After the new group has finished processing, control will return to the statement after the current one, in the same rule.  You can nest quite a few groups; the exact number is not known.</P>
+</FONT><B><I><FONT FACE="Arial"><P><A NAME="_Toc446344160"><A NAME="_Toc446344248">The return Statement</A></A></P>
+</B></I></FONT><FONT SIZE=2><P>The </FONT><FONT FACE="Courier New" SIZE=2>return</FONT><FONT SIZE=2> statement stops all processing of rules and returns control to the typist.  No statements are executed after the </FONT><FONT FACE="Courier New" SIZE=2>return</FONT><FONT SIZE=2> statement, even if it jumps back through multiple groups.</P>
+<P>The </FONT><FONT FACE="Courier New" SIZE=2>return</FONT><FONT SIZE=2> statement has no parameters; it must be on the right hand side of the rule.</P>
+</FONT><B><I><FONT FACE="Arial"><P><A NAME="_Toc446344161"><A NAME="_Toc446344249">The match and nomatch Rules</A></A></P>
+</B></I></FONT><FONT SIZE=2><P>Two special rules can be included in a group: the </FONT><FONT FACE="Courier New" SIZE=2>nomatch</FONT><FONT SIZE=2> rule and the </FONT><FONT FACE="Courier New" SIZE=2>match</FONT><FONT SIZE=2> rule.  One of these two rules will be executed every time the group is entered, unless the rule matched contains a </FONT><FONT FACE="Courier New" SIZE=2>return</FONT><FONT SIZE=2> statement.</P>
+<P>The rules are represented in the following way:</P><DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>nomatch &gt; <I>right-hand-side</P>
+</I><P>match &gt; <I>right-hand-side</P></DIR>
+</DIR>
+</DIR>
+
+</I></FONT><FONT SIZE=2><P>Where the </FONT><I><FONT FACE="Courier New" SIZE=2>right-hand-side</I></FONT><FONT SIZE=2> can include any of the statements legal to the right hand side of a rule, except for </FONT><FONT FACE="Courier New" SIZE=2>context</FONT><FONT SIZE=2> and </FONT><FONT FACE="Courier New" SIZE=2>index</FONT><FONT SIZE=2>.  Both of these rules can jump to other groups with the </FONT><FONT FACE="Courier New" SIZE=2>use</FONT><FONT SIZE=2> statement, output characters, or stop processing with the </FONT><FONT FACE="Courier New" SIZE=2>return</FONT><FONT SIZE=2> statement.</P>
+<P>If no rule is matched, the </FONT><FONT FACE="Courier New" SIZE=2>nomatch</FONT><FONT SIZE=2> rule will be executed; if a rule is matched, the </FONT><FONT FACE="Courier New" SIZE=2>match</FONT><FONT SIZE=2> rule will be executed, <I>after</I> the matched rule has been executed.</P>
+</FONT><B><I><FONT FACE="Arial"><P><A NAME="_Toc446344162"><A NAME="_Toc446344250">Summing Up</A></A></P>
+</B></I></FONT><FONT SIZE=2><P>Several of the example keyboards on the Tavultesoft website illustrate the usage of these statements and rules.  To sum up:</P><DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>LHS &gt; RHS <B>or </B>use(<I>group</I>) <B>or </B>return</P>
+<P>match &gt; RHS <B>or </B>use(<I>group</I>) <B>or </B>return</P>
+<P>nomatch &gt; RHS <B>or </B>use(<I>group</I>) <B>or </B>return</P>
+<P>&nbsp;</P></DIR>
+</DIR>
+</DIR>
+
+</FONT><B><FONT FACE="Arial" SIZE=4><P><A NAME="_Toc306248919"><A NAME="_Toc446344163"><A NAME="_Toc446344251">Constraints</A></A></A></P>
+</B></FONT><FONT SIZE=2><P>Constraints are ordinary rules that restrict certain combinations from being typed.  These rules can occur anywhere, even in a </FONT><FONT FACE="Courier New" SIZE=2>nomatch</FONT><FONT SIZE=2> or </FONT><FONT FACE="Courier New" SIZE=2>match</FONT><FONT SIZE=2> rule.</P>
+<P>A constraint rule can just be something like the following line:</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>any(vowel) + any(vowel) &gt; context</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>This would restrict two vowels from being typed in a row; the second key would just be ignored.</P>
+<P>However, you might wish to let the typist know that they typed an illegal combination.  This can be done with the </FONT><FONT FACE="Courier New" SIZE=2>beep</FONT><FONT SIZE=2> statement.  The </FONT><FONT FACE="Courier New" SIZE=2>beep</FONT><FONT SIZE=2> statement simply makes a beep at the PC speaker.</P>
+<OL>
+
+<LI>If you have a sound driver installed, such as the PC Speaker sound driver, or a driver for a sound card, the </FONT><FONT FACE="Courier New" SIZE=2>beep</FONT><FONT SIZE=2> statement plays the sound identified by the Asterisk entry in the Sounds option in Control Panel.</LI></OL>
+
+<P>The </FONT><FONT FACE="Courier New" SIZE=2>beep</FONT><FONT SIZE=2> statement is legal only on the right hand side of a rule; it just tells Keyman to make a beep, nothing else.  A </FONT><FONT FACE="Courier New" SIZE=2>beep</FONT><FONT SIZE=2> statement can be used both in </FONT><FONT FACE="Courier New" SIZE=2>match</FONT><FONT SIZE=2> and </FONT><FONT FACE="Courier New" SIZE=2>nomatch</FONT><FONT SIZE=2> rules.  Examples of the beep command:</P><DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>any(vowel) + any(vowel) &gt; context beep</P>
+<P>+ any(illegal) &gt; beep</P>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>When you are restricting a set of keys, without context, from being typed, but you don’t want a beep, another statement is required.  The </FONT><FONT FACE="Courier New" SIZE=2>nul</FONT><FONT SIZE=2> statement tells Keyman that nothing is on the right hand side of the rule.  The rule above would become:</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>+ any(illegal) &gt; nul</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>This would simply ignore any illegal keys.  In some situations with multiple groups, this can be more useful than it appears.  The </FONT><FONT FACE="Courier New" SIZE=2>nul</FONT><FONT SIZE=2> statement is not necessary for the </FONT><FONT FACE="Courier New" SIZE=2>nomatch</FONT><FONT SIZE=2> and </FONT><FONT FACE="Courier New" SIZE=2>match</FONT><FONT SIZE=2> rules; just don’t add them if you don’t want them to do anything.</P>
+<P>Typically, you would put constraints in the first group of a keyboard program, and every rule matched would simply be a rule testing for illegal context and key combinations.  The </FONT><FONT FACE="Courier New" SIZE=2>nomatch</FONT><FONT SIZE=2> rule would then be:</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>nomatch &gt; use(maingroup)</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>Obviously, you could name the next group anything you like.  The </FONT><FONT FACE="Courier New" SIZE=2>match</FONT><FONT SIZE=2> rule would probably be left out.</P>
+</FONT><B><FONT FACE="Arial" SIZE=4><P><A NAME="_Toc306248920"><A NAME="_Toc446344164"><A NAME="_Toc446344252">Groups Without the &quot;using keys&quot; Keyword</A></A></A></P>
+</B></FONT><FONT SIZE=2><P>The </FONT><FONT FACE="Courier New" SIZE=2>using keys</FONT><FONT SIZE=2> keyword, introduced in chapter 3, was used in a </FONT><FONT FACE="Courier New" SIZE=2>group</FONT><FONT SIZE=2> statement to tell Keyman that the group would be needing information on the key pressed.  In some situations, you might want ignore the keystrokes sent, such as for syllable splitting, or for changing the order of stacked diacritics, which only depends on the context.</P>
+</FONT><B><FONT FACE="Arial" SIZE=4><P><A NAME="_Toc306248921"><A NAME="_Toc446344165"><A NAME="_Toc446344253">Virtual Keys</A></A></A></P>
+</B></FONT><FONT SIZE=2><P>With what you have learnt so far, any letter, number, or punctuation mark can be identified as a key in a rule.  However, you cannot test the Ctrl and Alt states of these keys; with some keyboards, it is necessary to do so.</P>
+<P>Virtual keys allow you to do that.  A virtual key keyword can identify almost any key on the keyboard; a few specialized ones are either reserved or unable to be used.  </P>
+<P>Virtual keys are allowed only in the key section of a rule, not in the context or the output.  A virtual key is identified by an opening bracket character (‘[’).  It ends at a closing bracket character (‘]’).  Inside the brackets, you can have a combination of shift-key codes and the actual virtual key, which is identified by a &quot;K_&quot; at the start of the keyword.</P>
+<P>The keyboard shown further on gives the virtual keys for all keys on the standard US 101 key keyboard.  (<B>Note</B>: The arrangement may not be identical to your keyboard.)</P>
+<OL>
+
+<LI>You must not use virtual keys in the output.  Keyman will recognize them, but output will be garbled.  This version of Keyman does <B>not</B> support virtual keys in the output.</LI></OL>
+
+</FONT><P><IMG SRC="Image15.gif" WIDTH=495 HEIGHT=487></P>
+<B><FONT SIZE=2><P ALIGN="CENTER">Figure 5.1: The Virtual keys keyboard layout</P><DIR>
+
+</B><P>*&#9;Keys marked by a star are special keys that will be discussed in more detail further on.</P>
+<P>†&#9;This key can be either </FONT><FONT FACE="Courier New" SIZE=2>K_KP5</FONT><FONT SIZE=2> when num&nbsp;lock is off, or </FONT><FONT FACE="Courier New" SIZE=2>K_NP5</FONT><FONT SIZE=2> when num&nbsp;lock is on; this applies to all the keys on the number pad - when num&nbsp;lock is off, the movement keys will be used.</P></DIR>
+
+<P>For example, to test for the scroll&nbsp;lock key, you would have the following line:</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>+ [K_SCROLL] &gt; output</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>If you want to test for a key that is used with shift, ctrl, alt, or caps&nbsp;lock, then you would proceed it with one of the following keywords:</P></FONT>
+<P ALIGN="LEFT"><TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=312>
+<TR><TD WIDTH="58%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Shift key to test</B></FONT></TD>
+<TD WIDTH="42%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Keyword</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="58%" VALIGN="TOP">
+<FONT SIZE=2><P>shift</FONT></TD>
+<TD WIDTH="42%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>SHIFT</FONT></TD>
+</TR>
+<TR><TD WIDTH="58%" VALIGN="TOP">
+<FONT SIZE=2><P>Either ctrl</FONT></TD>
+<TD WIDTH="42%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>CTRL</FONT></TD>
+</TR>
+<TR><TD WIDTH="58%" VALIGN="TOP">
+<FONT SIZE=2><P>Left ctrl</FONT></TD>
+<TD WIDTH="42%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>LCTRL</FONT></TD>
+</TR>
+<TR><TD WIDTH="58%" VALIGN="TOP">
+<FONT SIZE=2><P>Right ctrl</FONT></TD>
+<TD WIDTH="42%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>RCTRL</FONT></TD>
+</TR>
+<TR><TD WIDTH="58%" VALIGN="TOP">
+<FONT SIZE=2><P>Either alt</FONT></TD>
+<TD WIDTH="42%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>ALT</FONT></TD>
+</TR>
+<TR><TD WIDTH="58%" VALIGN="TOP">
+<FONT SIZE=2><P>Left alt</FONT></TD>
+<TD WIDTH="42%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>LALT</FONT></TD>
+</TR>
+<TR><TD WIDTH="58%" VALIGN="TOP">
+<FONT SIZE=2><P>Right alt</FONT></TD>
+<TD WIDTH="42%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>RALT</FONT></TD>
+</TR>
+<TR><TD WIDTH="58%" VALIGN="TOP">
+<FONT SIZE=2><P>caps lock on</FONT></TD>
+<TD WIDTH="42%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>CAPS</FONT></TD>
+</TR>
+<TR><TD WIDTH="58%" VALIGN="TOP">
+<FONT SIZE=2><P>caps lock off</FONT></TD>
+<TD WIDTH="42%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>NCAPS</FONT></TD>
+</TR>
+</TABLE>
+</P>
+
+<FONT SIZE=2><P>So, if you wanted to test for Right alt + the letter &quot;e&quot;, you would have the following line:</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>+ [RALT K_E] &gt; output</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>This version of Keyman does not let you use stores for virtual keys.</P>
+</FONT><B><FONT FACE="Arial" SIZE=4><P><A NAME="_Toc306248922"><A NAME="_Toc446344166"><A NAME="_Toc446344254">Other Features</A></A></A></P>
+</FONT><I><FONT FACE="Arial"><P><A NAME="_Toc446344167"><A NAME="_Toc446344255">Other Header Statements</A></A></P>
+</B></I></FONT><FONT SIZE=2><P>There are three optional header statements that Keyman recognizes, all working with caps&nbsp;lock.</P>
+<P>The first statement, </FONT><FONT FACE="Courier New" SIZE=2>CAPS&nbsp;ALWAYS&nbsp;OFF</FONT><FONT SIZE=2>, makes sure that caps&nbsp;lock cannot be turned on while the keyboard is active, and it turns caps&nbsp;lock off when the keyboard is switched on.  Put this statement on a single line in the header, as follows:</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>CAPS ALWAYS OFF</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT SIZE=2><P>The other two statements, </FONT><FONT FACE="Courier New" SIZE=2>CAPS&nbsp;ON&nbsp;ONLY</FONT><FONT SIZE=2>, and </FONT><FONT FACE="Courier New" SIZE=2>SHIFT&nbsp;FREES&nbsp;CAPS</FONT><FONT SIZE=2> are usually used together.  </FONT><FONT FACE="Courier New" SIZE=2>CAPS&nbsp;ON&nbsp;ONLY</FONT><FONT SIZE=2> makes the caps&nbsp;lock key like a typewriter caps&nbsp;lock, where pressing it turns it on only.  </FONT><FONT FACE="Courier New" SIZE=2>SHIFT&nbsp;FREES&nbsp;CAPS</FONT><FONT SIZE=2> tells Keyman to recognize shift and turns capitals off.  Using these two together makes Keyman work like many European keyboards.  These two statements each take a single line in the header, as shown below:</P><DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>SHIFT FREES CAPS</P>
+<P>CAPS ON ONLY</P>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><B><I><FONT FACE="Arial"><P><A NAME="_Toc446344168"><A NAME="_Toc446344256">nul In the Context</A></A></P>
+</B></I></FONT><FONT SIZE=2><P>The </FONT><FONT FACE="Courier New" SIZE=2>nul</FONT><FONT SIZE=2> statement is used at the start of the context to tell Keyman only to match that rule if there are only as many characters output on the screen as in the context.  This statement is not very likely to be used; there is a possibility you may use it for testing after a keyboard has been turned on, or to change a character into the best possible output without knowing what is before it.  For example,</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>nul + 'a' &gt; 'A'&#9;&#9;&#9;c Not very useful!</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><B><I><FONT FACE="Arial"><P><A NAME="_Toc446344169"><A NAME="_Toc446344257">The outs Statement</A></A></P>
+</B></I></FONT><FONT SIZE=2><P>The </FONT><FONT FACE="Courier New" SIZE=2>outs</FONT><FONT SIZE=2> statement places the content of a store into the string at its position.  You would probably only use the </FONT><FONT FACE="Courier New" SIZE=2>outs</FONT><FONT SIZE=2> statement for creating large stores.  Usage:</P><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>outs(<I>storename</I>)</P></DIR>
+</DIR>
+</DIR>
+</DIR>
+
+</FONT><B><I><FONT FACE="Arial"><P><A NAME="_Toc446344170"><A NAME="_Toc446344258">Long Rules</A></A></P>
+</B></I></FONT><FONT SIZE=2><P>When you are making your keyboard, you may find that some lines are very long and are hard to read if made shorter.  Keyman has a way of getting around this: by putting a backslash (\) on the <I>very end</I> of the line, Keyman is told that the line should be joined with the next one.  You can do this for multiple lines if necessary, up to 1K (about 1000 characters) long.  The backslash must come <I>after</I> comments if you have them.  For example,</P><DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier New" SIZE=2><P>any(LowerCaseVowel) + any(UpperCaseVowel) &gt; \</P>
+<P>&#9;index(UpperCaseVowel,1)&#9;&#9;c From previous line  \</P>
+<P>&#9;index(LowerCaseVowel,2)&#9;&#9;c From previous line</P>
+</FONT><FONT SIZE=2></DIR>
+</DIR>
+</DIR>
+</FONT></BODY>
+</HTML>

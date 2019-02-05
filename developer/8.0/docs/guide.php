@@ -1,0 +1,8 @@
+<?php
+  require_once('includes/template.php');
+
+  head([
+    'title' => "Chapter 2. Keyman Developer Guide"
+  ,'css' => ['template.css','keyboard.css','keys.css']]);
+?>
+<div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 2. Keyman Developer Guide</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="main_credits.php">Prev</a> </td><th width="60%" align="center"> </th><td width="20%" align="right"> <a accesskey="n" href="index_guide_language.php">Next</a></td></tr></table><hr></div><div class="chapter" lang="en" id="guide"><div class="titlepage"><div><div><h2 class="title">Chapter 2. Keyman Developer Guide</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="index_guide_language.php">Keyman Keyboard Language Guide</a></span></dt><dt><span class="section"><a href="index_guide_kmw.php">KeymanWeb Guide</a></span></dt><dt><span class="section"><a href="index_guide_imx.php">IMX Developers Guide</a></span></dt></dl></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="main_credits.php">Prev</a> </td><td width="20%" align="center"> </td><td width="40%" align="right"> <a accesskey="n" href="index_guide_language.php">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Additional Credits </td><td width="20%" align="center"><a accesskey="h" href="index.php">Home</a></td><td width="40%" align="right" valign="top"> Keyman Keyboard Language Guide</td></tr></table></div>

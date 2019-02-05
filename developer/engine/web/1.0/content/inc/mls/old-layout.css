@@ -1,0 +1,164 @@
+/* CSS Document */
+
+body{
+	margin:0;
+	padding:0;
+	background-color:#f3e5de;
+	text-align:center; /* for older versions of IE (5.0 5.5) */
+}
+
+html {
+	overflow-y: scroll;
+}
+
+#container{
+	width:800px;
+	margin: auto auto;
+	text-align:center;
+	border-right:1px solid #ad4a28;
+	border-left:1px solid #ad4a28;
+	border-bottom:1px solid #ad4a28;
+}
+
+#tavultesoft_logo{
+	width:800px;
+	height:63px;
+	text-align:right;
+	background:url("/inc/mls/tavultesoft_logo.jpg") no-repeat right;
+	background-color:#ad4a28;
+}
+
+#tavultesoft_logo_print {
+  float: right;
+  display: none
+}
+
+#tavultesoft_logo p{
+	text-align:left;
+}
+
+#banner{
+	width:800px;
+	height:150px;
+	margin: 0;
+	padding: 0;
+}
+
+/* Global navigation */
+#pagelocation {
+  display: none;
+  font-size: 0.6em;
+  text-align: left
+}
+
+#global_nav{
+	background-color:#ad4a28;
+	padding:2px 0 2px 0;
+}
+
+#global_nav ul{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+
+#global_nav li{	
+	display:inline;
+	padding:1px 10px 1px 10px;
+	margin:0;
+}
+
+/* Breadcrumbs */
+
+#breadcrumbsandlogininfo {
+  padding: 1px 2px 0px 0px;
+}
+
+#breadcrumbs{
+  padding:1px 0px 1px 0px;
+  float: left;
+}
+
+#logininfo{
+  padding:1px 4px 1px 10px;
+}
+
+#breadcrumbs_breaker {
+  line-height: 0;
+  height: 0;
+  clear: both;
+  font-size: 1pt; /* for IE ... */
+}
+
+/* Main body */
+#content{
+	background-color:white
+}
+
+/* main column */
+#home_mainColumn{
+	float:left;
+	width:545px;
+	background-color:#ffffff;
+	text-align:left;
+}
+
+.home_mainColumn_content{
+	padding:10px;
+}
+
+/* sub column for news, or any announcment on main page */
+#home_subColumn{
+	float:left;
+	width:254px;
+	text-align:left;
+	background-color:  #f3e5de;
+	margin-bottom: -1px;
+	border-left: solid 1px #ad4a28;
+	border-bottom: solid 1px #ad4a28;
+}
+
+.home_subColumn_content{
+	padding:10px;
+}
+
+/* For other pages */
+#localnav{
+
+	float:left;
+	width:199px;
+	text-align:left;
+	background-color:  #f3e5de;
+	border-right: solid 1px #ad4a28;
+	border-bottom: solid 1px #ad4a28;
+	margin-bottom: -1px;
+}
+
+.localnav_content{
+	padding:10px 10px 10px 2px;
+}
+
+#mainColumn{
+	float:right;
+	width:600px;
+	background-color:#ffffff;
+	text-align:left;
+}
+
+.mainColumn_content{
+	padding:10px;
+}
+
+/* footer */
+#footer{
+	clear:both;
+	border-top:1px solid #ad4a28;
+	background-color:#ad4a28;
+	padding:4px 0 4px 0;
+	width:800px;
+}
+
+/* other stuff */
+#featuredkeyboards{
+	margin-bottom:20px;
+}

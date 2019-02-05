@@ -1,0 +1,11 @@
+<?php
+  require_once('includes/template.php');
+
+  head([
+    'title' => "IKeymanKeyboardsInstalled::Apply"
+  ,'css' => ['template.css','keyboard.css','keys.css']]);
+?>
+<div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">IKeymanKeyboardsInstalled::Apply</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="comapi_interface_IKeymanKeyboardsInstalled_Install.php">Prev</a> </td><th width="60%" align="center">IKeymanKeyboardsInstalled Interface</th><td width="20%" align="right"> <a accesskey="n" href="comapi_interface_IKeymanLanguages.php">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h5 class="title" id="comapi_interface_IKeymanKeyboardsInstalled_Apply"><a class="link" href="comapi_interface_IKeymanKeyboardsInstalled.php" title="IKeymanKeyboardsInstalled Interface">IKeymanKeyboardsInstalled</a>::Apply</h5></div></div></div><p>
+            When changes are made to keyboards, such as hotkeys, or loaded/unloaded state, then Apply must be called for those changes to take
+            effect across the system.  If a Keyman product is running when Apply is called, then settings will be refreshed on the product.
+          </p><h6><a name="id613674"></a>Declaration</h6><pre class="programlisting">Sub Apply</pre><h6><a name="id613680"></a>Parameters</h6><table id="id613683"><tr><th>No</th><th>Name</th><th>Type</th><th>Description</th></tr></table><h6><a name="id613695"></a>Example Code</h6><pre class="programlisting"></pre></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="comapi_interface_IKeymanKeyboardsInstalled_Install.php">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="comapi_interface_IKeymanKeyboardsInstalled.php">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="comapi_interface_IKeymanLanguages.php">Next</a></td></tr><tr><td width="40%" align="left" valign="top">IKeymanKeyboardsInstalled::Install </td><td width="20%" align="center"><a accesskey="h" href="index.php">Home</a></td><td width="40%" align="right" valign="top"> IKeymanLanguages Interface</td></tr></table></div>

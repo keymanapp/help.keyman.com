@@ -1,0 +1,52 @@
+Tavultesoft Keyboard Manager 4.0
+Copyright (C) 1999 Tavultesoft.
+10 Corby Ave, West Hobart, TAS 7000 AUSTRALIA
+
+LICENSE AGREEMENT
+=================
+
+You should carefully read the following terms and conditions
+before using this software.  Unless you have a different license
+agreement signed by Tavultesoft, your use of this software indicates 
+your acceptance of this license agreement and warranty.
+
+EVALUATION
+==========
+
+This is not free software.  Tavultesoft Keyboard Manager 4.0 is a shareware 
+program.  This means that you may download and evaluate it for period of 30
+days.  If you use this software after the 30 day evaluation period a 
+registration fee is required.  Unregistered use of Tavultesoft Keyboard 
+Manager after the 30 day evaluation period is in violation of U.S. and
+international copyright laws.
+
+DISTRIBUTION
+============
+
+You are permitted and encouraged to distribute the original setup executable for
+Tavultesoft Keyboard Manager 4.0, WITHOUT ANY MODIFICATIONS WHATSOEVER.  
+
+You are specifically prohibited from charging, or requesting donations, for any 
+such copies, however made; and from distributing the software and/or 
+documentation with other products (commercial or otherwise) without prior 
+written permission.
+
+REGISTERED VERSION
+==================
+
+A registered copy of Tavultesoft Keyboard Manager 4.0 may be used at a single
+workstation.  There are no royalties of any kind on keyboard files created with
+Keyman.  This is subject to the following condition:
+
+ * A separate registered copy of Tavultesoft Keyboard Manager must be
+   obtained for each workstation on which Tavultesoft Keyboard Manager
+   will be used, even if such use is only temporary.  This is not a 
+   "concurrent use" license.
+
+DISCLAIMER OF WARRANTY
+======================
+
+THIS SOFTWARE AND THE ACCOMPANYING FILES ARE SOLD "AS IS" AND WITHOUT WARRANTIES 
+AS TO PERFORMANCE OR MERCHANTABILITY OR ANY OTHER WARRANTIES WHETHER EXPRESSED 
+OR IMPLIED.
+

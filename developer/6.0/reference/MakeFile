@@ -1,0 +1,58 @@
+
+!include ..\..\..\Defines.mak
+!include ..\Defines.mak
+
+all:    _struct.html \
+        _keywordsbytype.html \
+        _keywordsbyname.html \
+        any.html \
+        beep.html \
+        begin.html \
+        bitmap.html \
+        call.html \
+        caps.html \
+        context.html \
+        copyright.html \
+        deadkey.html \
+        ethnologue.html \
+        group.html \
+        hotkey.html \
+        index.html \
+        language.html \
+        layout.html \
+        match.html \
+        message.html \
+        mnemonic.html \
+        name.html \
+        nomatch.html \
+        nul_.html \
+#        oldcharposmatching.html \
+#        optany.html \
+        outs.html \
+        return.html \
+        store.html \
+        use.html \
+        version.html \
+        _struct_constants.html \
+        _struct_strings.html \
+        _struct_unicode.html \
+        _struct_headers.html \
+        _struct_comments.html \
+        _struct_longlines.html \
+        _struct_stores.html \
+        _struct_groups.html \
+        _struct_silkey.html \
+        _struct_formal.html \
+        _struct_history.html \
+        _struct_vkeys.html \
+        _registry.html \
+        _package.html \
+        _redistinstaller.html \
+        _english.html
+
+clean:
+  -del *.html
+
+.php.html:
+  $(PHP) $< > $@
+

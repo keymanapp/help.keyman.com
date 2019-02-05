@@ -1,0 +1,18 @@
+
+body { background: none !important }
+#rightbar { display: none !important }
+
+#osk { font-size: 26pt !important }
+#osk h3 { font-size: 26pt !important }
+
+.highlightKeys .key-print { display: inline !important } 
+.highlightKeys img { display: none !important; }
+
+.highlightKeys .key-grp { display: none !important } 
+.highlightKeys .key-print .key-grp { display: inline !important; font-style: italic; } 
+.highlightKeys img { display: none !important; }
+
+
+#footer { background: none !important; border-top: solid 1px black; padding: 4px; color: black !important }
+#footerlinks { display: none }
+

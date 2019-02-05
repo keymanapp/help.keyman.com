@@ -1,0 +1,10 @@
+<?php
+  require_once('includes/template.php');
+
+  head([
+    'title' => "IKeymanControl::LastActiveWindow"
+  ,'css' => ['template.css','keyboard.css','keys.css']]);
+?>
+<div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">IKeymanControl::LastActiveWindow</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="comapi_interface_IKeymanControl_EnableUserInterface.php">Prev</a> </td><th width="60%" align="center">IKeymanControl Interface</th><td width="20%" align="right"> <a accesskey="n" href="comapi_interface_IKeymanControl_LastFocusWindow.php">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h5 class="title" id="comapi_interface_IKeymanControl_LastActiveWindow"><a class="link" href="comapi_interface_IKeymanControl.php" title="IKeymanControl Interface">IKeymanControl</a>::LastActiveWindow</h5></div></div></div><p>
+            Returns the handle of the last active window on the system.  Used by Keyman Controllers.
+          </p><h6><a name="id599921"></a>Declaration</h6><pre class="programlisting">Property Get LastActiveWindow As Long</pre><h6><a name="id599927"></a>Parameters</h6><table id="id599929"><tr><th>No</th><th>Name</th><th>Type</th><th>Description</th></tr></table><h6><a name="id599941"></a>Return Value</h6>Long<h6><a name="id599945"></a>Example Code</h6><pre class="programlisting"></pre></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="comapi_interface_IKeymanControl_EnableUserInterface.php">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="comapi_interface_IKeymanControl.php">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="comapi_interface_IKeymanControl_LastFocusWindow.php">Next</a></td></tr><tr><td width="40%" align="left" valign="top">IKeymanControl::EnableUserInterface </td><td width="20%" align="center"><a accesskey="h" href="index.php">Home</a></td><td width="40%" align="right" valign="top"> IKeymanControl::LastFocusWindow</td></tr></table></div>
