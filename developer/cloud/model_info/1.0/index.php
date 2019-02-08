@@ -3,71 +3,64 @@
   
   // Required
   head([
-    'title' =>'.keyboard_info 1.0 Specification',
+    'title' =>'.model_info 1.0 Specification',
     'css' => ['template.css','index.css','prism.css'],
     'showMenu' => true
   ]);
 ?>
-<h2>.keyboard_info 1.0 Specification</h2>
+<h2>.model_info 1.0 Specification</h2>
 
-<p>This file will be created by the PR submitter of the keyboard, for new pull requests. It is a JSON file, with the following members. The <b>.keyboard_info</b> file will be used when building keyboard layouts for deployment; the master version of the file lives in the keyboard repository. During CI deployment, it will be read from the source repository, extended with the required generated fields and this new version pushed with the compiled resources to the download store.</p>
+<p>This file will be created by the PR submitter of the lexical model, for new pull requests. It is a JSON file, with the following members. 
+The <b>.model_info</b> file will be used when building lexical models for deployment; the master version of the file lives in the lexical-models repository.
+During CI deployment, it will be read from the source repository, extended with the required generated fields and this new version pushed with the
+compiled resources to the download store.</p>
 
-<h3>KeyboardInfo Object</h3>
+<h3>ModelInfo Object</h3>
 
-<p>Note: The <b>Generated </b>column indicates if the field will be generated if it is not present in the source repository during the CI deployment process. Fields that are <b>Required</b> and not <b>Generated</b> must be completed by the keyboard author.</p>
+<p>Note: The <b>Generated </b>column indicates if the field will be generated if it is not present in the source repository during the CI deployment 
+process. Fields that are <b>Required</b> and not <b>Generated</b> must be completed by the lexical model author.</p>
 
 <table class='language-javascript display'>
 <thead>
 <tr>
-<th><b>Member</b></th>
-<th><b>Required in source?</b></th>
-<th><b>Required in distribution</b></th>
-<th><b>Generated?</b></th>
-<th><b>Notes</b></th>
+  <th><b>Member</b></th>
+  <th><b>Required in source?</b></th>
+  <th><b>Required in distribution</b></th>
+  <th><b>Generated?</b></th>
+  <th><b>Notes</b></th>
 </tr>
 </thead><tbody>
 <tr>
-<td>id</td>
-<td></td>
-<td>yes</td>
-<td>yes</td>
+<td>id</td><td></td><td>yes</td><td>yes</td>
 <td>
-  <p><b>string</b>, the same as the name of the folder, lower case. In the <b>release/</b> folder, this name must be a 
-  valid Javascript identifier, and follow the rules in the 
-  <a href="https://help.keyman.com/developer/keyboards">Keyboard Cloud Repository documentation</a>.</p>
+  <p><b>string</b>, a unique identifier for the model, in a format <code><b>author</b>.<b>bcp47</b>.<b>uniq</b></code>. The components must be the 
+    same as the path of the model in the repository, e.g. a model in <code>release/example/en.wordlist</code> would have the identifer
+    <code>example.en.wordlist</code>. The identifier must be lowercase and each component must be a valid Javascript identifier, thus the BCP 47 component
+    should be delineated with underscores (_), not hyphens (-).</p>
 
-  <p><b>Example:</b> <code>"id": "fv_blackfoot"</code></p>
+  <p><b>Example:</b> <code>"id": "example.en_us.wordlist"</code></p>
 
-  <p><b>Generation: </b>from folder name.</p>
+  <p><b>Generation: </b>from parent folder names.</p>
 </td>
 </tr>
 <tr>
-<td>name</td>
-<td></td>
-<td>yes</td>
-<td>yes</td>
+<td>name</td><td></td><td>yes</td><td>yes</td>
 <td>
-  <p><b>string</b>, the human readable name of the keyboard. This will usually differ from the id.</p>
+  <p><b>string</b>, the human readable name of the model. This will usually differ from the id.</p>
 
-  <p><b>Generation:</b> from .kmp info, package name. If a .kmp is not included, it is sourced from the .js with a regular expression.</p>
+  <p><b>Generation:</b> from .kps info, package name.</p>
 </td>
 </tr>
 <tr>
-<td>authorName</td>
-<td></td>
-<td></td>
-<td>yes</td>
+<td>authorName</td><td></td><td></td><td>yes</td>
 <td>
   <p><b>string</b>, the name of the author</p>
 
-  <p><b>Generation:</b> from .kmp info</p>
+  <p><b>Generation:</b> from .kps info, package author</p>
 </td>
 </tr>
 <tr>
-<td>authorEmail</td>
-<td></td>
-<td></td>
-<td>yes</td>
+<td>authorEmail</td><td></td><td></td><td>yes</td>
 <td>
   <p><b>string</b>, the email address of the author</p>
 
@@ -75,15 +68,12 @@
 </td>
 </tr>
 <tr>
-<td>description</td>
-<td></td>
-<td></td>
-<td></td>
+<td>description</td><td></td><td></td><td></td>
 <td>
-  <p><b>string</b>, a textual description of the keyboard. This may contain some minimal HTML (p, b, i, u, span, a, ul, ol, li, br, hr, h1-h4 tags).</p>
+  <p><b>string</b>, a textual description of the model suitable for displaying in a catalog online. This should be written
+  to help a user choose between models. This must not contain any HTML tags.</p>
 
-  <p><b>No Automatic Generation:</b> this information is not consistently available elsewhere. If not specified, then a 
-  description will be generated based on the supported languages at runtime by the consumer of the json.</p>
+  <p><b>No Automatic Generation:</b> this information is not available elsewhere.</p>
 </td>
 </tr>
 <tr>
@@ -94,23 +84,21 @@
 <td>
   <p><b>string</b>, the possible values for <b>license</b> vary by location in the repository:</p>
   <ul>
-    <li><b>release/</b> and <b>experimental/</b> keyboards must be <code>"mit"</code>.</li>
-    <li><b>legacy/</b> keyboards will be <code>"freeware"</code>, 
-      <code>"shareware"</code> or <code>"commercial"</code>.</li>
+    <li><b>release/</b> and <b>experimental/</b> models must be <code>"mit"</code>.</li>
   </ul>
-  <p>This must always be specified, even for <b>release/</b> and <b>experimental/</b> keyboards,
-  because this must be an explicit decision by the keyboard author for legal reasons.</p>
+  <p>This must always be specified, because this must be an explicit decision by the model author 
+    for legal reasons.</p>
 </td>
 </tr>
 <tr>
 <td>languages</td>
-<td>yes</td>
-<td>yes</td>
 <td></td>
+<td>yes</td>
+<td>yes</td>
 <td>
-  <p><b>array or objects</b>; an array of BCP 47 codes, or an object with its member names being BCP 47 codes and values being <b>KeyboardLanguageInfo</b> objects.</p>
+  <p><b>array or objects</b>; an object with its member names being BCP 47 codes and values being <b>ModelLanguageInfo</b> objects.</p>
 
-  <p><b>Generation:</b> There is now some automatic generation of language names. The font and example information in the keyboard list is not available elsewhere.</p>
+  <p><b>Generation:</b> Will be generated from the .kps file.</p>
 </td>
 </tr>
 <tr>
@@ -119,9 +107,9 @@
 <td>yes</td>
 <td>yes</td>
 <td>
-  <p><b>string</b>, the last time the keyboard was modified, in RFC3339, UTC <code>YYYY-MM-DDThh:mm:ss[.nnn]Z</code></p>
+  <p><b>string</b>, the last time the model was modified, in RFC3339, UTC <code>YYYY-MM-DDThh:mm:ss[.nnn]Z</code></p>
 
-  <p><b>Generation:</b> the time that the .keyboard_info file is generated</p>
+  <p><b>Generation:</b> the time that the .model_info file is generated</p>
 </td>
 </tr>
 <tr>
@@ -130,21 +118,19 @@
 <td></td>
 <td></td>
 <td>
-  <p><b>array</b>, of <b>KeyboardLinkInfo</b> objects</p>
+  <p><b>array</b>, of <b>ModelLinkInfo</b> objects</p>
 </td>
 </tr>
 <tr>
 <td>packageFilename</td>
 <td></td>
-<td>yes <a href='#note-1'>(1)</a></td>
-<td>yes <a href='#note-1'>(1)</a></td>
+<td>yes</td>
+<td>yes</td>
 <td>
-  <p><b>string</b>, filename of the .kmp file that will be distributed, relative to the keyboard base folder, 
-  including extension, required for <b>experimental/ </b>and <b>legacy/</b> folders. If no .kmp exists,
-  then keyboard is js only. For <b>release/</b> folders, this must be 
-  <b><i>id</i></b><b>/build/</b><b><i>id</i></b><b>.kmp</b>.</p>
+  <p><b>string</b>, filename of the .kmp file that will be distributed, relative to the model base folder, 
+  including extension. This must be <b><i>id</i></b><b>/build/</b><b><i>id</i></b><b>.model.kmp</b>.</p>
 
-  <p><b>Generation:</b> if more than one .kmp exists, then fail.</p>
+  <p><b>Generation:</b> the filename of the model.</p>
 </td>
 </tr>
 <tr>
@@ -161,15 +147,12 @@
 <tr>
 <td>jsFilename</td>
 <td></td>
-<td>yes <a href='#note-2'>(2)</a></td>
-<td>yes <a href='#note-2'>(2)</a></td>
+<td>yes</td>
+<td>yes</td>
 <td>
-  <p><b>string</b>, filename of the .js file that will be distributed,  e.g. "gff_amh.js".</p>
+  <p><b>string</b>, filename of the .js file that will be distributed,  e.g. "example.en.model.js".</p>
 
-  <p><b>packageFilename </b>and/or <b>jsFilename </b>must be specified for <b>legacy</b>
-  and <b>experimental</b> keyboards.</p>
-
-  <p><b>Generation:</b> for release, must be <b><i>id</i></b><b>.js</b>.</p>
+  <p><b>Generation:</b> This will normally be generated automatically.</p>
 </td>
 </tr>
 <tr>
@@ -178,7 +161,7 @@
 <td></td>
 <td>yes</td>
 <td>
-  <p><b>number</b>, integer size of the .js file that will be distributed.
+  <p><b>number</b>, byte size of the .js file that will be distributed.
 
   <p><b>Generation:</b> This will normally be generated automatically.</p>
 </td>
@@ -627,9 +610,6 @@
 </tr>
 </tbody>
 </table>
-
-<p><a name='note-1'>1</a>: Required for desktop distributions, not for web distributions.</p>
-<p><a name='note-2'>2</a>: Required for web distributions, not for desktop distributions.</p>
 
 <h3>Schema</h3>
 
