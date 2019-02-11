@@ -180,32 +180,6 @@ process. Fields that are <b>Required</b> and not <b>Generated</b> must be comple
 </tr>
 
 <tr>
-<td>documentationFilename</td>
-<td></td>
-<td></td>
-<td></td>
-<td>
-  <p><b>string</b>, filename of the .pdf or .rtf format documentation file associated with the model,
-  relative to the model base folder.</p>
-
-  <p><b>No Automatic Generation:</b> This may be difficult to ascertain as the file loses
-  path when compiled into a .kmp.</p>
-</td>
-</tr>
-
-<tr>
-<td>documentationFileSize</td>
-<td></td>
-<td></td>
-<td>yes</td>
-<td>
-  <p><b>number</b>, integer size of the <b>documentationFilename</b> file that will be distributed.
-
-  <p><b>Generation:</b> This will normally be generated automatically.</p>
-</td>
-</tr>
-
-<tr>
 <td>isRTL</td>
 <td></td>
 <td></td>
@@ -227,15 +201,12 @@ process. Fields that are <b>Required</b> and not <b>Generated</b> must be comple
   <p><b>array</b>, of <b>strings</b>. This flags whether a package includes:</p>
   <ul>
     <li><code>"fonts"</code> - one or more fonts</li>
-    <li><code>"documentation"</code> - documentation, in PDF, 
-        RTF or HTML format, excluding welcome.htm and readme</li>
   </ul>
   
   <p>This field corresponds to the .keyboard_info <b>packageIncludes</b> field, but
   is mostly unused.</p>
   
-  <p><b>Generation: </b>'fonts' will be added if .kmp contents includes .ttf or .otf files;
-  if documentationFilename field is not empty, then 'documentation' will be added.</p>
+  <p><b>Generation:</b> 'fonts' will be added if .kmp contents includes .ttf or .otf files.</p>
 </td>
 </tr>
 
