@@ -300,19 +300,6 @@ process. Fields that are <b>Required</b> and not <b>Generated</b> must be comple
 </tbody>
 </table>
 
-<tr>
-<td>regionName</td>
-<td></td>
-<td>
-  <p><b>string</b>, the name of the region subtag in the BCP 47 code.</p>
-  <p><b>Example:</b><code>"regionName": "Morocco"</code></p>
-  <p><b>Generation:</b>This will be generated automatically from the BCP 47 code.</p>
-</td>
-</tr>
-
-</tbody>
-</table>
-
 <h3>ModelLinkInfo Object</h3>
 <table class='display'>
 <thead>
