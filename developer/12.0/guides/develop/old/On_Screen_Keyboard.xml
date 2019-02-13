@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<section condition="Kmhelp.css" role="RHC.\body">
+<sectioninfo>
+  <title>On Screen Keyboard</title>
+<!--(Meta)==========================================================-->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <publisher role="RobomlCodecName: RoboML 1.0 (XML)">
+<publishername>RoboHelp by eHelp Corporation - www.ehelp.com</publishername>
+</publisher>
+<!--(Links)=========================================================-->
+  <!--(Style Sheet)===================================================-->
+  <!--<ROBOML version="1.0"><![CDATA[__ROBOML_LT__style__ROBOML_GT__
+  __ROBOML_LT__!__ROBOML_2DASHES__
+
+  A:visited {
+          color: #800080;
+  }
+
+  A:link {
+          color: #0000ff;
+  }
+
+  __ROBOML_2DASHES____ROBOML_GT__
+  __ROBOML_LT__/style__ROBOML_GT__
+
+
+  ]]></ROBOML>-->
+<!--<ROBOML version="1.0"><![CDATA[__ROBOML_LT__style title="RML_10" type="text/css"__ROBOML_GT__
+  __ROBOML_COMMENT_STARTS__
+  img.rml10_1 { width: 33px;
+                                  height: 33px;
+                                  margin-left: 7px;
+                                  margin-right: 7px;
+                                  float: left;
+                                  border-style: none;
+                                  float: left; }
+  span.rml10_2 { font: 7.0pt 'Times New Roman'; }
+  img.rml10_3 { width: 65px;
+                                                                  height: 43px;
+                                                                  border-style: none;
+                                                                  border-style: none; }
+  img.rml10_4 { width: 521px;
+                                                                  height: 135px;
+                                                                  border-style: none;
+                                                                  border-style: none; }
+  span.rml10_5 { font: 7.0pt 'Times New Roman'; }
+  img.rml10_6 { width: 208px;
+                                                          height: 17px;
+                                                          border-style: none;
+                                                          border-style: none; }
+  img.rml10_7 { width: 581px;
+                                                                  height: 449px;
+                                                                  border-style: none;
+                                                                  border-style: none; }
+  span.rml10_8 { font: 7.0pt 'Times New Roman'; }
+  span.rml10_9__Bold { font-weight: normal; }
+  table.rml10_10__Tavultesoft { width: 498.85pt;
+                                  margin-left: 1.0cm;
+                                  border: none;
+                                  x-border-left: 1px table-solid;
+                                  x-border-top: 1px table-solid;
+                                  x-border-right: 1px table-solid;
+                                  x-border-bottom: 1px table-solid;
+                                  border-spacing: 0px;
+                                  border-spacing: 0px; }
+  col.rml10_11 { width: 82.2pt; }
+  col.rml10_12 { width: 295.7pt; }
+  tr.rml10_13 { page-break-inside: avoid; }
+  td.rml10_14 { x-cell-content-align: top;
+                          width: 123.85pt;
+                          padding: 0cm 5.4pt 0cm 5.4pt;
+                          padding-left: 0px;
+                          padding-top: 0px;
+                          padding-right: 0px;
+                          padding-bottom: 0px;
+                          border-top-style: solid;
+                          border-top-color: #000000;
+                          border-bottom-style: solid;
+                          border-bottom-color: #000000;
+                          border-bottom-width: 1px;
+                          border-right-color: #000000;
+                          border-right-width: 1px;
+                          border-right-style: Solid;
+                          border-left-color: #000000;
+                          border-left-width: 1px;
+                          border-left-style: Solid;
+                          border-top-width: 1px; }
+  td.rml10_15 { width: 503px;
+                          x-cell-content-align: top;
+                          padding: 0cm 5.4pt 0cm 5.4pt;
+                          padding-left: 0px;
+                          padding-top: 0px;
+                          padding-right: 0px;
+                          padding-bottom: 0px;
+                          border-top-style: solid;
+                          border-top-color: #000000;
+                          border-bottom-style: solid;
+                          border-bottom-color: #000000;
+                          border-bottom-width: 1px;
+                          border-top-width: 1px;
+                          border-right-color: #000000;
+                          border-right-width: 1px;
+                          border-right-style: Solid; }
+  tr.rml10_16 { page-break-inside: avoid; }
+  td.rml10_17 { x-cell-content-align: top;
+                          width: 123.85pt;
+                          padding: 0cm 5.4pt 0cm 5.4pt;
+                          padding-left: 0px;
+                          padding-top: 0px;
+                          padding-right: 0px;
+                          padding-bottom: 0px;
+                          border-bottom-style: solid;
+                          border-bottom-color: #000000;
+                          border-bottom-width: 1px;
+                          border-right-color: #000000;
+                          border-right-width: 1px;
+                          border-right-style: Solid;
+                          border-left-color: #000000;
+                          border-left-width: 1px;
+                          border-left-style: Solid; }
+  td.rml10_18 { width: 503px;
+                          x-cell-content-align: top;
+                          padding: 0cm 5.4pt 0cm 5.4pt;
+                          padding-left: 0px;
+                          padding-top: 0px;
+                          padding-right: 0px;
+                          padding-bottom: 0px;
+                          border-bottom-style: solid;
+                          border-bottom-color: #000000;
+                          border-bottom-width: 1px;
+                          border-right-color: #000000;
+                          border-right-width: 1px;
+                          border-right-style: Solid; }
+  tr.rml10_19 { page-break-inside: avoid; }
+  td.rml10_20 { x-cell-content-align: top;
+                          width: 123.85pt;
+                          padding: 0cm 5.4pt 0cm 5.4pt;
+                          padding-left: 0px;
+                          padding-top: 0px;
+                          padding-right: 0px;
+                          padding-bottom: 0px;
+                          border-bottom-style: solid;
+                          border-bottom-color: #000000;
+                          border-bottom-width: 1px;
+                          border-right-color: #000000;
+                          border-right-width: 1px;
+                          border-right-style: Solid;
+                          border-left-color: #000000;
+                          border-left-width: 1px;
+                          border-left-style: Solid; }
+  td.rml10_21 { width: 503px;
+                          x-cell-content-align: top;
+                          padding: 0cm 5.4pt 0cm 5.4pt;
+                          padding-left: 0px;
+                          padding-top: 0px;
+                          padding-right: 0px;
+                          padding-bottom: 0px;
+                          border-bottom-style: solid;
+                          border-bottom-color: #000000;
+                          border-bottom-width: 1px;
+                          border-right-color: #000000;
+                          border-right-width: 1px;
+                          border-right-style: Solid; }
+  tr.rml10_22 { page-break-inside: avoid; }
+  td.rml10_23 { x-cell-content-align: top;
+                          width: 123.85pt;
+                          padding: 0cm 5.4pt 0cm 5.4pt;
+                          padding-left: 0px;
+                          padding-top: 0px;
+                          padding-right: 0px;
+                          padding-bottom: 0px;
+                          border-bottom-style: solid;
+                          border-bottom-color: #000000;
+                          border-bottom-width: 1px;
+                          border-right-color: #000000;
+                          border-right-width: 1px;
+                          border-right-style: Solid;
+                          border-left-color: #000000;
+                          border-left-width: 1px;
+                          border-left-style: Solid; }
+  td.rml10_24 { width: 503px;
+                          x-cell-content-align: top;
+                          padding: 0cm 5.4pt 0cm 5.4pt;
+                          padding-left: 0px;
+                          padding-top: 0px;
+                          padding-right: 0px;
+                          padding-bottom: 0px;
+                          border-bottom-style: solid;
+                          border-bottom-color: #000000;
+                          border-bottom-width: 1px;
+                          border-right-color: #000000;
+                          border-right-width: 1px;
+                          border-right-style: Solid; }
+  tr.rml10_25 { page-break-inside: avoid; }
+  td.rml10_26 { x-cell-content-align: top;
+                          width: 123.85pt;
+                          padding: 0cm 5.4pt 0cm 5.4pt;
+                          padding-left: 0px;
+                          padding-top: 0px;
+                          padding-right: 0px;
+                          padding-bottom: 0px;
+                          border-bottom-style: solid;
+                          border-bottom-color: #000000;
+                          border-bottom-width: 1px;
+                          border-right-color: #000000;
+                          border-right-width: 1px;
+                          border-right-style: Solid;
+                          border-left-color: #000000;
+                          border-left-width: 1px;
+                          border-left-style: Solid; }
+  td.rml10_27 { width: 503px;
+                          x-cell-content-align: top;
+                          padding: 0cm 5.4pt 0cm 5.4pt;
+                          padding-left: 0px;
+                          padding-top: 0px;
+                          padding-right: 0px;
+                          padding-bottom: 0px;
+                          border-bottom-style: solid;
+                          border-bottom-color: #000000;
+                          border-bottom-width: 1px;
+                          border-right-color: #000000;
+                          border-right-width: 1px;
+                          border-right-style: Solid; }
+  tr.rml10_28 { page-break-inside: avoid; }
+  td.rml10_29 { x-cell-content-align: top;
+                          width: 123.85pt;
+                          padding: 0cm 5.4pt 0cm 5.4pt;
+                          padding-left: 0px;
+                          padding-top: 0px;
+                          padding-right: 0px;
+                          padding-bottom: 0px;
+                          border-bottom-style: solid;
+                          border-bottom-color: #000000;
+                          border-bottom-width: 1px;
+                          border-right-color: #000000;
+                          border-right-width: 1px;
+                          border-right-style: Solid;
+                          border-left-color: #000000;
+                          border-left-width: 1px;
+                          border-left-style: Solid; }
+  td.rml10_30 { width: 503px;
+                          x-cell-content-align: top;
+                          padding: 0cm 5.4pt 0cm 5.4pt;
+                          padding-left: 0px;
+                          padding-top: 0px;
+                          padding-right: 0px;
+                          padding-bottom: 0px;
+                          border-bottom-style: solid;
+                          border-bottom-color: #000000;
+                          border-bottom-width: 1px;
+                          border-right-color: #000000;
+                          border-right-width: 1px;
+                          border-right-style: Solid; }
+  tr.rml10_31 { page-break-inside: avoid; }
+  td.rml10_32 { x-cell-content-align: top;
+                          width: 123.85pt;
+                          padding: 0cm 5.4pt 0cm 5.4pt;
+                          padding-left: 0px;
+                          padding-top: 0px;
+                          padding-right: 0px;
+                          padding-bottom: 0px;
+                          border-bottom-style: solid;
+                          border-bottom-color: #000000;
+                          border-bottom-width: 1px;
+                          border-right-color: #000000;
+                          border-right-width: 1px;
+                          border-right-style: Solid;
+                          border-left-color: #000000;
+                          border-left-width: 1px;
+                          border-left-style: Solid; }
+  td.rml10_33 { width: 503px;
+                          x-cell-content-align: top;
+                          padding: 0cm 5.4pt 0cm 5.4pt;
+                          padding-left: 0px;
+                          padding-top: 0px;
+                          padding-right: 0px;
+                          padding-bottom: 0px;
+                          border-bottom-style: solid;
+                          border-bottom-color: #000000;
+                          border-bottom-width: 1px;
+                          border-right-color: #000000;
+                          border-right-width: 1px;
+                          border-right-style: Solid; }
+  tr.rml10_34 { page-break-inside: avoid; height: 30.85pt; }
+  td.rml10_35 { x-cell-content-align: top;
+                          width: 123.85pt;
+                          padding: 0cm 5.4pt 0cm 5.4pt;
+                          height: 30.85pt;
+                          padding-left: 0px;
+                          padding-top: 0px;
+                          padding-right: 0px;
+                          padding-bottom: 0px;
+                          border-bottom-style: solid;
+                          border-bottom-color: #000000;
+                          border-bottom-width: 1px;
+                          border-right-color: #000000;
+                          border-right-width: 1px;
+                          border-right-style: Solid;
+                          border-left-color: #000000;
+                          border-left-width: 1px;
+                          border-left-style: Solid; }
+  td.rml10_36 { width: 503px;
+                          x-cell-content-align: top;
+                          padding: 0cm 5.4pt 0cm 5.4pt;
+                          height: 30.85pt;
+                          padding-left: 0px;
+                          padding-top: 0px;
+                          padding-right: 0px;
+                          padding-bottom: 0px;
+                          border-bottom-style: solid;
+                          border-bottom-color: #000000;
+                          border-bottom-width: 1px;
+                          border-right-color: #000000;
+                          border-right-width: 1px;
+                          border-right-style: Solid; }
+  tr.rml10_37 { page-break-inside: avoid; }
+  td.rml10_38 { x-cell-content-align: top;
+                          width: 162.05pt;
+                          padding: 0cm 5.4pt 0cm 5.4pt;
+                          padding-left: 0px;
+                          padding-top: 0px;
+                          padding-right: 0px;
+                          padding-bottom: 0px;
+                          border-bottom-style: solid;
+                          border-bottom-color: #000000;
+                          border-bottom-width: 1px;
+                          border-right-color: #000000;
+                          border-right-width: 1px;
+                          border-right-style: Solid;
+                          border-left-color: #000000;
+                          border-left-width: 1px;
+                          border-left-style: Solid; }
+  td.rml10_39 { width: 394px;
+                          x-cell-content-align: top;
+                          padding: 0cm 5.4pt 0cm 5.4pt;
+                          padding-left: 0px;
+                          padding-top: 0px;
+                          padding-right: 0px;
+                          padding-bottom: 0px;
+                          border-bottom-style: solid;
+                          border-bottom-color: #000000;
+                          border-bottom-width: 1px;
+                          border-right-color: #000000;
+                          border-right-width: 1px;
+                          border-right-style: Solid; }
+  tr.rml10_40 { page-break-inside: avoid; }
+  td.rml10_41 { x-cell-content-align: top;
+                          width: 162.05pt;
+                          padding: 0cm 5.4pt 0cm 5.4pt;
+                          padding-left: 0px;
+                          padding-top: 0px;
+                          padding-right: 0px;
+                          padding-bottom: 0px;
+                          border-bottom-style: solid;
+                          border-bottom-color: #000000;
+                          border-bottom-width: 1px;
+                          border-right-color: #000000;
+                          border-right-width: 1px;
+                          border-right-style: Solid;
+                          border-left-color: #000000;
+                          border-left-width: 1px;
+                          border-left-style: Solid; }
+  td.rml10_42 { width: 394px;
+                          x-cell-content-align: top;
+                          padding: 0cm 5.4pt 0cm 5.4pt;
+                          padding-left: 0px;
+                          padding-top: 0px;
+                          padding-right: 0px;
+                          padding-bottom: 0px;
+                          border-bottom-style: solid;
+                          border-bottom-color: #000000;
+                          border-bottom-width: 1px;
+                          border-right-color: #000000;
+                          border-right-width: 1px;
+                          border-right-style: Solid; }
+  tr.rml10_43 { page-break-inside: avoid; }
+  td.rml10_44 { x-cell-content-align: top;
+                          width: 162.05pt;
+                          padding: 0cm 5.4pt 0cm 5.4pt;
+                          padding-left: 0px;
+                          padding-top: 0px;
+                          padding-right: 0px;
+                          padding-bottom: 0px;
+                          border-bottom-style: solid;
+                          border-bottom-color: #000000;
+                          border-bottom-width: 1px;
+                          border-right-color: #000000;
+                          border-right-width: 1px;
+                          border-right-style: Solid;
+                          border-left-color: #000000;
+                          border-left-width: 1px;
+                          border-left-style: Solid; }
+  td.rml10_45 { width: 394px;
+                          x-cell-content-align: top;
+                          padding: 0cm 5.4pt 0cm 5.4pt;
+                          padding-left: 0px;
+                          padding-top: 0px;
+                          padding-right: 0px;
+                          padding-bottom: 0px;
+                          border-bottom-style: solid;
+                          border-bottom-color: #000000;
+                          border-bottom-width: 1px;
+                          border-right-color: #000000;
+                          border-right-width: 1px;
+                          border-right-style: Solid; }
+  p.rml10_46__RelatedTopics { margin-left: 0px;
+                          border-top-color: #800000;
+                          border-top-width: 1px;
+                          border-top-style: Solid;
+                          font-weight: bold;
+                          font-size: 10pt;
+                          color: #000000; }
+  li.rml10_47__kadov-p-CBULLETEDPOINT { font-weight: bold;
+                                  color: #800000;
+                                  font-size: 10pt;
+                                  /*begin!kadov{{*/ color: #800000;
+                                  color: #800000; /*}}end!kadov*/ }
+  p.rml10_48__BULLETEDPOINT { font-size: 10pt;
+                                                                                                  color: #800000;
+                                                                                                  font-weight: normal; }
+  span.rml10_49 { color: #800000; font-weight: normal; }
+  li.rml10_50__kadov-p-CBULLETEDPOINT { font-weight: bold;
+                                  color: #800000;
+                                  font-size: 10pt;
+                                  /*begin!kadov{{*/ color: #800000;
+                                  color: #800000; /*}}end!kadov*/ }
+  p.rml10_51__BULLETEDPOINT { font-size: 10pt;
+                                                                                                  color: #800000;
+                                                                                                  font-weight: normal; }
+  span.rml10_52 { color: #800000; font-weight: normal; }
+  li.rml10_53__kadov-p-CBULLETEDPOINT { font-weight: bold;
+                                  color: #800000;
+                                  font-size: 10pt;
+                                  /*begin!kadov{{*/ color: #800000;
+                                  color: #800000; /*}}end!kadov*/ }
+  p.rml10_54__BULLETEDPOINT { font-size: 10pt;
+                                                                                                  color: #800000;
+                                                                                                  font-weight: normal; }
+  span.rml10_55 { color: #800000; font-weight: normal; }
+  li.rml10_56__kadov-p-CBULLETEDPOINT { font-weight: bold;
+                                  color: #800000;
+                                  font-size: 10pt;
+                                  /*begin!kadov{{*/ color: #800000;
+                                  color: #800000; /*}}end!kadov*/ }
+  p.rml10_57__BULLETEDPOINT { font-size: 10pt;
+                                                                                                  color: #800000;
+                                                                                                  font-weight: normal; }
+  span.rml10_58 { color: #800000; font-weight: normal; }
+  li.rml10_59__kadov-p-CBULLETEDPOINT { font-weight: bold;
+                                  color: #800000;
+                                  font-size: 10pt;
+                                  /*begin!kadov{{*/ color: #800000;
+                                  color: #800000; /*}}end!kadov*/ }
+  p.rml10_60__BULLETEDPOINT { font-size: 10pt;
+                                                                                                  color: #800000;
+                                                                                                  font-weight: normal; }
+  span.rml10_61 { color: #800000; font-weight: normal; }
+  li.rml10_62__kadov-p-CBULLETEDPOINT { font-weight: bold;
+                                  color: #800000;
+                                  font-size: 10pt;
+                                  /*begin!kadov{{*/ color: #800000;
+                                  color: #800000; /*}}end!kadov*/ }
+  p.rml10_63__BULLETEDPOINT { font-size: 10pt;
+                                                                                                  color: #800000;
+                                                                                                  font-weight: normal; }
+  span.rml10_64 { color: #800000; font-weight: normal; }
+  li.rml10_65__kadov-p-CBULLETEDPOINT { font-weight: bold;
+                                  color: #800000;
+                                  font-size: 10pt;
+                                  /*begin!kadov{{*/ color: #800000;
+                                  color: #800000; /*}}end!kadov*/ }
+  p.rml10_66__BULLETEDPOINT { font-size: 10pt;
+                                                                                                  color: #800000;
+                                                                                                  font-weight: normal; }
+  span.rml10_67 { color: #800000; font-weight: normal; }
+  li.rml10_68__kadov-p-CBULLETEDPOINT { font-weight: bold;
+                                  color: #800000;
+                                  font-size: 10pt;
+                                  /*begin!kadov{{*/ color: #800000;
+                                  color: #800000; /*}}end!kadov*/ }
+  p.rml10_69__BULLETEDPOINT { font-size: 10pt;
+                                                                                                  color: #800000;
+                                                                                                  font-weight: normal; }
+  span.rml10_70 { color: #800000; font-weight: normal; }
+  li.rml10_71__kadov-p-CBULLETEDPOINT { font-weight: bold;
+                                  color: #800000;
+                                  font-size: 10pt;
+                                  /*begin!kadov{{*/ color: #800000;
+                                  color: #800000; /*}}end!kadov*/ }
+  p.rml10_72__BULLETEDPOINT { font-size: 10pt;
+                                                                                                  color: #800000;
+                                                                                                  font-weight: normal; }
+  span.rml10_73 { color: #800000; font-weight: normal; }
+  a.rml10_74 { font-weight: bold; color: #800000; }
+  __ROBOML_COMMENT_ENDS__
+  __ROBOML_LT__/style__ROBOML_GT__
+  ]]></ROBOML>-->
+</sectioninfo>
+<title>On Screen Keyboard</title>
+<simpara role="RHC.DUMMY">
+  </simpara>
+<para role="RHC.\h1"><inlinemediaobject><imageobject><imagedata role="RHC.rml10_1\img" fileref="kmtitlelogo.gif" depth="33" width="33" align="left"/></imageobject></inlinemediaobject>Optional: On Screen Keyboard</para>
+
+  <para role="RHC.\p">With your keyboard you can include an on screen keyboard.</para>
+
+  <para role="RHC.NumberedPoint\p">1.<phrase role="RHC.rml10_2\span">            </phrase> Select the <inlinemediaobject><imageobject><imagedata role="RHC.rml10_3\img" fileref="Project%20-%20Keyboard%20Component_files/image084.jpg" depth="43" width="65"/></imageobject></inlinemediaobject> tab.</para>
+
+  <para role="RHC.Picture\p"><inlinemediaobject><imageobject><imagedata role="RHC.rml10_4\img" fileref="Project%20-%20Keyboard%20Component_files/image086.jpg" depth="135" width="521"/></imageobject></inlinemediaobject></para>
+
+  <para role="RHC.NumberedPoint\p">2.<phrase role="RHC.rml10_5\span">            </phrase> Check <inlinemediaobject><imageobject><imagedata role="RHC.rml10_6\img" fileref="Project%20-%20Keyboard%20Component_files/image088.gif" depth="17" width="208"/></imageobject></inlinemediaobject>.</para>
+
+  <para role="RHC.Picture\p"><inlinemediaobject><imageobject><imagedata role="RHC.rml10_7\img" fileref="Project%20-%20Keyboard%20Component_files/image090.jpg" depth="449" width="581"/></imageobject></inlinemediaobject></para>
+
+  <para role="RHC.NumberedPoint\p">2.<phrase role="RHC.rml10_8\span">             </phrase> Click on <phrase role="RHC.Bold\span">Change</phrase> <phrase role="RHC.rml10_9__Bold\span">to change the location or name of the file.</phrase></para>
+
+  <para role="RHC.\h2">The Design an on screen keyboard screen</para>
+<!--(Table)=========================================================-->
+
+  <informaltable frame="none"><tgroup colsep="0" rowsep="0" role="RHC.rml10_10__Tavultesoft\table" cols="3"><colspec colnum="1" colname="col1"/><colspec char="RHC.rml10_11\col" colnum="2" colname="col2"/><colspec char="RHC.rml10_12\col" colnum="3" colname="col3"/><tbody><row role="RHC.rml10_13\tr">
+      <entry role="RHC.rml10_14\td">
+        <para role="RHC.TableContents\p"><phrase role="RHC.Bold\span">Character Set:</phrase></para>
+      </entry>
+
+      <entry role="RHC.rml10_15\td" namest="col2" nameend="col3">
+        <para role="RHC.TableContents\p">The selected character set chosen on the Details tab.</para>
+      </entry>
+    </row><row role="RHC.rml10_16\tr">
+      <entry role="RHC.rml10_17\td">
+        <para role="RHC.TableContents\p"><phrase role="RHC.Bold\span">Font:</phrase></para>
+      </entry>
+
+      <entry role="RHC.rml10_18\td" namest="col2" nameend="col3">
+        <para role="RHC.TableContents\p">Displays the selected font for the keyboard. Click on the link to change.</para>
+      </entry>
+    </row><row role="RHC.rml10_19\tr">
+      <entry role="RHC.rml10_20\td">
+        <para role="RHC.TableContents\p"><phrase role="RHC.Bold\span">Fill from layout</phrase></para>
+      </entry>
+
+      <entry role="RHC.rml10_21\td" namest="col2" nameend="col3">
+        <para role="RHC.TableContents\p">Use the same layout as the new keyboard, assigning the same characters to the same keyboard letters.</para>
+      </entry>
+    </row><row role="RHC.rml10_22\tr">
+      <entry role="RHC.rml10_23\td">
+        <para role="RHC.TableContents\p"><phrase role="RHC.Bold\span">Import</phrase></para>
+      </entry>
+
+      <entry role="RHC.rml10_24\td" namest="col2" nameend="col3">
+        <para role="RHC.TableContents\p">Import an existing keyboard layout.</para>
+      </entry>
+    </row><row role="RHC.rml10_25\tr">
+      <entry role="RHC.rml10_26\td">
+        <para role="RHC.TableContents\p"><phrase role="RHC.Bold\span">Export</phrase></para>
+      </entry>
+
+      <entry role="RHC.rml10_27\td" namest="col2" nameend="col3">
+        <para role="RHC.TableContents\p">Export the keyboard to other file formats (HTML, BMP, or PNG), for use in documentation.</para>
+
+        <para role="RHC.TableContents\p">Export the structure of the keyboard to XML format for automated processing.<phrase role="RHC.\span"> </phrase></para>
+      </entry>
+    </row><row role="RHC.rml10_28\tr">
+      <entry role="RHC.rml10_29\td">
+        <para role="RHC.TableContents\p"><phrase role="RHC.Bold\span">Key</phrase></para>
+      </entry>
+
+      <entry role="RHC.rml10_30\td" namest="col2" nameend="col3">
+        <para role="RHC.TableContents\p">Display the selected key on the keyboard and any combinations with the Shift, Ctrl and Alt keys.</para>
+      </entry>
+    </row><row role="RHC.rml10_31\tr">
+      <entry role="RHC.rml10_32\td">
+        <para role="RHC.TableContents\p"><phrase role="RHC.Bold\span">Text</phrase></para>
+      </entry>
+
+      <entry role="RHC.rml10_33\td" namest="col2" nameend="col3">
+        <para role="RHC.TableContents\p">Type in the character for the selected key.</para>
+      </entry>
+    </row><row role="RHC.rml10_34\tr">
+      <entry role="RHC.rml10_35\td">
+        <para role="RHC.TableContents\p"><phrase role="RHC.Bold\span">Bitmap</phrase></para>
+      </entry>
+
+      <entry role="RHC.rml10_36\td" namest="col2" nameend="col3">
+        <para role="RHC.TableContents\p">You can also use bitmap images for the keycaps.  This can often help in clarity for complex fonts.<phrase role="RHC.\span"> </phrase></para>
+      </entry>
+    </row><row role="RHC.rml10_37\tr">
+      <entry role="RHC.rml10_38\td" namest="col1" nameend="col2">
+        <para role="RHC.TableContents\p"><phrase role="RHC.Bold\span">Display underlying layout characters</phrase></para>
+      </entry>
+
+      <entry role="RHC.rml10_39\td">
+        <para role="RHC.TableContents\p">If selected, then the visual keyboard will only be used if the current underlying layout is active.  This feature is not currently supported in Keyman.<phrase role="RHC.\span"> </phrase></para>
+      </entry>
+    </row><row role="RHC.rml10_40\tr">
+      <entry role="RHC.rml10_41\td" namest="col1" nameend="col2">
+        <para role="RHC.TableContents\p"><phrase role="RHC.Bold\span">Distinguish between left and righ Ctrl/Alt (implies (AltGr)</phrase></para>
+      </entry>
+
+      <entry role="RHC.rml10_42\td">
+        <para role="RHC.TableContents\p">If selected, the visual keyboard editor will allow you to have different characters displayed depending on whether left or right Ctrl/Alt are depressed.</para>
+      </entry>
+    </row><row role="RHC.rml10_43\tr">
+      <entry role="RHC.rml10_44\td" namest="col1" nameend="col2">
+        <para role="RHC.TableContents\p"><phrase role="RHC.Bold\span">Include 102nd key used on European keyboards</phrase></para>
+      </entry>
+
+      <entry role="RHC.rml10_45\td">
+        <para role="RHC.TableContents\p">If selected, displays the 102nd key to the right of the left-hand shift key.</para>
+      </entry>
+    </row></tbody></tgroup></informaltable>
+
+  <para role="RHC.rml10_46__RelatedTopics\p">Related Topics</para>
+
+  <itemizedlist>
+    <listitem role="RHC.rml10_47__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_48__BULLETEDPOINT\p"><ulink url="Developer_-_Creating_a_New_Keyboard.xml"><phrase role="RHC.rml10_49\span">Creating a New Keyboard</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_50__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_51__BULLETEDPOINT\p"><ulink url="Keyboard___Using_the_Keyboard_Wizard.xml"><phrase role="RHC.rml10_52\span">Using the Keyboard Wizard</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_53__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_54__BULLETEDPOINT\p"><ulink url="Step_1_Keyboard_Details.xml"><phrase role="RHC.rml10_55\span">Step 1: Keyboard Details</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_56__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_57__BULLETEDPOINT\p"><ulink url="Step_2_Keyboard_Layout.xml"><phrase role="RHC.rml10_58\span">Step 2: Keyboard Layout</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_59__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_60__BULLETEDPOINT\p"><ulink url="Step_3_Keyboard_Icon.xml"><phrase role="RHC.rml10_61\span">Step 3: Keyboard Icon</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_62__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_63__BULLETEDPOINT\p"><ulink url="Step_4_Keyboard_Compile.xml"><phrase role="RHC.rml10_64\span">Step 4: Keyboard Compile</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_65__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_66__BULLETEDPOINT\p"><ulink url="Keyboard_Options.xml"><phrase role="RHC.rml10_67\span">Keyboard Options</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_68__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_69__BULLETEDPOINT\p"><ulink url="On_Screen_Keyboard.xml"><phrase role="RHC.rml10_70\span">On screen keyboard</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_71__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_72__BULLETEDPOINT\p"><ulink url="Using_the_Keyman_Keyboard_Language.xml"><phrase role="RHC.rml10_73\span">Using the Keyman Keyboard Language</phrase></ulink></para></listitem>
+  </itemizedlist>
+
+  <para role="RHC.RelatedTopics\p"><ulink role="RHC.rml10_74\a" url="Home.xml">Table of Contents</ulink></para>
+
+  <para role="RHC.backto\p"> </para>
+<!--_ROBOML_TOPICLIST_START_ {step_3_keyboard_icon.htm|on_screen_keyboard.htm|home.htm|step_2_keyboard_layout.htm|step_1_keyboard_details.htm|step_4_keyboard_compile.htm|using_the_keyman_keyboard_language.htm|keyboard_options.htm|keyboard___using_the_keyboard_wizard.htm|developer_-_creating_a_new_keyboard.htm|} _ROBOML_TOPICLIST_END_-->
+</section>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<section condition="Kmhelp.css" role="RHC.\body">
+<sectioninfo>
+  <title>Using the Keyman Keyboard Language</title>
+<!--(Meta)==========================================================-->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <publisher role="RobomlCodecName: RoboML 1.0 (XML)">
+<publishername>RoboHelp by eHelp Corporation - www.ehelp.com</publishername>
+</publisher>
+<!--(Links)=========================================================-->
+  <!--(Style Sheet)===================================================-->
+  <!--<ROBOML version="1.0"><![CDATA[__ROBOML_LT__style__ROBOML_GT__
+  __ROBOML_LT__!__ROBOML_2DASHES__
+
+  A:visited {
+          color: #800080;
+  }
+
+  A:link {
+          color: #0000ff;
+  }
+
+  __ROBOML_2DASHES____ROBOML_GT__
+  __ROBOML_LT__/style__ROBOML_GT__
+
+
+  ]]></ROBOML>-->
+<!--<ROBOML version="1.0"><![CDATA[__ROBOML_LT__style title="RML_10" type="text/css"__ROBOML_GT__
+  __ROBOML_COMMENT_STARTS__
+  img.rml10_1 { width: 33px;
+                                                                          height: 33px;
+                                                                          margin-left: 7px;
+                                                                          margin-right: 7px;
+                                                                          float: left; }
+  p.rml10_2__RelatedTopics { margin-left: 0px;
+                          border-top-color: #800000;
+                          border-top-width: 1px;
+                          border-top-style: Solid;
+                          font-weight: bold;
+                          font-size: 10pt;
+                          color: #000000; }
+  li.rml10_3__kadov-p-CBULLETEDPOINT { font-weight: bold;
+                                  color: #800000;
+                                  font-size: 10pt;
+                                  /*begin!kadov{{*/ color: #800000;
+                                  color: #800000; /*}}end!kadov*/ }
+  p.rml10_4__BULLETEDPOINT { font-size: 10pt;
+                                                                                                  color: #800000;
+                                                                                                  font-weight: normal; }
+  span.rml10_5 { color: #800000; font-weight: normal; }
+  li.rml10_6__kadov-p-CBULLETEDPOINT { font-weight: bold;
+                                  color: #800000;
+                                  font-size: 10pt;
+                                  /*begin!kadov{{*/ color: #800000;
+                                  color: #800000; /*}}end!kadov*/ }
+  p.rml10_7__BULLETEDPOINT { font-size: 10pt;
+                                                                                                  color: #800000;
+                                                                                                  font-weight: normal; }
+  span.rml10_8 { color: #800000; font-weight: normal; }
+  li.rml10_9__kadov-p-CBULLETEDPOINT { font-weight: bold;
+                                  color: #800000;
+                                  font-size: 10pt;
+                                  /*begin!kadov{{*/ color: #800000;
+                                  color: #800000; /*}}end!kadov*/ }
+  p.rml10_10__BULLETEDPOINT { font-size: 10pt;
+                                                                                                  color: #800000;
+                                                                                                  font-weight: normal; }
+  span.rml10_11 { color: #800000; font-weight: normal; }
+  li.rml10_12__kadov-p-CBULLETEDPOINT { font-weight: bold;
+                                  color: #800000;
+                                  font-size: 10pt;
+                                  /*begin!kadov{{*/ color: #800000;
+                                  color: #800000; /*}}end!kadov*/ }
+  p.rml10_13__BULLETEDPOINT { font-size: 10pt;
+                                                                                                  color: #800000;
+                                                                                                  font-weight: normal; }
+  span.rml10_14 { color: #800000; font-weight: normal; }
+  li.rml10_15__kadov-p-CBULLETEDPOINT { font-weight: bold;
+                                  color: #800000;
+                                  font-size: 10pt;
+                                  /*begin!kadov{{*/ color: #800000;
+                                  color: #800000; /*}}end!kadov*/ }
+  p.rml10_16__BULLETEDPOINT { font-size: 10pt;
+                                                                                                  color: #800000;
+                                                                                                  font-weight: normal; }
+  span.rml10_17 { color: #800000; font-weight: normal; }
+  li.rml10_18__kadov-p-CBULLETEDPOINT { font-weight: bold;
+                                  color: #800000;
+                                  font-size: 10pt;
+                                  /*begin!kadov{{*/ color: #800000;
+                                  color: #800000; /*}}end!kadov*/ }
+  p.rml10_19__BULLETEDPOINT { font-size: 10pt;
+                                                                                                  color: #800000;
+                                                                                                  font-weight: normal; }
+  span.rml10_20 { color: #800000; font-weight: normal; }
+  li.rml10_21__kadov-p-CBULLETEDPOINT { font-weight: bold;
+                                  color: #800000;
+                                  font-size: 10pt;
+                                  /*begin!kadov{{*/ color: #800000;
+                                  color: #800000; /*}}end!kadov*/ }
+  p.rml10_22__BULLETEDPOINT { font-size: 10pt;
+                                                                                                  color: #800000;
+                                                                                                  font-weight: normal; }
+  span.rml10_23 { color: #800000; font-weight: normal; }
+  li.rml10_24__kadov-p-CBULLETEDPOINT { font-weight: bold;
+                                  color: #800000;
+                                  font-size: 10pt;
+                                  /*begin!kadov{{*/ color: #800000;
+                                  color: #800000; /*}}end!kadov*/ }
+  p.rml10_25__BULLETEDPOINT { font-size: 10pt;
+                                                                                                  color: #800000;
+                                                                                                  font-weight: normal; }
+  span.rml10_26 { color: #800000; font-weight: normal; }
+  li.rml10_27__kadov-p-CBULLETEDPOINT { font-weight: bold;
+                                  color: #800000;
+                                  font-size: 10pt;
+                                  /*begin!kadov{{*/ color: #800000;
+                                  color: #800000; /*}}end!kadov*/ }
+  p.rml10_28__BULLETEDPOINT { font-size: 10pt;
+                                                                                                  color: #800000;
+                                                                                                  font-weight: normal; }
+  span.rml10_29 { color: #800000; font-weight: normal; }
+  a.rml10_30 { font-weight: bold; color: #800000; }
+  __ROBOML_COMMENT_ENDS__
+  __ROBOML_LT__/style__ROBOML_GT__
+  ]]></ROBOML>-->
+</sectioninfo>
+<title>Using the Keyman Keyboard Language</title>
+<simpara role="RHC.DUMMY">
+  </simpara>
+<para role="RHC.\h1"><phrase role="RHC.\span"><inlinemediaobject><imageobject><imagedata role="RHC.rml10_1\img" fileref="kmtitlelogo.gif" depth="33" width="33" align="left"/></imageobject></inlinemediaobject>Using the Keyman Keyboard Language</phrase></para>
+
+  <para role="RHC.\p"><phrase role="RHC.\span">The Keyman Keyboard Language (.kmn files) is what provides the flexibility that is needed to write keyboards with complex character management, including constraints, dead keys, post-entry parsing, virtual key management (accessing any key on the keyboard), and other Keyman features. You can learn more about the Keyman Keyboard Language in the Programmer's Guide, available</phrase> <phrase role="RHC.Bold\span"><phrase role="RHC.\span">here</phrase></phrase>.<phrase role="RHC.\span"> </phrase></para>
+
+  <para role="RHC.rml10_2__RelatedTopics\p">Related Topics</para>
+
+  <itemizedlist>
+    <listitem role="RHC.rml10_3__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_4__BULLETEDPOINT\p"><ulink url="Developer_-_Creating_a_New_Keyboard.xml"><phrase role="RHC.rml10_5\span">Creating a New Keyboard</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_6__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_7__BULLETEDPOINT\p"><ulink url="Keyboard___Using_the_Keyboard_Wizard.xml"><phrase role="RHC.rml10_8\span">Using the Keyboard Wizard</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_9__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_10__BULLETEDPOINT\p"><ulink url="Step_1_Keyboard_Details.xml"><phrase role="RHC.rml10_11\span">Step 1: Keyboard Details</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_12__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_13__BULLETEDPOINT\p"><ulink url="Step_2_Keyboard_Layout.xml"><phrase role="RHC.rml10_14\span">Step 2: Keyboard Layout</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_15__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_16__BULLETEDPOINT\p"><ulink url="Step_3_Keyboard_Icon.xml"><phrase role="RHC.rml10_17\span">Step 3: Keyboard Icon</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_18__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_19__BULLETEDPOINT\p"><ulink url="Step_4_Keyboard_Compile.xml"><phrase role="RHC.rml10_20\span">Step 4: Keyboard Compile</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_21__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_22__BULLETEDPOINT\p"><ulink url="Keyboard_Options.xml"><phrase role="RHC.rml10_23\span">Keyboard Options</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_24__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_25__BULLETEDPOINT\p"><ulink url="On_Screen_Keyboard.xml"><phrase role="RHC.rml10_26\span">On screen keyboard</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_27__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_28__BULLETEDPOINT\p"><ulink url="Using_the_Keyman_Keyboard_Language.xml"><phrase role="RHC.rml10_29\span">Using the Keyman Keyboard Language</phrase></ulink></para></listitem>
+  </itemizedlist>
+
+  <para role="RHC.RelatedTopics\p"><ulink role="RHC.rml10_30\a" url="Home.xml">Table of Contents</ulink></para>
+<!--_ROBOML_TOPICLIST_START_ {step_3_keyboard_icon.htm|on_screen_keyboard.htm|home.htm|step_2_keyboard_layout.htm|step_1_keyboard_details.htm|step_4_keyboard_compile.htm|using_the_keyman_keyboard_language.htm|keyboard_options.htm|keyboard___using_the_keyboard_wizard.htm|developer_-_creating_a_new_keyboard.htm|} _ROBOML_TOPICLIST_END_-->
+</section>
