@@ -100,3 +100,13 @@ $pagestyle = '#section2 .wrapper { overflow-x: inherit }';
     </a>
 </div>
 
+<div class="product">
+    <a href="model_info/1.0">
+        <img src="<?php echo cdn("img/icon-cloud.png"); ?>" />
+        <h3>.model_info 1.0 file specification</h3>
+        <p>
+          JSON-based description of model file metadata used in
+          Keyman repositories
+        </p>
+    </a>
+</div>
