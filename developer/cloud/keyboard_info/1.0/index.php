@@ -155,7 +155,7 @@
 <td>
   <p><b>number</b>, integer size of the .kmp file that will be distributed.
 
-  <p><b>Generation:</b> This will be normally generated automatically.</p>
+  <p><b>Generation:</b> This will normally be generated automatically.</p>
 </td>
 </tr>
 <tr>
@@ -164,12 +164,12 @@
 <td>yes <a href='#note-2'>(2)</a></td>
 <td>yes <a href='#note-2'>(2)</a></td>
 <td>
-  <p><b>string</b>, filename of the .js file that will be distributed,  e.g. "gff-amh-1.0.js".</p>
+  <p><b>string</b>, filename of the .js file that will be distributed,  e.g. "gff_amh.js".</p>
 
   <p><b>packageFilename </b>and/or <b>jsFilename </b>must be specified for <b>legacy</b>
   and <b>experimental</b> keyboards.</p>
 
-  <p><b>Generation:</b> for release, must be <b><i>id-keyboardVersion</i></b><b>.js</b>.</p>
+  <p><b>Generation:</b> for release, must be <b><i>id</i></b><b>.js</b>.</p>
 </td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@
 <td>
   <p><b>number</b>, integer size of the .js file that will be distributed.
 
-  <p><b>Generation:</b> This will be normally generated automatically.</p>
+  <p><b>Generation:</b> This will normally be generated automatically.</p>
 </td>
 </tr>
 <tr>
@@ -204,7 +204,7 @@
 <td>
   <p><b>number</b>, integer size of the <b>documentationFileName</b> file that will be distributed.
 
-  <p><b>Generation:</b> This will be normally generated automatically.</p>
+  <p><b>Generation:</b> This will normally be generated automatically.</p>
 </td>
 </tr>
 <tr>
@@ -320,7 +320,7 @@
   <p><b>string</b>, the relative path of the keyboard in the /keymanapp/keyboards GitHub repository, starting
   with <code>release/</code>, <code>experimental/</code> or <code>legacy/</code>.
 
-  <p><b>Generation:</b> This will be normally generated automatically.</p>
+  <p><b>Generation:</b> This will normally be generated automatically.</p>
 </td>
 </tr>
 <tr>

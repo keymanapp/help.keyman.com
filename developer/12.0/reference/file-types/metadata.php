@@ -9,11 +9,11 @@ head([
 ]);
 ?>
 
-<h1>Keyboard Package Metadata files</h1>
+<h1>Keyman Package Metadata files</h1>
 
 <dl>
   <dt>Used by:</dt>
-  <dd><span class="application">Keyman Desktop</span> and Keyman Engine products.</dd>
+  <dd>Keyman applications on all platforms except web.</dd>
 
   <dt>Description:</dt>
   <dd>The files <code language="filename">kmp.inf</code> and <code language="filename">kmp.json</code> are metadata
@@ -26,10 +26,12 @@ head([
   <dd>Keyman mobile products use <code class="filename">kmp.json</code> to install the touch keyboards (.JS) in the package.</dd>
   <dd>Keyman Desktop 10.0 also uses <code class="filename">kmp.json</code> to install the keyboards
     (<a href="kmx">.KMX</a>) in the package.</dd>
-  <dd>Older versions of Keyman use <code class="filename">kmp.inf</code>, a parallel format of the package metadata.</dd>
+  <dd>Older versions of Keyman use <code class="filename">kmp.inf</code>, a parallel format of the package metadata. Note: the
+    lexical model compiler does not add <code class="filename">kmp.inf</code> </dd>
 
-  <dt>Distributed with keyboard:</dt>
-  <dd>A Keyman Package file includes these metadata files.</dd>
+  <dt>Package purposes:</dt>
+  <dd>A Keyman Package file can be used to distribute keyboards (most common), lexical models, or user interface localizations for
+    Keyman Desktop.</dd>
 
   <h2>KMP.JSON</h2>
 
@@ -43,7 +45,8 @@ head([
         "startMenu", "required Object", "<a href='#obj-startMenu'><code>Start Menu</code></a> object.",
         "info", "required Object", "<a href='#obj-info'><code>Info</code></a> object.",
         "files", "required Object", "Array of objects, each containing a name and description of each file in in the package",
-        "keyboards", "required Object", "Array of <a href='#obj-keyboard'><code>Keyboard</code></a> objects."
+        "keyboards", "required Object", "Array of <a href='#obj-keyboard'><code>Keyboard</code></a> objects.",
+        "lexicalModels", "required Object", "Array of <a href='#obj-lexicalModel'><code>LexicalModel</code></a> objects."
     );
     ?>
 
@@ -112,7 +115,7 @@ head([
 
   <h3><a id="obj-keyboard">The Keyboard object</a></h3>
 
-  <p>The <code>Keyboard</code> object describes an individual keyboard in the Keyman package</p>
+  <p>The <code>Keyboard</code> object describes an individual keyboard in the Keyman package. A package cannot contain both lexical models and keyboards.</p>
     <?php
 
     obj_spec(false,
@@ -139,5 +142,20 @@ head([
     );
 
     ?>
+
+  <h3><a id="obj-lexicalModel">The LexicalModel object</a></h3>
+
+  <p>The <code>LexicalModel</code> object describes an individual model in the Keyman package. A package cannot contain both lexical models and keyboards.</p>
+  <?php
+
+  obj_spec(false,
+      "name", "required string", "Name of model",
+      "id", "required string", "ID of the model, always matches the filename of the model",
+      "rtl", "optional boolean", "<code>true</code> if the model  targets a right-to-left script. <code>false</code> if absent.",
+      "version", "required string", "version number of the model  in dotted number format.",
+      "languages", "required Array", "An array of <a href='#obj-language'><code>Language</code></a> objects linked to the model."
+  );
+
+  ?>
 </dl>
 
