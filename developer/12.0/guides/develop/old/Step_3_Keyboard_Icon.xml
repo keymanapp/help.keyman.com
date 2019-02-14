@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<section condition="Kmhelp.css" role="RHC.\body">
+<sectioninfo>
+  <title>Step 3: Keyboard Icon</title>
+<!--(Meta)==========================================================-->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <publisher role="RobomlCodecName: RoboML 1.0 (XML)">
+<publishername>RoboHelp by eHelp Corporation - www.ehelp.com</publishername>
+</publisher>
+<!--(Links)=========================================================-->
+  <!--(Style Sheet)===================================================-->
+  <!--<ROBOML version="1.0"><![CDATA[__ROBOML_LT__style__ROBOML_GT__
+  __ROBOML_LT__!__ROBOML_2DASHES__
+
+  A:visited {
+          color: #800080;
+  }
+
+  A:link {
+          color: #0000ff;
+  }
+
+  __ROBOML_2DASHES____ROBOML_GT__
+  __ROBOML_LT__/style__ROBOML_GT__
+
+
+  ]]></ROBOML>-->
+<!--<ROBOML version="1.0"><![CDATA[__ROBOML_LT__style title="RML_10" type="text/css"__ROBOML_GT__
+  __ROBOML_COMMENT_STARTS__
+  img.rml10_1 { width: 33px;
+                                  height: 33px;
+                                  margin-left: 7px;
+                                  margin-right: 7px;
+                                  float: left;
+                                  border-style: none;
+                                  float: left; }
+  span.rml10_2 { font: 7.0pt 'Times New Roman'; }
+  img.rml10_3 { width: 37px;
+                                                                  height: 39px;
+                                                                  border-style: none;
+                                                                  border-style: none; }
+  img.rml10_4 { width: 425px;
+                                                                  height: 104px;
+                                                                  border-style: none;
+                                                                  border-style: none; }
+  span.rml10_5 { font: 7.0pt 'Times New Roman'; }
+  img.rml10_6 { width: 127px;
+                                                          height: 17px;
+                                                          border-style: none;
+                                                          border-style: none; }
+  img.rml10_7 { width: 529px;
+                                                                  height: 340px;
+                                                                  border-style: none;
+                                                                  border-style: none; }
+  span.rml10_8 { font: 7.0pt 'Times New Roman'; }
+  img.rml10_9 { width: 67px;
+                                                                          height: 21px;
+                                                                          border-style: none;
+                                                                          border-style: none; }
+  span.rml10_10 { font: 7.0pt 'Times New Roman'; }
+  span.rml10_11 { font: 7.0pt 'Times New Roman'; }
+  img.rml10_12 { width: 73px;
+                                                                          height: 25px;
+                                                                          border-style: none;
+                                                                          border-style: none; }
+  span.rml10_13 { font: 7.0pt 'Times New Roman'; }
+  span.rml10_14 { font: 7.0pt 'Times New Roman'; }
+  img.rml10_15 { width: 23px;
+                                                                                                                          height: 22px;
+                                                                                                                          border-style: none;
+                                                                                                                          border-style: none; }
+  span.rml10_16 { font: 7.0pt 'Times New Roman'; }
+  img.rml10_17 { width: 383px;
+                                                                  height: 221px;
+                                                                  border-style: none;
+                                                                  border-style: none; }
+  span.rml10_18 { font: 7.0pt 'Times New Roman'; }
+  span.rml10_19 { font: 7.0pt 'Times New Roman'; }
+  span.rml10_20 { font: 7.0pt 'Times New Roman'; }
+  span.rml10_21 { font: 7.0pt 'Times New Roman'; }
+  span.rml10_22 { font: 7.0pt 'Times New Roman'; }
+  img.rml10_23 { width: 61px;
+                                                                          height: 21px;
+                                                                          border-style: none;
+                                                                          border-style: none; }
+  span.rml10_24 { font: 7.0pt 'Times New Roman'; }
+  span.rml10_25 { font: 7.0pt 'Times New Roman'; }
+  img.rml10_26 { width: 65px;
+                                                                  height: 64px;
+                                                                  border-style: none;
+                                                                  border-style: none; }
+  img.rml10_27 { width: 71px;
+                                                                  height: 70px;
+                                                                  border-style: none;
+                                                                  border-style: none; }
+  span.rml10_28 { font: 7.0pt 'Times New Roman'; }
+  p.rml10_29__RelatedTopics { margin-left: 0px;
+                          border-top-color: #800000;
+                          border-top-width: 1px;
+                          border-top-style: Solid;
+                          font-weight: bold;
+                          font-size: 10pt;
+                          color: #000000; }
+  li.rml10_30__kadov-p-CBULLETEDPOINT { font-weight: bold;
+                                  color: #800000;
+                                  font-size: 10pt;
+                                  /*begin!kadov{{*/ color: #800000;
+                                  color: #800000; /*}}end!kadov*/ }
+  p.rml10_31__BULLETEDPOINT { font-size: 10pt;
+                                                                                                  color: #800000;
+                                                                                                  font-weight: normal; }
+  span.rml10_32 { color: #800000; font-weight: normal; }
+  li.rml10_33__kadov-p-CBULLETEDPOINT { font-weight: bold;
+                                  color: #800000;
+                                  font-size: 10pt;
+                                  /*begin!kadov{{*/ color: #800000;
+                                  color: #800000; /*}}end!kadov*/ }
+  p.rml10_34__BULLETEDPOINT { font-size: 10pt;
+                                                                                                  color: #800000;
+                                                                                                  font-weight: normal; }
+  span.rml10_35 { color: #800000; font-weight: normal; }
+  li.rml10_36__kadov-p-CBULLETEDPOINT { font-weight: bold;
+                                  color: #800000;
+                                  font-size: 10pt;
+                                  /*begin!kadov{{*/ color: #800000;
+                                  color: #800000; /*}}end!kadov*/ }
+  p.rml10_37__BULLETEDPOINT { font-size: 10pt;
+                                                                                                  color: #800000;
+                                                                                                  font-weight: normal; }
+  span.rml10_38 { color: #800000; font-weight: normal; }
+  li.rml10_39__kadov-p-CBULLETEDPOINT { font-weight: bold;
+                                  color: #800000;
+                                  font-size: 10pt;
+                                  /*begin!kadov{{*/ color: #800000;
+                                  color: #800000; /*}}end!kadov*/ }
+  p.rml10_40__BULLETEDPOINT { font-size: 10pt;
+                                                                                                  color: #800000;
+                                                                                                  font-weight: normal; }
+  span.rml10_41 { color: #800000; font-weight: normal; }
+  li.rml10_42__kadov-p-CBULLETEDPOINT { font-weight: bold;
+                                  color: #800000;
+                                  font-size: 10pt;
+                                  /*begin!kadov{{*/ color: #800000;
+                                  color: #800000; /*}}end!kadov*/ }
+  p.rml10_43__BULLETEDPOINT { font-size: 10pt;
+                                                                                                  color: #800000;
+                                                                                                  font-weight: normal; }
+  span.rml10_44 { color: #800000; font-weight: normal; }
+  li.rml10_45__kadov-p-CBULLETEDPOINT { font-weight: bold;
+                                  color: #800000;
+                                  font-size: 10pt;
+                                  /*begin!kadov{{*/ color: #800000;
+                                  color: #800000; /*}}end!kadov*/ }
+  p.rml10_46__BULLETEDPOINT { font-size: 10pt;
+                                                                                                  color: #800000;
+                                                                                                  font-weight: normal; }
+  span.rml10_47 { color: #800000; font-weight: normal; }
+  li.rml10_48__kadov-p-CBULLETEDPOINT { font-weight: bold;
+                                  color: #800000;
+                                  font-size: 10pt;
+                                  /*begin!kadov{{*/ color: #800000;
+                                  color: #800000; /*}}end!kadov*/ }
+  p.rml10_49__BULLETEDPOINT { font-size: 10pt;
+                                                                                                  color: #800000;
+                                                                                                  font-weight: normal; }
+  span.rml10_50 { color: #800000; font-weight: normal; }
+  li.rml10_51__kadov-p-CBULLETEDPOINT { font-weight: bold;
+                                  color: #800000;
+                                  font-size: 10pt;
+                                  /*begin!kadov{{*/ color: #800000;
+                                  color: #800000; /*}}end!kadov*/ }
+  p.rml10_52__BULLETEDPOINT { font-size: 10pt;
+                                                                                                  color: #800000;
+                                                                                                  font-weight: normal; }
+  span.rml10_53 { color: #800000; font-weight: normal; }
+  li.rml10_54__kadov-p-CBULLETEDPOINT { font-weight: bold;
+                                  color: #800000;
+                                  font-size: 10pt;
+                                  /*begin!kadov{{*/ color: #800000;
+                                  color: #800000; /*}}end!kadov*/ }
+  p.rml10_55__BULLETEDPOINT { font-size: 10pt;
+                                                                                                  color: #800000;
+                                                                                                  font-weight: normal; }
+  span.rml10_56 { color: #800000; font-weight: normal; }
+  a.rml10_57 { font-weight: bold; color: #800000; }
+  __ROBOML_COMMENT_ENDS__
+  __ROBOML_LT__/style__ROBOML_GT__
+  ]]></ROBOML>-->
+</sectioninfo>
+<title>Step 3: Keyboard Icon</title>
+<simpara role="RHC.DUMMY">
+  </simpara>
+<para role="RHC.\h1"><inlinemediaobject><imageobject><imagedata role="RHC.rml10_1\img" fileref="kmtitlelogo.gif" depth="33" width="33" align="left"/></imageobject></inlinemediaobject>Step 3: Icon</para>
+
+  <para role="RHC.\p">At this step you can create a bitmap for the keyboard, or load an existing bitmap to use. This bitmap will be displayed when the keyboard is active.</para>
+
+  <para role="RHC.NumberedPoint\p">1.<phrase role="RHC.rml10_2\span">            </phrase> Select the <inlinemediaobject><imageobject><imagedata role="RHC.rml10_3\img" fileref="Project%20-%20Keyboard%20Component_files/image040.jpg" depth="39" width="37"/></imageobject></inlinemediaobject> tab.</para>
+
+  <para role="RHC.Picture\p"><inlinemediaobject><imageobject><imagedata role="RHC.rml10_4\img" fileref="Project%20-%20Keyboard%20Component_files/image042.jpg" depth="104" width="425"/></imageobject></inlinemediaobject></para>
+
+  <para role="RHC.\h2">Taskbar Icon</para>
+
+  <para role="RHC.NumberedPoint\p">1.<phrase role="RHC.rml10_5\span">            </phrase> Check <inlinemediaobject><imageobject><imagedata role="RHC.rml10_6\img" fileref="Project%20-%20Keyboard%20Component_files/image044.gif" depth="17" width="127"/></imageobject></inlinemediaobject>.</para>
+
+  <para role="RHC.Picture\p"><inlinemediaobject><imageobject><imagedata role="RHC.rml10_7\img" fileref="Project%20-%20Keyboard%20Component_files/image046.jpg" depth="340" width="529"/></imageobject></inlinemediaobject></para>
+
+  <para role="RHC.\h3">Existing Icon</para>
+
+  <para role="RHC.NumberedPoint\p">1.<phrase role="RHC.rml10_8\span">            </phrase> Click on the <inlinemediaobject><imageobject><imagedata role="RHC.rml10_9\img" fileref="Project%20-%20Keyboard%20Component_files/image048.jpg" depth="21" width="67"/></imageobject></inlinemediaobject> button.</para>
+
+  <para role="RHC.NumberedPoint\p">2.<phrase role="RHC.rml10_10\span">            </phrase> Navigate to and select the icon.</para>
+
+  <para role="RHC.INDENTED\p">OR</para>
+
+  <para role="RHC.NumberedPoint\p">1.<phrase role="RHC.rml10_11\span">            </phrase> Click on the <inlinemediaobject><imageobject><imagedata role="RHC.rml10_12\img" fileref="Project%20-%20Keyboard%20Component_files/image050.jpg" depth="25" width="73"/></imageobject></inlinemediaobject> button.</para>
+
+  <para role="RHC.NumberedPoint\p">2.<phrase role="RHC.rml10_13\span">            </phrase> Navigate to and select the icon.</para>
+
+  <para role="RHC.\h3">Create your own icon</para>
+
+  <para role="RHC.\p">For the creative person, you can use the toolbox and palette of colours to create an icon of your own.</para>
+
+  <para role="RHC.\h3">Using the Text Tool</para>
+
+  <para role="RHC.NumberedPoint\p">1.<phrase role="RHC.rml10_14\span">            </phrase> Select the <phrase role="RHC.Bold\span">Text</phrase> <inlinemediaobject><imageobject><imagedata role="RHC.rml10_15\img" fileref="Project%20-%20Keyboard%20Component_files/image052.jpg" depth="22" width="23"/></imageobject></inlinemediaobject> tool.</para>
+
+  <para role="RHC.NumberedPoint\p">2.<phrase role="RHC.rml10_16\span">            </phrase> Click in the bottom left corner of the grid.</para>
+
+  <para role="RHC.Picture\p"><inlinemediaobject><imageobject><imagedata role="RHC.rml10_17\img" fileref="Project%20-%20Keyboard%20Component_files/image054.jpg" depth="221" width="383"/></imageobject></inlinemediaobject></para>
+
+  <para role="RHC.NumberedPoint\p">3.<phrase role="RHC.rml10_18\span">            </phrase> From the <phrase role="RHC.Bold\span">Quality</phrase> drop down list select <phrase role="RHC.Bold\span">Cleartype</phrase>.</para>
+
+  <para role="RHC.NumberedPoint\p">4.<phrase role="RHC.rml10_19\span">            </phrase> In the <phrase role="RHC.Bold\span">Text</phrase> field enter the text to appear on the icon.</para>
+
+  <para role="RHC.NumberedPoint\p">5.<phrase role="RHC.rml10_20\span">            </phrase> Click on <phrase role="RHC.Bold\span">OK</phrase>.</para>
+
+  <para role="RHC.NumberedPoint\p">6.<phrase role="RHC.rml10_21\span">            </phrase> To change the font or font size, select the <phrase role="RHC.Bold\span">Text</phrase> and click in the bottom left corner.</para>
+
+  <para role="RHC.NumberedPoint\p">7.<phrase role="RHC.rml10_22\span">            </phrase> Click on the <inlinemediaobject><imageobject><imagedata role="RHC.rml10_23\img" fileref="Project%20-%20Keyboard%20Component_files/image056.jpg" depth="21" width="61"/></imageobject></inlinemediaobject> button.</para>
+
+  <para role="RHC.NumberedPoint\p">8.<phrase role="RHC.rml10_24\span">            </phrase> Make the necessary changes and click on <phrase role="RHC.Bold\span">OK</phrase>.</para>
+
+  <para role="RHC.NumberedPoint\p">9.<phrase role="RHC.rml10_25\span">            </phrase> Click on the <phrase role="RHC.Bold\span">arrow keys</phrase> to move the image around on the icon.</para>
+
+  <para role="RHC.Picture\p"><inlinemediaobject><imageobject><imagedata role="RHC.rml10_26\img" fileref="Project%20-%20Keyboard%20Component_files/image058.jpg" depth="64" width="65"/></imageobject></inlinemediaobject></para>
+
+  <para role="RHC.\h3">Preview of Icon</para>
+
+  <para role="RHC.\p">The icon will appear in the preview section on the bottom of the toolbox.</para>
+
+  <para role="RHC.Picture\p"><inlinemediaobject><imageobject><imagedata role="RHC.rml10_27\img" fileref="Project%20-%20Keyboard%20Component_files/image060.jpg" depth="70" width="71"/></imageobject></inlinemediaobject></para>
+
+  <para role="RHC.NumberedPoint\p">10.<phrase role="RHC.rml10_28\span">        </phrase> Click on the <phrase role="RHC.Bold\span">Save</phrase> button.</para>
+
+  <para role="RHC.rml10_29__RelatedTopics\p">Related Topics</para>
+
+  <itemizedlist>
+    <listitem role="RHC.rml10_30__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_31__BULLETEDPOINT\p"><ulink url="Developer_-_Creating_a_New_Keyboard.xml"><phrase role="RHC.rml10_32\span">Creating a New Keyboard</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_33__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_34__BULLETEDPOINT\p"><ulink url="Keyboard___Using_the_Keyboard_Wizard.xml"><phrase role="RHC.rml10_35\span">Using the Keyboard Wizard</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_36__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_37__BULLETEDPOINT\p"><ulink url="Step_1_Keyboard_Details.xml"><phrase role="RHC.rml10_38\span">Step 1: Keyboard Details</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_39__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_40__BULLETEDPOINT\p"><ulink url="Step_2_Keyboard_Layout.xml"><phrase role="RHC.rml10_41\span">Step 2: Keyboard Layout</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_42__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_43__BULLETEDPOINT\p"><ulink url="Step_3_Keyboard_Icon.xml"><phrase role="RHC.rml10_44\span">Step 3: Keyboard Icon</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_45__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_46__BULLETEDPOINT\p"><ulink url="Step_4_Keyboard_Compile.xml"><phrase role="RHC.rml10_47\span">Step 4: Keyboard Compile</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_48__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_49__BULLETEDPOINT\p"><ulink url="Keyboard_Options.xml"><phrase role="RHC.rml10_50\span">Keyboard Options</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_51__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_52__BULLETEDPOINT\p"><ulink url="On_Screen_Keyboard.xml"><phrase role="RHC.rml10_53\span">On screen keyboard</phrase></ulink></para></listitem>
+
+    <listitem role="RHC.rml10_54__kadov-p-CBULLETEDPOINT\li"><para role="RHC.rml10_55__BULLETEDPOINT\p"><ulink url="Using_the_Keyman_Keyboard_Language.xml"><phrase role="RHC.rml10_56\span">Using the Keyman Keyboard Language</phrase></ulink></para></listitem>
+  </itemizedlist>
+
+  <para role="RHC.RelatedTopics\p"><ulink role="RHC.rml10_57\a" url="Home.xml">Table of Contents</ulink></para>
+<!--_ROBOML_TOPICLIST_START_ {step_3_keyboard_icon.htm|on_screen_keyboard.htm|home.htm|step_2_keyboard_layout.htm|step_1_keyboard_details.htm|step_4_keyboard_compile.htm|using_the_keyman_keyboard_language.htm|keyboard_options.htm|keyboard___using_the_keyboard_wizard.htm|developer_-_creating_a_new_keyboard.htm|} _ROBOML_TOPICLIST_END_-->
+</section>
