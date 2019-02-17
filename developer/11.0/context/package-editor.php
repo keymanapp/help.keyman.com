@@ -46,11 +46,10 @@ separately.</p>
 
       <aside>
         <h3>Note</h3>
-        <p>Is right-to-left will only be true if all of the following occur:
+        <p>Is right-to-left will only be true if the following occur:
           <ul>
             <li>"Keyboard is right-to-left" is checked in the Keyboard editor</li>
             <li>.js keyboard is added to package</li>
-            <li>.kmx keyboard is <b>not</b> added to package</li>
           </ul>
         </p>
       </aside>
@@ -99,7 +98,7 @@ keyboard cannot determine which version is older reliably.</p>
 
 <p>A web site is encouraged and should be filled in the web site field, including the initial "http://" or "https://".</p>
 
-<p>A package can optionally include a 140x250 JPEG, BMP or PNG image file to be shown during installation. This image file must be added to the
+<p>A package can optionally include a 140x250 JPEG or PNG image file to be shown during installation. This image file must be added to the
 Files list in step 1, then selected from the list here.</p>
 
 <h2 id="shortcuts">Shortcuts tab</h2>
@@ -140,7 +139,7 @@ the keyboard with.</p>
 <ol>
   <li>Downloading from Keyman <a href="https://downloads.keyman.com/windows/">Downloads</a></li>
   <li> Extracting the .msi installer that is embedded in the .exe installer using the "-x" option. For example, run
-    <pre class="language-clike" ><code>keymandesktop-10.0.1031.0.exe -x .</code></pre> to extract the .msi file into the current folder.</li>
+    <pre class="language-clike" ><code>keymandesktop-11.0.1309.0.exe -x .</code></pre> to extract the .msi file into the current folder.</li>
 </ol>
 
 <p>You cannot select the .exe file for the Package Installer - it must be an .msi file. If you create your own custom product,

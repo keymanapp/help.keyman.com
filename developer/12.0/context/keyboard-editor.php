@@ -64,7 +64,7 @@ names should be used.</p>
       <td>An icon that represents the keyboard in the user interface on desktop computers.</td>
     </tr>
     <tr>
-      <td class='language-none'><code><var>file</var>-layout.js</code></td>
+      <td class='language-none'><code><var>file</var>.keyman-touch-layout</code></td>
       <td>Touch Layout</td>
       <td>Touch-Optimised Keyboard</td>
       <td><a href='/developer/language/reference/layoutfile'><code>&amp;layoutfile</code></a></td>
