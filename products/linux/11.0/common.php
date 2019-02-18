@@ -35,6 +35,9 @@ sudo apt-get install keyman onboard</code></pre>
 <p>
   <span class="red">A.</span> From the launcher, enter <pre><code class="language-bash">onboard</code></pre>
 </p>
+<p>
+  <img src="<?php echo cdn("img/linux/110/onboard.png"); ?>" alt="Onboard" />
+</p>
 
 <br/>
 <p>
