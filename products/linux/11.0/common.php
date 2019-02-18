@@ -20,15 +20,12 @@ sudo apt-get update
 sudo apt-get install keyman onboard</code></pre>
 </p>
 
+<br/>
 <p>
   <span class="red">Q.</span> How do I install a Keyman keyboard?
 </p>
-
 <p>
-  <span class="red">A.</span> Use Keyman Configuration by running in a terminal: <code class='language-bash'>km-config</code>.
-  This brings up a configuration panel where you can "Download" Keyman keyboards from the cloud repository. You can also "Install"
-  keyboards via local .kmp keyboard packages. In some keyboard packages, you might need to add the keyboard to
-  ibus by adding an "Other" input source.
+  <span class="red">A.</span> Follow this <a href="installing-keyboard.php">guide</a> for installing Keyman keyboards.
 </p>
 
 <br/>

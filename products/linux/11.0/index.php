@@ -11,3 +11,5 @@ head([
 
 <p>Need help using Keyman for Linux? In time, this product documentation will grow and explain frequently asked questions. </p>
 <a href="common.php"><h3 class="red">Common Questions</h3></a>
+
+<a href="installing-keyboard.php"><h3 class="red">Installing Keyboards</h3></a>
