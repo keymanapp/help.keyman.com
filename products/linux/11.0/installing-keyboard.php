@@ -45,13 +45,13 @@ head([
   <img src="<?php echo cdn("img/linux/110/km-config-khmer-angkor.png"); ?>" alt="Keyman Configuration khmer_angkor" />
 </p>
 
-<h3 class="red">Installing the Input Service to be used in gnome-shell</h3>
+<h3 class="red">Install the Input Source in Region & Language Settings</h3>
 <p>
   This section is only relevant for Ubuntu. At this point the keyboard should be ready to use on Wasta.
 </p>
 <p>
-  Note that Keyman Configuration only installs the keyboard into IBus. The step to "install the Input Source in Region & Language
-  Settings" is needed for it to be used in gnome-shell. Access your system Settings and click "Region & Language".
+  Note that Keyman Configuration only installs the keyboard into IBus. In order to use the keyboard in Ubutnu,
+  access your system Settings and click "Region & Language".
 </p>
 <p>
   <img src="<?php echo cdn("img/linux/110/region-and-language.png"); ?>" alt="Settings: Region & Language" />

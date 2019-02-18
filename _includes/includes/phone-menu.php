@@ -30,6 +30,7 @@
             <ul>
                 <li><a href="/products/desktop">Keyman Desktop</a></li>
                 <li><a href="/products/mac">Keyman for macOS</a></li>
+                <li><a href="/products/linux">Keyman for Linux</a></li>
                 <li><a href="/products/web">Keymanweb.com</a></li>
                 <li><a href="/products/iphone-and-ipad">Keyman for iPhone and iPad</a></li>
                 <li><a href="/products/android">Keyman for Android</a></li>

@@ -17,6 +17,7 @@ head([
   <span class="red">A.</span> In Ubuntu, Keyman for Linux can be installed via <a href="https://launchpad.net/keyman">launchpad</a>:
   <pre><code class="language-bash">sudo add-apt-repository ppa:keymanapp/keyman
 sudo apt-get update
+sudo apt-get upgrade
 sudo apt-get install keyman onboard</code></pre>
 </p>
 
