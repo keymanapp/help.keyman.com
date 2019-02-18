@@ -42,5 +42,4 @@ sudo apt-get install keyman onboard</code></pre>
 </p>
 <p>
   <span class="red">A.</span> Most keyboards will work without change. A small subset of keyboards require features which
-    are not yet available in Keyman for Linux. These features will be progressively implemented. Keyman for Linux will
-    inform you when you attempt to install a keyboard if it is using a currently unsupported feature.
+    are not yet available in Keyman for Linux. These features will be progressively implemented.

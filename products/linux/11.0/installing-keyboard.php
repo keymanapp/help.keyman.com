@@ -10,7 +10,7 @@ head([
 
 <h1 class="red">Installing Keyboards with Keyman for Linux</h1>
 <p>
-  Keyboards are installed with Keyman Configuration. Using a terminal, enter <code class='language-bash'>km-config</code>.
+  Keyboards are installed with Keyman Configuration. From the launcher, enter <code class='language-bash'>Keyman Keyboards</code>.
 </p>
 <p>
   <img src="<?php echo cdn("img/linux/110/km-config.png"); ?>" alt="Keyman Configuration" />
@@ -39,16 +39,18 @@ head([
   <img src="<?php echo cdn("img/linux/110/package-khmer-angkor-welcome.png"); ?>" alt="Package khmer_angkor" />
 </p>
 <p>
-  The keyboard should appear in km-config.
+  The keyboard should appear in Keyman Configuration.
 </p>
 <p>
   <img src="<?php echo cdn("img/linux/110/km-config-khmer-angkor.png"); ?>" alt="Keyman Configuration khmer_angkor" />
 </p>
 
-
 <h3 class="red">Installing the Input Service to be used in gnome-shell</h3>
 <p>
-  Note that km-config only installs the keyboard into IBus. The step to "install the Input Source in Region & Language
+  This section is only relevant for Ubuntu. At this point the keyboard should be ready to use on Wasta.
+</p>
+<p>
+  Note that Keyman Configuration only installs the keyboard into IBus. The step to "install the Input Source in Region & Language
   Settings" is needed for it to be used in gnome-shell. Access your system Settings and click "Region & Language".
 </p>
 <p>
@@ -74,5 +76,5 @@ head([
   Your input source is now accessible in IBus. Use the shortcut Windows-spacebar to switch input source.
 </p>
 <p>
-  <img src="<?php echo cdn("img/linux/110/region-language-khmer-angkor.png"); ?>" alt="Region & Language: kkmer_angkor" />
+  <img src="<?php echo cdn("img/linux/110/region-language-khmer-angkor.png"); ?>" alt="Region & Language: khmer_angkor" />
 </p>
