@@ -30,6 +30,15 @@ $pagestyle = '#section2 .wrapper { overflow-x: inherit }';
         </p>
     </a>
 </div>
+<div class="product" id="product-linux">
+    <a href="linux">
+        <img src="<?php echo cdn("img/icon-tux.png"); ?>" />
+        <h3>Keyman for Linux</h3>
+        <p>
+            Type in your language in your software applications for Linux.
+        </p>
+    </a>
+</div>
 <div class="product" id="product-web">
     <a href="web">
         <img src="<?php echo cdn("img/icon-web.png"); ?>" />
