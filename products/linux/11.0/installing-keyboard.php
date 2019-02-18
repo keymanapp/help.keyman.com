@@ -50,7 +50,7 @@ head([
   This section is only relevant for Ubuntu. At this point the keyboard should be ready to use on Wasta.
 </p>
 <p>
-  Note that Keyman Configuration only installs the keyboard into IBus. In order to use the keyboard in Ubutnu,
+  Note that Keyman Configuration only installs the keyboard into IBus. In order to use the keyboard in Ubuntu,
   access your system Settings and click "Region & Language".
 </p>
 <p>
