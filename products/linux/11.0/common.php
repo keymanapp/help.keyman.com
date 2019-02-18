@@ -30,6 +30,14 @@ sudo apt-get install keyman onboard</code></pre>
 
 <br/>
 <p>
+  <span class="red">Q.</span> How do I display the On-screen Keyboard (OSK)?
+</p>
+<p>
+  <span class="red">A.</span> From the launcher, enter <pre><code class="language-bash">onboard</code></pre>
+</p>
+
+<br/>
+<p>
   <span class="red">Q.</span> What Linux distros will Keyman work with?
 </p>
 <p>
