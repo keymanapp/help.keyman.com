@@ -78,6 +78,7 @@ frequently asked questions, tutorials and videos.</p>
     </ul>
     <h3>Keyman Desktop Documentation Versions</h3>
     <ul>
+      <li><a href='../11.0/'>Keyman Desktop 11.0 Documentation</a></li>
       <li><a href='docs/'>Keyman Desktop 10.0 Full Documentation</a></li>
       <li><a href='../9.0/'>Keyman Desktop 9.0 Documentation</a></li>
       <li><a href='../8.0/docs/'>Keyman Desktop 8.0 Documentation</a></li>
