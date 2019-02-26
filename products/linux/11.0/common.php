@@ -14,14 +14,18 @@ head([
   <span class="red">Q.</span> How do I install Keyman for Linux?
 </p>
 <p>
-  <span class="red">A.</span> In Ubuntu, Keyman for Linux can be installed via <a href="https://launchpad.net/keyman">launchpad</a>:
+  <span class="red">A.</span> In Ubuntu and Wasta-Linux, Keyman for Linux can be installed via launchpad:
   <pre><code class="language-bash">sudo add-apt-repository ppa:keymanapp/keyman
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install keyman onboard</code></pre>
 </p>
-
+<p>
+  Keyman for Linux packages are also available in any current Debian at:
+  <a href='https://packages.debian.org/keyman'>https://packages.debian.org/keyman</a>
+</p>
 <br/>
+
 <p>
   <span class="red">Q.</span> How do I install a Keyman keyboard?
 </p>
