@@ -17,7 +17,7 @@
       <li><a href="installing-keyboard.php">Installing Keyboards</a></li>
     </ul>
 
-    <a href='../'>Return to the main Keyamn 11.0 for Linux page</a>
+    <a href='../'>Return to the main Keyman 11.0 for Linux page</a>
 
   </div>
 

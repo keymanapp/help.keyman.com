@@ -10,6 +10,7 @@ head([
 
 ?>
 
+<!-- TODO: Auto-generate from https://manpages.debian.org/unstable/keyman/km-package-install.1.en.html -->
 <div class="body_text">
   <h1 class="title" id="kmPackageInstall">km-package-install</h1>
 

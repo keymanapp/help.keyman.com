@@ -10,6 +10,7 @@ head([
 
 ?>
 
+<!-- TODO: Auto-generate from https://manpages.debian.org/unstable/keyman/km-kvk2ldml.1.en.html -->
 <div class="body_text">
   <h1 class="title" id="kmKVK2LDML">km-kvk2ldml</h1>
 

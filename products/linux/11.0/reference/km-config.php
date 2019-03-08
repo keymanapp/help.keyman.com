@@ -10,6 +10,7 @@
 
 ?>
 
+<!-- TODO: Auto-generate from https://manpages.debian.org/unstable/keyman/km-config.1.en.html -->
 <div class="body_text">
   <h1 class="title" id="kmConfig">km-config</h1>
 
