@@ -19,18 +19,18 @@ head([
   <p>Install a Keyman keyboard package</p>
 
   <?php
-  syntax("km-package-install [-h] [-s] [-f <kmpfile>] [-k <keyboardid>] [--version] [-v] [-vv]");
+  syntax("km-package-install [-h] [-s] [-f <kmpfile>] [-p <packageID>] [--version] [-v] [-vv]");
   params("-h, --help", "optional", "show this help message and exit",
     "-s, --shared", "optional", "install to shared area <code>/usr/local</code>",
     "-f &lt;kmpfile&gt;, --file &lt;kmpfile&gt;", "optional", "Keyman kmp file",
-    "-k &lt;keyboardid&gt;, --keyboardid &lt;keyboardid&gt;", "optional", "Keyman keyboard id",
+    "-p &lt;packageID&gt;, --package &lt;packageID&gt;", "optional", "Keyman package id",
     "--version", "optional", "show program's version number and exit",
     "-v, --verbose ", "optional", "verbose logging",
     "-vv, --veryverbose", "optional", "very verbose logging");
   ?>
 
   <h2 id="Description" name="Description">Description</h2>
-  <p>km-package-install installs a Keyman keyboard. Provide either a local .kmp file or specify a keyboard id
+  <p>km-package-install installs a Keyman keyboard. Provide either a local .kmp file or specify a package id
     to download and install.
   </p>
   <h3>Tab Completion</h3>
