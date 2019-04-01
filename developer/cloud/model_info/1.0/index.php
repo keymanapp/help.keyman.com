@@ -114,7 +114,8 @@ process. Fields that are <b>Required</b> and not <b>Generated</b> must be comple
 <td>yes</td>
 <td>yes</td>
 <td>
-  <p><b>string</b>, the last time the model was modified, in RFC3339, UTC <code>YYYY-MM-DDThh:mm:ss[.nnn]Z</code></p>
+  <p><b>string</b>, the last time the model was modified, in RFC3339, UTC <code>YYYY-MM-DDThh:mm:ss[.nnn]Z</code>. Do
+  not include this in the source .model_info; it will always be overwritten when compiling the destination .model_info.</p>
 
   <p><b>Generation:</b> the time that the .model_info file is generated</p>
 </td>
