@@ -23,7 +23,7 @@ head([
 </div>
 <div class="tab" id="android-mobile-tab">
   <p>
-    Keyman for Android lets you type in over 600 languages on Android mobiles and tablets.
+    Keyman for Android lets you type in over 600 languages on Android mobile phones and tablets.
     To get started, here are some helpful hints:
   </p>
   <table>
