@@ -51,7 +51,7 @@ and display the quote, if we just add a quote before the deadkey, like this:</p>
 <pre><code class="language-keyman">+ "'" > "'" dk(quote)
 
 c Handle acute accents
-"'" dk(quote) + any( plainvowels ) > index( acutevowels, 2 )
+"'" dk(quote) + any( plainvowels ) > index( acutevowels, 3 )
 
 c Handle a single quote
 "'" dk(quote) + "'" > "'"
