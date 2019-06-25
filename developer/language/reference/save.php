@@ -56,7 +56,7 @@ be used after a <a href='set'><code>set()</code> statement</a> to make the dynam
 <h2>Version history</h2>
 
 <p>The <code>save()</code> statement was introduced in Keyman 8.0.</p>
-<p>Keyman for macOS 11.0.221 added support for `if()`, `set()`, `save()` and `reset()` for variable stores.</p>
+<p>Keyman for macOS 11.0.221 added support for <code>if()</code>, <code>set()</code>, <code>save()</code> and <code>reset()</code> for variable stores.</p>
 
 <h2 id="See_also" name="See_also">See also</h2>
 
