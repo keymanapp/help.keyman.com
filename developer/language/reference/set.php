@@ -60,6 +60,7 @@ to become the default content when restarting Keyman, the <code>set()</code> sta
 <h2>Version history</h2>
 
 <p>The <code>set()</code> statement was introduced in Keyman 8.0.</p>
+<p>Keyman for macOS 11.0.221 added support for <code>if()</code>, <code>set()</code>, <code>save()</code> and <code>reset()</code> for variable stores.</p>
 
 <h2 id="See_also" name="See_also">See also</h2>
 
