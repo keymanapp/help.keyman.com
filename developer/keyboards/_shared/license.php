@@ -15,7 +15,3 @@
     The MIT license is explored in detail at <a href="https://choosealicense.com/licenses/" target='_blank'>choosealicense.com</a>,
     from which the description above was taken.
 </p>
-
-<p>
-    Once you're done creating and testing your keyboard, you're ready for sharing the keyboard with us.
-</p>

@@ -11,10 +11,6 @@
 
 <h1 id="organizing">Step 4: Organizing the Keyboard Files</h1>
 
-<?php
-    include('../_shared/organize-ascii-characters.php');
-?>
-
 <h2>Use one keyboard per folder</h2>
 
 <h3>Create a Git branch</h3>
@@ -72,28 +68,13 @@ c:\projects\keyboards\release\s\<strong>sample1\</strong>
 </p>
 
 <?php
-    include('../_shared/organize-folder-structure.php');
-?>
-
-<h2 id="template-files">Copy Template Files</h2>
-<p>
-    The <i>keyboards</i> repo contains a set of <code>.md</code> and <code>.keyboard_info</code> files you can
-    copy and fill with details relevant to your keyboard. They're available at the
-    <code><strong>release/template/</strong></code> folder.
-    Remember to rename <code>template.keyboard_info</code> with your keyboard name.
-    The <code>.md</code> files use
-    <a href="https://daringfireball.net/projects/markdown/" target='_blank'>Markdown</a>, an easy-to-read plain
-    text format that can be converted to HTML.
-</p>
-
-<?php
     include('../_shared/organize-include-exclude.php');
 ?>
 
 <p>
-    Now that you know how to organize the keyboard files, let's learn some principles for contributing keyboards.
+    Once you're done creating and testing your keyboard, you're ready to share the keyboard with us.
 </p>
 
 <p>
-    <a href="step-5.php" title="Step 4: Principles for Contributing Keyboards">Step 5: Principles for Contributing Keyboards</a>
+    <a href="step-5.php" title="Step 5: Submitting a GitHub Pull Request">Step 5: Submitting a GitHub Pull Request</a>
 </p>

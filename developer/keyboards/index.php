@@ -18,14 +18,17 @@
 
 <h2>The Keyman Keyboard Repository</h2>
 <p>
-    We now have a single source for open source keyboards on github.com
+    We now have a single location for open source keyboards on github.com
 </p>
 
 <p style="text-align: left; padding-left: 30px;"><a href="https://github.com/keymanapp/keyboards" target="_blank"><strong>https://github.com/keymanapp/keyboards</strong></a></p>
 
 <p>
+    From these source files, we build the keyboards that can be downloaded from <a href="https://keyman.com" target="_blank"><strong>https://keyman.com</strong></a>.
+</p>
+<p>
     A large proportion of the keyboards on the site, including nearly all the keyboards that we have developed,
-    are open source keyboards. You are of course welcome to download the layouts yourself and improve them,
+    are open source keyboards. This means that you can download the layouts yourself and improve them,
     and we hope you will contribute your own keyboards to this repository for all to use.
 </p>
 
@@ -34,9 +37,10 @@
     <li>Accessibility:</li>
     <p>
     Many previous keyboards were stored on websites that no longer exist. Configuring your keyboard in the
-    keyboards repo helps ensure users can download your keyboard from
-    <a href="https://keyman.com/developer/keymanweb/keyboards.php" target="_blank">keyman.com</a>, find the
-    documentation on <a href="https://help.keyman.com/keyboards/" target="_blank">help.keyman.com</a>, and you'll
+    keyboards repository helps ensure that users can download your keyboard from
+    <a href="https://keyman.com/developer/keymanweb/keyboards.php" target="_blank">keyman.com</a> and find the
+    documentation on <a href="https://help.keyman.com/keyboards/" target="_blank">help.keyman.com</a>.
+    The source files for your keyboard will remain in the GitHub repository mentioned above so you'll
     be able to find the keyboard source for future updates.
     </p>
 
@@ -53,6 +57,26 @@
         become available.
     </p>
 </ul>
+
+<h2>How the Repository is Organized</h2>
+
+<p>
+    The "release" section of the repository (contained in the "release" folder) contains keyboards that have complete source files and documentation. 
+</p>
+<p>
+    The "experimental" section of the repository (in the "experimental" folder) contains keyboards that are under active development, but don't yet have all the files necessary for release, or are being tested by user community members before finalizing the design.
+</p>
+<p>
+    The "legacy" section of the repository (in the "legacy" folder) contains older keyboards that are functional, but don't contain complete source and documentation. 
+</p>
+<p>
+    Within each section of the repository, there is a level of subfolders that serve to group the keyboards
+    so that it isn't necessary to scroll through hundreds of entries to find a particular keyboard.
+    Most of these subfolders are single alphabetic characters, and each folder contains the keyboards that start with that letter.
+    In addition, there are some folders (fv and gff, for example) that correspond to organizations which have contributed a number of keyboards.
+</p>
+
+
 
 <h2>Get Involved</h2>
 
