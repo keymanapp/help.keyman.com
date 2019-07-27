@@ -28,7 +28,11 @@
 
 <h2 id="template-files">Copy Template Files</h2>
 <p>
-    The <i>keyboards</i> repo contains a set of <code>.md</code> and <code>.keyboard_info</code> files you can
+    If you used "Project", "New Project", "Basic" as mentioned above, Keyman Developer will have created files in your keyboard project folder
+    similar to those mentioned in the next paragraph, so you can skip that step because you won't need to copy them.
+</p>
+<p>
+    The <b>keyboards</b> repo contains a set of <code>.md</code> and <code>.keyboard_info</code> files you can
     copy and fill with details relevant to your keyboard. They're available at the
     <code><strong>release/template/</strong></code> folder.
     Remember to rename <code>template.keyboard_info</code> with your keyboard name.

@@ -23,7 +23,7 @@ c:\projects\keyboards\release\s\sample1\
 
 <p>
     From the <strong>Git Bash</strong> shell, use the <code><strong>build.sh</strong></code> bash script
-    at the root of the <i>keyboards</i> repo to compile the keyboard in the project. Your path to the keyboard
+    at the root of the <b>keyboards</b> repo to compile the keyboard in the project. Your path to the keyboard
     will be relative to the <code><strong>build.sh</strong></code> script.
 </p>
 
@@ -65,7 +65,7 @@ git push -u origin sample1
 <h2 id="create-pr">Create the Pull Request</h2>
 
 <p>
-    In your web browser while logged into GitHub, open your fork of the <i>keyboards</i> repository at
+    In your web browser while logged into GitHub, open your fork of the <b>keyboards</b> repository at
 </p>
 
 <pre class="language-none">
@@ -94,6 +94,6 @@ https://github.com/&lt;your-github-name&gt;/keyboards/compare
 </p>
 
 <p>
-    After your branch has been merged into the <i>keyboards</i> repository, you won't need the branch and can safely
+    After your branch has been merged into the <b>keyboards</b> repository, you won't need the branch and can safely
     delete it. Don't forget to also keep your fork in sync.
 </p>

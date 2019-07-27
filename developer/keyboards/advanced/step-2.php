@@ -15,7 +15,7 @@
 <h2 id="keep-fork-up-to-date">Keep your fork of the Keyboards repository in sync</h2>
 
 <p>
-    Before starting any work on a keyboard, you should keep your <i>keyboards</i> fork in sync with our
+    Before starting any work on a keyboard, you should keep your <b>keyboards</b> fork in sync with our
     <a href="https://github.com/keymanapp/keyboards">keyboards</a> repository.  This helps
     identify any potential merge conflicts that would occur with your keyboard. This also keeps the
     command line keyboard compiler up to date.

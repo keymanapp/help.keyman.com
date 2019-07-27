@@ -26,7 +26,7 @@
 <h2>Clone your fork of the Keyboards repository</h2>
 
 <p>
-    Once you have installed Git, clone a local copy of the <i>keyboards</i> repository onto your computer.
+    Once you have installed Git, clone a local copy of the <b>keyboards</b> repository onto your computer.
     Continuing from a command prompt, run the following steps:
 </p>
 
@@ -37,7 +37,7 @@ git clone https://github.com/&lt;your-github-name&gt;/keyboards.git
 
 <p>
     <strong>Note:</strong> This repository is quite large, so make sure your network can handle the download and you
-    allow sufficient time. When the clone is complete, your copy of the <i>keyboards</i> repository will be on your computer at
+    allow sufficient time. When the clone is complete, your copy of the <b>keyboards</b> repository will be on your computer at
 </p>
 
 <pre class="language-none">

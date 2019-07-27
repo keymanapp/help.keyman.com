@@ -51,7 +51,7 @@ c:\projects\keyboards\release\xyz\xyz_latin\
 <h3>A Single Keyboard Folder (No Package)</h3>
 
 <p>
-    In your <i>keyboards</i> folder on your hard drive, use Explorer to make a folder for the keyboard you're creating:
+    In your <b>keyboards</b> folder on your hard drive, use Explorer to make a folder for the keyboard you're creating:
 </p>
 
 <pre class="language-none">
