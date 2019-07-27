@@ -21,7 +21,7 @@
 
     <dt><code>&lt;keyboard&gt;.kps</code></dt>
     <dd>The package source file. See the Keyman Developer
-        <a href="https://help.keyman.com/developer/10.0/guides/distribute/packages" target="_blank">reference</a>
+        <a href="https://help.keyman.com/developer/11.0/guides/distribute/packages" target="_blank">reference</a>
         for what to include within the package source file,
         but remember that when you reference any built files within the package, make sure you reference them from your
         <code><strong>build</strong></code> folder.</dd>
