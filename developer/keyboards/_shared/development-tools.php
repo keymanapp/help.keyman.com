@@ -11,7 +11,7 @@
 </p>
 
 <p>
-    Make sure you have Keyman Developer 10.0 or later. You can download Keyman Developer from
+    Make sure you have Keyman Developer 11.0 or later. You can download Keyman Developer from
     <a href="https://keyman.com/developer" target="_blank">https://keyman.com/developer</a>.
     With Keyman Developer, you will have these two ways of building keyboards.
 </p>

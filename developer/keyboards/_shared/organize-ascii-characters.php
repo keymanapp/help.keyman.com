@@ -8,7 +8,7 @@
 <ul>
     <li>letters [<code>a-z</code>] (lower case)</li>
     <li>digits [<code>0-9</code>]</li>
-    <li>underscore [<code>_</code>] (no hypens <code>-</code> which are reserved).</li>
+    <li>underscore [<code>_</code>] (no hyphens <code>-</code> which are reserved).</li>
 </ul>
 
 <p>

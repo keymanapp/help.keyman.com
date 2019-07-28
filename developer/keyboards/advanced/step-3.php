@@ -18,7 +18,7 @@
 <h2>Building keyboards from the command line</h2>
 
 <p>
-    At the root of the <i>keyboards</i> repo is a <code><strong>build.sh</strong></code> bash script you can use
+    At the root of the <b>keyboards</b> repo is a <code><strong>build.sh</strong></code> bash script you can use
     to compile the keyboards and packages in the project.
 </p>
 
