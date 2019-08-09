@@ -9,11 +9,11 @@
 
 <dl>
   <dt><span class="section"><a href="step-1.php">Step 1: What is a lexical model?</a></span></dt>
-  <dt><span class="section"><a href="step-2.php">Step 2: Requirements</a></span></dt>
-  <dt><span class="section"><a href="step-2.php">Step 3: Preparing data</a></span></dt>
-  <dt><span class="section"><a href="step-3.php">Step 4: Exporting the data</a></span></dt>
-  <dt><span class="section"><a href="step-4.php">Step 5: Creating the directory structure</a></span></dt>
-  <dt><span class="section"><a href="step-9.php">Step N: The Finished Model</a></span></dt>
+  <dt><span class="section"><a href="step-2.php">Step 2: Prerequisites for building a lexical model</a></span></dt>
+  <dt><span class="section"><a href="step-3.php">Step 3: Get some language data</a></span></dt>
+  <dt><span class="section"><a href="step-4.php">Step 4: Create a unique model ID</a></span></dt>
+
+  <dt><span class="section"><a href="step-404.php">Step N: The Finished Model</a></span></dt>
 </dl>
 
 <h2> Overview </h2>
