@@ -2,10 +2,10 @@
   require_once('includes/template.php');
 
   head([
-    'title' => "Tutorial: Developing a lexical model"
+    'title' => "Tutorial: Developing a lexical model from a word list"
   ]);
 ?>
-<h1 class="title">Tutorial: Developing a lexical model</h1>
+<h1 class="title">Tutorial: Developing a lexical model from a word list</h1>
 
 <dl>
   <dt><span class="section"><a href="step-1.php">Step 1: What is a lexical model?</a></span></dt>
