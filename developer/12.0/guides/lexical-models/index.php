@@ -2,7 +2,7 @@
   require_once('includes/template.php');
 
   head([
-    'title' => "Developing lexical models"
+    'title' => "Lexical models"
   ]);
 ?>
 <h1 class="title">Developing lexical models</h1>
@@ -13,7 +13,8 @@
   that generates suggestions for your language. </p>
 
 <dl>
-  <dt><a href="Tutorial">Tutorial: Developing a lexical model from a word list</a></dt>
+  <dt><a href="intro">What is a lexical model? Or: how do I add prediction and autocorrection to my keyboard?</a></dt>
+  <dt><a href="tutorial">Tutorial: Developing a lexical model from a word list</a></dt>
 </dl>
 
 <h2> Reference </h2>
