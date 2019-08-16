@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/*
+ * Styles for the lexical models documentation.
+ */
+
+/* Figures should be centered by default. */
+figure {
+  text-align: center;
+}
+
+/* Images should not overflow the figure size. */
+figure > img {
+  max-width: 100%;
+}
+
+/* Tables and figures should be centered, and have some space after the
+ * bottom. */
+figure, article > table {
+  margin: 0 auto 1.5rem;
+}
+
+/* Numbers should be right-aligned, so that we can compare magnitudes easier. */
+td.number { text-align: right }
+
+/*
+ * Styles for the word list table.
+ */
+table.wordlist thead tr {
+  background-color: #333;
+  color: #fff;
+}
+table.wordlist th { padding: .25em 1em }
+/* Alternate background colours for odd and even rows */
+table.wordlist tbody tr:nth-child(odd) { background-color: #fff }
+table.wordlist tbody tr:nth-child(even) { background-color: #eee }
+table.wordlist td { padding: .25em .5em }
+table.wordlist caption {
+  caption-side: bottom-outside;
+  margin-top: .5em;
+}
+
+/* Screenshots from macOS have a GINORMOUS shadow below. We can pull the
+ * caption a bit in to reduce the amount of insane whitespace taken by the
+ * screenshot. */
+img.macos-screenshot + figcaption {
+  margin-top: -35px;
+  margin-bottom: 2rem; /* Also, give it a bit more space below. */
+}

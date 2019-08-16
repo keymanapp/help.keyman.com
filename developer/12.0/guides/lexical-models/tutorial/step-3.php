@@ -2,43 +2,10 @@
   require_once('includes/template.php');
 
   head([
-    'title' => "Step 3: Get some language data"
+    'title' => "Step 3: Get some language data",
+    'css' => ['template.css', 'index.css', 'prism.css', 'dev-lexical-models.css']
   ]);
 ?>
-
-<style type="text/css">
-  figure > img {
-    max-width: 100%;
-  }
-
-  figure {
-    text-align: center;
-    margin: 0 10px 10px 10px;
-  }
-
-  table.wordlist {
-    margin: 0 auto 10px ;
-  }
-
-  table.wordlist thead tr {
-    background-color: #333;
-    color: #fff;
-  }
-  table.wordlist tbody tr:nth-child(odd) { background-color: #fff }
-  table.wordlist tbody tr:nth-child(even) { background-color: #eee }
-  table.wordlist td {
-    padding: .25em .5em;
-  }
-  table.wordlist th {
-    padding: .25em 1em;
-  }
-  table.wordlist caption {
-    caption-side: bottom-outside;
-    margin-top: .5em;
-  }
-  td.number { text-align: right }
-
-</style>
 
 <h1>Step 3: Get some language data</h1>
 
@@ -48,8 +15,8 @@
 
 <h2>Example</h2>
 
-<p>I have words in my language of choice, SENĆOŦEN.</p>
-<p>Here is my list of words, with the count of how many times I’ve seen the word:</p>
+<p>I have words in my language of choice, SENĆOŦEN.
+   Here is my list of words, with the count of how many times I’ve seen the word:</p>
 
 <table class="wordlist">
   <caption> List of ten SENĆOŦEN words, with counts </caption>
@@ -75,7 +42,9 @@
 <p>This is what my word list looks like in Google Sheets:</p>
 
 <figure>
-  <img src="<?= cdn('img/developer/120/lm/sencoten-sheets-full.png') ?>" alt="screenshot of the word list in Google Sheets" />
+  <img src="<?= cdn('img/developer/120/lm/sencoten-sheets-full.png') ?>"
+       class="macos-screenshot"
+       alt="screenshot of the word list in Google Sheets" />
   <figcaption> The word list, as it appears in Google Sheets </figcaption>
 </figure>
 
