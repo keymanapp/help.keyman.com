@@ -2,23 +2,14 @@
   require_once('includes/template.php');
 
   head([
-    'title' => "What is a lexical model?"
+    'title' => "What is a lexical model?",
+    'css' => ['template.css', 'index.css', 'prism.css', 'dev-lexical-models.css']
   ]);
 ?>
 
 <h1 class="title">What is a lexical model?</h1>
 
-<style>
-  figure > img {
-    max-width: 100%;
-    margin-bottom: 10px;
-  }
-  figure > figcaption {
-    text-align: center;
-  }
-</style>
-
-<figure>
+<figure class="aside">
   <img src="404.png" alt="Smartphone keyboard displaying suggestions for the English phrase ”on my w-”" />
   <figcaption>Predictive text for English</figcaption>
 </figure>

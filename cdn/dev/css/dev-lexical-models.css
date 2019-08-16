@@ -12,6 +12,7 @@ figure {
 /* Images should not overflow the figure size. */
 figure > img {
   max-width: 100%;
+  margin-bottom: 10px;
 }
 
 /* Tables and figures should be centered, and have some space after the
