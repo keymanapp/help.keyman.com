@@ -21,6 +21,12 @@ figure, article > table {
   margin: 0 auto 1.5rem;
 }
 
+figure.aside {
+  float: right;
+  max-width: 50%;
+  margin: 1rem 0 1rem 1rem;
+}
+
 /* Numbers should be right-aligned, so that we can compare magnitudes easier. */
 td.number { text-align: right }
 

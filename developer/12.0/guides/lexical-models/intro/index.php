@@ -10,7 +10,8 @@
 <h1 class="title">What is a lexical model?</h1>
 
 <figure class="aside">
-  <img src="404.png" alt="Smartphone keyboard displaying suggestions for the English phrase ”on my w-”" />
+  <img src="<?= cdn('img/developer/120/lm/whatis-on-my-w.png')?>"
+       alt="Smartphone keyboard displaying suggestions for the English phrase ”on my w-”" />
   <figcaption>Predictive text for English</figcaption>
 </figure>
 
@@ -45,15 +46,22 @@
 
 <h3>Words are difficult to type</h3>
 
+<figure class="aside">
+  <img src="<?= cdn('img/developer/120/lm/whatis-naiv.png')?>"
+       alt="Typing “naiv” on a smartphone. The keyboard suggests “naïve” for this input." />
+  <figcaption>Typing “naiv” on a smartphone with predictive text.</figcaption>
+</figure>
+
 <p>Some words have many accents, diacritics, or similar forms. This allows the
 typist to type things quickly, with minimum effort. For example, in English, I
 want to type “naïve”, however, my keyboard does not have the <kbd>ï</kbd> key
-present on its main screen. Sure, if I use a keyboard that has a menu that I
-can activate when holding and pressing the <kbd>i</kbd> key, I can probably
-find <kbd>ï</kbd> nestled there among the other options. However, I have to go
-out of my way to type the correct variant, where the incorrect variant will be
-perfectly understood. In most cases, I choose the option that is more
-economical to type–“naive”—rather than the “correct” option.</p>
+present on its main layour. Sure, if I use a keyboard that I can
+press-and-hold the <kbd>i</kbd> key, it may pop-up additional characters, and
+I can probably find <kbd>ï</kbd> nestled there among the other options.
+However, I have to go out of my way to type the correct variant, whereas the
+incorrect variant will be perfectly understood. In most cases, I choose the
+option that is more economical to type–“naive”—rather than the “correct”
+option.</p>
 
 <p>However, a <strong>lexical model</strong> that understands the English
 language will see the word “naive” does not exist, but a similarly typed
@@ -63,11 +71,8 @@ version without having to long-press and select the correct “ï”. Even bette
 than that, I can chose the suggestion right after typing “naiv”, as there are
 relatively view English words that start with the prefix of “naiv-”</p>
 
-<figure>
-  <img src="404.png" alt="Typing “naiv” on a smartphone. The keyboard suggests “naïve” for this input." />
-  <figcaption>Typing “naiv” on a smartphone.</figcaption>
-</figure>
 
 <h3>Words are long</h3>
 
 
+<h3>People make mistakes</h3>
