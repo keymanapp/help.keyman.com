@@ -54,3 +54,17 @@ img.macos-screenshot + figcaption {
   margin-top: -35px;
   margin-bottom: 2rem; /* Also, give it a bit more space below. */
 }
+
+/*
+ * Misc. styles
+ */
+/* Make the <kbd> element look like an iOS key. */
+kbd.ios {
+  background-color: #fafafa; /* faaa fa fa fa fa faaaa far better... */
+  border: 0;
+  box-shadow: /* Hard shadow */	    0 1px rgba(0,0,0,0.4),
+              /* Diffuse shadow */  0 1px 4px rgba(0,0,0,0.2),
+              /* Highlight */ inset 0 1px white;
+  border-radius: 4px;
+  font-weight: 500;
+}
