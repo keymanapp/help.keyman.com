@@ -35,7 +35,7 @@ export default source;</code></pre>
 <pre><code class="lang-typescript">const source: LexicalModelSource = {</code></pre>
 
 <p> On the second line, we're saying the lexical model will use the
-<code>trie-1.0</code> format. The <code>trie<code> format creates a lexical
+<code>trie-1.0</code> format. The <code>trie</code> format creates a lexical
 model from one or more word lists, and creates a lexical model that is able to
 predict through thousands of words very quickly. </p>
 
