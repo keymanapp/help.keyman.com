@@ -34,7 +34,7 @@
   <dd>Visual keyboard source files</dd>
 
   <dt><a href="tsv">TSV files</a></dt>
-  <dd> A word list source file, exported in a compatible tab-separated values format.
+  <dd>Word list source files, exported in a compatible tab-separated values format.</dd>
 
   <dt><a href="keyman-touch-layout">keyman-touch-layout files</a></dt>
   <dd>Keyman touch layout source files</dd>
