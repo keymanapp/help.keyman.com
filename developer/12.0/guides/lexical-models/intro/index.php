@@ -78,5 +78,73 @@ relatively view English words that start with the prefix of “naiv-”</p>
 
 <h3>Words are long</h3>
 
+<figure class="aside">
+  <img src="<?= cdn('img/developer/120/lm/whatis-antidi.png')?>"
+       alt="The top suggestion shows “antidisestablishmentarianism”" />
+  <figcaption>Typing “antidi” on an English keyboard</figcaption>
+</figure>
+
+<p>Sometimes, the words are very long, but can be typed in far few keystrokes
+if predictive text is used. For example, if in English, I want to write the
+word “antidisestablishmentarianism” (a 28-letter word), a lexical model for
+English can predict it from the prefix “antidi” and save about 21
+keystrokes!</p>
+
 
 <h3>People make mistakes</h3>
+
+<figure class="aside">
+  <img src="<?= cdn('img/developer/120/lm/whatis-correct-thr.png')?>"
+       alt="The first suggestion is to write the word “the” instead." />
+  <figcaption>Typing “thr” on an English keyboard.</figcaption>
+</figure>
+
+<p>When typing quickly on a small phone screen, mistakes are inevitable. Say I
+try to write the word “the” on my phone. I press <kbd class="ios">t</kbd>,
+then <kbd class="ios">h</kbd>, but as I try to type <kbd class="ios">e</kbd>,
+I press a few millimeters to the right of the intended key and press <kbd
+class="ios">r</kbd> instead. With a lexical model, the predictive text feature
+understands that in English, “thr” is not a complete word, in-and-of-itself;
+however, a word that is typed quite similarly, “the”, is a very common word.
+Therefore, the lexical model provides enough information to assume that the
+user intended to type “the” instead of “thr”. Thus, one of its
+<strong>suggestions</strong> is the <strong>correction</strong> of “the” in
+place of “thr”.</p>
+
+<p>However, the predictive text feature is not overly presumptuous; what if
+the typist really did want to type “thr”? As a result, “thr” is suggested as a
+<dfn>keep suggestion</dfn>. When the typist selects the “keep” suggestion,
+whatever they had originally typed is kept, even if the lexical
+model suggests what it thinks is a far more likely correction.</p>
+
+
+<h2>What do I need to make my own lexical model?</h2>
+
+<p>To make a language model, you need some information about your language. At
+bare minimum, you need a list of words in your language. Keyman Developer
+supports importing a word list as a spreadsheet of words in your language that
+you wish to use for predictions and corrections. This will create a <dfn>word
+list lexical model</dfn>.</p>
+
+<p>If you have such a list of words, you can continue to the
+<a href="../tutorial">tutorial</a> to create a word list lexical model for your
+language!</p>
+
+<p>However, to make a more accurate lexical model, you will need an idea of
+how to rank suggestions relative to each other. For this, you may extend the
+simple word list with <strong>counts</strong>. Each word has a count of how
+often it has been seen in a representative collection of texts in your
+language. For example, I could download discussions from English language
+Reddit discussions, and how often Reddit users have typed “rule” versus how
+many times they have typed “rupturewort” to understand how to rank these two
+words given the context of “ru”.</p>
+
+<p>You can extend your spreadsheet with counts (placed in the second column)
+to make a more accurate—and thus more useful—lexical model.</p>
+
+<p>Those comfortable with coding in JavaScript/TypeScript can code their
+complete custom lexical models by <a
+href="../../develop/lexical-model-api">implementing the
+<code>WorkerInternalModel</code> API</a>.</p>
+
+<p><a href="../tutorial">Next: Developing a lexical model from a word list</a></p>
