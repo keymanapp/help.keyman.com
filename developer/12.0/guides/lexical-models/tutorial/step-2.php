@@ -7,16 +7,23 @@
   ]);
 ?>
 
-<h1>Step 3: Get some language data</h1>
+<h1>Step 2: Get some language data</h1>
 
 <p>To predict words in your language, a lexical model needs to know the words in your language!</p>
 
-<p>Ultimately, the <strong>lexical model compiler</strong> requires a tab-separated values (TSV) file, described in the <a href="./#appendix:tsv">appendix</a>. However, most users will use a <strong>spreadsheet</strong> app like <a href="https://sheets.google.com/">Google Sheets</a> or <a href="https://products.office.com/en/excel">Microsoft Excel</a> to create this TSV file.</p>
+<p>Ultimately, the <strong>lexical model compiler</strong> requires a
+tab-separated values (TSV) file, described in the <a
+href="../../../reference/file-types/tsv.php">file types reference</a> to
+generate a word list lexical model.
+However, most users will use a <strong>spreadsheet</strong> app like <a
+href="https://sheets.google.com/">Google Sheets</a> or <a
+href="https://products.office.com/en/excel">Microsoft Excel</a> to create this
+TSV file.</p>
 
 <h2>Example</h2>
 
 <p>I have words in my language of choice, SENĆOŦEN.
-   Here is my list of words, with the count of how many times I’ve seen the word:</p>
+Here is my list of words, with the count of how many times I’ve seen the word:</p>
 
 <table class="wordlist">
   <caption> List of ten SENĆOŦEN words, with counts </caption>
@@ -37,8 +44,17 @@
   </tbody>
 </table>
 
-<p>I’ve entered this information into my spreadsheet of choice, <a href="https://sheets.google.com/">Google Sheets</a>. I’ve shared this spreadsheet publicly <a href="https://docs.google.com/spreadsheets/d/10zhIc439BCSSooL_-HeJ6TUHd-ovkiXYcIGe-pHDTSg/edit?usp=sharing">here</a>. The order of the columns matters:</p>
-<p>The first column <strong>MUST</strong> be the words, and the second column <strong>MUST</strong> be the counts. Additional columns are ignored. The spreadsheet can also be a single column of all of the words in the language.</p>
+<p>I’ve entered this information into my spreadsheet of choice, <a
+href="https://sheets.google.com/">Google Sheets</a>. I’ve shared this
+spreadsheet publicly
+<a href="https://docs.google.com/spreadsheets/d/10zhIc439BCSSooL_-HeJ6TUHd-ovkiXYcIGe-pHDTSg/edit?usp=sharing">here</a>.
+The order of the columns matters:</p>
+
+<p>The first column <strong>MUST</strong> be the words, and the second column
+<strong>MUST</strong> be the counts. Additional columns are ignored. The
+spreadsheet can also be a single column of all of the words in the
+language.</p>
+
 <p>This is what my word list looks like in Google Sheets:</p>
 
 <figure>
@@ -48,14 +64,19 @@
   <figcaption> The word list, as it appears in Google Sheets </figcaption>
 </figure>
 
-<p>Now, we download the spreadsheet in the <a href="#appendix:tsv">required format</a>. To do this, in Google Sheets, select “File” » “Download as” » “Tab-separated values (.tsv, current sheet)”.</p>
+<p>Now, we download the spreadsheet in the
+<a href="../../../reference/file-types/tsv.php">required format</a>.
+To do this, in Google Sheets, select “File” » “Download as” » “Tab-separated
+values (.tsv, current sheet)”.</p>
 
 <figure>
   <img src="<?= cdn('img/developer/120/lm/sencoten-sheets-save-as.png') ?>" alt="screenshot of “Save as…” menu in Google Sheets, selecting ”TSV”" />
   <figcaption>Exporting the TSV file from Google Sheets</figcaption>
 </figure>
+
 <p>I’ll save mine as <strong>wordlist.tsv</strong>.</p>
 
-<p>Now that we have… TODO</p>
+<p>Now that we have our word list, exported in the correct format, let's
+create the model definition file.</p>
 
-<p><a href="step-3.php" title="TODO">TODO</a></p>
+<p><a href="step-3.php" title="Step 3: Creating a model definition file">Next: Creating a model definition file</a></p>
