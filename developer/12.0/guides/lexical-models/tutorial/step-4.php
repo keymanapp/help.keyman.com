@@ -2,46 +2,162 @@
   require_once('includes/template.php');
 
   head([
-    'title' => "Step 4: Create a unique model ID"
+    'title' => "Step 4: Creating the package file"
   ]);
 ?>
 
-<h1>Step 4: Create a unique model ID</h1>
+<h1>Step 4: Creating the package file</h1>
 
-<p>Now that we have our TSV file, called <strong>wordlist.tsv</strong>, let’s create the associated packaging folder and data.</p>
+<p>Now that we have a unique ID for our model, and wordlist data, we can the
+  appropriate packaging files.</p>
 
-<p>Our model needs a <strong>unique ID</strong>. For publicly sharing models online in the <a href="https://github.com/keymanapp/lexical-model">lexical-models repository</a>, the unique ID must be a string in the format:</p>
+<p>Say we’re currently in a folder called <code>release</code>: our model will
+  follow this template for its directory structure.</p>
 
-<p><em>author</em>.<em>bcp47</em>.<em>uniq</em></p>
+<pre><code>release/
+└── {author}/
+    └── {bcp47}.{uniq}/
+        ├── {author}.{bcp47}.{uniq}.model_info
+        └── source/
+            ├── {author}.{bcp47}.{uniq}.model.kps
+            ├── wordlist.tsv
+            └── model.ts</code></pre>
 
-<h3>Author</h3>
+<p>Notice how under <code>release</code>, there is a folder that is named
+  after the author. Within that folder is a folder for each model created by
+  that particular author. Within each model folder, there is a folder called
+  <code>source</code> that contains <strong>wordlist.tsv</strong>. We will
+  discuss what the other files are called a bit later in this document.</p>
 
-<p><em>author</em> is an identifier for the maintainer of the model. This identifier is a string of one or more ASCII lowercase letters, digits, and the underscore (<code>_</code>), and it must begin with a lowercase ASCII letter. Some organizations have an author identifier already, like <code>sil</code> for SIL International, <code>nrc</code> for the National Research Council Canada, and <code>fv</code> for FirstVoices.</p>
+<p>For our example of <code>example.str.tutorial</code>, I’ll want the
+following folder structure:</p>
 
-<h3>BCP 47</h3>
+<pre><code>release/
+└── example/
+    └── str.tutorial/
+        ├── example.str.tutorial.model_info
+        └── source/
+            ├── example.str.tutorial.model.kps
+            ├── wordlist.tsv
+            └── model.ts</code></pre>
 
-<p><em>bcp47</em> is the <a href="https://tools.ietf.org/html/bcp47">BCP 47</a> tag of the language, script, and region you are modelling. If you need to uses dashes in your language’s BCP 47 tag, replace them with underscores; likewise, replace uppercase letters with lowercase letters.</p>
+<p>To create this folder structure, I can execute the following in Git Bash or the terminal:</p>
 
-<p>Typically, this will just be the <a href="https://iso639-3.sil.org/code_tables/639/data">ISO 639-3</a> code of your language, and nothing else. In the case of SENĆOŦEN, <a href="https://iso639-3.sil.org/code/str">its ISO 639-3 code is <code>str</code></a>.</p>
+<pre><code>cd /type/the/path/to/release
+mkdir -p example/str.tutorial/source</code></pre>
 
-<p>In some cases, you will have to specify the script (writing system), and the region. For example, if I’m creating a model for Plains Cree (ISO 639-3: <code>crk</code>) it can be written both in the Latin script (<a href="https://en.wikipedia.org/wiki/ISO_15924">ISO 15924</a>: <code>Latn</code>) and in Unified Canadian Aboriginal Syllabics (<a href="https://en.wikipedia.org/wiki/ISO_15924">ISO 15924</a>: <code>Cans</code>). Say my model is only designed for syllabics. The correct BCP 47 tag is:</p>
+<p>Now move the wordlist to the appropriate place:</p>
 
-<pre><code>crk-Cans</code></pre>
+<pre><code>mv /type/the/current/path/to/wordlist.tsv example/str.tutorial/source/</code></pre>
 
-<p>However, to create a valid lexical model ID, we need to replace the dash with an underscores, and convert all uppercase letters to lowercase. Thus, our <code>bcp47</code> is:</p>
+<p>I now have the following folder structure:</p>
 
-<pre><code>crk_cans</code></pre>
+<pre><code>.
+└── example
+    └── str.tutorial
+        └── source
+            └── wordlist.tsv</code></pre>
 
-<h3 id="uniq">Uniq</h3>
+<p>We need to create the remaining files:</p>
+<dl>
+  <dt><code>example.str.tutorial.model_info</code></dt> <dd>The “model info” file</dd>
+  <dt><code>example.str.tutorial.model.kps</code></dt> <dd>The package file</dd>
+  <dt><code>model.ts</code></dt> <dd>The model configuration file</dd>
+</dl>
 
-<p><em>uniq</em> is an arbitrary tag that uniquely identifies your specific model. This identifier can be anything, as long as it hasn’t already been used before for this specific author or organization. As with <code>author</code> identifier is one or more ASCII lowercase letters, digits, and the underscore (<code>_</code>), and it must start with a lowercase ASCII letter.</p>
+<h2 id="step-4.1-creating-the-model-info-file">Step 4.1: Creating the model info file</h2>
 
-<h3 id="example-1">Example</h3>
+<p>The model info contains a little bit of metadata that is required when distributing packages online using Keyman Cloud. Thus, <strong>if you do not plan to distribute this model on Keyman Cloud, you may skip this step</strong>.</p>
 
-<p>My author is called <code>example</code>, and the BCP 47 for my language is <code>str</code>. I’ll give my model the unique tag of <code>tutorial</code>. Thus my unique model is:</p>
+<p>The model info is provided as a JSON file that lists the model license and a short description of the lexical model.</p>
 
-<pre><code>example.str.tutorial</code></pre>
+<p>The <code>.model_info</code> file should follow this template:</p>
 
-<p>Now that we have… TODO</p>
+<pre class="language-js"><code>{
+    "license": "&lt;SPDX license identifier&gt;",
+    "description": "&lt;short description of the lexical model&gt;"
+}</code></pre>
 
-<p><a href="step-5.php" title="TODO">TODO</a></p>
+<p>Copy this template, and use it to create your own <code>.model_info</code> file.</p>
+
+<p>Save this file to <code>{author}/{bcp47}.{uniq}/{author}.{bcp47}.{uniq}.model_info</code>.</p>
+
+<aside>
+  <p><strong>NOTE</strong>: the only current valid value for <code>license</code> is <code>"mit"</code>.</p>
+</aside>
+
+<p>In our <code>example.str.tutorial</code> example, I’ll use the following <code>.model_info</code>.</p>
+
+<pre class="language-js"><code>{
+    "license": "mit",
+    "description": "Predicts words in the SENĆOŦEN language (Saanich Dialect)"
+}</code></pre>
+
+<p>I’ll save this file to <code>example/str.tutorial/example.str.tutorial.model_info</code>.</p>
+
+
+<h2 id="step-4.2-creating-the-kps-file">Step 4.2: Creating the KPS file</h2>
+
+<p><strong>TODO:</strong></p>
+
+<pre class="language-xml"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;Package&gt;
+  &lt;System&gt;
+    &lt;KeymanDeveloperVersion&gt;12.0.1500.0&lt;/KeymanDeveloperVersion&gt;
+    &lt;FileVersion&gt;12.0&lt;/FileVersion&gt;
+  &lt;/System&gt;
+  &lt;Options&gt;
+    &lt;FollowKeyboardVersion/&gt;
+  &lt;/Options&gt;
+  &lt;Info&gt;
+    &lt;Name URL=&quot;&quot;&gt;SENĆOŦEN (Saanich Dialect) Lexical Model&lt;/Name&gt;
+    &lt;Copyright URL=&quot;&quot;&gt;© 2019 National Research Council Canada&lt;/Copyright&gt;
+    &lt;Author URL=&quot;mailto:Eddie.Santos@nrc-cnrc.gc.ca&quot;&gt;Eddie Antonio Santos&lt;/Author&gt;
+    &lt;Version&gt;1.0.3&lt;/Version&gt;
+  &lt;/Info&gt;
+  &lt;Files&gt;
+    &lt;File&gt;
+      &lt;Name&gt;..\build\nrc.str.sencoten.model.js&lt;/Name&gt;
+      &lt;Description&gt;Lexical model nrc.str.sencoten.model.js&lt;/Description&gt;
+      &lt;CopyLocation&gt;0&lt;/CopyLocation&gt;
+      &lt;FileType&gt;.model.js&lt;/FileType&gt;
+    &lt;/File&gt;
+  &lt;/Files&gt;
+  &lt;LexicalModels&gt;
+    &lt;LexicalModel&gt;
+      &lt;Name&gt;SENĆOŦEN dictionary&lt;/Name&gt;
+      &lt;ID&gt;nrc.str.sencoten&lt;/ID&gt;
+      &lt;Version&gt;1.0.3&lt;/Version&gt;
+      &lt;Languages&gt;
+        &lt;Language ID=&quot;str&quot;&gt;North Straits Salish&lt;/Language&gt;
+        &lt;Language ID=&quot;str-Latn&quot;&gt;SENĆOŦEN&lt;/Language&gt;
+      &lt;/Languages&gt;
+    &lt;/LexicalModel&gt;
+  &lt;/LexicalModels&gt;
+&lt;/Package&gt;</code></pre>
+
+<h2 id="step-4.3-creating-the-model-file">Step 4.3: Creating the model file</h2>
+
+<p>Finally, the <code>model.ts</code> is a TypeScript source code file that is executed to build the model. For our purposes, we can simply copy-paste the following example:</p>
+
+<pre class="language-typescript"><code>import LexicalModelCompiler from &quot;@keymanapp/developer-lexical-model-compiler&quot;;
+
+(new LexicalModelCompiler).compile({
+  format: &apos;trie-1.0&apos;,
+  wordBreaking: &apos;default&apos;,
+  sources: [&apos;wordlist.tsv&apos;],
+});</code></pre>
+
+<p>Most importantly, this file specifies that model will use the word list in <code>wordlist.tsv</code>.</p>
+
+<p>For simple lexical models with exactly one wordlist called <code>wordlist.tsv</code>, <strong>this file does not need to be changed any further</strong>.</p>
+
+<p>However, it specifies a few other things:</p>
+
+<ul>
+  <li><code>format: 'trie-1.0'</code>: Use the trie back-end, that allows for prediction based on prefixes of words.</li>
+  <li><code>wordBreaking: 'default'</code>: use Unicode’s default word boundary rules to find where “words” are when predicting text. This works for most languages and writing systems, however, it does not work for languages/writing systems that do not mark breaks between words, e.g., Chinese, Thai, Laos, Khmer, and Japanese, to name a few. For these writing systems, you must provide a language-specific word breaking algorithm to find the words in running text.</li>
+</ul>
+
+
+<p><a href="step-404.php" title="TODO">TODO</a></p>

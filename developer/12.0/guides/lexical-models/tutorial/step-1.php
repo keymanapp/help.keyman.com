@@ -2,19 +2,19 @@
   require_once('includes/template.php');
 
   head([
-    'title' => "Step 1: What is a lexical model?"
+    'title' => "Step 1: Prerequisites for building a lexical model"
   ]);
 ?>
 
-<h1>Step 1: What is a lexical model?</h1>
+<h1>Step 1: Prerequisites for building a lexical model</h1>
 
-<p>A <dfn>lexical model</dfn> or a <dfn title="lexical model">dictionary</dfn>
-is a way to enable <strong>predictive text</strong> for your keyboard.</p>
+<h2>Requirements</h2>
 
-<p>
-  <strong> TODO: explain this more, with pictures! </strong>
-</p>
+<p>You will need to have:</p>
 
-<p>Now that we have… TODO</p>
+<ul>
+  <li>(Windows only) <a href="https://gitforwindows.org/">Git Bash</a></li>
+  <li><a href="https://nodejs.org/en/">Node.js</a> &gt;= 10.0</li>
+</ul>
 
-<p><a href="step-2.php" title="TODO">TODO</a></p>
+<p><a href="step-2.php" title="Get some language data">Get some language data</a></p>
