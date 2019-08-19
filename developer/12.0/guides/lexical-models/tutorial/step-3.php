@@ -63,14 +63,14 @@ following customizations: </p>
   <dt> search term to key </dt> <dd> How and when to ignore accents and lettercase </dd>
 </dl>
 
-<h3> Word breaking </h3>
+<h3>Word breaking</h3>
 
 <p> The <code>trie</code> family of lexical models needs to know what a word
 is in running text. In language using the Latin script—like, English, French,
-but also Cree, SENĆOŦEN—finding words is easy. Words are separated by spaces
-or punctuation. The true rules for where to find words are quite complicated,
-but Keyman implements the <a href="https://unicode.org/reports/tr29/#Word_Boundaries">
-Unicode® Standard Annex #29 §4.1 Default Word Boundary Specification </a>
+and SENĆOŦEN—finding words is easy. Words are separated by spaces or
+punctuation. The actual rules for where to find words can get quite tricky to
+describe, but Keyman implements the <a href="https://unicode.org/reports/tr29/#Word_Boundaries">
+Unicode Standard Annex #29 §4.1 Default Word Boundary Specification </a>
 which works well for most languages.
 </p>
 
@@ -94,7 +94,7 @@ Wikipedia has a list of writing systems without word boundaries</a>. </p>
 
 <p> To look up words quickly, the <code>trie</code> model creates a <dfn>
 search key </dfn> that takes the latest word (as determined by the <a
-href="#Word-breaking">word breaking</a> and converts it into a “regular” form.
+href="#toc-word-breaking">word breaking</a> and converts it into a “regular” form.
 The purpose of this “regular” form is to make searching for a word work,
 regardless of things such as <strong>accents</strong>,
 <strong>diacritics</strong>, <strong>lettercase</strong>, and minor
@@ -125,15 +125,19 @@ specify one: </p>
   let normalizedTerm = term.normalize('NFD');
 
   // Now, make it lowercase.
+  //
+  // e.g.,  A + ˚ → a + ˚
   let lowercasedTerm = normalizedTerm.toLowerCase();
 
   // Now, using the pattern above replace each accent and diacritic with the
   // empty string. This effectively removes all accents and diacritics!
+  //
+  // e.g.,  a + ˚ → a
   let termWithoutDiacritics = lowercasedTerm.replace(COMBINING_DIACRITICAL_MARKS, '')
 
   // The resultant key is lowercased, and has no accents or diacritics.
   return termWithoutDiacritics;
-},<code></pre>
+},</code></pre>
 
 <p> This should be sufficient for most Latin-based writing systems. However,
 there are cases, such as with SENĆOŦEN, where some characters do not decompose
