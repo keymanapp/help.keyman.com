@@ -1,0 +1,33 @@
+<html>
+  <head><title>Keyman 6.0.151.0 Corrected Issues</title></head>
+<body>
+
+<h1>Issues corrected in Keyman 6.0.151.0</h1>
+
+<ol>
+  <li>Fixed HOWTO topics in help files not displaying<br>Reported by Manuel Lopez
+  <li>Fixed installation of Keyman Developer - was aborting in Windows NT 4<br>Reported by Manuel Lopez<br>
+    <blockquote><listing>
+      DlgcacWinName: _INS0432._MP - Entry Point Not Found
+      The procedure entry point GetLongPathNameA could not be located in the dynamic link library KERNEL32.dll
+
+      Installation was on Windows NT Server, SP6a
+      Installation directory was D:\Utilities\Tavultesoft\Keyman Developper
+      Installation was over top of existing Keyman Developper v112
+  
+      ***
+      Followed by the message:
+      Unable to load Express Extension DLL D:\TEMP\_ISTMP2.DIR\VERSIO~1.DLL
+      Exiting Installation
+    </listing></blockquote>
+  <li>Fixed issue in dev/help/ref/index.php where it contradicted usage of index in context.<br>Reported by Doug Higby.
+  <li>Fixed issue with Save As... in TIKE where the window caption was not updated until the next edit.<br>Reported by Doug Higby.
+  <li>Fixed issue in TIKE's Insert Header Template dialog where VERSION 5.1 was inserted of 6.0<br>Reported by Doug Higby.
+  <li>Fixed crash in Visual Keyboard<br>Reported by Manuel Lopez
+  <li>Fixed issue in Keyman Configuration where packages were not uninstalling correctly in Control Panel/Add/Remove Programs.
+</ol>
+
+<p><a href="/keyman/">Back to Keyman main page</a></p>
+
+</body>
+</html>
