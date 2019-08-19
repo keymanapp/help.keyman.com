@@ -22,4 +22,4 @@
 <p> Once you have the appropriate software installed, we can start preparing
 your language data! </p>
 
-<p><a href="step-2.php" title="Get some language data">Next: Get some language data</a></p>
+<p><a href="step-2.php" title="Step 2: Get some language data">Step 2: Get some language data</a></p>

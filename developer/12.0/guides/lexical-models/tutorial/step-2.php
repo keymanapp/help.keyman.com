@@ -79,4 +79,4 @@ values (.tsv, current sheet)”.</p>
 <p>Now that we have our word list, exported in the correct format, let's
 create the model definition file.</p>
 
-<p><a href="step-3.php" title="Step 3: Creating a model definition file">Next: Creating a model definition file</a></p>
+<p><a href="step-3.php" title="Step 3: Creating a model definition file">Step 3: Creating a model definition file</a></p>

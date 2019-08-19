@@ -12,7 +12,7 @@
 <figure class="aside">
   <img src="<?= cdn('img/developer/120/lm/whatis-on-my-w.png')?>"
        alt="Smartphone keyboard displaying suggestions for the English phrase ”on my w-”" />
-  <figcaption>Predictive text for English</figcaption>
+  <figcaption>Predictive text for English.</figcaption>
 </figure>
 
 <p>Many mobile phone keyboards enjoy <strong>predictive text</strong> for their languages.</p>
@@ -82,7 +82,7 @@ relatively view English words that start with the prefix of “naiv-”</p>
 <figure class="aside">
   <img src="<?= cdn('img/developer/120/lm/whatis-antidi.png')?>"
        alt="The top suggestion shows “antidisestablishmentarianism”" />
-  <figcaption>Typing “antidi” on an English keyboard</figcaption>
+  <figcaption>Typing “antidi” on an English keyboard.</figcaption>
 </figure>
 
 <p>Sometimes, the words are very long, but can be typed in far fewer keystrokes
