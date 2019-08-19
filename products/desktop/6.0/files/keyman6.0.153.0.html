@@ -1,0 +1,119 @@
+<html>
+  <head><title>Keyman 6.0.153.0 Corrected Issues</title></head>
+<body>
+
+<h1>Issues corrected in Keyman 6.0.153.0</h1>
+
+<ol>
+ <li>Fixed - Fixed problems with Keyman stopping responding to keyboard input. 
+          (reported by Roland Fumey)
+
+ <li>Fixed - Fixed problems with shift state being incorrectly managed when 
+          switching between applications.
+
+ <li>Fixed - Disabled interaction with console windows (Console window sets focus 
+          to NULL so Keyman keyboard hook will be inactive if no window is 
+          focused).
+
+ <li>Fixed - Fixed problems with Capslock and Numlock state being incorrectly 
+          identified when switching applications.
+
+ <li>Fixed - Creation of links for uninstall of packages and packages with spaces
+          in filename was incorrect -- need quotes around package name.
+
+ <li>Fixed - Install of Start Menu items in packages was missing the pathname in 
+          some situations.
+
+ <li>Fixed - Misleading error message when Keyman registry settings missing 
+          ("not Administrator" instead of "Keyman not installed correctly")
+
+ <li>Fixed - Keyman 6 startup now shows version number.
+
+ <li>Fixed - Space bar now activates check boxes and buttons when Keyman keyboard is active,
+          but only if space bar is not remapped.
+</ol>
+
+
+<h1>Issues corrected in Keyman 6.0.152.0</h1>
+
+<ol>
+ <li>Fixed - When installing a redistributable installer with packages, the sub-packages create 
+          Start Menu items with incorrect targets: the targets point to temp directory instead 
+          of install directory.  Also, Start menu items requested other than Keyman, Kmshell, 
+          and the identified readme file were created but with empty targets (i.e. they were 
+          non-functional).
+
+ <li>Fixed - Windows key does not work when keyboard is active on some systems.
+
+ <li>Fixed - Crash in Projects window when opening/closing tree branches.
+
+ <li>Fixed - After having opened and compiled a keyboard, Package for Distribution resulted 
+          in the new window going into background rather than foreground.
+
+ <li>Fixed - In the debugger, deadkeys stopped working after a few lines of input.
+
+ <li>New   - Keyman compiler in TIKE will now halt if ESC is pressed.
+          KMComp will halt on Ctrl+Break.
+
+ <li>Fixed - With ANSI character set, the Character map doesn't do any 
+          automatic look-ups on the last line of the character map grid.
+
+ <li>New   - Stop button in Debug window
+
+ <li>Fixed - When numlock is on, keyboards do not work correctly.  Caps lock rules are not implemented 
+          correctly either; the fixes for this in Keyman 5.0.113.3 have also been applied to KM6.
+
+ <li>Fixed - Keyman Uninstall did not uninstall lpng.dll
+
+ <li>Mod.  - Uninstall will now wait 10 seconds before timeout message if kmshell does not exit.
+
+ <li>Fixed - Keyman uninstall did not prompt for reboot when reboot was required.
+
+ <li>Fixed - Added version information to richedit.kma
+
+ <li>Fixed - Added version information to version_upgrade.dll
+
+ <li>Fixed - HOWTO items in PDF help now displayed correctly
+
+ <li>Fixed - Dev help: added "lpng.dll", "keyman.exe" to redistributable installer information
+
+ <li>Fixed - Dev help: deadkeys and virtual keys within stores now documented
+
+ <li>Fixed - Dev help: context(n) history now documented
+
+ <li>Fixed - Keyman help can't find KMSHELL.EXE; Start Menu link needed to have working directory set
+
+ <li>Fixed - Addins only install when they are required; e.g. if Word not installed, WordLink won't install
+
+ <li>Fixed - "Keyman 5.0" title bar in startup of redistributable installer
+</ol>
+
+<h1>Issues corrected in Keyman 6.0.151.0</h1>
+
+<ol>
+  <li>Fixed HOWTO topics in help files not displaying<br>Reported by Manuel Lopez
+  <li>Fixed installation of Keyman Developer - was aborting in Windows NT 4<br>Reported by Manuel Lopez<br>
+    <blockquote><listing>
+      DlgcacWinName: _INS0432._MP - Entry Point Not Found
+      The procedure entry point GetLongPathNameA could not be located in the dynamic link library KERNEL32.dll
+
+      Installation was on Windows NT Server, SP6a
+      Installation directory was D:\Utilities\Tavultesoft\Keyman Developper
+      Installation was over top of existing Keyman Developper v112
+  
+      ***
+      Followed by the message:
+      Unable to load Express Extension DLL D:\TEMP\_ISTMP2.DIR\VERSIO~1.DLL
+      Exiting Installation
+    </listing></blockquote>
+  <li>Fixed issue in dev/help/ref/index.php where it contradicted usage of index in context.<br>Reported by Doug Higby.
+  <li>Fixed issue with Save As... in TIKE where the window caption was not updated until the next edit.<br>Reported by Doug Higby.
+  <li>Fixed issue in TIKE's Insert Header Template dialog where VERSION 5.1 was inserted of 6.0<br>Reported by Doug Higby.
+  <li>Fixed crash in Visual Keyboard<br>Reported by Manuel Lopez
+  <li>Fixed issue in Keyman Configuration where packages were not uninstalling correctly in Control Panel/Add/Remove Programs.
+</ol>
+
+<p><a href="/keyman/">Back to Keyman main page</a></p>
+
+</body>
+</html>
