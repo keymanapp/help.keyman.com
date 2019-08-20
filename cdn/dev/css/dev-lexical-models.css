@@ -46,11 +46,3 @@ table.wordlist caption {
   caption-side: bottom-outside;
   margin-top: .5em;
 }
-
-/* Screenshots from macOS have a GINORMOUS shadow below. We can pull the
- * caption a bit in to reduce the amount of insane whitespace taken by the
- * screenshot. */
-img.macos-screenshot + figcaption {
-  margin-top: -35px;
-  margin-bottom: 2rem; /* Also, give it a bit more space below. */
-}

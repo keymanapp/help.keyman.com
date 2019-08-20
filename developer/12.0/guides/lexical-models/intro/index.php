@@ -80,16 +80,26 @@ relatively view English words that start with the prefix of “naiv-”</p>
 <h3>Words are long</h3>
 
 <figure class="aside">
-  <img src="<?= cdn('img/developer/120/lm/whatis-antidi.png')?>"
-       alt="The top suggestion shows “antidisestablishmentarianism”" />
-  <figcaption>Typing “antidi” on an English keyboard.</figcaption>
+  <img src="<?= cdn('img/developer/120/lm/whatis-incompr.png')?>"
+       alt="The top suggestion shows “incomprehensible”" />
+  <figcaption>Typing “incompr” on an English keyboard.</figcaption>
 </figure>
 
 <p>Sometimes, the words are very long, but can be typed in far fewer keystrokes
 if predictive text is used. For example, if in English, I want to write the
-word “antidisestablishmentarianism” (a 28-letter word), a lexical model for
-English can predict it from the prefix “antidi” and save about 21
-keystrokes!</p>
+word “incomprehensible” (a 16-letter word), a lexical model for English can
+predict it from the prefix “incompr” and save 8 keystrokes!</p>
+
+<p> English is not prone to extraordinarily long words; the average word
+length in English is about 9 letters. However, languages that are fond of
+compounding, such as German (e.g., “<span
+lang="de">scheinwerferreinigungsanlage</span>” is a 28-letter word which means
+“headlight washers”), or <dfn>polysynthetic languages</dfn> in which one word
+can have the meaning of a complete sentence in English, such as Mohawk (e.g.,
+“<span lang="moh">sahonwanhotónkwahse</span>” a 20-letter word which means
+<q cite="https://en.wikipedia.org/w/index.php?title=Polysynthetic_language&oldid=908400441#Examples">she opened the door for him again</q>).
+For these languages, predicitve text can save even more keystrokes than in
+English.</p>
 
 
 <h3>People make mistakes</h3>
