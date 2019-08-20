@@ -44,7 +44,7 @@ quickly. </p>
 <p> On the third line, we're telling the <code>trie</code> where to find our wordlist. </p>
 <pre><code class="lang-typescript">  sources: ['wordlist.tsv'],</code></pre>
 
-<p> The fourth line marks the termination of the lexical model source code. If we specifying any customizations, they <strong>must</strong> be declared above this line: </p>
+<p> The fourth line marks the termination of the lexical model source code. If we specify any customizations, they <strong>must</strong> be declared above this line: </p>
 <pre><code class="lang-typescript">};</code></pre>
 
 <p> The fifth line is necessary to allow external applications to read the lexical model source code.</p>
@@ -84,11 +84,6 @@ text to determine where the words are. </p>
 <p><strong>Note: as of <time
 datetime="2018-08-19T09:51:00-0600">August 19, 2019</time> this API is
 incomplete!</strong> </p>
-
-<p>Unsure if your language requires this?
-<a href="https://en.wikipedia.org/wiki/Category:Writing_systems_without_word_boundaries">
-Wikipedia has a list of writing systems without word boundaries</a>. </p>
-
 
 <h3> Search term to key </h3>
 

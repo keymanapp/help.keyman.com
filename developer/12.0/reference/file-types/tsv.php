@@ -31,7 +31,7 @@
 <li>the file is a <strong>UTF-8</strong> encoded text file</li>
 <li>newlines are either <strong>LF</strong> or <strong>CRLF</strong></li>
 <li>the file <strong>MAY</strong> start with the UTF-8 <strong>byte-order mark</strong>
-  (<abbr>BOM</abbrv>); that is, if the first three bytes of the file are
+  (<abbr>BOM</abbr>); that is, if the first three bytes of the file are
   <code>EF BB BF</code>, these will be interpreted as the
   <abbr>BOM</abbr> and will be ignored.</li>
 <li>the file either consists of a <strong>comment</strong> or an <strong>entry</strong></li>

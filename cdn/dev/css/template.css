@@ -1042,6 +1042,17 @@ kbd {
     display: inline-block;
 }
 
+/* Make the <kbd> element look like an iOS key. */
+kbd.ios {
+    background-color: #fafafa; /* faaa fa fa fa fa faaaa far better... */
+    border: 0;
+    box-shadow: /* Hard shadow */     0 1px rgba(0,0,0,0.4),
+                /* Diffuse shadow */  0 1px 4px rgba(0,0,0,0.2),
+                /* Highlight */ inset 0 1px white;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
 #section2 aside {
   margin: 12px;
   background: #e3e5e6;

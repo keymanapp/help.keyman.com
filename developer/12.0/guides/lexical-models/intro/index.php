@@ -135,16 +135,12 @@ language!</p>
 how to rank suggestions relative to each other. For this, you may extend the
 simple word list with <strong>counts</strong>. Each word has a count of how
 often it has been seen in a representative collection of texts in your
-language. For example, I could download discussions from English language
-Reddit discussions, and how often Reddit users have typed “rule” versus how
-many times they have typed “rupturewort” to understand how to rank these two
-words given the context of “ru”.</p>
+language. For example, I could download articles from the English language
+Wikipedia, and count how often Wikipedia contributors have typed “rule” versus
+how many times they have typed “rupturewort”. This will help us understand how
+to rank these two suggestions given the context of “ru”.</p>
 
 <p>You can extend your spreadsheet with counts (placed in the second column)
 to make a more accurate—and thus more useful—lexical model.</p>
-
-<p>Those comfortable with coding in JavaScript/TypeScript can program their
-complete custom lexical models by
-<a href="../../develop/lexical-model-api">implementing the <code>WorkerInternalModel</code> API</a>.</p>
 
 <p><a href="../tutorial">Next: Developing a lexical model from a word list</a></p>

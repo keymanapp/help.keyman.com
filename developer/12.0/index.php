@@ -20,7 +20,6 @@ need here, including product documentation, guides and tutorials, and full refer
   <li><a href="guides/distribute">Distributing Keyman keyboards</a></li>
   <li><a href="guides/lexical-models">What is a lexical model?</a></li>
   <li><a href="guides/lexical-models/tutorial">Developing a lexical model</a></li>
-  <li><a href="guides/lexical-models/distribute">Distributing a lexical model</a></li>
 </ul>
 
 <h2>Reference</h2>

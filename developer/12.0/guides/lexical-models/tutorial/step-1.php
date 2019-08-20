@@ -15,7 +15,7 @@
 <p>You will need to have:</p>
 
 <ul>
-  <li><a href="https://keyman.com/developer/">Keyman Developer</a></li>
+  <li><a href="https://keyman.com/developer/12">Keyman Developer</a> 12 or greater</li>
   <li><a href="https://nodejs.org/">Node.js</a> &gt;= 10.0</li>
 </ul>
 
