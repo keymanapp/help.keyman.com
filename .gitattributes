@@ -1,0 +1,2 @@
+# Treat SVGs like images, and not like text.
+*.svg    binary
