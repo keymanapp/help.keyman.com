@@ -12,11 +12,11 @@
 
 <h2>Requirements</h2>
 
-<p>You will need to have:</p>
+<p>You will need to install:</p>
 
 <ul>
-  <li><a href="https://keyman.com/developer/12">Keyman Developer</a> 12 or greater</li>
-  <li><a href="https://nodejs.org/">Node.js</a> &gt;= 10.0</li>
+  <li><a href="https://keyman.com/developer">Keyman Developer</a> 12.0 or greater</li>
+  <li><a href="https://nodejs.org/">Node.js</a> 10.0 or greater</li>
 </ul>
 
 <p> Once you have the appropriate software installed, we can start preparing
