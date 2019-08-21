@@ -46,3 +46,19 @@ table.wordlist caption {
   caption-side: bottom-outside;
   margin-top: .5em;
 }
+
+/**
+ * Put quotation marks around translations.
+ */
+q.translation {
+  quotes: "“" "”"
+}
+q.translation::before { content: open-quote }
+q.translation::after { content: close-quote }
+
+/**
+ * Emphasize non-English words
+ */
+span[lang] {
+  font-style: italic;
+}

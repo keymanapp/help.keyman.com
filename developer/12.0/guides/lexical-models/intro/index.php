@@ -92,12 +92,12 @@ predict it from the prefix “incompr” and save 8 keystrokes!</p>
 
 <p> English is not prone to extraordinarily long words; the average word
 length in English is about 9 letters. However, languages that are fond of
-compounding, such as German (e.g., “<span
-lang="de">scheinwerferreinigungsanlage</span>” is a 28-letter word which means
-“headlight washers”), or <dfn>polysynthetic languages</dfn> in which one word
-can have the meaning of a complete sentence in English, such as Mohawk (e.g.,
-“<span lang="moh">sahonwanhotónkwahse</span>” a 20-letter word which means
-<q cite="https://en.wikipedia.org/w/index.php?title=Polysynthetic_language&oldid=908400441#Examples">she opened the door for him again</q>).
+compounding, such as German (e.g., <span lang="de">scheinwerferreinigungsanlage</span>
+is a 28-letter word which means <q class="translation">headlight washers</q>),
+or <dfn>polysynthetic languages</dfn> in which one word can have the meaning
+of a complete sentence in English, such as Mohawk (e.g.,
+<span lang="moh">sahonwanhotónkwahse</span> is a 20-letter word which means
+<q class="translation" cite="https://en.wikipedia.org/w/index.php?title=Polysynthetic_language&oldid=908400441#Examples">she opened the door for him again</q>).
 For these languages, predicitve text can save even more keystrokes than in
 English.</p>
 
