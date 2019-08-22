@@ -111,7 +111,7 @@ specify one: </p>
   // See: https://www.compart.com/en/unicode/block/U+0300
   const COMBINING_DIACRITICAL_MARKS = /[\u0300-\u036f]/g;
 
-  // Covnerts to Unicode Normalization form D.
+  // Converts to Unicode Normalization form D.
   // This means that MOST accents and diacritics have been "decomposed" and
   // are stored as separate characters. We can then remove these separate
   // characters!

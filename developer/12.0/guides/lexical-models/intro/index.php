@@ -98,7 +98,7 @@ or <dfn>polysynthetic languages</dfn> in which one word can have the meaning
 of a complete sentence in English, such as Mohawk (e.g.,
 <span lang="moh">sahonwanhotónkwahse</span> is a 20-letter word which means
 <q class="translation" cite="https://en.wikipedia.org/w/index.php?title=Polysynthetic_language&oldid=908400441#Examples">she opened the door for him again</q>).
-For these languages, predicitve text can save even more keystrokes than in
+For these languages, predictive text can save even more keystrokes than in
 English.</p>
 
 
