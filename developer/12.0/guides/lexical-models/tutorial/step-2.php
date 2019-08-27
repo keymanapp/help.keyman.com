@@ -15,10 +15,14 @@
 tab-separated values (TSV) file, described in the <a
 href="../../../reference/file-types/tsv.php">file types reference</a> to
 generate a word list lexical model.
-However, most users will use a <strong>spreadsheet</strong> app like <a
+However, many users will use a <strong>spreadsheet</strong> app like <a
 href="https://sheets.google.com/">Google Sheets</a> or <a
 href="https://products.office.com/en/excel">Microsoft Excel</a> to create this
-TSV file.</p>
+TSV file. Other users may use language data management software like <a
+href="https://software.sil.org/fieldworks/">SIL FieldWorks Language Explorer
+(FLEx)</a> or <a href="https://software.sil.org/fieldworks/"> SIL WeSay</a>.
+</p>
+
 
 <h2>Example</h2>
 
