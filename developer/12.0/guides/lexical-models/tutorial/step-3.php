@@ -21,7 +21,10 @@ language’s spelling system or <em>orthography</em>.</p>
 
 <h2> The model definition template </h2>
 
-<p>Copy-paste the following template, and save it as <code>model.ts</code>. Place this file in the same folder as <code>wordlist.tsv</code>.</p>
+<p><strong>Keyman Developer</strong> will provide you with a model definition
+similar to the following. If not, copy-paste the following template, and save
+it as <code>model.ts</code>. Place this file in the same folder as
+<code>wordlist.tsv</code>.</p>
 
 <pre><code class="lang-typescript">const source: LexicalModelSource = {
   format: 'trie-1.0',
