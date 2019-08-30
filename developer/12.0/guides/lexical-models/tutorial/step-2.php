@@ -11,18 +11,23 @@
 
 <p>To predict words in your language, a lexical model needs to know the words in your language!</p>
 
-<p>Ultimately, the <strong>lexical model compiler</strong> requires a
-tab-separated values (TSV) file, described in the <a
-href="../../../reference/file-types/tsv.php">file types reference</a> to
-generate a word list lexical model.
-However, many users will use a <strong>spreadsheet</strong> app like <a
-href="https://sheets.google.com/">Google Sheets</a> or <a
-href="https://products.office.com/en/excel">Microsoft Excel</a> to create this
-TSV file. Other users may use language data management software like <a
-href="https://software.sil.org/fieldworks/">SIL FieldWorks Language Explorer
-(FLEx)</a> or <a href="https://software.sil.org/fieldworks/"> SIL WeSay</a>.
-</p>
 
+<p> Keyman Developer understands how to read words in a <strong>TSV file</strong>.
+This kind of file can be saved from a <strong>spreadsheet</strong> application like <a
+href="https://sheets.google.com/">Google Sheets</a> or
+<a href="https://products.office.com/en/excel">Microsoft Excel</a>.
+Other users may also use <strong>language data management software</strong>
+like <a href="https://software.sil.org/fieldworks/">SIL FieldWorks Language
+Explorer (FLEx)</a> or <a href="https://software.sil.org/wesay/">SIL WeSay</a>
+to export an appropriate TSV file.</p>
+
+<aside>
+  <p><strong>For advanced users</strong>: Ultimately, what Keyman Developer
+  requires is a tab-separated values (TSV) file in a specfic format described in
+  the <a href="../../../reference/file-types/tsv.php">file types reference</a>.
+  Refer to this reference file if you are coding your own exporter.
+  </p>
+</aside>
 
 <h2>Example</h2>
 
@@ -54,13 +59,13 @@ spreadsheet publicly
 <a href="https://docs.google.com/spreadsheets/d/10zhIc439BCSSooL_-HeJ6TUHd-ovkiXYcIGe-pHDTSg/edit?usp=sharing">here</a>.
 The order of the columns matters:</p>
 
-<p>The first column (column A) <strong>must</strong> be the "words". If
-provided, the second column (column B) <strong>must</strong> be the "counts".
-Counts are optional for each word: that is, some words may specify counts,
-while other words may leave the second column blank. The third column (column
-C) is always ignored. You may use this column as a comment. The spreadsheet
-can be as simple as a single column of all of the words in the language, with
-each word being separated by a line break.</p>
+<p>The first column (column A) <strong>must</strong> be the “words”. If
+provided, the second column (column B) <strong>must</strong> be the “counts”.
+Counts are optional for each word: that is, some words may specify counts in
+the second column, while other words may leave the second column blank. The
+third column (column C) is always ignored. You may use this column as a
+comment. The spreadsheet can be as simple as a single column of all of the
+words in the language, with each word being separated by a line break.</p>
 
 <p>This is what my word list looks like in Google Sheets:</p>
 
