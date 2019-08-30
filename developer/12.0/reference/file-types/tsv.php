@@ -18,7 +18,7 @@
   <dt>Details:</dt>
   <dd>A .tsv file is a plain-text file containing of tabular data. Spreadsheet
       programs such as Microsoft Excel and Google Sheets can export into TSV format.
-      TSVs can also be programmatically generated from other data sources. See <a href="#file-format">File Format</a> for details.</dd>
+      TSVs can also be programmatically generated from other data sources. For advanced users, see <a href="#file-format">File Format</a> for more details.</dd>
 
   <dt>Distributed with lexical model:</dt>
   <dd>No. This is a development file and should not be distributed.</dd>

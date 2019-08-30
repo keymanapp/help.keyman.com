@@ -81,7 +81,7 @@ which works well for most languages.
 scripts like Chinese, Japanese, Khmer, Lao, and Thai—there are is no obvious
 break in between words. For these languages, there must be special rules for
 determining when words start and stop. This is what a <dfn>word breaking
-function</dfn> is responsible for. It a little bit of code that looks at some
+function</dfn> is responsible for. It is a little bit of code that looks at some
 text to determine where the words are. </p>
 
 <p><strong>Note: as of <time

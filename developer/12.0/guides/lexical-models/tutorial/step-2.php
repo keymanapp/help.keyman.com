@@ -54,8 +54,8 @@ spreadsheet publicly
 <a href="https://docs.google.com/spreadsheets/d/10zhIc439BCSSooL_-HeJ6TUHd-ovkiXYcIGe-pHDTSg/edit?usp=sharing">here</a>.
 The order of the columns matters:</p>
 
-<p>The first column (column A) <strong>must</strong> be the words. If
-provided, the second column (column B) <strong>must</strong> be the counts.
+<p>The first column (column A) <strong>must</strong> be the "words". If
+provided, the second column (column B) <strong>must</strong> be the "counts".
 Counts are optional for each word: that is, some words may specify counts,
 while other words may leave the second column blank. The third column (column
 C) is always ignored. You may use this column as a comment. The spreadsheet
