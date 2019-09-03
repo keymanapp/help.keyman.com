@@ -26,6 +26,12 @@
 
 <h2 id="file-format">File format</h2>
 
+<aside>
+<p><strong>For advanced users only</strong>: this documentation is intended
+for users who wish to develop their own word list exporters. Most users can
+use existing word list exporters. </p>
+</aside>
+
 <p>The <strong>lexical model compiler</strong> expects word lists to abide by the following <strong>tab-separated values</strong> (TSV) format:</p>
 <ul>
 <li>the file is a <strong>UTF-8</strong> encoded text file</li>
