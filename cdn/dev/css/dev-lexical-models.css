@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/*
+ * Styles for the lexical models documentation.
+ */
+
+/* Figures should be centered by default. */
+figure {
+  text-align: center;
+}
+
+/* Images should not overflow the figure size. */
+figure > img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Tables and figures should be centered, and have some space after the
+ * bottom. */
+figure, article > table {
+  margin: 0 auto 1.5rem;
+}
+
+figure.aside {
+  float: right;
+  max-width: 50%;
+  margin: 1rem 0 1rem 1rem;
+}
+
+/* Numbers should be right-aligned, so that we can compare magnitudes easier. */
+td.number {
+  text-align: right;
+  text-align: "." right;
+  /* Use a font-variant with fixed-width digits, so that numbers can be
+   * compared in a table. */
+  font-variant-numeric: tabular-nums;
+}
+
+/*
+ * Styles for the word list table.
+ */
+table.wordlist thead tr {
+  background-color: #333;
+  color: #fff;
+}
+table.wordlist th { padding: .25em 1em }
+/* Alternate background colours for odd and even rows */
+table.wordlist tbody tr:nth-child(odd) { background-color: #fff }
+table.wordlist tbody tr:nth-child(even) { background-color: #eee }
+table.wordlist td { padding: .25em .5em }
+table.wordlist caption {
+  caption-side: bottom-outside;
+  margin-top: .5em;
+}
+
+/**
+ * Put quotation marks around translations.
+ */
+q.translation {
+  quotes: "“" "”"
+}
+q.translation::before { content: open-quote }
+q.translation::after { content: close-quote }
+
+/**
+ * Emphasize non-English words
+ */
+span[lang] {
+  font-style: italic;
+}
