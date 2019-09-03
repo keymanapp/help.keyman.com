@@ -148,4 +148,7 @@ your own key function. </p>
 <strong>build</strong> and <strong>test</strong> our lexical model. This will
 be discussed in the next step. </p>
 
-<p><a href="step-4.php" title="Step 4: Compile the language model">Step 4: Compile the lexical model model</a></p>
+<p>
+<del><a href="#" title="Step 4: Compile the language model">Step 4: Compile the lexical model model</a></del>
+Coming soon! See <a href="https://github.com/keymanapp/help.keyman.com/issues/35"> This GitHub issue </a> for updates!
+</p>
