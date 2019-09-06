@@ -1,6 +1,6 @@
 <?php
-  require_once('includes/template.php'); 
-  
+  require_once('includes/template.php');
+
   // Required
   head([
     'title' =>'.keyboard_info 1.0 Specification',
@@ -32,8 +32,8 @@
 <td>yes</td>
 <td>yes</td>
 <td>
-  <p><b>string</b>, the same as the name of the folder, lower case. In the <b>release/</b> folder, this name must be a 
-  valid Javascript identifier, and follow the rules in the 
+  <p><b>string</b>, the same as the name of the folder, lower case. In the <b>release/</b> folder, this name must be a
+  valid Javascript identifier, and follow the rules in the
   <a href="https://help.keyman.com/developer/keyboards">Keyboard Cloud Repository documentation</a>.</p>
 
   <p><b>Example:</b> <code>"id": "fv_blackfoot"</code></p>
@@ -82,7 +82,7 @@
 <td>
   <p><b>string</b>, a textual description of the keyboard. This may contain some minimal HTML (p, b, i, u, span, a, ul, ol, li, br, hr, h1-h4 tags).</p>
 
-  <p><b>No Automatic Generation:</b> this information is not consistently available elsewhere. If not specified, then a 
+  <p><b>No Automatic Generation:</b> this information is not consistently available elsewhere. If not specified, then a
   description will be generated based on the supported languages at runtime by the consumer of the json.</p>
 </td>
 </tr>
@@ -95,7 +95,7 @@
   <p><b>string</b>, the possible values for <b>license</b> vary by location in the repository:</p>
   <ul>
     <li><b>release/</b> and <b>experimental/</b> keyboards must be <code>"mit"</code>.</li>
-    <li><b>legacy/</b> keyboards will be <code>"freeware"</code>, 
+    <li><b>legacy/</b> keyboards will be <code>"freeware"</code>,
       <code>"shareware"</code> or <code>"commercial"</code>.</li>
   </ul>
   <p>This must always be specified, even for <b>release/</b> and <b>experimental/</b> keyboards,
@@ -139,9 +139,9 @@
 <td>yes <a href='#note-1'>(1)</a></td>
 <td>yes <a href='#note-1'>(1)</a></td>
 <td>
-  <p><b>string</b>, filename of the .kmp file that will be distributed, relative to the keyboard base folder, 
+  <p><b>string</b>, filename of the .kmp file that will be distributed, relative to the keyboard base folder,
   including extension, required for <b>experimental/ </b>and <b>legacy/</b> folders. If no .kmp exists,
-  then keyboard is js only. For <b>release/</b> folders, this must be 
+  then keyboard is js only. For <b>release/</b> folders, this must be
   <b><i>id</i></b><b>/build/</b><b><i>id</i></b><b>.kmp</b>.</p>
 
   <p><b>Generation:</b> if more than one .kmp exists, then fail.</p>
@@ -216,7 +216,7 @@
   <p><b>boolean</b>, true if the .js keyboard should be right-to-left.
 
   <p><b>Generation:</b> This can usually be generated automatically from the .js file,
-  by heuristic. If the heuristic is not working, add the appropriate value to the source 
+  by heuristic. If the heuristic is not working, add the appropriate value to the source
   .keyboard_info file.</p>
 </td>
 </tr>
@@ -241,12 +241,12 @@
   <p><b>array</b>, of <b>strings</b>. Metadata used mostly by legacy keyboards. This flags whether a package includes:</p>
   <ul>
     <li><code>"fonts"</code> - one or more fonts</li>
-    <li><code>"documentation"</code> - documentation, in PDF, 
+    <li><code>"documentation"</code> - documentation, in PDF,
         RTF or HTML format, excluding welcome.htm and readme</li>
     <li><code>"visualKeyboard"</code> - a KVK file</li>
     <li><code>"welcome"</code> - a welcome.htm file</li>
   </ul>
-  
+
   <p><b>Generation: </b>from .kmp</p>
 </td>
 </tr>
@@ -268,8 +268,8 @@
 <td>yes</td>
 <td>yes</td>
 <td>
-  <p><b>string</b>. The minimum version of Keyman that can read 
-  this keyboard. If present, must be one of <code>"6.0"</code>, <code>"7.0"</code>, <code>"8.0"</code>, 
+  <p><b>string</b>. The minimum version of Keyman that can read
+  this keyboard. If present, must be one of <code>"6.0"</code>, <code>"7.0"</code>, <code>"8.0"</code>,
   <code>"9.0"</code>, <code>"10.0"</code>. Note that this value is used in KeymanWeb, but the version
   mapping is based on Keyman Desktop version numbers. See <a href='/developer/cloud/versioning.php'>KeymanWeb
   Versioning</a> for more detail.
@@ -297,8 +297,8 @@
 <td>
   <p>A <b>KeyboardPlatformInfo </b>object.</p>
 
-  <p><b>Generation: </b>from .kmp, .js existence. Assumes, if .kmp exists, that <code>"macos"</code>, 
-  <code>"windows"</code> are supported; if .js exists, <code>"ios"</code>, <code>"android"</code>, 
+  <p><b>Generation: </b>from .kmp, .js existence. Assumes, if .kmp exists, that <code>"macos"</code>,
+  <code>"windows"</code> are supported; if .js exists, <code>"ios"</code>, <code>"android"</code>,
   <code>"web"</code> are supported.</p>
 </td>
 </tr>
@@ -344,51 +344,6 @@
 <th><b>Notes</b></th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td>displayName</td>
-<td>yes</td>
-<td>
-  <p><b>string</b>, a descriptive name of the language to display to users in the format: <i>language (script, region)</i>.
-    If the BCP 47 code does not contain script or region subtags, only the language name is displayed.</p>
-  <p><b>Example:</b> <code>"displayName": "Central Atlas Tamazight (Tifinagh, Morocco)"</code></p>
-  <p><b>Generation:</b>This will be generated automatically from the BCP 47 code.</p>
-</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td>languageName</td>
-<td>yes</td>
-<td>
-  <p><b>string</b>, the name of the language subtag in the BCP 47 code.</p>
-  <p><b>Example:</b><code>"languageName": "Central Atlas Tamazight"</code></p>
-  <p><b>Generation:</b>This will be generated automatically from the BCP 47 code.</p>
-</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td>scriptName</td>
-<td></td>
-<td>
-  <p><b>string</b>, the name of the script subtag in the BCP 47 code.</p>
-  <p><b>Example:</b><code>"scriptName": "Tifinagh"</code></p>
-  <p><b>Generation:</b>This will be generated automatically from the BCP 47 code.</p>
-</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td>regionName</td>
-<td></td>
-<td>
-  <p><b>string</b>, the name of the region subtag in the BCP 47 code.</p>
-  <p><b>Example:</b><code>"regionName": "Morocco"</code></p>
-  <p><b>Generation:</b>This will be generated automatically from the BCP 47 code.</p>
-</td>
-</tr>
-</tbody>
 <tbody>
 <tr>
 <td>font</td>
@@ -447,11 +402,11 @@
 <td rowspan="7">
   <p><b>string</b>, for all members: one of <code>"dictionary"</code>, <code>"full"</code>, <code>"basic"</code>, or <code>"none"</code>.
   If member is missing, <code>"none"</code>.</p>
-  
+
   <ul>
     <li><code>"dictionary"</code>: keyboard includes dictionary, e.g. IME or suggestion/autocompletion support.</li>
     <li><code>"full"</code>: keyboard is designed and optimised for the platform, and works well with it.</li>
-    <li><code>"basic"</code>: keyboard compiles for the platform but has not been optimised for it (e.g. a 
+    <li><code>"basic"</code>: keyboard compiles for the platform but has not been optimised for it (e.g. a
     Windows keyboard compiled to web, with no touch-specific support, will still work on a touch platform
     but will have a desktop-shaped touch keyboard with too many keys on it).</li>
     <li><code>"none"</code>: keyboard does not work on the platform</li>
@@ -534,15 +489,15 @@
 <td></td>
 <td>
   <p>One of the following types:</p>
-  
+
   <ul>
-    <li><b>string</b>, a list of keystrokes to type to produce a short sample text using this keyboard, 
+    <li><b>string</b>, a list of keystrokes to type to produce a short sample text using this keyboard,
     must be plain text US English keycaps, e.g. <code>"Tiena ysTlN"</code>, cannot use modifiers other than Shift.</li>
     <li><b>array</b> of <b>strings</b> and/or <b>KeyboardExampleKeyInfo</b> objects, e.g.
       <code>["Tiena", { "modifiers": ["shift"], "key": "K_SPACE" }, "ysTlN" ]</code>.</li>
   </ul>
-  
-  <p>This is not intended to give a full description of the keyboard but rather a simple example that introduces the user to the 
+
+  <p>This is not intended to give a full description of the keyboard but rather a simple example that introduces the user to the
      way the keyboard works.</p>
 </td>
 </tr>
@@ -577,7 +532,7 @@
 <td>modifiers</td>
 <td></td>
 <td>
-  <p><b>array</b> of <code>"shift"</code>, <code>"ctrl"</code>, <code>"alt"</code>, <code>"left-ctrl"</code>, 
+  <p><b>array</b> of <code>"shift"</code>, <code>"ctrl"</code>, <code>"alt"</code>, <code>"left-ctrl"</code>,
   <code>"left-alt"</code>, <code>"right-ctrl"</code>, <code>"right-alt"</code> <b>strings</b>.</p>
 </td>
 </tr>
@@ -585,7 +540,7 @@
 <td>key</td>
 <td>yes</td>
 <td class='language-keyman'>
-  <p><b>string</b>. A valid <code>K_</code> identifier, from the first two lists 
+  <p><b>string</b>. A valid <code>K_</code> identifier, from the first two lists
   in <a href="https://help.keyman.com/developer/language/guide/virtual-keys">https://help.keyman.com/developer/language/guide/virtual-keys</a>
   (i.e., excluding reserved virtual key codes). Touch-specific keys such as <code>T_xxx</code> or <code>U_abcd</code> are not permitted.</td>
 </tr>
@@ -606,7 +561,7 @@
 <td>deprecates</td>
 <td></td>
 <td>
-  <p><b>boolean</b>, if <b>true</b>, then this keyboard is intended to deprecate another keyboard with the parent member name, 
+  <p><b>boolean</b>, if <b>true</b>, then this keyboard is intended to deprecate another keyboard with the parent member name,
   and Keyman will upgrade it to this keyboard if found, ignoring version numbers.</p>
 </td>
 </tr>
@@ -649,7 +604,7 @@ process will generate any missing fields that it can. Generally speaking, it is 
 
 <pre><code class='language-javascript'>
 {
-  "license": "mit", 
+  "license": "mit",
   "languages": ["crl", "crj"]
 }
 </code></pre>
@@ -731,10 +686,10 @@ many of these fields will typically be generated automatically from the compiled
 <dl>
   <dt>1.0, 2017-09-14</dt>
   <dd>Initial version</dd>
-  
+
   <dt>1.0.1, 2018-01-31</dt>
   <dd>Add file sizes, isRTL, sourcePath fields so we can supply these to the legacy KeymanWeb Cloud API endpoints. Remove references to .kmx being a valid package format.</dd>
-  
+
   <dt>1.0.2, 2018-02-10</dt>
   <dd>Add dictionary to platform support choices. Fixed default for platform to 'none'.</dd>
 
@@ -746,4 +701,7 @@ many of these fields will typically be generated automatically from the compiled
 
   <dt>1.0.5 2018-12-18</dt>
   <dd>Deprecate languages[] array. Update KeyboardLanguageInfo object to include subtag names.</dd>
+
+  <dt>1.0.6 2019-09-06</dt>
+  <dd>Update KeyboardLanguageInfo documentation to remove erroneous fields displayName, languageName, scriptName, regionName.</dd>
 </dl>
