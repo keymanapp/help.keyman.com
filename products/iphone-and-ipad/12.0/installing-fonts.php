@@ -1,4 +1,6 @@
 <?php
+  $embedded = isset($_GET["embed"]) ? $_GET["embed"] : false;
+
   require_once('includes/template.php');
   
   head([
@@ -6,11 +8,16 @@
 //    'css' => ['template.css','app-info.css'],
       'css' => ['template.css','keyboard.css','keys.css'],
 
-    'showMenu' => true
+    'showMenu' => true,
+    'embedded' => $embedded
   ]);
 ?>
-  
-<h2>Keyman for iPhone and iPad: Installing Fonts (iOS 7 onwards)</h2>
+
+<?php
+$titlePrefix = $embedded ? "" : "Keyman for iPhone and iPad:  ";
+?>
+<h2><?=$titlePrefix?>Installing Fonts</h2>
+
 <p>
    Some keyboards require special fonts that do not come standard with your iPhone or iPad. For keyboards that use these fonts, the Keyman app will provide a download of the font to install onto your device, meaning all apps will be able to correctly display the font. To install the font, touch <span class="command">Install</span>.
    <br/>
@@ -35,12 +42,20 @@
    The font is now successfully installed, and will display correctly throughout your device!
 </p>
 
+<h2>Help Index</h2>
+
+<?php
+$embedQuery = $embedded == true ? "?embed=true" : "";
+$indexName = $embedded ? "Getting Started" : "Keyman for iPhone and iPad help home";
+?>
+
 <ul>
-  <li><a href='index.php'>Keyman for iPhone and iPad help home</li></li>
-  <li><a href='switching-between-keyboards.php'>Switching between keyboards</a></li>
-  <li><a href='uninstalling-keyboards.php'>Uninstalling keyboards</a></li>
-  <li><a href='installing-system-keyboard.php'>Installing the Keyman System Keyboard</a></li>
-  <li><a href='installing-fonts.php'>Installing fonts</a></li>
-  <li><a href='installing-custom-keyboards.php'>Installing custom keyboards</a></li>
-  <li><a href='using-keyman-browser.php'>Using the Keyman Browser</a></li>
+  <li><a href='index.php<?=$embedQuery?>'><?=$indexName?></a></li>
+  <li><a href='switching-between-keyboards.php<?=$embedQuery?>'>Switching between keyboards</a></li>
+  <li><a href='uninstalling-keyboards.php<?=$embedQuery?>'>Uninstalling keyboards</a></li>
+  <li><a href='installing-system-keyboard.php<?=$embedQuery?>'>Installing the Keyman System Keyboard</a></li>
+  <li><a href='installing-fonts.php<?=$embedQuery?>'>Installing fonts</a></li>
+  <li><a href='installing-custom-keyboards.php<?=$embedQuery?>'>Installing custom keyboards</a></li>
+  <li><a href='using-keyman-browser.php<?=$embedQuery?>'>Using the Keyman Browser</a></li>
 </ul>
+

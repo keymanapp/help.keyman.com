@@ -1,4 +1,6 @@
 <?php
+  $embedded = isset($_GET["embed"]) ? $_GET["embed"] : false;
+
   require_once('includes/template.php');
   
   head([
@@ -6,11 +8,16 @@
 //    'css' => ['template.css','app-info.css'],
       'css' => ['template.css','keyboard.css','keys.css'],
 
-    'showMenu' => true
+    'showMenu' => true,
+    'embedded' => $embedded
   ]);
 ?>
-  
-<h2>Keyman for iPhone and iPad: Installing the Keyman System Keyboard (iOS 8.0 and later)</h2>
+
+<?php
+$titlePrefix = $embedded ? "" : "Keyman for iPhone and iPad:  ";
+?>
+<h2><?=$titlePrefix?>Installing the Keyman System Keyboard</h2>
+
 <p>
     Step 1) Open the 'Settings' App and go to 'General' > 'Keyboard'
 </p>
@@ -47,12 +54,19 @@
 <p>Note: After opening the Keyman system keyboard for the first time in an app, you can turn off the "Allow Full Access" option 
 again. You only need to switch it on in the future to update or change your keyboard preferences.</p>
 
+<h2>Help Index</h2>
+
+<?php
+$embedQuery = $embedded == true ? "?embed=true" : "";
+$indexName = $embedded ? "Getting Started" : "Keyman for iPhone and iPad help home";
+?>
+
 <ul>
-  <li><a href='index.php'>Keyman for iPhone and iPad help home</li></li>
-  <li><a href='switching-between-keyboards.php'>Switching between keyboards</a></li>
-  <li><a href='uninstalling-keyboards.php'>Uninstalling keyboards</a></li>
-  <li><a href='installing-system-keyboard.php'>Installing the Keyman System Keyboard</a></li>
-  <li><a href='installing-fonts.php'>Installing fonts</a></li>
-  <li><a href='installing-custom-keyboards.php'>Installing custom keyboards</a></li>
-  <li><a href='using-keyman-browser.php'>Using the Keyman Browser</a></li>
+  <li><a href='index.php<?=$embedQuery?>'><?=$indexName?></a></li>
+  <li><a href='switching-between-keyboards.php<?=$embedQuery?>'>Switching between keyboards</a></li>
+  <li><a href='uninstalling-keyboards.php<?=$embedQuery?>'>Uninstalling keyboards</a></li>
+  <li><a href='installing-system-keyboard.php<?=$embedQuery?>'>Installing the Keyman System Keyboard</a></li>
+  <li><a href='installing-fonts.php<?=$embedQuery?>'>Installing fonts</a></li>
+  <li><a href='installing-custom-keyboards.php<?=$embedQuery?>'>Installing custom keyboards</a></li>
+  <li><a href='using-keyman-browser.php<?=$embedQuery?>'>Using the Keyman Browser</a></li>
 </ul>

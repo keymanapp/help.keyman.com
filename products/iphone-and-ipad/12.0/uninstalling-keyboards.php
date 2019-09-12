@@ -1,4 +1,6 @@
 <?php
+$embedded = isset($_GET["embed"]) ? $_GET["embed"] : false;
+
 require_once('includes/template.php');
 
 head([
@@ -6,11 +8,16 @@ head([
 //    'css' => ['template.css','app-info.css'],
     'css' => ['template.css','keyboard.css','keys.css'],
 
-    'showMenu' => true
+    'showMenu' => true,
+    'embedded' => $embedded
 ]);
 ?>
 
-<h2>Keyman for iPhone and iPad: Uninstalling Keyboards</h2>
+<?php
+$titlePrefix = $embedded ? "" : "Keyman for iPhone and iPad:  ";
+?>
+<h2><?=$titlePrefix?>Uninstalling Keyboards</h2>
+
 <p>
   To uninstall keyboards, follow these steps:
   <br/><br/>
@@ -37,12 +44,19 @@ head([
   <br/>
 </p>
 
+<h2>Help Index</h2>
+
+<?php
+$embedQuery = $embedded == true ? "?embed=true" : "";
+$indexName = $embedded ? "Getting Started" : "Keyman for iPhone and iPad help home";
+?>
+
 <ul>
-    <li><a href='index.php'>Keyman for iPhone and iPad help home</li></li>
-    <li><a href='switching-between-keyboards.php'>Switching between keyboards</a></li>
-    <li><a href='uninstalling-keyboards.php'>Uninstalling keyboards</a></li>
-    <li><a href='installing-system-keyboard.php'>Installing the Keyman System Keyboard</a></li>
-    <li><a href='installing-fonts.php'>Installing fonts</a></li>
-    <li><a href='installing-custom-keyboards.php'>Installing custom keyboards</a></li>
-    <li><a href='using-keyman-browser.php'>Using the Keyman Browser</a></li>
+  <li><a href='index.php<?=$embedQuery?>'><?=$indexName?></a></li>
+  <li><a href='switching-between-keyboards.php<?=$embedQuery?>'>Switching between keyboards</a></li>
+  <li><a href='uninstalling-keyboards.php<?=$embedQuery?>'>Uninstalling keyboards</a></li>
+  <li><a href='installing-system-keyboard.php<?=$embedQuery?>'>Installing the Keyman System Keyboard</a></li>
+  <li><a href='installing-fonts.php<?=$embedQuery?>'>Installing fonts</a></li>
+  <li><a href='installing-custom-keyboards.php<?=$embedQuery?>'>Installing custom keyboards</a></li>
+  <li><a href='using-keyman-browser.php<?=$embedQuery?>'>Using the Keyman Browser</a></li>
 </ul>

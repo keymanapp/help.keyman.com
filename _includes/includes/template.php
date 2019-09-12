@@ -56,27 +56,33 @@
     }else{
         $js = array(cdn('js/kmlive.js'));
     }
-    if(isset($args['showMenu'])){
-        $menu = $args['showMenu'];
-    }else{
-        $menu = true;
-    }
+
+    $embed = isset($args['embedded']) ? $args['embedded'] : false;
+    $menu = isset($args['showMenu']) ? $args['showMenu'] : !$embed;
+
     $favicon = cdn("img/favicon.ico");
     require_once('head.php');
-    if($menu == true) {
-        require_once ('phone-menu.php');
-        require_once('top-menu.php');
+
+    if($embed == true) {
+      // TODO:
+      // require_once('embed-menu.php');
     } else {
-        require_once ('no-menu.php');
+      if ($menu == true) {
+        require_once('phone-menu.php');
+        require_once('top-menu.php');
+      } else {
+        require_once('no-menu.php');
+      }
     }
     
-    $toc = isset($args['toc']) ? $args['toc'] : true; 
-    $index = isset($args['index']) ? $args['index'] : true; 
-    $foot = isset($args['foot']) ? $args['foot'] : true;
+    $toc = isset($args['toc']) ? $args['toc'] : !$embed;
+    $index = isset($args['index']) ? $args['index'] : !$embed;
+    $foot = isset($args['foot']) ? $args['foot'] : !$embed;
+    $crumbs = isset($args['crumbs']) ? $args['crumbs'] : !$embed;
     $shutdown = 'template_finish';
     register_shutdown_function($shutdown,$foot);
     
-    begin_main($toc, $index);
+    begin_main($toc, $index, $crumbs);
   }
     
   function write_breadcrumbs(){
@@ -117,7 +123,7 @@
   
   require_once('index-content.php');
   
-  function begin_main($toc, $index){
+  function begin_main($toc, $index, $crumbs){
     global $index_content;
     if($index) {
       build_index_content();
@@ -130,7 +136,10 @@
     } else {
       $index_content_class = ' show-index';
     }
-    write_breadcrumbs();
+
+    if($crumbs) {
+      write_breadcrumbs();
+    }
     
     if($toc) { $tocClass = ''; } else { $tocClass = ' no-toc'; }
     if(!$index) { $tocClass .= ' no-index'; }
