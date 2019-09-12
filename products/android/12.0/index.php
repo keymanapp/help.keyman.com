@@ -1,27 +1,61 @@
 <?php
+$embedded = isset($_GET["embed"]) ? $_GET["embed"] : false;
+
 require_once('includes/template.php');
 
 head([
     'title' => 'Keyman for Android Help',
-    'css' => ['template.css', 'app-info-a.css']
+    'css' => ['template.css', 'app-info-a.css'],
+    'embedded' => $embedded
 ]);
 ?>
 
-<h2>Keyman for Android</h2>
+<?php
+if($embedded == false) {
+  ?>
+  <h2>Keyman for Android</h2>
+  <?php
+} else {
+  ?>
+  <h2>Getting Started</h2>
+  <?php
+}
+?>
 
-<p><a href='../version-history'>Version history</a></p>
+<?php
+if(!$embedded) {
+  ?>
+  <p><a href='../version-history'>Version history</a></p>
+  <?php
+}
+?>
 
 <!-- Content below this copied into the Keyman Android info.html -->
 
+<?php
+$device = isset($_GET["device"]) ? $_GET["device"] : 'tablet';
+if($device != 'tablet' && $device != 'phone') {
+  $device = 'tablet';
+}
+
+if($device == 'tablet') {
+  $mobileClass = "";
+  $tabletClass = "selected-tab";
+} else {
+  $mobileClass = "selected-tab";
+  $tabletClass = "";
+}
+?>
+
 <div id="android-tab-header">
-  <div id="android-mobile-header">
+  <div class="<?=$mobileClass?>" id="android-mobile-header">
     <h4>Phone</h4>
   </div>
-  <div class="selected-tab" id="android-tablet-header">
+  <div class="<?=$tabletClass?>" id="android-tablet-header">
     <h4>Tablet</h4>
   </div>
 </div>
-<div class="tab" id="android-mobile-tab">
+<div class="tab <?=$mobileClass?>" id="android-mobile-tab">
   <p>
     Keyman for Android lets you type in over 600 languages on Android mobiles and tablets.
     To get started, here are some helpful hints:
@@ -347,17 +381,23 @@ head([
     For more information on Keyman for Android, visit <a href="https://keyman.com/android">keyman.com/android</a>
   </p>
 
-  <h2>Keyman for Android Documentation Versions</h2>
+  <?php
+  if(!$embedded) {
+    ?>
+    <h2>Keyman for Android Documentation Versions</h2>
 
-  <ul>
-    <li><a href='../12.0/'>Keyman for Android 12.0 Documentation</a></li>
-    <li><a href='../11.0/'>Keyman for Android 11.0 Documentation</a></li>
-    <li><a href='../10.0/'>Keyman for Android 10.0 Documentation</a></li>
-    <li><a href='../2.0/'>Keyman for Android 2.0 Documentation</a></li>
-  </ul>
+    <ul>
+      <li><a href='../12.0/'>Keyman for Android 12.0 Documentation</a></li>
+      <li><a href='../11.0/'>Keyman for Android 11.0 Documentation</a></li>
+      <li><a href='../10.0/'>Keyman for Android 10.0 Documentation</a></li>
+      <li><a href='../2.0/'>Keyman for Android 2.0 Documentation</a></li>
+    </ul>
+    <?php
+  }
+  ?>
 </div>
 
-<div class="tab selected-tab" id="android-tablet-tab">
+<div class="tab <?=$tabletClass?>" id="android-tablet-tab">
   <p>
     Keyman for Android lets you type in over 600 languages on Android mobiles and tablets.
     To get started, here are some helpful hints:
@@ -678,12 +718,18 @@ head([
     For more information on Keyman for Android, visit <a href="https://keyman.com/android">keyman.com/android</a>
   </p>
 
-  <h2>Keyman for Android Documentation Versions</h2>
+  <?php
+  if(!$embedded) {
+    ?>
+    <h2>Keyman for Android Documentation Versions</h2>
 
-  <ul>
-    <li><a href='../12.0/'>Keyman for Android 12.0 Documentation</a></li>
-    <li><a href='../11.0/'>Keyman for Android 11.0 Documentation</a></li>
-    <li><a href='../10.0/'>Keyman for Android 10.0 Documentation</a></li>
-    <li><a href='../2.0/'>Keyman for Android 2.0 Documentation</a></li>
-  </ul>
+    <ul>
+      <li><a href='../12.0/'>Keyman for Android 12.0 Documentation</a></li>
+      <li><a href='../11.0/'>Keyman for Android 11.0 Documentation</a></li>
+      <li><a href='../10.0/'>Keyman for Android 10.0 Documentation</a></li>
+      <li><a href='../2.0/'>Keyman for Android 2.0 Documentation</a></li>
+    </ul>
+    <?php
+  }
+  ?>
 </div>
