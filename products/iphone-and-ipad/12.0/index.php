@@ -21,28 +21,28 @@
            <th colspan="2">Keyboard Keys <br/>(Keyboard Present)</th>
        </tr>
        <tr>
-           <td><img src="<?php echo cdn("img/app/11.0/globe.png"); ?>" /></td>
+           <td><img src="<?php echo cdn("img/app/12.0/globe.png"); ?>" /></td>
            <td>Install or select another language/keyboard</td>
        </tr>
        <tr>
-           <td><img src="<?php echo cdn("img/app/11.0/hide-keyboard.png"); ?>" /></td>
+           <td><img src="<?php echo cdn("img/app/12.0/hide-keyboard.png"); ?>" /></td>
            <td>Hide the keyboard</td>
        </tr>
        <tr>
-           <td><img src="<?php echo cdn("img/app/11.0/backspace.png"); ?>" /></td>
+           <td><img src="<?php echo cdn("img/app/12.0/backspace.png"); ?>" /></td>
            <td>Backspace</td>
        </tr>
        <tr>
-           <td><img src="<?php echo cdn("img/app/11.0/return.png"); ?>" /></td>
+           <td><img src="<?php echo cdn("img/app/12.0/return.png"); ?>" /></td>
            <td>Return</td>
        </tr>
        <tr>
-           <td><img src="<?php echo cdn("img/app/11.0/shift.png"); ?>" /></td>
+           <td><img src="<?php echo cdn("img/app/12.0/shift.png"); ?>" /></td>
            <td>Shift key. Long press this key to access the CTRL, ALT and CTRL ALT keys (which can access additional
              key layers)</td>
        </tr>
        <tr>
-           <td><img src="<?php echo cdn("img/app/11.0/touch-hold.png"); ?>" /></td>
+           <td><img src="<?php echo cdn("img/app/12.0/touch-hold.png"); ?>" /></td>
            <td>Keys with a small dot in the top right corner indicate a long press key. Access further functionality
              by long pressing the key</td>
        </tr>
@@ -50,31 +50,31 @@
            <th colspan="2">Toolbar Icons</th>
        </tr>
        <tr>
-           <td><img src="<?php echo cdn("img/app/11.0/share.png"); ?>" /></td>
+           <td><img src="<?php echo cdn("img/app/12.0/share.png"); ?>" /></td>
            <td>Share your text via Mail, Text, Facebook or Twitter</td>
        </tr>
        <tr>
-           <td><img src="<?php echo cdn("img/app/11.0/browser-icon.png"); ?>" /></td>
+           <td><img src="<?php echo cdn("img/app/12.0/browser-icon.png"); ?>" /></td>
            <td>Open the Keyman Browser</td>
        </tr>
        <tr>
-           <td><img src="<?php echo cdn("img/app/11.0/menu-icon.png"); ?>" /></td>
+           <td><img src="<?php echo cdn("img/app/12.0/menu-icon.png"); ?>" /></td>
            <td>Open the menu for additional options</td>
        </tr>
        <tr>
-           <td><img src="<?php echo cdn("img/app/11.0/font-size.png"); ?>" /></td>
+           <td><img src="<?php echo cdn("img/app/12.0/font-size.png"); ?>" /></td>
            <td>Adjust the font size</td>
        </tr>
        <tr>
-           <td><img src="<?php echo cdn("img/app/11.0/delete.png"); ?>" /></td>
+           <td><img src="<?php echo cdn("img/app/12.0/delete.png"); ?>" /></td>
            <td>Delete all current text</td>
        </tr>
        <tr>
-           <td><img src="<?php echo cdn("img/app/11.0/get-started.png"); ?>" /></td>
+           <td><img src="<?php echo cdn("img/app/12.0/get-started.png"); ?>" /></td>
            <td>Open the initial setup screen</td>
        </tr>
        <tr>
-           <td><img src="<?php echo cdn("img/app/11.0/info.png"); ?>" /></td>
+           <td><img src="<?php echo cdn("img/app/12.0/info.png"); ?>" /></td>
            <td>Load this help page</td>
        </tr>
    </table>
