@@ -1,5 +1,5 @@
 <?php
-  $embedded = isset($_GET["embed"]) ? $_GET["embed"] : false;
+  $embedded = isset($_GET["embed"]) ? $_GET["embed"] == "true" : false;
 
   require_once('includes/template.php');
   
