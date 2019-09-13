@@ -1,5 +1,5 @@
 <?php
-  $embedded = isset($_GET["embed"]) ? $_GET["embed"] == "true" : false;
+  $embedded = isset($_GET["embed"]) ? filter_var($_GET["embed"], FILTER_VALIDATE_BOOLEAN) : false;
 
   require_once('includes/template.php');
   
