@@ -243,6 +243,8 @@ hide some of the details of encoding from the interface presented to the user. T
 has a number of additional features specific to touch. Keys on the touch layout trigger rules within the normal Keyman keyboard; if no rule is defined for a given key, it will be
 given output if it has a standard code beginning with <code>K_</code>, or if it is a Unicode value code, starting with <code>U_</code>.</p>
 
+<p>Follow this <a href="../guides/develop/touch-keyboard-tutorial/making-touch-keyboard.php">guide</a> for learning how to create a Touch Layout keyboard.</p>
+
 <p>In Design view, the editor can show a number of different device types, including iPhone and iPad, in different orientations, to allow you to visualize the keyboard layout before
 you load it onto a device. The following image shows all aspects of the touch design view.</p>
 
