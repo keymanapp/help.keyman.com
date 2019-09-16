@@ -2,7 +2,7 @@
   require_once('includes/template.php');
 
   head([
-    'title' => "KeymanWeb 11.0 Layout Specifications"
+    'title' => "KeymanWeb 12.0 Layout Specifications"
   ]);
 ?>
 <h1 class="title" id="layoutspec">Layout Specifications</h1>

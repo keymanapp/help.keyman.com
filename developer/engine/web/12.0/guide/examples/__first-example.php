@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>KeymanWeb 11.0 - A First Example</title>
+  <title>KeymanWeb 12.0 - A First Example</title>
 
   <?php
   require_once('includes/__kmwheader.php');

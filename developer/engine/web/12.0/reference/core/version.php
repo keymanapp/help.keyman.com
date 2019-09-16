@@ -33,7 +33,7 @@ END
 
 <h3 id="ReturnValue" name="ReturnValue">Return Value</h3>
 
-<p>11.0 (for KeymanWeb 11.0)</p>
+<p>12.0 (for KeymanWeb 12.0)</p>
 
 <h2 id="Description" name="Description">Description</h2>
 
