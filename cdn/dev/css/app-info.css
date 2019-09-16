@@ -48,5 +48,12 @@ th{
 	}
 }
 
+/**
+	Removes existing max-width property settings from images in tables.
+	They overly shrink the images on the main iOS symbol glossary.
+ */
+#section2 td img {
+	max-width: unset;
+}
 
 
