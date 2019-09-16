@@ -17,7 +17,7 @@ $titlePrefix = $embed_ios ? "" : "Keyman for iPhone and iPad:  ";
 <h2><?=$titlePrefix?>Uninstalling Keyboards</h2>
 
 <p>
-  To install resources for use with a new language, follow these steps.
+  To uninstall a keyboard, follow these steps.
 </p>
 <h3>Access "Installed Languages"</h3>
 <p>First, open the "Settings" menu.</p>
