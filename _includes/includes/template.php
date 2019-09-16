@@ -1,11 +1,14 @@
 <?php
   require_once('includes/servervars.php');
   
-  function template_finish($foot) {
+  function template_finish($foot, $embed) {
     //ob_end_flush();
-    
+
     if($foot == true){
-      foot();
+      foot([
+        'display' => true,
+        'embed' => $embed
+      ]);
     }
   }
 
@@ -72,10 +75,10 @@
     
     $toc = isset($args['toc']) ? $args['toc'] : !$embed;
     $index = isset($args['index']) ? $args['index'] : !$embed;
-    $foot = isset($args['foot']) ? $args['foot'] : !$embed;
+    $foot = isset($args['foot']) ? $args['foot'] : true;
     $crumbs = isset($args['crumbs']) ? $args['crumbs'] : !$embed;
     $shutdown = 'template_finish';
-    register_shutdown_function($shutdown,$foot);
+    register_shutdown_function($shutdown,$foot,$embed);
     
     begin_main($toc, $index, $crumbs);
   }
@@ -174,8 +177,15 @@ END;
     }else{
       $display = true;
     }
+
+    $embed = isset($args['embed']) ? $args['embed'] : false;
+
     if($display == true){
-      require_once('footer.php');
+      if($embed) {
+        require_once('embed_footer.php');
+      } else {
+        require_once('footer.php');
+      }
     }else{
       require_once('no-footer.php');
     }
