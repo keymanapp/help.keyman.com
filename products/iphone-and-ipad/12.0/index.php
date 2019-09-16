@@ -25,10 +25,9 @@
 ?>
 <p>
    The Keyman App lets you type in over 600 languages. To get started, here are some helpful hints:
-   <br/><br/>
    <table>
        <tr>
-           <th colspan="2">Keyboard Keys <br/>(Keyboard Present)</th>
+         <th colspan="2"><h3>Keyboard Keys <br/>(Keyboard Present)</h3></th>
        </tr>
        <tr>
            <td><img src="<?php echo cdn("img/app/12.0/globe.png"); ?>" /></td>
@@ -57,7 +56,7 @@
              by long pressing the key</td>
        </tr>
        <tr>
-           <th colspan="2">Toolbar Icons</th>
+         <th colspan="2"><h3>Toolbar Icons</h3></th>
        </tr>
        <tr>
            <td><img src="<?php echo cdn("img/app/12.0/share.png"); ?>" /></td>
