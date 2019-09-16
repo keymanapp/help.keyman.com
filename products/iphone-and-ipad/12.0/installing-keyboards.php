@@ -24,8 +24,9 @@ $titlePrefix = $embed_ios ? "" : "Keyman for iPhone and iPad:  ";
   <p>
   <img src="<?php echo cdn("img/app/12.0/add-keyboard-i.png") ?>" />
   </p>
+  <p>
   The "Installed Languages" menu found here manages your installed keyboards and dictionaries.
-  <p></p>
+  </p>
   <p>
   <img src="<?php echo cdn("img/app/12.0/add-keyboard-i2.png") ?>" />
   </p>
