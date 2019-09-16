@@ -32,12 +32,7 @@ if(!$embed_android) {
 <!-- Content below this copied into the Keyman Android info.html -->
 
 <?php
-$device = isset($_GET["device"]) ? $_GET["device"] : 'tablet';
-if($device != 'tablet' && $device != 'phone') {
-  $device = 'tablet';
-}
-
-if($device == 'tablet') {
+if($formFactor == 'tablet') {
   $mobileClass = "";
   $tabletClass = "selected-tab";
 } else {

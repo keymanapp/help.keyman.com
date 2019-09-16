@@ -15,20 +15,20 @@ if(isset($_REQUEST['embed'])) {
 }
 
 // Useful for Android, which displays different images for the two form factors.
-if(isset($_REQUEST['device'])) {
-  $device = $_REQUEST['device'];
-  if(!in_array($device, ['none', 'phone', 'tablet'])) {
-    $device = 'none';
+if(isset($_REQUEST['formfactor'])) {
+  $formFactor = $_REQUEST['formfactor'];
+  if(!in_array($formFactor, ['none', 'phone', 'tablet'])) {
+    $formFactor = 'none';
   }
-} else if(isset($_SESSION['device'])) {
-  $device = $_SESSION['device'];
+} else if(isset($_SESSION['formfactor'])) {
+  $formFactor = $_SESSION['formfactor'];
 } else {
-  $device = 'none';
+  $formFactor = 'none';
 }
 
 // Save our processed session data.
 $_SESSION['embed'] = $embed;
-$_SESSION['device'] = $device;
+$_SESSION['formfactor'] = $formFactor;
 
 // Create version-specific embed variables.
 $embed_win     = $embed == 'windows';
@@ -45,8 +45,8 @@ if($embed != 'none') {
     'embed' => $embed
   ]);
   $session_query_q = "?$session_query";
-  if($device != 'none') {
-    $session_query_q = "$session_query_q&device=$device";
+  if($formFactor != 'none') {
+    $session_query_q = "$session_query_q&formfactor=$formFactor";
   }
 } else {
   $session_query = '';
