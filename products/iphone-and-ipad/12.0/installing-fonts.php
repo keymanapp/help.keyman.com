@@ -5,9 +5,8 @@
   head([
     'title' => 'Installing fonts - Keyman for iPhone and iPad Help',
 //    'css' => ['template.css','app-info.css'],
-      'css' => ['template.css','keyboard.css','keys.css'],
+      'css' => ['template.css','keyboard.css','keys.css','app-info.css'],
 
-    'showMenu' => true,
     'embedded' => $embed_ios
   ]);
 ?>

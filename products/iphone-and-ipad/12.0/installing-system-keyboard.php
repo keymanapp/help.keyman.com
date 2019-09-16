@@ -7,7 +7,6 @@
 //    'css' => ['template.css','app-info.css'],
       'css' => ['template.css','keyboard.css','keys.css'],
 
-    'showMenu' => true,
     'embedded' => $embed_ios
   ]);
 ?>
