@@ -63,16 +63,11 @@
     $favicon = cdn("img/favicon.ico");
     require_once('head.php');
 
-    if($embed == true) {
-      // TODO:
-      // require_once('embed-menu.php');
+    if ($menu == true) {
+      require_once('phone-menu.php');
+      require_once('top-menu.php');
     } else {
-      if ($menu == true) {
-        require_once('phone-menu.php');
-        require_once('top-menu.php');
-      } else {
-        require_once('no-menu.php');
-      }
+      require_once('no-menu.php');
     }
     
     $toc = isset($args['toc']) ? $args['toc'] : !$embed;
