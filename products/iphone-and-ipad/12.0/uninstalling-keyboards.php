@@ -17,29 +17,35 @@ $titlePrefix = $embed_ios ? "" : "Keyman for iPhone and iPad:  ";
 <h2><?=$titlePrefix?>Uninstalling Keyboards</h2>
 
 <p>
-  To uninstall keyboards, follow these steps:
-  <br/><br/>
-  Step 1)
-  <br/>
-  With the keyboard visible, touch the globe key:
-  <br/>
-  <img src="<?php echo cdn("img/app/12.0/globe.png"); ?>" />
-  <br/>
-  This will bring up a list of all currently installed languages, with the currently selected keyboard highlighted.
-  <img src="<?= cdn('img/app/12.0/uninstall-list-i.png')?>">
-  <br/><br/>
-  Step 2)
-  <br/>
-  Swipe left on the keyboard you want to remove. You'll see a button to "Delete"
-  <br/>
-  <img src="<?= cdn('img/app/12.0/uninstall-delete-i.png')?>">
-  <br/><br/>
-  Step 3)
-  <br/>
+  To install resources for use with a new language, follow these steps.
+</p>
+<h3>Access "Installed Languages"</h3>
+<p>First, open the "Settings" menu.</p>
+<p>
+  <img src="<?php echo cdn("img/app/12.0/add-keyboard-i.png") ?>" />
+</p>
+<p>
+  The "Installed Languages" menu found here manages your installed keyboards and dictionaries.
+</p>
+<p>
+  <img src="<?php echo cdn("img/app/12.0/add-keyboard-i2.png") ?>" />
+</p>
+<p>You should then see the following screen:</p>
+<p>
+  <img src="<?php echo cdn("img/app/12.0/add-keyboard-i3.png") ?>" />
+</p>
+
+<h3>Removing the Keyboard</h3>
+<p>Start by selecting the language for the keyboard you wish to uninstall.</p>
+<p>
+  <img src="<?php echo cdn("img/app/12.0/delete-keyboard-i.png") ?>" />
+</p>
+<p>Swipe left on the keyboard you want to remove.  You'll see a button to "Delete".</p>
+<p>
+  <img src="<?php echo cdn("img/app/12.0/delete-keyboard-i2.png") ?>" />
+</p>
+<p>
   Click the "Delete" button to uninstall the keyboard.
-  </br/>
-  The keyboard from the keyboard package is successfully uninstalled!
-  <br/>
 </p>
 
 <h2>Help Index</h2>
