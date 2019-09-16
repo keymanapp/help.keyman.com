@@ -16,28 +16,55 @@
 ?>
 <h2><?=$titlePrefix?>Installing Custom Keyboards</h2>
 
+<h3>Find the File</h3>
 <p>
-  Step 1) Click the link to your custom keyboard package file<br/>
-  The link in this example is for GFF Amharic 7 keyboard.<br/>
+  If downloading a custom keyboard from the internet, click the link to your custom keyboard package file.
+</p>
+<p>
+  For this example, we'll install a custom keyboard from a link in Safari.  Our example keyboard is for the GFF Amharic 7 keyboard.
+</p>
+<p>
   <img src="<?= cdn('img/app/12.0/dist-url-screen-i.png')?>">
-  <br/>
-  Safari will display an option to open the KMP file with Keyman<br/>
+</p>
+<p>
+  Safari will display an option to open the KMP file with Keyman.<br/>
+</p>
+<p>
+  Installation is also possible from email clients and other sources.
+  Once you find the file, look for an <span class="command">Open in "Keyman"</span> option.
+</p>
+<p>
   <img src="<?= cdn('img/app/12.0/dist-kmp-open-i.png')?>">
-  <br/><br/>
-  Step 2) Click Open in "Keyman"<br/>
+</p>
+<p>
+  Click <span class="command">Open in "Keyman"</span> to continue.
+</p>
+<h3>Installing the Package</h3>
+<p>
   Keyman for iPhone and iPad will parse the metadata in the package. Some packages include documentation that will be
-  displayed at this time.<br/>
+  displayed at this time.
+</p>
+<p>
   <img src="<?= cdn('img/app/12.0/dist-welcome-i.png')?>">
-  <br/><br/>
-  Step 3) Click the top right "Install" button.</br/>
-  The keyboard from the keyboard package is successfully installed!<br/>
+</p>
+<p>
+  Click the <span class="command">"Install"</span> button at the top right.
+</p>
+<p>
+The keyboard from the keyboard package will then be successfully installed!
+</p>
+<p>
   <img src="<?= cdn('img/app/12.0/dist-kmp-success-i.png')?>">
-  <br/>
+</p>
+<p>
   All the keyboards in the package are installed as a group. In this example, the package only has the "GFF Amharic 7"
-  keyboard, so it becomes the active keyboard<br/>
+  keyboard, so it becomes the active keyboard.
+</p>
+<p>
   <img src="<?= cdn('img/app/12.0/dist-install1-i.png')?>">
-  <br/>
+</p>
 
+<p>
   To learn how to create a custom installable keyboard, <a href="http://help.keyman.com/developer/11.0/guides/distribute/">click here</a>.
 </p>
 
