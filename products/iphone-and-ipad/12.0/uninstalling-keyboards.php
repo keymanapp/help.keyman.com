@@ -40,12 +40,14 @@ $titlePrefix = $embed_ios ? "" : "Keyman for iPhone and iPad:  ";
 <p>
   <img src="<?php echo cdn("img/app/12.0/delete-keyboard-i.png") ?>" />
 </p>
-<p>Swipe left on the keyboard you want to remove.  You'll see a button to "Delete".</p>
+<p>
+  Swipe left on the keyboard you want to remove.  You'll see a button to <span class="command">Delete</span>.
+</p>
 <p>
   <img src="<?php echo cdn("img/app/12.0/delete-keyboard-i2.png") ?>" />
 </p>
 <p>
-  Click the "Delete" button to uninstall the keyboard.
+  Click the <span class="command">Delete</span> button to uninstall the keyboard.
 </p>
 
 <h2>Help Index</h2>
