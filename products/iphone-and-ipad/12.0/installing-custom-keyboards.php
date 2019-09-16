@@ -1,7 +1,6 @@
 <?php
-  $embedded = isset($_GET["embed"]) ? filter_var($_GET["embed"], FILTER_VALIDATE_BOOLEAN) : false;
-
   require_once('includes/template.php');
+  require_once('includes/session.php');
   
   head([
     'title' => 'Installing Custom Keyboards - Keyman for iPhone and iPad Help',
@@ -9,12 +8,12 @@
       'css' => ['template.css','keyboard.css','keys.css'],
 
     'showMenu' => true,
-    'embedded' => $embedded
+    'embedded' => $embed_ios
   ]);
 ?>
 
 <?php
-  $titlePrefix = $embedded ? "" : "Keyman for iPhone and iPad:  ";
+  $titlePrefix = $embed_ios ? "" : "Keyman for iPhone and iPad:  ";
 ?>
 <h2><?=$titlePrefix?>Installing Custom Keyboards</h2>
 
@@ -46,16 +45,15 @@
 <h2>Help Index</h2>
 
 <?php
-$embedQuery = $embedded == true ? "?embed=true" : "";
-$indexName = $embedded ? "Getting Started" : "Keyman for iPhone and iPad help home";
+$indexName = $embed_ios ? "Getting Started" : "Keyman for iPhone and iPad help home";
 ?>
 
 <ul>
-  <li><a href='index.php<?=$embedQuery?>'><?=$indexName?></a></li>
-  <li><a href='switching-between-keyboards.php<?=$embedQuery?>'>Switching between keyboards</a></li>
-  <li><a href='uninstalling-keyboards.php<?=$embedQuery?>'>Uninstalling keyboards</a></li>
-  <li><a href='installing-system-keyboard.php<?=$embedQuery?>'>Installing the Keyman System Keyboard</a></li>
-  <li><a href='installing-fonts.php<?=$embedQuery?>'>Installing fonts</a></li>
-  <li><a href='installing-custom-keyboards.php<?=$embedQuery?>'>Installing custom keyboards</a></li>
-  <li><a href='using-keyman-browser.php<?=$embedQuery?>'>Using the Keyman Browser</a></li>
+  <li><a href='index.php<?=$session_query_q?>'><?=$indexName?></a></li>
+  <li><a href='switching-between-keyboards.php<?=$session_query_q?>'>Switching between keyboards</a></li>
+  <li><a href='uninstalling-keyboards.php<?=$session_query_q?>'>Uninstalling keyboards</a></li>
+  <li><a href='installing-system-keyboard.php<?=$session_query_q?>'>Installing the Keyman System Keyboard</a></li>
+  <li><a href='installing-fonts.php<?=$session_query_q?>'>Installing fonts</a></li>
+  <li><a href='installing-custom-keyboards.php<?=$session_query_q?>'>Installing custom keyboards</a></li>
+  <li><a href='using-keyman-browser.php<?=$session_query_q?>'>Using the Keyman Browser</a></li>
 </ul>

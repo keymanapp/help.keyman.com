@@ -1,17 +1,16 @@
 <?php
-$embedded = isset($_GET["embed"]) ? filter_var($_GET["embed"], FILTER_VALIDATE_BOOLEAN) : false;
-
 require_once('includes/template.php');
+require_once('includes/session.php');
 
 head([
     'title' => 'Keyman for Android Help',
     'css' => ['template.css', 'app-info-a.css'],
-    'embedded' => $embedded
+    'embedded' => $embed_android
 ]);
 ?>
 
 <?php
-if($embedded == false) {
+if($embed_android == false) {
   ?>
   <h2>Keyman for Android</h2>
   <?php
@@ -23,7 +22,7 @@ if($embedded == false) {
 ?>
 
 <?php
-if(!$embedded) {
+if(!$embed_android) {
   ?>
   <p><a href='../version-history'>Version history</a></p>
   <?php
@@ -382,7 +381,7 @@ if($device == 'tablet') {
   </p>
 
   <?php
-  if(!$embedded) {
+  if(!$embed_android) {
     ?>
     <h2>Keyman for Android Documentation Versions</h2>
 
@@ -719,7 +718,7 @@ if($device == 'tablet') {
   </p>
 
   <?php
-  if(!$embedded) {
+  if(!$embed_android) {
     ?>
     <h2>Keyman for Android Documentation Versions</h2>
 
