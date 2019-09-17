@@ -2,12 +2,12 @@
   require_once('includes/template.php');
 
   head([
-    'title' => "Step 2: Get some language data",
+    'title' => "Step 3: Get some language data",
     'css' => ['template.css', 'index.css', 'prism.css', 'dev-lexical-models.css']
   ]);
 ?>
 
-<h1>Step 2: Get some language data</h1>
+<h1>Step 3: Get some language data</h1>
 
 <p>To predict words in your language, a lexical model needs to know the words in your language!</p>
 
@@ -89,6 +89,6 @@ values (.tsv, current sheet)”.</p>
 <p>I’ll save mine as <strong>wordlist.tsv</strong>.</p>
 
 <p>Now that we have our word list, exported in the correct format, let's
-create the model definition file.</p>
+edit the model definition file.</p>
 
-<p><a href="step-3.php" title="Step 3: Creating a model definition file">Step 3: Creating a model definition file</a></p>
+<p><a href="step-4.php" title="Step 4: Editing a model definition file">Step 3: Editing a model definition file</a></p>

@@ -2,11 +2,11 @@
   require_once('includes/template.php');
 
   head([
-    'title' => "Step 3: Creating a model definition file"
+    'title' => "Step 4: Editing a model definition file"
   ]);
 ?>
 
-<h1>Step 3: Creating a model definition file</h1>
+<h1>Step 4: Editing a model definition file</h1>
 
 <p>We have exported our wordlist to <code>wordlist.tsv</code>. We now need to
 tell the <strong>lexical model compiler</strong> how to turn this raw word list
@@ -26,7 +26,15 @@ similar to the following. If you want to create the file yourself, copy-paste th
 it as <code>model.ts</code>. Place this file in the same folder as
 <code>wordlist.tsv</code>.</p>
 
-<pre><code class="lang-typescript">const source: LexicalModelSource = {
+<pre><code class="lang-typescript">/*
+  sencoten 1.0 generated from template.
+
+  This is a minimal lexical model source that uses a tab delimited wordlist.
+  See documentation online at https://help.keyman.com/developer/ for
+  additional parameters.
+*/
+
+const source: LexicalModelSource = {
   format: 'trie-1.0',
   sources: ['wordlist.tsv'],
 };
@@ -149,6 +157,5 @@ your own key function. </p>
 be discussed in the next step. </p>
 
 <p>
-<del><a href="#" title="Step 4: Compile the language model">Step 4: Compile the lexical model model</a></del>
-Coming soon! See <a href="https://github.com/keymanapp/help.keyman.com/issues/35"> This GitHub issue </a> for updates!
+<a href="step-5.php" title="Step 5: Compile the lexical model">Step 5: Compile the lexical model model</a>
 </p>

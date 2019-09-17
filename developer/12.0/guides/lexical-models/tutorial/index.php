@@ -17,8 +17,11 @@ issue</a> to keep up-to-date on our progress!</p>
 
 <dl>
   <dt><span class="section"><a href="step-1.php">Step 1: Prerequisites for building a lexical model</a></span></dt>
-  <dt><span class="section"><a href="step-2.php">Step 2: Get some language data</a></span></dt>
-  <dt><span class="section"><a href="step-3.php">Step 3: Create a unique model ID</a></span></dt>
+  <dt><span class="section"><a href="step-2.php">Step 2: Creating a lexical model project</a></span></dt>
+  <dt><span class="section"><a href="step-3.php">Step 3: Get some language data</a></span></dt>
+  <dt><span class="section"><a href="step-4.php">Step 4: Editing a model definition file</a></span></dt>
+  <dt><span class="section"><a href="step-5.php">Step 5: Compile the lexical model</a></span></dt>
+  <dt><span class="section">Step 6: Testing the lexical model</span></dt>
 
   <dt><span class="section"><a href="step-404.php">Step N: The Finished Model</a></span></dt>
 </dl>
