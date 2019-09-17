@@ -26,7 +26,7 @@
 <head>
   <meta charset="utf-8">
   <title><?php echo $title; ?></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel='shortcut icon' href="<?php echo $favicon; ?>">
   <?php foreach($css as $cssFile){ ?>
     <link rel="stylesheet" type="text/css" href="<?php echo $cssFile; ?>">
