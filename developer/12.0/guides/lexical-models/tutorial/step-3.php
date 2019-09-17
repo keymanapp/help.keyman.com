@@ -2,153 +2,93 @@
   require_once('includes/template.php');
 
   head([
-    'title' => "Step 3: Creating a model definition file"
+    'title' => "Step 2: Get some language data",
+    'css' => ['template.css', 'index.css', 'prism.css', 'dev-lexical-models.css']
   ]);
 ?>
 
-<h1>Step 3: Creating a model definition file</h1>
+<h1>Step 2: Get some language data</h1>
 
-<p>We have exported our wordlist to <code>wordlist.tsv</code>. We now need to
-tell the <strong>lexical model compiler</strong> how to turn this raw word list
-into a lexical model that is quick to use on a smartphone.</p>
-
-<p>To do this, we must create a model definition file.</p>
-
-<p>This is a small <a href="https://www.typescriptlang.org/">TypeScript</a>
-source code file that tells us where to find the word list file, as well as
-gives us the option to tell the compiler a little bit more about our
-language’s spelling system or <em>orthography</em>.</p>
-
-<h2> The model definition template </h2>
-
-<p><strong>Keyman Developer</strong> will provide you with a model definition
-similar to the following. If you want to create the file yourself, copy-paste the following template, and save
-it as <code>model.ts</code>. Place this file in the same folder as
-<code>wordlist.tsv</code>.</p>
-
-<pre><code class="lang-typescript">const source: LexicalModelSource = {
-  format: 'trie-1.0',
-  sources: ['wordlist.tsv'],
-};
-export default source;</code></pre>
-
-<p> Let's step through this file, line-by-line.</p>
-
-<p> On the first line, we're declaring the source code of a new lexical model. </p>
-<pre><code class="lang-typescript">const source: LexicalModelSource = {</code></pre>
-
-<p> On the second line, we're saying the lexical model will use the
-<code>trie-1.0</code> format. The <code>trie</code> format creates a lexical
-model from one or more word lists; the <code>trie</code> structures the
-lexical model such that it can predict through thousands of words very
-quickly. </p>
-<pre><code class="lang-typescript">  format: 'trie-1.0',</code></pre>
-
-<p> On the third line, we're telling the <code>trie</code> where to find our wordlist. </p>
-<pre><code class="lang-typescript">  sources: ['wordlist.tsv'],</code></pre>
-
-<p> The fourth line marks the termination of the lexical model source code. If we specify any customizations, they <strong>must</strong> be declared above this line: </p>
-<pre><code class="lang-typescript">};</code></pre>
-
-<p> The fifth line is necessary to allow external applications to read the lexical model source code.</p>
-<pre><code class="lang-typescript">export default source;</code></pre>
+<p>To predict words in your language, a lexical model needs to know the words in your language!</p>
 
 
-<h2> Customizing our lexical model </h2>
+<p> Keyman Developer understands how to read words in a <strong>TSV file</strong>.
+This kind of file can be saved from a <strong>spreadsheet</strong> application like <a
+href="https://sheets.google.com/">Google Sheets</a> or
+<a href="https://products.office.com/en/excel">Microsoft Excel</a>.
+Other users may also use <strong>language data management software</strong>
+like <a href="https://software.sil.org/fieldworks/">SIL FieldWorks Language
+Explorer (FLEx)</a> or <a href="https://software.sil.org/wesay/">SIL WeSay</a>
+to export an appropriate TSV file.</p>
 
-<p> The template, as described in the previous section, is a good starting
-point, and may be all you need for you language. However, most language
-require a few customizations. The <code>trie</code> model supports the
-following customizations: </p>
+<aside>
+  <p><strong>For advanced users</strong>: Ultimately, what Keyman Developer
+  requires is a tab-separated values (TSV) file in a specfic format described in
+  the <a href="../../../reference/file-types/tsv.php">file types reference</a>.
+  Refer to this reference file if you are coding your own exporter.
+  </p>
+</aside>
 
-<dl>
-  <dt> word breaking </dt> <dd> How to determine when words start and end in the writing system. </dd>
-  <dt> search term to key </dt> <dd> How and when to ignore accents and lettercase </dd>
-</dl>
+<h2>Example</h2>
 
-<h3>Word breaking</h3>
+<p>I have words in my language of choice, SENĆOŦEN.
+Here is my list of words, with the count of how many times I’ve seen the word:</p>
 
-<p> The <code>trie</code> family of lexical models needs to know what a word
-is in running text. In language using the Latin script—like, English, French,
-and SENĆOŦEN—finding words is easy. Words are separated by spaces or
-punctuation. The actual rules for where to find words can get quite tricky to
-describe, but Keyman implements the <a href="https://unicode.org/reports/tr29/#Word_Boundaries">
-Unicode Standard Annex #29 §4.1 Default Word Boundary Specification </a>
-which works well for most languages.
-</p>
+<table class="wordlist">
+  <caption> List of ten SENĆOŦEN words, with counts </caption>
+  <thead>
+    <tr> <th scope="col">Word</th> <th scope="col">Count</th> </tr>
+  </thead>
+  <tbody>
+    <tr> <td>TŦE</td> <td class="number">13644</td> </tr>
+    <tr> <td>E</td>   <td class="number">9134</td> </tr>
+    <tr> <td>SEN</td> <td class="number">4816</td> </tr>
+    <tr> <td>Ȼ</td>   <td class="number">3479</td> </tr>
+    <tr> <td>SW̱</td>  <td class="number">2621</td> </tr>
+    <tr> <td>NIȽ</td> <td class="number">2314</td> </tr>
+    <tr> <td>U¸</td>  <td class="number">2298</td> </tr>
+    <tr> <td>I¸</td>  <td class="number">1988</td> </tr>
+    <tr> <td>ȻSE</td> <td class="number">1925</td> </tr>
+    <tr> <td>I</td>   <td class="number">1884</td> </tr>
+  </tbody>
+</table>
 
-<p> However, in languages written in other scripts—especially East Asian
-scripts like Chinese, Japanese, Khmer, Lao, and Thai—there are is no obvious
-break in between words. For these languages, there must be special rules for
-determining when words start and stop. This is what a <dfn>word breaking
-function</dfn> is responsible for. It is a little bit of code that looks at some
-text to determine where the words are. </p>
+<p>I’ve entered this information into my spreadsheet of choice, <a
+href="https://sheets.google.com/">Google Sheets</a>. I’ve shared this
+spreadsheet publicly
+<a href="https://docs.google.com/spreadsheets/d/10zhIc439BCSSooL_-HeJ6TUHd-ovkiXYcIGe-pHDTSg/edit?usp=sharing">here</a>.
+The order of the columns matters:</p>
 
-<p><strong>Note: as of <time
-datetime="2018-08-19T09:51:00-0600">August 19, 2019</time> this API is
-incomplete!</strong> </p>
+<p>The first column (column A) <strong>must</strong> be the “words”. If
+provided, the second column (column B) <strong>must</strong> be the “counts”.
+Counts are optional for each word: that is, some words may specify counts in
+the second column, while other words may leave the second column blank. The
+third column (column C) is always ignored. You may use this column as a
+comment. The spreadsheet can be as simple as a single column of all of the
+words in the language, with each word being separated by a line break.</p>
 
-<h3> Search term to key </h3>
+<p>This is what my word list looks like in Google Sheets:</p>
 
-<p> To look up words quickly, the <code>trie</code> model creates a <dfn>
-search key </dfn> that takes the latest word (as determined by the <a
-href="#toc-word-breaking">word breaking</a> and converts it into a “regular” form.
-The purpose of this “regular” form is to make searching for a word work,
-regardless of things such as <strong>accents</strong>,
-<strong>diacritics</strong>, <strong>lettercase</strong>, and minor
-<strong>spelling variations</strong>.
-The ”regular” form is called the <dfn>key</dfn>.  Typically, the key is always
-in lowercase, and lacks all accents and diacritics. For example, the key form
-of “naïve" is "naive" and the keyform of Canada is “canada”. </p>
+<figure>
+  <img src="<?= cdn('img/developer/120/lm/sencoten-sheets-full.png') ?>"
+       class="macos-screenshot"
+       alt="screenshot of the word list in Google Sheets" />
+  <figcaption> The word list, as it appears in Google Sheets </figcaption>
+</figure>
 
-<p> The form of the word that is stored is “regularized” through the use of a
-<dfn>key function</dfn>, which you can define in TypeScript code. </p>
+<p>Now, we download the spreadsheet in the
+<a href="../../../reference/file-types/tsv.php">required format</a>.
+To do this, in Google Sheets, select “File” » “Download as” » “Tab-separated
+values (.tsv, current sheet)”.</p>
 
-<p> The key function takes a string, the raw search term, and returns a
-string, being the “regular” key. As an example, consider the <strong>default
-key function</strong>; that is, the key function that is used if you do not
-specify one: </p>
+<figure>
+  <img src="<?= cdn('img/developer/120/lm/sencoten-sheets-save-as.png') ?>" alt="screenshot of “Save as…” menu in Google Sheets, selecting ”TSV”" />
+  <figcaption>Exporting the TSV file from Google Sheets</figcaption>
+</figure>
 
-<pre><code class="lang-typescript">searchTermToKey: function (term) {
-  // Use this pattern to remove common diacritical marks.
-  // See: https://www.compart.com/en/unicode/block/U+0300
-  const COMBINING_DIACRITICAL_MARKS = /[\u0300-\u036f]/g;
+<p>I’ll save mine as <strong>wordlist.tsv</strong>.</p>
 
-  // Converts to Unicode Normalization form D.
-  // This means that MOST accents and diacritics have been "decomposed" and
-  // are stored as separate characters. We can then remove these separate
-  // characters!
-  //
-  // e.g., Å → A + ˚
-  let normalizedTerm = term.normalize('NFD');
+<p>Now that we have our word list, exported in the correct format, let's
+create the model definition file.</p>
 
-  // Now, make it lowercase.
-  //
-  // e.g.,  A + ˚ → a + ˚
-  let lowercasedTerm = normalizedTerm.toLowerCase();
-
-  // Now, using the pattern above replace each accent and diacritic with the
-  // empty string. This effectively removes all accents and diacritics!
-  //
-  // e.g.,  a + ˚ → a
-  let termWithoutDiacritics = lowercasedTerm.replace(COMBINING_DIACRITICAL_MARKS, '')
-
-  // The resultant key is lowercased, and has no accents or diacritics.
-  return termWithoutDiacritics;
-},</code></pre>
-
-<p> This should be sufficient for most Latin-based writing systems. However,
-there are cases, such as with SENĆOŦEN, where some characters do not decompose
-into a base letter and a diacritic. In this case, it is necessary to write
-your own key function. </p>
-
-<h2> Once customization is done </h2>
-
-<p> We may have some tweaks, but first we need to actually
-<strong>build</strong> and <strong>test</strong> our lexical model. This will
-be discussed in the next step. </p>
-
-<p>
-<del><a href="#" title="Step 4: Compile the language model">Step 4: Compile the lexical model model</a></del>
-Coming soon! See <a href="https://github.com/keymanapp/help.keyman.com/issues/35"> This GitHub issue </a> for updates!
-</p>
+<p><a href="step-3.php" title="Step 3: Creating a model definition file">Step 3: Creating a model definition file</a></p>
