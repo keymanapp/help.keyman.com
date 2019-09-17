@@ -34,6 +34,6 @@ a keyboard solution. Changes to the project are automatically saved.</p>
 
 <h2>Distribution</h2>
 
-<p class='context-main-image'><img src="<?= cdn('img/developer/110/ui/frmProject_Distribution.png') ?>" alt="Project window - Distribution tab" /></p>
+<p class='context-main-image'><img src="<?= cdn('img/developer/120/ui/frmProject_Distribution.png') ?>" alt="Project window - Distribution tab" /></p>
 
 <p>This tab lists all other files in your project, such as the <a href='/developer/keyboards/'>.keyboard_info file used for uploading to the Keyboards repository</a>.</p>

@@ -8,9 +8,9 @@
 
 <h1>New Project Dialog</h1>
 
-<p class='context-main-image'><img src="<?= cdn('img/developer/110/ui/frmNewProject.png') ?>" alt="New Project dialog" /></p>
+<p class='context-main-image'><img src="<?= cdn('img/developer/120/ui/frmNewProject.png') ?>" alt="New Project dialog" /></p>
 
-<p>Creates a new keyboard project, optionally from a template or by importing from another source.</p>
+<p>Creates a new keyboard or lexical model project, optionally from a template or by importing from another source.</p>
 
 <h2>Basic</h2>
 
@@ -20,7 +20,17 @@ Parameters dialog</a>.</p>
 
 <h2>Blank</h2>
 
-<p>Creates a new empty project.</p>
+<p>Creates a new empty keyboard project.</p>
+
+<h2>Wordlist Lexical Model</h2>
+
+<p>Creates a lexical model project that matches the folder structure used in the Keyman <a href='https://github.com/keymanapp/lexical-models'>lexical models repository</a> and
+includes all basic files needed for a lexical model project. Clicking OK will open the <a href='new-lm-project-parameters'>New Project
+Parameters dialog</a>.</p>
+
+<h2>Blank Lexical Model</h2>
+
+<p>Creates a new empty lexical model project.</p>
 
 <h2>Import Windows Keyboard</h2>
 

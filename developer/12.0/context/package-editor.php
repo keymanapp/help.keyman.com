@@ -15,7 +15,7 @@ simple.</p>
 
 <h2 id="files">Files tab</h2>
 
-<p class='context-main-image'><img src="<?= cdn('img/developer/110/ui/frmPackageEditor_Files.png') ?>" alt="Package Editor - Files tab" /></p>
+<p class='context-main-image'><img src="<?= cdn('img/developer/120/ui/frmPackageEditor_Files.png') ?>" alt="Package Editor - Files tab" /></p>
 
 <p>Use the <span class="guibutton">Add</span> button to select the files to be included in the package, such as .kmx and .js keyboard files,
 documentation, and related fonts; but you can include any type of file here as well.</p>
@@ -25,7 +25,7 @@ separately.</p>
 
 <h2 id="keyboards">Keyboards tab</h2>
 
-<p class='context-main-image'><img src="<?= cdn('img/developer/110/ui/frmPackageEditor_Keyboards.png') ?>" alt="Package Editor - Keyboards tab" /></p>
+<p class='context-main-image'><img src="<?= cdn('img/developer/120/ui/frmPackageEditor_Keyboards.png') ?>" alt="Package Editor - Keyboards tab" /></p>
 
 <p>The Keyboards tab shows you some status information of keyboards you've added to the package. There are also optional
     font dropdowns and a required "Languages" section. The fields on the tab are:</p>
@@ -75,11 +75,11 @@ separately.</p>
   </dl>
 </p>
 
-<p><img src="<?= cdn('img/developer/110/ui/frmPackageEditor_Select_BCP_47_Tag.png') ?>" alt="Package Editor - Select BCP 47 Tag dialog" /></p>
+<p><img src="<?= cdn('img/developer/120/ui/frmPackageEditor_Select_BCP_47_Tag.png') ?>" alt="Package Editor - Select BCP 47 Tag dialog" /></p>
 
 <h2 id="details">Details tab</h2>
 
-<p class='context-main-image'><img src="<?= cdn('img/developer/110/ui/frmPackageEditor_Details.png') ?>" alt="Package Editor - Details tab" /></p>
+<p class='context-main-image'><img src="<?= cdn('img/developer/120/ui/frmPackageEditor_Details.png') ?>" alt="Package Editor - Details tab" /></p>
 
 <p>Enter the name of the package into the Package Name field; this will be automatically filled from the name of the first keyboard you add to the package.</p>
 
@@ -103,7 +103,7 @@ Files list in step 1, then selected from the list here.</p>
 
 <h2 id="shortcuts">Shortcuts tab</h2>
 
-<p class='context-main-image'><img src="<?= cdn('img/developer/110/ui/frmPackageEditor_Shortcuts.png') ?>" alt="Package Editor - Shortcuts tab" /></p>
+<p class='context-main-image'><img src="<?= cdn('img/developer/120/ui/frmPackageEditor_Shortcuts.png') ?>" alt="Package Editor - Shortcuts tab" /></p>
 
 <p>You can optionally have the package create a Start Menu folder, and populate it with shortcuts to the files in the package, and
 optionally also a shortcut for uninstallation.</p>
@@ -114,14 +114,14 @@ optionally also a shortcut for uninstallation.</p>
 
 <h2>Source tab</h2>
 
-<p class='context-main-image'><img src="<?= cdn('img/developer/110/ui/frmPackageEditor_Source.png') ?>" alt="Package Editor - Source tab" /></p>
+<p class='context-main-image'><img src="<?= cdn('img/developer/120/ui/frmPackageEditor_Source.png') ?>" alt="Package Editor - Source tab" /></p>
 
 <p>The source of the .kps file in XML format. All details from previous tabs can be seen in the Source tab, and changes in either the Source tab or the other tabs will be 
 reflected immediately in the other.</p>
 
 <h2 id="compile">Compile tab</h2>
 
-<p class='context-main-image'><img src="<?= cdn('img/developer/110/ui/frmPackageEditor_Build.png') ?>" alt="Package Editor - Compile tab" /></p>
+<p class='context-main-image'><img src="<?= cdn('img/developer/120/ui/frmPackageEditor_Build.png') ?>" alt="Package Editor - Compile tab" /></p>
 
 <p>The final step is building the package. You must save the package file before building, then choose Compile Package to build the
 package file. You can then test the package to verify that it will install correctly with the Install Package button.</p>
