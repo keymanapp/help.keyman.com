@@ -20,7 +20,7 @@ head([
 
 <p class='context-main-image'><img src="<?= cdn('img/developer/120/ui/frmModelsCompile.png') ?>" alt="Compile Model" /></p>
 
-<p>Click on the <span class="guibutton">Build models</span> button <!-- TODO: or press <kbd>F7</kbd> --> to compile the lexical model.
+<p>Click on the <span class="guibutton">Build models</span> button to compile the lexical model.
   The Message window will display the results of the compilation; if you have no typing errors, the lexical model should compile successfully.
   If successful, this will create a <code>.model.js</code> file in a build subdirectory of the lexical model project directory.</p>
 
