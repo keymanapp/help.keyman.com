@@ -35,7 +35,7 @@ come back here to follow this tutorial. </p>
 
 <p>Let's get started! Move on to the next topic to begin the first step.</p>
 
-<p>At the bottom of each page in the tutorial, will be a link to both the previous page and the next page. You can use these links to
+<p>At the bottom of each page in the tutorial, will be a link to the next step. You can use these links to
 work your way through the tutorial. You may also find links to reference information, which you can select to learn more about a
 particular aspect of creating Keyman keyboards.</p>
 

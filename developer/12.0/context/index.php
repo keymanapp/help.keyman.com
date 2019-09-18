@@ -18,6 +18,7 @@
   <dt><a href="new">New File Dialog</a></dt>
   <dt><a href="new-project">New Project Dialog</a></dt>
   <dt><a href="new-project-parameters">New Project Parameters Dialog</a></dt>
+  <dt><a href="new-lm-project-parameters.php">New Lexical Model Project Parameters Dialog</a></dt>
   <dt><a href="about-tike">About Dialog</a></dt>
   <dt><a href="key-test">Virtual Key Identifier</a></dt>
   <dt><a href="options">Options Dialog</a></dt>

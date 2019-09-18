@@ -24,9 +24,9 @@ Parameters dialog</a>.</p>
 
 <h2>Wordlist Lexical Model</h2>
 
-<p>Creates a lexical model project that matches the folder structure used in the Keyman <a href='https://github.com/keymanapp/lexical-models'>lexical models repository</a> and
-includes all basic files needed for a lexical model project. Clicking OK will open the <a href='new-lm-project-parameters'>New Project
-Parameters dialog</a>.</p>
+<p>Creates a lexical model project that matches the folder structure used in the Keyman <a href='https://github.com/keymanapp/lexical-models'>
+  lexical models repository</a> and includes all basic files needed for a lexical model project. Clicking OK will open
+  the <a href='new-lm-project-parameters'>New Lexical Model Project Parameters dialog</a>.</p>
 
 <h2>Blank Lexical Model</h2>
 
