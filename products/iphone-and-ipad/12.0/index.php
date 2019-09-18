@@ -9,17 +9,9 @@
   ]);
 ?>
 
-<?php
-  if($embed_ios == false) {
-    ?>
-    <h2>Keyman for iPhone and iPad</h2>
-    <?php
-  } else {
-    ?>
-    <h2>Getting Started</h2>
-    <?php
-  }
-?>
+<h2 class="not-embed-ios">Keyman for iPhone and iPad</h2>
+<h2 class="embed-ios">Getting Started</h2>
+
 <p>
    The Keyman App lets you type in over 600 languages. To get started, here are some helpful hints:
    <table>
@@ -88,12 +80,11 @@
 
 <h2>Help Index</h2>
 
-<?php
-  $indexName = $embed_ios ? "Getting Started" : "Keyman for iPhone and iPad help home";
-?>
-
 <ul>
-  <li><?=$indexName?></li>
+  <li>
+    <span class="embed-ios">Getting Started</span>
+    <span class="not-embed-ios">Keyman for iPhone and iPad help home</span>
+  </li>
   <li><a href='switching-between-keyboards.php'>Switching between keyboards</a></li>
   <li><a href='uninstalling-keyboards.php'>Uninstalling keyboards</a></li>
   <li><a href='installing-system-keyboard.php'>Installing the Keyman System Keyboard</a></li>
