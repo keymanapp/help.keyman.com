@@ -361,9 +361,7 @@ if($formFactor == 'tablet') {
     For more information on Keyman for Android, visit <a href="https://keyman.com/android">keyman.com/android</a>
   </p>
 
-  <?php
-  if(!$embed_android) {
-    ?>
+  <div class="content-online">
     <h2>Keyman for Android Documentation Versions</h2>
 
     <ul>
@@ -372,9 +370,7 @@ if($formFactor == 'tablet') {
       <li><a href='../10.0/'>Keyman for Android 10.0 Documentation</a></li>
       <li><a href='../2.0/'>Keyman for Android 2.0 Documentation</a></li>
     </ul>
-    <?php
-  }
-  ?>
+  </div>
 </div>
 
 <div class="tab <?=$tabletClass?>" id="android-tablet-tab">
