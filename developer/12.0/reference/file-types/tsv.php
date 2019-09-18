@@ -10,7 +10,7 @@
 
 <dl>
   <dt>Used by:</dt>
-  <dd><span class="application">Lexical Model compiler</span>.</dd>
+  <dd><span class="application">Keyman Developer</span> and <span class="application">Lexical Model compiler</span>.</dd>
 
   <dt>Description:</dt>
   <dd>A .tsv file or a <dfn>tab-separated values file</dfn> contains a word list. This word list is used to predict and correct words using the predictive text functionality.</dd>

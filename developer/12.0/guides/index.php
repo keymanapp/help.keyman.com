@@ -17,4 +17,5 @@ frequently asked questions and tutorials.</p>
   <li><a href="test/">Testing Keyman keyboards</a></li>
   <li><a href="distribute/">Distributing Keyman keyboards</a></li>
   <li><a href="lexical-models/">Developing Keyman lexical models (for predictive text and autocorrect)</a></li>
+  <li><a href="lexical-models/distribute/">Distributing Keyman lexical models</a></li>
 </ul>
