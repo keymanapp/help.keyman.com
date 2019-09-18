@@ -17,7 +17,7 @@ head([
 <!-- Content below this copied into the Keyman Android info.html -->
 
 <div id="android-tab-header">
-  <div" id="android-mobile-header">
+  <div id="android-mobile-header">
     <h4>Phone</h4>
   </div>
   <div class="selected-tab" id="android-tablet-header">
