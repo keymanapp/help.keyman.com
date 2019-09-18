@@ -1,6 +1,6 @@
 <?php
   require_once('includes/template.php');
-  require_once('includes/session.php');
+  require_once('includes/session-embed.php');
   
   head([
     'title' => 'Installing Custom Keyboards - Keyman for iPhone and iPad Help',

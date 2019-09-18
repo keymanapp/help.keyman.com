@@ -1,6 +1,7 @@
 <?php
 require_once('includes/template.php');
-require_once('includes/session.php');
+require_once('includes/session-embed.php');
+require_once('includes/session-formfactor.php');
 
 head([
     'title' => 'Keyman for Android Help',
