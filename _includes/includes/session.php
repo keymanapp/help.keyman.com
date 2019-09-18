@@ -37,20 +37,4 @@ $embed_linux   = $embed == 'linux';
 $embed_android = $embed == 'android';
 $embed_ios     = $embed == 'ios';
 
-// Generate session-redefining query strings for use in embedded links.
-if($embed != 'none') {
-  // Poor man's session control because IE embedded in downlevel Windows destroys cookie support by
-  // default, including in existing versions of Keyman.
-  $session_query = http_build_query([
-    'embed' => $embed
-  ]);
-  $session_query_q = "?$session_query";
-  if($formFactor != 'none') {
-    $session_query_q = "$session_query_q&formfactor=$formFactor";
-  }
-} else {
-  $session_query = '';
-  $session_query_q = '';
-}
-
 ?>

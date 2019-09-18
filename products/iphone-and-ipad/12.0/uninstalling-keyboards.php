@@ -49,11 +49,11 @@ $indexName = $embed_ios ? "Getting Started" : "Keyman for iPhone and iPad help h
 ?>
 
 <ul>
-  <li><a href='index.php<?=$session_query_q?>'><?=$indexName?></a></li>
-  <li><a href='switching-between-keyboards.php<?=$session_query_q?>'>Switching between keyboards</a></li>
-  <li><a href='uninstalling-keyboards.php<?=$session_query_q?>'>Uninstalling keyboards</a></li>
-  <li><a href='installing-system-keyboard.php<?=$session_query_q?>'>Installing the Keyman System Keyboard</a></li>
-  <li><a href='installing-fonts.php<?=$session_query_q?>'>Installing fonts</a></li>
-  <li><a href='installing-custom-keyboards.php<?=$session_query_q?>'>Installing custom keyboards</a></li>
-  <li><a href='using-keyman-browser.php<?=$session_query_q?>'>Using the Keyman Browser</a></li>
+  <li><a href='index.php'><?=$indexName?></a></li>
+  <li><a href='switching-between-keyboards.php'>Switching between keyboards</a></li>
+  <li><a href='uninstalling-keyboards.php'>Uninstalling keyboards</a></li>
+  <li><a href='installing-system-keyboard.php'>Installing the Keyman System Keyboard</a></li>
+  <li><a href='installing-fonts.php'>Installing fonts</a></li>
+  <li><a href='installing-custom-keyboards.php'>Installing custom keyboards</a></li>
+  <li><a href='using-keyman-browser.php'>Using the Keyman Browser</a></li>
 </ul>
