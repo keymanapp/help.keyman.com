@@ -1,13 +1,13 @@
 <?php
   require_once('includes/servervars.php');
   
-  function template_finish($foot, $embed) {
+  function template_finish($foot, $embed_template) {
     //ob_end_flush();
 
     if($foot == true){
       foot([
         'display' => true,
-        'embed' => $embed
+        'embed_template' => $embed_template
       ]);
     }
   }
@@ -60,8 +60,8 @@
         $js = array(cdn('js/kmlive.js'));
     }
 
-    $embed = isset($args['embedded']) ? $args['embedded'] : false;
-    $menu = isset($args['showMenu']) ? $args['showMenu'] : !$embed;
+    $embed_template = isset($args['embedded']) ? $args['embedded'] : false;
+    $menu = isset($args['showMenu']) ? $args['showMenu'] : !$embed_template;
 
     $favicon = cdn("img/favicon.ico");
     require_once('head.php');
@@ -73,12 +73,12 @@
       require_once('no-menu.php');
     }
     
-    $toc = isset($args['toc']) ? $args['toc'] : !$embed;
-    $index = isset($args['index']) ? $args['index'] : !$embed;
+    $toc = isset($args['toc']) ? $args['toc'] : !$embed_template;
+    $index = isset($args['index']) ? $args['index'] : !$embed_template;
     $foot = isset($args['foot']) ? $args['foot'] : true;
-    $crumbs = isset($args['crumbs']) ? $args['crumbs'] : !$embed;
+    $crumbs = isset($args['crumbs']) ? $args['crumbs'] : !$embed_template;
     $shutdown = 'template_finish';
-    register_shutdown_function($shutdown,$foot,$embed);
+    register_shutdown_function($shutdown,$foot,$embed_template);
     
     begin_main($toc, $index, $crumbs);
   }
@@ -178,10 +178,10 @@ END;
       $display = true;
     }
 
-    $embed = isset($args['embed']) ? $args['embed'] : false;
+    $embed_template = isset($args['embed_template']) ? $args['embed_template'] : false;
 
     if($display == true){
-      if($embed) {
+      if($embed_template) {
         require_once('embed_footer.php');
       } else {
         require_once('footer.php');
