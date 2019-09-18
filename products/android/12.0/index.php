@@ -1,7 +1,6 @@
 <?php
 require_once('includes/template.php');
 require_once('includes/session-embed.php');
-require_once('includes/session-formfactor.php');
 
 head([
     'title' => 'Keyman for Android Help',
@@ -17,25 +16,15 @@ head([
 
 <!-- Content below this copied into the Keyman Android info.html -->
 
-<?php
-if($formFactor == 'tablet') {
-  $mobileClass = "";
-  $tabletClass = "selected-tab";
-} else {
-  $mobileClass = "selected-tab";
-  $tabletClass = "";
-}
-?>
-
 <div id="android-tab-header">
-  <div class="<?=$mobileClass?>" id="android-mobile-header">
+  <div" id="android-mobile-header">
     <h4>Phone</h4>
   </div>
-  <div class="<?=$tabletClass?>" id="android-tablet-header">
+  <div class="selected-tab" id="android-tablet-header">
     <h4>Tablet</h4>
   </div>
 </div>
-<div class="tab <?=$mobileClass?>" id="android-mobile-tab">
+<div class="tab" id="android-mobile-tab">
   <p>
     Keyman for Android lets you type in over 600 languages on Android mobiles and tablets.
     To get started, here are some helpful hints:
@@ -373,7 +362,7 @@ if($formFactor == 'tablet') {
   </div>
 </div>
 
-<div class="tab <?=$tabletClass?>" id="android-tablet-tab">
+<div class="tab selected-tab" id="android-tablet-tab">
   <p>
     Keyman for Android lets you type in over 600 languages on Android mobiles and tablets.
     To get started, here are some helpful hints:

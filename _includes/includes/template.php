@@ -141,7 +141,7 @@
     $finalClass = '';
 
     if(count($pageClassComponents) > 0) {
-      $finalClass = ' ' . implode(" ", $pageClassComponents);
+      $finalClass = implode(" ", $pageClassComponents);
     }
 
     return $finalClass;
@@ -167,9 +167,15 @@
 
     if($toc) { $tocClass = ''; } else { $tocClass = ' no-toc'; }
     if(!$index) { $tocClass .= ' no-index'; }
+
+    $outerClass = build_page_class($embeddable, $do_embed);
+    if(!empty($outerClass)) {
+      $outerClass = " class='$outerClass'";
+    }
+
     $html = <<<END
 <div class="main$tocClass">
-  <div id="section2">
+  <div id="section2"$outerClass>
     <div class="column-left$index_content_class">
       <div id="index">
         <h3>Index</h3>
@@ -189,11 +195,9 @@ END;
 END;
     }
 
-    $outerClass = build_page_class($embeddable, $do_embed);
-
     $html .= <<<END
     
-    <div class="wrapper$outerClass">
+    <div class="wrapper">
       <article>
 END;
     echo $html;
