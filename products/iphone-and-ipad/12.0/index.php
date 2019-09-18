@@ -1,16 +1,16 @@
 <?php
   require_once('includes/template.php');
   require_once('includes/session-embed.php');
-  
+
   head([
     'title' => 'Keyman for iPhone and iPad Help',
-    'css' => ['template.css','keyboard.css','keys.css','app-info.css'],
+    'css' => ['template.css','keyboard.css','keys.css','app-info.css','embed.css'],
     'embedded' => $embed_ios
   ]);
 ?>
 
-<h2 class="not-embed-ios">Keyman for iPhone and iPad</h2>
-<h2 class="embed-ios">Getting Started</h2>
+<h2 class="content-in-app">Getting Started</h2>
+<h2 class="content-online">Keyman for iPhone and iPad</h2>
 
 <p>
    The Keyman App lets you type in over 600 languages. To get started, here are some helpful hints:
@@ -81,10 +81,8 @@
 <h2>Help Index</h2>
 
 <ul>
-  <li>
-    <span class="embed-ios">Getting Started</span>
-    <span class="not-embed-ios">Keyman for iPhone and iPad help home</span>
-  </li>
+  <li class="content-in-app">Getting Started</li>
+  <li class="content-online">Keyman for iPhone and iPad help home</li>
   <li><a href='switching-between-keyboards.php'>Switching between keyboards</a></li>
   <li><a href='uninstalling-keyboards.php'>Uninstalling keyboards</a></li>
   <li><a href='installing-system-keyboard.php'>Installing the Keyman System Keyboard</a></li>
@@ -101,8 +99,7 @@
    For more information on Keyman, visit <a href="http://keyman.com">www.keyman.com</a>
 </p>
 
-<?php if(!$embed_ios) { ?>
-
+<div class="content-online">
 <h2>Keyman for iPhone and iPad Documentation Versions</h2>
 
 <ul>
@@ -114,4 +111,4 @@
 
 <h2>Version History</h2>
 <p><a href='../version-history'>Full version history</a></p>
-<?php } ?>
+</div>

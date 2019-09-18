@@ -26,9 +26,3 @@ $embed_ios     = $embed == 'ios';
 
 // Generates a stylesheet to control visibility based on embedding state
 ?>
-<style type="text/css">
-  .embed-ios        {display: <?= $embed_ios ? 'block' : 'none' ?>}
-  .not-embed-ios     {display: <?= $embed_ios ? 'none' : 'block' ?>}
-  .embed-android    {display: <?= $embed_android ? 'block' : 'none' ?>}
-  .not-embed-android {display: <?= $embed_android ? 'none' : 'block' ?>}
-</style>

@@ -5,30 +5,15 @@ require_once('includes/session-formfactor.php');
 
 head([
     'title' => 'Keyman for Android Help',
-    'css' => ['template.css', 'app-info-a.css'],
+    'css' => ['template.css', 'app-info-a.css', 'embed.css'],
     'embedded' => $embed_android
 ]);
 ?>
 
-<?php
-if($embed_android == false) {
-  ?>
-  <h2>Keyman for Android</h2>
-  <?php
-} else {
-  ?>
-  <h2>Getting Started</h2>
-  <?php
-}
-?>
+<h2 class="content-in-app">Getting Started</h2>
+<h2 class="content-online">Keyman for Android</h2>
 
-<?php
-if(!$embed_android) {
-  ?>
-  <p><a href='../version-history'>Version history</a></p>
-  <?php
-}
-?>
+<p class="content-online"><a href='../version-history'>Version history</a></p>
 
 <!-- Content below this copied into the Keyman Android info.html -->
 
@@ -713,9 +698,7 @@ if($formFactor == 'tablet') {
     For more information on Keyman for Android, visit <a href="https://keyman.com/android">keyman.com/android</a>
   </p>
 
-  <?php
-  if(!$embed_android) {
-    ?>
+  <div class="content-online">
     <h2>Keyman for Android Documentation Versions</h2>
 
     <ul>
@@ -724,7 +707,5 @@ if($formFactor == 'tablet') {
       <li><a href='../10.0/'>Keyman for Android 10.0 Documentation</a></li>
       <li><a href='../2.0/'>Keyman for Android 2.0 Documentation</a></li>
     </ul>
-    <?php
-  }
-  ?>
+  </div>
 </div>
