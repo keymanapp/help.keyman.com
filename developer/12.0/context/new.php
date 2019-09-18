@@ -35,4 +35,4 @@ files such as documentation.</p>
 
 <h2>Model file</h2>
 
-<p>Creates a new lexical model file.</p>
+<p>Creates a new <code>.model.ts</code> lexical model file.</p>

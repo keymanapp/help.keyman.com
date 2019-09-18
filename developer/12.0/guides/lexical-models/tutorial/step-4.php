@@ -92,10 +92,6 @@ determining when words start and stop. This is what a <dfn>word breaking
 function</dfn> is responsible for. It is a little bit of code that looks at some
 text to determine where the words are. </p>
 
-<p><strong>Note: as of <time
-datetime="2018-08-19T09:51:00-0600">August 19, 2019</time> this API is
-incomplete!</strong> </p>
-
 <h3> Search term to key </h3>
 
 <p> To look up words quickly, the <code>trie</code> model creates a <dfn>

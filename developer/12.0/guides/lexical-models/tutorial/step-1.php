@@ -15,6 +15,6 @@
   <li> A list of words in your langauge, stored in an spreadsheet, in dictionary-making software or, other means. </li>
 </ul>
 
-<p> Now to create a lexical model project </p>
+<p> Now to create a lexical model project!</p>
 
 <p><a href="step-2.php" title="Step 2: Creating a lexical model project">Step 2: Creating a lexical model project</a></p>

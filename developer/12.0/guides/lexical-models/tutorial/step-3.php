@@ -91,4 +91,4 @@ values (.tsv, current sheet)”.</p>
 <p>Now that we have our word list, exported in the correct format, let's
 edit the model definition file.</p>
 
-<p><a href="step-4.php" title="Step 4: Editing a model definition file">Step 3: Editing a model definition file</a></p>
+<p><a href="step-4.php" title="Step 4: Editing a model definition file">Step 4: Editing a model definition file</a></p>
