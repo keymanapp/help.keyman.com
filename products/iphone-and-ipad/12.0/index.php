@@ -83,11 +83,12 @@
 <ul>
   <li class="content-in-app">Getting Started</li>
   <li class="content-online">Keyman for iPhone and iPad help home</li>
+  <li><a href="installing-keyboards.php">Installing keyboards</a></li>
   <li><a href='switching-between-keyboards.php'>Switching between keyboards</a></li>
   <li><a href='uninstalling-keyboards.php'>Uninstalling keyboards</a></li>
+  <li><a href='installing-custom-keyboards.php'>Installing custom keyboards</a></li>
   <li><a href='installing-system-keyboard.php'>Installing the Keyman System Keyboard</a></li>
   <li><a href='installing-fonts.php'>Installing fonts</a></li>
-  <li><a href='installing-custom-keyboards.php'>Installing custom keyboards</a></li>
   <li><a href='using-keyman-browser.php'>Using the Keyman Browser</a></li>
 </ul>
 <h2>Integrate Keyman with your App or Website</h2>
