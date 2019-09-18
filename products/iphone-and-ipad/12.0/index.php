@@ -1,25 +1,17 @@
 <?php
   require_once('includes/template.php');
-  require_once('includes/session.php');
-  
+  require_once('includes/session-embed.php');
+
   head([
     'title' => 'Keyman for iPhone and iPad Help',
-    'css' => ['template.css','keyboard.css','keys.css','app-info.css'],
+    'css' => ['template.css','keyboard.css','keys.css','app-info.css','embed.css'],
     'embedded' => $embed_ios
   ]);
 ?>
 
-<?php
-  if($embed_ios == false) {
-    ?>
-    <h2>Keyman for iPhone and iPad</h2>
-    <?php
-  } else {
-    ?>
-    <h2>Getting Started</h2>
-    <?php
-  }
-?>
+<h2 class="content-in-app">Getting Started</h2>
+<h2 class="content-online">Keyman for iPhone and iPad</h2>
+
 <p>
    The Keyman App lets you type in over 600 languages. To get started, here are some helpful hints:
    <table>
@@ -88,18 +80,15 @@
 
 <h2>Help Index</h2>
 
-<?php
-  $indexName = $embed_ios ? "Getting Started" : "Keyman for iPhone and iPad help home";
-?>
-
 <ul>
-  <li><?=$indexName?></li>
-  <li><a href='switching-between-keyboards.php<?=$session_query_q?>'>Switching between keyboards</a></li>
-  <li><a href='uninstalling-keyboards.php<?=$session_query_q?>'>Uninstalling keyboards</a></li>
-  <li><a href='installing-system-keyboard.php<?=$session_query_q?>'>Installing the Keyman System Keyboard</a></li>
-  <li><a href='installing-fonts.php<?=$session_query_q?>'>Installing fonts</a></li>
-  <li><a href='installing-custom-keyboards.php<?=$session_query_q?>'>Installing custom keyboards</a></li>
-  <li><a href='using-keyman-browser.php<?=$session_query_q?>'>Using the Keyman Browser</a></li>
+  <li class="content-in-app">Getting Started</li>
+  <li class="content-online">Keyman for iPhone and iPad help home</li>
+  <li><a href='switching-between-keyboards.php'>Switching between keyboards</a></li>
+  <li><a href='uninstalling-keyboards.php'>Uninstalling keyboards</a></li>
+  <li><a href='installing-system-keyboard.php'>Installing the Keyman System Keyboard</a></li>
+  <li><a href='installing-fonts.php'>Installing fonts</a></li>
+  <li><a href='installing-custom-keyboards.php'>Installing custom keyboards</a></li>
+  <li><a href='using-keyman-browser.php'>Using the Keyman Browser</a></li>
 </ul>
 <h2>Integrate Keyman with your App or Website</h2>
 <p>
@@ -110,8 +99,7 @@
    For more information on Keyman, visit <a href="http://keyman.com">www.keyman.com</a>
 </p>
 
-<?php if(!$embed_ios) { ?>
-
+<div class="content-online">
 <h2>Keyman for iPhone and iPad Documentation Versions</h2>
 
 <ul>
@@ -123,4 +111,4 @@
 
 <h2>Version History</h2>
 <p><a href='../version-history'>Full version history</a></p>
-<?php } ?>
+</div>

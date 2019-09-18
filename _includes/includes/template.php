@@ -60,7 +60,8 @@
         $js = array(cdn('js/kmlive.js'));
     }
 
-    $embed_template = isset($args['embedded']) ? $args['embedded'] : false;
+    $embeddable = isset($args['embedded']);
+    $embed_template = $embeddable ? $args['embedded'] : false;
     $menu = isset($args['showMenu']) ? $args['showMenu'] : !$embed_template;
 
     $favicon = cdn("img/favicon.ico");
@@ -79,8 +80,11 @@
     $crumbs = isset($args['crumbs']) ? $args['crumbs'] : !$embed_template;
     $shutdown = 'template_finish';
     register_shutdown_function($shutdown,$foot,$embed_template);
-    
-    begin_main($toc, $index, $crumbs);
+
+    // Here, we use the original argument.
+    // - if(!isset):  the page doesn't differentiate content, so don't add tags
+    // - if(isset): the page does differentiate, so read the value and set tags
+    begin_main($toc, $index, $crumbs, $embeddable, $embed_template);
   }
     
   function write_breadcrumbs(){
@@ -120,8 +124,30 @@
   }
   
   require_once('index-content.php');
+
+  // This function uses globals defined in the embed/ folder include files, applying
+  // classes useful for content filtering between online and in-app help with embed.css.
+  function build_page_class($embeddable, $do_embed) {
+    global $formFactorClass;
+
+    // Is set by includes within the embed/ folder.
+    $pageClassComponents = array();
+    if($embeddable) {
+      array_push($pageClassComponents, $do_embed ? "embed-on" : "embed-off");
+    }
+
+    // Space left here for applying extra classes, like for form-factors.
+
+    $finalClass = '';
+
+    if(count($pageClassComponents) > 0) {
+      $finalClass = implode(" ", $pageClassComponents);
+    }
+
+    return $finalClass;
+  }
   
-  function begin_main($toc, $index, $crumbs){
+  function begin_main($toc, $index, $crumbs, $embeddable, $do_embed){
     global $index_content;
     if($index) {
       build_index_content();
@@ -138,12 +164,18 @@
     if($crumbs) {
       write_breadcrumbs();
     }
-    
+
     if($toc) { $tocClass = ''; } else { $tocClass = ' no-toc'; }
     if(!$index) { $tocClass .= ' no-index'; }
+
+    $outerClass = build_page_class($embeddable, $do_embed);
+    if(!empty($outerClass)) {
+      $outerClass = " class='$outerClass'";
+    }
+
     $html = <<<END
 <div class="main$tocClass">
-  <div id="section2">
+  <div id="section2"$outerClass>
     <div class="column-left$index_content_class">
       <div id="index">
         <h3>Index</h3>
@@ -162,7 +194,9 @@ END;
     </div>
 END;
     }
+
     $html .= <<<END
+    
     <div class="wrapper">
       <article>
 END;
