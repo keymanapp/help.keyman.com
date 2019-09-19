@@ -23,7 +23,7 @@ $pagestyle = '#section2 .wrapper { overflow-x: inherit }';
     </a>
 </div>
 <div class="product" id="product-developer">
-    <a href="10.0/">
+    <a href="11.0/">
         <img src="<?php echo cdn("img/icon-developer.png"); ?>" />
         <h3>Keyman Developer</h3>
         <p>

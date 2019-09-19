@@ -17,10 +17,10 @@ issue</a> to keep up-to-date on our progress!</p>
 
 <dl>
   <dt><span class="section"><a href="step-1.php">Step 1: Prerequisites for building a lexical model</a></span></dt>
-  <dt><span class="section"><a href="step-2.php">Step 2: Get some language data</a></span></dt>
-  <dt><span class="section"><a href="step-3.php">Step 3: Create a unique model ID</a></span></dt>
-
-  <dt><span class="section"><a href="step-404.php">Step N: The Finished Model</a></span></dt>
+  <dt><span class="section"><a href="step-2.php">Step 2: Creating a lexical model project</a></span></dt>
+  <dt><span class="section"><a href="step-3.php">Step 3: Get some language data</a></span></dt>
+  <dt><span class="section"><a href="step-4.php">Step 4: Editing a model definition file</a></span></dt>
+  <dt><span class="section"><a href="step-5.php">Step 5: Compile the lexical model</a></span></dt>
 </dl>
 
 <h2> Overview </h2>
@@ -35,7 +35,7 @@ come back here to follow this tutorial. </p>
 
 <p>Let's get started! Move on to the next topic to begin the first step.</p>
 
-<p>At the bottom of each page in the tutorial, will be a link to both the previous page and the next page. You can use these links to
+<p>At the bottom of each page in the tutorial, will be a link to the next step. You can use these links to
 work your way through the tutorial. You may also find links to reference information, which you can select to learn more about a
 particular aspect of creating Keyman keyboards.</p>
 

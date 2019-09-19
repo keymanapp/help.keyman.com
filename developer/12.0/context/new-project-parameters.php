@@ -8,7 +8,7 @@
 
 <h1>New Project Parameters Dialog</h1>
 
-<p class='context-main-image'><img src="<?= cdn('img/developer/110/ui/frmNewProjectParameters.png') ?>" alt="New Project Parameters dialog" /></p>
+<p class='context-main-image'><img src="<?= cdn('img/developer/120/ui/frmNewProjectParameters.png') ?>" alt="New Project Parameters dialog" /></p>
 
 <p>Allows you to quickly fill in common parameters for a new keyboard project, adding keyboard, package, documentation and metadata files,
 following the <a href='/developer/keyboards/'>file layout</a> used in the <a href='https://github.com/keymanapp/keyboards'>Keyman keyboards repository</a>.</p>

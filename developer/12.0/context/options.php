@@ -10,7 +10,7 @@
 
 <h2>General tab</h2>
 
-<p class='context-main-image'><img src="<?= cdn('img/developer/110/ui/frmOptions_General.png') ?>" alt="Options dialog - General tab" /></p>
+<p class='context-main-image'><img src="<?= cdn('img/developer/120/ui/frmOptions_General.png') ?>" alt="Options dialog - General tab" /></p>
 
 <p>The following options are configurable in TIKE in the <span class="guilabel">General</span> tab:</p>
 
@@ -44,7 +44,7 @@
 
 <h2>Editor tab</h2>
 
-<p class='context-main-image'><img src="<?= cdn('img/developer/110/ui/frmOptions_Editor.png') ?>" alt="Options dialog - Editor tab" /></p>
+<p class='context-main-image'><img src="<?= cdn('img/developer/120/ui/frmOptions_Editor.png') ?>" alt="Options dialog - Editor tab" /></p>
 
 <dl>
   <dt>Use tab character</dt>
@@ -68,7 +68,7 @@
 
 <h2>Debugger tab</h2>
 
-<p class='context-main-image'><img src="<?= cdn('img/developer/110/ui/frmOptions_Debugger.png') ?>" alt="Options dialog - Debugger tab" /></p>
+<p class='context-main-image'><img src="<?= cdn('img/developer/120/ui/frmOptions_Debugger.png') ?>" alt="Options dialog - Debugger tab" /></p>
 
 <dl>
   <dt>Enable test window (from version 5.0)</dt>
@@ -89,7 +89,7 @@
 
 <h2>Character Map tab</h2>
 
-<p class='context-main-image'><img src="<?= cdn('img/developer/110/ui/frmOptions_CharacterMap.png') ?>" alt="Options dialog - Character Map tab" /></p>
+<p class='context-main-image'><img src="<?= cdn('img/developer/120/ui/frmOptions_CharacterMap.png') ?>" alt="Options dialog - Character Map tab" /></p>
 
 <dl>
   <dt>Find character under cursor automatically</dt>

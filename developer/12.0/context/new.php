@@ -8,7 +8,7 @@
 
 <h1>New File Dialog</h1>
 
-<p class='context-main-image'><img src="<?= cdn('img/developer/100/ui/frmNew.png') ?>" alt="New File dialog" /></p>
+<p class='context-main-image'><img src="<?= cdn('img/developer/120/ui/frmNew.png') ?>" alt="New File dialog" /></p>
 
 <p>Creates a new file, and optionally adds it to the current project.</p>
 
@@ -32,3 +32,7 @@ files such as documentation.</p>
 <h2>XML file</h2>
 
 <p>Creates a new XML file.</p>
+
+<h2>Model file</h2>
+
+<p>Creates a new <code>.model.ts</code> lexical model file.</p>

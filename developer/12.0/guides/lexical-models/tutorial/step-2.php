@@ -2,93 +2,50 @@
   require_once('includes/template.php');
 
   head([
-    'title' => "Step 2: Get some language data",
-    'css' => ['template.css', 'index.css', 'prism.css', 'dev-lexical-models.css']
+    'title' => "Step 2: Creating a lexical model project",
+    'css' => ['template.css', 'index.css', 'prism.css', 'kmguides.css']
   ]);
 ?>
 
-<h1>Step 2: Get some language data</h1>
+<h1>Step 2: Creating a lexical model project</h1>
 
-<p>To predict words in your language, a lexical model needs to know the words in your language!</p>
+<h2>Create the new project</h2>
+<p>Start Keyman Developer. From the Project menu, select "New Project" and then "Wordlist Lexical Model."</p>
 
+<p class='context-main-image'><img src="<?= cdn('img/developer/120/ui/frmNewLMProject.png') ?>" alt="New LM Project dialog" /></p>
 
-<p> Keyman Developer understands how to read words in a <strong>TSV file</strong>.
-This kind of file can be saved from a <strong>spreadsheet</strong> application like <a
-href="https://sheets.google.com/">Google Sheets</a> or
-<a href="https://products.office.com/en/excel">Microsoft Excel</a>.
-Other users may also use <strong>language data management software</strong>
-like <a href="https://software.sil.org/fieldworks/">SIL FieldWorks Language
-Explorer (FLEx)</a> or <a href="https://software.sil.org/wesay/">SIL WeSay</a>
-to export an appropriate TSV file.</p>
+<h2>New Lexical Model Project Parameters</h2>
+<p> To create a lexical model project, we will need the following information: </p>
 
-<aside>
-  <p><strong>For advanced users</strong>: Ultimately, what Keyman Developer
-  requires is a tab-separated values (TSV) file in a specfic format described in
-  the <a href="../../../reference/file-types/tsv.php">file types reference</a>.
-  Refer to this reference file if you are coding your own exporter.
-  </p>
-</aside>
+<p class='context-main-image'><img src="<?= cdn('img/developer/120/ui/frmNewLMProjectParameters.png') ?>" alt="New LM Project Parameters" /></p>
 
-<h2>Example</h2>
+<dl>
+  <dt>Author Name:</dt>
+  <dd>Your name or organization, such as <code>nrc</code> or <code>sil</code>. Required.</dd>
 
-<p>I have words in my language of choice, SENĆOŦEN.
-Here is my list of words, with the count of how many times I’ve seen the word:</p>
+  <dt>Model Name:</dt>
+  <dd>We recommend the name of the language, dialect, or community that this model is intended for. The name needs
+    to be unique from other lexical models in the language. Do not include a version string in the model name.
+    Here, we use a model name <code>sencoten</code>. Required.</dd>
 
-<table class="wordlist">
-  <caption> List of ten SENĆOŦEN words, with counts </caption>
-  <thead>
-    <tr> <th scope="col">Word</th> <th scope="col">Count</th> </tr>
-  </thead>
-  <tbody>
-    <tr> <td>TŦE</td> <td class="number">13644</td> </tr>
-    <tr> <td>E</td>   <td class="number">9134</td> </tr>
-    <tr> <td>SEN</td> <td class="number">4816</td> </tr>
-    <tr> <td>Ȼ</td>   <td class="number">3479</td> </tr>
-    <tr> <td>SW̱</td>  <td class="number">2621</td> </tr>
-    <tr> <td>NIȽ</td> <td class="number">2314</td> </tr>
-    <tr> <td>U¸</td>  <td class="number">2298</td> </tr>
-    <tr> <td>I¸</td>  <td class="number">1988</td> </tr>
-    <tr> <td>ȻSE</td> <td class="number">1925</td> </tr>
-    <tr> <td>I</td>   <td class="number">1884</td> </tr>
-  </tbody>
-</table>
+  <dt>Copyright:</dt>
+  <dd>A copyright string for the model. Optional.</dd>
 
-<p>I’ve entered this information into my spreadsheet of choice, <a
-href="https://sheets.google.com/">Google Sheets</a>. I’ve shared this
-spreadsheet publicly
-<a href="https://docs.google.com/spreadsheets/d/10zhIc439BCSSooL_-HeJ6TUHd-ovkiXYcIGe-pHDTSg/edit?usp=sharing">here</a>.
-The order of the columns matters:</p>
+  <dt>Version:</dt>
+  <dd>A version string made of <code>major revision</code>.<code>minor revision</code>.
+    We recommend 1.0 for the initial version number. Required.</dd>
 
-<p>The first column (column A) <strong>must</strong> be the “words”. If
-provided, the second column (column B) <strong>must</strong> be the “counts”.
-Counts are optional for each word: that is, some words may specify counts in
-the second column, while other words may leave the second column blank. The
-third column (column C) is always ignored. You may use this column as a
-comment. The spreadsheet can be as simple as a single column of all of the
-words in the language, with each word being separated by a line break.</p>
+  <dt>Languages:</dt>
+  <dd>Use the <span class="guibutton">Add</span> button to bring up the "Select BCP 47 Tag" dialog.
+    When Keyman installs this lexical model, it will associate the matching keyboard with the language(s) you select here.
+    In this example, we add <code>str</code> for the Straits Salish (SENĆOŦEN) language. Required</dd>
+</dl>
 
-<p>This is what my word list looks like in Google Sheets:</p>
+<p class="context-main-image"><img src="<?= cdn('img/developer/120/ui/frmNewLMProjectSelectLanguage.png') ?>" alt="Select BCP 47 Tag dialog" /></p>
 
-<figure>
-  <img src="<?= cdn('img/developer/120/lm/sencoten-sheets-full.png') ?>"
-       class="macos-screenshot"
-       alt="screenshot of the word list in Google Sheets" />
-  <figcaption> The word list, as it appears in Google Sheets </figcaption>
-</figure>
+<p>These identifiers will be combined to make the <code class="language-none">Model ID</code> = <code>Author ID</code>.
+  <code class="language-none">Primary Language</code>.<code class="language-none">Unique Name</code></p>
 
-<p>Now, we download the spreadsheet in the
-<a href="../../../reference/file-types/tsv.php">required format</a>.
-To do this, in Google Sheets, select “File” » “Download as” » “Tab-separated
-values (.tsv, current sheet)”.</p>
+<p> Once we have created the project, we can begin to prepare the data! </p>
 
-<figure>
-  <img src="<?= cdn('img/developer/120/lm/sencoten-sheets-save-as.png') ?>" alt="screenshot of “Save as…” menu in Google Sheets, selecting ”TSV”" />
-  <figcaption>Exporting the TSV file from Google Sheets</figcaption>
-</figure>
-
-<p>I’ll save mine as <strong>wordlist.tsv</strong>.</p>
-
-<p>Now that we have our word list, exported in the correct format, let's
-create the model definition file.</p>
-
-<p><a href="step-3.php" title="Step 3: Creating a model definition file">Step 3: Creating a model definition file</a></p>
+<p><a href="step-3.php" title="Step 3: Get some language data">Step 3: Get some language data</a></p>
