@@ -90,5 +90,10 @@ th{
 	min-width: 40px;
 }
 
-
-
+/**
+	Removes existing max-width property settings from images in tables.
+	They overly shrink the images on the main Android symbol glossary.
+ */
+#section2 td img {
+	max-width: unset;
+}

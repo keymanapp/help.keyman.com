@@ -1,15 +1,18 @@
 <?php
 require_once('includes/template.php');
+require_once('includes/session-embed.php');
 
 head([
     'title' => 'Keyman for Android Help',
-    'css' => ['template.css', 'app-info-a.css']
+    'css' => ['template.css', 'app-info-a.css', 'embed.css'],
+    'embedded' => $embed_android
 ]);
 ?>
 
-<h2>Keyman for Android</h2>
+<h2 class="content-in-app">Getting Started</h2>
+<h2 class="content-online">Keyman for Android</h2>
 
-<p><a href='../version-history'>Version history</a></p>
+<p class="content-online"><a href='../version-history'>Version history</a></p>
 
 <!-- Content below this copied into the Keyman Android info.html -->
 
@@ -347,14 +350,16 @@ head([
     For more information on Keyman for Android, visit <a href="https://keyman.com/android">keyman.com/android</a>
   </p>
 
-  <h2>Keyman for Android Documentation Versions</h2>
+  <div class="content-online">
+    <h2>Keyman for Android Documentation Versions</h2>
 
-  <ul>
-    <li><a href='../12.0/'>Keyman for Android 12.0 Documentation</a></li>
-    <li><a href='../11.0/'>Keyman for Android 11.0 Documentation</a></li>
-    <li><a href='../10.0/'>Keyman for Android 10.0 Documentation</a></li>
-    <li><a href='../2.0/'>Keyman for Android 2.0 Documentation</a></li>
-  </ul>
+    <ul>
+      <li><a href='../12.0/'>Keyman for Android 12.0 Documentation</a></li>
+      <li><a href='../11.0/'>Keyman for Android 11.0 Documentation</a></li>
+      <li><a href='../10.0/'>Keyman for Android 10.0 Documentation</a></li>
+      <li><a href='../2.0/'>Keyman for Android 2.0 Documentation</a></li>
+    </ul>
+  </div>
 </div>
 
 <div class="tab selected-tab" id="android-tablet-tab">
@@ -678,12 +683,14 @@ head([
     For more information on Keyman for Android, visit <a href="https://keyman.com/android">keyman.com/android</a>
   </p>
 
-  <h2>Keyman for Android Documentation Versions</h2>
+  <div class="content-online">
+    <h2>Keyman for Android Documentation Versions</h2>
 
-  <ul>
-    <li><a href='../12.0/'>Keyman for Android 12.0 Documentation</a></li>
-    <li><a href='../11.0/'>Keyman for Android 11.0 Documentation</a></li>
-    <li><a href='../10.0/'>Keyman for Android 10.0 Documentation</a></li>
-    <li><a href='../2.0/'>Keyman for Android 2.0 Documentation</a></li>
-  </ul>
+    <ul>
+      <li><a href='../12.0/'>Keyman for Android 12.0 Documentation</a></li>
+      <li><a href='../11.0/'>Keyman for Android 11.0 Documentation</a></li>
+      <li><a href='../10.0/'>Keyman for Android 10.0 Documentation</a></li>
+      <li><a href='../2.0/'>Keyman for Android 2.0 Documentation</a></li>
+    </ul>
+  </div>
 </div>
