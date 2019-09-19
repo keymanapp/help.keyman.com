@@ -68,10 +68,12 @@ function loaded(){
   
   // Footer to bottom of page
   var link = $('.footer');
-  var offset = link.offset().top;
-  var diff = $(window).height() - (offset + link.height());
-  if (diff > 0) {
-    link.css('margin-top',diff);
+  if(link.length > 0) {
+    var offset = link.offset().top;
+    var diff = $(window).height() - (offset + link.height());
+    if (diff > 0) {
+      link.css('margin-top', diff);
+    }
   }
 
   // Switch between android docs
