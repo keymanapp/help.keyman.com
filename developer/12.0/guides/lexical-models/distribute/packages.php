@@ -9,12 +9,11 @@
 <h1 class="title" id="reference__package">Distribute lexical models to Keyman Applications</h1>
 <h2>Overview</h2>
 
-<p>Lexical model package files contain one or more lexical models, along with readme files,
-  and any other files you wish to include. You should create a package file to bundle your lexical models and help
+<p>Lexical model package files contain one lexical model, along with readme files,
+  and any other files you wish to include. You must create a package file to bundle your lexical model and help documentation
   into a simple, single file that is easy for an end-user to install.</p>
 
-<p>Internally, as well as your own files, the package file will contain a metadata files "kmp.json", which lists the details Keyman
-  needs to install the lexical model package. The package file is a ZIP compatible archive.</p>
+<p>The package file is a ZIP compatible archive.</p>
 
 <aside>
   <h3>Tip</h3>
@@ -30,16 +29,12 @@
 
 <dl>
   <dt>*.model.js</dt>
-  <dd>Lexical model files. When Keyman mobile applications install a lexical model package, all included models will be installed as a group.</dd>
+  <dd>Lexical model file. When Keyman mobile applications install a lexical model package, the included model will be installed
+    and associated with the specified languages.</dd>
 
   <dt>welcome.htm</dt>
   <dd>Introductory help for the lexical model, HTML format. This will normally be displayed when the package is installed by the user, and is also the entry point
   for help when accessed via Keyman's help system or Keyman Configuration.</dd>
-
-  <dt>kmp.json</dt>
-  <dd>A JSON format file contains metadata for the lexical model package such as package version, model versions,
-    and lists each of the files in the package. For more explanation of the structure of the JSON file, please read the
-    <a href="/developer/12.0/reference/file-types/metadata">metadata</a> documentation.</dd>
 </dl>
 
 <h2>Step 1) Share the lexical model package file</h2>
@@ -49,7 +44,7 @@
   For this example, the lexical model package for SENĆOŦEN is being uploaded:</p>
 
 <ol>
-  <li>nrc.str.sencoten.kmp (the lexical model package .kmp file)</li>
+  <li>nrc.str.sencoten.model.kmp (the lexical model package .kmp file)</li>
 </ol>
 
 <h2>Step 2) Create a link to the KMP file</h2>
@@ -62,7 +57,7 @@
   &lt;head&gt;
   &lt;/head&gt;
   &lt;body&gt;
-    &lt;a href="https://keyman.com/test/nrc.str.sencoten.kmp"&gt;Sencoten Lexical Model Package&lt;/a&gt;
+    &lt;a href="https://keyman.com/test/nrc.str.sencoten.model.kmp"&gt;Sencoten Lexical Model Package&lt;/a&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 
