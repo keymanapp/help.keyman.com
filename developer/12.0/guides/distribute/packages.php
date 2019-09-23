@@ -2,19 +2,24 @@
   require_once('includes/template.php');
 
   head([
-    'title' => "Package Files for Keyman applications"
+    'title' => "Distribute Keyboards to Keyman Applications"
   ]);
 ?>
 
 <h1 class="title" id="reference__package">Distribute keyboards to Keyman Applications</h1>
 <h2>Overview</h2>
 
-<p>Package files contain one or more keyboards, along with readme files, fonts (if your keyboard requires a custom font),
+<p>Keyboard package files contain one or more keyboards, along with readme files, fonts (if your keyboard requires a custom font),
   and any other files you wish to include. You should create a package file to bundle your keyboard with fonts and help
   into a simple, single file that is easy for an end-user to install.</p>
 
 <p>Internally, as well as your own files, the package file will contain metadata files "kmp.inf" and "kmp.json", which list the details Keyman
   needs to install the package. The package file is a ZIP compatible archive.</p>
+
+<aside>
+  <h3>Tip</h3>
+  <p>You can distribute keyboards and lexical models in package files, but you can't include both in the same package file.</p>
+</aside>
 
 <h4>Keyman Desktop</h4>
 <p>Keyman Desktop can install package files, including installing fonts, creating Start Menu shortcuts, and adding appropriate registry entries
@@ -29,9 +34,6 @@ through the keyboard's entry in Keyman Configuration.</p>
 <h4>Keyman for Android and Keyman for iPhone and iPad</h4>
 <p>Keyman mobile applications can install the same package files as Keyman Desktop, as long as the package includes
   keyboards for touch layouts.</p>
-
-<p>The previous <a href="/developer/9.0/guides/distribute/mobile-apps.php">method</a> of ad-hoc keyboard distribution
-  for mobile applications involving JSON files is deprecated in Keyman 10 and will be removed in a future Keyman 11 release.</p>
 
 <h2>Package file contents</h2>
 

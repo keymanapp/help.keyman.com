@@ -33,6 +33,12 @@
   <dt><a href="kvks">KVKS files</a></dt>
   <dd>Visual keyboard source files</dd>
 
+  <dt><a href="model-js">MODEL.JS files</a></dt>
+  <dd>Lexical model files</dd>
+
+  <dt><a href="model-ts">MODEL.TS files</a></dt>
+  <dd>Lexical model definition files</dd>
+
   <dt><a href="tsv">TSV files</a></dt>
   <dd>Word list source files, exported in a compatible tab-separated values format.</dd>
 
