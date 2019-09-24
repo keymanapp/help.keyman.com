@@ -2,13 +2,14 @@
 require_once('includes/template.php');
 
 head([
-  'title' => "KMLMP Command Line Compiler"
+  'title' => "kmlmp Command Line Compiler"
 ]);
 ?>
 
 <h1>Keyman Lexical Model Package Command Line Compiler</h1>
 
-<p>kmlmp is the command line lexical model package compiler included in Keyman Developer. It is located in <code>%ProgramFiles(x86)%\Keyman\Keyman Developer</code>.</p>
+<p>kmlmp is the command line lexical model package compiler included in Keyman Developer. It is located in <code>%ProgramFiles(x86)%\Keyman\Keyman Developer</code>
+  and also available via npm.</p>
 
 <p>The following parameters are available:</p>
 

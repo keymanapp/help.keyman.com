@@ -2,13 +2,14 @@
 require_once('includes/template.php');
 
 head([
-  'title' => "KMLMComp Command Line Compiler"
+  'title' => "kmlmc Command Line Compiler"
 ]);
 ?>
 
 <h1>Keyman Lexical Model Command Line Compiler</h1>
 
-<p>kmlmc is the command line lexical model compiler included in Keyman Developer. It is located in <code>%ProgramFiles(x86)%\Keyman\Keyman Developer</code>.</p>
+<p>kmlmc is the command line lexical model compiler included in Keyman Developer. It is located in <code>%ProgramFiles(x86)%\Keyman\Keyman Developer</code>
+  and also available via npm.</p>
 
 <p>The following parameters are available:</p>
 
