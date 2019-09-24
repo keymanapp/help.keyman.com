@@ -25,6 +25,9 @@
   <dt><a href="startup">Splash Screen</a></dt>
   <dt><a href="kmcomp">KMComp Command-line Options</a></dt>
   <dt><a href="kmconvert">KMConvert Command-line Options</a></dt>
+  <dt><a href="kmlmc">KMLMComp Command-line Options</a></dt>
+  <dt><a href="kmlmi">KMLMIComp Command-line Options</a></dt>
+  <dt><a href="kmlmp">KMLMPComp Command-line Options</a></dt>
   <dt><a href="character-map">Character Map</a></dt>
   <dt><a href="messages">Message Window</a></dt>
 </dl>

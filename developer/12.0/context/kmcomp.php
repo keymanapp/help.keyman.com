@@ -15,7 +15,7 @@
 <h2>Compiler mode</h2>
 <pre><code class='language-none'>Usage: kmcomp [-s[s]] [-nologo] [-c] [-d] [-w] [-v[s|d]] [-source-path path] [-schema-path path]
               [-m] infile [-m infile] [-t target] [outfile.kmx|outfile.js [error.log]]
-              [-add-help-link path]
+              [-add-help-link path] [-color|-no-color]
               [-extract-keyboard-info field[,field...]]
 </code></pre>
 
@@ -61,6 +61,13 @@
 
   <dt><code>-addhelplink path</code></dt>
   <dd>path to help file on https://help.keyman.com/keyboards</dd>
+
+  <dt><code>-color</code></dt>
+  <dd>If specified, forces color log mesages on.</dd>
+
+  <dt><code>-no-color</code></dt>
+  <dd>If specified, forces color log messages off. If neither specified, uses console mode to determine whether color
+    should be used</dd>
 </dl>
 
 <h3>JSON .keyboard_info compile targets</h3>
