@@ -23,6 +23,4 @@ $embed_mac     = $embed == 'macos';
 $embed_linux   = $embed == 'linux';
 $embed_android = $embed == 'android';
 $embed_ios     = $embed == 'ios';
-
-// Generates a stylesheet to control visibility based on embedding state
 ?>

@@ -1,0 +1,7 @@
+.phone-form .tablet {
+    display: none;
+}
+
+.tablet-form .phone {
+    display: none;
+}

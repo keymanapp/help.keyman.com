@@ -1,10 +1,11 @@
 <?php
 require_once('includes/template.php');
 require_once('includes/session-embed.php');
+require_once('includes/session-formfactor.php');
 
 head([
     'title' => 'Keyman for Android Help',
-    'css' => ['template.css', 'app-info-a.css', 'embed.css'],
+    'css' => ['template.css', 'app-info-a.css', 'embed.css', 'formfactor.css'],
     'embedded' => $embed_android
 ]);
 ?>
@@ -24,6 +25,7 @@ head([
     <h4>Tablet</h4>
   </div>
 </div>
+
 <div class="tab" id="android-mobile-tab">
   <p>
     Keyman for Android lets you type in over 600 languages on Android mobiles and tablets.
