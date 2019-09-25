@@ -2,18 +2,24 @@
 require_once('includes/template.php');
 
 head([
-  'title' => "kmlmc Command Line Compiler"
+  'title' => "kmlmc - Command Line Lexical Model Compiler"
 ]);
 ?>
 
-<h1>Keyman Lexical Model Command Line Compiler</h1>
+<h1>kmlmc - Command Line Lexical Model Compiler</h1>
 
-<p>kmlmc is the command line lexical model compiler included in Keyman Developer. It is located in <code>%ProgramFiles(x86)%\Keyman\Keyman Developer</code>
-  and also available via npm.</p>
+<p>kmlmc is the command line lexical model compiler included in Keyman Developer. It is also available via npm.</p>
+
+<h2>Installation via npm</h2>
+
+<p>First, install <a href="https://nodejs.org/">nodejs</a>. Then, install with the following:</p>
+
+<pre><code class="language-bash">npm i @keymanapp/developer-lexical-model-compiler</code></pre>
+
+<h2>Compiler mode</h2>
 
 <p>The following parameters are available:</p>
 
-<h2>Compiler mode</h2>
 <pre><code class='language-none'>Usage: kmlmc &lt;infile&gt; [-V, --version] [-o, --outFile &lt;filename&gt;] [-h, --help]
 </code></pre>
 

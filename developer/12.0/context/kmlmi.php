@@ -2,19 +2,26 @@
 require_once('includes/template.php');
 
 head([
-  'title' => "kmlmi Command Line Compiler"
+  'title' => "kmlmi - Command Line Lexical Model model_info Compiler"
 ]);
 ?>
 
-<h1>Keyman Lexical Model model_info Command Line Compiler</h1>
+<h1>kmlmi - Command Line Lexical Model model_info Compiler</h1>
 
 <p>kmlmi merges Keyman lexical model .model_info files. It is intended for use within the
   <a href="https://github.com/keymanapp/lexical-models">keymanapp/lexical-models</a> repository.
  kmlmi is also available via npm.</p>
 
-<p>The following parameters are available:</p>
+<h2>Installation via npm</h2>
+
+<p>First, install <a href="https://nodejs.org/">nodejs</a>. Then, install with the following:</p>
+
+<pre><code class="language-bash">npm i @keymanapp/developer-lexical-model-compiler</code></pre>
 
 <h2>Compiler mode</h2>
+
+<p>The following parameters are available:</p>
+
 <pre><code class='language-none'>Usage: kmlmi &lt;infile&gt; -o, --outFile &lt;filename&gt;
     [-m, --model &lt;model_id&gt;] -s, --source &lt;sourceFilename&gt; [--kpsFilename &lt;kpsFilename&gt;]
     [--kmpFilename &lt;kmpFilename&gt;] [--jsFilename &lt;jsFilename&gt;]
