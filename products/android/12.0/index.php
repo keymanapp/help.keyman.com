@@ -17,8 +17,8 @@ head([
 
 <?php
   // We need to condition here.  While CSS selection can affect visibility, it
-  // won't prevent offlining scripts from following links and breaking our desired
-  // mirrored content for offline help.
+  // won't prevent offlining scripts from following the links and breaking our
+  // desired mirrored content for offline help.
   if(!$embed_android) {
     formFactorSelect();
   }
