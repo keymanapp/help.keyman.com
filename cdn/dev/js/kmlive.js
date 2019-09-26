@@ -76,23 +76,13 @@ function loaded(){
     }
   }
 
-  // Switch between android docs
-  $('#android-mobile-header').click(function(){
-    $('#android-tablet-tab,#android-tablet-header').removeClass('selected-tab');
-    $('#android-mobile-tab,#android-mobile-header').addClass('selected-tab');
-  });
-  $('#android-tablet-header').click(function(){
-    $('#android-mobile-tab,#android-mobile-header').removeClass('selected-tab');
-    $('#android-tablet-tab,#android-tablet-header').addClass('selected-tab');
-  });
-  if ($(window).width() <= 600) {
-    $('#android-tablet-tab,#android-tablet-header').removeClass('selected-tab');
-    $('#android-mobile-tab,#android-mobile-header').addClass('selected-tab');
+  // detectFormFactor defined in template.php based upon use of session-formfactor.php.
+  if ($(window).width() <= 600 && window['km_detectFormFactor']) {
+    var section2 = $('#section2');
+    section2.removeClass('tablet-form');
+    section2.addClass('phone-form');
   }
-  
 
-  
-  
   /*!
    * toc - jQuery Table of Contents Plugin
    * v0.3.2
