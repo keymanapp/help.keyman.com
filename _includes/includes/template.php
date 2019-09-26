@@ -128,6 +128,7 @@
   // This function uses globals defined in the embed/ folder include files, applying
   // classes useful for content filtering between online and in-app help with embed.css.
   function build_page_class($embeddable, $do_embed) {
+    // From session-formfactor.php.
     global $formFactorClass;
 
     // Is set by includes within the embed/ folder.
@@ -136,7 +137,9 @@
       array_push($pageClassComponents, $do_embed ? "embed-on" : "embed-off");
     }
 
-    // Space left here for applying extra classes, like for form-factors.
+    if(isset($formFactorClass)) {
+      array_push($pageClassComponents, $formFactorClass);
+    }
 
     $finalClass = '';
 
@@ -149,6 +152,8 @@
   
   function begin_main($toc, $index, $crumbs, $embeddable, $do_embed){
     global $index_content;
+    global $formFactor;
+
     if($index) {
       build_index_content();
     } else {
@@ -167,6 +172,16 @@
 
     if($toc) { $tocClass = ''; } else { $tocClass = ' no-toc'; }
     if(!$index) { $tocClass .= ' no-index'; }
+    if(isset($formFactor)) {
+      if($formFactor == 'detect') {
+        ?>
+        <script type="text/javascript">
+          // Will be used in kmlive.js.
+          window['km_detectFormFactor'] = true;
+        </script>
+        <?php
+      }
+    }
 
     $outerClass = build_page_class($embeddable, $do_embed);
     if(!empty($outerClass)) {
