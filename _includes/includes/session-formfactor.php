@@ -27,4 +27,23 @@ if($formFactor == "phone") {
 } else {
   $formFactorClass = "tablet-form";
 }
+
+function formFactorSelect() {
+  // Inserts the following form-factor selection toolbar.
+  ?>
+  <div id="android-tab-header" class="content-online">
+    <a class="phone" href="?formfactor=phone">
+      <div id="android-mobile-header">
+        <h4>Phone</h4>
+      </div>
+    </a>
+    <a class="tablet" href="?formfactor=tablet">
+      <div id="android-tablet-header">
+        <h4>Tablet</h4>
+      </div>
+    </a>
+  </div>
+  <p class="content-online">&nbsp;</p>
+  <?php
+}
 ?>

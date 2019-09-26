@@ -15,23 +15,14 @@ head([
 
 <p class="content-online"><a href='../version-history'>Version history</a></p>
 
-<!-- The 'tab header' will eventually have class="content-online"
-     since an embedding device can specify which version to use.
-
-     The Android app needs to add this functionality first, though. -->
-<div id="android-tab-header">
-  <a class="phone" href=".?formfactor=phone">
-  <div id="android-mobile-header">
-    <h4>Phone</h4>
-  </div>
-  </a>
-  <a class="tablet" href=".?formfactor=tablet">
-  <div id="android-tablet-header">
-    <h4>Tablet</h4>
-  </div>
-  </a>
-</div>
-<p>&nbsp;</p>
+<?php
+  // We need to condition here.  While CSS selection can affect visibility, it
+  // won't prevent offlining scripts from following links and breaking our desired
+  // mirrored content for offline help.
+  if(!$embed_android) {
+    formFactorSelect();
+  }
+?>
 
 <p>
   Keyman for Android lets you type in over 600 languages on Android mobiles and tablets.
@@ -124,73 +115,24 @@ head([
   </tr>
 </table>
 
-<h2>Switching between Keyboards</h2>
-<p>
-  To switch keyboards, follow these steps:
-  <br/><br/>
-  Step 1)
-  <br/>
-  With the keyboard visible, touch the globe key:
-  <br/>
-  <img class="phone" id="globe-ap" src="<?= cdn("img/app/12.0/globe-ap.png"); ?>"/>
-  <img class="tablet" id="globe-at" src="<?= cdn("img/app/12.0/globe-at.png"); ?>"/>
-  <br/>
-  This will bring up a list of all currently installed languages (the default is English
-  EuroLatin (SIL)). If you have already downloaded additional languages, they will appear here.
-  Simply select them and the keyboard will re-appear with the new language.
-  <br/><br/>
+<h2>Help Index</h2>
 
-<h2>Adding New Keyboards</h2>
-<p>
-  To add keyboards, follow these steps:
-  <br/><br/>
-  Step 1)
-  <br/>
-  Open the menu for additional options. Select 'Settings'
-  <br/><br/>
-  Step 2)
-  <br/>
-  From the Keyman Settings menu, select 'Installed languages'
-  <br/>
-  <img id="settings-language-ap" src="<?= cdn("img/app/12.0/settings-language-ap.png"); ?>" />
-  <br/><br/>
-  Step 3)
-  From the 'Installed languages' menu, touch the <span class="command">+</span>
-  button in the bottom right corner of your screen.
-  <br/>
-  <img id="plus-a" src="<?= cdn("img/app/12.0/plus-a.png"); ?>" />
-  <br/><br/>
-  Step 4)
-  <br/>
-  A list of all available languages will appear. Scroll through this list until you find
-  the language you want to install. Languages marked with a right arrow have multiple keyboards - for
-  example we have 10+ different Tamil keyboards.
-  <br/>
-  <img class="phone" id="lang-list-ap" src="<?= cdn("img/app/12.0/lang-list-ap.png"); ?>"/>
-  <img class="tablet" id="lang-list-at" src="<?= cdn("img/app/12.0/lang-list-at.png"); ?>"/>
-  <br/><br/>
-  Select the language and keyboard you want to install - a popup will ask for confirmation,
-  hit the <span class="command">Download</span> button.
-  <br/>
-  <img class="phone" id="confirm-dl-ap" src="<?= cdn("img/app/12.0/confirm-dl-ap.png"); ?>"/>
-  <img class="tablet" id="confirm-dl-at" src="<?= cdn("img/app/12.0/confirm-dl-at.png"); ?>"/>
-  <br/><br/>
-  Step 5)
-  <br/>
-  Once the download is complete, the new keyboard will be selected. Touch the <span class="command">&larr;</span>
-  button on the top left corner of the popup several times and the new keyboard will become active.
-  <br/>
-  <img class="phone" id="success-ap" src="<?= cdn("img/app/12.0/dl-success-ap.png"); ?>"/>
-  <img class="tablet" id="success-at" src="<?= cdn("img/app/12.0/dl-success-at.png"); ?>"/>
-  <br/><br/>
-  Alternate Step for System Keyboard)
-  <br/>
-  The Keyman system keyboard has an additional <span class="command">CLOSE KEYMAN</span> button at the bottom left of
-  the "Keyboards" menu. Pushing this button will close Keyman and switch to the next non-Keyman system keyboard.
-  <br/>
-  <img id="close-keyman-a" src="<?= cdn("img/app/12.0/close-keyman-a.png"); ?> "/>
-  <br/>
-</p>
+<ul>
+  <li class="content-in-app"><a href="index.php">Getting Started</a></li>
+  <li class="content-online"><a href="index.php">Keyman for Android help home</a></li>
+  <li><a href="installing-keyboards.php">Installing keyboards</a></li>
+  <li><a href='switching-between-keyboards.php'>Switching between keyboards</a></li>
+  <li><a href='uninstalling-keyboards.php'>Uninstalling keyboards</a></li>
+  <li><a href='installing-custom-keyboards.php'>Installing custom keyboards</a></li>
+  <li><a href='installing-system-keyboard.php'>Installing the Keyman System Keyboard</a></li>
+  <li><a href='installing-fonts.php'>Installing fonts</a></li>
+  <li><a href='using-keyman-browser.php'>Using the Keyman Browser</a></li>
+</ul>
+
+
+
+
+
 
 <h2>Removing a Keyboard</h2>
 <p>
@@ -234,13 +176,6 @@ head([
   <br/>
   <img class="phone" id="uninstall-notification-ap" src="<?= cdn("img/app/12.0/uninstall-notification-ap.png"); ?>"/>
   <img class="tablet" id="uninstall-notification-at" src="<?= cdn("img/app/12.0/uninstall-notification-at.png"); ?>"/>
-</p>
-
-<h2>Hotkey</h2>
-<p>
-  To switch between languages while using an external keyboard (i.e. a bluetooth keyboard), a quick and easy way is to
-  use a hotkey combination. Press and hold 'Ctrl' and then press 'Tab'.
-  You should see a list of languages/keyboards. Tap on any available language of your choice.
 </p>
 
 <h2>Accessing Keyboard Help</h2>
