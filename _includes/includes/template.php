@@ -152,6 +152,8 @@
   
   function begin_main($toc, $index, $crumbs, $embeddable, $do_embed){
     global $index_content;
+    global $formFactor;
+
     if($index) {
       build_index_content();
     } else {
@@ -170,6 +172,16 @@
 
     if($toc) { $tocClass = ''; } else { $tocClass = ' no-toc'; }
     if(!$index) { $tocClass .= ' no-index'; }
+    if(isset($formFactor)) {
+      if($formFactor == 'detect') {
+        ?>
+        <script type="text/javascript">
+          // Will be used in kmlive.js.
+          window['km_detectFormFactor'] = true;
+        </script>
+        <?php
+      }
+    }
 
     $outerClass = build_page_class($embeddable, $do_embed);
     if(!empty($outerClass)) {
