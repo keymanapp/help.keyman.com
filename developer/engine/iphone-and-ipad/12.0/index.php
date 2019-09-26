@@ -11,7 +11,7 @@
 <h2 id="Overview" name="Overview">Overview</h2>
 
 <p>
-    The Keyman Engine for iPhone and iPad 11.0 SDK is designed to provide advanced international keyboard support to iOS apps.
+    The Keyman Engine for iPhone and iPad 12.0 SDK is designed to provide advanced international keyboard support to iOS apps.
     <br/><br/>
     As a developer, you simply need to use (or subclass) TextView or TextField instead
     of using an ordinary UITextView or UITextField.
