@@ -24,7 +24,7 @@
   <dt>Copyright</dt>
 
   <dd>
-    <p>Enter copyright details for your package and keyboards. Keep this reasonably short or it won't be clear for end users.</p>
+    <p>Enter copyright details for your lexical model package. Keep this reasonably short or it won't be clear for end users.</p>
   </dd>
 
   <dt>Author</dt>
@@ -43,8 +43,7 @@
   <dt>Website</dt>
 
   <dd>
-    <p>Enter the name of the website where you will have information about this keyboard. If you want to host it on keyman.com,
-    you could enter http://www.keyman.com/</p>
+    <p>Enter the name of the website where you will have information about this lexical model.</p>
   </dd>
 
 </dl>
