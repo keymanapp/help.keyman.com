@@ -4,13 +4,13 @@ require_once('includes/session-embed.php');
 require_once('includes/session-formfactor.php');
 
 head([
-    'title' => 'Switching Between Keyboards - Keyman for Android Help',
+    'title' => 'Using the Keyman Browser - Keyman for Android Help',
     'css' => ['template.css', 'app-info-a.css', 'embed.css', 'formfactor.css'],
     'embedded' => $embed_android
 ]);
 ?>
 
-<h2>Switching Between Keyboards</h2>
+<h2>Using the Keyman Browser</h2>
 
 <?php
   // We need to condition here.  While CSS selection can affect visibility, it
@@ -22,28 +22,15 @@ head([
 ?>
 
 <p>
-  To switch keyboards, follow these steps:
-</p>
-<p>
-  Step 1)
-</p>
-<p>
-  With the keyboard visible, touch the globe key:
-<p>
-  <img class="phone" id="globe-ap" src="<?= cdn("img/app/12.0/globe-ap.png"); ?>"/>
-  <img class="tablet" id="globe-at" src="<?= cdn("img/app/12.0/globe-at.png"); ?>"/>
-</p>
-<p>
-  This will bring up a list of all currently installed languages (the default is English
-  EuroLatin (SIL)). If you have already downloaded additional languages, they will appear here.
-  Simply select them and the keyboard will re-appear with the new language.
-</p>
-
-<h2>Hotkey</h2>
-<p>
-  To switch between languages while using an external keyboard (i.e. a bluetooth keyboard), a quick and easy way is to
-  use a hotkey combination. Press and hold 'Ctrl' and then press 'Tab'.
-  You should then see the same listing of languages/keyboards. Tap on any available language of your choice.
+  Step 1) Click the Keyman Browser button in the Keyman app
+</p><p>
+  Step 2) Enter the URL of a website to visit into the address bar, for example <strong>google.com</strong>.
+  Keyman Browser will load the page and detect your language if it is present, and reformat it to show your
+  language instead of square boxes.
+</p><p>
+  Step 3) Use the bookmark button to save the current page for browsing later.
+</p><p>
+  Step 4) Use the Globe icon to swap between languages.
 </p>
 
 <h2>Help Index</h2>
