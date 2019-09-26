@@ -43,36 +43,36 @@ head([
   </tr>
   <tr>
     <td>
-      <img class="phone" id="install-keyboard-ap" src="<?php echo cdn("img/app/12.0/globe-ap.png"); ?>"/>
-      <img class="tablet" id="install-keyboard-at" src="<?php echo cdn("img/app/12.0/globe-at.png"); ?>"/>
+      <img class="phone" id="install-keyboard-ap" src="<?= cdn("img/app/12.0/globe-ap.png"); ?>"/>
+      <img class="tablet" id="install-keyboard-at" src="<?= cdn("img/app/12.0/globe-at.png"); ?>"/>
     </td>
     <td>Select another language/keyboard</td>
   </tr>
   <tr>
     <td>
-      <img class="phone" id="hide-keyboard-ap" src="<?php echo cdn("img/app/12.0/hide-keyboard-ap.png"); ?>"/>
-      <img class="tablet" id="hide-keyboard-at" src="<?php echo cdn("img/app/12.0/hide-keyboard-at.png"); ?>"/>
+      <img class="phone" id="hide-keyboard-ap" src="<?= cdn("img/app/12.0/hide-keyboard-ap.png"); ?>"/>
+      <img class="tablet" id="hide-keyboard-at" src="<?= cdn("img/app/12.0/hide-keyboard-at.png"); ?>"/>
     </td>
     <td>Hide the keyboard</td>
   </tr>
   <tr>
     <td>
-      <img class="phone" id="backspace-ap" src="<?php echo cdn("img/app/12.0/backspace-ap.png"); ?>"/>
-      <img class="tablet" id="backspace-at" src="<?php echo cdn("img/app/12.0/backspace-at.png"); ?>"/>
+      <img class="phone" id="backspace-ap" src="<?= cdn("img/app/12.0/backspace-ap.png"); ?>"/>
+      <img class="tablet" id="backspace-at" src="<?= cdn("img/app/12.0/backspace-at.png"); ?>"/>
     </td>
     <td>Backspace</td>
   </tr>
   <tr>
     <td>
-      <img class="phone" id="return-ap" src="<?php echo cdn("img/app/12.0/return-ap.png"); ?>"/>
-      <img class="tablet" id="return-at" src="<?php echo cdn("img/app/12.0/return-at.png"); ?>"/>
+      <img class="phone" id="return-ap" src="<?= cdn("img/app/12.0/return-ap.png"); ?>"/>
+      <img class="tablet" id="return-at" src="<?= cdn("img/app/12.0/return-at.png"); ?>"/>
     </td>
     <td>Return</td>
   </tr>
   <tr>
     <td>
-      <img class="phone" id="shift-ap" src="<?php echo cdn("img/app/12.0/shift-ap.png"); ?>"/>
-      <img class="tablet" id="shift-at" src="<?php echo cdn("img/app/12.0/shift-at.png"); ?>"/>
+      <img class="phone" id="shift-ap" src="<?= cdn("img/app/12.0/shift-ap.png"); ?>"/>
+      <img class="tablet" id="shift-at" src="<?= cdn("img/app/12.0/shift-at.png"); ?>"/>
     </td>
     <td>Shift key. Long press this key to access the CTRL, ALT and CTRL ALT keys
       (which can access additional key layers)
@@ -80,8 +80,8 @@ head([
   </tr>
   <tr>
     <td>
-      <img class="phone" id="touch-hold-ap" src="<?php echo cdn("img/app/12.0/touch-hold-ap.png"); ?>"/>
-      <img class="tablet" id="touch-hold-at" src="<?php echo cdn("img/app/12.0/touch-hold-at.png"); ?>"/>
+      <img class="phone" id="touch-hold-ap" src="<?= cdn("img/app/12.0/touch-hold-ap.png"); ?>"/>
+      <img class="tablet" id="touch-hold-at" src="<?= cdn("img/app/12.0/touch-hold-at.png"); ?>"/>
     </td>
     <td>Keys with a small dot in the top right corner indicate a long press key. Access
       further functionality by long pressing the key
@@ -91,35 +91,35 @@ head([
     <th colspan="2" id="toolbar-ap">Toolbar Icons</th>
   </tr>
   <tr>
-    <td><img id="share-ap" src="<?php echo cdn("img/app/12.0/share-a.png"); ?>"/></td>
+    <td><img id="share-ap" src="<?= cdn("img/app/12.0/share-a.png"); ?>"/></td>
     <td>Share your text via Mail, Text, or Twitter</td>
   </tr>
   <tr>
-    <td><img id="browser-ap" src="<?php echo cdn("img/app/12.0/browser-a.png"); ?>"/></td>
+    <td><img id="browser-ap" src="<?= cdn("img/app/12.0/browser-a.png"); ?>"/></td>
     <td>Open the Keyman Browser to use the web in your language</td>
   </tr>
   <tr>
-    <td><img id="menu-ap" src="<?php echo cdn("img/app/12.0/menu-icon-a.png"); ?>"/></td>
+    <td><img id="menu-ap" src="<?= cdn("img/app/12.0/menu-icon-a.png"); ?>"/></td>
     <td>Open the menu for additional options</td>
   </tr>
   <tr>
-    <td><img id="font-size-ap" src="<?php echo cdn("img/app/12.0/font-size-a.png"); ?>"/></td>
+    <td><img id="font-size-ap" src="<?= cdn("img/app/12.0/font-size-a.png"); ?>"/></td>
     <td>Adjust the font size</td>
   </tr>
   <tr>
-    <td><img id="delete-ap" src="<?php echo cdn("img/app/12.0/delete-a.png"); ?>"/></td>
+    <td><img id="delete-ap" src="<?= cdn("img/app/12.0/delete-a.png"); ?>"/></td>
     <td>Delete all current text</td>
   </tr>
   <tr>
-    <td><img id="info-ap" src="<?php echo cdn("img/app/12.0/info-a.png"); ?>"/></td>
+    <td><img id="info-ap" src="<?= cdn("img/app/12.0/info-a.png"); ?>"/></td>
     <td>Load this help page</td>
   </tr>
   <tr>
-    <td><img id="get-started-ap" src="<?php echo cdn("img/app/12.0/get-started-a.png"); ?>"/></td>
+    <td><img id="get-started-ap" src="<?= cdn("img/app/12.0/get-started-a.png"); ?>"/></td>
     <td>Open the initial setup screen</td>
   </tr>
   <tr>
-    <td><img id="settings-ap" src="<?php echo cdn("img/app/12.0/settings-a.png"); ?>"/></td>
+    <td><img id="settings-ap" src="<?= cdn("img/app/12.0/settings-a.png"); ?>"/></td>
     <td>Open the Keyman Settings screen</td>
   </tr>
 </table>
@@ -132,8 +132,8 @@ head([
   <br/>
   With the keyboard visible, touch the globe key:
   <br/>
-  <img class="phone" id="globe-ap" src="<?php echo cdn("img/app/12.0/globe-ap.png"); ?>"/>
-  <img class="tablet" id="globe-at" src="<?php echo cdn("img/app/12.0/globe-at.png"); ?>"/>
+  <img class="phone" id="globe-ap" src="<?= cdn("img/app/12.0/globe-ap.png"); ?>"/>
+  <img class="tablet" id="globe-at" src="<?= cdn("img/app/12.0/globe-at.png"); ?>"/>
   <br/>
   This will bring up a list of all currently installed languages (the default is English
   EuroLatin (SIL)). If you have already downloaded additional languages, they will appear here.
@@ -152,13 +152,13 @@ head([
   <br/>
   From the Keyman Settings menu, select 'Installed languages'
   <br/>
-  <img id="settings-language-ap" src="<?php echo cdn("img/app/12.0/settings-language-ap.png"); ?>" />
+  <img id="settings-language-ap" src="<?= cdn("img/app/12.0/settings-language-ap.png"); ?>" />
   <br/><br/>
   Step 3)
   From the 'Installed languages' menu, touch the <span class="command">+</span>
   button in the bottom right corner of your screen.
   <br/>
-  <img id="plus-a" src="<?php echo cdn("img/app/12.0/plus-a.png"); ?>" />
+  <img id="plus-a" src="<?= cdn("img/app/12.0/plus-a.png"); ?>" />
   <br/><br/>
   Step 4)
   <br/>
@@ -166,29 +166,29 @@ head([
   the language you want to install. Languages marked with a right arrow have multiple keyboards - for
   example we have 10+ different Tamil keyboards.
   <br/>
-  <img class="phone" id="lang-list-ap" src="<?php echo cdn("img/app/12.0/lang-list-ap.png"); ?>"/>
-  <img class="tablet" id="lang-list-at" src="<?php echo cdn("img/app/12.0/lang-list-at.png"); ?>"/>
+  <img class="phone" id="lang-list-ap" src="<?= cdn("img/app/12.0/lang-list-ap.png"); ?>"/>
+  <img class="tablet" id="lang-list-at" src="<?= cdn("img/app/12.0/lang-list-at.png"); ?>"/>
   <br/><br/>
   Select the language and keyboard you want to install - a popup will ask for confirmation,
   hit the <span class="command">Download</span> button.
   <br/>
-  <img class="phone" id="confirm-dl-ap" src="<?php echo cdn("img/app/12.0/confirm-dl-ap.png"); ?>"/>
-  <img class="tablet" id="confirm-dl-at" src="<?php echo cdn("img/app/12.0/confirm-dl-at.png"); ?>"/>
+  <img class="phone" id="confirm-dl-ap" src="<?= cdn("img/app/12.0/confirm-dl-ap.png"); ?>"/>
+  <img class="tablet" id="confirm-dl-at" src="<?= cdn("img/app/12.0/confirm-dl-at.png"); ?>"/>
   <br/><br/>
   Step 5)
   <br/>
   Once the download is complete, the new keyboard will be selected. Touch the <span class="command">&larr;</span>
   button on the top left corner of the popup several times and the new keyboard will become active.
   <br/>
-  <img class="phone" id="success-ap" src="<?php echo cdn("img/app/12.0/dl-success-ap.png"); ?>"/>
-  <img class="tablet" id="success-at" src="<?php echo cdn("img/app/12.0/dl-success-at.png"); ?>"/>
+  <img class="phone" id="success-ap" src="<?= cdn("img/app/12.0/dl-success-ap.png"); ?>"/>
+  <img class="tablet" id="success-at" src="<?= cdn("img/app/12.0/dl-success-at.png"); ?>"/>
   <br/><br/>
   Alternate Step for System Keyboard)
   <br/>
   The Keyman system keyboard has an additional <span class="command">CLOSE KEYMAN</span> button at the bottom left of
   the "Keyboards" menu. Pushing this button will close Keyman and switch to the next non-Keyman system keyboard.
   <br/>
-  <img id="close-keyman-a" src="<?php echo cdn("img/app/12.0/close-keyman-a.png"); ?> "/>
+  <img id="close-keyman-a" src="<?= cdn("img/app/12.0/close-keyman-a.png"); ?> "/>
   <br/>
 </p>
 
@@ -204,17 +204,17 @@ head([
   <br/>
   From the Keyman Settings menu, select 'Installed languages'
   <br/>
-  <img id="settings-languages-ap" src="<?php echo cdn("img/app/12.0/settings-languages-ap.png"); ?>" />
+  <img id="settings-languages-ap" src="<?= cdn("img/app/12.0/settings-languages-ap.png"); ?>" />
   <br/><br/>
   Step 3)
   From the 'Installed languages' menu, select the language for the keyboard you want to remove.
   <br/>
-  <img id="settings-two-installed-languages-ap" src="<?php echo cdn("img/app/12.0/settings-two-installed-languages-ap.png"); ?>" />
+  <img id="settings-two-installed-languages-ap" src="<?= cdn("img/app/12.0/settings-two-installed-languages-ap.png"); ?>" />
   <br/><br/>
   Step 4) The language Settings menu lists currently installed keyboards associated with the language.
   Select the keyboard you want to uninstall
   <br/>
-  <img id="khmer-settings-ap" src="<?php echo cdn("img/app/12.0/khmer-settings-ap.png"); ?>" />
+  <img id="khmer-settings-ap" src="<?= cdn("img/app/12.0/khmer-settings-ap.png"); ?>" />
   <br/><br/>
   Step 5)
   <br/>
@@ -223,17 +223,17 @@ head([
   <br/>
   Note: the default 'SIL EuroLatin' keyboard for English cannot be removed.
   <br/>
-  <img id="settings-khmer-info-ap" src="<?php echo cdn("img/app/12.0/settings-khmer-info-ap.png"); ?>"/>
+  <img id="settings-khmer-info-ap" src="<?= cdn("img/app/12.0/settings-khmer-info-ap.png"); ?>"/>
   <br/><br/>
   Step 6)
   Press "Delete" to uninstall the keyboard.
   <br/>
-  <img id="confirm-khmer-delete-ap" src="<?php echo cdn("img/app/12.0/confirm-khmer-delete-ap.png"); ?>"/>
+  <img id="confirm-khmer-delete-ap" src="<?= cdn("img/app/12.0/confirm-khmer-delete-ap.png"); ?>"/>
   <br/>
   You'll see a notification when the keyboard is deleted.
   <br/>
-  <img class="phone" id="uninstall-notification-ap" src="<?php echo cdn("img/app/12.0/uninstall-notification-ap.png"); ?>"/>
-  <img class="tablet" id="uninstall-notification-at" src="<?php echo cdn("img/app/12.0/uninstall-notification-at.png"); ?>"/>
+  <img class="phone" id="uninstall-notification-ap" src="<?= cdn("img/app/12.0/uninstall-notification-ap.png"); ?>"/>
+  <img class="tablet" id="uninstall-notification-at" src="<?= cdn("img/app/12.0/uninstall-notification-at.png"); ?>"/>
 </p>
 
 <h2>Hotkey</h2>
@@ -248,14 +248,14 @@ head([
   Step 1) Open the keyboard list by touching the globe key.
 </p>
 <p>
-  <img class="phone" id="keyboard-help1-ap" src="<?php echo cdn("img/app/12.0/globe-ap.png"); ?>"/>
-  <img class="tablet" id="keyboard-help1-at" src="<?php echo cdn("img/app/12.0/globe-at.png"); ?>"/>
+  <img class="phone" id="keyboard-help1-ap" src="<?= cdn("img/app/12.0/globe-ap.png"); ?>"/>
+  <img class="tablet" id="keyboard-help1-at" src="<?= cdn("img/app/12.0/globe-at.png"); ?>"/>
 </p>
 <br/>
 <p>
   Step 2) Touch the info icon for your keyboard.
 </p>
-<p><img id="keyboard-help2-ap" src="<?php echo cdn("img/app/12.0/info-a-gray.png"); ?>"/></p>
+<p><img id="keyboard-help2-ap" src="<?= cdn("img/app/12.0/info-a-gray.png"); ?>"/></p>
 <br/>
 
 <h2>Installing System Wide Keyboards</h2>
@@ -264,24 +264,24 @@ head([
   The screenshots below are of a device running Android 9.0 Pie.
 </p>
 <p>
-  <img class="phone" id="settings1-ap" src="<?php echo cdn("img/app/12.0/settings1-ap.png"); ?>"/>
-  <img class="tablet" id="settings1-at" src="<?php echo cdn("img/app/12.0/settings1-at.png"); ?>"/>
+  <img class="phone" id="settings1-ap" src="<?= cdn("img/app/12.0/settings1-ap.png"); ?>"/>
+  <img class="tablet" id="settings1-at" src="<?= cdn("img/app/12.0/settings1-at.png"); ?>"/>
 </p>
 <br/>
 <p>
   Step 2) Select 'Get Started' and then select 'Enable Keyman as system-wide keyboard'.
 </p>
 <p>
-  <img class="phone" id="settings2-ap" src="<?php echo cdn("img/app/12.0/settings2-ap.png"); ?>"/>
-  <img class="tablet" id="settings2-at" src="<?php echo cdn("img/app/12.0/settings2-at.png"); ?>"/>
+  <img class="phone" id="settings2-ap" src="<?= cdn("img/app/12.0/settings2-ap.png"); ?>"/>
+  <img class="tablet" id="settings2-at" src="<?= cdn("img/app/12.0/settings2-at.png"); ?>"/>
 </p>
 <br/>
 <p>
   This will open an Android settings screen for 'Available virtual keyboard'.
 </p>
 <p>
-  <img class="phone" id="settings3-ap" src="<?php echo cdn("img/app/12.0/settings3-ap.png"); ?>"/>
-  <img class="tablet" id="settings3-at" src="<?php echo cdn("img/app/12.0/settings3-at.png"); ?>"/>
+  <img class="phone" id="settings3-ap" src="<?= cdn("img/app/12.0/settings3-ap.png"); ?>"/>
+  <img class="tablet" id="settings3-at" src="<?= cdn("img/app/12.0/settings3-at.png"); ?>"/>
 </p>
 <br/>
 <p>
@@ -289,13 +289,13 @@ head([
   This will bring up two confirmation dialogs.
 </p>
 <p>
-  <img class="phone" id="settings4-ap" src="<?php echo cdn("img/app/12.0/settings4-ap.png"); ?>"/>
-  <img class="tablet" id="settings4-at" src="<?php echo cdn("img/app/12.0/settings4-at.png"); ?>"/>
+  <img class="phone" id="settings4-ap" src="<?= cdn("img/app/12.0/settings4-ap.png"); ?>"/>
+  <img class="tablet" id="settings4-at" src="<?= cdn("img/app/12.0/settings4-at.png"); ?>"/>
 </p>
 <br/>
 <p>
-  <img class="phone" id="settings5-ap" src="<?php echo cdn("img/app/12.0/settings5-ap.png"); ?>"/>
-  <img class="tablet" id="settings5-at" src="<?php echo cdn("img/app/12.0/settings5-at.png"); ?>"/>
+  <img class="phone" id="settings5-ap" src="<?= cdn("img/app/12.0/settings5-ap.png"); ?>"/>
+  <img class="tablet" id="settings5-at" src="<?= cdn("img/app/12.0/settings5-at.png"); ?>"/>
 </p>
 <br/>
 <p>
@@ -303,16 +303,16 @@ head([
   you'll see a keyboard icon at the bottom right.
 </p>
 <p>
-  <img class="phone" id="settings6-ap" src="<?php echo cdn("img/app/12.0/settings6-ap.png"); ?>"/>
-  <img class="tablet" id="settings6-at" src="<?php echo cdn("img/app/12.0/settings6-at.png"); ?>"/>
+  <img class="phone" id="settings6-ap" src="<?= cdn("img/app/12.0/settings6-ap.png"); ?>"/>
+  <img class="tablet" id="settings6-at" src="<?= cdn("img/app/12.0/settings6-at.png"); ?>"/>
 </p>
 <br/>
 <p>
   Click the keyboard icon whenever you want to change the current system keyboard.
 </p>
 <p>
-  <img class="phone" id="settings7-ap" src="<?php echo cdn("img/app/12.0/settings7-ap.png"); ?>"/>
-  <img class="tablet" id="settings7-at" src="<?php echo cdn("img/app/12.0/settings7-at.png"); ?>"/>
+  <img class="phone" id="settings7-ap" src="<?= cdn("img/app/12.0/settings7-ap.png"); ?>"/>
+  <img class="tablet" id="settings7-at" src="<?= cdn("img/app/12.0/settings7-at.png"); ?>"/>
 </p>
 <br/><br/>
 
@@ -330,7 +330,7 @@ head([
   <br/>
   From the Keyman Settings menu, select 'Add Keyboard from Device'.
 </p>
-<p><img id="settings-add-keyboard-from-device-ap" src="<?php echo cdn("img/app/12.0/settings-language-ap.png"); ?>" /></p>
+<p><img id="settings-add-keyboard-from-device-ap" src="<?= cdn("img/app/12.0/settings-language-ap.png"); ?>" /></p>
 <p>
   The device will launch a file browser where you'll browse to the directory of your KMP file.
   A common place to look is the "Downloads" folder.
@@ -348,8 +348,8 @@ head([
   Keyman for Android won't need to ask for storage permission again, unless the user revokes or uninstalls the app.
 </p>
 <p>
-  <img class="phone" id="dist-storrage-permission-ap" src="<?php echo cdn("img/app/12.0/dist-storage-permission-ap.png"); ?>"/>
-  <img class="tablet" id="dist-storrage-permission-at" src="<?php echo cdn("img/app/12.0/dist-storage-permission-at.png"); ?>"/>
+  <img class="phone" id="dist-storrage-permission-ap" src="<?= cdn("img/app/12.0/dist-storage-permission-ap.png"); ?>"/>
+  <img class="tablet" id="dist-storrage-permission-at" src="<?= cdn("img/app/12.0/dist-storage-permission-at.png"); ?>"/>
 </p>
 <p>
   Older versions of Android grant Storage permissions at app installation time, so those users can skip this step.
@@ -359,8 +359,8 @@ head([
   file, this will be displayed at the confirmation to install the keyboard package.
 </p>
 <p>
-  <img class="phone" id="dist-welcome-ap" src="<?php echo cdn("img/app/12.0/dist-welcome-ap.png"); ?>"/>
-  <img class="tablet" id="dist-welcome-at" src="<?php echo cdn("img/app/12.0/dist-welcome-at.png"); ?>"/>
+  <img class="phone" id="dist-welcome-ap" src="<?= cdn("img/app/12.0/dist-welcome-ap.png"); ?>"/>
+  <img class="tablet" id="dist-welcome-at" src="<?= cdn("img/app/12.0/dist-welcome-at.png"); ?>"/>
 </p>
 <p>
   If "welcome.htm" is not included, a generic page with the package ID and package version will be shown. Click the
@@ -371,8 +371,8 @@ head([
   "Khmer Angkor" keyboard, so it becomes the active keyboard.
 </p>
 <p>
-  <img class="phone" id="dist-install1-ap" src="<?php echo cdn("img/app/12.0/dist-install1-ap.png"); ?>"/>
-  <img class="tablet" id="dist-install1-at" src="<?php echo cdn("img/app/12.0/dist-install1-at.png"); ?>"/>
+  <img class="phone" id="dist-install1-ap" src="<?= cdn("img/app/12.0/dist-install1-ap.png"); ?>"/>
+  <img class="tablet" id="dist-install1-at" src="<?= cdn("img/app/12.0/dist-install1-at.png"); ?>"/>
 </p>
 <p>
   Once the keyboard has been downloaded, you should be able to use it as normal.
@@ -393,8 +393,8 @@ head([
   storage permission. The screenshot below is from Android 9.0 Pie.
 </p>
 <p>
-  <img class="phone" id="keyman-storage-permission-ap" src="<?php echo cdn("img/app/12.0/keyman-storage-permission-ap.png"); ?>"/>
-  <img class="tablet" id="keyman-storage-permission-at" src="<?php echo cdn("img/app/12.0/keyman-storage-permission-at.png"); ?>"/>
+  <img class="phone" id="keyman-storage-permission-ap" src="<?= cdn("img/app/12.0/keyman-storage-permission-ap.png"); ?>"/>
+  <img class="tablet" id="keyman-storage-permission-at" src="<?= cdn("img/app/12.0/keyman-storage-permission-at.png"); ?>"/>
 </p>
 
 <h2>Use the Keyman Browser</h2>
