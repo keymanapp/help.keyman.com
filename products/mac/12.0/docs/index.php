@@ -40,22 +40,7 @@ frequently asked questions, tutorials and videos.</p>
 
 <div class='rightcol'>
   <h2>Help Topics</h2>
-<!--  <div class='leftsubcol'>
-    <h3><a href='basic.php'>Using Keyman Desktop</a></h3>
-    <ul>
-      <li><a href='basic_config_menu.php'>Configuration Tasks</a></li>
-      <li><a href='basic_languageswitcher.php'>Language Switcher</a></li>
-      <li><a href='basic_osk.php'>On Screen Keyboard</a></li>
-      <li><a href='basic_fonthelper.php'>Font Helper</a></li>
-    </ul>
-    
-    <h3><a href='advanced.php'>Advanced Topics</a></h3>
-    <ul>
-      <li><a href='basic_charactermap.php'>Character Map</a></li>
-      <li><a href='start_hotkey_set.php'>Hotkeys</a></li>
-    </ul>
-  </div>-->
-  
+
   <div class='rightsubcol'>
     <h3><a href='/keyboard/'>Keyboard Layouts</a></h3>
     <ul>
@@ -77,7 +62,7 @@ frequently asked questions, tutorials and videos.</p>
     <h3>Other Resources</h3>
     <ul>
       <li><a href='/developer/'>Keyman Developer Help</a></li>
-      <li><a href='/products/web/10.0/'>KeymanWeb Help</a></li>
+      <li><a href='/products/web/12.0/'>KeymanWeb Help</a></li>
     </ul>
   </div>
 </div>

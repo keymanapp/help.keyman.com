@@ -53,6 +53,7 @@ frequently asked questions, tutorials and videos.</p>
     <h3>Keyman for macOS Documentation Versions</h3>
 
     <ul>
+      <li><a href='../../12.0/docs/'>Keyman for macOS 12.0 Documentation</a></li>
       <li><a href='../../11.0/docs/'>Keyman for macOS 11.0 Documentation</a></li>
       <li><a href='../../10.0/docs/'>Keyman for macOS 10.0 Documentation</a></li>
       <li><a href='../../1.0/docs/'>Keyman for macOS 1.0 Documentation</a></li>
@@ -61,7 +62,7 @@ frequently asked questions, tutorials and videos.</p>
     <h3>Other Resources</h3>
     <ul>
       <li><a href='/developer/'>Keyman Developer Help</a></li>
-      <li><a href='/products/web/10.0/'>KeymanWeb Help</a></li>
+      <li><a href='/products/web/11.0/'>KeymanWeb Help</a></li>
     </ul>
   </div>
 </div>
