@@ -13,7 +13,7 @@
   <dt><a href="step-2.php">Step 2: Editing Additional Files for the Package</a></dt>
   <dt><a href="step-3.php">Step 3: Checking a package and adding files</a></dt>
   <dt><a href="step-4.php">Step 4: Filling in package details</a></dt>
-  <dt><a href="step-6.php">Step 5: Compiling, testing and distributing a Package</a></dt>
+  <dt><a href="step-5.php">Step 5: Compiling, testing and distributing a Package</a></dt>
 </dl>
 
 <h2>Overview</h2>
