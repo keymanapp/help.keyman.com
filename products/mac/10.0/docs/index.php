@@ -77,7 +77,7 @@ frequently asked questions, tutorials and videos.</p>
     <h3>Other Resources</h3>
     <ul>
       <li><a href='/developer/'>Keyman Developer Help</a></li>
-      <li><a href='/products/web/10.0/'>KeymanWeb Help</a></li>
+      <li><a href='/products/web/'>KeymanWeb Help</a></li>
     </ul>
   </div>
 </div>
