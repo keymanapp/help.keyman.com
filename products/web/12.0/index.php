@@ -20,7 +20,7 @@
   Bookmarklet for your browser.
 </p>
 
-<p><a href='http://keymanweb.com'>Visit Keymanweb.com now</a></p>
-<a href='http://keymanweb.com'><img class="center" src="<?php echo cdn('img/kmw_screenshot.png'); ?>" /></a>
+<p><a href='https://keymanweb.com'>Visit Keymanweb.com now</a></p>
+<a href='https://keymanweb.com'><img class="center" src="<?php echo cdn('img/kmw_screenshot.png'); ?>" /></a>
 
 </div>
