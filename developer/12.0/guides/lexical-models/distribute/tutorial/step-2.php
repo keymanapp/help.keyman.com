@@ -2,14 +2,15 @@
   require_once('includes/template.php');
 
   head([
-    'title' => "Step 2: Creating Additional Files for the Package"
+    'title' => "Step 2: Editing Additional Files for the Package",
+    'css' => ['template.css','index.css','kmguides.css']
   ]);
 ?>
 
-<h1>Step 2: Creating Additional Files for the Package</h1>
+<h1>Step 2: Editing Additional Files for the Package</h1>
 
-<p>You should create some additional files to include in the package. If you used Keyman Developer to create your lexical model project,
-  it will have created some of these files for you. You will still need to edit them for the package.</p>
+<p>When Keyman Developer created your lexical model project, it will have created some of these files to go in the package.
+  You will still need to edit some of these templated files for the package.</p>
 
 <dl>
   <dt>readme.htm</dt>
@@ -85,7 +86,7 @@
   <dt>Lexical Model</dt>
 
   <dd>
-    <p>Add <strong>one</strong> .model.js compiled Keyman lexical model to the package. While keyboards can be distributed in
+    <p>Add <strong>one</strong> .model.js compiled Keyman lexical model to the package. While keyboards can also be distributed in
       packages, do not include them in a lexical model package.</p>
   </dd>
 
@@ -107,4 +108,4 @@
   </dd>
 </dl>
 
-<p><a href="step-3.php" title="Step 3: Creating a package and adding files">Step 3: Creating a package and adding files</a></p>
+<p><a href="step-3.php" title="Step 3: Checking a package and adding files">Step 3: Checking a package and adding files</a></p>

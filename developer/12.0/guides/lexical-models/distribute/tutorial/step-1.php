@@ -20,4 +20,4 @@ straightforward as possible for the end user.</p>
   <li>Include a 'welcome.htm' file which is displayed before install.</li>
 </ol>
 
-<p><a href="step-2.php" title="Step 2: Creating Additional Files for the Package">Step 2: Creating Additional Files for the Package</a></p>
+<p><a href="step-2.php" title="Step 2: Editing Additional Files for the Package">Step 2: Creating Additional Files for the Package</a></p>

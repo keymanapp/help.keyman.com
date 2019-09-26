@@ -2,52 +2,54 @@
   require_once('includes/template.php');
 
   head([
-    'title' => "Step 5: Shortcuts",
+    'title' => "Step 5: Compiling, testing and distributing a Package",
     'css' => ['template.css','index.css','kmguides.css']
   ]);
 ?>
 
-<h1>Step 5: Shortcuts</h1>
+<h1>Step 5: Compiling, testing and distributing a Package</h1>
 
-<p>Click on the Shortcuts tab in the Package Editor.</p>
+<p>In the Package Editor, click on the <span class="guibutton">Compile</span> tab.</p>
 
-<p><img src="<?php echo cdn("img/developer/100/tutorial_distribute_keyboard_shortcuts.png"); ?>" /></p>
+<p><img src="<?php echo cdn("img/developer/120/lm/tutorial_distribute_model_compile.png"); ?>" /></p>
 
-<p>While it may be a good idea to include Start Menu shortcuts for your package, on recent versions of Windows these are not very visible
-to end users. This means that you should ensure that all instructions are available through the <strong>welcome.htm</strong> file as well.
-The Start Menu shortcuts were designed originally for Windows-based keyboard packages and work slightly differently in macOS.</p>
+<p>Click <span class="guibutton">Compile Package</span> to compile the package into a .kmp file. Compiling takes all the files listed
+for the package, compresses them (using a .ZIP-compatible format) and adds the package information, all into a single file. If any
+files are not available, an error will be listed in the Messages window.</p>
 
-<p>You should consider adding the following items to the Start Menu:</p>
+<p>After compiling, you can test the package installation in the mobile Keyman apps.
+  You should test that all the model installs successfully, that the Welcome file is displayed
+during the install, and that the documentation is accessible to the end user.</p>
 
-<ul type="disc">
-  <li>Documentation shortcuts</li>
-  <li>Welcome.htm shortcut</li>
-</ul>
-    
-<aside>
-  <h3>Note</h3>
-  
-  <p>While Keyman Developer 8.0 and earlier versions of the documentation advised including an uninstall shortcut to the package, this is no longer recommended.
-  Users should uninstall your package from Keyman Configuration. Adding an uninstall shortcut to the package adds confusion to the 
-  Start Menu search on Windows, and is not compatible with macOS keyboards.</p>
-</aside>
+<h2>Distributing a package on the Keyman Cloud Lexical Model Repository</h2>
 
-<p>Click <span class="guibutton">New</span> to add a new shortcut to the package. Enter a description for the shortcut, and select the
-program or file to start from the Program list. Four predefined program entries (Start Product), (Product Configuration), (Product
-Help) and (About Product) will be translated into the appropriate shortcuts to start Keyman Desktop tasks as described.</p>
+<p>Once you have tested the package to your satisfaction, it is time to distribute it. We recommend submitting your
+  lexical model package to the <a href="https://github.com/keymanapp/lexical-models">Keyman Lexical Models Repository</a></p>
 
-<aside>
-  <h3>Note</h3>
+<h2>Distributing a package on your own website</h2>
 
-  <p>In Keyman 6 and earlier, the predefined targets $KEYMAN\keyman.exe and $KEYMAN\kmshell.exe were available. These are
-  translated to (Start Product) and (Product Configuration), respectively, in Keyman Desktop 7.0 and later versions.</p>
-</aside>
+<p>If you distribute a package on your own site, we have the following recommendations:</p>
 
-<aside>
-  <h3>Tip</h3>
-  
-  <p>Packages are not listed in the Control Panel Add/Remove Programs applet with Keyman Desktop 7.0 and later versions. Packages 
-  can be uninstalled through the Start Menu shortcut or from Keyman Desktop Configuration.</p>
-</aside>
+<ol>
+  <li>Ensure the MIME type on the web server or folder for .KMP files is set up to application/octet-stream. Without
+    this, .KMP files may be recognised as .ZIP files -- this is not helpful to the end user as it will be opened in the wrong
+    application.</li>
 
-<p><a href="step-6.php" title="Step 6: Compiling, testing and distributing a Package">Step 6: Compiling, testing and distributing a Package</a></p>
+  <li>Avoid putting the .KMP file in an archive (e.g. .ZIP) or self-expanding archive (.EXE) - this makes it harder for end users
+    to install. A .KMP file is already compressed (it is actually just a ZIP archive file!) and you won't save much space by
+    recompressing it.</li>
+
+  <li>Include a link to the Keyman download page: http://keyman.com/downloads/</li>
+</ol>
+<h2>Distributing a package by email</h2>
+<li>Attaching the KMP file directly to an email may be blocked for security reasons. As mentioned above, a KMP file is
+  basically a ZIP file and lexical model data is in JavaScript, this is a combination that looks suspicious to many
+  email servers. You can upload it to a Google drive, and email a link for downloading the file</li>
+
+
+<li>You may need to do some exploring to get your mobile device to load the lexical model from the KMP file into Keyman.
+  The device may not open the file directly, claiming it is an unrecognized type.
+  If you look for other options to open the file, hopefully you can get it to Keyman.
+  For example, in iOS, I had to tap on the three dots to the right, then choose "Open in" and then I could choose
+  "Copy to Keyman." In Android, I had to download the file to my device,
+  then open the KMP file in a file manager before I could install it in Keyman.</li>
