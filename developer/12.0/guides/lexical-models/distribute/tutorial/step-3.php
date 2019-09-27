@@ -28,10 +28,13 @@
 <p><img src="<?php echo cdn("img/developer/120/lm/tutorial_distribute_model_3_files.png"); ?>"
   alt="Lexical Model Package Files" /></p>
 
-<p>Keyman Developer already included a few files in your package. In the Files tab, click <span class="guibutton">Add
-  </span> to add all the additional files we discussed in the previous step to the
-  package. You can add multiple files at once, and from multiple folders. When the package is compiled, all the files will be
+<p>Keyman Developer already included your lexical model, welcome.htm, and readme.htm  files in your package.
+  In the Files tab, click <span class="guibutton">Add</span> to add all the additional files we discussed in the previous step to the
+  package. For example, if your welcome or readme files use embedded files, include them in your package.
+  You can add multiple files at once, and from multiple folders. When the package is compiled, all the files will be
   placed in the same folder within the package.</p>
+
+<p>While keyboards can also be distributed in packages, do not include them in a lexical model package.</p>
 
 <h2>Lexical Models</h2>
 <p>In the Package Editor, click on the <span class="guibutton">Lexical Models</span> tab.</p>
@@ -49,10 +52,15 @@
   <dt>Model Version</dt>
   <dd>
     <p>Update the version (intial version can default to 1.0).
-      A version number for the model and package is important - it helps your users know that they are using the most recent update of
-      your package. The version format you should use is <code class='language-none'>1.0</code>. When making a major change to your lexical model
-      package, increment the first part and set the second part to, e.g. <code class='language-none'>2.0</code>; when making a bug fix or a minor update,
-      increment the second part, e.g. <code class='language-none'>1.1</code>.</p>
+      A version number for the model and package is important - it helps your users know that they are using the most
+      recent update of your package. The version format you should use is <code class='language-none'>1.0</code>.</p>
+
+    <p>When making a major change to your lexical model package, increment the first part and set the second part to
+      <code class='language-none'>0</code>, e.g. from
+      <code class='language-none'>1.0</code> to <code class='language-none'>2.0</code>.</p>
+
+    <p>When making a bug fix or a minor update, increment the second part, e.g. from
+      <code class='language-none'>1.0</code> to <code class='language-none'>1.1</code>.</p>
 
      <p>Version numbers should be in the form <code class='language-none'>major.minor[.subversion]</code>. Subversion is optional but is helpful for small bug fix
       releases. Each of the sections of the version should be an integer. Keyman does integer comparisons on the version
@@ -63,6 +71,5 @@
 
     <p>You could stop here. This would be a completely valid package, but it would not be as good as it could be. So let's
     continue on to the next step, and fill in some descriptions of the package.</p>
-
 
 <p><a href="step-4.php" title="Step 4: Filling in package details">Step 4: Filling in package details</a></p>

@@ -2,12 +2,12 @@
   require_once('includes/template.php');
 
   head([
-    'title' => "Step 2: Editing Additional Files for the Package",
+    'title' => "Step 2: Editing .htm files for the package",
     'css' => ['template.css','index.css','kmguides.css']
   ]);
 ?>
 
-<h1>Step 2: Editing Additional Files for the Package</h1>
+<h1>Step 2: Editing .htm files for the package</h1>
 
 <p>When Keyman Developer created your lexical model project, it will have created some of these files to go in the package.
   You will still need to edit some of these templated files for the package.</p>
@@ -17,6 +17,8 @@
   <dd>
     <p>A short description of the package, its use restrictions, and what it includes. Try to keep the readme under 10 lines long.
     The readme should be an html file for optimal formatting.</p>
+
+    <p>The intention of readme.htm is to describe why a user would want to install the lexical model.</p>
 
     <p>Create the HTML file in any HTML editor.</p>
 
@@ -36,7 +38,7 @@
   <dt>welcome.htm</dt>
 
   <dd>
-    <p>When including an introductory help file in your package, you must name the file welcome.htm. This file will be
+    <p>When including an introductory help file in your package, you must keep the name of the file "welcome.htm". This file will be
     displayed before the lexical model is installed. Make sure that you design your HTML file so that it can be viewed
     on a mobile device - avoid extra wide tables or wide fixed width elements.</p>
 
@@ -73,39 +75,8 @@
     <p>If you create documents in other formats, for example PDF or printable documentation, you should link to that in the
     welcome.htm.</p>
 
-    <!-- TODO: Is this still valid?
-    <aside>
-      <h3>Tip</h3>
-
-      <p>You can include multiple "welcome.htm" files for different languages by appending a hyphen and the BCP 47
-      language code to the filename, for example welcome-fr.htm for French.</p>
-    </aside>
-    -->
   </dd>
 
-  <dt>Lexical Model</dt>
-
-  <dd>
-    <p>Add <strong>one</strong> .model.js compiled Keyman lexical model to the package. While keyboards can also be distributed in
-      packages, do not include them in a lexical model package.</p>
-  </dd>
-
-  <dt>Documentation</dt>
-
-  <dd>
-    <p>The two preferred documentation formats are HTML and PDF. You should avoid .DOC, .RTF, and other formats -- .DOC files in
-    particular are not recommended due to the possibility of macro viruses.</p>
-
-    <p>Remember that HTML files can be displayed on any computer without additional software. PDF files require Adobe Reader or a
-    compatible PDF viewer application. You may choose to include both and HTML documentation - PDF documents often print better than
-    HTML documents, but HTML documentation is more accessible and translates better to on-screen or web use.</p>
-
-    <aside>
-      <h3>Tip</h3>
-
-      <p>If you use HTML, don't forget to also add all the included files such as images and stylesheets!</p>
-    </aside>
-  </dd>
 </dl>
 
 <p><a href="step-3.php" title="Step 3: Checking a package and adding files">Step 3: Checking a package and adding files</a></p>
