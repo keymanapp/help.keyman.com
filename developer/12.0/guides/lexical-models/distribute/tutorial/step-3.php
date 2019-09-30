@@ -49,24 +49,6 @@
       lexical model.</p>
   </dd>
 
-  <dt>Model Version</dt>
-  <dd>
-    <p>Update the version (intial version can default to 1.0).
-      A version number for the model and package is important - it helps your users know that they are using the most
-      recent update of your package. The version format you should use is <code class='language-none'>1.0</code>.</p>
-
-    <p>When making a major change to your lexical model package, increment the first part and set the second part to
-      <code class='language-none'>0</code>, e.g. from
-      <code class='language-none'>1.0</code> to <code class='language-none'>2.0</code>.</p>
-
-    <p>When making a bug fix or a minor update, increment the second part, e.g. from
-      <code class='language-none'>1.0</code> to <code class='language-none'>1.1</code>.</p>
-
-     <p>Version numbers should be in the form <code class='language-none'>major.minor[.subversion]</code>. Subversion is optional but is helpful for small bug fix
-      releases. Each of the sections of the version should be an integer. Keyman does integer comparisons on the version
-      numbers, so, for example, version <code class='language-none'>2.01</code> is regarded as older than version <code class='language-none'>2.2</code>. Alphabetic
-      or date formats should be avoided as the installer for the model cannot determine which version is older reliably.</p>
-  </dd>
 </dl>
 
     <p>You could stop here. This would be a completely valid package, but it would not be as good as it could be. So let's
