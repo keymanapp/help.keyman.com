@@ -46,10 +46,7 @@ during the install, and that the documentation is accessible to the end user.</p
   basically a ZIP file and lexical model data is in JavaScript, this is a combination that looks suspicious to many
   email servers. You can upload it to a Google drive, and email a link for downloading the file</li>
 
-
-<li>You may need to do some exploring to get your mobile device to load the lexical model from the KMP file into Keyman.
-  The device may not open the file directly, claiming it is an unrecognized type.
-  If you look for other options to open the file, hopefully you can get it to Keyman.
-  For example, in iOS, I had to tap on the three dots to the right, then choose "Open in" and then I could choose
-  "Copy to Keyman." In Android, I had to download the file to my device,
-  then open the KMP file in a file manager before I could install it in Keyman.</li>
+<h2>Installing the lexical model package</h2>
+<li>The same method for installing custom keyboard packages to mobile devices can be used for installing lexical model packages.
+  Refer to these pages for <a href="../../../distribute/install-kmp-ios">Keyman for iPhone and iPad</a>
+  and <a href="../../../distribute/install-kmp-android">Keyman for Android</a>.</li>

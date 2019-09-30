@@ -9,7 +9,7 @@ head([
 <h1 class="title">Installing Custom Keyboards to your Android Device</h1>
 <h2>Overview</h2>
 
-<p>With the latest 10.0 beta release of <a href="/products/android/10.0/">Keyman for Android</a>, we've added a highly requested feature -
+<p>In the 10.0 release of <a href="/products/android/10.0/">Keyman for Android</a>, we added a highly requested feature -
     the ability to easily download/share custom keyboards to your Android device.</p>
 
 <p>Whilst Keyman for Android already supports 600+ languages, many of our customers coming from Keyman Desktop are
