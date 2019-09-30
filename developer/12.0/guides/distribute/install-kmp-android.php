@@ -25,22 +25,21 @@ head([
 <p>Once you have a website or email with a link to the keyboard package, follow these steps on your Android device
     to download and install the keyboard package into the Keyman for Android application:</p>
 
-<h2 id="step-1">Step 1) Click the link to your custom keyboard package file</h2>
+<h2 id="step-1">Step 1) Click the link to save your custom keyboard package file</h2>
 <p>The link in this example is for Khmer Angkor keyboard.</p>
 
-<p><img src="<?= cdn('img/app/10.0/dist-url-screen-ap.png')?>"></p>
+<p><img src="<?= cdn('img/app/12.0/dist-url-screen-ap.png')?>"></p>
 
-<h2 id="step-2">Step 2) Browse to the KMP file</h2>
+<h2 id="step-2">Step 2) Add Keyboard from Device</h2>
 <p>Once the KMP file is on your device, you will need to browse to the KMP file and select it.
-    If using the Chrome browser, select the Menu, then "Downloads", and select the downloaded KMP file.</p>
+    From the Keyman menu, select "Settings". From the Keyman Settings menu, select "Add Keyboard from Device".</p>
 
-<p><img src="<?= cdn('img/app/10.0/dist-downloads-ap.png')?>"></p>
+<p><img src="<?= cdn('img/app/12.0/settings-language-ap.png')?>"></p>
 
-<p>Otherwise, use the "Downloads" or file browser app available on your Android device to select the downloaded KMP file.
-  If your default file browser doesn't prompt for Keyman to open the package file, you may need to use a different file
-  browser from the Google Play store.</p>
+<p>The device will launch a file browser where you'll browse to the directory of your KMP file. A common places to
+  look is the "Downloads" folder.</p>
 
-<p><img src="<?= cdn('img/app/10.0/dist-file-browser-ap.png')?>"></p>
+<p><img src="<?= cdn('img/app/12.0/dist-file-browser-ap.png')?>"></p>
 
 <p>Selecting the KMP file should bring you to Step 3)</p>
 
@@ -49,7 +48,7 @@ head([
     access to read storage for installing the KMP file. At the dialog, select "ALLOW". Once authorized, Keyman for Android
     won't need to ask for storage permission again, unless the user revokes or uninstalls the app.</p>
 
-<p><img src="<?= cdn('img/app/10.0/dist-storage-permission-ap.png')?>"></p>
+<p><img src="<?= cdn('img/app/12.0/dist-storage-permission-ap.png')?>"></p>
 
 <p>Older versions of Android grant Storage permissions at app installation time, so those users can skip this step.</p>
 
@@ -57,7 +56,7 @@ head([
 <p>Keyman for Android will parse the metadata in the package. If the keyboard package includes a "welcome.htm" file,
     this will be displayed at the confirmation to install the keyboard package</p>
 
-<p><img src="<?= cdn('img/app/10.0/dist-welcome-ap.png')?>"></p>
+<p><img src="<?= cdn('img/app/12.0/dist-welcome-ap.png')?>"></p>
 
 <p>If "welcome.htm" is not included, a generic page with the package ID and package version will be shown.</p>
 
@@ -67,4 +66,4 @@ head([
 <p>All the keyboards in the package are installed as a group. In this example, the package only has the "Khmer Angkor"
     keyboard, so it becomes the active keyboard</p>
 
-<p><img src="<?= cdn('img/app/10.0/dist-install1-ap.png')?>"></p>
+<p><img src="<?= cdn('img/app/12.0/dist-install1-ap.png')?>"></p>
