@@ -85,7 +85,7 @@ head([
   <li><a href="installing-keyboards.php">Adding new keyboards</a></li>
   <li><a href='switching-between-keyboards.php'>Switching between keyboards</a></li>
   <li><a href='uninstalling-keyboards.php'>Removing a keyboard</a></li>
-  <li><a href='installing-custom-keyboards.php'>Installing custom keyboards</a></li>
+  <li><a href='installing-custom-packages.php'>Installing custom keyboards/dictionaries</a></li>
   <li><a href='installing-system-keyboard.php'>Installing system-wide keyboards</a></li>
   <li><a href='using-keyman-browser.php'>Using the Keyman browser</a></li>
 </ul>
