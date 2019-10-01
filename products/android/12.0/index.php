@@ -15,23 +15,14 @@ head([
 
 <p class="content-online"><a href='../version-history'>Version history</a></p>
 
-<!-- The 'tab header' will eventually have class="content-online"
-     since an embedding device can specify which version to use.
-
-     The Android app needs to add this functionality first, though. -->
-<div id="android-tab-header">
-  <a class="phone" href=".?formfactor=phone">
-  <div id="android-mobile-header">
-    <h4>Phone</h4>
-  </div>
-  </a>
-  <a class="tablet" href=".?formfactor=tablet">
-  <div id="android-tablet-header">
-    <h4>Tablet</h4>
-  </div>
-  </a>
-</div>
-<p>&nbsp;</p>
+<?php
+  // We need to condition here.  While CSS selection can affect visibility, it
+  // won't prevent offlining scripts from following the links and breaking our
+  // desired mirrored content for offline help.
+  if(!$embed_android) {
+    formFactorSelect();
+  }
+?>
 
 <p>
   Keyman for Android lets you type in over 600 languages on Android mobiles and tablets.
@@ -124,125 +115,6 @@ head([
   </tr>
 </table>
 
-<h2>Switching between Keyboards</h2>
-<p>
-  To switch keyboards, follow these steps:
-  <br/><br/>
-  Step 1)
-  <br/>
-  With the keyboard visible, touch the globe key:
-  <br/>
-  <img class="phone" id="globe-ap" src="<?= cdn("img/app/12.0/globe-ap.png"); ?>"/>
-  <img class="tablet" id="globe-at" src="<?= cdn("img/app/12.0/globe-at.png"); ?>"/>
-  <br/>
-  This will bring up a list of all currently installed languages (the default is English
-  EuroLatin (SIL)). If you have already downloaded additional languages, they will appear here.
-  Simply select them and the keyboard will re-appear with the new language.
-  <br/><br/>
-
-<h2>Adding New Keyboards</h2>
-<p>
-  To add keyboards, follow these steps:
-  <br/><br/>
-  Step 1)
-  <br/>
-  Open the menu for additional options. Select 'Settings'
-  <br/><br/>
-  Step 2)
-  <br/>
-  From the Keyman Settings menu, select 'Installed languages'
-  <br/>
-  <img id="settings-language-ap" src="<?= cdn("img/app/12.0/settings-language-ap.png"); ?>" />
-  <br/><br/>
-  Step 3)
-  From the 'Installed languages' menu, touch the <span class="command">+</span>
-  button in the bottom right corner of your screen.
-  <br/>
-  <img id="plus-a" src="<?= cdn("img/app/12.0/plus-a.png"); ?>" />
-  <br/><br/>
-  Step 4)
-  <br/>
-  A list of all available languages will appear. Scroll through this list until you find
-  the language you want to install. Languages marked with a right arrow have multiple keyboards - for
-  example we have 10+ different Tamil keyboards.
-  <br/>
-  <img class="phone" id="lang-list-ap" src="<?= cdn("img/app/12.0/lang-list-ap.png"); ?>"/>
-  <img class="tablet" id="lang-list-at" src="<?= cdn("img/app/12.0/lang-list-at.png"); ?>"/>
-  <br/><br/>
-  Select the language and keyboard you want to install - a popup will ask for confirmation,
-  hit the <span class="command">Download</span> button.
-  <br/>
-  <img class="phone" id="confirm-dl-ap" src="<?= cdn("img/app/12.0/confirm-dl-ap.png"); ?>"/>
-  <img class="tablet" id="confirm-dl-at" src="<?= cdn("img/app/12.0/confirm-dl-at.png"); ?>"/>
-  <br/><br/>
-  Step 5)
-  <br/>
-  Once the download is complete, the new keyboard will be selected. Touch the <span class="command">&larr;</span>
-  button on the top left corner of the popup several times and the new keyboard will become active.
-  <br/>
-  <img class="phone" id="success-ap" src="<?= cdn("img/app/12.0/dl-success-ap.png"); ?>"/>
-  <img class="tablet" id="success-at" src="<?= cdn("img/app/12.0/dl-success-at.png"); ?>"/>
-  <br/><br/>
-  Alternate Step for System Keyboard)
-  <br/>
-  The Keyman system keyboard has an additional <span class="command">CLOSE KEYMAN</span> button at the bottom left of
-  the "Keyboards" menu. Pushing this button will close Keyman and switch to the next non-Keyman system keyboard.
-  <br/>
-  <img id="close-keyman-a" src="<?= cdn("img/app/12.0/close-keyman-a.png"); ?> "/>
-  <br/>
-</p>
-
-<h2>Removing a Keyboard</h2>
-<p>
-  To uninstall a keyboard, follow these steps:
-  <br/><br/>
-  Step 1)
-  <br/>
-  Open the menu for additional options. Select 'Settings'
-  <br/><br/>
-  Step 2)
-  <br/>
-  From the Keyman Settings menu, select 'Installed languages'
-  <br/>
-  <img id="settings-languages-ap" src="<?= cdn("img/app/12.0/settings-languages-ap.png"); ?>" />
-  <br/><br/>
-  Step 3)
-  From the 'Installed languages' menu, select the language for the keyboard you want to remove.
-  <br/>
-  <img id="settings-two-installed-languages-ap" src="<?= cdn("img/app/12.0/settings-two-installed-languages-ap.png"); ?>" />
-  <br/><br/>
-  Step 4) The language Settings menu lists currently installed keyboards associated with the language.
-  Select the keyboard you want to uninstall
-  <br/>
-  <img id="khmer-settings-ap" src="<?= cdn("img/app/12.0/khmer-settings-ap.png"); ?>" />
-  <br/><br/>
-  Step 5)
-  <br/>
-  The bottom of the keyboard settings menu displays an option to uninstall the keyboard.
-  Select 'Uninstall keyboard' to get a prompt to delete the keyboard.
-  <br/>
-  Note: the default 'SIL EuroLatin' keyboard for English cannot be removed.
-  <br/>
-  <img id="settings-khmer-info-ap" src="<?= cdn("img/app/12.0/settings-khmer-info-ap.png"); ?>"/>
-  <br/><br/>
-  Step 6)
-  Press "Delete" to uninstall the keyboard.
-  <br/>
-  <img id="confirm-khmer-delete-ap" src="<?= cdn("img/app/12.0/confirm-khmer-delete-ap.png"); ?>"/>
-  <br/>
-  You'll see a notification when the keyboard is deleted.
-  <br/>
-  <img class="phone" id="uninstall-notification-ap" src="<?= cdn("img/app/12.0/uninstall-notification-ap.png"); ?>"/>
-  <img class="tablet" id="uninstall-notification-at" src="<?= cdn("img/app/12.0/uninstall-notification-at.png"); ?>"/>
-</p>
-
-<h2>Hotkey</h2>
-<p>
-  To switch between languages while using an external keyboard (i.e. a bluetooth keyboard), a quick and easy way is to
-  use a hotkey combination. Press and hold 'Ctrl' and then press 'Tab'.
-  You should see a list of languages/keyboards. Tap on any available language of your choice.
-</p>
-
 <h2>Accessing Keyboard Help</h2>
 <p>
   Step 1) Open the keyboard list by touching the globe key.
@@ -258,157 +130,18 @@ head([
 <p><img id="keyboard-help2-ap" src="<?= cdn("img/app/12.0/info-a-gray.png"); ?>"/></p>
 <br/>
 
-<h2>Installing System Wide Keyboards</h2>
-<p>
-  Step 1) Open the Keyman app and select the menu for additional options.
-  The screenshots below are of a device running Android 9.0 Pie.
-</p>
-<p>
-  <img class="phone" id="settings1-ap" src="<?= cdn("img/app/12.0/settings1-ap.png"); ?>"/>
-  <img class="tablet" id="settings1-at" src="<?= cdn("img/app/12.0/settings1-at.png"); ?>"/>
-</p>
-<br/>
-<p>
-  Step 2) Select 'Get Started' and then select 'Enable Keyman as system-wide keyboard'.
-</p>
-<p>
-  <img class="phone" id="settings2-ap" src="<?= cdn("img/app/12.0/settings2-ap.png"); ?>"/>
-  <img class="tablet" id="settings2-at" src="<?= cdn("img/app/12.0/settings2-at.png"); ?>"/>
-</p>
-<br/>
-<p>
-  This will open an Android settings screen for 'Available virtual keyboard'.
-</p>
-<p>
-  <img class="phone" id="settings3-ap" src="<?= cdn("img/app/12.0/settings3-ap.png"); ?>"/>
-  <img class="tablet" id="settings3-at" src="<?= cdn("img/app/12.0/settings3-at.png"); ?>"/>
-</p>
-<br/>
-<p>
-  Step 3) Enable 'Keyman' as an available virtual keyboard.
-  This will bring up two confirmation dialogs.
-</p>
-<p>
-  <img class="phone" id="settings4-ap" src="<?= cdn("img/app/12.0/settings4-ap.png"); ?>"/>
-  <img class="tablet" id="settings4-at" src="<?= cdn("img/app/12.0/settings4-at.png"); ?>"/>
-</p>
-<br/>
-<p>
-  <img class="phone" id="settings5-ap" src="<?= cdn("img/app/12.0/settings5-ap.png"); ?>"/>
-  <img class="tablet" id="settings5-at" src="<?= cdn("img/app/12.0/settings5-at.png"); ?>"/>
-</p>
-<br/>
-<p>
-  Select 'OK' on both. Now when the on-screen keyboard appears for apps other than Keyman,
-  you'll see a keyboard icon at the bottom right.
-</p>
-<p>
-  <img class="phone" id="settings6-ap" src="<?= cdn("img/app/12.0/settings6-ap.png"); ?>"/>
-  <img class="tablet" id="settings6-at" src="<?= cdn("img/app/12.0/settings6-at.png"); ?>"/>
-</p>
-<br/>
-<p>
-  Click the keyboard icon whenever you want to change the current system keyboard.
-</p>
-<p>
-  <img class="phone" id="settings7-ap" src="<?= cdn("img/app/12.0/settings7-ap.png"); ?>"/>
-  <img class="tablet" id="settings7-at" src="<?= cdn("img/app/12.0/settings7-at.png"); ?>"/>
-</p>
-<br/><br/>
+<h2>Help Index</h2>
 
-<h2>Installing Custom Keyboards</h2>
-<p>
-  Step 1) Click the link to your custom keyboard package file. The link in this example is for Khmer Angkor keyboard.
-</p>
-<p>
-  <img class="phone" id="dist-url-screen-ap" src="<?= cdn('img/app/12.0/dist-url-screen-ap.png')?>">
-  <img class="tablet" id="dist-url-screen-at" src="<?= cdn('img/app/12.0/dist-url-screen-at.png')?>">
-</p>
-<p>
-  Step 2) Once the KMP file is on your device, you will need to browse to the KMP file and select it.
-  From the Keyman menu, select 'Settings'.
-  <br/>
-  From the Keyman Settings menu, select 'Add Keyboard from Device'.
-</p>
-<p><img id="settings-add-keyboard-from-device-ap" src="<?= cdn("img/app/12.0/settings-language-ap.png"); ?>" /></p>
-<p>
-  The device will launch a file browser where you'll browse to the directory of your KMP file.
-  A common place to look is the "Downloads" folder.
-</p>
-<p>
-  <img class="phone" id="dist-file-browser-ap" src="<?= cdn('img/app/12.0/dist-file-browser-ap.png')?>">
-  <img class="tablet" id="dist-file-browser-at" src="<?= cdn('img/app/12.0/dist-file-browser-at.png')?>">
-</p>
-<p>
-  Selecting the KMP file should bring you to Step 3)
-</p>
-<p>
-  Step 3) On Android 6.0 (Marshmallow) and higher, mobile apps need to request permissions to access storage. Keyman
-  for Android needs access to read storage for installing the KMP file. At the dialog, select "ALLOW". Once authorized,
-  Keyman for Android won't need to ask for storage permission again, unless the user revokes or uninstalls the app.
-</p>
-<p>
-  <img class="phone" id="dist-storrage-permission-ap" src="<?= cdn("img/app/12.0/dist-storage-permission-ap.png"); ?>"/>
-  <img class="tablet" id="dist-storrage-permission-at" src="<?= cdn("img/app/12.0/dist-storage-permission-at.png"); ?>"/>
-</p>
-<p>
-  Older versions of Android grant Storage permissions at app installation time, so those users can skip this step.
-</p>
-<p>
-  Step 4) Keyman for Android will parse the metadata in the package. If the keyboard package includes a "welcome.htm"
-  file, this will be displayed at the confirmation to install the keyboard package.
-</p>
-<p>
-  <img class="phone" id="dist-welcome-ap" src="<?= cdn("img/app/12.0/dist-welcome-ap.png"); ?>"/>
-  <img class="tablet" id="dist-welcome-at" src="<?= cdn("img/app/12.0/dist-welcome-at.png"); ?>"/>
-</p>
-<p>
-  If "welcome.htm" is not included, a generic page with the package ID and package version will be shown. Click the
-  left "Install" button to install the entire keyboard package.
-</p>
-<p>
-  Step 5) All the keyboards in the package are installed as a group. In this example, the package only has the
-  "Khmer Angkor" keyboard, so it becomes the active keyboard.
-</p>
-<p>
-  <img class="phone" id="dist-install1-ap" src="<?= cdn("img/app/12.0/dist-install1-ap.png"); ?>"/>
-  <img class="tablet" id="dist-install1-at" src="<?= cdn("img/app/12.0/dist-install1-at.png"); ?>"/>
-</p>
-<p>
-  Once the keyboard has been downloaded, you should be able to use it as normal.
-  <br/>
-  To learn how to create a custom installable keyboard,
-  <a href="https://help.keyman.com/developer/12.0/guides/distribute/">click here</a>.
-</p>
-
-<h2>Granting storage permission</h2>
-<p>
-  If Keyman for Android is permanently denied storage access, attempts to install custom keyboards will fail with the
-  notification "Storage permission request was denied". Perform these steps to grant Keyman for Android access to storage
-</p>
-<p>
-  Step 1) Go to Android Settings.
-  <br/>
-  Step 2) Depending on your device, click "Apps", "Apps &amp; notifications", or "App permissions" and grant Keyman
-  storage permission. The screenshot below is from Android 9.0 Pie.
-</p>
-<p>
-  <img class="phone" id="keyman-storage-permission-ap" src="<?= cdn("img/app/12.0/keyman-storage-permission-ap.png"); ?>"/>
-  <img class="tablet" id="keyman-storage-permission-at" src="<?= cdn("img/app/12.0/keyman-storage-permission-at.png"); ?>"/>
-</p>
-
-<h2>Use the Keyman Browser</h2>
-<p>
-  Step 1) Click the Keyman Browser button in the Keyman app
-  <br/>
-  Step 2) Enter the URL of a website to visit into the address bar, for example <strong>google.com</strong>.
-  Keyman Browser will load the page and detect your language if it is present, and reformat it to show your
-  language instead of square boxes.
-  <br/>
-  Step 3) Use the bookmark button to save the current page for browsing later.
-  <br/>
-  Step 4) Use the Globe icon to swap between languages.
-</p>
+<ul>
+  <li class="content-in-app"><a href="index.php">Getting Started</a></li>
+  <li class="content-online"><a href="index.php">Keyman for Android help home</a></li>
+  <li><a href="installing-keyboards.php">Adding new keyboards</a></li>
+  <li><a href='switching-between-keyboards.php'>Switching between keyboards</a></li>
+  <li><a href='uninstalling-keyboards.php'>Removing a keyboard</a></li>
+  <li><a href='installing-custom-keyboards.php'>Installing custom keyboards</a></li>
+  <li><a href='installing-system-keyboard.php'>Installing system-wide keyboards</a></li>
+  <li><a href='using-keyman-browser.php'>Using the Keyman browser</a></li>
+</ul>
 
 <h2>Integrate Keyman with your App or Website</h2>
 <p>
