@@ -33,7 +33,7 @@
 <br/>
 
 <p>
-   Get the latest changes from the master respository and push them to your fork with these following commands:
+   Get the latest changes from the master repository and push them to your fork with these following commands:
 </p>
 
 <pre class="language-bash">
