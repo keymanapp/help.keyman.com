@@ -91,9 +91,9 @@ head([
 </p>
 <p>
   You'll see a notification when the dictionary is deleted.
-</p><p>
-  <img class="phone" id="uninstall-dictionary-notification-ap" src="<?= cdn("img/app/12.0/uninstall-dictionary-notification-ap.png")?>">
-  <img class="tablet" id="uninstall-dictionary-notification-ap" src="<?= cdn("img/app/12.0/uninstall-dictionary-notification-ap.png")?>">
+</p>
+<p>
+  <img id="uninstall-dictionary-notification-ap" src="<?= cdn("img/app/12.0/uninstall-dictionary-notification-ap.png")?>">
 </p>
 
 <?php
