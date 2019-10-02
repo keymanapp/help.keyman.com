@@ -93,7 +93,7 @@
       <li>
         You may find it helpful to use a dependency manager
         (such as <a href="https://github.com/Carthage/Carthage">Carthage</a>) to assist with framework
-        maintenance. You may our Cartfile (used with Carthage) for this
+        maintenance. You may find our Cartfile (used with Carthage) for this
         <a href="https://github.com/keymanapp/keyman/blob/master/ios/Cartfile">here</a>.
         <!-- Note - once we have a stable-12.0 branch, we should change the link above accordingly. -->
       </li>
@@ -138,13 +138,15 @@
 <h2 id="See_also" name="See_also">See also</h2>
 
 <ul>
+  <li><a href="/developer/engine/iphone-and-ipad/11.0/" title="Keyman Engine for iPhone and iPad 11.0">
+      Keyman Engine for iPhone and iPad 11.0</a></li>
   <li><a href="/developer/engine/iphone-and-ipad/10.0/" title="Keyman Engine for iPhone and iPad 10.0">
       Keyman Engine for iPhone and iPad 10.0</a></li>
   <li><a href="/developer/engine/iphone-and-ipad/2.0/" title="Keyman Engine for iPhone and iPad 2.0">
       Keyman Engine for iPhone and iPad 2.0</a></li>
-  <li><a href="/developer/10.0/" title="Keyman Developer 10.0">Keyman Developer 10.0</a></li>
+  <li><a href="/developer/12.0/" title="Keyman Developer 12.0">Keyman Developer 12.0</a></li>
   <li><a href='http://keyman.com/developer/keymanweb/keyboards.php' title="Keyboard Library">Keyboard Library</a></li>
-  <li><a href="/developer/engine/android/10.0/" title="Keyman Engine for Android 10.0">Keyman Engine for Android 10.0</a></li>
+  <li><a href="/developer/engine/android/12.0/" title="Keyman Engine for Android 12.0">Keyman Engine for Android 10.0</a></li>
 </ul>
 
   

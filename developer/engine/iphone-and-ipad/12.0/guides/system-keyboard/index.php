@@ -88,6 +88,6 @@ on their own.  (Unfortunately, apps cannot directly summon the appropriate menu.
 
 <ul>
   <li><a href="../in-app/">Part 1 of this series</a></li>
-  <li><a href="/developer/11.0/" target="_blank">Keyman Developer Documentation</a></li>
+  <li><a href="/developer/12.0/" target="_blank">Keyman Developer Documentation</a></li>
   <li><a href="http://developer.apple.com/" target="_blank">Apple Developer Home</a></li>
 </ul>
