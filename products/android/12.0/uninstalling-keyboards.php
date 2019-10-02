@@ -32,20 +32,20 @@ head([
 </p><p>
   From the Keyman Settings menu, select 'Installed languages'
 </p><p>
-  <img id="settings-languages-ap" src="<?= cdn("img/app/12.0/settings-languages-ap.png"); ?>" />
+  <img id="settings-languages-ap" src="<?= cdn("img/app/12.0/settings-languages-ap.png")?>">
 </p><p>
   Step 3)
 </p><p>
   From the 'Installed languages' menu, select the language for the keyboard you want to remove.
 </p><p>
-  <img id="settings-two-installed-languages-ap" src="<?= cdn("img/app/12.0/settings-two-installed-languages-ap.png"); ?>" />
+  <img id="settings-two-installed-languages-ap" src="<?= cdn("img/app/12.0/settings-two-installed-languages-ap.png")?>">
 </p><p>
   Step 4)
 </p><p>
   The language Settings menu lists currently installed keyboards associated with the language.
   Select the keyboard you want to uninstall
 </p><p>
-  <img id="khmer-settings-ap" src="<?= cdn("img/app/12.0/khmer-settings-ap.png"); ?>" />
+  <img id="khmer-settings-ap" src="<?= cdn("img/app/12.0/khmer-settings-ap.png")?>">
 </p><p>
   Step 5)
 </p><p>
@@ -54,29 +54,20 @@ head([
 </p><p>
   Note: the default 'SIL EuroLatin' keyboard for English cannot be removed.
 </p><p>
-  <img id="settings-khmer-info-ap" src="<?= cdn("img/app/12.0/settings-khmer-info-ap.png"); ?>"/>
+  <img id="settings-khmer-info-ap" src="<?= cdn("img/app/12.0/settings-khmer-info-ap.png")?>">
 </p><p>
   Step 6)
 </p><p>
   Press "Delete" to uninstall the keyboard.
 </p><p>
-  <img id="confirm-khmer-delete-ap" src="<?= cdn("img/app/12.0/confirm-khmer-delete-ap.png"); ?>"/>
+  <img id="confirm-khmer-delete-ap" src="<?= cdn("img/app/12.0/confirm-khmer-delete-ap.png")?>">
 </p><p>
   You'll see a notification when the keyboard is deleted.
 </p><p>
-  <img class="phone" id="uninstall-notification-ap" src="<?= cdn("img/app/12.0/uninstall-notification-ap.png"); ?>"/>
-  <img class="tablet" id="uninstall-notification-at" src="<?= cdn("img/app/12.0/uninstall-notification-at.png"); ?>"/>
+  <img class="phone" id="uninstall-notification-ap" src="<?= cdn("img/app/12.0/uninstall-notification-ap.png")?>">
+  <img class="tablet" id="uninstall-notification-at" src="<?= cdn("img/app/12.0/uninstall-notification-at.png")?>">
 </p>
 
-<h2>Help Index</h2>
-
-<ul>
-  <li class="content-in-app"><a href="index.php">Getting Started</a></li>
-  <li class="content-online"><a href="index.php">Keyman for Android help home</a></li>
-  <li><a href="installing-keyboards.php">Adding new keyboards</a></li>
-  <li><a href='switching-between-keyboards.php'>Switching between keyboards</a></li>
-  <li><a href='uninstalling-keyboards.php'>Removing a keyboard</a></li>
-  <li><a href='installing-custom-keyboards.php'>Installing custom keyboards</a></li>
-  <li><a href='installing-system-keyboard.php'>Installing system-wide keyboards</a></li>
-  <li><a href='using-keyman-browser.php'>Using the Keyman browser</a></li>
-</ul>
+<?php
+include('./_shared/help_links.php');
+?>
