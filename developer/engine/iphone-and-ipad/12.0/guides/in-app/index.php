@@ -29,7 +29,7 @@
 <h3>2. Download the Keyman Engine for iOS and Sample Project</h3>
 <ol>
   <li>Keyman 10+ users can download the engine from downloads.keyman.com
-    <p>Download the latest <a href="https://downloads.keyman.com/ios/alpha/">keyman-engine-ios.zip</a>
+    <p>Download the latest <a href="https://downloads.keyman.com/ios/stable/">keyman-engine-ios.zip</a>
       and extract the files to a new folder.</p>
   </li>
 </ol>
