@@ -50,7 +50,7 @@ c:\projects\keyboards-starter
 <p>
     Before starting work on a keyboard, you should keep your local <i>keyboards-starter</i> files in sync with our
     <a href="https://github.com/keymanapp/keyboards-starter">keyboards-starter</a> repository. This keeps the
-    command line keyboard compiler up to date. Get the latest changes from the master respository with these following
+    command line keyboard compiler up to date. Get the latest changes from the master repository with these following
     commands:
 </p>
 

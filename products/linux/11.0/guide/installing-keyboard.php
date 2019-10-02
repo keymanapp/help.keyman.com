@@ -16,7 +16,7 @@ head([
   <img src="<?php echo cdn("img/linux/110/km-config.png"); ?>" alt="Keyman Configuration" />
 </p>
 
-<h2 class="red">Download from Keyman cloud respository</h2>
+<h2 class="red">Download from Keyman cloud repository</h2>
 <p>
   From Keyman Configuration, click "Download". At the search page, enter the keyboard you want to download.
 </p>
