@@ -20,7 +20,7 @@
 
 <h2 id="Examples1">Examples</h2>
 
-<h3 id="Example1-1” name="Example:_Using_method">Example: Using <code><?php echo $method.'()' ?></code></h3>
+<h3 id="Example1-1" name="Example:_Using_method">Example: Using <code><?php echo $method.'()' ?></code></h3>
 <p>The following script illustrates the use of <code><?php echo $method.'()' ?></code>
     in the Keyman for iPhone and iPad app's "Getting Started" view so that the keyboard doesn't hide the lower options on certain devices</p>
 <pre class="language-swift"><code>Manager.shared.showKeyboard()

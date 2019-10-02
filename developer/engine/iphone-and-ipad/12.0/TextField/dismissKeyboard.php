@@ -19,7 +19,7 @@ head(['title' => $class.'.'.$method.'()']);
 
 <h2 id="Examples">Examples</h2>
 
-<h3 id="Example:_Using_method” name="Example:_Using_method">Example: Using <code><?php echo $method.'()' ?></code></h3>
+<h3 id="Example:_Using_method" name="Example:_Using_method">Example: Using <code><?php echo $method.'()' ?></code></h3>
 <p>The following script illustrates the use of <code><?php echo $method.'()' ?></code>:</p>
 <pre class="language-swift"><code>TextField.dismissKeyboard()
 </code></pre>

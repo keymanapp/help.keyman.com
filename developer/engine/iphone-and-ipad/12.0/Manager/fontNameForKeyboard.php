@@ -27,7 +27,7 @@
 <h2 id="Description" name="Description">Description</h2>
 <p>This syntax can be used for getting the font name of a keyboard.</p>
 
-<h3 id="Example:_Using_method” name="Example:_Using_method">Example 1: Using <code><?php echo $method.'()' ?></code></h3>
+<h3 id="Example:_Using_method" name="Example:_Using_method">Example 1: Using <code><?php echo $method.'()' ?></code></h3>
 <p>The following script illustrates the use of <code><?php echo $method.'()' ?></code>:</p>
 <pre class="language-swift"><code>let fontName: String?
 if let id = Manager.shared.currentKeyboardID {

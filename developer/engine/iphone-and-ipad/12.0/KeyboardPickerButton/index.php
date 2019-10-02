@@ -29,7 +29,7 @@
 
 <h2 id="Examples">Examples</h2>
 
-<h3 id="Example:_Using_method” name="Example:_Using_method">Example: Using <code><?php echo $class.'()' ?></code></h3>
+<h3 id="Example:_Using_method" name="Example:_Using_method">Example: Using <code><?php echo $class.'()' ?></code></h3>
 <p>The following script illustrates the use of <code><?php echo $class . '()' ?></code>:</p>
 <pre class="language-swift"><code>let kbButton = KeyboardPickerButton(presentingVC: self)
 </code></pre>

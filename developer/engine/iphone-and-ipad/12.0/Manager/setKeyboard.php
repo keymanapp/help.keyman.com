@@ -31,7 +31,7 @@
 
 <h2 id="Examples1">Examples</h2>
 
-<h3 id="Example1-1” name="Example:_Using_method">Example 1: Using <code><?php echo $method.'()' ?></code></h3>
+<h3 id="Example1-1" name="Example:_Using_method">Example 1: Using <code><?php echo $method.'()' ?></code></h3>
 <p>The following script illustrates the use of <code><?php echo $method.'()' ?></code>:</p>
 <pre class="language-swift"><code>    // Setting a Keyman keyboard
     Manager.setKeyboard("sil_euro_latin");
@@ -56,7 +56,7 @@
 
 <h2 id="Examples2">Examples</h2>
 
-<h3 id="Example2-1” name="Example:_Using_method">Example 1: Using <code><?php echo $method.'()' ?></code></h3>
+<h3 id="Example2-1" name="Example:_Using_method">Example 1: Using <code><?php echo $method.'()' ?></code></h3>
 <p>The following script illustrates the use of <code><?php echo $method.'()' ?></code>:</p>
 <pre class="language-swift"><code>for keyboard in keyboards {
   Manager.shared.addKeyboard(keyboard)

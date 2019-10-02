@@ -32,7 +32,7 @@
 
 <h2 id="Examples1">Examples</h2>
 
-<h3 id="Example1-1” name="Example:_Using_method">Example: Using <code><?php echo $method.'()' ?></code></h3>
+<h3 id="Example1-1" name="Example:_Using_method">Example: Using <code><?php echo $method.'()' ?></code></h3>
 <p>The following script illustrates the use of <code><?php echo $method.'()' ?></code>:</p>
 <pre class="language-swift"><code>Manager.removeKeyboard('tamil99');
 </code></pre>
@@ -56,7 +56,7 @@
 
 <h2 id="Examples2">Examples</h2>
 
-<h3 id="Example2-1” name="Example:_Using_method">Example: Using <code><?php echo $method.'()' ?></code></h3>
+<h3 id="Example2-1" name="Example:_Using_method">Example: Using <code><?php echo $method.'()' ?></code></h3>
 <p>The following script illustrates the use of <code><?php echo $method.'()' ?></code>:</p>
 <pre class="language-swift"><code>if Manager.shared.removeKeyboard(at: indexPath.row) {
   loadUserKeyboards()
