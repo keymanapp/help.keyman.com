@@ -53,50 +53,63 @@
 <h2>Adding the Keyman Engine for iPhone and iPad SDK to your project</h2>
 
 <p>
-    1) create a new iOS project
-    <br/><br/>
-    2) drag the 'libKeyman' folder into your project
+    1) Create a new iOS project
+</p><p>
+    2) On your project's "General" tab, click the '+' sign under "Embedded Binaries" to add KeymanEngine.framework.
     <ul>
-        <li>this includes the library itself, some headers and a resources bundle</li>
-        <li>Xcode should automatically link the library and setup the bundle for copying</li>
+      <li>If you wish to use KeymanEngine-universal.framework instead for development, be aware
+      that you may need to note the following:
         <ul>
-            <li>if not, go to your target's "Build Phases" tab and add:</li>
-            <ul>
-                <li>'libKeyman.a' to "Link Binary With Libraries"</li>
-                <li>'Keyman.bundle' to "Copy Bundle Resources"</li>
-            </ul>
+          <li>Xcode may have issues with the "-universal" part of the name; dropping this component after
+            copying may be prudent.</li>
+          <li>The 12.0 version of Keyman Engine for iPhone and iPad was compiled using Swift 4.</li>
+          <li>Dragging the framework into the project will not properly set the framework up for embedding.</li>
         </ul>
+      </li>
+      <li>When done properly, Xcode should automatically link the library and setup the bundle for copying.
+      <ul>
+          <li>To verify, go to your target's "Build Phases" tab and check that the following details are in place:</li>
+          <ul>
+              <li>'KeymanEngine.framework' is set within "Link Binary With Libraries"</li>
+              <li>'KeymanEngine.framework' is set within "Embed Frameworks"</li>
+          </ul>
+      </ul>
+      </li>
     </ul>
-    <br/><br/>
-    3) add '-all_load' to 'other linker flags' in your project or target build settings
-    <ul>
-        <li>otherwise categories in the static library will fail and your app will crash at runtime</li>
-    </ul>
-    <br/><br/>
-    4) add the following frameworks/libraries to your project:
+</p>
+<p>
+    3) Include KeymanEngine's dependencies within your project:
     <br/>
        (found in 'Link Binary With Libraries' in your target's 'build phases' tab)
     <ul>
-        <li>CFNetwork</li>
-        <li>MobileCoreServices</li>
-        <li>Libz</li>
-        <li>SystemConfiguration</li>
-        <li>CoreGraphics</li>
-        <li>UIKit</li>
-        <li>CoreText</li>
-        <li>AudioToolbox</li>
+      <li>Ensure each of the following frameworks is included under "Embedded Binaries":
+      <ul>
+        <li>DeviceKit</li>
+        <li>ObjcExceptionBridging</li>
+        <li>Reachability</li>
+        <li>XCGLogger</li>
+        <li>Zip</li>
+      </ul></li>
+      <li>
+        You may find it helpful to use a dependency manager
+        (such as <a href="https://github.com/Carthage/Carthage">Carthage</a>) to assist with framework
+        maintenance. You may our Cartfile (used with Carthage) for this
+        <a href="https://github.com/keymanapp/keyman/blob/master/ios/Cartfile">in our Github repo</a>.
+        <!-- Note - once we have a stable-12.0 branch, we should change the link above accordingly. -->
+      </li>
     </ul>
-    <br/><br/>
-    5) import "Keyman.h" into any source files which require any Keyman classes
-    <br/><br/>
-    6) [OPTIONAL] add the language .js files which you want to use to your project (e.g. thai_kedmanee.js)
+</p>
+<p>
+    4) Import "KeymanEngine" into any source files requiring Keyman classes.
+</p><p>
+    5) [OPTIONAL] Add the language .js files which you want to use to your project (e.g. thai_kedmanee.js)
     <ul>
         <li>drag them into the project</li>
         <li>go to your target, then the "Build Phases" tab, and add them to the "Copy Bundle Resources" section</li>
         <li>to avoid xcode warnings, remove them from the "Compile Sources" section</li>
     </ul>
-    <br/><br/>
-    7) [OPTIONAL] set the initial language prior to showing the keyboard for the first time
+</p><p>
+    6) [OPTIONAL] Set the initial language prior to showing the keyboard for the first time
     <ul>
         <li>it is recommended to do this when the app first launches</li>
         <li>e.g. for Thai Kedmanee
@@ -108,7 +121,7 @@
 
 <h2>Keyman Demo</h2>
 <p>
-  To see the SDK in action, open the KeymanDemo project. All of the above steps have already been performed.
+  To see the SDK in action, open the samples folder to find two small sample projects. All of the above steps have already been performed.
   <br/><br/>
   Additionally, you can see examples of:
   <ul>
