@@ -48,10 +48,10 @@ head([
     alt="AddEmbeddedCSS" border="0"/></a></p>
 
 <p>The CSS rules required to style your keyboard are beyond the scope of this post, but the <strong>kmwosk.css</strong>
-    file included in the Keyman Developer 11.0 distribution and in the
+    file included in the Keyman Developer 12.0 distribution and in the
     <a href="https://github.com/keymanapp/keyman/blob/master/web/source/resources/osk/kmwosk.css" target="_blank">
-    KeymanWeb 11.0 source</a>&nbsp;is a good place to start. See this
-    <a href="http://help.keyman.com/developer/engine/web/10.0/reference/osk/classes">reference</a> for more information
+    KeymanWeb 12.0 source</a>&nbsp;is a good place to start. See this
+    <a href="http://help.keyman.com/developer/engine/web/12.0/reference/osk/classes">reference</a> for more information
     about the On-Screen Keyboard.</p>
 
 <p>Do take the time to read through the source of <strong>KMSample2</strong>, as it includes some boilerplate code
