@@ -88,19 +88,19 @@
 
 <h2 id="Examples">Examples</h2>
 
-<h3 id="Example:_Using_method” name="Example:_Using_method">Example 1: Using <code><?php echo $method.'()' ?></code></h3>
+<h3 id="Example:_Using_method" name="Example:_Using_method">Example 1: Using <code><?php echo $method.'()' ?></code></h3>
 <p>The following script illustrate the use of <code><?php echo $method.'()' ?></code>:</p>
 <pre class="language-javascript line-numbers"><code>    // Setting a Keyman keyboard
     KMManager.setKeyboard("EuroLatin2", "en");
 </code></pre>
 
-<h3 id="Example:_Using_method” name="Example:_Using_method">Example 2: Using <code><?php echo $method.'()' ?></code></h3>
+<h3 id="Example:_Using_method" name="Example:_Using_method">Example 2: Using <code><?php echo $method.'()' ?></code></h3>
 <p>The following script illustrate the use of <code><?php echo $method.'()' ?></code>:</p>
 <pre class="language-javascript line-numbers"><code>    // Setting a custom keyboard which exists in assets/languages/
     KMManager.setKeyboard("tamil99m", "ta", "Tamil 99M", "Tamil", "aava1.ttf", "aava1.ttf");
 </code></pre>
 
-<h3 id="Example:_Using_method” name="Example:_Using_method">Example 3: Using <code><?php echo $method.'()' ?></code></h3>
+<h3 id="Example:_Using_method" name="Example:_Using_method">Example 3: Using <code><?php echo $method.'()' ?></code></h3>
 <p>The following script illustrate the use of <code><?php echo $method.'()' ?></code>:</p>
 <pre class="language-javascript line-numbers"><code>    // Setting a custom keyboard which exists in keyboards list
     int kbIndex = KMManager.getKeyboardIndex(this, "tamil99m", "ta");

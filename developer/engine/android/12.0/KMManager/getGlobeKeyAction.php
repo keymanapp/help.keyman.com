@@ -29,7 +29,7 @@
 
 <h2 id="Examples">Examples</h2>
 
-<h3 id="Example:_Using_method” name="Example:_Using_method">Example: Using <code><?php echo $method.'()' ?></code></h3>
+<h3 id="Example:_Using_method" name="Example:_Using_method">Example: Using <code><?php echo $method.'()' ?></code></h3>
 <p>The following script illustrate the use of <code><?php echo $method.'()' ?></code>:</p>
 <pre class="language-javascript line-numbers"><code>    GlobeKeyAction action = KMManager.getGlobeKeyAction(KeyboardType.KEYBOARD_TYPE_SYSTEM);
 </code></pre>
