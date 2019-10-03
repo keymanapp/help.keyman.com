@@ -19,7 +19,8 @@
 <p>Returns the keyboard height (CGFloat)</p>
 
 <h2 id="Description" name="Description">Description</h2>
-<p>This syntax can be used for getting the keyboard height.</p>
+<p>This syntax can be used for getting the keyboard height, including any space occupied
+  by its banner if shown.</p>
 
 <h2 id="Examples">Examples</h2>
 

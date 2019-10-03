@@ -41,6 +41,9 @@
     <dt><code><a href='downloadKeyboard.php'>downloadKeyboard()</a></code></dt>
     <dd>asynchronously fetches the keyboard files</dd>
 
+    <dt><code><a href='downloadKeyboard.php'>downloadLexicalModel()</a></code></dt>
+    <dd>asynchronously fetches the dictionary files</dd>
+
     <dt><code><a href='fontNameForKeyboard.php'>fontNameForKeyboard()</a></code></dt>
     <dd>returns the font name for the given keyboard ID and language ID</dd>
 
