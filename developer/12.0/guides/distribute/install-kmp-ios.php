@@ -9,7 +9,7 @@ head([
 <h1 class="title">Installing Custom Keyboards to your iPhone or iPad</h1>
 <h2>Overview</h2>
 
-<p>With the latest 10.0 alpha release of <a href="/products/iphone-and-ipad/10.0/">Keyman for iPhone and iPad</a>, we've added a highly requested feature -
+<p>In the 10.0 release of <a href="/products/iphone-and-ipad/10.0/">Keyman for iPhone and iPad</a>, we added a highly requested feature -
     the ability to easily download custom keyboards to your iOS device.</p>
 
 <h2>Installing a custom keyboard</h2>

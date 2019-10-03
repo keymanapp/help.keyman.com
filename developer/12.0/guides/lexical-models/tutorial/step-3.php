@@ -56,7 +56,7 @@ Here is my list of words, with the count of how many times I’ve seen the word:
 <h2>Editing the .TSV in Keyman Developer</h2>
 <p>If you plan to only edit a few entries for your wordlist, you can use the TSV editor in Keyman Developer. The project
 template created a wordlist named <strong>wordlist.tsv</strong> that we will now edit.</p>
-<p>In Keyman Developer from the File menu select Open. Set the filetypes to "All Files (*.*)". Browse to your project source directory and open wordlist.tsv.</p>
+<p>In Keyman Developer project view, select the Models tab and click on wordlist.tsv.</p>
 
 <figure>
   <img src="<?= cdn('img/developer/120/lm/developer-open-tsv.png') ?>"
