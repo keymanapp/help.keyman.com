@@ -41,6 +41,9 @@
     <dt><code><a href='downloadKeyboard.php'>downloadKeyboard()</a></code></dt>
     <dd>asynchronously fetches the keyboard files</dd>
 
+    <dt><code><a href='downloadKeyboard.php'>downloadLexicalModel()</a></code></dt>
+    <dd>asynchronously fetches the dictionary files</dd>
+
     <dt><code><a href='fontNameForKeyboard.php'>fontNameForKeyboard()</a></code></dt>
     <dd>returns the font name for the given keyboard ID and language ID</dd>
 
@@ -56,7 +59,7 @@
     -->
 
     <dt><code><a href='parseKMP.php'>parseKMP()</a></code></dt>
-    <dd>install the keyboards from a KMP keyboard package</dd>
+    <dd>install the resources from a KMP package for keyboards or dictionaries</dd>
 
     <dt><code><a href='preloadFiles.php'>preloadFiles()</a></code></dt>
     <dd>preloads the JS and font files required for a keyboard</dd>
@@ -74,7 +77,10 @@
     <dd>displays a list of available keyboards and allows a user to add/remove keyboards</dd>
 
     <dt><code><a href='stateForKeyboard.php'>stateForKeyboard()</a></code></dt>
-    <dd>returns the current state for a keyboard</dd>
+    <dd>returns the current state of availability for a keyboard</dd>
+
+    <dt><code><a href='stateForLexicalModel.php'>stateForLexicalModel()</a></code></dt>
+    <dd>returns the current state of availability for a dictionary</dd>
 
     <dt><code><a href='switchToNextKeyboard.php'>switchToNextKeyboard()</a></code></dt>
     <dd>loads the next available keyboard in keyboards list</dd>
