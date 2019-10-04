@@ -29,13 +29,26 @@
 <h2 id="Description" name="Description">Description</h2>
 <p>This syntax can be used for installing resources from a KMP package.</p>
 
-<h3 id="Example:_Using_method" name="Example:_Using_method">Example 1: Using <code><?php echo $method.'()' ?></code></h3>
+<h3 id="Example:_Using_method" name="Example:_Using_method">Example 1: Using <code><?php echo $method.'()' ?></code> to install a keyboard</h3>
 <p>The following script illustrates the use of <code><?php echo $method.'()' ?></code>:</p>
 <pre class="language-swift"><code>let adhocKbdDir = _adhocDirectory {
   self.window?.rootViewController?.dismiss(animated: true, completion: {
   do {
-    try Manager.shared.parseKMP(adhocKbdDir)
+    try Manager.shared.parseKMP(adhocKbdDir) // assumes .keyboard by default
       self.showSimpleAlert(title: "Success", message: "All keyboards installed successfully.")
+    } catch {
+      self.showKMPError(error as! KMPError)
+  }
+}
+</code></pre>
+
+<h3 id="Example:_Using_method2" name="Example:_Using_method">Example 2: Using <code><?php echo $method.'()' ?></code> to install a dictionary</code></h3>
+<p>The following script illustrates the use of <code><?php echo $method.'()' ?></code>:</p>
+<pre class="language-swift"><code>let adhocDictDir = _adhocDirectory {
+  self.window?.rootViewController?.dismiss(animated: true, completion: {
+  do {
+    try Manager.shared.parseKMP(adhocKbdDir, type: .lexicalModel)
+      self.showSimpleAlert(title: "Success", message: "Dictionary installed successfully.")
     } catch {
       self.showKMPError(error as! KMPError)
   }

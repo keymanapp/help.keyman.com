@@ -57,7 +57,7 @@
 <h3 id="Parameters2" name="Parameters">Parameters</h3>
 <dl>
     <dt><code><?= $param5 ?></code></dt>
-    <dd>URL to a JSON description of the keyboard.</dd>
+    <dd>URL to a .KMP package containing the keyboard.</dd>
 </dl>
 
 <h2 id="Description2" name="Description">Description</h2>
