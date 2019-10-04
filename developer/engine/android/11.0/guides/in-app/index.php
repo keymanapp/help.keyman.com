@@ -43,7 +43,7 @@ yes | ./sdkmanager.bat --licenses
 <h3>3. Download Keyman Engine for Android and Build Sample projects</h3>
 <ol>
     <li>Keyman 10+ users can download the engine from downloads.keyman.com
-        <p>Download the latest <a href="https://downloads.keyman.com/android/alpha/">keyman-engine-android.zip</a>
+        <p>Download the latest <a href="https://downloads.keyman.com/android/stable/">keyman-engine-android.zip</a>
             and extract the files to a new folder.</p>
     </li>
 </ol>
