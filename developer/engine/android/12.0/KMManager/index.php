@@ -34,11 +34,32 @@
   <dt><code><a href='addKeyboardEventListener.php'>addKeyboardEventListener()</a></code></dt>
   <dd>adds the specified listener into the list of keyboard event listeners</dd>
 
+  <dt><code>addLexicalModel()</code></dt>
+  <dd>adds a lexical model into the lexical models list</dd>
+
+  <dt><code>advanceToNextInputMode()</code></dt>
+  <dd>switch to the next system keyboard input mode</dd>
+
   <dt><code><a href='canAddNewKeyboard.php'>canAddNewKeyboard()</a></code></dt>
   <dd>returns whether adding a new keyboard is enabled in the keyboard picker menu</dd>
 
+  <dt><code>canRemoveKeyboard()</code></dt>
+  <dd>returns whether removing a keyboard is enabled in the keyboard picker menu</dd>
+
   <dt><code><a href='createInputView.php'>createInputView()</a></code></dt>
   <dd>creates the input view to be used in InputMethodService</dd>
+
+  <dt><code>deregisterLexicalModel()</code></dt>
+  <dd>deregisters the specified lexical model from the LMLayer so it isn't used</dd>
+
+  <dt><code>executeHardwareKeystroke()</code></dt>
+  <dd>process the keystroke generated from a physical keyboard</dd>
+
+  <dt><code>getAssociatedLexicalModel()</code></dt>
+  <dd>search the installed lexical models list and see if there's an associated model for a given language</dd>
+
+  <dt><code><a href='getBannerHeight.php'>getBannerHeight()</a></code></dt>
+  <dd>returns the height of the suggestion banner</dd>
 
   <dt><code><a href='getCurrentKeyboardIndex.php'>getCurrentKeyboardIndex()</a></code></dt>
   <dd>returns index number of the current keyboard in keyboards list</dd>
@@ -85,8 +106,17 @@
   <dt><code><a href='getKeyboardTextFontTypeface.php'>getKeyboardTextFontTypeface()</a></code></dt>
   <dd>creates a new typeface from the selected keyboard's text font</dd>
 
+  <dt><code>getKMKeyboard()</code></dt>
+  <dd>returns the KMKeyboard depending whether it's an in-app or system keyboard</dd>
+
   <dt><code><a href='getLatestKeyboardFileVersion.php'>getLatestKeyboardFileVersion()</a></code></dt>
   <dd>returns the specified keyboard's latest file version number</dd>
+
+  <dt><code>getLexicalModelInfo()</code></dt>
+  <dd>returns information dictionary of the specified lexical model</dd>
+
+  <dt><code>getLexicalModelsList()</code></dt>
+  <dd>returns the array of lexical models list</dd>
 
   <dt><code><a href='getVersion.php'>getVersion()</a></code></dt>
   <dd>returns the version number of Keyman Engine</dd>
@@ -109,6 +139,9 @@
   <dt><code><a href='keyboardExists.php'>keyboardExists()</a></code></dt>
   <dd>returns whether the specified keyboard exists in keyboards list</dd>
 
+  <dt><code>lexicalModelExists()</code></dt>
+  <dd>returns whether the specified lexical model exists in lexical models list</dd>
+
   <dt><code><a href='onConfigurationChanged.php'>onConfigurationChanged()</a></code></dt>
   <dd>performs necessary actions in an InputMethodService's <code>onConfigurationChanged()</code></dd>
 
@@ -124,6 +157,12 @@
   <dt><code><a href='onStartInput.php'>onStartInput()</a></code></dt>
   <dd>performs necessary actions in an InputMethodService's <code>onStartInput()</code></dd>
 
+  <dt><code>registerAssociatedLexicalModel()</code></dt>
+  <dd>registers a lexical model with the associated language ID</dd>
+
+  <dt><code>registerLexicalModel()</code></dt>
+  <dd>registers a lexical model to use with the LMLayer</dd>
+
   <dt><code><a href='removeKeyboard.php'>removeKeyboard()</a></code></dt>
   <dd>removes the keyboard at specified position from the keyboards list</dd>
 
@@ -135,6 +174,9 @@
 
   <dt><code><a href='setCanAddNewKeyboard.php'>setCanAddNewKeyboard()</a></code></dt>
   <dd>sets whether adding a new keyboard is allowed in the keyboard picker menu</dd>
+
+  <dt><code>setCanRemoveKeyboard()</code></dt>
+  <dd>sets whether removing a keyboard is allowed in the keyboard picker menu</dd>
 
   <dt><code><a href='setDebugMode.php'>setDebugMode()</a></code></dt>
   <dd>enables or disables debugging of Keyman Engine</dd>
@@ -151,7 +193,7 @@
   <dt><code><a href='setKeyboardPickerFont.php'>setKeyboardPickerFont()</a></code></dt>
   <dd>sets the font for the keyboard picker menu</dd>
 
-  <dt><code><a href='setKeymanLicense.php'>setKeymanLicense()</a></code></dt>
+  <dt><code><strike>setKeymanLicense() (Deprecated)</strike></code></dt>
   <dd>sets the developer license/key pair to unlock Keyman Engine</dd>
 
   <dt><code><a href='setShouldAllowSetKeyboard.php'>setShouldAllowSetKeyboard()</a></code></dt>
