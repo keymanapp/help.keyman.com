@@ -20,13 +20,13 @@
 	<script type="text/javascript">
 
 	 // Add a script element as a child of the body
-	 
+
 	 function downloadJS(src) {
 		 var element = document.createElement("script");
 		 element.src = src;
 		 document.body.appendChild(element);
 	 }
-	 
+
 	 function downloadJSAtOnload() {
 		downloadJS("<?php echo cdn("js/jquery1-10-2.js"); ?>");
 		downloadJS("<?php echo cdn("js/kmlive.js"); ?>");
@@ -39,15 +39,6 @@
 	 window.attachEvent("onload", downloadJSAtOnload);
 	 else window.onload = downloadJSAtOnload;
 
-	</script>	
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    
-      ga('create', 'UA-43040656-1', 'keyman.com');
-      ga('send', 'pageview');
-    </script>
+	</script>
+  <?php require_once('includes/analytics.php'); ?>
 </head>
