@@ -20,12 +20,12 @@
 <p>Predictive text is the feature on your keyboard that displays a series of
   <dfn>predictions</dfn>, typically above your keyboard, that try to guess the
   word or words that you are typing next. For example, if I start typing the
-  English phrase “On my w”, your keyboard’s predictive text feature will infer
-  using its knowledge of the English language that the word you are typing is
+  English phrase “On my w”, your keyboard’s predictive text feature will infer,
+  using its knowledge of the English language, that the word you are typing is
   most likely “way”, followed by other, less likely suggestions, such as
   “whole”, or “website”.</p>
 
-<p>The same feature the provides predictive text can also provide
+<p>The same feature that provides predictive text can also suggest
   <dfn>corrections</dfn> to what you are typing. For example, if I start typing
   “thr” on my English keyboard, my keyboard will suggest that I meant to type
   “the” instead. This <strong>autocorrect</strong> feature is powered by your
