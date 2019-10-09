@@ -12,16 +12,21 @@
 
 <h2>Create the new project</h2>
 
+<p>Start Keyman Developer. On the “Welcome” screen, click on
+<span class="guibutton">New Project...</span>. The “New Project” dialog will
+appear. Select “Wordlist Lexical Model” and press
+<span class="guibutton">OK</span>.</p>
+
 <figure>
   <img src="<?= cdn('img/developer/120/ui/frmNewLMProject.png') ?>"
        alt="“New Project” dialog" />
   <figcaption>The “New Project” dialog, with “Wordlist Lexical Model” selected.</figcaption>
 </figure>
 
-<p>Start Keyman Developer. From the Project menu, select “New Project” and then “Wordlist Lexical Model.”</p>
 
 
 <h2>Provide required information</h2>
+
 
 <figure class="aside">
   <img src="<?= cdn('img/developer/120/ui/frmNewLMProjectParameters.png') ?>" alt="New LM Project Parameters" />
@@ -30,20 +35,22 @@
   </figcaption>
 </figure>
 
+<p> The “New Wordlist Lexical Model Project” dialog will appear. </p>
+
 <p> To make sharing your lexical model easier, a project needs the following information: </p>
 
 <dl>
   <dt>Author Name</dt>
   <dd>This is either your <strong>full name</strong> or the
-  <strong>organization</strong> you're create a model for. In this example, I
+  <strong>organization</strong> you're creating a model for. In this example, I
   am creating a lexical model on behalf of my organization, the National
   Research Council Canada, so I write that as the author name.</dd>
 
   <dt>Model Name</dt>
   <dd>We recommend the name of the <strong>language</strong>,
       <strong>dialect</strong>, or <strong>community</strong> that this model is
-      intended for. The name must be written in all lowercase Latin letters or Arabic numerals.
-      In this example, we're creating a language model for SENĆOŦEN, so we use the model name <code>sencoten</code>.</dd>
+      intended for. The name must be written in all the Latin letters or Arabic numerals.
+      In this example, we're creating a language model for SENĆOŦEN, so we use the model name <code>Sencoten</code>.</dd>
   </dd>
 </dl>
 
@@ -55,8 +62,8 @@
 <dl>
   <dt>Copyright</dt>
   <dd>Who owns the rights to this model and its data? Typically, you can use
-      this template: <em>&copy; <?= gmdate("Y") ?> <strong>Your Full Name</strong> or
-      <strong> Your Organization</strong></em>. </dd>
+      the automatically generated default value: <em>&copy; <?= gmdate("Y") ?> <strong>Your Full Name or
+       Your Organization</strong></em>. </dd>
   <dt>Version</dt>
   <dd>If this is the first time you've created a lexical model for you
       language, you should leave the version as <strong>1.0</strong>. Otherwise,
@@ -65,7 +72,7 @@
   </dd>
 </dl>
 
-<h2> Determine your language tag </h2>
+<h2> Determine your language's BCP 47 language tag </h2>
 
 <p> Keyman needs to know how to link your model to the appropriate keyboard
 layout, so that they can both start together. To do this, Keyman utilizes
@@ -81,10 +88,19 @@ to bring up the “Select BCP 47 Tag” dialog box.  </p>
   </figcaption>
 </figure>
 
-<p>The only required option is the <dfn>Language tag</dfn>, which is an
-<a href="">ISO 639-3</a> code. ISO 639-3 tags are a three-letter code. </p>
+<h3> The language subtag </h3>
 
-<p>You can use <a href="https://glottolog.org/glottolog/language">Glottolog</a>
+<p>The only required option is the <dfn>Language subtag</dfn>, which is an
+an <a href="https://en.wikipedia.org/wiki/ISO_639-1">ISO 639-1</a> or
+<a href="https://en.wikipedia.org/wiki/ISO_639-3">ISO 639-3</a> code.</p>
+
+<p>ISO 639-1 tags are a two-letter code. ISO 639-3 tags are a three-letter
+code.  First, try to find your language on the list of two-letter ISO 639-1
+codes. <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">This
+Wikipedia page</a> lists all of the two-letter codes.</p>
+
+<p>If you can't find a two-letter code, you'll need to find the closes three-letter code.
+You can use <a href="https://glottolog.org/glottolog/language">Glottolog</a>
 to search for your language, and it will give you an appropriate code. In this
 example, I searched Glottolog for
 “<a href="https://glottolog.org/resource/languoid/id/saan1246">Saanich</a>”
@@ -121,7 +137,7 @@ class="guibutton">OK</span> to return to the <strong>New Lexical Model Project d
 
 <p> Keyman will create a <dfn>model ID</dfn> which is how Keyman sorts
 and organizes different lexical models. If you followed the above steps, the
-model ID will have been created for you.</p> 
+model ID will have been created for you.</p>
 
 <p> If you're satisfied with the automatically generated model ID, you can
 <a href="#finished">skip to the next step</a>. </p>
