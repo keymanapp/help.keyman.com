@@ -75,7 +75,7 @@ appear. Select “Wordlist Lexical Model” and press
 <h2> Determine your language's BCP 47 language tag </h2>
 
 <p> Keyman needs to know how to link your model to the appropriate keyboard
-layout, so that they can both start together. To do this, Keyman utilizes
+layout, so that they can both work together. To do this, Keyman utilizes
 <strong> BCP 47 </strong> language tags. </p>
 
 <p> To add a language tag, click the <span class="guibutton">Add</span> button
@@ -113,7 +113,7 @@ about your language.</p>
 
 <h3> The script subtag </h3>
 
-<p> The <dfn>Script tag</dfn> allows you to specify the writing system used in
+<p> The <dfn>Script subtag</dfn> allows you to specify the writing system used in
 your language model. If your language only uses one writing system, <strong>leave this
 blank</strong>.</p>
 
@@ -133,23 +133,33 @@ syllabics.</p>
 <h3>The region subtag</h3>
 
 <p> The <dfn>Region tag</dfn> allows you to specify the region your language
-or dialect is spoken in. Fill this in only if your language varies between
-different regions. In our example, SENĆOŦEN is specific enough to cover the
-entire W̱SÁNEĆ region, where SENĆOŦEN is spoken, so this field may be left blank.</p>
+or dialect is spoken in. If your language is only spoken in one region,
+<strong>leave this blank</strong>.</p>
+
+<p> Otherwise, some languages vary between different regions and countries.
+In our example, SENĆOŦEN describes the language that covers entire W̱SÁNEĆ
+region, so this field may be left blank.</p>
 
 <p>However, large languages, like English, Spanish, or French have quite
-different vocabulary and even grammar across different regions. For example,
-the Spanish spoken in Spain regularly uses words that are uncommon or even
-vulgar in Mexico, and Latin America. Additionally, regions may have vocabulary
-that doesn't exist in the other regions where the language is spoken.
+different vocabulary and even different grammatical rules from region to
+region and country to country. For example, the variety of Spanish spoken in
+Spain regularly uses words that are uncommon or even vulgar in both in Mexico,
+and in Latin America. Additionally, regions may have vocabulary that doesn't
+exist in the other regions where the language is spoken.</p>
 
-<p>So, if I were creating a lexical model just for Latin American Spanish, I
-would need to include the <a href="https://en.wikipedia.org/wiki/UN_M49">UN
-  M49</a> region code. In the case of Latin America, this is <code>419</code>.
-This lexical model would not words that are normal in Spain, but vulgar in
-Latin America, but it would predict words like <span lang="es">pupupsas</span> and
-<span lang="es">chuchitos</span>, which are uncommon words in both Spain and
-Mexico.</p>
+<p>If I were creating a lexical model specific to one countryy, I would use
+the <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1
+alpha-2</a> country code for the region subtag. For example, <code>ES</code>
+for Spain or <code>MX</code> for Mexico.</p>
+
+<p>If I were creating a lexical model just for Latin American Spanish (a group
+of countries), I would need to specify Latin America's
+<a href="https://en.wikipedia.org/wiki/UN_M49">UN M49</a>
+region code. For Latin America, its code is <code>419</code>.  My lexical
+model would not suggest words that are common in Spain, but vulgar in Latin
+America, however it would predict words like <span lang="es">pupupsas</span>
+and <span lang="es">chuchitos</span>, which are words that are uncommon in
+both Spain and Mexico.</p>
 
 <hr>
 
@@ -157,22 +167,25 @@ Mexico.</p>
 class="guibutton">OK</span> to return to the <strong>New Lexical Model Project dialog</strong>.
 
 
-<h2> The model ID </h2>
+<h2> The Model ID </h2>
 
 <p> Keyman will create a <dfn>model ID</dfn> which is how Keyman sorts
-and organizes different lexical models. If you followed the above steps, the
-model ID will have been created for you.</p>
+and organizes different lexical models. If you choose to share your model
+publically, the model ID is vital for both people and Keyman to identify and
+use your lexical model!</p>
 
-<p> If you're satisfied with the automatically generated model ID, you can
-<a href="#finished">skip to the next step</a>. </p>
+<p> Keyman automatically generates a model ID for you, given all the
+ information already filled out. If you're satisfied with the generated model
+ID, you can <a href="#finished">skip to the next step</a>. </p>
 
-<p>In this example, my model ID is
-<code>nrc.str.sencoten</code>, derived from my organization name, the name of
-the primary language, and my model name.</p>
+<p>In this example, my generated model ID is
+<code>national_research_council_canada.str.sencoten</code>,
+derived from my organization name, the name of the primary language, and my
+model name. However, I find the “author ID” part of the generated model ID
+excessivly long. I changed the author ID to <code>nrc</code>, and the model ID
+automatically changes to the much more managable <code>nrc.str.sencoten</code>.
+</p>
 
-
-<p>These identifiers will be combined to make the <code class="language-none">Model ID</code> = <code>Author ID</code>.
-  <code class="language-none">Primary Language</code>.<code class="language-none">Unique Name</code></p>
 
 <h2 id="finished">Double-check the information</h2>
 
