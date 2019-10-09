@@ -85,3 +85,11 @@ $pagestyle = '#section2 .wrapper { overflow-x: inherit }';
     <p>Open source repository for Keyman keyboards</p>
   </a>
 </div>  
+
+<div class="product" id="product-training">
+  <a href="https://vimeo.com/channels/keyman">
+    <img src="<?= cdn("img/icon-vimeo.png"); ?>" />
+    <h3>Keyman Training Videos</h3>
+    <p>Training presentations for Keyman Developer</p>
+  </a>
+</div>
