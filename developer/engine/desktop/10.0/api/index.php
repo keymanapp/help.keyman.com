@@ -12,6 +12,7 @@
 <h2>Introduction</h2>
 
 <p>The Keyman Engine for Windows 10.0 API is implemented in COM. It can be instantiated with <code>CreateObject("keymanapi.Keyman")</code>.</p>
+<aside><b>Note: </b>This documentation applies to Keyman Engine for Desktop versions 10.0 to 12.0</aside>
 
 <h2>Interface Hierarchy</h2>
 
