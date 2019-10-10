@@ -51,12 +51,11 @@ appear. Select “Wordlist Lexical Model” and press
       <strong>dialect</strong>, or <strong>community</strong> that this model is
       intended for. The name must be written in all the Latin letters or Arabic numerals.
       In this example, we're creating a language model for SENĆOŦEN, so we use the model name <code>Sencoten</code>.</dd>
-  </dd>
 </dl>
 
-<h2> Provide auxiliary information </h2>
+<h3> Provide auxiliary information </h3>
 
-<p> The following information is required, but most users will use
+<p> The following information is also required, but most users will use
 <strong>default values</strong>. </p>
 
 <dl>
@@ -71,6 +70,7 @@ appear. Select “Wordlist Lexical Model” and press
       <code>major revision number</code>.<code>minor revision number</code>.
   </dd>
 </dl>
+
 
 <h2> Determine your language's BCP 47 language tag </h2>
 
@@ -91,7 +91,7 @@ to bring up the “Select BCP 47 Tag” dialog box.  </p>
 
 <h3> The language subtag </h3>
 
-<p>The only required option is the <dfn>Language subtag</dfn>, which is an
+<p>The only required option is the <dfn>Language subtag</dfn>, which is
 an <a href="https://en.wikipedia.org/wiki/ISO_639-1">ISO 639-1</a> or
 <a href="https://en.wikipedia.org/wiki/ISO_639-3">ISO 639-3</a> code.</p>
 
@@ -147,7 +147,7 @@ Spain regularly uses words that are uncommon or even vulgar in both in Mexico,
 and in Latin America. Additionally, regions may have vocabulary that doesn't
 exist in the other regions where the language is spoken.</p>
 
-<p>If I were creating a lexical model specific to one countryy, I would use
+<p>If I were creating a lexical model specific to one country, I would use
 the <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1
 alpha-2</a> country code for the region subtag. For example, <code>ES</code>
 for Spain or <code>MX</code> for Mexico.</p>
@@ -171,7 +171,7 @@ class="guibutton">OK</span> to return to the <strong>New Lexical Model Project d
 
 <p> Keyman will create a <dfn>model ID</dfn> which is how Keyman sorts
 and organizes different lexical models. If you choose to share your model
-publically, the model ID is vital for both people and Keyman to identify and
+publicly, the model ID is vital for both people and Keyman to identify and
 use your lexical model!</p>
 
 <p> Keyman automatically generates a model ID for you, given all the
@@ -182,8 +182,8 @@ ID, you can <a href="#finished">skip to the next step</a>. </p>
 <code>national_research_council_canada.str.sencoten</code>,
 derived from my organization name, the name of the primary language, and my
 model name. However, I find the “author ID” part of the generated model ID
-excessivly long. I changed the author ID to <code>nrc</code>, and the model ID
-automatically changes to the much more managable <code>nrc.str.sencoten</code>.
+excessively long. I changed the author ID to <code>nrc</code>, and the model ID
+automatically changes to the much more manageable <code>nrc.str.sencoten</code>.
 </p>
 
 
