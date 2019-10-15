@@ -73,7 +73,7 @@ supports the following customizations: </p>
   <dt> <a href="word-breaker.php"> Word breaker </a> </dt>
   <dd> How to determine when words start and end in the writing system </dd>
   <dt> <a href="search-term-to-key.php"> Search term to key </a> </dt>
-  <dd> How and when to ignore accents and lettercase </dd>
+  <dd> How and when to ignore accents and letter case </dd>
 </dl>
 
 <p> To see all of the things possible in a model definition file, see the
