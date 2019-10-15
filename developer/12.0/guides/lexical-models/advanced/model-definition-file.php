@@ -64,8 +64,8 @@ quickly. </p>
 
 <p> The template, as described in the previous section, is a good starting
 point, and may be all you need for you language. However, most language
-require a few customizations. The <code>trie</code> model supports the
-following customizations: </p>
+require a few customizations. The <code>trie-1.0</code> wordlist model
+supports the following customizations: </p>
 
 <dl>
   <dt> punctuation </dt> <dd> How to define certain punctuation in your language </dd>
@@ -81,7 +81,6 @@ following customizations: </p>
 <aside>
   <p>Main page <a href="punctuation.php"> Punctuation </a></p>
 </aside>
-
 
 <h3>word breaker</h3>
 
