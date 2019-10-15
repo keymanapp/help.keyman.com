@@ -68,47 +68,16 @@ require a few customizations. The <code>trie-1.0</code> wordlist model
 supports the following customizations: </p>
 
 <dl>
-  <dt> punctuation </dt> <dd> How to define certain punctuation in your language </dd>
-  <dt> word breaker </dt> <dd> How to determine when words start and end in the writing system </dd>
-  <dt> search term to key </dt> <dd> How and when to ignore accents and lettercase </dd>
+  <dt> <a href="punctuation.php"> Punctuation </a> </dt>
+  <dd> How to define certain punctuation in your language </dd>
+  <dt> <a href="word-breaker.php"> Word breaker </a> </dt>
+  <dd> How to determine when words start and end in the writing system </dd>
+  <dt> <a href="search-term-to-key.php"> Search term to key </a> </dt>
+  <dd> How and when to ignore accents and lettercase </dd>
 </dl>
 
 <p> To see all of the things possible in a model definition file, see the
 <a href="https://github.com/keymanapp/keyman/blob/0e9877cc50b70584aafe4ff5e98aea260a743d4c/developer/js/source/lexical-model-compiler/lexical-model.ts#L12-L42"><code>LexicalModelSource</code> interface</a>.
-
-<h3> Punctuation</h3>
-
-<aside>
-  <p>Main page <a href="punctuation.php"> Punctuation </a></p>
-</aside>
-
-<h3>word breaker</h3>
-
-<aside>
-  <p>Main page <a href="word-breaker.php"> Word breaker </a></p>
-</aside>
-
-<p> The <code>trie</code> family of lexical models needs to know what a word
-is in running text. In language using the Latin script—like, English, French,
-and SENĆOŦEN—finding words is easy. Words are separated by spaces or
-punctuation. The actual rules for where to find words can get quite tricky to
-describe, but Keyman implements the <a href="https://unicode.org/reports/tr29/#Word_Boundaries">
-Unicode Standard Annex #29 §4.1 Default Word Boundary Specification </a>
-which works well for most languages.
-</p>
-
-<p> However, in languages written in other scripts—especially East Asian
-scripts like Chinese, Japanese, Khmer, Lao, and Thai—there are is no obvious
-break in between words. For these languages, there must be special rules for
-determining when words start and stop. This is what a <dfn>word breaker
-function</dfn> is responsible for. It is a little bit of code that looks at some
-text to determine where the words are. </p>
-
-<h3> Search term to key </h3>
-
-<aside>
-  <p>Main page <a href="search-term-to-key.php"> Search term to key </a></p>
-</aside>
 
 <h2> Write your own custom model </h2>
 
