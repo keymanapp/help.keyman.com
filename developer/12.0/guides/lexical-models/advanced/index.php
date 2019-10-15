@@ -24,7 +24,7 @@ known as the
 customizations to an existing wordlist project: </p>
 <dl>
   <dt><a href="punctuation.php">Changing the default punctuation</a></dt>
-  <dt><a href="key-function.php">Creating a custom key function</a></dt>
+  <dt><a href="search-term-to-key.php">Creating a custom search key function</a></dt>
   <dt><a href="word-breaker.php">Creating a custom word breaker</a></dt>
 </dl>
 
