@@ -2,29 +2,27 @@
   require_once('includes/template.php');
 
   head([
-    'title' => "Step 4: Editing a model definition file"
+    'title' => "The model definition file"
   ]);
 ?>
 
-<h1>Step 4: Editing a model definition file</h1>
-
-<p>We have exported our wordlist to <code>wordlist.tsv</code>. We now need to
-tell the <strong>lexical model compiler</strong> how to turn this raw word list
-into a lexical model that is quick to use on a smartphone.</p>
-
-<p>To do this, we must create a model definition file.</p>
+<h1>The model definition file</h1>
 
 <p>This is a small <a href="https://www.typescriptlang.org/">TypeScript</a>
-source code file that tells us where to find the word list file, as well as
+source code file that tells us how to define our model.
+
+<p>In the case of the <strong>wordlist lexical models</strong>, the model
+definition file indicates where find to find the
+<a href="../../../reference/file-types/tsv.php">TSV source files</a>, as well as
 gives us the option to tell the compiler a little bit more about our
 language’s spelling system or <em>orthography</em>.</p>
 
 <h2> The model definition template </h2>
 
-<p><strong>Keyman Developer</strong> will provide you with a model definition
-similar to the following. If you want to create the file yourself, copy-paste the following template, and save
-it as <code>model.ts</code>. Place this file in the same folder as
-<code>wordlist.tsv</code>.</p>
+<p><strong>Keyman Developer</strong> provides a default model definition
+similar to the following. If you want to create the file yourself, copy-paste
+the following template, and save it as <code>model.ts</code>. Place this file
+in the same folder as <code>wordlist.tsv</code>.</p>
 
 <pre><code class="lang-typescript">/*
   sencoten 1.0 generated from template.
@@ -62,7 +60,7 @@ quickly. </p>
 <pre><code class="lang-typescript">export default source;</code></pre>
 
 
-<h2> Customizing our lexical model </h2>
+<h2> Customizing a wordlist lexical model </h2>
 
 <p> The template, as described in the previous section, is a good starting
 point, and may be all you need for you language. However, most language
@@ -70,11 +68,23 @@ require a few customizations. The <code>trie</code> model supports the
 following customizations: </p>
 
 <dl>
-  <dt> word breaking </dt> <dd> How to determine when words start and end in the writing system. </dd>
+  <dt> punctuation </dt> <dd> How to define certain punctuation in your language </dd>
+  <dt> word breaking </dt> <dd> How to determine when words start and end in the writing system </dd>
   <dt> search term to key </dt> <dd> How and when to ignore accents and lettercase </dd>
 </dl>
 
+<h3> Punctuation</h3>
+
+<aside>
+  <p>Main page <a href="punctuation.php"> Punctuation </a></p>
+</aside>
+
+
 <h3>Word breaking</h3>
+
+<aside>
+  <p>Main page <a href="word-breaking.php"> Word breakng </a></p>
+</aside>
 
 <p> The <code>trie</code> family of lexical models needs to know what a word
 is in running text. In language using the Latin script—like, English, French,
@@ -93,6 +103,10 @@ function</dfn> is responsible for. It is a little bit of code that looks at some
 text to determine where the words are. </p>
 
 <h3> Search term to key </h3>
+
+<aside>
+  <p>Main page <a href="search-term-to-key.php"> Search term to key </a></p>
+</aside>
 
 <p> To look up words quickly, the <code>trie</code> model creates a <dfn>
 search key </dfn> that takes the latest word (as determined by the <a
@@ -146,12 +160,9 @@ there are cases, such as with SENĆOŦEN, where some characters do not decompose
 into a base letter and a diacritic. In this case, it is necessary to write
 your own key function. </p>
 
-<h2> Once customization is done </h2>
+<h2> Write your own custom model </h2>
 
-<p> We may have some tweaks, but first we need to actually
-<strong>build</strong> and <strong>test</strong> our lexical model. This will
-be discussed in the next step. </p>
-
-<p>
-<a href="step-5.php" title="Step 5: Compile the lexical model">Step 5: Compile the lexical model model</a>
-</p>
+<p> If all of the above seems too limiting, you can write your own custom
+model. This means, implementing the interface of the <code>LexicalModel</code>
+class, and generating predictions yourself. This is the most difficult and
+time consuming option, however, it gives you the most flexibility. </p>
