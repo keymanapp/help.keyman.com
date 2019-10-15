@@ -69,9 +69,12 @@ following customizations: </p>
 
 <dl>
   <dt> punctuation </dt> <dd> How to define certain punctuation in your language </dd>
-  <dt> word breaking </dt> <dd> How to determine when words start and end in the writing system </dd>
+  <dt> word breaker </dt> <dd> How to determine when words start and end in the writing system </dd>
   <dt> search term to key </dt> <dd> How and when to ignore accents and lettercase </dd>
 </dl>
+
+<p> To see all of the things possible in a model definition file, see the
+<a href="https://github.com/keymanapp/keyman/blob/0e9877cc50b70584aafe4ff5e98aea260a743d4c/developer/js/source/lexical-model-compiler/lexical-model.ts#L12-L42"><code>LexicalModelSource</code> interface</a>.
 
 <h3> Punctuation</h3>
 
@@ -80,10 +83,10 @@ following customizations: </p>
 </aside>
 
 
-<h3>Word breaking</h3>
+<h3>word breaker</h3>
 
 <aside>
-  <p>Main page <a href="word-breaking.php"> Word breakng </a></p>
+  <p>Main page <a href="word-breaker.php"> Word breaker </a></p>
 </aside>
 
 <p> The <code>trie</code> family of lexical models needs to know what a word
@@ -98,7 +101,7 @@ which works well for most languages.
 <p> However, in languages written in other scripts—especially East Asian
 scripts like Chinese, Japanese, Khmer, Lao, and Thai—there are is no obvious
 break in between words. For these languages, there must be special rules for
-determining when words start and stop. This is what a <dfn>word breaking
+determining when words start and stop. This is what a <dfn>word breaker
 function</dfn> is responsible for. It is a little bit of code that looks at some
 text to determine where the words are. </p>
 
@@ -110,7 +113,7 @@ text to determine where the words are. </p>
 
 <p> To look up words quickly, the <code>trie</code> model creates a <dfn>
 search key </dfn> that takes the latest word (as determined by the <a
-href="#toc-word-breaking">word breaking</a> and converts it into a “regular” form.
+href="#toc-word-breaking">word breaker</a> and converts it into a “regular” form.
 The purpose of this “regular” form is to make searching for a word work,
 regardless of things such as <strong>accents</strong>,
 <strong>diacritics</strong>, <strong>lettercase</strong>, and minor
