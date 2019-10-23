@@ -33,7 +33,8 @@ return value, which is the latest stable build for KeymanWeb 2.0. See version 1.
 
 <dl>
   <dt><code>platform</code></dt>
-  <dd>The platform to query against. Possible values are: <code>android</code>, <code>ios</code>, <code>mac</code>, <code>web</code> or <code>windows</code>.</dd>
+  <dd>The platform to query against. Possible values are:
+    <code>android</code>, <code>ios</code>, <code>linux</code>, </code><code>mac</code>, <code>web</code> or <code>windows</code>.</dd>
 
   <dt><code>level</code> <span class='optional'>(optional)</span></dt>
   <dd>The stability level to query, default <code>stable</code>. Possible values are: <code>stable</code>, <code>beta</code> or <code>alpha</code>.</dd>
@@ -102,6 +103,7 @@ echo "&lt;script src='https://s.keyman.com/kmw/engine/$kmwbuild/keymanweb.js'&gt
 <p>2.0 - Released 23 June 2017</p>
 <p>2.0 - Documentation updated 7 March 2018 to document API change from <code>get-version</code> to <code>version</code>
     and change secure site references to https://api.keyman.com</p>
+<p>2.0 - Documentation updated 23 October 2019 to add linux platform</p>
 
 <h2>See Also</h2>
 
