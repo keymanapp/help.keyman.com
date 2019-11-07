@@ -1,6 +1,5 @@
 <?php
-  require_once('parsedown-1.7.3/Parsedown.php');
-
+  require_once('includes/ext/parsedown/Parsedown.php');
   require_once('includes/template.php');
 
   $id = null;
@@ -45,7 +44,7 @@
   // Required
   head([
     'title' =>'Keyman Support | ' . $title,
-    'css' => ['template.css','index.css'],
+    'css' => ['template.css','index.css','prism.css'],
     'showMenu' => true,
     'index' => false
   ]);
