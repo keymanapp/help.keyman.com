@@ -55,7 +55,7 @@ keyman.com:</p>
   </li>
 </ol>
 
-<p>The <a href='http://tavultesoft.com/keymandev/quality/'>Keyboard Quality White Paper</a> details the requirements for a keyboard 
+<p>The <a href='/developer/whitepaper1.1.pdf'>Keyboard Quality White Paper</a> details the requirements for a keyboard 
 package to be accepted for hosting on the Tavultesoft website.</p>
 
 <aside>
