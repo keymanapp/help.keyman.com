@@ -51,7 +51,7 @@ need here, including product documentation, guides and tutorials, and full refer
 <h2>Other Resources</h2>
 
 <ul>
-  <li><a href='http://<?=$site_tavultesoft?>/keymandev/quality/'>Keyboard Quality White Paper</a></li>
+  <li><a href='/developer/whitepaper1.1.pdf'>Keyboard Quality White Paper</a></li>
   <li><a href='/kb'>Knowledge Base</a></li>
   <li><a href='/products/desktop'>Keyman Desktop Help</a></li>
   <li><a href='/developer/engine/desktop/11.0/'>Keyman Engine for Desktop</a></li>
