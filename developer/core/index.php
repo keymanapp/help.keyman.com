@@ -16,7 +16,7 @@
         <img src="<?php echo cdn("img/icon-core-web.png"); ?>" />
         <h3>Keyman Core Web</h3>
         <p>
-          Documents Keyman Core API for Keyman Engine on Web (Android, iOS, Web).
+          Documents low level Keyman Javascript API for Keyman Engine on Web (Android, iOS, Web).
         </p>
     </a>
 </div>

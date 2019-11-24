@@ -2,12 +2,22 @@
 require_once('includes/template.php');
 
 head([
-    'title' => "Keyman Keyboard Processor API"
+    'title' => "Keyman Core Desktop API"
 ]);
 ?>
-<h1 class="title">Keyman Keyboard Processor API</h1>
+<h1 class="title">Keyman Core Desktop API</h1>
+
+<h2>Overview</h2>
+
+<p>Keyman Core Desktop is the component of Keyman Engine that implements keyboarding rules. It is
+platform indepedent and allows support for different keyboard formats to be implemented within
+Keyman Engine. Eventually, Keyman Core will be used in Keyman on Windows, macOS and Linux.
+As of writing, only Keyman for Linux uses Keyman Core.</p>
+
+<p>This is an internal API intended for use only within Keyman Engine.</p>
 
 <h2>Requirements</h2>
+
 <ol type="1">
   <li id="req1">Cross platform.</li>
   <li id="req2">Cross language.</li>

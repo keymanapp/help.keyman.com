@@ -17,7 +17,7 @@ head([
 
 <h3>Optional</h3>
 <ul>
-  <li><a href="https://keyman.com/downloads/pre-release/#developer">kmcomp</a> (for testing)</li>
+  <li><a href="https://keyman.com/developer/download">kmcomp</a> (for testing)</li>
   <li>wine (for running kmcomp on non-Windows OS)</li>
   <li><a href="https://hotdoc.github.io/">hotdoc</a> (for building documentation)</li>
 </ul>
