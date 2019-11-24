@@ -62,8 +62,8 @@ head([
 
       <dt id="KM_KBP_OPT_ENVIRONMENT"><code class="token constant">KM_KBP_OPT_ENVIRONMENT</code></dt>
       <dd>
-        The option is store in the globale environment store, set and managed
-        by the KeyMan application.
+        The option is store in the global environment store, set and managed
+        by the Keyman application.
       </dd>
 
       <dt id="KM_KBP_OPT_MAX_SCOPES"><code class="token constant">KM_KBP_OPT_MAX_SCOPES</code></dt>

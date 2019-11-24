@@ -60,8 +60,9 @@ $&gt; meson test
 <h2>Note on kmcomp</h2>
 <p>
   kmcomp is the command-line compiler from Keyman Developer, available from
-  <a href="https://keyman.com/"/>https://keyman.com/</a> or in this repo in
-  /windows/src/developer/kmcomp. The compiler is currently available as a
+  <a href="https://keyman.com/developer/"/>keyman.com</a>
+  or source in the <a href='https://github.com/keymanapp/keyman/tree/master/windows/src/developer/kmcomp'>Keyman 
+  repo</a>. The compiler is currently available as a
   Windows PE executable only, but it does run under WINE.
 </p>
 
@@ -72,14 +73,14 @@ $&gt; meson test
 </p>
 
 <p>
-  If you have Keyman Developer installed, add %KeymanDeveloperPath% to your
-  path. Otherwise, add the path where you extracted the kmcomp archive.
+  If you have Keyman Developer installed, kmcomp should already be on
+  your path. Otherwise, add the path where you extracted the kmcomp archive.
 </p>
 
 <h3>Linux &amp; MacOS</h3>
 <p>
   You will need to ensure that <code>kmcomp.exe</code> is in your
   <code>PATH</code> and you have wine installed.  If the build script detects
-  both present it will automatically prepend <code>wine</code> on all of it's
+  both present it will automatically prepend <code>wine</code> on all of its
   invocations of kmcomp.
 </p>

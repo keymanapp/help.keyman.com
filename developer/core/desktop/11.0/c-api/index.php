@@ -39,9 +39,9 @@ head([
     status being returned if nulled). When
     <code class="token symbol">buffer_ptr</code> is
     <code class="token keyword">nullptr</code> or
-    <code class="token symbol">0</code> the function will place the size of the
+    <code class="token number">0</code> the function will place the size of the
     required buffer in the variable pointed to by
-    <code class="token number">size_ptr</code>.
+    <code class="token symbol">size_ptr</code>.
   </p>
 </section>
 
@@ -58,7 +58,9 @@ head([
     is often a reference to a created object. Unless stated all arguments are
     required (will result in an
     <a href="#KM_KBP_STATUS_INVALID_ARGUMENT"><code class="token constant">KM_KBP_STATUS_INVALID_ARGUMENT</code></a>
-    status being returned if nulled). <br/>All dispose calls are designed to
+    status being returned if nulled).
+  </p>
+  <p>All dispose calls are designed to
     accept <code class="token keyword">nullptr</code> or
     <code class="token number">0</code> as a valid value and will do nothing in
     that event.
@@ -95,21 +97,21 @@ head([
     <dt><code>age</code></dt>
     <dd>
       How many interface numbers back from current the library implements.
-      E.g.5.2.0 would mean the library provides interface versions 3-5 and
+      E.g. 5.2.0 would mean the library provides interface versions 3-5 and
       5.0.0 would mean just interface version 5 and nothing older.
     </dd>
 
     <dt><code>revision</code></dt>
     <dd>
       The implementation version of the current interface. This represents
-      improvements to the code that don't chhange the intended behaviour of the
+      improvements to the code that don't change the intended behaviour of the
       interface such as bug fixes and optimisations.
     </dd>
   </dl>
   <p>
     For Linux and other OS which support this scheme the dynamic linker will
     automatically choose the most updated version if more than one
-    implmentation is available. For Windows or dynamic loaded shared objects on
+    implementation is available. For Windows or dynamic loaded shared objects on
     Linux you can use the
     <a href="#km_kbp_get_engine_attrs"><code class="token function">km_kbp_get_engine_attrs</code></a>
     call and <a href="#lib-version-macros">Library version macros</a> to check
@@ -124,7 +126,7 @@ head([
 <p>
   Fundamental types for representing data passed across the API.
 </p>
-<table>
+<table class='display'>
   <thead>
     <tr><th>Type</th>    <th>C/C++ type</th>     <th>Purpose</th></tr>
   </thead>
@@ -146,7 +148,7 @@ head([
       <td><code class="token symbol">km_kbp_virtual_key</code></td>
       <td><code class="token symbol">uint16_t</code></td>
       <td>
-        An integral type capable of holding a platform specific veritual key
+        An integral type capable of holding a platform specific virtual key
         code.
       </td>
     </tr>
@@ -167,7 +169,7 @@ head([
   Opaque types for representing resources provided or created by the keyboard
   processor implementation.
 </p>
-<table>
+<table class='display'>
   <thead>
     <tr><th>Type</th>    <th>Purpose</th></tr>
   </thead>
@@ -179,7 +181,7 @@ head([
         keyboard processor to consume events, update state associated with an
         insertion point and produce action items. A keyboard object may be
         referenced by any number of state objects but must be disposed of after
-        aall state objects referencing it have first been disposed of.
+        all state objects referencing it have first been disposed of.
       </td>
     </tr>
     <tr>
@@ -195,10 +197,10 @@ head([
     <tr>
       <td><code class="token symbol">km_kbp_context</code></td>
       <td>
-        Represents the pre-context of an insertion point and may set,
+        Represents the pre-context of an insertion point and may be set,
         queried, append or shrunk by one or more context items. A context
         object is a sub-part of the state object, and a context handle may not
-        be used after it's state object has been disposed of.
+        be used after its state object has been disposed of.
       </td>
     </tr>
   </tbody>
@@ -257,17 +259,17 @@ head([
 
       <dt id="KM_KBP_STATUS_NO_MEM"><code class="token constant">KM_KBP_STATUS_NO_MEM</code></dt>
       <dd>
-        The call failed to allocate memory during it's execution, causing it to
+        The call failed to allocate memory during its execution, causing it to
         fail.
       </dd>
 
       <dt id="KM_KBP_STATUS_IO_ERROR"><code class="token constant">KM_KBP_STATUS_IO_ERROR</code></dt>
       <dd>
-        The call performed an I/O operatoin which failed, causing it to fail.
+        The call performed an I/O operation which failed, causing it to fail.
       </dd>
 
       <dt id="KM_KBP_STATUS_INVALID_ARGUMENT"><code class="token constant">KM_KBP_STATUS_INVALID_ARGUMENT</code></dt>
-      <dd>The call detected one of it's parameters was invalid or unsafe.</dd>
+      <dd>The call detected one of its parameters was invalid or unsafe.</dd>
 
       <dt id="KM_KBP_STATUS_KEY_ERROR"><code class="token constant">KM_KBP_STATUS_KEY_ERROR</code></dt>
       <dd>The provided key or index into a collection object was not present.</dd>
@@ -386,7 +388,7 @@ head([
       <dt id="KM_KBP_TECH_KMX"><code class="token constant">KM_KBP_TECH_UNSPECIFIED</code></dt>
       <dd>The keyboard processor implements a Keyman KMX compatible engine.</dd>
 
-      <dt id="KM_KBP_TECH_UNSPECIFIED"><code class="token constant">KM_KBP_TECH_UNSPECIFIED</code></dt>
+      <dt id="KM_KBP_TECH_LDML"><code class="token constant">KM_KBP_TECH_UNSPECIFIED</code></dt>
       <dd>The keyboard processor implements a LDML capable processing engine.</dd>
     </dl>
   </section>

@@ -367,8 +367,8 @@ km_kbp_state_context(km_kbp_state *state);
 </article>
 
 
-<article id="km_kpb_state_to_json">
-  <h1>km_kpb_state_to_json</h1>
+<article id="km_kbp_state_to_json">
+  <h1>km_kbp_state_to_json</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
