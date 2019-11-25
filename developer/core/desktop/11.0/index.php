@@ -70,7 +70,7 @@ As of writing, only Keyman for Linux uses Keyman Core.</p>
   <dd>Positional state that can be placed in the Context.</dd>
 
   <dt>Keyboard</dt>
-  <dd>A set of rules for execution my an Engine.</dd>
+  <dd>A set of rules for execution by an Engine.</dd>
 
   <dt>Option</dt>
   <dd>A variable in a dynamic or static key value store.</dd>
