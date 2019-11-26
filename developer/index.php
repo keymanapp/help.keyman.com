@@ -93,3 +93,11 @@ $pagestyle = '#section2 .wrapper { overflow-x: inherit }';
     <p>Training presentations for Keyman Developer</p>
   </a>
 </div>
+
+<div class="product" id="product-core">
+  <a href="core">
+    <img src="<?= cdn("img/icon-core.png"); ?>" />
+    <h3>Keyman Core</h3>
+    <p>Internal API documentation for Keyman Core</p>
+  </a>
+</div>
