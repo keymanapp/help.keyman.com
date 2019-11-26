@@ -392,6 +392,10 @@
 
   <p>to ensure that the key's scan code is ignored by the keyboard mapping.</p>
 
+  <p>When a key in a touch layout definition includes a <strong>Next Layer</strong> control, this takes precedence over 
+  setting layer via the <a href='/developer/language/reference/layer'><code>layer</code></a> store (as the <strong>Next Layer</strong> 
+  control is applied once the rule has finished processing).</p>
+
   <h4><a name="id488949" id="id488949"></a>subkey</h4>
 
   <p>Arrays of 'subkeys' or pop-up keys can be defined for any key, and will appear momentarily after the key is touched if not
