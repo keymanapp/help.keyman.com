@@ -18,7 +18,7 @@
 
 <h2>The Keyman Lexical Models Repository</h2>
 <p>
-  We now have a single location for open source lexical models on github.com
+  Keyman can automatically download lexical models that are shared through our open source lexical model repository on github.com:
 </p>
 
 <p style="text-align: left; padding-left: 30px;"><a href="https://github.com/keymanapp/lexical-models" target="_blank">

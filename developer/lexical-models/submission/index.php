@@ -10,11 +10,11 @@
 <h1>Guide for Lexical Model Submissions</h1>
 <p>
   This is a guide for submitting lexical models to the lexical-models repository.
-  Users will need to be proficient enough with Git to keep their own fork in sync with the upstream branch.
+  Lexical model developers will need to be proficient enough with Git to keep their own fork in sync with the upstream branch.
 </p>
 
 <p class="hint">
-  <b>Note:</b> This guide is written for Windows users, so other OS users need to adjust paths accordingly.
+  <b>Note:</b> This guide is written for lexical model developers using Windows, so other OS users need to adjust paths accordingly.
 </p>
 
 <dl>

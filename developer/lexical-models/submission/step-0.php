@@ -15,7 +15,7 @@
 
 <p>
     The files for each lexical model are organized in a specific fashion to make it possible for the lexical models to be built automatically.
-    If you are using Keyman Developer (version 12 or later), you can select "New Project" from the "Project" menu, then "Wordlist Lexical Model"
+    In Keyman Developer (version 12 or later), you can select "New Project" from the "Project" menu, then "Wordlist Lexical Model"
     and Keyman Developer will help you create folder and file names that meet the following requirements.
 </p>
 <?php
