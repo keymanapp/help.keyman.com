@@ -31,7 +31,7 @@ include('../_shared/fork-lexical-models-repo.php');
 </p>
 
 <pre class="language-bash">
-<code>cd /d c:\projects\
+<code>cd /c/projects/
 git clone https://github.com/&lt;your-github-name&gt;/lexical-models.git
 </code></pre>
 
@@ -50,7 +50,7 @@ c:\projects\lexical-models
 </p>
 
 <pre class="language-bash">
-<code>cd /d c:\projects\lexical-models\
+<code>cd /c/projects/lexical-models
 git remote add upstream https://github.com/keymanapp/lexical-models.git
 </code></pre>
 

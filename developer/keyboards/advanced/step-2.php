@@ -37,7 +37,7 @@
 </p>
 
 <pre class="language-bash">
-<code>cd /d c:\projects\keyboards\
+<code>cd /c/projects/keyboards
 git checkout master
 git fetch upstream
 git merge upstream/master

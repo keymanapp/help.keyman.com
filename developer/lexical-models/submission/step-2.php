@@ -36,7 +36,7 @@
 </p>
 
 <pre class="language-bash">
-<code>cd /d c:\projects\lexical-models\
+<code>cd /c/projects/lexical-models
 git checkout master
 git fetch upstream
 git merge upstream/master
