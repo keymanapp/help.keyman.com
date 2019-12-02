@@ -11,6 +11,7 @@
 <p>
   This is a guide for submitting lexical models to the lexical-models repository.
   Lexical model developers will need to be proficient enough with Git to keep their own fork in sync with the upstream branch.
+  Though this can be daunting, there are many other online resources for new users to Git.
 </p>
 
 <p class="hint">

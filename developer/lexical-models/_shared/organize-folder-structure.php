@@ -13,10 +13,13 @@
   <dd>lexical model source files, including any files that will be packaged in the build</dd>
 
   <dt><code>source\readme.htm</code></dt>
-  <dd>readme.htm and any resources referenced from the readme.htm file</dd>
+  <dd>readme.htm and any resources referenced from the readme.htm file. This is a short description of the package,
+    its use restrictions, and what it includes. Starting in Keyman 13, some of the Keyman apps will display this
+    readme.htm in a view for the user to confirm lexical model package installation.</dd>
 
   <dt><code>source\welcome.htm</code></dt>
-  <dd>welcome.htm and any resources referenced from the welcome.htm file</dd>
+  <dd>welcome.htm and any resources referenced from the welcome.htm file. This introductory help file will be detected
+    and displayed during lexical model package installation. It is also available on the Model Information page.</dd>
 
   <dt><code>source\&lt;wordlist&gt;.tsv</code></dt>
   <dd>wordlist source file, in columns for words, counts, and comments. This is a

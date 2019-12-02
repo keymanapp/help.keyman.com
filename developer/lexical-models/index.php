@@ -72,10 +72,10 @@
   The components must be lower case and are:
 </p>
 <ul>
-  <li><b>author</b>: a short unique identifier, such as <i>nrc</i> or <i>sil</i></li>
+  <li><b>author</b>: a shortened string/abbreviation of the author or group, such as <i>nrc</i> or <i>sil</i></li>
   <li><b>bcp47</b>: the canonical BCP 47 language tag for the model. For example <i>str</i> for SENĆOŦEN</li>
-  <li><b>uniq</b>: an optional component that can be provided when a language has multiple models from a single author.
-    For example, <i>example.en.custom</i> vs <i>example.en.wordlist</i>. We do recommend always using a uniquifier even if there are no
+  <li><b>uniq</b>:  an optional unique identifier that can be provided when a language has multiple models from a single author.
+    For example, <i>example.en.custom</i> vs <i>example.en.wordlist</i>. We do recommend always using a unique string even if there are no
     current plans to produce more than one for a language.</li>
 </ul>
 
