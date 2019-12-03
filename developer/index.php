@@ -86,6 +86,14 @@ $pagestyle = '#section2 .wrapper { overflow-x: inherit }';
   </a>
 </div>  
 
+<div class="product" id="product-lexical-models">
+  <a href="lexical-models">
+    <img src="<?= cdn("img/icon-lexical-model.png"); ?>" />
+    <h3>Keyman Cloud Lexical Models Repository</h3>
+    <p>Open source repository for Keyman lexical models</p>
+  </a>
+</div>
+
 <div class="product" id="product-training">
   <a href="https://vimeo.com/channels/keyman">
     <img src="<?= cdn("img/icon-vimeo.png"); ?>" />
