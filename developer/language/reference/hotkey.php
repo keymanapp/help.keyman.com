@@ -14,18 +14,18 @@
 
 <h2 id="Syntax" name="Syntax">Syntax</h2>
 
-<pre><code>store(&amp;hotkey) "<var>virtualKey</var>"
+<pre><code>store(&amp;hotkey) <var>virtualKey</var>
 </code></pre>
 
 <h3 id="Parameters" name="Parameters">Parameters</h3>
 
 <dl>
   <dt><code>virtualKey</code></dt>
-  <dd>A virtual key format key code, including square brackets, inside quotes. Both quotes and square brackets are required.</dd>
+  <dd>A virtual key format key code, including square brackets. See format note below for versions 12.0 and earlier.</dd>
 </dl>
 
 <p>The <code>&amp;hotkey</code> store specifies the hotkey that Keyman will use to turn the keyboard on. When this hotkey is pressed, any active
-keyboard will be turned off and the new keyboard will be turned on. The hotkey must be enclosed in quotes and square brackets.</p>
+keyboard will be turned off and the new keyboard will be turned on. The hotkey must be enclosed in square brackets.</p>
 
 <p>The hotkey can be any standard, non-modifier key, with any combination of the Shift, Control and Alt keys also pressed. Only <code>SHIFT</code>,
 <code>CTRL</code> and <code>ALT</code> modifiers are permitted.</p>
@@ -35,11 +35,16 @@ keyboard will be turned off and the new keyboard will be turned on. The hotkey m
 <p>Note that the default hotkey can be changed by a user after a keyboard is installed. Don't rely on it never changing in any documentation
 that you include with the keyboard.</p>
 
+<h2 id="Note">Format Note</h2>
+
+<p>In Keyman Developer 12.0 and earlier, the <code><var>virtualKey</var></code> parameter had to be enclosed in both quotes and square brackets.
+As of Keyman Developer 13.0, the quotes are no longer required.</p>
+
 <h2 id="Examples">Examples</h2>
 
 <h3 id="Example:_Using_hotkey" name="Example:_Using_hotkey">Example: Using <code>&amp;hotkey</code></h3>
 
-<pre><code>store(&amp;hotkey) "[ALT SHIFT K_PAUSE]"   c Alt+Shift+Pause
+<pre><code>store(&amp;hotkey) [ALT SHIFT K_PAUSE]   c Alt+Shift+Pause
 </code></pre>
 
 <h2>Platforms</h2>
