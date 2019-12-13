@@ -309,6 +309,9 @@
 <h3>Version History</h3>
 
 <dl>
+  <dt>1.0.5, 2019-12-13</dt>
+  <dd>Added deprecated field to keyboard_info</dd>
+  
   <dt>1.0.4, 2018-06-26</dt>
   <dd>Added legacy query filter</dd>
 
