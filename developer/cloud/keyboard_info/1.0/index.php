@@ -336,7 +336,7 @@
 <td>deprecated</td>
 <td></td>
 <td></td>
-<td></td>
+<td>yes</td>
 <td>
   <p><b>boolean</b>, true if the keyboard has been deprecated.</p>
 
