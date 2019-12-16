@@ -332,6 +332,17 @@
   <p><b>object</b>, with each property an id of a keyboard and corresponding value is a <b>KeyboardRelatedInfo</b>.</p>
 </td>
 </tr>
+<tr>
+<td>deprecated</td>
+<td></td>
+<td></td>
+<td>yes</td>
+<td>
+  <p><b>boolean</b>, true if the keyboard has been deprecated.</p>
+
+  <p><b>Generation:</b> Always generated automatically, currently only visible on api.keyman.com/search.</p>
+</td>
+</tr>
 </tbody>
 </table>
 
