@@ -69,12 +69,14 @@ its value to <code>1</code>.</p>
 key codes in the touch definition. Web keyboards have limitations due to the inconsistent ability to determine the active physical
 layout.</p>
 
+<p>While mnemonic keyboards work on Mac, you cannot select a different base keyboard.</p>
+
 <table class='platform'>
   <thead>
-    <tr><th>Windows</th><th>macOS</th><th>Desktop web</th><th>Mobile web</th><th>iOS</th><th>Android</th></tr>
+    <tr><th>Windows</th><th>macOS</th><th>Linux</th><th>Desktop web</th><th>Mobile web</th><th>iOS</th><th>Android</th></tr>
   </thead>
   <tbody>
-    <tr><td>✔</td><td>✔</td><td>1/2</td><td>✘</td><td>✘</td><td>✘</td></tr>
+  <tr><td>✔</td><td>1/2</td><td>✘</td><td>1/2</td><td>✘</td><td>✘</td><td>✘</td></tr>
   </tbody>
 </table>
 
