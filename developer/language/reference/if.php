@@ -60,12 +60,14 @@ if(opt2 = '1') + any(letterGroup1) > index(outputGroup1,2)
 
 <p>The <code>if()</code> statement can be used in keyboards on the following platforms.</p>
 
+<p>Support for Mac and Linux is incomplete as the options.htm form to set variable stores is not supported.</p>
+
 <table class='platform'>
   <thead>
-    <tr><th>Windows</th><th>macOS</th><th>Desktop web</th><th>Mobile web</th><th>iOS</th><th>Android</th></tr>
+    <tr><th>Windows</th><th>macOS</th><th>Linux</th><th>Desktop web</th><th>Mobile web</th><th>iOS</th><th>Android</th></tr>
   </thead>
   <tbody>
-    <tr><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr>
+    <tr><td>✔</td><td>1/2</td><td>1/2</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr>
   </tbody>
 </table>
 
