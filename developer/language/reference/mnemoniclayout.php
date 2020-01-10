@@ -69,7 +69,7 @@ its value to <code>1</code>.</p>
 key codes in the touch definition. Web keyboards have limitations due to the inconsistent ability to determine the active physical
 layout.</p>
 
-<p>While mnemonic keyboards work on Mac, you cannot select a different base keyboard.</p>
+<p>While mnemonic keyboards work on Mac or Linux, you cannot select a different base keyboard.</p>
 
 <table class='platform'>
   <thead>
