@@ -9,7 +9,7 @@
     <span class="inlinemediaobject"><img src="desktop_images/proxy-config.png"></span>
   </p><p>Most users do not need to change their proxy configuration.  Proxy configuration is used only in networked environments, and if a proxy server is present,
   your network administrator will be able to provide you with the details required.</p><p>Proxy details are used when checking for updates online and when downloading a keyboard layout.  If no proxy details are entered, Keyman Desktop Configuration 
-  will use the proxy settings from Internet Explorer.</p><h3><a name="id567936"></a>Related Topics</h3><div class="itemizedlist"><ul type="disc"><li><p>
+  will use the proxy settings from Internet Explorer.</p><h3><a name="id589540"></a>Related Topics</h3><div class="itemizedlist"><ul type="disc"><li><p>
         <a class="xref" href="start_download-install_keyboard.php" title="How To - Download and Install a Keyman Keyboard">How To - Download and Install a Keyman Keyboard</a>
       </p></li><li><p>
         <a class="xref" href="basic_update.php" title="Software Task - Update Keyman Desktop">Software Task - Update Keyman Desktop</a>
