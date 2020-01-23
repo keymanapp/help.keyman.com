@@ -156,64 +156,6 @@ function loaded(){
     });
   })();
   
-  // Jira feedback form
-  function getCookie(cname)
-  {
-    var name = cname + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0; i<ca.length; i++)
-    {
-      var c = ca[i].trim();
-      if (c.indexOf(name)==0) return c.substring(name.length,c.length);
-     }
-    return "";
-  }
-  $('#jira-feedback-tab').click(function(){
-    var email = getCookie('feedback-email');
-    if (email != '') {
-      $('#jira-email').val(email);
-      $('#clear-jira-cookie').show();
-    }
-    $('#jira-feedback').toggleClass('selected');
-    if($('#jira-feedback').hasClass('selected')) {
-      $('#jira-description').focus();
-    }
-  });
-  $('#jira-feedback-form').submit(function(){
-    var url = '/prog/jira.php';
-    var projectId = 'WEB';
-    var description = $('#jira-description').val();
-    var email = $('#jira-email').val();
-    if (email != '') {
-      document.cookie="feedback-email="+email;
-    }
-    if (description == '') {
-      alert('You must enter a comment.');
-      $('#jira-description').focus();
-      return false;
-    }
-    $('#jira-submit input').attr('disabled','disabled');
-    $.ajax({
-      type: "POST",
-      url: url,
-      data:
-      {
-        "projectId" : projectId,
-        "description" : description,
-        "page" : location.href,
-        "email" : email
-      }
-    }).done(function( data ) {
-      //console.log(data);
-      alert(data);
-      $('#jira-feedback').toggleClass('selected');
-      $('#jira-submit input').removeAttr('disabled');
-    });
-    return false;
-  });
-
-  
-  
   /*!
    * toc - jQuery Table of Contents Plugin
    * v0.3.2
