@@ -41,7 +41,7 @@ separately.</p>
     <dd>The keyboard version. Status.</dd>
 
     <dt>Is right-to-left</dt>
-    <dd>Currently, this is only applicable to .js keyboards. This reflects the checkbox in the
+    <dd>Currently, this is only applicable to Android, iOS and Web (that is, .js format) keyboards. This reflects the checkbox in the
       <a href="./keyboard-editor#details-fields">Details tab</a> of the Keyboard editor. Status.
 
       <aside>
@@ -49,7 +49,7 @@ separately.</p>
         <p>Is right-to-left will only be true if the following occur:
           <ul>
             <li>"Keyboard is right-to-left" is checked in the Keyboard editor</li>
-            <li>.js keyboard is added to package</li>
+            <li>A .js keyboard is added to package</li>
           </ul>
         </p>
       </aside>
@@ -59,12 +59,12 @@ separately.</p>
 <p>
   <dl id="keyboards-font-fields">
     <dt>Keyboard font</dt>
-    <dd>When font files are added to the package, this dropdown tells the Keyman apps installing .js keyboards which font
-        to use when rendering keyboard output. Optional.</dd>
+    <dd>When font files are added to the package, this dropdown tells the Keyman apps for iOS and Android which font
+        to use when rendering the On Screen Keyboard touch keyboard. Optional.</dd>
 
     <dt>Display font</dt>
-    <dd>When font files are added to the package, this dropdown tells the Keyman apps installing .js keyboards which font
-        to use when rendering the OSK. Optional.</dd>
+    <dd>When font files are added to the package, this dropdown tells the Keyman apps for iOS and Android which font
+        to use in edit fields. It only applies within the Keyman app and apps that support this functionality. Optional.</dd>
   </dl>
 
   <dl id="keyboards-languages-fields">
