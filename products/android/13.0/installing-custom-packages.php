@@ -63,29 +63,39 @@ head([
   Older versions of Android grant Storage permissions at app installation time, so those users can skip this step.
 </p>
 <p>
-  Step 4) Keyman for Android will parse the metadata in the package. If the keyboard package includes a "welcome.htm"
+  Step 4) Keyman for Android will parse the metadata in the package. If the keyboard package includes a "readme.htm"
   file, this will be displayed at the confirmation to install the keyboard package.
 </p>
 <p>
-  <img class="phone" id="dist-welcome-ap" src="<?= cdn("img/app/13.0/dist-welcome-ap.png")?>">
-  <img class="tablet" id="dist-welcome-at" src="<?= cdn("img/app/13.0/dist-welcome-at.png")?>">
+  If "readme.htm" is not included, a generic page with the package ID and package version will be shown. Click the
+  "Install" button to install the entire keyboard package.
 </p>
 <p>
-  If "welcome.htm" is not included, a generic page with the package ID and package version will be shown. Click the
-  left "Install" button to install the entire keyboard package.
+  <img class="phone" id="dist-readme-ap" src="<?= cdn("img/app/13.0/dist-readme-ap.png")?>">
+  <img class="tablet" id="dist-readme-at" src="<?= cdn("img/app/13.0/dist-readme-at.png")?>">
 </p>
+
+
 <p>
   Step 5) All the keyboards in the package are installed as a group. In this example, the package only has the
   "Khmer Angkor" keyboard, so it becomes the active keyboard. For custom dictionary packages, only one dictionary
   will be installed.
 </p>
 <p>
+  If the keyboard package includes a "welcome.htm" file, it will be displayed after the keyboard package is installed.
+</p>
+<p>
+  <img class="phone" id="dist-welcome-ap" src="<?= cdn("img/app/13.0/dist-welcome-ap.png")?>">
+  <img class="tablet" id="dist-welcome-at" src="<?= cdn("img/app/13.0/dist-welcome-at.png")?>">
+</p>
+<p>
+  Click the "OK" button to finish installing the keyboard. You should be able to use it as normal.
+</p>
+<p>
   <img class="phone" id="dist-install1-ap" src="<?= cdn("img/app/13.0/dist-install1-ap.png")?>">
   <img class="tablet" id="dist-install1-at" src="<?= cdn("img/app/13.0/dist-install1-at.png")?>">
 </p>
 <p>
-  Once the keyboard has been installed, you should be able to use it as normal.
-  <br/>
   To learn how to create a custom installable keyboard,
   <a href="https://help.keyman.com/developer/12.0/guides/distribute/">click here</a>.
 </p>

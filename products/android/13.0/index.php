@@ -113,6 +113,10 @@ head([
     <td><img id="settings-ap" src="<?= cdn("img/app/13.0/settings-a.png")?>"></td>
     <td>Open the Keyman Settings screen</td>
   </tr>
+  <tr>
+    <td><img id="cloud-download-ap" src="<?= cdn("img/app/13.0/ic_cloud_download.png")?>"></td>
+    <td>Update available to download for keyboard / dictionary</td>
+  </tr>
 </table>
 
 <h2>Accessing Keyboard Help</h2>
