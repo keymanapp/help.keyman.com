@@ -63,8 +63,8 @@ head([
   Older versions of Android grant Storage permissions at app installation time, so those users can skip this step.
 </p>
 <p>
-  Step 4) Keyman for Android will parse the metadata in the package. If the keyboard package includes a "readme.htm"
-  file, this will be displayed at the confirmation to install the keyboard package.
+  Step 4) Keyman for Android will verify the package, and display more information about it, including package version and 'readme' notes if available.
+  This will be displayed at the confirmation to install the keyboard package.
 </p>
 <p>
   If "readme.htm" is not included, a generic page with the package ID and package version will be shown. Click the
@@ -82,14 +82,16 @@ head([
   will be installed.
 </p>
 <p>
-  If the keyboard package includes a "welcome.htm" file, it will be displayed after the keyboard package is installed.
+  If the keyboard package includes Welcome documentation, it will be displayed after the keyboard package is installed.
+  This documentation helps you to get started using the keyboard.
 </p>
 <p>
   <img class="phone" id="dist-welcome-ap" src="<?= cdn("img/app/13.0/dist-welcome-ap.png")?>">
   <img class="tablet" id="dist-welcome-at" src="<?= cdn("img/app/13.0/dist-welcome-at.png")?>">
 </p>
 <p>
-  Click the "OK" button to finish installing the keyboard. You should be able to use it as normal.
+  Click the "OK" button to finish installing the keyboard. You should be able to select it from the Keyman globe
+  and start typing with it in any app.
 </p>
 <p>
   <img class="phone" id="dist-install1-ap" src="<?= cdn("img/app/13.0/dist-install1-ap.png")?>">
