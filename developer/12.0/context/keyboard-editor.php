@@ -178,8 +178,13 @@ state. You can change the shift state by clicking on the Shift, Ctrl, and Alt ke
   use both interchangeably).</dd>
   
   <dt>Display 102nd Key (as on European keyboards)</dt>
-  <dd>European keyboards have one extra key that is not on US keyboards. This key is positioned to the right of the left shift key. Some other keyboards have additional keys;
-  these are not shown on the layout designer.</dd>
+  <dd>
+    European keyboards have one extra key that is not on US keyboards. This key is positioned to the right of the left shift key. 
+    Some other keyboards have additional keys; these are not shown on the layout designer. If you have a European layout selected as
+    your Windows layout, the 102nd key will always be visible in the designer. When a European layout is selected as your Windows
+    layout, the shape of the Enter key will also change to take two rows, and the backslash key will move down one row, but not
+    otherwise change in behaviour.
+  </dd>
 </dl>
 
 <p>You can press and release <kbd>Ctrl</kbd> to select another key on the keyboard using your keyboard.</p>
@@ -228,8 +233,14 @@ hide some of the details of encoding from the interface presented to the user. T
   <dd>If checked, treats the left and right Ctrl/Alt as separate layers</dd>
   
   <dt>Display 102nd Key (as on European keyboards)</dt>
-  <dd>European keyboards have one extra key that is not on US keyboards. This key is positioned to the right of the left shift key. Some other keyboards have additional keys;
-  these are not shown on the layout designer.</dd>
+  <dd>
+    European keyboards have one extra key that is not on US keyboards. This key is positioned to the right of the left shift key. Some
+    other keyboards have additional keys; these are not shown on the layout designer. If you have a European layout selected as your
+    Windows layout, the 102nd key will always be visible in the designer; ensure you select this checkbox if you want the 102nd key to
+    always be visible to end users of the layout, irrespective of their selected base layout. When a European layout is selected as your
+    Windows layout, the shape of the Enter key will also change to take two rows, and the backslash key will move down one row, but not
+    otherwise change in behaviour.
+  </dd>
   
   <dt>Auto-fill underlying layout</dt>
   <dd>When the Fill from layout button is clicked, if this option is checked, then keys without corresponding rules in the Layout will be filled with the base layout character.</dd>
@@ -263,8 +274,13 @@ you load it onto a device. The following image shows all aspects of the touch de
   you will probably want to select a new template to transform the desktop-oriented design to a tablet or phone design automatically.</dd>
   
   <dt>Platform area</dt>
-  <dd>The platform controls allow you to select and add or remove platform support for a given layout. If a platform is not defined, then Keyman Engine will transform the layout from another
-  platform automatically, so you don't necessarily need to define layouts for each platform.</dd>
+  <dd>
+    The platform controls allow you to select and add or remove platform support for a given layout. If a platform is not defined,
+    then Keyman Engine will transform the layout from another platform automatically, so you don't necessarily need to define 
+    layouts for each platform. If the 'Display underlying' checkbox is checked, then the base or underlying layout will show in
+    small letters at the top left of each key cap. This can be helpful to provide users with a guide as to the position of each
+    key on the keyboard, especially for non-Latin scripts.
+  </dd>
   
   <dt>Layer area</dt>
   <dd>Each layout for each platform is made up of one or more layers of keys. Each layer can have a default shift state associated with it, which allows keys to trigger specific rules in the 
