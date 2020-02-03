@@ -15,7 +15,7 @@
  mobile keyboards looks very similar, but it hides the reality of additional steps necessary for 
  mobile keyboards. This tutorial attempts to walk you through the process.
 <p>The
-<a href="../desktop-keyboard-tutorial">Quick French tutorial</a> shows how to create a simple desktop keyboard
+<a href="../tutorial/">Quick French tutorial</a> shows how to create a simple desktop keyboard
 for typing accented characters used in French and other European
 languages. It is possible to create a touch screen format of that
 keyboard, but it is probably unnecessary. The default keyboards for 
