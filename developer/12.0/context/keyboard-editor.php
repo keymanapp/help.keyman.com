@@ -487,11 +487,11 @@ edge moving off the grid to the other side of the grid.</p>
 
 <h2>Embedded JS tab</h2>
 
-<p>This tab allows you to edit JavaScript code associated with the <a href='../guides/develop/imx'>IMX functionality</a> of the keyboard.</p>
+<p>This tab allows you to edit JavaScript code in the file referenced by the <a href='/developer/language/reference/kmw_embedjs'><code>&amp;kmw_embedjs</code></a> store, implementing <a href='../guides/develop/imx'>IMX functionality</a> of the keyboard.</p>
 
 <h2>Embedded CSS tab</h2>
 
-<p>This tab allows you to edit the Cascading Style Sheet rules for the keyboard.</p>
+<p>This tab allows you to edit the Cascading Style Sheet rules in the file referenced by the <a href='/developer/language/reference/kmw_embedcss'><code>&amp;kmw_embedcss</code></a> store for the keyboard.</p>
 
 <h2>Web Help tab</h2>
 
