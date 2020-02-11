@@ -108,10 +108,6 @@ in the <a href='../reference/file-types/model-ts'>Lexical Model File Format Refe
 
 <p class='context-main-image'><img src="<?= cdn('img/developer/130/ui/frmModelEditor_Build.png') ?>" alt="Model Editor - Build tab" /></p>
 
-<h2>Build tab</h2>
-
-<p class='context-main-image'><img src="<?= cdn('img/developer/100/ui/frmKeymanWizard_Build.png') ?>" alt="Keyboard Editor - Build tab" /></p>
-
 <p>A set of common controls is across the top of this tab:</p>
 
 <dl>
