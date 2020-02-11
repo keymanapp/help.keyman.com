@@ -8,6 +8,8 @@
 
 <h1>Project Window</h1>
 
+<!-- TODO: add Welcome screen, Model Projects -->
+
 <p>The Project allows you to manage all the files that you are working on in Keyman Developer, and guides you on the steps to creating
 a keyboard solution. Changes to the project are automatically saved.</p>
 

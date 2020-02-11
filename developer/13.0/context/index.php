@@ -12,6 +12,7 @@
   <!--dt><a href="keyman-developer">Keyman Developer Help</a></dt-->
   <dt><a href="project">Project Window</a></dt>
   <dt><a href="keyboard-editor">Keyboard Editor</a></dt>
+  <dt><a href="model-editor">Model Editor</a></dt>
   <dt><a href="debug">Debug Window</a></dt>
   <dt><a href="package-editor">Package Editor</a></dt>
   <dt><a href="editor">Text Editor</a></dt>

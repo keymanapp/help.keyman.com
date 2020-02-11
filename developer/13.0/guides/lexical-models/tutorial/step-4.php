@@ -8,6 +8,9 @@
 
 <h1>Step 4: Editing a model definition file</h1>
 
+<!-- TODO: think about how we can simplify the sourceTermToKey function; remove most of this content now referenced 
+           in reference/file-types/model-ts.php -->
+           
 <p>This step provides more information about the model definition <code>.model.ts</code> file which is edited in the 
 <strong>Source</strong> tab of the model editor in Keyman Developer. If you are not wanting to make advanced modifications to the
 model, you may be able to skip this step, and go straight to <a href='step-5'>Step 5: Compile the lexical model</a>.
@@ -94,7 +97,7 @@ which works well for most languages.
 </p>
 
 <p> However, in languages written in other scripts—especially East Asian
-scripts like Chinese, Japanese, Khmer, Lao, and Thai—there are is no obvious
+scripts like Chinese, Japanese, Khmer, Lao, and Thai—there are no obvious
 break in between words. For these languages, there must be special rules for
 determining when words start and stop. This is what a <dfn>word breaking
 function</dfn> is responsible for. It is a little bit of code that looks at some
@@ -145,8 +148,12 @@ specify one: </p>
   // e.g.,  a + ˚ → a
   let termWithoutDiacritics = lowercasedTerm.replace(COMBINING_DIACRITICAL_MARKS, '')
 
+  // Recombine any remaining decomposed forms (for Latin, there may not be many),
+  // converting to Unicode Normalization form C "composed".
+  let termWithoutDiacriticsNFC = termWithoutDiacritics.normalize('NFC');
+
   // The resultant key is lowercased, and has no accents or diacritics.
-  return termWithoutDiacritics;
+  return termWithoutDiacriticsNFC;
 },</code></pre>
 
 <p> This should be sufficient for most Latin-based writing systems. However,
