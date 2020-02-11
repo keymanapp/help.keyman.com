@@ -43,6 +43,7 @@ need here, including product documentation, guides and tutorials, and full refer
 <h2>Older versions</h2>
 
 <ul>
+<li><a href='../12.0'>Keyman Developer 12.0 Documentation</a></li>
   <li><a href='../11.0'>Keyman Developer 11.0 Documentation</a></li>
   <li><a href='../10.0'>Keyman Developer 10.0 Documentation</a></li>
   <li><a href='../9.0'>Keyman Developer 9.0 Documentation</a></li>
@@ -57,9 +58,9 @@ need here, including product documentation, guides and tutorials, and full refer
   <li><a href='/developer/whitepaper1.1.pdf'>Keyboard Quality White Paper</a></li>
   <li><a href='/kb'>Knowledge Base</a></li>
   <li><a href='/products/desktop'>Keyman Desktop Help</a></li>
-  <li><a href='/developer/engine/desktop/12.0/'>Keyman Engine for Desktop</a></li>
+  <li><a href='/developer/engine/desktop/13.0/'>Keyman Engine for Desktop</a></li>
   <li><a href='/developer/engine/web/'>Keyman Engine for Web</a></li>
-  <li><a href='/developer/engine/iphone-and-ipad/12.0/'>Keyman Engine for iPhone and iPad</a></li>
-  <li><a href='/developer/engine/android/12.0/'>Keyman Engine for Android</a></li>
+  <li><a href='/developer/engine/iphone-and-ipad/13.0/'>Keyman Engine for iPhone and iPad</a></li>
+  <li><a href='/developer/engine/android/13.0/'>Keyman Engine for Android</a></li>
 </ul>
 

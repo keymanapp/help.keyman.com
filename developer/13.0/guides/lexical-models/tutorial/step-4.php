@@ -8,11 +8,15 @@
 
 <h1>Step 4: Editing a model definition file</h1>
 
+<p>This step provides more information about the model definition <code>.model.ts</code> file which is edited in the 
+<strong>Source</strong> tab of the model editor in Keyman Developer. If you are not wanting to make advanced modifications to the
+model, you may be able to skip this step, and go straight to <a href='step-5'>Step 5: Compile the lexical model</a>.
+
 <p>We have exported our wordlist to <code>wordlist.tsv</code>. We now need to
 tell the <strong>lexical model compiler</strong> how to turn this raw word list
 into a lexical model that is quick to use on a smartphone.</p>
 
-<p>To do this, we must create a model definition file.</p>
+<p>To do this, we must edit the model definition file.</p>
 
 <p>This is a small <a href="https://www.typescriptlang.org/">TypeScript</a>
 source code file that tells us where to find the word list file, as well as
@@ -22,9 +26,7 @@ language’s spelling system or <em>orthography</em>.</p>
 <h2> The model definition template </h2>
 
 <p><strong>Keyman Developer</strong> will provide you with a model definition
-similar to the following. If you want to create the file yourself, copy-paste the following template, and save
-it as <code>model.ts</code>. Place this file in the same folder as
-<code>wordlist.tsv</code>.</p>
+similar to the following.</p>
 
 <pre><code class="lang-typescript">/*
   sencoten 1.0 generated from template.
@@ -36,6 +38,7 @@ it as <code>model.ts</code>. Place this file in the same folder as
 
 const source: LexicalModelSource = {
   format: 'trie-1.0',
+  wordBreaker: 'default',
   sources: ['wordlist.tsv'],
 };
 export default source;</code></pre>
@@ -52,13 +55,18 @@ lexical model such that it can predict through thousands of words very
 quickly. </p>
 <pre><code class="lang-typescript">  format: 'trie-1.0',</code></pre>
 
-<p> On the third line, we're telling the <code>trie</code> where to find our wordlist. </p>
+<p> On the third line, we're specifying the word breaking algorithm that we want to use.
+Keyman supplies a default algorithm that conforms to the rules expected for many Latin-script
+languages.</p>
+<pre><code class="lang-typescript">  wordBreaker: 'default',</code></pre>
+
+<p> On the fourth line, we're telling the <code>trie</code> where to find our wordlist. </p>
 <pre><code class="lang-typescript">  sources: ['wordlist.tsv'],</code></pre>
 
-<p> The fourth line marks the termination of the lexical model source code. If we specify any customizations, they <strong>must</strong> be declared above this line: </p>
+<p> The fifth line marks the termination of the lexical model source code. If we specify any customizations, they <strong>must</strong> be declared above this line: </p>
 <pre><code class="lang-typescript">};</code></pre>
 
-<p> The fifth line is necessary to allow external applications to read the lexical model source code.</p>
+<p> The sixth line is necessary to allow external applications to read the lexical model source code.</p>
 <pre><code class="lang-typescript">export default source;</code></pre>
 
 
