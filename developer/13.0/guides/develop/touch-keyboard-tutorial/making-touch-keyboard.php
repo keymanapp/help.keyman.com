@@ -324,10 +324,10 @@ Keyman Developer is <code class='language-none'>U_0181</code>
 <p>Other Keyman help pages describe how 
 you can test your keyboard:
 <ul><li> <a href=
-"..\..\test\how-to-test-your-touch-layout-in-the-google-chrome-mobile-emulator.php">
+"../../test/keyboard-touch-mobile-emulator">
   On a virtual device in the Chrome web browser on your computer</a></li>
 <li><a href=
-"..\..\test\how-to-test-your-keyboard-layout-with-keyman-developer-10-touch-and-desktop.php">
+"../../test/keyboard-touch-and-desktop">
   On your own device accessing the keyboard over the network
 </a></li>
 </ul>
@@ -380,7 +380,7 @@ character. (Amharic is a Abugida or syllabary script, where one character can
 represent a consonant and following vowel).
 <ul>
   <li>
-    <a href="../creating-a-touch-keyboard-layout-for-amharic-with-keyman-developer-10">
+    <a href="../creating-a-touch-keyboard-layout-for-amharic">
     Creating a touch keyboard layout for Amharic - part 1</a>
   </li>
   <li>

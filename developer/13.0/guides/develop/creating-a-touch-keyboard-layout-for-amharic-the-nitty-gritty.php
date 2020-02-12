@@ -455,9 +455,9 @@ understand a layout, which will usually comprise a list of two separate JSON obj
 <p>Other articles on developing touch layouts:</p>
 
 <ul>
-  <li><a href="creating-a-touch-keyboard-layout-for-amharic-with-keyman-developer-10">Creating a touch keyboard layout for Amharic - part 1</a></li>
-  <li><a href="../test/how-to-test-your-keyboard-layout-with-keyman-developer-10-touch-and-desktop">How to test your keyboard layout — touch and desktop</a></li>
-  <li><a href='../test/how-to-test-your-touch-layout-in-the-google-chrome-mobile-emulator'>How to test your touch layout in the Google Chrome mobile emulator</a></li>
+  <li><a href="creating-a-touch-keyboard-layout-for-amharic">Creating a touch keyboard layout for Amharic - part 1</a></li>
+  <li><a href="../test/keyboard-touch-and-desktop">How to test your keyboard layout — touch and desktop</a></li>
+  <li><a href='../test/keyboard-touch-mobile-emulator'>How to test your touch layout in the Google Chrome mobile emulator</a></li>
 </ul>
 
 <p>You can distribute your keyboard to other users by following the instructions in this article:</p>

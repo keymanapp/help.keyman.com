@@ -13,10 +13,10 @@ builds on knowledge found in the following two articles:</p>
 
 <ul>
   <li>
-    <a href='how-to-test-your-keyboard-layout-with-keyman-developer-10-touch-and-desktop'>Testing keyboard layouts on devices</a>
+    <a href='keyboard-touch-and-desktop'>Testing keyboard layouts on devices</a>
   </li>
   <li>
-    <a href='how-to-test-your-touch-layout-in-the-google-chrome-mobile-emulator'>Testing keyboard layouts in the Chrome Mobile 
+    <a href='keyboard-touch-mobile-emulator'>Testing keyboard layouts in the Chrome Mobile 
     Emulator</a>
   </li>
 </ul>
@@ -72,8 +72,7 @@ sensible input to the model.</p>
 
   <li>
     If you choose to use Google Chrome Mobile Emulator, click <strong>Open debugger in local browser</strong> and follow the steps 
-    in the <a href='how-to-test-your-touch-layout-in-the-google-chrome-mobile-emulator'>article on testing with Chrome</a> to start
-    testing.
+    in the <a href='keyboard-touch-mobile-emulator'>article on testing with Chrome</a> to start testing.
     <br />
     <img title="model-test" src="<?= cdn('img/developer/130/lm/model-test-in-emulator.png')?>">
   </li>

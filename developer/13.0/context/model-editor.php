@@ -69,8 +69,8 @@ which can be seen in the <strong>Source</strong> tab:</p>
   <code>sources</code> variable in the .model.ts source file.</dd>
 </dl>
 
-<p>Note: if the .model.ts file cannot be parsed by the model editor, if for example it contains more complex constructs, the
-field shown here will be read only and you will need to make changes only in the <strong>Source</strong> tab.</p>
+<p>Note: if the .model.ts file cannot be parsed by the model editor, the field shown here will be read only and you will need to 
+make changes only in the <strong>Source</strong> tab. This can happen if the .model.ts contains more complex code.</p>
 
 <h2 id="wordlist.tsv">Wordlist tabs</h2>
 
@@ -113,7 +113,7 @@ in the <a href='../reference/file-types/model-ts'>Lexical Model File Format Refe
 <dl>
   <dt>Compile Model</dt>
 
-  <dd>You can compile the model for testing and installation by clicking the <span class="guibutton">Compile</span> button, or
+  <dd>You can compile the model for testing and installation by clicking the <span class="guibutton">Compile Model</span> button, or
   selecting Model, Compile Model. This will compile the model into a single Javascript file, named as shown in the <strong>Target
   filename</strong> field.</dd>
 
@@ -121,7 +121,8 @@ in the <a href='../reference/file-types/model-ts'>Lexical Model File Format Refe
   <dd>Opens the folder which contains the model source files.</dd>
   
   <dt>Add to Project</dt>
-  <dd>If the model file is not already part of the project, adds it to the project.</dd>
+  <dd>If the model file is not already part of the project, adds it to the project. (Note: this button can sometimes have the 
+  caption "Current editor file".)</dd>
 </dl>
 
 <h3>Test Lexical Model in Web Browser</h3>
