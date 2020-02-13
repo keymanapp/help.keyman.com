@@ -103,6 +103,7 @@
 <h2>Keyman for iPhone and iPad Documentation Versions</h2>
 
 <ul>
+  <li><a href='../13.0/'>Keyman for iPhone and iPad 13.0 Documentation</a></li>
   <li><a href='../12.0/'>Keyman for iPhone and iPad 12.0 Documentation</a></li>
   <li><a href='../11.0/'>Keyman for iPhone and iPad 11.0 Documentation</a></li>
   <li><a href='../10.0/'>Keyman for iPhone and iPad 10.0 Documentation</a></li>

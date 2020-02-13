@@ -16,23 +16,23 @@
 <p>
    Some keyboards require special fonts that do not come standard with your iPhone or iPad. For keyboards that use these fonts, the Keyman app will provide a download of the font to install onto your device, meaning all apps will be able to correctly display the font. To install the font, touch <span class="command">Install</span>.
    <br/>
-   <img src="<?php echo cdn("img/app/12.0/font-dl1.png"); ?>" />
+   <img src="<?php echo cdn("img/app/13.0/font-dl1.png"); ?>" />
    <br/><br/>
    You will then be taken to your device settings, and asked to install a profile for the font. Touch <span class="command">Install</span>.
    <br/>
-   <img src="<?php echo cdn("img/app/12.0/font-dl2.png"); ?>" />
+   <img src="<?php echo cdn("img/app/13.0/font-dl2.png"); ?>" />
    <br/><br/>
    Then <span class="command">Install</span> again in the Consent page.
    <br/>
-   <img src="<?php echo cdn("img/app/12.0/font-dl3.png"); ?>" />
+   <img src="<?php echo cdn("img/app/13.0/font-dl3.png"); ?>" />
    <br/><br/>
    Once the profile is installed, touch <span class="command">Done</span>.
    <br/>
-   <img src="<?php echo cdn("img/app/12.0/font-dl4.png"); ?>" />
+   <img src="<?php echo cdn("img/app/13.0/font-dl4.png"); ?>" />
    <br/><br/>
    And then <span class="command">Touch now to return to Keyman</span>.
    <br/>
-   <img src="<?php echo cdn("img/app/12.0/font-dl5.png"); ?>" />
+   <img src="<?php echo cdn("img/app/13.0/font-dl5.png"); ?>" />
    <br/><br/>
    The font is now successfully installed, and will display correctly throughout your device!
 </p>

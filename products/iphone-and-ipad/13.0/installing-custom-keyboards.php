@@ -21,7 +21,7 @@
   For this example, we'll install a custom keyboard from a link in Safari.  Our example keyboard is for the GFF Amharic 7 keyboard.
 </p>
 <p>
-  <img src="<?= cdn('img/app/12.0/dist-url-screen-i.png')?>">
+  <img src="<?= cdn('img/app/13.0/dist-url-screen-i.png')?>">
 </p>
 <p>
   Safari will display an option to open the KMP file with Keyman.<br/>
@@ -31,7 +31,7 @@
   Once you find the file, look for an <span class="command">Open in "Keyman"</span> option.
 </p>
 <p>
-  <img src="<?= cdn('img/app/12.0/dist-kmp-open-i.png')?>">
+  <img src="<?= cdn('img/app/13.0/dist-kmp-open-i.png')?>">
 </p>
 <p>
   Click <span class="command">Open in "Keyman"</span> to continue.
@@ -42,7 +42,7 @@
   displayed at this time.
 </p>
 <p>
-  <img src="<?= cdn('img/app/12.0/dist-welcome-i.png')?>">
+  <img src="<?= cdn('img/app/13.0/dist-welcome-i.png')?>">
 </p>
 <p>
   Click the <span class="command">"Install"</span> button at the top right.
@@ -51,18 +51,18 @@
 The keyboard from the keyboard package will then be successfully installed!
 </p>
 <p>
-  <img src="<?= cdn('img/app/12.0/dist-kmp-success-i.png')?>">
+  <img src="<?= cdn('img/app/13.0/dist-kmp-success-i.png')?>">
 </p>
 <p>
   All the keyboards in the package are installed as a group. In this example, the package only has the "GFF Amharic 7"
   keyboard, so it becomes the active keyboard.
 </p>
 <p>
-  <img src="<?= cdn('img/app/12.0/dist-install1-i.png')?>">
+  <img src="<?= cdn('img/app/13.0/dist-install1-i.png')?>">
 </p>
 
 <p>
-  To learn how to create a custom installable keyboard, <a href="http://help.keyman.com/developer/12.0/guides/distribute/">click here</a>.
+  To learn how to create a custom installable keyboard, <a href="http://help.keyman.com/developer/13.0/guides/distribute/">click here</a>.
 </p>
 
 <h2>Help Index</h2>
