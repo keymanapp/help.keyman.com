@@ -2,7 +2,7 @@
   require_once('includes/template.php');
   head([
     'title' => 'Keyman for iPhone and iPad Version History',
-    'css' => ['template.css', 'index.css'],
+    'css' => ['template.css'],
     'showMenu' => true
   ]);
 

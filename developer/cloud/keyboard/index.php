@@ -4,7 +4,7 @@
   // Required
   head([
     'title' =>'Keyboard result API',
-    'css' => ['template.css','index.css'],
+    'css' => ['template.css'],
     'showMenu' => true
   ]);
 ?>

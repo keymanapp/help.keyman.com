@@ -32,10 +32,18 @@ function get_file_titles($path) {
 
 function get_file_title($filename) {
   $s = @file_get_contents($filename);
-  if(preg_match('/<h[12][^>]*>(.+?)<\/h[12]>/i', $s, $sub)) {
+  if(preg_match('/<h[12][^>]*>(.+?)<\/h[12]>/i', $s, $sub) && !preg_match('/<\?php/', $sub[1])) {
     $title = $sub[1];
   } else {
-    $title = $filename;
+    if($filename == './index.php') $title = 'Current page';
+    else {
+      $title = basename($filename, '.php');
+      if($title == 'index.php') {
+        $title = basename(dirname($filename));
+      }
+      if($title == '' || $title == '.') $title = 'Untitled page';
+      $title[0] = strtoupper($title[0]);
+    }
   }
   return $title;
 }

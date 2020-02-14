@@ -1,83 +1,4 @@
-@font-face {
-	font-family:GeezWeb;
-	font-style:normal;
-	font-weight:normal;
-	src:url('/font/deploy/wookianos.ttf') format('truetype');
-}
-@font-face {
-	font-family:MyanmarWeb;
-	font-style:normal;
-	font-weight:normal;
-	src:url('/font/deploy/Padauk.ttf') format('truetype');
-}
-/*@font-face {
-	font-family:LatinWeb;
-	font-style:normal;
-	font-weight:normal;
-	src:url('/font/deploy/DejaVuSans.ttf') format('truetype');
-}*/
-@font-face {
-	font-family:OriyaWeb;
-	font-style:normal;
-	font-weight:normal;
-	src:url('/font/deploy/utkalm.ttf') format('truetype');
-}
-@font-face {
-	font-family:EgyptianWeb;
-	font-style:normal;
-	font-weight:normal;
-	src:url('/font/deploy/Gardiner.ttf') format('truetype');
-}
-@font-face {
-	font-family:SinhalaWeb;
-	font-style:normal;
-	font-weight:normal;
-	src:url('/font/deploy/kaputaunicode.ttf') format('truetype');
-}
-@font-face {
-	font-family:TamilWeb;
-	font-style:normal;
-	font-weight:normal;
-	src:url('/font/deploy/aava1.ttf') format('truetype');
-}
-@font-face {
-	font-family:CherokeeWeb;
-	font-style:normal;
-	font-weight:normal;
-	src:url('/font/deploy/digohweli_1_7.ttf') format('truetype');
-}
-@font-face {
-    font-family: SindhiWeb;
-    font-style:  normal;
-    font-weight: normal;
-    src: url('/font/deploy/MBKhursheed10.6.ttf')  format("truetype");
-}
-@font-face {
-  font-family: TibetanWeb;
-  font-style:  normal;
-  font-weight: normal;
-  src: url('/font/deploy/CTRC-Uchen.ttf')  format("truetype");
-}
-@font-face {
-    font-family: LaoWeb;
-    font-style:  normal;
-    font-weight: normal;
-    src: url('/font/deploy/SAYSETT0.eot'); 
-    src: url('/font/deploy/SAYSETT0.eot?#iefix') format('embedded-opentype'), 
-    url('/font/deploy/saysettha_web.woff') format('woff'), 
-    url('/font/deploy/saysettha_ot.ttf') format('truetype');         
-}
-@font-face {
-    font-family: PashtoWeb;
-    font-style:  normal;
-    font-weight: normal;
-    src: url('/font/deploy/LateefRegOT.ttf')  format("truetype");
-}
-
-@font-face {
-  font-family: "Noto Nastaliq Urdu Draft";
-  src: url('/font/deploy/NotoNastaliqUrduDraft.ttf') format("truetype");
-}
+@import 'fonts.css';
 
 #section2 h3, #section2 h2{
   color: #B92034;
@@ -104,11 +25,6 @@
 .lang2{
   line-height: 1.2;
   font-size: 150% !important;
-}
-
-.lang2:lang(urd) {
-  font-family: "Noto Nastaliq Urdu Draft";
-  font-weight: normal;
 }
 
 #keymanExample{
@@ -177,6 +93,3 @@ samp {
   margin-top: 20px;
 }
 
-:lang(egy).language, .hiero{
-  font-family:EgyptianWeb !important;
-}

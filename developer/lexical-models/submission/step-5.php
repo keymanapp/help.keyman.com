@@ -4,7 +4,7 @@
     // Required
     head([
         'title' =>'Step 5: Submitting a GitHub Pull Request',
-        'css' => ['template.css','index.css', 'prism.css', 'kmguides.css'],
+        'css' => ['template.css', 'prism.css', 'kmguides.css'],
         'showMenu' => true
     ]);
 ?>

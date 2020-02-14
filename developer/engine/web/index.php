@@ -4,7 +4,7 @@
   // Required
   head([
     'title' =>'Keyman Engine for Web Developer Help',
-    'css' => ['template.css','index.css'],
+    'css' => ['template.css'],
     'showMenu' => true
   ]);
 ?>

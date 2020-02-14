@@ -3,7 +3,7 @@
 
   head([
     'title' => "Step 6: Compiling, testing and distributing a Package",
-    'css' => ['template.css','index.css','kmguides.css']
+    'css' => ['template.css','kmguides.css']
   ]);
 ?>
 

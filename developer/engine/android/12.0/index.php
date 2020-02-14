@@ -1,12 +1,11 @@
 <?php
-  $pagetitle = 'Keyman Engine for Android 12.0 Developer Support';
   require_once('includes/template.php');
   
   head([
-    'title' => $pagetitle
+    'title' => 'Keyman Engine for Android'
   ]);
 ?>
-<h1 class="center"><?php echo $pagetitle; ?></h1>
+<h1 class="center">Keyman Engine for Android</h1>
 
 <h2 id="Overview" name="Overview">Overview</h2>
 

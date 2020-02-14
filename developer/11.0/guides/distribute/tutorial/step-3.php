@@ -3,7 +3,7 @@
 
   head([
     'title' => "Step 3: Creating a package and adding files",
-    'css' => ['template.css','index.css','kmguides.css']
+    'css' => ['template.css','kmguides.css']
   ]);
 ?>
 

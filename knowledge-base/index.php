@@ -44,7 +44,7 @@
   // Required
   head([
     'title' =>'Keyman Support | ' . $title,
-    'css' => ['template.css','index.css','prism.css'],
+    'css' => ['template.css','prism.css'],
     'showMenu' => true,
     'index' => false
   ]);

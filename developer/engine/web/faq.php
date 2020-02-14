@@ -3,7 +3,7 @@
   // Required
   head([
     'title' =>'Keyman Engine for Web Developer FAQ',
-    'css' => ['template.css','index.css'],
+    'css' => ['template.css'],
     'showMenu' => true
   ]);
 ?>

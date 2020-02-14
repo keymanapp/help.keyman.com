@@ -55,7 +55,7 @@ function loaded(){
   
   
   // Touch device menu functionality
-  if (device == 'Android' || device == 'iPhone' || device == 'iPad') {
+  //if (device == 'Android' || device == 'iPhone' || device == 'iPad') {
     $('#show-phone-menu').click(function(event){
       if ($("#phone-menu").css("display") == "none") {
         $("#phone-menu").show();
@@ -64,7 +64,7 @@ function loaded(){
         $("#phone-menu").hide();
       }	
     });
-  }
+  //}
   
   // Footer to bottom of page
   var link = $('.footer');

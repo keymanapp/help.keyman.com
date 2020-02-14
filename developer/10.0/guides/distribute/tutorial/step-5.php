@@ -3,7 +3,7 @@
 
   head([
     'title' => "Step 5: Shortcuts",
-    'css' => ['template.css','index.css','kmguides.css']
+    'css' => ['template.css','kmguides.css']
   ]);
 ?>
 

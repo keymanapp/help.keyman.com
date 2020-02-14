@@ -3,7 +3,7 @@
 
   head([
     'title' => "Step 3: Get some language data",
-    'css' => ['template.css', 'index.css', 'prism.css', 'dev-lexical-models.css']
+    'css' => ['template.css', 'prism.css', 'dev-lexical-models.css']
   ]);
 ?>
 

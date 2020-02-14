@@ -6,7 +6,7 @@
   // Required
   head([
     'title' =>'Keyman Version API 2.0 Specification',
-    'css' => ['template.css','index.css','prism.css'],
+    'css' => ['template.css','prism.css'],
     'showMenu' => true
   ]);
 ?>
