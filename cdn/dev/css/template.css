@@ -61,9 +61,8 @@ table td{
 }
 
 html{
-    font-family: 'Cabin', sans-serif;
-    /*font-family: 'Open Sans', sans-serif;*/
-    /*font-family: 'Source Sans Pro', sans-serif;*/
+		font-family: 'Cabin', sans-serif;
+		color: #333;
 }
 
 html p,
@@ -216,17 +215,14 @@ html{
 }
 
 .wrapper {
-  width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
 
 #section2 .wrapper {
-    width: initial;
     overflow-x: auto; /* fixes content too wide leading to content dropping below index, but not ideal, temp fix better than previous */
-    max-width: 960px;
     margin-left: 220px;
-    margin-right: 220px;
+    margin-right: 316px; /* leave space for the short menu */
 }
 
 :not(div.interface-hierarchy) blockquote {
@@ -239,7 +235,7 @@ html{
 
 div.interface-hierarchy {
   padding: 0px 10px 10px 10px;
-  line-height: 1.2em;
+  line-height: 1.4;
   font-size: 14pt;
 }
 
@@ -256,16 +252,31 @@ div.interface-hierarchy blockquote {
 }
 
 @media only screen and (min-width: 1440px) {
-  #section2 .wrapper {
-    width: 960px;
-  }
   body #section2 {
     float: none;
-    width: 1400px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
     display: block;
   }
+}
+
+@media only screen and (min-width: 1640px) {
+  body #section2 {
+    float: none;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+	}
+	
+	body #index {
+		width: 256px;
+	}
+
+	#section2 .wrapper {
+		margin-left: 316px;
+	}
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -804,7 +815,6 @@ input[type="search"] {
   font-variant: normal !important;
   text-transform: none !important;
   line-height: 1;
-  speak: none;
   padding-right: 4px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -878,21 +888,18 @@ input[type="search"] {
  *********************************/
 
 #section2{
-	float: left;
-	width: 100%;
-	margin-bottom: 30px;
 	display: inline;
 }
 
 #section2 h1{
-	text-align: center;
+	text-align: left;
 	font-size: 28pt;
 	padding: 40px 10px 10px 10px;
 }
 
 #section2 h2{
 	font-size: 20pt;
-	line-height: 1.2em;
+	line-height: 1.4;
 	padding: 32px 10px 10px 10px;
 }
 
@@ -910,7 +917,7 @@ input[type="search"] {
 
 #section2 p, #section2 dl, #section2 .itemizedlist {
 	padding: 0px 10px 10px 10px;
-	line-height: 1.2em;
+	line-height: 1.4;
 	font-size: 14pt;
 }
 
@@ -919,14 +926,14 @@ input[type="search"] {
 	text-decoration: underline;
 	cursor: pointer;
 	font-weight: 600;
-	line-height: 1.2em;
+	line-height: 1.4;
 }
 
 #section2 li{
 	margin-left: 30px;
 	list-style: disc;
 	list-style-position: outside;
-	line-height: 1.2em;
+	line-height: 1.4;
   font-size: 14pt;
 }
 
@@ -968,11 +975,11 @@ input[type="search"] {
   margin-left: 9px;
   margin-right: 9px;
   padding: 9px;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 #section2 pre[class*="language-"] code[class*="language-"] {
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 .product{
@@ -1749,13 +1756,16 @@ article dl dd span.optional {
 
 #toc.fixed {
   position: fixed;
-  top: 130px;
+	top: 102px;
 }
 
 #toc {
-  top: 0px;
+	top: 172px;
+	position: absolute;
+	right: 20px;
   margin-right: 10px;
-  width: 200px;
+	max-width: 256px;
+	padding-right: 10px;
   background: rgba(242,242,242,0.9);
   overflow: auto;
   border-radius: 4px;
@@ -1793,13 +1803,20 @@ article dl dd span.optional {
   list-style: none;
 }
 
+#index li {
+	margin-left: 16px;
+}
+
+#toc li {
+  list-style: none;
+	margin-left: 12px;
+}
+
 #toc li,
 #index li {
   font-family: 'Calibri', sans-serif;
   font-size: 11pt;
-  list-style: none;
   margin-bottom: 2px;
-  margin-left: 12px;
 }
 
 #toc a,
