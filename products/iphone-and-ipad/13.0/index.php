@@ -87,6 +87,7 @@
   <li><a href='switching-between-keyboards.php'>Switching between keyboards</a></li>
   <li><a href='uninstalling-keyboards.php'>Uninstalling keyboards</a></li>
   <li><a href='installing-custom-keyboards.php'>Installing custom keyboards</a></li>
+  <li><a href='sharing-keyboards.php'>Sharing keyboards</a></li>
   <li><a href='installing-system-keyboard.php'>Installing the Keyman System Keyboard</a></li>
   <li><a href='installing-fonts.php'>Installing fonts</a></li>
   <li><a href='using-keyman-browser.php'>Using the Keyman Browser</a></li>
