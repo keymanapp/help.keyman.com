@@ -3,7 +3,7 @@
   require_once('includes/session-embed.php');
   
   head([
-    'title' => 'Installing Custom Keyboards - Keyman for iPhone and iPad Help',
+    'title' => 'Sharing Keyboards - Keyman for iPhone and iPad Help',
 //    'css' => ['template.css','app-info.css'],
       'css' => ['template.css','keyboard.css','keys.css', 'embed.css'],
 
