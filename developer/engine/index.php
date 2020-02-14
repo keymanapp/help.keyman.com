@@ -5,7 +5,7 @@
   
   // Required
   head([
-    'title' =>'Keyman Support | Type to the world in your language',
+    'title' =>'Keyman Engine',
     'css' => ['template.css'],
     'showMenu' => true,
     'toc' => false,
