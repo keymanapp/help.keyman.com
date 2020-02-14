@@ -4,7 +4,7 @@
   // Required
   head([
     'title' =>'User Interface Design',
-    'css' => ['template.css','index.css'],
+    'css' => ['template.css'],
     'showMenu' => true
   ]);
 ?>

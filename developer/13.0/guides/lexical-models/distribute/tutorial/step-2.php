@@ -3,7 +3,7 @@
 
   head([
     'title' => "Step 2: Editing .htm files for the package",
-    'css' => ['template.css','index.css','kmguides.css']
+    'css' => ['template.css','kmguides.css']
   ]);
 ?>
 

@@ -4,7 +4,7 @@
     // Required
     head([
         'title' =>'Step 2: Before Starting Work on a Lexical Model',
-        'css' => ['template.css','index.css', 'prism.css', 'kmguides.css'],
+        'css' => ['template.css', 'prism.css', 'kmguides.css'],
         'showMenu' => true
     ]);
 ?>

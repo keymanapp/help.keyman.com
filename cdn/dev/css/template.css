@@ -80,130 +80,7 @@ body {
  * Language Section CSS
  * ***********************************/
 
-@font-face {
-	font-family:GeezWeb;
-	font-style:normal;
-	font-weight:normal;
-	src:url('//r.keymanweb.com/20/fonts/wookianos.ttf') format('truetype');
-}
-@font-face {
-	font-family:MyanmarWeb;
-	font-style:normal;
-	font-weight:normal;
-	src:url('//r.keymanweb.com/20/fonts/Padauk.ttf') format('truetype');
-}
-/*@font-face {
-	font-family:LatinWeb;
-	font-style:normal;
-	font-weight:normal;
-	src:url('//r.keymanweb.com/20/fonts/DejaVuSans.ttf') format('truetype');
-}*/
-@font-face {
-	font-family:OriyaWeb;
-	font-style:normal;
-	font-weight:normal;
-	src:url('//r.keymanweb.com/20/fonts/utkalm.ttf') format('truetype');
-}
-@font-face {
-	font-family:SinhalaWeb;
-	font-style:normal;
-	font-weight:normal;
-	src:url('//r.keymanweb.com/20/fonts/kaputaunicode.ttf') format('truetype');
-}
-@font-face {
-	font-family:TamilWeb;
-	font-style:normal;
-	font-weight:normal;
-	src:url('//r.keymanweb.com/20/fonts/aava1.ttf') format('truetype');
-}
-@font-face {
-	font-family:CherokeeWeb;
-	font-style:normal;
-	font-weight:normal;
-	src:url('//r.keymanweb.com/20/fonts/digohweli_1_7.ttf') format('truetype');
-}
-@font-face {
-    font-family: SindhiWeb;
-    font-style:  normal;
-    font-weight: normal;
-    src: url('//r.keymanweb.com/20/fonts/MBKhursheed10.6.ttf')  format("truetype");
-}
-@font-face {
-  font-family: TibetanWeb;
-  font-style:  normal;
-  font-weight: normal;
-  src: url('//r.keymanweb.com/20/fonts/CTRC-Uchen.ttf')  format("truetype");
-}
-@font-face {
-    font-family: LaoWeb;
-    font-style:  normal;
-    font-weight: normal;
-    src: url('//r.keymanweb.com/20/fonts/SAYSETT0.eot'); 
-    src: url('//r.keymanweb.com/20/fonts/SAYSETT0.eot?#iefix') format('embedded-opentype'), 
-    url('//r.keymanweb.com/20/fonts/saysettha_web.woff') format('woff'), 
-    url('//r.keymanweb.com/20/fonts/saysettha_OT.ttf') format('truetype');         
-}
-@font-face {
-    font-family: PashtoWeb;
-    font-style:  normal;
-    font-weight: normal;
-    src: url('//r.keymanweb.com/20/fonts/LateefRegOT.ttf')  format("truetype");
-}
-
-/* Amharic */
-:lang(amh).lang-example {
-	font-family: GeezWeb;
-}
-/* Burmese */
-:lang(mya).lang-example {
-	font-family: MyanmarWeb;
-}
-/* Cherokee */
-:lang(chr).lang-example {
-	font-family: CherokeeWeb;
-}
-/* Lao */
-:lang(lao).lang-example {
-	font-family: LaoWeb;
-}
-/* Malayalam
-:lang(mal).lang-example {
-	font-family: GeezWeb;
-} */
-
-/* Marathi
-:lang(mar).lang-example {
-	font-family: GeezWeb;
-} */
-/* Oriya */
-:lang(ori).lang-example {
-	font-family: OriyaWeb;
-}
-/* Rawang */
-:lang(raw).lang-example {
-	font-family: MyanmarWeb;
-}
-/* Sindhi */
-:lang(snd).lang-example {
-	font-family: SindhiWeb;
-}
-/* Sinhala */
-:lang(sin).lang-example {
-	font-family: SinhalaWeb;
-}
-
-/* Tamil */
-:lang(tam).lang-example {
-	font-family: TamilWeb;
-}
-/* Tibetan */
-:lang(bod).lang-example {
-	font-family: TibetanWeb;
-}
-/* Tigrigna */
-:lang(tir).lang-example {
-	font-family: GeezWeb;
-}
+@import 'fonts.css';
 
 /**************************************
  * Page Layout CSS
@@ -982,16 +859,47 @@ input[type="search"] {
   line-height: 1.4;
 }
 
+.product-index {
+	text-align: center;
+}
+
 .product{
 	margin-bottom: 10px;
 	margin-top: 20px;
 	background: #e3e3e3;
 	text-align: center;
-	max-height: 340px;
+	max-height: 362px;
+	display: inline-block;
+	vertical-align: top;
+	width: 300px;
+	min-height: 295px;
+	padding: 0px 5px 10px 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.product:hover {
+	background: #D6D6D6;
+	cursor: pointer;
 }
 
 .product a{
+	text-decoration: none;
+	color: #000;
 	display: inline-block;
+}
+
+.product h3{
+	margin-bottom: 6px;
+	font-size: 16pt;
+	color: #B92034;
+	text-align: center;
+}
+
+.product p{
+	padding: 0 8px;
+	line-height: 1.3;
+	color: #333;
 }
 
 .product p{
@@ -1513,6 +1421,35 @@ body[data-device='Unknown'] #osk-tablet-container {
 		display: block;
 		height: 57px;
 	}
+	/* Products */
+	
+	.product{
+		display: inline-block;
+		vertical-align: top;
+		width: auto;
+		min-height: auto;
+	}
+
+	.product img {
+		z-index: 1;
+		position: absolute;
+		width: 150px;
+		left: 50%;
+		margin-left: -75px;
+		opacity: 0.2;
+	}
+
+	.product h3{
+		z-index: 2;
+	}
+	
+	.product p{
+		height: 60px;
+		z-index: 2;
+	}
+	
+
+
 	/* Footer */
 	.footer{
 		height: auto;

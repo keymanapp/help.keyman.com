@@ -3,7 +3,7 @@
 
   head([
     'title' => "Step 2: Creating a lexical model project",
-    'css' => ['template.css', 'index.css', 'prism.css', 'kmguides.css', 'dev-lexical-models.css']
+    'css' => ['template.css', 'prism.css', 'kmguides.css', 'dev-lexical-models.css']
 
   ]);
 ?>

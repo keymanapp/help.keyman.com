@@ -11,7 +11,7 @@ require_once('includes/template.php');
 // Required
 head([
   'title' =>'Keyman Developer Version History',
-  'css' => ['template.css','index.css'],
+  'css' => ['template.css'],
   'showMenu' => true
 ]);
 

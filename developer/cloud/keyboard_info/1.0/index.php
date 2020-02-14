@@ -4,7 +4,7 @@
   // Required
   head([
     'title' =>'.keyboard_info 1.0 Specification',
-    'css' => ['template.css','index.css','prism.css'],
+    'css' => ['template.css','prism.css'],
     'showMenu' => true
   ]);
 ?>

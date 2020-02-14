@@ -68,70 +68,70 @@ html{
 	font-family:GeezWeb;
 	font-style:normal;
 	font-weight:normal;
-	src:url('//r.keymanweb.com/20/fonts/wookianos.ttf') format('truetype');
+	src:url('https://s.keyman.com/font/deploy/wookianos.ttf') format('truetype');
 }
 @font-face {
 	font-family:MyanmarWeb;
 	font-style:normal;
 	font-weight:normal;
-	src:url('//r.keymanweb.com/20/fonts/Padauk.ttf') format('truetype');
+	src:url('https://s.keyman.com/font/deploy/Padauk.ttf') format('truetype');
 }
 /*@font-face {
 	font-family:LatinWeb;
 	font-style:normal;
 	font-weight:normal;
-	src:url('//r.keymanweb.com/20/fonts/DejaVuSans.ttf') format('truetype');
+	src:url('https://s.keyman.com/font/deploy/DejaVuSans.ttf') format('truetype');
 }*/
 @font-face {
 	font-family:OriyaWeb;
 	font-style:normal;
 	font-weight:normal;
-	src:url('//r.keymanweb.com/20/fonts/utkalm.ttf') format('truetype');
+	src:url('https://s.keyman.com/font/deploy/utkalm.ttf') format('truetype');
 }
 @font-face {
 	font-family:SinhalaWeb;
 	font-style:normal;
 	font-weight:normal;
-	src:url('//r.keymanweb.com/20/fonts/kaputaunicode.ttf') format('truetype');
+	src:url('https://s.keyman.com/font/deploy/kaputaunicode.ttf') format('truetype');
 }
 @font-face {
 	font-family:TamilWeb;
 	font-style:normal;
 	font-weight:normal;
-	src:url('//r.keymanweb.com/20/fonts/aava1.ttf') format('truetype');
+	src:url('https://s.keyman.com/font/deploy/aava1.ttf') format('truetype');
 }
 @font-face {
 	font-family:CherokeeWeb;
 	font-style:normal;
 	font-weight:normal;
-	src:url('//r.keymanweb.com/20/fonts/digohweli_1_7.ttf') format('truetype');
+	src:url('https://s.keyman.com/font/deploy/digohweli_1_7.ttf') format('truetype');
 }
 @font-face {
     font-family: SindhiWeb;
     font-style:  normal;
     font-weight: normal;
-    src: url('//r.keymanweb.com/20/fonts/MBKhursheed10.6.ttf')  format("truetype");
+    src: url('https://s.keyman.com/font/deploy/MBKhursheed10.6.ttf')  format("truetype");
 }
 @font-face {
   font-family: TibetanWeb;
   font-style:  normal;
   font-weight: normal;
-  src: url('//r.keymanweb.com/20/fonts/CTRC-Uchen.ttf')  format("truetype");
+  src: url('https://s.keyman.com/font/deploy/CTRC-Uchen.ttf')  format("truetype");
 }
 @font-face {
     font-family: LaoWeb;
     font-style:  normal;
     font-weight: normal;
-    src: url('//r.keymanweb.com/20/fonts/SAYSETT0.eot'); 
-    src: url('//r.keymanweb.com/20/fonts/SAYSETT0.eot?#iefix') format('embedded-opentype'), 
-    url('//r.keymanweb.com/20/fonts/saysettha_web.woff') format('woff'), 
-    url('//r.keymanweb.com/20/fonts/saysettha_OT.ttf') format('truetype');         
+    src: url('https://s.keyman.com/font/deploy/SAYSETT0.eot'); 
+    src: url('https://s.keyman.com/font/deploy/SAYSETT0.eot?#iefix') format('embedded-opentype'), 
+    url('https://s.keyman.com/font/deploy/saysettha_web.woff') format('woff'), 
+    url('https://s.keyman.com/font/deploy/saysettha_OT.ttf') format('truetype');         
 }
 @font-face {
     font-family: PashtoWeb;
     font-style:  normal;
     font-weight: normal;
-    src: url('//r.keymanweb.com/20/fonts/LateefRegOT.ttf')  format("truetype");
+    src: url('https://s.keyman.com/font/deploy/LateefRegOT.ttf')  format("truetype");
 }
 
 /* Amharic */
