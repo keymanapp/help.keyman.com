@@ -947,6 +947,7 @@ kbd {
     border: 1px solid #808080;
     border-radius: 4px;
     color: #000000;
+    font-family: serif;
     font-size: 13px;
     font-weight: bold;
     margin: 0 1px;
