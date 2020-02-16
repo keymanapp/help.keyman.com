@@ -1,12 +1,12 @@
 <?php
   require_once('includes/template.php');
-  
+
   head([
     'title' => 'Keyman Support | Type to the world in your language',
     'css' => ['template.css','keyboard.css','keys.css']
   ]);
 ?>
-  
+
 <h1>Keyman for macOS Support</h1>
 
 <p>Need help using Keyman for macOS?  You'll find everything you need here, including product documentation,
@@ -48,14 +48,14 @@ frequently asked questions, tutorials and videos.</p>
       <li><a href='basic_osk.php'>On Screen Keyboard</a></li>
       <li><a href='basic_fonthelper.php'>Font Helper</a></li>
     </ul>
-    
+
     <h3><a href='advanced.php'>Advanced Topics</a></h3>
     <ul>
       <li><a href='basic_charactermap.php'>Character Map</a></li>
       <li><a href='start_hotkey_set.php'>Hotkeys</a></li>
     </ul>
   </div>-->
-  
+
   <div class='rightsubcol'>
     <h3><a href='/keyboard/'>Keyboard Layouts</a></h3>
     <ul>
@@ -63,15 +63,6 @@ frequently asked questions, tutorials and videos.</p>
       <li><a href='/keyboard/gff_amh_7'>Amharic</a></li>
       <li><a href='/keyboard/european2'>EuroLatin2</a></li>
       <li><a href='/keyboard/'>More keyboards...</a></li>
-    </ul>
-    
-    <h3>Keyman for macOS Documentation Versions</h3>
-
-    <ul>
-      <li><a href='../../12.0/docs/'>Keyman for macOS 12.0 Documentation</a></li>
-      <li><a href='../../11.0/docs/'>Keyman for macOS 11.0 Documentation</a></li>
-      <li><a href='../../10.0/docs/'>Keyman for macOS 10.0 Documentation</a></li>
-      <li><a href='../../1.0/docs/'>Keyman for macOS 1.0 Documentation</a></li>
     </ul>
 
     <h3>Other Resources</h3>

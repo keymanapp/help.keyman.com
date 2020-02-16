@@ -1,7 +1,7 @@
 <?php
   require_once('includes/template.php');
   require_once('includes/session-embed.php');
-  
+
   head([
     'title' => 'Installing Custom Keyboards - Keyman for iPhone and iPad Help',
 //    'css' => ['template.css','app-info.css'],
@@ -82,7 +82,7 @@ The keyboard from the keyboard package will then be successfully installed!
 </p>
 
 <p>
-  To learn how to create a custom installable keyboard, <a href="http://help.keyman.com/developer/13.0/guides/distribute/">click here</a>.
+  To learn how to create a custom installable keyboard, <a href="http://help.keyman.com/developer/current-version/guides/distribute/">click here</a>.
 </p>
 
 <h2>Help Index</h2>

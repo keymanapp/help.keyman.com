@@ -76,26 +76,13 @@ frequently asked questions, tutorials and videos.</p>
       <li><a href='/keyboard/european2'>EuroLatin2</a></li>
       <li><a href='/keyboard/'>More keyboards...</a></li>
     </ul>
-    <h3>Keyman Desktop Documentation Versions</h3>
-    <ul>
-      <li><a href='docs/'>Keyman Desktop 14.0 Full Documentation</a></li>
-      <li><a href='../13.0/'>Keyman Desktop 13.0 Documentation</a></li>
-      <li><a href='../12.0/'>Keyman Desktop 12.0 Documentation</a></li>
-      <li><a href='../11.0/'>Keyman Desktop 11.0 Documentation</a></li>
-      <li><a href='../10.0/'>Keyman Desktop 10.0 Documentation</a></li>
-      <li><a href='../9.0/'>Keyman Desktop 9.0 Documentation</a></li>
-      <li><a href='../8.0/docs/'>Keyman Desktop 8.0 Documentation</a></li>
-      <li><a href='../7.0'>Keyman Desktop 7.0 Documentation</a></li>
-      <li><a href='../6.0'>Keyman Desktop 6.0 Documentation</a></li>
-      <li><a href='../5.0'>Keyman Desktop 5.0 Documentation</a></li>
-      <li><a href='../4.0'>Keyman Desktop 4.0 Documentation</a></li>
-    </ul>
+
     <h3>Other Resources</h3>
     <ul>
       <li><a href='/kb/'>Knowledge Base</a></li>
-      <li><a href='/developer/10.0/'>Keyman Developer Help</a></li>
+      <li><a href='/developer/14.0/'>Keyman Developer Help</a></li>
       <li><a href='/products/web/'>KeymanWeb Help</a></li>
-      <li><a href='/products/mac/10.0/'>Keyman for macOS Help</a></li>
+      <li><a href='/products/mac/14.0/'>Keyman for macOS Help</a></li>
     </ul>
   </div>
 </div>

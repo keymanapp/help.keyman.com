@@ -1,14 +1,14 @@
 <?php
   require_once('includes/template.php');
-  
+
   head([
-    'title' => 'Keyman Developer Support',
+    'title' => 'Keyman Developer 11.0 User Guide',
     'css' => ['template.css','keyboard.css','keys.css']
   ]);
-?>  
-<h1>Keyman Developer Support</h1>
+?>
+<h1>Keyman Developer 11.0 User Guide</h1>
 
-<p>Need help using Keyman Developer to create your keyboard layouts?  You'll find everything you 
+<p>Need help using Keyman Developer to create your keyboard layouts?  You'll find everything you
 need here, including product documentation, guides and tutorials, and full reference information.</p>
 
 <h2>Guides and Tutorials</h2>

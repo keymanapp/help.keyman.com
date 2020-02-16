@@ -150,15 +150,3 @@ include('./_shared/help_links.php');
   <br/><br/>
   For more information on Keyman for Android, visit <a href="https://keyman.com/android">keyman.com/android</a>
 </p>
-
-<div class="content-online">
-  <h2>Keyman for Android Documentation Versions</h2>
-
-  <ul>
-    <li><a href='../13.0/'>Keyman for Android 12.0 Documentation</a></li>
-    <li><a href='../12.0/'>Keyman for Android 12.0 Documentation</a></li>
-    <li><a href='../11.0/'>Keyman for Android 11.0 Documentation</a></li>
-    <li><a href='../10.0/'>Keyman for Android 10.0 Documentation</a></li>
-    <li><a href='../2.0/'>Keyman for Android 2.0 Documentation</a></li>
-  </ul>
-</div>

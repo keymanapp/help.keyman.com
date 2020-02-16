@@ -2,11 +2,11 @@
   require_once('includes/template.php');
 
   head([
-    'title' => 'Keyman Developer Support',
+    'title' => 'Keyman Developer 13.0 User Guide',
     'css' => ['template.css','keyboard.css','keys.css']
   ]);
 ?>
-<h1>Keyman Developer Support</h1>
+<h1>Keyman Developer 13.0 User Guide</h1>
 
 <p>Need help using Keyman Developer to create your keyboard layouts?  You'll find everything you
 need here, including product documentation, guides and tutorials, and full reference information.</p>
@@ -38,18 +38,6 @@ need here, including product documentation, guides and tutorials, and full refer
 
 <ul>
   <li><a href='https://community.software.sil.org/c/keyman'>Ask other users in the SIL Keyman Community</a></li>
-</ul>
-
-<h2>Older versions</h2>
-
-<ul>
-<li><a href='../12.0'>Keyman Developer 12.0 Documentation</a></li>
-  <li><a href='../11.0'>Keyman Developer 11.0 Documentation</a></li>
-  <li><a href='../10.0'>Keyman Developer 10.0 Documentation</a></li>
-  <li><a href='../9.0'>Keyman Developer 9.0 Documentation</a></li>
-  <li><a href='../8.0'>Keyman Developer 8.0 Documentation</a></li>
-  <li><a href='../7.0'>Keyman Developer 7.0 Documentation</a></li>
-  <li><a href='../6.0'>Keyman Developer 6.0 Documentation</a></li>
 </ul>
 
 <h2>Other Resources</h2>
