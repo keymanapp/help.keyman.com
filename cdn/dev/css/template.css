@@ -684,6 +684,13 @@ input[type="search"] {
   font-style: normal; 
 }
 
+@font-face {
+  font-family: "NotoSans-Regular";
+  src: url("../../fonts/NotoSans-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 [data-icon]:before {
   font-family: "social-logos" !important;
   content: attr(data-icon);
@@ -947,7 +954,7 @@ kbd {
     border: 1px solid #808080;
     border-radius: 4px;
     color: #000000;
-    font-family: serif;
+    font-family: "NotoSans-Regular";
     font-size: 13px;
     font-weight: bold;
     margin: 0 1px;
