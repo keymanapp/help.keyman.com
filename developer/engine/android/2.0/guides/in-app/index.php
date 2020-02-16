@@ -183,7 +183,7 @@ yes | ./sdkmanager.bat --licenses
 
 <ul>
     <li><a href="../system-keyboard/">Guide: Build a system keyboard app</a></li>
-    <li><a href="/developer/9.0/">Keyman Developer Documentation</a></li>
+    <li><a href="/developer/current-version/">Keyman Developer Documentation</a></li>
     <li><a href="/developer/engine/android/2.0/">Keyman Engine for Android Documentation</a></li>
     <li><a href="https://developer.android.com/index.html">Android Developer Home</a></li>
 </ul>

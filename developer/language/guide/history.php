@@ -31,7 +31,7 @@
   <li>Added <a href='unicode'>Unicode support</a></li>
   <li>Added <a href='../reference/call'>Input Method eXtension support</a></li>
   <li>Deprecated <a href='../reference/bitmap'><code>bitmaps</code> statement</a></li>
-  <li>Deprecated <a href='../reference/language'><code>language</code> statement</a>. 
+  <li>Deprecated <a href='../reference/language'><code>language</code> statement</a>.
   Note that the <code>language</code> statement was reintroduced in Keyman 6 with a new meaning</li>
   <li>Keyman 5.0 added system stores</li>
   <li>Deprecated <a href='../reference/layout'><code>layout</code> statement</a></li>
@@ -72,7 +72,7 @@
 <h2>Keyman 9</h2>
 
 <ul>
-  <li>Added <a href='/developer/9.0/guides/develop/'>touch device support</a></li>
+  <li>Added <a href='/developer/current-version/guides/develop/'>touch device support</a></li>
   <li>Added <a href='../reference/keyboardversion'><code>&amp;keyboardversion</code> store</a></li>
   <li>Added <a href='../reference/kmw_embedcss'><code>&amp;kmw_embedcss</code> store</a></li>
   <li>Added <a href='../reference/platform'><code>platform</code> statement</a></li>

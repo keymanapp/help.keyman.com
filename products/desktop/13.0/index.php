@@ -2,17 +2,15 @@
   require_once('includes/template.php');
 
   head([
-    'title' => 'Keyman Desktop 9.0 Help',
+    'title' => 'Keyman Desktop 13.0 Help',
     'css' => ['template.css','keyboard.css','keys.css']
   ]);
 ?>
 
-<h1>Keyman Desktop 9.0 Help</h1>
+<h1>Keyman Desktop 13.0 Help</h1>
 
 <p>Need help using Keyman Desktop?  You'll find everything you need here, including product documentation,
 frequently asked questions, tutorials and videos.</p>
-
-<p class='note' style='background: #e0e0e0; padding: 8px; margin: 10px'><b>Important note</b>: All Keyman products are now available completely <a href='https://keyman.com/free'>free of charge</a>. Information in the documentation referring to pricing and licensing is no longer relevant.</p>
 
 <div class='leftcol'>
   <div class='box'>
@@ -28,14 +26,13 @@ frequently asked questions, tutorials and videos.</p>
     <ul>
       <li><a href='docs/about_requirements.php'>Which operating systems does Keyman Desktop work with?</a></li>
       <li><a href='docs/common_mac.php'>Does Keyman Desktop run on Mac?</a></li>
-      <li><a href='docs/common_license.php'>Can I run Keyman Desktop on a second computer?</a></li>
     </ul>
   </div>
 
   <div class='box'>
     <h2>Ask for Help</h2>
     <ul>
-      <li><a href='https://community.software.sil.org/c/keyman'>Ask other users in the SIL Keyman Community</a></li>
+      <a href='https://community.software.sil.org/c/keyman'>Ask other users in the SIL Keyman Community</a>
     </ul>
   </div>
 </div>
@@ -66,7 +63,8 @@ frequently asked questions, tutorials and videos.</p>
       <li><a href='docs/start_hotkey_set.php'>Hotkeys</a></li>
       <li><a href='docs/advanced_tsf.php'>Text Services Framework Addin</a></li>
       <li><a href='/kb/33'>Use Word macros to switch keyboard and font</a></li>
-      <li><a href='/developer/engine/desktop/9.0/comapi/'>Application Programming Interface (API)</a></li>
+      <li><a href='/developer/engine/desktop/10.0/api/'>Application Programming Interface (API)</a></li>
+      <li><a href='../version-history'>Keyman Desktop version history</a></li>
     </ul>
   </div>
 
@@ -80,9 +78,11 @@ frequently asked questions, tutorials and videos.</p>
     </ul>
     <h3>Keyman Desktop Documentation Versions</h3>
     <ul>
+      <li><a href='docs/'>Keyman Desktop 13.0 Full Documentation</a></li>
+      <li><a href='../12.0/'>Keyman Desktop 12.0 Documentation</a></li>
       <li><a href='../11.0/'>Keyman Desktop 11.0 Documentation</a></li>
       <li><a href='../10.0/'>Keyman Desktop 10.0 Documentation</a></li>
-      <li><a href='docs/'>Keyman Desktop 9.0 Full Documentation</a></li>
+      <li><a href='../9.0/'>Keyman Desktop 9.0 Documentation</a></li>
       <li><a href='../8.0/docs/'>Keyman Desktop 8.0 Documentation</a></li>
       <li><a href='../7.0'>Keyman Desktop 7.0 Documentation</a></li>
       <li><a href='../6.0'>Keyman Desktop 6.0 Documentation</a></li>
@@ -92,9 +92,9 @@ frequently asked questions, tutorials and videos.</p>
     <h3>Other Resources</h3>
     <ul>
       <li><a href='/kb/'>Knowledge Base</a></li>
-      <li><a href='/developer/'>Keyman Developer Help</a></li>
+      <li><a href='/developer/10.0/'>Keyman Developer Help</a></li>
       <li><a href='/products/web/'>KeymanWeb Help</a></li>
-      <li><a href='/products/mac/'>Keyman for macOS Help</a></li>
+      <li><a href='/products/mac/10.0/'>Keyman for macOS Help</a></li>
     </ul>
   </div>
 </div>

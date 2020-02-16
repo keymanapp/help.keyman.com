@@ -41,9 +41,9 @@ through the keyboard's entry in Keyman Configuration.</p>
 
 <dl>
   <dt>*.kmx (Desktop and macOS only)</dt>
-  <dd>Keyboard files. Each of these will be installed. Keyman Configuration will not allow installation or uninstallation of a single keyboard from a package. 
+  <dd>Keyboard files. Each of these will be installed. Keyman Configuration will not allow installation or uninstallation of a single keyboard from a package.
   They will always be treated as a group for installation and uninstallation.</dd>
-  
+
   <dt>*.kvk (Desktop and macOS only)</dt>
   <dd>On Screen Keyboard files, associated with each keyboard file.</dd>
 
@@ -52,20 +52,20 @@ through the keyboard's entry in Keyman Configuration.</p>
     With Keyman Developer 10, the keyboard version information is in kmp.json, and no longer within the JS file names.</dd>
 
   <dt>welcome.htm</dt>
-  <dd>Introductory help for the keyboard, HTML format. This will normally be displayed when the package is installed by the user, and is also the entry point 
+  <dd>Introductory help for the keyboard, HTML format. This will normally be displayed when the package is installed by the user, and is also the entry point
   for help when accessed via Keyman's help system or Keyman Configuration.</dd>
-  
+
   <dt>readme.htm</dt>
   <dd>Displayed before a package is installed, together with brief metadata about the package, to allow the user to determine if they wish to continue installation
   of the package.</dd>
-  
+
   <dt>kmp.inf (Desktop only)</dt>
   <dd>A Windows .ini format file that lists each of the files in the package, together with metadata.</dd>
 
   <dt>kmp.json (mobile only)</dt>
   <dd>A JSON format file contains metadata for the keyboard package such as package version, keyboard versions,
     and lists each of the files in the package. For more explanation of the structure of the JSON file, please read the
-    <a href="/developer/10.0/reference/file-types/metadata">metadata</a> documentation.</dd>
+    <a href="../../reference/file-types/metadata">metadata</a> documentation.</dd>
 
   <dt>*.ttf, *.otf, *.ttc</dt>
   <dd>Truetype font files that will be installed with the package, and uninstalled when the package is removed.

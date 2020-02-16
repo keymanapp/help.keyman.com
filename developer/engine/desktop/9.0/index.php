@@ -14,7 +14,6 @@
   <dt><a href="tutorials/distribution/">Distribution tutorial</a> (Keyman Developer help)</dt>
   <dt><a href="branding">Branding file reference</a></dt>
   <dt><a href="comapi">COM API reference</a></dt>
-  <dt><a href="locale">User interface translations</a></dt>
   <dt><a href="registry.php">Registry reference</a></dt>
 </dl>
 

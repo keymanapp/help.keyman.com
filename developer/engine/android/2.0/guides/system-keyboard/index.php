@@ -72,6 +72,6 @@ head([
 
 <ul>
     <li><a href="../in-app/">Part 1 of this series</a></li>
-    <li><a href="/developer/9.0/" target="_blank">Keyman Developer Documentation</a></li>
-    <li><a href="http://developer.android.com/index.html" target="_blank">Android Developer Home</a></li>
+    <li><a href="/developer/current-version/">Keyman Developer Documentation</a></li>
+    <li><a href="http://developer.android.com/index.html">Android Developer Home</a></li>
 </ul>

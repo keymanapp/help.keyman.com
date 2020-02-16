@@ -32,7 +32,7 @@ layer on the touch keyboard.</p>
 Some layer controls can also be made directly in the touch layout itself with the <strong>Next Layer</strong> control, but
 the <code>&amp;layer</code> store provides for finer control.</p>
 
-<p>When a key in a touch layout definition includes a <strong>Next Layer</strong> control, this takes precedence over 
+<p>When a key in a touch layout definition includes a <strong>Next Layer</strong> control, this takes precedence over
 setting layer via the <code>layer</code> store (as the <strong>Next Layer</strong> control is applied once the rule
 has finished processing).</p>
 
@@ -64,6 +64,6 @@ has finished processing).</p>
 <h2 id="See_also" name="See_also">See also</h2>
 
 <ul>
-  <li><a href="/developer/9.0/guides/develop/">Designing touch layouts with Keyman Developer</a></li>
+  <li><a href="/developer/current-version/guides/develop/">Designing touch layouts with Keyman Developer</a></li>
   <li><a href="layoutfile" title="&amp;layoutfile store"><code>&amp;layoutfile</code> store</a></li>
 </ul>

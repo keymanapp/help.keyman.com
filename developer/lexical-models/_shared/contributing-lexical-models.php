@@ -8,6 +8,6 @@
 <p>
     These design patterns and requirements assume some knowledge of Keyman Developer and Keyman lexical model development.
     Keyman Developer is downloadable from <a href="https://keyman.com/developer" target="_blank">https://keyman.com/developer</a>,
-    and the documentation is online at <a href="../../12.0/guides/lexical-models/tutorial"
-    target="_blank">https://help.keyman.com/developer/12.0/guides/lexical-models/tutorial</a>.
+    and the documentation is online at <a href="../../current-version/guides/lexical-models/tutorial"
+    target="_blank">https://help.keyman.com/developer/current-version/guides/lexical-models/tutorial</a>.
 </p>

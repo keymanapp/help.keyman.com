@@ -42,5 +42,5 @@ Manager.shared.showKeyboardPicker(in: mainViewController, shouldAddKeyboard: tru
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="showLanguageList.php"><code>showLanguageList()</code></a></li>
+ <li><a href="showKeyboardPicker.php"><code>showKeyboardPicker()</code></a></li>
 </ul>

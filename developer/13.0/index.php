@@ -1,14 +1,14 @@
 <?php
   require_once('includes/template.php');
-  
+
   head([
     'title' => 'Keyman Developer Support',
     'css' => ['template.css','keyboard.css','keys.css']
   ]);
-?>  
+?>
 <h1>Keyman Developer Support</h1>
 
-<p>Need help using Keyman Developer to create your keyboard layouts?  You'll find everything you 
+<p>Need help using Keyman Developer to create your keyboard layouts?  You'll find everything you
 need here, including product documentation, guides and tutorials, and full reference information.</p>
 
 <h2>Guides and Tutorials</h2>
@@ -58,9 +58,9 @@ need here, including product documentation, guides and tutorials, and full refer
   <li><a href='/developer/whitepaper1.1.pdf'>Keyboard Quality White Paper</a></li>
   <li><a href='/kb'>Knowledge Base</a></li>
   <li><a href='/products/desktop'>Keyman Desktop Help</a></li>
-  <li><a href='/developer/engine/desktop/13.0/'>Keyman Engine for Desktop</a></li>
+  <li><a href='/developer/engine/desktop/current-version/'>Keyman Engine for Desktop</a></li>
   <li><a href='/developer/engine/web/'>Keyman Engine for Web</a></li>
-  <li><a href='/developer/engine/iphone-and-ipad/13.0/'>Keyman Engine for iPhone and iPad</a></li>
-  <li><a href='/developer/engine/android/13.0/'>Keyman Engine for Android</a></li>
+  <li><a href='/developer/engine/iphone-and-ipad/current-version/'>Keyman Engine for iPhone and iPad</a></li>
+  <li><a href='/developer/engine/android/current-version/'>Keyman Engine for Android</a></li>
 </ul>
 

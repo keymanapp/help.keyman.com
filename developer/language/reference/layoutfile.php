@@ -10,7 +10,7 @@
 
 <h2 id="Summary" name="Summary">Summary</h2>
 
-<p>The <code><strong>&amp;layoutfile</strong></code> store specifies a touch layout description file to 
+<p>The <code><strong>&amp;layoutfile</strong></code> store specifies a touch layout description file to
 embed into the keyboard.</p>
 
 <h2 id="Syntax" name="Syntax">Syntax</h2>
@@ -72,7 +72,7 @@ on the US English desktop keyboard layout.</p>
 <h2 id="See_also" name="See_also">See also</h2>
 
 <ul>
-  <li><a href="/developer/10.0/guides/develop/">Designing touch layouts with Keyman Developer</a></li>
+  <li><a href="/developer/current-version/guides/develop/">Designing touch layouts with Keyman Developer</a></li>
   <li><a href="visualkeyboard" title="&amp;visualkeyboard store"><code>&amp;visualkeyboard</code> store</a></li>
   <li><a href="layer" title="&amp;layer store"><code>&amp;layer</code> store</a></li>
 </ul>

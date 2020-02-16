@@ -1,7 +1,7 @@
 <?php
-  $pagetitle = 'Guide: build a system keyboard app'; 
+  $pagetitle = 'Guide: build a system keyboard app';
   require_once('includes/template.php');
-  
+
   head([
     'title' => $pagetitle
   ]);
@@ -88,6 +88,6 @@ on their own.  (Unfortunately, apps cannot directly summon the appropriate menu.
 
 <ul>
   <li><a href="../in-app/">Part 1 of this series</a></li>
-  <li><a href="/developer/13.0/" target="_blank">Keyman Developer Documentation</a></li>
-  <li><a href="http://developer.apple.com/" target="_blank">Apple Developer Home</a></li>
+  <li><a href="/developer/current-version/">Keyman Developer Documentation</a></li>
+  <li><a href="http://developer.apple.com/">Apple Developer Home</a></li>
 </ul>

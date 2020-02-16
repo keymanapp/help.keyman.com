@@ -26,7 +26,7 @@ obj_spec("Keyboard",
   "fileSize", "required number", "Size of the keyboard file, in bytes.",
   "minVersion", "optional string", "Minimum build version of KeymanWeb that the keyboard will work with.",
   "maxVersion", "optional string", "Maximum build version of KeymanWeb that the keyboard will work with.",
-  "languages", "optional Array", "An array of <a href='obj-languages'><code>Language</code></a> objects linked to the keyboard.",
+  "languages", "optional Array", "An array of <a href='obj-language'><code>Language</code></a> objects linked to the keyboard.",
   "font", "optional Object", "<a href='obj-font'><code>Font</code></a> object describing font for input fields (and OSK, if <code>oskFont</code>".
     " is not present).  Only present when a <code>Keyboard</code> object is a child of a <code>Language</code> object.",
   "oskFont", "optional Object", "<a href='obj-font'><code>Font</code></a> object describing font for the OSK.  Only ".

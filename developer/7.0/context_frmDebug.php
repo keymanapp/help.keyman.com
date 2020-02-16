@@ -3,9 +3,7 @@
     of three parts: The Debug Input box, the Debug State box, and the command and status bar above them.
   </p><h3><a name="id762751"></a>Debug Input box</h3><p>
     The debug input box is used for typing input to test the keyboard. It will display the output exactly
-    as it will appear in use, except for deadkeys, which are shown visually here with a
-    <span class="inlinemediaobject"><img src="imgages/obj.gif"></span>
-    symbol.
+    as it will appear in use, except for deadkeys, which are shown visually with a symbol.
   </p><h3><a name="id764070"></a>Test Mode</h3><p>
     The test mode lets you test your keyboard without the debugger being active.  This lets you test
     functionality that is not available within the debugger - primarily <a class="link" href="guide_imx.php" title="DLL Interface for Keyman - Introduction">IMX</a>
