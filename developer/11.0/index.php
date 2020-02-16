@@ -38,16 +38,6 @@ need here, including product documentation, guides and tutorials, and full refer
   <li><a href='https://community.software.sil.org/c/keyman'>Ask other users in the SIL Keyman Community</a></li>
 </ul>
 
-<h2>Older versions</h2>
-
-<ul>
-  <li><a href='../10.0'>Keyman Developer 10.0 Documentation</a></li>
-  <li><a href='../9.0'>Keyman Developer 9.0 Documentation</a></li>
-  <li><a href='../8.0'>Keyman Developer 8.0 Documentation</a></li>
-  <li><a href='../7.0'>Keyman Developer 7.0 Documentation</a></li>
-  <li><a href='../6.0'>Keyman Developer 6.0 Documentation</a></li>
-</ul>
-
 <h2>Other Resources</h2>
 
 <ul>
