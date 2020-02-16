@@ -39,7 +39,7 @@ the flexibility necessary to accomplish those goals.</p>
 
 <p>Internally, Keyman for iPhone and iPad and Keyman for Android use KeymanWeb to display the touch keyboard, and to process
   rules. KeymanWeb keyboards (.js format) support basically all the same functionality as Keyman Desktop keyboards (.kmx format).
-  There are a few statements specific to KeymanWeb that are detailed below.</p>
+  There are a few store() statements specific to KeymanWeb that are detailed below.</p>
 
 <p>If you do not provide a touch layout in your keyboard design, KeymanWeb will use the desktop On Screen Keyboard (.kvk / .kvks format)
   data. While the basic 'desktop'-style keyboard can work on mobile devices, it is generally suboptimal because keys are organised
@@ -62,7 +62,7 @@ the flexibility necessary to accomplish those goals.</p>
   Specifies the directionality of text controls for web keyboards</li>
 </ul>
 
-<h3>Recommendations</h3>
+<h3>Recommendations for Supporting Multiple Platforms</h3>
 
 <ul>
   <li>Only Unicode keyboards are supported for KeymanWeb (.js format) keyboards.</li>
@@ -81,5 +81,5 @@ the flexibility necessary to accomplish those goals.</p>
   <li>The <a href='/developer/language/reference/platform'><code class="language-keyman">platform()</code> statement</a> and 
     <a href='compile-targets'><code class="language-keyman">$keymanonly</code>
     and <code class="language-keyman">$keymanweb</code> compile targets</a> can be used to manage implementation differences
-    between the two platforms. Where possible, use <code>platform()</code> statements.</li>
+    between .kmx and .js compiled keyboard files. Where possible, use <code>platform()</code> statements.</li>
 </ul>
