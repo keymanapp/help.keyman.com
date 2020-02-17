@@ -684,9 +684,12 @@ input[type="search"] {
   font-style: normal; 
 }
 
+/*
+ Noto Sans Tagbanwa font from https://www.google.com/get/noto/, SIL Open Font License v1.1
+ */
 @font-face {
   font-family: "NotoSans-Regular";
-  src: url("../../fonts/NotoSans-Regular.ttf");
+  src: url("../../fonts/NotoSansTagbanwa-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
