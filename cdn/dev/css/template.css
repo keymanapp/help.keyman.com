@@ -684,6 +684,18 @@ input[type="search"] {
   font-style: normal; 
 }
 
+/*
+ Noto Sans Regular Ascii font is the ASCII portion of NotoSans-Regular
+ from https://www.google.com/get/noto/, SIL Open Font License v1.1
+ Generated with: pyftsubset ../fonts/Noto_Sans/NotoSans-Regular.ttf --unicodes=U+0020-007F
+ */
+@font-face {
+  font-family: "NotoSans-Regular-Ascii";
+  src: url("../../fonts/NotoSans-Regular-Ascii.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 [data-icon]:before {
   font-family: "social-logos" !important;
   content: attr(data-icon);
@@ -942,11 +954,13 @@ input[type="search"] {
 	text-decoration: underline;
 }
 
+/* Font styling limited to Ascii characters */
 kbd {
     background: none repeat scroll 0 0 #CCCCD0;
     border: 1px solid #808080;
     border-radius: 4px;
     color: #000000;
+    font-family: "NotoSans-Regular-Ascii";
     font-size: 13px;
     font-weight: bold;
     margin: 0 1px;
