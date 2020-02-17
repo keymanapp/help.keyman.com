@@ -113,7 +113,7 @@
         if(preg_match('/^\d+\.\d+$/', $bfolder)) $versions[] = $bfolder;
       }
 
-      usort($versions, 'version_compare');
+      usort($versions, 'version_compare_reverse');
 
       return $versions;
     }
@@ -134,4 +134,8 @@
 
       return $currentVersion;
     }
+  }
+
+  function version_compare_reverse($a, $b) {
+    return -version_compare($a, $b);
   }

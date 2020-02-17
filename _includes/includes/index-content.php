@@ -1,6 +1,6 @@
 <?php
 
-function get_file_titles($path,$base) {
+function get_file_titles($base) {
   $files = glob($base.'*');
   $items = array(); $dirs = array();
   foreach($files as $file) {
@@ -29,10 +29,10 @@ function get_file_titles($path,$base) {
       $items[$basefile] = get_file_title($file);
     }
   }
-  
+
   asort($items, SORT_FLAG_CASE|SORT_STRING);
   asort($dirs, SORT_FLAG_CASE|SORT_STRING);
-  
+
   return $items + $dirs;
 }
 
@@ -67,7 +67,7 @@ function get_file_title_md($filename) {
 
 function build_index_content() {
   global $index_content;
-    
+
   $this_file = basename($_SERVER['PHP_SELF']);
   if($this_file == 'mdhost.php') {
     $this_file = $_REQUEST['file'];
@@ -78,19 +78,19 @@ function build_index_content() {
     $base = './';
   }
 
-  $items = get_file_titles($path,$base);
+  $items = get_file_titles($base);
 
   $index_content = "<ul>";
   foreach($items as $file => $title) {
     $cleanfile = str_replace('.md', '', str_replace('.php', '', $file));
-    if($file == $this_file) { 
+    if($file == $this_file) {
       $index_content .= "<li class='current'>$title</li>";
     } else {
       $index_content .= "<li><a href='$cleanfile' title='".strip_tags($title)."'>$title</a></li>";
     }
   }
   $index_content .= "</ul>";
-  
+
   $depth = 0;
   while(file_exists($base . 'index.php') || file_exists($base . 'index.md')) {
     if(file_exists($base . 'index.md'))
