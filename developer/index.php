@@ -1,8 +1,8 @@
 <?php
-  require_once('includes/template.php'); 
+  require_once('includes/template.php');
 
 $pagestyle = '#section2 .wrapper { overflow-x: inherit }';
-  
+
   // Required
   head([
     'title' =>'Keyman Developer Help Index',
@@ -26,7 +26,7 @@ $pagestyle = '#section2 .wrapper { overflow-x: inherit }';
       </a>
   </div>
   <div class="product" id="product-developer">
-      <a href="13.0/">
+      <a href="current-version/">
           <img src="<?php echo cdn("img/icon-developer.png"); ?>" />
           <h3>Keyman Developer</h3>
           <p>
@@ -87,7 +87,7 @@ $pagestyle = '#section2 .wrapper { overflow-x: inherit }';
       <h3>Keyboard Repository</h3>
       <p>Open source repository for Keyman keyboards</p>
     </a>
-  </div>  
+  </div>
 
   <div class="product" id="product-lexical-models">
     <a href="lexical-models">

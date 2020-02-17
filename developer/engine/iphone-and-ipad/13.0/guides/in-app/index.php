@@ -1,7 +1,7 @@
 <?php
   $pagetitle = 'Guide: build an in-app keyboard';
   require_once('includes/template.php');
-  
+
   head([
     'title' => $pagetitle
   ]);
@@ -46,13 +46,13 @@
   testing for creating a touch keyboard layout:</p>
 <!-- For this section, there's no need to create separate duplicates of the Developer part. -->
 <ul>
-  <li><a href="/developer/13.0/guides/develop/creating-a-touch-keyboard-layout-for-amharic-with-keyman-developer-10">
+  <li><a href="/developer/current-version/guides/develop/creating-a-touch-keyboard-layout-for-amharic">
       Creating a Touch Keyboard Layout for Amharic with Keyman Developer 12</a></li>
-  <li><a href="/developer/13.0/guides/develop/creating-a-touch-keyboard-layout-for-amharic-the-nitty-gritty">
+  <li><a href="/developer/current-version/guides/develop/creating-a-touch-keyboard-layout-for-amharic-the-nitty-gritty">
       Creating A Touch Keyboard Layout For Amharic — The Nitty Gritty</a></li>
-  <li><a href="/developer/13.0/guides/test/how-to-test-your-keyboard-layout-with-keyman-developer-10-touch-and-desktop">
-      How to test your keyboard layout with Keyman Developer 12 — touch and desktop</a></li>
-  <li><a href="/developer/13.0/guides/test/how-to-test-your-touch-layout-in-the-google-chrome-mobile-emulator">
+  <li><a href="/developer/current-version/guides/test/keyboard-touch-and-desktop">
+      How to test your keyboard layout with Keyman Developer — touch and desktop</a></li>
+  <li><a href="/developer/current-version/guides/test/keyboard-touch-mobile-emulator">
       How to test your touch layout in the Google Chrome mobile emulator</a></li>
 </ul>
 <p>When your keyboard is ready, you should have a compiled keyboard Javascript file. The example below shows the
@@ -153,7 +153,7 @@ a target device to test against from the drop-down toward the top-left.  For exa
 
 <ul>
   <li><a href="../system-keyboard/">Guide: Build a system keyboard app</a></li>
-  <li><a href="/developer/13.0/">Keyman Developer Documentation</a></li>
+  <li><a href="/developer/current-version/">Keyman Developer Documentation</a></li>
   <li><a href="/developer/engine/iphone-and-ipad/13.0/">Keyman Engine for iPhone and iOS Documentation</a></li>
   <li><a href="https://developer.apple.com/">Apple Developer Home</a></li>
 </ul>

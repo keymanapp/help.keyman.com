@@ -80,8 +80,8 @@ package.</p>
       <p>If you want links to your website to open in the user's preferred browser, preface the href link with <code class='language-none'>link:</code>,
       e.g. <code class='language-none'>&lt;a href="link:http://keyman.com/">website&lt;/a></code></p>
 
-      <p>The <code class='language-none'>link:</code> sceheme will open the referred file in the default application - that is, a web browser for 
-      URLs and links, Notepad for .txt files, Adobe Reader for PDFs. You can use <code class='language-none'>link:</code> to open any of the files in 
+      <p>The <code class='language-none'>link:</code> sceheme will open the referred file in the default application - that is, a web browser for
+      URLs and links, Notepad for .txt files, Adobe Reader for PDFs. You can use <code class='language-none'>link:</code> to open any of the files in
       the package, e.g. <code class='language-none'>link:docs.pdf</code> will open the file docs.pdf in Adobe Reader or the default PDF reader on the
       system.</p>
     </aside>
@@ -157,7 +157,7 @@ package.</p>
     You can include user interface translation files in your package – these will be automatically available once you install the
     package. The user interface files are called <strong>locale-xxx.xml</strong>, where xxx is the BCP 47 code for the language. The
     basic English <strong>locale.xml</strong> file is available in <strong>[Program Files (x86)]\Keyman\Keyman Desktop 10.0\xml</strong>.
-    Information on the locale.xml file format is available <a class="link" href="/developer/engine/desktop/10.0/locale/">here</a>.
+    Information on the locale.xml file format is available <a class="link" href="/products/desktop/current-version/docs/advanced_locale_edit">here</a>.
   </dd>
 </dl>
 

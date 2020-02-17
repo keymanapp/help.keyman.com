@@ -10,9 +10,9 @@
 
 <h2 id="Summary" name="Summary">Summary</h2>
 
-<p>The <code><strong>&amp;language</strong></code> store specifies the Windows system language that a keyboard should 
+<p>The <code><strong>&amp;language</strong></code> store specifies the Windows system language that a keyboard should
   be associated with on install. </p>
- 
+
 <h2 id="Syntax" name="Syntax">Syntax</h2>
 
 <pre><code>store(&amp;language) "<var>langcode</var>"
@@ -36,7 +36,7 @@ Desktop will install it and register an input method for that language. The Keym
 activated whenever the language is selected using Windows' language selector in the task bar.</p>
 
 <p>The <code>LANGUAGE</code> statement and the <code>&amp;language</code> store are deprecated, and the Keyboard Package
-  <a href="/developer/10.0/reference/file-types/metadata#obj-language">metadata</a> should be used to define the language data instead.</p>
+  <a href="/developer/current-version/reference/file-types/metadata#obj-language">metadata</a> should be used to define the language data instead.</p>
 
 <p><a class="ulink" href="http://msdn2.microsoft.com/en-us/library/ms776294.aspx" target="_blank">Microsoft language identifier
 reference</a></p>

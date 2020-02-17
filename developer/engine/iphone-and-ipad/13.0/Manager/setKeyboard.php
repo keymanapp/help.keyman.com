@@ -27,7 +27,7 @@
 <p>Returns <code>true</code> if the keyboard was set successfully, <code>false</code> otherwise.</p>
 
 <h2 id="Description1" name="Description">Description</h2>
-<p>This syntax can be used for setting a keyboard which is available on the Keyman server. Make sure language list is displayed (see <a href="showLanguageList.php"><code>showLanguageList()</code></a>) at least once before using this syntax, otherwise it may fail to set the keyboard properly. Do not use this syntax to set a custom keyboard.</p>
+<p>This syntax can be used for setting a keyboard which is available on the Keyman server. Make sure language list is displayed (see <a href="showKeyboardPicker.php"><code>showKeyboardPicker()</code></a>) at least once before using this syntax, otherwise it may fail to set the keyboard properly. Do not use this syntax to set a custom keyboard.</p>
 
 <h2 id="Examples1">Examples</h2>
 
@@ -52,7 +52,7 @@
 <p>Returns <code>true</code> if the keyboard was set successfully, <code>false</code> otherwise.</p>
 
 <h2 id="Description2" name="Description">Description</h2>
-<p>This syntax can be used for setting a keyboard which is available on the Keyman server. Make sure language list is displayed (see <a href="showLanguageList.php"><code>showLanguageList()</code></a>) at least once before using this syntax, otherwise it may fail to set the keyboard properly. Do not use this syntax to set a custom keyboard.</p>
+<p>This syntax can be used for setting a keyboard which is available on the Keyman server. Make sure language list is displayed (see <a href="showKeyboardPicker.php"><code>showKeyboardPicker()</code></a>) at least once before using this syntax, otherwise it may fail to set the keyboard properly. Do not use this syntax to set a custom keyboard.</p>
 
 <h2 id="Examples2">Examples</h2>
 

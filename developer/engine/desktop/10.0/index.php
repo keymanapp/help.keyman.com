@@ -12,7 +12,6 @@ head([
 
 <dl>
     <dt><a href="api/">COM API reference</a></dt>
-    <dt><a href="locale">User interface translations</a></dt>
     <dt><a href="registry.php">Registry reference</a></dt>
 </dl>
 

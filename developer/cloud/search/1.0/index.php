@@ -1,6 +1,6 @@
 <?php
-  require_once('includes/template.php'); 
-  
+  require_once('includes/template.php');
+
   // Required
   head([
     'title' =>'Keyboard search API 1.0 Specification',
@@ -16,7 +16,7 @@
 
 <dl>
   <dt>q</dt>
-  <dd>The search query. A string to search for. The following special identifiers can be used to filter the search: 
+  <dd>The search query. A string to search for. The following special identifiers can be used to filter the search:
     <ul>
       <li><code>id</code>: searches only against identifiers</li>
       <li><code>c[ountry]</code>: searches only for countries that match</li>
@@ -27,7 +27,7 @@
     </ul>
     Wildcards are not permitted, except for the special <code>l:*</code> which is used to return all languages supported
   </dd>
-  
+
   <dt>platform</dt>
   <dd>Optionally, limit the results for keyboards to those that work on a target platform. Note: this does not limit language or country.
     Possible values: <code>windows</code>, <code>macos</code>, <code>linux</code>, <code>desktopWeb</code>, <code>mobileWeb</code>, <code>android</code>, <code>ios</code>
@@ -129,11 +129,11 @@
 
   <tr>
     <td>languages</td>
-    <td>An array of <a href='toc-searchlanguage-object'><code>SearchLanguage</code></a> objects</td>
+    <td>An array of <a href='#toc-searchlanguage-object'><code>SearchLanguage</code></a> objects</td>
   </tr>
 </tbody>
 </table>
- 
+
 <h3>Schema</h3>
 
 <p>A validating schema for the object is online at <a href="https://api.keyman.com/schemas/search.json">https://api.keyman.com/schemas/search.json</a>.</p>
@@ -311,7 +311,7 @@
 <dl>
   <dt>1.0.5, 2019-12-13</dt>
   <dd>Added deprecated field to keyboard_info</dd>
-  
+
   <dt>1.0.4, 2018-06-26</dt>
   <dd>Added legacy query filter</dd>
 
@@ -320,10 +320,10 @@
 
   <dt>1.0.2, 2018-02-28</dt>
   <dd>Renamed minKeymanDesktopVersion to minKeymanVersion</dd>
-  
+
   <dt>1.0.1, 2018-02-06</dt>
   <dd>Added SearchCountry definition.</dd>
-    
+
   <dt>1.0, 2018-01-01</dt>
   <dd>Initial version</dd>
 </dl>

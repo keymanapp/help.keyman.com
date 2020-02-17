@@ -1,12 +1,12 @@
 <?php
   require_once('includes/template.php');
-  
+
   head([
     'title' => 'Keyman Support | Type to the world in your language',
     'css' => ['template.css','keyboard.css','keys.css']
   ]);
 ?>
-  
+
 <h1>Keyman for Mac OS X Support</h1>
 
 <p>Need help using Keyman for Mac OS X?  You'll find everything you need here, including product documentation,
@@ -50,7 +50,7 @@ sure we get you a solution to the problem.</p>
       <li><a href='http://<?= $site_tavultesoft ?>/kb/?KnowledgeBaseID=41'>Right-to-left text out of order</a></li>
       <li><a href='http://<?= $site_tavultesoft ?>/kb/?KnowledgeBaseID=63'>Windows and Word language configuration</a></li>
     </ul>-->
-    
+
 <!--    <h3><a href='9.0/docs/basic.php'>Using Keyman Desktop</a></h3>
     <ul>
       <li><a href='9.0/docs/basic_config_menu.php'>Configuration Tasks</a></li>
@@ -58,7 +58,7 @@ sure we get you a solution to the problem.</p>
       <li><a href='9.0/docs/basic_osk.php'>On Screen Keyboard</a></li>
       <li><a href='9.0/docs/basic_fonthelper.php'>Font Helper</a></li>
     </ul>
-    
+
     <h3><a href='9.0/docs/advanced.php'>Advanced Topics</a></h3>
     <ul>
       <li><a href='9.0/docs/basic_charactermap.php'>Character Map</a></li>
@@ -68,7 +68,7 @@ sure we get you a solution to the problem.</p>
       <li><a href='/developer/9.0/docs/comapi.php'>Application Programming Interface (API)</a></li>
     </ul>-->
   </div>
-  
+
   <div class='rightsubcol'>
     <h3><a href='/keyboard/'>Keyboard Layouts</a></h3>
     <ul>
@@ -77,16 +77,7 @@ sure we get you a solution to the problem.</p>
       <li><a href='/keyboard/european2'>EuroLatin2</a></li>
       <li><a href='/keyboard/'>More keyboards...</a></li>
     </ul>
-    
-    <h3>Keyman for macOS Documentation Versions</h3>
 
-    <ul>
-      <li><a href='../../12.0/docs/'>Keyman for macOS 12.0 Documentation</a></li>
-      <li><a href='../../11.0/docs/'>Keyman for macOS 11.0 Documentation</a></li>
-      <li><a href='../../10.0/docs/'>Keyman for macOS 10.0 Documentation</a></li>
-      <li><a href='../../1.0/docs/'>Keyman for macOS 1.0 Documentation</a></li>
-    </ul>
-    
     <h3>Other Resources</h3>
     <ul>
       <li><a href='/kb/'>Knowledge Base</a></li>

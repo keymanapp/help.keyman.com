@@ -10,8 +10,8 @@ head([
 <h1>Step 5: Compile the lexical model</h1>
 
 <p>
-  Before we can test the lexical model, we must compile it. In this step, the <code>.tsv</code> wordlist and <code>.model.ts</code> 
-  model definition get compiled into a single <code>.model.js</code> file. Later on, we will bundle the <code>.model.js</code> file 
+  Before we can test the lexical model, we must compile it. In this step, the <code>.tsv</code> wordlist and <code>.model.ts</code>
+  model definition get compiled into a single <code>.model.js</code> file. Later on, we will bundle the <code>.model.js</code> file
   into a lexical model package so that Keyman apps can install the lexical model.
 </p>
 
@@ -38,5 +38,5 @@ head([
 
 <h2>Testing the lexical model</h2>
 
-<p>Now that the model is built, we are ready to test our lexical model. Continue reading in the 
-<a href='../../test/how-to-test-your-lexical-model'>Guide to testing lexical models</a>.</p>
+<p>Now that the model is built, we are ready to test our lexical model. Continue reading in the
+<a href='../../test/lexical-model'>Guide to testing lexical models</a>.</p>

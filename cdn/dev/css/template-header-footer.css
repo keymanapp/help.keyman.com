@@ -2,7 +2,7 @@
  * CSS RESET
  * ***********************************/
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -16,8 +16,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -28,7 +28,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -47,7 +47,7 @@ q:before, q:after {
 	content: none;
 }
 table {
-	border-collapse: collapse;	
+	border-collapse: collapse;
 }
 
 tbody {
@@ -246,6 +246,49 @@ html{
 	color: #B92034;
 }
 
+/* Version Selector */
+
+#version-selector {
+	float: right;
+	margin: 10px 312px 20px 10px;
+	background: #f2f2f2;
+	padding: 10px;
+	border-radius: 4px;
+	font-size: 10pt;
+}
+
+#version-selector div {
+	display: none;
+}
+
+#version-selector:hover div {
+	display: block;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: -10px;
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.4);
+	border-radius: 2px;
+	z-index: 2;
+	background: #f2f2f2;
+	padding: 10px;
+}
+
+#version-selector div span {
+	display: block;
+	padding: 4px 10px;
+}
+
+#version-selector div a {
+	display: block;
+	color: #b92034;
+	padding: 4px 10px;
+}
+
+#version-selector div a:hover {
+	color: #b92034;
+	background: rgba(224,224,224,0.9);
+}
+
 /**************************************
  * TOP MENU 1 CSS
  * ***********************************/
@@ -274,7 +317,7 @@ html{
 #top-menu1.faded-menu {
 	position: fixed;
 	top: 0;
-	background: rgba(242,242,242,0.9); 
+	background: rgba(242,242,242,0.9);
 }
 
 #top-menu-icon{

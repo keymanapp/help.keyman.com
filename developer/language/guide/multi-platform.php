@@ -23,7 +23,7 @@ with their physical keyboards typically function quite differently from mobile p
 layouts.  While not strictly necessary, a keyboard developer should develop a touch layout for keyboards that
   might see use on mobile devices.</p>
 
-<p>See our <a href="/developer/9.0/guides/develop/creating-a-touch-keyboard-layout-for-amharic-with-keyman-developer-9">
+<p>See our <a href="/developer/current-version/guides/develop/creating-a-touch-keyboard-layout-for-amharic">
     Creating a touch keyboard layout for Amharic</a> guide for an in-depth discussion of the benefits of touch layouts
 and some philosophy on touch keyboard design.</p>
 

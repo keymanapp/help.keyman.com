@@ -2,7 +2,7 @@
  * CSS RESET
  * ***********************************/
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -16,8 +16,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -28,7 +28,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -146,7 +146,7 @@ div.interface-hierarchy blockquote {
     margin-right: auto;
     display: block;
 	}
-	
+
 	body #index {
 		width: 256px;
 	}
@@ -338,6 +338,49 @@ div.interface-hierarchy blockquote {
 	color: #B92034;
 }
 
+/* Version Selector */
+
+#version-selector {
+	float: right;
+	margin: 10px 312px 20px 10px;
+	background: #f2f2f2;
+	padding: 10px;
+	border-radius: 4px;
+	font-size: 10pt;
+}
+
+#version-selector div {
+	display: none;
+}
+
+#version-selector:hover div {
+	display: block;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: -10px;
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.4);
+	border-radius: 2px;
+	z-index: 2;
+	background: #f2f2f2;
+	padding: 10px;
+}
+
+#version-selector div span {
+	display: block;
+	padding: 4px 10px;
+}
+
+#version-selector div a {
+	display: block;
+	color: #b92034;
+	padding: 4px 10px;
+}
+
+#version-selector div a:hover {
+	color: #b92034;
+	background: rgba(224,224,224,0.9);
+}
+
 /**************************************
  * TOP MENU 1 CSS
  * ***********************************/
@@ -366,7 +409,7 @@ div.interface-hierarchy blockquote {
 #top-menu1.faded-menu {
 	position: fixed;
 	top: 0;
-	background: rgba(242,242,242,0.9); 
+	background: rgba(242,242,242,0.9);
 }
 
 #top-menu-icon{
@@ -571,7 +614,7 @@ input[type="search"] {
   border: none;
   background-image: url('../img/search-icon.png');
   background-repeat: no-repeat;
-  background-position: right 4px; 
+  background-position: right 4px;
   color: white;
 }
 .search-wrap input:focus {
@@ -681,7 +724,7 @@ input[type="search"] {
   font-family: "social-logos";
   src: url("../../fonts/social-logos.ttf");
   font-weight: normal;
-  font-style: normal; 
+  font-style: normal;
 }
 
 /*
@@ -1120,24 +1163,24 @@ table.platform {
 
 body[data-device='Windows'] #osk-container,
 body[data-device='Windows'] #osk-phone-container,
-body[data-device='Windows'] #osk-tablet-container { 
-  display: block; 
+body[data-device='Windows'] #osk-tablet-container {
+  display: block;
 }
 
 body[data-device='iPhone'] #osk-phone-container,
-body[data-device='Android'] #osk-phone-container { 
-  display: block; 
+body[data-device='Android'] #osk-phone-container {
+  display: block;
 }
 
 body[data-device='iPad'] #osk-tablet-container,
-body[data-device='Android'] #osk-tablet-container { 
-  display: block; 
+body[data-device='Android'] #osk-tablet-container {
+  display: block;
 }
 
 body[data-device='Unknown'] #osk-container,
 body[data-device='Unknown'] #osk-phone-container,
-body[data-device='Unknown'] #osk-tablet-container { 
-  display: block; 
+body[data-device='Unknown'] #osk-tablet-container {
+  display: block;
 }
 
 /**********************************
@@ -1436,7 +1479,7 @@ body[data-device='Unknown'] #osk-tablet-container {
 		height: 57px;
 	}
 	/* Products */
-	
+
 	.product{
 		display: inline-block;
 		vertical-align: top;
@@ -1456,12 +1499,12 @@ body[data-device='Unknown'] #osk-tablet-container {
 	.product h3{
 		z-index: 2;
 	}
-	
+
 	.product p{
 		height: 60px;
 		z-index: 2;
 	}
-	
+
 
 
 	/* Footer */
@@ -1590,7 +1633,7 @@ div.webhelp h3 {
 
 div.webhelp h4 {
   margin: 0 0 16px 0;
-  padding:0; 
+  padding:0;
 }
 img.webhelp, div.webhelp img {margin:16px 0 !important;border: 1px solid grey;}
 
@@ -1620,7 +1663,7 @@ dd {
   margin-left: 32pt;
 }
 
-table.standard-table td, 
+table.standard-table td,
 table.standard-table th {
   border: solid #e0e0dc;
   border-width: 0 1px 1px 0;
@@ -1695,7 +1738,11 @@ article dl dd span.optional {
   }
   #toc.fixed {
     position: static !important;
-  }
+	}
+
+	#version-selector {
+		margin-right: 40px;
+	}
 }
 
 @media all and (max-width: 1023px){

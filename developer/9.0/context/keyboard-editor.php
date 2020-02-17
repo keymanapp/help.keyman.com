@@ -26,7 +26,7 @@ can have multiple source files, which are all managed within this one editor.</p
 
 <h2>Keyboard component files</h2>
 
-<p>A keyboard contains multiple source files. The following table lists the file types and which tabs are used to edit them. The filenames shown are 
+<p>A keyboard contains multiple source files. The following table lists the file types and which tabs are used to edit them. The filenames shown are
 defaults and can be modified, by editing the corresponding line in the source file (and renaming the file). However, where possible the default
 names should be used.</p>
 
@@ -115,21 +115,21 @@ tab.</p>
 <dl>
   <dt>Name</dt>
   <dd>The name of the keyboard, corresponding to the <a href='/developer/language/reference/name'><code>&amp;name</code> store</a>.</dd>
-  
+
   <dt>Targets</dt>
   <dd>The intended target devices and operating systems, corresponding to the <a href='/developer/language/reference/targets'><code>&amp;targets</code> store</a>.
   Changing the targets will hide or show parts of the Details and Compile tabs. If no targets are selected, Keyman Developer will treat the keyboard as a
   Windows-only keyboard, for backward compatibility reasons.</dd>
-  
+
   <dt>Windows Languages</dt>
   <dd>Allows you to add references to the Windows languages for which the keyboard is designed. This will be used when the keyboard is installed in Windows to
   link the keyboard automatically to an appropriate language. This table corresponds to the <a href='/developer/language/reference/windowslanguages'><code>&amp;windowslanguages</code> store</a>.
   One language can be specified as the default, which will be reflects in the <a href='/developer/language/reference/language'><code>&amp;language</code> store</a>.</dd>
-  
+
   <dt>ISO639-3 (Ethnologue) Languages</dt>
   <dd>This field is used for installation on all systems other than Windows, and in the web browser. Select the codes from the ISO639-3 standard, separated by spaces. This corresponds to the
   <a href='/developer/language/reference/ethnologuecode'>&amp;ethnologuecode</a> store</a>.</dd>
-  
+
   <dt>Copyright</dt>
   <dd>Enter the details of the copyright owner for the keyboard. <a href='/developer/language/reference/copyright'><code>&amp;copyright</code> store</a>.</dd>
 
@@ -145,10 +145,10 @@ tab.</p>
   <dt>Keyboard version</dt>
   <dd>The version of the keyboard. Read the reference documentation for <a href='/developer/language/reference/keyboardversion'><code>&amp;keyboardversion</code> store</a> to understand the legal values for this field. This
   is not the same as the <a href='/developer/language/reference/version'><code>&amp;version</code> store</a>, which controls the Keyman (and Keyman Developer) version for which a keyboard is designed.</dd>
-  
+
   <dt>Comments</dt>
   <dd>This field corresponds to the first lines of comments in the keyboard source, and is visible only to the keyboard designer.</dd>
-  
+
   <dt>Features</dt>
   <dd>The Features grid controls which additional file components are included in the keyboard, as listed in the Component Files section above. Each of the features relates to a system store. Adding a feature will
   add an extra tab to the editor, and add the corresponding store to the keyboard source. Removing a feature will not delete the component file, but will just remove the store from the keyboard source.</dd>
@@ -168,18 +168,18 @@ distribution guide</a>.</p>
 <dl>
   <dt>Keyboard base URI</dt>
   <dd>The full http:// or https:// path where the keyboard .js file may be found.</dd>
-  
+
   <dt>Font base URI</dt>
   <dd>The full http:// or https:// path where font files may be found.</dd>
-  
+
   <dt>Font resources</dt>
   <dd>An entry for each font format used by the keyboard. Multiple formats are supported, for example .ttf will be used for Android devices, .mobileconfig may be used for iOS, .woff may be used
   for web. Keyman Engine will select the most appropriate font in each case. The face name and size may be used or not, depending on the situation. The face name does not necessarily have to match
   the face name within the font file itself.</dd>
-  
+
   <dt>OSK font resources</dt>
   <dd>An entry for each font format used by the on screen keyboard. Multiple formats are supported, for example .ttf will be used for Android devices, .mobileconfig may be used for iOS, .woff may be used
-  for web. .svg is used for older Android devices. The OSK font is used when you want to use a different font for the presentation of the On Screen Keyboard to the actual editor font. For instance, it 
+  for web. .svg is used for older Android devices. The OSK font is used when you want to use a different font for the presentation of the On Screen Keyboard to the actual editor font. For instance, it
   may use additional placeholder shapes.</dd>
 
   <dt>Languages</dt>
@@ -205,7 +205,7 @@ state. You can change the shift state by clicking on the Shift, Ctrl, and Alt ke
 <p>There are two ways to assign characters to the keys:</p>
 
 <ul type="disc">
-  <li>Click on a key, and then type the character's code into the Unicode Character Value(s) field, or the type/paste the character 
+  <li>Click on a key, and then type the character's code into the Unicode Character Value(s) field, or the type/paste the character
     itself into the Output character(s) field.</li>
 
   <li>Select the character from the Character Map and drag and drop it onto the appropriate key. This will set the key to output
@@ -223,7 +223,7 @@ state. You can change the shift state by clicking on the Shift, Ctrl, and Alt ke
   <dt>Distinguish between left and right Ctrl/Alt</dt>
   <dd>A Keyman keyboard can treat left and right Ctrl and Alt identically, or it can distinguish between them. The Design view allows one or the other mode (in Code view, you can
   use both interchangeably).</dd>
-  
+
   <dt>Display 102nd Key (as on European keyboards)</dt>
   <dd>European keyboards have one extra key that is not on US keyboards. This key is positioned to the right of the left shift key. Some other keyboards have additional keys;
   these are not shown on the layout designer.</dd>
@@ -233,7 +233,7 @@ state. You can change the shift state by clicking on the Shift, Ctrl, and Alt ke
 
 <p class='context-main-image'><img src="<?= cdn('img/developer/90/ui/frmKeymanWizard_Layout_Code.png') ?>" alt="Keyboard Editor - Layout tab, Code view" /></p>
 
-<p>The Code view shows the source code of the keyboard file. This is where all the information in the Details and Layout tab is stored, and additional logic and 
+<p>The Code view shows the source code of the keyboard file. This is where all the information in the Details and Layout tab is stored, and additional logic and
 complex keyboard layouts will be edited entirely in the Code view.</p>
 
 <p>See the <a href='editor'>Editor topic</a> for more information on how to use the editor, and the <a href='/developer/language'>Keyboard Language documentation</a> for
@@ -255,7 +255,7 @@ hide some of the details of encoding from the interface presented to the user. T
   <dt>Fill from layout</dt>
   <dd>Compiles the keyboard file, and processes each possible keystroke in the keyboard file to automatically generate an On-Screen Keyboard that matches the layout. This can be
   used to effectively pre-populate the On-Screen Keyboard and reduces the complexity of designing it from scratch.</dd>
-  
+
   <dt>Import</dt>
   <dd>Imports an On Screen Keyboard from an XML file.</dd>
 
@@ -264,21 +264,21 @@ hide some of the details of encoding from the interface presented to the user. T
 
   <dt>Text</dt>
   <dd>The key cap for the selected key</dd>
-  
+
   <dt>Bitmap</dt>
   <dd>A bitmap that is displayed on the selected key (not recommended, as it will not scale cleanly)</dd>
-  
+
   <dt>Display underlying layout characters</dt>
-  <dd>If checked, then the base or underlying layout will show in small letters at the top left of each key cap. This can be helpful to provide users with a guide as to the 
+  <dd>If checked, then the base or underlying layout will show in small letters at the top left of each key cap. This can be helpful to provide users with a guide as to the
   position of each key on the keyboard, especially for non-Latin scripts.</dd>
-  
+
   <dt>Distinguish between left and right Ctrl/Alt</dt>
   <dd>If checked, treats the left and right Ctrl/Alt as separate layers</dd>
-  
+
   <dt>Display 102nd Key (as on European keyboards)</dt>
   <dd>European keyboards have one extra key that is not on US keyboards. This key is positioned to the right of the left shift key. Some other keyboards have additional keys;
   these are not shown on the layout designer.</dd>
-  
+
   <dt>Auto-fill underlying layout</dt>
   <dd>When the Fill from layout button is clicked, if this option is checked, then keys without corresponding rules in the Layout will be filled with the base layout character.</dd>
 </dl>
@@ -287,7 +287,7 @@ hide some of the details of encoding from the interface presented to the user. T
 
 <p class='context-main-image'><img src="<?= cdn('img/developer/90/ui/frmKeymanWizard_TouchLayout_Design.png') ?>" alt="Keyboard Editor - Touch Layout tab, Design view" /></p>
 
-<p>The Touch Layout tab is used to create the visible representation of the keyboard layout for touch devices. It works similarly to the On Screen Keyboard Editor conceptually, but 
+<p>The Touch Layout tab is used to create the visible representation of the keyboard layout for touch devices. It works similarly to the On Screen Keyboard Editor conceptually, but
 has a number of additional features specific to touch. Keys on the touch layout trigger rules within the normal Keyman keyboard; if no rule is defined for a given key, it will be
 given output if it has a standard code beginning with <code>K_</code>, or if it is a Unicode value code, starting with <code>U_</code>.</p>
 
@@ -303,19 +303,19 @@ you load it onto a device. The following image shows all aspects of the touch de
   <dd>The Template button allows you to choose a standard layout of keys from a predefined set. These layouts move the standard set of keys around and between layers to reduce the number
   of keys on each layer, optimising for mobile phone or other sizes. When Keyman Developer switches to a new template, it will transfer key definitions to the new layout as far as possible,
   but if keys on the current layout are not in the new template, their definitions will be lost. Therefore, selecting an appropriate template early in the development process is suggested.</dd>
-  
+
   <dt>Import from On Screen</dt>
   <dd>If you have an existing On Screen Keyboard for your keyboard layout, importing the design from the On Screen Keyboard can reduce the development time considerably. Once you have imported,
   you will probably want to select a new template to transform the desktop-oriented design to a tablet or phone design automatically.</dd>
-  
+
   <dt>Platform area</dt>
   <dd>The platform controls allow you to select and add or remove platform support for a given layout. If a platform is not defined, then Keyman Engine will transform the layout from another
   platform automatically, so you don't necessarily need to define layouts for each platform.</dd>
-  
+
   <dt>Layer area</dt>
-  <dd>Each layout for each platform is made up of one or more layers of keys. Each layer can have a default shift state associated with it, which allows keys to trigger specific rules in the 
+  <dd>Each layout for each platform is made up of one or more layers of keys. Each layer can have a default shift state associated with it, which allows keys to trigger specific rules in the
   Layout code.</dd>
-  
+
   <dt>Presentation</dt>
   <dd>This selector allows you to choose the simulated view of the keyboard, either landscape or portrait, for a number of devices. The presented keyboard may not be 100% identical to the final
   layout as seen on the device, but this allows you to get a feel for the design before testing.</dd>
@@ -328,26 +328,26 @@ controls:</p>
 <dl>
   <dt>Red circle with an X</dt>
   <dd>This button to the top right of the key will delete the key from the row; if it is the last key on the row, the entire row will be deleted.</dd>
-  
+
   <dt>Green arrow with a +</dt>
   <dd>These buttons will insert a key to the left or right, or a single key on a new row above or below the selected key. Adding extra keys scales the entire keyboard.</dd>
-  
+
   <dt>Dragging the right hand side of the key</dt>
   <dd>Dragging the right hand side of the key will resize the key; resizing the key will rescale the entire keyboard so it still fits within the device screen.</dd>
-  
+
   <dt>Key Cap</dt>
   <dd>You can drop characters from Character Map directly into the key cap edit box, or type directly.</dd>
 
   <dt>Key Code</dt>
   <dd>Clicking on a key code on a key cap will focus the key code edit box instead of the key cap edit box.</dd>
-  
+
   <dt>Drag and drop</dt>
   <dd>Keys can be moved around the keyboard by dragging them with the mouse; a ghost landing box will appear beneath the key when it can be dropped. If the key is dropped in an invalid area,
   no action will occur.</dd>
-  
+
   <dt>Double-click</dt>
   <dd>Double clicking on a key with a "Next Layer" defined will switch to that layer.</dd>
-  
+
   <dt>Top right slash</dt>
   <dd>A slash in the top right of a key indicates the presence of a long press menu for that key.</dd>
 
@@ -387,14 +387,14 @@ controls:</p>
 
         <tr>
           <td>Active special key</td>
-          <td>A variation on the Special keys, which shows a highlight, typically used 
+          <td>A variation on the Special keys, which shows a highlight, typically used
           to indicate that a shift key for example is down.</td>
         </tr>
 
         <tr>
           <td>Dead-key</td>
-          <td>While this key type has no difference in function to default keys, it will have a 
-          different style to indicate that it is different; the logic in the keyboard source 
+          <td>While this key type has no difference in function to default keys, it will have a
+          different style to indicate that it is different; the logic in the keyboard source
           may well be a deadkey, for example.</td>
         </tr>
 
@@ -415,7 +415,7 @@ controls:</p>
   <dt>Shift</dt>
   <dd>Determines the shift state that Keyman Engine will receive from the key stroke, such as Shift or Ctrl.
   This makes it simpler to design a single keyboard that works across both desktop and mobile interfaces.</dd>
-  
+
   <dt>Code</dt>
   <dd><p>Each key must be given an identifying key code which is unique to the key layer. Key codes by and large correspond to the virtual
   key codes used when creating a keyboard program for a desktop keyboard, and should start with <code>K_</code>, for keys mapped to standard Keyman
@@ -440,7 +440,7 @@ controls:</p>
         matches. It is still valid to have a rule such as <code>+ [U_0259] > ...</code></li>
     </ul>
   </dd>
-  
+
   <dt>Padding Left</dt>
   <dd>Padding to the left of each key can be adjusted, and specified as a percentage of the default key width (100). If not specified, a
   standard padding of 5% of the key width is used between adjacent keys.</dd>
@@ -468,7 +468,7 @@ controls:</p>
 
 <h3>Long press area</h3>
 
-<p>The keys in the long press area cannot be resized but the controls otherwise work the same as in the main keyboard area. The keys cannot be dragged between the main keyboard area and 
+<p>The keys in the long press area cannot be resized but the controls otherwise work the same as in the main keyboard area. The keys cannot be dragged between the main keyboard area and
 the long press area. The bar below the long press area contains the corresponding controls for the long press keys.</p>
 
 <p class='context-main-image'><img src="<?= cdn('img/developer/90/ui/frmKeymanWizard_TouchLayout_Code.png') ?>" alt="Keyboard Editor - Touch Layout tab, Code view" /></p>
@@ -488,16 +488,16 @@ resolutions, but this will cover the standard 16x16 256 colour icon which is all
 <dl>
   <dt>Pencil</dt>
   <dd>Freehand drawing with the selected colour; use right mouse button for secondary colour.</dd>
-  
+
   <dt>Line</dt>
   <dd>Draw a straight line</dd>
-  
+
   <dt>Open box</dt>
   <dd>Draw an outline box</dd>
-  
+
   <dt>Filled box</dt>
   <dd>Draw a filled box in current colour</dd>
-  
+
   <dt>Open circle</dt>
   <dd>Draw an outline circle or ellipse</dd>
 
@@ -512,12 +512,12 @@ resolutions, but this will cover the standard 16x16 256 colour icon which is all
 </dl>
 
 <p>The icon can be exported or imported to/from various other formats. The transparent colour is the top left colour in the grid with an X in the box.
-The icon can be rotated in any direction with the arrow controls below the toolbox; this will not lose data from the icon but will instead rotate the 
+The icon can be rotated in any direction with the arrow controls below the toolbox; this will not lose data from the icon but will instead rotate the
 edge moving off the grid to the other side of the grid.</p>
 
 <h2>Embedded JS tab</h2>
 
-<p>This tab allows you to edit JavaScript code associated with the <a href='../guide/develop/imx'>IMX functionality</a> of the keyboard.</p>
+<p>This tab allows you to edit JavaScript code associated with the <a href='../guides/develop/imx'>IMX functionality</a> of the keyboard.</p>
 
 <h2>Embedded CSS tab</h2>
 
@@ -550,7 +550,7 @@ to produce characters.</p>
 
   <dt>Open Containing Folder</dt>
   <dd>Opens the folder which contains the keyboard source files.</dd>
-  
+
   <dt>Add to Project</dt>
   <dd>If the keyboard file is not already part of the project, adds it to the project.</dd>
 </dl>
@@ -565,7 +565,7 @@ to produce characters.</p>
 
   <dt>Uninstall</dt>
   <dd>Uninstalls the keyboard from Keyman Desktop if previously installed</dd>
-  
+
   <dt>Package for Distribution</dt>
   <dd>Creates a <a href='package-editor'>package file</a> to prepare distribution of the keyboard</dd>
 </dl>
@@ -577,20 +577,20 @@ to produce characters.</p>
 <dl>
   <dt>Test Keyboard on Web</dt>
   <dd>Starts the Keyman Developer Web Server for the current keyboard.</dd>
-  
+
   <dt>Addresses</dt>
   <dd>Lists the various IP addresses and hostnames that Keyman Developer is listening on</dd>
-  
+
   <dt>Open debugger in local browser</dt>
   <dd>Starts your default browser with the selected address to allow testing of the keyboard directly</dd>
-  
+
   <dt>Send addresses to email</dt>
   <dd>Sends the list of web addresses as an email so that you can more easily open the test site on your mobile
   device, or share with someone else on your network.</dd>
 </dl>
 
-<p>To test on other platforms, open one of the debug host addresses 
-listed on your device.  Your device will need to be on the same 
+<p>To test on other platforms, open one of the debug host addresses
+listed on your device.  Your device will need to be on the same
 network as the Keyman Developer computer.</p>
 
 <p>You can test within the web browser on your device, or in the
