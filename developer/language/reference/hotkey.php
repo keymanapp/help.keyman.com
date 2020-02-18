@@ -64,6 +64,7 @@ As of Keyman Developer 13.0, the quotes are no longer required.</p>
 
 <p>Hotkeys were introduced in Keyman 1.0.</p>
 <p>The virtual key hotkey format  was introduced in Keyman 3.1.</p>
+<p>Keyman Developer 13 no longer requires the virtual key to be in quotes as well as square brackets.</p>
 
 <h2 id="See_also" name="See_also">See also</h2>
 
