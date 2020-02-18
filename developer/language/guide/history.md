@@ -58,7 +58,7 @@ title: Keyman language history
 *   Added [`&kmw_embedcss` store](../reference/kmw_embedcss)
 *   Added [`platform` statement](../reference/platform)
 *   Added [`layer` statement](../reference/layer)
-*   Added [`&targets` statement](../reference/targets)
+*   Added [`&targets` store](../reference/targets)
 
 ## Keyman 10
 
