@@ -26,7 +26,7 @@
             </div>
             <!--End mc_embed_signup-->
             <br>
-            <div id="privacy-policy"><a href="https://keyman.com/privacy/">Privacy policy</a></div>
+            <div id="privacy-policy"><a href="https://software.sil.org/language-software-privacy-policy">Privacy policy</a></div>
         </div>
         <div class="footer-third" id="footer-social">
             <h2 class="footer-third-title">Keep in touch</h2>
