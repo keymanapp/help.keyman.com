@@ -1,0 +1,6 @@
+{
+    "require": {
+        "sentry/sdk": "2.1.0",
+        "php-http/curl-client": "^2.1"
+    }
+}
