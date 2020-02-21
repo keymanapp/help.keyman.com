@@ -28,6 +28,11 @@ One way to test help files is to create a folder `test` inside the `keyman-help.
 Then the help file (xyz.php, for this example) and any supporting files it references are placed in the `test` folder.
 Using a browser to navigate to `help.keyman.com.local/test/xyz.php` should display the help file.
 
+### Using composer to install dependencies in vendor/ folder
+
+1. Install [Composer](https://getcomposer.org/download/)
+2. Run `composer install` to install dependencies.
+
 ## Using Docker
 
 To run locally with Docker on http://localhost:8055 you can use commands like the following:
