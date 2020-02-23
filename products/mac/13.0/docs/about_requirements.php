@@ -36,6 +36,7 @@ head([
       <li><p>macOS Sierra (10.12)</p></li>
       <li><p>macOS High Sierra (10.13)</p></li>
       <li><p>macOS Mojave (10.14)</p></li>
+      <li><p>macOS Catalina (10.15)</p></li>
     </ul>
   </div>
   <h3><a name="id467907"></a>Resource Requirements</h3>
