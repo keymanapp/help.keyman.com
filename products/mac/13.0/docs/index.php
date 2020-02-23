@@ -1,16 +1,16 @@
 <?php
-  require_once('includes/template.php');
+require_once('includes/template.php');
 
-  head([
-    'title' => 'Keyman Support | Type to the world in your language',
-    'css' => ['template.css','keyboard.css','keys.css']
-  ]);
+head([
+  'title' => 'Keyman Support | Type to the world in your language',
+  'css' => ['template.css', 'keyboard.css', 'keys.css']
+]);
 ?>
 
 <h1>Keyman for macOS Support</h1>
 
-<p>Need help using Keyman for macOS?  You'll find everything you need here, including product documentation,
-frequently asked questions, tutorials and videos.</p>
+<p>Need help using Keyman for macOS? You'll find everything you need here, including product documentation,
+  frequently asked questions, tutorials and videos.</p>
 
 <div class='leftcol'>
   <div class='box'>
