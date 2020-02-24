@@ -9,11 +9,19 @@ correctly:
 * Privacy / Input Monitoring
 * Privacy / Accessibility
 
+Symptoms that you may experience if Security & Privacy is not configured correctly include:
+
+* Some key combinations may not work
+* You may find that some letters are duplicated or not deleted as you expect
+
 **Note:** Keyman may not appear under these settings until it has been run at least one
 time. If Keyman does not appear in the relevant panes in System Preferences, select Keyman
 from the Input Sources menu and try typing in an app.
 
-## Enabling Keyman
+In some situations, even then, Keyman won't appear in the Accessibility setting. In this case,
+macOS should prompt you the first time that Keyman needs access to Accessibility.
+
+## Enabling Keyman in macOS Privacy System Preferences
 
 1. Open **System Preferences**:
 
@@ -23,21 +31,24 @@ from the Input Sources menu and try typing in an app.
 
    ![System Preferences](../images/system_preferences.png)
 
-3. Select **Input Monitoring**. Keyman should appear in the list.
+3. Select **Input Monitoring** and unlock the settings with the lock icon,
 
    ![Input Monitoring - not checked](../images/privacy_input_monitoring_locked.png)
 
-4. Unlock the settings with the lock icon, then check the Keyman item:
+4. Keyman should appear in the list. Tick the Keyman item:
 
    ![Input Monitoring](../images/privacy_input_monitoring.png)
 
-5. Select **Accessibility**, and ensure that Keyman is checked there as well:
+5. Select **Accessibility**, and ensure that Keyman is ticked there as well:
 
    ![Accessibility](../images/privacy_accessibility.png)
 
-**Note:** You may be prompted to shut down Keyman. If so, follow the prompts to shut down
-Keyman. You'll need to select an alternate input source from the Input Sources, and then
-switch back to Keyman, to start using Keyman again.
+**Note:** You may be prompted to shut down Keyman in order for the changes to take
+effect. If so, follow the prompts to allow the system to close Keyman. You'll need
+to select an alternate input source from the Input Sources, and then switch back to
+Keyman, to start using Keyman again.
 
-You should only have to undertake this procedure once. However, if you upgrade your version of macOS,
-and Keyman stops working, follow these steps to re-enable Keyman.
+## Upgrading macOS
+
+You should only have to undertake this procedure once. However, if you upgrade your
+version of macOS, and Keyman stops working, follow these steps to re-enable Keyman.
