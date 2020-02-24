@@ -10,7 +10,7 @@ head([
 
 <dl>
   <dt>Keyman 11.0 for Linux Overview</dt>
-  <dd>Keyman for Linux makes it possible for you to type in over 1,0000 languages on Linux.</dd>
+  <dd>Keyman for Linux makes it possible for you to type in over 1,000 languages on Linux.</dd>
 </dl>
 
 <dl>
