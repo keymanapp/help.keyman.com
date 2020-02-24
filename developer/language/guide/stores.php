@@ -7,7 +7,7 @@
 ?>
 
 <h1 class="title" id="reference__struct_stores">Using Stores</h1>
-    
+
 <p>Stores provide a facility to match a character against an array of characters. This means they can be used to reduce multiple
 rules down into a single rule. They can also be used to give mnemonic names to strings.</p>
 
@@ -37,21 +37,21 @@ one character in the store).</p>
 
 <pre><code>store(vowels) 'aeiouAEIOU'
 store(vowels_lower) 'ae' U+0069 U+006F U+0075
-store(φωνήεντα) 'αειου' 
+store(φωνήεντα) 'αειου'
 store(vowel_keys) [K_A] [K_E] [K_I] [K_O] [K_U]
 </code></pre>
 
 <h2>Using stores in rules</h2>
 
-<p>Stores are most often used with the <code>any()</code> and <code>index()</code> statements. The <code>any()</code> statement is used in the 
+<p>Stores are most often used with the <code>any()</code> and <code>index()</code> statements. The <code>any()</code> statement is used in the
 context or key section of the rule, and will match any character in the specified store, remembering its index.</p>
 
 <pre><code>any(<var>storeName</var>) + ... > ...
 ... + any(<var>storeName</var>) > ...
 </code></pre>
 
-<p>The <code>index()</code> statement is used to look up a character in a store at the index where a specified <code>any()</code> statement matched 
-a character. The <code>any()</code> statement used to obtain the index is referenced by its position in the context (and key) part of the rule, 
+<p>The <code>index()</code> statement is used to look up a character in a store at the index where a specified <code>any()</code> statement matched
+a character. The <code>any()</code> statement used to obtain the index is referenced by its position in the context (and key) part of the rule,
 a 1-based offset.</p>
 
 <pre><code>index(<var>storeName</var>, <var>offset</var>)
@@ -78,9 +78,9 @@ into the combined character:</p>
 store(vowel_circum) 'âêîôûÂÊÎÔÛ'
 any(vowel) + '^' > index(vowel_circum, 1)
 </code></pre>
- 
+
 <p>Another example of using <code>any()</code> and <code>index()</code> is given in the
-<a href="/developer/9.0/guides/develop/tutorial/step-6" title="Step 6: Stores, any(), and index()">keyboard design tutorial</a>.</p>
+<a href="/developer/current-version/guides/develop/tutorial/step-6" title="Step 6: Stores, any(), and index()">keyboard design tutorial</a>.</p>
 
 <h2>Outputting stores</h2>
 
@@ -107,12 +107,12 @@ store(vowel_alpha) 'α'
 + $vowel_a > $vowel_alpha
 </code></pre>
 
-<p>The <strong>IPAMenu.kmn</strong> sample keyboard included with Keyman Developer gives an example of the use of stores 
+<p>The <strong>IPAMenu.kmn</strong> sample keyboard included with Keyman Developer gives an example of the use of stores
 and <code>outs()</code> to create a menu-based keyboard for entry of characters from the International Phonetic Alphabet.</p>
-  
+
 <h2>System stores</h2>
 
-<p>System stores are stores with a name beginning with <code>&amp;</code>, which have a special purpose, usually defining properties or 
+<p>System stores are stores with a name beginning with <code>&amp;</code>, which have a special purpose, usually defining properties or
 behaviour of the keyboard.</p>
 
 <p>Keyman 5.0 introduced the concept of system stores that replace the header statements used in earlier versions of Keyman. In Keyman 9.0
@@ -127,7 +127,7 @@ and later, system stores are also used to reflect and update system state. Syste
 
 <h2>IMX definition stores</h2>
 
-<p>Stores can be used to define an IMX interface function to be used with <a href='../reference/call'><code>call()</code></a>. These stores should 
+<p>Stores can be used to define an IMX interface function to be used with <a href='../reference/call'><code>call()</code></a>. These stores should
 not then be used for any other purpose.</p>
 
 <h3>Example</h2>
@@ -138,7 +138,7 @@ not then be used for any other purpose.</p>
 
 <h2>Variable stores</h2>
 
-<p>In Keyman 8.0 and later versions, variable stores are supported. These allow a keyboard to have a store which is updated dynamically while the 
+<p>In Keyman 8.0 and later versions, variable stores are supported. These allow a keyboard to have a store which is updated dynamically while the
 keyboard is active, in order to track state. The store value can be persisted for use in future sessions, or can be updated just for the current
 session.</p>
 
@@ -152,8 +152,8 @@ running under.</p>
 store(vowel) 'aeiouAEIOU'
 store(vowel_circum) 'âêîôûÂÊÎÔÛ'
 
-+ [CTRL ALT "1"] > set(opt_composed='1') 
-+ [CTRL ALT "0"] > set(opt_composed='0') 
++ [CTRL ALT "1"] > set(opt_composed='1')
++ [CTRL ALT "0"] > set(opt_composed='0')
 if(opt_composed = '1') any(vowel) + '^' > index(vowel, 2) U+0302
 if(opt_composed = '0') any(vowel) + '^' > index(vowel_circum, 2)
 </code></pre>
@@ -182,20 +182,20 @@ if(opt_composed = '0') any(vowel) + '^' > index(vowel_circum, 2)
 
   <dt><a href="../reference/reset" title="reset() statement"><code>reset()</code> statement</a></dt>
   <dd>Resets the content of a variable store to the default</dd>
-  
+
   <dt><a href="../reference/save" title="save() statement"><code>save()</code> statement</a></dt>
   <dd>Persists the content of a variable store</dd>
 
   <dt><a href="../reference/set" title="set() statement"><code>set()</code> statement</a></dt>
   <dd>Updates the content of a variable store</dd>
- 
+
   <dt><a href="../reference/store" title="store() statement"><code>store()</code> statement</a></dt>
   <dd>Defines an array of characters</dd>
 
 <h2>Version history</h2>
 
 <ul>
-  <li>Introduced in Keyman 3.0</li>  
+  <li>Introduced in Keyman 3.0</li>
   <li>Keyman 5.0 added system stores</li>
   <li>Keyman 6.0 added support for deadkeys and virtual keys in stores</li>
   <li>Keyman 7.0 extended maximum store length to 4095 characters</li>

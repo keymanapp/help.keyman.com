@@ -1,24 +1,24 @@
 <?php /*
   Name:             index
   Copyright:        Copyright (C) 2005 Tavultesoft Pty Ltd.
-  Documentation:    
-  Description:      
+  Documentation:
+  Description:
   Create Date:      18 Sep 2009
 
   Modified Date:    18 Sep 2009
   Authors:          mcdurdin
-  Related Files:    
-  Dependencies:     
+  Related Files:
+  Dependencies:
 
-  Bugs:             
-  Todo:             
-  Notes:            
+  Bugs:
+  Todo:
+  Notes:
   History:          18 Sep 2009 - mcdurdin - Polish
 */
   $pagename = 'Using KeymanWeb';
   $pagetitle = 'Using KeymanWeb';
   $MainPage = true;
-  
+
   require_once('includes/template.php');
   head([
     'title' => $pagetitle
@@ -31,8 +31,7 @@
 As a web-based language solution, KeymanWeb can be used for an extremely wide variety of applications.  A
 range of standard User Interface designs have been included to provide flexibility in incorporating KeymanWeb
 into a website.  This allows developers to select an interface which best complements their website design.
-Customised designs can be developed to suit specific site requirements.  Please <a href='/contact.php'>contact Tavultesoft</a>
-for more information.</p>
+Customised designs can be developed to suit specific site requirements.</p>
 
 <p>Using the various interfaces is largely similar, but because the appearance of each is quite distinct, they are dealt with in different sections of this help documentation. Please click on the links below for more information on the interface you are using.</p>
 

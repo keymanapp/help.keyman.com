@@ -4,7 +4,7 @@
   // Required
   head([
     'title' =>'.keyboard_info formats',
-    'css' => ['template.css','index.css'],
+    'css' => ['template.css'],
     'showMenu' => true
   ]);
 ?>

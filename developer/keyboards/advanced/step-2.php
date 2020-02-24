@@ -4,7 +4,7 @@
     // Required
     head([
         'title' =>'Step 2: Before Starting Work on a Keyboard',
-        'css' => ['template.css','index.css', 'prism.css', 'kmguides.css'],
+        'css' => ['template.css', 'prism.css', 'kmguides.css'],
         'showMenu' => true
     ]);
 ?>
@@ -37,7 +37,7 @@
 </p>
 
 <pre class="language-bash">
-<code>cd /d c:\projects\keyboards\
+<code>cd /c/projects/keyboards
 git checkout master
 git fetch upstream
 git merge upstream/master

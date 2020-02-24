@@ -1,7 +1,7 @@
 <?php
-  $pagetitle = 'Guide: build a system keyboard app'; 
+  $pagetitle = 'Guide: build a system keyboard app';
   require_once('includes/template.php');
-  
+
   head([
     'title' => $pagetitle
   ]);
@@ -24,6 +24,3 @@
 
 <h3>Further links</h3>
 
-<ul>
-<li><a href="...">...</a></li>
-</ul>

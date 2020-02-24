@@ -1,6 +1,6 @@
 <?php
   require_once('includes/template.php');
-  
+
   head([
     'title' => 'Keyman for iPhone and iPad Help',
 //    'css' => ['template.css','app-info.css'],
@@ -9,7 +9,7 @@
     'showMenu' => true
   ]);
 ?>
-  
+
 <h2>
   Keyman for iPhone and iPad
 </h2>
@@ -99,15 +99,6 @@
 <p>
    For more information on Keyman, visit <a href="http://keyman.com">www.keyman.com</a>
 </p>
-
-<h2>Keyman for iPhone and iPad Documentation Versions</h2>
-
-<ul>
-  <li><a href='../12.0/'>Keyman for iPhone and iPad 12.0 Documentation</a></li>
-  <li><a href='../11.0/'>Keyman for iPhone and iPad 11.0 Documentation</a></li>
-  <li><a href='../10.0/'>Keyman for iPhone and iPad 10.0 Documentation</a></li>
-  <li><a href='../2.0/'>Keyman for iPhone and iPad 2.0 Documentation</a></li>
-</ul>
 
 <h2>Version History</h2>
 <p><a href='../version-history'>Full version history</a></p>

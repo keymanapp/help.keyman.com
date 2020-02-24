@@ -4,7 +4,7 @@ require_once('includes/template.php');
 // Required
 head([
     'title' =>'Keyman Version API',
-    'css' => ['template.css','index.css'],
+    'css' => ['template.css'],
     'showMenu' => true
 ]);
 ?>

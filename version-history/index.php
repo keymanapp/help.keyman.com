@@ -6,7 +6,7 @@
     'title' =>'Keyman Version Histories',
     'toc' => false,
     'index' => false,
-    'css' => ['template.css','index.css'],
+    'css' => ['template.css'],
     'showMenu' => true
   ]);
 ?>

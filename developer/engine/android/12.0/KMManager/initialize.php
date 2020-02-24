@@ -25,7 +25,7 @@
 </dl>
 
 <h2 id="Description" name="Description">Description</h2>
-<p>This method is normally called from <code>onCreate()</code> method of an Activity or InputMethodService. A license must be set before calling this method.</p>
+<p>This method is normally called from <code>onCreate()</code> method of an Activity or InputMethodService.</p>
 
 <h2 id="Examples">Examples</h2>
 
@@ -35,7 +35,6 @@
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     // ...
-    KMManager.setKeymanLicence("********", "********");
     KMManager.initialize(this, KeyboardType.KEYBOARD_TYPE_INAPP);
     // ...
     // do not call setContentView before initializing the Keyman manager.
@@ -43,8 +42,3 @@ protected void onCreate(Bundle savedInstanceState) {
     // ...
 }
 </code></pre>
-
-<h2 id="See_also" name="See_also">See also</h2>
-<ul>
- <li><a href="setKeymanLicense.php"><code>setKeymanLicense()</code></a></li>
-</ul>

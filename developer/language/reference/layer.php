@@ -32,6 +32,10 @@ layer on the touch keyboard.</p>
 Some layer controls can also be made directly in the touch layout itself with the <strong>Next Layer</strong> control, but
 the <code>&amp;layer</code> store provides for finer control.</p>
 
+<p>When a key in a touch layout definition includes a <strong>Next Layer</strong> control, this takes precedence over
+setting layer via the <code>layer</code> store (as the <strong>Next Layer</strong> control is applied once the rule
+has finished processing).</p>
+
 <h2 id="Examples">Examples</h2>
 
 <h3 id="Example:_Using_layer" name="Example:_Using_layer">Example: Using <code>&amp;layer</code></h3>
@@ -42,14 +46,14 @@ the <code>&amp;layer</code> store provides for finer control.</p>
 
 <h2>Platforms</h2>
 
-<p>The <code>&amp;layer</code> store will be used in touch platforms. It is ignored on all other platforms.</p>
+<p>The <code>&amp;layer</code> store is used in touch platforms. It is ignored on all other platforms.</p>
 
 <table class='platform'>
   <thead>
-    <tr><th>Windows</th><th>macOS</th><th>Desktop web</th><th>Mobile web</th><th>iOS</th><th>Android</th></tr>
+    <tr><th>Windows</th><th>macOS</th><th>Linux</th><th>Desktop web</th><th>Mobile web</th><th>iOS</th><th>Android</th></tr>
   </thead>
   <tbody>
-    <tr><td>✘</td><td>✘</td><td>✘</td><td>✔</td><td>✔</td><td>✔</td></tr>
+    <tr><td>✘</td><td>✘</td><td>✘</td><td>✘</td><td>✔</td><td>✔</td><td>✔</td></tr>
   </tbody>
 </table>
 
@@ -57,10 +61,9 @@ the <code>&amp;layer</code> store provides for finer control.</p>
 
 <p>The <code>&amp;layer</code> store was added in Keyman 9.0.</p>
 
-
 <h2 id="See_also" name="See_also">See also</h2>
 
 <ul>
-  <li><a href="/developer/9.0/guides/develop/">Designing touch layouts with Keyman Developer</a></li>
+  <li><a href="/developer/current-version/guides/develop/">Designing touch layouts with Keyman Developer</a></li>
   <li><a href="layoutfile" title="&amp;layoutfile store"><code>&amp;layoutfile</code> store</a></li>
 </ul>

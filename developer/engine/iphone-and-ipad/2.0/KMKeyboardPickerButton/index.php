@@ -2,7 +2,7 @@
     require_once('includes/template.php');
     $class = 'KMKeyboardPickerButton';
     head(['title' => "$class class"]);
-    
+
     // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array for sample
 ?>
 <h1>KMKeyboardPickerButton class</h1>
@@ -23,16 +23,4 @@
 
 <h2 id="Methods" name="Methods">Methods</h2>
 
-<dl>
-  <dt><code><a href='...'>...</a></code></dt>
-  <dd>...</dd>
-
-</dl>
-
 <h2 id="Events" name="Events">Events</h2>
-
-<dl>
-  <dt><code><a href='...'>...</a></code></dt>
-  <dd>...</dd>
-
-</dl>

@@ -4,7 +4,7 @@
     // Required
     head([
         'title' =>'Step 1: Setup - One Time Only',
-        'css' => ['template.css','index.css', 'prism.css', 'kmguides.css'],
+        'css' => ['template.css', 'prism.css', 'kmguides.css'],
         'showMenu' => true
     ]);
 ?>
@@ -31,7 +31,7 @@
 </p>
 
 <pre class="language-bash">
-<code>cd /d c:\projects\
+<code>cd /c/projects
 git clone https://github.com/&lt;your-github-name&gt;/keyboards.git
 </code></pre>
 
@@ -51,7 +51,7 @@ c:\projects\keyboards
 </p>
 
 <pre class="language-bash">
-<code>cd /d c:\projects\keyboards\
+<code>cd /c/projects/keyboards
 git remote add upstream https://github.com/keymanapp/keyboards.git
 </code></pre>
 

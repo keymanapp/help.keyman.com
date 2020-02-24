@@ -33,14 +33,14 @@ to generate metadata for KeymanWeb.</p>
 <p>For a list of codes, or more information about Ethnologue, see <a class="ulink" href="http://www.ethnologue.com/" target=
 "_blank">www.ethnologue.com</a>.</p>
 
-<p>Multiple codes can be included by separating them with spaces. You should not include punctuation between 
+<p>Multiple codes can be included by separating them with spaces. You should not include punctuation between
 codes. However, for legacy reasons, applications that process this store should ignore any punctuation found.</p>
 
 <p>A proposed addition to this field is to add script or country identifiers as needed.</p>
 
 <p>The <code>&amp;EthnologueCode</code> store is deprecated. Keyboard Package
-  <a href="/developer/10.0/reference/file-types/metadata#obj-language">metadata</a> should be used instead, which
-  is defined by the BCP 47 language code in the <a href="/developer/10.0/context/keyboard-editor.php#details">keyboard editor</a>.</p>
+  <a href="/developer/current-version/reference/file-types/metadata#obj-language">metadata</a> should be used instead, which
+  is defined by the BCP 47 language code in the <a href="/developer/current-version/context/keyboard-editor.php#details">keyboard editor</a>.</p>
 
 <h2 id="Examples">Examples</h2>
 
@@ -55,10 +55,10 @@ codes. However, for legacy reasons, applications that process this store should 
 
 <table class='platform'>
   <thead>
-    <tr><th>Windows</th><th>macOS</th><th>Desktop web</th><th>Mobile web</th><th>iOS</th><th>Android</th></tr>
+    <tr><th>Windows</th><th>macOS</th><th>Linux</th><th>Desktop web</th><th>Mobile web</th><th>iOS</th><th>Android</th></tr>
   </thead>
   <tbody>
-    <tr><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr>
+    <tr><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr>
   </tbody>
 </table>
 

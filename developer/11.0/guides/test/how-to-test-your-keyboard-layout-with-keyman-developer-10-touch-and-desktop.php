@@ -30,11 +30,11 @@
       alt="Touch Editor - Build tab" border="0"/></a></p>
 
 <p>Testing is easy on Windows: press the <strong>Start Debugging</strong> button on the <strong>Build</strong>
-  tab to test the rules in your keyboard layout with a <a href="/developer/10.0/context/debug.php">fully interactive debugger</a>.
+  tab to test the rules in your keyboard layout with a <a href="../../context/debug.php">fully interactive debugger</a>.
   This allows you to step through complex rules, inspecting the contents of the stores referenced in each rule,
   and examine the context, deadkey state and output at each point.</p>
 
-<p>After validating your rules, you will want to test the <a href="/developer/10.0/context/keyboard-editor#toc-on-screen-tab.php">on screen keyboard</a>
+<p>After validating your rules, you will want to test the <a href="../../context/keyboard-editor#toc-on-screen-tab.php">on screen keyboard</a>
   and how your keyboard feels within other applications in Windows. &nbsp;We recommend <a href="../distribute/tutorial">creating a package</a>
   in order to simplify the installation of both the on screen keyboard and the keyboard (which are stored as two separate files).
   Then click the <strong>Install</strong> button in <strong>Build</strong> tab of the package wizard and you are done.</p>

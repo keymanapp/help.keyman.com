@@ -1,0 +1,83 @@
+---
+title: Keyman language history
+---
+
+## Keyman 3
+
+*   The structure of rules is not backwardly compatible with earlier versions of Keyman. The left hand side of the rule changed
+    from being a sequence of keystrokes to being a context + single keystroke.
+*   [Stores](stores) were introduced.
+*   [Long line](long-lines) support
+
+## Keyman 4
+
+*   The `+` character became required, and usage became stricter to follow the standard now: the plus character must separate
+    context from keystroke in a rule.
+*   Keyboards are now compiled by the developer into .kmx files, rather than being distributed as .kmn files.
+
+## Keyman 5
+
+*   Added [Unicode support](unicode)
+*   Added [Input Method eXtension support](../reference/call)
+*   Deprecated [`bitmaps` statement](../reference/bitmap)
+*   Deprecated [`language` statement](../reference/language). Note that the `language` statement was reintroduced in Keyman 6
+    with a new meaning
+*   Keyman 5.0 added system stores
+*   Deprecated [`layout` statement](../reference/layout)
+
+## Keyman 6
+
+*   Added [named character constant](constants) support
+*   Added [Ethnologue (ISO 639-3) code](../reference/ethnologuecode) support
+*   Added [Mnemonic layouts](../reference/mnemoniclayout) (reworked in Keyman 8 and 9)
+*   Added [Virtual character keys](virtual-keys) to support mnemonic layouts
+*   Keyman 6.0 added support for deadkeys and virtual keys in stores
+*   Enhanced [`context()` statement](../reference/context) to work on left hand side of rule
+
+## Keyman 7
+
+*   Added [`&visualkeyboard` store](../reference/visualkeyboard)
+*   Enhanced [`&language` store](../reference/language) to support combined codes
+*   Added [`notany()` statement](../reference/notany)
+*   Added web keyboard support
+*   Enhanced [`&bitmap` store](../reference/bitmap) to support .ico format files
+*   Added [`&windowslanguages` store](../reference/windowslanguages)
+*   Keyman 7.0 extended maximum store length to 4095 characters
+
+## Keyman 8
+
+*   Added [`if()` statement](../reference/if)
+*   Added [`set()` statement](../reference/set)
+*   Added [`save()` statement](../reference/save)
+*   Added [`reset()` statement](../reference/reset)
+
+## Keyman 9
+
+*   Added [touch device support](/developer/current-version/guides/develop/)
+*   Added [`&keyboardversion` store](../reference/keyboardversion)
+*   Added [`&kmw_embedcss` store](../reference/kmw_embedcss)
+*   Added [`platform` statement](../reference/platform)
+*   Added [`layer` statement](../reference/layer)
+*   Added [`&targets` store](../reference/targets)
+
+## Keyman 10
+
+*   Changed language tags from ISO 639-3 to BCP 47
+*   Deprecated [`&ethnologuecode` store](../reference/ethnologuecode)
+*   Deprecated [`&language` store](../reference/language)
+*   Deprecated [`&windowslanguages` store](../reference/windowslanguages)
+*   Left and right modifiers are supported in KeymanWeb 10.0 and later
+*   Deadkeys now work 100% identically in KeymanWeb 10.0 and Keyman Desktop 10.0, in particular using multiple deadkeys in a row.
+
+## Keyman 11
+
+*   [`&targets` store](../reference/targets) now supports `linux`
+*   .kmn files without BOM are now treated as UTF-8 unless they contain invalid UTF-8 sequences
+
+## Keyman 12
+
+*   No language changes.
+
+## Keyman 13
+
+*   Virtual keys no longer need to be in quotes for the [`&hotkey`](../reference/hotkey) store

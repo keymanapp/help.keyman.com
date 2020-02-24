@@ -4,7 +4,7 @@
     // Required
     head([
         'title' =>'Step 1: Get the Source',
-        'css' => ['template.css','index.css', 'prism.css', 'kmguides.css'],
+        'css' => ['template.css', 'prism.css', 'kmguides.css'],
         'showMenu' => true
     ]);
 ?>
@@ -34,7 +34,7 @@
     From a command prompt, run the following steps:
 </p>
 <pre class="language-bash">
-<code>cd /d c:\projects\
+<code>cd /c/projects
 git clone --depth 1 https://github.com/keymanapp/keyboards-starter.git
 </code></pre>
 
@@ -59,7 +59,7 @@ c:\projects\keyboards-starter
 </p>
 
 <pre class="language-bash">
-<code>cd /d c:\projects\keyboards-starter\
+<code>cd /c/projects/keyboards-starter
 git checkout master
 git pull
 </code></pre>

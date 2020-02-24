@@ -10,8 +10,7 @@
     of three parts: The Debug Input box, the Debug State box, and the command and status bar above them.
   </p><h3><a name="id671206"></a>Debug Input box</h3><p>
     The debug input box is used for typing input to test the keyboard. It will display the output exactly
-    as it will appear in use, except for deadkeys, which are shown visually here with a
-    <span class="inlinemediaobject"><img src="developer_images/obj.gif"></span>
+    as it will appear in use, except for deadkeys, which are shown visually with a
     symbol.
   </p><h3><a name="id671898"></a>Test Mode</h3><p>
     The test mode lets you test your keyboard without the debugger being active.  This lets you test

@@ -29,7 +29,7 @@ store(callDefinitionStore) "myimx.dll:KeyEvent"
 
 <h2 id="Description" name="Description">Description</h2>
 
-<p>The <code><strong>call</strong>()</code> statement calls an Input Method Extension (IMX) DLL. Functionally it behaves like the <a href='use.php'><code>use()</code> statement</a>, 
+<p>The <code><strong>call</strong>()</code> statement calls an Input Method Extension (IMX) DLL. Functionally it behaves like the <a href='use.php'><code>use()</code> statement</a>,
 and can be used anywhere the <code>use()</code> statement is valid except after the <a href='begin.php'><code>begin</code> statement</a>.</p>
 
 <p>As the <code><strong>call</strong>()</code> statement originated on Microsoft Windows, the definition is based on Windows requirements.
@@ -44,8 +44,8 @@ In the example above, to compile for KeymanWeb, the file 'KeyEvent.call_js' must
 
 <p>The IMX functionality supports both 32-bit and 64-bit DLLs. A 64-bit DLL should be named with a .x64.dll extension, rather than just .dll.</p>
 
-<p>The specification for the Windows DLL is available in the <a href='/developer/9.0/guides/develop/imx'>IMX documentation</a>. The specification for Javascript IMX functions is
-available in the <a href='/developer/9.0/guides/develop/imx/web'>IMX Web documentation</a>.</p>
+<p>The specification for the Windows DLL is available in the <a href='/developer/current-version/guides/develop/imx'>IMX documentation</a>. The specification for Javascript IMX functions is
+available in the <a href='/developer/current-version/guides/develop/imx/web'>IMX Web documentation</a>.</p>
 
 <h2 id="Examples">Examples</h2>
 
@@ -61,10 +61,10 @@ available in the <a href='/developer/9.0/guides/develop/imx/web'>IMX Web documen
 
 <table class='platform'>
   <thead>
-    <tr><th>Windows</th><th>macOS</th><th>Desktop web</th><th>Mobile web</th><th>iOS</th><th>Android</th></tr>
+    <tr><th>Windows</th><th>macOS</th><th>Linux</th><th>Desktop web</th><th>Mobile web</th><th>iOS</th><th>Android</th></tr>
   </thead>
   <tbody>
-    <tr><td>✔</td><td>✘</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr>
+    <tr><td>✔</td><td>✘</td><td>✘</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr>
   </tbody>
 </table>
 
@@ -77,7 +77,7 @@ available in the <a href='/developer/9.0/guides/develop/imx/web'>IMX Web documen
 <h2 id="See_also" name="See_also">See also</h2>
 
 <ul>
-  <li><a href="/developer/9.0/guides/develop/imx/" title="IMX Interface for Keyman">IMX Interface for Keyman Desktop</a></li>
-  <li><a href="/developer/9.0/guides/develop/imx/web" title="IMX Interface for KeymanWeb">IMX Interface for KeymanWeb</a></li>
+  <li><a href="/developer/current-version/guides/develop/imx/" title="IMX Interface for Keyman">IMX Interface for Keyman Desktop</a></li>
+  <li><a href="/developer/current-version/guides/develop/imx/web" title="IMX Interface for KeymanWeb">IMX Interface for KeymanWeb</a></li>
   <li><a href="use" title="use() statement"><code>use()</code> statement</a></li>
 </ul>

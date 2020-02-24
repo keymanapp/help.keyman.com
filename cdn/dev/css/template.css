@@ -2,7 +2,7 @@
  * CSS RESET
  * ***********************************/
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -16,8 +16,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -28,7 +28,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -61,9 +61,8 @@ table td{
 }
 
 html{
-    font-family: 'Cabin', sans-serif;
-    /*font-family: 'Open Sans', sans-serif;*/
-    /*font-family: 'Source Sans Pro', sans-serif;*/
+		font-family: 'Cabin', sans-serif;
+		color: #333;
 }
 
 html p,
@@ -81,130 +80,7 @@ body {
  * Language Section CSS
  * ***********************************/
 
-@font-face {
-	font-family:GeezWeb;
-	font-style:normal;
-	font-weight:normal;
-	src:url('//r.keymanweb.com/20/fonts/wookianos.ttf') format('truetype');
-}
-@font-face {
-	font-family:MyanmarWeb;
-	font-style:normal;
-	font-weight:normal;
-	src:url('//r.keymanweb.com/20/fonts/Padauk.ttf') format('truetype');
-}
-/*@font-face {
-	font-family:LatinWeb;
-	font-style:normal;
-	font-weight:normal;
-	src:url('//r.keymanweb.com/20/fonts/DejaVuSans.ttf') format('truetype');
-}*/
-@font-face {
-	font-family:OriyaWeb;
-	font-style:normal;
-	font-weight:normal;
-	src:url('//r.keymanweb.com/20/fonts/utkalm.ttf') format('truetype');
-}
-@font-face {
-	font-family:SinhalaWeb;
-	font-style:normal;
-	font-weight:normal;
-	src:url('//r.keymanweb.com/20/fonts/kaputaunicode.ttf') format('truetype');
-}
-@font-face {
-	font-family:TamilWeb;
-	font-style:normal;
-	font-weight:normal;
-	src:url('//r.keymanweb.com/20/fonts/aava1.ttf') format('truetype');
-}
-@font-face {
-	font-family:CherokeeWeb;
-	font-style:normal;
-	font-weight:normal;
-	src:url('//r.keymanweb.com/20/fonts/digohweli_1_7.ttf') format('truetype');
-}
-@font-face {
-    font-family: SindhiWeb;
-    font-style:  normal;
-    font-weight: normal;
-    src: url('//r.keymanweb.com/20/fonts/MBKhursheed10.6.ttf')  format("truetype");
-}
-@font-face {
-  font-family: TibetanWeb;
-  font-style:  normal;
-  font-weight: normal;
-  src: url('//r.keymanweb.com/20/fonts/CTRC-Uchen.ttf')  format("truetype");
-}
-@font-face {
-    font-family: LaoWeb;
-    font-style:  normal;
-    font-weight: normal;
-    src: url('//r.keymanweb.com/20/fonts/SAYSETT0.eot'); 
-    src: url('//r.keymanweb.com/20/fonts/SAYSETT0.eot?#iefix') format('embedded-opentype'), 
-    url('//r.keymanweb.com/20/fonts/saysettha_web.woff') format('woff'), 
-    url('//r.keymanweb.com/20/fonts/saysettha_OT.ttf') format('truetype');         
-}
-@font-face {
-    font-family: PashtoWeb;
-    font-style:  normal;
-    font-weight: normal;
-    src: url('//r.keymanweb.com/20/fonts/LateefRegOT.ttf')  format("truetype");
-}
-
-/* Amharic */
-:lang(amh).lang-example {
-	font-family: GeezWeb;
-}
-/* Burmese */
-:lang(mya).lang-example {
-	font-family: MyanmarWeb;
-}
-/* Cherokee */
-:lang(chr).lang-example {
-	font-family: CherokeeWeb;
-}
-/* Lao */
-:lang(lao).lang-example {
-	font-family: LaoWeb;
-}
-/* Malayalam
-:lang(mal).lang-example {
-	font-family: GeezWeb;
-} */
-
-/* Marathi
-:lang(mar).lang-example {
-	font-family: GeezWeb;
-} */
-/* Oriya */
-:lang(ori).lang-example {
-	font-family: OriyaWeb;
-}
-/* Rawang */
-:lang(raw).lang-example {
-	font-family: MyanmarWeb;
-}
-/* Sindhi */
-:lang(snd).lang-example {
-	font-family: SindhiWeb;
-}
-/* Sinhala */
-:lang(sin).lang-example {
-	font-family: SinhalaWeb;
-}
-
-/* Tamil */
-:lang(tam).lang-example {
-	font-family: TamilWeb;
-}
-/* Tibetan */
-:lang(bod).lang-example {
-	font-family: TibetanWeb;
-}
-/* Tigrigna */
-:lang(tir).lang-example {
-	font-family: GeezWeb;
-}
+@import 'fonts.css';
 
 /**************************************
  * Page Layout CSS
@@ -216,17 +92,14 @@ html{
 }
 
 .wrapper {
-  width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
 
 #section2 .wrapper {
-    width: initial;
     overflow-x: auto; /* fixes content too wide leading to content dropping below index, but not ideal, temp fix better than previous */
-    max-width: 960px;
     margin-left: 220px;
-    margin-right: 220px;
+    margin-right: 316px; /* leave space for the short menu */
 }
 
 :not(div.interface-hierarchy) blockquote {
@@ -239,7 +112,7 @@ html{
 
 div.interface-hierarchy {
   padding: 0px 10px 10px 10px;
-  line-height: 1.2em;
+  line-height: 1.4;
   font-size: 14pt;
 }
 
@@ -256,16 +129,31 @@ div.interface-hierarchy blockquote {
 }
 
 @media only screen and (min-width: 1440px) {
-  #section2 .wrapper {
-    width: 960px;
-  }
   body #section2 {
     float: none;
-    width: 1400px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
     display: block;
   }
+}
+
+@media only screen and (min-width: 1640px) {
+  body #section2 {
+    float: none;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+	}
+
+	body #index {
+		width: 256px;
+	}
+
+	#section2 .wrapper {
+		margin-left: 316px;
+	}
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -450,6 +338,49 @@ div.interface-hierarchy blockquote {
 	color: #B92034;
 }
 
+/* Version Selector */
+
+#version-selector {
+	float: right;
+	margin: 10px 312px 20px 10px;
+	background: #f2f2f2;
+	padding: 10px;
+	border-radius: 4px;
+	font-size: 10pt;
+}
+
+#version-selector div {
+	display: none;
+}
+
+#version-selector:hover div {
+	display: block;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: -10px;
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.4);
+	border-radius: 2px;
+	z-index: 2;
+	background: #f2f2f2;
+	padding: 10px;
+}
+
+#version-selector div span {
+	display: block;
+	padding: 4px 10px;
+}
+
+#version-selector div a {
+	display: block;
+	color: #b92034;
+	padding: 4px 10px;
+}
+
+#version-selector div a:hover {
+	color: #b92034;
+	background: rgba(224,224,224,0.9);
+}
+
 /**************************************
  * TOP MENU 1 CSS
  * ***********************************/
@@ -478,7 +409,7 @@ div.interface-hierarchy blockquote {
 #top-menu1.faded-menu {
 	position: fixed;
 	top: 0;
-	background: rgba(242,242,242,0.9); 
+	background: rgba(242,242,242,0.9);
 }
 
 #top-menu-icon{
@@ -683,7 +614,7 @@ input[type="search"] {
   border: none;
   background-image: url('../img/search-icon.png');
   background-repeat: no-repeat;
-  background-position: right 4px; 
+  background-position: right 4px;
   color: white;
 }
 .search-wrap input:focus {
@@ -793,7 +724,19 @@ input[type="search"] {
   font-family: "social-logos";
   src: url("../../fonts/social-logos.ttf");
   font-weight: normal;
-  font-style: normal; 
+  font-style: normal;
+}
+
+/*
+ Noto Sans Regular Ascii font is the ASCII portion of NotoSans-Regular
+ from https://www.google.com/get/noto/, SIL Open Font License v1.1
+ Generated with: pyftsubset ../fonts/Noto_Sans/NotoSans-Regular.ttf --unicodes=U+0020-007F
+ */
+@font-face {
+  font-family: "NotoSans-Regular-Ascii";
+  src: url("../../fonts/NotoSans-Regular-Ascii.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 [data-icon]:before {
@@ -804,7 +747,6 @@ input[type="search"] {
   font-variant: normal !important;
   text-transform: none !important;
   line-height: 1;
-  speak: none;
   padding-right: 4px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -878,21 +820,18 @@ input[type="search"] {
  *********************************/
 
 #section2{
-	float: left;
-	width: 100%;
-	margin-bottom: 30px;
 	display: inline;
 }
 
 #section2 h1{
-	text-align: center;
+	text-align: left;
 	font-size: 28pt;
 	padding: 40px 10px 10px 10px;
 }
 
 #section2 h2{
 	font-size: 20pt;
-	line-height: 1.2em;
+	line-height: 1.4;
 	padding: 32px 10px 10px 10px;
 }
 
@@ -910,7 +849,7 @@ input[type="search"] {
 
 #section2 p, #section2 dl, #section2 .itemizedlist {
 	padding: 0px 10px 10px 10px;
-	line-height: 1.2em;
+	line-height: 1.4;
 	font-size: 14pt;
 }
 
@@ -919,14 +858,14 @@ input[type="search"] {
 	text-decoration: underline;
 	cursor: pointer;
 	font-weight: 600;
-	line-height: 1.2em;
+	line-height: 1.4;
 }
 
 #section2 li{
 	margin-left: 30px;
 	list-style: disc;
 	list-style-position: outside;
-	line-height: 1.2em;
+	line-height: 1.4;
   font-size: 14pt;
 }
 
@@ -968,11 +907,15 @@ input[type="search"] {
   margin-left: 9px;
   margin-right: 9px;
   padding: 9px;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 #section2 pre[class*="language-"] code[class*="language-"] {
-  line-height: 1.2;
+  line-height: 1.4;
+}
+
+.product-index {
+	text-align: center;
 }
 
 .product{
@@ -980,11 +923,38 @@ input[type="search"] {
 	margin-top: 20px;
 	background: #e3e3e3;
 	text-align: center;
-	max-height: 340px;
+	max-height: 362px;
+	display: inline-block;
+	vertical-align: top;
+	width: 300px;
+	min-height: 295px;
+	padding: 0px 5px 10px 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.product:hover {
+	background: #D6D6D6;
+	cursor: pointer;
 }
 
 .product a{
+	text-decoration: none;
+	color: #000;
 	display: inline-block;
+}
+
+.product h3{
+	margin-bottom: 6px;
+	font-size: 16pt;
+	color: #B92034;
+	text-align: center;
+}
+
+.product p{
+	padding: 0 8px;
+	line-height: 1.3;
+	color: #333;
 }
 
 .product p{
@@ -1027,11 +997,13 @@ input[type="search"] {
 	text-decoration: underline;
 }
 
+/* Font styling limited to Ascii characters */
 kbd {
     background: none repeat scroll 0 0 #CCCCD0;
     border: 1px solid #808080;
     border-radius: 4px;
     color: #000000;
+    font-family: "NotoSans-Regular-Ascii";
     font-size: 13px;
     font-weight: bold;
     margin: 0 1px;
@@ -1191,24 +1163,24 @@ table.platform {
 
 body[data-device='Windows'] #osk-container,
 body[data-device='Windows'] #osk-phone-container,
-body[data-device='Windows'] #osk-tablet-container { 
-  display: block; 
+body[data-device='Windows'] #osk-tablet-container {
+  display: block;
 }
 
 body[data-device='iPhone'] #osk-phone-container,
-body[data-device='Android'] #osk-phone-container { 
-  display: block; 
+body[data-device='Android'] #osk-phone-container {
+  display: block;
 }
 
 body[data-device='iPad'] #osk-tablet-container,
-body[data-device='Android'] #osk-tablet-container { 
-  display: block; 
+body[data-device='Android'] #osk-tablet-container {
+  display: block;
 }
 
 body[data-device='Unknown'] #osk-container,
 body[data-device='Unknown'] #osk-phone-container,
-body[data-device='Unknown'] #osk-tablet-container { 
-  display: block; 
+body[data-device='Unknown'] #osk-tablet-container {
+  display: block;
 }
 
 /**********************************
@@ -1290,128 +1262,51 @@ body[data-device='Unknown'] #osk-tablet-container {
 	float: left;
 }
 
-/**************************************
- * JIRA FEEDBACK CSS
+ /**************************************
+ * FOOTER TABS
  * ***********************************/
 
-#jira-feedback{
-	width: 300px;
-	height: 320px;
+.footer-tab-holder{
+	width: 70px;
+	height: 20px;
 	padding: 9px;
-	background: #f2f2f2;
 	position: fixed;
 	top: 100%;
 	left: 100%;
+	z-index: 4;
+}
+
+#footer-tab-support {
 	margin-left: -340px;
-	border-top-left-radius: 6px;
-	border: solid 1px #000;
-  z-index: 4;
 }
 
-#jira-feedback.selected{
-	margin-top: -339px;
+#footer-tab-edit {
+	margin-left: -260px;
 }
 
-#jira-feedback-tab{
+.footer-tab{
 	float: right;
 	position: relative;
-	top: -50px;
+	font-size: 10pt;
+	top: -34px;
 	right: -10px;
-	z-index: 4;
 	background: #69B7D2;
-	height: 30px;
-	line-height: 30px;
-	padding: 5px 10px;
+	height: 20px;
+	padding: 5px 0px;
 	text-align: center;
-	border-top-left-radius: 6px;
-	border-top-right-radius: 6px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
 	width: 70px;
 	margin-left: 210px;
 	cursor: pointer;
-	border-top: solid 1px #000;
-	border-left: solid 1px #000;
-	border-right: solid 1px #000;
+	border-top: solid 1px #444;
+	border-left: solid 1px #444;
+	border-right: solid 1px #444;
 }
 
-#jira-feedback-tab h4{
-	color: #fff;
-}
-
-#jira-feedback-form{
-	position: relative;
-	top: -30px;
-}
-
-#jira-feedback input, #jira-feedback textarea, #jira-feedback select{
-	width: 288px;
-	border: solid 1px #000;
-	padding: 4px 5px;
-	margin: 5px 0px 10px 0px;
-}
-
-#jira-feedback textarea{
-	height: 100px;
-}
-
-#jira-feedback select{
-	width: 298px;
-}
-
-#jira-submit{
-	float: right;
-	width: 140px;
-	height: 40px;
-	border-radius: 6px;
-	border: solid 3px #fff;
-	margin: 10px 0px;
-	cursor: pointer;
-	background: #91db51; /* Old browsers */
-	background: -moz-linear-gradient(top,  #69B7D2 0%, #5A9EB5 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#69B7D2), color-stop(100%,#5A9EB5)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #69B7D2 0%,#5A9EB5 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #69B7D2 0%,#5A9EB5 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #69B7D2 0%,#5A9EB5 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #69B7D2 0%,#5A9EB5 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#69B7D2', endColorstr='#5A9EB5',GradientType=0 ); /* IE6-9 */
-}
-
-#jira-submit input{
-	color: #fff;
-	line-height: 40px;
-	text-align: center;
-	font-weight: bold;
-  width: auto;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-#jira-submit:hover{
-	background: #91db51; /* Old browsers */
-	background: -moz-linear-gradient(top,  #5A9EB5 0%, #477C8E 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5A9EB5), color-stop(100%,#477C8E)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #5A9EB5 0%,#477C8E 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #5A9EB5 0%,#477C8E 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #5A9EB5 0%,#477C8E 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #5A9EB5 0%,#477C8E 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5A9EB5', endColorstr='#477C8E',GradientType=0 ); /* IE6-9 */
-}
-
-#jira-feedback form{
-	width: 300px;
-}
-
-#jira-feedback p{
-	float: left;
-	width: 300px;
-	text-align: left;
-	font-size: 12pt !important;
-	position: relative;
-	top: -30px;
-}
-
-#jira-feedback p#jira-title {
-  top: -40px;
+.footer-tab a{
+	color: #444;
+	text-decoration: none;
 }
 
 /**************************************
@@ -1477,7 +1372,7 @@ body[data-device='Unknown'] #osk-tablet-container {
 		height: 280px;
 		font-size: 1.8em !important;
 	}
-	#jira-feedback{
+	.footer-tab-holder{
 		display: none;
 	}
 }
@@ -1538,7 +1433,7 @@ body[data-device='Unknown'] #osk-tablet-container {
 		height: 220px;
 		font-size: 1.5em !important;
 	}
-	#jira-feedback{
+	.footer-tab-holder{
 		display: none;
 	}
 }
@@ -1583,6 +1478,35 @@ body[data-device='Unknown'] #osk-tablet-container {
 		display: block;
 		height: 57px;
 	}
+	/* Products */
+
+	.product{
+		display: inline-block;
+		vertical-align: top;
+		width: auto;
+		min-height: auto;
+	}
+
+	.product img {
+		z-index: 1;
+		position: absolute;
+		width: 150px;
+		left: 50%;
+		margin-left: -75px;
+		opacity: 0.2;
+	}
+
+	.product h3{
+		z-index: 2;
+	}
+
+	.product p{
+		height: 60px;
+		z-index: 2;
+	}
+
+
+
 	/* Footer */
 	.footer{
 		height: auto;
@@ -1666,7 +1590,7 @@ body[data-device='Unknown'] #osk-tablet-container {
 	#keymanExample table{
 		width: 1000px;
 	}
-	#jira-feedback{
+	.footer-tab-holder{
 		display: none;
 	}
 }
@@ -1709,7 +1633,7 @@ div.webhelp h3 {
 
 div.webhelp h4 {
   margin: 0 0 16px 0;
-  padding:0; 
+  padding:0;
 }
 img.webhelp, div.webhelp img {margin:16px 0 !important;border: 1px solid grey;}
 
@@ -1739,7 +1663,7 @@ dd {
   margin-left: 32pt;
 }
 
-table.standard-table td, 
+table.standard-table td,
 table.standard-table th {
   border: solid #e0e0dc;
   border-width: 0 1px 1px 0;
@@ -1814,7 +1738,11 @@ article dl dd span.optional {
   }
   #toc.fixed {
     position: static !important;
-  }
+	}
+
+	#version-selector {
+		margin-right: 40px;
+	}
 }
 
 @media all and (max-width: 1023px){
@@ -1826,13 +1754,16 @@ article dl dd span.optional {
 
 #toc.fixed {
   position: fixed;
-  top: 130px;
+	top: 102px;
 }
 
 #toc {
-  top: 0px;
+	top: 172px;
+	position: absolute;
+	right: 20px;
   margin-right: 10px;
-  width: 200px;
+	max-width: 256px;
+	padding-right: 10px;
   background: rgba(242,242,242,0.9);
   overflow: auto;
   border-radius: 4px;
@@ -1870,13 +1801,20 @@ article dl dd span.optional {
   list-style: none;
 }
 
+#index li {
+	margin-left: 16px;
+}
+
+#toc li {
+  list-style: none;
+	margin-left: 12px;
+}
+
 #toc li,
 #index li {
   font-family: 'Calibri', sans-serif;
   font-size: 11pt;
-  list-style: none;
   margin-bottom: 2px;
-  margin-left: 12px;
 }
 
 #toc a,

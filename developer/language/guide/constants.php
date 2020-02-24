@@ -13,7 +13,7 @@
 or <code>$<var>charname</var></code>.</p>
 
 <p>The dollar referencing can only be used with named constants. You cannot use it for stores that have more than one character in
-them, or for keys or other non-character stores. Named constants are supported for characters above plane 0.</p>
+  them, or for keys or other non-character stores. Named constants are supported for all Unicode characters including BMP and SMP (above plane 0).</p>
 
 <p>Named constants can also be loaded from a file with the <a class="link" href="../reference/includecodes" title=
 "&amp;includecodes system store"><code>&amp;includecodes</code> system store</a>. For instance, the Unicode Character Names can be used by

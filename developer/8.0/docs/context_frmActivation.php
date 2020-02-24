@@ -18,14 +18,10 @@
     </p></li><li><p>
       From the Help menu select Activate or Upgrade.
     </p></li><li><p>
-      Enter the licence number. For example:
-    </p><p>
-      <span class="inlinemediaobject"><img src="developer_images/context_activate_02.jpg"></span>
+      Enter the licence number.
     </p></li><li><p>
-      Click the <span class="guibutton">Activate</span> button. If you entered a valid licence number, the
-      following message will be displayed:
-    </p><p>
-      <span class="inlinemediaobject"><img src="developer_images/context_activate_03.jpg"></span>
+      Click the <span class="guibutton">Activate</span> button. If you entered a valid licence number, a
+      success message will be displayed.
     </p></li><li><p>
       Click <span class="guibutton">OK</span>.
     </p></li></ol></div><h3><a name="id672389"></a>What to do if activation does not work</h3><div class="orderedlist"><ol type="1"><li><p>

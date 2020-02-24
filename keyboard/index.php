@@ -34,7 +34,7 @@
   // Required
   head([
     'title' =>'Keyman Support | Type to the world in your language',
-    'css' => ['template.css','index.css'],
+    'css' => ['template.css'],
     'showMenu' => true,
     'index' => false
   ]);

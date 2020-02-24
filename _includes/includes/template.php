@@ -1,6 +1,8 @@
 <?php
   require_once('includes/servervars.php');
-  
+  require_once('index-content.php');
+  require_once('page-version.php');
+
   function template_finish($foot, $embed_template) {
     //ob_end_flush();
 
@@ -14,7 +16,7 @@
 
   function head($args=[]){
     // Args are title='My Page Title', css='page.css' showMenu=true/false;
-    
+
     // Get device
     if (strstr($_SERVER['HTTP_USER_AGENT'],'Windows')) {
         $device = 'Windows';
@@ -29,13 +31,13 @@
     }else{
         $device = 'Unknown';
     }
-	
+
     if(isset($args['redirect'])){
       require_once('includes/util.php');
       util_loadpage($args['redirect'], true);
       return;
     }
-	
+
     if(isset($args['title'])){
         $title = $args['title'];
     }else{
@@ -73,7 +75,7 @@
     } else {
       require_once('no-menu.php');
     }
-    
+
     $toc = isset($args['toc']) ? $args['toc'] : !$embed_template;
     $index = isset($args['index']) ? $args['index'] : !$embed_template;
     $foot = isset($args['foot']) ? $args['foot'] : true;
@@ -86,7 +88,7 @@
     // - if(isset): the page does differentiate, so read the value and set tags
     begin_main($toc, $index, $crumbs, $embeddable, $embed_template);
   }
-    
+
   function write_breadcrumbs(){
     $request_uri = explode("?",$_SERVER["REQUEST_URI"]);
     $crumbs = explode("/",$request_uri[0]);
@@ -122,8 +124,6 @@
     }
     echo '<div id="breadcrumbTrail"><a href="/">help.keyman.com</a>' . $crumbtrail . '</div>';
   }
-  
-  require_once('index-content.php');
 
   // This function uses globals defined in the embed/ folder include files, applying
   // classes useful for content filtering between online and in-app help with embed.css.
@@ -149,7 +149,7 @@
 
     return $finalClass;
   }
-  
+
   function begin_main($toc, $index, $crumbs, $embeddable, $do_embed){
     global $index_content;
     global $formFactor;
@@ -168,6 +168,7 @@
 
     if($crumbs) {
       write_breadcrumbs();
+      PageVersion::WriteSelector();
     }
 
     if($toc) { $tocClass = ''; } else { $tocClass = ' no-toc'; }
@@ -211,16 +212,16 @@ END;
     }
 
     $html .= <<<END
-    
+
     <div class="wrapper">
       <article>
 END;
     echo $html;
   }
-  
+
   function foot($args=[]){
     // Args are display=true/false;
-    
+
     if(isset($args['display'])){
       $display = $args['display'];
     }else{
