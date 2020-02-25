@@ -25,6 +25,14 @@ processing on the context and output.</p>
 
 <p>One of the important statements that can be used in rules is the <code>context</code> statement.</p>
 
+<h2>Rule Order</h2>
+
+<p>Rules have a special order. They are ordered first by length of context, with longest context first, 
+and then by line order in the file. This slightly non-intuitive ordering makes it much simpler to 
+group rules according to their function, rather than necessarily by their priority.</p>
+
+<p>See also <a href="groups">groups.</p>
+
 <h2>context</h2>
 
 <p>The <a href='../reference/context'><code>context</code> statement</a> will transfer the <em>context</em> of the rule into the
