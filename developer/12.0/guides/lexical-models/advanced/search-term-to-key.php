@@ -10,24 +10,26 @@
 
 <p> To look up words quickly, the <code>trie</code> model creates a <dfn>
 search key </dfn> that takes the latest word (as determined by the <a
-href="word-breaker.php">word breaker</a> and converts it into a “regular” form.
-The purpose of this “regular” form is to make searching for a word work,
+href="word-breaker.php">word breaker</a> and converts it into an internal form.
+The purpose of this internal form is to make searching for a word work,
+as expected,
 regardless of things such as <strong>accents</strong>,
 <strong>diacritics</strong>, <strong>letter case</strong>, and minor
 <strong>spelling variations</strong>.
-The ”regular” form is called the <dfn>key</dfn>.  Typically, the key is always
+The internal form is called the <dfn>key</dfn>.  Typically, the key is always
 in lowercase, and lacks all accents and diacritics. For example, the key
-of “naïve" is "naive" and the key of Canada is “canada”. </p>
+for “naïve" is <codE>naive</code> and the key for “Canada” is
+<code>canada</code>. </p>
 
 <p> The form of the word that is stored is “regularized” through the use of a
 <dfn>key function</dfn>, which you can define in TypeScript code. </p>
 
-<p> The key function takes a string, the raw search term, and returns a
-string, being the “regular” key. As an example, consider the <strong>default
+<p> The key function takes a string which is the raw search term, and returns a
+new string, being the “regularized” key. As an example, consider the <strong>default
 key function</strong>; that is, the key function that is used if you do not
 specify one: </p>
 
-<pre><code class="lang-typescript">searchTermToKey: function (term) {
+<pre><code class="lang-typescript">searchTermToKey: function (term: string): string {
   // Use this pattern to remove common diacritical marks.
   // See: https://www.compart.com/en/unicode/block/U+0300
   const COMBINING_DIACRITICAL_MARKS = /[\u0300-\u036f]/g;
