@@ -7,13 +7,6 @@
 ?>
 <h1 class="title">Tutorial: Developing a lexical model from a word list</h1>
 
-<aside>
-<p><strong>Note:</strong> as of <time datertime="2019-10-10T20:39:55Z">October 10, 2019</time>, this tutorial
-for the current version of Keyman is incomplete. Check up on
-<a href="https://github.com/keymanapp/help.keyman.com/issues/35">this GitHub
-issue</a> to keep up-to-date on our progress!</p>
-</aside>
-
 <dl>
   <dt><span class="section"><a href="step-1.php">Step 1: Prerequisites for building a lexical model</a></span></dt>
   <dt><span class="section"><a href="step-2.php">Step 2: Creating a lexical model project</a></span></dt>
