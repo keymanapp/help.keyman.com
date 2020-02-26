@@ -78,10 +78,3 @@ supports the following customizations: </p>
 
 <p> To see all of the things possible in a model definition file, see the
 <a href="https://github.com/keymanapp/keyman/blob/0e9877cc50b70584aafe4ff5e98aea260a743d4c/developer/js/source/lexical-model-compiler/lexical-model.ts#L12-L42"><code>LexicalModelSource</code> interface</a>.
-
-<h2> Write your own custom model </h2>
-
-<p> If all of the above seems too limiting, you can write your own custom
-model. This means, implementing the interface of the <code>LexicalModel</code>
-class, and generating predictions yourself. This is the most difficult and
-time consuming option, however, it gives you the most flexibility. </p>

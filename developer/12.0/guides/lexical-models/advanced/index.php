@@ -27,9 +27,3 @@ customizations to an existing wordlist project: </p>
   <dt><a href="search-term-to-key.php">Creating a custom search key function</a></dt>
   <dt><a href="word-breaker.php">Creating a custom word breaker</a></dt>
 </dl>
-
-<p>Or, if a wordlist model is insufficient for you needs, consider creating a
-completely custom model from scratch: </p>
-<dl>
-  <dt><a href="custom-model.php">Creating a custom lexical model</a></dt>
-</dl>
