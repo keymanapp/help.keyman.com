@@ -2,21 +2,25 @@
   require_once('includes/template.php');
 
   head([
-    'title' => "&amp;layer store"
+    'title' => "&amp;layer store / layer() statement"
   ]);
 ?>
 
-<h1 class="title" id="reference_layer">&amp;layer</h1>
+<h1 class="title" id="reference_layer">&amp;layer / layer() statement</h1>
 
 <h2 id="Summary" name="Summary">Summary</h2>
 
 <p>The <code><strong>&amp;layer</strong></code> system variable store can be used to set or test the current
 layer on the touch keyboard.</p>
 
+<p>In the output part of the rule, you can use the <code><strong>layer(...)</strong></code> statement to set the current layer.
+This is equivalent to using <code><strong>set(&amp;layer=...)</strong></code>.</p>
+
 <h2 id="Syntax" name="Syntax">Syntax</h2>
 
 <pre><code>if(&amp;layer = "<var>layerName</var>") ... > ...
 ... > ... layer("<var>layerName</var>")
+... > ... set(&layer = "<var>layerName</var>")
 </code></pre>
 
 <h3 id="Parameters" name="Parameters">Parameters</h3>
