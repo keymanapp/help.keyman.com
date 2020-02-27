@@ -22,7 +22,7 @@ Explorer (FLEx)</a> to export an appropriate <strong>TSV</strong> file.</p>
 
 <p>One simple way to create your TSV file is to use the <strong>PrimerPrep</string> tool:</p>
 <ol>
-  <li>Install PrimerPrep (info at <a href="http://lingtransoft.info/apps/primerprep">http://lingtransoft.info/apps/primerprep</a></li>
+  <li>Install PrimerPrep (info at <a href="http://lingtransoft.info/apps/primerprep">http://lingtransoft.info/apps/primerprep</a>)</li>
   <li>Run PrimerPrep (note that on the first run it often takes a couple of miuntes; subsequent starts are faster)</li>
   <li>Click on the Add Text(s) button; select one or more plain text (UTF-8) files in the language to analyze</li>
   <li>The word list with frequency counts appears in the pane to the right</li>
