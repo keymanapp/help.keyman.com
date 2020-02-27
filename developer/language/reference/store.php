@@ -75,8 +75,8 @@ store(&amp;version) '9.0'
 
 <pre><code>store(opt1) '0'
 
-+ [CTRL ALT '1'] > set(opt1='1') save(opt1)
-+ [CTRL ALT '0'] > set(opt1='0') save(opt0)
++ [CTRL ALT K_1] > set(opt1='1') save(opt1)
++ [CTRL ALT K_0] > set(opt1='0') save(opt0)
 </code></pre>
 
 
