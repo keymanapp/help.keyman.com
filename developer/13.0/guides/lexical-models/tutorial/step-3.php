@@ -55,33 +55,13 @@ Here is my list of words, with the count of how many times I’ve seen the word:
 
 <h2>Editing the .TSV in Keyman Developer</h2>
 <p>If you plan to only edit a few entries for your wordlist, you can use the TSV editor in Keyman Developer. The project
-template created a wordlist named <strong>wordlist.tsv</strong> that we will now edit. This file is referenced by the 
-model definition file <strong>nrc.str.sencoten.model.ts</strong>, which we will need to open in order to see the wordlist.</p>
-
-<p>In Keyman Developer project view, select the <strong>Models</strong> tab and double-click on <strong>nrc.str.sencoten.model.ts</strong>.</p>
+template created a wordlist named <strong>wordlist.tsv</strong> that we will now edit.</p>
+<p>In Keyman Developer project view, select the Models tab and click on wordlist.tsv.</p>
 
 <figure>
-  <img src="<?= cdn('img/developer/130/lm/developer-open-model-ts.png') ?>"
-       alt="Open .model.ts file in Keyman Developer" />
-  <figcaption>Open a .model.ts file in Keyman Developer</figcaption>
-</figure>
-
-<p>Once you open the model file, you will see some metadata about the model which you can edit, including:</p>
-
-<ul>
-  <li><strong>Model format:</strong> Wordlist or Custom (we'll use Wordlist for now)</li>
-  <li><strong>Word breaker:</strong> Default or Custom (we'll use Default)</li>
-  <li><strong>Comments:</strong> Your notes about the model, not shown to users</li>
-  <li>A list of <strong>wordlist files</strong> referenced by the model file. You'll also see a separate tab on the left for each of the wordlists.
-  When we start this project, there will be just one wordlist, called <strong>wordlist.tsv</strong></li>
-</ul>
-
-<p>Click on the <strong>wordlist.tsv</strong> tab to start editing the wordlist.</p>
-
-<figure>
-  <img src="<?= cdn('img/developer/130/lm/developer-model-editor.png') ?>"
-       alt="Keyman Developer Lexical Model Editor" />
-  <figcaption>Keyman Developer Lexical Model Editor</figcaption>
+  <img src="<?= cdn('img/developer/120/lm/developer-open-tsv.png') ?>"
+       alt="Open TSV file in Keyman Developer" />
+  <figcaption>Open a .tsv file in Keyman Developer</figcaption>
 </figure>
 
 <p>Keyman Developer already generated a few example words when it created the template wordlist.tsv file.<p>
@@ -142,7 +122,6 @@ values (.tsv, current sheet)”.</p>
 
 <p>I’ll save mine as <strong>wordlist.tsv</strong>.</p>
 
-<p>Now that we have our word list, exported in the correct format, let's
-edit the model definition file.</p>
+<p>Now that we have our word list, let's compile our model!</p>
 
-<p><a href="step-4.php" title="Step 4: Editing a model definition file">Step 4: Editing a model definition file</a></p>
+<p><a href="step-4.php" title="Step 4: Compiling the lexical model">Step 4: Compiling the lexical model</a></p>
