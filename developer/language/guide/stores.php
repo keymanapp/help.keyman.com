@@ -150,7 +150,7 @@ running under.</p>
 
 <pre><code>store(opt_composed) '0'
 store(vowel) 'aeiouAEIOU'
-store(vowel_circum) 'âêîôû ÊÎÔÛ'
+store(vowel_circum) 'âêîôûÂÊÎÔÛ'
  
 + [CTRL ALT K_1] > set(opt_composed='1')
 + [CTRL ALT K_0] > set(opt_composed='0')
