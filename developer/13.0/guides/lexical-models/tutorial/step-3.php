@@ -20,7 +20,7 @@ Other users may also use <strong>language data management software</strong>
 like <a href="https://software.sil.org/fieldworks/">SIL FieldWorks Language
 Explorer (FLEx)</a> to export an appropriate <strong>TSV</strong> file.</p>
 
-<p>One simple way to create your TSV file is to use the <strong>PrimerPrep</string> tool:</p>
+<p>One simple way to create your TSV file is to use the <strong>PrimerPrep</strong> tool:</p>
 <ol>
   <li>Install PrimerPrep (info at <a href="http://lingtransoft.info/apps/primerprep">http://lingtransoft.info/apps/primerprep</a>)</li>
   <li>Run PrimerPrep (note that on the first run it often takes a couple of minutes; subsequent starts are faster)</li>
