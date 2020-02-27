@@ -478,7 +478,9 @@ resolutions, but this will cover the standard 16x16 256 colour icon which is all
   <dd>Fill from the current point all contiguous pixels of the same colour</dd>
 
   <dt>Text</dt>
-  <dd>Add a letter or letters to the icon</dd>
+  <dd>Use this tool to add a letter or letters to the icon. Click in the lower left of the icon area and a window opens where you can type the text you 
+want. You can also change the quality of the font as well as the font properties by clicking on the Change button. Note that to change the color of 
+the font, you need to change the color setting in the font properties window.</dd>
 </dl>
 
 <p>The icon can be exported or imported to/from various other formats. The transparent colour is the top left colour in the grid with an X in the box.
