@@ -58,7 +58,7 @@ and close quote, respectively. To do this, change the part labeled
 <h2> Customizing <code>insertAfterWord</code> </h2>
 
 <p> Many languages insert a space after a word. Some languages, a like Thai or
-Khmer, do not use spaces. To supress the space, you may set <code>insertAfterWord</code>
+Khmer, do not use spaces. To suppress the space, you may set <code>insertAfterWord</code>
 to the empty string: </p>
 
 <pre><code class="lang-typescript">punctuation: {
