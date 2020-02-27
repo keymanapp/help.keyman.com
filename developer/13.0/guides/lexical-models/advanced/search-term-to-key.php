@@ -93,8 +93,8 @@ export default source;</code></pre>
        <strong>NFD</strong> form using <code>wordform = wordform.normalize('NFC')</code>. </li>
   <li> For Latin-based scripts, <strong>lowercase</strong> the word, and
       <strong>remove diacritics</strong>. </li>
-  <li> For scripts that use the U+200C zero-width joiner (ZwJ) and zero-width
-       non-joiner (ZWNJ) (e.g., Indic scripts),
+  <li> For scripts that use the U+200C zero-width joiner (ZwJ) and/or the U+200D zero-width
+       non-joiner (ZWNJ) (e.g., Brahamic scripts),
       <strong>remove the ZWJ or ZWNJ</strong> from the <strong>end</strong> of the input with
       <code>wordform = wordform.replace(/[\u200C\u200D]+$/</code> </li>
 </ul>
