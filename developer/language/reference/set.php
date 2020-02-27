@@ -40,8 +40,8 @@ to become the default content when restarting Keyman, the <code>set()</code> sta
 <h3 id="Example:_Using_set" name="Example:_Using_set">Example: Using <code>set()</code></h3>
 
 <pre><code>store(opt1) '0'
-+ [CTRL ALT "1"] > set(opt1='1') 
-+ [CTRL ALT "2"] > set(opt1='2') 
++ [CTRL ALT K_1] > set(opt1='1') 
++ [CTRL ALT K_2] > set(opt1='2') 
 </code></pre>
 
 <h2>Platforms</h2>
