@@ -18,8 +18,16 @@ href="https://sheets.google.com/">Google Sheets</a> or
 <a href="https://products.office.com/en/excel">Microsoft Excel</a>.
 Other users may also use <strong>language data management software</strong>
 like <a href="https://software.sil.org/fieldworks/">SIL FieldWorks Language
-Explorer (FLEx)</a> or <a href="https://software.sil.org/wesay/">SIL WeSay</a>
-  to export an appropriate <strong>TSV</strong> file.</p>
+Explorer (FLEx)</a> to export an appropriate <strong>TSV</strong> file.</p>
+
+<p>One simple way to create your TSV file is to use the <strong>PrimerPrep</string> tool:</p>
+<ol>
+  <li>Install PrimerPrep (info at <a href="http://lingtransoft.info/apps/primerprep">http://lingtransoft.info/apps/primerprep</a></li>
+  <li>Run PrimerPrep (note that on the first run it often takes a couple of miuntes; subsequent starts are faster)</li>
+  <li>Click on the Add Text(s) button; select one or more plain text (UTF-8) files in the language to analyze</li>
+  <li>The word list with frequency counts appears in the pane to the right</li>
+  <li>From the File menu, select Save Word List… and specify the file name and location (a .tsv extension is recommended)</li>
+</ol>
 
 <aside>
   <p><strong>For advanced users</strong>: Ultimately, what Keyman Developer
