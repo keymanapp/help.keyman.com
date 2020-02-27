@@ -24,6 +24,12 @@ for “naïve" is <codE>naive</code> and the key for “Canada” is
 <p> The form of the word that is stored is “regularized” through the use of a
 <dfn>key function</dfn>, which you can define in TypeScript code. </p>
 
+<p> Note: this function runs both <strong>on every word when the wordlist is
+compiled</strong> and <strong>on the input, whenever a suggestion is requested</strong>.
+This way, whatever a user types is <em>matched</em> to something stored in the
+lexical model, without the user having to type things in a specific way.
+</p>
+
 <p> The key function takes a string which is the raw search term, and returns a
 new string, being the “regularized” key. As an example, consider the <strong>default
 key function</strong>; that is, the key function that is used if you do not
@@ -79,6 +85,19 @@ your own key function. </p>
 };
 
 export default source;</code></pre>
+
+<h2> Suggested customizations </h2>
+
+<ul>
+  <li> For all writing systems, <strong> normalize into NFC</strong> or
+       <strong>NFD</strong> form using <code>wordform = wordform.normalize('NFC')</code>. </li>
+  <li> For Latin-based scripts, <strong>lowercase</strong> the word, and
+      <strong>remove diacritics</strong>. </li>
+  <li> For scripts that use the U+200C zero-width joiner (ZwJ) and zero-width
+       non-joiner (ZWNJ) (e.g., Indic scripts),
+      <strong>remove the ZWJ or ZWNJ</strong> from the <strong>end</strong> of the input with
+      <code>wordform = wordform.replace(/[\u200C\u200D]+$/</code> </li>
+</ul>
 
 <hr>
 
