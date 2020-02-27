@@ -38,26 +38,27 @@ before the subsequent group is entered (although it is not sent to the applicati
 keystroke). For example:</p>
 
 <pre><code>c This example prohibits two vowels in a row
-
-begin > use(precheck)
-
+store(vowel) 'aeiouAEIOU'
+ 
+begin Unicode > use(precheck)
+ 
 group(precheck)
-  any(vowel) > context use(vowelstate)                                                             
-  nomatch > use(nostate)
-
-group(vowelstate) using keys
-  + any(vowel) > beep
-  nomatch > use(nostate)
-
-group(nostate) using keys
-  + any(cons) > index(cons, 1)
+any(vowel) > context use(precedingVowel)                                                           
+nomatch > use(main)    c Preceding character is not a vowel. Do normal processing.
+ 
+group(precedingVowel) using keys
++ any(vowel) > beep
+nomatch > use(main)    c This key is not a vowel. Do normal processing.
+ 
+group(main) using keys
+c Main processing goes here
 </code></pre>
 
 <p>Some important things to note from this example:</p>
 
-<p>The first rule (<code>any(vowel) > context use(vowelstate)</code>) uses the <a href="../reference/context" title=
+<p>The first rule (<code>any(vowel) > context use(precedingVowel)</code>) uses the <a href="../reference/context" title=
 "context statement"><code>context</code></a> statement to copy the matched context to the output, so that Keyman can move it back into the context for
-use with the <code><var>vowelstate</var></code> group. If you do not do this, the context will be dropped before <code><var>vowelstate</var></code> is
+use with the <code><var>precedingVowel</var></code> group. If you do not do this, the context will be dropped before <code><var>precedingVowel</var></code> is
 used, and the character will be deleted from the screen.</p>
 
 <p>If the final group processed is a context and keystroke group (<code>using keys</code>), and there is no <code>nomatch</code> rule, and the

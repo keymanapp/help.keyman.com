@@ -151,11 +151,11 @@ running under.</p>
 <pre><code>store(opt_composed) '0'
 store(vowel) 'aeiouAEIOU'
 store(vowel_circum) 'âêîôûÂÊÎÔÛ'
-
-+ [CTRL ALT "1"] > set(opt_composed='1')
-+ [CTRL ALT "0"] > set(opt_composed='0')
-if(opt_composed = '1') any(vowel) + '^' > index(vowel, 2) U+0302
-if(opt_composed = '0') any(vowel) + '^' > index(vowel_circum, 2)
+ 
++ [CTRL ALT K_1] > set(opt_composed='1')
++ [CTRL ALT K_0] > set(opt_composed='0')
+if(opt_composed = '0') any(vowel) + '^' > index(vowel, 2) U+0302
+if(opt_composed = '1') any(vowel) + '^' > index(vowel_circum, 2)
 </code></pre>
 
 <p>More information about variable stores is available in the <a href='variable-stores'>variable stores guide</a>.</p>
