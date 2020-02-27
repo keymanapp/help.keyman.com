@@ -74,7 +74,7 @@ to the empty string: </p>
 
 <h2> See also </h2>
 
-<p> <a href="https://github.com/keymanapp/keyman/blob/stable-13.0/common/lexical-model-types/index.d.ts#L328-L371">
+<p> <a href="https://github.com/keymanapp/keyman/blob/4211b468949860b8fb4a4707710472ab9e33c581/common/lexical-model-types/index.d.ts#L328-L371">
   The TypeScript definition of <code>LexicalModelPunctuation</code>
 </a></p>
 
