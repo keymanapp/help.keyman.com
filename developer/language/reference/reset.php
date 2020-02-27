@@ -35,7 +35,7 @@ in the system settings by <a href='save.php'><code>save()</code></a> or by the k
 <h3 id="Example:_Using_reset" name="Example:_Using_reset">Example: Using <code>reset()</code></h3>
 
 <pre><code>store(opt1) '1'
-+ [CTRL ALT '0'] > reset(opt1)
++ [CTRL ALT K_0] > reset(opt1)
 </code></pre>
 
 <h2>Platforms</h2>
