@@ -17,7 +17,7 @@
 </aside>
 
 <p> The <code>trie</code> family of lexical models needs to know what a word
-is in running text. In language using the Latin script—like, English, French,
+is in running text. In languages using the Latin script—like, English, French,
 and SENĆOŦEN—finding words is easy. Words are separated by spaces or
 punctuation. The actual rules for where to find words can get quite tricky to
 describe, but Keyman implements the <a href="https://unicode.org/reports/tr29/#Word_Boundaries">
