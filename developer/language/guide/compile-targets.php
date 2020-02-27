@@ -10,13 +10,24 @@
 
 
 <p>Keyman supports a prefix at the start of the line to identify lines that should only be compiled for a specific target. If the
-prefix is omitted, then the line will be compiled for all targets. The supported targets in version 9.0 are Keyman (Keyman Engine),
+prefix is omitted, then the line will be compiled for all targets. The supported targets are Keyman (Keyman Engine),
 KeymanWeb, Weaver (SILKey), KeymanOnly and KMFL. All other targets will be ignored, to permit compatibility with future targets.</p>
 
-<p>Compile targets will continue to work but are semi-deprecated in Keyman 9.0. A more flexible mechanism is available with
+<p>Compile targets will continue to work and be supported. A more flexible mechanism is available with
 <a href='../reference/platform'><code>platform()</code> statements</a>. While <code>platform()</code> statements cannot provide alternate
 metadata for different platforms, they do support a much broader range of platforms, which is important for JavaScript (web) keyboards
 which are compiled once for many platforms.</p>
+
+<p>Compile targets function slightly differently to the <code>platform()</code> statements:</p>
+
+<ul>
+  <li>Compile target controls what gets compiled into the keyboard, whereas the <code>platform()</code> statement result 
+    is determined at run time.</li>
+  <li>Compile targets can also be applied to any line of code whereas <code>platform()</code> statements apply only to rules.
+</ul>
+
+<p>These features make compile targets an appropriate choice where there is divergent support for a given feature in the 
+  Keyman Engine itself across platforms.</p>
 
 <table>
   <tbody>
