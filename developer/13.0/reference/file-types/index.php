@@ -42,6 +42,9 @@
   <dt><a href="tsv">TSV files</a></dt>
   <dd>Word list source files (tab-separated values file format)</dd>
 
+  <dt><a href="ttf">TTF files</a></dt>
+  <dd>TrueType font files (binary file format)</dd>
+
   <dt><a href="keyman-touch-layout">keyman-touch-layout files</a></dt>
   <dd>Keyman touch layout source files (JSON file format)</dd>
 </dl>
