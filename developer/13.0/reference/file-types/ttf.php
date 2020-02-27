@@ -20,8 +20,7 @@
 
   <dt>Details:</dt>
   <dd>A .ttf file is a binary file. It is included using the Package Editor in Keyman Developer.
-  Keyman Developer does not create font files.</dd>
-  Keyman Developer does not create font files.</dd>
+    Keyman Developer does not create font files.</dd>
 
   <dt>Distributed with keyboard:</dt>
   <dd>This is a font file. It should be distributed with your keyboard package to allow people to see the
