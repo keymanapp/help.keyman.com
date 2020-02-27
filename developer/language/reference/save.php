@@ -36,7 +36,7 @@ be used after a <a href='set'><code>set()</code> statement</a> to make the dynam
 
 <pre><code>store(opt1) '0'  c Default value on install  
 
-+ [CTRL ALT "1"] > set(opt1='1') save(opt1)  c new value now saved to system settings
++ [CTRL ALT K_1] > set(opt1='1') save(opt1)  c new value now saved to system settings
 </code></pre>
 
 
