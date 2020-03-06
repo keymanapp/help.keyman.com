@@ -10,11 +10,11 @@ function loaded(){
   $('#testimonial').click(function(){
     location.href="http://www.tavultesoft.com/testimonials.php";
   });
-  
+
   // Email subscribe form
   $('.subscribe').click(function(){
     $('#mc-embedded-subscribe-form').submit();
-  });    
+  });
 
   // Popup close
   $('#popup-close').click(function(){
@@ -32,9 +32,9 @@ function loaded(){
 	$('.popup').fadeOut(300);
     }
   });
-  
+
   // Scrolling top menu functionality (Non touch devices only)
-  var 
+  var
     device = $(document.body).data('device'),
     scrollFix = function(e) {
       var scroller_anchor = $(".header").height();
@@ -48,7 +48,7 @@ function loaded(){
         $('#toc').removeClass('fixed');
       }
     };
-    
+
   if (device != 'Android' && device != 'iPhone' && device != 'iPad') {
     $(window).scroll(scrollFix);
   }
@@ -61,10 +61,10 @@ function loaded(){
       }else{
         $("body").css("overflow","auto");
         $("#phone-menu").hide();
-      }	
+      }
     });
   }
-  
+
   // Footer to bottom of page
   var link = $('.footer');
   var offset = link.offset().top;
@@ -72,19 +72,50 @@ function loaded(){
   if (diff > 0) {
     link.css('margin-top',diff);
   }
-  
+
   (function(){
     // Insert keyboard into osk div
-    
+
     var url = location.pathname.split('/');
     var keyboardName = url[url.length-3], keyboardVersion = url[url.length-2];
     var keyboardPath = keyman.options['keyboards'] + keyboardName + '/' + keyboardVersion + '/' + keyboardName + '-' + keyboardVersion + '.js';
+
+    var fontFamily = null, fontSource = null;
+
+    // This retrieves font info from latest version of keyboard; we don't currently have that available for earlier versions. No worries.
+    $.ajax({
+      url: 'https://api.keyman.com/keyboard/' + keyboardName,
+      success:function(data) {
+        if(typeof data != 'object') return;
+        for(var lang in data.languages) {
+          if(data.languages[lang].font) {
+            // pick the first font
+            fontFamily = data.languages[lang].font.family;
+            fontSource = data.languages[lang].font.source;
+            /* Add the font information */
+            $('head').append($(`
+<style>
+@font-face {
+	font-family:"${fontFamily}";
+	font-style:normal;
+	font-weight:normal;
+	src:url('https://s.keyman.com/font/deploy/${fontSource}') format('truetype');
+}
+.kmw-key-text { font-family: "${fontFamily}"; }
+</style>
+`));
+            return;
+          }
+        }
+      }
+    });
+
     $.ajax({
       url:keyboardPath,
       success:function() {
-      
+
         var addKeyboards = function(element, platform) {
-          var 
+          var
             osk = $(element),
             states = osk.data('states'),
             addKeyboard = function(name, platform, title) {
@@ -98,9 +129,9 @@ function loaded(){
                 return platform == 'desktop' ? 320 :
                        platform == 'phone' ? 240 : 360;
               };
-              
-              var note = null; 
-              
+
+              var note = null;
+
               var kbd = keyman.BuildVisualKeyboard(keyboardName, 1, platform, name);
               if (kbd) {
                 osk.append('<h3>'+title+'</h3>', kbd);
@@ -112,7 +143,7 @@ function loaded(){
             toTitleCase = function(str) {
               return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
             };
-            
+
           if(osk.length == 0) return; // no place for it
           if(!states) states='default shift';
           states=states.split(' ');
@@ -155,7 +186,7 @@ function loaded(){
       cache:true
     });
   })();
-  
+
   /*!
    * toc - jQuery Table of Contents Plugin
    * v0.3.2
@@ -223,7 +254,7 @@ function loaded(){
     var headings = $(opts.selectors, container);
     var headingOffsets = [];
     var activeClassName = opts.activeClass;
-    
+
     if(opts.filter) headings = headings.filter(opts.filter);
 
     var scrollTo = function(e, callback) {
@@ -246,7 +277,7 @@ function loaded(){
       timeout = setTimeout(function() {
         var top = $(window).scrollTop(),
           highlighted, closest = Number.MAX_VALUE, index = 0;
-        
+
         for (var i = 0, c = headingOffsets.length; i < c; i++) {
           var currentClosest = Math.abs(headingOffsets[i] - top);
           if (currentClosest < closest) {
@@ -254,10 +285,10 @@ function loaded(){
             closest = currentClosest;
           }
         }
-        
+
         $('li', self).removeClass(activeClassName);
         highlighted = $('li:eq('+ index +')', self).addClass(activeClassName);
-        opts.onHighlight(highlighted);      
+        opts.onHighlight(highlighted);
       }, 50);
     };
     if (opts.highlightOnScroll) {
@@ -330,12 +361,12 @@ function loaded(){
       var candidateId = $(heading).text().replace(/[^a-z0-9]/ig, ' ').replace(/\s+/g, '-').toLowerCase();
       if (verboseIdCache[candidateId]) {
         var j = 2;
-        
+
         while(verboseIdCache[candidateId + j]) {
           j++;
         }
         candidateId = candidateId + '-' + j;
-        
+
       }
       verboseIdCache[candidateId] = true;
 
@@ -351,7 +382,7 @@ function loaded(){
   };
 
   })(jQuery);
-  
+
 /**
   Build Table of Contents after page content is loaded
 */
@@ -362,11 +393,11 @@ function loaded(){
       'scrollToOffset' : 120,
       'filter' : function(index, element) { return $(element).parents('.tip,.note').length == 0; }
     });
-    
+
     if($('#toc-content li').length >= 2 && ['developer','keyboard'].indexOf($('body').data('section')) >= 0) {
       $('.column-right').addClass('show-toc');
-    } 
-    
+    }
+
     $(window).resize(function() {
       $('#toc').css('max-height', window.innerHeight-180 + 'px');
     });
@@ -379,4 +410,3 @@ function loaded(){
 
 loaded();
 
-  
