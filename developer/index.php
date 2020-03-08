@@ -98,7 +98,7 @@ $pagestyle = '#section2 .wrapper { overflow-x: inherit }';
   </div>
 
   <div class="product" id="product-training">
-    <a href="https://vimeo.com/channels/keyman">
+    <a href="videos">
       <img src="<?= cdn("img/icon-vimeo.png"); ?>" />
       <h3>Keyman Training Videos</h3>
       <p>Training presentations for Keyman Developer</p>
