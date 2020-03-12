@@ -121,29 +121,26 @@ function loaded(){
             states = osk.data('states'),
             addKeyboard = function(name, platform, title) {
 
-              keyman.setActiveKeyboard(keyboardName).then(function() {
+              // TODO: These hacks are pretty awful
+              keyman.getOskWidth = function() {
+                return platform == 'desktop' ? 960 :
+                        platform == 'phone' ? 520 : 720;
+              };
 
-                keyman.getOskWidth = function() {
-                  return platform == 'desktop' ? 960 :
-                         platform == 'phone' ? 520 : 720;
-                };
+              keyman.getOskHeight = function() {
+                return platform == 'desktop' ? 320 :
+                        platform == 'phone' ? 240 : 360;
+              };
 
-                  keyman.getOskHeight = function() {
-                  return platform == 'desktop' ? 320 :
-                         platform == 'phone' ? 240 : 360;
-                };
+              var note = null;
 
-                var note = null;
+              var kbd = keyman.BuildVisualKeyboard(keyboardName, 1, platform, name);
+              if (kbd) {
+                osk.append('<h3>'+title+'</h3>', kbd);
+                if(note) osk.append(note);
+              }
 
-                var kbd = keyman.BuildVisualKeyboard(keyboardName, 1, platform, name);
-                if (kbd) {
-                  osk.append('<h3>'+title+'</h3>', kbd);
-                  if(note) osk.append(note);
-                }
-
-                keyman.getOskWidth = keyman.getOskHeight = null;
-
-              });
+              keyman.getOskWidth = keyman.getOskHeight = null;
             },
             toTitleCase = function(str) {
               return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
