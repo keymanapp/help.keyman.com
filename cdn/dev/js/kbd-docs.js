@@ -84,6 +84,20 @@ function loaded(){
 
     // This retrieves font info from latest version of keyboard; we don't currently have that available for earlier versions. No worries.
     // TODO: this would be better integrated into using KeymanWeb to retrieve this information directly. However, it will do for now.
+
+    function getFirstTTF(a) {
+      var ttfPattern = /\.(ttf|otf|woff)$/i;
+      if(typeof a == 'string') {
+        return a.match(ttfPattern) ? a : null;
+      }
+
+      // a is an array
+      for(var o in a) {
+        if(a[o].match(ttfPattern)) return a[o];
+      }
+      return null;
+    }
+
     $.ajax({
       url: 'https://api.keyman.com/keyboard/' + keyboardName,
       success:function(data) {
@@ -92,7 +106,9 @@ function loaded(){
           if(data.languages[lang].font) {
             // pick the first font
             fontFamily = data.languages[lang].font.family;
-            fontSource = data.languages[lang].font.source;
+            fontSource = getFirstTTF(data.languages[lang].font.source);
+            if(!fontSource) continue;
+            var fontType = fontSource.match(/\.woff$/i) ? 'woff' : 'truetype';
             // Add the font information
             $('head').append($(`
 <style>
@@ -100,7 +116,7 @@ function loaded(){
 	font-family:"${fontFamily}";
 	font-style:normal;
 	font-weight:normal;
-	src:url('https://s.keyman.com/font/deploy/${fontSource}') format('truetype');
+	src:url('https://s.keyman.com/font/deploy/${fontSource}') format('${fontType}');
 }
 .kmw-key-text { font-family: "${fontFamily}"; }
 </style>
