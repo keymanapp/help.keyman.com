@@ -60,20 +60,15 @@
    window.attachEvent("onload", downloadJSAtOnload);
    else window.onload = downloadJSAtOnload;
   </script>
-  <?php if(isset($IncludeKeymanWeb) && $IncludeKeymanWeb == true){ ?>
-    <script src='https://s.keyman.com/kmw/engine/10.0.103/keymanweb.js'></script>
-
-<!--
-<script src="http://s.keyman.com/kmw/engine/377/src/kmwstring.js" type="application/javascript"></script>
-<script src="http://s.keyman.com/kmw/engine/377/src/kmwbase.js" type="application/javascript"></script>
-<script src="http://s.keyman.com/kmw/engine/377/src/keymanweb.js" type="application/javascript"></script>
-<script src="http://s.keyman.com/kmw/engine/377/src/kmwosk.js" type="application/javascript"></script>
-<script src="http://s.keyman.com/kmw/engine/377/src/kmwnative.js" type="application/javascript"></script>
-<script src="http://s.keyman.com/kmw/engine/377/src/kmwcallback.js" type="application/javascript"></script>
-<script src="http://s.keyman.com/kmw/engine/377/src/kmwkeymaps.js" type="application/javascript"></script>
-<script src="http://s.keyman.com/kmw/engine/377/src/kmwlayout.js" type="application/javascript"></script>
-<script src="http://s.keyman.com/kmw/engine/377/src/kmwinit.js" type="application/javascript"></script>
--->
+  <?php if(isset($IncludeKeymanWeb) && $IncludeKeymanWeb == true){
+    $kmw_version_number = '10.0.103';
+    $kmw_version = @file_get_contents('https://api.keyman.com/version/web/stable');
+    if($kmw_version !== FALSE) {
+      $kmw_version = @json_decode($kmw_version);
+      if($kmw_version !== NULL) $kmw_version_number = $kmw_version->version;
+    }
+  ?>
+    <script src='https://s.keyman.com/kmw/engine/<?=$kmw_version_number?>/keymanweb.js'></script>
     <script>
       keyman.init({keyboards:'https://s.keyman.com/keyboard/'});
     </script>

@@ -83,6 +83,7 @@ function loaded(){
     var fontFamily = null, fontSource = null;
 
     // This retrieves font info from latest version of keyboard; we don't currently have that available for earlier versions. No worries.
+    // TODO: this would be better integrated into using KeymanWeb to retrieve this information directly. However, it will do for now.
     $.ajax({
       url: 'https://api.keyman.com/keyboard/' + keyboardName,
       success:function(data) {
@@ -92,7 +93,7 @@ function loaded(){
             // pick the first font
             fontFamily = data.languages[lang].font.family;
             fontSource = data.languages[lang].font.source;
-            /* Add the font information */
+            // Add the font information
             $('head').append($(`
 <style>
 @font-face {
@@ -120,25 +121,29 @@ function loaded(){
             states = osk.data('states'),
             addKeyboard = function(name, platform, title) {
 
-              keyman.getOskWidth = function() {
-                return platform == 'desktop' ? 960 :
-                       platform == 'phone' ? 520 : 720;
-              };
+              keyman.setActiveKeyboard(keyboardName).then(function() {
 
-                keyman.getOskHeight = function() {
-                return platform == 'desktop' ? 320 :
-                       platform == 'phone' ? 240 : 360;
-              };
+                keyman.getOskWidth = function() {
+                  return platform == 'desktop' ? 960 :
+                         platform == 'phone' ? 520 : 720;
+                };
 
-              var note = null;
+                  keyman.getOskHeight = function() {
+                  return platform == 'desktop' ? 320 :
+                         platform == 'phone' ? 240 : 360;
+                };
 
-              var kbd = keyman.BuildVisualKeyboard(keyboardName, 1, platform, name);
-              if (kbd) {
-                osk.append('<h3>'+title+'</h3>', kbd);
-                if(note) osk.append(note);
-              }
+                var note = null;
 
-              keyman.getOskWidth = keyman.getOskHeight = null;
+                var kbd = keyman.BuildVisualKeyboard(keyboardName, 1, platform, name);
+                if (kbd) {
+                  osk.append('<h3>'+title+'</h3>', kbd);
+                  if(note) osk.append(note);
+                }
+
+                keyman.getOskWidth = keyman.getOskHeight = null;
+
+              });
             },
             toTitleCase = function(str) {
               return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
