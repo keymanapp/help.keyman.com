@@ -4,6 +4,10 @@
   require_once('servervars.php');
   require_once('page-version.php');
 
+  // Variables used to manage and trigger debugging tests.
+  // Simply defining the variable below is enough to trigger debug mode.
+  // $kmw_dev_path = 'http://localhost/release/unminified/web';
+
   if(!isset($title)){
     $title = 'Keyman | Type to the world in your language';
   }
@@ -15,7 +19,7 @@
   }
   if(!empty($kbdname))
   {
-    require_once('renderlanguageExample.php');
+    require_once('renderLanguageExample.php');
     $kb_doc = true;
   }else{
     $kb_doc = false;
@@ -67,8 +71,16 @@
       $kmw_version = @json_decode($kmw_version);
       if($kmw_version !== NULL) $kmw_version_number = $kmw_version->version;
     }
+    if(!isset($kmw_dev_path)) {
   ?>
-    <script src='https://s.keyman.com/kmw/engine/<?=$kmw_version_number?>/keymanweb.js'></script>
+      <script src='https://s.keyman.com/kmw/engine/<?=$kmw_version_number?>/keymanweb.js'></script>
+  <?php
+    } else {
+  ?>
+      <script src='<?=$kmw_dev_path?>/keymanweb.js'></script>
+  <?php
+    }
+  ?>
     <script>
       keyman.init({keyboards:'https://s.keyman.com/keyboard/'});
     </script>
