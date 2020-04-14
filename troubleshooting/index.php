@@ -16,7 +16,6 @@ Listed below are some difficulties occasionally experienced when using KeymanWeb
   <li><a href="#two">Why can't I see the On-Screen Keyboard?</a></li>
   <li><a href="#three">Why can I only type in English?</a></li>
   <li><a href='hardwarekeyboards.php'>Using Non-English Hardware Keyboards</a></li>
-  <li><a href="browsers.php">Browser Compatibility</a></li>
   <li><a href="#morehelp">More Help</a></li>
 </ul>
 
@@ -39,7 +38,6 @@ Listed below are some difficulties occasionally experienced when using KeymanWeb
  downloadable fonts in the help information for a keyboard by clicking on the 
  "Help on this keyboard" link in the On Screen Keyboard.
 </li>
-<li>To see a list of browsers with which KeymanWeb is compatible, <a href="browsers.php">click here</a>.</li>
 <li>If you are using Internet Explorer, you may find that you cannot type two languages into the one text box; that is,
   when you switch to another language, the existing language text turns into empty boxes.  This is a limitation in
   Internet Explorer but only happens with a few languages.
