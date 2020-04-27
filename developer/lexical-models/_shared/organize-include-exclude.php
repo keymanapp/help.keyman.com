@@ -15,7 +15,7 @@
 
     <dt><code>&lt;lexical model&gt;.kps</code></dt>
     <dd>The package source file. See the Keyman Developer
-        <a href="../../12.0/guides/lexical-models/distribute/tutorial" target="_blank">reference</a>
+        <a href="/developer/current-version/guides/lexical-models/distribute/tutorial" target="_blank">reference</a>
         for what to include within the package source file.
         Remember that when you reference any built files within the package, make sure you reference them from your
         <code><strong>build</strong></code> folder.</dd>
