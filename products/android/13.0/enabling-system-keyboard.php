@@ -10,7 +10,7 @@ head([
 ]);
 ?>
 
-<h2>Installing System Wide Keyboards</h2>
+<h2>Enabling System Wide Keyboards</h2>
 
 <?php
   // We need to condition here.  While CSS selection can affect visibility, it
