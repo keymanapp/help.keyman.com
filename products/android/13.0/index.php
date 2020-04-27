@@ -111,7 +111,7 @@ head([
   </tr>
   <tr>
     <td><img id="settings-ap" src="<?= cdn("img/app/13.0/settings-a.png")?>"></td>
-    <td>Open the Keyman Settings screen</td>
+    <td>Open the <a href="using-settings-screen.php">Keyman Settings</a> screen</td>
   </tr>
   <tr>
     <td><img id="cloud-download-ap" src="<?= cdn("img/app/13.0/ic_cloud_download.png")?>"></td>
