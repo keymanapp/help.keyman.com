@@ -36,28 +36,34 @@ key function</strong>; that is, the key function that is used if you do not
 specify one: </p>
 
 <pre><code class="lang-typescript">searchTermToKey: function (term: string): string {
-  // Use this pattern to remove common diacritical marks.
+  // Use this pattern to remove common diacritical marks (accents).
   // See: https://www.compart.com/en/unicode/block/U+0300
   const COMBINING_DIACRITICAL_MARKS = /[\u0300-\u036f]/g;
 
-  // Converts to Unicode Normalization form D.
-  // This means that MOST accents and diacritics have been "decomposed" and
-  // are stored as separate characters. We can then remove these separate
-  // characters!
-  //
-  // e.g., Å → A + ˚
-  let normalizedTerm = term.normalize('NFD');
+  // Lowercase each letter in the string INDIVIDUALLY.
+  // Why individually? Some languages have context-sensitive lowercasing
+  // rules (e.g., Greek), which we would like to avoid.
+  // So we convert the string into an array of code points (Array.from(term)),
+  // convert each individual code point to lowercase (.map(c => c.toLowerCase())),
+  // and join the pieces back together again (.join(''))
+  let lowercasedTerm = Array.from(term).map(c => c.toLowerCase()).join('');
 
-  // Now, make it lowercase.
+  // Once it's lowercased, we convert it to NFKD normalization form
+  // This does many things, such as:
   //
-  // e.g.,  A + ˚ → a + ˚
-  let lowercasedTerm = normalizedTerm.toLowerCase();
+  //  - separating characters from their accents/diacritics
+  //      e.g., "ï" -> "i" + "◌̈"
+  //  - converting lookalike characters to a canonical ("regular") form
+  //      e.g., ";" -> ";" (yes, those are two completely different characters!)
+  //  - converting "compatible" characters to their canonical ("regular") form
+  //      e.g., "𝔥𝔢𝔩𝔩𝔬" -> "hello"
+  let normalizedTerm = lowercasedTerm.normalize('NFKD');
 
   // Now, using the pattern above replace each accent and diacritic with the
   // empty string. This effectively removes all accents and diacritics!
   //
-  // e.g.,  a + ˚ → a
-  let termWithoutDiacritics = lowercasedTerm.replace(COMBINING_DIACRITICAL_MARKS, '')
+  // e.g.,  "i" + "◌̈" -> "i"
+  let termWithoutDiacritics = normalizedTerm.replace(COMBINING_DIACRITICAL_MARKS, '');
 
   // The resultant key is lowercased, and has no accents or diacritics.
   return termWithoutDiacritics;
@@ -89,12 +95,12 @@ export default source;</code></pre>
 <h2> Suggested customizations </h2>
 
 <ul>
-  <li> For all writing systems, <strong> normalize into NFC</strong> or
-       <strong>NFD</strong> form using <code>wordform = wordform.normalize('NFC')</code>. </li>
+  <li> For all writing systems, <strong> normalize into NFKC</strong> or
+       <strong>NFKD</strong> form using <code>wordform = wordform.normalize('NFKC')</code>. </li>
   <li> For Latin-based scripts, <strong>lowercase</strong> the word, and
       <strong>remove diacritics</strong>. </li>
   <li> For scripts that use the U+200C zero-width joiner (ZwJ) and/or the U+200D zero-width
-       non-joiner (ZWNJ) (e.g., Brahamic scripts),
+       non-joiner (ZWNJ) (e.g., Brahmic scripts),
       <strong>remove the ZWJ or ZWNJ</strong> from the <strong>end</strong> of the input with
       <code>wordform = wordform.replace(/[\u200C\u200D]+$/</code> </li>
 </ul>
