@@ -83,7 +83,7 @@
 
 <ul class='menu'>
     <p>
-      For users who are <a href="../12.0/guides/lexical-models/">creating</a> and submitting a lexical model,
+      For users who are <a href="/developer/current-version/guides/lexical-models/">creating</a> and submitting a lexical model,
       learn how to get set up with the lexical models repository on GitHub and the Keyman tools.
     </p>
     <li><a href="submission">Lexical Model Submission Guide</a></li>
