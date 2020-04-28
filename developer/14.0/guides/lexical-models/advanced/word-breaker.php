@@ -38,11 +38,11 @@ text to determine where the words are. </p>
   <li> If the default word breaker creates <strong>too many splits</strong>,
        you can <a href="#join">choose which strings join words together</a>. </li>
   <li> If the default word breaker creates <strong>not enough splits</strong>,
-       you must <a href="#custom">create your own word breaking function</a>. </li>
+       you must <a href="#custom">create your own word breaker function</a>. </li>
 </ul>
 
 
-<h2 id="join"> Customize joining rules </h2>
+<h2 id="join">Customize joining rules</h2>
 
 <p>The default word braker is very liberal in what it considers is a word.</p>
 
@@ -50,7 +50,7 @@ text to determine where the words are. </p>
 
 <p><output lang="cr">amiskwaciy-wâskahikan</output></p>
 
-<p> However, the default word breaker will produce three words: <samp>amiskwaciy</samp>, <samp>-</samp>, <samp>wâskahikan</samp>.
+<p> However, the default word breaker will produce three words: <samp>amiskwaciy</samp>, <samp>-</samp>, and <samp>wâskahikan</samp>.
 
 <p> To <strong>join words at hyphens and any other punctuation</strong>,
   provide the <code>joinWordsAt</code> option in the
@@ -84,9 +84,9 @@ export default source;</code></pre>
 export default source;</code></pre>
 
 
-<h2 id="custom"> Writing a custom word breaking </h2>
+<h2 id="custom">Writing a custom word breaker function</h2>
 
-<p> the word breaker function can be specified in the
+<p> The word breaker function can be specified in the
   <a href="./model-definition-file.php">model definition file</a> as follows:
 </p>
 
