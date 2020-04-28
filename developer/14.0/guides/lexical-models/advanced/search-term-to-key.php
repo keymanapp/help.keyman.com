@@ -59,7 +59,7 @@ specify one: </p>
   //      e.g., "𝔥𝔢𝔩𝔩𝔬" -> "hello"
   let normalizedTerm = lowercasedTerm.normalize('NFKD');
 
-  // Now, using the pattern above replace each accent and diacritic with the
+  // Now, using the pattern defined above, replace each accent and diacritic with the
   // empty string. This effectively removes all accents and diacritics!
   //
   // e.g.,  "i" + "◌̈" -> "i"
@@ -95,11 +95,11 @@ export default source;</code></pre>
 <h2> Suggested customizations </h2>
 
 <ul>
-  <li> For all writing systems, <strong> normalize into NFKC</strong> or
-       <strong>NFKD</strong> form using <code>wordform = wordform.normalize('NFKC')</code>. </li>
+  <li> For all writing systems, <strong> normalize into NFKD</strong> or
+       <strong>NFKC</strong> form using <code>wordform = wordform.normalize('NFKD')</code>. </li>
   <li> For Latin-based scripts, <strong>lowercase</strong> the word, and
       <strong>remove diacritics</strong>. </li>
-  <li> For scripts that use the U+200C zero-width joiner (ZwJ) and/or the U+200D zero-width
+  <li> For scripts that use the U+200C zero-width joiner (ZWJ) and/or the U+200D zero-width
        non-joiner (ZWNJ) (e.g., Brahmic scripts),
       <strong>remove the ZWJ or ZWNJ</strong> from the <strong>end</strong> of the input with
       <code>wordform = wordform.replace(/[\u200C\u200D]+$/</code> </li>
