@@ -32,6 +32,60 @@ determining when words start and stop. This is what a <dfn>word breaker
 function</dfn> is responsible for. It is a little bit of code that looks at some
 text to determine where the words are. </p>
 
+<p> You can customize the word breaker in two ways: </p>
+
+<ul>
+  <li> If the default word breaker creates <strong>too many splits</strong>,
+       you can <a href="#join">choose which strings join words together</a>. </li>
+  <li> If the default word breaker creates <strong>not enough splits</strong>,
+       you must <a href="#custom">create your own word breaker function</a>. </li>
+</ul>
+
+
+<h2 id="join">Customize joining rules</h2>
+
+<p>The default word braker is very liberal in what it considers is a word.</p>
+
+<p>For instance, the default word breaker will split words at hyphens. Consider the following Plains Cree example; this is a single word:</p>
+
+<p><output lang="cr">amiskwaciy-wâskahikan</output></p>
+
+<p> However, the default word breaker will produce three words: <samp>amiskwaciy</samp>, <samp>-</samp>, and <samp>wâskahikan</samp>.
+
+<p> To <strong>join words at hyphens and any other punctuation</strong>,
+  provide the <code>joinWordsAt</code> option in the
+  <a href="./model-definition-file.php">model definition file</a>:
+</p>
+
+<pre><code class="lang-typescript">const source: LexicalModelSource = {
+  format: 'trie-1.0',
+  sources: ['wordlist.tsv'],
+  wordBreaker: {
+    use: 'default',     // we want to use the default word breaker, BUT!
+    // CUSTOMIZE THIS:
+    joinWordsAt: ['-'], // join words that contain hyphens
+  }
+};
+
+export default source;</code></pre>
+
+<p> You can specify one or more strings to join words at: </p>
+
+<pre><code class="lang-typescript">const source: LexicalModelSource = {
+  format: 'trie-1.0',
+  sources: ['wordlist.tsv'],
+  wordBreaker: {
+    use: 'default',
+    // CUSTOMIZE THIS:
+    joinWordsAt: ['-', ':', '@'], // join words at hyphens, colons, at-signs
+  }
+};
+
+export default source;</code></pre>
+
+
+<h2 id="custom">Writing a custom word breaker function</h2>
+
 <p> The word breaker function can be specified in the
   <a href="./model-definition-file.php">model definition file</a> as follows:
 </p>
@@ -40,9 +94,11 @@ text to determine where the words are. </p>
   format: 'trie-1.0',
   sources: ['wordlist.tsv'],
   // CUSTOMIZE THIS:
-  wordBreaker: function(text: string): Span[] {
-    // Return zero or more **spans** of text:
-    return [];
+  wordBreaker: {
+    use: function(text: string): Span[] {
+      // Return zero or more **spans** of text:
+      return [];
+    },
   },
   // other customizations go here:
 };
