@@ -175,10 +175,13 @@ your own key function. </p>
 
 <dl>
   <dt>Keyman 12</dt>
-  <dd><code>.model.ts</code> file introduced.</dd>
+  <dd><strong>Added</strong>: the <code>.model.ts</code> file type.</dd>
+  <dt>Keyman 13</dt>
+  <dd><i>No changes.</i></dd>
   <dt>Keyman 14</dt>
-  <dd><code class="lang-typescript">wordBreaker: { 'use': ... }</code>
-  syntax introduced</dd>
-  <dd><code class="lang-typescript">wordBreaker: { 'joinWordsAt': ... }</code>
-  property introduced</dd>
+  <dd><strong>Added</strong>: an alternative syntax for specifying word breakers:
+  <code class="lang-typescript">wordBreaker: { 'use': ... }</code>.</dd>
+  <dd><strong>Added</strong>: specify which characters should be
+  used to join with word breakers:
+  <code class="lang-typescript">wordBreaker: { 'joinWordsAt': ... }</code>.</dd>
 </dl>
