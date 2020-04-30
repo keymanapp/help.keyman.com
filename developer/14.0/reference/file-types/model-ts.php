@@ -121,7 +121,7 @@ regardless of things such as <strong>accents</strong>,
 <strong>diacritics</strong>, <strong>lettercase</strong>, and minor
 <strong>spelling variations</strong>.
 The ”regular” form is called the <dfn>key</dfn>.  Typically, the key is always
-in lowercase, and lacks all accents and diacritics. For example, the key form
+in lowercase, and lacks all accents and diacritics. For example, the key
 of “naïve" is "naive" and the key of Canada is “canada”. </p>
 
 <p> The form of the word that is stored is “regularized” through the use of a
