@@ -34,6 +34,9 @@ in the same folder as <code>wordlist.tsv</code>.</p>
 
 const source: LexicalModelSource = {
   format: 'trie-1.0',
+  wordBreaker: {
+    use: 'default',
+  },
   sources: ['wordlist.tsv'],
 };
 export default source;</code></pre>
@@ -50,17 +53,24 @@ lexical model such that it can predict through thousands of words very
 quickly. </p>
 <pre><code class="lang-typescript">  format: 'trie-1.0',</code></pre>
 
-<p> On the third line, we're telling the <code>trie</code> where to find our wordlist. </p>
+<p> On lines 3–5, we're specifying the word breaking algorithm that we want to use.
+Keyman supplies a default algorithm that conforms to the rules expected for many 
+languages.</p>
+<pre><code class="lang-typescript">  wordBreaker: {
+  use: 'default',
+},</code></pre>
+
+<p> On the sixth line, we're telling the <code>trie</code> where to find our wordlist. </p>
 <pre><code class="lang-typescript">  sources: ['wordlist.tsv'],</code></pre>
 
-<p> The fourth line marks the termination of the lexical model source code. If we specify any customizations, they <strong>must</strong> be declared above this line: </p>
+<p> The seventh line marks the termination of the lexical model source code. If we specify any customizations, they <strong>must</strong> be declared above this line: </p>
 <pre><code class="lang-typescript">};</code></pre>
 
-<p> The fifth line is necessary to allow external applications to read the lexical model source code.</p>
+<p> The eighth line is necessary to allow external applications to read the lexical model source code.</p>
 <pre><code class="lang-typescript">export default source;</code></pre>
 
 
-<h2> Customizing a wordlist lexical model </h2>
+<h2> Customizing our lexical model </h2>
 
 <p> The template, as described in the previous section, is a good starting
 point, and may be all you need for you language. However, most language

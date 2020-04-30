@@ -43,7 +43,9 @@ similar to the following.</p>
 
 const source: LexicalModelSource = {
   format: 'trie-1.0',
-  wordBreaker: 'default',
+  wordBreaker: {
+    use: 'default',
+  },
   sources: ['wordlist.tsv'],
 };
 export default source;</code></pre>
@@ -60,18 +62,20 @@ lexical model such that it can predict through thousands of words very
 quickly. </p>
 <pre><code class="lang-typescript">  format: 'trie-1.0',</code></pre>
 
-<p> On the third line, we're specifying the word breaking algorithm that we want to use.
+<p> On lines 3–5, we're specifying the word breaking algorithm that we want to use.
 Keyman supplies a default algorithm that conforms to the rules expected for many Latin-script
 languages.</p>
-<pre><code class="lang-typescript">  wordBreaker: 'default',</code></pre>
+<pre><code class="lang-typescript">  wordBreaker: {
+    use: 'default',
+  },</code></pre>
 
-<p> On the fourth line, we're telling the <code>trie</code> where to find our wordlist. </p>
+<p> On the sixth line, we're telling the <code>trie</code> where to find our wordlist. </p>
 <pre><code class="lang-typescript">  sources: ['wordlist.tsv'],</code></pre>
 
-<p> The fifth line marks the termination of the lexical model source code. If we specify any customizations, they <strong>must</strong> be declared above this line: </p>
+<p> The seventh line marks the termination of the lexical model source code. If we specify any customizations, they <strong>must</strong> be declared above this line: </p>
 <pre><code class="lang-typescript">};</code></pre>
 
-<p> The sixth line is necessary to allow external applications to read the lexical model source code.</p>
+<p> The eighth line is necessary to allow external applications to read the lexical model source code.</p>
 <pre><code class="lang-typescript">export default source;</code></pre>
 
 
@@ -96,6 +100,8 @@ punctuation. The actual rules for where to find words can get quite tricky to
 describe, but Keyman implements the <a href="https://unicode.org/reports/tr29/#Word_Boundaries">
 Unicode Standard Annex #29 §4.1 Default Word Boundary Specification </a>
 which works well for most languages.
+If the default doesn't <em>quite</em> work for your language,
+you can <a href="../../guides/lexical-models/advanced/word-breaker.php#join">tweak it</a>.
 </p>
 
 <p> However, in languages written in other scripts—especially East Asian
@@ -115,8 +121,8 @@ regardless of things such as <strong>accents</strong>,
 <strong>diacritics</strong>, <strong>lettercase</strong>, and minor
 <strong>spelling variations</strong>.
 The ”regular” form is called the <dfn>key</dfn>.  Typically, the key is always
-in lowercase, and lacks all accents and diacritics. For example, the key form
-of “naïve" is "naive" and the keyform of Canada is “canada”. </p>
+in lowercase, and lacks all accents and diacritics. For example, the key
+of “naïve" is "naive" and the key of Canada is “canada”. </p>
 
 <p> The form of the word that is stored is “regularized” through the use of a
 <dfn>key function</dfn>, which you can define in TypeScript code. </p>
@@ -127,38 +133,55 @@ key function</strong>; that is, the key function that is used if you do not
 specify one: </p>
 
 <pre><code class="lang-typescript">searchTermToKey: function (term) {
-  // Use this pattern to remove common diacritical marks.
+  // Use this pattern to remove common diacritical marks (accents).
   // See: https://www.compart.com/en/unicode/block/U+0300
   const COMBINING_DIACRITICAL_MARKS = /[\u0300-\u036f]/g;
 
-  // Converts to Unicode Normalization form D.
-  // This means that MOST accents and diacritics have been "decomposed" and
-  // are stored as separate characters. We can then remove these separate
-  // characters!
-  //
-  // e.g., Å → A + ˚
-  let normalizedTerm = term.normalize('NFD');
+  // Lowercase each letter in the string INDIVIDUALLY.
+  // Why individually? Some languages have context-sensitive lowercasing
+  // rules (e.g., Greek), which we would like to avoid.
+  // So we convert the string into an array of code points (Array.from(term)),
+  // convert each individual code point to lowercase (.map(c => c.toLowerCase())),
+  // and join the pieces back together again (.join(''))
+  let lowercasedTerm = Array.from(term).map(c => c.toLowerCase()).join('');
 
-  // Now, make it lowercase.
+  // Once it's lowercased, we convert it to NFKD normalization form
+  // This does many things, such as:
   //
-  // e.g.,  A + ˚ → a + ˚
-  let lowercasedTerm = normalizedTerm.toLowerCase();
+  //  - separating characters from their accents/diacritics
+  //      e.g., "ï" -> "i" + "¨" (U+0308)
+  //  - converting lookalike characters to a canonical ("regular") form
+  //      e.g., ";" -> ";" (yes, those are two completely different characters -- U+037E and U+003B!)
+  //  - converting "compatible" characters to their canonical ("regular") form
+  //      e.g., "𝔥𝔢𝔩𝔩𝔬" -> "hello"
+  let normalizedTerm = lowercasedTerm.normalize('NFKD');
 
-  // Now, using the pattern above replace each accent and diacritic with the
+  // Now, using the pattern defined above, replace each accent and diacritic with the
   // empty string. This effectively removes all accents and diacritics!
   //
-  // e.g.,  a + ˚ → a
-  let termWithoutDiacritics = lowercasedTerm.replace(COMBINING_DIACRITICAL_MARKS, '')
-
-  // Recombine any remaining decomposed forms (for Latin, there may not be many),
-  // converting to Unicode Normalization form C "composed".
-  let termWithoutDiacriticsNFC = termWithoutDiacritics.normalize('NFC');
+  // e.g.,  "i" + "¨" (U+0308) -> "i"
+  let termWithoutDiacritics = normalizedTerm.replace(COMBINING_DIACRITICAL_MARKS, '');
 
   // The resultant key is lowercased, and has no accents or diacritics.
-  return termWithoutDiacriticsNFC;
+  return termWithoutDiacritics;
 },</code></pre>
 
 <p> This should be sufficient for most Latin-based writing systems. However,
 there are cases, such as with SENĆOŦEN, where some characters do not decompose
 into a base letter and a diacritic. In this case, it is necessary to write
 your own key function. </p>
+
+<h2>Version History</h2>
+
+<dl>
+  <dt>Keyman 12</dt>
+  <dd><strong>Added</strong>: the <code>.model.ts</code> file type.</dd>
+  <dt>Keyman 13</dt>
+  <dd><i>No changes.</i></dd>
+  <dt>Keyman 14</dt>
+  <dd><strong>Added</strong>: an alternative syntax for specifying word breakers:
+  <code class="lang-typescript">wordBreaker: { 'use': ... }</code>.</dd>
+  <dd><strong>Added</strong>: specify which characters should be
+  used to join with word breakers:
+  <code class="lang-typescript">wordBreaker: { 'joinWordsAt': ... }</code>.</dd>
+</dl>

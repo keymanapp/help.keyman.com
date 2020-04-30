@@ -8,14 +8,6 @@
 
 <h1 class="title"> Word breaker </h1>
 
-<aside>
-  <p>
-    <strong>Note</strong>: If your language uses spaces to denote word breaks,
-    the default word breaker is probably sufficient. Only customize this if you
-    know the default word breaker really does not work for your language!
-  </p>
-</aside>
-
 <p> The <code>trie</code> family of lexical models needs to know what a word
 is in running text. In languages using the Latin script—like, English, French,
 and SENĆOŦEN—finding words is easy. Words are separated by spaces or
@@ -44,7 +36,7 @@ text to determine where the words are. </p>
 
 <h2 id="join">Customize joining rules</h2>
 
-<p>The default word braker is very liberal in what it considers is a word.</p>
+<p>The default word breaker is very liberal in what it considers is a word.</p>
 
 <p>For instance, the default word breaker will split words at hyphens. Consider the following Plains Cree example; this is a single word:</p>
 
@@ -85,6 +77,15 @@ export default source;</code></pre>
 
 
 <h2 id="custom">Writing a custom word breaker function</h2>
+
+<aside>
+  <p>
+    <strong>Note</strong>: If your language uses spaces to denote word breaks,
+    the default word breaker is probably sufficient. Only customize this if you
+    know the default word breaker really does not work for your language!
+  </p>
+</aside>
+
 
 <p> The word breaker function can be specified in the
   <a href="./model-definition-file.php">model definition file</a> as follows:
