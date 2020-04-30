@@ -66,8 +66,8 @@ quickly. </p>
 Keyman supplies a default algorithm that conforms to the rules expected for many Latin-script
 languages.</p>
 <pre><code class="lang-typescript">  wordBreaker: {
-  use: 'default',
-},</code></pre>
+    use: 'default',
+  },</code></pre>
 
 <p> On the sixth line, we're telling the <code>trie</code> where to find our wordlist. </p>
 <pre><code class="lang-typescript">  sources: ['wordlist.tsv'],</code></pre>
