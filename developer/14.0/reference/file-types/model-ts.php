@@ -43,7 +43,9 @@ similar to the following.</p>
 
 const source: LexicalModelSource = {
   format: 'trie-1.0',
-  wordBreaker: 'default',
+  wordBreaker: {
+    use: 'default',
+  },
   sources: ['wordlist.tsv'],
 };
 export default source;</code></pre>
@@ -60,18 +62,20 @@ lexical model such that it can predict through thousands of words very
 quickly. </p>
 <pre><code class="lang-typescript">  format: 'trie-1.0',</code></pre>
 
-<p> On the third line, we're specifying the word breaking algorithm that we want to use.
+<p> On lines 3–5, we're specifying the word breaking algorithm that we want to use.
 Keyman supplies a default algorithm that conforms to the rules expected for many Latin-script
 languages.</p>
-<pre><code class="lang-typescript">  wordBreaker: 'default',</code></pre>
+<pre><code class="lang-typescript">  wordBreaker: {
+  use: 'default',
+},</code></pre>
 
-<p> On the fourth line, we're telling the <code>trie</code> where to find our wordlist. </p>
+<p> On the sixth line, we're telling the <code>trie</code> where to find our wordlist. </p>
 <pre><code class="lang-typescript">  sources: ['wordlist.tsv'],</code></pre>
 
-<p> The fifth line marks the termination of the lexical model source code. If we specify any customizations, they <strong>must</strong> be declared above this line: </p>
+<p> The seventh line marks the termination of the lexical model source code. If we specify any customizations, they <strong>must</strong> be declared above this line: </p>
 <pre><code class="lang-typescript">};</code></pre>
 
-<p> The sixth line is necessary to allow external applications to read the lexical model source code.</p>
+<p> The eighth line is necessary to allow external applications to read the lexical model source code.</p>
 <pre><code class="lang-typescript">export default source;</code></pre>
 
 
@@ -96,6 +100,8 @@ punctuation. The actual rules for where to find words can get quite tricky to
 describe, but Keyman implements the <a href="https://unicode.org/reports/tr29/#Word_Boundaries">
 Unicode Standard Annex #29 §4.1 Default Word Boundary Specification </a>
 which works well for most languages.
+If the default doesn't <em>quite</em> work for your language,
+you can <a href="../../guides/lexical-models/advanced/word-breaker.php#join">tweak it</a>.
 </p>
 
 <p> However, in languages written in other scripts—especially East Asian
