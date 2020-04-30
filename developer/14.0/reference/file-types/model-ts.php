@@ -170,3 +170,15 @@ specify one: </p>
 there are cases, such as with SENĆOŦEN, where some characters do not decompose
 into a base letter and a diacritic. In this case, it is necessary to write
 your own key function. </p>
+
+<h2>Version History</h2>
+
+<dl>
+  <dt>Keyman 12</dt>
+  <dd><code>.model.ts</code> file introduced.</dd>
+  <dt>Keyman 14</dt>
+  <dd><code class="lang-typescript">wordBreaker: { 'use': ... }</code>
+  syntax introduced</dd>
+  <dd><code class="lang-typescript">wordBreaker: { 'joinWordsAt': ... }</code>
+  property introduced</dd>
+</dl>
