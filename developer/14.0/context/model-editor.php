@@ -51,13 +51,14 @@ which can be seen in the <strong>Source</strong> tab:</p>
 
 <dl id="details-fields">
   <dt>Format</dt>
-  <dd>The format of the lexical model. This can be either <strong>Wordlist</strong> (<code>trie-1.0</code>), or
-  <strong>Custom</strong> (<code>custom-1.0</code>). Corresponds to the <code>format</code> variable in the .model.ts source
-  file.</dd>
+  <dd>The implementation of the lexical model. This can be either <strong>Wordlist</strong> (<code>trie-1.0</code>), or
+  <strong>Custom</strong> (<code>custom-1.0</code>).
+  Corresponds to the <code>format</code> property in the .model.ts source file.</dd>
 
   <dt>Word breaker</dt>
-  <dd>The word breaking algorithm used when generating suggestions. This can be one of <code>default</code>, <code>ascii</code>,
-  or <code>custom</code>. Corresponds to the <code>wordBreaker</code> variable in the .model.ts source file.</dd>
+  <dd>What method is used to separate words in text. This can be one of <code>default</code>, <code>ascii</code>,
+  or <code>custom</code>.
+  Corresponds to the <code>wordBreaker</code> property in the .model.ts source file.</dd>
 
   <dt>Comments</dt>
   <dd>This field corresponds to the first lines of comments in the model source, and is visible only to the model designer.</dd>
