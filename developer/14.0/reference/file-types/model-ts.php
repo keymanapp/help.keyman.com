@@ -149,9 +149,9 @@ specify one: </p>
   // This does many things, such as:
   //
   //  - separating characters from their accents/diacritics
-  //      e.g., "ï" -> "i" + "◌̈"
+  //      e.g., "ï" -> "i" + "¨" (U+0308)
   //  - converting lookalike characters to a canonical ("regular") form
-  //      e.g., ";" -> ";" (yes, those are two completely different characters!)
+  //      e.g., ";" -> ";" (yes, those are two completely different characters -- U+037E and U+003B!)
   //  - converting "compatible" characters to their canonical ("regular") form
   //      e.g., "𝔥𝔢𝔩𝔩𝔬" -> "hello"
   let normalizedTerm = lowercasedTerm.normalize('NFKD');
@@ -159,7 +159,7 @@ specify one: </p>
   // Now, using the pattern defined above, replace each accent and diacritic with the
   // empty string. This effectively removes all accents and diacritics!
   //
-  // e.g.,  "i" + "◌̈" -> "i"
+  // e.g.,  "i" + "¨" (U+0308) -> "i"
   let termWithoutDiacritics = normalizedTerm.replace(COMBINING_DIACRITICAL_MARKS, '');
 
   // The resultant key is lowercased, and has no accents or diacritics.

@@ -53,12 +53,12 @@ which can be seen in the <strong>Source</strong> tab:</p>
   <dt>Format</dt>
   <dd>The implementation of the lexical model. This can be either <strong>Wordlist</strong> (<code>trie-1.0</code>), or
   <strong>Custom</strong> (<code>custom-1.0</code>).
-  Corresponds to the <code>format</code> property in the <a href="/developer/current-version/reference/file-types/model-ts">.model.ts source file</a>.</dd>
+  Corresponds to the <code>format</code> property in the <a href="../reference/file-types/model-ts">.model.ts source file</a>.</dd>
 
   <dt>Word breaker</dt>
   <dd>What method is used to separate words in text. This can be one of <code>default</code>, <code>ascii</code>,
   or <code>custom</code>.
-  Corresponds to the <code>wordBreaker</code> property in the <a href="/developer/current-version/reference/file-types/model-ts">.model.ts source file</a>.</dd>
+  Corresponds to the <code>wordBreaker</code> property in the <a href="../reference/file-types/model-ts">.model.ts source file</a>.</dd>
 
   <dt>Comments</dt>
   <dd>This field corresponds to the first lines of comments in the model source, and is visible only to the model designer.</dd>
@@ -67,10 +67,10 @@ which can be seen in the <strong>Source</strong> tab:</p>
   <dd>The Wordlists grid controls which additional wordlist files are referenced by the model. Adding a wordlist file will
   add an extra tab to the editor, and add the corresponding reference to the lexical model source. Removing a wordlist will not
   delete the component file, but will just remove the reference from the lexical model source.
-  Corresponds to the <code>sources</code> property in the <a href="/developer/current-version/reference/file-types/model-ts">.model.ts source file</a>.</dd>
+  Corresponds to the <code>sources</code> property in the <a href="../reference/file-types/model-ts">.model.ts source file</a>.</dd>
 </dl>
 
-<p>Note: if the <a href="/developer/current-version/reference/file-types/model-ts">.model.ts</a> file cannot be parsed by the model editor,
+<p>Note: if the <a href="../reference/file-types/model-ts">.model.ts</a> file cannot be parsed by the model editor,
 the field shown here will be read only and you will need to
 make changes only in the <strong>Source</strong> tab. This can happen if the .model.ts contains more complex code.</p>
 

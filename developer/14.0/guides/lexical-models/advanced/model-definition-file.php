@@ -54,7 +54,7 @@ quickly. </p>
 <pre><code class="lang-typescript">  format: 'trie-1.0',</code></pre>
 
 <p> On lines 3–5, we're specifying the word breaking algorithm that we want to use.
-Keyman supplies a default algorithm that conforms to the rules expected for many Latin-script
+Keyman supplies a default algorithm that conforms to the rules expected for many 
 languages.</p>
 <pre><code class="lang-typescript">  wordBreaker: {
   use: 'default',
