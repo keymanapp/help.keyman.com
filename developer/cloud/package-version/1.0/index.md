@@ -21,7 +21,7 @@ GET https://api.keyman.com/package-version?keyboard=<id>&model=<id>&platform=<pl
   * This parameter can be repeated, and/or multiple ids can be separated by commas
   * This parameter is optional.
 * `platform`: which platform must be supported for updates
-  * `<platform>`: one of `android`, `ios`, `linux`, `mac`, `windows` (web does not currently support packages)
+  * `<platform>`: one of `android`, `ios`, `linux`, `mac`, `windows` (`web` does not currently support packages)
   * This stops the API returning packages that are invalid for the target platform.
   * This parameter is optional. If not supplied, does not filter by platform support.
 
