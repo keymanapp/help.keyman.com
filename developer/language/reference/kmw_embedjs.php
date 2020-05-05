@@ -40,7 +40,7 @@ This is typically used with the <a href='call.php'><code>call()</code> statement
 
 <h2>Platforms</h2>
 
-<p>The <code>&amp;version</code> store will be used in keyboards on web and touch platforms. It is ignored on all other platforms.</p>
+<p>The <code>&amp;kmw_embedjs</code> store will be used in keyboards on web and touch platforms. It is ignored on all other platforms.</p>
 
 <table class='platform'>
   <thead>
