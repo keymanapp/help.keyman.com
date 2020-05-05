@@ -1,5 +1,18 @@
 <?php
-
+  function getPageUrlForEditLink() {
+    $base = "https://github.com/keymanapp/help.keyman.com/edit/master";
+    if($_SERVER['PHP_SELF'] == '/knowledge-base/index.php' && !empty($_REQUEST['id'])) {
+      // Knowledge Base Article
+      require_once('includes/com.keyman.help.kb.inc.php');
+      return $base."/knowledge-base/".com\keyman\help\kb\filename_from_id($_REQUEST['id']);
+    }
+    else if($_SERVER['PHP_SELF'] == '/_includes/md/mdhost.php')
+      // Markdown file
+      return $base."/".$_REQUEST['file'];
+    else
+      // Legacy PHP file
+      return $base.$_SERVER['PHP_SELF'];
+  }
 ?>
           </article>
         </div>
@@ -49,7 +62,7 @@
   <div class="footer-tab"><h4><a href='https://community.software.sil.org/c/keyman'>Support</a></h4></div>
 </div>
 <div class="footer-tab-holder" id='footer-tab-edit'>
-  <div class="footer-tab"><h4><a href='https://github.com/keymanapp/help.keyman.com/edit/master<?php if(basename($_SERVER['PHP_SELF']) == 'mdhost.php') echo '/'.$_REQUEST['file']; else echo $_SERVER['PHP_SELF']; ?>' target='_blank'>Edit page</a></h4></div>
+  <div class="footer-tab"><h4><a href='<?php echo getPageUrlForEditLink(); ?>' target='_blank'>Edit page</a></h4></div>
 </div>
 <div id="KeymanWebControl"></div>
 <script src='<?= cdn('js/prism.js')?>'></script>
