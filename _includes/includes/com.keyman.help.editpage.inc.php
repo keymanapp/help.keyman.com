@@ -47,15 +47,6 @@
         $path = "index";
       }
       return "https://github.com/keymanapp/keyman/edit/master/windows/src/desktop/help/$path.xml";
-
-
-
-      if(!empty($matches[4])) {
-        $path = $matches[2] . "/" . $matches[4];
-      } else {
-        $path = "index";
-      }
-      return "https://github.com/keymanapp/keyman/edit/master/windows/src/desktop/help/$path.xml";
     }
     else {
       // Legacy PHP file
