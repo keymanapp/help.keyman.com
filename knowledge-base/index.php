@@ -1,19 +1,13 @@
 <?php
   require_once('includes/ext/parsedown/Parsedown.php');
   require_once('includes/template.php');
+  require_once('includes/com.keyman.help.kb.inc.php');
+
+  use function com\keyman\help\kb\filename_from_id;
+  use function com\keyman\help\kb\link_from_id;
 
   $id = null;
   $title = 'Knowledge Base index';
-
-  function filename_from_id($id) {
-    $id = intval($id, 10);
-    return sprintf("kb%04.4d.md", $id);
-  }
-
-  function link_from_id($id) {
-    $id = intval($id, 10);
-    return "/kb/$id";
-  }
 
   if(isset($_REQUEST['id'])) {
     $id = $_REQUEST['id'];

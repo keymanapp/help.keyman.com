@@ -1,5 +1,13 @@
 <?php
+  require_once("com.keyman.help.editpage.inc.php");
 
+  function getPageUrlForEditLink() {
+    return \com\keyman\help\editpage\getPageUrlForEditLink(
+      $_SERVER['PHP_SELF'],
+      isset($_REQUEST['id']) ? $_REQUEST['id'] : '',
+      isset($_REQUEST['file']) ? $_REQUEST['file'] : ''
+    );
+  }
 ?>
           </article>
         </div>
@@ -49,7 +57,7 @@
   <div class="footer-tab"><h4><a href='https://community.software.sil.org/c/keyman'>Support</a></h4></div>
 </div>
 <div class="footer-tab-holder" id='footer-tab-edit'>
-  <div class="footer-tab"><h4><a href='https://github.com/keymanapp/help.keyman.com/edit/master<?php if(basename($_SERVER['PHP_SELF']) == 'mdhost.php') echo '/'.$_REQUEST['file']; else echo $_SERVER['PHP_SELF']; ?>' target='_blank'>Edit page</a></h4></div>
+  <div class="footer-tab"><h4><a href='<?php echo getPageUrlForEditLink(); ?>' target='_blank'>Edit page</a></h4></div>
 </div>
 <div id="KeymanWebControl"></div>
 <script src='<?= cdn('js/prism.js')?>'></script>
