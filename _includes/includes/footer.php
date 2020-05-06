@@ -1,17 +1,12 @@
 <?php
+  require_once("com.keyman.help.editpage.inc.php");
+
   function getPageUrlForEditLink() {
-    $base = "https://github.com/keymanapp/help.keyman.com/edit/master";
-    if($_SERVER['PHP_SELF'] == '/knowledge-base/index.php' && !empty($_REQUEST['id'])) {
-      // Knowledge Base Article
-      require_once('includes/com.keyman.help.kb.inc.php');
-      return $base."/knowledge-base/".com\keyman\help\kb\filename_from_id($_REQUEST['id']);
-    }
-    else if($_SERVER['PHP_SELF'] == '/_includes/md/mdhost.php')
-      // Markdown file
-      return $base."/".$_REQUEST['file'];
-    else
-      // Legacy PHP file
-      return $base.$_SERVER['PHP_SELF'];
+    return \com\keyman\help\editpage\getPageUrlForEditLink(
+      $_SERVER['PHP_SELF'],
+      isset($_REQUEST['id']) ? $_REQUEST['id'] : '',
+      isset($_REQUEST['file']) ? $_REQUEST['file'] : ''
+    );
   }
 ?>
           </article>
