@@ -18,10 +18,11 @@
 
 <h3 id="Parameters" name="Parameters">Parameters</h3>
 <dl>
- <dt><code><?php echo $param1 ?></code></dt>
-<dd>The keyboard type. <code>KEYBOARD_TYPE_INAPP</code> or <code>KEYBOARD_TYPE_SYSTEM</code>.</dd>
-<dt><code><?php echo $param2 ?></code></dt>
-<dd>The action type. <code>GLOBE_KEY_ACTION_SHOW_MENU</code>, <code>GLOBE_KEY_ACTION_SWITCH_TO_NEXT_KEYBOARD</code> or <code>GLOBE_KEY_ACTION_DO_NOTHING</code>.</dd>
+  <dt><code><?php echo $param1 ?></code></dt>
+  <dd>The keyboard type. <code>KEYBOARD_TYPE_INAPP</code> or <code>KEYBOARD_TYPE_SYSTEM</code>.</dd>
+  <dt><code><?php echo $param2 ?></code></dt>
+  <dd>The action type. <code>GLOBE_KEY_ACTION_SHOW_MENU</code>, <code>GLOBE_KEY_ACTION_SWITCH_TO_NEXT_KEYBOARD</code>,
+    <code>GLOBE_KEY_ACTION_ADVANCE_TO_NEXT_SYSTEM_KEYBOARD</code>, or <code>GLOBE_KEY_ACTION_DO_NOTHING</code>.</dd>
 </dl>
 
 <h2 id="Description" name="Description">Description</h2>
