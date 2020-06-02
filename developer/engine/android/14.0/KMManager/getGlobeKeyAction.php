@@ -23,8 +23,8 @@
 
 <h3 id="Returns" name="Returns">Returns</h3>
 <p>Returns the action type of the 'Globe' key as one of <code>GLOBE_KEY_ACTION_SHOW_MENU</code>,
-  <code>GLOBE_KEY_ACTION_SWITCH_TO_NEXT_KEYBOARD</code>, <code>GLOBE_KEY_ACTION_ADVANCE_TO_NEXT_SYSTEM_KEYBOARD</code>,  or
-  <code>GLOBE_KEY_ACTION_DO_NOTHING</code>.</dd></p>
+  <code>GLOBE_KEY_ACTION_SWITCH_TO_NEXT_KEYBOARD</code>, <code>GLOBE_KEY_ACTION_ADVANCE_TO_NEXT_SYSTEM_KEYBOARD</code>,
+  <code>GLOBE_KEY_ACTION_SHOW_SYSTEM_KEYBOARDS</code>, or <code>GLOBE_KEY_ACTION_DO_NOTHING</code>.</dd></p>
 
 <h2 id="Description" name="Description">Description</h2>
 <p>Use this method to get the action type of the 'Globe' key.</p>

@@ -22,11 +22,15 @@
   <dd>The keyboard type. <code>KEYBOARD_TYPE_INAPP</code> or <code>KEYBOARD_TYPE_SYSTEM</code>.</dd>
   <dt><code><?php echo $param2 ?></code></dt>
   <dd>The action type. <code>GLOBE_KEY_ACTION_SHOW_MENU</code>, <code>GLOBE_KEY_ACTION_SWITCH_TO_NEXT_KEYBOARD</code>,
-    <code>GLOBE_KEY_ACTION_ADVANCE_TO_NEXT_SYSTEM_KEYBOARD</code>, or <code>GLOBE_KEY_ACTION_DO_NOTHING</code>.</dd>
+    <code>GLOBE_KEY_ACTION_ADVANCE_TO_NEXT_SYSTEM_KEYBOARD</code>, <code>GLOBE_KEY_ACTION_SHOW_SYSTEM_KEYBOARDS</code>,
+    or <code>GLOBE_KEY_ACTION_DO_NOTHING</code>.</dd>
 </dl>
 
 <h2 id="Description" name="Description">Description</h2>
 <p>Use this method to set an action type for the 'Globe' key. By default, the action type is set to <code>GLOBE_KEY_ACTION_SHOW_MENU</code> which displays the keyboard picker menu.</p>
+
+<p>The action <code>GLOBE_KEY_ACTION_SHOW_SYSTEM_KEYBOARDS</code> brings up the Android input method picker and
+  can only be set for <code>KEYBOARD_TYPE_SYSTEM</code>.</p>
 
 <h2 id="Examples">Examples</h2>
 
