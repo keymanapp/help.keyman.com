@@ -371,6 +371,48 @@
 <td></td>
 <td><p><b>KeyboardExampleInfo</b> object containing a sample text that the user can type to give them an idea of how to start to use the keyboard.</p></td>
 </tr>
+<td>displayName</td>
+<td>yes</td>
+<td>
+  <p><b>string</b>, a descriptive name of the language to display to users in the format: <i>language (script, region)</i>.
+    If the BCP 47 code does not contain script or region subtags, only the language name is displayed.</p>
+  <p><b>Example:</b> <code>"displayName": "Central Atlas Tamazight (Tifinagh, Morocco)"</code></p>
+  <p><b>Generation:</b>This will be generated automatically from the BCP 47 code.</p>
+</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>languageName</td>
+<td>yes</td>
+<td>
+  <p><b>string</b>, the name of the language subtag in the BCP 47 code.</p>
+  <p><b>Example:</b><code>"languageName": "Central Atlas Tamazight"</code></p>
+  <p><b>Generation:</b>This will be generated automatically from the BCP 47 code.</p>
+</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>scriptName</td>
+<td></td>
+<td>
+  <p><b>string</b>, the name of the script subtag in the BCP 47 code.</p>
+  <p><b>Example:</b><code>"scriptName": "Tifinagh"</code></p>
+  <p><b>Generation:</b>This will be generated automatically from the BCP 47 code.</p>
+</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>regionName</td>
+<td></td>
+<td>
+  <p><b>string</b>, the name of the region subtag in the BCP 47 code.</p>
+  <p><b>Example:</b><code>"regionName": "Morocco"</code></p>
+  <p><b>Generation:</b>This will be generated automatically from the BCP 47 code.</p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -714,5 +756,5 @@ many of these fields will typically be generated automatically from the compiled
   <dd>Deprecate languages[] array. Update KeyboardLanguageInfo object to include subtag names.</dd>
 
   <dt>1.0.6 2019-09-06</dt>
-  <dd>Update KeyboardLanguageInfo documentation to remove erroneous fields displayName, languageName, scriptName, regionName.</dd>
+  <dd>No changes (originally in <a href='https://github.com/keymanapp/help.keyman.com/pull/36'>#36</a> removed some unused fields but these are still in use. Reverted in 2020-06-10.).</dd>
 </dl>
