@@ -17,7 +17,7 @@ Apple Disk Image (.dmg) file. It should be installed according to the following 
    **Note**: On recent versions of macOS, the first time you enable Keyman by selecting Keyman
    from the menu, you will be prompted to give certain permissions to Keyman. It is
    important that you allow Keyman these permissions, otherwise it will not be able
-   to remap the keyboard.
+   to remap the keyboard. [More information on permissions](../help/configure-security)
 
 4. Click the input menu and switch to Keyman. Click the input menu again to see the
    installed keyboards in Keyman:Keyboards menu.

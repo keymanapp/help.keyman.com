@@ -3,11 +3,14 @@ title: How to configure macOS security options for Keyman
 ---
 
 Keyman requires access to your keyboard in order to translate input. In macOS Catalina, there
-are two different Privacy settings you will need to configure in order for Keyman to work
+are three different Privacy settings you will need to configure in order for Keyman to work
 correctly:
 
-* Privacy / Input Monitoring
-* Privacy / Accessibility
+* **Privacy** / **Input Monitoring**
+* **Privacy** / **Accessibility**
+* **Privacy** / **Files and Folders**
+
+The Keyman installer will configure these privacy settings for you, and prompt you to allow access for Keyman. If you do not allow access at that time, you will need to follow the steps here in order to use Keyman.
 
 Symptoms that you may experience if Security & Privacy is not configured correctly include:
 
@@ -42,6 +45,10 @@ macOS should prompt you the first time that Keyman needs access to Accessibility
 5. Select **Accessibility**, and ensure that Keyman is ticked there as well:
 
    ![Accessibility](../images/privacy_accessibility.png)
+
+6. Select **Files and Folders**, and ensure that Keyman has access to the **Documents** folder there:
+
+   ![Files and Folders](../images/privacy_files_and_folders.png)
 
 **Note:** You may be prompted to shut down Keyman in order for the changes to take
 effect. If so, follow the prompts to allow the system to close Keyman. You'll need
