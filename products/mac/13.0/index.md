@@ -21,6 +21,7 @@ asked questions, tutorials and videos.
 ## Reference
 
 * [Keyman Configuration](help/configuration)
+* [Configure macOS security for Keyman](help/configure-security)
 * [Uninstalling Keyman](help/uninstall-keyman)
 * [Version history](../version-history)
 
