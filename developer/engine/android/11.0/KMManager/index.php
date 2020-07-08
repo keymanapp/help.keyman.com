@@ -151,7 +151,7 @@
   <dt><code><a href='setKeyboardPickerFont.php'>setKeyboardPickerFont()</a></code></dt>
   <dd>sets the font for the keyboard picker menu</dd>
 
-  <dt><code><a href='setKeymanLicense.php'>setKeymanLicense()</a></code></dt>
+  <dt><code><strike>setKeymanLicense()</strike> (Deprecated)</code></dt>
   <dd>sets the developer license/key pair to unlock Keyman Engine</dd>
 
   <dt><code><a href='setShouldAllowSetKeyboard.php'>setShouldAllowSetKeyboard()</a></code></dt>

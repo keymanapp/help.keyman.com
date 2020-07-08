@@ -35,7 +35,6 @@
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     // ...
-    KMManager.setKeymanLicence("********", "********");
     KMManager.initialize(this, KeyboardType.KEYBOARD_TYPE_INAPP);
     // ...
     // do not call setContentView before initializing the Keyman manager.
