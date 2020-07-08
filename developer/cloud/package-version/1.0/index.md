@@ -12,12 +12,12 @@ GET https://api.keyman.com/package-version?keyboard=<id>&model=<id>&platform=<pl
 
 # Parameters
 
-* `keyboard`: keyboards to query
-  * `<id>`: keyboard ID for the first keyboard
+* `keyboard`: packaged keyboards to query
+  * `<id>`: package ID for the first keyboard package. This is not necessarily the same as the keyboard ID (e.g. a package can contain multiple keyboards)
   * This parameter can be repeated, and/or multiple ids can be separated by commas
   * This parameter is optional.
-* `model`: lexical models to query
-  * `<id>`: lexical model ID for the first lexical model
+* `model`: packaged lexical models to query
+  * `<id>`: lexical model ID for the first lexical model package (this is same as package ID, minus the `.model` pre-extension)
   * This parameter can be repeated, and/or multiple ids can be separated by commas
   * This parameter is optional.
 * `platform`: which platform must be supported for updates
@@ -29,9 +29,14 @@ GET https://api.keyman.com/package-version?keyboard=<id>&model=<id>&platform=<pl
 
 * JSON blob or HTTP/400 on invalid parameters
 
-The valid blob will contain latest version and url for the keyboards/lexical models.
+The valid blob will contain latest version and url for the packages for each keyboards/lexical models.
 
-## Sample response (annotated)
+## Sample response
+
+```sh
+  curl -s 'https://api.keyman.com/package-version?platform=ios&keyboard=khmer_angkor&keyboard=sil_euro_latin&keyboard=foo&keyboard=bar&model=nrc.en.mtnt'
+```
+
 ```json
 {
   "keyboards": {
