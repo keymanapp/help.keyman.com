@@ -6,7 +6,7 @@
     if($self == '/knowledge-base/index.php' && !empty($id)) {
       // Knowledge Base Article
       require_once('includes/com.keyman.help.kb.inc.php');
-      return $base."/knowledge-base/".com\keyman\help\kb\filename_from_id($id);
+      return $base."/knowledge-base/".\com\keyman\help\kb\filename_from_id($id);
     }
     else if($self == '/_includes/md/mdhost.php') {
       // Markdown file
