@@ -67,6 +67,9 @@
   <dt><code><a href='getCurrentKeyboardInfo.php'>getCurrentKeyboardInfo()</a></code></dt>
   <dd>returns information dictionary of the current keyboard</dd>
 
+  <dt><code><a href='getDefaultKeyboard.php'>getDefaultKeyboard()</a></code></dt>
+  <dd>returns the default fallback keyboard if none have been added</dd>
+
   <dt><code><a href='getFontTypeface.php'>getFontTypeface()</a></code></dt>
   <dd>creates a new typeface from the specified font filename</dd>
 
@@ -181,6 +184,9 @@
   <dt><code><a href='setDebugMode.php'>setDebugMode()</a></code></dt>
   <dd>enables or disables debugging of Keyman Engine</dd>
 
+  <dt><code><a href='setDefaultKeyboard.php'>setDefaultKeyboard()</a></code></dt>
+  <dd>sets the default fallback keyboard to use if none have been added</dd>
+
   <dt><code><a href='setGlobeKeyAction.php'>setGlobeKeyAction()</a></code></dt>
   <dd>sets an action type for the 'Globe' key</dd>
 
@@ -211,7 +217,7 @@
   <dt><code><a href='showKeyboardPicker.php'>showKeyboardPicker()</a></code></dt>
   <dd>displays the keyboard picker menu</dd>
 
-  <dt><code><a href='showLanguageList.php'>showLanguageList()</a></code></dt>
+  <dt><code><strike>showLanguageList()</strike> (Deprecated)</code></dt>
   <dd>displays the language list</dd>
 
   <dt><code><a href='switchToNextKeyboard.php'>switchToNextKeyboard()</a></code></dt>
