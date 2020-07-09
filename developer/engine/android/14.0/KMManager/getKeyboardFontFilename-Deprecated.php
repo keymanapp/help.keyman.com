@@ -6,10 +6,10 @@
     head(['title' => $class.'.'.$method.'()']);
 ?>
 
-<h1>KMManager.getKeyboardFontFilename()</h1>
+<h1>KMManager.getKeyboardFontFilename() (Deprecated)</h1>
 
 <h2 id="Summary" name="Summary">Summary</h2>
-<p>The <code><strong><?php echo $method.'()' ?></strong></code> method returns the selected keyboard's font filename.</p>
+<p>(Deprecated) The <code><strong><?php echo $method.'()' ?></strong></code> method returns the selected keyboard's font filename.</p>
 
 <h2 id="Syntax" name="Syntax">Syntax</h2>
 <pre class="language-javascript"><code><?php echo $methodSyntax ?></code></pre>

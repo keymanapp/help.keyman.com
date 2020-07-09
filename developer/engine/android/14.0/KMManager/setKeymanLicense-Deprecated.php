@@ -8,10 +8,10 @@
     head(['title' => $class.'.'.$method.'()']);
 ?>
 
-<h1>KMManager.setKeymanLicense()</h1>
+<h1>KMManager.setKeymanLicense() (Deprecated)</h1>
 
 <h2 id="Summary" name="Summary">Summary</h2>
-<p>The <code><strong><?php echo $method.'()' ?></strong></code> method sets the developer license/key pair to unlock Keyman Engine.</p>
+<p>(Deprecated) The <code><strong><?php echo $method.'()' ?></strong></code> method sets the developer license/key pair to unlock Keyman Engine.</p>
 
 <h2 id="Syntax" name="Syntax">Syntax</h2>
 <pre class="language-javascript"><code><?php echo $methodSyntax ?></code></pre>
