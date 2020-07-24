@@ -12,6 +12,6 @@
         "Composer\\Config::disableProcessTimeout",
         "npx broken-link-checker http://help.keyman.com.local --ordered --recursive --host-requests 10 -e --filter-level 3"
       ],
-      "lint": "find . -name '*.php' | grep -v '/vendor/' | xargs -n 1 -d '\\n' php -l | grep -v 'No syntax errors detected'"
+      "lint": "find . -name '*.php' | grep -v '/vendor/' | xargs -n 1 -d '\\n' php -l"
     }
 }
