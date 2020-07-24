@@ -83,12 +83,12 @@ jobs:
     - name: Lint
       shell: bash
       run: |
-        ( find . -name '*.php' | grep -v '/vendor/' | xargs -n 1 -d '\n' php -l | (grep -v "No syntax errors detected"; return ${PIPESTATUS[2]} )
+        ( find . -name '*.php' | grep -v '/vendor/' | xargs -n 1 -d '\n' php -l | grep -v "No syntax errors detected"; exit ${PIPESTATUS[2]} )
 
     - name: Check broken links
       shell: bash
       run: |
-        ( npx broken-link-checker http://localhost:8888 --ordered --recursive --host-requests 50 -e --filter-level 3 | grep -v "───OK───" | grep -ve "^Finished\!"; return ${PIPESTATUS[0]} )
+        ( npx broken-link-checker http://localhost:8888 --ordered --recursive --host-requests 50 -e --filter-level 3 | grep -v "───OK───" | grep -ve "^Finished\!"; exit ${PIPESTATUS[0]} )
 
     #
     # If any of the tests fail, let's grab a bit more detail on the environment
