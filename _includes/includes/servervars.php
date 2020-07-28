@@ -1,30 +1,33 @@
 <?php /*
   Name:             servervars
   Copyright:        Copyright (C) 2005 Tavultesoft Pty Ltd.
-  Documentation:    
-  Description:      
+  Documentation:
+  Description:
   Create Date:      17 Oct 2009
 
   Modified Date:    17 Oct 2009
   Authors:          mcdurdin
-  Related Files:    
-  Dependencies:     
+  Related Files:
+  Dependencies:
 
-  Bugs:             
-  Todo:             
-  Notes:            
+  Bugs:
+  Todo:
+  Notes:
   History:          17 Oct 2009 - mcdurdin - Alter help base dir
                     20 Jun 2014 - jmdurdin - correct local server references, add codebox() function
                     13 Jun 2017 - jahorton - Modified codebox() function to use <pre><code>
 */
+  require_once __DIR__ . '/../autoload.php';
+
   if(file_exists($_SERVER['DOCUMENT_ROOT'].'/cdn/deploy/cdn.php')) {
     require_once($_SERVER['DOCUMENT_ROOT'].'/cdn/deploy/cdn.php');
   }
-  
+
   $site_url = 'help.keyman.com';
-  
-  // We allow the site to strip off everything post its basic siteurl 
-  
+  $keyman_com = \Keyman\Site\Common\KeymanHosts::Instance()->keyman_com;
+
+  // We allow the site to strip off everything post its basic siteurl
+
   function GetHostSuffix() {
     global $site_url;
     $name = $_SERVER['SERVER_NAME'];
@@ -33,18 +36,18 @@
     }
     return '';
   }
-  
+
   $site_suffix = GetHostSuffix();
 
-  // $site_protocol is used only by util.php at this time. 
+  // $site_protocol is used only by util.php at this time.
   $site_protocol = (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443) ? 'https://' : 'http://';
-    
+
   if($site_suffix == '') {
     $TestServer = false;
-   
+
     $site_tavultesoft = 'www.tavultesoft.com';
     $site_securetavultesoft = 'secure.tavultesoft.com';
-    $resourceDomain="r.keymanweb.com"; 
+    $resourceDomain="r.keymanweb.com";
   } else {
     $TestServer = true;
     $site_tavultesoft = 'testsite.tavultesoft.local';
@@ -76,7 +79,7 @@
       return "http://$downloadsDomain/$file";
     }
   }
-  
+
   /* The following function is needed for some pages but was only contained in an obsolete header file */
   $codeboxcount = 0;
   function codebox($s, $lang='')
@@ -91,5 +94,5 @@
     return <<<END
 <pre><code id='code$codeboxcount' $lang style='width:100%'>$s</code></pre>
 END;
-  } 
+  }
 ?>
