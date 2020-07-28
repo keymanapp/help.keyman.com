@@ -51,10 +51,11 @@ context or key section of the rule, and will match any character in the specifie
 </code></pre>
 
 <p>The <code>index()</code> statement is used to look up a character in a store at the index where a specified <code>any()</code> statement matched
-a character. The <code>any()</code> statement used to obtain the index is referenced by its position in the context (and key) part of the rule. 
-In the first example line,The <code>any()</code> statement is the first element (character or statement) in the rule, so the offset is 1. In  the second example line, 
-if the three dots represent one single character or statement, the <code>any()</code> is the second element of the rule so the offset is 2.  Since the context part of a rule
-can contain several characters or statements, the offset for the <code>any()</code> could be greater than two. 
+a character. The <code>any()</code> statement used to obtain the index is referenced by its character position in the context (and key) part of the rule. 
+In the first example line, the <code>any()</code> statement is the first element (character or statement) in the rule, so the offset is 1. In 
+the second example line, if the three dots represent one single character or statement, the <code>any()</code> is the second element of the
+rule so the offset is 2.  Since the context part of a rule can contain several characters or statements, the offset for the <code>any()</code>
+could be greater than two. 
 
 <pre><code>index(<var>storeName</var>, <var>offset</var>)
 </code></pre>
