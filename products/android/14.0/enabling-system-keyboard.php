@@ -26,24 +26,24 @@ head([
   The screenshots below are of a device running Android 9.0 Pie.
 </p>
 <p>
-  <img class="phone" id="settings1-ap" src="<?= cdn("img/app/13.0/settings1-ap.png")?>">
-  <img class="tablet" id="settings1-at" src="<?= cdn("img/app/13.0/settings1-at.png")?>">
+  <img class="phone" id="settings1-ap" src="<?= cdn("img/app/14.0/settings1-ap.png")?>">
+  <img class="tablet" id="settings1-at" src="<?= cdn("img/app/14.0/settings1-at.png")?>">
 </p>
 <br/>
 <p>
   Step 2) Select 'Get Started' and then select 'Enable Keyman as system-wide keyboard'.
 </p>
 <p>
-  <img class="phone" id="settings2-ap" src="<?= cdn("img/app/13.0/settings2-ap.png")?>">
-  <img class="tablet" id="settings2-at" src="<?= cdn("img/app/13.0/settings2-at.png")?>">
+  <img class="phone" id="settings2-ap" src="<?= cdn("img/app/14.0/settings2-ap.png")?>">
+  <img class="tablet" id="settings2-at" src="<?= cdn("img/app/14.0/settings2-at.png")?>">
 </p>
 <br/>
 <p>
   This will open an Android settings screen for 'Available virtual keyboard'.
 </p>
 <p>
-  <img class="phone" id="settings3-ap" src="<?= cdn("img/app/13.0/settings3-ap.png")?>">
-  <img class="tablet" id="settings3-at" src="<?= cdn("img/app/13.0/settings3-at.png")?>">
+  <img class="phone" id="settings3-ap" src="<?= cdn("img/app/14.0/settings3-ap.png")?>">
+  <img class="tablet" id="settings3-at" src="<?= cdn("img/app/14.0/settings3-at.png")?>">
 </p>
 <br/>
 <p>
@@ -51,13 +51,13 @@ head([
   This will bring up two confirmation dialogs.
 </p>
 <p>
-  <img class="phone" id="settings4-ap" src="<?= cdn("img/app/13.0/settings4-ap.png")?>">
-  <img class="tablet" id="settings4-at" src="<?= cdn("img/app/13.0/settings4-at.png")?>">
+  <img class="phone" id="settings4-ap" src="<?= cdn("img/app/14.0/settings4-ap.png")?>">
+  <img class="tablet" id="settings4-at" src="<?= cdn("img/app/14.0/settings4-at.png")?>">
 </p>
 <br/>
 <p>
-  <img class="phone" id="settings5-ap" src="<?= cdn("img/app/13.0/settings5-ap.png")?>">
-  <img class="tablet" id="settings5-at" src="<?= cdn("img/app/13.0/settings5-at.png")?>">
+  <img class="phone" id="settings5-ap" src="<?= cdn("img/app/14.0/settings5-ap.png")?>">
+  <img class="tablet" id="settings5-at" src="<?= cdn("img/app/14.0/settings5-at.png")?>">
 </p>
 <br/>
 <p>
@@ -65,16 +65,16 @@ head([
   you'll see a keyboard icon at the bottom right.
 </p>
 <p>
-  <img class="phone" id="settings6-ap" src="<?= cdn("img/app/13.0/settings6-ap.png")?>">
-  <img class="tablet" id="settings6-at" src="<?= cdn("img/app/13.0/settings6-at.png")?>">
+  <img class="phone" id="settings6-ap" src="<?= cdn("img/app/14.0/settings6-ap.png")?>">
+  <img class="tablet" id="settings6-at" src="<?= cdn("img/app/14.0/settings6-at.png")?>">
 </p>
 <br/>
 <p>
   Click the keyboard icon whenever you want to change the current system keyboard.
 </p>
 <p>
-  <img class="phone" id="settings7-ap" src="<?= cdn("img/app/13.0/settings7-ap.png")?>">
-  <img class="tablet" id="settings7-at" src="<?= cdn("img/app/13.0/settings7-at.png")?>">
+  <img class="phone" id="settings7-ap" src="<?= cdn("img/app/14.0/settings7-ap.png")?>">
+  <img class="tablet" id="settings7-at" src="<?= cdn("img/app/14.0/settings7-at.png")?>">
 </p>
 
 <?php

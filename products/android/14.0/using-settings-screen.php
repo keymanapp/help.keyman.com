@@ -33,8 +33,8 @@ head([
 </p><p>
   Click the menu for additional options. Select 'Settings'
 </p><p>
-  <img class="phone" id="settings-screen-ap" src="<?= cdn("img/app/13.0/settings-screen-ap.png")?>">
-  <img class="tablet" id="settings-screen-at" src="<?= cdn("img/app/13.0/settings-screen-at.png")?>">
+  <img class="phone" id="settings-screen-ap" src="<?= cdn("img/app/14.0/settings-screen-ap.png")?>">
+  <img class="tablet" id="settings-screen-at" src="<?= cdn("img/app/14.0/settings-screen-at.png")?>">
 </p><p>
   Each selection on the Keyman Settings screen is described in further detail below:
 </p>

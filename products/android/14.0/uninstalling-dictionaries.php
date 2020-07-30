@@ -38,7 +38,7 @@ head([
   From the Keyman Settings menu, select 'Installed languages'
 </p>
 <p>
-  <img id="settings-languages-ap" src="<?= cdn("img/app/13.0/settings-languages-ap.png")?>">
+  <img id="settings-languages-ap" src="<?= cdn("img/app/14.0/settings-languages-ap.png")?>">
 </p>
 <p>
   Step 3)
@@ -48,7 +48,7 @@ head([
   we will be removing the "MTNT Dictionary" for the English language.
 </p>
 <p>
-  <img id="settings-two-installed-languages-ap" src="<?= cdn("img/app/13.0/settings-two-installed-languages-ap.png")?>">
+  <img id="settings-two-installed-languages-ap" src="<?= cdn("img/app/14.0/settings-two-installed-languages-ap.png")?>">
 </p>
 <p>
   Step 4)
@@ -58,7 +58,7 @@ head([
   Select the dictionary you want to uninstall at the bottom of the page.
 </p>
 <p>
-  <img id="english-settings-ap" src="<?= cdn("img/app/13.0/english-settings-ap.png")?>">
+  <img id="english-settings-ap" src="<?= cdn("img/app/14.0/english-settings-ap.png")?>">
 </p>
 <p>
   Step 5)
@@ -68,7 +68,7 @@ head([
   Select the dictionary to display the info menu.
 </p>
 <p>
-  <img id="english-dictionaries-ap" src="<?= cdn("img/app/13.0/english-dictionaries-ap.png")?>">
+  <img id="english-dictionaries-ap" src="<?= cdn("img/app/14.0/english-dictionaries-ap.png")?>">
 </p>
 <p>
   Step 6)
@@ -78,7 +78,7 @@ head([
   Select 'Uninstall dictionary' to get a prompt to delete the dictionary.
 </p>
 <p>
-  <img id="english-dictionary-info-ap" src="<?= cdn("img/app/13.0/english-dictionary-info-ap.png")?>">
+  <img id="english-dictionary-info-ap" src="<?= cdn("img/app/14.0/english-dictionary-info-ap.png")?>">
 </p>
 <p>
   Step 7)
@@ -87,13 +87,13 @@ head([
   Press "Delete" to uninstall the dictionary.
 </p>
 <p>
-  <img id="confirm-english-dictionary-delete-ap" src="<?= cdn("img/app/13.0/confirm-english-dictionary-delete-ap.png")?>">
+  <img id="confirm-english-dictionary-delete-ap" src="<?= cdn("img/app/14.0/confirm-english-dictionary-delete-ap.png")?>">
 </p>
 <p>
   You'll see a notification when the dictionary is deleted.
 </p>
 <p>
-  <img id="uninstall-dictionary-notification-ap" src="<?= cdn("img/app/13.0/uninstall-dictionary-notification-ap.png")?>">
+  <img id="uninstall-dictionary-notification-ap" src="<?= cdn("img/app/14.0/uninstall-dictionary-notification-ap.png")?>">
 </p>
 
 <?php

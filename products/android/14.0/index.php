@@ -34,36 +34,36 @@ head([
   </tr>
   <tr>
     <td>
-      <img class="phone" id="install-keyboard-ap" src="<?= cdn("img/app/13.0/globe-ap.png")?>">
-      <img class="tablet" id="install-keyboard-at" src="<?= cdn("img/app/13.0/globe-at.png")?>">
+      <img class="phone" id="install-keyboard-ap" src="<?= cdn("img/app/14.0/globe-ap.png")?>">
+      <img class="tablet" id="install-keyboard-at" src="<?= cdn("img/app/14.0/globe-at.png")?>">
     </td>
     <td>Select another language/keyboard</td>
   </tr>
   <tr>
     <td>
-      <img class="phone" id="hide-keyboard-ap" src="<?= cdn("img/app/13.0/hide-keyboard-ap.png")?>">
-      <img class="tablet" id="hide-keyboard-at" src="<?= cdn("img/app/13.0/hide-keyboard-at.png")?>">
+      <img class="phone" id="hide-keyboard-ap" src="<?= cdn("img/app/14.0/hide-keyboard-ap.png")?>">
+      <img class="tablet" id="hide-keyboard-at" src="<?= cdn("img/app/14.0/hide-keyboard-at.png")?>">
     </td>
     <td>Hide the keyboard</td>
   </tr>
   <tr>
     <td>
-      <img class="phone" id="backspace-ap" src="<?= cdn("img/app/13.0/backspace-ap.png")?>">
-      <img class="tablet" id="backspace-at" src="<?= cdn("img/app/13.0/backspace-at.png")?>">
+      <img class="phone" id="backspace-ap" src="<?= cdn("img/app/14.0/backspace-ap.png")?>">
+      <img class="tablet" id="backspace-at" src="<?= cdn("img/app/14.0/backspace-at.png")?>">
     </td>
     <td>Backspace</td>
   </tr>
   <tr>
     <td>
-      <img class="phone" id="return-ap" src="<?= cdn("img/app/13.0/return-ap.png")?>">
-      <img class="tablet" id="return-at" src="<?= cdn("img/app/13.0/return-at.png")?>">
+      <img class="phone" id="return-ap" src="<?= cdn("img/app/14.0/return-ap.png")?>">
+      <img class="tablet" id="return-at" src="<?= cdn("img/app/14.0/return-at.png")?>">
     </td>
     <td>Return</td>
   </tr>
   <tr>
     <td>
-      <img class="phone" id="shift-ap" src="<?= cdn("img/app/13.0/shift-ap.png")?>">
-      <img class="tablet" id="shift-at" src="<?= cdn("img/app/13.0/shift-at.png")?>">
+      <img class="phone" id="shift-ap" src="<?= cdn("img/app/14.0/shift-ap.png")?>">
+      <img class="tablet" id="shift-at" src="<?= cdn("img/app/14.0/shift-at.png")?>">
     </td>
     <td>Shift key. Long press this key to access the CTRL, ALT and CTRL ALT keys
       (which can access additional key layers)
@@ -71,8 +71,8 @@ head([
   </tr>
   <tr>
     <td>
-      <img class="phone" id="touch-hold-ap" src="<?= cdn("img/app/13.0/touch-hold-ap.png")?>">
-      <img class="tablet" id="touch-hold-at" src="<?= cdn("img/app/13.0/touch-hold-at.png")?>">
+      <img class="phone" id="touch-hold-ap" src="<?= cdn("img/app/14.0/touch-hold-ap.png")?>">
+      <img class="tablet" id="touch-hold-at" src="<?= cdn("img/app/14.0/touch-hold-at.png")?>">
     </td>
     <td>Keys with a small dot in the top right corner indicate a long press key. Access
       further functionality by long pressing the key
@@ -82,39 +82,39 @@ head([
     <th colspan="2" id="toolbar-ap">Toolbar Icons</th>
   </tr>
   <tr>
-    <td><img id="share-ap" src="<?= cdn("img/app/13.0/share-a.png")?>"></td>
+    <td><img id="share-ap" src="<?= cdn("img/app/14.0/share-a.png")?>"></td>
     <td>Share your text via Mail, Text, or Twitter</td>
   </tr>
   <tr>
-    <td><img id="browser-ap" src="<?= cdn("img/app/13.0/browser-a.png")?>"></td>
+    <td><img id="browser-ap" src="<?= cdn("img/app/14.0/browser-a.png")?>"></td>
     <td>Open the Keyman Browser to use the web in your language</td>
   </tr>
   <tr>
-    <td><img id="menu-ap" src="<?= cdn("img/app/13.0/menu-icon-a.png")?>"></td>
+    <td><img id="menu-ap" src="<?= cdn("img/app/14.0/menu-icon-a.png")?>"></td>
     <td>Open the menu for additional options</td>
   </tr>
   <tr>
-    <td><img id="font-size-ap" src="<?= cdn("img/app/13.0/font-size-a.png")?>"></td>
+    <td><img id="font-size-ap" src="<?= cdn("img/app/14.0/font-size-a.png")?>"></td>
     <td>Adjust the font size</td>
   </tr>
   <tr>
-    <td><img id="delete-ap" src="<?= cdn("img/app/13.0/delete-a.png")?>"></td>
+    <td><img id="delete-ap" src="<?= cdn("img/app/14.0/delete-a.png")?>"></td>
     <td>Delete all current text</td>
   </tr>
   <tr>
-    <td><img id="info-ap" src="<?= cdn("img/app/13.0/info-a.png")?>"></td>
+    <td><img id="info-ap" src="<?= cdn("img/app/14.0/info-a.png")?>"></td>
     <td>Load this help page</td>
   </tr>
   <tr>
-    <td><img id="get-started-ap" src="<?= cdn("img/app/13.0/get-started-a.png")?>"></td>
+    <td><img id="get-started-ap" src="<?= cdn("img/app/14.0/get-started-a.png")?>"></td>
     <td>Open the initial setup screen</td>
   </tr>
   <tr>
-    <td><img id="settings-ap" src="<?= cdn("img/app/13.0/settings-a.png")?>"></td>
+    <td><img id="settings-ap" src="<?= cdn("img/app/14.0/settings-a.png")?>"></td>
     <td>Open the <a href="using-settings-screen.php">Keyman Settings</a> screen</td>
   </tr>
   <tr>
-    <td><img id="cloud-download-ap" src="<?= cdn("img/app/13.0/ic_cloud_download.png")?>"></td>
+    <td><img id="cloud-download-ap" src="<?= cdn("img/app/14.0/ic_cloud_download.png")?>"></td>
     <td>Update available to download for keyboard / dictionary</td>
   </tr>
 </table>
@@ -124,14 +124,14 @@ head([
   Step 1) Open the keyboard list by touching the globe key.
 </p>
 <p>
-  <img class="phone" id="keyboard-help1-ap" src="<?= cdn("img/app/13.0/globe-ap.png")?>">
-  <img class="tablet" id="keyboard-help1-at" src="<?= cdn("img/app/13.0/globe-at.png")?>">
+  <img class="phone" id="keyboard-help1-ap" src="<?= cdn("img/app/14.0/globe-ap.png")?>">
+  <img class="tablet" id="keyboard-help1-at" src="<?= cdn("img/app/14.0/globe-at.png")?>">
 </p>
 <br/>
 <p>
   Step 2) Touch the info icon for your keyboard.
 </p>
-<p><img id="keyboard-help2-ap" src="<?= cdn("img/app/13.0/info-a-gray.png")?>"></p>
+<p><img id="keyboard-help2-ap" src="<?= cdn("img/app/14.0/info-a-gray.png")?>"></p>
 <br/>
 
 <?php

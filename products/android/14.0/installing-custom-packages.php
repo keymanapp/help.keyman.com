@@ -29,8 +29,8 @@ head([
   Step 1) Click the link to your custom package file.
 </p>
 <p>
-  <img class="phone" id="dist-url-screen-ap" src="<?= cdn('img/app/13.0/dist-url-screen-ap.png')?>">
-  <img class="tablet" id="dist-url-screen-at" src="<?= cdn('img/app/13.0/dist-url-screen-at.png')?>">
+  <img class="phone" id="dist-url-screen-ap" src="<?= cdn('img/app/14.0/dist-url-screen-ap.png')?>">
+  <img class="tablet" id="dist-url-screen-at" src="<?= cdn('img/app/14.0/dist-url-screen-at.png')?>">
 </p>
 <p>
   Step 2) Once the KMP file is on your device, you will need to browse to the KMP file and select it.
@@ -38,14 +38,14 @@ head([
   <br/>
   From the Keyman Settings menu, select 'Add Keyboard from Device'.
 </p>
-<p><img id="settings-add-keyboard-from-device-ap" src="<?= cdn("img/app/13.0/settings-language-ap.png")?>"></p>
+<p><img id="settings-add-keyboard-from-device-ap" src="<?= cdn("img/app/14.0/settings-language-ap.png")?>"></p>
 <p>
   The device will launch a file browser where you'll browse to the directory of your KMP file.
   A common place to look is the "Downloads" folder.
 </p>
 <p>
-  <img class="phone" id="dist-file-browser-ap" src="<?= cdn('img/app/13.0/dist-file-browser-ap.png')?>">
-  <img class="tablet" id="dist-file-browser-at" src="<?= cdn('img/app/13.0/dist-file-browser-at.png')?>">
+  <img class="phone" id="dist-file-browser-ap" src="<?= cdn('img/app/14.0/dist-file-browser-ap.png')?>">
+  <img class="tablet" id="dist-file-browser-at" src="<?= cdn('img/app/14.0/dist-file-browser-at.png')?>">
 </p>
 <p>
   Selecting the KMP file should bring you to Step 3)
@@ -56,8 +56,8 @@ head([
   Keyman for Android won't need to ask for storage permission again, unless the user revokes or uninstalls the app.
 </p>
 <p>
-  <img class="phone" id="dist-storrage-permission-ap" src="<?= cdn("img/app/13.0/dist-storage-permission-ap.png")?>">
-  <img class="tablet" id="dist-storrage-permission-at" src="<?= cdn("img/app/13.0/dist-storage-permission-at.png")?>">
+  <img class="phone" id="dist-storrage-permission-ap" src="<?= cdn("img/app/14.0/dist-storage-permission-ap.png")?>">
+  <img class="tablet" id="dist-storrage-permission-at" src="<?= cdn("img/app/14.0/dist-storage-permission-at.png")?>">
 </p>
 <p>
   Older versions of Android grant Storage permissions at app installation time, so those users can skip this step.
@@ -71,8 +71,8 @@ head([
   "Install" button to install the entire keyboard package.
 </p>
 <p>
-  <img class="phone" id="dist-readme-ap" src="<?= cdn("img/app/13.0/dist-readme-ap.png")?>">
-  <img class="tablet" id="dist-readme-at" src="<?= cdn("img/app/13.0/dist-readme-at.png")?>">
+  <img class="phone" id="dist-readme-ap" src="<?= cdn("img/app/14.0/dist-readme-ap.png")?>">
+  <img class="tablet" id="dist-readme-at" src="<?= cdn("img/app/14.0/dist-readme-at.png")?>">
 </p>
 
 
@@ -86,16 +86,16 @@ head([
   This documentation helps you to get started using the keyboard.
 </p>
 <p>
-  <img class="phone" id="dist-welcome-ap" src="<?= cdn("img/app/13.0/dist-welcome-ap.png")?>">
-  <img class="tablet" id="dist-welcome-at" src="<?= cdn("img/app/13.0/dist-welcome-at.png")?>">
+  <img class="phone" id="dist-welcome-ap" src="<?= cdn("img/app/14.0/dist-welcome-ap.png")?>">
+  <img class="tablet" id="dist-welcome-at" src="<?= cdn("img/app/14.0/dist-welcome-at.png")?>">
 </p>
 <p>
   Click the "OK" button to finish installing the keyboard. You should be able to select it from the Keyman globe
   and start typing with it in any app.
 </p>
 <p>
-  <img class="phone" id="dist-install1-ap" src="<?= cdn("img/app/13.0/dist-install1-ap.png")?>">
-  <img class="tablet" id="dist-install1-at" src="<?= cdn("img/app/13.0/dist-install1-at.png")?>">
+  <img class="phone" id="dist-install1-ap" src="<?= cdn("img/app/14.0/dist-install1-ap.png")?>">
+  <img class="tablet" id="dist-install1-at" src="<?= cdn("img/app/14.0/dist-install1-at.png")?>">
 </p>
 <p>
   To learn how to create a custom installable keyboard,
@@ -114,8 +114,8 @@ head([
   storage permission. The screenshot below is from Android 9.0 Pie.
 </p>
 <p>
-  <img class="phone" id="keyman-storage-permission-ap" src="<?= cdn("img/app/13.0/keyman-storage-permission-ap.png")?>">
-  <img class="tablet" id="keyman-storage-permission-at" src="<?= cdn("img/app/13.0/keyman-storage-permission-at.png")?>">
+  <img class="phone" id="keyman-storage-permission-ap" src="<?= cdn("img/app/14.0/keyman-storage-permission-ap.png")?>">
+  <img class="tablet" id="keyman-storage-permission-at" src="<?= cdn("img/app/14.0/keyman-storage-permission-at.png")?>">
 </p>
 
 <?php

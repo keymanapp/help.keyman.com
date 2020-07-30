@@ -30,8 +30,8 @@ head([
 <p>
   With the keyboard visible, touch the globe key:
 <p>
-  <img class="phone" id="globe-ap" src="<?= cdn("img/app/13.0/globe-ap.png")?>">
-  <img class="tablet" id="globe-at" src="<?= cdn("img/app/13.0/globe-at.png")?>">
+  <img class="phone" id="globe-ap" src="<?= cdn("img/app/14.0/globe-ap.png")?>">
+  <img class="tablet" id="globe-at" src="<?= cdn("img/app/14.0/globe-at.png")?>">
 </p>
 <p>
   This will bring up a list of all currently installed languages (the default is English
