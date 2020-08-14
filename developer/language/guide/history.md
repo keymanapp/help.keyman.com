@@ -66,7 +66,7 @@ title: Keyman language history
 *   Deprecated [`&ethnologuecode` store](../reference/ethnologuecode)
 *   Deprecated [`&language` store](../reference/language)
 *   Deprecated [`&windowslanguages` store](../reference/windowslanguages)
-*   Left and right modifiers are supported in KeymanWeb 10.0 and later
+*   Left and right modifiers and Caps Lock modifier are supported for Virtual Keys in KeymanWeb 10.0 and later
 *   Deadkeys now work 100% identically in KeymanWeb 10.0 and Keyman Desktop 10.0, in particular using multiple deadkeys in a row.
 
 ## Keyman 11
