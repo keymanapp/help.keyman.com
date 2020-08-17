@@ -51,8 +51,11 @@ context or key section of the rule, and will match any character in the specifie
 </code></pre>
 
 <p>The <code>index()</code> statement is used to look up a character in a store at the index where a specified <code>any()</code> statement matched
-a character. The <code>any()</code> statement used to obtain the index is referenced by its position in the context (and key) part of the rule,
-a 1-based offset.</p>
+a character. The <code>any()</code> statement used to obtain the index is referenced by its character position in the context (and key) part of the rule. 
+In the first example line, the <code>any()</code> statement is the first element (character or statement) in the rule, so the offset is 1. In 
+the second example line, if the three dots represent one single character or statement, the <code>any()</code> is the second element of the
+rule so the offset is 2.  Since the context part of a rule can contain several characters or statements, the offset for the <code>any()</code>
+could be greater than two. 
 
 <pre><code>index(<var>storeName</var>, <var>offset</var>)
 </code></pre>
@@ -77,6 +80,13 @@ into the combined character:</p>
 <pre><code>store(vowel) 'aeiouAEIOU'
 store(vowel_circum) 'âêîôûÂÊÎÔÛ'
 any(vowel) + '^' > index(vowel_circum, 1)
+</code></pre>
+
+<p>If we wanted to type the circumflex before the vowel, the code would be: (note the offset in the index statement is 2, not 1)</p>
+  
+<pre><code>store(vowel) 'aeiouAEIOU'
+store(vowel_circum) 'âêîôûÂÊÎÔÛ'
+'^' +  any(vowel) > index(vowel_circum, 2)
 </code></pre>
 
 <p>Another example of using <code>any()</code> and <code>index()</code> is given in the
