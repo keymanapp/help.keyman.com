@@ -9,7 +9,7 @@
         <span class="inlinemediaobject"><img src="desktop_images/menu.png"></span>
       </p></li><li><p>Select Configuration.</p></li><li><p>Select the Keyboard Layouts tab.</p><p>
         <span class="inlinemediaobject"><img src="desktop_images/tab-layout.png"></span>
-      </p></li><li><p>Click on the uninstall icon <span class="inlinemediaobject"><img src="desktop_images/icon-uninstall.png"></span> for the keyboard you want to uninstall.</p></li><li><p>A message box is displayed asking you to confirm this is the package or keyboard layout that you wish to uninstall. Click <span class="guibutton">OK</span>.</p></li><li><p>Click <span class="guibutton">OK</span>.</p></li></ol></div><p>The Keyman keyboard is now removed from Keyman Desktop.</p><h3><a name="id581244"></a>Related Topics</h3><div class="itemizedlist"><ul type="disc"><li><p>
+      </p></li><li><p>Click on the uninstall icon <span class="inlinemediaobject"><img src="desktop_images/icon-uninstall.png"></span> for the keyboard you want to uninstall.</p></li><li><p>A message box is displayed asking you to confirm this is the package or keyboard layout that you wish to uninstall. Click <span class="guibutton">OK</span>.</p></li><li><p>Click <span class="guibutton">OK</span>.</p></li></ol></div><p>The Keyman keyboard is now removed from Keyman Desktop.</p><h3><a name="id578341"></a>Related Topics</h3><div class="itemizedlist"><ul type="disc"><li><p>
         <a class="xref" href="basic_disable_keyboard.php" title="Keyboard Task - Enable and Disable a Keyboard">Keyboard Task - Enable and Disable a Keyboard</a>
       </p></li><li><p>
         <a class="xref" href="basic_enable_keyboard.php" title="Keyboard Task - Turn on a Keyboard">Keyboard Task - Turn on a Keyboard</a>
