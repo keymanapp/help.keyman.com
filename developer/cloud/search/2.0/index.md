@@ -13,7 +13,7 @@ Note: unlike the [Search 1.0 endpoint](../1.0), this endpoint always returns an 
   * `id:`: search only in keyboard identifiers
   * `legacy:`: search only for a specific legacy (integer) identifier
   * `l:`: search only for language names (including dialect and alternate names)
-  * `l:id:`: search only for language identifiers (ISO 639)
+  * `l:id:`: search only for language identifiers (BCP 47)
   * `c:`: search only for country names
   * `c:id:` search only for two-letter country identifiers (ISO 3166)
   * `s:`: search only for script names
