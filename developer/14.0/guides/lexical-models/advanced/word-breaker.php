@@ -28,7 +28,7 @@ text to determine where the words are. </p>
 
 <ul>
   <li> If your language uses its writing system in an unconventional way
-       (e.g., use spaces to separate words in Thai, Laos, Burmese, or Khmer),
+       (e.g., use spaces to separate words in Thai, Lao, Burmese, or Khmer),
        you can <a href="#overrides">override the script's default behaviour</a> </li>
   <li> If the default word breaker creates <strong>too many splits</strong>,
        you can <a href="#join">choose which strings join words together</a>. </li>
@@ -53,8 +53,8 @@ option.</p>
 <h3> Break words at spaces </h3>
 
 <p> This applies only to languages that borrow the <strong>Burmese</strong>,
-<strong>Khmer</strong>, <strong>Laos</strong>, or <strong>Thai</strong>
-scripts. Ordinarily, these scripts do <em>not</em> use spaces in between
+<strong>Khmer</strong>, <strong>Lao</strong>, or <strong>Thai</strong>
+scripts. The majority languages for these scripts do <em>not</em> use spaces in between
 words; hence, the default word breaker will produce undesired results when
 breaking words in these scripts. However, if your language is written in one
 of these scripts and <em>does</em> use spaces in between words, then you can
@@ -67,7 +67,7 @@ to ensure word breaks do not occur in the middle of words, but instead, at space
   sources: ['wordlist.tsv'],
   wordBreaker: {
     use: 'default',  // we want to use the default word breaker, BUT!
-    // Override the default for Burmese, Khmer, Laos, or Thai:
+    // Override the default for Burmese, Khmer, Lao, or Thai:
     overrideScriptDefaults: 'break-words-at-spaces',
   }
 };
