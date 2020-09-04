@@ -10,7 +10,10 @@
 
 <h2>Introduction</h2>
 
-<p>The <code>IKeymanKeyboardLanguagesInstalled::InstallByLangID</code> adds the keyboard layout to the referenced LangID language code in Windows. If the 
+<p><b>Deprecated:</b> this function is deprecated. Instead, use the functions in
+<a href="../IKeymanKeyboardLanguageInstalled2"><code>IKeymanKeyboardLanguageInstalled2</code></a>.</p>
+
+<p>The <code>IKeymanKeyboardLanguagesInstalled::InstallByLangID</code> adds the keyboard layout to the referenced LangID language code in Windows. If the
 language code is not yet installed, this method installs it as well.</p>
 
 <p>This method is asynchronous.</p>

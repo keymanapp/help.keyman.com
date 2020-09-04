@@ -28,10 +28,10 @@ This list is the set of languages currently installed for use, or suggested for 
 
 <dl>
   <dt><a href='Install'><code>Install()</code></a></dt>
-  <dd>Associates the keyboard layout with the referenced BCP 47 language code in Windows, and if necessary installs the language as well.</dd>
+  <dd><b>Deprecated.</b> Associates the keyboard layout with the referenced BCP 47 language code in Windows, and if necessary installs the language as well.</dd>
 </dl>
 
 <dl>
   <dt><a href='InstallByLangID'><code>InstallByLangID()</code></a></dt>
-  <dd>Associates the keyboard layout with the referenced legacy LANGID language code in Windows, and if necessary installs the language as well.</dd>
+  <dd><b>Deprecated.</b> Associates the keyboard layout with the referenced legacy LANGID language code in Windows, and if necessary installs the language as well.</dd>
 </dl>

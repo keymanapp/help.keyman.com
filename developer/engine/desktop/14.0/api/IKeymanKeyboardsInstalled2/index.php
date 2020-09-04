@@ -22,3 +22,7 @@
   <dt><a href='Install2'><code>Install2()</code></a></dt>
   <dd>Installs the referenced keyboard file into Keyman Engine for Windows, with option to install default language at same time.</dd>
 </dl>
+
+<h2>History</h2>
+
+<p>Added in Keyman Engine for Windows 14.0.</p>
