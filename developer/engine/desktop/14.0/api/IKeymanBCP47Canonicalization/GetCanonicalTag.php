@@ -11,7 +11,7 @@
 <h2>Introduction</h2>
 
 <p>The <code>IKeymanBCP47Canonicalization::GetCanonicalTag</code> method returns a canonical tag according to data from
-<a href="">SIL langtags.json.</a>. The method will convert ISO639-3 language tags ISO639-1 language tags, remove suppressed
+<a href="https://github.com/silnrsi/langtags">SIL langtags.json</a>. The method will convert ISO639-3 language tags, ISO639-1 language tags, remove suppressed
 script tags, and append a default region if one is not present.</p>
 
 <p><b>Note:</b> This tag may not always be identical to a Windows canonical tag. A region subtag may be present in the canonical
