@@ -10,7 +10,7 @@
 
 <h2>Introduction</h2>
 
-<p><b>Deprecated:</b> this function is deprecated. Instead, use the functions in
+<p><b>Deprecated:</b> this function is deprecated as of Keyman 14.0. Instead, use the functions in
 <a href="../IKeymanKeyboardLanguageInstalled2"><code>IKeymanKeyboardLanguageInstalled2</code></a>.</p>
 
 <p>The <code>IKeymanKeyboardLanguagesInstalled::Install</code> adds the keyboard layout to the referenced BCP 47 language code in Windows. If the
