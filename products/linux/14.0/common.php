@@ -85,7 +85,7 @@ sudo apt-get install ibus-kmfl</code></pre>
 <p>
   <span class="red">A.</span> Keyman runs on Debian, Ubuntu, Wasta Linux and can be compiled to run from source in most
     distributions.<br/>
-  Note: there's currently a limitation where the Keyman pacakges are incomplete on the Xenial ppa.
+  Note: Keyman for Linux no longer supports Ubuntu 16.04 LTS (Xenial Xerus).
 </p>
 
 <br/>

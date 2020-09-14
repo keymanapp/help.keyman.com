@@ -18,10 +18,10 @@ head([
 
 <dl>
     <dt><a href='guide/'>Guide</a></dt>
-    <dd>Keyman 13.0 for Linux Guide</dd>
+    <dd>Keyman 14.0 for Linux Guide</dd>
 </dl>
 
 <dl>
     <dt><a href='reference'>Reference</a></dt>
-    <dd>Keyman 13.0 for Linux Reference</dd>
+    <dd>Keyman 14.0 for Linux Reference</dd>
 </dl>
