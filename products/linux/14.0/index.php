@@ -7,7 +7,7 @@ head([
 ]);
 ?>
 
-<h2>Keyman for Linux 13.0 Help</h2>
+<h2>Keyman for Linux 14.0 Help</h2>
 
 <p>Need help using Keyman for Linux? In time, this product documentation will grow and explain frequently asked questions. </p>
 

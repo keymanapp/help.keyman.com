@@ -19,29 +19,29 @@
   <h3>Access "Installed Languages"</h3>
   <p>First, open the "Settings" menu.</p>
   <p>
-  <img src="<?php echo cdn("img/app/13.0/add-keyboard-i.png") ?>" />
+  <img src="<?php echo cdn("img/app/14.0/add-keyboard-i.png") ?>" />
   </p>
   <p>
   The "Installed Languages" menu found here manages your installed keyboards and dictionaries.
   </p>
   <p>
-  <img src="<?php echo cdn("img/app/13.0/add-keyboard-i2.png") ?>" />
+  <img src="<?php echo cdn("img/app/14.0/add-keyboard-i2.png") ?>" />
   </p>
   <p>You should then see the following screen:</p>
   <p>
-  <img src="<?php echo cdn("img/app/13.0/add-keyboard-i3.png") ?>" />
+  <img src="<?php echo cdn("img/app/14.0/add-keyboard-i3.png") ?>" />
   </p>
 
   <h3>Finding Your Keyboard</h3>
   <p>Click the <span class="command">+</span> at the top-right to open the keyboard catalog.</p>
   <p>
-    <img src="<?php echo cdn("img/app/13.0/add-keyboard-i4.png") ?>" />
+    <img src="<?php echo cdn("img/app/14.0/add-keyboard-i4.png") ?>" />
   </p>
   <p>From there, select the language and keyboard you want to install.</p>
   <p>A list of all available languages will appear. Scroll through this list until you find the language you want to install. Some languages may have multiple keyboards - for example we have 10 different Tamil keyboards.</p>
   <p>A popup will then ask for confirmation.  Hit the <span class="command">Download</span> button.</p>
   <p>
-    <img src="<?php echo cdn("img/app/13.0/add-keyboard-i5.png") ?>" />
+    <img src="<?php echo cdn("img/app/14.0/add-keyboard-i5.png") ?>" />
   </p>
   <p>The new keyboard will then be installed and available for use.</p>
 <h2>Help Index</h2>

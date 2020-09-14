@@ -19,13 +19,13 @@
   of that file on your device.  You can find these copies in the iOS Files app.
 </p>
 <p>
-  <img src="<?= cdn('img/app/13.0/file-share-1i.png')?>">
+  <img src="<?= cdn('img/app/14.0/file-share-1i.png')?>">
 </p>
 <p>
   Simply select the "Keyman" folder to view these files.
 </p>
 <p>
-  <img src="<?= cdn('img/app/13.0/file-share-2i.png')?>">
+  <img src="<?= cdn('img/app/14.0/file-share-2i.png')?>">
 </p>
 <p>
   From here, longpress the file for the keyboard or dictionary you wish to share, then
@@ -38,19 +38,19 @@
   through the Settings menu under Installed Languages.
 </p>
 <p>
-  <img src="<?= cdn('img/app/13.0/add-keyboard-i2.png')?>">
+  <img src="<?= cdn('img/app/14.0/add-keyboard-i2.png')?>">
 </p>
 <p>
-  <img src="<?= cdn('img/app/13.0/add-keyboard-i3.png')?>">
+  <img src="<?= cdn('img/app/14.0/add-keyboard-i3.png')?>">
 </p>
 <p>
-  <img src="<?= cdn('img/app/13.0/qr-code-share-1i.png')?>">
+  <img src="<?= cdn('img/app/14.0/qr-code-share-1i.png')?>">
 </p>
 <p>
   When you select the keyboard, a page like the following should appear:
 </p>
 <p>
-  <img src="<?= cdn('img/app/13.0/qr-code-share-2i.png')?>">
+  <img src="<?= cdn('img/app/14.0/qr-code-share-2i.png')?>">
 </p>
 <p>
   Note that QR codes are only provided for certain keyboards and dictionaries
@@ -62,13 +62,13 @@
   it at the code, as seen below.
 </p>
 <p>
-  <img src="<?= cdn('img/app/13.0/qr-code-share-3i.png')?>">
+  <img src="<?= cdn('img/app/14.0/qr-code-share-3i.png')?>">
 </p>
 <p>
   Selecting the notification seen at the top will lead you to the following page:
 </p>
 <p>
-  <img src="<?= cdn('img/app/13.0/qr-code-share-4i.png')?>">
+  <img src="<?= cdn('img/app/14.0/qr-code-share-4i.png')?>">
 </p>
 <p>
   Select the big <span class="command">Install on iPhone</span> (or

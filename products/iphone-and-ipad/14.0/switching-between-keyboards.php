@@ -17,19 +17,19 @@
    Keyboard switching is always activated by using the following key:
 </p>
  <p>
-   <img src="<?php echo cdn("img/app/13.0/globe.png"); ?>" />
+   <img src="<?php echo cdn("img/app/14.0/globe.png"); ?>" />
  </p>
 <p>
   This will bring up a list of all currently installed languages (the default is English USA). If you have already downloaded additional languages, they will appear here. Simply select them and the keyboard will re-appear with the new language.
 </p>
 <h3>The In-App Menu</h3>
 <p>
-  <img src="<?php echo cdn("img/app/13.0/in-app-picker-i.png"); ?>" />
+  <img src="<?php echo cdn("img/app/14.0/in-app-picker-i.png"); ?>" />
 </p>
 <p>Simply select any keyboard to activate it and return to the previous screen.</p>
 <h3>The System Keyboard Menu</h3>
 <p>
-  <img src="<?php echo cdn("img/app/13.0/system-picker-i.png"); ?>" />
+  <img src="<?php echo cdn("img/app/14.0/system-picker-i.png"); ?>" />
 </p>
 <p>This menu only displays when the 'globe' key is touched and held.</p>
 <p>The "Close Keyman" option will activate the next available non-Keyman system keyboard.</p>

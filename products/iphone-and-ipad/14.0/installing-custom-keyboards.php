@@ -21,13 +21,13 @@
   For this example, we'll install a custom keyboard from a link in Safari.  Our example keyboard is for the GFF Amharic 7 keyboard.
 </p>
 <p>
-  <img src="<?= cdn('img/app/13.0/dist-url-screen-i.png')?>">
+  <img src="<?= cdn('img/app/14.0/dist-url-screen-i.png')?>">
 </p>
 <p>
   Safari will display an option to open the KMP file with Keyman.<br/>
 </p>
 <p>
-  <img src="<?= cdn('img/app/13.0/dist-kmp-open-i.png')?>">
+  <img src="<?= cdn('img/app/14.0/dist-kmp-open-i.png')?>">
 </p>
 <p>
   Click <span class="command">Open in "Keyman"</span> to continue.
@@ -40,14 +40,14 @@
   Install From File option in Keyman seen below.
 </p>
 <p>
-  <img src="<?= cdn('img/app/13.0/add-keyboard-i2.png')?>">
+  <img src="<?= cdn('img/app/14.0/add-keyboard-i2.png')?>">
 </p>
 <p>
   Once this option is selected, a file browser will appear.  By default, it will show the most
   recently downloaded files that can be installed.
 </p>
 <p>
-  <img src="<?= cdn('img/app/13.0/add-keyboard-file-i.png')?>">
+  <img src="<?= cdn('img/app/14.0/add-keyboard-file-i.png')?>">
 </p>
 <p>
   If you have difficulty finding the right file, consider using the <span class="command">Browse</span>
@@ -62,7 +62,7 @@
   documentation that will be displayed at this time.
 </p>
 <p>
-  <img src="<?= cdn('img/app/13.0/dist-welcome-i.png')?>">
+  <img src="<?= cdn('img/app/14.0/dist-welcome-i.png')?>">
 </p>
 <p>
   Click the <span class="command">"Install"</span> button at the top right.
@@ -71,14 +71,14 @@
 The keyboard from the keyboard package will then be successfully installed!
 </p>
 <p>
-  <img src="<?= cdn('img/app/13.0/dist-kmp-success-i.png')?>">
+  <img src="<?= cdn('img/app/14.0/dist-kmp-success-i.png')?>">
 </p>
 <p>
   All the keyboards in the package are installed as a group. In this example, the package only has the "GFF Amharic 7"
   keyboard, so it becomes the active keyboard.
 </p>
 <p>
-  <img src="<?= cdn('img/app/13.0/dist-install1-i.png')?>">
+  <img src="<?= cdn('img/app/14.0/dist-install1-i.png')?>">
 </p>
 
 <p>

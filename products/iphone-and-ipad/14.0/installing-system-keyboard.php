@@ -17,44 +17,44 @@
     Open the 'Settings' App and go to 'General' > 'Keyboard'.
 </p>
 <p>
-<img src="<?php echo cdn("img/app/13.0/keyman-settings5.png"); ?>" />
+<img src="<?php echo cdn("img/app/14.0/keyman-settings5.png"); ?>" />
 </p>
 <p>
     Touch 'Keyboards'.
 </p>
 <p>
-<img src="<?php echo cdn("img/app/13.0/keyman-settings6.png"); ?>" />
+<img src="<?php echo cdn("img/app/14.0/keyman-settings6.png"); ?>" />
 </p>
 <h3>Enabling Keyman</h3>
 <p>
     To activate Keyman as a system keyboard, touch 'Add New Keyboard...'
 </p>
 <p>
-<img src="<?php echo cdn("img/app/13.0/keyman-settings.png"); ?>" />
+<img src="<?php echo cdn("img/app/14.0/keyman-settings.png"); ?>" />
 </p>
 <p>
     Touch 'Keyman' under THIRD-PARTY KEYBOARDS.
 </p>
 <p>
-<img src="<?php echo cdn("img/app/13.0/keyman-settings2.png"); ?>" />
+<img src="<?php echo cdn("img/app/14.0/keyman-settings2.png"); ?>" />
 </p>
 <p>
     Touch 'Keyman - Keyman'.
 </p>
 <p>
-<img src="<?php echo cdn("img/app/13.0/keyman-settings3.png"); ?>" />
+<img src="<?php echo cdn("img/app/14.0/keyman-settings3.png"); ?>" />
 </p>
 <p>
     Turn on the 'Allow Full Access' toggle and confirm.
 </p>
 <p>
-<img src="<?php echo cdn("img/app/13.0/keyman-settings4.png"); ?>" />
+<img src="<?php echo cdn("img/app/14.0/keyman-settings4.png"); ?>" />
 </p>
 <p>
     Your Keyman keyboards will now be available throughout your entire device. You can switch between Keyman keyboards and the default iOS keyboard layout by touching the globe key of the keyboard whenever you are typing.
 </p>
 <p>
-<img src="<?php echo cdn("img/app/13.0/globe.png"); ?>" />
+<img src="<?php echo cdn("img/app/14.0/globe.png"); ?>" />
 </p>
 <h3>On "Allow Full Access"</h3>
 <p>After opening the Keyman system keyboard for the first time in an app, you can turn off the "Allow Full Access" option
