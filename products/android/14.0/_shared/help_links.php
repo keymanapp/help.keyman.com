@@ -11,4 +11,5 @@
   <li><a href='uninstalling-dictionaries.php'>Removing a dictionary</a></li>
   <li><a href='using-keyman-browser.php'>Using the Keyman browser</a></li>
   <li><a href='using-settings-screen.php'>Using the Keyman Settings</a></li>
+  <li><a href='system-requirements.php'>System Requirements</a></li>
 </ul>
