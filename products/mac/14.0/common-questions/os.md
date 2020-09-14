@@ -4,7 +4,7 @@ title: Which versions does Keyman for macOS work with?
 
 ## Supported Mac Operating Systems
 
-Keyman 13.0 supports the following Mac operating systems:
+Keyman 14.0 supports the following Mac operating systems:
 
 * Mac OS X Yosemite (10.10)
 * Mac OS X El Capitan (10.11)

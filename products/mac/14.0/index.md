@@ -1,8 +1,8 @@
 ---
-title: Keyman 13.0 for macOS Help
+title: Keyman 14.0 for macOS Help
 ---
 
-Need help using Keyman 13.0 for macOS?  You'll find everything
+Need help using Keyman 14.0 for macOS?  You'll find everything
 you need here, including product documentation, frequently
 asked questions, tutorials and videos.
 
