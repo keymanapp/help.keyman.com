@@ -10,7 +10,9 @@
         "IKeymanHotkeys",
         "IKeymanKeyboardLanguages" => array(
           "IKeymanKeyboardLanguagesFile",
-          "IKeymanKeyboardLanguagesInstalled"
+          "IKeymanKeyboardLanguagesInstalled" => array(
+            "IKeymanKeyboardLanguagesInstalled2"
+          )
         ),
         "IKeymanKeyboardOptions",
         "IKeymanKeyboards" => array(
@@ -37,7 +39,9 @@
         "IKeymanKeyboardInstalled"
       ),
       "IKeymanKeyboardLanguage" => array(
-        "IKeymanKeyboardLanguageInstalled"
+        "IKeymanKeyboardLanguageInstalled" => array(
+          "IKeymanKeyboardLanguageInstalled2"
+        )
       ),
       "IKeymanKeyboardOption",
       "IKeymanLanguage",
@@ -51,7 +55,8 @@
       "IKeymanPackageContentFile",
       "IKeymanPackageContentFont",
       "IKeymanSystemInfo",
-      "IKeymanVisualKeyboard"
+      "IKeymanVisualKeyboard",
+      "IKeymanBCP47Canonicalization"
     )
   );
 

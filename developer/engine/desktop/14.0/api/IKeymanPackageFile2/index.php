@@ -24,3 +24,7 @@ to simplify distribution of keyboard layouts.</p>
   <dt><a href='Install2'><code>Install2()</code></a></dt>
   <dd>Installs the package into Keyman Engine, optionally adding default input method.</dd>
 </dl>
+
+<h2>History</h2>
+
+<p>Added in Keyman Engine for Windows 14.0.</p>
