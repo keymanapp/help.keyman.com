@@ -2,14 +2,14 @@
 require_once('includes/template.php');
 
 head([
-  'title' => "Keyman 13.0 for Linux"
+  'title' => "Keyman 14.0 for Linux"
 ]);
 ?>
 
-<h1 class="title" id="">Keyman 13.0 for Linux Reference</h1>
+<h1 class="title" id="">Keyman 14.0 for Linux Reference</h1>
 
 <dl>
-  <dt>Keyman 13.0 for Linux Overview</dt>
+  <dt>Keyman 14.0 for Linux Overview</dt>
   <dd>Keyman for Linux makes it possible for you to type in over 1,000 languages on Linux.</dd>
 </dl>
 

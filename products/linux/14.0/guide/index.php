@@ -2,11 +2,11 @@
   require_once('includes/template.php');
 
   head([
-    'title' => "Keyman 13.0 for Linux - The Guide"
+    'title' => "Keyman 14.0 for Linux - The Guide"
   ]);
 ?>
 
-<h1 class="title">Keyman 13.0 for Linux - The Guide</h1>
+<h1 class="title">Keyman 14.0 for Linux - The Guide</h1>
 <p style='margin-top:16px'>
 
   <div class='body_text'>
@@ -17,7 +17,7 @@
       <li><a href="installing-keyboard.php">Installing Keyboards</a></li>
     </ul>
 
-    <a href='../'>Return to the main Keyman 13.0 for Linux page</a>
+    <a href='../'>Return to the main Keyman 14.0 for Linux page</a>
 
   </div>
 
