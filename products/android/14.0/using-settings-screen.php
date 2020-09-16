@@ -45,9 +45,30 @@ head([
   screen where you can <a href="installing-keyboards.php">install new keyboards</a> from the keyman.com catalog.
 </p>
 
-<h2>Add Keyboard from Device</h2>
+<h2>Install Keyboard or Dictionary</h2>
+<p>
+  This displays a few ways to install a keyboard package or dictionary package.
+</p><p>
+  <img id="settings-screen-install-keyboard-dictionary"
+  src="<?=cdn("img/app/14.0/settings-screen-install-keyboard-dictionary.png")?>">
+</p>
+
+<h3>Install from keyman.com</h3>
+<p>
+  Click on this to search for a keyboard from keyman.com and install. The process is the same as
+  <a href="installing-keyboards.php">installing keyboards</a>.
+</p>
+
+<h3>Install from local file</h3>
 <p>
   Click on this to <a href="installing-custom-packages.php">install custom keyboard and dictionary packages</a>.
+</p>
+
+<h3>Add languages to installed keyboard</h3>
+<p>
+  For installed keyboard packages, click on this to associate another language with a keyboard package.
+  If all the languages for a keyboard package have already been installed,
+  this won't change anything.
 </p>
 
 <h2>Enable Keyman as system-wide keyboard</h2>
