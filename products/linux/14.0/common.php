@@ -75,7 +75,7 @@ sudo apt-get install ibus-kmfl</code></pre>
   <span class="red">A.</span> From the launcher, enter <pre><code class="language-bash">onboard</code></pre>
 </p>
 <p>
-  <img src="<?php echo cdn("img/linux/120/onboard.png"); ?>" alt="Onboard" />
+  <img src="<?php echo cdn("img/linux/140/onboard.png"); ?>" alt="Onboard" />
 </p>
 
 <br/>
