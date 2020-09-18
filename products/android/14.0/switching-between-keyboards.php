@@ -46,6 +46,15 @@ head([
   You should then see the same listing of languages/keyboards. Tap on any available language of your choice.
 </p>
 
+<p>
+  Alternate Step for System Keyboard)
+</p><p>
+  The Keyman system keyboard has an additional <span class="command">CLOSE KEYMAN</span> button at the bottom left of
+  the "Keyboards" menu. Pushing this button will close Keyman and switch to the next non-Keyman system keyboard.
+</p><p>
+  <img id="close-keyman-a" src="<?= cdn("img/app/14.0/close-keyman-a.png")?> "/>
+</p>
+
 <?php
 include('./_shared/help_links.php');
 ?>

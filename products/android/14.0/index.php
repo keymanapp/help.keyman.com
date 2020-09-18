@@ -83,7 +83,8 @@ head([
   </tr>
   <tr>
     <td><img id="share-ap" src="<?= cdn("img/app/14.0/share-a.png")?>"></td>
-    <td>Share your text via Mail, Text, or Twitter</td>
+    <td>Share your text with other apps like Messages, Gmail, or Twitter. Some versions of Android
+    also let you copy your text to the clipboard.</td>
   </tr>
   <tr>
     <td><img id="browser-ap" src="<?= cdn("img/app/14.0/browser-a.png")?>"></td>

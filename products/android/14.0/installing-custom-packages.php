@@ -36,7 +36,9 @@ head([
   Step 2) Once the KMP file is on your device, you will need to browse to the KMP file and select it.
   From the Keyman menu, select 'Settings'.
   <br/>
-  From the Keyman Settings menu, select 'Add Keyboard from Device'.
+  From the Keyman Settings menu, select 'Install Keyboard or Dictionary'.
+  <br/>
+  From the 'Install Keyboard' menu, select 'Install from local file'.
 </p>
 <p><img id="settings-add-keyboard-from-device-ap" src="<?= cdn("img/app/14.0/settings-language-ap.png")?>"></p>
 <p>
