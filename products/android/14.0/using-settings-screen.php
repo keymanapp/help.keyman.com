@@ -66,8 +66,8 @@ head([
 
 <h3>Add languages to installed keyboard</h3>
 <p>
-  For installed keyboard packages, click on this to associate another language with a keyboard package.
-  If all the languages for a keyboard package have already been installed,
+  For installed keyboard packages, click on this to associate another language with a keyboard.
+  If all the languages for a keyboard have already been installed,
   this won't change anything.
 </p>
 

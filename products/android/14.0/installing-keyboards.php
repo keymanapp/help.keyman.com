@@ -45,11 +45,11 @@ head([
 </p><p>
   A keyboard search page will appear. Type in the search box to look for a keyboard based on: keyboard name,
   language name, or country. To search for a specific BCP 47 language code, use a search <i>l:id:</i>. In this
-  example, we search for the word "khmer"
+  example, we search for the word "khmer".
 </p><p>
   <img id="khmer-search-a" src="<?= cdn("img/app/14.0/khmer-search-a.png")?>">
 </p><p>
-  Select a keyboard to show additional information. Click the green button to install
+  Select a keyboard to show additional information. Click the green button to install.
 </p><p>
   <img id="khmer-install-a" src="<?= cdn("img/app/14.0/khmer-install-a.png")?>">
 </p><p>
@@ -59,19 +59,19 @@ head([
 </p><p>
   Step 5)
 </p><p>
-  Once the download is complete, you'll see 2-3 step process to install the new keyboard package.<br>
-  5a) Display the readme.htm documentation if it exists<br>
+  Once the download is complete, you'll see 2 or 3 step process to install the new keyboard package.<br>
+  5a) Display the readme.htm documentation (if the keyboard includes it).<br>
 </p><p>
   <img id="khmer-readme-a" src="<?= cdn("img/app/14.0/khmer-readme-a.png")?>">
 </p><p>
   5b) If the keyboard supports multiple languages, select languages to install. When a keyboard
   package only lists one language (khmer_angkor only lists km: Central Khmer),
-  the installer proceeds to the next step<br>
-  5c) Display the welcome.htm documentation
+  the installer proceeds to the next step.<br>
+  5c) Display the welcome.htm documentation.
 </p><p>
   <img id="khmer-welcome-a" src="<?= cdn("img/app/14.0/khmer-welcome-a.png")?>">
 </p><p>
-  After the keyboard is installed, the new keyboard will become active.
+  After the new keyboard is installed, it will become active.
 </p><p>
   <img class="phone" id="success-ap" src="<?= cdn("img/app/14.0/dl-success-ap.png")?>">
   <img class="tablet" id="success-at" src="<?= cdn("img/app/14.0/dl-success-at.png")?>">
