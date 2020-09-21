@@ -1,6 +1,6 @@
 <?php
-  require_once('includes/template.php'); 
-  
+  require_once('includes/template.php');
+
   // Required
   head([
     'title' =>'.model_info 1.0 Specification',
@@ -10,14 +10,16 @@
 ?>
 <h2>.model_info 1.0 Specification</h2>
 
-<p>This file will be created by the PR submitter of the lexical model, for new pull requests. It is a JSON file, with the following members. 
+<p>This file will be created by the PR submitter of the lexical model, for new pull requests. It is a JSON file, with the following members.
 The <b>.model_info</b> file will be used when building lexical models for deployment; the master version of the file lives in the lexical-models repository.
 During CI deployment, it will be read from the source repository, extended with the required generated fields and this new version pushed with the
 compiled resources to the download store.</p>
 
+<p>The <b>.model_info</b> file is also provided as a component of results by various Keyman Cloud APIs.
+
 <h3>ModelInfo Object</h3>
 
-<p>Note: The <b>Generated </b>column indicates if the field will be generated if it is not present in the source repository during the CI deployment 
+<p>Note: The <b>Generated </b>column indicates if the field will be generated if it is not present in the source repository during the CI deployment
 process. Fields that are <b>Required</b> and not <b>Generated</b> must be completed by the lexical model author.</p>
 
 <table class='language-javascript display'>
@@ -33,7 +35,7 @@ process. Fields that are <b>Required</b> and not <b>Generated</b> must be comple
 <tr>
 <td>id</td><td></td><td>yes</td><td>yes</td>
 <td>
-  <p><b>string</b>, a unique identifier for the model, in a format <code><b>author</b>.<b>bcp47</b>.<b>uniq</b></code>. The components must be the 
+  <p><b>string</b>, a unique identifier for the model, in a format <code><b>author</b>.<b>bcp47</b>.<b>uniq</b></code>. The components must be the
     same as the path of the model in the repository, e.g. a model in <code>release/example/en.wordlist</code> would have the identifer
     <code>example.en.wordlist</code>. The identifier must be lowercase and each component must be a valid Javascript identifier, thus the BCP 47 component
     should be delineated with underscores (_), not hyphens (-).</p>
@@ -91,7 +93,7 @@ process. Fields that are <b>Required</b> and not <b>Generated</b> must be comple
   <ul>
     <li><b>release/</b> and <b>experimental/</b> models must be <code>"mit"</code>.</li>
   </ul>
-  <p>This must always be specified, because this must be an explicit decision by the model author 
+  <p>This must always be specified, because this must be an explicit decision by the model author
     for legal reasons.</p>
 </td>
 </tr>
@@ -137,8 +139,9 @@ process. Fields that are <b>Required</b> and not <b>Generated</b> must be comple
 <td>yes</td>
 <td>yes</td>
 <td>
-  <p><b>string</b>, filename of the .kmp file that will be distributed, relative to the model base folder, 
-  including extension. This must be <b><i>id</i></b><b>/build/</b><b><i>id</i></b><b>.model.kmp</b>.</p>
+  <p><b>string</b>. In the source repository, filename of the .kmp file that will be distributed,
+  relative to the model base folder, including extension <b>.model.kmp</b>. On Cloud APIs, a URL
+  which points to the file for download.</p>
 
   <p><b>Generation:</b> the filename of the model.</p>
 </td>
@@ -162,7 +165,9 @@ process. Fields that are <b>Required</b> and not <b>Generated</b> must be comple
 <td>yes</td>
 <td>yes</td>
 <td>
-  <p><b>string</b>, filename of the .js file that will be distributed,  e.g. "example.en.model.js".</p>
+  <p><b>string</b>, filename of the .js file that will be distributed,  e.g. "example.en.model.js",
+  relative to the model base folder, including extension <b>.js</b>. On Cloud APIs, a URL
+  which points to the file for download.</p>
 
   <p><b>Generation:</b> This will normally be generated automatically.</p>
 </td>
@@ -188,7 +193,7 @@ process. Fields that are <b>Required</b> and not <b>Generated</b> must be comple
 <td>
   <p><b>boolean</b>, true if the script associated with the model is right-to-left.
 
-  <p><b>No Automatic Generation:</b> This is not currently generated automatically (it could probably be 
+  <p><b>No Automatic Generation:</b> This is not currently generated automatically (it could probably be
   ascertained from language metadata but we don't currently support that).</p>
 </td>
 </tr>
@@ -203,10 +208,10 @@ process. Fields that are <b>Required</b> and not <b>Generated</b> must be comple
   <ul>
     <li><code>"fonts"</code> - one or more fonts</li>
   </ul>
-  
+
   <p>This field corresponds to the .keyboard_info <b>packageIncludes</b> field, but
   is mostly unused.</p>
-  
+
   <p><b>Generation:</b> 'fonts' will be added if .kmp contents includes .ttf or .otf files.</p>
 </td>
 </tr>
@@ -229,7 +234,7 @@ process. Fields that are <b>Required</b> and not <b>Generated</b> must be comple
 <td>yes</td>
 <td>yes</td>
 <td>
-  <p><b>string</b>. The minimum version of Keyman that can read 
+  <p><b>string</b>. The minimum version of Keyman that can read
   this lexical model. If present, must be one of <code>"12.0"</code> or a later version.</p>
 
   <p><b>Generation:</b> from source metadata.</p>
@@ -313,7 +318,7 @@ process. Fields that are <b>Required</b> and not <b>Generated</b> must be comple
 <td>deprecates</td>
 <td></td>
 <td>
-  <p><b>boolean</b>, if <b>true</b>, then this model is intended to deprecate another model with the parent member name, 
+  <p><b>boolean</b>, if <b>true</b>, then this model is intended to deprecate another model with the parent member name,
   and Keyman will upgrade it to this model if found, ignoring version numbers.</p>
 </td>
 </tr>
@@ -356,7 +361,7 @@ process will generate any missing fields that it can. Generally speaking, it is 
 
 <pre><code class='language-javascript'>
 {
-  "license": "mit", 
+  "license": "mit",
   "languages": ["crl", "crj"]
 }
 </code></pre>
@@ -383,4 +388,7 @@ process will generate any missing fields that it can. Generally speaking, it is 
 <dl>
   <dt>1.0, 2019-02-12</dt>
   <dd>Initial version, seeded from .keyboard_info specification</dd>
+
+  <dt>1.0.1, 2020-09-21</dt>
+  <dd>Relaxed the URL definitions in the schema so extension is no longer tested</dd>
 </dl>
