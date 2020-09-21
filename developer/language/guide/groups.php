@@ -32,6 +32,14 @@ group(mygroup) using keys        c context and keystroke
   'a' + 'a' > 'c'
 </code></pre>
 
+<h2><code>using keys</code> clause</h2>
+
+<p>To tell Keyman that the group should include key processing, you should include the <code>using keys</code> section of the statement; if that is
+left out, the group checks the context only. The keystroke will remain the same during processing; you can have many groups that each use <code>using keys</code>, 
+and the keystroke will be the same for all of them. The key section of a rule (including the <code>+</code> sign) is not valid for context processing groups.</p>
+
+<h2><code>use</code> statement</h2>
+
 <p>The <a href="../reference/use" title="use() statement"><code>use()</code></a> statement allows you move into another group when a rule
 is matched. All output from the current group preceding the <code class="code">use()</code> statement is processed into the context
 before the subsequent group is entered (although it is not sent to the application until processing finishes for the current

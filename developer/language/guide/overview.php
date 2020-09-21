@@ -10,7 +10,9 @@
 
 <p>The Keyman keyboard programming language is a language designed around transforming
 inputs to outputs, through rules rather than through static tables. Source files have
-the <strong>.kmn</strong> extension.</p>
+the <strong>.kmn</strong> extension and are text files.</p>
+
+<h2>Line Types</h2>
 
 <p>Rules, comments and metadata in Keyman keyboard files are terminated by the end of a line.</p>
 
@@ -33,6 +35,12 @@ displayed on the screen.</dd>
   <dt><a href='headers'>Headers</a></dt>
   <dd>Headers, or system stores, provide metadata for the keyboard.</dd>
 </dl>
+
+<h3>Illustration of line types</h3>
+
+<p>The following snippet illustrates the different types of lines you will find in a keyboard file:</p>
+
+<p><img src="<?=cdn('img/developer/language/language-overview.png')?>" alt="Overview of keyboard file line types"></p>
 
 <h2>Encoding</h2>
 
