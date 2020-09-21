@@ -90,11 +90,11 @@ https://api.keyman.com/schemas/package-version.json
 
 ## History
 
-### 1 May 2020 - Version 1.0
+### 1.0, 2020-05-01
 
 * Initial version.
 
-### 21 Sep 2020 - Version 1.0.1
+### 1.0.1 - 2020-09-21
 
 * Fixed bugs with missing .kmp files
 * Added deprecation links
