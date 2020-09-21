@@ -34,31 +34,38 @@ The valid blob will contain latest version and url for the packages for each key
 ## Sample response
 
 ```sh
-  curl -s 'https://api.keyman.com/package-version?platform=ios&keyboard=khmer_angkor&keyboard=sil_euro_latin&keyboard=foo&keyboard=bar&model=nrc.en.mtnt'
+  curl -s 'https://api.keyman.com/package-version?platform=ios&keyboard=khmer_angkor&keyboard=sil_euro_latin&keyboard=foo&keyboard=us&keyboard=european2&model=nrc.en.mtnt'
 ```
 
 ```json
 {
   "keyboards": {
     "khmer_angkor": {
-      "version": "1.0.3",
-      "kmp": "https://downloads.keyman.com/keyboards/khmer_angkor/1.0.3/khmer_angkor.kmp"
+      "version": "1.0.6",
+      "kmp": "https://keyman.com/go/package/download/keyboard/khmer_angkor?version=1.0.6&update=1"
     },
     "sil_euro_latin": {
-      "version": "1.9",
-      "kmp": "https://downloads.keyman.com/keyboards/sil_euro_latin/1.9/sil_euro_latin.kmp"
+      "version": "1.9.1",
+      "kmp": "https://keyman.com/go/package/download/keyboard/sil_euro_latin?version=1.9.1&update=1"
     },
     "foo": {
       "error": "not found"
     },
-    "bar": {
-      "error": "not available for ios"
+    "us": {
+      "version": "1.0",
+      "error": "not available as package",
+      "deprecatedBy": "basic_kbdus"
+    },
+    "european2": {
+      "version": "1.6",
+      "error": "not available as package",
+      "deprecatedBy": "sil_euro_latin"
     }
   },
   "models": {
     "nrc.en.mtnt": {
-      "version": "0.1.2",
-      "kmp": "https://downloads.keyman.com/models/nrc.en.mtnt/0.1.2/nrc.en.mtnt.model.kmp"
+      "version": "0.1.4",
+      "kmp": "https://keyman.com/go/package/download/model/nrc.en.mtnt?version=0.1.4&update=1"
     }
   }
 }
@@ -73,10 +80,22 @@ https://api.keyman.com/schemas/package-version.json
 #### API errors (full response)
 * `{ "error": "invalid parameters" }` -- 400 invalid parameters
 * `{ "error": "database error" }` -- 500 database is unavailable (message may differ)
+* Other error codes may be possible
 
 #### Package error codes
 * `"error": "not found"` -- the package was not found in the database
-* `"error": "not available for <platform>"` -- the package is found but does not work on the target platform
+* `"error": "not available for platform"` -- the package is found but does not work on the target platform
+* `"error": "not available as package"` -- the package is old and is not available in package format
+* Other error codes may be possible
 
 ## History
-* 1 May 2020 - Version 1.0
+
+### 1 May 2020 - Version 1.0
+
+* Initial version.
+
+### 21 Sep 2020 - Version 1.0.1
+
+* Fixed bugs with missing .kmp files
+* Added deprecation links
+* Updated .kmp URLs to use keyman.com/go/package format
