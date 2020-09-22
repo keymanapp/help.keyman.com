@@ -44,7 +44,6 @@ END;
         <a style='margin-left:20px' href="#Quickstart">Quickstart</a><br/>
         <a style='margin-left:20px' href="#Examples">Examples</a><br/>
         <a style='margin-left:20px' href="#Documentation">Keyboard Details</a><br/>
-        <a style='margin-left:30px' target="_blank" href='keyboardchart.htm'>Complete Typing Chart</a><br/>
         <a href="#Technical">Technical Information</a><br/>
         <a style='margin-left:20px' href="#Author">Authorship</a><br/>
 
