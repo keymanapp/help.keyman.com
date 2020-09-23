@@ -37,8 +37,6 @@ EXTRA;
 <a style='margin-left:20px' href="#Quickstart">Quickstart</a><br/>
 <a style='margin-left:20px' href="#Examples">Examples</a><br/>
 <a style='margin-left:20px' href="#Documentation">Keyboard Details</a><br/>
-<a style='margin-left:30px' target="_blank" href='AmharicTyping-English.pdf'>Complete Typing Chart - English</a><br/>
-<a style='margin-left:30px' target="_blank" href='AmharicTyping-Amharic.pdf'>Complete Typing Chart - Amharic</a><br/>
 <a href="#Troubleshooting">Troubleshooting</a><br/>
 <a href="#Resources">Further Resources</a><br/>
 <a style='margin-left:20px' href="#Related">Related Keyboard Layouts</a><br/>
@@ -127,9 +125,7 @@ We also use the &ldquo;number sign&rdquo; (&ldquo;#&rdquo; also know as the &ldq
 so typing <span class='keys'>;</span> once makes <span class='highlightExample'>፤</span> and a second time gives English semicolon <span class='input'>;</span>. 
 </p>
 <p style='margin-top:10px'>
-See <a target="_blank" href='AmharicTyping-English.pdf'>Typing in Amharic (English)</a> or 
-<a target="_blank" href='AmharicTyping-Amharic.pdf'>Typing in Amharic (Amharic)</a> 
-for full details on how to type all Amharic letters, numbers and punctuation.
+See keyboard package for full details on how to type all Amharic letters, numbers and punctuation.
 </p>
 </div>
 </div>
