@@ -29,6 +29,6 @@
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="getKeyboardFontTypeface-Deprecated.php"><code>getKeyboardFontTypeface() (Deprecated)</code></a></li>
- <li><a href="getFontTypeface.php"><code>getFontTypeface()</code></a></li>
+ <li><a href="getKeyboardFontTypeface"><code>getKeyboardFontTypeface() (Deprecated)</code></a></li>
+ <li><a href="getFontTypeface"><code>getFontTypeface()</code></a></li>
 </ul>
