@@ -15,31 +15,31 @@
 
 <h3 id="OnKeyboardEventListener" name="OnKeyboardEventListener">OnKeyboardEventListener Interface</h3>
 <dl>
-  <dt><code><a href='onKeyboardLoaded.php'>onKeyboardLoaded()</a></code></dt>
+  <dt><code><a href='onKeyboardLoaded'>onKeyboardLoaded()</a></code></dt>
   <dd>is called when the keyboard has been loaded for the first time</dd>
 
-  <dt><code><a href='onKeyboardChanged.php'>onKeyboardChanged()</a></code></dt>
+  <dt><code><a href='onKeyboardChanged'>onKeyboardChanged()</a></code></dt>
   <dd>is called when another keyboard has been set</dd>
 
-  <dt><code><a href='onKeyboardShown.php'>onKeyboardShown()</a></code></dt>
+  <dt><code><a href='onKeyboardShown'>onKeyboardShown()</a></code></dt>
   <dd>is called when the keyboard has been shown</dd>
 
-  <dt><code><a href='onKeyboardDismissed.php'>onKeyboardDismissed()</a></code></dt>
+  <dt><code><a href='onKeyboardDismissed'>onKeyboardDismissed()</a></code></dt>
   <dd>is called when the keyboard has been dismissed</dd>
 </dl>
 
 <h3 id="OnKeyboardDownloadEventListener" name="OnKeyboardDownloadEventListener">OnKeyboardDownloadEventListener Interface</h3>
 <dl>
-  <dt><code><a href='onKeyboardDownloadStarted.php'>onKeyboardDownloadStarted()</a></code></dt>
+  <dt><code><a href='onKeyboardDownloadStarted'>onKeyboardDownloadStarted()</a></code></dt>
   <dd>is called when a keyboard download has started</dd>
 
-  <dt><code><a href='onKeyboardDownloadFinished.php'>onKeyboardDownloadFinished()</a></code></dt>
+  <dt><code><a href='onKeyboardDownloadFinished'>onKeyboardDownloadFinished()</a></code></dt>
   <dd>is called when a keyboard download has finished</dd>
 
-  <dt><code><a href='onPackageInstalled.php'>onPackageInstalled()</a></code></dt>
+  <dt><code><a href='onPackageInstalled'>onPackageInstalled()</a></code></dt>
   <dd>is called when a keyboard package has been installed</dd>
 
-  <dt><code><a href='onLexicalModelInstalled.php'>onLexicalModelInstalled()</a></code></dt>
+  <dt><code><a href='onLexicalModelInstalled'>onLexicalModelInstalled()</a></code></dt>
   <dd>is called when a lexical-model package has been installed</dd>
 
 </dl>
