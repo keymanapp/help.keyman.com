@@ -1,4 +1,6 @@
-# onLexicalModelInstalled()
+---
+title: onLexicalModelInstalled()
+---
 
 ## Summary
 The `onLexicalModelInstalled()` event is called when a lexical-model package has been installed.

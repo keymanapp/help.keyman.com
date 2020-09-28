@@ -1,5 +1,7 @@
-#onPackageInstalled()
- 
+---
+title: onPackageInstalled()
+---
+
 ## Summary
 The `onPackageInstalled()` is called when a keyboard package has been installed.
 
