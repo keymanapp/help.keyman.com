@@ -52,5 +52,5 @@
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="getDefaultKeyboard.php.php" title="Title."><code>getDefaultKeyboard()</code></a></li>
+ <li><a href="getDefaultKeyboard" title="getDefaultKeyboard()"><code>getDefaultKeyboard()</code></a></li>
 </ul>
