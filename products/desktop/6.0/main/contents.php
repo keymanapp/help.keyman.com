@@ -15,7 +15,6 @@ BODY
 SECTION:    Introducing Keyman
 LINKSLIST:  "Introducing Keyman",       "intro.html",
             "What's New",               "whatsnew.html",
-            "Release History",          "../../versionhistory.php"
             "Registering Keyman",       "register.html",
             "About Tavultesoft",        "about.html",
             "Contacting Tavultesoft",   "contact.html"
