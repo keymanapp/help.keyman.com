@@ -13,7 +13,7 @@ onLexicalModelInstalled(List<HashMap<String key, String value>> lexicalModelsIns
 ### Parameters
 `lexicalModelsInstalled`
 
-The information dictionaries of the lexical-models installed from a lexical-model package with keys and values defined as <code>List&lt;HashMap&lt;String key, String value&gt;&gt;</code>.</dd>
+The information dictionaries of the lexical-models installed from a lexical-model package with keys and values defined as `List<HashMap<String key, String value>>`.
 
 
 ## Description
