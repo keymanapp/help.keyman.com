@@ -39,7 +39,7 @@
   <code>KEYBOARD_STATE_NEEDS_UPDATE</code>. If you have a custom keyboard, you need to implement your own method to
   check whether or not it needs update. <code>KEYBOARD_STATE_UP_TO_DATE</code> does not necessarily mean that the
   keyboard is in fact up to date, you need to make sure language list has recently been displayed (see
-  <a href="showLanguageList-Deprecated.php"><code>showLanguageList() (Deprecated)</code></a>) without failure to access Keyman server to be certain.
+  <a href="showLanguageList"><code>showLanguageList() (Deprecated)</code></a>) without failure to access Keyman server to be certain.
 
 <h2 id="Examples">Examples</h2>
 

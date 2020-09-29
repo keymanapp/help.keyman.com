@@ -31,7 +31,7 @@
 As a web-based language solution, KeymanWeb can be used for an extremely wide variety of applications.  A
 range of standard User Interface designs have been included to provide flexibility in incorporating KeymanWeb
 into a website.  This allows developers to select an interface which best complements their website design.
-Customised designs can be developed to suit specific site requirements.  Please <a href='/contact.php'>contact Tavultesoft</a>
+Customised designs can be developed to suit specific site requirements.  Please <a href='https://keyman.com/contact'>contact Keyman</a>
 for more information.</p>
 
 <p>Using the various interfaces is largely similar, but because the appearance of each is quite distinct, they are dealt with in different sections of this help documentation. Please click on the links below for more information on the interface you are using.</p>
