@@ -1,5 +1,5 @@
 <?php
-  require_once('includes/template.php'); 
+  require_once('includes/template.php');
 
   // Required
   head([
@@ -14,7 +14,7 @@
 <ul>
   <li><a href='/products/desktop/version-history'>Keyman Desktop Version History</a></li>
   <li><a href='/developer/version-history'>Keyman Developer Version History</a></li>
-  <li><a href='/products/macos/version-history'>Keyman for macOS Version History</a></li>
+  <li><a href='/products/mac/version-history'>Keyman for macOS Version History</a></li>
   <li><a href='/products/linux/version-history'>Keyman for Linux Version History</a></li>
   <li><a href='/products/android/version-history'>Keyman for Android Version History</a></li>
   <li><a href='/products/iphone-and-ipad/version-history'>Keyman for iPhone and iPad Version History</a></li>
