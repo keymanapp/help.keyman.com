@@ -90,6 +90,10 @@ jobs:
       run: |
         ( set +e; set +o pipefail; npx broken-link-checker http://localhost:8888 --ordered --recursive --host-requests 50 -e --filter-level 3 | grep -E "BROKEN|Getting links from" | grep -B 1 "BROKEN"; exit ${PIPESTATUS[0]} )
 
+    - name: Check PHP errors
+      shell: bash
+      run: |
+        ( set +e; set +o pipefail; [ -f php_errors.log ] && echo 'PHP reported errors or warnings; see log below' && exit 1 || ( echo 'No PHP errors found' && exit 0 ) )
     #
     # If any of the tests fail, let's grab a bit more detail on the environment
     #
