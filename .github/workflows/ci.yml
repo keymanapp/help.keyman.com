@@ -93,7 +93,7 @@ jobs:
     - name: Check PHP errors
       shell: bash
       run: |
-        ( set +e; set +o pipefail; [ -f php_errors.log ] && ( echo 'PHP reported errors or warnings; see log below' && exit 1 ) || exit 0 )
+        ( set +e; set +o pipefail; [ -f php_errors.log ] && echo 'PHP reported errors or warnings; see log below' && exit 1 || ( echo 'No PHP errors found' && exit 0 ) )
     #
     # If any of the tests fail, let's grab a bit more detail on the environment
     #
