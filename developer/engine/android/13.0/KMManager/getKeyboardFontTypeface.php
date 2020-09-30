@@ -7,10 +7,10 @@
     head(['title' => $class.'.'.$method.'()']);
 ?>
 
-<h1>KMManager.getKeyboardFontTypeface()</h1>
+<h1>KMManager.getKeyboardFontTypeface() (Deprecated)</h1>
 
 <h2 id="Summary" name="Summary">Summary</h2>
-<p>The <code><strong><?php echo $method.'()' ?></strong></code> method creates a new typeface from the selected keyboard's font.</p>
+<p>(Deprecated) The <code><strong><?php echo $method.'()' ?></strong></code> method creates a new typeface from the selected keyboard's font.</p>
 
 <h2 id="Syntax" name="Syntax">Syntax</h2>
 <pre class="language-javascript"><code><?php echo $methodSyntax ?></code></pre>
@@ -38,6 +38,6 @@
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="getFontTypeface.php"><code>getFontTypeface()</code></a></li>
- <li><a href="getKeyboardFontFilename"><code>getKeyboardFontFilename()</code></a></li>
+ <li><a href="getFontTypeface"><code>getFontTypeface()</code></a></li>
+ <li><a href="getKeyboardFontFilename"><code>getKeyboardFontFilename()</code> (Deprecated)</a></li>
 </ul>

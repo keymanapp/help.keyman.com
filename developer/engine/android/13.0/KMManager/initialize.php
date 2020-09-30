@@ -45,5 +45,5 @@ protected void onCreate(Bundle savedInstanceState) {
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="setKeymanLicense.php"><code>setKeymanLicense()</code></a></li>
+ <li><a href="setKeymanLicense"><code>setKeymanLicense() (Deprecated)</code></a></li>
 </ul>
