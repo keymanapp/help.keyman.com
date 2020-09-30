@@ -39,5 +39,5 @@
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
  <li><a href="getFontTypeface"><code>getFontTypeface()</code></a></li>
- <li><a href="getKeyboardFontFilename"><code>getKeyboardFontFilename() (Deprecated)</code></a></li>
+ <li><a href="getKeyboardFontFilename"><code>getKeyboardFontFilename()</code> (Deprecated)</a></li>
 </ul>
