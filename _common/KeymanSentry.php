@@ -11,7 +11,7 @@
         if(preg_match('/\.local$/', $host))
           // If the host name is, e.g. api.keyman.com.local, then we'll assume this is a development environment
           $environment = 'development';
-        else if(preg_match('/\.keyman-staging\.com$/', $host))
+        else if(preg_match('/(^|\.)keyman-staging\.com$/', $host))
           $environment = 'staging';
         else
           $environment = 'production';

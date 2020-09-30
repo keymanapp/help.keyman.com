@@ -27,7 +27,7 @@ is also available.</p>
   <dd>The core class for controlling Keyman Engine</dd>
 
   <dt><code><a href='KeyboardEventHandler/'>KeyboardEventHandler</a></code></dt>
-  <dd>Provides keyboard events and methods to notify registered listeners</dd>
+  <dd>Provides keyboard and lexical-model events and methods to notify registered listeners</dd>
 </dl>
 
 <h2 id="See_also" name="See_also">See also</h2>
