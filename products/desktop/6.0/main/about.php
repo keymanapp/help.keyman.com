@@ -16,17 +16,10 @@ SECTION:      About Tavultesoft
 
 TEXT:         Tavultesoft is an Australian software company based in Hobart, Tasmania.  Our current staff are:
 
-<<<<<<< about.php
-TEXT:         <b>Myself, Marc Durdin</b>: Primary developer and owner of Tavultesoft.  I have a degree in 
+TEXT:         <b>Myself, Marc Durdin</b>: Primary developer and owner of Tavultesoft.  I have a degree in
               Computing from the University of Tasmania.
 
 TEXT:         <b>David Turner</b>: Marketing manager.
-=======
-TEXT:         <b>Myself, Marc Durdin</b>: Primary developer and owner of Tavultesoft.  Marc has a degree in 
-              Computing from the University of Tasmania.
-
-TEXT:         <b>David Turner</b>: Marketing manager.
->>>>>>> 1.2
 
 ENDSECTION
 
@@ -36,7 +29,7 @@ TEXT:         Marc Durdin: In 1990, I lived with my parents in a small village o
               called Tavulte,
               for a short time.  The name of our company is derived from this, and is pronounced Ta-vul-te-soft.  My
               family later moved to Laos, and I developed the first version of Keyman as a part of Lao Script for Windows,
-              to enable us to type in Lao.  Keyman and Lao Script for Windows later became separate products, with myself 
+              to enable us to type in Lao.  Keyman and Lao Script for Windows later became separate products, with myself
               focusing on Keyman, and my father working on Lao Script for Windows.
 
               Keyman started to spread to other languages when friends in Thailand saw it and wanted to use it for other
