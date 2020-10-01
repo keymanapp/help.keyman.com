@@ -1,18 +1,19 @@
 ﻿<?php
+  $pagetitle = 'Hieroglyphic';
   require_once('header.php');
 ?>
 <div class="font-egy">
     <p>Created by Christian Casey for Right Said Languages</p>
     <section id='overview'>
           <h2>Overview</h2>
-      <p>This keyboard provides a quick and easy way to enter Ancient Egyptian 
+      <p>This keyboard provides a quick and easy way to enter Ancient Egyptian
       hieroglyphs as Unicode text. It is designed to bridge the gap between the
       available hieroglyphic editors, which encode hieroglyphs using the <a href='http://en.wikipedia.org/wiki/Manuel_de_Codage'>Manuel de Codage</a> standard (<a href="http://www.catchpenny.org/codage/">MdC</a>), and the websites and programs designed for basic fonts, which will almost certainly never support the complex
       formatting needed to properly display Ancient Egyptian. This keyboard emulates MdC editors as much as possible in order to be accessible to users familiar with other programs. Most of
       these programs are intuitive, so new users should find the keyboard
       easy to learn and use as well (see <a href="#methods">Methods for Typing Hieroglyphs</a> for more about available typing methods).</p>
           <h4>Basic Function</h4>
-      <p>The Unicode Hieroglyphic keyboard lets you type transliterated text and hieroglyphs. The keyboard outputs transliterated text using the Manuel de Codage (MdC) standard. It creates hieroglyphs from MdC transliteration <b>or</b> <a href='http://en.wikipedia.org/wiki/Gardiner%27s_sign_list'>Gardiner sign list</a> numbers each time you press <kbd>Spacebar</kbd>. Repeat pressing <kbd>Spacebar</kbd> on signs output from MdC transliteration will cycle through phonetically identical signs. Pressing <kbd>Ctrl</kbd>+<kbd>Spacebar</kbd> instead outputs a space, which will also prevent transliteration from becoming hieroglyphs.</p>	
+      <p>The Unicode Hieroglyphic keyboard lets you type transliterated text and hieroglyphs. The keyboard outputs transliterated text using the Manuel de Codage (MdC) standard. It creates hieroglyphs from MdC transliteration <b>or</b> <a href='http://en.wikipedia.org/wiki/Gardiner%27s_sign_list'>Gardiner sign list</a> numbers each time you press <kbd>Spacebar</kbd>. Repeat pressing <kbd>Spacebar</kbd> on signs output from MdC transliteration will cycle through phonetically identical signs. Pressing <kbd>Ctrl</kbd>+<kbd>Spacebar</kbd> instead outputs a space, which will also prevent transliteration from becoming hieroglyphs.</p>
           <h4>On Screen Keyboard</h4>
           <p>This keyboard includes an On Screen Keyboard view of the MdC transliteration standard for easy reference. The On Screen Keyboard works best when associated with a QWERTY US layout.</p>
           <h4>Fonts</h4>
@@ -33,24 +34,24 @@
           <h3>Typing Transliteration</h3>
           <p>The keyboard automatically outputs the correct MdC transliteration when typing.</p>
           <p class='example'><b>Example:</b> type <kbd>a</kbd><kbd>n</kbd><kbd>x</kbd> to see <samp class="language" lang="egy">ꜥ</samp><samp class="language" lang="egy">n</samp><samp class="language" lang="egy">ḫ</samp>.</p>
-  
+
           <p>To add a space between transliterated words use <kbd>Ctrl</kbd>+<kbd>Spacebar</kbd>. This prevents transliteration from converting into hieroglyphs.</p>
-          
-          <p>To get the Latin letter value of a key instead of MdC transliteration, type <kbd>`</kbd>  before the key.</p> 
-          <p class='example'><b>Example:</b> type <kbd>`</kbd><kbd>A</kbd> to get <samp class="language" lang="egy">A</samp> instead of <samp class="language" lang="egy">ꜣ</samp>.</p>	
-          
+
+          <p>To get the Latin letter value of a key instead of MdC transliteration, type <kbd>`</kbd>  before the key.</p>
+          <p class='example'><b>Example:</b> type <kbd>`</kbd><kbd>A</kbd> to get <samp class="language" lang="egy">A</samp> instead of <samp class="language" lang="egy">ꜣ</samp>.</p>
+
           <p>To output <samp class="language" lang="egy">`</samp>, type <kbd>`</kbd><kbd>`</kbd>.</p>
-          
+
           <h3 class='break'>Typing Hieroglyphs Using MdC</h3>
-          <p>MdC transliteration converts to hieroglyphs automatically when you press <kbd>Spacebar</kbd>.</p> 
+          <p>MdC transliteration converts to hieroglyphs automatically when you press <kbd>Spacebar</kbd>.</p>
           <p class='example'><b>Example:</b> type <kbd>H</kbd><kbd>t</kbd><kbd>p</kbd> to see <samp class="language" lang="egy">ḥtp</samp>. Press <kbd>Spacebar</kbd> to get <samp class='hiero'>𓊵</samp>.</p>
-          
+
           <p>Some phonetic values match more than one sign. Pressing <kbd>Spacebar</kbd> repeatedly cycles through signs with identical phonetic values.</p>
-          
+
           <p class='example'><b>Example:</b> type <kbd>d</kbd><kbd>i</kbd><kbd>Spacebar</kbd> to get <samp class='hiero'>𓏙</samp>. Press <kbd>Spacebar</kbd> again to get <samp class='hiero'>𓂞</samp>.</p>
-          
+
           <p>To add a space after a sign use <kbd>Ctrl</kbd>+<kbd>Spacebar</kbd>.</p>
-          
+
           <h3>Typing Hieroglyphs Using Gardiner Numbers</h3>
           <p>This keyboard also converts Gardiner numbers into hieroglyphs when you press <kbd>Spacebar</kbd>.</p>
           <p class='example'><b>Example:</b> type <kbd>a</kbd><kbd>3</kbd><kbd>9</kbd> to get <samp class='hiero'>𓀬</samp>.</p>
@@ -58,10 +59,10 @@
       <p class='example'><b>Example:</b> typing <kbd>X</kbd><kbd>3</kbd> gives <samp class="language" lang="egy">ẖ</samp><samp class="language" lang="egy">3</samp>. Pressing <kbd>Spacebar</kbd> gives <samp class='hiero'>𓏑</samp>, which is the correct output for Gardiner number X3.</p>
           <p>Either upper or lowercase letters can be used to begin a Gardiner number, but the second letter in the AA sign list must be lowercase to prevent confusion with the A sign list.</p>
           <p class='example'><b>Example:</b> type <kbd>A</kbd><kbd>a</kbd><kbd>6</kbd> or <kbd>a</kbd><kbd>a</kbd><kbd>6</kbd> to get <samp class='hiero'>𓐒</samp>.</p>
-          <p>Pressing <kbd>Spacebar</kbd> repeatedly <b>will not</b> cycle through signs created from Gardiner numbers.</p>	
-          <p>To add a space after a sign use <kbd>Ctrl</kbd>+<kbd>Spacebar</kbd>.</p>	
+          <p>Pressing <kbd>Spacebar</kbd> repeatedly <b>will not</b> cycle through signs created from Gardiner numbers.</p>
+          <p>To add a space after a sign use <kbd>Ctrl</kbd>+<kbd>Spacebar</kbd>.</p>
     </section>
-    <section id='guides'> 
+    <section id='guides'>
           <h2 class='break'>Typing Guides</h2>
           <div id='guidetrans'>
                   <h3>Transliteration</h3>
@@ -78,13 +79,13 @@
                   <tbody>
                           <tr>
                                   <td><samp class="language" lang="egy">ꜣ</samp></td><td><kbd>A</kbd></td><td><samp class='hiero'>𓄿</samp></td>
-                          </tr>	
+                          </tr>
                           <tr>
                                   <td><samp class="language" lang="egy">i</samp></td><td><kbd>i</kbd></td><td><samp class='hiero'>𓇋</samp></td>
-                          </tr>	
+                          </tr>
                           <tr>
                                   <td><samp class="language" lang="egy">y</samp></td><td><kbd>y</kbd></td><td><samp class='hiero'>𓏭 </samp></td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><samp class="language" lang="egy">ꜥ</samp></td><td><kbd>a</kbd></td><td><samp class='hiero'>𓂝</samp></td>
                           </tr>
@@ -108,15 +109,15 @@
                           </tr>
                   </tbody>
                   </table>
-                  
+
                   <table class='grid colright'>
                           <col class='trans' />
                           <col class='keys' />
-                          <col class='signs' />			
+                          <col class='signs' />
                   <thead>
                           <tr>
                                   <th>Trans.</th><th>Key</th><th>Signs</th>
-                          </tr>	
+                          </tr>
                   </thead>
                   <tbody>
                           <tr>
@@ -133,13 +134,13 @@
                           </tr>
                           <tr>
                                   <td><samp class="language" lang="egy">l</samp></td><td><kbd>l</kbd></td><td><samp class='hiero'>𓃭</samp></td>
-                          </tr>	
+                          </tr>
                           <tr>
                                   <td><samp class="language" lang="egy">h</samp></td><td><kbd>h</kbd></td><td><samp class='hiero'>𓉔</samp></td>
                           </tr>
                           <tr>
                                   <td><samp class="language" lang="egy">ḥ</samp></td><td><kbd>H</kbd></td><td><samp class='hiero'>𓎛</samp></td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><samp class="language" lang="egy">ḫ</samp></td><td><kbd>x</kbd></td><td><samp class='hiero'>𓐍</samp></td>
                           </tr>
@@ -148,20 +149,20 @@
                           </tr>
                   </tbody>
                   </table>
-                  
+
                   <table class='grid colright'>
                           <col class='trans' />
                           <col class='keys' />
-                          <col class='signs' />			
+                          <col class='signs' />
                   <thead>
                           <tr>
                                   <th>Trans.</th><th>Key</th><th>Signs</th>
-                          </tr>	
+                          </tr>
                   </thead>
                   <tbody>
                           <tr>
                                   <td><samp class="language" lang="egy">z</samp></td><td><kbd>z</kbd></td><td><samp class='hiero'>𓊃</samp></td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><samp class="language" lang="egy">s</samp></td><td><kbd>s</kbd></td><td><samp class='hiero'>𓋴</samp></td>
                           </tr>
@@ -179,7 +180,7 @@
                           </tr>
                           <tr>
                                   <td><samp class="language" lang="egy">t</samp></td><td><kbd>t</kbd></td><td><samp class='hiero'>𓏏</samp></td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><samp class="language" lang="egy">ṯ</samp></td><td><kbd>T</kbd></td><td><samp class='hiero'>𓍿</samp></td>
                           </tr>
@@ -188,14 +189,14 @@
                           </tr>
                           <tr>
                                   <td><samp class="language" lang="egy">ḏ</samp></td><td><kbd>D</kbd></td><td><samp class='hiero'>𓆓</samp></td>
-                          </tr>	
+                          </tr>
                   </tbody>
                   </table>
           </div>
           <div id='guidemdc' class='break'>
                   <h3>Hieroglyphs Using MdC</h3>
-                  <p>This keyboard cycles through the following hieroglyphs when you type a <kbd>Spacebar</kbd> after the transliteration/keys shown:</p>	
-                  <table class='grid colleft'>		
+                  <p>This keyboard cycles through the following hieroglyphs when you type a <kbd>Spacebar</kbd> after the transliteration/keys shown:</p>
+                  <table class='grid colleft'>
                           <col class='keys' />
                           <col class='trans' />
                           <col class='signs' />
@@ -207,30 +208,30 @@
                   <tbody>
                           <tr class='headrow'>
                                   <td colspan='3'>1</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>1</kbd></td><td><samp class="language" lang="egy">1</samp></td><td><samp class='hiero'>𓏤</samp></td>
-                          </tr>				
+                          </tr>
                           <tr>
                                   <td><kbd>1</kbd><kbd>0</kbd></td><td><samp class="language" lang="egy">10</samp></td><td><samp class='hiero'>𓎆</samp></td>
-                          </tr>	
+                          </tr>
                           <tr>
                                   <td><kbd>1</kbd><kbd>0</kbd><kbd>0</kbd></td><td><samp class="language" lang="egy">100</samp></td><td><samp class='hiero'>𓍢</samp></td>
-                          </tr>	
+                          </tr>
                           <tr>
                                   <td><kbd>1</kbd><kbd>0</kbd><kbd>0</kbd><kbd>0</kbd></td><td><samp class="language" lang="egy">1000</samp></td><td><samp class='hiero'>𓆼</samp></td>
-                          </tr>				
-                          
+                          </tr>
+
                           <tr class='headrow'>
                                   <td colspan='3'>3</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>3</kbd></td><td><samp class="language" lang="egy">3</samp></td><td><samp class='hiero'>𓏥<span class='cyc'>&rarr;</span>𓈓<span class='cyc'>&rarr;</span>𓏪<span class='cyc'>&rarr;</span>𓏫</samp></td>
-                          </tr>			
-  
+                          </tr>
+
                           <tr class='headrow'>
                                   <td colspan='3'><span class='gardiner'>ꜣ</span> (A)</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>A</kbd></td><td><samp class="language" lang="egy">&#xa723;</samp></td><td><samp class='hiero'>&#x1313F;</samp></td>
                           </tr>
@@ -279,10 +280,10 @@
                           <tr>
                                   <td><kbd>A</kbd><kbd>x</kbd><kbd>t</kbd></td><td><samp class="language" lang="egy">&#xa723;&#x1e2b;t</samp></td><td><samp class='hiero'>&#x131B7;<span class='cyc'>&rarr;</span>&#x1320C;</samp></td>
                           </tr>
-  
+
                           <tr class='headrow'>
                                   <td colspan='3'><span class='gardiner'>ꜥ</span> (a)</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>a</kbd></td><td><samp class="language" lang="egy">&#xa725;</samp></td><td><samp class='hiero'>&#x1309D;<span class='cyc'>&rarr;</span>&#x1327B;</samp></td>
                           </tr>
@@ -349,10 +350,10 @@
                           <tr>
                                   <td><kbd>a</kbd><kbd>w</kbd><kbd>t</kbd></td><td><samp class="language" lang="egy">&#xa725;wt</samp></td><td><samp class='hiero'>&#x132FF;</samp></td>
                           </tr>
-                          
+
                           <tr class='headrow'>
                                   <td colspan='3'>b</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>b</kbd></td><td><samp class="language" lang="egy">b</samp></td><td><samp class='hiero'>&#x130C0;</samp></td>
                           </tr>
@@ -407,10 +408,10 @@
                           <tr>
                                   <td><kbd>d</kbd></td><td><samp class="language" lang="egy">d</samp></td><td><samp class='hiero'>&#x1309E;<span class='cyc'>&rarr;</span>&#x130A7;<span class='cyc'>&rarr;</span>&#x13193;<span class='cyc'>&rarr;</span>&#x133D9;</samp></td>
                           </tr>
-                          
+
                           <tr class='headrow'>
                                   <td colspan='3'>D</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>D</kbd></td><td><samp class="language" lang="egy">&#x1e0f;</samp></td><td><samp class='hiero'>&#x1309E;<span class='cyc'>&rarr;</span>&#x13193;</samp></td>
                           </tr>
@@ -456,10 +457,10 @@
                           <tr>
                                   <td><kbd>D</kbd><kbd>w</kbd></td><td><samp class="language" lang="egy">&#x1e0f;w</samp></td><td><samp class='hiero'>&#x1320B;</samp></td>
                           </tr>
-                          
+
                           <tr class='headrow'>
                                   <td colspan='3'>d</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>d</kbd><kbd>S</kbd><kbd>r</kbd></td><td><samp class="language" lang="egy">d&#x0161;r</samp></td><td><samp class='hiero'>&#x1315F;</samp></td>
                           </tr>
@@ -487,11 +488,11 @@
                           <tr>
                                   <td><kbd>d</kbd><kbd>w</kbd><kbd>A</kbd><kbd>t</kbd></td><td><samp class="language" lang="egy">dw&#xa723;t</samp></td><td><samp class='hiero'>&#x131FD;</samp></td>
                           </tr>
-  
-                          
+
+
                           <tr class='headrow'>
                                   <td colspan='3'>f</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>f</kbd></td><td><samp class="language" lang="egy">f</samp></td><td><samp class='hiero'>&#x13191;</samp></td>
                           </tr>
@@ -507,10 +508,10 @@
                           <tr>
                                   <td><kbd>f</kbd><kbd>n</kbd><kbd>d</kbd></td><td><samp class="language" lang="egy">fnd</samp></td><td><samp class='hiero'>&#x13089;<span class='cyc'>&rarr;</span>&#x1308A;</samp></td>
                           </tr>
-                          
+
                           <tr class='headrow'>
                                   <td colspan='3'>g</td>
-                          </tr>			
+                          </tr>
                           <tr class='halfrow'>
                                   <td rowspan='2'><kbd>g</kbd></td><td rowspan='2'><samp class="language" lang="egy">g</samp></td><td><samp class='hiero'>&#x13371;<span class='cyc'>&rarr;</span>&#x133A4;<span class='cyc'>&rarr;</span>&#x133A6;<span class='cyc'>&rarr;</span></samp></td>
                           </tr>
@@ -538,10 +539,10 @@
                           <tr>
                                   <td><kbd>g</kbd><kbd>s</kbd></td><td><samp class="language" lang="egy">gs</samp></td><td><samp class='hiero'>&#x1341B;<span class='cyc'>&rarr;</span>&#x1341C;<span class='cyc'>&rarr;</span>&#x1341D;<span class='cyc'>&rarr;</span>&#x1341E;</samp></td>
                           </tr>
-  
+
                           <tr class='headrow'>
                                   <td colspan='3'>ḥ (H)</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>H</kbd></td><td><samp class="language" lang="egy">&#x1e25;</samp></td><td><samp class='hiero'>&#x1339B;</samp></td>
                           </tr>
@@ -632,11 +633,11 @@
                           <tr>
                                   <td><kbd>H</kbd><kbd>z</kbd></td><td><samp class="language" lang="egy">&#x1e25;z</samp></td><td><samp class='hiero'>&#x133BF;</samp></td>
                           </tr>
-  
-  
+
+
                           <tr class='headrow'>
                                   <td colspan='3'>h</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>h</kbd></td><td><samp class="language" lang="egy">h</samp></td><td><samp class='hiero'>&#x13254;</samp></td>
                           </tr>
@@ -649,10 +650,10 @@
                           <tr>
                                   <td><kbd>h</kbd><kbd>r</kbd><kbd>w</kbd></td><td><samp class="language" lang="egy">hrw</samp></td><td><samp class='hiero'>&#x131F3;</samp></td>
                           </tr>
-  
+
                           <tr class='headrow'>
                                   <td colspan='3'>i</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>i</kbd></td><td><samp class="language" lang="egy">i</samp></td><td><samp class='hiero'>&#x13000;<span class='cyc'>&rarr;</span>&#x1301E;<span class='cyc'>&rarr;</span>&#x131B0;<span class='cyc'>&rarr;</span>&#x131CB;</samp></td>
                           </tr>
@@ -781,11 +782,11 @@
                           </tr>
                           <tr>
                                   <td><kbd>i</kbd><kbd>z</kbd></td><td><samp class="language" lang="egy">iz</samp></td><td><samp class='hiero'>&#x131E9;<span class='cyc'>&rarr;</span>&#x13284;</samp></td>
-                          </tr>				
-  
+                          </tr>
+
                           <tr class='headrow'>
                                   <td colspan='3'>k</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>k</kbd></td><td><samp class="language" lang="egy">k</samp></td><td><samp class='hiero'>&#x133A1;<span class='cyc'>&rarr;</span>&#x133A2;</samp></td>
                           </tr>
@@ -819,24 +820,24 @@
                           <tr>
                                   <td><kbd>k</kbd><kbd>s</kbd><kbd>w</kbd></td><td><samp class="language" lang="egy">ksw</samp></td><td><samp class='hiero'>&#x13013;</samp></td>
                           </tr>
-                          
+
                           <tr class='headrow'>
                                   <td colspan='3'>l</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>l</kbd></td><td><samp class="language" lang="egy">l</samp></td><td><samp class='hiero'>&#x130ED;</samp></td>
                           </tr>
-  
+
                           <tr class='headrow'>
                                   <td colspan='3'>M</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>M</kbd></td><td><samp class="language" lang="egy">M</samp></td><td><samp class='hiero'>&#x1341D;</samp></td>
                           </tr>
-  
+
                           <tr class='headrow'>
                                   <td colspan='3'>m</td>
-                          </tr>			
+                          </tr>
                           <tr class='halfrow'>
                                   <td rowspan='2'><kbd>m</kbd></td><td rowspan='2'><samp class="language" lang="egy">m</samp></td><td><samp class='hiero'>&#x1309E;<span class='cyc'>&rarr;</span>&#x1309F;<span class='cyc'>&rarr;</span>&#x13153;<span class='cyc'>&rarr;</span>&#x13155;<span class='cyc'>&rarr;</span></samp></td>
                           </tr>
@@ -966,17 +967,17 @@
                           <tr>
                                   <td><kbd>m</kbd><kbd>z</kbd><kbd>H</kbd></td><td><samp class="language" lang="egy">mz&#x1e25;</samp></td><td><samp class='hiero'>&#x1318A;</samp></td>
                           </tr>
-  
+
                           <tr class='headrow'>
                                   <td colspan='3'>N</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>N</kbd></td><td><samp class="language" lang="egy">N</samp></td><td><samp class='hiero'>&#x132D4;</samp></td>
                           </tr>
-  
+
                           <tr class='headrow'>
                                   <td colspan='3'>n</td>
-                          </tr>			
+                          </tr>
                           <tr class='halfrow'>
                                   <td rowspan='2'><kbd>n</kbd></td><td rowspan='2'><samp class="language" lang="egy">n</samp></td><td><samp class='hiero'>&#x1309C;<span class='cyc'>&rarr;</span>&#x131D1;<span class='cyc'>&rarr;</span></samp></td>
                           </tr>
@@ -1073,10 +1074,10 @@
                           <tr>
                                   <td><kbd>n</kbd><kbd>z</kbd><kbd>t</kbd></td><td><samp class="language" lang="egy">nzt</samp></td><td><samp class='hiero'>&#x133BC;</samp></td>
                           </tr>
-  
+
                           <tr class='headrow'>
                                   <td colspan='3'>p</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>p</kbd></td><td><samp class="language" lang="egy">p</samp></td><td><samp class='hiero'>&#x13250;<span class='cyc'>&rarr;</span>&#x132AA;</samp></td>
                           </tr>
@@ -1125,10 +1126,10 @@
                           <tr>
                                   <td><kbd>p</kbd><kbd>z</kbd><kbd>D</kbd></td><td><samp class="language" lang="egy">pz&#x1e0f;</samp></td><td><samp class='hiero'>&#x131F7;<span class='cyc'>&rarr;</span>&#x131F8;</samp></td>
                           </tr>
-  
+
                           <tr class='headrow'>
                                   <td colspan='3'>ḳ (q)</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>q</kbd></td><td><samp class="language" lang="egy">&#x1e33;</samp></td><td><samp class='hiero'>&#x1320E;</samp></td>
                           </tr>
@@ -1168,10 +1169,10 @@
                           <tr>
                                   <td><kbd>q</kbd><kbd>s</kbd></td><td><samp class="language" lang="egy">&#x1e33;s</samp></td><td><samp class='hiero'>&#x1331F;<span class='cyc'>&rarr;</span>&#x13320;</samp></td>
                           </tr>
-                          
+
                           <tr class='headrow'>
                                   <td colspan='3'>r</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>r</kbd></td><td><samp class="language" lang="egy">r</samp></td><td><samp class='hiero'>&#x1308B;</samp></td>
                           </tr>
@@ -1226,10 +1227,10 @@
                           <tr>
                                   <td><kbd>r</kbd><kbd>x</kbd><kbd>y</kbd><kbd>t</kbd></td><td><samp class="language" lang="egy">r&#x1e2b;yt</samp></td><td><samp class='hiero'>&#x1315A;<span class='cyc'>&rarr;</span>&#x1315B;</samp></td>
                           </tr>
-  
+
                           <tr class='headrow'>
                                   <td colspan='3'>š (S)</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>S</kbd></td><td><samp class="language" lang="egy">&#x0161;</samp></td><td><samp class='hiero'>&#x13219;<span class='cyc'>&rarr;</span>&#x1321B;<span class='cyc'>&rarr;</span>&#x1321C;</samp></td>
                           </tr>
@@ -1308,10 +1309,10 @@
                           <tr>
                                   <td><kbd>S</kbd><kbd>z</kbd><kbd>p</kbd></td><td><samp class="language" lang="egy">&#x0161;zp</samp></td><td><samp class='hiero'>&#x1328F;<span class='cyc'>&rarr;</span>&#x13290;</samp></td>
                           </tr>
-  
+
                           <tr class='headrow'>
                                   <td colspan='3'>s</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>s</kbd></td><td><samp class="language" lang="egy">s</samp></td><td><samp class='hiero'>&#x13283;<span class='cyc'>&rarr;</span>&#x132F4;</samp></td>
                           </tr>
@@ -1480,10 +1481,10 @@
                           <tr>
                                   <td><kbd>s</kbd><kbd>x</kbd><kbd>t</kbd></td><td><samp class="language" lang="egy">s&#x1e2b;t</samp></td><td><samp class='hiero'>&#x131CF;</samp></td>
                           </tr>
-  
+
                           <tr class='headrow'>
                                   <td colspan='3'>ṯ (T)</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>T</kbd></td><td><samp class="language" lang="egy">&#x1e6f;</samp></td><td><samp class='hiero'>&#x1337F;<span class='cyc'>&rarr;</span>&#x13380;</samp></td>
                           </tr>
@@ -1505,10 +1506,10 @@
                           <tr>
                                   <td><kbd>T</kbd><kbd>z</kbd></td><td><samp class="language" lang="egy">&#x1e6f;z</samp></td><td><samp class='hiero'>&#x132ED;</samp></td>
                           </tr>
-  
+
                           <tr class='headrow'>
                                   <td colspan='3'>t</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>t</kbd></td><td><samp class="language" lang="egy">t</samp></td><td><samp class='hiero'>&#x133CF;<span class='cyc'>&rarr;</span>&#x133D0;<span class='cyc'>&rarr;</span>&#x133D1;</samp></td>
                           </tr>
@@ -1551,17 +1552,17 @@
                           <tr>
                                   <td><kbd>t</kbd><kbd>y</kbd><kbd>w</kbd></td><td><samp class="language" lang="egy">tyw</samp></td><td><samp class='hiero'>&#x13142;</samp></td>
                           </tr>
-  
+
                           <tr class='headrow'>
                                   <td colspan='3'>W</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>W</kbd></td><td><samp class="language" lang="egy">W</samp></td><td><samp class='hiero'>&#x133F2;</samp></td>
-                          </tr>				
-  
+                          </tr>
+
                           <tr class='headrow'>
                                   <td colspan='3'>w</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>w</kbd></td><td><samp class="language" lang="egy">w</samp></td><td><samp class='hiero'>&#x13171;<span class='cyc'>&rarr;</span>&#x133F2;</samp></td>
                           </tr>
@@ -1661,10 +1662,10 @@
                           <tr>
                                   <td><kbd>w</kbd><kbd>z</kbd></td><td><samp class="language" lang="egy">wz</samp></td><td><samp class='hiero'>&#x132A8;<span class='cyc'>&rarr;</span>&#x132A9;</samp></td>
                           </tr>
-  
+
                           <tr class='headrow'>
                                   <td colspan='3'>ẖ (X)</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>X</kbd></td><td><samp class="language" lang="egy">&#x1e96;</samp></td><td><samp class='hiero'>&#x13121;</samp></td>
                           </tr>
@@ -1701,10 +1702,10 @@
                           <tr>
                                   <td><kbd>X</kbd><kbd>r</kbd><kbd>d</kbd></td><td><samp class="language" lang="egy">&#x1e96;rd</samp></td><td><samp class='hiero'>&#x13014;</samp></td>
                           </tr>
-  
+
                           <tr class='headrow'>
                                   <td colspan='3'>ḫ (x)</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>x</kbd></td><td><samp class="language" lang="egy">&#x1e2b;</samp></td><td><samp class='hiero'>&#x1340D;</samp></td>
                           </tr>
@@ -1780,17 +1781,17 @@
                           <tr>
                                   <td><kbd>x</kbd><kbd>w</kbd><kbd>s</kbd><kbd>i</kbd></td><td><samp class="language" lang="egy">&#x1e2b;wsi</samp></td><td><samp class='hiero'>&#x13027;</samp></td>
                           </tr>
-  
+
                           <tr class='headrow'>
                                   <td colspan='3'>y</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>y</kbd></td><td><samp class="language" lang="egy">y</samp></td><td><samp class='hiero'>&#x133ED;</samp></td>
                           </tr>
-  
+
                           <tr class='headrow'>
                                   <td colspan='3'>z</td>
-                          </tr>			
+                          </tr>
                           <tr>
                                   <td><kbd>z</kbd></td><td><samp class="language" lang="egy">z</samp></td><td><samp class='hiero'>&#x13283;</samp></td>
                           </tr>
@@ -1844,8 +1845,8 @@
           </div>
           <div id='guidegardiner' class='break'>
                   <h3>Hieroglyphs Using Gardiner Numbers</h3>
-                  <p>This keyboard converts the following Gardiner numbers to hieroglyphs when you press <kbd>Spacebar</kbd>:</p>	
-                  <table class='grid colleft'>		
+                  <p>This keyboard converts the following Gardiner numbers to hieroglyphs when you press <kbd>Spacebar</kbd>:</p>
+                  <table class='grid colleft'>
                           <col class='signs' />
                           <col class='keys' />
                   <thead>
@@ -1856,7 +1857,7 @@
                   <tbody>
                           <tr class='headrow'>
                                   <td colspan='2'>A<br/>Man + His Occupations</td>
-                          </tr>			
+                          </tr>
                           <tr><td><samp class='hiero'>&#x13000;</samp></td><td><kbd>a</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13001;</samp></td><td><kbd>a</kbd><kbd>2</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13002;</samp></td><td><kbd>a</kbd><kbd>3</kbd></td></tr>
@@ -1937,10 +1938,10 @@
                           <tr><td><samp class='hiero'>&#x1304D;</samp></td><td><kbd>a</kbd><kbd>6</kbd><kbd>8</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x1304E;</samp></td><td><kbd>a</kbd><kbd>6</kbd><kbd>9</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x1304F;</samp></td><td><kbd>a</kbd><kbd>7</kbd><kbd>0</kbd></td></tr>
-  
+
                           <tr class='headrow'>
                                   <td colspan='2'>B<br/>Woman + Her Occupations</td>
-                          </tr>				
+                          </tr>
                           <tr><td><samp class='hiero'>&#x13050;</samp></td><td><kbd>b</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13051;</samp></td><td><kbd>b</kbd><kbd>2</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13052;</samp></td><td><kbd>b</kbd><kbd>3</kbd></td></tr>
@@ -1951,10 +1952,10 @@
                           <tr><td><samp class='hiero'>&#x13057;</samp></td><td><kbd>b</kbd><kbd>7</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13058;</samp></td><td><kbd>b</kbd><kbd>8</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13059;</samp></td><td><kbd>b</kbd><kbd>9</kbd></td></tr>
-  
+
                           <tr class='headrow'>
                                   <td colspan='2'>C<br/>Anthropomorphic Deities</td>
-                          </tr>				
+                          </tr>
                           <tr><td><samp class='hiero'>&#x1305A;</samp></td><td><kbd>c</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x1305B;</samp></td><td><kbd>c</kbd><kbd>2</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x1305C;</samp></td><td><kbd>c</kbd><kbd>2</kbd><kbd>a</kbd></td></tr>
@@ -1983,10 +1984,10 @@
                           <tr><td><samp class='hiero'>&#x13073;</samp></td><td><kbd>c</kbd><kbd>2</kbd><kbd>2</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13074;</samp></td><td><kbd>c</kbd><kbd>2</kbd><kbd>3</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13075;</samp></td><td><kbd>c</kbd><kbd>2</kbd><kbd>4</kbd></td></tr>
-  
+
                           <tr class='headrow'>
                                   <td colspan='2'>D<br/>Parts of the Human Body</td>
-                          </tr>	
+                          </tr>
                           <tr><td><samp class='hiero'>&#x13076;</samp></td><td><kbd>d</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13077;</samp></td><td><kbd>d</kbd><kbd>2</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13078;</samp></td><td><kbd>d</kbd><kbd>3</kbd></td></tr>
@@ -2079,10 +2080,10 @@
                           <tr><td><samp class='hiero'>&#x130CF;</samp></td><td><kbd>d</kbd><kbd>6</kbd><kbd>7</kbd><kbd>f</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x130D0;</samp></td><td><kbd>d</kbd><kbd>6</kbd><kbd>7</kbd><kbd>g</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x130D1;</samp></td><td><kbd>d</kbd><kbd>6</kbd><kbd>7</kbd><kbd>h</kbd></td></tr>
-                          
+
                           <tr class='headrow'>
                                   <td colspan='2'>E<br/>Mammals</td>
-                          </tr>				
+                          </tr>
                           <tr><td><samp class='hiero'>&#x130D2;</samp></td><td><kbd>e</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x130D3;</samp></td><td><kbd>e</kbd><kbd>2</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x130D4;</samp></td><td><kbd>e</kbd><kbd>3</kbd></td></tr>
@@ -2127,10 +2128,10 @@
                           <tr><td><samp class='hiero'>&#x130FB;</samp></td><td><kbd>e</kbd><kbd>3</kbd><kbd>6</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x130FC;</samp></td><td><kbd>e</kbd><kbd>3</kbd><kbd>7</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x130FD;</samp></td><td><kbd>e</kbd><kbd>3</kbd><kbd>8</kbd></td></tr>
-                          
+
                           <tr class='headrow'>
                                   <td colspan='2'>F<br/>Parts of Mammals</td>
-                          </tr>				
+                          </tr>
                           <tr><td><samp class='hiero'>&#x130FE;</samp></td><td><kbd>f</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x130FF;</samp></td><td><kbd>f</kbd><kbd>1</kbd><kbd>a</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13100;</samp></td><td><kbd>f</kbd><kbd>2</kbd></td></tr>
@@ -2196,10 +2197,10 @@
                           <tr><td><samp class='hiero'>&#x1313C;</samp></td><td><kbd>f</kbd><kbd>5</kbd><kbd>1</kbd><kbd>c</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x1313D;</samp></td><td><kbd>f</kbd><kbd>5</kbd><kbd>2</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x1313E;</samp></td><td><kbd>f</kbd><kbd>5</kbd><kbd>3</kbd></td></tr>
-                          
+
                           <tr class='headrow'>
                                   <td colspan='2'>G<br/>Birds</td>
-                          </tr>				
+                          </tr>
                           <tr><td><samp class='hiero'>&#x1313F;</samp></td><td><kbd>g</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13140;</samp></td><td><kbd>g</kbd><kbd>2</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13141;</samp></td><td><kbd>g</kbd><kbd>3</kbd></td></tr>
@@ -2266,19 +2267,19 @@
                           <tr><td><samp class='hiero'>&#x1317E;</samp></td><td><kbd>g</kbd><kbd>5</kbd><kbd>4</kbd></td></tr>
                   </tbody>
                   </table>
-                  
-                  <table class='grid colright'>		
+
+                  <table class='grid colright'>
                           <col class='signs' />
                           <col class='keys' />
-                  <thead>	
+                  <thead>
                           <tr>
                                   <th>Sign</th><th>Number/Key</th>
-                          </tr>				
+                          </tr>
                   </thead>
                   <tbody>
                           <tr class='headrow'>
                                   <td colspan='2'>H<br/>Parts of Birds</td>
-                          </tr>				
+                          </tr>
                           <tr><td><samp class='hiero'>&#x1317F;</samp></td><td><kbd>h</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13180;</samp></td><td><kbd>h</kbd><kbd>2</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13181;</samp></td><td><kbd>h</kbd><kbd>3</kbd></td></tr>
@@ -2288,11 +2289,11 @@
                           <tr><td><samp class='hiero'>&#x13185;</samp></td><td><kbd>h</kbd><kbd>6</kbd><kbd>a</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13186;</samp></td><td><kbd>h</kbd><kbd>7</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13187;</samp></td><td><kbd>h</kbd><kbd>8</kbd></td></tr>
-                          
-  
+
+
                           <tr class='headrow'>
                                   <td colspan='2'>I<br/>Amphibians + Reptiles</td>
-                          </tr>				
+                          </tr>
                           <tr><td><samp class='hiero'>&#x13188;</samp></td><td><kbd>i</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13189;</samp></td><td><kbd>i</kbd><kbd>2</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x1318A;</samp></td><td><kbd>i</kbd><kbd>3</kbd></td></tr>
@@ -2312,10 +2313,10 @@
                           <tr><td><samp class='hiero'>&#x13198;</samp></td><td><kbd>i</kbd><kbd>1</kbd><kbd>3</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13199;</samp></td><td><kbd>i</kbd><kbd>1</kbd><kbd>4</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x1319A;</samp></td><td><kbd>i</kbd><kbd>1</kbd><kbd>5</kbd></td></tr>
-                          
+
                           <tr class='headrow'>
                                   <td colspan='2'>K<br/>Fish + Parts of Fish</td>
-                          </tr>				
+                          </tr>
                           <tr><td><samp class='hiero'>&#x1319B;</samp></td><td><kbd>k</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x1319C;</samp></td><td><kbd>k</kbd><kbd>2</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x1319D;</samp></td><td><kbd>k</kbd><kbd>3</kbd></td></tr>
@@ -2324,10 +2325,10 @@
                           <tr><td><samp class='hiero'>&#x131A0;</samp></td><td><kbd>k</kbd><kbd>6</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x131A1;</samp></td><td><kbd>k</kbd><kbd>7</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x131A2;</samp></td><td><kbd>k</kbd><kbd>8</kbd></td></tr>
-                          
+
                           <tr class='headrow'>
                                   <td colspan='2'>L<br/>Invertebrates +<br/>Other Animals</td>
-                          </tr>				
+                          </tr>
                           <tr><td><samp class='hiero'>&#x131A3;</samp></td><td><kbd>l</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x131A4;</samp></td><td><kbd>l</kbd><kbd>2</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x131A5;</samp></td><td><kbd>l</kbd><kbd>2</kbd><kbd>a</kbd></td></tr>
@@ -2338,10 +2339,10 @@
                           <tr><td><samp class='hiero'>&#x131AA;</samp></td><td><kbd>l</kbd><kbd>6</kbd><kbd>a</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x131AB;</samp></td><td><kbd>l</kbd><kbd>7</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x131AC;</samp></td><td><kbd>l</kbd><kbd>8</kbd></td></tr>
-                          
+
                           <tr class='headrow'>
                                   <td colspan='2'>M<br/>Trees + Other Plants</td>
-                          </tr>				
+                          </tr>
                           <tr><td><samp class='hiero'>&#x131AD;</samp></td><td><kbd>m</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x131AE;</samp></td><td><kbd>m</kbd><kbd>1</kbd><kbd>a</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x131AF;</samp></td><td><kbd>m</kbd><kbd>1</kbd><kbd>b</kbd></td></tr>
@@ -2408,10 +2409,10 @@
                           <tr><td><samp class='hiero'>&#x131EC;</samp></td><td><kbd>m</kbd><kbd>4</kbd><kbd>2</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x131ED;</samp></td><td><kbd>m</kbd><kbd>4</kbd><kbd>3</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x131EE;</samp></td><td><kbd>m</kbd><kbd>4</kbd><kbd>4</kbd></td></tr>
-          
+
                           <tr class='headrow'>
                                   <td colspan='2'>N<br/>Sky, Earth + Water</td>
-                          </tr>				
+                          </tr>
                           <tr><td><samp class='hiero'>&#x131EF;</samp></td><td><kbd>n</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x131F0;</samp></td><td><kbd>n</kbd><kbd>2</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x131F1;</samp></td><td><kbd>n</kbd><kbd>3</kbd></td></tr>
@@ -2509,10 +2510,10 @@
                           <tr><td><samp class='hiero'>&#x1324D;</samp></td><td><kbd>n</kbd><kbd>u</kbd><kbd>2</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x1324E;</samp></td><td><kbd>n</kbd><kbd>u</kbd><kbd>2</kbd><kbd>2</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x1324F;</samp></td><td><kbd>n</kbd><kbd>u</kbd><kbd>2</kbd><kbd>2</kbd><kbd>a</kbd></td></tr>
-  
+
                           <tr class='headrow'>
                                   <td colspan='2'>O<br/>Buildings + <br/>Parts of Buildings</td>
-                          </tr>	
+                          </tr>
                           <tr><td><samp class='hiero'>&#x13250;</samp></td><td><kbd>o</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13251;</samp></td><td><kbd>o</kbd><kbd>1</kbd><kbd>a</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13252;</samp></td><td><kbd>o</kbd><kbd>2</kbd></td></tr>
@@ -2588,10 +2589,10 @@
                           <tr><td><samp class='hiero'>&#x13298;</samp></td><td><kbd>o</kbd><kbd>5</kbd><kbd>0</kbd><kbd>a</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13299;</samp></td><td><kbd>o</kbd><kbd>5</kbd><kbd>0</kbd><kbd>b</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x1329A;</samp></td><td><kbd>o</kbd><kbd>5</kbd><kbd>1</kbd></td></tr>
-                          
+
                           <tr class='headrow'>
                                   <td colspan='2'>P<br/>Ships + Parts of Ships</td>
-                          </tr>				
+                          </tr>
                           <tr><td><samp class='hiero'>&#x1329B;</samp></td><td><kbd>p</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x1329C;</samp></td><td><kbd>p</kbd><kbd>1</kbd><kbd>a</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x1329D;</samp></td><td><kbd>p</kbd><kbd>2</kbd></td></tr>
@@ -2605,10 +2606,10 @@
                           <tr><td><samp class='hiero'>&#x132A5;</samp></td><td><kbd>p</kbd><kbd>9</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x132A6;</samp></td><td><kbd>p</kbd><kbd>1</kbd><kbd>0</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x132A7;</samp></td><td><kbd>p</kbd><kbd>1</kbd><kbd>1</kbd></td></tr>
-                          
+
                           <tr class='headrow'>
                                   <td colspan='2'>Q<br/>Furniture</td>
-                          </tr>				
+                          </tr>
                           <tr><td><samp class='hiero'>&#x132A8;</samp></td><td><kbd>q</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x132A9;</samp></td><td><kbd>q</kbd><kbd>2</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x132AA;</samp></td><td><kbd>q</kbd><kbd>3</kbd></td></tr>
@@ -2616,10 +2617,10 @@
                           <tr><td><samp class='hiero'>&#x132AC;</samp></td><td><kbd>q</kbd><kbd>5</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x132AD;</samp></td><td><kbd>q</kbd><kbd>6</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x132AE;</samp></td><td><kbd>q</kbd><kbd>7</kbd></td></tr>
-                  
+
                           <tr class='headrow'>
                                   <td colspan='2'>R<br/>Temple</td>
-                          </tr>			
+                          </tr>
                           <tr><td><samp class='hiero'>&#x132AF;</samp></td><td><kbd>r</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x132B0;</samp></td><td><kbd>r</kbd><kbd>2</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x132B1;</samp></td><td><kbd>r</kbd><kbd>2</kbd><kbd>a</kbd></td></tr>
@@ -2656,19 +2657,19 @@
                           <tr><td><samp class='hiero'>&#x132D0;</samp></td><td><kbd>r</kbd><kbd>2</kbd><kbd>9</kbd></td></tr>
                   </tbody>
                   </table>
-                  
-                  <table class='grid colright'>		
+
+                  <table class='grid colright'>
                           <col class='signs' />
                           <col class='keys' />
-                  <thead>	
+                  <thead>
                           <tr>
                                   <th>Sign</th><th>Number/Key</th>
-                          </tr>				
+                          </tr>
                   </thead>
-                  <tbody>			
+                  <tbody>
                           <tr class='headrow'>
                                   <td colspan='2'>S<br/>Crowns + Staffs</td>
-                          </tr>				
+                          </tr>
                           <tr><td><samp class='hiero'>&#x132D1;</samp></td><td><kbd>s</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x132D2;</samp></td><td><kbd>s</kbd><kbd>2</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x132D3;</samp></td><td><kbd>s</kbd><kbd>2</kbd><kbd>a</kbd></td></tr>
@@ -2723,10 +2724,10 @@
                           <tr><td><samp class='hiero'>&#x13304;</samp></td><td><kbd>s</kbd><kbd>4</kbd><kbd>4</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13305;</samp></td><td><kbd>s</kbd><kbd>4</kbd><kbd>5</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13306;</samp></td><td><kbd>s</kbd><kbd>4</kbd><kbd>6</kbd></td></tr>
-                          
+
                           <tr class='headrow'>
                                   <td colspan='2'>T<br/>War, Hunting + Butchery</td>
-                          </tr>				
+                          </tr>
                           <tr><td><samp class='hiero'>&#x13307;</samp></td><td><kbd>t</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13308;</samp></td><td><kbd>t</kbd><kbd>2</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13309;</samp></td><td><kbd>t</kbd><kbd>3</kbd></td></tr>
@@ -2771,10 +2772,10 @@
                           <tr><td><samp class='hiero'>&#x13330;</samp></td><td><kbd>t</kbd><kbd>3</kbd><kbd>4</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13331;</samp></td><td><kbd>t</kbd><kbd>3</kbd><kbd>5</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13332;</samp></td><td><kbd>t</kbd><kbd>3</kbd><kbd>6</kbd></td></tr>
-                          
+
                           <tr class='headrow'>
                                   <td colspan='2'>U<br/>Agriculture + Crafts</td>
-                          </tr>				
+                          </tr>
                           <tr><td><samp class='hiero'>&#x13333;</samp></td><td><kbd>u</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13334;</samp></td><td><kbd>u</kbd><kbd>2</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13335;</samp></td><td><kbd>u</kbd><kbd>3</kbd></td></tr>
@@ -2822,10 +2823,10 @@
                           <tr><td><samp class='hiero'>&#x1335F;</samp></td><td><kbd>u</kbd><kbd>4</kbd><kbd>0</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13360;</samp></td><td><kbd>u</kbd><kbd>4</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13361;</samp></td><td><kbd>u</kbd><kbd>4</kbd><kbd>2</kbd></td></tr>
-  
+
                           <tr class='headrow'>
                                   <td colspan='2'>V<br/>Rope, Fiber, Baskets, etc</td>
-                          </tr>	
+                          </tr>
                           <tr><td><samp class='hiero'>&#x13362;</samp></td><td><kbd>v</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13363;</samp></td><td><kbd>v</kbd><kbd>1</kbd><kbd>a</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x13364;</samp></td><td><kbd>v</kbd><kbd>1</kbd><kbd>b</kbd></td></tr>
@@ -2903,10 +2904,10 @@
                           <tr><td><samp class='hiero'>&#x133AC;</samp></td><td><kbd>v</kbd><kbd>3</kbd><kbd>9</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x133AD;</samp></td><td><kbd>v</kbd><kbd>4</kbd><kbd>0</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x133AE;</samp></td><td><kbd>v</kbd><kbd>4</kbd><kbd>0</kbd><kbd>a</kbd></td></tr>
-                          
+
                           <tr class='headrow'>
                                   <td colspan='2'>W<br/>Stoneware + Pottery</td>
-                          </tr>				
+                          </tr>
                           <tr><td><samp class='hiero'>&#x133AF;</samp></td><td><kbd>w</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x133B0;</samp></td><td><kbd>w</kbd><kbd>2</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x133B1;</samp></td><td><kbd>w</kbd><kbd>3</kbd></td></tr>
@@ -2939,11 +2940,11 @@
                           <tr><td><samp class='hiero'>&#x133CC;</samp></td><td><kbd>w</kbd><kbd>2</kbd><kbd>4</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x133CD;</samp></td><td><kbd>w</kbd><kbd>2</kbd><kbd>4</kbd><kbd>a</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x133CE;</samp></td><td><kbd>w</kbd><kbd>2</kbd><kbd>5</kbd></td></tr>
-                          
-                          
+
+
                           <tr class='headrow'>
                                   <td colspan='2'>X<br/>Loaves + Cakes</td>
-                          </tr>				
+                          </tr>
                           <tr><td><samp class='hiero'>&#x133CF;</samp></td><td><kbd>x</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x133D0;</samp></td><td><kbd>x</kbd><kbd>2</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x133D1;</samp></td><td><kbd>x</kbd><kbd>3</kbd></td></tr>
@@ -2956,10 +2957,10 @@
                           <tr><td><samp class='hiero'>&#x133D8;</samp></td><td><kbd>x</kbd><kbd>7</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x133D9;</samp></td><td><kbd>x</kbd><kbd>8</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x133DA;</samp></td><td><kbd>x</kbd><kbd>8</kbd><kbd>a</kbd></td></tr>
-                          
+
                           <tr class='headrow'>
                                   <td colspan='2'>Y<br/>Writing, Games + Music</td>
-                          </tr>				
+                          </tr>
                           <tr><td><samp class='hiero'>&#x133DB;</samp></td><td><kbd>y</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x133DC;</samp></td><td><kbd>y</kbd><kbd>1</kbd><kbd>a</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x133DD;</samp></td><td><kbd>y</kbd><kbd>2</kbd></td></tr>
@@ -2969,10 +2970,10 @@
                           <tr><td><samp class='hiero'>&#x133E1;</samp></td><td><kbd>y</kbd><kbd>6</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x133E2;</samp></td><td><kbd>y</kbd><kbd>7</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x133E3;</samp></td><td><kbd>y</kbd><kbd>8</kbd></td></tr>
-                          
+
                           <tr class='headrow'>
                                   <td colspan='2'>Z<br/>Geometric Figures</td>
-                          </tr>				
+                          </tr>
                           <tr><td><samp class='hiero'>&#x133E4;</samp></td><td><kbd>z</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x133E5;</samp></td><td><kbd>z</kbd><kbd>2</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x133E6;</samp></td><td><kbd>z</kbd><kbd>2</kbd><kbd>a</kbd></td></tr>
@@ -3014,10 +3015,10 @@
                           <tr><td><samp class='hiero'>&#x1340A;</samp></td><td><kbd>z</kbd><kbd>1</kbd><kbd>6</kbd><kbd>f</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x1340B;</samp></td><td><kbd>z</kbd><kbd>1</kbd><kbd>6</kbd><kbd>g</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x1340C;</samp></td><td><kbd>z</kbd><kbd>1</kbd><kbd>6</kbd><kbd>h</kbd></td></tr>
-                          
+
                           <tr class='headrow'>
                                   <td colspan='2'>AA<br/>Unclassified</td>
-                          </tr>				
+                          </tr>
                           <tr><td><samp class='hiero'>&#x1340D;</samp></td><td><kbd>a</kbd><kbd>a</kbd><kbd>1</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x1340E;</samp></td><td><kbd>a</kbd><kbd>a</kbd><kbd>2</kbd></td></tr>
                           <tr><td><samp class='hiero'>&#x1340F;</samp></td><td><kbd>a</kbd><kbd>a</kbd><kbd>3</kbd></td></tr>
@@ -3078,14 +3079,14 @@
                                   <p>Although it is possible to display hieroglyphs by putting them all in a jpeg, and though many websites still do this, this approach should be avoided at all costs. It is a terrible way to present information. The availability of the first two options should preclude the need to ever display Ancient Egyptian this way ever again.</p>
                           </li>
                   </ol>
-          </div>	
-          <div id='author'>  
+          </div>
+          <div id='author'>
                   <h3>Keyboard Authorship</h3>
                   <p>This keyboard was created by Christian Casey for Right Said Languages, a
                   project designed to provide free resources to students of Ancient Egyptian
-                  languages.</p>	
+                  languages.</p>
           </div>
     </section>
 
-  
+
 </div>

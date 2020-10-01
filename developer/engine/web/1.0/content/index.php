@@ -20,12 +20,6 @@
   $MainPage = true;
 
   require_once('servervars.php');
-  if($isKeymanDesktopHelp)
-  {
-    header("Location: /keyboard/");
-    echo(chr(13).chr(10));
-    exit;
-  }
   require_once('header.php');
 
 ?>
