@@ -43,5 +43,5 @@
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="showLanguageList.php"><code>showLanguageList()</code></a></li>
+ <li><a href="showLanguageList"><code>showLanguageList() (Deprecated)</code></a></li>
 </ul>
