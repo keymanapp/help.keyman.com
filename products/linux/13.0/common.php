@@ -11,6 +11,16 @@ head([
 <h1 class="red">Common Questions</h1>
 
 <p>
+  <span class="red">Q.</span> What Linux distros will Keyman work with?
+</p>
+<p>
+  <span class="red">A.</span> Keyman is built for amd64 architecture and runs on Debian, Ubuntu, Wasta Linux.
+  It can be compiled to run from source in most distributions.<br/>
+  Note: Keyman packages are unavailable on the Xenial ppa.
+</p>
+
+<br/>
+<p>
   <span class="red">Q.</span> How do I install Keyman for Linux?
 </p>
 <p>
@@ -76,16 +86,6 @@ sudo apt-get install ibus-kmfl</code></pre>
 </p>
 <p>
   <img src="<?php echo cdn("img/linux/120/onboard.png"); ?>" alt="Onboard" />
-</p>
-
-<br/>
-<p>
-  <span class="red">Q.</span> What Linux distros will Keyman work with?
-</p>
-<p>
-  <span class="red">A.</span> Keyman runs on Debian, Ubuntu, Wasta Linux and can be compiled to run from source in most
-    distributions.<br/>
-  Note: there's currently a limitation where the Keyman pacakges are incomplete on the Xenial ppa.
 </p>
 
 <br/>
