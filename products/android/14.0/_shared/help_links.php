@@ -4,6 +4,7 @@
   <li class="content-in-app"><a href="index.php">Getting Started</a></li>
   <li class="content-online"><a href="index.php">Keyman for Android help home</a></li>
   <li><a href="installing-keyboards.php">Adding new keyboards</a></li>
+  <li><a href="installing-dictionaries.php">Adding new dictionaries</a></li>
   <li><a href='switching-between-keyboards.php'>Switching between keyboards</a></li>
   <li><a href='uninstalling-keyboards.php'>Removing a keyboard</a></li>
   <li><a href='installing-custom-packages.php'>Installing custom keyboards/dictionaries</a></li>
