@@ -8,7 +8,7 @@ head([
 
 ?>
 
-<h1>Additional KeymanWeb 13.0 Usage Examples</h1>
+<h1>Additional KeymanWeb Usage Examples</h1>
 <p style='margin-top: 16px'>
 <div class='body_text'>
   <p>This set of examples displays basic use of the API to demonstrate customization possibilities for use of KeymanWeb.</p>

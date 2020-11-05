@@ -2,7 +2,7 @@
   require_once('includes/template.php');
 
   head([
-    'title' => "KeymanWeb 13.0 Events"
+    'title' => "KeymanWeb Events"
   ]);
 ?>
 

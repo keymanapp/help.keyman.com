@@ -2,7 +2,7 @@
   require_once('includes/template.php');
 
   head([
-    'title' => "KeymanWeb 13.0 Keyboard Properties"
+    'title' => "KeymanWeb Keyboard Properties"
   ]);
 ?>
 <h1 class="title" id="keyboard_properties">Keyboard Properties</h1>

@@ -2,8 +2,8 @@
   Name:             index
   Copyright:        Copyright (C) 2017 SIL International
 
-  $pagename = 'Keyman Engine for Web 13.0 Developer Help';
-  $pagetitle = 'Keyman Engine for Web 13.0 Development';
+  $pagename = 'Keyman Engine for Web 14.0 Developer Help';
+  $pagetitle = 'Keyman Engine for Web 14.0 Development';
   $MainPage = true;
   
   require_once('header.php');
@@ -15,30 +15,30 @@
   require_once('includes/template.php');
 
   head([
-    'title' => "Keyman Engine for Web 13.0 Developer Help"
+    'title' => "Keyman Engine for Web 14.0 Developer Help"
   ]);
 ?>
 
-<h1 class="title" id="">Keyman Engine for Web 13.0 Developer Help</h1>
+<h1 class="title" id="">Keyman Engine for Web 14.0 Developer Help</h1>
 
 <div class='body_text'>
 
 <p style='margin-top: 16px'>
-<p>Keyman Engine for Web 13.0 is the current version of KeymanWeb and supports touch devices with custom touch-layouts as well as desktop computer browsers.</p>
+<p>Keyman Engine for Web 14.0 is the current version of KeymanWeb and supports touch devices with custom touch-layouts as well as desktop computer browsers.</p>
 
   <dl>
     <dt><a href='https://keyman.com/developer/keymanweb/'>Download</a></dt>
-    <dd>Downloading Keyman Engine for Web 13.0</dd>
+    <dd>Downloading Keyman Engine for Web 14.0</dd>
   </dl>
 
   <dl>
   <dt><a href='guide/'>Guide</a></dt>
-  <dd>Keyman Engine for Web 13.0 Guide</dd>
+  <dd>Keyman Engine for Web 14.0 Guide</dd>
   </dl>
 
   <dl>
   <dt><a href='reference'>Reference</a></dt>
-  <dd>Keyman Engine for Web 13.0 Developer Reference</dd>
+  <dd>Keyman Engine for Web 14.0 Developer Reference</dd>
   </dl>
 
   <dl>
@@ -56,6 +56,8 @@
 <h3>Other Versions</h3>
 
 <ul>
+  <li><a href="../13.0">13.0</a></li>
+  <li><a href="../12.0">12.0</a></li>
   <li><a href="../11.0">11.0</a></li>
   <li><a href="../10.0">10.0</a></li>
   <li><a href="../2.0">2.0</a></li>

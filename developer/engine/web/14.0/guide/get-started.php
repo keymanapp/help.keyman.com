@@ -42,7 +42,7 @@ echo codebox(<<<END
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>KeymanWeb 13.0 - A First Example</title>
+  <title>KeymanWeb - A First Example</title>
 
   <script src='$cdn_path/keymanweb.js'></script>
   <script src='$cdn_path/kmwuitoggle.js'></script>
@@ -68,7 +68,7 @@ END
 
 <ul>
 <li><p>The <code>&lt;script&gt;</code> inclusion <code>&lt;script src='<?=$cdn_path?>/keymanweb.js'&gt;&lt;/script&gt;</code>
-    loads the Keyman Engine for Web 13.0 script for the page.</p></li>
+    loads the Keyman Engine for Web script for the page.</p></li>
 
 <li><p><code>(function(kmw) { kmw.init(); });</code> serves to initialize the web engine with default settings.
   By adding the object <code>{attachType:'auto'}</code> as a parameter to our <code>kmw.init()</code> call, the

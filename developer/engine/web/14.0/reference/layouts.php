@@ -2,7 +2,7 @@
   require_once('includes/template.php');
 
   head([
-    'title' => "KeymanWeb 13.0 Layout Designer"
+    'title' => "KeymanWeb Layout Designer"
   ]);
 ?>
 <h1 class="title" id="layouts">Layout Designer</h1>

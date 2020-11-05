@@ -2,16 +2,16 @@
   require_once('includes/template.php');
 
   head([
-    'title' => "KeymanWeb 13.0"
+    'title' => "KeymanWeb 14.0"
   ]);
 
   require_once("includes/__docheader.php");
 ?>
 
-<h1 class="title" id="">KeymanWeb 13.0 Reference</h1>
+<h1 class="title" id="">KeymanWeb 14.0 Reference</h1>
 
   <dl>
-  <dt><a href='overview'>KeymanWeb 13.0 Overview</a></dt>
+  <dt><a href='overview'>KeymanWeb Overview</a></dt>
   <dd>KeymanWeb is a cross-browser JavaScript input method solution.</dd>
   </dl>
   
@@ -50,32 +50,32 @@
   </dl>
 
   <dl>
-  <dt><a href='core/init#init_options'>KeymanWeb 13.0 Initialization Options</a></dt>
+  <dt><a href='core/init#init_options'>KeymanWeb Initialization Options</a></dt>
   <dd>The following options can be defined by the site designer in the initialization call to KeymanWeb.</dd>
   </dl>
 
   <dl>
-  <dt><a href='events'>KeymanWeb 13.0 Events</a></dt>
+  <dt><a href='events'>KeymanWeb Events</a></dt>
   <dd>A number of KeymanWeb events are exposed to allow the designer of a user interface to control the appearance and
     behavior of user interface elements. Standard event-processing requires all arguments to be passed as an array
     (object) with named member variables.</dd>
   </dl>
 
   <dl>
-  <dt><a href='keyboard_properties'>KeymanWeb 13.0 Keyboard Properties</a></dt>
+  <dt><a href='keyboard_properties'>KeymanWeb Keyboard Properties</a></dt>
   <dd>Most keyboards are generated automatically from the Keyman keyboard source by Keyman Developer and contain
     properties used by KeymanWeb during keyboard mapping.</dd>
   </dl> 
 
   <dl>
-  <dt><a href='layouts'>KeymanWeb 13.0 Layout Designer</a></dt>
-  <dd>One of the main features of KeymanWeb 11 is its ability to support distinct, user-customizable layouts for
+  <dt><a href='layouts'>KeymanWeb Layout Designer</a></dt>
+  <dd>One of the main features of KeymanWeb is its ability to support distinct, user-customizable layouts for
     touch-screen keyboards on phones and tablets.</dd>
   </dl> 
 
   <dl>
-  <dt><a href='layoutspec'>KeymanWeb 13.0 Layout Specifications</a></dt>
-  <dd>Touch-screen layouts for KeymanWeb 11 are specified as JSON objects containing a member object for each specified device type.</dd>
+  <dt><a href='layoutspec'>KeymanWeb Layout Specifications</a></dt>
+  <dd>Touch-screen layouts for KeymanWeb are specified as JSON objects containing a member object for each specified device type.</dd>
   </dl> 
 
   <dl>

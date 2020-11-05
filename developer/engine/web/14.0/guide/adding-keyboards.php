@@ -9,7 +9,7 @@
   require_once('includes/template.php');
 
 head([
-  'title' => "KeymanWeb 13.0 - Installing Languages"
+  'title' => "KeymanWeb - Installing Languages"
 ]);
 ?>
 
