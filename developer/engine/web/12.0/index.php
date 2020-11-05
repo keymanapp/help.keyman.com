@@ -24,7 +24,7 @@
 <div class='body_text'>
 
 <p style='margin-top: 16px'>
-<p>Keyman Engine for Web 12.0 is the current version of KeymanWeb and supports touch devices with custom touch-layouts as well as desktop computer browsers.</p>
+<p>Keyman Engine for Web 12.0 supports touch devices with custom touch-layouts as well as desktop computer browsers.</p>
 
   <dl>
     <dt><a href='https://keyman.com/developer/keymanweb/'>Download</a></dt>
