@@ -18,52 +18,57 @@
     toward understanding the keyboard API functions enumerated in this section.
 </p>
 <p>
-    Custom user interfaces would not normally use these functions, but they are described here 
+    Custom user interfaces would not normally use these functions, but they are described here
     as some custom keyboards, such as IME-style keyboards, may need to interact with the user interface.
   </p>
-  
+
   <dl>
   <dt><a href='any'><code>any</code> Function (Deprecated)</a></dt>
   <dd>Returns whether or not the char <code>ch</code> is found within the <a href="/developer/language/reference/any">
       <code class="language-keyman">any</code></a>(<a href="/developer/language/reference/store"><code class="language-keyman">store</code></a>)
     string, setting an internally-tracked index for use in the <code>indexOutput</code> function.</dd>
     <dd>Shorthand name:  <code>KeymanWeb.KA</code></dd>
-  </dl> 
-  
+  </dl>
+
   <dl>
   <dt><a href='beep'><code>beep</code> Function</a></dt>
   <dd>Flash body or element as substitute for an audible feedback <a href="/developer/language/reference/beep">
       <code class="language-keyman">beep</code></a>.</dd>
     <dd>Shorthand name: <code>KeymanWeb.KB</code></dd>
-  </dl> 
-  
+  </dl>
+
   <dl>
   <dt><a href='beepReset'><code>beepReset</code> Function</a></dt>
   <dd>Cancels a previous feedback <a href="/developer/language/reference/beep"><code class="language-keyman">beep</code></a>
     operation on a page element.</dd>
     <dd>Shorthand name: <code>KeymanWeb.KBR</code></dd>
-  </dl> 
-  
+  </dl>
+
   <dl>
   <dt><a href='context'><code>context</code> Function (Deprecated)</a></dt>
   <dd>Gets <a href="/developer/language/reference/context"><code class="language-keyman">context</code></a> for an ongoing
     keyboard operation relative to the caret's present position.</dd>
     <dd>Shorthand name: <code>KeymanWeb.KC</code></dd>
-  </dl> 
-  
+  </dl>
+
+  <dt><a href='contextExOutput'><code>contextExOutput</code> Function</a></dt>
+  <dd>Emits the character or object at `contextOffset` from the current matched rule's context.</dd>
+    <dd>Shorthand name: <code>KeymanWeb.KCXO</code></dd>
+  </dl>
+
   <dl>
   <dt><a href='contextMatch'><code>contextMatch</code> Function (Deprecated)</a></dt>
   <dd>Context matching:  Returns <code>true</code> if the specified <code>context</code> call matches a provided string.</dd>
     <dd>Shorthand name: <code>KeymanWeb.KCM</code></dd>
-  </dl> 
-  
+  </dl>
+
   <dl>
   <dt><a href='deadkeyMatch'><code>deadkeyMatch</code> Function (Deprecated)</a></dt>
   <dd>Deadkey matching:  Seeks to match the <a href="/developer/language/reference/deadkey"><code class="language-keyman">deadkey</code></a>
     state <code>dk</code> at the relative caret position <code>n</code>.</dd>
     <dd>Shorthand name: <code>KeymanWeb.KDM</code></dd>
-  </dl> 
-  
+  </dl>
+
   <dl>
   <dt><a href='deadkeyOutput'><code>deadkeyOutput</code> Function</a></dt>
     <dd>Deadkey output:  Associates the <a href="/developer/language/reference/deadkey"><code class="language-keyman">deadkey</code></a> state
@@ -89,7 +94,7 @@
       <code class="language-keyman">store</code></a> with a string value.</dd>
     <dd>Shorthand name: <code>KeymanWeb.KIFS</code></dd>
   </dl>
-  
+
   <dl>
   <dt><a href='indexOutput'><code>indexOutput</code> Function</a></dt>
   <dd>Index-based output:  Outputs a mapped character according to a previous selection from a <code>keyman.interface.any()</code>
@@ -115,29 +120,29 @@
   <dt><a href='keyInformation'><code>keyInformation</code> Function</a></dt>
   <dd>Returns an object with extended information about a specified keystroke event.</dd>
     <dd>Shorthand name: <code>KeymanWeb.KKI</code></dd>
-  </dl> 
-  
+  </dl>
+
   <dl>
   <dt><a href='keyMatch'><code>keyMatch</code> Function</a></dt>
   <dd>Keystroke matching:  Returns <code>true</code> if the event matches the rule's shift mask and key code.</dd>
     <dd>Shorthand name: <code>KeymanWeb.KKM</code></dd>
-  </dl> 
-  
+  </dl>
+
   <dl>
   <dt><a href='loadStore'><code>loadStore</code> Function</a></dt>
   <dd>Load an option <a href="/developer/language/guide/stores"><code class="language-keyman">store</code></a>
     value from a cookie or default value if no prior stored value exists.</dd>
     <dd>Shorthand name: <code>KeymanWeb.KLOAD</code></dd>
-  </dl> 
-  
+  </dl>
+
   <dl>
   <dt><a href='_nul'><code>nul</code> Function</a></dt>
   <dd><a href="/developer/language/reference/nul"><code class="language-keyman">nul</code></a> context check:  Returns <code>true</code>
     if the length of the <a href="/developer/language/reference/context"><code class="language-keyman">context</code></a>
     is less than or equal to <code>n</code> characters.</dd>
     <dd>Shorthand name: <code>KeymanWeb.KN</code></dd>
-  </dl> 
-  
+  </dl>
+
   <dl>
   <dt><a href='output'><code>output</code> Function</a></dt>
   <dd>Outputs the specified string to an element, overwriting characters before the caret if specified.</dd>
@@ -148,8 +153,8 @@
   <dt><a href='registerKeyboard'><code>registerKeyboard</code> Function</a></dt>
   <dd>Register the keyboard stub and load the keyboard.</dd>
     <dd>Shorthand name: <code>KeymanWeb.KR</code></dd>
-  </dl> 
-  
+  </dl>
+
   <dl>
   <dt><a href='registerStub'><code>registerStub</code> Function</a></dt>
   <dd>Register the keyboard stub, return true if already registered.</dd>
@@ -167,14 +172,14 @@
   <dd>Save an option <a href="/developer/language/guide/stores"><code class="language-keyman">store</code></a>
     value to a cookie for the active keyboard.</dd>
     <dd>Shorthand name: <code>KeymanWeb.KSAVE</code></dd>
-  </dl> 
-  
+  </dl>
+
   <dl>
   <dt><a href='setStore'><code>setStore</code> Function</a></dt>
   <dd><code>setStore</code> sets the value of a <a href="/developer/language/guide/stores#toc-system-stores">system
       <code class="language-keyman">store</code></a> to a string.</dd>
     <dd>Shorthand name: <code>KeymanWeb.KSETS</code></dd>
-  </dl> 
+  </dl>
 
   <dl>
   <dt><a href='stateMatch'><code>stateMatch</code> Function</a></dt>
