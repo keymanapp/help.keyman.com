@@ -1,5 +1,5 @@
 ---
-title: contextExOutput Function
+title: contextExOutput (KCXO)
 ---
 
 ## Summary

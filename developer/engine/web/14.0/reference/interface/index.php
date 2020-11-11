@@ -51,8 +51,9 @@
     <dd>Shorthand name: <code>KeymanWeb.KC</code></dd>
   </dl>
 
+  <dl>
   <dt><a href='contextExOutput'><code>contextExOutput</code> Function</a></dt>
-  <dd>Emits the character or object at `contextOffset` from the current matched rule's context.</dd>
+  <dd>Emits the character or object at <code class="language-keyman">contextOffset</code> from the current matched rule's context.</dd>
     <dd>Shorthand name: <code>KeymanWeb.KCXO</code></dd>
   </dl>
 
