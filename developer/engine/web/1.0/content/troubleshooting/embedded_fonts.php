@@ -1,164 +1,170 @@
 <?php /*
   Name:             embedded_fonts
   Copyright:        Copyright (C) 2005 Tavultesoft Pty Ltd.
-  Documentation:    
-  Description:      
+  Documentation:
+  Description:
   Create Date:      18 Sep 2009
 
   Modified Date:    18 Sep 2009
   Authors:          mcdurdin
-  Related Files:    
-  Dependencies:     
+  Related Files:
+  Dependencies:
 
-  Bugs:             
-  Todo:             
-  Notes:            
+  Bugs:
+  Todo:
+  Notes:
   History:          18 Sep 2009 - mcdurdin - Polish
 */
-  require_once('servervars.php');
-  
+
+use Keyman\Site\Common\KeymanHosts;
+
+require_once('servervars.php');
+
   $pagename = 'Embedded Font Troubleshooting';
   $pagetitle = 'Embedded Font Troubleshooting';
+
+  $site_keymanweb = KeymanHosts::Instance()->s_keyman_com;
+
   $style = <<<MORESTYLES
-  
-  
+
+
   @font-face {
     font-family: GeezWeb;
     font-style:  normal;
     font-weight: normal;
-    src: url(http://$site_keymanweb_static/fonts/ETHIOPI0.eot);
+    src: url($site_keymanweb/fonts/ETHIOPI0.eot);
   }
 
   @font-face {
     font-family: GeezWeb;
     font-style:  normal;
     font-weight: normal;
-    src: url(http://$site_keymanweb_static/fonts/wookianos.ttf) format("truetype");
+    src: url($site_keymanweb/fonts/wookianos.ttf) format("truetype");
   }
 
   @font-face {
     font-family: MyanmarWeb;
     font-style:  normal;
     font-weight: normal;
-    src: url(http://$site_keymanweb_static/fonts/PADAUK0.eot);
+    src: url($site_keymanweb/fonts/PADAUK0.eot);
   }
 
   @font-face {
     font-family: MyanmarWeb;
     font-style:  normal;
     font-weight: normal;
-    src: url(http://$site_keymanweb_static/fonts/Padauk.ttf) format("truetype");
-  }
-  
-  @font-face {
-    font-family: LatinWeb;
-    font-style:  normal;
-    font-weight: normal;
-    src: url(http://$site_keymanweb_static/fonts/LUCIDAS0.eot);
+    src: url($site_keymanweb/fonts/Padauk.ttf) format("truetype");
   }
 
   @font-face {
     font-family: LatinWeb;
     font-style:  normal;
     font-weight: normal;
-    src: url(http://$site_keymanweb_static/fonts/l_10646.ttf) format("truetype");
+    src: url($site_keymanweb/fonts/LUCIDAS0.eot);
+  }
+
+  @font-face {
+    font-family: LatinWeb;
+    font-style:  normal;
+    font-weight: normal;
+    src: url($site_keymanweb/fonts/l_10646.ttf) format("truetype");
   }
 
   @font-face {
     font-family: KhmerWeb;
     font-style:  normal;
     font-weight: normal;
-    src: url(http://$site_keymanweb_static/fonts/KHMEROS0.eot);
+    src: url($site_keymanweb/fonts/KHMEROS0.eot);
   }
 
   @font-face {
     font-family: KhmerWeb;
     font-style:  normal;
     font-weight: normal;
-    src: url(http://$site_keymanweb_static/fonts/KhmerOS.ttf) format("truetype");
+    src: url($site_keymanweb/fonts/KhmerOS.ttf) format("truetype");
   }
 
   @font-face {
     font-family: LaoWeb;
     font-style:  normal;
     font-weight: normal;
-    src: url(http://$site_keymanweb_static/fonts/SAYSETT0.eot);
+    src: url($site_keymanweb/fonts/SAYSETT0.eot);
   }
 
   @font-face {
     font-family: LaoWeb;
     font-style:  normal;
     font-weight: normal;
-    src: url(http://$site_keymanweb_static/fonts/Saysettha_OT.ttf) format("truetype");
+    src: url($site_keymanweb/fonts/Saysettha_OT.ttf) format("truetype");
   }
 
   @font-face {
     font-family: OriyaWeb;
     font-style:  normal;
     font-weight: normal;
-    src: url(http://$site_keymanweb_static/fonts/UTKAL0.eot);
+    src: url($site_keymanweb/fonts/UTKAL0.eot);
   }
 
   @font-face {
     font-family: OriyaWeb;
     font-style:  normal;
     font-weight: normal;
-    src: url(http://$site_keymanweb_static/fonts/utkalm.ttf) format("truetype");
+    src: url($site_keymanweb/fonts/utkalm.ttf) format("truetype");
   }
 
   @font-face {
     font-family: SinhalaWeb;
     font-style:  normal;
     font-weight: normal;
-    src: url(http://$site_keymanweb_static/fonts/KAPUTAU0.eot);
+    src: url($site_keymanweb/fonts/KAPUTAU0.eot);
   }
 
   @font-face {
     font-family: SinhalaWeb;
     font-style:  normal;
     font-weight: normal;
-    src: url(http://$site_keymanweb_static/fonts/kaputaunicode.ttf) format("truetype");
-  } 
-  
-  @font-face {
-    font-family: TamilWeb;
-    font-style:  normal;
-    font-weight: normal;
-    src: url(http://$site_keymanweb_static/fonts/AAVARAN0.eot);
+    src: url($site_keymanweb/fonts/kaputaunicode.ttf) format("truetype");
   }
 
   @font-face {
     font-family: TamilWeb;
     font-style:  normal;
     font-weight: normal;
-    src: url(http://$site_keymanweb_static/fonts/aava1.ttf)  format("truetype");
+    src: url($site_keymanweb/fonts/AAVARAN0.eot);
+  }
+
+  @font-face {
+    font-family: TamilWeb;
+    font-style:  normal;
+    font-weight: normal;
+    src: url($site_keymanweb/fonts/aava1.ttf)  format("truetype");
   }
 
   @font-face {
     font-family: TibetanWeb;
     font-style:  normal;
     font-weight: normal;
-    src: url(http://$site_keymanweb_static/fonts/CTRCUCH0.eot);
+    src: url($site_keymanweb/fonts/CTRCUCH0.eot);
   }
 
   @font-face {
     font-family: TibetanWeb;
     font-style:  normal;
     font-weight: normal;
-    src: url(http://$site_keymanweb_static/fonts/CTRC-Uchen.ttf)  format("truetype");
+    src: url($site_keymanweb/fonts/CTRC-Uchen.ttf)  format("truetype");
   }
 
     table.sample {border: 2px solid #A64826; margin:0; border-spacing:0; border-collapse:collapse}
-    
+
     table.sample tr {line-height:300%}
-    table.sample td {background:#ffffc6; text-align:center; 
+    table.sample td {background:#ffffc6; text-align:center;
       border: 1px solid #A64826; padding-left: 4px }
-      
-    table.sample th {text-align: center; color: #A64826; 
+
+    table.sample th {text-align: center; color: #A64826;
       border: 1px solid #A64826; padding:8px; background:#e0e0e0}
 
     table.sample td.lg {text-align: left; font-weight: bold}
-    table.sample td.nofont {font-size:24px}  
+    table.sample td.nofont {font-size:24px}
     table.sample td.geez {font-family: GeezWeb; font-size:24px !important}
     table.sample td.burmese {font-family: MyanmarWeb; font-size:24px !important}
     table.sample td.latin {font-family: LatinWeb; font-size:24px !important}
@@ -169,26 +175,26 @@
     table.sample td.tamil {font-family: TamilWeb; font-size:24px !important}
     table.sample td.tibetan {font-family: TibetanWeb; font-size:24px !important}
 MORESTYLES;
-  
+
   require_once('header.php');
-  
+
   echo <<<END
 
 <div class='body_text'>
 
 <p style='margin-top: 16px'>
-KeymanWeb allows users to display and enter text that may require a font 
-not normally installed with your operating system, by including (embedding) a special copy 
+KeymanWeb allows users to display and enter text that may require a font
+not normally installed with your operating system, by including (embedding) a special copy
 of a suitable font in the web page.
 </p>
 <p>
-However, many older browsers do not support the use of embedded fonts.  This test page will 
-help you to find out whether or not your browser supports the use of embedded fonts 
+However, many older browsers do not support the use of embedded fonts.  This test page will
+help you to find out whether or not your browser supports the use of embedded fonts
 for a number of languages which may not be fully supported by your operating system.
 </p>
-<p>In the table below, the left column has an image showing how the sample text 
+<p>In the table below, the left column has an image showing how the sample text
 should appear, the center column displays the sample text using a font installed on
-your system, if available, and the right column shows the same sample text 
+your system, if available, and the right column shows the same sample text
 displayed using an embedded font downloaded automatically with this web page.
 </p>
 <p>
@@ -262,12 +268,12 @@ displayed using an embedded font downloaded automatically with this web page.
 <br style='clear:both'/>
 
 <p>
-*If the embedded font display for a language is not exactly the same as in the corresponding 
-image, for example, with script characters shown but incorrectly positioned or ordered, 
-you will need to install the Keyman Desktop package for your language onto your 
-computer.  You can download the Keyman Desktop package by clicking the 
-"Help on this keyboard" link in the On Screen Keyboard. This is likely to be observed 
-with scripts such as Burmese, Khmer or Tibetan if your operating system does not 
+*If the embedded font display for a language is not exactly the same as in the corresponding
+image, for example, with script characters shown but incorrectly positioned or ordered,
+you will need to install the Keyman Desktop package for your language onto your
+computer.  You can download the Keyman Desktop package by clicking the
+"Help on this keyboard" link in the On Screen Keyboard. This is likely to be observed
+with scripts such as Burmese, Khmer or Tibetan if your operating system does not
 fully support the display of the font used for those scripts.
 </p>
 

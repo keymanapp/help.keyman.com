@@ -4,6 +4,9 @@
   require_once('servervars.php');
   require_once('page-version.php');
 
+  require_once __DIR__ . '/../autoload.php';
+  use Keyman\Site\Common\KeymanHosts;
+
   // Variables used to manage and trigger debugging tests.
   // Simply defining the variable below is enough to trigger debug mode.
   // $kmw_dev_path = 'http://localhost/release/unminified/web';
@@ -65,11 +68,14 @@
    else window.onload = downloadJSAtOnload;
   </script>
   <?php if(isset($IncludeKeymanWeb) && $IncludeKeymanWeb == true){
-    $kmw_version_number = '10.0.103';
-    $kmw_version = @file_get_contents('https://api.keyman.com/version/web/stable');
-    if($kmw_version !== FALSE) {
-      $kmw_version = @json_decode($kmw_version);
-      if($kmw_version !== NULL) $kmw_version_number = $kmw_version->version;
+    $kmw_version_number = '13.0.108';
+    if(KeymanHosts::Instance()->Tier() != KeymanHosts::TIER_TEST) {
+      // For performance reasons, we don't check KeymanWeb version on Test Tier
+      $kmw_version = @file_get_contents('https://api.keyman.com/version/web/stable');
+      if($kmw_version !== FALSE) {
+        $kmw_version = @json_decode($kmw_version);
+        if($kmw_version !== NULL) $kmw_version_number = $kmw_version->version;
+      }
     }
     if(!isset($kmw_dev_path)) {
   ?>
