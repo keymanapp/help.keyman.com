@@ -1,7 +1,9 @@
 {
     "require": {
         "sentry/sdk": "2.1.0",
-        "php-http/curl-client": "^2.1"
+        "php-http/curl-client": "^2.1",
+        "erusev/parsedown": "^1.7",
+        "erusev/parsedown-extra": "^0.8.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.2"

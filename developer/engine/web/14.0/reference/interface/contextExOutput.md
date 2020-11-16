@@ -22,21 +22,21 @@ or
 
 ## Parameters
 
-* `dn`
-  - Type: `number`
-  - number of characters to delete left of cursor
+`dn`
+: Type: `number`
+: number of characters to delete left of cursor
 
-* `outputTarget`
-  - Type: `OutputTarget`
-  - target to output to
+`outputTarget`
+: Type: `OutputTarget`
+: target to output to
 
-* `contextLength`
-  - Type: `number`
-  - length of current rule context to retrieve
+`contextLength`
+: Type: `number`
+: length of current rule context to retrieve
 
-* `contextOffset`
-  - Type: `number`
-  - offset from start of current rule context, 1-based
+`contextOffset`
+: Type: `number`
+: offset from start of current rule context, 1-based
 
 ## Returns
 
