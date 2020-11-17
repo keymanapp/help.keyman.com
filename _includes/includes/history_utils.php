@@ -6,8 +6,8 @@
  * Time: 11:51 AM
  */
 
-require_once("includes/ext/parsedown/Parsedown.php");
 require_once("includes/servervars.php");
+require_once __DIR__ . '/../../vendor/autoload.php';
 
 function display_history($platform){
   global $site_suffix;
@@ -24,7 +24,7 @@ function display_history($platform){
   }
 
   // Performs the parsing + prettification of Markdown for display through PHP.
-  $Parsedown = new Parsedown();
+  $Parsedown = new \ParsedownExtra();
 
   // Definition of a few adjustments to our history.md spec for nicer website display
   // Only needed if using header.php, not if using template.php.
