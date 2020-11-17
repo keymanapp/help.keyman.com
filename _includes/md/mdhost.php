@@ -1,6 +1,7 @@
 <?php
   require_once('includes/template.php');
   require_once("includes/ext/parsedown/Parsedown.php");
+  require_once("includes/ext/parsedown/ParsedownExtra.php");
 
   $pagetitle = 'TODO';
 
@@ -50,7 +51,7 @@
 
 <?php
   // Performs the parsing + prettification of Markdown for display through PHP.
-  $Parsedown = new Parsedown();
+  $Parsedown = new ParsedownExtra();
 
   // Does the magic.
   echo $Parsedown->text($contents);
