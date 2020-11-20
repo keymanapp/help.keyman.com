@@ -11,7 +11,7 @@
 <h1>KMManager.getKeyboardInfo()</h1>
 
 <h2 id="Summary" name="Summary">Summary</h2>
-<p>The <code><strong><?php echo $method.'()' ?></strong></code> method returns information dictionary of the specified keyboard.</p>
+<p>The <code><strong><?php echo $method.'()' ?></strong></code> method returns information of the specified keyboard.</p>
 
 <h2 id="Syntax" name="Syntax">Syntax</h2>
 <pre class="language-javascript"><code><?php echo $methodSyntax ?></code></pre>
@@ -25,7 +25,10 @@
 </dl>
 
 <h3 id="Returns" name="Returns">Returns</h3>
-<p>Returns an information dictionary of the specified keyboard with keys and values defined as <code>HashMap&lt;String key, String value&gt;</code>.</p>
+<p>Returns an information <code>Keyboard</code> type of the specified keyboard.</p>
+
+<h3 id="Returns" name="Returns">Returns</h3>
+<p>(Deprecated) Returns an information dictionary of the specified keyboard with keys and values defined as <code>HashMap&lt;String key, String value&gt;</code>.</p>
 
 <h2 id="Description" name="Description">Description</h2>
 <p>Use this method to get details of the keyboard at given position in keyboards list. Details include keyboard ID, language ID, keyboard name, language name and fonts.</p>
@@ -34,14 +37,16 @@
 
 <h3 id="Example:_Using_method" name="Example:_Using_method">Example: Using <code><?php echo $method.'()' ?></code></h3>
 <p>The following script illustrate the use of <code><?php echo $method.'()' ?></code>:</p>
-<pre class="language-javascript line-numbers"><code>    HashMap&lt;String, String&gt; keyboardInfo = KMManager.getKeyboardInfo(this, 1);
+<pre class="language-javascript line-numbers"><code>    Keyboard keyboardInfo = KMManager.getKeyboardInfo(this, 1);
     if (keyboardInfo != null) {
-        String keyboardId = keyboardInfo.get(KMManager.KMKey_KeyboardID);
-        String languageId = keyboardInfo.get(KMManager.KMKey_LanguageID);
-        String keyboardName = keyboardInfo.get(KMManager.KMKey_KeyboardName);
-        String languageName = keyboardInfo.get(KMManager.KMKey_LanguageName);
-        String font = keyboardInfo.get(KMManager.KMKey_Font);
-        String oskFont = keyboardInfo.get(KMManager.KMKey_OskFont);
+        String packageID = keyboardInfo.getPackageID();
+        String keyboardId = keyboardInfo.getKeyboardID();
+        String keyboardName = keyboardInfo.getKeyboardName();
+        String languageId = keyboardInfo.getLanguageID();
+        String languageName = keyboardInfo.getLanguageName();
+        String version = keyboardInfo.getVersion();
+        String font = keyboardInfo.getFont();
+        String oskFont = keyboardInfo.getOSKFont();
         //
     }
 </code></pre>

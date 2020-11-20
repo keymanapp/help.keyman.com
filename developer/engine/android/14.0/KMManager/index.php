@@ -68,7 +68,7 @@
   <dd>returns information dictionary of the current keyboard</dd>
 
   <dt><code><a href='getDefaultKeyboard.php'>getDefaultKeyboard()</a></code></dt>
-  <dd>returns the default fallback keyboard if none have been added</dd>
+  <dd>returns the keyboard information for the fallback keyboard</dd>
 
   <dt><code><a href='getFontTypeface.php'>getFontTypeface()</a></code></dt>
   <dd>creates a new typeface from the specified font filename</dd>
@@ -188,7 +188,7 @@
   <dd>enables or disables debugging of Keyman Engine</dd>
 
   <dt><code><a href='setDefaultKeyboard.php'>setDefaultKeyboard()</a></code></dt>
-  <dd>sets the default fallback keyboard to use if none have been added</dd>
+  <dd>sets the keyboard information for the fallback keyboard</dd>
 
   <dt><code><a href='setGlobeKeyAction.php'>setGlobeKeyAction()</a></code></dt>
   <dd>sets an action type for the 'Globe' key</dd>
