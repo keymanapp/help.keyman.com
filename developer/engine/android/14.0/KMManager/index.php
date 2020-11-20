@@ -121,6 +121,9 @@
   <dt><code>getLexicalModelsList()</code></dt>
   <dd>returns the array of lexical models list</dd>
 
+  <dt><code><a href='getMaySendCrashReport'>getMaySendCrashReport()</a></code></dt>
+  <dd>returns whether Keyman Engine is allowed to send crash reports over the network to sentry.keyman.com</dd>
+
   <dt><code><a href='getVersion.php'>getVersion()</a></code></dt>
   <dd>returns the version number of Keyman Engine</dd>
 
@@ -201,6 +204,9 @@
 
   <dt><code><strike>setKeymanLicense() (Deprecated)</strike></code></dt>
   <dd>sets the developer license/key pair to unlock Keyman Engine</dd>
+
+  <dt><code><a href='setMaySendCrashReport'>setMaySendCrashReport()</a></code></dt>
+  <dd>sets whether Keyman Engine can send crash reports over the network to sentry.keyman.com</dd>
 
   <dt><code><a href='setShouldAllowSetKeyboard.php'>setShouldAllowSetKeyboard()</a></code></dt>
   <dd>sets whether Keyman Engine allows setting a keyboard other than the default keyboard</dd>
