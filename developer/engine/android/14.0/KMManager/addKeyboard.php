@@ -54,7 +54,7 @@
 
 <h2 id="Examples">Examples</h2>
 
-<h3 id="Example:_Using_method" name="Example:_Using_method">Example 1: Using <code><?php echo $method.'()' ?></code></h3>
+<h3 id="Example:_Using_method" name="Example:_Using_method">Example: Using <code><?php echo $method.'()' ?></code></h3>
 <p>The following script illustrate the use of <code><?php echo $method.'()' ?></code>:</p>
 <pre class="language-javascript line-numbers"><code>    // Add a custom keyboard
     Keyboard kbInfo = new Keyboard(
@@ -76,21 +76,6 @@
 
     KMManager.addKeyboard(this, kbInfo);
 </code></pre>
-
-<h3 id="Example:_Using_method" name="Example:_Using_method">Example 2: Using <code><?php echo $method.'()' ?></code> (Deprecated syntax)</h3>
-<p>The following script illustrate the use of <code><?php echo $method.'()' ?></code>:</p>
-<pre class="language-javascript line-numbers"><code>    // Add a custom keyboard
-    HashMap<String, String> kbInfo = new HashMap<String, String>();
-    kbInfo.put(KMManager.KMKey_KeyboardID, "tamil99m");
-    kbInfo.put(KMManager.KMKey_LanguageID, "ta");
-    kbInfo.put(KMManager.KMKey_KeyboardName, "Tamil 99M");
-    kbInfo.put(KMManager.KMKey_LanguageName, "Tamil");
-    kbInfo.put(KMManager.KMKey_KeyboardVersion, "1.1");
-    kbInfo.put(KMManager.KMKey_Font, "aava1.ttf");
-    KMManager.addKeyboard(this, kbInfo);
-
-</code></pre>
-
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>

@@ -39,7 +39,7 @@
 </dl>
 
 <h3 id="Returns" name="Returns">Returns</h3>
-<p>Returns an information dictionary of the current keyboard with keys and values defined as <code>HashMap&lt;String key, String value&gt;</code>.</p>
+<p>(Deprecated) Returns an information dictionary of the current keyboard with keys and values defined as <code>HashMap&lt;String key, String value&gt;</code>.</p>
 
 <h2 id="Description" name="Description">Description</h2>
 <p>Use this method to get details of the currently selected keyboard. Details include keyboard ID, language ID, keyboard name, language name and fonts.</p>

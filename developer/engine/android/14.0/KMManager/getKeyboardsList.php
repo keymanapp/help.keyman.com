@@ -39,7 +39,7 @@
 </dl>
 
 <h3 id="Returns" name="Returns">Returns</h3>
-<p>Returns keyboards list as <code>ArrayList&lt;HashMap&lt;String key, String value&gt;&gt;</code> if it exists, <code>null</code> otherwise.</p>
+<p>(Deprecated) Returns keyboards list as <code>ArrayList&lt;HashMap&lt;String key, String value&gt;&gt;</code> if it exists, <code>null</code> otherwise.</p>
 
 <h2 id="Description" name="Description">Description</h2>
 <p>Use this method to get details of all keyboard's in keyboards menu.</p>

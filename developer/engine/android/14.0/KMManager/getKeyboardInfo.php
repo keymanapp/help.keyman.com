@@ -27,6 +27,22 @@
 <h3 id="Returns" name="Returns">Returns</h3>
 <p>Returns an information <code>Keyboard</code> type of the specified keyboard.</p>
 
+<h2 id="Description" name="Description">Description</h2>
+<p>Use this method to get details of the keyboard at given position in keyboards list. Details include keyboard ID, language ID, keyboard name, language name and fonts.</p>
+
+<br><hr>
+
+<h2 id="Syntax" name="Syntax">Syntax (Deprecated)</h2>
+<pre class="language-javascript"><code><?php echo $methodSyntax ?></code></pre>
+
+<h3 id="Parameters" name="Parameters">Parameters</h3>
+<dl>
+  <dt><code><?php echo $param1 ?></code></dt>
+  <dd>The context.</dd>
+  <dt><code><?php echo $param2 ?></code></dt>
+  <dd>0-based position of the keyboard in keyboards list.</dd>
+</dl>
+
 <h3 id="Returns" name="Returns">Returns</h3>
 <p>(Deprecated) Returns an information dictionary of the specified keyboard with keys and values defined as <code>HashMap&lt;String key, String value&gt;</code>.</p>
 
