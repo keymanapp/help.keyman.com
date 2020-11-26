@@ -35,6 +35,7 @@
                 <li><a href="/products/iphone-and-ipad/">Keyman for iPhone and iPad</a></li>
                 <li><a href="/products/android/">Keyman for Android</a></li>
                 <li><a href="/products/bookmarklet/">Keyman Bookmarklet</a></li>
+                <hr/>
                 <li><a href="/knowledge-base/">Knowledge Base</a></li>
             </ul>
         </div>
