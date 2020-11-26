@@ -65,7 +65,7 @@
       "Tamil",          // Language Name
       "1.0",            // Keyboard Version
       null,             // URL to help documentation if available
-      "",               // URL to latest .kmp file
+      null,             // URL to latest .kmp file
       true,             // Boolean to show this is a new keyboard in the keyboard picker
 
       // Font information of the .ttf font to use in KMSample2 (for example "aava1.ttf").
