@@ -23,11 +23,7 @@ For Windows 10:
 5. In the binding host name field, enter "help.keyman.com.local".
 6. Start an elevated instance of Notepad (that is, use "Run as Administrator" when starting
    Notepad), load "C:\WINDOWS\System32\drivers\etc\hosts" and add the line
-   `127.0.0.1  help.keyman.com.local`. (NB: Windows makes it difficult to change the hosts file.
-   The procedure at <https://www.petri.com/easily-edit-hosts-file-windows-10> with (as noted in a
-   comment on that page) the command `ipconfig /flushdns` may work. Others have found they needed to
-   use Softpedia’s Unlocker (<http://www.softpedia.com/get/System/System-Miscellaneous/Unlocker.shtml>)
-   to edit the hosts file.)
+   `127.0.0.1  help.keyman.com.local`.
 7. You should now be able to navigate to <http://help.keyman.com.local/> on your computer
 8. If you get an error, it may be a problem with permissions:
 
