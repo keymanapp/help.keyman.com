@@ -39,6 +39,9 @@
     });
 </code></pre>
 
+<h2 id="History" name="History">History</h2>
+<p>Deprecated syntax in Keyman Engine for Android 14.0</p>
+
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
  <li><a href="showKeyboardPicker.php"><code>showKeyboardPicker()</code></a></li>

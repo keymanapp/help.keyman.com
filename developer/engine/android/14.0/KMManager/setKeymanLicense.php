@@ -35,6 +35,9 @@
     // Initialize KMManager here after setting the license
 </code></pre>
 
+<h2 id="History" name="History">History</h2>
+<p>Deprecated in Keyman Engine for Android 12.0</p>
+
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
 <li><a href="initialize.php"><code>KMManager.initialize()</code></a></li>
