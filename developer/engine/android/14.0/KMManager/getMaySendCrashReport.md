@@ -16,15 +16,8 @@ Returns `true` if crash reports can be sent over the network to sentry.keyman.co
 ## Description
 Use this method to check if Keyman Engine will be accessing the network to send crash reports.
 
-## Examples
-
-### Example: Using getMaySendCrashReport()
-The following script illustrates the use of `getMaySendCrashReport()`: 
-```java
-    if (KMManager.getMaySendCrashReport()) {
-        // do something
-    } 
-```
+## History
+Added syntax in Keyman Engine for Android 14.0.
 
 ## See also
 * [setMaySendCrashReport](setMaySendCrashReport)

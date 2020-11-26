@@ -48,5 +48,8 @@ The following script illustrates the use of `setDefaultKeyboard()`:
     );
 ```
 
+## History
+Added syntax in Keyman Engine for Android 14.0.
+
 ## See also
 * [getDefaultKeyboard](getDefaultKeyboard)

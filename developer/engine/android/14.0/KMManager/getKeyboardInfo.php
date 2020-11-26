@@ -67,6 +67,10 @@
     }
 </code></pre>
 
+<h2 id="History" name="History">History</h2>
+<p>Added syntax for returning Keyboard type in Keyman Engine for Android 14.0.</p>
+<p>Deprecated syntax for returning the HashMap&lt;String key, String value&gt; in Keyman Engine for Android 14.0</p>
+
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
  <li><a href="getCurrentKeyboardIndex.php"><code>getCurrentKeyboardIndex()</code></a></li>

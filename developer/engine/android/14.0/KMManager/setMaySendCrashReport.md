@@ -33,5 +33,8 @@ The following script illustrates the use of `setMaySendCrashReport()`:
     KMManager.initialize(getApplicationContext(), KeyboardType.KEYBOARD_TYPE_INAPP);
 ```
 
+## History
+Added syntax in Keyman Engine for Android 14.0.
+
 ## See also
 * [getMaySendCrashReport](getMaySendCrashReport)
