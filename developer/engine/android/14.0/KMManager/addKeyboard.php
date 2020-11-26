@@ -59,7 +59,7 @@
 <pre class="language-javascript line-numbers"><code>    // Add a custom keyboard
     Keyboard kbInfo = new Keyboard(
       "basic_kbdtam99", // Package ID - filename of the .kmp file
-      "basic_kbdtam99", // Keyboard ID
+      "basic_kbdtam99", // Keyboard ID - filename of the .js file
       "Tamil 99 Basic", // Keyboard Name
       "ta",             // Language ID
       "Tamil",          // Language Name
