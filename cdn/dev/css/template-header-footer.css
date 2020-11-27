@@ -461,6 +461,11 @@ html{
 	margin: 0px 10px;
 }
 
+.menu-item-dropdown ul hr{
+	color: #f2f2f2;
+	margin-right: 10px;
+}
+
 .menu-item-dropdown ul li a{
 	color: #B92034 !important;
 	font-weight: 500;
