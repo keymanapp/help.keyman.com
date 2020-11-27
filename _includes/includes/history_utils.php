@@ -9,11 +9,11 @@
 require_once("includes/servervars.php");
 require_once __DIR__ . '/../../vendor/autoload.php';
 
-function display_history($platform){
+function display_history($platform, $version = '1.0'){
   global $site_suffix;
 
   // Reads straight from a file.  Likely to be useful for the history-exposing API.
-  $url = build_downloads_keyman_com_url("api/history/$platform"); // Longform: "api/historydata.php?platform=$platform".
+  $url = build_downloads_keyman_com_url("api/history/$platform/$version"); // Longform: "api/historydata.php?platform=$platform?version=$version".
 
   $contents = @file_get_contents($url);
 
@@ -21,6 +21,21 @@ function display_history($platform){
     //header('HTTP/1.0 400 Invalid parameter');
     echo "Unable to retrieve current history data for this platform.";
     return;
+  }
+
+  // Append title
+  if ($version == '2.0') {
+    $platform_title = [
+      'android' => '# Keyman for Android Version History',
+      'ios' => '# Keyman for iOS  Version History',
+      'linux' => '# Keyman for Linux Version History',
+      'mac' => '# Keyman for macOS Version History',
+      'web' => '# KeymanWeb Version History',
+      'windows' => '# Keyman for Windows Version History',
+      'developer' => '# Keyman Developer Version History'
+    ];
+
+    $contents = $platform_title[$platform] . $contents;
   }
 
   // Performs the parsing + prettification of Markdown for display through PHP.
