@@ -1,7 +1,14 @@
 <?php
+  require_once __DIR__ . '/../../vendor/autoload.php';
+  require_once __DIR__ . '/../../_common/KeymanSentry.php';
+
+  const SENTRY_DSN = 'https://fcc8fe39792f49f3a94ea831cad5c9d6@sentry.keyman.com/2';
+  \Keyman\Site\Common\KeymanSentry::init(SENTRY_DSN);
+
   require_once('includes/servervars.php');
   require_once('index-content.php');
   require_once('page-version.php');
+
 
   function template_finish($foot, $embed_template) {
     //ob_end_flush();
@@ -17,16 +24,17 @@
   function head($args=[]){
     // Args are title='My Page Title', css='page.css' showMenu=true/false;
 
+    $user_agent = isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : '';
     // Get device
-    if (strstr($_SERVER['HTTP_USER_AGENT'],'Windows')) {
+    if (strstr($user_agent,'Windows')) {
         $device = 'Windows';
-    }elseif(strstr($_SERVER['HTTP_USER_AGENT'],'iPhone')){
+    }elseif(strstr($user_agent,'iPhone')){
         $device = 'iPhone';
-    }elseif(strstr($_SERVER['HTTP_USER_AGENT'],'iPad')){
+    }elseif(strstr($user_agent,'iPad')){
         $device = 'iPad';
-    }elseif(strstr($_SERVER['HTTP_USER_AGENT'],'Android')){
+    }elseif(strstr($user_agent,'Android')){
         $device = 'Android';
-    }elseif(strstr($_SERVER['HTTP_USER_AGENT'],'Mac')){
+    }elseif(strstr($user_agent,'Mac')){
         $device = 'Mac';
     }else{
         $device = 'Unknown';

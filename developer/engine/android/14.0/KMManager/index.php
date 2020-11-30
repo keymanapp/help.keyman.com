@@ -67,6 +67,9 @@
   <dt><code><a href='getCurrentKeyboardInfo.php'>getCurrentKeyboardInfo()</a></code></dt>
   <dd>returns information dictionary of the current keyboard</dd>
 
+  <dt><code><a href='getDefaultKeyboard.php'>getDefaultKeyboard()</a></code></dt>
+  <dd>returns the keyboard information for the fallback keyboard</dd>
+
   <dt><code><a href='getFontTypeface.php'>getFontTypeface()</a></code></dt>
   <dd>creates a new typeface from the specified font filename</dd>
 
@@ -117,6 +120,9 @@
 
   <dt><code>getLexicalModelsList()</code></dt>
   <dd>returns the array of lexical models list</dd>
+
+  <dt><code><a href='getMaySendCrashReport'>getMaySendCrashReport()</a></code></dt>
+  <dd>returns whether Keyman Engine is allowed to send crash reports over the network to sentry.keyman.com</dd>
 
   <dt><code><a href='getVersion.php'>getVersion()</a></code></dt>
   <dd>returns the version number of Keyman Engine</dd>
@@ -181,6 +187,9 @@
   <dt><code><a href='setDebugMode.php'>setDebugMode()</a></code></dt>
   <dd>enables or disables debugging of Keyman Engine</dd>
 
+  <dt><code><a href='setDefaultKeyboard.php'>setDefaultKeyboard()</a></code></dt>
+  <dd>sets the keyboard information for the fallback keyboard</dd>
+
   <dt><code><a href='setGlobeKeyAction.php'>setGlobeKeyAction()</a></code></dt>
   <dd>sets an action type for the 'Globe' key</dd>
 
@@ -195,6 +204,9 @@
 
   <dt><code><strike>setKeymanLicense() (Deprecated)</strike></code></dt>
   <dd>sets the developer license/key pair to unlock Keyman Engine</dd>
+
+  <dt><code><a href='setMaySendCrashReport'>setMaySendCrashReport()</a></code></dt>
+  <dd>sets whether Keyman Engine can send crash reports over the network to sentry.keyman.com</dd>
 
   <dt><code><a href='setShouldAllowSetKeyboard.php'>setShouldAllowSetKeyboard()</a></code></dt>
   <dd>sets whether Keyman Engine allows setting a keyboard other than the default keyboard</dd>
@@ -211,7 +223,7 @@
   <dt><code><a href='showKeyboardPicker.php'>showKeyboardPicker()</a></code></dt>
   <dd>displays the keyboard picker menu</dd>
 
-  <dt><code><a href='showLanguageList.php'>showLanguageList()</a></code></dt>
+  <dt><code><strike>showLanguageList()</strike> (Deprecated)</code></dt>
   <dd>displays the language list</dd>
 
   <dt><code><a href='switchToNextKeyboard.php'>switchToNextKeyboard()</a></code></dt>

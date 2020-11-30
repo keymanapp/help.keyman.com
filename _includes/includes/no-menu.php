@@ -1,6 +1,9 @@
 <?php
+  require_once __DIR__ . '/../autoload.php';
+  use Keyman\Site\Common\KeymanHosts;
+
  if(!isset($device)){
-    $device = '';
+   $device = '';
  }
 
  // If we're in embedded mode, let's disable the default help.keyman.com
@@ -16,10 +19,10 @@
       <div id="show-phone-menu-spacer"></div>
       <?php if(!$embed_template) { ?>
         <a id="home-link" href="/">
-          <img id="logo" src="<?php echo cdn("img/logo2.png"); ?>" alt='Keyman Logo' />
+          <img id="logo" src="<?php echo cdn(KeymanHosts::Instance()->Tier() == KeymanHosts::TIER_PRODUCTION ? "img/logo2.png" : "img/logo2dev.png"); ?>" alt='Keyman Logo' />
         </a>
       <?php } else { ?>
-        <img id="logo" src="<?php echo cdn("img/logo2.png"); ?>" alt='Keyman Logo' />
+        <img id="logo" src="<?php echo cdn(KeymanHosts::Instance()->Tier() == KeymanHosts::TIER_PRODUCTION ? "img/logo2.png" : "img/logo2dev.png"); ?>" alt='Keyman Logo' />
       <?php } ?>
       <div id="no-menu-spacer"></div>
       <img id="header-bottom" src="<?php echo cdn("img/headerbar.png"); ?>" alt='Header bottom' />

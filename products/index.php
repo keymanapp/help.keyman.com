@@ -1,8 +1,8 @@
 <?php
-  require_once('includes/template.php'); 
+  require_once('includes/template.php');
 
 $pagestyle = '#section2 .wrapper { overflow-x: inherit }';
-  
+
   // Required
   head([
     'title' =>'Keyman Support | Type to the world in your language',
@@ -87,3 +87,4 @@ $pagestyle = '#section2 .wrapper { overflow-x: inherit }';
         </a>
     </div>
 </div>
+<p><a href='/version-history'>Product version history</a></p>
