@@ -50,7 +50,7 @@
 <ul style='margin-top: 4px'>
   <li><a href='https://community.software.sil.org/c/keyman'>Keyman Community</a></li>
   <li><a href='https://stackoverflow.com/search?q=%5Bkeyman%5D'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer (<a href='https://stackoverflow.com/questions/ask?tags=keyman,keyman-developer,keyboard,unicode'>ask a question</a>)</li>
-  <li><a href='history'>Keyman Engine for Web - Version History</a></li>
+  <li><a href='../history'>Keyman Engine for Web - Version History</a></li>
 </ul>
 
 <h3>Other Versions</h3>
