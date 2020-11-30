@@ -31,7 +31,7 @@ function display_history($platform, $version = '1.0'){
     // Append title
     $platform_title = [
       'android' => '# Keyman for Android Version History',
-      'ios' => '# Keyman for iOS  Version History',
+      'ios' => '# Keyman for iPhone and iPad Version History',
       'linux' => '# Keyman for Linux Version History',
       'mac' => '# Keyman for macOS Version History',
       'web' => '# KeymanWeb Version History',
@@ -49,6 +49,9 @@ function display_history($platform, $version = '1.0'){
     //$contents = preg_replace($regex_header_line, "", $contents);
     $contents = preg_replace($regex_dated_version_src, $regex_dated_version_dst, $contents);
 
+    // Tighten formatting -- h3, remove redundant paragraphs
+    $contents = preg_replace('/^## /m', '### ', $contents);
+    $contents = preg_replace("/\n\n\\* /", "\n* ", $contents);
     // Include previous Keyman history
     $contents = $contents . '<br><br>' . get_history($platform, '1.0');
   }
