@@ -77,5 +77,14 @@ $pagestyle = '#section2 .wrapper { overflow-x: inherit }';
             </p>
         </a>
     </div>
+    <div class="product" id="knowledgebase">
+        <a href="/knowledge-base/">
+            <img src="<?php echo cdn("img/helpIconBig.png"); ?>" />
+            <h3>Knowledge Base</h3>
+            <p>
+                Find how-tos, information, and solutions to problems in our collection of knowledge base articles.
+            </p>
+        </a>
+    </div>
 </div>
 <p><a href='/version-history'>Product version history</a></p>
