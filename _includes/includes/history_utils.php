@@ -73,5 +73,3 @@ function display_history($platform, $version = '1.0'){
   // Does the magic.
   echo $Parsedown->text($contents);
 }
-
-?>
