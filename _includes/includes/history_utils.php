@@ -42,30 +42,33 @@ function display_history($platform, $version = '1.0'){
     $contents = $platform_title[$platform] . $contents;
 
     // Adjust the publish dates of API 2.0 for displaying on website
-    $regex_dated_version_src = "/(\d+.\d+(.\d+)? (?:stable|beta|alpha)) (\d{4}-\d{2}-\d{2})/"; // (\d+.\d+.\d+) [stable|beta|alpha]
+    $regex_dated_version_src = "/(\d+.\d+(.\d+)? (?:stable|beta|alpha)) (\d{4}-\d{2}-\d{2})/";
     $regex_dated_version_dst = "\${1}\n Published \${3}.";
 
     // The actual replacements.
     //$contents = preg_replace($regex_header_line, "", $contents);
     $contents = preg_replace($regex_dated_version_src, $regex_dated_version_dst, $contents);
 
-    // Tighten formatting -- h3, remove redundant paragraphs
-    $contents = preg_replace('/^## /m', '### ', $contents);
-    $contents = preg_replace("/\n\n\\* /", "\n* ", $contents);
-    // Include previous Keyman history
-    $contents = $contents . '<br><br>' . get_history($platform, '1.0');
+    // Include previous Keyman history (minus its title)
+    $previous_contents = get_history($platform, '1.0');
+    $previous_contents = preg_replace('/^#.*/', '<br>', $previous_contents);
+    $contents = $contents . $previous_contents;
   }
 
   // Adjust the publish dates of API 1.0 for displaying on website
   // Only needed if using header.php, not if using template.php.
   //$regex_header_line = "/^# [^\n]+/";
 
-  $regex_dated_version_src = "/(\d{4}-\d{2}-\d{2}) (\d+.\d+(.\d+)? (?:stable|beta|alpha))/"; // (\d+.\d+.\d+) [stable|beta|alpha]
+  $regex_dated_version_src = "/(\d{4}-\d{2}-\d{2}) (\d+.\d+(.\d+)? (?:stable|beta|alpha))/";
   $regex_dated_version_dst = "\${2}\n Published \${1}.";
 
   // The actual replacements.
   //$contents = preg_replace($regex_header_line, "", $contents);
   $contents = preg_replace($regex_dated_version_src, $regex_dated_version_dst, $contents);
+
+  // Tighten formatting -- h3, remove redundant paragraphs
+  $contents = preg_replace('/^## /m', '### ', $contents);
+  $contents = preg_replace("/\n\n\\* /", "\n* ", $contents);
 
   // Performs the parsing + prettification of Markdown for display through PHP.
   $Parsedown = new \ParsedownExtra();
