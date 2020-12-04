@@ -18,7 +18,7 @@ head([
   <pre><code class="language-bash">sudo add-apt-repository ppa:keymanapp/keyman
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install keyman ibus-keyman onboard</code></pre>
+sudo apt-get install keyman onboard-keyman</code></pre>
 </p>
 <p>
   Keyman for Linux packages are also available in any current Debian at:
