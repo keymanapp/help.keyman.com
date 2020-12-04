@@ -32,6 +32,8 @@
 
 <html>
 <head>
+  <meta charset="utf-8">
+  <title><?php echo $title; ?></title>
   <script
     src="https://browser.sentry-cdn.com/5.28.0/bundle.min.js"
     integrity="sha384-1HcgUzJmxPL9dRnZD2wMIj5+xsJfHS+WR+pT2yJNEldbOr9ESTzgHMQOcsb2yyDl"
@@ -42,8 +44,6 @@
       dsn: "https://fcc8fe39792f49f3a94ea831cad5c9d6@sentry.keyman.com/2",
     });
   </script>
-  <meta charset="utf-8">
-  <title><?php echo $title; ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link rel='shortcut icon' href="<?php echo $favicon; ?>">
   <?php PageVersion::WriteHead(); ?>
