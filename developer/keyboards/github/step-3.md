@@ -1,9 +1,6 @@
 ---
 title: Step 3: Submitting a GitHub Pull Request
 ---
-
-# Step 3: Submitting a GitHub Pull Request
-
 ## Verify keyboard builds before submission
 
 Following the file layout documented in [Preliminary Step: Is Your Keyboard Ready?](step-0), 
@@ -35,10 +32,10 @@ Then in your web browser, while logged into GitHub,
 open your fork of the **keyboards** repository at:
 
 ```
-https://github.com/<your-github-name>/keyboards
+https://github.com/YOUR-GITHUB-NAME/keyboards
 ```
 
-(replacing `<your-github-name>` with your actual GitHub account name).
+(replacing `YOUR-GITHUB-NAME` with your actual GitHub account name).
 
 **Note:** The GitHub interface changes from time to time. The following images may vary from what you see on your screen.
 
