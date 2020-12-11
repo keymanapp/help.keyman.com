@@ -1,9 +1,6 @@
 ---
 title: Step 2: Organizing the Keyboard Files
 ---
-
-# Step 2: Organizing the Keyboard Files
-
 ## Use one keyboard per folder
 
 As was mentioned earlier ([Preliminary Step: Is Your Keyboard Ready?](step-0)), 
@@ -26,60 +23,43 @@ Now let's check our keyboard source files.
 ## Include these files
 
 The following files should be included for your keyboard in the `source` folder. Some keyboards may have additional source files.
+In this list, `xyz` represents the keyboard name (which will also be the name of the folder in which the `source` folder is located).
 
-<dl>
+`xyz.kmn`
+ : The keyboard source file.
 
-<dt>`<keyboard>.kmn`</dt>
+`xyz.kvks`
+ : The desktop on screen keyboard source (XML) file (if it exists).
 
-<dd>The keyboard source file.</dd>
+`xyz.ico` (in the past some keyboards used `xyz.bmp`)
+ : The keyboard icon.
 
-<dt>`<keyboard>.kvks`</dt>
+`xyz.keyman-touch-layout` (in the past some keyboards used `xyz-layout.js`)
+ : The touch keyboard definition.
 
-<dd>The desktop on screen keyboard source (XML) file (if it exists).</dd>
-
-<dt>`<keyboard>.ico` (in the past some keyboards used `<keyboard>.bmp`)</dt>
-
-<dd>The keyboard icon.</dd>
-
-<dt>`<keyboard>.keyman-touch-layout` (in the past some keyboards used `<keyboard>-layout.js`)</dt>
-
-<dd>The touch keyboard definition.</dd>
-
-<dt>`<keyboard>.kps`</dt>
-
-<dd>The package source file. 
+`xyz.kps`
+ : The package source file. 
 See the Keyman Developer [reference](/developer/current-version/guides/distribute/packages) for what to include within the package source file, 
-but remember that when you reference any built files within the package, make sure you reference them from your `build` folder.</dd>
+but remember that when you reference any built files within the package, make sure you reference them from your `build` folder.
 
-<dt>Font and documentation files</dt>
-
-<dd>Any files you reference in the package source .kps file, such as fonts, documentation, should be included in the `source` folder.</dd>
-
-</dl>
+Font and documentation files
+ : Any files you reference in the package source .kps file, such as fonts, documentation, should be included in the `source` folder.
 
 ## Do not include these files
 
-The following files should **not** be included because they are generated at build time:
+The following files should **not** be included in the `source` folder because they are generated at build time:
 
-<dl>
+`xyz.kmx`
+ : The compiled keyboard file for Desktop.
 
-<dt>`<keyboard>.kmx`</dt>
+`xyz.kmp`
+ : The compiled keyboard package file.
 
-<dd>The compiled keyboard file for Desktop.</dd>
+`xyz.kvk`
+ : The compiled (binary) on screen keyboard.
 
-<dt>`<keyboard>.kmp`</dt>
-
-<dd>The compiled keyboard package file.</dd>
-
-<dt>`<keyboard>.kvk`</dt>
-
-<dd>The compiled (binary) on screen keyboard.</dd>
-
-<dt>`<keyboard>.js`</dt>
-
-<dd>The compiled keyboard file for web and touch platforms.</dd>
-
-</dl>
+`<keyboard>.js`
+ : The compiled keyboard file for web and touch platforms.
 
 Once you're done creating and testing your keyboard, you're ready to share the keyboard with us.
 
