@@ -1,9 +1,6 @@
 ---
 title: Step 1: Setup - One Time Only
 ---
-
-# Step 1: Setup - One Time Only
-
 ## Install Keyman Developer
 
 While Keyman Developer is not absolutely necessary to build or submit keyboard layouts, 
