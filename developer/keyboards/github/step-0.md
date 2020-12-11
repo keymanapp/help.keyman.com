@@ -1,9 +1,6 @@
 ---
 title: Preliminary Step: Is Your Keyboard Ready?
 ---
-
-# Preliminary Step: Is Your Keyboard Ready?
-
 ## Folder and File Structure and Naming
 
 The files for each keyboard are organized in a specific fashion to make it possible for the keyboards to be built automatically. 
@@ -37,60 +34,50 @@ and you will need to be a bit more creative – “`tamil`” is not going to be
 
 ## Use a regular folder structure
 
+The keyboard name ("xyz" in the following list) is used as the name of the folder in which the keyboard files reside as well as the base name for some of the associated files.
 The folder structure for each keyboard has the following components:
 
-<dl>
+`xyz`
+ : base folder for the keyboard files
 
-<dt>`build\`</dt>
+`xyz\build\`
+ : not stored in the repository; output files will go here
 
-<dd>not stored in the repository; output files will go here</dd>
+`xyz\docs\`
+ : development documentation for the keyboard (Optional, not needed by most keyboards)
 
-<dt>`extras\`</dt>
+`xyz\extras\`
+ : other related files, e.g. Word documents, databases, experimental files (Optional, not needed by most keyboards)
 
-<dd>other related files, e.g. Word documents, databases, experimental files</dd>
+`xyz\source\`
+ : keyboard source files (`xyz.kmn`, `xyz.kps`, etc.), including additional files to be included in the keyboard package
 
-<dt>`source\`</dt>
+`xyz\source\help\`
+ : contains the `xyz.php` help file and any resources it references. These files are uploaded to help.keyman.com to provide online help for the keyboard. (The `xyz.php` file often duplicates most of the content of the `welcome.htm` file.)
 
-<dd>keyboard source files, including any files that will be packaged in the build</dd>
+`xyz\source\welcome\`
+ : contains `welcome.htm` and any resources it references. These files are included with the keyboard to provide local help for the keyboard.
 
-<dt>`source\help\<keyboard>.php`</dt>
+`xyz\xyz.kpj`
+ : the Keyman Developer project file for the keyboard  
+The `xyz.kpj` project file will contain references to the `xyz.kmn` and `xyz.kps` files. 
+It must set the output path to `$PROJECTPATH\build`. 
+This file must have the same base name as the folder/keyboard.
+Do not include the `xyz.kpj.user` file in the repository.
 
-<dd>php help file which is uploaded to help.keyman.com</dd>
+`xyz\README.md`
+ : description of the keyboard, target languages, target devices, author, etc.
 
-<dt>`source\welcome\`</dt>
+`xyz\HISTORY.md`
+ : list of major changes to the keyboard (repository commits cover details)
 
-<dd>welcome.htm and any resources referenced from the welcome.htm file</dd>
+`xyz\LICENSE.md`
+ : the open source license for the keyboard
 
-<dt>`docs\`</dt>
-
-<dd>development documentation for the keyboard</dd>
-
-<dt>`<keyboard>.kpj`</dt>
-
-<dd>the Keyman Developer project file for the keyboard  
-The `.kpj` project file will contain references to the keyboard `.kmn` and `.kps` file and must set the output path to `**$PROJECTPATH\build**`. 
-The file must have the same base name as the folder/keyboard.
-Do not include the `.kpj.user` file in the repository.</dd>
-
-<dt>`README.md`</dt>
-
-<dd>description of the keyboard, target languages, target devices, author, etc.</dd>
-
-<dt>`HISTORY.md`</dt>
-
-<dd>details on major changes to the keyboards (repository commits covers detail)</dd>
-
-<dt>`LICENSE.md`</dt>
-
-<dd>the open source license for the keyboard</dd>
-
-<dt>`<keyboard>.keyboard_info`</dt>
-
-<dd>a [metadata file](../../cloud/keyboard_info) detailing the keyboard's origin, version, requirements, and capabilities  
+`xyz\xyz.keyboard_info`
+ : a [metadata file](../../cloud/keyboard_info) detailing the keyboard's origin, version, requirements, and capabilities  
 This file is used in the process of making your keyboard readily available for public download. 
-Please see the [.keyboard_info section](../../cloud/keyboard_info) for more details.</dd>
-
-</dl>
+Please see the [.keyboard_info section](../../cloud/keyboard_info) for more details.
 
 ## Copy Template Files
 
@@ -100,7 +87,7 @@ so you can skip this step because you won't need to copy them.
 
 The **keyboards** repo contains a set of `.md` and `.keyboard_info` files you can copy and fill with details relevant to your keyboard. 
 They're available at the `release/template/` folder. 
-Remember to rename `template.keyboard_info` with your keyboard name. 
+Remember to rename `template.keyboard_info` with your keyboard name (`xyz.keyboard_info` in the above example) after you copy it. 
 The `.md` files use [Markdown](https://daringfireball.net/projects/markdown/), 
 an easy-to-read plain text format that can be converted to HTML.
 
@@ -139,13 +126,8 @@ Project --> Project Settings...
 When you share your keyboard with the world, you will need to assign a specific [open source license](https://opensource.org/licenses). 
 There are hundreds of prewritten licenses, but for keyboards to be included in this repository, you must use the MIT license:
 
-<dl>
-
-<dt>MIT license</dt>
-
-<dd>A permissive license that is short and to the point. It lets people do anything with your code with proper attribution and without warranty.</dd>
-
-</dl>
+MIT license
+ : A permissive license that is short and to the point. It lets people do anything with your code with proper attribution and without warranty.
 
 The MIT license is explored in detail at [choosealicense.com](https://choosealicense.com/licenses/), from which the description above was taken.
 
