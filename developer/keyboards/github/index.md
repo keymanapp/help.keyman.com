@@ -13,14 +13,7 @@ The Advanced guide provides separate instructions for deeper involvement in subm
 
 **Note:** This guide is written for Windows users, so other OS users need to adjust paths accordingly.
 
-<dl>
-
-<dt>[Preliminary Step: Is Your Keyboard Ready?](step-0)</dt>
-
-<dt>[Step 1: Setup - One Time Only](step-1)</dt>
-
-<dt>[Step 2: Organizing the Keyboard Files](step-2)</dt>
-
-<dt>[Step 3: Submitting a GitHub Pull Request](step-3)</dt>
-
-</dl>
+* [Preliminary Step: Is Your Keyboard Ready?](step-0)
+* [Step 1: Setup - One Time Only](step-1)
+* [Step 2: Organizing the Keyboard Files](step-2)
+* [Step 3: Submitting a GitHub Pull Request](step-3)
