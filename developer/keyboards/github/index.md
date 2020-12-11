@@ -2,8 +2,6 @@
 title: Guide: Keyboard Submissions using GitHub
 ---
 
-# Guide for Keyboard Submissions using GitHub
-
 This guide is intended for keyboard developers who are submitting only one or two keyboards. 
 It uses the online GitHub interface. 
 If using "git" from the command line is not something familiar, this is the guide for you. 
