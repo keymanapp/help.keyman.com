@@ -42,6 +42,11 @@ the `test` folder.
 Using a browser to navigate to <http://help.keyman.com.local/test/xyz.php> should display the
 help file.
 
+### Using composer to install dependencies in vendor/ folder
+
+1. Install [Composer](https://getcomposer.org/download/)
+2. Run `composer install` to install dependencies.
+
 ## Using Docker
 
 To run locally with Docker on http://localhost:8055 you can use commands like the following:

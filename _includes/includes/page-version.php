@@ -71,7 +71,7 @@
           }
         } else {
           if($version == $PageVersion->currentVersion) {
-            $text = "Version $version (current release)";
+            $text = "Version $version (current version)";
             $target = "{$PageVersion->basePath}/current-version/{$PageVersion->subPath}";
           } else {
             $text = "Version $version";
@@ -124,7 +124,7 @@
     /// that overrides, as we may have alpha content that is not yet current.
     ///
     static private function GetCurrentVersion($versions) {
-      $currentVersion = $versions[sizeof($versions)-1];
+      $currentVersion = $versions[0];
 
       $rootwebconfig = @file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/web.config');
       if(preg_match('/current-version:(\d+\.\d+)/', $rootwebconfig, $matches) &&
