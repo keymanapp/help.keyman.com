@@ -20,3 +20,8 @@
   <li><a href='/products/iphone-and-ipad/version-history'>Keyman for iPhone and iPad Version History</a></li>
   <li><a href='/developer/engine/web/history'>KeymanWeb Version History</a></li>
 </ul>
+
+<h2>Version history for Keyman 14.0</h2>
+
+<p>While Keyman 14.0 is still in development, you can see the version history for that version
+<a href='https://help.keyman-staging.com/version-history'>here</a>.</p>
