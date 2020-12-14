@@ -15,8 +15,12 @@
       if($this->active) {
         $this->path = $_SERVER['DOCUMENT_ROOT'] . $this->basePath . '/';
         $this->versions = $this::GetContentVersions($this->path);
-        $this->currentVersion = $this::getCurrentVersion($this->versions);
-        if($this->versionedPath == 'current-version') $this->versionedPath = $this->currentVersion;
+        if(sizeof($this->versions) == 0) {
+          $this->active = false;
+        } else {
+          $this->currentVersion = $this::getCurrentVersion($this->versions);
+          if($this->versionedPath == 'current-version') $this->versionedPath = $this->currentVersion;
+        }
       }
     }
 
