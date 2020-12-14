@@ -58,7 +58,7 @@ The following files should **not** be included in the `source` folder because th
 `xyz.kvk`
  : The compiled (binary) on screen keyboard.
 
-`<keyboard>.js`
+`xyz.js`
  : The compiled keyboard file for web and touch platforms.
 
 Once you're done creating and testing your keyboard, you're ready to share the keyboard with us.
