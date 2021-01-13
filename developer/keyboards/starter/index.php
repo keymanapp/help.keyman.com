@@ -10,7 +10,7 @@
 <h1>Starting Guide for Submitting a Single Keyboard (deprecated)</h1>
 
 <p class="hint">
-    <b>Note:</b> This guide is deprecated. Consider using the <a href="github">GitHub Keyboard Submission Guide</a> instead.
+    <b>Note:</b> This guide is deprecated. Consider using the <a href="../github">GitHub Keyboard Submission Guide</a> instead.
 </p>
 
 <p>
