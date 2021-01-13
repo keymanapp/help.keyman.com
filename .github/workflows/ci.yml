@@ -17,7 +17,7 @@ jobs:
       uses: shivammathur/setup-php@v2
       with:
         php-version: '7.4'
-      extensions: curl, intl, mbstring, openssl
+        extensions: curl, intl, mbstring, openssl
 
     #
     # Configure IIS and setup site for running unit tests
