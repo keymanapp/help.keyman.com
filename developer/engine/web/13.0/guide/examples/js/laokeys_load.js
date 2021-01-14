@@ -1,2 +1,7 @@
-﻿/*(C) Copyright 1994-2006 Tavultesoft Pty Ltd. All Rights Reserved. Details: keymanweb.com*/
-KeymanWeb.KRS(new Stub_Keyboard_laokeys()); function Stub_Keyboard_laokeys() {this.KF="./js/laokeys.js";this.KI="Keyboard_laokeys";this.KN="Lao (Phonetic)";}
+﻿/*(C) Copyright 1994-2021 SIL International. All Rights Reserved. Details: keymanweb.com*/
+keyman.addKeyboards({
+  id: "laokeys",
+  name: "Lao (Phonetic)",
+  languages:{id:'lo',name:'Lao'},
+  filename: "./js/laokeys.js"
+});

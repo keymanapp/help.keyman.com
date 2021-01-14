@@ -25,7 +25,7 @@ This example continues to use the KeymanWeb default interface.</p>
 
 <?php echo codebox(<<<END
 <script>
-  var kmw = tavultesoft.keymanweb;
+  var kmw = keyman;
   
   /* SetupDocument: Called when the page finishes loading */
   function SetupDocument()
@@ -47,7 +47,7 @@ This example continues to use the KeymanWeb default interface.</p>
         kmw.osk.hide();
     } else {
         kmw.osk.show(true); // Specifies that the OSK should display whenever a valid
-                                  // control has focus, re-enabling the default behavior.
+                            // control has focus, re-enabling the default behavior.
     }
   }
 </script>
@@ -68,6 +68,13 @@ echo codebox(<<<END
 <body onload="SetupDocument()">
 END
   );
+?>
+
+<ul>
+  <li>File: <a href="js/laokeys_load.js">laokeys_load.js</a></li>
+</ul>
+
+<?php
 
   echo "<p>And finally, include the control img for KeymanWeb:</p>";
   
