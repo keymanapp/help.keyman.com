@@ -12,6 +12,8 @@
 
 <p>Documents the <a href='https://api.keyman.com/search'>api.keyman.com/search</a> endpoint.</p>
 
+<p>This API is deprecated and has been replaced with <a href='../2.0'>version 2.0</a>.</p>
+
 <h3>Parameters</h3>
 
 <dl>

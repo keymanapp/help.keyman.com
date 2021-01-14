@@ -4,6 +4,9 @@
   require_once('servervars.php');
   require_once('page-version.php');
 
+  require_once __DIR__ . '/../autoload.php';
+  use Keyman\Site\Common\KeymanHosts;
+
   // Variables used to manage and trigger debugging tests.
   // Simply defining the variable below is enough to trigger debug mode.
   // $kmw_dev_path = 'http://localhost/release/unminified/web';
@@ -31,6 +34,20 @@
 <head>
   <meta charset="utf-8">
   <title><?php echo $title; ?></title>
+  <?php
+/* Our local CDN version is identical to this file:
+  <script
+    src="https://browser.sentry-cdn.com/5.28.0/bundle.min.js"
+    integrity="sha384-1HcgUzJmxPL9dRnZD2wMIj5+xsJfHS+WR+pT2yJNEldbOr9ESTzgHMQOcsb2yyDl"
+    crossorigin="anonymous"
+  ></script>*/
+  ?>
+  <script src="<?= cdn('js/sentry.bundle.5.28.0.min.js'); ?>"></script>
+  <script>
+    Sentry.init({
+      dsn: "https://fcc8fe39792f49f3a94ea831cad5c9d6@sentry.keyman.com/2",
+    });
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link rel='shortcut icon' href="<?php echo $favicon; ?>">
   <?php PageVersion::WriteHead(); ?>
@@ -65,11 +82,14 @@
    else window.onload = downloadJSAtOnload;
   </script>
   <?php if(isset($IncludeKeymanWeb) && $IncludeKeymanWeb == true){
-    $kmw_version_number = '10.0.103';
-    $kmw_version = @file_get_contents('https://api.keyman.com/version/web/stable');
-    if($kmw_version !== FALSE) {
-      $kmw_version = @json_decode($kmw_version);
-      if($kmw_version !== NULL) $kmw_version_number = $kmw_version->version;
+    $kmw_version_number = '13.0.108';
+    if(KeymanHosts::Instance()->Tier() != KeymanHosts::TIER_TEST) {
+      // For performance reasons, we don't check KeymanWeb version on Test Tier
+      $kmw_version = @file_get_contents('https://api.keyman.com/version/web/stable');
+      if($kmw_version !== FALSE) {
+        $kmw_version = @json_decode($kmw_version);
+        if($kmw_version !== NULL) $kmw_version_number = $kmw_version->version;
+      }
     }
     if(!isset($kmw_dev_path)) {
   ?>
