@@ -81,15 +81,21 @@
 <h2>Get Involved</h2>
 
 <ul class='menu'>
-    <p>
-        For new users who are only creating and submitting a single keyboard, learn how to get set up with the keyboard
-        repository on GitHub and the Keyman tools.
-    </p>
-    <li><a href="starter">Starter Guide</a></li>
-
-    <p>
-        For advanced users who are managing a larger number of keyboards, learn how to set up and contribute with
-        the full keyboards repository.
-    </p>
     <li><a href="advanced">Advanced Keyboard Submission Guide</a></li>
+    <p>
+        For advanced users who are managing a number of keyboards and are comfortable using git,
+        learn how to get set up and contribute with the full keyboards repository.
+    </p>
+    <li><a href="github">GitHub Keyboard Submission Guide</a></li>
+    <p>
+        For users who are creating and submitting a single keyboard or would rather use the GitHub interface,
+        learn how to get set up and contribute with using the online GitHub interface.
+    </p>
+    <li><a href="starter">Starter Guide (deprecated)</a></li>
+    <p>
+        For new users who are only creating and submitting a single keyboard,
+        learn how to get set up with the keyboard repository on GitHub and the Keyman tools.
+        (This method is deprecated. Try the GitHub Keyboard Submission Guide instead.)
+    </p>
+
 </ul>
