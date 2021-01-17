@@ -14,12 +14,13 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Setup PHP 7.4
-      uses: shivammathur/setup-php@v2
+      uses: shivammathur/setup-php@6972aed899fa2dd4016a7e314c46e6902bcafb7b
       with:
         php-version: '7.4'
         extensions: curl, intl, mbstring, openssl
         coverage: none
-        env: fail-fast
+      env:
+        fail-fast: true
 
     #
     # Configure IIS and setup site for running unit tests
