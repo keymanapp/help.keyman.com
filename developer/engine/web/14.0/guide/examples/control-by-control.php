@@ -28,25 +28,27 @@ this example.</p>
 <?php
   echo codebox(<<<END
 <script type="text/javascript">
-  var kmw = tavultesoft.keymanweb;
+  var kmw = keyman;
 
-  function SetupDocument()
-  {
+  function SetupDocument() {
     kmw.init({
-        root: './',  // Note - if drawing the latest version of KeymanWeb from the CDN, this will
-                     // default to the source folder on our servers.
-        ui: 'toggle',
-        resources: './'
+      root: './',  // Note - if drawing the latest version of KeymanWeb from the CDN, this will
+                   // default to the source folder on our servers.
+      ui: 'toggle',
+      resources: './'
+    }).then(function() {
+      // Load the keyboards of your choice here.
+      loadKeyboards();
+
+      /* Disable KeymanWeb interaction on the 'Email to' TEXT control */
+      kmw.disableControl(document.f.address);
+      /* Set the default keyboard for the 'Subject' TEXT control to 'off' (i.e. default browser keyboard) */
+      /* As KeymanWeb relies on the on-screen keyboard to change languages for touch-based devices, this will
+       * not work for them and will default to the first language added to KeymanWeb after initialization. */
+      kmw.setKeyboardForControl(document.f.subject, '', '');
+      /* Set the default keyboard for the 'Message body' TEXTAREA to the LaoKeys keyboard */
+      kmw.setKeyboardForControl(document.f.text, 'Keyboard_laokeys', 'lo');
     });
-    
-    /* Disable KeymanWeb interaction on the 'Email to' TEXT control */
-    kmw.disableControl(document.f.address);
-    /* Set the default keyboard for the 'Subject' TEXT control to 'off' (i.e. default browser keyboard) */
-    /* As KeymanWeb relies on the on-screen keyboard to change languages for touch-based devices, this will
-     * not work for them and will default to the first language added to KeymanWeb after initialization. */
-    kmw.setKeyboardForControl(document.f.subject, '', '');
-    /* Set the default keyboard for the 'Message body' TEXTAREA to the LaoKeys keyboard */
-    kmw.setKeyboardForControl(document.f.text, 'Keyboard_laokeys', 'lo');
   }
 
   window.addEventListener( 'load' , SetupDocument );
@@ -72,9 +74,10 @@ END
 ?>
 
 <p>Note that in this example we disabled the first element (<code>document.f.address</code>) by API call.  A later API
-  call can re-enable KeymanWeb for this control should it fit the page's design.</p>
-<p> Alternatively, this can be done by instead adding the class <code>'kmw-disabled'</code> to the control.  This will
+  call can re-enable KeymanWeb for this control should it fit the page's design.  Alternatively, this can be done by 
+  instead adding the class <code>'kmw-disabled'</code> to the control.  This will
 permanently block KeymanWeb from handling its input.</p>
+<p>The <code>loadKeyboards()</code> function used by this page may be found <a href="js/unified_loader.js">here</a>.</p>
 
 <h2>API References</h2>
 

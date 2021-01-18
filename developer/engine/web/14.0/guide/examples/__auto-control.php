@@ -6,19 +6,19 @@
   ?>
 
   <script>
-      window.addEventListener('load', function () {
-          kmw.init();
-
-          kmw.addKeyboards({
-              id:'laokeys',
-              name:'Lao (Phonetic)',
-              languages:{
-                  id:'lo',
-                  name:'Lao'
-              },
-              filename:'./js/laokeys.js'
-          });
+    window.addEventListener('load', function () {
+      kmw.init().then(function() {
+        kmw.addKeyboards({
+          id:'laokeys',
+          name:'Lao (Phonetic)',
+          languages:{
+            id:'lo',
+            name:'Lao'
+          },
+          filename:'./js/laokeys.js'
+        });
       });
+    });
   </script>
 </head>
 <body>
