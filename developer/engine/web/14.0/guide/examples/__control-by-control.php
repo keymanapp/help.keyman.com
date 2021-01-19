@@ -20,18 +20,25 @@ if(isset($debug) && isset($dev_path)) {
 <script type='text/javascript' src='js/unified_loader.js'></script>
 
 <script type="text/javascript">
-  function SetupDocument()
-  {
+  function SetupDocument() {
     kmw.init({
-        root: './',  // Note - if drawing the latest version of KeymanWeb from the CDN, this will
-                     // default to the source folder on our servers.
-        ui: 'toggle',
-        resources: '<?=$resources?>' <?php /* Allows us to have proper resource loading from a dev environment.*/ ?>
-    });
+      root: './',  // Note - if drawing the latest version of KeymanWeb from the CDN, this will
+                   // default to the source folder on our servers.
+      ui: 'toggle',
+      resources: './'
+    }).then(function() {
+      // Load the keyboards of your choice here.
+      loadKeyboards();
 
-    kmw.disableControl(document.f.address);
-    kmw.setKeyboardForControl(document.f.subject, '', '');
-    kmw.setKeyboardForControl(document.f.text, 'Keyboard_laokeys', 'lo');
+      /* Disable KeymanWeb interaction on the 'Email to' TEXT control */
+      kmw.disableControl(document.f.address);
+      /* Set the default keyboard for the 'Subject' TEXT control to 'off' (i.e. default browser keyboard) */
+      /* As KeymanWeb relies on the on-screen keyboard to change languages for touch-based devices, this will
+       * not work for them and will default to the first language added to KeymanWeb after initialization. */
+      kmw.setKeyboardForControl(document.f.subject, '', '');
+      /* Set the default keyboard for the 'Message body' TEXTAREA to the LaoKeys keyboard */
+      kmw.setKeyboardForControl(document.f.text, 'Keyboard_laokeys', 'lo');
+    });
   }
 
   window.addEventListener( 'load' , SetupDocument );

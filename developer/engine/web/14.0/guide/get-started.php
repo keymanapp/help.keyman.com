@@ -47,11 +47,12 @@ echo codebox(<<<END
   <script src='$cdn_path/keymanweb.js'></script>
   <script src='$cdn_path/kmwuitoggle.js'></script>
   <script>
-      (function(kmw) {
-          kmw.init({attachType:'auto'});
-          kmw.addKeyboards('@eng'); // Loads default English keyboard from Keyman Cloud (CDN)
-          kmw.addKeyboards('@tha'); // Loads default Thai keyboard from Keyman Cloud (CDN)
-      })(keyman);
+    (function(kmw) {
+      kmw.init({attachType:'auto'}).then(function() {
+        kmw.addKeyboards('@eng'); // Loads default English keyboard from Keyman Cloud (CDN)
+        kmw.addKeyboards('@tha'); // Loads default Thai keyboard from Keyman Cloud (CDN)
+      });
+    })(keyman);
   </script>
 </head>
 <body>
