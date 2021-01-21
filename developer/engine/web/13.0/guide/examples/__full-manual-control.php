@@ -13,20 +13,23 @@ var KWControl = null;
 
 function SetupDocument()
 {
-  kmw.init();
+  kmw.init().then(function(){
+    // Load the keyboards of your choice here.
+    loadKeyboards();
 
-  KWControl = document.getElementById('KWControl');
-  var kbds = kmw.getKeyboards();
-  for(var kbd in kbds)
-  {
-    var opt = document.createElement('OPTION');
-    opt.value = kbds[kbd].InternalName + "$$" + kbds[kbd].LanguageCode;
-    opt.innerHTML = kbds[kbd].Name;
-    KWControl.appendChild(opt);    
-  }
-  document.f.multilingual.focus();
+    KWControl = document.getElementById('KWControl');
+    var kbds = kmw.getKeyboards();
+    for(var kbd in kbds)
+    {
+      var opt = document.createElement('OPTION');
+      opt.value = kbds[kbd].InternalName + "$$" + kbds[kbd].LanguageCode;
+      opt.innerHTML = kbds[kbd].Name;
+      KWControl.appendChild(opt);    
+    }
+    document.f.multilingual.focus();
 
-  kmw.setActiveKeyboard('', '');
+    kmw.setActiveKeyboard('', '');
+  });
 }
 
 function KWControlChange()

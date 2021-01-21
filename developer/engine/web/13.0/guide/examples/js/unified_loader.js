@@ -1,5 +1,6 @@
 ﻿/*(C) Copyright 2017 SIL International. All Rights Reserved. Details: keymanweb.com*/
-function KWK_Load(){
+function loadKeyboards() {
+    // Uses an older type of keyboard stub definition.
     var KWK={
         "devanagari_inscript":{KN:"Devanagari (INSCRIPT)", KLC:"hi", KL:"Hindi"},
         "european2":{KN:"EuroLatin2", KLC:"en", KL:"English"},
@@ -10,8 +11,6 @@ function KWK_Load(){
     };
 
     for(var n in KWK) {
-        KeymanWeb.KRS({KF:"./js/" + n+".js", KI:"Keyboard_"+n, KN:KWK[n].KN, KL:KWK[n].KL, KLC:KWK[n].KLC});
+        KeymanWeb.registerStub({KF:"./js/" + n+".js", KI:"Keyboard_"+n, KN:KWK[n].KN, KL:KWK[n].KL, KLC:KWK[n].KLC});
     }
 }
-
-KWK_Load();
