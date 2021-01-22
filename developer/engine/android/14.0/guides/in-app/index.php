@@ -16,7 +16,7 @@ head([
     resource, and working through some of their tutorials first will help you with the rest of this guide.</p>
 <h3>1. Install Free Tools</h3>
 <ol>
-    <li>Install <a href="https://keyman.com/developer/">Keyman Developer 10 or later</a>.</li>
+    <li>Install <a href="https://keyman.com/developer/">Keyman Developer 14 or later</a>.</li>
     <li>Install <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">
             Java SE Development Kit</a>.
     </li>
@@ -73,99 +73,104 @@ yes | ./sdkmanager.bat --licenses
     <li><a href="/developer/13.0/guides/test/how-to-test-your-touch-layout-in-the-google-chrome-mobile-emulator">
         How to test your touch layout in the Google Chrome mobile emulator</a></li>
 </ul>
-<p>When your keyboard is ready, you should have a compiled keyboard Javascript file. The example below shows the
-    Tamil Mobile99 touch layout.</p>
+<p>When your keyboard is ready, you should have a compiled keyboard package file. The example below shows the
+    Tamil 99 Basic touch layout.</p>
 <p><a class="asset-img-link" style="display: inline;"
-      href="<?php echo cdn("img/engine/android/10.0/guides/in-app/touch-layout.png"); ?>"><img
+      href="<?php echo cdn("img/engine/android/14.0/guides/in-app/touch-layout.png"); ?>"><img
       class="asset asset-image at-xid-6a00d83432368053ef01b7c759d462970b image-full img-responsive"
       title="Keyman-developer"
-      src="<?php echo cdn("img/engine/android/10.0/guides/in-app/touch-layout-800wi.png"); ?>"
+      src="<?php echo cdn("img/engine/android/14.0/guides/in-app/touch-layout-800wi.png"); ?>"
       alt="Keyman-developer" border="0"/></a></p>
-<p>Open the containing folder for the keyboard to find the Javascript file to copy over; its name will be based on
-    your source keyboard name.</p>
+<p>From the package editor, open the containing folder for the keyboard package to find the .kmp file to copy over; its name will be based on
+    your source keyboard name. If your keyboard project settings is configured to output to <strong>$PROJECTPATH\build</strong>,
+  you may need to navigate up a folder and into the <strong>build</strong> folder.</p>
 <p><a class="asset-img-link" style="display: inline;"
-      href="<?php echo cdn("img/engine/android/10.0/guides/in-app/open-containing-folder.png"); ?>"><img
+      href="<?php echo cdn("img/engine/android/14.0/guides/in-app/open-containing-folder.png"); ?>"><img
       class="asset  asset-image at-xid-6a00d83432368053ef01bb07fd4d71970d image-full img-responsive"
       title="Keyman-developer-open-containing-folder"
-      src="<?php echo cdn("img/engine/android/10.0/guides/in-app/open-containing-folder-800wi.png"); ?>"
+      src="<?php echo cdn("img/engine/android/14.0/guides/in-app/open-containing-folder-800wi.png"); ?>"
       alt="Keyman-developer-open-containing-folder" border="0"/></a></p>
 <p><a class="asset-img-link" style="display: inline;"
-      href="<?php echo cdn("img/engine/android/10.0/guides/in-app/compiled-keyboard-file.png"); ?>"><img
+      href="<?php echo cdn("img/engine/android/14.0/guides/in-app/compiled-keyboard-file.png"); ?>"><img
       class="asset  asset-image at-xid-6a00d83432368053ef01b8d0e2f3e2970c image-full img-responsive"
       title="Compiled-keyboard-file"
-      src="<?php echo cdn("img/engine/android/10.0/guides/in-app/compiled-keyboard-file-800wi.png"); ?>"
+      src="<?php echo cdn("img/engine/android/14.0/guides/in-app/compiled-keyboard-file-800wi.png"); ?>"
       alt="Compiled-keyboard-file" border="0"/></a></p>
-<aside>
-    <h3>Tip</h3>
-    <p>You will need to append a keyboard version to the file. In this example, <b>tamil99m.js</b> has a
-    keyboard version 1.1, so it is renamed to <b>tamil99m-1.1.js</b>.</p>
-</aside>
-<h3>5. Add your keyboard to the project</h3>
-<p>Copy your compiled keyboard file (in this example <strong>tamil99m-1.1.js</strong>) to the
-    <strong>KMSample1\app\src\main\assets\cloud</strong> folder. If you have a font, then copy that to the
-    <strong>assets\cloud</strong> folder. This example uses <strong>aava1.ttf</strong></p>
+
+<h3>5. Add your keyboard package to the project</h3>
+<p>Copy your compiled keyboard package file (in this example <strong>basic_kbdtam99.kmp</strong>) to the
+    <strong>KMSample1\app\src\main\assets\</strong> folder. If you have an associated dictionary, then copy that to the
+    same <strong>assets</strong> folder. This example uses <strong>example.ta.wordlist.model.kmp</strong>.</p>
 <p><a class="asset-img-link" style="display: inline;"
-      href="<?php echo cdn("img/engine/android/10.0/guides/in-app/copy-keyboard-file.png"); ?>"><img
+      href="<?php echo cdn("img/engine/android/14.0/guides/in-app/copy-keyboard-file.png"); ?>"><img
       class="asset  asset-image at-xid-6a00d83432368053ef01b8d0e3c836970c image-full img-responsive"
       title="Copy-keyboard-file"
-      src="<?php echo cdn("img/engine/android/10.0/guides/in-app/copy-keyboard-file-800wi.png"); ?>"
+      src="<?php echo cdn("img/engine/android/14.0/guides/in-app/copy-keyboard-file-800wi.png"); ?>"
       alt="Copy-keyboard-file" border="0"/></a></p>
-<p>When you switch back into Android Studio, you should see the cloud folder
-    with your keyboard and font files:</p>
+<p>When you switch back into Android Studio, you should see the assets folder
+    with your keyboard and dictionary files:</p>
 <p><a class="asset-img-link" style="display: inline;"
-      href="<?php echo cdn("img/engine/android/10.0/guides/in-app/android-studio-assets.png"); ?>"><img
+      href="<?php echo cdn("img/engine/android/14.0/guides/in-app/android-studio-assets.png"); ?>"><img
       class="asset  asset-image at-xid-6a00d83432368053ef01b7c75abaa9970b img-responsive"
       title="Android-studio-assets"
-      src="<?php echo cdn("img/engine/android/10.0/guides/in-app/android-studio-assets-800wi.png"); ?>"
+      src="<?php echo cdn("img/engine/android/14.0/guides/in-app/android-studio-assets-800wi.png"); ?>"
       alt="Android-studio-assets" border="0"/></a></p>
 <p>Next, edit <code>MainActivity.onCreate()</code> to add the keyboard (tamil99m) with <code>KMManager</code>.
-    If you're not using a custom font (this example uses <strong>aava1.ttf</strong>), you can set KMKey_Font to the default font:</p>
-<pre class='language-java'><code>  // Add a custom keyboard
-  HashMap&lt;String, String&gt; kbInfo = new HashMap&lt;String, String&gt;();
-  kbInfo.put(KMManager.KMKey_PackageID, "cloud");
-  kbInfo.put(KMManager.KMKey_KeyboardID, "tamil99m");
-  kbInfo.put(KMManager.KMKey_LanguageID, "ta");
-  kbInfo.put(KMManager.KMKey_KeyboardName, "Tamil 99M");
-  kbInfo.put(KMManager.KMKey_LanguageName, "Tamil");
-  kbInfo.put(KMManager.KMKey_KeyboardVersion, "1.1");
-  kbInfo.put(KMManager.KMKey_Font, "aava1.ttf");
-  //kbInfo.put(KMManager.KMKey_Font, KMManager.KMDefault_KeyboardFont); // Use the default font
-  KMManager.addKeyboard(this, kbInfo);
+    If your keyboard package is not using a custom font, you can set KMKey_Font to the default font:</p>
+<pre class='language-java'><code>    // Add a custom keyboard
+    Keyboard kbInfo = new Keyboard(
+      "basic_kbdtam99", // Package ID - filename of the .kmp file
+      "basic_kbdtam99", // Keyboard ID
+      "Tamil 99 Basic", // Keyboard Name
+      "ta",             // Language ID
+      "Tamil",          // Language Name
+      "1.0",            // Keyboard Version
+      null,             // URL to help documentation if available
+      "",               // URL to latest .kmp file
+      true,             // Boolean to show this is a new keyboard in the keyboard picker
+
+      // Font information of the .ttf font to use in KMSample1 (for example "aava1.ttf").
+      // basic_kbdtam99 doesn't include a font. Can set blank "" or KMManager.KMDefault_KeyboardFont
+      KMManager.KMDefault_KeyboardFont,  // Font for KMSample1 text field
+      KMManager.KMDefault_KeyboardFont); // Font for OSK
+    KMManager.addKeyboard(this, kbInfo);
 </code></pre>
+<p>If you included a dictionary in the sample app, add and register it with <code>KMManager</code>.</p>
+<pre class='language-java'><code>    // Add a dictionary
+    HashMap<String, String>lexicalModelInfo = new HashMap<String, String>();
+    lexicalModelInfo.put(KMManager.KMKey_PackageID, "example.ta.wordlist");
+    lexicalModelInfo.put(KMManager.KMKey_LanguageID, "ta");
+    lexicalModelInfo.put(KMManager.KMKey_LexicalModelID, "example.ta.wordlist");
+    lexicalModelInfo.put(KMManager.KMKey_LexicalModelVersion, "1.0");
+    KMManager.addLexicalModel(context, lexicalModelInfo);
+    KMManager.registerAssociatedLexicalModel("ta");
+</code></pre>
+
 <p><a class="asset-img-link" style="display: inline;"
-      href="<?php echo cdn("img/engine/android/10.0/guides/in-app/android-studio-adding-keyboard.png"); ?>"><img
+      href="<?php echo cdn("img/engine/android/14.0/guides/in-app/android-studio-adding-keyboard.png"); ?>"><img
       class="asset  asset-image at-xid-6a00d83432368053ef01bb07fe335f970d image-full img-responsive"
       title="Android-studio-adding-keyboard"
-      src="<?php echo cdn("img/engine/android/10.0/guides/in-app/android-studio-adding-keyboard-800wi.png"); ?>"
+      src="<?php echo cdn("img/engine/android/14.0/guides/in-app/android-studio-adding-keyboard-800wi.png"); ?>"
       alt="Android-studio-adding-keyboard" border="0"/></a></p>
-<p>Finally, add code to select the keyboard once it has been loaded. Locate the <code>onKeyboardLoaded</code> function,
-    and add one line to it:</p>
-<pre class='language-java'><code>  @Override
-  public void onKeyboardLoaded(KeyboardType keyboardType) {
-    // Handle Keyman keyboard loaded event here if needed
-    int kbIndex = KMManager.getKeyboardIndex(this, "tamil99m", "ta");
-    KMManager.setKeyboard(this, kbIndex);
-  }
-</code></pre>
 
 <h3>6. Build and run the app</h3>
 <p>You can run your app on a <a href="https://developer.android.com/studio/run/managing-avds.html">created Virtual Device</a>,
     or connect an Android device via USB to your computer to test. In either case, click the green Run button to start
     the app. The steps below show how to create a new Virtual Device</p>
 <p><a class="asset-img-link" style="display: inline;"
-      href="<?php echo cdn("img/engine/android/10.0/guides/in-app/android-studio-starting-debug.png"); ?>"><img
+      href="<?php echo cdn("img/engine/android/14.0/guides/in-app/android-studio-starting-debug.png"); ?>"><img
       class="asset  asset-image at-xid-6a00d83432368053ef01b8d0e2f402970c img-responsive"
       title="Android-studio-starting-debug"
-      src="<?php echo cdn("img/engine/android/10.0/guides/in-app/android-studio-starting-debug-800wi.png"); ?>"
+      src="<?php echo cdn("img/engine/android/14.0/guides/in-app/android-studio-starting-debug-800wi.png"); ?>"
       alt="Android-studio-starting-debug" border="0"/></a></p>
 <p>Click the <strong>[Create Virtual Device]</strong> button to add a new virtual device, and follow the prompts. Any recent emulated
     device should work fine. You will be prompted to download additional resources for the emulator when this runs.
 </p>
 <p><a class="asset-img-link" style="display: inline;"
-      href="<?php echo cdn("img/engine/android/10.0/guides/in-app/android-emulator-tamil.png"); ?>"><img
+      href="<?php echo cdn("img/engine/android/14.0/guides/in-app/android-emulator-tamil.png"); ?>"><img
       class="asset  asset-image at-xid-6a00d83432368053ef01b7c75abb95970b image-full img-responsive"
       title="Android-emulator-tamil"
-      src="<?php echo cdn("img/engine/android/10.0/guides/in-app/android-emulator-tamil-800wi.png"); ?>"
+      src="<?php echo cdn("img/engine/android/14.0/guides/in-app/android-emulator-tamil-800wi.png"); ?>"
       alt="Android-emulator-tamil" border="0"/></a></p>
 <p>And there you have it: your first Keyman Engine for Android app!</p>
 
@@ -173,7 +178,7 @@ yes | ./sdkmanager.bat --licenses
 
 <ul>
     <li><a href="../system-keyboard/">Guide: Build a system keyboard app</a></li>
-    <li><a href="/developer/13.0/">Keyman Developer Documentation</a></li>
-    <li><a href="/developer/engine/android/13.0/">Keyman Engine for Android Documentation</a></li>
+    <li><a href="/developer/14.0/">Keyman Developer Documentation</a></li>
+    <li><a href="/developer/engine/android/14.0/">Keyman Engine for Android Documentation</a></li>
     <li><a href="https://developer.android.com/index.html">Android Developer Home</a></li>
 </ul>
