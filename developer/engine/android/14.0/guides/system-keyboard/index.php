@@ -21,24 +21,19 @@ head([
 
 <h3>2. Run the sample app</h3>
 
-<p>The KMSample2 app includes the Tamil99M keyboard as an example keyboard. Without any further modifications, the
+<p>The KMSample2 app includes the Tamil 99 Basic keyboard as an example keyboard. Without any further modifications, the
     app should run and you'll be able to configure your device to use your app as the system keyboard.</p>
 
 <p><a class="asset-img-link" style="display: inline;"
-    href="<?php echo cdn("img/engine/android/10.0/guides/system-keyboard/emulator-800wi.png"); ?>"><img
+    href="<?php echo cdn("img/engine/android/14.0/guides/system-keyboard/emulator-800wi.png"); ?>"><img
     class="asset  asset-image at-xid-6a00d83432368053ef01b8d0e9c7c0970c-800wi image-full img-responsive"
-    title="Emulator" src="<?php echo cdn("img/engine/android/10.0/guides/system-keyboard/emulator-800wi.png"); ?>"
+    title="Emulator" src="<?php echo cdn("img/engine/android/14.0/guides/system-keyboard/emulator-800wi.png"); ?>"
     alt="Emulator" border="0"/></a></p>
 
 <h3>3. Extending the app</h3>
 
 <p>From here, you will no doubt want to replace the keyboard with your own one; again, follow the instructions from Part
     1 to make this change.</p>
-<aside>
-    <h3>Tip</h3>
-    <p>You will need to append a keyboard version to the file. In this example, <b>tamil99m.js</b> has a
-    keyboard version 1.1, so it is renamed to <b>tamil99m-1.1.js</b>.</p>
-</aside>
 <p>You can also customise the look and feel of the on screen keyboard by including a custom CSS file in your keyboard
     through Keyman Developer.</p>
 <p><a class="asset-img-link" style="display: inline;"
@@ -48,10 +43,10 @@ head([
     alt="AddEmbeddedCSS" border="0"/></a></p>
 
 <p>The CSS rules required to style your keyboard are beyond the scope of this post, but the <strong>kmwosk.css</strong>
-    file included in the Keyman Developer 13.0 distribution and in the
+    file included in the Keyman Developer 14.0 distribution and in the
     <a href="https://github.com/keymanapp/keyman/blob/master/web/source/resources/osk/kmwosk.css" target="_blank">
-    KeymanWeb 12.0 source</a>&nbsp;is a good place to start. See this
-    <a href="http://help.keyman.com/developer/engine/web/12.0/reference/osk/classes">reference</a> for more information
+    KeymanWeb 14.0 source</a>&nbsp;is a good place to start. See this
+    <a href="/developer/engine/web/14.0/reference/osk/classes">reference</a> for more information
     about the On-Screen Keyboard.</p>
 
 <p>Do take the time to read through the source of <strong>KMSample2</strong>, as it includes some boilerplate code
@@ -62,9 +57,9 @@ head([
     configuration steps that your users will need to undertake in order to start using your keyboard.</p>
 
 <p><a class="asset-img-link" style="display: inline;"
-    href="<?php echo cdn("img/engine/android/10.0/guides/system-keyboard/main-activity-layout-800wi.png"); ?>"><img
+    href="<?php echo cdn("img/engine/android/14.0/guides/system-keyboard/main-activity-layout-800wi.png"); ?>"><img
     class="asset  asset-image at-xid-6a00d83432368053ef01b8d0e9c8a6970c image-full img-responsive"
-    title="MainActivityLayout" src="<?php echo cdn("img/engine/android/10.0/guides/system-keyboard/main-activity-layout-800wi.png"); ?>"
+    title="MainActivityLayout" src="<?php echo cdn("img/engine/android/14.0/guides/system-keyboard/main-activity-layout-800wi.png"); ?>"
     alt="MainActivityLayout" border="0"/></a></p>
 
 <p>You will probably want to make that a lot prettier, and include more detailed instructions!</p>
@@ -77,6 +72,6 @@ head([
 
 <ul>
     <li><a href="../in-app/">Part 1 of this series</a></li>
-    <li><a href="/developer/11.0/" target="_blank">Keyman Developer Documentation</a></li>
+    <li><a href="/developer/14.0/" target="_blank">Keyman Developer Documentation</a></li>
     <li><a href="http://developer.android.com/index.html" target="_blank">Android Developer Home</a></li>
 </ul>
