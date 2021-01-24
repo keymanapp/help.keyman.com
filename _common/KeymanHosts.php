@@ -17,12 +17,12 @@
     public
       $s_keyman_com, $api_keyman_com, $help_keyman_com, $downloads_keyman_com,
       $keyman_com, $keymanweb_com, $r_keymanweb_com, $blog_keyman_com,
-      $donate_keyman_com, $translate_keyman_com;
+      $donate_keyman_com, $translate_keyman_com, $sentry_keyman_com;
 
     public
       $s_keyman_com_host, $api_keyman_com_host, $help_keyman_com_host, $downloads_keyman_com_host,
       $keyman_com_host,  $keymanweb_com_host, $r_keymanweb_com_host, $blog_keyman_com_host,
-      $donate_keyman_com_host, $translate_keyman_com_host;
+      $donate_keyman_com_host, $translate_keyman_com_host, $sentry_keyman_com_host;
 
     private $tier;
 
@@ -59,6 +59,7 @@
       $contents = str_replace("https://blog.keyman.com", $this->blog_keyman_com, $contents);
       $contents = str_replace("https://donate.keyman.com", $this->donate_keyman_com, $contents);
       $contents = str_replace("https://translate.keyman.com", $this->translate_keyman_com, $contents);
+      $contents = str_replace("https://sentry.keyman.com", $this->sentry_keyman_com, $contents);
 
       return $contents;
     }
@@ -94,6 +95,7 @@
       $this->blog_keyman_com = "https://blog.keyman.com";
       $this->donate_keyman_com = "https://donate.keyman.com";
       $this->translate_keyman_com = "https://translate.keyman.com";
+      $this->sentry_keyman_com = "https://sentry.keyman.com";
 
       if(in_array($this->tier, [KeymanHosts::TIER_STAGING, KeymanHosts::TIER_TEST])) {
         // As we build more staging areas, change these over as well. Assumption that we'll stage across multiple sites is a
@@ -126,5 +128,6 @@
       $this->r_keymanweb_com_host = preg_replace('/^http(s)?:\/\/(.+)$/', '$2', $this->r_keymanweb_com);
       $this->donate_keyman_com_host = preg_replace('/^http(s)?:\/\/(.+)$/', '$2', $this->donate_keyman_com);
       $this->translate_keyman_com_host = preg_replace('/^http(s)?:\/\/(.+)$/', '$2', $this->translate_keyman_com);
+      $this->sentry_keyman_com_host = preg_replace('/^http(s)?:\/\/(.+)$/', '$2', $this->sentry_keyman_com);
     }
   }
