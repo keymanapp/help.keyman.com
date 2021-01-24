@@ -26,17 +26,17 @@ echo codebox(<<<END
   <script src="js/keymanweb.js" type="text/javascript"></script>
   <script>
     window.addEventListener('load', function () {
-        kmw.init();
-
+      kmw.init().then(function() {
         kmw.addKeyboards({
-            id:'laokeys',
-            name:'Lao (Phonetic)',
-            languages:{
-                id:'lo',
-                name:'Lao'
-            },
-            filename:'./js/laokeys.js'
+          id:'laokeys',
+          name:'Lao (Phonetic)',
+          languages:{
+            id:'lo',
+            name:'Lao'
+          },
+          filename:'./js/laokeys.js'
         });
+      });
     });
   </script>
   <!-- End of Code -->

@@ -25,29 +25,28 @@ interface.  The keyboards in the selector are populated from the KeymanWeb list 
   echo codebox(<<<END
 <script>
   var KWControl = null;
-  var kmw = tavultesoft.keymanweb;
+  var kmw = keyman;
   
   /* SetupDocument: Called when the page finishes loading */
   function SetupDocument()
   {
-    /* Make sure that Keyman is initialized (we can't guarantee initialization order) */
-    kmw.init();
-    
-    KWControl = document.getElementById('KWControl');
-    /* Retrieve the list of keyboards available from KeymanWeb and populate the selector using the DOM */
-    var kbds = kmw.getKeyboards();
-    for(var kbd in kbds)
-    {
-      var opt = document.createElement('OPTION');
-      opt.value = kbds[kbd].InternalName + "$$" + kbds[kbd].LanguageCode;
-      opt.innerHTML = kbds[kbd].Name;
-      KWControl.appendChild(opt);    
-    }
-    /* Focus onto the multilingual field in the form */
-    document.f.multilingual.focus();
-    
-    // Ensures the default keyboard is active, to match our listbox's initial (default) option.
-    kmw.setActiveKeyboard('', '');
+    kmw.init().then(function(){
+      // Load the keyboards of your choice here.
+      loadKeyboards();
+
+      KWControl = document.getElementById('KWControl');
+      var kbds = kmw.getKeyboards();
+      for(var kbd in kbds)
+      {
+        var opt = document.createElement('OPTION');
+        opt.value = kbds[kbd].InternalName + "$$" + kbds[kbd].LanguageCode;
+        opt.innerHTML = kbds[kbd].Name;
+        KWControl.appendChild(opt);    
+      }
+      document.f.multilingual.focus();
+
+      kmw.setActiveKeyboard('', '');
+    });
   }
   
   /* KWControlChange: Called when user selects an item in the KWControl SELECT */
@@ -70,7 +69,7 @@ END
     <!-- Load the KeymanWeb engine -->
     <script src="keymanweb.js" type="text/javascript"></script>
     <!-- Load the your keyboard stubs here -->
-    <script src="laokeys_load.js" type="text/javascript"></script>
+    <script src="unified_loader.js" type="text/javascript"></script>
     <!-- ... -->
 </head>
 
@@ -78,6 +77,13 @@ END
 <body onload="SetupDocument()">
 END
   );
+?>
+
+<ul>
+  <li>File: <a href="js/unified_loader.js">unified_loader.js</a></li>
+</ul>
+
+<?php
 
   echo "<p>And finally, include the keyboard SELECT and the clickable help img:</p>";
   
