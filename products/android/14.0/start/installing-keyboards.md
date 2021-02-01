@@ -5,18 +5,22 @@ title: How To - Download and Install a Keyman Keyboard
 ## Adding New Keyboards
 To add keyboards, follow these steps:
 
-Step 1) Open the menu for additional options. Select 'Settings'
+Step 1)
+Open the menu for additional options. Select 'Settings'
 
-Step 2) From the Keyman Settings menu, select 'Installed languages'
+Step 2)
+From the Keyman Settings menu, select 'Installed languages'
 
 ![](../android_images/settings-language-ap.png)
     
-Step 3) From the 'Installed languages' menu, touch the **+**
+Step 3)
+From the 'Installed languages' menu, touch the **+**
 button in the bottom right corner of your screen.
 
 ![](../android_images/plus-a.png)
 
-Step 4) A keyboard search page will appear. Type in the search box to look for a keyboard based on: keyboard name, language name, or country. 
+Step 4)
+A keyboard search page will appear. Type in the search box to look for a keyboard based on: keyboard name, language name, or country. 
 
 To search for a specific BCP 47 language code, use a search `l:id:`.
 
@@ -32,7 +36,8 @@ A notification will appear when the keyboard package is downloading in the backg
 
 ![](../android_images/khmer-downloading-a.png)
 
-Step 5) Once the download is complete, you'll see 2 or 3 step process to install the new keyboard package.
+Step 5)
+Once the download is complete, you'll see 2 or 3 step process to install the new keyboard package.
 
 a) Display the readme.htm documentation (if the keyboard includes it).
 
