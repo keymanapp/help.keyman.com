@@ -9,4 +9,4 @@ Keyman for Android will run on Android phones and tablets that have a minimum ve
 [Android 5.0 (Lollipop)](https://developer.android.com/about/versions/lollipop).
 
 ### Device Permissions
-Network and external storage permissions are required to download and install keyboards/dictionaries from the Keyman servers.
+Network and [external storage permissions](../troubleshooting/grant-storage-permission) are required to download and install keyboards/dictionaries from the Keyman servers.

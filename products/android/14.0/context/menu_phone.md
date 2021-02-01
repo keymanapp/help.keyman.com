@@ -17,7 +17,7 @@ title: Keyman for Android (Phone Layout)
 | ![](../android_images/delete-a.png) | Delete all current text |
 | ![](../android_images/info-a.png) | Load this help page |
 | ![](../android_images/get-started-a.png) | Open the initial setup screen |
-| ![](../android_images/settings-a.png) | Open the [Keyman Settings](../basic/config/using-settings-screen) screen |
+| ![](../android_images/settings-a.png) | Open the [Keyman Settings](../basic/config/) screen |
 | ![](../android_images/ic_cloud_download.png) | Update available to download for keyboard / dictionary |
 
 ### See Also

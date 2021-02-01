@@ -43,7 +43,7 @@ a) Display the readme.htm documentation (if the keyboard includes it).
 
 ![](../android_images/khmer-readme-a.png)
 
-b) If the keyboard supports multiple languages, select languages to install. When a keyboard package only lists one language (khmer_angkor only lists km: Central Khmer),
+b) If the keyboard supports multiple languages, select languages to install. When a keyboard package only lists one language (`khmer_angkor` only lists **km: Central Khmer**),
 the installer proceeds to the next step.
 
 c) Display the welcome.htm documentation.
