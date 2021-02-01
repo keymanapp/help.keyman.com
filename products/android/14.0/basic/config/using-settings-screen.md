@@ -1,93 +1,51 @@
-<?php
-require_once('includes/template.php');
-require_once('includes/session-embed.php');
-require_once('includes/session-formfactor.php');
+---
+title: Using the Settings Screen - Keyman for Android Help
+---
 
-head([
-    'title' => 'Using the Settings Screen - Keyman for Android Help',
-    'css' => ['template.css', 'app-info-a.css', 'embed.css', 'formfactor.css'],
-    'embedded' => $embed_android
-]);
-?>
+## Using the Settings Screen
 
-<h2>Using the Settings Screen</h2>
+This Settings screen is used to configure keyboards and dictionaries.
+It also has many of the options that are available on the 'Get Started' menu. To access the Settings screen:
 
-<?php
-  // We need to condition here.  While CSS selection can affect visibility, it
-  // won't prevent offlining scripts from following the links and breaking
-  // the desired mirrored content for offline help.
-  if(!$embed_android) {
-    formFactorSelect();
-  }
-?>
+Step 1. Open the Keyman app.
+Step 2. Click the menu for additional options. Select 'Settings'
 
-<p>
-  This Settings screen is used to configure keyboards and dictionaries.
-  It also has many of the options that are available on the 'Get Started' menu. To access the Settings screen:
-</p><p>
-  Step 1)
-</p><p>
-  Open the Keyman app.
-</p><p>
-  Step 2)
-</p><p>
-  Click the menu for additional options. Select 'Settings'
-</p><p>
-  <img class="phone" id="settings-screen-ap" src="<?= cdn("img/app/14.0/settings-screen-ap.png")?>">
-  <img class="tablet" id="settings-screen-at" src="<?= cdn("img/app/14.0/settings-screen-at.png")?>">
-</p><p>
-  Each selection on the Keyman Settings screen is described in further detail below:
-</p>
+![](../../android_images/settings-screen-ap.png)
 
-<h2>Installed Languages</h2>
-<p>
-  This displays the number of installed languages in parentheses (). Click this line for the 'Installed Languages'
-  screen where you can <a href="installing-keyboards.php">install new keyboards</a> from the keyman.com catalog.
-</p>
+Each selection on the Keyman Settings screen is described in further detail below:
 
-<h2>Install Keyboard or Dictionary</h2>
-<p>
-  This displays a few ways to install a keyboard package or dictionary package.
-</p><p>
-  <img id="settings-screen-install-keyboard-dictionary"
-  src="<?=cdn("img/app/14.0/settings-screen-install-keyboard-dictionary.png")?>">
-</p>
 
-<h3>Install from keyman.com</h3>
-<p>
-  Click on this to search for a keyboard from keyman.com and install. The process is the same as
-  <a href="installing-keyboards.php">installing keyboards</a>.
-</p>
+## Installed Languages
+This displays the number of installed languages in parentheses `()`. Click this line for the 'Installed Languages'
+screen where you can [install new keyboards](../../start/installing-keyboards) from the keyman.com catalog.
 
-<h3>Install from local file</h3>
-<p>
-  Click on this to <a href="installing-custom-packages.php">install custom keyboard and dictionary packages</a>.
-</p>
+## Install Keyboard or Dictionary
+This displays a few ways to install a keyboard package or dictionary package.
 
-<h3>Add languages to installed keyboard</h3>
-<p>
-  For installed keyboard packages, click on this to associate another language with a keyboard.
-  If all the languages for a keyboard have already been installed,
-  this won't change anything.
-</p>
+![](../../android_images/settings-screen-install-keyboard-dictionary.png)
 
-<h2>Enable Keyman as system-wide keyboard</h2>
-<p>By default, installed Keyman keyboards are only available to use within the Keyman app. Click on this setting to
-bring up the Android system configuration so Keyman can be added as a system-wide keyboard.</p>
+### Install from keyman.com
+Click on this to search for a keyboard from keyman.com and install. The process is the same as [installing keyboards](../../start/installing-keyboards).
 
-<h2>Set Keyman as default keyboard</h2>
-<p>Click on this to bring up the Android system configuration for setting Keyman as the default system-wide keyboard.</p>
+### Install from local file
+Click on this to [install custom keyboard and dictionary packages](../installing-custom-packages).
 
-<h2>Always show banner</h2>
-<p>This toggle is reserved for future features. When off, the text suggestion banner is only displayed when
-  the dictionary is enabled. The language associated with the keyboard must match the language associated with
-  the dictionary.
-</p>
+### Add languages to installed keyboard
+For installed keyboard packages, click on this to associate another language with a keyboard.
+If all the languages for a keyboard have already been installed,
+this won't change anything.
 
-<h2>Show "Get Started" on startup</h2>
-<p>When enabled, the Keyman app will display the 'Get Started' screen on app startup.
-</p>
+## Enable Keyman as system-wide keyboard
+By default, installed Keyman keyboards are only available to use within the Keyman app. Click on this setting to
+bring up the Android system configuration so Keyman can be added as a system-wide keyboard.
 
-<?php
-include('./_shared/help_links.php');
-?>
+## Set Keyman as default keyboard
+Click on this to bring up the Android system configuration for setting Keyman as the default system-wide keyboard.
+
+## Always show banner
+This toggle is reserved for future features. When off, the text suggestion banner is only displayed when
+the dictionary is enabled. The language associated with the keyboard must match the language associated with
+the dictionary.
+
+## Show "Get Started" on startup
+When enabled, the Keyman app will display the 'Get Started' screen on app startup.
