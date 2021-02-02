@@ -1,27 +1,17 @@
-<?php
-require_once('includes/template.php');
+---
+title: Keyman for Linux 14.0 Help
+---
 
-head([
-  'title' => 'Keyman for Linux Help',
-  'css' => ['template.css']
-]);
-?>
+Need help using Keyman for Linux? In time, this product documentation will grow and explain frequently asked questions.
 
-<h2>Keyman for Linux 14.0 Help</h2>
+## [Getting Started](start/)
+* [Installing a keyboard](start/installing-keyboard)
 
-<p>Need help using Keyman for Linux? In time, this product documentation will grow and explain frequently asked questions. </p>
+## [Common Questions](common/)
 
-<dl>
-    <dt><a href='common.php'>Common Questions</a></dt>
-    <dd>Answers to commonly asked questions</dd>
-</dl>
+## Ask for Help
+[Ask other users in the SIL Keyman Keyman Community](https://community.software.sil.org/c/keyman)
 
-<dl>
-    <dt><a href='guide/'>Guide</a></dt>
-    <dd>Keyman 14.0 for Linux Guide</dd>
-</dl>
+## Help Topics
 
-<dl>
-    <dt><a href='reference'>Reference</a></dt>
-    <dd>Keyman 14.0 for Linux Reference</dd>
-</dl>
+### [Reference](reference/)

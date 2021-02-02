@@ -1,80 +1,49 @@
-<?php
-require_once('includes/template.php');
+---
+title: Installing Keyboards with Keyman for Linux
+---
 
-head([
-  'title' => 'Installing Keyboards with Keyman for Linux',
-  'css' => ['template.css', 'prism.css'],
-  'js' => ['prism.js']
-]);
-?>
+Keyboards are installed with Keyman Configuration. From the launcher, enter `Keyman Configuration`.
 
-<h1 class="red">Installing Keyboards with Keyman for Linux</h1>
-<p>
-  Keyboards are installed with Keyman Configuration. From the launcher, enter <code class='language-bash'>Keyman Configuration</code>.
-</p>
-<p>
-  <img src="<?php echo cdn("img/linux/140/km-config.png"); ?>" alt="Keyman Configuration" />
-</p>
+![](../linux_images/km-config.png "Keyman Configuration")
 
-<h2 class="red">Download from Keyman cloud repository</h2>
-<p>
-  From Keyman Configuration, click "Download". At the search page, enter the keyboard you want to download.
-</p>
-<p>
-  <img src="<?php echo cdn("img/linux/140/search-khmer-angkor.png"); ?>" alt="Search for khmer_angkor keyboard" />
-</p>
-<p>
-  Clicking the keyboard brings the keyboard page which has a link for installation.
-</p>
-<p>
-  <img src="<?php echo cdn("img/linux/140/download-khmer-angkor.png"); ?>" alt="Install khmer_angkor" />
-</p>
+## Download from Keyman cloud repository
+From Keyman Configuration, click "Download". At the search page, enter the keyboard you want to download.
 
-<h2 class="red">Install Local .kmp keyboard package</h2>
-<p>
-  Keyman for Linux can also install keyboards from local .kmp keyboard packages. From Keyman Configuration,
-  click "Install". Then browse to the local .kmp keyboard package and install.
-</p>
-<p>
-  <img src="<?php echo cdn("img/linux/140/package-khmer-angkor-welcome.png"); ?>" alt="Package khmer_angkor" />
-</p>
-<p>
-  The keyboard should appear in Keyman Configuration.
-</p>
-<p>
-  <img src="<?php echo cdn("img/linux/140/km-config-khmer-angkor.png"); ?>" alt="Keyman Configuration khmer_angkor" />
-</p>
+![](../linux_images/search-khmer-angkor.png "Search for khmer_angkor keyboard")
 
-<h3 class="red">Install the Input Source in Region & Language Settings</h3>
-<p>
-  This section is only relevant for Ubuntu. At this point the keyboard should be ready to use on Wasta.
-</p>
-<p>
-  Note that Keyman Configuration only installs the keyboard into IBus. In order to use the keyboard in Ubuntu,
-  access your system Settings and click "Region & Language".
-</p>
-<p>
-  <img src="<?php echo cdn("img/linux/140/region-and-language.png"); ?>" alt="Settings: Region & Language" />
-</p>
-<p>
-  Click "+" to add the input source. Click the 3 dots to search for other input sources.
-</p>
-<p>
-  <img src="<?php echo cdn("img/linux/140/add-input-source.png"); ?>" alt="Add Input Source" />
-</p>
-<p>
-  Search for the keyboard you added.
-</p>
-<p>
-  <img src="<?php echo cdn("img/linux/140/add-input-source-khmer.png"); ?>" alt="Add Input Source: Khmer" />
-</p>
-<br/>
-<p>
-  <img src="<?php echo cdn("img/linux/140/add-input-source-khmer-angkor.png"); ?>" alt="Add Input Source: khmer_angkor" />
-</p>
-<p>
-  Your input source is now accessible in IBus. Use the shortcut Windows-spacebar to switch input source.
-</p>
-<p>
-  <img src="<?php echo cdn("img/linux/140/region-language-khmer-angkor.png"); ?>" alt="Region & Language: khmer_angkor" />
-</p>
+Clicking the keyboard brings the keyboard page which has a link for installation.
+
+![](../linux_images/download-khmer-angkor.png "Install khmer_angkor")
+
+## Install Local .kmp keyboard package
+Keyman for Linux can also install keyboards from local .kmp keyboard packages. From Keyman Configuration,
+click "Install". Then browse to the local .kmp keyboard package and install.
+
+![](../linux_images/package-khmer-angkor-welcome.png "Package khmer_angkor")
+
+The keyboard should appear in Keyman Configuration.
+
+![](../linux_images/km-config-khmer-angkor.png "Keyman Configuration khmer_angkor")
+
+### Install the Input Source in Region & Language Settings
+This section is only relevant for Ubuntu. At this point the keyboard should be ready to use on Wasta.
+
+**Note:** Keyman Configuration only installs the keyboard into IBus. In order to use the keyboard in Ubuntu,
+access your system Settings and click "Region & Language".
+
+![](../linux_images/region-and-language.png "Settings: Region & Language")
+
+Click "+" to add the input source. Click the 3 dots to search for other input sources.
+
+![](../linux_images/add-input-source.png "Add Input Source")
+
+Search for the keyboard you added.
+
+![](../linux_images/add-input-source-khmer.png "Add Input Source: Khmer")
+
+
+![](../linux_images/add-input-source-khmer-angkor.png "Add Input Source: khmer_angkor")
+
+Your input source is now accessible in IBus. Use the shortcut Windows-spacebar to switch input source.
+
+![](../linux_images/region-language-khmer-angkor.png "Region & Language: khmer_angkor")
