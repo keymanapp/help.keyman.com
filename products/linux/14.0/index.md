@@ -15,7 +15,7 @@ Need help using Keyman for Linux? In time, this product documentation will grow 
 ## [Common Questions](common/)
 
 ## Ask for Help
-[Ask other users in the SIL Keyman Keyman Community](https://community.software.sil.org/c/keyman)
+[Ask other users in the SIL Keyman Community](https://community.software.sil.org/c/keyman)
 
 ## Help Topics
 

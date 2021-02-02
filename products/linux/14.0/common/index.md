@@ -11,7 +11,7 @@ sudo apt-get upgrade
 sudo apt-get install keyman onboard-keyman
 ```
 
-Keyman for Linux packages are also available in any current Debian at: 
+An older version of Keyman for Linux packages is also available in any current Debian at: 
 [https://packages.debian.org/keyman](https://packages.debian.org/keyman)
 
 

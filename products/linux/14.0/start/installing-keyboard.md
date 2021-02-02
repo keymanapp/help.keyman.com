@@ -3,6 +3,7 @@ title: Installing Keyboards with Keyman for Linux
 ---
 
 Keyboards are installed with Keyman Configuration. From the launcher, enter `Keyman Configuration`.
+Alternatively from the command line run `km-config`.
 
 ![](../linux_images/km-config.png "Keyman Configuration")
 
