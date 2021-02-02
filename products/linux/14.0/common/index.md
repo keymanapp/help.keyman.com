@@ -32,7 +32,7 @@ sudo apt-get upgrade
 sudo apt-get install ibus-kmfl
 ```
 
-## Q. If I already had KMFL isntalled, how can I uninstall KMFL before installing Keyman?
+## Q. If I already had KMFL installed, how can I uninstall KMFL before installing Keyman?
 **A.** It is good to remove any keyboards from ibus e.g. KMFL keyboards before you remove KMFL.
 Then, to remove KMFL:
 ```bash

@@ -4,6 +4,11 @@ title: Keyman for Linux 14.0 Help
 
 Need help using Keyman for Linux? In time, this product documentation will grow and explain frequently asked questions.
 
+## [About Keyman for Linux](about/)
+* [Welcome to Keyman](about/welcome)
+* [What's New](about/whatsnew)
+* [Version History](about/history)
+
 ## [Getting Started](start/)
 * [Installing a keyboard](start/installing-keyboard)
 
