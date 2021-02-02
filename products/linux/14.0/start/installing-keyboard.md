@@ -26,25 +26,6 @@ The keyboard should appear in Keyman Configuration.
 
 ![](../linux_images/km-config-khmer-angkor.png "Keyman Configuration khmer_angkor")
 
-### Install the Input Source in Region & Language Settings
-This section is only relevant for Ubuntu. At this point the keyboard should be ready to use on Wasta.
-
-**Note:** Keyman Configuration only installs the keyboard into IBus. In order to use the keyboard in Ubuntu,
-access your system Settings and click "Region & Language".
-
-![](../linux_images/region-and-language.png "Settings: Region & Language")
-
-Click "+" to add the input source. Click the 3 dots to search for other input sources.
-
-![](../linux_images/add-input-source.png "Add Input Source")
-
-Search for the keyboard you added.
-
-![](../linux_images/add-input-source-khmer.png "Add Input Source: Khmer")
-
-
-![](../linux_images/add-input-source-khmer-angkor.png "Add Input Source: khmer_angkor")
-
 Your input source is now accessible in IBus. Use the shortcut Windows-spacebar to switch input source.
 
 ![](../linux_images/region-language-khmer-angkor.png "Region & Language: khmer_angkor")
