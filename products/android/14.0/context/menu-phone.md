@@ -21,4 +21,4 @@ title: Keyman for Android (Phone Layout)
 | ![](../android_images/ic_cloud_download.png) | Update available to download for keyboard / dictionary |
 
 ### See Also
-* [Keyman for Android (Tablet Layout)](menu_tablet)
+* [Keyman for Android (Tablet Layout)](menu-tablet)
