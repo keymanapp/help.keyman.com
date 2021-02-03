@@ -30,7 +30,7 @@ this will always be <code>khKeyboard</code>.</p>
     <tr><td>1</td><td>khKeyboardMenu</td><td>Opens the Keyman keyboard menu from the notification area</td></tr>
     <tr><td>2</td><td>khVisualKeyboard</td><td>Opens the On Screen Keyboard page in the on screen keyboard. If the On Screen Keyboard page is already visible, closes the on screen keyboard</td></tr>
     <tr><td>3</td><td>khKeymanConfiguration</td><td>Opens Keyman Configuration</td></tr>
-    <tr><td>4</td><td>khKeyboardUsage</td><td>Opens the Keyboard Usage page in the on screen keyboard. If the Keyboard Usage page is already visible, closes the on screen keyboard</td></tr>
+    <tr><td>4</td><td>khKeyboardUsage</td><td>Deprecated. Has no effect in Keyman 14 and later versions.</td></tr>
     <tr><td>5</td><td>khFontHelper</td><td>Opens the Font Helper page in the on screen keyboard. If the Font Helper page is already visible, closes the on screen keyboard</td></tr>
     <tr><td>6</td><td>khCharacterMap</td><td>Opens the Character Map page in the on screen keyboard. If the Character Map page is already visible, closes the on screen keyboard</td></tr>
     <tr><td>7</td><td>khTextEditor</td><td>Opens the Keyman Text Editor</td></tr>
