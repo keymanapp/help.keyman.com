@@ -34,7 +34,7 @@
   <dt><code><a href='addKeyboardEventListener.php'>addKeyboardEventListener()</a></code></dt>
   <dd>adds the specified listener into the list of keyboard event listeners</dd>
 
-  <dt><code>addLexicalModel()</code></dt>
+  <dt><code><a href='addLexicalModel'>addLexicalModel()</a></code></dt>
   <dd>adds a lexical model into the lexical models list</dd>
 
   <dt><code>advanceToNextInputMode()</code></dt>
@@ -49,13 +49,13 @@
   <dt><code><a href='createInputView.php'>createInputView()</a></code></dt>
   <dd>creates the input view to be used in InputMethodService</dd>
 
-  <dt><code>deregisterLexicalModel()</code></dt>
+  <dt><code><a href='deregisterLexicalModel'>deregisterLexicalModel()</a></code></dt>
   <dd>deregisters the specified lexical model from the LMLayer so it isn't used</dd>
 
   <dt><code>executeHardwareKeystroke()</code></dt>
   <dd>process the keystroke generated from a physical keyboard</dd>
 
-  <dt><code>getAssociatedLexicalModel()</code></dt>
+  <dt><code><a href='getAssociatedLexicalModel'>getAssociatedLexicalModel()</a></code></dt>
   <dd>search the installed lexical models list and see if there's an associated model for a given language</dd>
 
   <dt><code><a href='getBannerHeight.php'>getBannerHeight()</a></code></dt>
@@ -121,6 +121,12 @@
   <dt><code>getLexicalModelsList()</code></dt>
   <dd>returns the array of lexical models list</dd>
 
+  <dt><code><a href='getLanguageCorrectionPreferenceKey'>getLanguageCorrectionPreferenceKey</a></code></dt>
+  <dd>returns a String to use as a shared preference key to store whether the LMLayer should enable corrections for a given language</dd>
+
+  <dt><code><a href='getLanguagePredictionPreferenceKey'>getLanguagePredictionPreferenceKey</a></code></dt>
+  <dd>returns a String to use as a shared preference key to store whether the LMLayer should enable suggestions for a given language.</dd>
+
   <dt><code><a href='getMaySendCrashReport'>getMaySendCrashReport()</a></code></dt>
   <dd>returns whether Keyman Engine is allowed to send crash reports over the network to sentry.keyman.com</dd>
 
@@ -163,10 +169,10 @@
   <dt><code><a href='onStartInput.php'>onStartInput()</a></code></dt>
   <dd>performs necessary actions in an InputMethodService's <code>onStartInput()</code></dd>
 
-  <dt><code>registerAssociatedLexicalModel()</code></dt>
+  <dt><code><a href='registerAssociatedLexicalModel'>registerAssociatedLexicalModel()</a></code></dt>
   <dd>registers a lexical model with the associated language ID</dd>
 
-  <dt><code>registerLexicalModel()</code></dt>
+  <dt><code><a href='registerLexicalModel'>registerLexicalModel</a></code></dt>
   <dd>registers a lexical model to use with the LMLayer</dd>
 
   <dt><code><a href='removeKeyboard.php'>removeKeyboard()</a></code></dt>
