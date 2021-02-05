@@ -1,93 +1,50 @@
-<?php
-  require_once('includes/template.php');
-  require_once('includes/session-embed.php');
-  
-  head([
-    'title' => 'Sharing Keyboards - Keyman for iPhone and iPad Help',
-//    'css' => ['template.css','app-info.css'],
-      'css' => ['template.css','keyboard.css','keys.css', 'embed.css'],
+---
+title: Sharing Keyboards - Keyman for iPhone and iPad Help
+---
 
-    'embedded' => $embed_ios
-  ]);
-?>
+## Keyman for iPhone and iPad: Sharing Keyboards
 
-<h2><span class="content-online">Keyman for iPhone and iPad:  </span>Sharing Keyboards</h2>
+### Sharing the File
+If you have installed a custom keyboard or dictionary from a file, Keyman keeps a copy
+of that file on your device.  You can find these copies in the iOS Files app.
 
-<h3>Sharing the File</h3>
-<p>
-  If you have installed a custom keyboard or dictionary from a file, Keyman keeps a copy
-  of that file on your device.  You can find these copies in the iOS Files app.
-</p>
-<p>
-  <img src="<?= cdn('img/app/14.0/file-share-1i.png')?>">
-</p>
-<p>
-  Simply select the "Keyman" folder to view these files.
-</p>
-<p>
-  <img src="<?= cdn('img/app/14.0/file-share-2i.png')?>">
-</p>
-<p>
-  From here, longpress the file for the keyboard or dictionary you wish to share, then
-  click <span class="command">Share</span> to view sharing options.
-</p>
-<h3>Sharing via QR code</h3>
-<p>
-  For keyboards and dictionaries downloaded directly through the app,
-  you can provide friends with a scannable QR code.  First, find the resource
-  through the Settings menu under Installed Languages.
-</p>
-<p>
-  <img src="<?= cdn('img/app/14.0/add-keyboard-i2.png')?>">
-</p>
-<p>
-  <img src="<?= cdn('img/app/14.0/add-keyboard-i3.png')?>">
-</p>
-<p>
-  <img src="<?= cdn('img/app/14.0/qr-code-share-1i.png')?>">
-</p>
-<p>
-  When you select the keyboard, a page like the following should appear:
-</p>
-<p>
-  <img src="<?= cdn('img/app/14.0/qr-code-share-2i.png')?>">
-</p>
-<p>
-  Note that QR codes are only provided for certain keyboards and dictionaries
-  at this time.
-</p>
-<h3>Installing from QR code</h3>
-<p>
-  To install from QR code, simply launch your device's Camera app and point
-  it at the code, as seen below.
-</p>
-<p>
-  <img src="<?= cdn('img/app/14.0/qr-code-share-3i.png')?>">
-</p>
-<p>
-  Selecting the notification seen at the top will lead you to the following page:
-</p>
-<p>
-  <img src="<?= cdn('img/app/14.0/qr-code-share-4i.png')?>">
-</p>
-<p>
-  Select the big <span class="command">Install on iPhone</span> (or
-  <span class="command">Install on iPad</span>) option will then download
-  the file for easy installation.  (Refer to <a href='installing-custom-keyboards.php'>
-    Installing custom keyboards</a> as necessary.)
-</p>
+![](../ios_images/file-share-1i.png)
 
-<h2>Help Index</h2>
+Simply select the "Keyman" folder to view these files.
 
-<ul>
-  <li class="content-online"><a href='index.php'>Keyman for iPhone and iPad help home</a></li>
-  <li class="content-in-app"><a href='index.php'>Getting Started</a></li>
-  <li><a href='installing-keyboards.php'>Installing keyboards</a></li>
-  <li><a href='switching-between-keyboards.php'>Switching between keyboards</a></li>
-  <li><a href='uninstalling-keyboards.php'>Uninstalling keyboards</a></li>
-  <li><a href='installing-custom-keyboards.php'>Installing custom keyboards</a></li>
-  <li><a href='sharing-keyboards.php'>Sharing keyboards</a></li>
-  <li><a href='installing-system-keyboard.php'>Installing the Keyman System Keyboard</a></li>
-  <li><a href='installing-fonts.php'>Installing fonts</a></li>
-  <li><a href='using-keyman-browser.php'>Using the Keyman Browser</a></li>
-</ul>
+![](../ios_images/file-share-2i.png)
+
+From here, longpress the file for the keyboard or dictionary you wish to share, then
+click **Share** to view sharing options.
+
+### Sharing via QR code
+For keyboards and dictionaries downloaded directly through the app,
+you can provide friends with a scannable QR code.  First, find the resource
+through the Settings menu under Installed Languages.
+
+![](../ios_images/add-keyboard-i2.png)
+
+![](../ios_images/add-keyboard-i3.png)
+
+![](../ios_images/qr-code-share-1i.png)
+
+When you select the keyboard, a page like the following should appear:
+
+![](../ios_images/qr-code-share-2i.png)
+
+Note that QR codes are only provided for certain keyboards and dictionaries
+at this time.
+
+### Installing from QR code
+To install from QR code, simply launch your device's Camera app and point
+it at the code, as seen below.
+
+![](../ios_images/qr-code-share-3i.png)
+
+Selecting the notification seen at the top will lead you to the following page:
+
+![](../ios_images/qr-code-share-4i.png)
+
+Select the big **Install on iPhone** (or
+**Install on iPad**) option will then download
+the file for easy installation.  (Refer to [Installing custom keyboards](installing-custom-keyboards) as necessary.)
