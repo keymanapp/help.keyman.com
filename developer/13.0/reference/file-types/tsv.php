@@ -40,7 +40,7 @@ use existing word list exporters. </p>
   (<abbr>BOM</abbr>); that is, if the first three bytes of the file are
   <code>EF BB BF</code>, these will be interpreted as the
   <abbr>BOM</abbr> and will be ignored.</li>
-<li>the file either consists of a <strong>comment</strong> or an <strong>entry</strong></li>
+<li>each line in the file either consists of a <strong>comment</strong> or an <strong>entry</strong></li>
 <li><strong>comment</strong> lines MUST start with the <code>#</code> character on the very first column</li>
 <li><strong>entries</strong> are one to three columns, separated by the (horizontal) <strong>tab character</strong> (U+0009)</li>
 <li>column 1 (<strong>REQUIRED</strong>): the <strong>word form</strong>: can
