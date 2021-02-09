@@ -19,9 +19,9 @@ KMManager.getLanguageCorrectionPreferenceKey(String langID)
 Returns the language correction preference key as a String.
 
 ## Description
-Use this method to get String that can be used as a shared preference key.
+Use this method to get a String that can be used as a shared preference key.
 
-The String is a constant of `langId` plus a suffix `.mayCorrect`.
+The usage of this preference key is experimental and likely to be deprecated in a future release of KMEA.
 
 ## Examples
 
