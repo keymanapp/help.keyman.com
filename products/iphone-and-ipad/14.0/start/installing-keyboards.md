@@ -2,8 +2,6 @@
 title: Adding keyboards - Keyman for iPhone and iPad Help
 ---
 
-## Keyman for iPhone and iPad: Adding Keyboards
-
 To install resources for use with a new language, follow these steps.
 
 ### Access "Installed Languages"

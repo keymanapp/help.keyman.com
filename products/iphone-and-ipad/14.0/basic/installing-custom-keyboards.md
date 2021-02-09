@@ -2,8 +2,6 @@
 title: Installing Custom Keyboards - Keyman for iPhone and iPad Help
 ---
 
-## Installing Custom Keyboards
-
 ###Download the File
 If downloading a custom keyboard from the internet, click the link to your custom keyboard package file.
 

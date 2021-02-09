@@ -2,8 +2,6 @@
 title: Using the Keyman Browser - Keyman for iPhone and iPad Help
 ---
 
-## Keyman for iPhone and iPad: Using the Keyman Browser
-
 Step 1) Click the Keyman Browser button in the Keyman app
 
 Step 2) Enter the URL of a website to visit into the address bar, for example **google.com**.  Keyman Browser will load

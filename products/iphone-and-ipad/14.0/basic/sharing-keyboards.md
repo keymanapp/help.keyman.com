@@ -2,8 +2,6 @@
 title: Sharing Keyboards - Keyman for iPhone and iPad Help
 ---
 
-## Keyman for iPhone and iPad: Sharing Keyboards
-
 ### Sharing the File
 If you have installed a custom keyboard or dictionary from a file, Keyman keeps a copy
 of that file on your device.  You can find these copies in the iOS Files app.

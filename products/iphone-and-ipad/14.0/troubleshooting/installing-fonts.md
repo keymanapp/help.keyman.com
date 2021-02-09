@@ -2,8 +2,6 @@
 title: Installing fonts - Keyman for iPhone and iPad Help
 ---
 
-## Keyman for iPhone and iPad: Installing Fonts
-
 Some keyboards require special fonts that do not come standard with your iPhone or iPad. 
 For keyboards that use these fonts, the Keyman app will provide a download of the font to install onto your device, 
 meaning all apps will be able to correctly display the font. To install the font, touch **Install**.

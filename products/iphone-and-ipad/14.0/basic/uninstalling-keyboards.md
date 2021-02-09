@@ -2,8 +2,6 @@
 title: Uninstalling Keyboards - Keyman for iPhone and iPad Help
 ---
 
-## Keyman for iPhone and iPad: Uninstalling Keyboards
-
 To uninstall a keyboard, follow these steps.
 
 ### Access "Installed Languages"

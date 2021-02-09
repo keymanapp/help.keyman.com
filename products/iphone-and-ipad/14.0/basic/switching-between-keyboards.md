@@ -2,8 +2,6 @@
 title: Switching between keyboards - Keyman for iPhone and iPad Help
 ---
 
-## Keyman for iPhone and iPad: Switching between Keyboards
-
 Keyboard switching is always activated by using the following key:
 
 ![](../ios_images/globe.png)

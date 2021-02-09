@@ -2,8 +2,6 @@
 title: Installing the Keyman System Keyboard - Keyman for iPhone and iPad Help
 ---
 
-## Keyman for iPhone and iPad: Installing the Keyman System Keyboard
-
 Open the 'Settings' App and go to 'General' > 'Keyboard'.
 
 ![](../ios_images/keyman-settings5.png)
