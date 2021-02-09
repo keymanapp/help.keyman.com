@@ -6,15 +6,14 @@ title: KMManager.getLanguagePredictionPreferenceKey()
 A constant to use as a shared preference key to store whether the LMLayer should enable suggestions for a given language.
 
 ## Syntax
-```javascript
+```java
 KMManager.getLanguagePredictionPreferenceKey(String langID)
 ```
 
 ### Parameters
 
 `langId`
-
-: The language ID 
+: The BCP 47 language ID 
 
 ### Returns
 Returns the language prediction preference key as a String.
@@ -29,10 +28,10 @@ The String is a constant of `langId` plus a suffix `.mayPredict`.
 ### Example: Using `getLanguagePredictionPreferenceKey()`
 The following script illustrates the use of `getLanguagePredictionPreferenceKey()`:
 
-```javascript
+```java
     SharedPreferences prefs = ...; // Get the app's shared preferences
     String langID = "ta";    
-    boolean key  = KMManager.getLanguagePredictionPreferenceKey(languageID);
+    boolean key = KMManager.getLanguagePredictionPreferenceKey(langID);
 
     boolean mayPredict = prefs.getBoolean(key, true);
 ```

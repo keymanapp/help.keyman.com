@@ -6,7 +6,7 @@ title: KMManager.registerLexicalModel()
 The **registerLexicalModel()** method registers a lexical model to use with the LMLayer.
 
 ## Syntax
-```javascript
+```java
 KMManager.registerLexicalModel(HashMap<String, String> lexicalModelInfo)
 ```
 

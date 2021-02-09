@@ -6,15 +6,14 @@ title: KMManager.registerAssociatedLexicalModel()
 The **registerAssociatedLexicalModel()** method registers a lexical model with the associated language ID.
 
 ## Syntax
-```javascript
+```java
 KMManager.registerAssociatedLexicalModel(String langId) 
 ```
 
 ### Parameters
 
 `langId`
-
-: The language ID
+: The BCP 47 language ID
 
 ### Returns
 Returns `true` if a new lexical model is loaded (different from the currently loaded lexical model), `false` otherwise.
@@ -27,7 +26,7 @@ Use this method after switching keyboard languages so the LMLayer will load and 
 ### Example: Using `registerAssociatedLexicalModel()`
 The following script illustrates the use of `registerAssociatedLexicalModel()`:
 
-```javascript
+```java
     String langId = "ta";
     KMManager.registerAssociatedLexicalModel(langId);
 ```

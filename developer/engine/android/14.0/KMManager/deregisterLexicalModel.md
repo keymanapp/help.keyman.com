@@ -13,7 +13,6 @@ KMManager.degisterLexicalModel(String modelID)
 ### Parameters
 
 `modelID`
-
 : The ID of the lexical model to deregister
 
 ### Returns
@@ -27,7 +26,7 @@ Use this method when you want the lexical model to stop generating suggestions.
 ### Example: Using `deregisterLexicalModel()`
 The following script illustrates the use of `dergisterLexicalModel()`:
 
-```javascript
+```java
     String lexicalModelID = "example.ta.wordlist";
     KMManager.deregisterLexicalModel(lexicalModelID);
 ```

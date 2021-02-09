@@ -121,10 +121,10 @@
   <dt><code>getLexicalModelsList()</code></dt>
   <dd>returns the array of lexical models list</dd>
 
-  <dt><code><a href='getLanguageCorrectionPreferenceKey'>getLanguageCorrectionPreferenceKey</a></code></dt>
+  <dt><code><a href='getLanguageCorrectionPreferenceKey'>getLanguageCorrectionPreferenceKey()</a></code></dt>
   <dd>returns a String to use as a shared preference key to store whether the LMLayer should enable corrections for a given language</dd>
 
-  <dt><code><a href='getLanguagePredictionPreferenceKey'>getLanguagePredictionPreferenceKey</a></code></dt>
+  <dt><code><a href='getLanguagePredictionPreferenceKey'>getLanguagePredictionPreferenceKey()</a></code></dt>
   <dd>returns a String to use as a shared preference key to store whether the LMLayer should enable suggestions for a given language.</dd>
 
   <dt><code><a href='getMaySendCrashReport'>getMaySendCrashReport()</a></code></dt>

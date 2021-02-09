@@ -14,11 +14,9 @@ KMManager.addLexicalModel(Context context, HashMap<String, String> lexicalModelI
 ### Parameters
 
 `context`
-
 : The context.
 
 `lexicalModelInfo`
-
 : A dictionary of lexical model information with keys and values defined as `HashMap<String key, String value)`.
 
 ### Returns
