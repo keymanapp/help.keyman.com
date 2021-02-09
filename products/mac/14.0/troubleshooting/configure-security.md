@@ -28,27 +28,27 @@ macOS should prompt you the first time that Keyman needs access to Accessibility
 
 1. Open **System Preferences**:
 
-   ![System Preferences menu](../images/apple_menu.png)
+   ![System Preferences menu](../mac_images/apple_menu.png)
 
 2. Select **Security & Privacy**, and choose the **Privacy** tab:
 
-   ![System Preferences](../images/system_preferences.png)
+   ![System Preferences](../mac_images/system_preferences.png)
 
 3. Select **Input Monitoring** and unlock the settings with the lock icon,
 
-   ![Input Monitoring - not checked](../images/privacy_input_monitoring_locked.png)
+   ![Input Monitoring - not checked](../mac_images/privacy_input_monitoring_locked.png)
 
 4. Keyman should appear in the list. Tick the Keyman item:
 
-   ![Input Monitoring](../images/privacy_input_monitoring.png)
+   ![Input Monitoring](../mac_images/privacy_input_monitoring.png)
 
 5. Select **Accessibility**, and ensure that Keyman is ticked there as well:
 
-   ![Accessibility](../images/privacy_accessibility.png)
+   ![Accessibility](../mac_images/privacy_accessibility.png)
 
 6. Select **Files and Folders**, and ensure that Keyman has access to the **Documents** folder there:
 
-   ![Files and Folders](../images/privacy_files_and_folders.png)
+   ![Files and Folders](../mac_images/privacy_files_and_folders.png)
 
 **Note:** You may be prompted to shut down Keyman in order for the changes to take
 effect. If so, follow the prompts to allow the system to close Keyman. You'll need

@@ -9,10 +9,10 @@ installing *Keyman for macOS*, please see: [Install Keyman for macOS](install-ke
 
 ## Step 1: Is Keyman active?
 
-![Keyman menu bar](../images/menu_bar_keyman.png)
+![Keyman menu bar](../mac_images/menu_bar_keyman.png)
 
 Check the menu bar near the date and time to see if Keyman for macOS is
-active. If it is active you will see the Keyman icon: ![Keyman icon](../images/icon-keyman.png)
+active. If it is active you will see the Keyman icon: ![Keyman icon](../mac_images/icon-keyman.png)
 
 * If the Keyman icon is in the menu bar near the date/time, continue on to **Step 4**.
 
@@ -21,7 +21,7 @@ active. If it is active you will see the Keyman icon: ![Keyman icon](../images/i
 If the Keyman icon is not in the menu bar, choose **Keyman** from the Input menu in the
 menu bar and continue on to **Step 4**.
 
-![Input menu](../images/input_menu.png)
+![Input menu](../mac_images/input_menu.png)
 
 The Input menu appears in the menu bar only if you enable at least two input
 sources in Keyboard preferences. The Input menu is identified by a flag or character
@@ -36,14 +36,14 @@ To add Keyman for macOS as an input source:
 
 1. On the Apple menu, click System Preferences.
 
-   ![Apple menu](../images/apple_menu.png)
+   ![Apple menu](../mac_images/apple_menu.png)
 
-2. Click Keyboard, select the **Input Sources** tab, and then click ![+](../images/add.png).
+2. Click Keyboard, select the **Input Sources** tab, and then click ![+](../mac_images/add.png).
 
 3. In the left-hand pane, select **Multiple Languages**, and then select **Keyman** in the
    right-hand pane.
 
-   ![Add Keyman](../images/add_keyman.png)
+   ![Add Keyman](../mac_images/add_keyman.png)
 
 4. Click Add.
 
@@ -59,7 +59,7 @@ how to install one here: [Install a keyboard](../start/install-keyboard).
 
 ## Step 5: Enable the On-Screen Keyboard
 
-![Amharic On Screen Keyboard](../images/osk_amharic.png)
+![Amharic On Screen Keyboard](../mac_images/osk_amharic.png)
 
 To become familiar with the layout of a Keyman keyboard, use the
 On-Screen Keyboard tool: On the Input menu, point to Keyman, and then click

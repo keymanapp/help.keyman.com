@@ -6,17 +6,17 @@ To uninstall Keyman for macOS:
 
 1. Choose Apple menu > System Preferences.
 
-   ![Apple menu](../images/apple_menu.png)
+   ![Apple menu](../mac_images/apple_menu.png)
 
 2. Click Keyboard, then click Input Sources.
 
-3. Select Keyman, then click ![-](../images/remove.png):
-   ![Input Sources](../images/remove_keyman.png)
+3. Select Keyman, then click ![-](../mac_images/remove.png):
+   ![Input Sources](../mac_images/remove_keyman.png)
 
 4. In Finder, on the **Go** menu, click **Go to Folder...**
 
 5. Type `~/Library/Input Methods`, then click **Go**
-   ![Go to Folder](../images/go_to_folder.png)
+   ![Go to Folder](../mac_images/go_to_folder.png)
 
 6. Right-click Keyman.app and choose **Move to Trash**
 

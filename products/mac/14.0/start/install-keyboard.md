@@ -13,7 +13,7 @@ Here's how to download and install a Keyman keyboard within Keyman for macOS:
    Note: If you just installed Keyman and the Configuration menu is not available, please
    restart the computer.
 
-   ![Keyman Configuration in menu](../images/keyman_menu_config.png)
+   ![Keyman Configuration in menu](../mac_images/keyman_menu_config.png)
 
 3. Select the Keyboard Layouts tab.
 4. Click **Download keyboard…**.
@@ -35,7 +35,7 @@ window. Here's how:
 1. Choose Keyman from the Input menu in the menu bar.
 2. Open Keyman Configuration, from the Configuration link under Keyman in the Input menu.
 
-   ![Keyman Configuration in menu](../images/keyman_menu_config.png)
+   ![Keyman Configuration in menu](../mac_images/keyman_menu_config.png)
 
 3. Select the Keyboard Layouts tab.
 4. Back in Finder, find the keyboard package on your computer. Keyman keyboard packages
@@ -69,4 +69,4 @@ in the Input menu.
 ## Related topics
 
 * [Install Keyman](install-keyman)
-* [Keyman Configuration](../help/configuration)
+* [Keyman Configuration](../basic/config/)
