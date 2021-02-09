@@ -21,7 +21,7 @@ Returns the language correction preference key as a String.
 ## Description
 Use this method to get a String that can be used as a shared preference key.
 
-The usage of this preference key is experimental and likely to be deprecated in a future release of KMEA.
+The usage of this preference key is experimental and likely to be deprecated in a future release of Keyman Engine for Android.
 
 ## Examples
 
