@@ -2,6 +2,8 @@
 title: Installing Custom Keyboards - Keyman for iPhone and iPad Help
 ---
 
+The following steps can also be used to install a dictionary package.
+
 ###Download the File
 If downloading a custom keyboard from the internet, click the link to your custom keyboard package file.
 
@@ -15,7 +17,7 @@ Safari will display an option to open the KMP file with Keyman.
 
 Click **Open in "Keyman"** to continue.
 
-### Finding the File (iOS 11+ only)
+### Finding the File (iOS 13+ only)
 Installation is also possible from email clients and other sources.
 Once you download the file and save it to your device, look for an
 **Open in "Keyman"** option or use the
