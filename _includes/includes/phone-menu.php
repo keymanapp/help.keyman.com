@@ -16,11 +16,14 @@
    $baselanguage = " class='$baselanguage'";
  }
 
- if(preg_match('/^\/([a-z0-9._-]+)\//i', $_SERVER['PHP_SELF'], $matches)) {
+ $section = $_SERVER['PHP_SELF'] == '/_includes/md/mdhost.php'
+   ? ('/' . $_REQUEST['file'])
+   : $_SERVER['PHP_SELF'];
+
+ if(preg_match('/^\/([a-z0-9._-]+)\//i', $section, $matches)) {
    $section = $matches[1];
- } else {
-   $section = $_SERVER['PHP_SELF'];
  }
+
 ?>
 <body data-device="<?= $device ?>" data-section="<?= $section ?>"<?= $baselanguage ?>>
 <div id="phone-menu">

@@ -56,11 +56,14 @@
 
       // Performs the parsing + prettification of Markdown for display through PHP.
       $Parsedown = new \ParsedownExtra();
+      //$Parsedown->setMarkupEscaped(true);
 
       // Does the magic.
       $this->content =
        "<h1>" . htmlentities($this->pagetitle) . "</h1>\n" .
-       $Parsedown->text($contents);
+       "<div class='markdown'>" .
+       $Parsedown->text($contents) .
+       "</div>";
     }
   }
 
