@@ -51,22 +51,22 @@ The *context* part of the rule may contain Unicode characters and certain statem
 [`platform()` statement](../reference/platform)
 :   Determines the current platform keyboard is operating on
 
-[`any()` statement](any "any() statement")
+[`any()` statement](../reference/any "any() statement")
 :   Matches on an array of characters
 
-[`context` statement](context "context statement")
+[`context` statement](../reference/context "context statement")
 :   Outputs the context part of a rule (single character only)
 
-[`deadkey()`, `dk()` statement](deadkey "deadkey(), dk() statement")
+[`deadkey()`, `dk()` statement](../reference/deadkey "deadkey(), dk() statement")
 :   Matches and generates deadkeys
 
-[`index()` statement](index "index() statement")
+[`index()` statement](../reference/_index "index() statement")
 :   Outputs from an array of characters
 
-[`notany()` statement](notany "notany() statement")
+[`notany()` statement](../reference/notany "notany() statement")
 :   Matches anything not in a particular array of characters
 
-[`outs()` statement](outs "outs() statement")
+[`outs()` statement](../reference/outs "outs() statement")
 :   Outputs an array of characters
 
 Certain statements must appear in specific positions in the rule. The following order is enforced by the compiler:
@@ -79,10 +79,10 @@ Certain statements must appear in specific positions in the rule. The following 
 
 The *keystroke* part of the rule may contain a Unicode character, a virtual key, or one of the following statements:
 
-[`any()` statement](any "any() statement")
+[`any()` statement](../reference/any "any() statement")
 :   Matches on an array of characters
 
-[`outs()` statement](outs "outs() statement")
+[`outs()` statement](../reference/outs "outs() statement")
 :   Outputs an array of characters
 
 Only a single character, statement or virtual key is allowed in the keystroke part of the rule.
@@ -91,44 +91,44 @@ Only a single character, statement or virtual key is allowed in the keystroke pa
 
 The *output* part of the rule may contain Unicode characters and certain statements:
 
-[`beep` statement](beep "beep statement")
+[`beep` statement](../reference/beep "beep statement")
 :   Generates a beep on the speaker (or a flash on web devices)
 
-[`call()` statement](call "call() statement")
+[`call()` statement](../reference/call "call() statement")
 :   Calls an Input Method Extension
 
-[`context` statement](context "context statement")
+[`context` statement](../reference/context "context statement")
 :   Outputs the context part of a rule
 
-[`deadkey()`, `dk()` statement](deadkey "deadkey(), dk() statement")
+[`deadkey()`, `dk()` statement](../reference/deadkey "deadkey(), dk() statement")
 :   Matches and generates deadkeys
 
-[`index()` statement](index "index() statement")
+[`index()` statement](../reference/_index "index() statement")
 :   Outputs from an array of characters
 
-[`layer()` statement](layer "layer() statement")
+[`layer()` statement](../reference/layer "layer() statement")
 :   Sets the current touch keyboard layer visible on the on screen
     keyboard
 
-[`nul` statement](nul "nul statement")
+[`nul` statement](../reference/_nul "nul statement")
 :   Forces no output on a rule, or enforces empty context
 
-[`outs()` statement](outs "outs() statement")
+[`outs()` statement](../reference/outs "outs() statement")
 :   Outputs an array of characters
 
-[`reset()` statement](reset "reset() statement")
+[`reset()` statement](../reference/reset "reset() statement")
 :   Resets a store to its initial value
 
-[`return` statement](return "return statement")
+[`return` statement](../reference/return "return statement")
 :   Stops processing of the current keystroke
 
-[`save()` statement](save "save() statement")
+[`save()` statement](../reference/save "save() statement")
 :   Persists a store value for next edit session
 
-[`set()` statement](set "set() statement")
+[`set()` statement](../reference/set "set() statement")
 :   Sets a store or system state to a specific value
 
-[`use()` statement](use "use() statement")
+[`use()` statement](../reference/use "use() statement")
 :   Starts processing in another group
 
 ## context statement {#context-statement}
