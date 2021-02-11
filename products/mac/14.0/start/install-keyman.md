@@ -12,12 +12,12 @@ Apple Disk Image (.dmg) file. It should be installed according to the following 
 4. Keyman should now be an option in the Input Sources menu towards the right hand
    side of the menu bar.
 
-   ![Input Sources menu](../images/input_menu.png)
+   ![Input Sources menu](../mac_images/input_menu.png)
 
    **Note**: On recent versions of macOS, the first time you enable Keyman by selecting Keyman
    from the menu, you will be prompted to give certain permissions to Keyman. It is
    important that you allow Keyman these permissions, otherwise it will not be able
-   to remap the keyboard. [More information on permissions](../help/configure-security)
+   to remap the keyboard. [More information on permissions](../troubleshooting/configure-security)
 
 4. Click the input menu and switch to Keyman. Click the input menu again to see the
    installed keyboards in Keyman:Keyboards menu.
@@ -35,4 +35,4 @@ Apple Disk Image (.dmg) file. It should be installed according to the following 
 When a new version of Keyman is released, you can update by following the instructions
 above.
 
-**Note**: To uninstall Keyman for macOS, follow the steps in [Uninstall Keyman](../help/uninstall-keyman).
+**Note**: To uninstall Keyman for macOS, follow the steps in [Uninstall Keyman](../troubleshooting/uninstall-keyman).
