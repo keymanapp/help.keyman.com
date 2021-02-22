@@ -1,10 +1,13 @@
 <?php
 
+require_once __DIR__ . '/../autoload.php';
+use Keyman\Site\Common\KeymanHosts;
+
 ?>
 <div id="container">
     <div class="header">
         <img id="show-phone-menu" src="<?php echo cdn("img/phonehide.png"); ?>" />
-        <a id="home-link" href="/"><img id="logo" src="<?php echo cdn("img/logo2.png"); ?>" alt='Keyman Logo' /></a>
+        <a id="home-link" href="/"><img id="logo" src="<?php echo cdn(KeymanHosts::Instance()->Tier() == KeymanHosts::TIER_PRODUCTION ? "img/logo2.png" : "img/logo2dev.png"); ?>" alt='Keyman Logo' /></a>
         <img id="header-bottom" src="<?php echo cdn("img/headerbar.png"); ?>" alt='Header bottom' />
         <a id="help" href="http://keyman.com"><p id="keyman-help">Keyman.com</p><img src="<?php echo cdn("img/helpIcon.png"); ?>"></a>
     </div>
@@ -17,7 +20,7 @@
                 <div class="menu-item-dropdown">
                     <div class="menu-dropdown-inner">
                         <ul>
-                            <li><a href="/products/desktop/">Keyman Desktop</a></li>
+                            <li><a href="/products/windows/">Keyman for Windows</a></li>
                             <li><a href="/products/mac/">Keyman for macOS</a></li>
                             <li><a href="/products/linux/">Keyman for Linux</a></li>
                             <li><a href="/products/web/">Keymanweb.com</a></li>

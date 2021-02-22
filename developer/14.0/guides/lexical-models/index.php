@@ -5,9 +5,9 @@
     'title' => "Lexical models"
   ]);
 ?>
-<h1 class="title">Developing lexical models</h1>
+<h1 class="title">Developing lexical models (dictionaries)</h1>
 
-<p> A <dfn>lexical model</dfn> is what powers <strong>predictive text</strong>
+<p> A <dfn>lexical model</dfn> (Keyman apps use the term <dfn>dictionary</dfn>) is what powers <strong>predictive text</strong>
   and <strong>autocorrect</strong> for a language. If you want your keyboard to
   predict and correct words in your language, you must create a lexical model
   that generates suggestions for your language. </p>

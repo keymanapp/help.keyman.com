@@ -17,15 +17,14 @@
                     20 Jun 2014 - jmdurdin - correct local server references, add codebox() function
                     13 Jun 2017 - jahorton - Modified codebox() function to use <pre><code>
 */
+  require_once __DIR__ . '/../autoload.php';
+
   if(file_exists($_SERVER['DOCUMENT_ROOT'].'/cdn/deploy/cdn.php')) {
     require_once($_SERVER['DOCUMENT_ROOT'].'/cdn/deploy/cdn.php');
   }
 
   $site_url = 'help.keyman.com';
-
-  // Note: $keyman_com is refactored in staging to use the appropriate KeymanHosts variable;
-  // it is used by keyboard documentation.
-  $keyman_com = 'https://keyman.com';
+  $keyman_com = \Keyman\Site\Common\KeymanHosts::Instance()->keyman_com;
 
   // We allow the site to strip off everything post its basic siteurl
 

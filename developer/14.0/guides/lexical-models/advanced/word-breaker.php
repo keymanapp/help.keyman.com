@@ -24,14 +24,55 @@ determining when words start and stop. This is what a <dfn>word breaker
 function</dfn> is responsible for. It is a little bit of code that looks at some
 text to determine where the words are. </p>
 
-<p> You can customize the word breaker in two ways: </p>
+<p> You can customize the word breaker in three ways: </p>
 
 <ul>
+  <li> If your language uses its writing system in an unconventional way
+       (e.g., use spaces to separate words in Thai, Lao, Burmese, or Khmer),
+       you can <a href="#overrides">override the script's default behaviour</a> </li>
   <li> If the default word breaker creates <strong>too many splits</strong>,
        you can <a href="#join">choose which strings join words together</a>. </li>
   <li> If the default word breaker creates <strong>not enough splits</strong>,
        you must <a href="#custom">create your own word breaker function</a>. </li>
 </ul>
+
+<h2 id="overrides">Overriding script defaults </h2>
+
+<p> The default word breaker makes assumptions about how each
+<dfn>script</dfn> (alphabet, syllabary, or writing system) works. You can
+override the defaults by specifying the <code>overrideScriptDefaults</code>
+option.</p>
+
+<p> There is currently only one override: </p>
+<dl>
+<dt><code>'break-words-at-spaces'</code></dt>
+<dd>Only breaks words at spaces for scripts that otherwise do not use spaces
+    in between words.</dd>
+</dl>
+
+<h3> Break words at spaces </h3>
+
+<p> This applies only to languages that borrow the <strong>Burmese</strong>,
+<strong>Khmer</strong>, <strong>Lao</strong>, or <strong>Thai</strong>
+scripts. The majority languages for these scripts do <em>not</em> use spaces in between
+words; hence, the default word breaker will produce undesired results when
+breaking words in these scripts. However, if your language is written in one
+of these scripts and <em>does</em> use spaces in between words, then you can
+set <code class="lang-typescript">overrideScriptDefaults: 'break-words-at-spaces',</code>
+to ensure word breaks do not occur in the middle of words, but instead, at spaces.</p>
+
+<p> Your model definition file should look like this: </p>
+<pre><code class="lang-typescript">const source: LexicalModelSource = {
+  format: 'trie-1.0',
+  sources: ['wordlist.tsv'],
+  wordBreaker: {
+    use: 'default',  // we want to use the default word breaker, BUT!
+    // Override the default for Burmese, Khmer, Lao, or Thai:
+    overrideScriptDefaults: 'break-words-at-spaces',
+  }
+};
+
+export default source;</code></pre>
 
 
 <h2 id="join">Customize joining rules</h2>

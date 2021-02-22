@@ -27,11 +27,11 @@
 <h2 id="Description" name="Description">Description</h2>
 
 <p>The <code>notany()</code> statement will match any character that is not in the <a href="store" title=
-"store statement">store</a> referenced by <code><var>storeName</var></code>. The <code>notany()</code> statement is only valid in 
-the context part of a rule. It cannot be used with the <a href="index"><code>index()</code></a> statement, but can be used with the 
+"store statement">store</a> referenced by <code><var>storeName</var></code>. The <code>notany()</code> statement is only valid in
+the context part of a rule. It cannot be used with the <a href="index"><code>index()</code></a> statement, but can be used with the
 <a href="context" title="context statement"><code>context</code></a> statement.</p>
 
-<p>The <code>notany()</code> statement does not match when there is no character at that position in the context (e.g. at the start of 
+<p>The <code>notany()</code> statement does not match when there is no character at that position in the context (e.g. at the start of
 a document). To match this, use the <a href="nul" title="nul statement"><code>nul</code></a> statement.</p>
 
 <h2 id="Examples">Examples</h2>
@@ -55,7 +55,8 @@ a document). To match this, use the <a href="nul" title="nul statement"><code>nu
 </table>
 
 <h2>Version history</h2>
-    
+
+<p>Support for <code>notany()</code> together with <a href='context'><code>context()</code></a> added in KeymanWeb 14.0.</p>
 <p>Introduced in version 7.0.</p>
 
 <h2 id="See_also" name="See_also">See also</h2>

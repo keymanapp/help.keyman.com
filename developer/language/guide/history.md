@@ -81,3 +81,9 @@ title: Keyman language history
 ## Keyman 13
 
 *   Virtual keys no longer need to be in quotes for the [`&hotkey`](../reference/hotkey) store
+
+## Keyman 14
+
+*   [Virtual keys](virtual-keys#common-virtual-key-codes) may now be identified by ISO9995 key ids (e.g. `+ [SHIFT E01]`)
+*   The compiler now enforces order of certain statements in the [context part of the rule](rules)
+*   [`notany()`](../reference/notany) and [`context()`](../reference/context) are now supported together for KeymanWeb, iOS, Android (#3816)
