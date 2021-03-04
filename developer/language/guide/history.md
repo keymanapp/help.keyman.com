@@ -85,4 +85,4 @@ title: Keyman language history
 ## Keyman 14
 
 *   Added [range expansions](expansions)
-*   Added [&CasedKeys store](../referencecasedkeys)
+*   Added [&CasedKeys store](../reference/casedkeys)
