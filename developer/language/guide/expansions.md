@@ -31,6 +31,8 @@ store(capitals) U+0041 .. U+005A
 
 Virtual key ranges work in a similar fashion, but with virtual keys. The starting and terminating virtual key must have the same shift state. This will be most useful for character and numeric virtual keys, as the ranges are based on the numeric value of the virtual key as defined by Windows, not its position on the keyboard.
 
+Hint: if you use [ISO9995 key identifiers](virtual-keys), you might expect that the expansion `[C01] .. [C03]` results in `[K_A] [K_S] [K_D]` but it will actually result in `[K_A] [K_B] [K_C] [K_D]`.
+
 ### Examples
 
 ```keyman
