@@ -8,7 +8,7 @@ title: What's New
   lexical model packages at the project's `assets/` level. KMManager will extract them into `assets/packages/` and 
   `assets/models/` respectively. (No longer append version string to .js keyboard file and manually copy to 
   `assets/cloud/` folder)
-* KMEA no longer includes sil_euro_latin as a default installed keyboard
+    * sil_euro_latin keyboard no longer included as a default installed keyboard 
 
 * Replace Fabric/Crashlytics with Sentry for crash reporting
 * build.gradle changes for 3rd party keyboard apps:
@@ -33,7 +33,8 @@ dependencies {
 ```
 
 * Deprecated KMManager APIs
-    * `KMManager.showLanguageList()` - KMEA no longer uses cloud keyboard catalog, so showLanguageList() no longer displays. (Embedded browser used to search for keyboards)
+    * `KMManager.showLanguageList()` - Keyman Engine for Android no longer uses cloud keyboard catalog, so showLanguageList() 
+      no longer displays. (Embedded browser used to search for keyboards)
     * `KMManager.KMKey_CustomKeyboard` - "Custom" property for keyboards no longer tracked
     * `KMManager.KMKey_CustomModel` - "Custom" property for lexical models no longer tracked
     * `addKeyboard` - Deprecate syntax using `HashMap<string, string>`. Replace with `<Keyboard>`
