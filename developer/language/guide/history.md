@@ -81,3 +81,8 @@ title: Keyman language history
 ## Keyman 13
 
 *   Virtual keys no longer need to be in quotes for the [`&hotkey`](../reference/hotkey) store
+
+## Keyman 14
+
+*   Added [range expansions](expansions)
+*   Added [&CasedKeys store](../reference/casedkeys)

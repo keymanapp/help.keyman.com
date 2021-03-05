@@ -16,10 +16,10 @@
 
   <dt><a href="baselayout" title="baselayout() statement"><code>baselayout()</code> statement</a></dt>
   <dd>Determines the current system hardware keyboard layout</dd>
-  
+
   <dt><a href="beep" title="beep statement"><code>beep</code> statement</a></dt>
   <dd>Generates a beep on the speaker (or a flash on web devices)</dd>
-  
+
   <dt><a href="begin" title="begin statement"><code>begin</code> statement</a></dt>
   <dd>Defines the starting group for the keyboard layout</dd>
 
@@ -34,6 +34,9 @@
 
   <dt><a href="caps" title="Caps Lock stores and statements"><code>&amp;CapsOnOnly</code> store, <code>CAPS ON ONLY</code> statement</a></dt>
   <dd>Manages CAPS LOCK behaviour - pressing Caps Lock key only switches on Caps Lock state</dd>
+
+  <dt><a href="casedkeys" title="&amp;CasedKeys store"><code>&amp;CasedKeys</code> store</a></dt>
+  <dd>Defines a range of virtual keys affected by Caps Lock</dd>
 
   <dt><a href="context" title="context statement"><code>context</code> statement</a></dt>
   <dd>Outputs the context part of a rule</dd>
@@ -88,7 +91,7 @@
 
   <dt><a href="layer" title="layer() statement"><code>layer()</code> statement</a></dt>
   <dd>Sets the current touch keyboard layer visible on the on screen keyboard</dd>
-  
+
   <dt><a href="layout" title="LAYOUT statement"><code>LAYOUT</code> statement</a></dt>
   <dd>Windows system layout for the keyboard (Obsolete)</dd>
 
@@ -127,7 +130,7 @@
 
   <dt><a href="platform" title="platform() statement"><code>platform()</code> statement</a></dt>
   <dd>Determines the current platform keyboard is operating on</dd>
-  
+
   <dt><a href="reset" title="reset() statement"><code>reset()</code> statement</a></dt>
   <dd>Resets a store to its initial value</dd>
 
