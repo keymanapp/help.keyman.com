@@ -13,6 +13,9 @@
 Keyboard layouts for Keyman Engine can be created with <a href='/developer/13.0'>Keyman Developer</a>, and a <a href='http://keyman.com/developer/keymanweb/keyboards.php'>library of existing keyboard layouts</a>
 is also available.</p>
 
+<p>For keyboard developers updating from an older versions of Keyman Engine for Android, 
+see <a href='whatsnew'>What's New</a> for breaking changes</a>
+
 <h2 id="Guides" name="Guides"><a href='guides/'>Guides</a></h2>
 
 <ul>
