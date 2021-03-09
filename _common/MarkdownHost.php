@@ -31,7 +31,10 @@
       // and `---` must be the first three characters of the file (no BOM!); note that
       // the full spec supports metadata sections anywhere but we only support top-of-file.
       //
-      // Currently we support only the 'title' keyword, and it must be a plain text title.
+      // Currently we support only the 'title' and 'redirect' keywords.
+      //
+      // title: must be a plain text title
+      // redirect: must be a relative or absolute url
       //
       // ---
       // keyword: content
