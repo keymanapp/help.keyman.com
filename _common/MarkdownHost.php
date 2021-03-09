@@ -41,14 +41,19 @@
       // source: https://yaml.org/spec/1.2/spec.html#id2760395
       // source: https://pandoc.org/MANUAL.html#extension-yaml_metadata_block
       //
-      if(preg_match('/^---\n(.+)\n---\n(.+)/s', $contents, $match)) {
+      if(preg_match('/^---\n(([a-z0-9_-]+:.+\n)+)---(\n)?((.|\n)*)$/i', $contents, $match)) {
         $metadata = $match[1];
-        $contents = $match[2];
+        $contents = $match[4];
       } else {
         $metadata = 'title: untitled';
       }
 
-      if(preg_match('/^title: (.+)/', $metadata, $match)) {
+      if(preg_match('/^redirect: (.+)/m', $metadata, $match)) {
+        header("Location: {$match[1]}");
+        exit;
+      }
+
+      if(preg_match('/^title: (.+)/m', $metadata, $match)) {
         $this->pagetitle = $match[1];
       } else {
         $this->pagetitle = 'Untitled';
@@ -56,7 +61,6 @@
 
       // Performs the parsing + prettification of Markdown for display through PHP.
       $Parsedown = new \ParsedownExtra();
-      //$Parsedown->setMarkupEscaped(true);
 
       // Does the magic.
       $this->content =
