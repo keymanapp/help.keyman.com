@@ -19,7 +19,10 @@
   // and `---` must be the first three characters of the file (no BOM!); note that
   // the full spec supports metadata sections anywhere but we only support top-of-file.
   //
-  // Currently we support only the 'title' keyword, and it must be a plain text title.
+  // Currently we support only the 'title' and 'redirect' keywords.
+  //
+  // title: must be a plain text title
+  // redirect: must be a relative or absolute url
   //
   // ---
   // keyword: content
@@ -29,14 +32,19 @@
   // source: https://yaml.org/spec/1.2/spec.html#id2760395
   // source: https://pandoc.org/MANUAL.html#extension-yaml_metadata_block
   //
-  if(preg_match('/^---\n(.+)\n---\n(.+)/s', $contents, $match)) {
+  if(preg_match('/^---\n(([a-z0-9_-]+:.+\n)+)---(\n)?((.|\n)*)$/i', $contents, $match)) {
     $metadata = $match[1];
-    $contents = $match[2];
+    $contents = $match[4];
   } else {
     $metadata = 'title: untitled';
   }
 
-  if(preg_match('/^title: (.+)/', $metadata, $match)) {
+  if(preg_match('/^redirect: (.+)/m', $metadata, $match)) {
+    header("Location: {$match[1]}");
+    exit;
+  }
+
+  if(preg_match('/^title: (.+)/m', $metadata, $match)) {
     $pagetitle = $match[1];
   } else {
     $pagetitle = 'Untitled';
