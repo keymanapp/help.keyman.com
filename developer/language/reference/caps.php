@@ -52,9 +52,12 @@ store(&amp;shiftfreescaps) "1"
     <tr><th>Windows</th><th>macOS</th><th>Linux</th><th>Desktop web</th><th>Mobile web</th><th>iOS</th><th>Android</th></tr>
   </thead>
   <tbody>
-    <tr><td>✔</td><td>✔</td><td>✔</td><td>✘</td><td>✘</td><td>✘</td><td>✘</td></tr>
+    <tr><td>✔</td><td>✔</td><td>✘</td><td>✘</td><td>✘</td><td>✘</td><td>✘</td></tr>
   </tbody>
 </table>
+
+<p>While Caps Lock statements can be used in Keyman for Linux and KMFL they don't yet work
+properly as of version 14.0.</p>
 
 <h2>Version history</h2>
 
