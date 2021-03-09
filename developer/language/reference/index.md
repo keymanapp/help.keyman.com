@@ -30,6 +30,9 @@ title: Keyman Keyboard Language Reference
 :   Manages CAPS LOCK behaviour - pressing Caps Lock key only switches
     on Caps Lock state
 
+[`&CasedKeys` store](casedkeys)
+:   Defines a range of virtual keys affected by Caps Lock
+
 [`context` statement](context "context statement")
 :   Outputs the context part of a rule
 
