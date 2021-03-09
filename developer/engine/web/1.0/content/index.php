@@ -1,18 +1,18 @@
 <?php /*
   Name:             index
   Copyright:        Copyright (C) 2005 Tavultesoft Pty Ltd.
-  Documentation:    
-  Description:      
+  Documentation:
+  Description:
   Create Date:      18 Sep 2009
 
   Modified Date:    18 Sep 2009
   Authors:          mcdurdin
-  Related Files:    
-  Dependencies:     
+  Related Files:
+  Dependencies:
 
-  Bugs:             
-  Todo:             
-  Notes:            
+  Bugs:
+  Todo:
+  Notes:
   History:          18 Sep 2009 - mcdurdin - Add Desktop help support and polish
 */
   $pagename = 'KeymanWeb Help Topics';
@@ -20,14 +20,8 @@
   $MainPage = true;
 
   require_once('servervars.php');
-  if($isKeymanDesktopHelp)
-  {  
-    header("Location: /keyboard/");
-    echo(chr(13).chr(10));
-    exit;
-  }  
   require_once('header.php');
-  
+
 ?>
 
 
@@ -54,15 +48,6 @@
   	<li><a href="troubleshooting/index.php#one">Why isn't my language appearing correctly?</a></li>
   	<li><a href="troubleshooting/index.php#two">Why can't I see the On-Screen Keyboard?</a></li>
   	<li><a href="troubleshooting/index.php#three">Why can I only type in English?</a></li>
-	</ul>
-</li>
-
-<li class='incomplete'><a href="/products/web/2.0/index.php">Help for the KeymanWeb Demo Site</a>
-	<ul>
-  	<li><a href="/products/web/2.0/demo-email.php">Email Application</a></li>
-  	<li class='incomplete'><a href="/products/web/2.0/demo-twitter.php">Twitter Application</a></li>
-  	<li><a href="/products/web/2.0/demo-search.php">Search Application</a></li>
-  	<li><a href="/products/web/2.0/demo-note.php">Notepad Application</a></li>
 	</ul>
 </li>
 

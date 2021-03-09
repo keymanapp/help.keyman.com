@@ -1,7 +1,7 @@
 <?php
-  require_once('includes/ext/parsedown/Parsedown.php');
   require_once('includes/template.php');
   require_once('includes/com.keyman.help.kb.inc.php');
+  require_once __DIR__ . '/../vendor/autoload.php';
 
   use function com\keyman\help\kb\filename_from_id;
   use function com\keyman\help\kb\link_from_id;
@@ -52,7 +52,7 @@
       echo "<a href='".link_from_id($nid)."'>Next article &gt;</a> ";
     }
     echo "</p><hr>";
-    $Parsedown = new Parsedown();
+    $Parsedown = new \ParsedownExtra();
     echo $Parsedown->text($kb);
   } else {
     echo "<h1>Knowledge Base index</h1>";

@@ -1,0 +1,120 @@
+name: CI
+
+on: [pull_request]
+
+jobs:
+
+  build-test:
+    runs-on: windows-latest
+    env:
+      KEYMANHOSTS_TIER: TIER_TEST
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup PHP 7.4
+      uses: shivammathur/setup-php@6972aed899fa2dd4016a7e314c46e6902bcafb7b
+      with:
+        php-version: '7.4'
+        extensions: curl, intl, mbstring, openssl
+        coverage: none
+      env:
+        fail-fast: true
+
+    #
+    # Configure IIS and setup site for running unit tests
+    #  * Installs IIS, CGI extensions, URLRewrite and configures to connect to PHP
+    #  * Sets up http://127.0.0.1:8888 as host for tests
+    #  * Enables detailed error reporting
+    #
+    - name: Download and install IIS and setup a local website
+      shell: powershell
+      run: |
+        Enable-WindowsOptionalFeature -Online -FeatureName IIS-WebServerRole -NoRestart
+        Enable-WindowsOptionalFeature -Online -FeatureName IIS-WebServer -NoRestart
+        Enable-WindowsOptionalFeature -Online -FeatureName IIS-CGI -NoRestart
+        Enable-WindowsOptionalFeature -Online -FeatureName IIS-ISAPIExtensions -NoRestart
+        Enable-WindowsOptionalFeature -Online -FeatureName IIS-ISAPIFilter -NoRestart
+        Enable-WindowsOptionalFeature -Online -FeatureName IIS-StaticContent -NoRestart
+        Enable-WindowsOptionalFeature -Online -FeatureName IIS-DefaultDocument -NoRestart
+        Enable-WindowsOptionalFeature -Online -FeatureName IIS-CommonHttpFeatures -NoRestart
+        Enable-WindowsOptionalFeature -Online -FeatureName IIS-HttpRedirect -NoRestart
+        Enable-WindowsOptionalFeature -Online -FeatureName IIS-DirectoryBrowsing -NoRestart
+        Enable-WindowsOptionalFeature -Online -FeatureName IIS-HttpErrors -NoRestart
+        choco install --no-progress urlrewrite
+        Import-Module WebAdministration
+        New-WebAppPool -name "NewWebSiteAppPool"  -force
+        New-WebSite -name "NewWebSite" -PhysicalPath "$ENV:GITHUB_WORKSPACE" -ApplicationPool "NewWebSiteAppPool" -port 8888 -force
+        Set-WebConfigurationproperty -filter "system.webServer/httpErrors" -pspath "MACHINE/WEBROOT/APPHOST" -name errorMode -value Detailed
+        Add-WebConfigurationProperty //defaultDocument/files "IIS:\sites\NewWebSite" -AtIndex 0 -Name collection -Value "index.php"
+        Add-WebConfigurationProperty //defaultDocument/files "IIS:\sites\NewWebSite" -AtIndex 0 -Name collection -Value "index.md"
+
+        mkdir c:\tools\php\tmp
+        Add-Content -path c:\tools\php\php.ini -value '',"error_log = $ENV:GITHUB_WORKSPACE\php_errors.log","session.save_path = $ENV:GITHUB_WORKSPACE\.phpsessions","error_reporting = E_ALL","display_errors = On","display_startup_errors = On","html_errors = Off","sys_temp_dir = c:\tools\php\tmp"
+        mkdir $ENV:GITHUB_WORKSPACE\.phpsessions
+
+    #
+    # This step configures FastCGI according to the documentation at https://www.php.net/manual/en/install.windows.manual.php
+    # This alternative doesn't work: New-WebHandler -name "PHP" -Path *.php -Modules FastCgiModule -ScriptProcessor "c:\tools\php\php-cgi.exe" -Verb 'GET,POST' -Force
+    #
+    - name: Setup FastCGI
+      shell: cmd
+      run: |
+        set phpdir=c:\tools
+        set phppath=php
+
+        REM Clear current PHP handlers
+        %windir%\system32\inetsrv\appcmd clear config /section:system.webServer/fastCGI
+        %windir%\system32\inetsrv\appcmd set config /section:system.webServer/handlers /-[name='PHP_via_FastCGI']
+
+        REM Set up the PHP handler
+        %windir%\system32\inetsrv\appcmd set config /section:system.webServer/fastCGI /+[fullPath='%phpdir%\%phppath%\php-cgi.exe']
+        %windir%\system32\inetsrv\appcmd set config /section:system.webServer/handlers /+[name='PHP_via_FastCGI',path='*.php',verb='*',modules='FastCgiModule',scriptProcessor='%phpdir%\%phppath%\php-cgi.exe',resourceType='Unspecified']
+        %windir%\system32\inetsrv\appcmd set config /section:system.webServer/handlers /accessPolicy:Read,Script
+
+        REM Configure FastCGI Variables
+        %windir%\system32\inetsrv\appcmd set config -section:system.webServer/fastCgi /[fullPath='%phpdir%\%phppath%\php-cgi.exe'].instanceMaxRequests:10000
+        %windir%\system32\inetsrv\appcmd.exe set config -section:system.webServer/fastCgi /+"[fullPath='%phpdir%\%phppath%\php-cgi.exe'].environmentVariables.[name='PHP_FCGI_MAX_REQUESTS',value='10000']"
+        %windir%\system32\inetsrv\appcmd.exe set config -section:system.webServer/fastCgi /+"[fullPath='%phpdir%\%phppath%\php-cgi.exe'].environmentVariables.[name='PHPRC',value='%phpdir%\%phppath%\php.ini']"
+
+    #
+    # Install website PHP dependencies
+    #
+    - name:  Install dependencies
+      shell: cmd
+      run: |
+        echo TIER_TEST > tier.txt
+        composer install --no-progress
+        npm install
+
+    #
+    # Finally, run the tests
+    #
+    - name: Lint
+      shell: bash
+      run: |
+        ( set +e; set +o pipefail; find . -name '*.php' | grep -v '/vendor/' | xargs -n 1 -d '\n' php -l | grep -v "No syntax errors detected"; exit ${PIPESTATUS[2]} )
+
+    - name: Check broken links
+      shell: bash
+      run: |
+        ( set +e; set +o pipefail; npx broken-link-checker http://localhost:8888 --ordered --recursive --host-requests 50 -e --filter-level 3 | grep -E "BROKEN|Getting links from" | grep -B 1 "BROKEN"; exit ${PIPESTATUS[0]} )
+
+    - name: Check PHP errors
+      shell: bash
+      run: |
+        ( set +e; set +o pipefail; [ -f php_errors.log ] && echo 'PHP reported errors or warnings; see log below' && exit 1 || ( echo 'No PHP errors found' && exit 0 ) )
+    #
+    # If any of the tests fail, let's grab a bit more detail on the environment
+    #
+    - name: Report errors
+      if: ${{ failure() }}
+      shell: bash
+      run: |
+        echo "--- tier.txt ---"
+        cat tier.txt
+        echo "--- PHP Errors ---"
+        [ -f php_errors.log ] && cat php_errors.log
+        echo "--- PHPInfo ---"
+        php -r 'phpinfo();'

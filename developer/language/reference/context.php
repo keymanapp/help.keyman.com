@@ -31,11 +31,11 @@
       offset.
     </li>
     <li>
-      <a href='if'><code>if()</code></a> statements are not included in the calculation of the offset, 
+      <a href='if'><code>if()</code></a> statements are not included in the calculation of the offset,
       which is different to how <a href='index'><code>index()</code></a> statements calculate offset.
     </li>
   </ul>
-  This offset must be less than the offset of the <code>context()</code> statement itself, if the <code>context()</code> statement is in the 
+  This offset must be less than the offset of the <code>context()</code> statement itself, if the <code>context()</code> statement is in the
   context (third form above).</dd>
 </dl>
 
@@ -72,6 +72,7 @@ using the <code>context()</code> form.</p>
 
 <h2>Version history</h2>
 
+<p>Support for <a href='notany'><code>notany()</code></a> together with <code>context()</code> added in KeymanWeb 14.0.</p>
 <p>The context(n) form was introduced in version 6.0.</p>
 <p>The context statement was introduced in Keyman 3.0.</p>
 

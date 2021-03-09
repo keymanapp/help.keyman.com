@@ -4,6 +4,10 @@
   require_once('includes/kb_doc_template.php');
   if(!isset($IncludeKeymanWeb)) $IncludeKeymanWeb = false;
   // Required
+  if(!isset($pagetitle)) {
+    error_log("\$pagetitle is not set for ".$_SERVER['PHP_SELF']);
+    $pagetitle = '?';
+  }
   if($folders[1] == 'keyboard'){
     head([
       'title' =>$pagetitle,
@@ -12,7 +16,7 @@
       'js' => ['kbd-docs.js'],
       'showMenu' => true,
       'includeKMW' => $IncludeKeymanWeb
-    ]); 
+    ]);
   }else{
     head([
       'title' =>$pagetitle,
