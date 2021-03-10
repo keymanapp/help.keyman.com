@@ -69,9 +69,26 @@ c Main processing goes here
 use with the <code><var>precedingVowel</var></code> group. If you do not do this, the context will be dropped before <code><var>precedingVowel</var></code> is
 used, and the character will be deleted from the screen.</p>
 
+<h2>Empty final group</h2>
+
 <p>If the final group processed is a context and keystroke group (<code>using keys</code>), and there is no <code>nomatch</code> rule, and the
 keystroke is not matched in the group, the keystroke will be output to the screen, regardless of whether or not it was matched in
 earlier groups.</p>
+
+<p>This can be used for example if you want to process a change at the end of a word which might be the last word in a line or in a text field, where the 
+  user presses <kbd>Enter</kbd> or <kbd>Tab</kbd>:</p>
+
+<pre><code>
+group(main) using keys
+
++ 's' > 'σ'
+'σ + [K_ENTER] > 'ς' use(final)
+
+group(final) using keys
+c Empty final group causes keystroke to be emitted
+</code></pre>
+
+<h2>Statements and rules used with groups</h2>
 
 <p>The following statements and special rules are used with groups:</p>
 
