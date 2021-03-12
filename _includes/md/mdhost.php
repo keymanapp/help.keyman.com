@@ -54,7 +54,7 @@
     exit;
   }
 
-  $this->pagetitle = isset($headers['title']) ? $headers['title'] : 'Untitled';
+  $pagetitle = isset($headers['title']) ? $headers['title'] : 'Untitled';
 
   head([
     'title' => $pagetitle
