@@ -55,7 +55,7 @@
           $found = false;
           break;
         } else {
-          $headers[$match[1]] = $match[2];
+          $headers[$match[1]] = trim($match[2]);
         }
       }
       $found = $found && $i < count($lines);
