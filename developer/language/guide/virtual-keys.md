@@ -220,10 +220,10 @@ The following table lists all of the common virtual key codes:
 | `K_HYPHEN`  | `E11`   | \-       |     | `K_NPSTAR`  |         | Number Pad \*           |
 | `K_EQUAL`   | `E12`   | =        |     | `K_NPPLUS`  |         | Number Pad +            |
 | `K_LBRKT`   | `D11`   | \[       |     | `K_NPMINUS` |         | Number Pad -            |
-| `K_RBRKT`   | `D13`   | \]       |     | `K_NPDOT`   |         | Number Pad .            |
-| `K_BKSLASH` | `D12`   | \\       |     | `K_NPSLASH` |         | Number Pad /            |
+| `K_RBRKT`   | `D12`   | \]       |     | `K_NPDOT`   |         | Number Pad .            |
+| `K_BKSLASH` | `D13`   | \\       |     | `K_NPSLASH` |         | Number Pad /            |
 | `K_COLON`   | `C10`   | ;        |     |             |         |                         |
-| `K_QUOTE`   | `C11`   | '        |     |             |         |                         |
+| `K_QUOTE`   | `C11`   | '        |     | `K_?C1`     | `B11`   | ABNT2 Brazilian Portuguese key left of right shift |
 | `K_COMMA`   | `B08`   | ,        |     |             |         |                         |
 | `K_PERIOD`  | `B09`   | .        |     |             |         |                         |
 | `K_SLASH`   | `B10`   | /        |     |             |         |                         |
