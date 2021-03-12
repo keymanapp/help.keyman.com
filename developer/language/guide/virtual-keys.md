@@ -179,7 +179,7 @@ The following table lists all of the common virtual key codes:
 
 | Key Code    | ISO9995 | Key Name |     | Key Code    | ISO9995 | Key Name                |
 |-------------|---------|----------|-----|-------------|---------|-------------------------|
-| `K_SPACE`   | `A03`   |          |     | `K_oE2`     | `B00`   | 102nd Key (European)    |
+| `K_SPACE`   | `A03`   |          |     | `K_oE2`     | `B00`   | Key right of left-shift (European layouts)  |
 | `K_A`       | `C01`   | A        |     | `K_BKSP`    | `E14`   | Backspace               |
 | `K_B`       | `B05`   | B        |     | `K_TAB`     | `D00`   | Tab                     |
 | `K_C`       | `B03`   | C        |     | `K_ENTER`   | `C13`   | Enter                   |
