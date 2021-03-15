@@ -32,23 +32,29 @@
   // source: https://yaml.org/spec/1.2/spec.html#id2760395
   // source: https://pandoc.org/MANUAL.html#extension-yaml_metadata_block
   //
-  if(preg_match('/^---\n(([a-z0-9_-]+:.+\n)+)---(\n)?((.|\n)*)$/i', $contents, $match)) {
-    $metadata = $match[1];
-    $contents = $match[4];
-  } else {
-    $metadata = 'title: untitled';
-  }
+  $lines = explode("\n", $contents);
 
-  if(preg_match('/^redirect: (.+)/m', $metadata, $match)) {
-    header("Location: {$match[1]}");
+  $found = count($lines) > 3 && rtrim($lines[0]) == '---';
+  $headers = [];
+  for($i = 1; $i < count($lines); $i++) {
+    if($lines[$i] == '---') break;
+    if(!preg_match('/^([a-z0-9_-]+):(.+)$/', $lines[$i], $match)) {
+      $found = false;
+      break;
+    } else {
+      $headers[$match[1]] = trim($match[2]);
+    }
+  }
+  $found = $found && $i < count($lines);
+
+  if($found) $contents = implode("\n", array_slice($lines, $i));
+
+  if(isset($headers['redirect'])) {
+    header("Location: {$headers['redirect']}");
     exit;
   }
 
-  if(preg_match('/^title: (.+)/m', $metadata, $match)) {
-    $pagetitle = $match[1];
-  } else {
-    $pagetitle = 'Untitled';
-  }
+  $pagetitle = isset($headers['title']) ? $headers['title'] : 'Untitled';
 
   head([
     'title' => $pagetitle
