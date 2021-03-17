@@ -10,7 +10,7 @@ The **getMaySendCrashReport()** method returns whether Keyman Engine is allowed 
 KMManager.getMaySendCrashReport()
 ```
 
-## Returns
+### Returns
 Returns `true` if crash reports can be sent over the network to sentry.keyman.com, `false` otherwise.
 
 ## Description

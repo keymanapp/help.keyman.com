@@ -148,6 +148,9 @@
   <dt><code><a href='isHelpBubbleEnabled.php'>isHelpBubbleEnabled()</a></code></dt>
   <dd>returns whether the help bubble is enabled</dd>
 
+  <dt><code><a href='isKeyboardLoaded'>isKeyboardLoaded()</a></code></dt>
+  <dd>returns whether the specified in-app or system keyboard is loaded</dd>
+
   <dt><code><a href='keyboardExists.php'>keyboardExists()</a></code></dt>
   <dd>returns whether the specified keyboard exists in keyboards list</dd>
 

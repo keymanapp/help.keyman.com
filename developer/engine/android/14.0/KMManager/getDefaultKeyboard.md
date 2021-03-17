@@ -10,7 +10,7 @@ The `getDefaultKeyboard()` method returns the keyboard information for the fallb
 KMManager.getDefaultKeyboard()
 ```
 
-## Returns
+### Returns
 Returns `Keyboard` type for the fallback keyboard. If not specified, this defaults to keyboard information for sil_euro_latin.
 
 ## Description
