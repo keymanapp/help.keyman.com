@@ -11,7 +11,7 @@ network to sentry.keyman.com.
 KMManager.setMaySendCrashReport(boolean value)
 ```
 
-## Parameters
+### Parameters
 value
 
 Set `true` to enable crash reports to be sent, `false` to disable.
