@@ -26,17 +26,17 @@ stores may be defined for a keyboard.</p>
 
 <h2>Keyboard variable store keywords</h2>
 
-<p>Four new keywords have been added to allow store content to be changed and tested. Stores used as variable stores may not 
+<p>Four new keywords have been added to allow store content to be changed and tested. Stores used as variable stores may not
 be used in the context or output sections of a rule, or to match the key section of a rule. A store referred to in an variable
 store  keyword must have its default content defined with a <a href='../reference/store'><code>store()</code> statement</a> somewhere
 in the keyboard source.</p>
 
 <h2>if() statement</h2>
 
-<p>The <a href='../reference/if'><code>if()</code> statement</a> allows any rule to be applied conditionally, according to whether or not the 
-specified condition is true when the rule is to be used. The content of the store being used as a variable store can be compared with 
-either a fixed string, or the content of another store. Note that since the <a href='../reference/match'><code>match</code></a> and 
-<a href='../reference/nomatch'></code>nomatch</code></a> rules refer to all matched rules in a group, the <code>if()</code> statement cannot 
+<p>The <a href='../reference/if'><code>if()</code> statement</a> allows any rule to be applied conditionally, according to whether or not the
+specified condition is true when the rule is to be used. The content of the store being used as a variable store can be compared with
+either a fixed string, or the content of another store. Note that since the <a href='../reference/match'><code>match</code></a> and
+<a href='../reference/nomatch'></code>nomatch</code></a> rules refer to all matched rules in a group, the <code>if()</code> statement cannot
 be used in a <code>match</code> or <code>nomatch</code> rule.</p>
 
 <p>The <code>if()</code> statement may be used in many different ways, such as:</p>
@@ -44,53 +44,57 @@ be used in a <code>match</code> or <code>nomatch</code> rule.</p>
 <ul>
   <li>to provide alternate output for particular keystrokes:
 <pre><code>store(opt1) '0'
-if(opt1='1') + '$' > '£' 
+if(opt1='1') + '$' > '£'
 </code></pre>
   </li>
 
-  <li>to conditionally branch to different rule groups, for example to process pending context in different ways when the 
+  <li>to conditionally branch to different rule groups, for example to process pending context in different ways when the
   <span class='key'>spacebar</span> is pressed:
 <pre><code>store(opt2) '0'
-if(opt2 ='1') + " " > use(ruleGroup1) 
-if(opt2!='1') + " " > use(ruleGroup2) 
+if(opt2 ='1') + " " > use(ruleGroup1)
+if(opt2!='1') + " " > use(ruleGroup2)
 </code></pre>
   </li>
 
   <li>to set or change option values depending on the value of an option, or toggle between option settings:
 <pre><code>store(opt3) '0'
 if(opt3 ='1') + [CTRL ALT "\"] > set(opt3='0')
-if(opt3!='1') + [CTRL ALT "\"] > set(opt3='1')      
+if(opt3!='1') + [CTRL ALT "\"] > set(opt3='1')
 </code></pre>
   </li>
 </ul>
 
+<p>Note how the tests above use <code>if(opt3='1')</code> and <code>if(opt3!='1')</code> to ensure that one or other of the rules always matches. This is
+better than using <code>if(opt3='0')</code> and <code>if(opt3='1')</code> because it avoids the scenario where the <code>opt3</code> store is set to a
+value other than <code>1</code> or <code>0</code> (e.g. a different version of the keyboard is used).</p>
+
 <h2>set() statement</h2>
 
-<p>The <a href='../reference/set'><code>set()</code> statement</a> used on the right hand side of a rule allows the content of a store to be 
-defined dynamically, as a result of an entered key sequence. The <code>set</code> statement does not change the store permanently, and 
+<p>The <a href='../reference/set'><code>set()</code> statement</a> used on the right hand side of a rule allows the content of a store to be
+defined dynamically, as a result of an entered key sequence. The <code>set</code> statement does not change the store permanently, and
 if Keyman is restarted, or Keyman Configuration modified, then the default value will be restored.</p>
 
 <p>In Keyman Desktop, changing a store with the <code>set()</code> statement while using one application will change it for all applications if
 the "Select keyboard layout for all applications" Keyman Configuration option is set.</p>
 
 <pre><code>store(opt1) '0'
-+ [CTRL ALT "1"] > set(opt1='1') 
-+ [CTRL ALT "2"] > set(opt1='2') 
++ [CTRL ALT "1"] > set(opt1='1')
++ [CTRL ALT "2"] > set(opt1='2')
 </code></pre>
 
 <h2>save() statement</h2>
 
-<p>The <a href='../reference/save'><code>save()</code> statement</a> saves a current variable store value in system settings, to become the default 
-value for future use. The <code>save()</code> statement will often be used following a <code>set()</code> statement to make a change 
+<p>The <a href='../reference/save'><code>save()</code> statement</a> saves a current variable store value in system settings, to become the default
+value for future use. The <code>save()</code> statement will often be used following a <code>set()</code> statement to make a change
 permanent, as in the following example, which will, in effect, permanently change the content of store opt1 from <code>'0'</code> to <code>'1'</code>.</p>
 <pre><code>store(opt1) '0'
-+ [CTRL ALT "1"] > set(opt1='1') save(opt1) 
++ [CTRL ALT "1"] > set(opt1='1') save(opt1)
 </code></pre>
 
 <h2>reset() statement</h2>
 
-<p>The <a href='../reference/reset'><code>reset()</code> statement</a> is used to restore a store to the current default value, either the 
-value in the system settings from a previously matched rule using a <code>save()</code> statement, or else the store content as initialized 
+<p>The <a href='../reference/reset'><code>reset()</code> statement</a> is used to restore a store to the current default value, either the
+value in the system settings from a previously matched rule using a <code>save()</code> statement, or else the store content as initialized
 in the keyboard source file.</p>
 
 <pre><code>+ [CTRL ALT "\"] > reset(opt1)
@@ -135,7 +139,7 @@ value, and the javascript needed to load the settings. A sample Option Configura
       &lt;input type='radio' value='visual' name='option_order' id='option_order_visual' />&lt;label for='option_order_visual'> Visual order&lt;/label> (type modifier before the consonant)&lt;br />
     &lt;/p>
   &lt;/fieldset>
-  
+
   &lt;fieldset>
   &lt;label>Select syllable boundary behaviour:&lt;/label>
       &lt;p>
@@ -150,8 +154,8 @@ value, and the javascript needed to load the settings. A sample Option Configura
 
 &lt;/div>
 
-  &lt;script type='text/javascript'>    
-    (function() { 
+  &lt;script type='text/javascript'>
+    (function() {
       var loc = window.location.search.substr(1).split('&amp;');
       for(var i = 0; i &lt; loc.length; i++)
       {
@@ -177,8 +181,8 @@ value, and the javascript needed to load the settings. A sample Option Configura
 &lt;/html>
 </code></pre>
 
-<p>Two variable store names used by the keyboard, <em>option_order</em> and <em>option_zwsp</em>, are set using this 
-configuration file. User selection is then made from the following dialog, presented when the Keyboard options are 
+<p>Two variable store names used by the keyboard, <em>option_order</em> and <em>option_zwsp</em>, are set using this
+configuration file. User selection is then made from the following dialog, presented when the Keyboard options are
 selected during Keyman Configuration:</p>
 
 <p><img src="<?= cdn('img/developer/90/guide_lang_options.gif')?>"></p>
@@ -187,7 +191,7 @@ selected during Keyman Configuration:</p>
 
 <dl>
   <dt><a href='stores'>Using stores</a></dt>
-  
+
   <dt><a href="../reference/if" title="if() statement"><code>if()</code> statement</a></dt>
   <dd>Tests a store or system state for a value</dd>
 

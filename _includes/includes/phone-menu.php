@@ -16,11 +16,14 @@
    $baselanguage = " class='$baselanguage'";
  }
 
- if(preg_match('/^\/([a-z0-9._-]+)\//i', $_SERVER['PHP_SELF'], $matches)) {
+ $section = $_SERVER['PHP_SELF'] == '/_includes/md/mdhost.php'
+   ? ('/' . $_REQUEST['file'])
+   : $_SERVER['PHP_SELF'];
+
+ if(preg_match('/^\/([a-z0-9._-]+)\//i', $section, $matches)) {
    $section = $matches[1];
- } else {
-   $section = $_SERVER['PHP_SELF'];
  }
+
 ?>
 <body data-device="<?= $device ?>" data-section="<?= $section ?>"<?= $baselanguage ?>>
 <div id="phone-menu">
@@ -28,7 +31,7 @@
         <div class="phone-menu-item">
             <h3>Product Support</h3>
             <ul>
-                <li><a href="/products/desktop/">Keyman Desktop</a></li>
+                <li><a href="/products/windows/">Keyman for Windows</a></li>
                 <li><a href="/products/mac/">Keyman for macOS</a></li>
                 <li><a href="/products/linux/">Keyman for Linux</a></li>
                 <li><a href="/products/web/">Keymanweb.com</a></li>

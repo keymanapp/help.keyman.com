@@ -1,26 +1,32 @@
 <?php /*
   Name:             editdesign
   Copyright:        Copyright (C) 2005 Tavultesoft Pty Ltd.
-  Documentation:    
-  Description:      
+  Documentation:
+  Description:
   Create Date:      18 Sep 2009
 
   Modified Date:    18 Sep 2009
   Authors:          mcdurdin
-  Related Files:    
-  Dependencies:     
+  Related Files:
+  Dependencies:
 
-  Bugs:             
-  Todo:             
-  Notes:            
+  Bugs:
+  Todo:
+  Notes:
   History:          18 Sep 2009 - mcdurdin - Polish
 */
   $pagename = 'KeymanWeb Subscriptions Help: User Interface Design';
   $pagetitle = 'Subscriptions: User Interface Design';
   $MainPage = true;
-  
+
   require_once('header.php');
-  
+  require_once __DIR__ . '/../../../../../_includes/autoload.php';
+
+  use Keyman\Site\Common\KeymanHosts;
+
+  $site_keymanwebdemo = KeymanHosts::Instance()->keymanweb_com;
+
+
   echo <<<END
 
 <div class='body_text'>
@@ -99,7 +105,7 @@ This page allows you to choose the KeymanWeb user interface that best complement
     <td valign="top">
 	<p>The standard interface for many sites incorporating KeymanWeb is the Toolbar.  This interface, which can be positioned anywhere on a website by inserting the HTML code provided, provides an instant visual indication that the site allows users to type in a range of languages.</p>
 	<p>The Toolbar's map-based menu, displayed whenever a user clicks on the Keyboards button, works particularly well with multilingual sites integrating languages from all over the world.  The most recently-used keyboard is remembered in a cookie, making it as easy to switch between English and another language as the Toggle interface, while maintaining full functionality and support for an essentially  unlimited number of keyboards.</p>
-	<p>A live example of the KeymanWeb Toolbar Interface is available on the <a href="http://$site_keymanwebdemo/">KeymanWeb Demo Site</a>.  For information on how your site users will interact with the Toolbar Interface, <a href="../content/ui/ui-toolbar.php">click here</a>.</p>
+	<p>A live example of the KeymanWeb Toolbar Interface is available on the <a href="$site_keymanwebdemo/">KeymanWeb Demo Site</a>.  For information on how your site users will interact with the Toolbar Interface, <a href="../content/ui/ui-toolbar.php">click here</a>.</p>
     </td>
   </tr>
 
