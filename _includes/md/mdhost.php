@@ -9,6 +9,8 @@
 
   $md = new MarkdownHost($_REQUEST['file']);
 
+  $pagetitle = isset($headers['title']) ? $headers['title'] : 'Untitled';
+
   head([
     'title' => $md->PageTitle()
   ]);
