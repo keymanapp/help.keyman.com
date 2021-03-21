@@ -269,10 +269,10 @@
 <td>yes</td>
 <td>
   <p><b>string</b>. The minimum version of Keyman that can read
-  this keyboard. If present, must be one of <code>"6.0"</code>, <code>"7.0"</code>, <code>"8.0"</code>,
-  <code>"9.0"</code>, <code>"10.0"</code>. Note that this value is used in KeymanWeb, but the version
-  mapping is based on Keyman Desktop version numbers. See <a href='/developer/cloud/versioning.php'>KeymanWeb
-  Versioning</a> for more detail.
+  this keyboard. If present, must be a two part version string, starting from <code>"6.0"</code> and up. 
+  Note: for versions below 10.0, this value is used in KeymanWeb, but the version mapping is based on Keyman
+  Desktop version numbers. For versions 10.0 and above, all platforms have a synchronized version number.
+  See <a href='/developer/cloud/versioning.php'>KeymanWeb Versioning</a> for more detail.
   </p>
 
   <p><b>Generation:</b> from .kmp, .js.</p>
