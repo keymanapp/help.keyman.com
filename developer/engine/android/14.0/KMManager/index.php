@@ -34,7 +34,7 @@
   <dt><code><a href='addKeyboardEventListener.php'>addKeyboardEventListener()</a></code></dt>
   <dd>adds the specified listener into the list of keyboard event listeners</dd>
 
-  <dt><code>addLexicalModel()</code></dt>
+  <dt><code><a href='addLexicalModel'>addLexicalModel()</a></code></dt>
   <dd>adds a lexical model into the lexical models list</dd>
 
   <dt><code>advanceToNextInputMode()</code></dt>
@@ -49,13 +49,13 @@
   <dt><code><a href='createInputView.php'>createInputView()</a></code></dt>
   <dd>creates the input view to be used in InputMethodService</dd>
 
-  <dt><code>deregisterLexicalModel()</code></dt>
+  <dt><code><a href='deregisterLexicalModel'>deregisterLexicalModel()</a></code></dt>
   <dd>deregisters the specified lexical model from the LMLayer so it isn't used</dd>
 
   <dt><code>executeHardwareKeystroke()</code></dt>
   <dd>process the keystroke generated from a physical keyboard</dd>
 
-  <dt><code>getAssociatedLexicalModel()</code></dt>
+  <dt><code><a href='getAssociatedLexicalModel'>getAssociatedLexicalModel()</a></code></dt>
   <dd>search the installed lexical models list and see if there's an associated model for a given language</dd>
 
   <dt><code><a href='getBannerHeight.php'>getBannerHeight()</a></code></dt>
@@ -66,6 +66,9 @@
 
   <dt><code><a href='getCurrentKeyboardInfo.php'>getCurrentKeyboardInfo()</a></code></dt>
   <dd>returns information dictionary of the current keyboard</dd>
+
+  <dt><code><a href='getDefaultKeyboard.php'>getDefaultKeyboard()</a></code></dt>
+  <dd>returns the keyboard information for the fallback keyboard</dd>
 
   <dt><code><a href='getFontTypeface.php'>getFontTypeface()</a></code></dt>
   <dd>creates a new typeface from the specified font filename</dd>
@@ -118,6 +121,15 @@
   <dt><code>getLexicalModelsList()</code></dt>
   <dd>returns the array of lexical models list</dd>
 
+  <dt><code><a href='getLanguageCorrectionPreferenceKey'>getLanguageCorrectionPreferenceKey()</a></code></dt>
+  <dd>returns a String to use as a shared preference key to store whether the LMLayer should enable corrections for a given language</dd>
+
+  <dt><code><a href='getLanguagePredictionPreferenceKey'>getLanguagePredictionPreferenceKey()</a></code></dt>
+  <dd>returns a String to use as a shared preference key to store whether the LMLayer should enable suggestions for a given language.</dd>
+
+  <dt><code><a href='getMaySendCrashReport'>getMaySendCrashReport()</a></code></dt>
+  <dd>returns whether Keyman Engine is allowed to send crash reports over the network to sentry.keyman.com</dd>
+
   <dt><code><a href='getVersion.php'>getVersion()</a></code></dt>
   <dd>returns the version number of Keyman Engine</dd>
 
@@ -135,6 +147,9 @@
 
   <dt><code><a href='isHelpBubbleEnabled.php'>isHelpBubbleEnabled()</a></code></dt>
   <dd>returns whether the help bubble is enabled</dd>
+
+  <dt><code><a href='isKeyboardLoaded'>isKeyboardLoaded()</a></code></dt>
+  <dd>returns whether the specified in-app or system keyboard is loaded</dd>
 
   <dt><code><a href='keyboardExists.php'>keyboardExists()</a></code></dt>
   <dd>returns whether the specified keyboard exists in keyboards list</dd>
@@ -157,10 +172,10 @@
   <dt><code><a href='onStartInput.php'>onStartInput()</a></code></dt>
   <dd>performs necessary actions in an InputMethodService's <code>onStartInput()</code></dd>
 
-  <dt><code>registerAssociatedLexicalModel()</code></dt>
+  <dt><code><a href='registerAssociatedLexicalModel'>registerAssociatedLexicalModel()</a></code></dt>
   <dd>registers a lexical model with the associated language ID</dd>
 
-  <dt><code>registerLexicalModel()</code></dt>
+  <dt><code><a href='registerLexicalModel'>registerLexicalModel</a></code></dt>
   <dd>registers a lexical model to use with the LMLayer</dd>
 
   <dt><code><a href='removeKeyboard.php'>removeKeyboard()</a></code></dt>
@@ -181,6 +196,9 @@
   <dt><code><a href='setDebugMode.php'>setDebugMode()</a></code></dt>
   <dd>enables or disables debugging of Keyman Engine</dd>
 
+  <dt><code><a href='setDefaultKeyboard.php'>setDefaultKeyboard()</a></code></dt>
+  <dd>sets the keyboard information for the fallback keyboard</dd>
+
   <dt><code><a href='setGlobeKeyAction.php'>setGlobeKeyAction()</a></code></dt>
   <dd>sets an action type for the 'Globe' key</dd>
 
@@ -195,6 +213,9 @@
 
   <dt><code><strike>setKeymanLicense() (Deprecated)</strike></code></dt>
   <dd>sets the developer license/key pair to unlock Keyman Engine</dd>
+
+  <dt><code><a href='setMaySendCrashReport'>setMaySendCrashReport()</a></code></dt>
+  <dd>sets whether Keyman Engine can send crash reports over the network to sentry.keyman.com</dd>
 
   <dt><code><a href='setShouldAllowSetKeyboard.php'>setShouldAllowSetKeyboard()</a></code></dt>
   <dd>sets whether Keyman Engine allows setting a keyboard other than the default keyboard</dd>
@@ -211,7 +232,7 @@
   <dt><code><a href='showKeyboardPicker.php'>showKeyboardPicker()</a></code></dt>
   <dd>displays the keyboard picker menu</dd>
 
-  <dt><code><a href='showLanguageList.php'>showLanguageList()</a></code></dt>
+  <dt><code><strike>showLanguageList()</strike> (Deprecated)</code></dt>
   <dd>displays the language list</dd>
 
   <dt><code><a href='switchToNextKeyboard.php'>switchToNextKeyboard()</a></code></dt>

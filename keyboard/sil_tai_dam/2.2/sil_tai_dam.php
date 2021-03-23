@@ -1,10 +1,8 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns:keys="http://www.tavultesoft.com/xml/keys" xmlns:oskexportdetails="http://www.tavultesoft.com/xml/oskexportdetails">
-<?php
+﻿<?php
   $pagename = 'SIL Tai Dam Keyboard Help';
   $pagetitle = 'SIL Tai Dam Keyboard Help';
   require_once('header.php');
 ?>
-<META http-equiv="Content-Type" content="text/html; charset=UTF-16">
 <h2>Font</h2>
 
 <p>The SIL Tai Dam keyboard can be used with any font that supports the Tai Viet script. The Tai Heritage Pro font, which was used to create the keyboard layout shown below, is included for your convenience.</p>
@@ -19,10 +17,10 @@
 
 <p>There are some cases where a double keypress is needed. In those cases the keycap has a "/" between the single keypress and the double keypress.</p>
 <img src='sil_tai_dam_layout.png' alt='Keyboard Layout' width='720px'>
-    
+
 
 <h3>Other characters requiring two keystrokes</h3>
-      	
+
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=300
  style='width:180pt;border-collapse:collapse;border:none'>
  <thead>
@@ -47,12 +45,12 @@
  <tr>
   <td width=156 valign=center style='width:.7in;border-top:none;border-left:solid windowtext 2.25pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0pt 0pt 0in 0pt'>
-  <p class=MsoNormal align=center style='page-break-after:avoid'><span 
+  <p class=MsoNormal align=center style='page-break-after:avoid'><span
   style='font-size:10.0pt;font-family:Verdana, Arial, Helvetica'>EXCLAMATION MARK</span></p>
   </td>
   <td width=67 valign=center style='width:117.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0pt 0pt 0in 0ptt'>
-  <p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span class=CharacterCode2000><span 
+  <p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span class=CharacterCode2000><span
   style='font-size:12.0pt;font-family:"Tai Heritage Pro";font-weight:normal'>&#x0021;</span></span></p>
   </td>
   <td width=72 valign=center style='width:.75in;border-top:none;border-left:none;
@@ -62,16 +60,16 @@
    style='font-size:12.0pt;font-family:"Tai Heritage Pro"'>|!</span></p>
   </td>
    </tr>
- 
+
  <tr>
   <td width=156 valign=center style='width:.7in;border-top:none;border-left:solid windowtext 2.25pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0pt 0pt 0in 0pt'>
-  <p class=MsoNormal align=center style='page-break-after:avoid'><span 
+  <p class=MsoNormal align=center style='page-break-after:avoid'><span
   style='font-size:10.0pt;font-family:Verdana, Arial, Helvetica'>COMMERCIAL AT</span></p>
   </td>
   <td width=67 valign=center style='width:117.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0pt 0pt 0in 0pt'>
-  <p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span class=CharacterCode2000><span 
+  <p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span class=CharacterCode2000><span
   style='font-size:12.0pt;font-family:"Tai Heritage Pro;font-weight:normal'>&#x0040;</span></span></p>
   </td>
   <td width=72 valign=center style='width:.75in;border-top:none;border-left:none;
@@ -81,16 +79,16 @@
    style='font-size:12.0pt;font-family:"Tai Heritage Pro"'>|@</span></p>
   </td>
    </tr>
- 
+
  <tr>
   <td width=156 valign=center style='width:.7in;border-top:none;border-left:solid windowtext 2.25pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0pt 0pt 0in 0pt'>
-  <p class=MsoNormal align=center style='page-break-after:avoid'><span 
+  <p class=MsoNormal align=center style='page-break-after:avoid'><span
   style='font-size:10.0pt;font-family:Verdana, Arial, Helvetica'>LESS-THAN SIGN</span></p>
   </td>
   <td width=67 valign=center style='width:117.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0pt 0pt 0in 0pt'>
-  <p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span class=CharacterCode2000><span 
+  <p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span class=CharacterCode2000><span
   style='font-size:12.0pt;font-family:"Tai Heritage Pro;font-weight:normal'>&#x003C;</span></span></p>
   </td>
   <td width=72 valign=center style='width:.75in;border-top:none;border-left:none;
@@ -100,16 +98,16 @@
    style='font-size:12.0pt;font-family:"Tai Heritage Pro"'>|&lt;</span></p>
   </td>
    </tr>
- 
+
  <tr>
   <td width=156 valign=center style='width:.7in;border-top:none;border-left:solid windowtext 2.25pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0pt 0pt 0in 0pt'>
-  <p class=MsoNormal align=center style='page-break-after:avoid'><span 
+  <p class=MsoNormal align=center style='page-break-after:avoid'><span
   style='font-size:10.0pt;font-family:Verdana, Arial, Helvetica'>GREATER-THAN SIGN</span></p>
   </td>
   <td width=67 valign=center style='width:117.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0pt 0pt 0in 0pt'>
-  <p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span class=CharacterCode2000><span 
+  <p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span class=CharacterCode2000><span
   style='font-size:12.0pt;font-family:"Tai Heritage Pro;font-weight:normal'>&#x003E;</span></span></p>
   </td>
   <td width=72 valign=center style='width:.75in;border-top:none;border-left:none;
@@ -119,16 +117,16 @@
    style='font-size:12.0pt;font-family:"Tai Heritage Pro"'>|&gt;</span></p>
   </td>
    </tr>
- 
+
  <tr>
   <td width=156 valign=center style='width:.7in;border-top:none;border-left:solid windowtext 2.25pt;
   border-bottom:solid windowtext 2.25pt;border-right:none;padding:0pt 0pt 0in 0pt'>
-  <p class=MsoNormal align=center style='page-break-after:avoid'><span 
+  <p class=MsoNormal align=center style='page-break-after:avoid'><span
   style='font-size:10.0pt;font-family:Verdana, Arial, Helvetica'>DOTTED CIRCLE</span></p>
   </td>
   <td width=67 valign=center style='width:117.0pt;border:none;border-bottom:solid windowtext 2.25pt;
   padding:0pt 0pt 0in 0pt'>
-  <p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span class=CharacterCode2000><span 
+  <p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span class=CharacterCode2000><span
   style='font-size:12.0pt;font-family:"Tai Heritage Pro;font-weight:normal'>&#x25CC;</span></span></p>
   </td>
   <td width=72 valign=center style='width:.75in;border-top:none;border-left:none;
@@ -138,8 +136,5 @@
    style='font-size:12.0pt;font-family:"Tai Heritage Pro"'>()</span></p>
   </td>
    </tr>
- 
+
  </table>
-
-
-</body>

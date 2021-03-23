@@ -18,7 +18,8 @@ $pagestyle = '#section2 .wrapper { overflow-x: inherit }';
           <img src="<?php echo cdn("img/icon-products.png"); ?>" />
           <h3>Keyman Products</h3>
           <p>
-            Learn how to use the range of Keyman software. Includes documentation and help for Keyman Desktop, Keymanweb.com, Keyman for Android, Keyman for iPhone and iPad, Keyman for Wordpress and the Keyman Bookmarklet.
+            Learn how to use the range of Keyman software. Includes documentation and help for Keyman for Windows (Desktop),
+            Keymanweb.com, Keyman for Android, Keyman for iPhone and iPad, Keyman for Wordpress and the Keyman Bookmarklet.
           </p>
       </a>
   </div>

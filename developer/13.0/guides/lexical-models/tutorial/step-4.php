@@ -3,7 +3,7 @@ require_once('includes/template.php');
 
 head([
   'title' => "Step 4: Compile the lexical model",
-  'css' => ['template.css', 'index.css', 'prism.css', 'kmguides.css', 'dev-lexical-models.css']
+  'css' => ['template.css', 'prism.css', 'kmguides.css', 'dev-lexical-models.css']
 ]);
 ?>
 

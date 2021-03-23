@@ -1,6 +1,7 @@
 <?php
   //include_once( "version.out" );
 
+  $nl = "\r\n";
 
 /* look for "NOT YET UPDATED FOR USE WITH FORMAT()" for bits todo */
 
@@ -39,14 +40,14 @@
       case "FEATURELIST": echo FEATURELIST( $args ); break;
       case "FEATURE": echo FEATURE( $args ); break;
       case "ENDFEATURELIST": echo ENDFEATURELIST( $args ); break;
-      
+
       default: dispatcher2( $func, $args );
     }
   }
-  
+
   function dispatcher2( $func, $args ) {
     switch( $func ) {
-      case "WEBSITEPAGE": echo WEBSITEPAGE( $args ); break; 
+      case "WEBSITEPAGE": echo WEBSITEPAGE( $args ); break;
     }
   }
 
@@ -94,7 +95,7 @@
     $args = htmlentities( $args );
 
     $s = HEADING("Examples");
-  
+
     $s .= "<pre class=\"Example\">" . $nl;
     $s .= $args . $nl;
     $s .= "</pre>" . $nl;
@@ -109,7 +110,7 @@
     $text = str_replace( "\r\n\r\n", "\r\n</p><p>\r\n", $text );
 
     $s = HEADING("Description");
-  
+
     $s .= "<p>" . $nl . $text . $nl . "</p>" . $nl;
 
     return $s;
@@ -122,7 +123,7 @@
     $text = str_replace( "\r\n\r\n", "\r\n</p><p>\r\n", $text );
 
     $s = HEADING("History");
-  
+
     $s .= "<p>" . $nl . $text . $nl . "</p>" . $nl;
 
     return $s;
@@ -130,11 +131,11 @@
 
   function REFERENCE( $s1 ) {
     global $nl;
-    
+
     preg_match( "/SECTION.\s+([^\n]+)\n/", $s1, $matches );
     $title = $matches[1];
-    
-    $s2 = 
+
+    $s2 =
       "PAGE:         " . $title . $nl .
       "BODY" . $nl .
       $s1 . $nl .
@@ -142,7 +143,7 @@
       "ENDBODY" . $nl .
       "FOOTER" . $nl .
       "ENDPAGE " . $nl . "ENDFORMAT" . $nl;
-    
+
     FORMAT( $s2 );
   }
 
@@ -184,10 +185,10 @@
     preg_match_all( '/"([^"]*)"/', $args, $linkarr );
 
     list( $left, $lurl, $right, $rurl ) = $linkarr[1];
-    
+
     $lurl = str_replace('.html', '.php', $lurl);
     $rurl = str_replace('.html', '.php', $rurl);
-  
+
     $s = "<table class=\"PageNav\"><tr>" . $nl .
          "<td class=\"Prev\">" . $nl;
 
@@ -218,7 +219,7 @@
 
     return $s;
   }
-  
+
   function FORMAT( $s )
   {
     global $nl;
@@ -228,7 +229,7 @@
     $func = "";
     $args = "";
     $indent = 0;
-    foreach( $strings as $s ) 
+    foreach( $strings as $s )
     {
       $ws = strspn( $s, " " );
       if( ($ws == 0) && ($s != "") )
@@ -238,43 +239,43 @@
           /* Call the function with its arguments */
           $args = rtrim( $args );
           dispatcher( $func, $args );
-          
+
           $func = "";
           $args = "";
         }
-        
+
         /* We're starting a new section here! */
         preg_match( "/^([^:\s]+)(([:\s]\s+)|([:\s]?[\s]*$))/", $s, $matches );
         $func = $matches[1];
-        
+
         $len = strlen( $func ) + 1;
         $indent = strspn( substr( $s, $len ), " " ) + $len;
         $args = substr( $s, $indent ) . $nl;
-      } 
+      }
       else if( $s == "" )
       {
         $args .= $nl;
-      } 
-      else 
+      }
+      else
       {
         $args .= substr( $s, $indent ) . $nl;
       }
     }
-    
-    if( $func != "" ) 
+
+    if( $func != "" )
     {
       /* Call the function with its arguments */
-      $args = rtrim( $args );          
+      $args = rtrim( $args );
       dispatcher2( $func, $args );
-         
+
       $func = "";
       $args = "";
     }
   }
-  
+
     function PAGE( $title ) {
     global $nl;
-    
+
     /*$s = "<html>" . $nl .
          "<head>" . $nl .
          "  <title>" . $title . "</title>" . $nl .
@@ -304,14 +305,14 @@
          "    }" . $nl .
          "    }" . $nl .
          "  //--></script>" . $nl .
-         
+
          "</head>" . $nl .
          "<body onload=\"sethidden()\">" . $nl .
          $nl;
 
     return $s;*/
   }
-  
+
   /************************************************************************************************************************/
 
   function HOWTO( $text )
@@ -476,10 +477,10 @@
       //echo "<pre>"; print_r($linkarr); echo "</pre>";
       while(sizeof($linkarr[1]) < 4) array_push($linkarr[1], "");
       list( $left, $lurl, $right, $rurl ) = $linkarr[1];
-  
+
       $s = "<table class=\"PageNav\"><tr>" . $nl .
            "<td class=\"Prev\">" . $nl;
-  
+
       if( $left == "" )
         $s .= "&nbsp;" . $nl;
       else {
@@ -488,11 +489,11 @@
         $s .= $left . $nl;
         $s .= "</a>" . $nl;
       }
-  
+
       $s .= "</td>" . $nl .
             "<td class=\"Next\">" . $nl;
-  
-  
+
+
       if( $right == "" )
         $s .= "&nbsp;" . $nl;
       else {
@@ -501,7 +502,7 @@
         $s .= "<img src=\"../img/rightarrow.gif\" alt=\"Next\" width=8 height=8 border=0>" . $nl;
         $s .= "</a>" . $nl;
       }
-  
+
       $s .= "</td>" . $nl .
             "</tr></table>" . $nl;
     }
@@ -760,10 +761,10 @@ function FEATURELIST($cols)
 {
     global $featurecount, $featurecolcount, $nl;
 
-    
+
     $colarray = explode(",", $cols);
 
-    $featurecount = 0; 
+    $featurecount = 0;
     $featurecolcount = count($colarray);
 
     $s = "<table cellspacing=0 cellpadding=0 class='fl'>" . $nl;
@@ -771,7 +772,7 @@ function FEATURELIST($cols)
 
     for($i = 0; $i < $featurecolcount; $i++)
       $s .= '<th class="flcol">' . $colarray[$i] . '</th>';
-     
+
     $s .= '</tr>';
 
     return $s;
@@ -782,23 +783,24 @@ function FEATURE($args) {
 
     if($featurecount % 2 == 0) $cls = "even"; else $cls = "odd";
     $featurecount++;
-    
+
     $id = uniqid("div");
- 
+
     $argarray = explode( $nl, $args );
+    $fcol = [];
     $ftext = $argarray[0];
     for($i = 1; $i <= $featurecolcount; $i++)
     {
-      $s = $argarray[$i]; 
-      if(strstr($s, "Y")) $fcol[$i-1] = "<img src='../img/fullcircle.gif'>"; 
-      else if(strstr($s, "T")) $fcol[$i-1] = "<img src='../img/tick.gif'>"; 
+      $s = $argarray[$i];
+      if(strstr($s, "Y")) $fcol[$i-1] = "<img src='../img/fullcircle.gif'>";
+      else if(strstr($s, "T")) $fcol[$i-1] = "<img src='../img/tick.gif'>";
       else if($s[0] == ':') $fcol[$i-1] = substr($s, 1);
       else $fcol[$i-1] = "&nbsp;";
     }
 
-    $desc = "";    
+    $desc = "";
     for($i = $featurecolcount+1; $i < count($argarray); $i++) $desc = $desc . $argarray[$i] . " ";
- 
+
     $s = '<tr><td class="fl '.$cls.'"><li><a style="text-decoration: none"; href="javascript: togglehowto(' . "'" . $id . "'" . ')">' .
 #         '<img id="' . $id . "img" . '" src="/images/expand.gif" border=0 align="middle"> ' .
          $ftext . '</a>';
@@ -811,7 +813,7 @@ function FEATURE($args) {
 
     $s .= '<tr><td class="flhidden" style="width: '. (500+count($fcol)*75) . '" colspan="' . (count($fcol) + 1) . '"><div id="' . $id . '" class="hiddenobj">' .
          $desc . '</div></td></tr>';
-    
+
     return $s;
 }
 

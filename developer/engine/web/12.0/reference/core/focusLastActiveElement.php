@@ -5,7 +5,7 @@
     'title' => "Function: focusLastActiveElement"
   ]);
 
-  require_once('/includes/__docheader.php');
+  require_once('includes/__docheader.php');
 ?>
 
 <h1 class="title" id="core_focusLastActiveElement">focusLastActiveElement</h1>

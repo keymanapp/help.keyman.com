@@ -7,10 +7,10 @@
     head(['title' => $class.'.'.$method.'()']);
 ?>
 
-<h1>KMManager.showLanguageList()</h1>
+<h1>KMManager.showLanguageList() (Deprecated)</h1>
 
 <h2 id="Summary" name="Summary">Summary</h2>
-<p>The <code><strong><?php echo $method.'()' ?></strong></code> method displays the language list.</p>
+<p>(Deprecated) The <code><strong><?php echo $method.'()' ?></strong></code> method displays the language list.</p>
 
 <h2 id="Syntax" name="Syntax">Syntax</h2>
 <pre class="language-javascript"><code><?php echo $methodSyntax ?></code></pre>
@@ -22,7 +22,8 @@
 </dl>
 
 <h2 id="Description" name="Description">Description</h2>
-<p>Use this method to display language list. Normally you do not need to call this method explicitly since, by default, Keyman keyboard picker menu calls this method to display the language list whenever '+' button is tapped. Multiple calls to this method is unsafe and may result in multiple instances of language list being displayed at the same time.</p>
+<p>The Keyman keyboard picker menu used to call this method to display the language list whenever the '+' button was tapped.
+  As of 14.0, keyboards are no longer added this way, and this call is removed.</p>
 
 <h2 id="Examples">Examples</h2>
 
@@ -37,6 +38,9 @@
         }
     });
 </code></pre>
+
+<h2 id="History" name="History">History</h2>
+<p>Deprecated syntax in Keyman Engine for Android 14.0</p>
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>

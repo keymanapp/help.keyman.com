@@ -85,4 +85,7 @@ title: Keyman language history
 ## Keyman 14
 
 *   Added [range expansions](expansions)
-*   Added [&CasedKeys store](../reference/casedkeys)
+*   Added [`&CasedKeys` store](../reference/casedkeys)
+*   [Virtual keys](virtual-keys#common-virtual-key-codes) may now be identified by ISO9995 key ids (e.g. `+ [SHIFT E01]`)
+*   The compiler now enforces order of certain statements in the [context part of the rule](rules)
+*   [`notany()`](../reference/notany) and [`context()`](../reference/context) are now supported together for KeymanWeb, iOS, Android (#3816)

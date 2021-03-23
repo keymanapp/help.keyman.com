@@ -1,8 +1,8 @@
 <?php
-  require_once('includes/template.php'); 
+  require_once('includes/template.php');
 
 $pagestyle = '#section2 .wrapper { overflow-x: inherit }';
-  
+
   // Required
   head([
     'title' =>'Keyman Support | Type to the world in your language',
@@ -14,12 +14,12 @@ $pagestyle = '#section2 .wrapper { overflow-x: inherit }';
 ?>
 <h2 class="center">Keyman Products Help Index</h2>
 <div class="product-index">
-    <div class="product" id="product-desktop">
-        <a href="desktop">
+    <div class="product" id="product-windows">
+        <a href="windows">
             <img src="<?php echo cdn("img/icon-desktop.png"); ?>" />
-            <h3>Keyman Desktop</h3>
+            <h3>Keyman for Windows</h3>
             <p>
-                Type in your language in all your favourite software applications for Windows.  Keyman Desktop will automatically configure your system for your language.
+                Type in your language in all your favourite software applications for Windows.  Keyman for Windows will automatically configure your system for your language.
             </p>
         </a>
     </div>
@@ -87,3 +87,4 @@ $pagestyle = '#section2 .wrapper { overflow-x: inherit }';
         </a>
     </div>
 </div>
+<p><a href='/version-history'>Product version history</a></p>
