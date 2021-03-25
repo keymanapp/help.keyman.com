@@ -11,7 +11,7 @@
 <h2 id="Overview" name="Overview">Overview</h2>
 
 <p>
-    The Keyman Engine for iPhone and iPad 13.0 SDK is designed to provide advanced international keyboard support to iOS apps.
+    The Keyman Engine for iPhone and iPad 14.0 SDK is designed to provide advanced international keyboard support to iOS apps.
     <br/><br/>
     As a developer, you simply need to use (or subclass) TextView or TextField instead
     of using an ordinary UITextView or UITextField.
@@ -62,7 +62,7 @@
         <ul>
           <li>Xcode may have issues with the "-universal" part of the name; dropping this component after
             copying may be prudent.</li>
-          <li>The 13.0 version of Keyman Engine for iPhone and iPad was compiled using Swift 4.</li>
+          <li>The 14.0 version of Keyman Engine for iPhone and iPad was compiled using Swift 5.</li>
           <li>Dragging the framework into the project will not properly set the framework up for embedding.</li>
         </ul>
       </li>
@@ -87,6 +87,7 @@
         <li>DeviceKit</li>
         <li>ObjcExceptionBridging</li>
         <li>Reachability</li>
+        <li>Sentry</li>
         <li>XCGLogger</li>
         <li>Zip</li>
       </ul></li>
@@ -94,7 +95,7 @@
         You may find it helpful to use a dependency manager
         (such as <a href="https://github.com/Carthage/Carthage">Carthage</a>) to assist with framework
         maintenance. You may find our Cartfile (used with Carthage) for this
-        <a href="https://github.com/keymanapp/keyman/blob/tree/stable-13.0/ios/Cartfile">here</a>.
+        <a href="https://github.com/keymanapp/keyman/blob/tree/stable-14.0/ios/Cartfile">here</a>.
       </li>
     </ul>
 </p>
