@@ -20,6 +20,10 @@
     bring up the Keyman keyboard UI.
     <br/><br/>
     All of the methods and delegate calls of the original UIKit classes are retained.
+    <br/><br/>
+    With version 14.0, we have deprecated direct use of .js files for resources in favor of supporting
+    .kmp packages.  Package files have the same old .js files bundled alongside any related resources (like 
+    fonts and documentation) on your behalf, making the process of setting up keyboards and lexical models easier.
 </p>
 
 <h2 id="Guides" name="Guides">Guides</a></h2>
@@ -31,12 +35,30 @@
 
 <h2 id="Classes" name="Classes">Available Classes/Methods</h2>
 
-<p>Everything you need should be in these classes. It is especially important to look at Manager.swift</p>
+<h3 id="resource_identification" name="resource_identification">Resource Identification</h3>
+
+<dl>
+  <dt><code>TODO <!--<a href='ResourceFileManager/'>ResourceFileManager</a>--></code></dt>
+  <dd>TODO <!--The core class for managing and installing keyboards and lexical models--></dd>
+</dl>
+
+<h3 id="resource_management" name="resource_management">Resource Management</h3>
+
+<dl>
+  <dt><code><a href='ResourceFileManager/'>ResourceFileManager</a></code></dt>
+  <dd>The core class for managing and installing keyboards and lexical models</dd>
+</dl>
+
+<h3 id="keyboard_control" name="keyboard_control">Controlling the Keyboard</h3>
 
 <dl>
   <dt><code><a href='Manager/'>Manager</a></code></dt>
   <dd>The core class for controlling Keyman Engine</dd>
+</dl>
 
+<h3 id="ui_setup" name="ui_setup">UI elements & setup</h3>
+
+<dl>
   <dt><code><a href='TextField/'>TextField</a></code></dt>
   <dd>A UITextField to use with the Keyman Engine</dd>
 
@@ -102,7 +124,7 @@
 <p>
     4) Import "KeymanEngine" into any source files requiring Keyman classes.
 </p><p>
-    5) [OPTIONAL] Add the language .js files which you want to use to your project (e.g. thai_kedmanee.js)
+    5) [OPTIONAL] Add the language .kmp files which you want to use to your project (e.g. thai_kedmanee.kmp)
     <ul>
         <li>drag them into the project</li>
         <li>go to your target, then the "Build Phases" tab, and add them to the "Copy Bundle Resources" section</li>
@@ -122,17 +144,6 @@
 <h2>Keyman Demo</h2>
 <p>
   To see the SDK in action, open the samples folder to find two small sample projects. All of the above steps have already been performed.
-  <br/><br/>
-  Additionally, you can see examples of:
-  <ul>
-    <li>TextView</li>
-    <li>TextField</li>
-    <li>KeyboardPickerButton</li>
-    <li>KeyboardPickerBarButtonItem</li>
-    <li>language fetching</li>
-    <li>keyboard downloading/switching</li>
-    <li>responding to Keyman events</li>
-  </ul>
 </p>
 
 <h2 id="See_also" name="See_also">See also</h2>
