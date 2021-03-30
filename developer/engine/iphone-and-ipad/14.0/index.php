@@ -38,8 +38,9 @@
 <h3 id="resource_identification" name="resource_identification">Resource Identification</h3>
 
 <dl>
-  <dt><code>TODO <!--<a href='ResourceFileManager/'>ResourceFileManager</a>--></code></dt>
-  <dd>TODO <!--The core class for managing and installing keyboards and lexical models--></dd>
+  <dt><code><a href="KeymanPackage/">KeymanPackage</a></code></dt>
+  <dd>The KeymanPackage is the base class used to represent various types of Keyman packages within
+the Keyman Engine and their contents.</dd>
 </dl>
 
 <h3 id="resource_management" name="resource_management">Resource Management</h3>

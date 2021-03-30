@@ -8,7 +8,7 @@
     head(['title' => $title]);
 ?>
 
-<h1><?=$title?></h1>
+<h1>.prepareKMPInstall()</h1>
 
 <h2 id="Summary" name="Summary">Summary</h2>
 <p>The <code><strong><?= $method.'()' ?></strong></code> method imports and parses package files,

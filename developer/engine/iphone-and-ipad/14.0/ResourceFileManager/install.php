@@ -9,7 +9,7 @@
     head(['title' => $title]);
 ?>
 
-<h1><?=$title?></h1>
+<h1>.install()</h1>
 
 <h2 id="Summary" name="Summary">Summary</h2>
 <p>The <code><strong><?= $method.'()' ?></strong></code> method is used to install resources from opened package files.</p>
@@ -49,10 +49,10 @@ do {
 <h2 id="See_also" name="See_also">See also</h2>
 
 <dl>
-<dt><code>KeyboardKeymanPackage</code></dt>
-<dd>A loaded package file containing one or more keyboards.</dd>
-<dt><code>LexicalModelKeymanPackage</code></dt>
-<dd>A loaded package file containing a lexical model.</dd>
-<dt><a href="prepareKMPInstall.php"><code>ResourceFileManager.shared.prepareKMPInstall(from:)</code></a></dt>
-<dd>This method is used to open packages for use by <code>install()</code>.</dd>
+  <dt><code>KeyboardKeymanPackage</code></dt>
+  <dd>A loaded package file containing one or more keyboards.</dd>
+  <dt><code>LexicalModelKeymanPackage</code></dt>
+  <dd>A loaded package file containing a lexical model.</dd>
+  <dt><a href="prepareKMPInstall.php"><code>ResourceFileManager.shared.prepareKMPInstall(from:)</code></a></dt>
+  <dd>This method is used to open packages for use by <code>install()</code>.</dd>
 </dl>
