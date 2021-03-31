@@ -7,7 +7,7 @@
     head(['title' => $title]);
 ?>
 
-<h1>.install()</h1>
+<h1>.installableResourceSets()</h1>
 
 <h2 id="Summary" name="Summary">Summary</h2>
 <p>The <code><strong><?= $title ?></strong></code> field enumerates all resources and language pairings

@@ -35,8 +35,8 @@ both of which offer richer typing for certain fields and methods.</p>
 
 <h2 id="See_also" name="See_also">See Also</h2>
 <dl>
-    <dt><code><a href='install.php'>KeyboardKeymanPackage</a></code></dt>
+    <dt><code><a href='TypedKeymanPackage.php'>KeyboardKeymanPackage</a></code></dt>
     <dd>Represents packages containing keyboards.</dd>
-    <dt><code><a href='install.php'>LexicalModelKeymanPackage</a></code></dt>
+    <dt><code><a href='TypedKeymanPackage.php'>LexicalModelKeymanPackage</a></code></dt>
     <dd>Represents packages containing lexical models.</dd>
 </dl>
