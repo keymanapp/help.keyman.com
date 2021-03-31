@@ -38,6 +38,14 @@
 <h3 id="resource_identification" name="resource_identification">Resource Identification</h3>
 
 <dl>
+  <dt><code><a href="LanguageResource/LanguageResourceFullID.php">LanguageResourceFullID</a></code></dt>
+  <dd>The LanguageResourceFullID protocol and its implementing types <code>FullKeyboardID</code> and 
+  <code>LexicalModelFullID</code> serve as unique identifiers for language resources, whether
+  installed or uninstalled.</dd>
+  <dt><code><a href="LanguageResource">LanguageResource</a></code></dt>
+  <dd>The LanguageResource protocol and its implementing types <code>InstallableKeyboard</code> and 
+  <code>InstallableLexicalModel</code> represent the full metadata specification for a single 
+  installed pairing of keyboard or model & target language.</dd>
   <dt><code><a href="KeymanPackage/">KeymanPackage</a></code></dt>
   <dd>The KeymanPackage is the base class used to represent various types of Keyman packages within
 the Keyman Engine and their contents.</dd>

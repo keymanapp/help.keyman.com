@@ -29,7 +29,7 @@ supported by the current package.</p>
   <dd>Some resources support multiple languages.  For example, Keyman's default keyboard - <code>sil_euro_latin</code>
       There will be one entry for each language supported by the resource.</dd>
   <dt>The indexed value</dt>
-  <dd>The <code>AnyLanguageResource</code> is a Swift "type erasure" that may represent either an
+  <dd><code>AnyLanguageResource</code> is a Swift "type erasure" that may represent either an
   <code>InstallableKeyboard</code> or an <code>InstallableLexicalModel</code>, each of which enumerates
   the metadata needed for the Keyman engine to properly load and use the resource.
   <br/><br/>
