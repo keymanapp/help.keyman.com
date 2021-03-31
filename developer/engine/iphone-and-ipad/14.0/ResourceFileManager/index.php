@@ -28,9 +28,18 @@ versions of the engine.</p>
 
 <!-- Fill in examples of how to use, etc. -->
 
+<h2 id="Fields" name="Fields">Fields</h2>
+
+<dl>
+    <dt><code><a href='installedPackages.php'>installedPackages: [KeymanPackage]</a></code></dt>
+    <dd>Lists packages currently installed within the KeymanEngine.</dd>
+</dl>
+
 <h2 id="Methods" name="Methods">Methods</h2>
 
 <dl>
+    <dt><code><a href='getInstalledPackage.php'>getInstalledPackage<Resource: LanguageResource>(for: Resource) -> Resource.Package</a></code></dt>
+    <dd>Retrieves the installed package for this resource, if available.</dd>
     <dt><code><a href='install.php'>install(resourceWithID: LanguageResourceFullID, from: KeymanPackage)</a></code></dt>
     <dd>Installs specified resources from opened package files for use within the KeymanEngine.</dd>
     <dt><code><a href='prepareKMPInstall.php'>prepareKMPInstall(from: URL)</a></code></dt>
