@@ -9,7 +9,7 @@
     head(['title' => $title]);
 ?>
 
-<h1>.install()</h1>
+<h1>.getInstalledPackage(for:)</h1>
 
 <h2 id="Summary" name="Summary">Summary</h2>
 <p>The <code><strong><?= $method.'()' ?></strong></code> method is used to install resources from opened package files.</p>

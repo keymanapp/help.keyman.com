@@ -8,7 +8,7 @@
     head(['title' => $title]);
 ?>
 
-<h1>.findResource(withID:)</h1>
+<h1>.pageURL(for:)</h1>
 
 <h2 id="Summary" name="Summary">Summary</h2>
 <p>The <code><strong><?= $title ?></strong></code> method provides links to web pages contained within a package.</p>
