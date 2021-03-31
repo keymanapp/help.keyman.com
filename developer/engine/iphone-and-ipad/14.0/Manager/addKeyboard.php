@@ -12,6 +12,9 @@
 <h2 id="Summary" name="Summary">Summary</h2>
 <p>The <code><strong><?php echo $method.'()' ?></strong></code> method adds a keyboard into the keyboards list.</p>
 
+<p><strong>Deprecated</strong> in favor of <a href="../ResourceFileManager/install.php">ResourceFileManager.shared.install()</a>, which
+automatically includes the functionality of this method.</p>
+
 <h2 id="Syntax" name="Syntax">Syntax</h2>
 <pre class="language-swift"><code><?php echo $methodSyntax ?></code></pre>
 

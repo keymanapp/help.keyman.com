@@ -58,12 +58,6 @@
     <dd>returns whether the gesture is recognized</dd>
     -->
 
-    <dt><code><a href='parseKMP.php'>parseKMP()</a></code></dt>
-    <dd>install the resources from a KMP package for keyboards or dictionaries</dd>
-
-    <dt><code><a href='preloadFiles.php'>preloadFiles()</a></code></dt>
-    <dd>preloads the JS and font files required for a keyboard</dd>
-
     <dt><code><a href='removeKeyboard.php'>removeKeyboard()</a></code></dt>
     <dd>removes the keyboard at specified position from the keyboards list</dd>
 
