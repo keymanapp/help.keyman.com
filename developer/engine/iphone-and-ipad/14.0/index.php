@@ -48,7 +48,11 @@
   installed pairing of keyboard or model & target language.</dd>
   <dt><code><a href="KeymanPackage/">KeymanPackage</a></code></dt>
   <dd>The KeymanPackage is the base class used to represent various types of Keyman packages within
-the Keyman Engine and their contents.</dd>
+  the Keyman Engine and their contents.  This class also serves a "type erasure" role for classes derived
+  from it.</dd>
+  <dt><code><a href="KeymanPackage/TypedKeymanPackage.php">TypedKeymanPackage</a></code></dt>
+  <dd>The TypedKeymanPackage (and its direct subclasses <code>KeyboardKeymanPackage</code> and 
+  <code>LexicalModelKeymanPackage</code>) provide enhanced type signatures.</dd>
 </dl>
 
 <h3 id="resource_management" name="resource_management">Resource Management</h3>
@@ -79,6 +83,9 @@ the Keyman Engine and their contents.</dd>
 
   <dt><code><a href='KeyboardPickerBarButtonItem/'>KeyboardPickerBarButtonItem</a></code></dt>
   <dd>A bar that displays the keyboard picker when tapped</dd>
+
+  <dt><code><a href='PackageWebViewController/'>PackageWebViewController</a></code></dt>
+  <dd>Displays web pages contained within packages, ejecting any links outside the package into an external browser.</dd>
 </dl>
 
 <h2>Adding the Keyman Engine for iPhone and iPad SDK to your project</h2>

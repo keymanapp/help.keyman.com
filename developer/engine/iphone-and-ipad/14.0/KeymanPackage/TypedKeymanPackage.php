@@ -36,7 +36,7 @@ to work with in methods looking to handle both types of packages due to Swift's 
 
 <!-- Fill in examples of how to use, etc. -->
 
-<h2 id="Methods" name="Methods">Methods</h2>
+<h2 id="Methods" name="Methods">Methods and Fields</h2>
 
 <dl>
     <dt><code><a href='findResource.php'>findResource(withID:) -> TypedLanguageResource? </a></code></dt>
