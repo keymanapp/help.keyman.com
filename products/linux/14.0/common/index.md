@@ -11,7 +11,7 @@ sudo apt-get upgrade
 sudo apt-get install keyman onboard-keyman
 ```
 
-An older version of Keyman for Linux packages is also available in any current Debian at:
+An older version of Keyman for Linux packages is also available in any current Debian at: 
 [https://packages.debian.org/keyman](https://packages.debian.org/keyman)
 
 
@@ -22,7 +22,7 @@ An older version of Keyman for Linux packages is also available in any current D
 **A.** Keyman for Linux and KMFL are released together in the Keyman
 [PPA](https://en.wikipedia.org/wiki/Ubuntu#Package_Archives), but are separate. The installation
 instructions above will install Keyman, not KMFL. KMFL was developed as a black-box clone of Keyman
-for Windows years ago; after Keyman was released as open source it became possible to share the
+for Windows years ago; after Keyman was released as open source it became possible to share the 
 code base between Windows and Linux. Keyman for Linux is the long-term supported solution.
 
 ## Q. Can I have Keyman for Linux and KMFL installed at the same time?
