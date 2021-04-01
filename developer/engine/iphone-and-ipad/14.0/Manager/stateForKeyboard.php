@@ -45,3 +45,5 @@ if kbState == .needsUpdate {
 }
 </code></pre>
 
+<h2 id="History" name="History">History</h2>
+Deprecated in Keyman Engine for iPhone and iPad 14.0.

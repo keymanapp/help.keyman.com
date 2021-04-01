@@ -45,6 +45,9 @@ Manager.shared.addKeyboard(Defaults.keyboard)
 Manager.shared.addKeyboard(kb)
 </code></pre>
 
+<h2 id="History" name="History">History</h2>
+Deprecated in Keyman Engine for iPhone and iPad 14.0.
+
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
  <li><a href="removeKeyboard.php"><code>removeKeyboard()</code></a></li>
