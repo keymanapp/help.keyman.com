@@ -50,7 +50,7 @@
   <dd>The KeymanPackage is the base class used to represent various types of Keyman packages within
   the Keyman Engine and their contents.  This class also serves a "type erasure" role for classes derived
   from it.</dd>
-  <dt><code><a href="KeymanPackage/TypedKeymanPackage.php">TypedKeymanPackage</a></code></dt>
+  <dt><code><a href="TypedKeymanPackage/">TypedKeymanPackage</a></code></dt>
   <dd>The TypedKeymanPackage (and its direct subclasses <code>KeyboardKeymanPackage</code> and 
   <code>LexicalModelKeymanPackage</code>) provide enhanced type signatures.</dd>
 </dl>

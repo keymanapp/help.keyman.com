@@ -73,8 +73,8 @@ both of which offer richer typing for certain fields and methods.</p>
 <dl>
     <dt><code><a href="../PackageWebViewController">PackageWebViewController</a></code></dt>
     <dd>Used to display web pages contained within a package.</dd>
-    <dt><code><a href='TypedKeymanPackage.php'>KeyboardKeymanPackage</a></code></dt>
+    <dt><code><a href='../TypedKeymanPackage'>KeyboardKeymanPackage</a></code></dt>
     <dd>Represents packages containing keyboards.</dd>
-    <dt><code><a href='TypedKeymanPackage.php'>LexicalModelKeymanPackage</a></code></dt>
+    <dt><code><a href='../TypedKeymanPackage'>LexicalModelKeymanPackage</a></code></dt>
     <dd>Represents packages containing lexical models.</dd>
 </dl>

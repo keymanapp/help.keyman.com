@@ -39,8 +39,13 @@ supported by the current package.</p>
 <h2 id="See_also" name="See_also">See also</h2>
 
 <dl>
-<dt><code class="language-swift">KeyboardKeymanPackage.installables: [[ InstallableKeyboard ]]</code></dt>
-<dd>The equivalent field for keyboard packages.</dd>
-<dt><code class="language-swift">LexicalModelKeymanPackage.installables: [[ InstallableLexicalModel ]]</code></dt>
-<dd>The equivalent field for lexical model packages.</dd>
+    <dt><code><a href="../TypedKeymanPackage/installables.php">
+    KeyboardKeymanPackage.installables: [[ InstallableKeyboard ]]</a></code></dt>
+    <dd>The equivalent field for keyboard packages.</dd>
+    <dt><code><a href="../TypedKeymanPackage/installables.php">LexicalModelKeymanPackage.installables: [[ InstallableLexicalModel ]]
+    </a></code></dt>
+    <dd>The equivalent field for lexical model packages.</dd>
+    <dt><code><a href="installableResources.php">installableResources(forLanguage: String): [ AnyLanguageResource ]</a></code></dt>
+    <dd>Provides the same functionality as this field, but filtered to a specific language code.</dd>
 </dl>
+
