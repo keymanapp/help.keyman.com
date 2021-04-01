@@ -51,6 +51,9 @@ to work with in methods looking to handle both types of packages due to Swift's 
     <dd>A language-filtered version of the field above, with the 'language index' dimension dropped.<br/><br/></dd>
 </dl>
 
+<h2 id="History" name="History">History</h2>
+Added in Keyman Engine for iPhone and iPad 14.0.
+
 <h2 id="See_also" name="See_also">See Also</h2>
 <dl>
     <dt><code><a href='.'>KeymanPackage</a></code></dt>

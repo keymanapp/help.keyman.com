@@ -35,3 +35,6 @@
   <dt><code>.installed</code></dt>
   <dd>The package has been installed.</dd>
 </dl>
+
+<h2 id="History" name="History">History</h2>
+Added in Keyman Engine for iPhone and iPad 14.0.

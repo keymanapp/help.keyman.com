@@ -69,6 +69,9 @@ both of which offer richer typing for certain fields and methods.</p>
     of which may target arbitrary locations within the package.</dd>
 </dl>
 
+<h2 id="History" name="History">History</h2>
+Added in Keyman Engine for iPhone and iPad 14.0.
+
 <h2 id="See_also" name="See_also">See Also</h2>
 <dl>
     <dt><code><a href="../PackageWebViewController">PackageWebViewController</a></code></dt>

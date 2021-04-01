@@ -19,6 +19,9 @@ into the KeymanEngine.</p>
 <h3 id="Value" name="Value">Value</h3>
 <p>An array of <code>KeyboardKeymanPackage</code> and <code>LexicalModelKeymanPackage</code> instances.</p>
 
+<h2 id="History" name="History">History</h2>
+Added in Keyman Engine for iPhone and iPad 14.0.
+
 <h2 id="See_also" name="See_also">See also</h2>
 
 <dl>

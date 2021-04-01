@@ -26,6 +26,9 @@ a need to find and/or use their source packages.  Such operations only succeed w
 
 <h2 id="Fields" name="Fields">Fields</h2>
 
+<h2 id="History" name="History">History</h2>
+Added in Keyman Engine for iPhone and iPad 14.0.
+
 <dl>
     <dt><code>id: String</code></dt>
     <dd>The package's id string.

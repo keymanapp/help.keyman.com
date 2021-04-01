@@ -72,6 +72,10 @@ will exist per target language that was selected for installation.</p>
     <dd>A unique identifier used in language resource searches and comparisons.</dd>
 </dl>
 
+<h2 id="History" name="History">History</h2>
+While the classes that implement the protocol existed before this, the protocol itself 
+was added in Keyman Engine for iPhone and iPad 14.0.  
+
 <h2 id="See_also" name="See_also">See Also</h2>
 <dl>
     <dt><code><a href='../KeymanPackage'>KeymanPackage</a></code></dt>

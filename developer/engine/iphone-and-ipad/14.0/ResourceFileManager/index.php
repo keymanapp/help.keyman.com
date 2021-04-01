@@ -45,3 +45,6 @@ versions of the engine.</p>
     <dt><code><a href='prepareKMPInstall.php'>prepareKMPInstall(from: URL)</a></code></dt>
     <dd>Given a local filesystem URL for a KMP package, this function imports, opens, and parses the file for use within KeymanEngine</dd>
 </dl>
+
+<h2 id="History" name="History">History</h2>
+Added in Keyman Engine for iPhone and iPad 14.0.

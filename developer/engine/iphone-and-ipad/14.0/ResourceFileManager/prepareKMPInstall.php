@@ -47,6 +47,10 @@ do {
 }
 </code></pre>
 <p>Note:  the package and keyboard must explicitly support your selected language code.</p>
+
+<h2 id="History" name="History">History</h2>
+Added in Keyman Engine for iPhone and iPad 14.0.
+
 <h2 id="See_also" name="See_also">See also</h2>
 
 <dl>

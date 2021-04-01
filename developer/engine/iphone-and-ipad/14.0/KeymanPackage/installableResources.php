@@ -32,6 +32,9 @@ For most packages, there will only be a single entry in this array.  However, no
 packages may support multiple keyboards for the same target language.
 </p>
 
+<h2 id="History" name="History">History</h2>
+Added in Keyman Engine for iPhone and iPad 14.0.
+
 <h2 id="See_also" name="See_also">See also</h2>
 
 <dl>

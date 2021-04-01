@@ -37,6 +37,9 @@ any custom pages you may wish to embed within your packages for use within your 
     <dd>Retrieves the corresponding page from the package and prepares a view to display it.</dd>
 </dl>
 
+<h2 id="History" name="History">History</h2>
+Added in Keyman Engine for iPhone and iPad 14.0.
+
 <h2 id="See_also" name="See_also">See Also</h2>
 <dl>
     <dt><code><a href="../KeymanPackage/pageURL.php">KeymanPackage.pageURL</a></code></dt>

@@ -30,6 +30,9 @@ An <code>InstallableKeyboard</code> (for a <code>KeyboardKeymanPackage</code>) o
 May be <code>nil</code> if no resource matching the specified ID is found within the package.
 </p>
 
+<h2 id="History" name="History">History</h2>
+Added in Keyman Engine for iPhone and iPad 14.0.
+
 <h2 id="See_also" name="See_also">See also</h2>
 
 <dl>
