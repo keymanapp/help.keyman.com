@@ -56,6 +56,6 @@ Added in Keyman Engine for iPhone and iPad 14.0.
 
 <h2 id="See_also" name="See_also">See Also</h2>
 <dl>
-    <dt><code><a href='.'>KeymanPackage</a></code></dt>
+    <dt><code><a href='../KeymanPackage'>KeymanPackage</a></code></dt>
     <dd>The base class (and type erasure) for packages.</dd>
 </dl>
