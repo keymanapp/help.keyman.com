@@ -31,7 +31,7 @@ typing for the contents of a <a href="."><code>KeymanPackage</code></a>.</p>
 <p>TypedKeymanPackage is the base class of <code>KeyboardKeymanPackage</code> and <code>
 LexicalModelKeymanPackage</code>, both of which represent richly-typed parses of their corresponding
 package files.</p>
-<p>Note that the type erasure, <code><a href=".">KeymanPackage</a></code>, will often be easier 
+<p>Note that the type erasure, <code><a href="../KeymanPackage">KeymanPackage</a></code>, will often be easier 
 to work with in methods looking to handle both types of packages due to Swift's typing constraints.</p>
 
 <!-- Fill in examples of how to use, etc. -->
