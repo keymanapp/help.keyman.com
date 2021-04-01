@@ -12,6 +12,9 @@
 <h2 id="Summary" name="Summary">Summary</h2>
 <p>The <code><strong><?= $method.'()' ?></strong></code> method returns the current state
   of availability for a dictionary.</p>
+<p><strong>Deprecated</strong>, as keyboards and lexical models are no longer directly downloaded in favor
+of packages.  Refer to <code><a href="../ResourceFileManager/installState.php">
+ResourceFileManager.shared.installState()</a></code></p>
 
 <h2 id="Syntax" name="Syntax">Syntax</h2>
 <pre class="language-swift"><code><?= $methodSyntax1 ?></code></pre>
@@ -42,3 +45,5 @@ if dictState == .needsUpdate {
 }
 </code></pre>
 
+<h2 id="History" name="History">History</h2>
+Deprecated in Keyman Engine for iPhone and iPad 14.0.

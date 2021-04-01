@@ -20,6 +20,10 @@
     bring up the Keyman keyboard UI.
     <br/><br/>
     All of the methods and delegate calls of the original UIKit classes are retained.
+    <br/><br/>
+    With version 14.0, we have deprecated direct use of .js files for resources in favor of supporting
+    .kmp packages.  Package files have the same old .js files bundled alongside any related resources (like 
+    fonts and documentation) on your behalf, making the process of setting up keyboards and lexical models easier.
 </p>
 
 <h2 id="Guides" name="Guides">Guides</a></h2>
@@ -31,12 +35,43 @@
 
 <h2 id="Classes" name="Classes">Available Classes/Methods</h2>
 
-<p>Everything you need should be in these classes. It is especially important to look at Manager.swift</p>
+<h3 id="resource_identification" name="resource_identification">Resource Identification</h3>
+
+<dl>
+  <dt><code><a href="LanguageResource/LanguageResourceFullID.php">LanguageResourceFullID</a></code></dt>
+  <dd>The LanguageResourceFullID protocol and its implementing types <code>FullKeyboardID</code> and 
+  <code>LexicalModelFullID</code> serve as unique identifiers for language resources, whether
+  installed or uninstalled.</dd>
+  <dt><code><a href="LanguageResource">LanguageResource</a></code></dt>
+  <dd>The LanguageResource protocol and its implementing types <code>InstallableKeyboard</code> and 
+  <code>InstallableLexicalModel</code> represent the full metadata specification for a single 
+  installed pairing of keyboard or model & target language.</dd>
+  <dt><code><a href="KeymanPackage/">KeymanPackage</a></code></dt>
+  <dd>The KeymanPackage is the base class used to represent various types of Keyman packages within
+  the Keyman Engine and their contents.  This class also serves a "type erasure" role for classes derived
+  from it.</dd>
+  <dt><code><a href="TypedKeymanPackage/">TypedKeymanPackage</a></code></dt>
+  <dd>The TypedKeymanPackage (and its direct subclasses <code>KeyboardKeymanPackage</code> and 
+  <code>LexicalModelKeymanPackage</code>) provide enhanced type signatures.</dd>
+</dl>
+
+<h3 id="resource_management" name="resource_management">Resource Management</h3>
+
+<dl>
+  <dt><code><a href='ResourceFileManager/'>ResourceFileManager</a></code></dt>
+  <dd>The core class for managing and installing keyboards and lexical models</dd>
+</dl>
+
+<h3 id="keyboard_control" name="keyboard_control">Controlling the Keyboard</h3>
 
 <dl>
   <dt><code><a href='Manager/'>Manager</a></code></dt>
   <dd>The core class for controlling Keyman Engine</dd>
+</dl>
 
+<h3 id="ui_setup" name="ui_setup">UI elements & setup</h3>
+
+<dl>
   <dt><code><a href='TextField/'>TextField</a></code></dt>
   <dd>A UITextField to use with the Keyman Engine</dd>
 
@@ -48,6 +83,9 @@
 
   <dt><code><a href='KeyboardPickerBarButtonItem/'>KeyboardPickerBarButtonItem</a></code></dt>
   <dd>A bar that displays the keyboard picker when tapped</dd>
+
+  <dt><code><a href='PackageWebViewController/'>PackageWebViewController</a></code></dt>
+  <dd>Displays web pages contained within packages, ejecting any links outside the package into an external browser.</dd>
 </dl>
 
 <h2>Adding the Keyman Engine for iPhone and iPad SDK to your project</h2>
@@ -102,7 +140,7 @@
 <p>
     4) Import "KeymanEngine" into any source files requiring Keyman classes.
 </p><p>
-    5) [OPTIONAL] Add the language .js files which you want to use to your project (e.g. thai_kedmanee.js)
+    5) [OPTIONAL] Add the language .kmp files which you want to use to your project (e.g. thai_kedmanee.kmp)
     <ul>
         <li>drag them into the project</li>
         <li>go to your target, then the "Build Phases" tab, and add them to the "Copy Bundle Resources" section</li>
@@ -122,22 +160,13 @@
 <h2>Keyman Demo</h2>
 <p>
   To see the SDK in action, open the samples folder to find two small sample projects. All of the above steps have already been performed.
-  <br/><br/>
-  Additionally, you can see examples of:
-  <ul>
-    <li>TextView</li>
-    <li>TextField</li>
-    <li>KeyboardPickerButton</li>
-    <li>KeyboardPickerBarButtonItem</li>
-    <li>language fetching</li>
-    <li>keyboard downloading/switching</li>
-    <li>responding to Keyman events</li>
-  </ul>
 </p>
 
 <h2 id="See_also" name="See_also">See also</h2>
 
 <ul>
+  <li><a href="/developer/engine/iphone-and-ipad/13.0/" title="Keyman Engine for iPhone and iPad 13.0">
+      Keyman Engine for iPhone and iPad 13.0</a></li>
   <li><a href="/developer/engine/iphone-and-ipad/12.0/" title="Keyman Engine for iPhone and iPad 12.0">
       Keyman Engine for iPhone and iPad 12.0</a></li>
   <li><a href="/developer/engine/iphone-and-ipad/11.0/" title="Keyman Engine for iPhone and iPad 11.0">
