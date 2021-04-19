@@ -94,8 +94,7 @@
         You may find it helpful to use a dependency manager
         (such as <a href="https://github.com/Carthage/Carthage">Carthage</a>) to assist with framework
         maintenance. You may find our Cartfile (used with Carthage) for this
-        <a href="https://github.com/keymanapp/keyman/blob/master/ios/Cartfile">here</a>.
-        <!-- Note - once we have a stable-13.0 branch, we should change the link above accordingly. -->
+        <a href="https://github.com/keymanapp/keyman/blob/tree/stable-13.0/ios/Cartfile">here</a>.
       </li>
     </ul>
 </p>
