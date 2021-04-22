@@ -3,11 +3,15 @@
     $device = '';
  }
 
- global $baselanguage;
+ $section = $_SERVER['PHP_SELF'] == '/_includes/md/mdhost.php'
+   ? ('/' . $_REQUEST['file'])
+   : $_SERVER['PHP_SELF'];
+
+   global $baselanguage;
  if(empty($baselanguage)) {
-   if(preg_match('/^\/developer\/([0-9]+\.[0-9]+|language)\//i', $_SERVER['PHP_SELF'])) {
+   if(preg_match('/^\/developer\/([0-9]+\.[0-9]+|language)\//i', $section)) {
      $baselanguage = ' class="language-keyman"';
-   } else if(preg_match('/^\/developer\/engine\/web\/([0-9]+\.[0-9]+)\//i', $_SERVER['PHP_SELF'])) {
+   } else if(preg_match('/^\/developer\/engine\/web\/([0-9]+\.[0-9]+)\//i', $section)) {
      $baselanguage = ' class="language-javascript"';
    } else {
      $baselanguage = '';
@@ -15,10 +19,6 @@
  } else {
    $baselanguage = " class='$baselanguage'";
  }
-
- $section = $_SERVER['PHP_SELF'] == '/_includes/md/mdhost.php'
-   ? ('/' . $_REQUEST['file'])
-   : $_SERVER['PHP_SELF'];
 
  if(preg_match('/^\/([a-z0-9._-]+)\//i', $section, $matches)) {
    $section = $matches[1];

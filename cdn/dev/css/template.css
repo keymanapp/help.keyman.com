@@ -919,6 +919,10 @@ input[type="search"] {
   line-height: 1.4;
 }
 
+#section2 code[class*="language-"] {
+	font-size: 10.5pt
+}
+
 .product-index {
 	text-align: center;
 }
