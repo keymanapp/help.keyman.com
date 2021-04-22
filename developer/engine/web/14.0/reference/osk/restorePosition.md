@@ -34,3 +34,7 @@ it to the bottom of the active input element.
 
 Note that if the user clicks the pin it does not reset the default `left`, `top`
 as set by `setRect()`.
+
+## History
+
+* Published as public API in 14.0.272
