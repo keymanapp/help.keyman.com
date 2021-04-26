@@ -7,9 +7,6 @@ function loaded(){
     window.setTimeout(loaded, 100);
     return;
   }
-  $('#testimonial').click(function(){
-    location.href="http://www.tavultesoft.com/testimonials.php";
-  });
 
   // Email subscribe form
   $('.subscribe').click(function(){
