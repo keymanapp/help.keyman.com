@@ -7,14 +7,11 @@ function loaded(){
     window.setTimeout(loaded, 100);
     return;
   }
-  $('#testimonial').click(function(){
-    location.href="http://www.tavultesoft.com/testimonials.php";
-  });
-  
+
   // Email subscribe form
   $('.subscribe').click(function(){
     $('#mc-embedded-subscribe-form').submit();
-  });    
+  });
 
   // Popup close
   $('#popup-close').click(function(){
@@ -32,9 +29,9 @@ function loaded(){
       $('.popup').fadeOut(300);
     }
   });
-  
+
   // Scrolling top menu functionality (Non touch devices only)
-  var 
+  var
     device = $(document.body).data('device'),
     scrollFix = function(e) {
       var scroller_anchor = $(".header").height();
@@ -48,12 +45,12 @@ function loaded(){
         $('#toc').removeClass('fixed');
       }
     };
-    
+
   if (device != 'Android' && device != 'iPhone' && device != 'iPad') {
     $(window).scroll(scrollFix);
   }
-  
-  
+
+
   // Touch device menu functionality
   //if (device == 'Android' || device == 'iPhone' || device == 'iPad') {
     $('#show-phone-menu').click(function(event){
@@ -62,10 +59,10 @@ function loaded(){
       }else{
         $("body").css("overflow","auto");
         $("#phone-menu").hide();
-      }	
+      }
     });
   //}
-  
+
   // Footer to bottom of page
   var link = $('.footer');
   if(link.length > 0) {
@@ -150,7 +147,7 @@ function loaded(){
     var headings = $(opts.selectors, container);
     var headingOffsets = [];
     var activeClassName = opts.activeClass;
-    
+
     if(opts.filter) headings = headings.filter(opts.filter);
 
     var scrollTo = function(e, callback) {
@@ -173,7 +170,7 @@ function loaded(){
       timeout = setTimeout(function() {
         var top = $(window).scrollTop(),
           highlighted, closest = Number.MAX_VALUE, index = 0;
-        
+
         for (var i = 0, c = headingOffsets.length; i < c; i++) {
           var currentClosest = Math.abs(headingOffsets[i] - top);
           if (currentClosest < closest) {
@@ -181,10 +178,10 @@ function loaded(){
             closest = currentClosest;
           }
         }
-        
+
         $('li', self).removeClass(activeClassName);
         highlighted = $('li:eq('+ index +')', self).addClass(activeClassName);
-        opts.onHighlight(highlighted);      
+        opts.onHighlight(highlighted);
       }, 50);
     };
     if (opts.highlightOnScroll) {
@@ -257,12 +254,12 @@ function loaded(){
       var candidateId = $(heading).text().replace(/[^a-z0-9]/ig, ' ').replace(/\s+/g, '-').toLowerCase();
       if (verboseIdCache[candidateId]) {
         var j = 2;
-        
+
         while(verboseIdCache[candidateId + j]) {
           j++;
         }
         candidateId = candidateId + '-' + j;
-        
+
       }
       verboseIdCache[candidateId] = true;
 
@@ -278,7 +275,7 @@ function loaded(){
   };
 
   })(jQuery);
-  
+
 /**
   Build Table of Contents after page content is loaded
 */
@@ -289,15 +286,15 @@ function loaded(){
       'scrollToOffset' : 120,
       'filter' : function(index, element) { return $(element).parents('.tip,.note,aside').length == 0; }
     });
-    
+
     if($('#toc-content li').length >= 2 && ['developer','keyboard'].indexOf($('body').data('section')) >= 0) {
       $('.column-right').addClass('show-toc');
-    } 
+    }
 
     $(window).resize(function() {
       $('#toc').css('max-height', window.innerHeight-180 + 'px');
     });
-    
+
     $('#toc').css('max-height', window.innerHeight-180 + 'px');
     scrollFix();
   });
