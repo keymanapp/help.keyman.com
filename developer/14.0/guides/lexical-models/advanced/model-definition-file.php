@@ -87,4 +87,5 @@ supports the following customizations: </p>
 </dl>
 
 <p> To see all of the things possible in a model definition file, see the
-<a href="https://github.com/keymanapp/keyman/blob/0e9877cc50b70584aafe4ff5e98aea260a743d4c/developer/js/source/lexical-model-compiler/lexical-model.ts#L12-L42"><code>LexicalModelSource</code> interface</a>.
+<a href="https://github.com/keymanapp/keyman/blob/stable-14.0/developer/js/source/lexical-model-compiler/lexical-model.ts#L95-L146">
+  <code>LexicalModelSource</code> interface</a>.
