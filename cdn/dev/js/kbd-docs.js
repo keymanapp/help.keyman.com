@@ -107,17 +107,17 @@ function loaded(){
             if(!fontSource) continue;
             var fontType = fontSource.match(/\.woff$/i) ? 'woff' : 'truetype';
             // Add the font information
-            $('head').append($(`
-<style>
-@font-face {
-	font-family:"${fontFamily}";
-	font-style:normal;
-	font-weight:normal;
-	src:url('https://s.keyman.com/font/deploy/${fontSource}') format('${fontType}');
-}
-.kmw-key-text { font-family: "${fontFamily}"; }
-</style>
-`));
+            $('head').append($(
+"<style>\n"+
+"@font-face {\n"+
+"	font-family:\""+fontFamily+"\";\n"+
+"	font-style:normal;\n"+
+"	font-weight:normal;\n"+
+"	src:url('https://s.keyman.com/font/deploy/"+fontSource+"') format('"+fontType+"');\n"+
+"}\n"+
+".kmw-key-text { font-family: \""+fontFamily+"\"; }\n"+
+"</style>"
+));
             return;
           }
         }
