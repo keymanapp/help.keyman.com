@@ -27,6 +27,6 @@
 
 <p>The optional <code class='language-markup'>&lt;Strings></code> section of the file can be included to customise the text in the bootstrap installer. The default
   strings are found in the file:
-  <a href="https://github.com/keymanapp/keyman/blob/stable-14.0/windows/src/desktop/setup/locale/en/strings.xml">strings.xml</a>
-  and can be localized at <a href="https://translate.keyman.com">translate.keyman.com</a></p>
+  <a href="https://github.com/keymanapp/keyman/blob/stable-14.0/windows/src/desktop/setup/locale/en/strings.xml">strings.xml</a>.
+  You can add your own strings for a given package which are used when compiling as a bundled installer.</p>
 
