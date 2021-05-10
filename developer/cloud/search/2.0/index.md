@@ -130,6 +130,7 @@ These examples were run from the live data and can be re-run at any time.
                 "type": "language",
                 "weight": 210,
                 "downloads": 37,
+                "totalDownloads": 4123,
                 "finalWeight": 973.893093542541,
                 "tag": "km"
             }
