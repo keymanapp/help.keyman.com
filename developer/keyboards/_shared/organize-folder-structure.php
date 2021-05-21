@@ -36,7 +36,11 @@
     <dd>details on major changes to the keyboards (repository commits covers detail)</dd>
 
     <dt><code>LICENSE.md</code></dt>
-    <dd>the open source license for the keyboard</dd>
+    <dd>the open source license for the keyboard. This file should include a copyright message, including a
+        date or range of dates encompassing the timeframe in which the keyboard was first created until the
+        most recent version, e.g. <code>Copyright (C) 2016-2021 K Author</code>. You may choose to add copyright
+        messages to other files, but if you do, you may wish to omit the date range in order to reduce
+        unnecessary maintenance work when changes to the keyboard are required.</dd>
 
     <dt><code>&lt;keyboard&gt;.keyboard_info</code></dt>
     <dd>a <a href="/developer/cloud/keyboard_info">metadata file</a> detailing the keyboard's origin, version,
