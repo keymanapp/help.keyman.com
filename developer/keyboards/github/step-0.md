@@ -20,12 +20,17 @@ This restriction removes a lot of complexities with dealing with legacy and cros
 which use the base name of the keyboard as a Javascript symbol.
 
 While you may see some existing keyboards which are not named according to this convention, new keyboards must follow the ASCII naming convention.
-This applies to the filename of the keyboard; the descriptive name (`**store(&name)**`) is a Unicode string, and therefore can contain any Unicode character.
+This applies to the filename of the keyboard; the descriptive name (`store(&name)`) is a Unicode string, and therefore can contain any Unicode character.
 
 The keyboard name is used as a key for automatic updates on all platforms.
 Do not include the version of the keyboard in the filename,
 unless you want to make the new version a completely separate deployment because it has changed so substantially that users would not want to update to it automatically.
 In this situation, a new keyboard name is probably a wiser choice.
+
+Do not include the word "keyboard" in the name of the keyboard (neither the keyboard base name nor the descriptive name). 
+This would be redundant (since everything in this repository is a keyboard) and would look funny if the name is displayed with the word "keyboard" following it.
+Similarly, do not include the word "unicode" in the name of the keyboard. 
+It is expected that all keyboards will produce Unicode output, so it's not necessary to include that in the name.
 
 The keyboard name must also be unique in the repository.
 For less widely used languages, you may be able to get away with the name of the language,
