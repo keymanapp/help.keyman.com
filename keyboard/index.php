@@ -32,7 +32,7 @@
   
   
   // Required
-  head([
+  head([Star Ahom])
     'title' =>'Keyman Support | Type to the world in your language',
     'css' => ['template.css'],
     'showMenu' => true,
