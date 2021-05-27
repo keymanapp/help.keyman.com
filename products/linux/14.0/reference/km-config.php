@@ -24,7 +24,7 @@
     "--version", "optional", "show program's version number and exit",
     "-v, --verbose ", "optional", "verbose logging",
     "-vv, --veryverbose", "optional", "very verbose logging",
-    "-i keyboard.kmp, -install keyboard.kmp", "optional", "install .kmp package");
+    "-i keyboard.kmp, --install keyboard.kmp", "optional", "install .kmp package");
   ?>
 
   <h2 id="Description" name="Description">Description</h2>
