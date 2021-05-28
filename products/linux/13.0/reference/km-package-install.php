@@ -40,7 +40,7 @@ head([
     is cached for one week.
   </p>
   <p>
-    The list is the full list including keyboards that do not work on Linux, so they won't ncecessarily install.
+    The list is the full list including keyboards that do not work on Linux, so they won't necessarily install.
   </p>
 
   <h2 id="See_also" name="See_also">See also</h2>
