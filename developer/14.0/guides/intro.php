@@ -16,6 +16,7 @@ input method solution that runs on Windows, macOS, the web, mobile web, iOS and 
 <p>There are two core applications included in Keyman Developer: the Keyman Developer IDE (formerly called TIKE), and KMComp,
 the command line compiler.</p>
 
+<p><a href='https://youtu.be/kwhgx_eX4Es'>Watch a video</a> that highlights some of the Keyman Developer features.</p>
 <h2><a name="id471195" id="id471195"></a>Keyman Developer IDE</h2>
 
 <p>The Keyman Developer IDE is a complete environment for designing, developing, testing, and packaging your keyboards for
