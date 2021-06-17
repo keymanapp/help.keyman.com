@@ -44,8 +44,16 @@ obj_spec("initOptions",
     "<li>If <code>undefined</code>, KeymanWeb will default to 'manual' for mobile devices and 'auto' for other devices.</li>".
     "<li>If <code>'auto'</code>, KeymanWeb will automatically attach to every non-disabled control, even those added after ".
     "page initialization.</li>".
-    "<li>If <code>'manual'</code>, KeymanWeb must be instructed to attached manually to each control it should handle input for.</li></ul>"
-);
+    "<li>If <code>'manual'</code>, KeymanWeb must be instructed to attached manually to each control it should handle input for.</li></ul>",
+  "setActiveOnRegister", "string optional", "Specified whether KeymanWeb will set the newly registered keyboard as active. ".
+    "Default value: <code>'true'</code>.<ul>".
+    "<li>If <code>'true'</code>, KeymanWeb will automatically activate a keyboard when registered.</li>".
+    "<li>If <code>'false'</code>, KeymanWeb will not activate a keyboard when registered.</li></ul>",
+  "useAlerts", "string optional", "Specified whether KeymanWeb will display alerts. ".
+    "Default value: <code>'true'</code>.<ul>".
+    "<li>If <code>'true'</code>, KeymanWeb will display alerts.</li>".
+    "<li>If <code>'false'</code>, KeymanWeb will not display alerts.</li></ul>"
+  );
 
 ?>
 
