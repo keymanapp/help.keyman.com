@@ -228,7 +228,7 @@ already be compiled.
 [KMConvert](../context/kmconvert) generates keyboards and models from templates,
 and converts keyboard layouts between different formats.
 
-The [New Project dialog](new-project) in Keyman Developer provides a graphical
+The [New Project dialog](../context/new-project) in Keyman Developer provides a graphical
 version of the functionality in KMConvert.
 
 * [KMConvert reference](../context/kmconvert)
