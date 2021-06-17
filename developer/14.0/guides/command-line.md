@@ -70,7 +70,7 @@ On Linux, we'd use the following
 command:
 
 ```shell
-km-package-install build/sample.kmp
+km-package-install -f build/sample.kmp
 ```
 
 Now, use your favourite editor to edit the `source/sample.kmn` file, and when
