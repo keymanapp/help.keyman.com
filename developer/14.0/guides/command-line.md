@@ -23,7 +23,7 @@ To build models, you'll also need [node.js](https://nodejs.org/).
 # To build keyboards and packages:
 mkdir kmcomp
 cd kmcomp
-curl https://keyman.com/go/download/kmcomp -o kmcomp.zip
+curl -L https://keyman.com/go/download/kmcomp -o kmcomp.zip
 unzip kmcomp.zip
 # Optionally, add kmcomp to your PATH
 # To build models:
