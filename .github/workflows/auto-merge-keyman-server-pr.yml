@@ -2,7 +2,7 @@
 # Automatically merges pull requests opened by keyman-server
 # The initial use of this action is to upload product help documentation
 # with resources/build/help-keyman-com.sh.
-# That script creates a PR and then this workflow will be 
+# That script creates a PR and then this workflow will be
 # triggered to approve the PR (from github-actions account), and
 # then automerge it.
 #
@@ -21,7 +21,7 @@ jobs:
       with:
         github-token: "${{ secrets.GITHUB_TOKEN }}"
     - name: auto merge PR from keyman-server
-      uses: "pascalgn/automerge-action@7854d3bd607dccdaf0b2c134b699a812c8960213"
+      uses: "pascalgn/automerge-action@01fb84a9d077930bf9d16d1f7fa3fe2ffe45aabe"
       if: github.actor == 'keyman-server'
       env:
         GITHUB_TOKEN: "${{ secrets.AUTOINC_GITHUB_TOKEN }}"
