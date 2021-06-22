@@ -27,7 +27,7 @@ curl -L https://keyman.com/go/download/kmcomp -o kmcomp.zip
 unzip kmcomp.zip
 # Optionally, add kmcomp to your PATH
 # To build models:
-npm install @keymanapp/lexical-model-compiler
+npm install --global @keymanapp/lexical-model-compiler
 ```
 
 ## The five minute quick start
