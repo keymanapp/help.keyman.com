@@ -39,9 +39,9 @@ obj_spec("initOptions",
     "  Default value: <code>[root]/keyboards</code>.",
   "fonts", "string optional", "Folder containing any embedded fonts required for keyboards or the OSK.\n".
     "Default value: <code>[root]</code>.",
-  "attachType", "string optional", "Must be <code>undefined</code>, <code>'auto'</code>, or <code>'manual'</code>. ".
-    "Specifies the default behavior for attaching KeymanWeb to any input elements on the webpage.  <ul>".
-    "<li>If <code>undefined</code>, KeymanWeb will default to 'manual' for mobile devices and 'auto' for other devices.</li>".
+  "attachType", "string optional", "Must be <code>'auto'</code>, or <code>'manual'</code>. ".
+    "Specifies the default behavior for attaching KeymanWeb to any input elements on the webpage. ".
+    "Default value: <code>'manual'</code> for mobile devices and <code>'auto'</code> for other devices.<ul>".
     "<li>If <code>'auto'</code>, KeymanWeb will automatically attach to every non-disabled control, even those added after ".
     "page initialization.</li>".
     "<li>If <code>'manual'</code>, KeymanWeb must be instructed to attached manually to each control it should handle input for.</li></ul>",
@@ -49,10 +49,11 @@ obj_spec("initOptions",
     "Default value: <code>'true'</code>.<ul>".
     "<li>If <code>'true'</code>, KeymanWeb will automatically activate a keyboard when registered.</li>".
     "<li>If <code>'false'</code>, KeymanWeb will not activate a keyboard when registered.</li></ul>",
-  "useAlerts", "string optional", "Specified whether KeymanWeb will display alerts. ".
-    "Default value: <code>'true'</code>.<ul>".
-    "<li>If <code>'true'</code>, KeymanWeb will display alerts.</li>".
-    "<li>If <code>'false'</code>, KeymanWeb will not display alerts.</li></ul>"
+  "useAlerts", "boolean optional", "Specified whether KeymanWeb will display internal alerts. ".
+    "Default value: <code>true</code>.<ul>".
+    "<li>If <code>true</code>, KeymanWeb will display internal alerts.</li>".
+    "<li>If <code>false</code>, KeymanWeb will not display internal alerts. ".
+    "Choose this if you want to customize the alert messages for use on your site.</li></ul>"
   );
 
 ?>
@@ -64,7 +65,7 @@ obj_spec("initOptions",
 
 obj_spec(false, // disables the initial text, allowing a custom lead-in instead.
   "name", "string", "The name of the ui to utilize for non-mobile devices.",
-  "right", "optional boolean", "A Float-UI-only option.  Sets right-alignment of the UI.  Defaults to false."
+  "right", "optional boolean", "A Float-UI-only option.  Sets right-alignment of the UI.  Defaults to <code>false</code>."
 )
 
 ?>
