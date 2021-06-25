@@ -47,7 +47,19 @@ the website or install from local files.
 
 `-i INSTALL`, `--install INSTALL`\
 &nbsp;&nbsp;&nbsp;&nbsp;__optional__\
-&nbsp;&nbsp;&nbsp;&nbsp;download and/or install .kmp package
+&nbsp;&nbsp;&nbsp;&nbsp;download and/or install .kmp package. INSTALL can
+
+`either be`\
+&nbsp;&nbsp;&nbsp;&nbsp;__optional__\
+&nbsp;&nbsp;&nbsp;&nbsp;a downloaded .kmp file, a file:// URL
+
+`pointing to`\
+&nbsp;&nbsp;&nbsp;&nbsp;__optional__\
+&nbsp;&nbsp;&nbsp;&nbsp;a .kmp file, or a keyman:// URL, possibly
+
+`with a`\
+&nbsp;&nbsp;&nbsp;&nbsp;__optional__\
+&nbsp;&nbsp;&nbsp;&nbsp;bcp47=<language> specified.
 
 
 ### See also
