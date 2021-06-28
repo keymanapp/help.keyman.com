@@ -94,6 +94,8 @@ The `initOptions` object may contain the following members:
   Note that this may be overridden on a per-keyboard basis with the registration
   property `displayName`.
 
+  Default value: `LANGUAGE_KEYBOARD`.
+
 ---
 
 If setting `initOptions.ui` with an object value, it should be specified as
