@@ -36,7 +36,7 @@ parameter of the `setKeyboard()` function.
 The following script illustrates the use of `getSpacebarText()`:
 
 ```java
-// don't show anything on the spacebar
+// get the current spacebar text mode
 KMManager.SpacebarText mode = KMManager.getSpacebarText();
 ```
 
