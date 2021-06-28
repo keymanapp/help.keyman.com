@@ -5,9 +5,9 @@
   $pagename = 'Keyman Engine for Web 15.0 Developer Help';
   $pagetitle = 'Keyman Engine for Web 15.0 Development';
   $MainPage = true;
-  
+
   require_once('header.php');
-  
+
 */
 ?>
 
@@ -39,6 +39,11 @@
   <dl>
   <dt><a href='reference'>Reference</a></dt>
   <dd>Keyman Engine for Web 15.0 Developer Reference</dd>
+  </dl>
+
+  <dl>
+  <dt><a href='whats-new'>What's New</a></dt>
+  <dd>What's new in Keyman Engine for Web 15.0</dd>
   </dl>
 
   <dl>
