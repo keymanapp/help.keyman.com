@@ -2,7 +2,7 @@
     require_once('includes/template.php');
     $class = 'KMManager';
     head(['title' => "$class class"]);
-    
+
     // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array for sample
 ?>
 <h1>KMManager class</h1>
@@ -130,6 +130,9 @@
   <dt><code><a href='getMaySendCrashReport'>getMaySendCrashReport()</a></code></dt>
   <dd>returns whether Keyman Engine is allowed to send crash reports over the network to sentry.keyman.com</dd>
 
+  <dt><code><a href='getSpacebarText'>getSpacebarText()</a></code></dt>
+  <dd>returns the current text display pattern for the spacebar</dd>
+
   <dt><code><a href='getVersion.php'>getVersion()</a></code></dt>
   <dd>returns the version number of Keyman Engine</dd>
 
@@ -222,6 +225,9 @@
 
   <dt><code><a href='setShouldCheckKeyboardUpdates.php'>setShouldCheckKeyboardUpdates()</a></code></dt>
   <dd>sets whether Keyman Engine should check for keyboard updates</dd>
+
+  <dt><code><a href='setSpacebarText'>setSpacebarText()</a></code></dt>
+  <dd>sets the current text display pattern for the spacebar</dd>
 
   <dt><code><a href='shouldAllowSetKeyboard.php'>shouldAllowSetKeyboard()</a></code></dt>
   <dd>returns whether Keyman Engine allows setting a keyboard other than the default keyboard</dd>
