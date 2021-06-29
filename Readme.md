@@ -42,6 +42,18 @@ the `test` folder.
 Using a browser to navigate to <http://help.keyman.com.local/test/xyz.php> should display the
 help file.
 
+### Prerequisites on Linux
+
+Install PHP and the mbstring, curl, and xml extensions:
+
+```bash
+sudo apt update
+sudo apt install php php-mbstring php-curl php-xml
+```
+
+**NOTE:** when using Docker these packages are not necessary on the development machine to run the
+site, but to populate the `vendor` folder.
+
 ### Using composer to install dependencies in vendor/ folder
 
 1. Install [Composer](https://getcomposer.org/download/)
@@ -51,24 +63,35 @@ help file.
 
 To run locally with Docker on http://localhost:8055 you can use commands like the following:
 
+**NOTE:** You might have to adjust the base image (`FROM` line in `Dockerfile`) to the installed
+PHP version.
+
 ### On Windows
 
 In help.keyman.com repo root:
 
-    docker build -t keyman-websites .
-    docker run -d -p 8055:80 -v %cd%:/var/www/html/ -e S_KEYMAN_COM=localhost:8054 keyman-websites
+```bash
+docker build -t keyman-websites .
+docker run -d -p 8055:80 -v %cd%:/var/www/html/ -e S_KEYMAN_COM=localhost:8054 keyman-websites
+```
 
 In s.keyman.com repo root:
 
-    docker run -d -p 8054:80 -v %cd%:/var/www/html/ keyman-websites
+```bash
+docker run -d -p 8054:80 -v %cd%:/var/www/html/ keyman-websites
+```
 
 ### On Linux
 
 In help.keyman.com repo root:
 
-    docker build -t keyman-websites .
-    docker run -d -p 8055:80 -v $(pwd):/var/www/html/ -e S_KEYMAN_COM=localhost:8054 keyman-websites
+```bash
+docker build -t keyman-websites .
+docker run -d -p 8055:80 -v $(pwd):/var/www/html/ -e S_KEYMAN_COM=localhost:8054 keyman-websites
+```
 
 In s.keyman.com repo root:
 
-    docker run -d -p 8054:80 -v $(pwd):/var/www/html/ keyman-websites
+```bash
+docker run -d -p 8054:80 -v $(pwd):/var/www/html/ keyman-websites
+```
