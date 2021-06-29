@@ -45,15 +45,6 @@ font:{
 }
 </code></pre>
 
-<h2>Using a loader script</h2>
-
-<p>When Keyman Developer compiles a keyboard, it produces not only a <code>*.js</code> file for the keyboard itself but
-also a keyboard stub loader, which generally uses the same filename suffixed with <code>_load</code>.  The following HTML
-tag would work for the above example, but only if both <code>*.js</code> files are placed in the same directory as the code
-page utilizing them due to limitations imposed by the page-loading process.</p>
-
-<pre><code>&lt;script src='./us-1.0_load.js'&gt;&lt;/script&gt;</code></pre>
-
 <h2>Requested from the CDN by language name</h2>
 
 <p>To obtain the default Keyman keyboard for a given language, call the following function.</p>
