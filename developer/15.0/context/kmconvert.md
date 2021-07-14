@@ -44,7 +44,12 @@ The `-id-author`, `-id-language`, and `-id-uniq` parameters are required.
 : Name of author of the keyboard or model, no default.
 
 `-copyright <data>`
-: Copyright string for the keyboard or model, defaults to `Copyright (C)`
+: Copyright string for the keyboard or model, defaults to `Copyright (C)`,
+  used everywhere except license file.
+
+`--full-copyright <data>`
+: Longer copyright string for the keyboard or model, defaults to
+  `Copyright (C) yyyy`, used in license file.
 
 `-languages <data>`
 : Space-separated list of BCP 47 tags, e.g. `en-US tpi-PG`
