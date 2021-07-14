@@ -1,17 +1,102 @@
 ---
-title: Virtual Keys and Virtual Character Keys
+title: Keys, Virtual Keys and Virtual Character Keys
 ---
 
-With ordinary rules, you can match any key that produces a character.
-However, sometimes you may want to match other keys, for example
-<kbd>Backspace</kbd>, or <kbd>Ctrl</kbd> or <kbd>Alt</kbd> combinations.
-In order to match keys like these you need to use virtual keys.
+A [rule](rules) is made up of three parts:
+
+```keyman
+context + keystroke > output
+```
+
+The *keystroke* part of the rule may contain a Unicode character representing
+the value on the key cap of the base keyboard, a virtual key, a virtual
+character key, or one of the following statements:
+
+[`any()` statement](../reference/any "any() statement")
+:   Matches on an array of characters
+
+[`outs()` statement](../reference/outs "outs() statement")
+:   Outputs an array of characters
+
+Only a single character, statement, virtual character key or virtual key is
+allowed in the keystroke part of the rule.
+
+## Four ways to express a keystroke
+
+The meaning of the _keystroke_ part is affected by the
+[`&mnemoniclayout`](../reference/mnemoniclayout) system store value. If this
+store is not present, or its value is `0`, then the keyboard is said to be
+_positional_. If the store value is `1`, then the keyboard is _mnemonic_.
+
+For hardware keyboards, the keystroke part of a rule can be expressed in four
+different ways:
+
+With a _character code_, in a _positional_ keyboard.
+
+: The key definition references the value on the key cap of a US English
+  hardware keyboard. Caps Lock and Shift are accounted for (see
+  [bug #5460](https://github.com/keymanapp/keyman/issues/5460) for an issue with
+  KeymanWeb).
+
+    ```
+    c matches NCAPS SHIFT C01 (aka NCAPS SHIFT K_A on US keyboard)
+    c also matches CAPS C01.
+    + 'A' >
+    ```
+
+With a _virtual key_, in a _positional_ keyboard.
+
+: The key definition references a key by its exact location on a US English
+  hardware keyboard, or by an ISO9995 code. [More info](#using-virtual-keys)
+
+   ```
+   c matches SHIFT C01 (aka SHIFT K_A on US keyboard)
+   c caps lock is ignored
+   + [SHIFT K_A] >
+
+   c C01 is an alias for K_A
+   + [SHIFT C01] >
+
+   c Explicitly specify Caps Lock with NCAPS and CAPS
+   + [NCAPS SHIFT K_A] >
+   + [CAPS K_A] >
+   ```
+
+With a _character code_, in a _mnemonic_ keyboard.
+
+: This matches the key and modifier state that generates this character on the
+  user's base keyboard, accounting for any modifier that might be used to
+  generate the character, including Caps Lock.
+
+    ```
+    c matches CAPS+D01 or SHIFT+D01 on US English
+    c matches CAPS+C01 or SHIFT+C01 on French AZERTY
+    + 'Q' >
+
+    c matches SHIFT+K_LBRKT (D11) on US English
+    c matches AltGr+E04 on French AZERTY
+    + '{' >
+    ```
+
+With a virtual character key, in a mnemonic keyboard.
+
+: This matches the key that generates this character on the user's base
+  keyboard, along with the specified modifier. [More info](virtual-character-keys)
+
+    ```
+    c matches SHIFT+c on user's base keyboard (i.e. SHIFT B03 on US)
+    + [SHIFT 'c'] >
+
+    c matches SHIFT+key that generates comma, i.e. SHIFT B08 on US
+    c which means '<' on US English but on French (SHIFT B07) means '?'
+    + [SHIFT ','] >
+    ```
+
+## Virtual keys {#using-virtual-keys}
 
 Every key on the keyboard is identified by a virtual key code. Virtual
 keys are identified by square brackets `[ ]` containing a combination of
 zero or more shift-key codes and a virtual key code.
-
-## Using virtual keys {#using-virtual-keys}
 
 Virtual keys are used in the key section of a rule. Virtual keys are not
 valid in the context of a rule, as the context consists solely of
@@ -39,24 +124,23 @@ interchangeably. Most of the following discussion relates to physical
 keyboards.
 
 The key codes refer to the actual key at the given position on a
-standard US-English keyboard. When used with a non US-English keyboard
-driver (selected through Control Panel/Keyboards), differences can
-arise, and this use is not recommended.
+standard US-English keyboard.
 
-The Right <kbd>Alt</kbd> key has traditionally been used on European keyboards as
-an additional modifier state, usually known as <kbd>AltGr</kbd>. The end user of
-Keyman keyboards can select an option to emulate Right <kbd>Alt</kbd> with
-<kbd>Ctrl</kbd>+<kbd>Alt</kbd>, as Right <kbd>Alt</kbd> is not available on many notebook keyboards.
-Thus, it is wise to avoid using <kbd>Ctrl</kbd>+<kbd>Alt</kbd> combinations and
-Right <kbd>Alt</kbd> combinations in the same keyboard.
+The Right <kbd>Alt</kbd> key has traditionally been used on European keyboards
+as an additional modifier state, usually known as <kbd>AltGr</kbd>. The end user
+of Keyman keyboards can select an option to emulate Right <kbd>Alt</kbd> with
+<kbd>Ctrl</kbd>+<kbd>Alt</kbd>, as Right <kbd>Alt</kbd> is not available on some
+notebook keyboards. Thus, it is wise to avoid using
+<kbd>Ctrl</kbd>+<kbd>Alt</kbd> combinations and Right <kbd>Alt</kbd>
+combinations in the same keyboard.
 
-Additionally, it is useful to keep in mind that when this emulation is
-active, it is not possible to recognise the <kbd>Ctrl</kbd>+Right <kbd>Alt</kbd> combination,
-as this is overridden by <kbd>Ctrl</kbd>+<kbd>Alt</kbd> (producing Right <kbd>Alt</kbd>). This can have
-ramifications in keyboards such as German, which makes use of the
-<kbd>Ctrl</kbd>+<kbd>AltGr</kbd> combination.
+Additionally, it is useful to keep in mind that when this emulation is active,
+it is not possible to recognise the <kbd>Ctrl</kbd>+Right <kbd>Alt</kbd>
+combination, as this is overridden by <kbd>Ctrl</kbd>+<kbd>Alt</kbd> (producing
+Right <kbd>Alt</kbd>). This can have ramifications in keyboards such as German,
+which makes use of the <kbd>Ctrl</kbd>+<kbd>AltGr</kbd> combination.
 
-#### Virtual Keys vs Virtual Character Keys
+## Virtual character keys {#virtual-character-keys}
 
 Keyman 6.0 introduced a new feature known as [mnemonic
 layouts](../reference/mnemoniclayout "mnemoniclayout system store"){.link}.

@@ -19,7 +19,7 @@
   <li><a href='variable-stores'>Variable stores</a></li>
   <li><a href='headers'>System stores</a> (headers)</li>
   <li><a href='strings'>Strings</a></li>
-  <li><a href='virtual-keys'>Virtual keys and virtual character keys</a></li>
+  <li><a href='virtual-keys'>Keys, virtual keys and virtual character keys</a></li>
   <li><a href='expansions'>Range expansions</a> (new in 14.0)</li>
   <li><a href='us-english'>US English keyboard layout</a> (reference for positional keyboards)</li>
   <li><a href='unicode'>Unicode and ANSI keyboards</a></li>
