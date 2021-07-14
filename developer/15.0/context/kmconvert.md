@@ -47,7 +47,7 @@ The `-id-author`, `-id-language`, and `-id-uniq` parameters are required.
 : Copyright string for the keyboard or model, defaults to `Copyright (C)`,
   used everywhere except license file.
 
-`--full-copyright <data>`
+`-full-copyright <data>`
 : Longer copyright string for the keyboard or model, defaults to
   `Copyright (C) yyyy`, used in license file.
 
@@ -113,11 +113,11 @@ kmconvert lexical-model -id-author james -id-language tpi-PG -id-uniq tokpisin -
 Create a keyboard for Javanese from a template:
 
 ```shell
-kmconvert template -id sample -author "James Example" -name "My Javanese Keyboard" -copyright "Copyright (C) 2021 James Example" -languages jv-java
+kmconvert template -id sample -author "James Example" -name "My Javanese Keyboard" -copyright "Copyright (C) James Example" -full-copyright "Copyright (C) 2021 James Example" -languages jv-java
 ```
 
 Create a new keyboard based on the Windows German keyboard:
 
 ```shell
-kmconvert import-windows -klid 00000407 -id german_plus -name "German Plus" -copyright "Copyright (C) 2021 James Example" -author "James Example"
+kmconvert import-windows -klid 00000407 -id german_plus -name "German Plus" -copyright "Copyright (C) James Example" -full-copyright "Copyright (C) 2021 James Example" -author "James Example"
 ```
