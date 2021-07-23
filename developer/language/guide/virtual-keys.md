@@ -81,7 +81,7 @@ With a _character code_, in a _mnemonic_ keyboard.
 With a virtual character key, in a mnemonic keyboard.
 
 : This matches the key that generates this character on the user's base
-  keyboard, along with the specified modifier. [More info](virtual-character-keys)
+  keyboard, along with the specified modifier. [More info](#virtual-character-keys)
 
     ```
     c matches SHIFT+c on user's base keyboard (i.e. SHIFT B03 on US)
