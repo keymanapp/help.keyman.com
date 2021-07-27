@@ -9,14 +9,14 @@ Add default or all keyboards for a given language to KeymanWeb.
 ## Syntax
 
 ```js
-keyman.addKeyboardsForLanguage([spec, spec...])
+keyman.addKeyboardsForLanguage(spec[, spec...])
 ```
 
 ### Parameters
 
 `spec`
 
-: Type: Array of `string`
+: Type: `string`
 
   Language name string. Appending `$` to the language name will cause all available keyboards for that language to be loaded rather than the default keyboard.
 

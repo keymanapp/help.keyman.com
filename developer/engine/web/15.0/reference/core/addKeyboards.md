@@ -9,14 +9,14 @@ Adds keyboards to KeymanWeb.
 ## Syntax
 
 ```js
-keyman.addKeyboards([spec, spec...])
+keyman.addKeyboards(spec[, spec...])
 ```
 
 ### Parameters
 
 `spec`
 
-: Type: Array of `string|Object`
+: Type: `string|Object`
 
   keyboard name string or keyboard metadata JSON object
 
