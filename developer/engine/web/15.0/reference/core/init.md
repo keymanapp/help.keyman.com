@@ -80,6 +80,25 @@ The `initOptions` object may contain the following members:
   * If `'manual'`, KeymanWeb must be instructed to attached manually to each
     control it should handle input for.
 
+`setActiveOnRegister`
+
+: `string` <span class="optional">optional</span>
+
+  Specifies whether KeymanWeb will set the newly registered keyboard as active. Default value `true`.
+
+  * If `true`, KeymanWeb will automatically activate a keyboard when registered.
+  * If `false`, KeymanWeb will not activate a keyboard when registered.
+
+`useAlerts`
+
+: `boolean` <span class="optional">optional</span>
+
+  Specifies whether KeymanWeb's alert feedback should be enabled. Default value `true`.
+
+  * If `true`, KeymanWeb will display its default alerts.
+  * If `false`, KeymanWeb will not display its default alerts. Choose this if you wish to disable them or would prefer to customize your site's error feedback.
+  * In either case, any calls your page makes to `keyman.util.alert()` will not be blocked.  This only affects calls built into KeymanWeb itself.
+
 `spacebarText`
 
 : `com.keyman.SpacebarText` <span class="optional">optional</span>
@@ -111,4 +130,3 @@ follows:
 
 : `boolean` <span class="optional">optional</span>
 : A Float-UI-only option. Sets right-alignment of the UI. Defaults to false.
-
