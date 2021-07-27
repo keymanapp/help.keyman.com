@@ -48,6 +48,11 @@
   </dl>
 
   <dl>
+  <dt><a href='addKeyboardsForLanguage'><code>addKeyboardsForLanguage</code> Function</a></dt>
+  <dd>Adds default or all keyboards for a given language to keymanweb.</dd>
+  </dl>
+
+  <dl>
   <dt><a href='alignInputs'><code>alignInputs</code> Function</a></dt>
   <dd>Adjusts touch-mode element overlays, realigning them over their base elements.</dd>
   </dl>
