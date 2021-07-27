@@ -93,10 +93,11 @@ The `initOptions` object may contain the following members:
 
 : `boolean` <span class="optional">optional</span>
 
-  Specifies whether KeymanWeb will display internal alerts. Default value `true`.
+  Specifies whether KeymanWeb's alert feedback should be enabled. Default value `true`.
 
-  * If `true`, KeymanWeb will display internal alerts.
-  * If `false`, KeymanWeb will not display internal alerts. Choose this if you want to customize the alert messages for use on your site.
+  * If `true`, KeymanWeb will display its default alerts.
+  * If `false`, KeymanWeb will not display its default alerts. Choose this if you wish to disable them or would prefer to customize your site's error feedback.
+  * In either case, any calls your page makes to `keyman.util.alert()` will not be blocked.  This only affects calls built into KeymanWeb itself.
 
 `spacebarText`
 
@@ -129,4 +130,3 @@ follows:
 
 : `boolean` <span class="optional">optional</span>
 : A Float-UI-only option. Sets right-alignment of the UI. Defaults to false.
-
