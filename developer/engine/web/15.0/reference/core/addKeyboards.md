@@ -22,7 +22,12 @@ keyman.addKeyboards(spec[, spec...])
 
 ### Return Value
 
-`undefined`
+`Promise`: A [JavaScript Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+fulfilled upon adding keyboards.
+
+The promise is an array containing a combination of the following:
+* successfully registered keyboard objects which define some or all of these [properties](../keyboard_properties)
+* [ErrorStub](../keyboard_registration_errors) objects for keyboards that failed to register
 
 ## Description
 
