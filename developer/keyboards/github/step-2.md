@@ -8,15 +8,16 @@ the GitHub repository requires a specific structure for the keyboard files.
 Each keyboard needs to be in its own folder. 
 That folder must have the same name as the .kpj file in that folder.
 
-Normally, when it is time to submit the keyboard on GitHub, 
-you will drag the folder ("sample1" in the example) to the "release/s" folder on GitHub, 
-so that the result is "release/s/sample1". 
-Or if you want to use the "experimental" section of the repository, 
-you'll aim for the "experimental/s" folder. 
+When it is time to submit the keyboard on GitHub, you will need to place it in a
+specific folder. For the example "sample1", it would need to go into a "release/s" folder,
+so that the result is "release/s/sample1". Or if you want to use the "experimental"
+section of the repository, you'll aim for the "experimental/s" folder. 
+**Note:** Don't do this yet -- you'll drag files to GitHub in the step 3!
 
 But suppose your keyboard folder starts with a letter that doesn't appear? 
-In that case, you'll need to use the folder "s" which contains the "sample1" folder. 
-You can drag the "s" folder to the "release" (or "experimental") folder on GitHub, to get the "release/s/sample1" result.
+In that case, you'll need to create a folder called "s" which contains the "sample1" folder. 
+Then, in step 3, you will drag the "s" folder to the "release" (or "experimental") folder on
+GitHub, to get the "release/s/sample1" (or "experimental/s/sample") result.
 
 Now let's check our keyboard source files.
 
