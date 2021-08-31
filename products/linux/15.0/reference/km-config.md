@@ -8,10 +8,16 @@ Launches Keyman Configuration for installing and showing information about Keyma
 ## Syntax
 
 ```bash
-km-config [-h] [--version] [-v] [-vv] [-i INSTALL]
+km-config [-h] [--version] [-v] [-vv] [-i INSTALL] [INSTALL]
 ```
 
 ### Parameters
+
+`INSTALL` <br>
+download and/or install .kmp package. INSTALL can
+either be a downloaded .kmp file, a file:// URL
+pointing to a .kmp file, or a keyman:// URL, possibly
+with a bcp47=`language` specified.
 
 `-h`, `--help` <br>
 __optional__ <br>
@@ -44,9 +50,9 @@ macOS, iPhone, iPad, Android tablets and phones, and even instantly in your web 
 With the world's most powerful keyboarding engine, intuitive and rapid text input is now
 possible in your language, and for over 99% of the global population's mother tongues!
 
-km-config shows the currently installed Keyman keyboard packages and allows you to
-view information about them. It enables you to download new keyboard packages from
-the website or install from local files.
+km-config shows the currently installed Keyman keyboard packages and allows
+you to view information about them. It enables you to download new keyboard
+packages from the website or install from local files.
 ## See also
 
 - [`km-package-install`](km-package-install)
