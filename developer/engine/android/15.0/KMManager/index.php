@@ -40,6 +40,9 @@
   <dt><code>advanceToNextInputMode()</code></dt>
   <dd>switch to the next system keyboard input mode</dd>
 
+  <dt><code><a href='applyKeyboardHeight'>applyKeyboardHeight()</a></code></dt>
+  <dd>sets the height of keyboard frame</dd>
+
   <dt><code><a href='canAddNewKeyboard.php'>canAddNewKeyboard()</a></code></dt>
   <dd>returns whether adding a new keyboard is enabled in the keyboard picker menu</dd>
 

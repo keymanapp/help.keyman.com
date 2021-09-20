@@ -22,7 +22,7 @@
 </dl>
 
 <h3 id="Returns" name="Returns">Returns</h3>
-<p>Returns the height of the keyboard frame in <i>density-independent pixel (dp)</i>.</p>
+<p>Returns the height of the keyboard frame in <i>density-independent pixels (dp)</i>.</p>
 
 <h2 id="Description" name="Description">Description</h2>
 <p>Use this method to get the height of the keyboard frame.</p>
@@ -33,3 +33,8 @@
 <p>The following script illustrate the use of <code><?php echo $method.'()' ?></code>:</p>
 <pre class="language-javascript line-numbers"><code>    int keyboardHeight = KMManager.getKeyboardHeight(this);
 </code></pre>
+
+<h2 id="See_also" name="See_also">See also</h2>
+<ul>
+ <li><a href="applyKeyboardHeight">applyKeyboardHeight</a></li>
+</ul>
