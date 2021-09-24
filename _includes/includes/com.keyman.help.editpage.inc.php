@@ -3,10 +3,24 @@
 
   function getPageUrlForEditLink($self, $id, $file) {
     $base = "https://github.com/keymanapp/help.keyman.com/edit/master";
+    $app =  "https://github.com/keymanapp/keyman/edit/master";
+
     if($self == '/knowledge-base/index.php' && !empty($id)) {
       // Knowledge Base Article
       require_once('includes/com.keyman.help.kb.inc.php');
       return $base."/knowledge-base/".\com\keyman\help\kb\filename_from_id($id);
+    }
+    else if(preg_match('/^products\/android\/(\d+\.\d+)\/(.*)\.md$/', $file, $matches) && version_compare($matches[1], '14.0', '>=')) {
+      return "$app/android/help/{$matches[2]}.md";
+    }
+    else if(preg_match('/^products\/iphone-and-ipad\/(\d+\.\d+)\/(.*)\.md$/', $file, $matches) && version_compare($matches[1], '14.0', '>=')) {
+      return "$app/ios/help/{$matches[2]}.md";
+    }
+    else if(preg_match('/^products\/linux\/(\d+\.\d+)\/(.*)\.md$/', $file, $matches) && version_compare($matches[1], '14.0', '>=')) {
+      return "$app/linux/help/{$matches[2]}.md";
+    }
+    else if(preg_match('/^products\/mac\/(\d+\.\d+)\/(.*)\.md$/', $file, $matches) && version_compare($matches[1], '14.0', '>=')) {
+      return "$app/mac/help/{$matches[2]}.md";
     }
     else if($self == '/_includes/md/mdhost.php') {
       // Markdown file
@@ -46,7 +60,7 @@
       } else {
         $path = "index";
       }
-      return "https://github.com/keymanapp/keyman/edit/master/windows/src/desktop/help/$path.xml";
+      return "$app/windows/src/desktop/help/$path.xml";
     }
     else {
       // Legacy PHP file
