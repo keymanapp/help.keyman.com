@@ -37,7 +37,7 @@ string properties:
 : `string`, version of the keyboard (should be dotted decimal format), optional
 
 * `KMBM`
-: `number`, bitmask denoting modifiers used in the keyboard
+: `number`, bitmask denoting modifiers used in the keyboard, if not present defaults to 0x0070, optional
 
 * `KVKL`
 : `object`, touch layout definition, optional.
@@ -49,7 +49,7 @@ string properties:
 : `string[]`, array of all variable store names found in the keyboard (15.0 and later), optional
 
 * `KS`
-: `number`, `1` means Unicode characters U+10000-U+10FFFF are used in the keyboard, optional
+: `number`, `1` means Unicode characters U+10000-U+10FFFF, including the Supplementary Multilingual Plane (SMP), are used in the keyboard, optional
 
 * `KVKD`
 : `object`, Virtual key dictionary listing custom touch keys used in the keyboard, optional
