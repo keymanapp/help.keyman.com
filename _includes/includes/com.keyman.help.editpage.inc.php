@@ -5,30 +5,32 @@
     $base = "https://github.com/keymanapp/help.keyman.com/edit/master";
     $app =  "https://github.com/keymanapp/keyman/edit/master";
 
+    $map = [
+      'android' => 'android/help/',
+      'iphone-and-ipad' => 'ios/help/',
+      'linux' => 'linux/help/',
+      'mac' => 'mac/help/',
+      'windows' => 'windows/src/desktop/help/'
+    ];
+    $maps = join('|', array_keys($map));
+
     if($self == '/knowledge-base/index.php' && !empty($id)) {
       // Knowledge Base Article
       require_once('includes/com.keyman.help.kb.inc.php');
       return $base."/knowledge-base/".\com\keyman\help\kb\filename_from_id($id);
     }
-    else if(preg_match('/^products\/android\/(\d+\.\d+)\/(.*)\.md$/', $file, $matches) && version_compare($matches[1], '14.0', '>=')) {
-      return "$app/android/help/{$matches[2]}.md";
-    }
-    else if(preg_match('/^products\/iphone-and-ipad\/(\d+\.\d+)\/(.*)\.md$/', $file, $matches) && version_compare($matches[1], '14.0', '>=')) {
-      return "$app/ios/help/{$matches[2]}.md";
-    }
-    else if(preg_match('/^products\/linux\/(\d+\.\d+)\/(.*)\.md$/', $file, $matches) && version_compare($matches[1], '14.0', '>=')) {
-      return "$app/linux/help/{$matches[2]}.md";
-    }
-    else if(preg_match('/^products\/mac\/(\d+\.\d+)\/(.*)\.md$/', $file, $matches) && version_compare($matches[1], '14.0', '>=')) {
-      return "$app/mac/help/{$matches[2]}.md";
+    else if(preg_match('/^products\/('.$maps.')\/(\d+\.\d+)\/(.*)\.md$/', $file, $matches) && version_compare($matches[2], '14.0', '>=')) {
+      // Product help, version 14.0 and later
+      return "$app/{$map[$matches[1]]}{$matches[3]}.md";
     }
     else if($self == '/_includes/md/mdhost.php') {
       // Markdown file
       return $base."/".$file;
     }
-    else if(preg_match('/^\/products\/desktop\/(\d+\.\d+)\/docs\/(about|advanced|basic|common|context|start|troubleshooting|langsetup|index)(_(.+))?\.php$/',
+    else if(preg_match('/^\/products\/(?:desktop|windows)\/(\d+\.\d+)\/docs\/(about|advanced|basic|common|context|start|troubleshooting|langsetup|index)(_(.+))?\.php$/',
       $self, $matches)) {
-      // Keyman Desktop help - work back to source xml file name, with a few tricks.
+      // TODO: disable editing versions of help earlier than current-version
+      // Keyman Desktop 13.0 and earlier help - work back to source xml file name, with a few tricks.
 
       if(!empty($matches[4])) {
         $path = $matches[2] . "/" . $matches[4];
