@@ -20,7 +20,7 @@ After you download Keyman, to install the program:
 3.  You will be asked to allow the installer to access your system.
     Click Yes to continue.
 
-    ![](../desktop_images/setup-click1.png)
+    ![](../../desktop_images/setup-click1.png)
 
 4.  The installer may need to download additional components from keyman.com
     in order to complete the installation. If prompted by your firewall
@@ -29,7 +29,7 @@ After you download Keyman, to install the program:
 5.  Click Install Keyman to finish installing. Keyman may download additional
     files during the installation process.
 
-    ![](../desktop_images/setup-click2.png)
+    ![](../../desktop_images/setup-click2.png)
 
     **Note:** If you downloaded Keyman together with a keyboard, the keyboard
     that will be installed will be shown on the left, as in the image above.
@@ -40,7 +40,7 @@ After you download Keyman, to install the program:
 6.  At the end of the installation, click Start Keyman to begin using
     Keyman or click Configuration to change Keyman settings first.
 
-    ![](../desktop_images/setup-click3.png)
+    ![](../../desktop_images/setup-click3.png)
 
 When you finish your installation of Keyman, you can delete or move the
 installation's executable file. It doesn't need to remain on your
@@ -49,4 +49,4 @@ computer for Keyman to work.
 ## Related Topics
 
 -   [How To - Download and Install a Keyman Keyboard](download-and-install-keyboard)
--   [Software Task - Uninstall Keyman](../basic/uninstall)
+-   [Software Task - Uninstall Keyman](../../basic/uninstall)
