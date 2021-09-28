@@ -40,7 +40,7 @@ determine which group to use on the basis of the active application.</p>
 
 <p>Keyboards which do not contain a <code>begin Unicode</code> rule are supported only on Keyman Desktop. All other platforms will only work with Unicode.</p>
 
-<p>The right hand side of the <code>begin</code> rule can have only a <a href='use.php'><code>use()</code> statement</a>. The <code>begin</code> rule is the
+<p>The right hand side of the <code>begin</code> rule can have only a <a href='use'><code>use()</code> statement</a>. The <code>begin</code> rule is the
 only rule that is not part of a group, and is required for every keyboard.</p>
 
 <h2>Examples</h2>
@@ -49,7 +49,7 @@ only rule that is not part of a group, and is required for every keyboard.</p>
 
 <pre><code>begin Unicode &gt; use(main)
 
-group(main) using keys      
+group(main) using keys
 </code></pre>
 
 <h2>Platforms</h2>
