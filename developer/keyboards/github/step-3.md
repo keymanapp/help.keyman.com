@@ -77,7 +77,7 @@ Then click on the green "Commit changes" button.
 ![](../../../cdn/dev/img/developer/keyboards/github-commit-message.png)
 
 Now GitHub shows you the branch (to which you've just added files) and offers you several options.
-The one you want is the "Pull request" link.
+The one you want is the "Contribute" button, followed by the "Open pull request" button.
 
 ![](../../../cdn/dev/img/developer/keyboards/github-pull-request-start.png)
 
