@@ -136,7 +136,7 @@
   <dt><code><a href='getVersion.php'>getVersion()</a></code></dt>
   <dd>returns the version number of Keyman Engine</dd>
 
-  <dt><code><a href='hasConnection.php'>hasConnection()</a></code></dt>
+  <dt><code><a href='hasConnection'>hasConnection()</a></code></dt>
   <dd>returns whether the device has active network connection</dd>
 
   <dt><code><a href='hideSystemKeyboard.php'>hideSystemKeyboard()</a></code></dt>
