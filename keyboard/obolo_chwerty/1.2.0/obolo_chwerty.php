@@ -46,7 +46,7 @@ The position of your BACKSLASH key depends on type of keyboard you are using.
 <p>The three keyboard types and the respective position of the BACKSLASH keys are shown below.
 <p>You can tell where your BACKSLASH key is by looking at the shape of your ENTER/RETURN key:
 <p>
- <img src="chwertyeftkey1.png"
+ <img src="chwertyftkey1.png"
 alt="ANSI Keyboard">
 <p>
 <img src="chwertyftkey2.png"
