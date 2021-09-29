@@ -208,7 +208,7 @@
   <dt><code><a href='setHelpBubbleEnabled.php'>setHelpBubbleEnabled()</a></code></dt>
   <dd>enables or disables the help bubble</dd>
 
-  <dt><code><a href='setKeyboard.php'>setKeyboard()</a></code></dt>
+  <dt><code><a href='setKeyboard'>setKeyboard()</a></code></dt>
   <dd>sets the keyboard to be used</dd>
 
   <dt><code><a href='setKeyboardPickerFont.php'>setKeyboardPickerFont()</a></code></dt>

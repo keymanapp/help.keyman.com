@@ -151,14 +151,6 @@ package.</p>
     dialog. Including a splash image makes your package look more professional and polished, so a splash image is recommended!
   </dd>
 
-  <dt>User Interface Translation Files</dt>
-
-  <dd>
-    You can include user interface translation files in your package – these will be automatically available once you install the
-    package. The user interface files are called <strong>locale-xxx.xml</strong>, where xxx is the BCP 47 code for the language. The
-    basic English <strong>locale.xml</strong> file is available in <strong>[Program Files (x86)]\Keyman\Keyman Desktop 10.0\xml</strong>.
-    Information on the locale.xml file format is available <a class="link" href="/products/desktop/current-version/docs/advanced_locale_edit">here</a>.
-  </dd>
 </dl>
 
 <p><a href="step-3.php" title="Step 3: Creating a package and adding files">Step 3: Creating a package and adding files</a></p>

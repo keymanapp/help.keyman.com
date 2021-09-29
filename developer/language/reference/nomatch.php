@@ -19,12 +19,12 @@
 
 <h2 id="Description" name="Description">Description</h2>
 
-<p><code>nomatch</code> is similar to the <a href='match.php'><code>match</code> rule</a>, but instead of the rule being fired 
-when a rule was matched, it will be used when no rule is matched in the group. A <code>nomatch</code> rule can 
-include <a href='use.php'><code>use()</code> statements</a>, <a href='return.php'><code>return</code> statements</a>, 
+<p><code>nomatch</code> is similar to the <a href='match'><code>match</code> rule</a>, but instead of the rule being fired
+when a rule was matched, it will be used when no rule is matched in the group. A <code>nomatch</code> rule can
+include <a href='use'><code>use()</code> statements</a>, <a href='return.php'><code>return</code> statements</a>,
 <a href='beep.php'><code>beep</code> statements</a> and characters.</p>
 
-<p>Caveat: <code>nomatch</code> will not be fired in a <code>using keys</code> group if the current keystroke does not produce a character 
+<p>Caveat: <code>nomatch</code> will not be fired in a <code>using keys</code> group if the current keystroke does not produce a character
 in normal use (for example, modified keys, function keys). This is by design, and is intended to ensure that function keys,
 and modified keys such as Ctrl+X, were passed through to the underlying application.</p>
 
@@ -58,7 +58,7 @@ group(main) using keys
 </table>
 
 <h2>Version history</h2>
-    
+
 <p>The <code>nomatch</code> rule was introduced in Keyman 3.0.</p>
 
 <h2 id="See_also" name="See_also">See also</h2>

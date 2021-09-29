@@ -23,4 +23,4 @@ returns("Array", "An array of specifications for the currently-installed keyboar
 <h2 id="Description" name="Description">Description</h2>
 
 <p>See <a href="getKeyboard.php"><?="keyman.getKeyboard()"?></a> for detail on the returned keyboard specification objects.</p>
-<p>See also <a href="addKeyboards.php"><?="keyman.addKeyboards()"?></a>.</p>
+<p>See also <a href="addKeyboards"><?="keyman.addKeyboards()"?></a>.</p>

@@ -76,25 +76,25 @@ yes | ./sdkmanager.bat --licenses
 <p>When your keyboard is ready, you should have a compiled keyboard package file. The example below shows the
     Tamil 99 Basic touch layout.</p>
 <p><a class="asset-img-link" style="display: inline;"
-      href="<?php echo cdn("img/engine/android/15.0/guides/in-app/touch-layout.png"); ?>"><img
+      href="<?php echo cdn("img/engine/android/14.0/guides/in-app/touch-layout.png"); ?>"><img
       class="asset asset-image at-xid-6a00d83432368053ef01b7c759d462970b image-full img-responsive"
       title="Keyman-developer"
-      src="<?php echo cdn("img/engine/android/15.0/guides/in-app/touch-layout-800wi.png"); ?>"
+      src="<?php echo cdn("img/engine/android/14.0/guides/in-app/touch-layout-800wi.png"); ?>"
       alt="Keyman-developer" border="0"/></a></p>
 <p>From the package editor, open the containing folder for the keyboard package to find the .kmp file to copy over; its name will be based on
     your source keyboard name. If your keyboard project settings is configured to output to <strong>$PROJECTPATH\build</strong>,
   you may need to navigate up a folder and into the <strong>build</strong> folder.</p>
 <p><a class="asset-img-link" style="display: inline;"
-      href="<?php echo cdn("img/engine/android/15.0/guides/in-app/open-containing-folder.png"); ?>"><img
+      href="<?php echo cdn("img/engine/android/14.0/guides/in-app/open-containing-folder.png"); ?>"><img
       class="asset  asset-image at-xid-6a00d83432368053ef01bb07fd4d71970d image-full img-responsive"
       title="Keyman-developer-open-containing-folder"
-      src="<?php echo cdn("img/engine/android/15.0/guides/in-app/open-containing-folder-800wi.png"); ?>"
+      src="<?php echo cdn("img/engine/android/14.0/guides/in-app/open-containing-folder-800wi.png"); ?>"
       alt="Keyman-developer-open-containing-folder" border="0"/></a></p>
 <p><a class="asset-img-link" style="display: inline;"
-      href="<?php echo cdn("img/engine/android/15.0/guides/in-app/compiled-keyboard-file.png"); ?>"><img
+      href="<?php echo cdn("img/engine/android/14.0/guides/in-app/compiled-keyboard-file.png"); ?>"><img
       class="asset  asset-image at-xid-6a00d83432368053ef01b8d0e2f3e2970c image-full img-responsive"
       title="Compiled-keyboard-file"
-      src="<?php echo cdn("img/engine/android/15.0/guides/in-app/compiled-keyboard-file-800wi.png"); ?>"
+      src="<?php echo cdn("img/engine/android/14.0/guides/in-app/compiled-keyboard-file-800wi.png"); ?>"
       alt="Compiled-keyboard-file" border="0"/></a></p>
 
 <h3>5. Add your keyboard package to the project</h3>
@@ -102,18 +102,18 @@ yes | ./sdkmanager.bat --licenses
     <strong>KMSample1\app\src\main\assets\</strong> folder. If you have an associated dictionary, then copy that to the
     same <strong>assets</strong> folder. This example uses <strong>example.ta.wordlist.model.kmp</strong>.</p>
 <p><a class="asset-img-link" style="display: inline;"
-      href="<?php echo cdn("img/engine/android/15.0/guides/in-app/copy-keyboard-file.png"); ?>"><img
+      href="<?php echo cdn("img/engine/android/14.0/guides/in-app/copy-keyboard-file.png"); ?>"><img
       class="asset  asset-image at-xid-6a00d83432368053ef01b8d0e3c836970c image-full img-responsive"
       title="Copy-keyboard-file"
-      src="<?php echo cdn("img/engine/android/15.0/guides/in-app/copy-keyboard-file-800wi.png"); ?>"
+      src="<?php echo cdn("img/engine/android/14.0/guides/in-app/copy-keyboard-file-800wi.png"); ?>"
       alt="Copy-keyboard-file" border="0"/></a></p>
 <p>When you switch back into Android Studio, you should see the assets folder
     with your keyboard and dictionary files:</p>
 <p><a class="asset-img-link" style="display: inline;"
-      href="<?php echo cdn("img/engine/android/15.0/guides/in-app/android-studio-assets.png"); ?>"><img
+      href="<?php echo cdn("img/engine/android/14.0/guides/in-app/android-studio-assets.png"); ?>"><img
       class="asset  asset-image at-xid-6a00d83432368053ef01b7c75abaa9970b img-responsive"
       title="Android-studio-assets"
-      src="<?php echo cdn("img/engine/android/15.0/guides/in-app/android-studio-assets-800wi.png"); ?>"
+      src="<?php echo cdn("img/engine/android/14.0/guides/in-app/android-studio-assets-800wi.png"); ?>"
       alt="Android-studio-assets" border="0"/></a></p>
 <p>Next, edit <code>MainActivity.onCreate()</code> to add the keyboard (tamil99m) with <code>KMManager</code>.
     If your keyboard package is not using a custom font, you can set KMKey_Font to the default font:</p>
@@ -147,10 +147,10 @@ yes | ./sdkmanager.bat --licenses
 </code></pre>
 
 <p><a class="asset-img-link" style="display: inline;"
-      href="<?php echo cdn("img/engine/android/15.0/guides/in-app/android-studio-adding-keyboard.png"); ?>"><img
+      href="<?php echo cdn("img/engine/android/14.0/guides/in-app/android-studio-adding-keyboard.png"); ?>"><img
       class="asset  asset-image at-xid-6a00d83432368053ef01bb07fe335f970d image-full img-responsive"
       title="Android-studio-adding-keyboard"
-      src="<?php echo cdn("img/engine/android/15.0/guides/in-app/android-studio-adding-keyboard-800wi.png"); ?>"
+      src="<?php echo cdn("img/engine/android/14.0/guides/in-app/android-studio-adding-keyboard-800wi.png"); ?>"
       alt="Android-studio-adding-keyboard" border="0"/></a></p>
 
 <h3>6. Build and run the app</h3>
@@ -158,19 +158,19 @@ yes | ./sdkmanager.bat --licenses
     or connect an Android device via USB to your computer to test. In either case, click the green Run button to start
     the app. The steps below show how to create a new Virtual Device</p>
 <p><a class="asset-img-link" style="display: inline;"
-      href="<?php echo cdn("img/engine/android/15.0/guides/in-app/android-studio-starting-debug.png"); ?>"><img
+      href="<?php echo cdn("img/engine/android/14.0/guides/in-app/android-studio-starting-debug.png"); ?>"><img
       class="asset  asset-image at-xid-6a00d83432368053ef01b8d0e2f402970c img-responsive"
       title="Android-studio-starting-debug"
-      src="<?php echo cdn("img/engine/android/15.0/guides/in-app/android-studio-starting-debug-800wi.png"); ?>"
+      src="<?php echo cdn("img/engine/android/14.0/guides/in-app/android-studio-starting-debug-800wi.png"); ?>"
       alt="Android-studio-starting-debug" border="0"/></a></p>
 <p>Click the <strong>[Create Virtual Device]</strong> button to add a new virtual device, and follow the prompts. Any recent emulated
     device should work fine. You will be prompted to download additional resources for the emulator when this runs.
 </p>
 <p><a class="asset-img-link" style="display: inline;"
-      href="<?php echo cdn("img/engine/android/15.0/guides/in-app/android-emulator-tamil.png"); ?>"><img
+      href="<?php echo cdn("img/engine/android/14.0/guides/in-app/android-emulator-tamil.png"); ?>"><img
       class="asset  asset-image at-xid-6a00d83432368053ef01b7c75abb95970b image-full img-responsive"
       title="Android-emulator-tamil"
-      src="<?php echo cdn("img/engine/android/15.0/guides/in-app/android-emulator-tamil-800wi.png"); ?>"
+      src="<?php echo cdn("img/engine/android/14.0/guides/in-app/android-emulator-tamil-800wi.png"); ?>"
       alt="Android-emulator-tamil" border="0"/></a></p>
 <p>And there you have it: your first Keyman Engine for Android app!</p>
 

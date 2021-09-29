@@ -22,7 +22,7 @@ group(<var>groupName</var>) using keys
 
 <dl>
   <dt><code>groupName</code></dt>
-  <dd>The unique name of the group, which can be referenced by <a href='use.php'><code>use()</code> statements</a>.</dd>
+  <dd>The unique name of the group, which can be referenced by <a href='use'><code>use()</code> statements</a>.</dd>
 </dl>
 
 <p>The <code>group()</code> statement tells Keyman to start a new set of rules. Keyman supports two sorts of groups: key processing groups, and context processing
@@ -30,7 +30,7 @@ groups. Key processing groups can include context checking, but context processi
 first the group specified in the <a href='begin.php'><code>begin</code> statement</a>, and move from there onto other groups.</p>
 
 <p>To tell Keyman that the group should include key processing, you should include the <code>using keys</code> section of the statement; if that is
-left out, the group checks the context only. The keystroke will remain the same during processing; you can have many groups that each use <code>using keys</code>, 
+left out, the group checks the context only. The keystroke will remain the same during processing; you can have many groups that each use <code>using keys</code>,
 and the keystroke will be the same for all of them. The key section of a rule (including the <code>+</code> sign) is not valid for context processing groups.</p>
 
 <h2 id="Examples">Examples</h2>

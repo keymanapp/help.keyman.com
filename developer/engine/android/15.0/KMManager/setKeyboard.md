@@ -18,7 +18,7 @@ KMManager.setKeyboard(Context context, Keyboard keyboardInfo)
 : The context.
 
 `keyboardInfo`
-: [Keyboard](../Keyboard) type of the keyboard information.
+: `Keyboard` type of the keyboard information. <!-- TODO: add Keyboard type documentation -->
 
 ### Returns
 

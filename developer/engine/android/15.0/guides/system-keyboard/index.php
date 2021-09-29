@@ -25,9 +25,9 @@ head([
     app should run and you'll be able to configure your device to use your app as the system keyboard.</p>
 
 <p><a class="asset-img-link" style="display: inline;"
-    href="<?php echo cdn("img/engine/android/15.0/guides/system-keyboard/emulator-800wi.png"); ?>"><img
+    href="<?php echo cdn("img/engine/android/14.0/guides/system-keyboard/emulator-800wi.png"); ?>"><img
     class="asset  asset-image at-xid-6a00d83432368053ef01b8d0e9c7c0970c-800wi image-full img-responsive"
-    title="Emulator" src="<?php echo cdn("img/engine/android/15.0/guides/system-keyboard/emulator-800wi.png"); ?>"
+    title="Emulator" src="<?php echo cdn("img/engine/android/14.0/guides/system-keyboard/emulator-800wi.png"); ?>"
     alt="Emulator" border="0"/></a></p>
 
 <h3>3. Extending the app</h3>
@@ -57,9 +57,9 @@ head([
     configuration steps that your users will need to undertake in order to start using your keyboard.</p>
 
 <p><a class="asset-img-link" style="display: inline;"
-    href="<?php echo cdn("img/engine/android/15.0/guides/system-keyboard/main-activity-layout-800wi.png"); ?>"><img
+    href="<?php echo cdn("img/engine/android/14.0/guides/system-keyboard/main-activity-layout-800wi.png"); ?>"><img
     class="asset  asset-image at-xid-6a00d83432368053ef01b8d0e9c8a6970c image-full img-responsive"
-    title="MainActivityLayout" src="<?php echo cdn("img/engine/android/15.0/guides/system-keyboard/main-activity-layout-800wi.png"); ?>"
+    title="MainActivityLayout" src="<?php echo cdn("img/engine/android/14.0/guides/system-keyboard/main-activity-layout-800wi.png"); ?>"
     alt="MainActivityLayout" border="0"/></a></p>
 
 <p>You will probably want to make that a lot prettier, and include more detailed instructions!</p>

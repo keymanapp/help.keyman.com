@@ -39,5 +39,5 @@ obj_spec('keyboard',
   );
 ?>
 
-<p>See also <a href="addKeyboards.php"><?="keyman.addKeyboards()"?></a> and its documentation about keyboard specification
+<p>See also <a href="addKeyboards"><?="keyman.addKeyboards()"?></a> and its documentation about keyboard specification
   objects.</p>
