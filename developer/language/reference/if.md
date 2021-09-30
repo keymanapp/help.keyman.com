@@ -96,7 +96,8 @@ if(&platform = 'web') + any(letterGroup1) > index(outputGroup1, 2)
 
 The `if()` statement can be used in keyboards on the following platforms.
 
-Currently, only Windows supports the options.htm form to set variable stores.
+Currently, only Windows and Linux support the options.htm form to set variable stores
+through a configuration user interface.
 
 <table class='platform'>
   <thead>
