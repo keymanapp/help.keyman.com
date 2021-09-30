@@ -21,8 +21,8 @@ Version 2.1 adds the ability to query for a given platform and all tiers.
 
 ### Syntax
 
-```
-https://api.keyman.com/version/
+```plain
+https://api.keyman.com/version/$platform/$level
 ```
 
 ### Parameters
@@ -30,14 +30,14 @@ https://api.keyman.com/version/
 * `platform`
 : The platform to query against. Possible values are: `android`, `ios`, `linux`, `mac`, `web` or `windows`.
 
-*`level` <span class="optional">(optional)</span>
+* `level` <span class="optional">(optional)</span>
 : The stability level to query, default `stable`. Possible values are: `stable`, `beta`, `alpha` or `all`.
 
 If `platform` is not passed, then the API falls back to version 1.0.
 
 ### Return value
 
-For version 2.0, a JSON object is returned. If any tier other than `all` is passed:
+For version 2.0, a JSON object is returned. If `alpha`, `beta`, or `stable` tier is passed in:
 
 ```json
 {
@@ -105,7 +105,7 @@ situations and will return a version that is available on s.keyman.com.
 will return an integer build number. In case of error, you should choose a known
 build number to reference (e.g. 473).
 
-```
+```plain
 https://api.keyman.com/version
 ```
 
@@ -117,7 +117,7 @@ for PHP:
 
   if($kmwbuild === FALSE || !is_numeric($kmwbuild)) {
     // If the get-version API fails, we'll use the latest known version
-    $kmwbuild = 408;
+    $kmwbuild = 473;
   }
   echo "<script src='https://s.keyman.com/kmw/engine/$kmwbuild/keymanweb.js'></script>";
 ```
