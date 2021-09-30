@@ -30,7 +30,7 @@ dk(<var>deadkeyName</var>) + ... > ...
 
 <h2 id="Description" name="Description">Description</h2>
 
-<p>The <code>deadkey()</code> or <code>dk()</code> statement lets you program an invisible placeholder variable into the output of a rule, which can then be 
+<p>The <code>deadkey()</code> or <code>dk()</code> statement lets you program an invisible placeholder variable into the output of a rule, which can then be
 matched by future rules. The deadkey will be processed by Keyman as if it were a normal character, but it is not output onto the screen, instead being
 stored internally in the context. A keyboard has a limit of 65,534 unique deadkeys.</p>
 
@@ -41,11 +41,11 @@ by the keyboard rule matching algorithm, and multiple deadkeys can be present at
 the deadkey buffer will be reset. While this may seem unhelpful at first, it in fact provides a more consistent experience for the end user, as editing
 seemingly identical pieces of text will not result in differing behaviour.</p>
 
-<p>The <a href='set.php'><code>set()</code> statement</a> can be used to control persistent variables in a keyboard.</p>
+<p>The <a href='set'><code>set()</code> statement</a> can be used to control persistent variables in a keyboard.</p>
 
 <p>Note: While Keyman supports consecutive deadkeys between two real characters, as of build 2.0.390, KeymanWeb does not. This may be addressed in a future version.</p>
 
-<p>Deadkeys can be used in stores and matched with <a href='any.php'><code>any()</code></a> and output with <a href='_index.php'><code>index()</code></a>.</p>
+<p>Deadkeys can be used in stores and matched with <a href='any'><code>any()</code></a> and output with <a href='index'><code>index()</code></a>.</p>
 
 <p>Any deadkeys inserted by another rule immediately before or after the character to the left of the insertion point will be deleted
 when backspace is pressed, unless backspace is overridden with a keyboard rule. This can be illustrated with the following implicit
@@ -76,6 +76,6 @@ dk(backquote) + 'e' > 'è'
 </table>
 
 <h2>Version history</h2>
-    
+
 <p>Numbered deadkeys were introduced in version 3.0. Keyman 5.0 and later support named deadkeys. The use of numbered deadkeys is still
 supported, but not recommended; named deadkeys make the keyboard source much more readable.</p>
