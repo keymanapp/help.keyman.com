@@ -18,7 +18,9 @@ Note: unlike the [Search 1.0 endpoint](../1.0), this endpoint always returns an 
   * `c:id:` search only for two-letter country identifiers (ISO 3166)
   * `s:`: search only for script names
   * `s:id:`: search only for four-letter script identifiers (ISO 15924)
-  * `p:`: a special prefix, which lists keyboards by popularity; the search text is ignored
+  * `p:`: a special prefix, which lists keyboards by popularity or alphabetically; the search text is ignored.
+     * `p:*` or `p:popularity` will return top 100 most popularly downloaded keyboards (paginated)
+     * `p:!` or `p:alphabetically` will return all keyboards, ordered by name (paginated)
 
 * `f`: If present and set to `1`, returns JSON formatted for readability.
 
