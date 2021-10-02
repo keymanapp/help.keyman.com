@@ -26,8 +26,8 @@
 
 <h2 id="Description" name="Description">Description</h2>
 
-<p>The <code>reset()</code> statement is used on the right hand (output) side of a rule to restore a variable to the 
-current default value - either the store content as defined in the keyboard source file, or the value persisted previously 
+<p>The <code>reset()</code> statement is used on the right hand (output) side of a rule to restore a variable to the
+current default value - either the store content as defined in the keyboard source file, or the value persisted previously
 in the system settings by <a href='save.php'><code>save()</code></a> or by the keyboard configuration dialog.</p>
 
 <h2 id="Examples">Examples</h2>
@@ -59,10 +59,10 @@ in the system settings by <a href='save.php'><code>save()</code></a> or by the k
 <h2 id="See_also" name="See_also">See also</h2>
 
 <ul>
-  <li><a href="../guide/variable-stores" title="Using variable system stores">Using variable system stores</a></li>
+  <li><a href="../guide/variable-stores" title="Using variable stores">Using variable stores</a></li>
   <li><a href="if" title="if() statement"><code>if()</code> statement</li>
   <li><a href="save" title="save() statement"><code>save()</code> statement</li>
   <li><a href="set" title="set() statement"><code>set()</code> statement</li>
   <li><a href="store" title="store() statement"><code>store()</code> statement</li>
 </ul>
-  
+

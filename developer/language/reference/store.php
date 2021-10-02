@@ -22,7 +22,7 @@
 <dl>
   <dt><code>storeName</code></dt>
   <dd>The name of the store to be defined.</dd>
-  
+
   <dt><code>value</code></dt>
   <dd>An extended string value.</dd>
 </dl>
@@ -32,7 +32,7 @@
 <p>The <code>store()</code> statement lets you store a string of characters or keys in a buffer for use elsewhere in the keyboard
 source file. The <code>store()</code> statement can be used with <a href='any'><code>any()</code></a> and <a href='index'><code>index()</code></a> to reduce
 sets of similar rules down to a single rule. A store is terminated at the end of the line (or continuation
-lines). Stores can contain characters, <a href='../guide/virtual-keys'>virtual keys</a>, 
+lines). Stores can contain characters, <a href='../guide/virtual-keys'>virtual keys</a>,
 <a href='deadkey'><code>deadkey()</code> statements</a>, and <a href='outs'><code>outs()</code> statements</a>.</p>
 
 <p>There are several types of stores. The store type is determined by a set of requirements.</p>
@@ -41,15 +41,15 @@ lines). Stores can contain characters, <a href='../guide/virtual-keys'>virtual k
   <dt>System stores</dt>
   <dd>A system store has a name prefixed with <code>&amp;</code>. The <code>&amp;</code> prefix is reserved and cannot be used for
   other types of stores. See the <a href='_keywordsbytype'>Keywords index</a> for a list of system stores.</dd>
-  
+
   <dt>Variable stores</dt>
-  <dd>Variable stores, sometimes also known as option stores, can be used with the <a href='if'><code>if()</code></a>, 
+  <dd>Variable stores, sometimes also known as option stores, can be used with the <a href='if'><code>if()</code></a>,
   <a href='set'><code>set()</code></a>, <a href='save'><code>save()</code></a>, and <a href='reset'><code>reset()</code></a>
   statements to control <a href='../guide/variable-stores'>keyboard variables</a>.</dd>
-  
+
   <dt>IMX definition stores</dt>
   <dd>These are used with the <a href='call'><code>call()</code> statement</a> to define external functions for the keyboard to call.</dd>
-  
+
   <dt>Standard stores</dt>
   <dd>All other stores are standard stores, and can be used with <a href='any'><code>any()</code></a>,
   <a href='index'><code>index()</code></a> and <a href='outs'><code>outs()</code></a> statements.</dd>
@@ -105,7 +105,7 @@ store(&amp;version) '9.0'
 
 <ul>
   <li><a href="../guide/stores" title="Using stores">Using stores</a></li>
-  <li><a href="../guide/variable-stores" title="Using variable system stores">Using variable system stores</a></li>
+  <li><a href="../guide/variable-stores" title="Using variable stores">Using variable stores</a></li>
   <li><a href="any" title="any() statement"><code>any()</code> statement</a></li>
   <li><a href="call" title="call() statement"><code>call()</code> statement</a></li>
   <li><a href="if" title="if() statement"><code>if()</code> statement</a></li>
