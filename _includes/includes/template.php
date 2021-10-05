@@ -2,7 +2,7 @@
   require_once __DIR__ . '/../../vendor/autoload.php';
   require_once __DIR__ . '/../../_common/KeymanSentry.php';
 
-  const SENTRY_DSN = 'https://fcc8fe39792f49f3a94ea831cad5c9d6@sentry.keyman.com/2';
+  const SENTRY_DSN = 'https://fcc8fe39792f49f3a94ea831cad5c9d6@o1005580.ingest.sentry.io/5983515';
   \Keyman\Site\Common\KeymanSentry::init(SENTRY_DSN);
 
   require_once('includes/servervars.php');
