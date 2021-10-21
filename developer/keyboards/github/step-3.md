@@ -86,13 +86,22 @@ You can add a comment if you like.
 It's helpful if you select the "Allow edits by maintainers" checkbox.
 This allows reviewers to make minor corrections without needing to ask you to do them.
 When you're ready, click on the "Create pull request" button.
-GitHub will assign a number to your pull request.
 
 ![](../../../cdn/dev/img/developer/keyboards/github-pull-request-final.png)
 
-Congratulations! Some of our teammates will follow-up with you and communicate
+GitHub will assign a number to your pull request and display it.
+Some of our teammates will follow-up with you and communicate
 any revisions that need to be made for your keyboard to be added to the repository.
-These messages will show up under the pull request number that GitHub assigned.
+These messages will show up under the pull request number that GitHub assigned, on the "Conversation" tab.
+(The messages will also show up as emails to the address associated with your GitHub account.)
+
+This pull request is linked to the branch (of your fork of the keyboards repository) which you used to create the pull request.
+Any changes made to the branch become part of the pull request.
+If you are asked to change a file, you'll open the branch and drag the new version of the file to the proper folder
+and commit the changes.
+
+Congratulations! You've successfully submitted your keyboard.
+At this point you can close the pull request in your browser and wait to hear if any changes are needed.
 
 Once your pull request is ready, the changes in your branch will be merged.
 After your branch has been merged into the **keyboards** repository,
