@@ -24,8 +24,10 @@ For Windows 10:
 6. Start an elevated instance of Notepad (that is, use "Run as Administrator" when starting
    Notepad), load "C:\WINDOWS\System32\drivers\etc\hosts" and add the line
    `127.0.0.1  help.keyman.com.local`.
-7. You should now be able to navigate to <http://help.keyman.com.local/> on your computer
-8. If you get an error, it may be a problem with permissions:
+7. Install [Composer](http://getcomposer.org/download/), then run `composer
+   install` in the root folder of your site.
+8. You should now be able to navigate to <http://help.keyman.com.local/> on your computer
+9. If you get an error, it may be a problem with permissions:
 
     - With File Explorer navigate to the folder with your local copy of the help repository ("keyman-help.keyman.com", unless you used a shorter name such as "keyman-help" folder in Step 0).
     - Right click on the name of the folder, and select Properties, then select the Security tab. Under the "Group or user names" box, click the edit button.

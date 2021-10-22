@@ -4,3 +4,4 @@
 cdn/deploy
 vendor/
 .vscode/
+node_modules/
