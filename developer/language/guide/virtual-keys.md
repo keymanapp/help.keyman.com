@@ -35,8 +35,8 @@ With a _character code_, in a _positional_ keyboard.
 
 : The key definition references the value on the key cap of a US English
   hardware keyboard. Caps Lock and Shift are accounted for (see
-  [bug #5460](https://github.com/keymanapp/keyman/issues/5460) for an issue with
-  KeymanWeb).
+  [issue #5460](https://github.com/keymanapp/keyman/issues/5460#issuecomment-966602098)
+  for how to use this correctly with KeymanWeb, using [`&CasedKeys`](#cased-keys)).
 
     ```
     c matches NCAPS SHIFT C01 (aka NCAPS SHIFT K_A on US keyboard)
@@ -51,7 +51,7 @@ With a _virtual key_, in a _positional_ keyboard.
 
    ```
    c matches SHIFT C01 (aka SHIFT K_A on US keyboard)
-   c caps lock is ignored
+   c caps lock is ignored, unless you define &CasedKeys
    + [SHIFT K_A] >
 
    c C01 is an alias for K_A
@@ -118,13 +118,12 @@ Virtual keys are also commonly used to recognise <kbd>Ctrl</kbd> or
 + [CTRL ALT K_A] > "You pressed Ctrl+Alt+A"
 ```
 
-While Keyman virtual keys are closely related to the Windows virtual
-keys, there are differences, and the two cannot be used completely
-interchangeably. Most of the following discussion relates to physical
-keyboards.
+While Keyman virtual keys are closely related to the Windows virtual keys, there
+are differences, and the two cannot be used completely interchangeably. Most of
+the following discussion relates to physical keyboards.
 
-The key codes refer to the actual key at the given position on a
-standard US-English keyboard.
+The key codes refer to the actual key at the given position on a standard
+US-English keyboard.
 
 The Right <kbd>Alt</kbd> key has traditionally been used on European keyboards
 as an additional modifier state, usually known as <kbd>AltGr</kbd>. The end user
@@ -139,6 +138,33 @@ it is not possible to recognise the <kbd>Ctrl</kbd>+Right <kbd>Alt</kbd>
 combination, as this is overridden by <kbd>Ctrl</kbd>+<kbd>Alt</kbd> (producing
 Right <kbd>Alt</kbd>). This can have ramifications in keyboards such as German,
 which makes use of the <kbd>Ctrl</kbd>+<kbd>AltGr</kbd> combination.
+
+## Cased Keys
+
+The [`&CasedKeys`(../reference/casedkeys) system store] lets you define a set of
+keys on the keyboard that are affected by Caps Lock state. When present, the
+compiler will rewrite rules that contain the affected keys to avoid having to
+repeat rules. For example, you may have the following rules:
+
+```keyman
+store(&CasedKeys) [K_A]
++ [K_A] > 'α'
++ [SHIFT K_A] > 'Α'
+```
+
+These would be replaced by the compiler with:
+
+```keyman
+store(&CasedKeys) [K_A]
++ [NCAPS K_A] > 'α'
++ [SHIFT CAPS K_A] > 'α'
++ [CAPS K_A] > 'Α'
++ [SHIFT NCAPS K_A] > 'Α'
+```
+
+The presence of this store also ensures that Caps Lock is handled correctly for
+KeymanWeb keyboards (see
+[#5460](https://github.com/keymanapp/keyman/issues/5460#issuecomment-966602098)).
 
 ## Virtual character keys {#virtual-character-keys}
 
