@@ -31,7 +31,7 @@
         or either <span class="emphasis"><em>U_</em></span> or <span class="emphasis"><em>T_</em></span> for user-defined names.
         Keys identified as <span class="emphasis"><em>U_xxxx[_xxxx...]</em></span> specify one or more Unicode characters
         in hex format, e.g. <span class="emphasis"><em>U_1363</em></span> for the Ethiopic Comma character,
-        and will insert those character if the key id is not matched by a rule.  Other user-defined keys, such as
+        and will insert those characters if the key id is not matched by a rule.  Other user-defined keys, such as
         <span class="emphasis"><em>T_ZZZ</em></span>, will be ignored unless matched by a rule.
         The key id is required except for key styles 9 or 10 (blank or spacer keys).
       </td></tr><tr><td class="rowhead" align="left">text</td><td align="left">
