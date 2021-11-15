@@ -141,7 +141,7 @@ which makes use of the <kbd>Ctrl</kbd>+<kbd>AltGr</kbd> combination.
 
 ## Cased Keys
 
-The [`&CasedKeys`(../reference/casedkeys) system store] lets you define a set of
+The [`&CasedKeys` system store](../reference/casedkeys) lets you define a set of
 keys on the keyboard that are affected by Caps Lock state. When present, the
 compiler will rewrite rules that contain the affected keys to avoid having to
 repeat rules. For example, you may have the following rules:
