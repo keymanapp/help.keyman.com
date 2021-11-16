@@ -190,13 +190,14 @@ Key codes can start with `K_`, `T_`, `U_` or can be an ISO9995 code.
     it, the key will have no output behaviour. These keys are only valid
     for touch layouts.
 
-`U_####` codes
-:   These are used as a shortcut for a key that will output that
-    single Unicode value, if no rule matches it. This is similar to the
-    overloaded behaviour for `K_` ids. Thus `####` must be a valid
-    hexadecimal value. E.g. `U_0259` would generate a schwa if no rule
-    matches. It is still valid to have a rule such as `+ [U_0259] > ...`.
-    These codes are only valid for touch layouts.
+`U_####[_####...]` codes
+:   These are used as a shortcut for a key that will output a string of Unicode
+    values, if no rule matches it. This is similar to the overloaded behaviour
+    for `K_` ids. Thus `####` must be a valid Unicode character value in the
+    range `0020-10FFFF`. E.g. `U_0259` would generate a schwa if no rule
+    matches. It is still valid to have a rule such as `+ [U_0259] > ...`. These
+    codes are only valid for touch layouts. As of Keyman 15, it is possible to
+    chain these values, for example `U_0061_0259` would generate `aə`.
 
 ISO9995 codes
 :   These codes refer to keys by position on a standard 101-105 key keyboard.

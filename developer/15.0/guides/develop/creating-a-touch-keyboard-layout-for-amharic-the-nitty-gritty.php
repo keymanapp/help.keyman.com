@@ -77,8 +77,10 @@
   virtual key names, e.g. <code class="language-keyman">K_HYPHEN</code>, and <code class="language-keyman">T_</code> or <code class="language-keyman">U_</code> for user-defined names, e.g. <code class="language-keyman">T_ZZZ</code>. If keyboard rules exist matching the key code in
   context, then the output from the key will be determined by the processing of those rules. It is usually best to include explicit rules
   to manage the output from each key, but if no rules matching the key code are included in the keyboard program, and the key code
-  matches the pattern <code class="language-keyman">U_<var>xxxx</var></code> (where <code class="language-keyman"><var>xxxx</var></code> is a 4-digit uppercase hex string), then the Unicode character <code class="language-keyman">U+<var>xxxx</var></code> will be output. The key
-  code is always required, and a default code will usually be generated automatically by Keyman Developer 10.</p>
+  matches the pattern <code class="language-keyman">U_<var>xxxx</var>[_<var>yyyy</var>...]</code> (where <code class="language-keyman"><var>xxxx</var></code> and
+  <code class="language-keyman"><var>yyyy</var></code> are 4 to 6-digit hex strings), then the Unicode characters <code class="language-keyman">U+<var>xxxx</var></code> and
+  <code class="language-keyman">U+<var>yyyy</var></code> will be output. As of Keyman 15, you can use more than one Unicode character value in the id (earlier versions permitted
+  only one). The key code is always required, and a default code will usually be generated automatically by Keyman Developer.</p>
 
   <div class="itemizedlist">
     <ul type="opencircle">
@@ -96,8 +98,8 @@
       </li>
 
       <li class="c1">
-        <p><code class="language-keyman">U_<var>####</var></code> is used as a shortcut for a key that will output that single Unicode value, if no rule matches it. This is similar to
-        the overloaded behaviour for <code class="language-keyman">K_</code> ids. Thus <code class="language-keyman"><var>####</var></code> must be a valid hexadecimal value. E.g. <code class="language-keyman">U_0259</code> would generate a schwa if no rule
+        <p><code class="language-keyman">U_<var>####</var>[_<var>####</var>]</code> is used as a shortcut for a key that will output those Unicode values, if no rule matches it. This is similar to
+        the overloaded behaviour for <code class="language-keyman">K_</code> ids. Thus <code class="language-keyman"><var>####</var></code> must be valid Unicode characters. E.g. <code class="language-keyman">U_0259</code> would generate a schwa if no rule
         matches. It is still valid to have a rule such as <code class="language-keyman">+ [U_0259] > ...</code></p>
       </li>
     </ul>
