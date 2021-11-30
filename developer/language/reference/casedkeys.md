@@ -78,6 +78,10 @@ As a side-benefit, this allows the visual designer to be used and support Caps
 Lock, although at this stage, the `&CasedKeys` store is not surfaced in the
 visual designer.
 
+**Note:** you must define rules for all keys that you list in the `&CasedKeys`
+store; casing behavior will not be applied to default outputs from the base
+keyboard.
+
 **Note:** the `&CasedKeys` store must be present in order for Caps Lock to be
 applied on character key rules (e.g. `+ 'a' > 'b'`) in KeymanWeb (see
 [#5460](https://github.com/keymanapp/keyman/issues/5460#issuecomment-966602098)).
