@@ -15,7 +15,8 @@ important for contexts where emitting output is not possible, such as when a
 new context is selected.
 
 Only the first rule in the group that matches will be fired. There are two
-special rules, `match` and `nomatch` that will then fire if a rule is either
+special rules, [`match`](../reference/match) and
+[`nomatch`](../reference/nomatch) that will then fire if a rule is either
 matched or not matched, respectively. The criteria for not matching is a little
 more nuanced, however, as a keystroke is deemed to have not matched only if it
 would have generated a character anyway, so <kbd>F1</kbd> would not fire the
@@ -55,25 +56,26 @@ and `PostKeystroke` entry points, and indicate that text output is not permitted
 from rules within the group. The purpose of these groups is typically to change
 the current layer of the touch keyboard, or perform similar state updates.
 
-[`use()` statements](use) in a read-only group may only reference other
-read-only groups.
+[`use()` statements](../reference/use) in a read-only group may only reference
+other read-only groups.
 
-An implicit [`context` statement](context) is added to the front of every rule
-output in a read-only group, if it is not already present, to ensure that the
-input context is not modified. As it is not legal to have an empty output, you
-may use the `context` statement, not the `nul` statement on the right-hand side
-of an otherwise empty output.
+An implicit [`context` statement](../reference/context) is added to the front of
+every rule output in a read-only group, if it is not already present, to ensure
+that the input context is not modified. As it is not legal to have an empty
+output, you may use the `context` statement, not the `nul` statement on the
+right-hand side of an otherwise empty output.
 
 In a read-only group, only the following output statements are permitted:
 
-* [`call()`](call) - the custom function must not attempt to do any output
-* [`context`](context) - only at the start of the output
-* [`use()`](use) - use other `readonly` groups
-* [`set()`](set)
-* [`reset()`](reset)
-* [`save()`](save)
+* [`call()`](../reference/call) - the custom function must not attempt to do any
+  output
+* [`context`](../reference/context) - only at the start of the output
+* [`use()`](../reference/use) - use other `readonly` groups
+* [`set()`](../reference/set)
+* [`reset()`](../reference/reset)
+* [`save()`](../reference/save)
 
-See [Casing Support](../guide/casing-support) for a comprehensive example of
+See [Casing Support](casing-support) for a comprehensive example of
 how read-only groups are used.
 
 ## `use` statement
@@ -142,7 +144,7 @@ c Empty final group causes keystroke to be emitted
 
 The following statements and special rules are used with groups:
 
-[`begin` statement](../reference/begin)
+[`begin` rule](../reference/begin)
 : Defines the starting group for the keyboard layout
 
 [`group()` statement](../reference/group)

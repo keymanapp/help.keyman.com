@@ -26,7 +26,7 @@ supports three sorts of groups: key processing groups, read-only groups, and
 context processing groups. Key processing groups can include context checking,
 but context processing groups cannot include key checking. Read-only groups,
 like context processing groups, cannot include key checking. Keyman will use
-first the group specified in the [`begin` statement](begin.php), and move from
+first the group specified in the [`begin` statement](begin), and move from
 there onto other groups.
 
 To tell Keyman that the group should include key processing, you should include
