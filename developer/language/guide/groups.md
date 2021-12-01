@@ -10,6 +10,10 @@ Groups can match on context only, or on context and keystroke. The context-only
 groups can be very useful for pre- and post-processing rules, such as reordering
 stacked diacritics.
 
+In Keyman 15.0 and later versions, groups can also be read-only. This is
+important for contexts where emitting output is not possible, such as when a
+new context is selected.
+
 Only the first rule in the group that matches will be fired. There are two
 special rules, `match` and `nomatch` that will then fire if a rule is either
 matched or not matched, respectively. The criteria for not matching is a little
@@ -22,11 +26,14 @@ context, with longest context first, and then by line order in the file. This
 slightly non-intuitive ordering makes it much simpler to group rules according
 to their function, rather than necessarily by their priority.
 
-The examples below show the two types of groups.
+The examples below show the three types of groups.
 
 ```
 group(mygroup)                   c context only
   'a' > 'b'
+
+group(mygroup) readonly          c read only
+  'a' > context set(aPressed = '1')
 
 group(mygroup) using keys        c context and keystroke
   'a' + 'a' > 'c'
@@ -40,6 +47,34 @@ the context only. The keystroke will remain the same during processing; you can
 have many groups that each use `using keys`, and the keystroke will be the same
 for all of them. The key section of a rule (including the `+` sign) is not valid
 for context processing groups.
+
+## `readonly` clause
+
+Read-only groups are new in Keyman 15. They are used primarily from `NewContext`
+and `PostKeystroke` entry points, and indicate that text output is not permitted
+from rules within the group. The purpose of these groups is typically to change
+the current layer of the touch keyboard, or perform similar state updates.
+
+[`use()` statements](use) in a read-only group may only reference other
+read-only groups.
+
+An implicit [`context` statement](context) is added to the front of every rule
+output in a read-only group, if it is not already present, to ensure that the
+input context is not modified. As it is not legal to have an empty output, you
+may use the `context` statement, not the `nul` statement on the right-hand side
+of an otherwise empty output.
+
+In a read-only group, only the following output statements are permitted:
+
+* [`call()`](call) - the custom function must not attempt to do any output
+* [`context`](context) - only at the start of the output
+* [`use()`](use) - use other `readonly` groups
+* [`set()`](set)
+* [`reset()`](reset)
+* [`save()`](save)
+
+See [Casing Support](../guide/casing-support) for a comprehensive example of
+how read-only groups are used.
 
 ## `use` statement
 
