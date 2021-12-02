@@ -53,7 +53,7 @@ group(nextLayer) readonly
 
 ## Platforms
 
-While the `&LayerChanged` store is accessible on all platforms, in only has
+While the `&LayerChanged` store is accessible on all platforms, it only has
 meaning on touch platforms (mobile web, iOS, Android).
 
 <table class='platform'>
