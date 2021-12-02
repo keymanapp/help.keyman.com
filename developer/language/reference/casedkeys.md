@@ -86,6 +86,17 @@ keyboard.
 applied on character key rules (e.g. `+ 'a' > 'b'`) in KeymanWeb (see
 [#5460](https://github.com/keymanapp/keyman/issues/5460#issuecomment-966602098)).
 
+## Platforms
+
+<table class='platform'>
+  <thead>
+    <tr><th>Windows</th><th>macOS</th><th>Linux</th><th>Desktop web</th><th>Mobile web</th><th>iOS</th><th>Android</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr>
+  </tbody>
+</table>
+
 ## Version history
 
 * Version 14.0: &CasedKeys support added to compiler; backwardly compatible with

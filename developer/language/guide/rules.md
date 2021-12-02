@@ -136,6 +136,9 @@ The *output* part of the rule may contain Unicode characters and certain stateme
 [`use()` statement](../reference/use "use() statement")
 :   Starts processing in another group
 
+**Note:** In [read-only groups](groups#readonly-clause), only a subset of these
+statements may be used.
+
 ## context statement {#context-statement}
 
 One of the important statements that can be used in rules is the
