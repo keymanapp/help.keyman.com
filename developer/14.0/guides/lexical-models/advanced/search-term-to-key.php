@@ -66,13 +66,17 @@ specify one: </p>
   let termWithoutDiacritics = normalizedTerm.replace(COMBINING_DIACRITICAL_MARKS, '');
 
   // The resultant key is lowercased, and has no accents or diacritics.
-  return termWithoutDiacritics;
+  return termWithoutDiacritics.normalize('NFC');
 },</code></pre>
 
 <p> This should be sufficient for most Latin-based writing systems. However,
 there are cases, such as with SENĆOŦEN, where some characters do not decompose
 into a base letter and a diacritic. In this case, it is necessary to write
 your own key function. </p>
+
+<p><b>Note:</b> the returned text should be in NFC. In the above example, we
+have stripped all the combining diacritics, so the resulting text is effectively
+NFC already. However, it does not hurt to normalize it anyway!</p>
 
 <h2> Use in your model definition file </h2>
 
