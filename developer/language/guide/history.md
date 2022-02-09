@@ -93,3 +93,4 @@ title: Keyman language history
 ## Keyman 15
 
 *   [Unicode key identifiers](virtual-keys#virtual-keys-and-touch-layouts) in touch layouts can now have multiple characters, e.g. `U_1000_1001`
+*   [Casing support](casing-support) is now available for touch layouts, including Caps Lock layer, start of sentence support, and double-tap Shift for Caps.
