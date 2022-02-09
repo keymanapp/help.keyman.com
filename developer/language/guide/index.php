@@ -28,5 +28,6 @@
   <li><a href='constants'>Named constants</a></li>
   <li><a href='compile-targets'>Compile targets</a> (Keyman, KeymanWeb, KeymanOnly, SilKey, KMFL)</li>
   <li><a href='multi-platform'>Multi-platform keyboard design considerations</a></li>
+  <li><a href='casing-support'>Casing support</a> (new in 15.0)</li>
   <li><a href='history'>Keyman language history</a></li>
 </ul>
