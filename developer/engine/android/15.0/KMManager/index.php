@@ -76,7 +76,7 @@
   <dt><code><a href='getFontTypeface.php'>getFontTypeface()</a></code></dt>
   <dd>creates a new typeface from the specified font filename</dd>
 
-  <dt><code><a href='getGlobeKeyAction.php'>getGlobeKeyAction()</a></code></dt>
+  <dt><code><a href='getGlobeKeyAction'>getGlobeKeyAction()</a></code></dt>
   <dd>returns the action type of the 'Globe' key</dd>
 
   <dt><code><strike>getKeyboardFontFilename()</strike> (Deprecated)</code></dt>
@@ -205,7 +205,7 @@
   <dt><code><a href='setDefaultKeyboard.php'>setDefaultKeyboard()</a></code></dt>
   <dd>sets the keyboard information for the fallback keyboard</dd>
 
-  <dt><code><a href='setGlobeKeyAction.php'>setGlobeKeyAction()</a></code></dt>
+  <dt><code><a href='setGlobeKeyAction'>setGlobeKeyAction()</a></code></dt>
   <dd>sets an action type for the 'Globe' key</dd>
 
   <dt><code><a href='setHelpBubbleEnabled.php'>setHelpBubbleEnabled()</a></code></dt>
