@@ -23,7 +23,7 @@ action
 
 ## Description
 Use this method to set the short-press action type for the 'Globe' key. Even when the default action type is 
-set, Keyman Engine will still use the following default action types when only one Keyman keyboards is installed:
+set, Keyman Engine will still use the following default action types when only one Keyman keyboard is installed:
 
 | KeyboardType         | # Keyman Keyboards Installed | Globe Key Action Type                                |
 |----------------------|:----------------------------:|------------------------------------------------------|
