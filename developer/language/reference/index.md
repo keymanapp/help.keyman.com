@@ -89,6 +89,10 @@ title: Keyman Keyboard Language Reference
 :   Tests or sets the current touch keyboard layer visible on the on
     screen keyboard
 
+[`&layerchanged` store](layerchanged)
+:   Reports on whether the current touch keyboard layer has recently
+    changed in a `PostContext` process
+
 [`layer()` statement](layer "layer() statement")
 :   Sets the current touch keyboard layer visible on the on screen
     keyboard
