@@ -216,14 +216,16 @@ Key codes can start with `K_`, `T_`, `U_` or can be an ISO9995 code.
     it, the key will have no output behaviour. These keys are only valid
     for touch layouts.
 
-`U_####[_####...]` codes
+`U_####[_....]` codes
 :   These are used as a shortcut for a key that will output a string of Unicode
-    values, if no rule matches it. This is similar to the overloaded behaviour
-    for `K_` ids. Thus `####` must be a valid Unicode character value in the
-    range `0020-10FFFF`. E.g. `U_0259` would generate a schwa if no rule
-    matches. It is still valid to have a rule such as `+ [U_0259] > ...`. These
-    codes are only valid for touch layouts. As of Keyman 15, it is possible to
-    chain these values, for example `U_0061_0259` would generate `aə`.
+    values, if no rule matches the key. (In Keyman 14 and earlier, only a single
+    Unicode value was permitted.) This is similar to the overloaded behaviour
+    for `K_` ids. Thus `####` must be valid Unicode codepoint values, in the
+    range `0020-10FFFF`, with sequences separated by `_`. E.g. `U_0259` would
+    generate a schwa if no rule matches. It is still valid to have a rule such
+    as `+ [U_0259] > ...`. These codes are only valid for touch layouts.
+    **Note**: For characters outside the BMP, use Unicode codepoints, not
+    surrogate pairs (e.g. use `U_10000`, never `U_D800_DC00`).
 
 ISO9995 codes
 :   These codes refer to keys by position on a standard 101-105 key keyboard.
