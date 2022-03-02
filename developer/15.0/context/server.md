@@ -29,6 +29,13 @@ Keyman Developer Server is always installed as a part of Keyman Developer.
 When you start Keyman Developer, Keyman Developer Server will start in the
 background.
 
+**Note:** The first time Keyman Developer Server starts, you may be presented
+with a warning from your firewall or security software about Node.js Javascript
+Runtime running from the Keyman Developer folder. This is the Keyman Developer
+Server host process, and you should choose to allow Keyman Developer Server to
+communicate at least on your local private network, or as your circumstances
+dictate.
+
 By default, Keyman Developer Server will run when Keyman Developer is running,
 and will shutdown when Keyman Developer is closed. However, you can also
 configure Keyman Developer Server to stay running even after Keyman Developer is
