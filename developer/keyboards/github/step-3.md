@@ -42,7 +42,7 @@ https://github.com/YOUR-GITHUB-NAME/keyboards
 If it has been a while since you created your fork, you may see a note saying something like: 
 "This branch is 153 commits behind keymanapp:master". 
 If that's the case, you'll want to update your fork before proceeding. 
-See the [Updating your fork](updating-your-fork) section near the bottom of this page.
+See the [Updating your fork](#updating-your-fork) section near the bottom of this page.
 
 Click on the "Branch: master" button and type in the name of the branch you want to create.
 We suggest that you use the name of the keyboard as the name of your branch,
