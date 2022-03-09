@@ -39,6 +39,11 @@ https://github.com/YOUR-GITHUB-NAME/keyboards
 
 **Note:** The GitHub interface changes from time to time. The following images may vary from what you see on your screen.
 
+If it has been a while since you created your fork, you may see a note saying something like: 
+"This branch is 153 commits behind keymanapp:master". 
+If that's the case, you'll want to update your fork before proceeding. 
+See the [Updating your fork](updating-your-fork) section near the bottom of this page.
+
 Click on the "Branch: master" button and type in the name of the branch you want to create.
 We suggest that you use the name of the keyboard as the name of your branch,
 but you can use anything that makes sense to you.
@@ -108,3 +113,14 @@ After your branch has been merged into the **keyboards** repository,
 you won't need the branch and can safely delete it.
 If you won't be creating another keyboard (or if it will be a while before you do),
 you can delete your fork of the keyboards repository as well.
+
+## Updating your fork
+
+If your fork of the keyboards repository is out-of-date (some number of "commits behind keymanapp:master")
+
+![](../../../cdn/dev/img/developer/keyboards/github-commits-behind.png)
+
+you can click on the "Fetch upsteam" button, then confirm the action.
+This will bring your fork up-to-date with the Keyman keyboards repository.
+
+Note that this will not change any files on your own computer; only those in your fork on GitHub.
