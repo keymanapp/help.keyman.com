@@ -89,6 +89,7 @@ title: Keyman language history
 *   [Virtual keys](virtual-keys#common-virtual-key-codes) may now be identified by ISO9995 key ids (e.g. `+ [SHIFT E01]`)
 *   The compiler now enforces order of certain statements in the [context part of the rule](rules)
 *   [`notany()`](../reference/notany) and [`context()`](../reference/context) are now supported together for KeymanWeb, iOS, Android (#3816)
+*   [Hangul named constants](constants) were corrected
 
 ## Keyman 15
 
