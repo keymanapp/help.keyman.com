@@ -59,6 +59,7 @@ title: Keyman language history
 *   Added [`platform` statement](../reference/platform)
 *   Added [`layer` statement](../reference/layer)
 *   Added [`&targets` store](../reference/targets)
+*   Enforced requirement that [`use()`](../reference/use) is last statement in a rule
 
 ## Keyman 10
 
