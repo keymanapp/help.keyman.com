@@ -96,6 +96,6 @@ title: Keyman language history
 
 *   [Unicode key identifiers](virtual-keys#virtual-keys-and-touch-layouts) in touch layouts can now have multiple characters, e.g. `U_1000_1001`
 *   [Casing support](casing-support) is now available for touch layouts, including Caps Lock layer, start of sentence support, and double-tap Shift for Caps.
-*   Added support for [`begin NewContext`](../reference/begin) and [`begin PostKeystroke`]](../reference/begin) entrypoints
+*   Added support for [`begin NewContext`](../reference/begin) and [`begin PostKeystroke`](../reference/begin) entrypoints
 *   Added support for [`readonly` groups](../reference/group)
-*   Added support for [&`layerchanged` system store](../reference/layerchanged)
+*   Added support for [`&newLayer` system store](../reference/newLayer) and [`&oldLayer` system store](../reference/oldLayer)

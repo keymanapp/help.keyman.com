@@ -54,9 +54,10 @@ processing, this entry point is called after both model input (e.g. selecting a
 word from the banner), and after `nextlayer` processing from the touch layout,
 giving the keyboard a chance to adjust the layer and other variable stores.
 
-We do need to be careful, however, not to override the user's recent touch of
-a layer switch key. Keyman provides the [`&LayerChanged` system store](../reference/layerchanged)
-to allow the keyboard to detect this and avoid overriding it.
+We do need to be careful, however, not to override the user's recent touch of a
+layer switch key. Keyman provides the [`&newLayer` system store](../reference/newlayer)
+and the [`&oldLayer` system store](../reference/oldlayer) to allow the
+keyboard to detect this and avoid overriding it.
 
 Start of sentence detection can also be used for other contextual layer
 controls, for example, moving to the numeric layer when digits are found.
@@ -100,14 +101,14 @@ group(PostKeystroke) readonly
     c We get here after every keystroke and model action is processed
 
     c Okay, let's stay on the numeric layer if we are there already
-    if(&layerChanged = "0") if(&layer = 'numeric') any(digit) > context
+    if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
 
     c Don't swap off the caps lock layer automatically
     if(&layer = 'caps') > context
 
     c no other changes, so detect sentence or layer change, as long
     c as the user hasn't attempted to change layer themselves.
-    if(&layerChanged = "0") > use(detectStartOfSentence)
+    if(&newLayer = "") > use(detectStartOfSentence)
 
 group(detectStartOfSentence) readonly
     c We have a shared group for the start of sentence detection now
@@ -142,4 +143,5 @@ group(main) using keys
 * [Using rules](rules)
 * [`group()` statement](../reference/group)
 * [`begin()` statement](../reference/begin)
-* [`&LayerChanged` system store](../reference/layerchanged)
+* [`&newLayer` system store](../reference/newlayer)
+* [`&oldLayer` system store](../reference/oldlayer)
