@@ -6,6 +6,20 @@
   ]);
 ?>
 
+<style>
+  /* Custom OSK font for key type */
+  @font-face {
+    font-family: SpecialOSK;
+    font-display: block;
+    src: url('https://s.keyman.com/kmw/engine/15.0.222/osk/keymanweb-osk.ttf');
+  }
+
+  .special-osk {
+    text-align: center;
+    font-family: SpecialOSK;
+  }
+</style>
+
 <h1 class="title" id="touch_layout_2">Creating a Touch Keyboard Layout Part 2</h1>
 
   <p>This article will continue the guide to creating a touch keyboard layout. In particular, we'll look in more detail at how keys
@@ -59,18 +73,18 @@
 
   <h2><a name="id488436" id="id488436"></a>Arranging keys with the layout editor</h2>
 
-  <p>The Keyman Developer 10 layout editor really makes it quite easy to try different key layouts and choose what is best for your
+  <p>The Keyman Developer layout editor really makes it quite easy to try different key layouts and choose what is best for your
   keyboard. The image below highlights just how, for any selected key, using the clickable icons circled, a key row can be added above
-  (1) or below (2), a key added before (3) or after (4), the selected key deleted (5), and how an array of long press keys (called
-  "subkeys" in the current Keyman Developer 10) can be added (6).</p>
+  (1) or below (2), a key added before (3) or after (4), the selected key deleted (5), and how an array of long press keys (sometimes
+  called "subkeys") can be added (6).</p>
 
   <p><img src="<?= cdn('img/developer/100/touch_amharic_keyboard_9.png')?>"></p>
 
-  <h2><a name="id488433" id="id488433"></a>Key properties</h2>
+  <h2>Key properties</h2>
 
   <p>For each visual key, the appearance and behaviour is determined by a number of properties:</p>
 
-  <h3><a name="id488482" id="id488482"></a>Key Code</h3>
+  <h3>Key code</h3>
 
   <p>Each key must be given an identifying key code which is unique to the key layer. Key codes by and large correspond to the virtual
   key codes used when creating a keyboard program for a desktop keyboard, and should start with <code class="language-keyman">K_</code>, for keys mapped to standard Keyman
@@ -80,7 +94,7 @@
   matches the pattern <code class="language-keyman">U_<var>xxxx</var>[_<var>yyyy</var>...]</code> (where <code class="language-keyman"><var>xxxx</var></code> and
   <code class="language-keyman"><var>yyyy</var></code> are 4 to 6-digit hex strings), then the Unicode characters <code class="language-keyman">U+<var>xxxx</var></code> and
   <code class="language-keyman">U+<var>yyyy</var></code> will be output. As of Keyman 15, you can use more than one Unicode character value in the id (earlier versions permitted
-  only one). The key code is always required, and a default code will usually be generated automatically by Keyman Developer.</p>
+  only one). T4he key code is always required, and a default code will usually be generated automatically by Keyman Developer.</p>
 
   <div class="itemizedlist">
     <ul type="opencircle">
@@ -105,16 +119,58 @@
     </ul>
   </div>
 
-  <p>Any key can be used to switch keyboard layers (see below), but the following layer-switching key codes have been added for switching
-  to some commonly used secondary layers:</p>
+  <p>As noted above, some <code>K_xxxx</code> codes emit characters, if no rule is defined. There are also some codes which have  special functions:</p>
 
   <div class="table">
-    <a name="id488449" id="id488449"></a>
-
     <p class="title"><b>Table 2.1. </b></p>
 
     <div class="table-contents">
-      <table border="1">
+      <table class="display">
+        <thead>
+          <tr>
+            <th>Identifier</th>
+            <th>Meaning</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td ><code class="language-keyman">K_ENTER</code></td>
+            <td>Submit a form, or add a new line (multi-line); the key action may vary depending on the situation.</td>
+          </tr>
+          <tr>
+            <td ><code class="language-keyman">K_BKSP</code></td>
+            <td>Delete back a single character. This key, if held down, will repeat. It is the only key code which triggers
+              repeat behavior.</td>
+            </tr>
+            <tr>
+              <td ><code class="language-keyman">K_LOPT</code></td>
+              <td>Open the language menu (aka Globe key).</td>
+            </tr>
+            <tr>
+              <td ><code class="language-keyman">K_ROPT</code></td>
+              <td>Hide the on screen keyboard.</td>
+            </tr>
+            <tr>
+              <td ><code class="language-keyman">K_TAB</code><br><code>K_TABBACK</code><br><code>K_TABFWD</code></td>
+              <td>Move to next or previous element in a form. Note that these key functions are normally implemented
+                  outside the touch layout, so should not typically be used. <code>K_TAB</code> will go to previous
+                  element if used with the <code>shift</code> modifier.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <p>Any key can be used to switch keyboard layers (see <a href="#toc-nextlayer"><code>nextlayer</code></a>), but the following layer-switching key
+  codes have been added for switching to some commonly used secondary layers. Note that these keys
+  have no specific meaning; you must still set the <code>nextlayer</code> property on the key.</p>
+
+  <div class="table">
+    <p class="title"><b>Table 2.1. </b></p>
+
+    <div class="table-contents">
+      <table class="display">
         <colgroup>
           <col>
           <col>
@@ -122,45 +178,42 @@
 
         <thead>
           <tr>
-            <th align="left">Identifier</th>
-            <th align="left">Value</th>
+            <th >Identifier</th>
+            <th >Meaning</th>
           </tr>
         </thead>
 
         <tbody>
           <tr>
-            <td align="left"><code class="language-keyman">K_NUMERALS</code></td>
-            <td align="left"><code class="language-keyman">261</code></td>
+            <td ><code class="language-keyman">K_NUMERALS</code></td>
+            <td>Switch to a numeric layer</td>
           </tr>
 
           <tr>
-            <td align="left"><code class="language-keyman">K_SYMBOLS</code></td>
-            <td align="left"><code class="language-keyman">262</code></td>
+            <td><code class="language-keyman">K_SYMBOLS</code></td>
+            <td>Switch to a symbol layer</td>
           </tr>
 
           <tr>
-            <td align="left"><code class="language-keyman">K_CURRENCIES</code></td>
-
-            <td align="left"><code class="language-keyman">263</code></td>
+            <td><code class="language-keyman">K_CURRENCIES</code></td>
+            <td>Switch to a currency layer</td>
           </tr>
 
           <tr>
-            <td align="left"><code class="language-keyman">K_SHIFTED</code></td>
-
-            <td align="left"><code class="language-keyman">264</code></td>
+            <td><code class="language-keyman">K_SHIFTED</code></td>
+            <td>Switch to a shift layer</td>
           </tr>
 
           <tr>
-            <td align="left"><code class="language-keyman">K_ALTGR</code></td>
-
-            <td align="left"><code class="language-keyman">265</code></td>
+            <td><code class="language-keyman">K_ALTGR</code></td>
+            <td>Switch to a right-alt layer (desktop compatibility)</td>
           </tr>
         </tbody>
       </table>
     </div>
   </div><br class="table-break">
 
-  <h4><a name="id488576" id="id488576"></a>Key text</h4>
+  <h3><a name="key-text" id="key-text"></a>Key text</h3>
 
   <p>The key text is simply the character (or characters) that you want to appear on the key cap. This will usually be the same as the
   characters generated when the key is touched, unless contextual rules are used to generate output according to a multi-key sequence, as
@@ -174,119 +227,268 @@
   following special labels are recognized:</p>
 
   <div class="table">
-    <a name="id488574" id="id488574"></a>
-
     <p class="title"><b>Table 2.2. </b></p>
 
     <div class="table-contents">
-      <table border="1">
+      <table class="display">
         <colgroup>
+          <col>
           <col>
           <col>
         </colgroup>
 
         <thead>
           <tr>
-            <th align="left">Text String</th>
-            <th align="left">Key Purpose</th>
+            <th>Text String</th>
+            <th>Key Cap</th>
+            <th>Key Purpose</th>
           </tr>
         </thead>
 
         <tbody>
           <tr>
-            <td align="left"><code class="language-keyman">*Shift*</code></td>
-            <td align="left">Shift key image (inactive)</td>
+            <td><code>*Shift*</code></td>
+            <td class='special-osk'>&#xE008;</td>
+            <td>Select Shift layer (inactive). Use on the Shift key to indicate that it switches to the shift layer.</td>
           </tr>
-
           <tr>
-            <td align="left"><code class="language-keyman">*Enter*</code></td>
-            <td align="left">Return</td>
+            <td><code>*Shifted*</code></td>
+            <td class='special-osk'>&#xE009;</td>
+            <td>Select Shift layer (active). Use on the Shift key on the shift layer to switch back to the default layer.</td>
           </tr>
-
           <tr>
-            <td align="left"><code class="language-keyman">*Tab*</code></td>
-            <td align="left">Move to next input element in tab order</td>
+            <td><code>*ShiftLock*</code></td>
+            <td class='special-osk'>&#xE073;</td>
+            <td>Switch to Caps layer (inactive). Not commonly used; generally double-tap on Shift key is used to access the caps layer.</td>
           </tr>
-
           <tr>
-            <td align="left"><code class="language-keyman">*BkSp*</code></td>
-
-            <td align="left">Backspace</td>
+            <td><code>*ShiftedLock*</code></td>
+            <td class='special-osk'>&#xE074;</td>
+            <td>Switch to Caps layer (active). Use on the Shift key on the caps layer to switch back to the default layer.</td>
           </tr>
-
           <tr>
-            <td align="left"><code class="language-keyman">*Menu*</code></td>
-            <td align="left">Display the language menu</td>
+            <td><code>*Enter*</code></td>
+            <td class='special-osk'>&#xE005; or &#xE071;</td>
+            <td>Return or Enter key (shape determined by writing system direction)</td>
           </tr>
-
           <tr>
-            <td align="left"><code class="language-keyman">*Hide*</code></td>
-            <td align="left">Hide the virtual keyboard</td>
+            <td><code>*LTREnter*</code></td>
+            <td class='special-osk'>&#xE005;</td>
+            <td>Return or Enter key (left-to-right script shape)</td>
           </tr>
-
           <tr>
-            <td align="left"><code class="language-keyman">*Alt*</code></td>
-            <td align="left">Alt key caption</td>
+            <td><code>*RTLEnter*</code></td>
+            <td class='special-osk'>&#xE071;</td>
+            <td>Return or Enter key (right-to-left script shape)</td>
           </tr>
-
           <tr>
-            <td align="left"><code class="language-keyman">*Ctrl*</code></td>
-            <td align="left">Control key caption</td>
+            <td><code>*BkSp*</code></td>
+            <td class='special-osk'>&#xE004; or &#xE072;</td>
+            <td>Backspace key (shape determined by writing system direction)</td>
           </tr>
-
           <tr>
-            <td align="left"><code class="language-keyman">*Caps*</code></td>
-            <td align="left">Caps Lock caption</td>
+            <td><code>*LTRBkSp*</code></td>
+            <td class='special-osk'>&#xE004;</td>
+            <td>Backspace key (left-to-right script shape)</td>
           </tr>
-
           <tr>
-            <td align="left"><code class="language-keyman">*ABC*</code></td>
-            <td align="left">Select the upper case alphabetic layer</td>
+            <td><code>*RTLBkSp*</code></td>
+            <td class='special-osk'>&#xE072;</td>
+            <td>Backspace key (right-to-left script shape)</td>
           </tr>
-
           <tr>
-            <td align="left"><code class="language-keyman">*abc*</code></td>
-            <td align="left">Return to the default (alphabetic) keyboard layer</td>
+            <td><code>*Menu*</code></td>
+            <td class='special-osk'>&#xE00B;</td>
+            <td>Globe key; display the language menu. Use on the <code>K_LOPT</code> key.</td>
           </tr>
-
           <tr>
-            <td align="left"><code class="language-keyman">*123*</code></td>
-            <td align="left">Select a numeric keyboard layer</td>
+            <td><code>*Hide*</code></td>
+            <td class='special-osk'>&#xE00A;</td>
+            <td>Hide the on screen keyboard. Use on the <code>K_ROPT</code> key.</td>
           </tr>
-
           <tr>
-            <td align="left"><code class="language-keyman">*Symbol*</code></td>
-            <td align="left">Select a layer with various non-letter symbols</td>
+            <td><code>*ABC*</code></td>
+            <td class='special-osk'>&#xE010;</td>
+            <td>Select alphabetic layer (Uppercase)</td>
           </tr>
-
           <tr>
-            <td align="left"><code class="language-keyman">*Currency*</code></td>
-            <td align="left">Select a layer with currency symbols</td>
+            <td><code>*abc*</code></td>
+            <td class='special-osk'>&#xE011;</td>
+            <td>Select alphabetic layer (Lowercase)</td>
           </tr>
-
           <tr>
-            <td align="left"><code class="language-keyman">*Shifted*</code></td>
-            <td align="left">Active Shift key image</td>
+            <td><code>*123*</code></td>
+            <td class='special-osk'>&#xE013;</td>
+            <td>Select the numeric layer</td>
           </tr>
-
           <tr>
-            <td align="left"><code class="language-keyman">*AltGr*</code></td>
-            <td align="left">Select right Alt modifier state</td>
+            <td><code>*Symbol*</code></td>
+            <td class='special-osk'>&#xE015;</td>
+            <td>Select the symbol layer</td>
           </tr>
-
           <tr>
-            <td align="left"><code class="language-keyman">*TabLeft*</code></td>
-            <td align="left">Go back to previous input element in tab order</td>
+            <td><code>*Currency*</code></td>
+            <td class='special-osk'>&#xE014;</td>
+            <td>Select the currency symbol layer</td>
+          </tr>
+          <tr>
+            <td><code>*ZWNJ*</code></td>
+            <td class='special-osk'>&#xE075; (iOS) or &#xE076; (Android)</td>
+            <td>Zero Width Non Joiner (shape determined by current platform)</td>
+          </tr>
+          <tr>
+            <td><code>*ZWNJiOS*</code></td>
+            <td class='special-osk'>&#xE075;</td>
+            <td>Zero Width Non Joiner (iOS style shape)</td>
+          </tr>
+          <tr>
+            <td><code>*ZWNJAndroid*</code></td>
+            <td class='special-osk'>&#xE076;</td>
+            <td>Zero Width Non Joiner (Android style shape)</td>
           </tr>
         </tbody>
       </table>
     </div>
   </div><br class="table-break">
 
-  <h4><a name="id488826" id="id488826"></a>Key type</h4>
+  <p>The following additional symbols are also available, but intended for
+  working with legacy desktop layouts, and not recommended for general use:</p>
 
-  <p>The general appearance of each key is determined by the key type, which is selected (in Keyman Developer 10) from a drop-down
-  list:</p>
+  <div class="table">
+    <p class="title"><b>Table 2.2.1. </b></p>
+
+    <div class="table-contents">
+      <table class="display">
+        <colgroup>
+          <col>
+          <col>
+          <col>
+        </colgroup>
+
+        <thead>
+          <tr>
+            <th>Text String</th>
+            <th>Key Cap</th>
+            <th>Key Purpose</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><code>*Tab*</code></td>
+            <td class='special-osk'>&#xE006;</td>
+            <td>Move to next input element in tab order</td>
+          </tr>
+          <tr>
+            <td><code>*TabLeft*</code></td>
+            <td class='special-osk'>&#xE007;</td>
+            <td>Move to previous input element in tab order</td>
+          </tr>
+          <tr>
+            <td><code>*Caps*</code></td>
+            <td class='special-osk'>&#xE003;</td>
+            <td>Select caps layer (legacy)</td>
+          </tr>
+          <tr>
+            <td><code>*AltGr*</code></td>
+            <td class='special-osk'>&#xE002;</td>
+            <td>Select AltGr (Right-Alt) layer (desktop layout compatibility)</td>
+          </tr>
+          <tr>
+            <td><code>*Alt*</code></td>
+            <td class='special-osk'>&#xE019;</td>
+            <td>Select Alt layer (desktop layout compatibility)</td>
+          </tr>
+          <tr>
+            <td><code>*Ctrl*</code></td>
+            <td class='special-osk'>&#xE001;</td>
+            <td>Select Ctrl layer (desktop layout compatibility)</td>
+          </tr>
+          <tr>
+            <td><code>*LAlt*</code></td>
+            <td class='special-osk'>&#xE056;</td>
+            <td>Select Left-Alt layer (desktop layout compatibility)</td>
+          </tr>
+          <tr>
+            <td><code>*RAlt*</code></td>
+            <td class='special-osk'>&#xE057;</td>
+            <td>Select Right-Alt layer (desktop layout compatibility)</td>
+          </tr>
+          <tr>
+            <td><code>*LCtrl*</code></td>
+            <td class='special-osk'>&#xE058;</td>
+            <td>Select Left-Ctrl layer (desktop layout compatibility)</td>
+          </tr>
+          <tr>
+            <td><code>*RCtrl*</code></td>
+            <td class='special-osk'>&#xE059;</td>
+            <td>Select Right-Ctrl layer (desktop layout compatibility)</td>
+          </tr>
+          <tr>
+            <td><code>*LAltCtrl*</code></td>
+            <td class='special-osk'>&#xE060;</td>
+            <td>Select Left-Alt-Ctrl layer (desktop layout compatibility)</td>
+          </tr>
+          <tr>
+            <td><code>*RAltCtrl*</code></td>
+            <td class='special-osk'>&#xE061;</td>
+            <td>Select Right-Alt-Ctrl layer (desktop layout compatibility)</td>
+          </tr>
+          <tr>
+            <td><code>*LAltCtrlShift*</code></td>
+            <td class='special-osk'>&#xE062;</td>
+            <td>Select Left-Alt-Ctrl-Shift layer (desktop layout compatibility)</td>
+          </tr>
+          <tr>
+            <td><code>*RAltCtrlShift*</code></td>
+            <td class='special-osk'>&#xE063;</td>
+            <td>Select Right-Alt-Ctrl-Shift layer (desktop layout compatibility)</td>
+          </tr>
+          <tr>
+            <td><code>*AltShift*</code></td>
+            <td class='special-osk'>&#xE064;</td>
+            <td>Select Alt-Shift layer (desktop layout compatibility)</td>
+          </tr>
+          <tr>
+            <td><code>*CtrlShift*</code></td>
+            <td class='special-osk'>&#xE065;</td>
+            <td>Select Ctrl-Shift layer (desktop layout compatibility)</td>
+          </tr>
+          <tr>
+            <td><code>*AltCtrlShift*</code></td>
+            <td class='special-osk'>&#xE066;</td>
+            <td>Select Alt-Ctrl-Shift layer (desktop layout compatibility)</td>
+          </tr>
+          <tr>
+            <td><code>*LAltShift*</code></td>
+            <td class='special-osk'>&#xE067;</td>
+            <td>Select Left-Alt-Shift layer (desktop layout compatibility)</td>
+          </tr>
+          <tr>
+            <td><code>*RAltShift*</code></td>
+            <td class='special-osk'>&#xE068;</td>
+            <td>Select Right-Alt-Shift layer (desktop layout compatibility)</td>
+          </tr>
+          <tr>
+            <td><code>*LCtrlShift*</code></td>
+            <td class='special-osk'>&#xE069;</td>
+            <td>Select Left-Ctrl-Shift layer (desktop layout compatibility)</td>
+          </tr>
+          <tr>
+            <td><code>*RCtrlShift*</code></td>
+            <td class='special-osk'>&#xE070;</td>
+            <td>Select Right-Ctrl-Shift layer (desktop layout compatibility)</td>
+          </tr>
+          </tbody>
+      </table>
+
+    </div>
+  </div><br class="table-break">
+
+  <h3><a name="key-type" id="key-type"></a>Key type</h3>
+
+  <p>The general appearance of each key is determined by the key type, which is selected (in Keyman Developer) from a drop-down
+  list. While generally behavior is not impacted by the key type, Spacer keys cannot be selected.</p>
 
   <div class="table">
     <a name="id488808" id="id488808"></a>
@@ -294,48 +496,58 @@
     <p class="title"><b>Table 2.3. </b></p>
 
     <div class="table-contents">
-      <table border="1">
+      <table class="display">
         <colgroup>
+          <col>
           <col>
           <col>
         </colgroup>
 
         <thead>
           <tr>
-            <th align="left">Key Type</th>
-            <th align="left">Value</th>
+            <th>Key Type</th>
+            <th>Value</th>
+            <th>Meaning</th>
           </tr>
         </thead>
 
         <tbody>
           <tr>
-            <td align="left">Default (normal) key</td>
-            <td align="left"><code class="language-keyman">0</code></td>
+            <td>Default</td>
+            <td><code class="language-keyman">0</code></td>
+            <td>Any normal key that emits a character</td>
           </tr>
 
           <tr>
-            <td align="left">Special (shift) key</td>
-            <td align="left"><code class="language-keyman">1</code></td>
+            <td>Special</td>
+            <td><code class="language-keyman">1</code></td>
+            <td>The frame keys such as Shift, Enter, BkSp.</td>
           </tr>
 
           <tr>
-            <td align="left">Active special key</td>
-            <td align="left"><code class="language-keyman">2</code></td>
+            <td>Special (active)</td>
+            <td><code class="language-keyman">2</code></td>
+            <td>A frame key which is currently active, such as the Shift key on the shift layer.</td>
           </tr>
 
           <tr>
-            <td align="left">Dead-key</td>
-            <td align="left"><code class="language-keyman">8</code></td>
+            <td>Deadkey</td>
+            <td><code class="language-keyman">8</code></td>
+            <td>Does not impact behavior, but colors the key differently to indicate it has a special function,
+                such as a desktop-style deadkey.</td>
           </tr>
 
           <tr>
-            <td align="left">Blank key</td>
-            <td align="left"><code class="language-keyman">9</code></td>
+            <td>Blank</td>
+            <td><code class="language-keyman">9</code></td>
+            <td>A blank key, which may be used to maintain a layout shape. Usually colored differently. Does not
+              impact behavior.</td>
           </tr>
 
           <tr>
-            <td align="left">Spacer</td>
-            <td align="left"><code class="language-keyman">10</code></td>
+            <td>Spacer</td>
+            <td><code class="language-keyman">10</code></td>
+            <td>Does not render the key, but leaves a same-sized gap in its place. The key cannot be selected.</td>
           </tr>
         </tbody>
       </table>
@@ -344,19 +556,19 @@
 
   <p>The colour, shading and borders of each key type is actually set by a style sheet which can be customized by the page developer.</p>
 
-  <h4><a name="id488904" id="id488904"></a>font-family</h4>
+  <h3><a name="font-family" id="font-family"></a>font-family</h3>
 
   <p>If a different font is required for a particular key text, the <code class="language-keyman">font-family</code> name can be specified. The font used to display icons for
   the special keys (as mentioned above) does not need to be specified, as it will be automatically applied to a key that uses any of the
   special key text labels.</p>
 
-  <h4><a name="id488940" id="id488940"></a>font-size</h4>
+  <h3><a name="font-size" id="font-size"></a>font-size</h3>
 
   <p>If a particular key cap text requires a different font size from the default for the layout, it should be specified in em units.
   This can be helpful if a the key text is either an unusually large character or, alternatively, a word or string of several characters
   that would not normally fit on the key.</p>
 
-  <h4><a name="id488924" id="id488924"></a>width</h4>
+  <h3><a name="width" id="width"></a>width</h3>
 
   <p>The layout is scaled to fit the widest row of keys in the device width, assuming a default key width of 100 units. Keys that are to
   be wider or narrower than the default width should have width specified as a percentage of the default width. For any key row that is
@@ -365,18 +577,18 @@
   leave a visible space instead. As shown in the above layouts, where the spacer key appears on the designer screen as a narrow key, but
   will not be visible in actual use.</p>
 
-  <h4><a name="id488914" id="id488914"></a>pad</h4>
+  <h3><a name="pad" id="pad"></a>pad</h3>
 
   <p>Padding to the left of each key can be adjusted, and specified as a percentage of the default key width. If not specified, a
   standard padding of 5% of the key width is used between adjacent keys.</p>
 
-  <h4><a name="id488916" id="id488916"></a>layer</h4>
+  <h3><a name="layer" id="layer"></a>layer</h3>
 
   <p>To simplify correspondence with desktop keyboards and avoid the need for using a separate keyboard mapping program, touch layout
   keys can specify a desktop keyboard layer that the keystroke should be interpreted as coming from. Layer names of <code class="language-keyman">shift</code>, <code class="language-keyman">ctrl</code>, <code class="language-keyman">alt</code>,
   <code class="language-keyman">ctrlshift</code>, <code class="language-keyman">altshift</code>, <code class="language-keyman">ctrlalt</code> and <code class="language-keyman">ctrlaltshift</code> can be used to simulate use of the appropriate modifier keys when processing rules.</p>
 
-  <h4><a name="id488908" id="id488908"></a>nextlayer</h4>
+  <h3><a name="nextlayer" id="nextlayer"></a>nextlayer</h3>
 
   <p>The virtual keys <code class="language-keyman">K_SHIFT</code>, <code class="language-keyman">K_CONTROL</code>, <code class="language-keyman">K_MENU</code>, etc. are normally used to switch to another key layer, which is implied by the key
   code. The left and right variants of those key codes, and also additional layer-switching keys mentioned above (<code class="language-keyman">K_NUMERALS</code>, <code class="language-keyman">K_SYMBOLS</code>,
@@ -398,7 +610,7 @@
   setting layer via the <a href='/developer/language/reference/layer'><code>layer</code></a> store (as the <strong>Next Layer</strong>
   control is applied once the rule has finished processing).</p>
 
-  <h4><a name="id488949" id="id488949"></a>subkey</h4>
+  <h3><a name="id488949" id="id488949"></a>subkey</h3>
 
   <p>Arrays of 'subkeys' or pop-up keys can be defined for any key, and will appear momentarily after the key is touched if not
   immediately released. This provides a major advantage over physical desktop keyboards in that many more keys can be made available from
@@ -415,17 +627,11 @@
   appear on the key of a desktop keyboard. This is enabled globally in the On-Screen layout editor and applies to both the On-Screen
   keyboard and touch layouts.</p>
 
-  <h4><a name="id488961" id="id488961"></a>Representing (and editing) the visual layout with JSON code</h4>
+  <h2><a name="id488961" id="id488961"></a>Representing (and editing) the visual layout with JSON code</h2>
 
   <p>In case you are wondering, 'Why do I need to know that?', the reason is that, just as with keyboard mapping code, it is
-  sometimes easier to edit a text specification than to use the GUI layout design tool. Keyman Developer 10 switches seamlessly between
+  sometimes easier to edit a text specification than to use the GUI layout design tool. Keyman Developer switches seamlessly between
   the visual layout tool and the code editor, unless, of course, careless editing of the code results in invalid JSON syntax!</p>
-
-  <p>There are a few things that it is actually quite hard to do with the visual layout tool, but simple with the code editor. One
-  obvious example would be to copy a tablet layout and use that as a starting point for a phone layout, or copying an entire layout from
-  one keyboard to another. Another use is for is renaming a layer - it is trivial to do this in the code editor, but not with the GUI
-  interface. Finding a particular key in an unfamiliar layout, or locating a key by width, and changing properties, is much easier with
-  the code editor than with the visual editor.</p>
 
   <p>The GFF Amharic phone layout code starts as:</p>
   <pre class="language-javascript"><code class="language-keyman">
