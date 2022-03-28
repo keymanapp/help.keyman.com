@@ -113,7 +113,7 @@ included in the keyboard program, and the key code matches the pattern
 `yyyy` are 4 to 6-digit hex strings), then the Unicode characters
 `U+xxxx` and `U+yyyy` will be output. As of Keyman 15, you
 can use more than one Unicode character value in the id (earlier versions
-permitted only one). T4he key code is always required, and a default code will
+permitted only one). The key code is always required, and a default code will
 usually be generated automatically by Keyman Developer.
 
 - `K_xxxx` is used for a standard Keyman Desktop key name, e.g.
