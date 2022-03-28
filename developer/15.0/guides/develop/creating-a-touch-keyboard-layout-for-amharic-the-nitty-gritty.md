@@ -619,7 +619,7 @@ course, careless editing of the code results in invalid JSON syntax!
 
 The GFF Amharic phone layout code starts as:
 
-```json
+```javascript
   {
     "phone": {
       "font": "Tahoma",
