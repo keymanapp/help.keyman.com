@@ -283,7 +283,7 @@ function loaded(){
     $('#toc-content').toc({
       'selectors': 'h1,h2,h3,h4',
       'container': 'article',
-      'scrollToOffset' : 120,
+      'scrollToOffset' : 40,
       'filter' : function(index, element) { return $(element).parents('.tip,.note,aside').length == 0; }
     });
 
@@ -297,6 +297,13 @@ function loaded(){
 
     $('#toc').css('max-height', window.innerHeight-180 + 'px');
     scrollFix();
+
+    // If the location hash is a #toc- anchor, the browser won't scroll it
+    // into view on page load, because the anchor is defined too late. So let's
+    // scroll that anchor into view
+    if(location.hash.match(/#toc-[a-z0-9_-]+$/i)) {
+      $('a[href="'+location.hash+'"]').click();
+    }
   });
 
 }
