@@ -29,7 +29,11 @@ RewriteEngine on
 # RewriteCond "%{DOCUMENT_ROOT}/$1/XX.0" -d
 # RewriteRule "^(.+)/current-version(/.*|$)" "$1/XX.0$2"
 
-# current-version:14.0
+# current-version:15.0
+RewriteCond "%{DOCUMENT_ROOT}/$1/15.0" -d
+RewriteRule "^(.+)/current-version(/.*|$)" "$1/15.0$2"
+
+# version:14.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/14.0" -d
 RewriteRule "^(.+)/current-version(/.*|$)" "$1/14.0$2"
 
