@@ -102,6 +102,8 @@ parameter is only valid for `import-windows` conversion mode.
 Note: model identifiers are constructed from parameters:
 `<id-author>.<id-language>.<id-uniq>`
 
+The values for `-id-author` and `-id-uniq` must be valid tokens: lower case a-z, 0-9, and underscore. These should also start with a letter or underscore.
+
 ### Examples
 
 Create a lexical model for Tok Pisin:
