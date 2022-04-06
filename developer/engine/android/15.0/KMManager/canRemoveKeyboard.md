@@ -3,7 +3,7 @@ title: KMManager.canRemoveKeyboard()
 ---
 
 ## Summary
-The **canRemoveKeyboard()** method returns whether removing a keyboard, like in the keyboard picker menu.
+The **canRemoveKeyboard()** method returns whether removing a keyboard is enabled, like in the keyboard picker menu.
 
 ## Syntax
 
