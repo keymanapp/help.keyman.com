@@ -37,17 +37,20 @@
   <dt><code><a href='addLexicalModel'>addLexicalModel()</a></code></dt>
   <dd>adds a lexical model into the lexical models list</dd>
 
-  <dt><code>advanceToNextInputMode()</code></dt>
+  <dt><code><a href='advanceToNextInputMode'>advanceToNextInputMode()</a></code></dt>
   <dd>switch to the next system keyboard input mode</dd>
+
+  <dt><code><a href='advanceToPreviousInputMethod'>advanceToPreviousInputMethod()</a></code></dt>
+  <dd>switch to the previous system keyboard input mode</dd>
 
   <dt><code><a href='applyKeyboardHeight'>applyKeyboardHeight()</a></code></dt>
   <dd>sets the height of keyboard frame</dd>
 
   <dt><code><a href='canAddNewKeyboard.php'>canAddNewKeyboard()</a></code></dt>
-  <dd>returns whether adding a new keyboard is enabled in the keyboard picker menu</dd>
+  <dd>returns whether adding a new keyboard is enabled, like in the keyboard picker menu</dd>
 
-  <dt><code>canRemoveKeyboard()</code></dt>
-  <dd>returns whether removing a keyboard is enabled in the keyboard picker menu</dd>
+  <dt><code><a href='canRemoveKeyboard'>canRemoveKeyboard()</a></code></dt>
+  <dd>returns whether removing a keyboard is enabled, like in the keyboard picker menu</dd>
 
   <dt><code><a href='createInputView.php'>createInputView()</a></code></dt>
   <dd>creates the input view to be used in InputMethodService</dd>
@@ -194,10 +197,10 @@
   <dd>removes the specified listener from the list of keyboard event listeners</dd>
 
   <dt><code><a href='setCanAddNewKeyboard.php'>setCanAddNewKeyboard()</a></code></dt>
-  <dd>sets whether adding a new keyboard is allowed in the keyboard picker menu</dd>
+  <dd>sets whether adding a new keyboard is allowed</dd>
 
   <dt><code>setCanRemoveKeyboard()</code></dt>
-  <dd>sets whether removing a keyboard is allowed in the keyboard picker menu</dd>
+  <dd>sets whether removing a keyboard is allowed, like in the keyboard picker menu</dd>
 
   <dt><code><a href='setDebugMode.php'>setDebugMode()</a></code></dt>
   <dd>enables or disables debugging of Keyman Engine</dd>
