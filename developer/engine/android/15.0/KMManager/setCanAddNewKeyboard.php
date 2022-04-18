@@ -10,7 +10,7 @@
 <h1>KMManager.setCanAddNewKeyboard()</h1>
 
 <h2 id="Summary" name="Summary">Summary</h2>
-<p>The <code><strong><?php echo $method.'()' ?></strong></code> method sets whether adding a new keyboard is allowed in the keyboard picker menu.</p>
+<p>The <code><strong><?php echo $method.'()' ?></strong></code> method sets whether adding a new keyboard is allowed.</p>
 
 <h2 id="Syntax" name="Syntax">Syntax</h2>
 <pre class="language-javascript"><code><?php echo $methodSyntax ?></code></pre>
