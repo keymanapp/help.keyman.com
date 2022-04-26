@@ -740,6 +740,12 @@ keyboard program, and the key code matches the pattern `U_xxxx` (where
 `U+xxxx` will be output. The key code is always required, and a default
 code will usually be generated automatically by Keyman Developer 9.
 
+If no rules matching the key code are included in the keyboard program, 
+and the key code matches the pattern
+`U_xxxx[_yyyy...]` (where `xxxx` and
+`yyyy` are 4 to 6-digit hex strings), then the Unicode characters
+`U+xxxx` and `U+yyyy` will be output. `U_xxxx_yyyy` requires store(&VERSION) '15.0'.
+
 Any key can be used to switch keyboard layers (see below), but the
 following layer-switching key codes have been added for switching to
 some commonly used secondary layers:
