@@ -120,12 +120,12 @@ You can run your app on a [created Virtual Device](https://developer.android.com
     or connect an Android device via USB to your computer to test. In either case, click the green Run button to start
     the app. The steps below show how to create a new Virtual Device
 
-[<img src="/cdn/dev/img/engine/android/14.0/guides/in-app/android-studio-starting-debug-800wi.png" title="Android-studio-starting-debug" alt="Android-studio-starting-debug">](/cdn/dev/img/engine/android/14.0/guides/in-app/android-studio-starting-debug.png")
+[<img src="/cdn/dev/img/engine/android/14.0/guides/in-app/android-studio-starting-debug-800wi.png" title="Android-studio-starting-debug" alt="Android-studio-starting-debug">](/cdn/dev/img/engine/android/14.0/guides/in-app/android-studio-starting-debug.png)
 
 Click the **[Create Virtual Device]** button to add a new virtual device, and follow the prompts. Any recent emulated
     device should work fine. You will be prompted to download additional resources for the emulator when this runs.
 
-[<img src="/cdn/dev/img/engine/android/14.0/guides/in-app/android-emulator-tamil-800wi.png" title="Android-emulator-tamil" alt="Android-emulator-tamil">](/cdn/dev/img/engine/android/14.0/guides/in-app/android-emulator-tamil.png")
+[<img src="/cdn/dev/img/engine/android/14.0/guides/in-app/android-emulator-tamil-800wi.png" title="Android-emulator-tamil" alt="Android-emulator-tamil">](/cdn/dev/img/engine/android/14.0/guides/in-app/android-emulator-tamil.png)
 
 And there you have it: your first Keyman Engine for Android app!
 
