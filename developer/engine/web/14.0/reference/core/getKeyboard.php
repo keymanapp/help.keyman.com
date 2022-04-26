@@ -35,7 +35,9 @@ obj_spec('keyboard',
   "CountryCode", "optional string", "A three-letter code corresponding to the country.",
   "KeyboardID", "optional string", "<em>Deprecated.</em>  A unique identifier for the keyboard.  (Use 'InternalName' instead.)",
   "Font", "optional string", "The font packaged with the keyboard to support its use.",
-  "OskFont", "optional string", "The font packaged with the keyboard to properly display specialized OSK characters."
+  "OskFont", "optional string", "The font packaged with the keyboard to properly display specialized OSK characters.",
+  "HasLoaded", "boolean", "<code>true</code> if the keyboard has been fully loaded.  <code>false</code> otherwise.",
+  "IsRTL", "optional boolean", "<code>null</code> whenever HasLoaded is <code>false</code>.  Otherwise, indicates whether or not the keyboard's target script is RTL."
   );
 ?>
 
