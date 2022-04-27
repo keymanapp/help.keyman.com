@@ -137,7 +137,7 @@ yes | ./sdkmanager.bat --licenses
 </code></pre>
 <p>If you included a dictionary in the sample app, add and register it with <code>KMManager</code>.</p>
 <pre class='language-java'><code>    // Add a dictionary
-    HashMap<String, String>lexicalModelInfo = new HashMap<String, String>();
+    HashMap&lt;String, String&gt;lexicalModelInfo = new HashMap&lt;String, String&gt;();
     lexicalModelInfo.put(KMManager.KMKey_PackageID, "example.ta.wordlist");
     lexicalModelInfo.put(KMManager.KMKey_LanguageID, "ta");
     lexicalModelInfo.put(KMManager.KMKey_LexicalModelID, "example.ta.wordlist");
