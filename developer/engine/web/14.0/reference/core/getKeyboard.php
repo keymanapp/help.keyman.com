@@ -37,7 +37,7 @@ obj_spec('keyboard',
   "Font", "optional string", "The font packaged with the keyboard to support its use.",
   "OskFont", "optional string", "The font packaged with the keyboard to properly display specialized OSK characters.",
   "HasLoaded", "boolean", "<code>true</code> if the keyboard has been fully loaded.  <code>false</code> otherwise.",
-  "IsRTL", "optional boolean", "<code>null</code> whenever HasLoaded is <code>false</code>.  Otherwise, indicates whether or not the keyboard's target script is RTL."
+  "IsRTL", "optional boolean", "<code>null</code> whenever HasLoaded is <code>false</code>.  Otherwise, <code>true</code> if the keyboard's target script is written right-to-left."
   );
 ?>
 
