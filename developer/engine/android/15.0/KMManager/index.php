@@ -83,7 +83,7 @@
   <dd>returns the action type of the 'Globe' key</dd>
 
   <dt><code><a href='getHapticFeedback'>getHapticFeedback()</a></code></dt>
-  <dd>returns whether the keyboard vibrates as the user types</dd>
+  <dd>returns whether the device vibrates as the user types</dd>
 
   <dt><code><strike>getKeyboardFontFilename()</strike> (Deprecated)</code></dt>
   <dd>use getKeyboardTextFontFilename or getKeyboardOskFontFilename instead</dd>
@@ -215,7 +215,7 @@
   <dd>sets an action type for the 'Globe' key</dd>
 
   <dt><code><a href='setHapticFeedback'>setHapticFeedback()</a></code></dt>
-  <dd>sets whether the keyboard vibrates as the user types</dd>
+  <dd>sets whether the device vibrates as the user types</dd>
 
   <dt><code><a href='setHelpBubbleEnabled.php'>setHelpBubbleEnabled()</a></code></dt>
   <dd>enables or disables the help bubble</dd>
