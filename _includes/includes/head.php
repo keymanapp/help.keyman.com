@@ -99,7 +99,7 @@
     }
     if(!isset($kmw_dev_path)) {
   ?>
-      <script src='https://s.keyman.com/kmw/engine/<?=$kmw_version_number?>/keymanweb.js'></script>
+      <script src='https://s.keyman.com/kmw/engine/14.0.294/keymanweb.js'></script>
   <?php
     } else {
   ?>
