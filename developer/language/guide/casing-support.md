@@ -94,21 +94,23 @@ store(digit) '0'..'9'
 group(NewContext) readonly
     c Any time we get a new context, by mouse click, tap,
     c cursor movement, new document, etc, we'll try and
-    c determine the best layer to use
-    nomatch > use(detectStartOfSentence)
+    c determine the best layer to use. We don't want to
+    c do this on a desktop platform, though!
+    platform('touch') > use(detectStartOfSentence)
 
 group(PostKeystroke) readonly
     c We get here after every keystroke and model action is processed
+    c Note that we only want to do layer changes on touch
 
     c Okay, let's stay on the numeric layer if we are there already
-    if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
+    platform('touch') if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
 
     c Don't swap off the caps lock layer automatically
-    if(&layer = 'caps') > context
+    platform('touch') if(&layer = 'caps') > context
 
     c no other changes, so detect sentence or layer change, as long
     c as the user hasn't attempted to change layer themselves.
-    if(&newLayer = "") > use(detectStartOfSentence)
+    platform('touch') if(&newLayer = "") > use(detectStartOfSentence)
 
 group(detectStartOfSentence) readonly
     c We have a shared group for the start of sentence detection now
