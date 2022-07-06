@@ -87,9 +87,9 @@ event](begin) on an Android device, the user interface will always be given as
 `touch`, even if the user is typing on a hardware keyboard (where the keystroke
 processing rules called from `begin Unicode` would have been given a `hardware`
 user interface platform value). This reflects the fact that the On Screen
-Keyboard (even if it is not visible) will a touch-style keyboard, and allows the
-rules to [set the appropriate touch layout layer](../guide/casing-support) based
-on the context.
+Keyboard (even if it is not visible) will be a touch-style keyboard, and allows
+the rules to [set the appropriate touch layout layer](../guide/casing-support)
+based on the context.
 
 ### Operating System
 
