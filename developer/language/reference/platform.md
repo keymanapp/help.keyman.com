@@ -44,8 +44,7 @@ then the test fails (note: new behaviour for Keyman 10).
 For example, `touch android tablet native` would match Keyman for Android on an
 Android tablet; `android tablet` would match Keyman for Android on an Android
 tablet or KeymanWeb in a browser on an Android tablet. `blackberry` would not
-match on any platform (as Blackberry is not a supported platform as of Keyman
-10).
+match on any platform (as Blackberry is not a supported platform for Keyman.)
 
 ## Platform constraint definition
 
@@ -59,18 +58,43 @@ The components are: **User Interface**, **Operating System**, **Form Factor**,
 
 ### User Interface
 
+The user interface value depends on the entry point. For a `begin Unicode` entry
+point, the user interface value will be as follows:
+
 `touch`
-: A touch-screen keyboard, such as an iPhone, iPad, Android phone or tablet or
-  Windows phone.
+: A touch-screen keyboard, such as an iPhone, iPad, Android phone or tablet.
 
 `hardware`
-: Using a physical keyboard, e.g. Keyman Desktop, or a touch device but with an
-  external keyboard attached (supported on Android).
+: Using a physical keyboard, e.g. Keyman for Windows, or a touch device but with
+  an external keyboard attached (supported on Android), or clicking on the
+  desktop-style On Screen Keyboard.
+
+For the `begin newcontext` and `begin postkeystroke` entry points, the user
+interface value reflects the style of the on screen keyboard, whether or not it
+is visible:
+
+`touch`
+: A touch-screen keyboard, such as an iPhone, iPad, Android phone or tablet.
+
+`hardware`
+: A desktop-style on screen keyboard.
+
+#### Discussion
+
+The choice between touch and hardware user interface is sometimes ambiguous. For
+example, when running rules from a [`newcontext` or `postkeystroke`
+event](begin) on an Android device, the user interface will always be given as
+`touch`, even if the user is typing on a hardware keyboard (where the keystroke
+processing rules called from `begin Unicode` would have been given a `hardware`
+user interface platform value). This reflects the fact that the On Screen
+Keyboard (even if it is not visible) will a touch-style keyboard, and allows the
+rules to [set the appropriate touch layout layer](../guide/casing-support) based
+on the context.
 
 ### Operating System
 
 `windows`
-: Microsoft Windows, desktop, server and mobile versions
+: Microsoft Windows, desktop or server editions
 
 `android`
 : Any device running the Android operating system
@@ -79,7 +103,7 @@ The components are: **User Interface**, **Operating System**, **Form Factor**,
 : Any iPhone, iPad, iPod or other device running the iOS operating system
 
 `macosx`, `mac` or `macos`
-: macOS
+: macOS (`macos` is the recommended term)
 
 `linux`
 : Linux or other UNIX-style operating systems.
@@ -114,7 +138,7 @@ though Keyman for Android and Keyman for iPhone and iPad use KeymanWeb
 internally, browser tests will not match in those apps.
 
 `ie`
-: Keyman Engine for Web in Internet Explorer
+: Keyman Engine for Web in Internet Explorer (deprecated)
 
 `chrome`
 : Keyman Engine for Web in Chrome
@@ -160,6 +184,9 @@ The `platform()` statement can be used in keyboards on all platforms.
 </table>
 
 ## Version history
+
+* Version 15.0: Clarifications on behaviour for `platform()` statement with
+  `begin newcontext` and `begin postkeystroke`.
 
 * Version 10.0: Behaviour for unrecognised tokens was changed to treat
   unrecognised tokens as a failure to match instead of succeeding as in earlier
