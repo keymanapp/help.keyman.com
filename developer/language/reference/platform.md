@@ -33,18 +33,18 @@ a platform is somewhat rubbery, consisting of items such as operating system,
 application, browser, form factor and input type. Accordingly, the platform
 constraints are correspondingly loose.
 
-A platform constraint is list of one or more platform identifiers separated by
+A platform constraint is a list of one or more platform identifiers separated by
 spaces. There is no order defined for the list. The identifiers are
 case-insensitive.
 
 The key requirement for testing a given platform constraint is that all factors
 must be met for the constraint to pass. If an unknown constraint is included,
-then the test fails (note: new behaviour for Keyman 10).
+then the test fails (note: new behaviour since Keyman 10).
 
 For example, `touch android tablet native` would match Keyman for Android on an
 Android tablet; `android tablet` would match Keyman for Android on an Android
 tablet or KeymanWeb in a browser on an Android tablet. `blackberry` would not
-match on any platform (as Blackberry is not a supported platform for Keyman.)
+match on any platform (as Blackberry is not a supported platform for Keyman).
 
 ## Platform constraint definition
 
