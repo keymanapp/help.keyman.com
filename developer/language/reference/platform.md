@@ -185,7 +185,7 @@ The `platform()` statement can be used in keyboards on all platforms.
 
 ## Version history
 
-* Version 15.0: Clarifications on behaviour for `platform()` statement with
+* Version 15.0.267: Clarifications on behaviour for `platform()` statement with
   `begin newcontext` and `begin postkeystroke`.
 
 * Version 10.0: Behaviour for unrecognised tokens was changed to treat
