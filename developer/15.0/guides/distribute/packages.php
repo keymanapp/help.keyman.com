@@ -75,7 +75,8 @@ through the keyboard's entry in Keyman Configuration.</p>
 <h2>Step 1) Share the keyboard package file</h2>
 
 <p>Once the keyboard package .kmp file is created, you can share them via external storage devices (USB drive, SD card, etc).
-  If that is not an option, you can upload the .kmp file to a public facing website.
+  You can also share the package file via a cloud storage system (Google Drive, Dropbox or similar service), then share the 
+  link to your device via text, note or email. Alternatively, you can upload the .kmp file to a public facing website.
   For this example, the keyboard package for Khmer Angkor is being uploaded:</p>
 
 <ol>
