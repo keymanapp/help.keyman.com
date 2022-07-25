@@ -388,7 +388,7 @@ head([
       <dt id="KM_KBP_TECH_KMX"><code class="token constant">KM_KBP_TECH_UNSPECIFIED</code></dt>
       <dd>The keyboard processor implements a Keyman KMX compatible engine.</dd>
 
-      <dt id="KM_KBP_TECH_LDML"><code class="token constant">KM_KBP_TECH_UNSPECIFIED</code></dt>
+      <dt id="KM_KBP_TECH_LDML"><code class="token constant">KM_KBP_TECH_LDML</code></dt>
       <dd>The keyboard processor implements a LDML capable processing engine.</dd>
     </dl>
   </section>
