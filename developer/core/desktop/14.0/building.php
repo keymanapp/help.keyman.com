@@ -61,7 +61,7 @@ $&gt; meson test
 <p>
   kmcomp is the command-line compiler from Keyman Developer, available from
   <a href="https://keyman.com/developer/"/>keyman.com</a>
-  or source in the <a href='https://github.com/keymanapp/keyman/tree/master/windows/src/developer/kmcomp'>Keyman 
+  or source in the <a href='https://github.com/keymanapp/keyman/tree/master/developer/src/kmcomp'>Keyman 
   repo</a>. The compiler is currently available as a
   Windows PE executable only, but it does run under WINE.
 </p>
