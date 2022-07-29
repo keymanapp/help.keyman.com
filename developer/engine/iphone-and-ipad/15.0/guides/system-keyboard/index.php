@@ -36,7 +36,7 @@
   <li>Note that provisioning profiles must be set for both the KMSample2 and SWKeyboard targets.</li>
   <li>The downloaded project does not bundle the frameworks you'll need - make sure to get those in place.
     <ol>
-      <li>Refer to our <a href="https://github.com/keymanapp/keyman/blob/stable-14.0/ios/Cartfile">Cartfile</a>,
+      <li>Refer to our <a href="https://github.com/keymanapp/keyman/blob/stable-15.0/ios/Cartfile">Cartfile</a>,
   which is used with the Carthage dependency manager.</li>
     </ol>
   </li>
