@@ -21,7 +21,7 @@
     <br/><br/>
     All of the methods and delegate calls of the original UIKit classes are retained.
     <br/><br/>
-    With version 14.0, we have deprecated direct use of .js files for resources in favor of supporting
+    As of version 14.0, we deprecated direct use of .js files for resources in favor of supporting
     .kmp packages.  Package files have the same old .js files bundled alongside any related resources (like
     fonts and documentation) on your behalf, making the process of setting up keyboards and lexical models easier.
 </p>
