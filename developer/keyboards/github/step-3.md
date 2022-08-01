@@ -47,7 +47,7 @@ See the [Updating your fork](#updating-your-fork) section near the bottom of thi
 Click on the "Branch: master" button and type in the name of the branch you want to create.
 We suggest that you use the name of the keyboard as the name of your branch,
 but you can use anything that makes sense to you.
-After typing the name of the branch, click on "Create branch" or just type the Enter key.
+After typing the name of the branch, click on "Create branch".
 
 ![](../../../cdn/dev/img/developer/keyboards/github-create-branch.png)
 
@@ -55,11 +55,15 @@ Now you need to navigate to the right location.
 **This is the trickiest part of this procedure.**
 Take your time and verify each step.
 
-You'll start by double-clicking on the "release" folder
+You'll start by clicking on the "release" folder
 (or the "experimental" folder if you're using that option).
-Then you need to double-click on the folder name with the letter
+Then you need to click on the folder name with the letter
 that corresponds to the first letter of your keyboard folder name.
-Since the "sample1" keyboard folder name starts with "s", we double-click on the "s" folder.
+Since the "sample1" keyboard folder name starts with "s", we click on the "s" folder.
+
+Click on the "Add file" button, then on the "Upload files" option:
+
+![](../../../cdn/dev/img/developer/keyboards/github-add-files.png)
 
 Now we can click-and-drag the "sample1" folder from the Explorer window and drop that dragged folder
 on the browser window that is displaying the existing keyboards that start with "s".
