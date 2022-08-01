@@ -95,13 +95,9 @@ the Thamizha Tamil99 keyboard can be accessed through the keyboard's "globe" key
 </p>
 -->
 
-<p>If you plan for your app to be compatible with iOS 9 or 10, include detailed instructions for users on how to enable the system keyboard
-on their own.  (Unfortunately, apps on those iOS versions cannot directly summon the appropriate menu.)
-<ol>
-  <li>For more recent versions of iOS, the following can be used to launch the appropriate Settings menu:</li>
-</ol>
-<pre class="language-swift"><code>// The #available part is needed for apps also supporting iOS 9, 10.
-if #available(iOS 11.0, *), let appSettings = URL(string: UIApplication.openSettingsURLString) {
+<p>Apple does not allow for automatic enabling of your app's system keyboard.  To assist users, you may wish
+  to use following code to launch the appropriate menu within Settings, making setup simple for them:
+<pre class="language-swift"><code>if let appSettings = URL(string: UIApplication.openSettingsURLString) {
   UIApplication.shared.openURL(appSettings)
 }</pre></code>
 </p>
