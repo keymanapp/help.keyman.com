@@ -39,7 +39,7 @@
     Many previous keyboards were stored on websites that no longer exist. Configuring your keyboard in the
     keyboards repository helps ensure that users can download your keyboard from
     <a href="https://keyman.com/developer/keymanweb/keyboards.php" target="_blank">keyman.com</a> and find the
-    documentation on <a href="https://help.keyman.com/keyboards/" target="_blank">help.keyman.com</a>.
+    documentation on <a href="https://help.keyman.com/keyboard/" target="_blank">help.keyman.com</a>.
     The source files for your keyboard will remain in the GitHub repository mentioned above so you'll
     be able to find the keyboard source for future updates.
     </p>
