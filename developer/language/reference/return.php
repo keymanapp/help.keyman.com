@@ -25,9 +25,9 @@
 
 <h3 id="Example:_Using_return" name="Example:_Using_return">Example: Using <code>return</code></h3>
 
-<p>The <code>return</code> statement tells Keyman to stop processing rules and wait for the next keystroke event. 
-Keyman will immediately return control to the user, and will not process other groups in the call stack, so this 
-will skip <a href='match.php'><code>match</code> rules</a>, for example.</p>
+<p>The <code>return</code> statement tells Keyman to stop processing rules and wait for the next keystroke event.
+Keyman will immediately return control to the user, and will not process other groups in the call stack, so this
+will skip <a href='match'><code>match</code> rules</a>, for example.</p>
 
 <pre><code>nomatch > return
 </code></pre>

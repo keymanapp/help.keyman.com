@@ -19,6 +19,11 @@ Here are some of the new features we have added to Keyman for Android 14.0:
 * Keyman now works more reliably with WeChat and Telegram (#4254)
 * Added new Settings menu to [Change Display Language](../basic/config/index#Change-Display-Language): (#4261)
     * French
+    * Indonesian
     * German
     * Khmer
     * Obolo
+    * Pulaar-fulfulde
+
+[![](../android_images/video.png) Watch a video](https://youtu.be/ehk0Bts28JE)
+that highlights some of these new features.

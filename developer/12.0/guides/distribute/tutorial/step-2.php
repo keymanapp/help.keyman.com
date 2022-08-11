@@ -156,8 +156,8 @@ package.</p>
   <dd>
     You can include user interface translation files in your package – these will be automatically available once you install the
     package. The user interface files are called <strong>locale-xxx.xml</strong>, where xxx is the BCP 47 code for the language. The
-    basic English <strong>locale.xml</strong> file is available in <strong>[Program Files (x86)]\Keyman\Keyman Desktop 10.0\xml</strong>.
-    Information on the locale.xml file format is available <a class="link" href="/products/desktop/current-version/docs/advanced_locale_edit">here</a>.
+    basic English <strong>locale.xml</strong> file is available in <strong>[Program Files (x86)]\Keyman\Keyman Desktop 12.0\xml</strong>.
+    Information on the locale.xml file format is available <a class="link" href="/products/windows/12.0/docs/advanced_locale_edit">here</a>.
   </dd>
 </dl>
 

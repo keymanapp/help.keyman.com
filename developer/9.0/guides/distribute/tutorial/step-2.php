@@ -157,7 +157,7 @@ package.</p>
     You can include user interface translation files in your package – these will be automatically available once you install the
     package. The user interface files are called <strong>locale-xxx.xml</strong>, where xxx is the ISO639-3 code for the language. The
     basic English <strong>locale.xml</strong> file is available in <strong>[Program Files (x86)]\Tavultesoft\Keyman Developer 9.0\Redist\UI</strong>.
-    Information on the locale.xml file format is available <a class="link" href="/products/desktop/current-version/docs/advanced_locale_edit">here</a>.
+    Information on the locale.xml file format is available <a class="link" href="/products/windows/9.0/docs/advanced_locale_edit">here</a>.
   </dd>
 </dl>
 

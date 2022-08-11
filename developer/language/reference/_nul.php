@@ -52,7 +52,7 @@ column or section break, at the start of a header or footer, at the start of a t
 <pre class="language-keyman"><code>U+0D4D + 'a' > nul
 </code></pre>
 
-<h3 id="Example:_Using_nul" name="Example:_Using_nul">Example: Using <code>nul</code> on the right hand side of the context</h3>
+<h3 id="Example:_Using_nul" name="Example:_Using_nul">Example: Using <code>nul</code> on the left hand side of the context</h3>
 
 <p>This example will capitalize a letter at the start of a buffer (hint: this not really recommended!)</p>
 

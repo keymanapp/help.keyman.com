@@ -88,7 +88,7 @@
         break;
       case KeymanHosts::TIER_DEVELOPMENT:
         $site_suffix = '.local';
-        $site_protocol = 'http://';
+        $site_protocol = 'https://';
         break;
       }
 

@@ -112,6 +112,10 @@ title: Keyman Keyboard Language Reference
 [`&Name` store and `NAME` statement](name "&Name store and NAME statement")
 :   The name of the keyboard
 
+[`&newLayer` store](newlayer)
+:   Reports on which layer the current touch keyboard has recently changed to
+    in a `PostContext` process
+
 [`nomatch` rule](nomatch "nomatch rule")
 :   A system rule that is fired when no rule is matched in a group
 
@@ -124,6 +128,10 @@ title: Keyman Keyboard Language Reference
 [`&OldCharPosMatching` store](oldcharposmatching "&OldCharPosMatching store")
 :   Turns on the Keyman 5.0 and earlier character position matching (not
     implemented)
+
+[`&oldLayer` store](oldlayer)
+:   Reports on which layer the current touch keyboard has recently changed
+    from in a `PostContext` process
 
 [`outs()` statement](outs "outs() statement")
 :   Outputs an array of characters

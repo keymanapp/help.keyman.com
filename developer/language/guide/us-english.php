@@ -19,26 +19,26 @@ Identifier in Keyman Developer can be used to identify the names of these keys.<
   padding: 0 0 0 10px;
 }
 
-.keyboard .spacer { 
-  width: 12px 
+.keyboard .spacer {
+  width: 0px;
   height: 0px;
 }
 
 .keyboard .key_borderA,
 .keyboard .key_ctrl_border {
-  border: solid 1px #c0c0c0; 
-  border-radius: 5px; 
+  border: solid 1px #c0c0c0;
+  border-radius: 5px;
   box-shadow: 4px 4px 6px rgba(128,128,128,0.5);
   height: 24px;
   margin: 4px 2px;
 }
 
 .keyboard .key_borderA {
-  background: white; 
+  background: white;
 }
 
 .keyboard .key_ctrl_border {
-  background: #e0e0e0; 
+  background: #e0e0e0;
 }
 </style>
 
@@ -180,7 +180,7 @@ Identifier in Keyman Developer can be used to identify the names of these keys.<
 </table>
 
  <h2>Shifted</h2>
- 
+
 <table class="keyboard">
   <tbody>
     <tr>

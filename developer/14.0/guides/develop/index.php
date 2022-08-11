@@ -14,4 +14,6 @@
   <dt><a href="creating-a-touch-keyboard-layout-for-amharic">Creating a touch keyboard layout for Amharic - part 1</a></dt>
   <dt><a href="creating-a-touch-keyboard-layout-for-amharic-the-nitty-gritty">Creating a touch keyboard layout for Amharic - part 2</a></dt>
   <dt><a href="imx">Input Method Extensions (IMX)</a></dt>
+  <hr/>
+  <dt><a href="https://lingtran.net/Keyman-Developer-Tutorial">Keyman Developer 14 Tutorial</a> (external on Lingtran.net)</dt>
 </dl>
