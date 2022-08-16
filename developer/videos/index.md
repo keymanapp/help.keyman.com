@@ -52,4 +52,5 @@ If you would like to be involved in a future workshop, let us know in the
 
 # Other Videos
 
+* [Keyman channel on YouTube](https://www.youtube.com/channel/UCNUEhcaO1Cz6X7RnHs7tpFg)
 * [Keyman channel on Vimeo](https://vimeo.com/channels/keyman)

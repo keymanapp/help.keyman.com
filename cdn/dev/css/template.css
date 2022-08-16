@@ -919,6 +919,10 @@ input[type="search"] {
   line-height: 1.4;
 }
 
+#section2 code[class*="language-"] {
+	font-size: 10.5pt
+}
+
 .product-index {
 	text-align: center;
 }
@@ -1337,7 +1341,7 @@ body[data-device='Unknown'] #osk-tablet-container {
  * TABLET CSS
  * ***********************************/
 
-@media only screen and (min-width: 768px) and (max-width: 1024px){
+@media only screen and (min-width: 600px) and (max-width: 1024px){
 	.wrapper, #section2 .wrapper{
 		width: 740px;
     margin-left: auto;
@@ -1407,63 +1411,6 @@ body[data-device='Unknown'] #osk-tablet-container {
 		font-size: 28pt;
 	}
 }
-
-/* 7 inch */
-@media all and (min-width: 600px) and (max-width: 768px){
-	.wrapper, #section2 .wrapper{
-		width: 580px;
-    margin-left: auto;
-    margin-right: auto;
-	}
-	/* Header */
-	#top-menu-bg{
-		display: none;
-	}
-	#top-menu1 .menu-item{
-		width: auto;
-    padding: 0 16px;
-	}
-	#top-menu1 .menu-item h3{
-		font-size: 8pt;
-	}
-	/* Footer */
-	.footer-third{
-		width: 290px;
-		margin-left: 0px;
-		margin-right: 0px;
-	}
-	.footer-third form{
-		width: 290px;
-	}
-	.footer-third form input{
-		width: 170px;
-	}
-	#facebook{
-		margin-left: 20px;
-	}
-	/* Section 1 */
-	#sect1-title h1{
-		font-size: 28pt;
-		text-align: center;
-	}
-	#sect1-image img{
-		max-width: 90%;
-	}
-	/* Phone Menu */
-	#show-phone-menu{
-		display: block;
-	}
-	#osk .kmw-osk-inner-frame{
-		height: 220px;
-		font-size: 1.5em !important;
-	}
-	.footer-tab-holder{
-		display: none;
-	}
-}
-
-
-
 
 /**************************************
  * PHONE CSS

@@ -77,7 +77,9 @@ Certain statements must appear in specific positions in the rule. The following 
 
 ### Keystroke Statement Use {#keystroke-statement-use}
 
-The *keystroke* part of the rule may contain a Unicode character, a virtual key, or one of the following statements:
+The *keystroke* part of the rule may contain a Unicode character representing
+the value on the key cap of the base keyboard, a virtual key, a virtual
+character key, or one of the following statements:
 
 [`any()` statement](../reference/any "any() statement")
 :   Matches on an array of characters
@@ -85,7 +87,10 @@ The *keystroke* part of the rule may contain a Unicode character, a virtual key,
 [`outs()` statement](../reference/outs "outs() statement")
 :   Outputs an array of characters
 
-Only a single character, statement or virtual key is allowed in the keystroke part of the rule.
+Only a single character, statement, virtual character key or virtual key is
+allowed in the keystroke part of the rule.
+
+* [Keys, virtual keys, and virtual character Keys](virtual-keys)
 
 ### Output Statement Use {#output-statement-use}
 
@@ -130,6 +135,9 @@ The *output* part of the rule may contain Unicode characters and certain stateme
 
 [`use()` statement](../reference/use "use() statement")
 :   Starts processing in another group
+
+**Note:** In [read-only groups](groups#readonly-clause), only a subset of these
+statements may be used.
 
 ## context statement {#context-statement}
 

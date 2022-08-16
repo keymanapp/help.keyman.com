@@ -24,8 +24,10 @@ For Windows 10:
 6. Start an elevated instance of Notepad (that is, use "Run as Administrator" when starting
    Notepad), load "C:\WINDOWS\System32\drivers\etc\hosts" and add the line
    `127.0.0.1  help.keyman.com.local`.
-7. You should now be able to navigate to <http://help.keyman.com.local/> on your computer
-8. If you get an error, it may be a problem with permissions:
+7. Install [Composer](http://getcomposer.org/download/), then run `composer
+   install` in the root folder of your site.
+8. You should now be able to navigate to <http://help.keyman.com.local/> on your computer
+9. If you get an error, it may be a problem with permissions:
 
     - With File Explorer navigate to the folder with your local copy of the help repository ("keyman-help.keyman.com", unless you used a shorter name such as "keyman-help" folder in Step 0).
     - Right click on the name of the folder, and select Properties, then select the Security tab. Under the "Group or user names" box, click the edit button.
@@ -42,6 +44,18 @@ the `test` folder.
 Using a browser to navigate to <http://help.keyman.com.local/test/xyz.php> should display the
 help file.
 
+### Prerequisites on Linux
+
+Install PHP and the mbstring, curl, and xml extensions:
+
+```bash
+sudo apt update
+sudo apt install php php-mbstring php-curl php-xml
+```
+
+**NOTE:** when using Docker these packages are not necessary on the development machine to run the
+site, but to populate the `vendor` folder.
+
 ### Using composer to install dependencies in vendor/ folder
 
 1. Install [Composer](https://getcomposer.org/download/)
@@ -51,24 +65,35 @@ help file.
 
 To run locally with Docker on http://localhost:8055 you can use commands like the following:
 
+**NOTE:** You might have to adjust the base image (`FROM` line in `Dockerfile`) to the installed
+PHP version.
+
 ### On Windows
 
 In help.keyman.com repo root:
 
-    docker build -t keyman-websites .
-    docker run -d -p 8055:80 -v %cd%:/var/www/html/ -e S_KEYMAN_COM=localhost:8054 keyman-websites
+```bash
+docker build -t keyman-websites .
+docker run -d -p 8055:80 -v %cd%:/var/www/html/ -e S_KEYMAN_COM=localhost:8054 keyman-websites
+```
 
 In s.keyman.com repo root:
 
-    docker run -d -p 8054:80 -v %cd%:/var/www/html/ keyman-websites
+```bash
+docker run -d -p 8054:80 -v %cd%:/var/www/html/ keyman-websites
+```
 
 ### On Linux
 
 In help.keyman.com repo root:
 
-    docker build -t keyman-websites .
-    docker run -d -p 8055:80 -v $(pwd):/var/www/html/ -e S_KEYMAN_COM=localhost:8054 keyman-websites
+```bash
+docker build -t keyman-websites .
+docker run -d -p 8055:80 -v $(pwd):/var/www/html/ -e S_KEYMAN_COM=localhost:8054 keyman-websites
+```
 
 In s.keyman.com repo root:
 
-    docker run -d -p 8054:80 -v $(pwd):/var/www/html/ keyman-websites
+```bash
+docker run -d -p 8054:80 -v $(pwd):/var/www/html/ keyman-websites
+```

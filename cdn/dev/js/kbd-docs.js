@@ -7,9 +7,6 @@ function loaded(){
     window.setTimeout(loaded, 100);
     return;
   }
-  $('#testimonial').click(function(){
-    location.href="http://www.tavultesoft.com/testimonials.php";
-  });
 
   // Email subscribe form
   $('.subscribe').click(function(){
@@ -110,17 +107,17 @@ function loaded(){
             if(!fontSource) continue;
             var fontType = fontSource.match(/\.woff$/i) ? 'woff' : 'truetype';
             // Add the font information
-            $('head').append($(`
-<style>
-@font-face {
-	font-family:"${fontFamily}";
-	font-style:normal;
-	font-weight:normal;
-	src:url('https://s.keyman.com/font/deploy/${fontSource}') format('${fontType}');
-}
-.kmw-key-text { font-family: "${fontFamily}"; }
-</style>
-`));
+            $('head').append($(
+"<style>\n"+
+"@font-face {\n"+
+"	font-family:\""+fontFamily+"\";\n"+
+"	font-style:normal;\n"+
+"	font-weight:normal;\n"+
+"	src:url('https://s.keyman.com/font/deploy/"+fontSource+"') format('"+fontType+"');\n"+
+"}\n"+
+".kmw-key-text { font-family: \""+fontFamily+"\"; }\n"+
+"</style>"
+));
             return;
           }
         }
@@ -408,7 +405,7 @@ function loaded(){
     $('#toc-content').toc({
       'selectors': 'h1,h2,h3,h4',
       'container': 'article',
-      'scrollToOffset' : 120,
+      'scrollToOffset' : 40,
       'filter' : function(index, element) { return $(element).parents('.tip,.note').length == 0; }
     });
 
@@ -422,6 +419,13 @@ function loaded(){
 
     $('#toc').css('max-height', window.innerHeight-180 + 'px');
     scrollFix();
+
+    // If the location hash is a #toc- anchor, the browser won't scroll it
+    // into view on page load, because the anchor is defined too late. So let's
+    // scroll that anchor into view
+    if(location.hash.match(/#toc-[a-z0-9_-]+$/i)) {
+      $('a[href="'+location.hash+'"]').click();
+    }
   });
 
 }

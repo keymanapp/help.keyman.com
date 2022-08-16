@@ -34,7 +34,7 @@
 <head>
   <meta charset="utf-8">
   <?php
-    if(KeymanHosts::Instance()->Tier() != KeymanHosts::TIER_PRODUCTION) {
+    if(KeymanHosts::Instance()->Tier() == KeymanHosts::TIER_STAGING) {
       echo '    <meta name="robots" content="none">';
     }
   ?>
@@ -50,7 +50,7 @@
   <script src="<?= cdn('js/sentry.bundle.5.28.0.min.js'); ?>"></script>
   <script>
     Sentry.init({
-      dsn: "https://fcc8fe39792f49f3a94ea831cad5c9d6@sentry.keyman.com/2",
+      dsn: "https://fcc8fe39792f49f3a94ea831cad5c9d6@o1005580.ingest.sentry.io/5983515",
       environment: location.host.match(/\.local$/) ? 'development' : location.host.match(/(^|\.)keyman-staging\.com$/) ? 'staging' : 'production',
     });
   </script>

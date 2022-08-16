@@ -29,8 +29,8 @@ store(callDefinitionStore) "myimx.dll:KeyEvent"
 
 <h2 id="Description" name="Description">Description</h2>
 
-<p>The <code><strong>call</strong>()</code> statement calls an Input Method Extension (IMX) DLL. Functionally it behaves like the <a href='use.php'><code>use()</code> statement</a>,
-and can be used anywhere the <code>use()</code> statement is valid except after the <a href='begin.php'><code>begin</code> statement</a>.</p>
+<p>The <code><strong>call</strong>()</code> statement calls an Input Method Extension (IMX) DLL. Functionally it behaves like the <a href='use'><code>use()</code> statement</a>,
+and can be used anywhere the <code>use()</code> statement is valid except after the <a href='begin'><code>begin</code> statement</a>.</p>
 
 <p>As the <code><strong>call</strong>()</code> statement originated on Microsoft Windows, the definition is based on Windows requirements.
 The store given must be referencing a function in an external DLL, which should be installed as part of a package into the same path as the

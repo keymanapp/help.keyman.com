@@ -39,10 +39,15 @@ https://github.com/YOUR-GITHUB-NAME/keyboards
 
 **Note:** The GitHub interface changes from time to time. The following images may vary from what you see on your screen.
 
+If it has been a while since you created your fork, you may see a note saying something like: 
+"This branch is 153 commits behind keymanapp:master". 
+If that's the case, you'll want to update your fork before proceeding. 
+See the [Updating your fork](#updating-your-fork) section near the bottom of this page.
+
 Click on the "Branch: master" button and type in the name of the branch you want to create.
 We suggest that you use the name of the keyboard as the name of your branch,
 but you can use anything that makes sense to you.
-After typing the name of the branch, click on "Create branch" or just type the Enter key.
+After typing the name of the branch, click on "Create branch".
 
 ![](../../../cdn/dev/img/developer/keyboards/github-create-branch.png)
 
@@ -50,11 +55,15 @@ Now you need to navigate to the right location.
 **This is the trickiest part of this procedure.**
 Take your time and verify each step.
 
-You'll start by double-clicking on the "release" folder
+You'll start by clicking on the "release" folder
 (or the "experimental" folder if you're using that option).
-Then you need to double-click on the folder name with the letter
+Then you need to click on the folder name with the letter
 that corresponds to the first letter of your keyboard folder name.
-Since the "sample1" keyboard folder name starts with "s", we double-click on the "s" folder.
+Since the "sample1" keyboard folder name starts with "s", we click on the "s" folder.
+
+Click on the "Add file" button, then on the "Upload files" option.
+
+![](../../../cdn/dev/img/developer/keyboards/github-add-files.png)
 
 Now we can click-and-drag the "sample1" folder from the Explorer window and drop that dragged folder
 on the browser window that is displaying the existing keyboards that start with "s".
@@ -77,7 +86,7 @@ Then click on the green "Commit changes" button.
 ![](../../../cdn/dev/img/developer/keyboards/github-commit-message.png)
 
 Now GitHub shows you the branch (to which you've just added files) and offers you several options.
-The one you want is the "Pull request" link.
+The one you want is the "Contribute" button, followed by the "Open pull request" button.
 
 ![](../../../cdn/dev/img/developer/keyboards/github-pull-request-start.png)
 
@@ -86,16 +95,36 @@ You can add a comment if you like.
 It's helpful if you select the "Allow edits by maintainers" checkbox.
 This allows reviewers to make minor corrections without needing to ask you to do them.
 When you're ready, click on the "Create pull request" button.
-GitHub will assign a number to your pull request.
 
 ![](../../../cdn/dev/img/developer/keyboards/github-pull-request-final.png)
 
-Congratulations! Some of our teammates will follow-up with you and communicate
+GitHub will assign a number to your pull request and display it.
+Some of our teammates will follow-up with you and communicate
 any revisions that need to be made for your keyboard to be added to the repository.
-These messages will show up under the pull request number that GitHub assigned.
+These messages will show up under the pull request number that GitHub assigned, on the "Conversation" tab.
+(The messages will also show up as emails to the address associated with your GitHub account.)
+
+This pull request is linked to the branch (of your fork of the keyboards repository) which you used to create the pull request.
+Any changes made to the branch become part of the pull request.
+If you are asked to change a file, you'll open the branch and drag the new version of the file to the proper folder
+and commit the changes.
+
+Congratulations! You've successfully submitted your keyboard.
+At this point you can close the pull request in your browser and wait to hear if any changes are needed.
 
 Once your pull request is ready, the changes in your branch will be merged.
 After your branch has been merged into the **keyboards** repository,
 you won't need the branch and can safely delete it.
 If you won't be creating another keyboard (or if it will be a while before you do),
 you can delete your fork of the keyboards repository as well.
+
+## Updating your fork
+
+If your fork of the keyboards repository is out-of-date (some number of "commits behind keymanapp:master")
+
+![](../../../cdn/dev/img/developer/keyboards/github-commits-behind.png)
+
+you can click on the "Fetch upsteam" button, then confirm the action.
+This will bring your fork up-to-date with the Keyman keyboards repository.
+
+Note that this will not change any files on your own computer; only those in your fork on GitHub.

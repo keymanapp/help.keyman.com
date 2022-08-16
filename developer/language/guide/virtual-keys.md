@@ -1,17 +1,102 @@
 ---
-title: Virtual Keys and Virtual Character Keys
+title: Keys, Virtual Keys and Virtual Character Keys
 ---
 
-With ordinary rules, you can match any key that produces a character.
-However, sometimes you may want to match other keys, for example
-<kbd>Backspace</kbd>, or <kbd>Ctrl</kbd> or <kbd>Alt</kbd> combinations.
-In order to match keys like these you need to use virtual keys.
+A [rule](rules) is made up of three parts:
+
+```keyman
+context + keystroke > output
+```
+
+The *keystroke* part of the rule may contain a Unicode character representing
+the value on the key cap of the base keyboard, a virtual key, a virtual
+character key, or one of the following statements:
+
+[`any()` statement](../reference/any "any() statement")
+:   Matches on an array of characters
+
+[`outs()` statement](../reference/outs "outs() statement")
+:   Outputs an array of characters
+
+Only a single character, statement, virtual character key or virtual key is
+allowed in the keystroke part of the rule.
+
+## Four ways to express a keystroke
+
+The meaning of the _keystroke_ part is affected by the
+[`&mnemoniclayout`](../reference/mnemoniclayout) system store value. If this
+store is not present, or its value is `0`, then the keyboard is said to be
+_positional_. If the store value is `1`, then the keyboard is _mnemonic_.
+
+For hardware keyboards, the keystroke part of a rule can be expressed in four
+different ways:
+
+With a _character code_, in a _positional_ keyboard.
+
+: The key definition references the value on the key cap of a US English
+  hardware keyboard. Caps Lock and Shift are accounted for (see
+  [issue #5460](https://github.com/keymanapp/keyman/issues/5460#issuecomment-966602098)
+  for how to use this correctly with KeymanWeb, using [`&CasedKeys`](#cased-keys)).
+
+    ```
+    c matches NCAPS SHIFT C01 (aka NCAPS SHIFT K_A on US keyboard)
+    c also matches CAPS C01.
+    + 'A' >
+    ```
+
+With a _virtual key_, in a _positional_ keyboard.
+
+: The key definition references a key by its exact location on a US English
+  hardware keyboard, or by an ISO9995 code. [More info](#using-virtual-keys)
+
+   ```
+   c matches SHIFT C01 (aka SHIFT K_A on US keyboard)
+   c caps lock is ignored, unless you define &CasedKeys
+   + [SHIFT K_A] >
+
+   c C01 is an alias for K_A
+   + [SHIFT C01] >
+
+   c Explicitly specify Caps Lock with NCAPS and CAPS
+   + [NCAPS SHIFT K_A] >
+   + [CAPS K_A] >
+   ```
+
+With a _character code_, in a _mnemonic_ keyboard.
+
+: This matches the key and modifier state that generates this character on the
+  user's base keyboard, accounting for any modifier that might be used to
+  generate the character, including Caps Lock.
+
+    ```
+    c matches CAPS+D01 or SHIFT+D01 on US English
+    c matches CAPS+C01 or SHIFT+C01 on French AZERTY
+    + 'Q' >
+
+    c matches SHIFT+K_LBRKT (D11) on US English
+    c matches AltGr+E04 on French AZERTY
+    + '{' >
+    ```
+
+With a virtual character key, in a mnemonic keyboard.
+
+: This matches the key that generates this character on the user's base
+  keyboard, along with the specified modifier. [More info](#virtual-character-keys)
+
+    ```
+    c matches SHIFT+c on user's base keyboard (i.e. SHIFT B03 on US)
+    + [SHIFT 'c'] >
+
+    c matches SHIFT+key that generates comma, i.e. SHIFT B08 on US
+    c which means '<' on US English but on French (SHIFT B07) means '?'
+    + [SHIFT ','] >
+    ```
+
+## Virtual keys {#using-virtual-keys}
 
 Every key on the keyboard is identified by a virtual key code. Virtual
 keys are identified by square brackets `[ ]` containing a combination of
 zero or more shift-key codes and a virtual key code.
-
-## Using virtual keys {#using-virtual-keys}
 
 Virtual keys are used in the key section of a rule. Virtual keys are not
 valid in the context of a rule, as the context consists solely of
@@ -33,30 +118,55 @@ Virtual keys are also commonly used to recognise <kbd>Ctrl</kbd> or
 + [CTRL ALT K_A] > "You pressed Ctrl+Alt+A"
 ```
 
-While Keyman virtual keys are closely related to the Windows virtual
-keys, there are differences, and the two cannot be used completely
-interchangeably. Most of the following discussion relates to physical
-keyboards.
+While Keyman virtual keys are closely related to the Windows virtual keys, there
+are differences, and the two cannot be used completely interchangeably. Most of
+the following discussion relates to physical keyboards.
 
-The key codes refer to the actual key at the given position on a
-standard US-English keyboard. When used with a non US-English keyboard
-driver (selected through Control Panel/Keyboards), differences can
-arise, and this use is not recommended.
+The key codes refer to the actual key at the given position on a standard
+US-English keyboard.
 
-The Right <kbd>Alt</kbd> key has traditionally been used on European keyboards as
-an additional modifier state, usually known as <kbd>AltGr</kbd>. The end user of
-Keyman keyboards can select an option to emulate Right <kbd>Alt</kbd> with
-<kbd>Ctrl</kbd>+<kbd>Alt</kbd>, as Right <kbd>Alt</kbd> is not available on many notebook keyboards.
-Thus, it is wise to avoid using <kbd>Ctrl</kbd>+<kbd>Alt</kbd> combinations and
-Right <kbd>Alt</kbd> combinations in the same keyboard.
+The Right <kbd>Alt</kbd> key has traditionally been used on European keyboards
+as an additional modifier state, usually known as <kbd>AltGr</kbd>. The end user
+of Keyman keyboards can select an option to emulate Right <kbd>Alt</kbd> with
+<kbd>Ctrl</kbd>+<kbd>Alt</kbd>, as Right <kbd>Alt</kbd> is not available on some
+notebook keyboards. Thus, it is wise to avoid using
+<kbd>Ctrl</kbd>+<kbd>Alt</kbd> combinations and Right <kbd>Alt</kbd>
+combinations in the same keyboard.
 
-Additionally, it is useful to keep in mind that when this emulation is
-active, it is not possible to recognise the <kbd>Ctrl</kbd>+Right <kbd>Alt</kbd> combination,
-as this is overridden by <kbd>Ctrl</kbd>+<kbd>Alt</kbd> (producing Right <kbd>Alt</kbd>). This can have
-ramifications in keyboards such as German, which makes use of the
-<kbd>Ctrl</kbd>+<kbd>AltGr</kbd> combination.
+Additionally, it is useful to keep in mind that when this emulation is active,
+it is not possible to recognise the <kbd>Ctrl</kbd>+Right <kbd>Alt</kbd>
+combination, as this is overridden by <kbd>Ctrl</kbd>+<kbd>Alt</kbd> (producing
+Right <kbd>Alt</kbd>). This can have ramifications in keyboards such as German,
+which makes use of the <kbd>Ctrl</kbd>+<kbd>AltGr</kbd> combination.
 
-#### Virtual Keys vs Virtual Character Keys
+## Cased Keys
+
+The [`&CasedKeys` system store](../reference/casedkeys) lets you define a set of
+keys on the keyboard that are affected by Caps Lock state. When present, the
+compiler will rewrite rules that contain the affected keys to avoid having to
+repeat rules. For example, you may have the following rules:
+
+```keyman
+store(&CasedKeys) [K_A]
++ [K_A] > 'α'
++ [SHIFT K_A] > 'Α'
+```
+
+These would be replaced by the compiler with:
+
+```keyman
+store(&CasedKeys) [K_A]
++ [NCAPS K_A] > 'α'
++ [SHIFT CAPS K_A] > 'α'
++ [CAPS K_A] > 'Α'
++ [SHIFT NCAPS K_A] > 'Α'
+```
+
+The presence of this store also ensures that Caps Lock is handled correctly for
+KeymanWeb keyboards (see
+[#5460](https://github.com/keymanapp/keyman/issues/5460#issuecomment-966602098)).
+
+## Virtual character keys {#virtual-character-keys}
 
 Keyman 6.0 introduced a new feature known as [mnemonic
 layouts](../reference/mnemoniclayout "mnemoniclayout system store"){.link}.
@@ -106,13 +216,16 @@ Key codes can start with `K_`, `T_`, `U_` or can be an ISO9995 code.
     it, the key will have no output behaviour. These keys are only valid
     for touch layouts.
 
-`U_####` codes
-:   These are used as a shortcut for a key that will output that
-    single Unicode value, if no rule matches it. This is similar to the
-    overloaded behaviour for `K_` ids. Thus `####` must be a valid
-    hexadecimal value. E.g. `U_0259` would generate a schwa if no rule
-    matches. It is still valid to have a rule such as `+ [U_0259] > ...`.
-    These codes are only valid for touch layouts.
+`U_####[_....]` codes
+:   These are used as a shortcut for a key that will output a string of Unicode
+    values, if no rule matches the key. (In Keyman 14 and earlier, only a single
+    Unicode value was permitted.) This is similar to the overloaded behaviour
+    for `K_` ids. Thus `####` must be valid Unicode codepoint values, in the
+    range `0020-10FFFF`, with sequences separated by `_`. E.g. `U_0259` would
+    generate a schwa if no rule matches. It is still valid to have a rule such
+    as `+ [U_0259] > ...`. These codes are only valid for touch layouts.
+    **Note**: For characters outside the BMP, use Unicode codepoints, not
+    surrogate pairs (e.g. use `U_10000`, never `U_D800_DC00`).
 
 ISO9995 codes
 :   These codes refer to keys by position on a standard 101-105 key keyboard.
@@ -620,12 +733,17 @@ should start with `K_`, for keys mapped to standard Keyman virtual key
 names, e.g. `K_HYPHEN`, and `T_` or `U_` for user-defined names, e.g.
 `T_ZZZ`. If keyboard rules exist matching the key code in context, then
 the output from the key will be determined by the processing of those
-rules. It is usually best to include explicit rules to manage the output
+rules. The key code is always required, and a default
+code will usually be generated automatically by Keyman Developer.
+
+It is usually best to include explicit rules to manage the output
 from each key, but if no rules matching the key code are included in the
 keyboard program, and the key code matches the pattern `U_xxxx` (where
 `xxxx` is a 4-digit uppercase hex string), then the Unicode character
-`U+xxxx` will be output. The key code is always required, and a default
-code will usually be generated automatically by Keyman Developer 9.
+`U+xxxx` will be output. Additionally, if the key code matches the pattern
+`U_xxxx_yyyy...` (where `xxxx` and
+`yyyy` are 4 to 6-digit hex strings), then the Unicode characters
+`U+xxxx` and `U+yyyy` will be output. `U_xxxx_yyyy` requires store(&VERSION) '15.0'.
 
 Any key can be used to switch keyboard layers (see below), but the
 following layer-switching key codes have been added for switching to

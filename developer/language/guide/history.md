@@ -59,6 +59,7 @@ title: Keyman language history
 *   Added [`platform` statement](../reference/platform)
 *   Added [`layer` statement](../reference/layer)
 *   Added [`&targets` store](../reference/targets)
+*   Enforced requirement that [`use()`](../reference/use) is last statement in a rule
 
 ## Keyman 10
 
@@ -89,3 +90,12 @@ title: Keyman language history
 *   [Virtual keys](virtual-keys#common-virtual-key-codes) may now be identified by ISO9995 key ids (e.g. `+ [SHIFT E01]`)
 *   The compiler now enforces order of certain statements in the [context part of the rule](rules)
 *   [`notany()`](../reference/notany) and [`context()`](../reference/context) are now supported together for KeymanWeb, iOS, Android (#3816)
+*   [Hangul named constants](constants) were corrected
+
+## Keyman 15
+
+*   [Unicode key identifiers](virtual-keys#virtual-keys-and-touch-layouts) in touch layouts can now have multiple characters, e.g. `U_1000_1001`
+*   [Casing support](casing-support) is now available for touch layouts, including Caps Lock layer, start of sentence support, and double-tap Shift for Caps.
+*   Added support for [`begin NewContext`](../reference/begin) and [`begin PostKeystroke`](../reference/begin) entrypoints
+*   Added support for [`readonly` groups](../reference/group)
+*   Added support for [`&newLayer` system store](../reference/newLayer) and [`&oldLayer` system store](../reference/oldLayer)

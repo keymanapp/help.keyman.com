@@ -269,7 +269,7 @@
 <td>yes</td>
 <td>
   <p><b>string</b>. The minimum version of Keyman that can read
-  this keyboard. If present, must be a two part version string, starting from <code>"6.0"</code> and up. 
+  this keyboard. If present, must be a two part version string, starting from <code>"6.0"</code> and up.
   Note: for versions below 10.0, this value is used in KeymanWeb, but the version mapping is based on Keyman
   Desktop version numbers. For versions 10.0 and above, all platforms have a synchronized version number.
   See <a href='/developer/cloud/versioning.php'>KeymanWeb Versioning</a> for more detail.
@@ -372,7 +372,7 @@
 <td><p><b>KeyboardExampleInfo</b> object containing a sample text that the user can type to give them an idea of how to start to use the keyboard.</p></td>
 </tr>
 <td>displayName</td>
-<td>yes</td>
+<td></td>
 <td>
   <p><b>string</b>, a descriptive name of the language to display to users in the format: <i>language (script, region)</i>.
     If the BCP 47 code does not contain script or region subtags, only the language name is displayed.</p>
@@ -384,7 +384,7 @@
 <tbody>
 <tr>
 <td>languageName</td>
-<td>yes</td>
+<td></td>
 <td>
   <p><b>string</b>, the name of the language subtag in the BCP 47 code.</p>
   <p><b>Example:</b><code>"languageName": "Central Atlas Tamazight"</code></p>

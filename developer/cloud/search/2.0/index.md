@@ -18,7 +18,9 @@ Note: unlike the [Search 1.0 endpoint](../1.0), this endpoint always returns an 
   * `c:id:` search only for two-letter country identifiers (ISO 3166)
   * `s:`: search only for script names
   * `s:id:`: search only for four-letter script identifiers (ISO 15924)
-  * `p:`: a special prefix, which lists keyboards by popularity; the search text is ignored
+  * `p:`: a special prefix, which lists keyboards by popularity or alphabetically; the search text is ignored.
+     * `p:*` or `p:popularity` will return top 100 most popularly downloaded keyboards (paginated)
+     * `p:!` or `p:alphabetically` will return all keyboards, ordered by name (paginated)
 
 * `f`: If present and set to `1`, returns JSON formatted for readability.
 
@@ -45,6 +47,7 @@ The search returns a JSON blob with the following format:
   * `type`: The type of match found, one of: `language`, `country_iso3166_code`, `country`, `script`, `script_iso15924_code`, `keyboard`, `keyboard_id`, `description`, `legacy_keyboard_id`, `language_bcp47_tag`. These can be used to provide additional hints to a user on what was matched.
   * `weight`: The raw weight of the match, according to number of matches found for the query text and closeness of text matches. This is used for sorting results.
   * `downloads`: An approximation for the number of downloads of the keyboard in the last month (statistics are collected periodically).
+  * `totalDownloads`: An appromixation of the total number of downloads of the keyboard since October 2019 (when new statistics database was started).
   * `finalWeight`: Weight multiplied by a log of download count, adding popularity as a signal.
   * `tag`: If the match was for a language, this is the BCP 47 tag matched which can be used as a parameter to Keyman for installing the keyboard. Note that this tag matches the language tag registerd within the keyboard package, and so may not be normalised in the same way as BCP 47 tags are on input.
 
@@ -129,6 +132,7 @@ These examples were run from the live data and can be re-run at any time.
                 "type": "language",
                 "weight": 210,
                 "downloads": 37,
+                "totalDownloads": 4123,
                 "finalWeight": 973.893093542541,
                 "tag": "km"
             }
