@@ -130,7 +130,7 @@
     static private function GetCurrentVersion($versions) {
       $currentVersion = $versions[0];
 
-      $rootwebconfig = @file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/web.config');
+      $rootwebconfig = @file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/.htaccess');
       if(preg_match('/current-version:(\d+\.\d+)/', $rootwebconfig, $matches) &&
           in_array($matches[1], $versions)) {
         $currentVersion = $matches[1];

@@ -1,0 +1,12 @@
+
+# index stop processing
+RewriteRule "^index.php$" - [L]
+
+# Rewrite /keyboard/[name][/] to /keyboard/redir.php?q=[name]
+# only if index.php does not exist in the folder
+# Seems to work without this?
+
+# Rewrite /keyboard/[name]/[version][/] to /keyboard/redir.php?q=[name]&amp;v=[version]
+# only if index.php does not exist in the folder
+RewriteCond "%{DOCUMENT_ROOT}/keyboard/(?!redir.php)$1/$2/index.php" !-f
+RedirectMatch "/keyboard/([^/?]+)/([^/?]+)(/)?$" "/keyboard/redir.php?q=$1&amp;v=$2"

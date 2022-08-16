@@ -1,0 +1,3 @@
+
+# Redirect desktop to windows
+RedirectMatch "(.*)" "/products/windows/$2"
