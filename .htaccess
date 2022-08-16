@@ -11,6 +11,8 @@ RewriteEngine on
 <If "%{REQUEST_SCHEME} == 'http' && %{HTTP_HOST} == 'help.keyman.com' && %{REQUEST_URI} !~ m#^/.well-known/(.*)$#" >
     Redirect "/" "https://help.keyman.com"
 </If>
+# Custom error messages
+ErrorDocument 404 /_includes/errors/404.php
 
 # versioning: these rules automatically redirect /foo/current-version to the
 # newest version of the documentation under /foo, e.g. 13.0, /foo/13.0, and fall
