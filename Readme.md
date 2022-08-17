@@ -46,15 +46,30 @@ help file.
 
 ### Prerequisites on Linux
 
-Install PHP and the mbstring, curl, and xml extensions:
+Install PHP 7.4, composer, and the mbstring, curl, and xml extensions:
 
 ```bash
 sudo apt update
-sudo apt install php php-mbstring php-curl php-xml
+sudo apt install php php-mbstring php-curl php-xml libapache2-mod-php composer
 ```
 
 **NOTE:** when using Docker these packages are not necessary on the development machine to run the
 site, but to populate the `vendor` folder.
+
+Set global ServerName directive (if not using Docker)
+```bash
+sudo nano /etc/apache2/apache2.conf
+
+# Add to last line:
+ServerName 127.0.0.1
+```
+
+Setup Local hosts file
+```bash
+sudo vim /etc/hosts
+# Add:
+127.0.0.1 help.keyman.com.local
+```
 
 ### Using composer to install dependencies in vendor/ folder
 
