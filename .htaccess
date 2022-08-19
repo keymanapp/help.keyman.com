@@ -38,7 +38,7 @@ ErrorDocument 404 /_includes/errors/404.php
 RedirectMatch "/products/(android|iphone-and-ipad|linux|mac|web|windows)/(?!current-version|version-history|\d+\.\d+)(.*)" "/products/$1/current-version/$2"
 
 # /developer/engine/ for Android and iOS
-RedirectMatch "/developer/engine/(android|iphone-ipad)/(?!current-version|\d+\.\d+)(.*)" "/developer/engine/$1/current-version/$2"
+RedirectMatch "/developer/engine/(android|iphone-and-ipad)/(?!current-version|\d+\.\d+)(.*)" "/developer/engine/$1/current-version/$2"
 
 # /developer/engine/web
 RedirectMatch "/developer/engine/web/(?!faq|history|current-version|\d+\.\d+)(.*)" "/developer/engine/web/current-version/$1"
