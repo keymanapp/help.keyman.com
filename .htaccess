@@ -154,8 +154,8 @@ RewriteRule "^(.+)\.php$" "$1" [R,L]
 
 # Redirect folder without / to include /
 RewriteCond "$1" -d
-RewriteCond "%{DOCUMENT_ROOT}/$1.php" !-f
-RewriteCond "%{DOCUMENT_ROOT}/$1.md" !-f
+RewriteCond "$1.php" !-f
+RewriteCond "$1.md" !-f
 RewriteRule "^(.+[^/])$" "$1/" [R,L]
 
 #
