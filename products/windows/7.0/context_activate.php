@@ -12,43 +12,43 @@
   </h2></div></div></div><p>
    There are two simple ways to activate <span class="application">Keyman Desktop</span>. Both require you first to <a class="link" href="main_purchasing_keyman.php" title="Purchasing Keyman Desktop">purchase a licence</a>.</p><h3><a name="id760555"></a>Activating Keyman Desktop from the Splash Screen</h3><div class="orderedlist"><ol type="1"><li><p>Open <span class="application">Keyman Desktop</span>.
       </p><p>
-        <span class="inlinemediaobject"><img src="images%5Ccontext_splash_trial.png"></span>
+        <span class="inlinemediaobject"><img src="images/context_splash_trial.png"></span>
       </p></li><li><p>At the <span class="guibutton">Splash Screen</span>, click  <span class="guibutton">Enter Licence Code</span>. The following window is displayed:</p><p>
-        <span class="inlinemediaobject"><img src="images%5Ccontext_activate_02.png"></span>
+        <span class="inlinemediaobject"><img src="images/context_activate_02.png"></span>
       </p></li><li><p>
       Enter the licence number. For example:
     </p><p>
-        <span class="inlinemediaobject"><img src="images%5Ccontext_activate_03.png"></span>
+        <span class="inlinemediaobject"><img src="images/context_activate_03.png"></span>
       </p></li><li><p>
       Click the <span class="guibutton">Activate</span> button. If you entered a valid licence number, the
       following message will be displayed:
     </p><p>
-        <span class="inlinemediaobject"><img src="images%5Ccontext_activate_04.png"></span>
+        <span class="inlinemediaobject"><img src="images/context_activate_04.png"></span>
       </p></li><li><p>
       Click <span class="guibutton">OK</span>.
     </p></li></ol></div><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
       The buttons on the <span class="guimenu">Splash Screen</span> are removed after activation.
     </p></div><h3><a name="id760685"></a>Activating Keyman Desktop from Keyman Configuration</h3><div class="orderedlist"><ol type="1"><li><p>
 With Keyman Desktop open, click on the <span class="guiicon">Keyman Desktop</span> icon 
-      <span class="inlinemediaobject"><img src="images%5Ctray.png"></span>
+      <span class="inlinemediaobject"><img src="images/tray.png"></span>
  in the system tray.
     </p></li><li><p>
       From the Keyman menu select Configuration.
     </p><p>
-        <span class="inlinemediaobject"><img src="images%5Ccontext_activate_01.png"></span>
+        <span class="inlinemediaobject"><img src="images/context_activate_01.png"></span>
       </p></li><li><p>If you need to purchase a licence, click <span class="guibutton">Buy Keyman Desktop</span>
  before proceeding. Once you have a licence, click the <span class="guibutton">Enter Licence Code</span> button. The following window is displayed:
     </p><p>
-        <span class="inlinemediaobject"><img src="images%5Ccontext_activate_02.png"></span>
+        <span class="inlinemediaobject"><img src="images/context_activate_02.png"></span>
       </p></li><li><p>
       Enter the licence number. For example:
     </p><p>
-        <span class="inlinemediaobject"><img src="images%5Ccontext_activate_03.png"></span>
+        <span class="inlinemediaobject"><img src="images/context_activate_03.png"></span>
       </p></li><li><p>
       Click the <span class="guibutton">Activate</span> button. If you entered a valid licence number, the
       following message will be displayed:
     </p><p>
-        <span class="inlinemediaobject"><img src="images%5Ccontext_activate_04.png"></span>
+        <span class="inlinemediaobject"><img src="images/context_activate_04.png"></span>
       </p></li><li><p>
       Click <span class="guibutton">OK</span>.
     </p></li></ol></div><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
