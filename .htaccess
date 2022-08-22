@@ -148,6 +148,8 @@ Redirect "/bookmarklet" "/products/bookmarklet"
 RewriteRule "^developer/language/reference/(nul|index)(\.php)?$" "developer/language/reference/_$1.php" [L]
 
 # Remove index or index.php and redirect (and stop processing)
+RewriteCond "$1/index" -f [OR]
+RewriteCond "$1/index.php" -f
 RewriteRule "^((.+)/)?index(\.php)?$" "/$1" [R,L]
 
 # Remove .php extension and redirect
