@@ -54,7 +54,7 @@ TEXT:           To test your keyboard, press View Source, then press F5 to start
 TEXT:           The Keyboard Wizard generates a .kmn Keyman Source File.  You can view the source for the keyboard 
                 by clicking the <b>View Source</b> button.  When you edit the source directly, you can perform many 
                 more advanced functions.  To learn how to create or edit keyboards using the source, read the <a 
-                href="../tutorial/tute_a_01.html">tutorial</a>.
+                href="../tutorial/tute_A_01.html">tutorial</a>.
                 
 TEXT:           If you want to create a visual keyboard to accompany your keyboard, click <b>Create Visual Keyboard</b>.
                 For more information about visual keyboards, see <a href="child_viskbd.html">Visual Keyboard Editor</a>.
