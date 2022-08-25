@@ -31,4 +31,5 @@
   <dt><a href="kmlmp">kmlmp Command-line Options</a></dt>
   <dt><a href="character-map">Character Map</a></dt>
   <dt><a href="messages">Message Window</a></dt>
+  <dt><a href="server">Keyman Developer Server</a> (web test host)</dt>
 </dl>
