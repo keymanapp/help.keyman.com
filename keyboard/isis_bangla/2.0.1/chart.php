@@ -176,7 +176,7 @@ If a special font is needed for this language, most computers will download it a
 
 <h3>Related Keyboard Layouts</h3>
 <p>Other Keyboard Layouts for the Bengali language:</p>
-<p><a href="/go?language=ben&amp;keyboard=keyboard_bengali_isis">Inscript Bengali</a><br/>
+<p><a href="/go?language=ben&amp;keyboard=keyboard_bengali_inscript">Inscript Bengali</a><br/>
 <p><a href="/go?language=ben&amp;keyboard=keyboard_bengali">Traditional Bengali</a><br/>
 
 <p>Other Keyboard Layouts for the Assamese language:</p>

@@ -91,7 +91,7 @@ display the line in the keyboard source.</p>
 
 <h3><a name="id559622" id="id559622"></a>Deadkeys</h3>
 
-<p class='context-main-image'><img src="<?= cdn('img/developer/90/ui/frmKeymanWizard_Debug_Deadkeys.png') ?>" alt="Debug window - Debug Deadkeys" /></p>
+<p class='context-main-image'><img src="<?= cdn('img/developer/90/ui/frmKeymanWizard_Debug_DeadKeys.png') ?>" alt="Debug window - Debug Deadkeys" /></p>
 
 <p>This lists all the deadkeys that are currently in the context. You can select one from the list to see it highlighted in the debug
 input box. This information can also be seen in the character grid in the lower half of the debugger input window.</p>

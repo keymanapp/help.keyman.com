@@ -459,5 +459,5 @@ understand a layout, which will usually comprise a list of two separate JSON obj
 <p>You can distribute your keyboard to other users by following the instructions in this article:</p>
 
 <ul>
-  <li><a href="../../distribute/packages">Distribute keyboards to Keyman applications</a></li>
+  <li><a href="../distribute/packages">Distribute keyboards to Keyman applications</a></li>
 </ul>

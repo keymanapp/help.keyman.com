@@ -14,10 +14,10 @@
     the left.  With the Keyman Desktop Uniscribe Manager, text will appear correctly, as shown on the right.
   </p><table><tbody><tr>
         <td>
-          <span class="inlinemediaobject"><img src="desktop_images%5Cuniscribe425.png"></span>
+          <span class="inlinemediaobject"><img src="desktop_images/uniscribe425.png"></span>
         </td>
         <td>
-          <span class="inlinemediaobject"><img src="desktop_images%5Cuniscribe626.png"></span>
+          <span class="inlinemediaobject"><img src="desktop_images/uniscribe626.png"></span>
         </td>
       </tr><tr>
         <td>
