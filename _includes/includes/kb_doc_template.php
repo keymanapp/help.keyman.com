@@ -96,7 +96,7 @@
     $crumbs = explode("/",$_SERVER["REQUEST_URI"]);
     $crumbcount = count($crumbs);
     for($i=0;$i<$crumbcount;$i++){
-      $crumb = ucfirst(str_replace(array(".php","_","-"),array(""," "," "),$crumbs[$i]) . ' ');
+      $crumb = str_replace(array(".php","_","-"),array(""," "," "),$crumbs[$i]) . ' ';
       if($i == 0){
         $crumbtrail = '<div id="breadcrumbTrail"><a href="/">help.keyman.com</a>';
       }elseif($i < $crumbcount){

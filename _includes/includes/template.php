@@ -103,7 +103,7 @@
     $crumbcount = count($crumbs);
     $crumbtrail = '';
     for($i=1; $i<$crumbcount; $i++){
-      $crumb = ucfirst(str_replace(array(".php","_","-"),array(""," "," "),$crumbs[$i]) . ' ');
+      $crumb = str_replace(array(".php","_","-"),array(""," "," "),$crumbs[$i]) . ' ';
 
       $urlCount = $crumbcount - $i -1;
       $url = '';
