@@ -1,0 +1,2 @@
+# stop redirecting
+RewriteRule ".*" - [L]
