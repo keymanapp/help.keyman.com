@@ -98,4 +98,4 @@ title: Keyman language history
 *   [Casing support](casing-support) is now available for touch layouts, including Caps Lock layer, start of sentence support, and double-tap Shift for Caps.
 *   Added support for [`begin NewContext`](../reference/begin) and [`begin PostKeystroke`](../reference/begin) entrypoints
 *   Added support for [`readonly` groups](../reference/group)
-*   Added support for [`&newLayer` system store](../reference/newLayer) and [`&oldLayer` system store](../reference/oldLayer)
+*   Added support for [`&newLayer` system store](../reference/newlayer) and [`&oldLayer` system store](../reference/oldlayer)

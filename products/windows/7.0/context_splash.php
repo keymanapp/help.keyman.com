@@ -11,15 +11,15 @@
     displayed for a short period of time, before loading the software and
     minimizing to the system tray.
   </p><p>
-    <span class="inlinemediaobject"><img src="images%5Ccontext_splash_01.png"></span>
+    <span class="inlinemediaobject"><img src="images/context_splash_01.png"></span>
   </p><h3><a name="id762591"></a>Turning off the Splash Screen</h3><p>
     Once you have registered <span class="application">Keyman Desktop</span>, you can
     switch off the splash screen to reduce the time Keyman takes to start.
   </p><div class="orderedlist"><ol type="1"><li><p>Click on the <span class="application">Keyman Desktop</span> icon
-        <span class="inlinemediaobject"><img src="images%5Cmaster_trayicon.png"></span>
+        <span class="inlinemediaobject"><img src="images/master_trayicon.png"></span>
         in the system tray.
       </p><p>
-        <span class="inlinemediaobject"><img src="images%5Cmenu.png"></span>
+        <span class="inlinemediaobject"><img src="images/menu.png"></span>
       </p></li><li><p>
         From the Keyman menu select Keyman Configuration.
       </p></li><li><p>
@@ -27,7 +27,7 @@
       </p></li><li><p>
         Clear the Show Splash Screen option.
       </p><p>
-        <span class="inlinemediaobject"><img src="images%5Ccontext_splash_02.png"></span>
+        <span class="inlinemediaobject"><img src="images/context_splash_02.png"></span>
       </p></li><li><p>
         Click OK.
       </p></li></ol></div><p>

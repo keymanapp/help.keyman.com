@@ -1,0 +1,6 @@
+
+# docs/images -> images
+RedirectMatch "^(.*/)(docs/images/)(.*)" "$1images/$3"
+
+# images -> cv/images
+RedirectMatch "^(images)\b(.*)" "current-version/$1$2"

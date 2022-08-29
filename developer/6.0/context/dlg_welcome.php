@@ -15,7 +15,7 @@ TEXT:           Opens the <a href="child_kbdwiz.html">Keyboard wizard</a> for cr
                 keyboard.
                 
 HEADING:        Learn the Keyman programming language with the Tutorial
-TEXT:           Opens the <a href="../tutorial/tute_a_01.html">tutorial</a>, which leads you
+TEXT:           Opens the <a href="../tutorial/tute_A_01.html">tutorial</a>, which leads you
                 through the creation of a simple keyboard.
 
 HEADING:        Start a new keyboard source file

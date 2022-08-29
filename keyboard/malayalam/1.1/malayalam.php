@@ -185,7 +185,7 @@ For example, typing <span class='keys'>F</span> will produce the vowel <span cla
 <h3>Related Keyboard Layouts</h3>
 <p>Other Keyboard Layouts for the Malayalam language:</p>
 <p><a href="/go?language=mal&amp;keyboard=keyboard_mozhi_1_1_0">Mozhi Malayalam</a><br/>
-<p><a href="/go?language=mal&amp;keyboard=keyboard_isis_malayam">ISIS Malayalam</a><br/>
+<p><a href="/go?language=mal&amp;keyboard=keyboard_isis_malayalam">ISIS Malayalam</a><br/>
 
 
 </div>

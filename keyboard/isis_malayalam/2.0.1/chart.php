@@ -180,8 +180,8 @@ If a special font is needed for this language, most computers will download it a
 
 <h3>Related Keyboard Layouts</h3>
 <p>Other Keyboard Layouts for the Malayalam language:</p>
-<p><a href="/go?language=mal&amp;keyboard=keyboard_malayalam">Mozhi Malayalam</a><br/>
-<p><a href="/go?language=mal&amp;keyboard=keyboard_malayalam_inscript">Inscript Malayalam</a><br/>
+<p><a href="/go?language=mal&amp;keyboard=keyboard_mozhi_malayalam">Mozhi Malayalam</a><br/>
+<p><a href="/go?language=mal&amp;keyboard=keyboard_malayalam">Inscript Malayalam</a><br/>
 
 </div>
 <h3>Other Internet Resources</h3>

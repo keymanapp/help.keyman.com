@@ -152,7 +152,7 @@
     $s = "<html>" . $nl .
          "<head>" . $nl .
          "  <title>" . $title . "</title>" . $nl .
-         "  <link rel=\"stylesheet\" media=\"screen\" href=\"../inc/kmhelp.css\" type=\"text/css\">" . $nl .
+         "  <link rel=\"stylesheet\" media=\"screen\" href=\"../inc/Kmhelp.css\" type=\"text/css\">" . $nl .
          "  <link rel=\"stylesheet\" media=\"print\" href=\"../inc/kmhelpprint.css\" type=\"text/css\">" . $nl .
          "  <link rel=\"stylesheet\" media=\"screen\" href=\"../inc/kmdev.css\" type=\"text/css\">" . $nl .
          "  <link rel=\"stylesheet\" media=\"print\" href=\"../inc/kmdevprint.css\" type=\"text/css\">" . $nl .
@@ -279,7 +279,7 @@
     /*$s = "<html>" . $nl .
          "<head>" . $nl .
          "  <title>" . $title . "</title>" . $nl .
-         "  <link rel=\"stylesheet\" media=\"screen\" href=\"../inc/kmhelp.css\" type=\"text/css\">" . $nl .
+         "  <link rel=\"stylesheet\" media=\"screen\" href=\"../inc/Kmhelp.css\" type=\"text/css\">" . $nl .
          "  <link rel=\"stylesheet\" media=\"print\" href=\"../inc/kmhelpprint.css\" type=\"text/css\">" . $nl .
          "  <link rel=\"stylesheet\" media=\"screen\" href=\"../inc/kmdist.css\" type=\"text/css\">" . $nl .
          "  <link rel=\"stylesheet\" media=\"print\" href=\"../inc/kmdistprint.css\" type=\"text/css\">" . $nl .
