@@ -12,6 +12,6 @@
 
 <h1>Keyboard Layout</h1>
 
-<img src="keyboardlayout.PNG" alt="Uma Keyboard Layout">
+<img src="keyboardlayout.png" alt="Uma Keyboard Layout">
 
 <p>©Houma Language Project 2021</p>

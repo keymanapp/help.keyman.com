@@ -7,7 +7,7 @@
   ]);
 ?>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Keyman Configuration - Addins Tab</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="context_configuration_hotkeys.php">Prev</a> </td><th width="60%" align="center">Chapter 5. Context Help</th><td width="20%" align="right"> <a accesskey="n" href="context_configuration_languages.php">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both" id="context_configuration_addins">Keyman Configuration - Addins Tab</h2></div></div></div><p>
-    <span class="inlinemediaobject"><img src="images%5Ccontext_configuration_addins_01.png"></span>
+    <span class="inlinemediaobject"><img src="images/context_configuration_addins_01.png"></span>
   </p><p>
     This tab lists all the installed addins for Keyman. An addin adds input
     functionality to a particular software program, or a group of software

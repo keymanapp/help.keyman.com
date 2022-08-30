@@ -20,9 +20,9 @@ head([
   for a Keyman package file.</dd>
 
   <dt>Details:</dt>
-  <dd>When Keyman Developer compiles a Keyman package source file (<a href="KPS">.KPS</a>),
+  <dd>When Keyman Developer compiles a Keyman package source file (<a href="kps">.KPS</a>),
     it creates and automatically adds <code language="filename">kmp.inf</code> and
-    <code language="filename">kmp.json</code> into the Keyman Package file (<a href="KMP">.KMP</a>).</dd>
+    <code language="filename">kmp.json</code> into the Keyman Package file (<a href="kmp">.KMP</a>).</dd>
   <dd>Keyman mobile products use <code class="filename">kmp.json</code> to install the touch keyboards (.JS) in the package.</dd>
   <dd>Keyman Desktop 10.0 also uses <code class="filename">kmp.json</code> to install the keyboards
     (<a href="kmx">.KMX</a>) in the package.</dd>

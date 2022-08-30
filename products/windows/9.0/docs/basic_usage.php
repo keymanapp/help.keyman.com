@@ -16,7 +16,7 @@
 			</p></li><li><p>Some keyboards include links to the On Screen Keyboard tool in Keyboard Usage. This means that the keyboard has an On Screen Keyboard view.</p><p>
 				<span class="inlinemediaobject"><img src="desktop_images/usage-osk.png"></span>
 			</p></li><li><p>Some keyboards do not include Keyboard Usage. You may find help for these keyboards by looking in the Windows Start menu, under the name of the keyboard.</p><p>
-				<span class="inlinemediaobject"><img src="desktop_images/usage-none.PNG"></span>
+				<span class="inlinemediaobject"><img src="desktop_images/usage-none.png"></span>
 			</p></li></ul></div><h3><a name="id569348"></a>Related Topics</h3><div class="itemizedlist"><ul type="disc"><li><p>
     <a class="xref" href="basic_toolbox.php" title="The Keyman Desktop Toolbox">The Keyman Desktop Toolbox</a>
    </p></li><li><p>

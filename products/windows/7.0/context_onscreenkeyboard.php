@@ -7,9 +7,9 @@
   ]);
 ?>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">The On Screen Keyboard</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="context_tsactivate.php">Prev</a> </td><th width="60%" align="center">Chapter 5. Context Help</th><td width="20%" align="right"> <a accesskey="n" href="context_osk_keyboard.php">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both" id="context_onscreenkeyboard">The On Screen Keyboard</h2></div></div></div><p>The On Screen Keyboard displays automatically when you select a Keyman keyboard layout.  You can change this behaviour in <a class="link" href="context_configuration_options.php" title="Keyman Configuration - Options Tab">Keyman Desktop Configuration</a>.</p><p>
-    <span class="inlinemediaobject"><img src="images%5Cosk_keyboard.png"></span>
-  </p><p>To manually display the On Screen Keyboard:</p><div class="orderedlist"><ol type="1"><li><p>Click on the <a class="link" href="context_traymenu.php" title="Keyman Desktop Icon and Menu">Keyman Desktop icon</a><span class="inlinemediaobject"><img src="images%5Ctray.png"></span>in the system tray.</p></li><li><p>From the <a class="link" href="context_traymenu.php" title="Keyman Desktop Icon and Menu">Keyman Desktop menu</a>, select <span class="guilabel">On Screen Keyboard</span>.</p></li></ol></div><p>The On Screen Keyboard is displayed by default in the last position it was used. It will be displayed initially in the bottom right hand corner of the screen.</p><h3><a name="id761512"></a>The Toolbar</h3><p>Along the top of the On Screen Keyboard is a toolbar.</p><p>
-    <span class="inlinemediaobject"><img src="images%5Cosk_toolbar_plain.png"></span>
+    <span class="inlinemediaobject"><img src="images/osk_keyboard.png"></span>
+  </p><p>To manually display the On Screen Keyboard:</p><div class="orderedlist"><ol type="1"><li><p>Click on the <a class="link" href="context_traymenu.php" title="Keyman Desktop Icon and Menu">Keyman Desktop icon</a><span class="inlinemediaobject"><img src="images/tray.png"></span>in the system tray.</p></li><li><p>From the <a class="link" href="context_traymenu.php" title="Keyman Desktop Icon and Menu">Keyman Desktop menu</a>, select <span class="guilabel">On Screen Keyboard</span>.</p></li></ol></div><p>The On Screen Keyboard is displayed by default in the last position it was used. It will be displayed initially in the bottom right hand corner of the screen.</p><h3><a name="id761512"></a>The Toolbar</h3><p>Along the top of the On Screen Keyboard is a toolbar.</p><p>
+    <span class="inlinemediaobject"><img src="images/osk_toolbar_plain.png"></span>
   </p><p>Any of the following buttons may appear on the toolbar:</p><div class="informaltable"><table border="0"><colgroup><col><col><col></colgroup><tbody><tr><td>
             <p>Icon</p>
           </td><td>
@@ -18,7 +18,7 @@
             <p>Description</p>
           </td></tr><tr><td>
             <p>
-              <span class="inlinemediaobject"><img src="images%5Ccontext_osk_01_keyboard.png"></span>
+              <span class="inlinemediaobject"><img src="images/context_osk_01_keyboard.png"></span>
             </p>
           </td><td>
             <p>View On Screen Keyboard</p>
@@ -26,7 +26,7 @@
             <p>Switches to the <a class="link" href="context_osk_keyboard.php" title="On Screen Keyboard - Keyboard View">keyboard view</a> for the selected Keyman Desktop keyboard layout.</p>
           </td></tr><tr><td>
             <p>
-              <span class="inlinemediaobject"><img src="images%5Ccontext_osk_02_keyboardusage.png"></span>
+              <span class="inlinemediaobject"><img src="images/context_osk_02_keyboardusage.png"></span>
             </p>
           </td><td>
             <p>View Keyboard Usage</p>
@@ -34,7 +34,7 @@
             <p>Switches to the <a class="link" href="context_osk_usage.php" title="On Screen Keyboard - Usage View">usage view</a> for the selected Keyman Desktop keyboard layout.  This view gives some basic tips on how to start using your selected keyboard layout, with links to full help for that keyboard layout.</p>
           </td></tr><tr><td>
             <p>
-              <span class="inlinemediaobject"><img src="images%5Ccontext_osk_03_fonthelper.png"></span>
+              <span class="inlinemediaobject"><img src="images/context_osk_03_fonthelper.png"></span>
             </p>
           </td><td>
             <p>View Font Helper</p>
@@ -42,7 +42,7 @@
             <p>Switches to the <a class="link" href="context_font_helper.php" title="On Screen Keyboard - Font Helper">Font Helper</a> tool.</p>
           </td></tr><tr><td>
             <p>
-              <span class="inlinemediaobject"><img src="images%5Ccontext_osk_04_charmap.png"></span>
+              <span class="inlinemediaobject"><img src="images/context_osk_04_charmap.png"></span>
             </p>
           </td><td>
             <p>View Character Map</p>
@@ -50,7 +50,7 @@
             <p>Switches to the <a class="link" href="context_character_map.php" title="On Screen Keyboard - Character Map">Character Map</a> tool.  This tool is only available in Keyman Desktop Professional.</p>
           </td></tr><tr><td>
             <p>
-              <span class="inlinemediaobject"><img src="images%5Ccontext_osk_05_keymanoff.png"></span>
+              <span class="inlinemediaobject"><img src="images/context_osk_05_keymanoff.png"></span>
             </p>
           </td><td>
             <p>Switch Keyman Off</p>
@@ -58,7 +58,7 @@
             <p>Switches your keyboard layout back to the default Windows layout.  To use a Keyman Desktop keyboard layout again,                 you must select it from the <a class="link" href="context_traymenu.php" title="Keyman Desktop Icon and Menu">Keyman Desktop Menu</a> or from the On Screen Keyboard toolbar.</p>
           </td></tr><tr><td>
             <p>
-              <span class="inlinemediaobject"><img src="images%5Ccontext_osk_06_selectkeyboard.png"></span>
+              <span class="inlinemediaobject"><img src="images/context_osk_06_selectkeyboard.png"></span>
             </p>
           </td><td>
             <p>Select Keyboard Layout</p>
@@ -66,7 +66,7 @@
             <p>This icon will only appear if there is not enough room on the On Screen Keyboard               Toolbar to display all your installed keyboard layouts. When available, it displays a               menu from which you can activate any installed keyboard layout.  You can hide this icon by resizing the On Screen Keyboard.</p>
           </td></tr><tr><td>
             <p>
-              <span class="inlinemediaobject"><img src="images%5Ccontext_osk_07_configuration.png"></span>
+              <span class="inlinemediaobject"><img src="images/context_osk_07_configuration.png"></span>
             </p>
           </td><td>
             <p>Open Keyman Configuration</p>
@@ -74,7 +74,7 @@
             <p>Opens <a class="link" href="context_configuration_keyboards.php" title="Keyman Configuration &#8211; Keyboard Layouts Tab">Keyman Configuration</a>, where you can install or uninstall                 keyboard layouts and change various options.</p>
           </td></tr><tr><td>
             <p>
-              <span class="inlinemediaobject"><img src="images%5Ccontext_osk_08_help.png"></span>
+              <span class="inlinemediaobject"><img src="images/context_osk_08_help.png"></span>
             </p>
           </td><td>
             <p>Open Help</p>
@@ -82,7 +82,7 @@
             <p>Opens <span class="application">Keyman Desktop</span> Help.</p>
           </td></tr><tr><td>
             <p>
-              <span class="inlinemediaobject"><img src="images%5Ccontext_osk_09_close.png"></span>
+              <span class="inlinemediaobject"><img src="images/context_osk_09_close.png"></span>
             </p>
           </td><td>
             <p>Close On Screen Keyboard</p>

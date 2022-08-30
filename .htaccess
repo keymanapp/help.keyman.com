@@ -11,6 +11,11 @@ RewriteEngine on
 <If "%{REQUEST_SCHEME} == 'http' && %{HTTP_HOST} == 'help.keyman.com' && %{REQUEST_URI} !~ m#^/.well-known/(.*)$#" >
     Redirect "/" "https://help.keyman.com"
 </If>
+# Custom error messages
+ErrorDocument 404 /_includes/errors/404.php
+
+# Handle IIS bug which created links to /DEVELOPER instead of /developer
+RedirectMatch "/DEVELOPER(.*)" "/developer$1"
 
 # versioning: these rules automatically redirect /foo/current-version to the
 # newest version of the documentation under /foo, e.g. 13.0, /foo/13.0, and fall
@@ -28,6 +33,18 @@ RewriteEngine on
 # # current-version:XX.0
 # RewriteCond "%{DOCUMENT_ROOT}/$1/XX.0" -d
 # RewriteRule "^(.+)/current-version(/.*|$)" "$1/XX.0$2"
+
+
+# Redirect unversioned paths to current-version/ path
+
+# /products first
+RedirectMatch "/products/(android|iphone-and-ipad|linux|mac|web|windows)/(?!current-version|version-history|\d+\.\d+)(.*)" "/products/$1/current-version/$2"
+
+# /developer/engine/ for Android and iOS
+RedirectMatch "/developer/engine/(android|iphone-and-ipad)/(?!current-version|\d+\.\d+)(.*)" "/developer/engine/$1/current-version/$2"
+
+# /developer/engine/web
+RedirectMatch "/developer/engine/web/(?!faq|history|current-version|\d+\.\d+)(.*)" "/developer/engine/web/current-version/$1"
 
 # current-version:15.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/15.0" -d
@@ -128,20 +145,23 @@ Redirect "/bookmarklet" "/products/bookmarklet"
 # special case because of specific filenames : these don't redirect properly otherwise
 
 # Rewrite nul -> _nul, index -> _index
-RedirectMatch "^developer/language/reference/(nul|index)(\.php)?$" "developer/language/reference/_$1.php"
+RewriteRule "^developer/language/reference/(nul|index)(\.php)?$" "developer/language/reference/_$1.php" [L]
 
-# Remove index or index.php and redirect
-RedirectMatch "^((.+)/)?index(\.php)?$" "$1"
+# Remove index or index.php and redirect (and stop processing)
+RewriteCond "$1/index" -f [OR]
+RewriteCond "$1/index.php" -f
+RewriteRule "^((.+)/)?index(\.php)?$" "/$1" [R,L]
 
 # Remove .php extension and redirect
-RewriteCond "%{DOCUMENT_ROOT}/$1" -f
-RewriteRule "^(.+)\.php$" "$1" [L]
+RewriteCond "$1.php" -f
+RewriteRule "^(.+)\.php$" "$1" [R,L]
+
 
 # Redirect folder without / to include /
-RewriteCond "%{DOCUMENT_ROOT}/$1" -d
-RewriteCond "%{DOCUMENT_ROOT}/$1.php" !-f
-RewriteCond "%{DOCUMENT_ROOT}/$1.md" !-f
-RewriteRule "^(.+[^/])$" "$1" [L]
+RewriteCond "$1" -d
+RewriteCond "$1.php" !-f
+RewriteCond "$1.md" !-f
+RewriteRule "^(.+[^/])$" "$1/" [R,L]
 
 #
 # PHP rewriting
@@ -151,8 +171,8 @@ RewriteRule "^(.+[^/])$" "$1" [L]
 RewriteCond "%{DOCUMENT_ROOT}/$1.md" -f
 RewriteRule "^(.+)$" "/_includes/md/mdhost.php?file=$1.md"
 
-RewriteCond "%{DOCUMENT_ROOT}/$1" -f
-RewriteRule "^(.+\.md)$" "/_includes/md/mdhost.php?file=$1"
+RewriteCond "%{DOCUMENT_ROOT}/$1.md" -f
+RewriteRule "^(.+)\.md$" "/_includes/md/mdhost.php?file=$1.md"
 
 # Rewrite file to file.php
 RewriteCond "%{DOCUMENT_ROOT}/$1.php" -f
@@ -161,9 +181,10 @@ RewriteRule "^(.+)$" "$1.php"
 
 # Rewrite folder/ to folder/index.md
 RewriteCond "%{DOCUMENT_ROOT}/$1/index.md" -f
-RewriteRule "^(.+)$" "/_includes/md/mdhost.php?file=$1/index.md"
+#RewriteCond "%{DOCUMENT_ROOT}/$1/index.php" !-f # not needed?
+RewriteRule "^(.+)/$" "/_includes/md/mdhost.php?file=$1/index.md"
 
-# Rewrite folder/ to folder/index.php
-RewriteCond "%{DOCUMENT_ROOT}/$1/index.php" -f
-RewriteCond %{DOCUMENT_ROOT}/$1/index.md !-f
-RewriteRule "^(.+)$" "$1/index.php"
+# Rewrite folder/ to folder/index.php - Infinite redirection?
+#RewriteCond "%{DOCUMENT_ROOT}/$1/index.php" -f
+#RewriteCond "%{DOCUMENT_ROOT}/$1/index.md" !-f
+#RewriteRule "^(.+)/$" "$1/index.php"
