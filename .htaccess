@@ -176,9 +176,10 @@ RewriteCond "%{DOCUMENT_ROOT}/$1.md" -f
 RewriteRule "^(.+)\.md$" "/_includes/md/mdhost.php?file=$1.md"
 
 # Rewrite file to file.php
-RewriteCond "%{DOCUMENT_ROOT}/$1.php" -f
-RewriteCond "%{DOCUMENT_ROOT}/$1.md" !-f
-RewriteRule "^(.+)$" "$1.php"
+# TODO: Disabled due to "Remove .php extension and redirect"
+#RewriteCond "%{DOCUMENT_ROOT}/$1.php" -f
+#RewriteCond "%{DOCUMENT_ROOT}/$1.md" !-f
+#RewriteRule "^(.+)$" "$1.php"
 
 # Rewrite folder/ to folder/index.md
 RewriteCond "%{DOCUMENT_ROOT}/$1/index.md" -f
