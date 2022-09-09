@@ -1,5 +1,6 @@
 <?php
   require_once('includes/template.php');
+  require_once __DIR__ . '/../autoload.php';
 
   if(!isset($_REQUEST['file'])) {
     die('Require file parameter');

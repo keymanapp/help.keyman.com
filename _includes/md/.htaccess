@@ -1,0 +1,3 @@
+
+# Stop mdhost redirects
+RewriteRule "^mdhost(.*)$" - [L]

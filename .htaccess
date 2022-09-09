@@ -4,6 +4,7 @@
 php_value include_path "/var/www/html/_includes:."
 
 RewriteEngine on
+RewriteBase /
 
 # Redirect http://help.keyman.com to https://help.keyman.com,
 # but only if on a live site (help.keyman.com) and not

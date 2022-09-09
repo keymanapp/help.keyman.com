@@ -8,11 +8,12 @@ RewriteRule "^gff_(mdx|muz|suq)_7(.*)" "gff_mym_7$2" [R]
 
 # Rewrite /keyboard/[name][/] to /keyboard/redir.php?q=[name]
 # only if index.php does not exist in the folder
-RewriteCond "%{DOCUMENT_ROOT}/keyboard/(?!redir.php)$1/index.php" !-f
-RewriteRule "/keyboard/([^/?]+)(/)?$" "/keyboard/redir.php?q=$1" [R,L]
+RewriteCond "%{DOCUMENT_ROOT}/keyboard/$1/index.php" !-f
+RewriteRule "^(?!redir.php)([^/?]+)(/)?$" "/keyboard/redir.php?q=$1" [R,L]
 
 
 # Rewrite /keyboard/[name]/[version][/] to /keyboard/redir.php?q=[name]&amp;v=[version]
 # only if index.php does not exist in the folder
-RewriteCond "%{DOCUMENT_ROOT}/keyboard/(?!redir.php)$1/$2/index.php" !-f
-RedirectMatch "/keyboard/([^/?]+)/([^/?]+)(/)?$" "/keyboard/redir.php?q=$1&v=$2"
+RewriteCond "%{DOCUMENT_ROOT}/keyboard/$1/$2/index.php" !-f
+#RedirectMatch "/keyboard/([^/?]+)/([^/?]+)(/)?$" "/keyboard/redir.php?q=$1&v=$2"
+RewriteRule "^(?!redir.php)([^/?]+)/([^/?]+)(/)?$" "redir.php?q=$1&v=$2" [R,L]
