@@ -2,6 +2,7 @@
 # NOTE: this is not very well tested...
 
 php_value include_path "/var/www/html/_includes:."
+#Not needed if local apache.conf includes this 
 
 RewriteEngine on
 RewriteBase /
@@ -149,8 +150,6 @@ Redirect "/bookmarklet" "/products/bookmarklet"
 RewriteRule "^developer/language/reference/(nul|index)(\.php)?$" "developer/language/reference/_$1.php" [END]
 
 # Remove index or index.php and redirect (and stop processing)
-#RewriteCond "$1/index" -f [OR]
-#RewriteCond "$1/index.php" -f
 RewriteRule "^((.+)/)?index(\.php)?$" "/$1" [R,L]
 
 # Remove .php extension and redirect
@@ -178,7 +177,6 @@ RewriteRule "^(.+)\.md$" "/_includes/md/mdhost.php?file=$1.md" [END]
 # Rewrite file to file.php
 RewriteCond "%{DOCUMENT_ROOT}/$1.php" -f
 RewriteCond "%{DOCUMENT_ROOT}/$1.md" !-f
-# RewriteCond ! "index.php"
 RewriteRule "^(.+)$" "$1.php" [END]
 
 
@@ -186,7 +184,7 @@ RewriteRule "^(.+)$" "$1.php" [END]
 RewriteCond "%{DOCUMENT_ROOT}/$1/index.md" -f
 RewriteRule "^(.+)/$" "/_includes/md/mdhost.php?file=$1/index.md" [END]
 
-# Rewrite folder/ to folder/index.php - Infinite redirection?
+# Rewrite folder/ to folder/index.php
 RewriteCond "%{DOCUMENT_ROOT}/$1/index.php" -f
 RewriteCond "%{DOCUMENT_ROOT}/$1/index.md" !-f
 RewriteRule "^(.+)/$" "$1/index.php" [END]

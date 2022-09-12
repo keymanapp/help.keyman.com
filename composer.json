@@ -12,8 +12,12 @@
       "test": "vendor\\bin\\phpunit --testdox",
       "check-links": [
         "Composer\\Config::disableProcessTimeout",
-        "npx broken-link-checker http://localhost:8055 --ordered --recursive --host-requests 10 -e --filter-level 3"
+        "npx broken-link-checker http://help.keyman.com.local --ordered --recursive --host-requests 10 -e --filter-level 3"
       ],
+      "check-docker-links": [
+        "Composer\\Config::disableProcessTimeout",
+        "npx broken-link-checker http://localhost:8055 --ordered --recursive --host-requests 10 -e --filter-level 3"
+      ],      
       "lint": "find . -name '*.php' | grep -v '/vendor/' | xargs -n 1 -d '\\n' php -l"
     }
 }
