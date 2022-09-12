@@ -49,7 +49,7 @@ RedirectMatch "/developer/engine/web/(?!faq|history|current-version|\d+\.\d+)(.*
 
 # current-version:15.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/15.0" -d
-RewriteRule "^(.+)/current-version(/.*|$)" "$1/15.0$2"
+RewriteRule "^(.+)/current-version(/.*)?" "$1/15.0$2"
 
 # version:14.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/14.0" -d
@@ -146,22 +146,22 @@ Redirect "/bookmarklet" "/products/bookmarklet"
 # special case because of specific filenames : these don't redirect properly otherwise
 
 # Rewrite nul -> _nul, index -> _index
-RewriteRule "^developer/language/reference/(nul|index)(\.php)?$" "developer/language/reference/_$1.php" [L]
+RewriteRule "^developer/language/reference/(nul|index)(\.php)?$" "developer/language/reference/_$1.php" [END]
 
 # Remove index or index.php and redirect (and stop processing)
-RewriteCond "$1/index" -f [OR]
-RewriteCond "$1/index.php" -f
+#RewriteCond "$1/index" -f [OR]
+#RewriteCond "$1/index.php" -f
 RewriteRule "^((.+)/)?index(\.php)?$" "/$1" [R,L]
 
 # Remove .php extension and redirect
-RewriteCond "$1.php" -f
+RewriteCond "%{DOCUMENT_ROOT}/$1.php" -f
 RewriteRule "^(.+)\.php$" "$1" [R,L]
 
 
 # Redirect folder without / to include /
-RewriteCond "$1" -d
-RewriteCond "$1.php" !-f
-RewriteCond "$1.md" !-f
+RewriteCond "%{DOCUMENT_ROOT}/$1" -d
+RewriteCond "%{DOCUMENT_ROOT}/$1.php" !-f
+RewriteCond "%{DOCUMENT_ROOT}/$1.md" !-f
 RewriteRule "^(.+[^/])$" "$1/" [R,L]
 
 #
@@ -170,23 +170,23 @@ RewriteRule "^(.+[^/])$" "$1/" [R,L]
 
 # Rewrite file to file.md
 RewriteCond "%{DOCUMENT_ROOT}/$1.md" -f
-RewriteRule "^(.+)$" "/_includes/md/mdhost.php?file=$1.md"
+RewriteRule "^(.+)$" "/_includes/md/mdhost.php?file=$1.md" [END]
 
 RewriteCond "%{DOCUMENT_ROOT}/$1.md" -f
-RewriteRule "^(.+)\.md$" "/_includes/md/mdhost.php?file=$1.md"
+RewriteRule "^(.+)\.md$" "/_includes/md/mdhost.php?file=$1.md" [END]
 
 # Rewrite file to file.php
-# TODO: Disabled due to "Remove .php extension and redirect"
-#RewriteCond "%{DOCUMENT_ROOT}/$1.php" -f
-#RewriteCond "%{DOCUMENT_ROOT}/$1.md" !-f
-#RewriteRule "^(.+)$" "$1.php"
+RewriteCond "%{DOCUMENT_ROOT}/$1.php" -f
+RewriteCond "%{DOCUMENT_ROOT}/$1.md" !-f
+# RewriteCond ! "index.php"
+RewriteRule "^(.+)$" "$1.php" [END]
+
 
 # Rewrite folder/ to folder/index.md
 RewriteCond "%{DOCUMENT_ROOT}/$1/index.md" -f
-#RewriteCond "%{DOCUMENT_ROOT}/$1/index.php" !-f # not needed?
-RewriteRule "^(.+)/$" "/_includes/md/mdhost.php?file=$1/index.md"
+RewriteRule "^(.+)/$" "/_includes/md/mdhost.php?file=$1/index.md" [END]
 
 # Rewrite folder/ to folder/index.php - Infinite redirection?
-#RewriteCond "%{DOCUMENT_ROOT}/$1/index.php" -f
-#RewriteCond "%{DOCUMENT_ROOT}/$1/index.md" !-f
-#RewriteRule "^(.+)/$" "$1/index.php"
+RewriteCond "%{DOCUMENT_ROOT}/$1/index.php" -f
+RewriteCond "%{DOCUMENT_ROOT}/$1/index.md" !-f
+RewriteRule "^(.+)/$" "$1/index.php" [END]
