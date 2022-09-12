@@ -491,3 +491,84 @@ km_kbp_process_event(km_kbp_state *state,
     </dl>
   </section>
 </article>
+
+
+
+<article id="km_kbp_process_event">
+  <h1>km_kbp_event</h1>
+  <section class="description">
+    <h2>Description</h2>
+    <p>
+      Tell the keyboard processor that an external event has occurred, such as a keyboard
+      being activated through the language switching UI.<br/>
+      The keyboard processor may generate actions which should be processed by the
+      consumer of the API.<br/>
+      The action list will be cleared at the start of this call; options and
+      context in the state may also be modified.
+    </p>
+  </section>
+  <section class="specification">
+    <h2>Specification</h2>
+<pre><code class="language-c">km_kbp_status
+km_kbp_event(km_kbp_state *state,
+                     uint32_t event,
+                     void *data);
+</code></pre>
+  </section>
+  <section class="parameters">
+    <h2>Parameters</h2>
+    <dl>
+      <dt id="state"><code class="token symbol">state</code></dt>
+      <dd>A pointer to the opaque state object.</dd>
+
+      <dt id="event"><code class="token symbol">event</code></dt>
+      <dd>An event to be processed, from <code class="token symbol">km_kbp_event_code</code> enumeration.</dd>
+
+      <dt id="data"><code class="token symbol">data</code></dt>
+      <dd>Additional event-specific data. Currently unused, must be nullptr.</dd>
+    </dl>
+  </section>
+  <section class="returns">
+    <h2>Returns</h2>
+    <dl>
+      <dt id="KM_KBP_STATUS_OK"><code class="token constant">KM_KBP_STATUS_OK</code></dt>
+      <dd>On success.</dd>
+
+      <dt id="KM_KBP_STATUS_NO_MEM"><code class="token constant">KM_KBP_STATUS_NO_MEM</code></dt>
+      <dd>In the event memory is unavailable to allocate internal buffers.</dd>
+
+      <dt id="KM_KBP_STATUS_INVALID_ARGUMENT"><code class="token constant">KM_KBP_STATUS_INVALID_ARGUMENT</code></dt>
+      <dd>
+        In the event the
+        <a href="#state"><code class="token symbol">state</code></a>
+        pointer is null or an invalid event or data is passed.
+      </dd>
+    </dl>
+  </section>
+</article>
+
+
+<article id="km_kbp_event_code">
+  <h1>km_kbp_event_code</h1>
+  <section class="description">
+    <h2>Description</h2>
+    <p>
+      Enumerate the various event types which can be raised through <code class="token symbol">km_kbp_event</code>.
+    </p>
+  </section>
+  <section class="specification">
+    <h2>Specification</h2>
+<pre><code class="language-c">
+enum km_kbp_event_code {
+  KM_KBP_EVENT_KEYBOARD_ACTIVATED         = 1,
+};
+</code></pre>
+  </section>
+  <section class="values">
+    <h2>Values</h2>
+    <dl>
+      <dt id="KM_KBP_EVENT_KEYBOARD_ACTIVATED "><code class="token constant">KM_KBP_EVENT_KEYBOARD_ACTIVATED </code></dt>
+      <dd>A keyboard has been activated by the user. The processor may use this event, for example, to switch caps lock state or provide other UX.</dd>
+    </dl>
+  </section>
+</article>
