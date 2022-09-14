@@ -34,6 +34,9 @@ text to determine where the words are. </p>
        you can <a href="#join">choose which strings join words together</a>. </li>
   <li> If the default word breaker creates <strong>not enough splits</strong>,
        you must <a href="#custom">create your own word breaker function</a>. </li>
+  <li> Alternatively, you may choose to <a href="./unicode-breaker-extension">
+       customize and extend the wordbreaker's behavior</a> by adding extra rules
+       and changing how it treats specific characters.</li>
 </ul>
 
 <h2 id="overrides">Overriding script defaults </h2>
