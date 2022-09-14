@@ -494,7 +494,7 @@ km_kbp_process_event(km_kbp_state *state,
 
 
 
-<article id="km_kbp_process_event">
+<article id="km_kbp_event">
   <h1>km_kbp_event</h1>
   <section class="description">
     <h2>Description</h2>
