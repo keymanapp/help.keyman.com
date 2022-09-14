@@ -229,7 +229,7 @@ word-breaker not to word-break if the rule matches at that location.
 ```
 
 The rule, however, does not apply between the `'` and the `t`, so without the spec's WB7 rule,
-a wordbreak could occur here.
+a wordbreak could occur here once WB999 is reached.
 
 You may define any number of these rule objects in any order for use within the wordbreaker within the
 `rules` array.
