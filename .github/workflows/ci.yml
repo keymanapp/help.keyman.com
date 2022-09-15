@@ -13,17 +13,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Setup Docker image
-      uses: addnab/docker-run-action@v3
-      with:
-        image: php:7.4-apache
-        options: -d -p 8055:80 -v $(pwd):/var/www/html/ -e S_KEYMAN_COM=localhost:8054 keyman-websites
-        shell: bash
-        run: |
-          pwd
-          sed -ri -e 's!DirectoryIndex index.php index.html!DirectoryIndex index.md index.php index.html!g' -e 's!</FilesMatch>!</FilesMatch>\n\n<FilesMatch \\.md$>\n\tSetHandler text/html\n</FilesMatch>!g' /etc/apache2/conf-available/docker-php.conf
-          a2enmod rewrite
-
+    - name: Build the Docker image
+      shell: bash
+      run: |
+        docker build -t keyman-websites .
+        docker run -d -p 8055:80 -v $(pwd):/var/www/html/ -e S_KEYMAN_COM=localhost:8054 keyman-websites
       env:
         fail-fast: true
 
