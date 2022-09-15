@@ -5,7 +5,7 @@ on: [pull_request]
 jobs:
 
   build-test:
-    runs-on: linux-latest
+    runs-on: ubuntu-latest
     env:
       KEYMANHOSTS_TIER: TIER_TEST
 
@@ -14,7 +14,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Setup Docker image
-      uses: addnap/docker-run-action@v3
+      uses: addnab/docker-run-action@v3
       with:
         image: docker:latest
         shell: bash
