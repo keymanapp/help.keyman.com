@@ -13,20 +13,14 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Build the Docker image
-      shell: bash
-      run: |
-        docker build -t keyman-websites .
-        docker run -d -p 8055:80 -v $(pwd):/var/www/html/ -e S_KEYMAN_COM=localhost:8054 keyman-websites
-      env:
-        fail-fast: true
-
-    # Setup PHP
     - name: Setup PHP 7.4
-      uses: shivammathur/setup-php@v2
+      uses: shivammathur/setup-php@6972aed899fa2dd4016a7e314c46e6902bcafb7b
       with:
         php-version: '7.4'
-        extensions: php-mbstring php-curl php-xml
+        extensions: curl, intl, mbstring, openssl
+        coverage: none
+      env:
+        fail-fast: true
 
     #
     # Install website PHP dependencies
@@ -36,7 +30,17 @@ jobs:
       run: |
         echo "$TIER_TEST" > tier.txt
         composer install --no-progress
-        npm install
+      # npm install
+      env:
+        fail-fast: true
+
+    - name: Build the Docker image
+      shell: bash
+      run: |
+        docker build -t keyman-websites .
+        docker run -d -p 8055:80 -v $(pwd):/var/www/html/ -e S_KEYMAN_COM=localhost:8054 keyman-websites
+      env:
+        fail-fast: true
 
     #
     # Finally, run the tests
