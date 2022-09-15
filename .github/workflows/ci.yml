@@ -5,7 +5,7 @@ on: [pull_request]
 jobs:
 
   build-test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     env:
       KEYMANHOSTS_TIER: TIER_TEST
 
@@ -20,6 +20,13 @@ jobs:
         docker run -d -p 8055:80 -v $(pwd):/var/www/html/ -e S_KEYMAN_COM=localhost:8054 keyman-websites
       env:
         fail-fast: true
+
+    # Setup PHP
+    - name: Setup PHP 7.4
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '7.4'
+        extensions: php-mbstring php-curl php-xml
 
     #
     # Install website PHP dependencies
