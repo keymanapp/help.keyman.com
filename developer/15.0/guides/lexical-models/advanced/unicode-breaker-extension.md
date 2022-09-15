@@ -67,9 +67,9 @@ const source: LexicalModelSource = {
         match: (context) => {
           if(context.propertyMatch(null, ["ALetter"], ["Hyphen"], ["ALetter"])) {
             return true;
-          } else if(context.propertyMatch(null, ["ALetter"], ["Hyphen"], ["eot"])) {
-            return true;
           } else if(context.propertyMatch(["ALetter"], ["Hyphen"], ["ALetter"], null)) {
+            return true;
+          } else if(context.propertyMatch(null, ["ALetter"], ["Hyphen"], ["eot"])) {
             return true;
           } else {
             return false;
@@ -354,13 +354,209 @@ desired behavior.
 ```typescript
 let hyphens = ['\u002d', '\u2010', '\u058a', '\u30a0'];
 // ...
- else if(hyphens.includes(char)) {
+if(hyphens.includes(char)) {
     return "MidLetter";
 } // ...
 ```
 
-## <a name="define" id="define"></a> Declaring new word-breaking property classes
+## <a name="define" id="define"></a> Defining and using new word-breaking properties
 
+There may be some cases in which none of the default character word-breaking
+properties provide the exact behavior that you're wanting, or perhaps you
+want only specific characters from that class to match custom rules.  For such
+cases, wordbreaker customization also allows definition of new word-breaking
+properties.
+
+For one example, note how word-breaking operations affect predictions when
+typing new words:
+
+- `can'`, with the intent to type `can't`
+- `full-`, with the intent to type `full-scale`
+
+For the first example above, while `'` (property `Single_Quote`) is included within
+WB6 and WB7, those rules only apply _between letters_.  If there is no letter
+on the right-hand side, `can'` will be interpreted as `can` + `'` by the
+word-breaking algorithm.  Similarly, even when remapping `-` to the `MidLetter`
+property, `full-` will be remapped to `full` + `-` before additional text
+is typed.
+
+Of course, this problem does alleviate itself once another `ALetter`-property
+letter is typed, but suppose we wanted a rule to prevent word-breaking for
+the second example above.  (After all, `can'` could be the end of a quoted
+phrase in English - `'sure you can'` - in which case we might want the split
+to occur.)
+
+Revisiting [an earlier example](#example) and simplifying a little bit:
+
+```typescript
+/*** Definition of extra word-breaking rules ***/
+{
+  rules: [{
+    match: (context) => {
+      if(context.propertyMatch(null, ["ALetter"], ["Hyphen"], ["eot"])) {
+        return true;
+      } else {
+        /* ... */
+      } else {
+        return false;
+      }
+    },
+    breakIfMatch: false
+  }],
+
+  /*** Character class overrides for specific characters ***/
+  propertyMapping: (char) => {
+    let hyphens = ['\u002d', '\u2010', '\u058a', '\u30a0'];
+    if(hyphens.includes(char)) {
+        return "Hyphen";
+    } else {
+      // Use the default properties for anything else.
+      return null;
+    }
+  },
+
+  /*** Declares any new, custom character classes to be recognized by the word-breaker ***/
+  customProperties: ["Hyphen"]
+}
+```
+
+Let's walk through what this simplification is trying to achieve:
+
+1. Hyphens are mapped to their own distinct word-breaking property.
+2. The custom rule prevents wordbreaking between a letter and a hyphen at the end of text.
+    - It does not include any of the `MidLetter` characters.
+
+Matching the rule against the end of text suggests that what follows the `Hyphen` character
+is the point of text insertion.  For this example, assuming that a user has just typed
+`full-`, there will be no word-break on the hyphen until either more input is received or
+the user changes the site of text entry.
+
+**Important note**: you must declare any custom properties within the `customProperties` array.
+If any are missing, the missing custom properties will fail to match against any word-breaking rule.
+Make sure you don't misspell it anywhere in your customization code!
+
+### Default rules + custom properties
+
+There is one notable issue with this example, though - whenever you remap a character to
+a new property, it is no longer considered to have its old property, and so it will no
+longer match rules based on its default property.  This is why the original example
+included a couple of extra rules:
+
+```typescript
+{
+  match: (context) => {
+    // Extend WB6 - allow "Hyphen" in the same place as "MidLetter"
+    if(context.propertyMatch(null, ["ALetter"], ["Hyphen"], ["ALetter"])) {
+      return true;
+    // Extend WB7 - allow "Hyphen" in the same place as "MidLetter"
+    } else if(context.propertyMatch(["ALetter"], ["Hyphen"], ["ALetter"], null)) {
+      return true;
+    // The same rule from above.
+    } else if(context.propertyMatch(null, ["ALetter"], ["Hyphen"], ["eot"])) {
+      return true;
+    } else {
+      return false;
+    }
+  },
+  breakIfMatch: false
+}
+```
+
+By replicating [WB6](#WB6) and WB7's structure and allowing `Hyphen` to match in the same
+position as `MidLetter` in the original rules, we can prevent word-breaking splits
+after additional text has been typed after a `Hyphen`-property character.  This does not
+_replace_ the behavior of WB6 and WB7 - it merely _extends_ it to include the new property.
+
+### A more complex case
+
+A meatier example may be found as [the specification's hypothetical rule WB5a](
+https://unicode.org/reports/tr29/#WB999):
+
+> "Break between apostrophe and vowels
+(French, Italian)"
+>
+> WB5a:   **Apostrophe ÷ Vowels**.
+
+The idea of this rule is to allow words such as the French `l'objectif` to be split
+into the article - `l'` and its following word - `objectif` while preserving other
+cases that should still be treated as single words, such as `aujourd'hui`.
+
+To simplify the code needed for customization here somewhat, we will use `Single_Quote`
+in place of `Apostrophe`, as well as a few extra simplifications.  The new `Vowels`
+property offers enough complexity as it is.
+
+```typescript
+let customization = {
+  rules: [
+    // WB5 extension - ensure `AVowel` is handled like `ALetter`.
+    {
+      match: (context) => {
+        if(context.propertyMatch(null, ["ALetter", "AVowel"], ["ALetter", "AVowel"], null)) {
+          return true;
+        } else {
+          return false;
+        }
+      },
+      breakIfMatch: false
+    },
+    // Our main goal WB5a
+    {
+      match: (context) => {
+        if(context.propertyMatch(null, ["Single_Quote"], ["AVowel"], null)) {
+          return true;
+        } else {
+          return false;
+        }
+      },
+      breakIfMatch: true
+    },
+    // WB6, 7 extension - ensure `AVowel` is handled like `ALetter`
+    {
+      match: (context) => {
+        if(context.propertyMatch(null,
+                                  ["ALetter", "AVowel"],
+                                  ["MidLetter", "MidNumLet", "Single_Quote"],
+                                  ["ALetter", "AVowel"])) {
+          return true;
+        } else if(context.propertyMatch(["ALetter", "AVowel"],
+                                        ["MidLetter", "MidNumLet", "Single_Quote"],
+                                        ["ALetter", "AVowel"],
+                                        null)) {
+          return true;
+        } else {
+          return false;
+        }
+      },
+      breakIfMatch: false
+    }
+    // Similar extensions to WB9, 10, 13a, and 13b would also be needed for robustness.
+    // Note: we have left "Hebrew_Letter" out of the WB5, 6, and 7 rewrites to help
+    // simplify this example.
+  ],
+  propertyMapping: (char) => {
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
+    // French and Italian allow accented vowels; this will strip off the accent and
+    // leave us with the base vowel.
+    const baseChar = char.normalize('NFD').charAt(0);
+    if(vowels.includes(baseChar)) {
+      return "AVowel";
+    }
+
+    return null;
+  },
+  customProperties: ["AVowel"]
+}
+```
+
+Note that we have left out some of the rule extensions that would help cover certain
+less-frequently encountered cases.  These may matter to some parts of a
+language community, especially for models targeting a majority language.
+Computer programmers in particular tend to care about the un-extended
+rules (WB9, 10, 13a, and 13b) more than most.
+
+Remember, remapping characters to a new word-breaking property prevents any default
+rule from handling them unless you add custom rules to re-includes them as their
+new property.
 
 ------
 
