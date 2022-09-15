@@ -6,7 +6,8 @@
     'index' => false
   ]);
   
-  $page = empty($_REQUEST['uri']) ? '' : $_REQUEST['uri'];
+  // IIS uses REQUEST_URI; Apache using uri
+  $page = empty($_REQUEST['uri']) ? $_SERVER["REQUEST_URI"] : $_REQUEST['uri'];
   
   function E($v)
   {
