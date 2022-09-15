@@ -41,7 +41,8 @@ the word-breaking rules themselves:
        rules.
 * If the default word-breaking classes from the specification are
        too general for certain aspects of your language, it is possible to
-       <a href="#define">custom character classes</a> for use in custom rules.
+       <a href="#define">define custom character classes</a> for use in custom 
+       rules.
 
 ## <a name="example" id="example"></a> An example walkthrough for customizing the word-breaker
 
@@ -109,9 +110,8 @@ export default source;
 This example's customization is designed to accomplish two goals:
 
 1. Unicode's wordbreaker does not map base Khmer consonants to any of the
-  <a href="https://unicode.org/reports/tr29/#Table_Word_Break_Property_Values">
-  relevant wordbreaking character properties</a>, causing it to be treated as `"Other"`.
-  The minority language in question instead wishes for Latin-script like word-breaking,
+  [relevant wordbreaking character properties](https://unicode.org/reports/tr29/#Table_Word_Break_Property_Values), causing it to be treated as `"Other"`.
+  The minority language in question instead wishes for Latin-script-like word-breaking,
   so mapping the consonants to the same property as Latin-script consonants allows
   them to be treated similarly - in the manner they expect.
 
@@ -158,15 +158,16 @@ Let's take WB6 - "do not break letters across certain punctuation" - as an examp
 
 As written in the spec, WB6 reads **AHLetter x (MidLetter | MidNumLetQ) AHLetter**.
 
-To break that down:
-- (implicit) **Any**
+This is simply a series of characters, up to two characters before and after a potential break point. To break that down:
+- (implicit) **Any** -- accept any character in this position
 - **AHLetter**: `ALetter` or `Hebrew_Letter`
 - **x** - "do not break"
-- (either) **MidLetter** or **MidNumLetQ**: one of `MidNumLet` or `Single_Quote`
+- (either) **MidLetter** or **MidNumLetQ**: one of `MidLetter`, `MidNumLet`, or `Single_Quote`.
 - **AHLetter**: `ALetter` or `Hebrew_Letter`
-    - These expansions are defined at https://unicode.org/reports/tr29/#WB_Rule_Macros.
 
-If written as a custom rule, it takes the following form:
+The expansions `MidNumLetQ` and `AHLetter` are defined at https://unicode.org/reports/tr29/#WB_Rule_Macros.
+
+If written as a custom rule, it takes the following form, using the function `context.propertyMatch`, which takes 4 parameters, matching two characters before and two characters after a potential boundary:
 
 ```typescript
 {
@@ -190,7 +191,7 @@ The names used in each array must be defined in one of the
 following places:
 * https://unicode.org/reports/tr29/#Table_Word_Break_Property_Values (case-insensitive)
 * `customProperties` - your <a href="#define">declaration of any custom property types</a>
-* This list: `["Other", "sot", "eot"]`
+* One of the special property types `"Other"`, `"sot"`, or `"eot"`:
     * `Other`:  a character without an associated word-breaking property value
     * `sot`:  "start of text" - a marker indicating the beginning of the string being word-broken
     * `eot`:  "end of text" - a marker indicating the end of the string being word-broken
@@ -202,7 +203,7 @@ applying WB6 as written above, this is what happens near the apostrophe:
 ```typescript
 {
   match: (context) => {
-    return context.propertyMatch(null, /* automatic match */                // "o" - ALetter
+    return context.propertyMatch(null, /* match any character */            // "o" - ALetter
                                 ["ALetter", "Hebrew_Letter"],               // "n" - ALetter
                                 // x
                                 ["MidLetter", "MidNumLet", "Single_Quote"], // "'" - Single_Quote
