@@ -3,10 +3,10 @@
 
   head([
     'title' => "Page not found",
-    'index' => false   
+    'index' => false
   ]);
   
-  $page = $_SERVER["REQUEST_URI"];
+  $page = empty($_REQUEST['uri']) ? '' : $_REQUEST['uri'];
   
   function E($v)
   {

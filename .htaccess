@@ -13,8 +13,9 @@ RewriteBase /
 <If "%{REQUEST_SCHEME} == 'http' && %{HTTP_HOST} == 'help.keyman.com' && %{REQUEST_URI} !~ m#^/.well-known/(.*)$#" >
     Redirect "/" "https://help.keyman.com"
 </If>
-# Custom error messages
-ErrorDocument 404 /_includes/errors/404.php
+
+# Custom error messages (need to pass the original request)
+ErrorDocument 404 /_includes/errors/404.php?uri=%{REQUEST_URI}
 
 # Handle IIS bug which created links to /DEVELOPER instead of /developer
 RedirectMatch "/DEVELOPER(.*)" "/developer$1"
