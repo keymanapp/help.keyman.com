@@ -2,6 +2,8 @@
 # Redirect broken legacy keyboard links
 RewriteRule "^gff_(mdx|muz|suq)_7(/.*)?" "/keyboard/gff_mym_7$2" [R,L]
 
+# index - stop processing
+RewriteRule "^index.php$" - [END]
 
 # Rewrite /keyboard/[name][/] to /keyboard/redir.php?q=[name]
 # only if index.php does not exist in the folder
