@@ -556,7 +556,7 @@ Computer programmers in particular tend to care about the un-extended
 rules (WB9, 10, 13a, and 13b) more than most.
 
 Remember, remapping characters to a new word-breaking property prevents any default
-rule from handling them unless you add custom rules to re-includes them as their
+rule from handling them unless you add custom rules to re-include them as their
 new property.
 
 ------
