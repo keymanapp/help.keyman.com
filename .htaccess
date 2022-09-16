@@ -50,7 +50,7 @@ RedirectMatch "/developer/engine/web/(?!faq|history|current-version|\d+\.\d+)(.*
 
 # current-version:15.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/15.0" -d
-RewriteRule "^(.+)/current-version(/.*)?" "$1/15.0$2"
+RewriteRule "^(.+)/current-version(/.*)?$" "$1/15.0$2"
 
 # version:14.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/14.0" -d
@@ -153,14 +153,14 @@ RewriteRule "^developer/language/reference/(nul|index)(\.php)?$" "developer/lang
 RewriteRule "^((.+)/)?index(\.php)?$" "/$1" [R,L]
 
 # Remove .php extension and redirect
-RewriteCond "%{DOCUMENT_ROOT}/$1.php" -f
+RewriteCond "$1.php" -f
 RewriteRule "^(.+)\.php$" "$1" [R,L]
 
 
 # Redirect folder without / to include /
-RewriteCond "%{DOCUMENT_ROOT}/$1" -d
-RewriteCond "%{DOCUMENT_ROOT}/$1.php" !-f
-RewriteCond "%{DOCUMENT_ROOT}/$1.md" !-f
+RewriteCond "$1" -d
+RewriteCond "$1.php" !-f
+RewriteCond "$1.md" !-f
 RewriteRule "^(.+[^/])$" "$1/" [R,L]
 
 #
