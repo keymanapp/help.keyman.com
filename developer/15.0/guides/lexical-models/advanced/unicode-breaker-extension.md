@@ -227,6 +227,7 @@ word-breaker not to word-break if the rule matches at that location.
 
 #### An unsuccessful rule match
 
+Given the input `n't|` (where `|` is the caret), we can see that the rule will not match:
 ```typescript
 {
   match: (context) => {
@@ -241,7 +242,7 @@ word-breaker not to word-break if the rule matches at that location.
 ```
 
 The same rule does not apply between the `'` and the `t`, so it does not apply at this position in
-the text.This is why the wordbreaking spec includes rule WB7 in addition to WB6 - some scenarios
+the text. This is why the wordbreaking spec includes rule WB7 in addition to WB6 - some scenarios
 require multiple context property-matching attempts.
 
 You may define any number of these rule objects in any order for use within the wordbreaker within
@@ -316,7 +317,7 @@ for `1780` or `17b3`, you will find neither.  These correspond to many letters
 from the Khmer character set - notably, the 'base' characters used in Khmer's
 grapheme clusters.  The other Khmer characters tend to attach at various positions
 around these base characters.  The majority language for the script - Khmer -
-does not follow conventionalword-breaking rules; most notably, they do not add
+does not follow conventional word-breaking rules; most notably, they do not add
 whitespace between each word.  (There are other strategies that get utilized for
 such scripts.)
 
