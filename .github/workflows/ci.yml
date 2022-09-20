@@ -52,10 +52,10 @@ jobs:
     - name: Check broken links
       shell: bash
       run: |
-        # ( set +e; set +o pipefail; npx broken-link-checker http://localhost:8055 --ordered --recursive --host-requests 50 -e --filter-level 3; exit ${PIPESTATUS[0]} )
-        curl http://localhost:8055
-        docker container logs `docker container ls -ls -q`
-      # ( set +e; set +o pipefail; npx broken-link-checker http://localhost:8055 --ordered --recursive --host-requests 50 -e --filter-level 3 | grep -E "BROKEN|Getting links from" | grep -B 1 "BROKEN"; exit ${PIPESTATUS[0]} )
+        ( set +e; set +o pipefail; npx broken-link-checker http://localhost:8055 --ordered --recursive --host-requests 50 -e --filter-level 3; exit ${PIPESTATUS[0]} )
+
+        # curl http://localhost:8055
+        #( set +e; set +o pipefail; npx broken-link-checker http://localhost:8055 --ordered --recursive --host-requests 50 -e --filter-level 3 | grep -E "BROKEN|Getting links from" | grep -B 1 "BROKEN"; exit ${PIPESTATUS[0]} )
 
     - name: Check PHP errors
       shell: bash
@@ -70,6 +70,8 @@ jobs:
       run: |
         echo "--- tier.txt ---"
         cat tier.txt
+        echo "--- Docker log ---"
+        docker container logs `docker container ls -ls -q`
         echo "--- PHP Errors ---"
         [ -f php_errors.log ] && cat php_errors.log
         echo "--- PHPInfo ---"
