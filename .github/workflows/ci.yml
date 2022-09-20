@@ -7,7 +7,7 @@ jobs:
   build-test:
     runs-on: ubuntu-20.04
     env:
-      KEYMANHOSTS_TIER: TIER_TEST
+      KEYMANHOSTS_TIER: test
 
     steps:
     - name: Checkout
@@ -28,7 +28,7 @@ jobs:
     - name:  Install dependencies
       shell: bash
       run: |
-        echo "$TIER_TEST" > tier.txt
+        echo "test" > tier.txt
         composer install --no-progress
       env:
         fail-fast: true
