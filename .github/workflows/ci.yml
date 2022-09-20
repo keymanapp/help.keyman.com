@@ -65,13 +65,13 @@ jobs:
     # If any of the tests fail, let's grab a bit more detail on the environment
     #
     - name: Report errors
-      if: ${{ failure() }}
+      #if: ${{ failure() }}
       shell: bash
       run: |
         echo "--- tier.txt ---"
         cat tier.txt
         echo "--- Docker log ---"
-        docker container logs `docker container ls -ls -q`
+        docker container logs `docker container ls -l -q`
         echo "--- PHP Errors ---"
         [ -f php_errors.log ] && cat php_errors.log
         echo "--- PHPInfo ---"
