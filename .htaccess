@@ -1,7 +1,7 @@
 # This file is used when running with Apache. Adapted from web.config.
 # NOTE: this is not very well tested...
 
-php_value include_path "/var/www/html/_includes:."
+#php_value include_path "/var/www/html/_includes:."
 #Not needed if local apache.conf includes this 
 
 RewriteEngine on
@@ -159,9 +159,9 @@ RewriteRule "^(.+)\.php$" "$1" [R,L]
 
 
 # Redirect folder without / to include /
-RewriteCond "$1" -d
-RewriteCond "$1.php" !-f
-RewriteCond "$1.md" !-f
+RewriteCond "{DOCUMENT_ROOT}/$1" -d
+RewriteCond "{DOCUMENT_ROOT}/$1.php" !-f
+RewriteCond "{DOCUMENT_ROOT}/$1.md" !-f
 RewriteRule "^(.+[^/])$" "$1/" [R,L]
 
 #
