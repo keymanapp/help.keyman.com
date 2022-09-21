@@ -1,0 +1,7 @@
+
+RewriteEngine on
+
+# no pages currently reference this but will allow for future automatic re-versioning links in docs
+# web.config originally redirect creating-a-touch-keyboard-layout-for-amharic-with-keyman-developer-10
+# but Apache isn't running base .htaccess after the redirect
+RewriteRule "^creating-a-touch-keyboard-layout-for-amharic-with-keyman-developer-10(.*)?$" "/developer/15.0/guides/develop/creating-a-touch-keyboard-layout-for-amharic.php" [R,L]
