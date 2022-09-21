@@ -148,6 +148,8 @@ Redirect "/bookmarklet" "/products/bookmarklet"
 # Redirect broken legacy keyboard links
 RewriteRule "^keyboard/gff_(mdx|muz|suq)_7(/.*)?" "keyboard/gff_mym_7$2" [R,L]
 
+RewriteRule "^keyboard/redir.php(.*)$" - [END]
+
 # Rewrite /keyboard/[name][/] to /keyboard/redir.php?q=[name]
 # only if index.php does not exist in the folder
 RewriteCond "%{DOCUMENT_ROOT}/keyboard/$1/index.php" !-f
@@ -176,7 +178,8 @@ RewriteCond "{DOCUMENT_ROOT}/$1" -d
 RewriteRule "^((.+)/)?index(\.php)?$" "$1" [R,L]
 
 # Remove .php extension and redirect
-RewriteCond "$1.php" -f
+RewriteCond "{DOCUMENT_ROOT}/$1.php" -f
+RewriteCond "{DOCUMENT_ROOT}/$1" !-d
 RewriteRule "^(.+)\.php$" "$1" [R,L]
 
 # Redirect folder without / to include /
