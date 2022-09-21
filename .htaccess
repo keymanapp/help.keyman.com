@@ -151,12 +151,12 @@ Redirect "/bookmarklet" "/products/bookmarklet"
 RewriteRule "^developer/language/reference/(nul|index)(\.php)?$" "developer/language/reference/_$1.php" [END]
 
 # Remove index or index.php and redirect (and stop processing)
+RewriteCond "{DOCUMENT_ROOT}/$1" -d
 RewriteRule "^((.+)/)?index(\.php)?$" "$1" [R,L]
 
 # Remove .php extension and redirect
 RewriteCond "$1.php" -f
 RewriteRule "^(.+)\.php$" "$1" [R,L]
-
 
 # Redirect folder without / to include /
 RewriteCond "{DOCUMENT_ROOT}/$1" -d
