@@ -150,8 +150,8 @@ Redirect "/bookmarklet" "/products/bookmarklet"
 # Rewrite nul -> _nul, index -> _index
 RewriteRule "^developer/language/reference/(nul|index)(\.php)?$" "developer/language/reference/_$1.php" [END]
 
-# Remove index or index.php (or index.md?) and redirect (and stop processing)
-RewriteRule "^((.+)/)?index(\.php|\.md)?$" "$1" [R,L]
+# Remove index or index.php and redirect (and stop processing)
+RewriteRule "^((.+)/)?index(\.php)?$" "$1" [R,L]
 
 # Remove .php extension and redirect
 RewriteCond "$1.php" -f
@@ -162,7 +162,7 @@ RewriteRule "^(.+)\.php$" "$1" [R,L]
 RewriteCond "{DOCUMENT_ROOT}/$1" -d
 RewriteCond "{DOCUMENT_ROOT}/$1.php" !-f
 RewriteCond "{DOCUMENT_ROOT}/$1.md" !-f
-RewriteRule "^(.+[^/])$" "$1/" [R,L]
+RewriteRule "^(.+[^/])$" "$1/" [R,END]
 
 #
 # PHP rewriting
