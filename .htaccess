@@ -150,6 +150,9 @@ Redirect "/bookmarklet" "/products/bookmarklet"
 # Rewrite nul -> _nul, index -> _index
 RewriteRule "^developer/language/reference/(nul|index)(\.php)?$" "developer/language/reference/_$1.php" [END]
 
+# no pages currently reference this but will allow for future automatic re-versioning links in docs
+RewriteRule "^developer/15.0/guides/develop/creating-a-touch-keyboard-layout-for-amharic-with-keyman-developer-10(.*)?$" "developer/15.0/guides/develop/creating-a-touch-keyboard-layout-for-amharic.php" [END]
+
 # Remove index or index.php and redirect (and stop processing)
 RewriteCond "{DOCUMENT_ROOT}/$1" -d
 RewriteRule "^((.+)/)?index(\.php)?$" "$1" [R,L]
