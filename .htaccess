@@ -178,8 +178,8 @@ RewriteCond "{DOCUMENT_ROOT}/$1" -d
 RewriteRule "^((.+)/)?index(\.php)?$" "$1" [R,L]
 
 # Remove .php extension and redirect
-RewriteCond "{DOCUMENT_ROOT}/$1.php" -f
-RewriteCond "{DOCUMENT_ROOT}/$1" !-d
+RewriteCond "$1.php" -f
+RewriteCond "$1" !-d
 RewriteRule "^(.+)\.php$" "$1" [R,L]
 
 # Redirect folder without / to include /
