@@ -174,7 +174,7 @@ RewriteRule "^developer/language/reference/(nul|index)(\.php)?$" "developer/lang
 RewriteRule "^developer/15.0/guides/develop/creating-a-touch-keyboard-layout-for-amharic-with-keyman-developer-10(.*)?$" "developer/15.0/guides/develop/creating-a-touch-keyboard-layout-for-amharic.php" [END]
 
 # Remove index or index.php and redirect (and stop processing)
-RewriteCond "{DOCUMENT_ROOT}/$1" -d
+RewriteCond "$1" -d
 RewriteRule "^((.+)/)?index(\.php)?$" "$1" [R,L]
 
 # Remove .php extension and redirect
