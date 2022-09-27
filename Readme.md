@@ -9,6 +9,8 @@ Previously, the site was run in IIS, but is now migrated to Apache. The Docker i
 
 On the host machine, install [Docker](https://docs.docker.com/get-docker/) and [Composer](https://getcomposer.org/download/):
 
+On Windows, also install [WSL2](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview)
+
 ### Using composer to install dependencies in vendor/ folder
 
 1. Run `./build.sh configure`.

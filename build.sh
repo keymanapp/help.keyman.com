@@ -56,7 +56,8 @@ if builder_start_action build; then
 
   get_builder_OS
   if [ $os_id == "win" ]; then
-    docker run -d -p 8055:80 -v %cd%:/var/www/html/ -e S_KEYMAN_COM=localhost:8054 keyman-websites
+    # Windows needs leading slashes for path
+    docker run -d -p 8055:80 -v //$(pwd):/var/www/html/ -e S_KEYMAN_COM=localhost:8054 keyman-websites
   else
     docker run -d -p 8055:80 -v $(pwd):/var/www/html/ -e S_KEYMAN_COM=localhost:8054 keyman-websites
   fi
