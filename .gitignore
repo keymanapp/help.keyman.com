@@ -5,7 +5,3 @@ cdn/deploy
 vendor/
 .vscode/
 node_modules/
-
-# Auto-generated resource script
-resources/environment.sh
-

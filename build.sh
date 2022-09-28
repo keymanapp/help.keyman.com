@@ -7,10 +7,8 @@ set -eu
 ## START STANDARD BUILD SCRIPT INCLUDE
 # adjust relative paths as necessary
 THIS_SCRIPT="$(greadlink -f "${BASH_SOURCE[0]}" 2>/dev/null || readlink -f "${BASH_SOURCE[0]}")"
-. "$(dirname "$THIS_SCRIPT")/resources/build/builder.inc.sh"
+. "$(dirname "$THIS_SCRIPT")/resources/builder.inc.sh"
 ## END STANDARD BUILD SCRIPT INCLUDE
-
-. "$REPO_ROOT/resources/shellHelperFunctions.sh"
 
 ################################ Main script ################################
 
@@ -36,7 +34,6 @@ REPORT_STYLE=local  # Default setting.
 cd "$REPO_ROOT"
 
 if builder_start_action configure; then
-  #verify_npm_setup
   composer install
   
   builder_finish_action success configure
@@ -51,8 +48,7 @@ if builder_start_action build; then
   # Download docker image
   docker build -t keyman-websites .
 
-  get_builder_OS
-  if [ $os_id == "win" ]; then
+  if [[ $OSTYPE =~ mysys|cygwin ]]; then
     # Windows needs leading slashes for path
     docker run -d -p 8055:80 -v //$(pwd):/var/www/html/ -e S_KEYMAN_COM=localhost:8054 keyman-websites
   else
