@@ -26,7 +26,6 @@ builder_describe \
 builder_parse "$@"
 
 # START - Script parameter configuration
-REPORT_STYLE=local  # Default setting.
 
 # END - Script parameter configuration
 
