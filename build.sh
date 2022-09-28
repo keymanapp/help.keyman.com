@@ -7,13 +7,10 @@ set -eu
 ## START STANDARD BUILD SCRIPT INCLUDE
 # adjust relative paths as necessary
 THIS_SCRIPT="$(greadlink -f "${BASH_SOURCE[0]}" 2>/dev/null || readlink -f "${BASH_SOURCE[0]}")"
-. "$(dirname "$THIS_SCRIPT")/resources/build/build-utils.sh"
+. "$(dirname "$THIS_SCRIPT")/resources/build/builder.inc.sh"
 ## END STANDARD BUILD SCRIPT INCLUDE
 
-. "$KEYMAN_ROOT/resources/shellHelperFunctions.sh"
-
-# This script runs from its own folder
-cd "$THIS_SCRIPT_PATH"
+. "$REPO_ROOT/resources/shellHelperFunctions.sh"
 
 ################################ Main script ################################
 
@@ -35,13 +32,13 @@ REPORT_STYLE=local  # Default setting.
 
 # END - Script parameter configuration
 
-cd "$KEYMAN_ROOT"
+# This script runs from its own folder
+cd "$REPO_ROOT"
 
 if builder_start_action configure; then
   #verify_npm_setup
   composer install
-  #"$KEYMAN_ROOT/common/web/keyman-version/build.sh"
-
+  
   builder_finish_action success configure
 fi
 
