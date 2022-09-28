@@ -39,6 +39,11 @@ if builder_start_action configure; then
 fi
 
 if builder_start_action clean; then
+  # Stop and cleanup all docker containers/images
+  docker kill $(docker ps -q)
+  docker rm $(docker ps -a -q)
+  docker rmi $(docker images -q)
+
   builder_finish_action success clean
 fi
 
