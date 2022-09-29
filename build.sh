@@ -12,10 +12,6 @@ THIS_SCRIPT="$(greadlink -f "${BASH_SOURCE[0]}" 2>/dev/null || readlink -f "${BA
 
 ################################ Main script ################################
 
-# Ensures color var use in `builder_describe`'s argument respects the specified
-# --color/--no-color option.
-builder_check_color "$@"
-
 builder_describe \
   "Setup help.keyman.com site to run via Docker." \
   configure \
@@ -24,10 +20,6 @@ builder_describe \
   test \
 
 builder_parse "$@"
-
-# START - Script parameter configuration
-
-# END - Script parameter configuration
 
 # This script runs from its own folder
 cd "$REPO_ROOT"
