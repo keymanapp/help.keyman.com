@@ -39,10 +39,13 @@ if builder_start_action configure; then
 fi
 
 if builder_start_action clean; then
-  # Stop and cleanup all docker containers/images
-  docker kill $(docker ps -q)
-  docker rm $(docker ps -a -q)
-  docker rmi $(docker images -q)
+  # Stop and cleanup docker containers using image:keyman-websites
+  HELP_CONTAINERS=$(docker ps -a -q --filter ancestor=keyman-websites)
+  docker container stop $HELP_CONTAINERS
+  docker container rm $HELP_CONTAINERS
+
+  # Cleanup keyman-websites image
+  docker rmi keyman-websites
 
   builder_finish_action success clean
 fi
