@@ -87,7 +87,7 @@ if builder_start_action start; then
       docker run -d -p 8055:80 -v $(pwd):/var/www/html/ -e S_KEYMAN_COM=localhost:8054 help-keyman-website
     fi
   else
-    echo "${COLOR_RED}ERROR: Docker container doesn't exist. Run ./build.sh build first"
+    echo "${COLOR_RED}ERROR: Docker container doesn't exist. Run ./build.sh build first${COLOR_RESET}"
     builder_finish_action fail start
   fi
 
