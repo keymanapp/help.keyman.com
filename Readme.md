@@ -13,17 +13,26 @@ On Windows, Docker will also need either:
 * hyper-v or
 * [WSL2](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview)
 
-### Using composer to install dependencies in vendor/ folder
+### Builder actions
 
+#### Configure
+Install PHP dependencies in vendor/ folder
 1. Run `./build.sh configure`.
 
-## Using Docker
+#### Build the Docker image
+1. Run `./build.sh build`.
 
-To run locally with Docker on http://localhost:8055 you can use commands like the following:
+#### Start the Docker container
+1. Run `./build.sh start`.
 
-1. Run `./build.sh build`
+After this, you can access the help.keyman site at http://localhost:8055
 
-## Running tests
+#### Stop the Docker container
+1. Run `./build.sh stop`
 
+#### Clean the Docker container and image
+1. Run `./build.sh clean`.
+
+#### Running tests
 Checks for broken links
 1. Run `./build.sh test`
