@@ -12,11 +12,30 @@ THIS_SCRIPT="$(greadlink -f "${BASH_SOURCE[0]}" 2>/dev/null || readlink -f "${BA
 
 ################################ Main script ################################
 
+function _get_docker_image_id() {
+  return $(docker images -q help-keyman-website)
+}
+
+function _get_docker_container_id() {
+  return $(docker ps -a -q --filter ancestor=help-keyman-website)
+}
+
+function _stop_docker_container() {
+  HELP_CONTAINER=$(_get_docker_container_id)
+  if [ ! -z "$HELP_CONTAINER" ]; then
+    docker container stop $HELP_CONTAINER
+  else
+    echo "No Docker container to stop"
+  fi
+}
+
 builder_describe \
   "Setup help.keyman.com site to run via Docker." \
   configure \
   clean \
   build \
+  start \
+  stop \
   test \
 
 builder_parse "$@"
@@ -31,13 +50,22 @@ if builder_start_action configure; then
 fi
 
 if builder_start_action clean; then
-  # Stop and cleanup docker containers using image:help-keyman-website
-  HELP_CONTAINERS=$(docker ps -a -q --filter ancestor=help-keyman-website)
-  docker container stop $HELP_CONTAINERS
-  docker container rm $HELP_CONTAINERS
+  # Stop and cleanup Docker containers and images used for the site
+  _stop_docker_container
 
-  # Cleanup help-keyman-website image
-  docker rmi help-keyman-website
+  HELP_CONTAINER=$(_get_docker_container_id)
+  if [ ! -z "$HELP_CONTAINER" ]; then
+    docker container rm $HELP_CONTAINER
+  else
+    echo "No Docker container to clean"
+  fi
+    
+  HELP_IMAGE=$(_get_docker_image_id)
+  if [ ! -z "$HELP_IMAGE" ]; then
+    docker rmi help-keyman-website
+  else 
+    echo "No Docker image to clean"
+  fi
 
   builder_finish_action success clean
 fi
@@ -46,28 +74,36 @@ if builder_start_action build; then
   # Download docker image
   docker build -t help-keyman-website .
 
-  if [[ $OSTYPE =~ mysys|cygwin ]]; then
-    # Windows needs leading slashes for path
-    docker run -d -p 8055:80 -v //$(pwd):/var/www/html/ -e S_KEYMAN_COM=localhost:8054 help-keyman-website
-  else
-    docker run -d -p 8055:80 -v $(pwd):/var/www/html/ -e S_KEYMAN_COM=localhost:8054 help-keyman-website
-  fi
-
   builder_finish_action success build
 fi
 
+if builder_start_action start; then
+  # Start the Docker container
+  if [ ! -z $(_get_docker_container_id) ]; then
+    if [[ $OSTYPE =~ mysys|cygwin ]]; then
+      # Windows needs leading slashes for path
+      docker run -d -p 8055:80 -v //$(pwd):/var/www/html/ -e S_KEYMAN_COM=localhost:8054 help-keyman-website
+    else
+      docker run -d -p 8055:80 -v $(pwd):/var/www/html/ -e S_KEYMAN_COM=localhost:8054 help-keyman-website
+    fi
+  else
+    echo "${COLOR_RED}ERROR: Docker container doesn't exist. Run ./build.sh build first"
+    builder_finish_action fail start
+  fi
+
+  builder_finish_action success start
+fi
+
+if builder_start_action stop; then
+  # Stop the Docker container
+  _stop_docker_container
+  builder_finish_action success stop
+fi
+
 if builder_start_action test; then
+  # TODO: lint tests
 
-  LINT_STATUS=$(_test_lint)
-  echo "_test_lint done with status $LINT_STATUS"
-  if [ "${LINT_STATUS}" -ne 0 ]; then
-    build_finish_action fail test
-  fi  
-  #composer lint
-
-  #_test_broken_links
-  #composer check-docker-links
-  #echo "_test_broken_links done"
+  composer check-docker-links
 
   builder_finish_action success test
 fi
