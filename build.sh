@@ -70,6 +70,12 @@ if builder_start_action clean; then
   builder_finish_action success clean
 fi
 
+if builder_start_action stop; then
+  # Stop the Docker container
+  _stop_docker_container
+  builder_finish_action success stop
+fi
+
 if builder_start_action build; then
   # Download docker image
   docker build -t help-keyman-website .
@@ -92,12 +98,6 @@ if builder_start_action start; then
   fi
 
   builder_finish_action success start
-fi
-
-if builder_start_action stop; then
-  # Stop the Docker container
-  _stop_docker_container
-  builder_finish_action success stop
 fi
 
 if builder_start_action test; then

@@ -19,6 +19,9 @@ On Windows, Docker will also need either:
 Install PHP dependencies in vendor/ folder
 1. Run `./build.sh configure`.
 
+#### Stop the Docker container
+1. Run `./build.sh stop`
+
 #### Build the Docker image
 1. Run `./build.sh build`.
 
@@ -27,10 +30,7 @@ Install PHP dependencies in vendor/ folder
 
 After this, you can access the help.keyman site at http://localhost:8055
 
-#### Stop the Docker container
-1. Run `./build.sh stop`
-
-#### Clean the Docker container and image
+#### Remove the Docker container and image
 1. Run `./build.sh clean`.
 
 #### Running tests
