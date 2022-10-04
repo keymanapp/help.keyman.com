@@ -2,6 +2,21 @@
 title: Keyman Developer Training Videos
 ---
 
+# Keyman Developer Features
+
+These videos give a walkthrough on some improvements to Keyman Developer
+
+### Keyman Developer 15
+
+* [Character Map + Touch Layout Editor integration improvements](https://www.youtube.com/watch?v=qoLpuah72kw) (2:15)
+
+### Keyman Developer 14
+
+These videos are part of the Keyman 14 Launch Event
+
+* [Keyman Developer 14.0 Webinar](https://www.youtube.com/watch?v=kwhgx_eX4Es) (57:23)
+* [ Keyman 14.0 Lexical Models Webinar](https://www.youtube.com/watch?v=k_njmw5jPYM) (53:24)
+
 # Keyman Developer Online Workshop Videos (Feb 2020)
 
 These videos comprise the seminar sessions of our Online Workshop held in February 2020.
@@ -50,7 +65,29 @@ If you would like to be involved in a future workshop, let us know in the
 * [Day 4 - Distributing keyboard layouts](https://vimeo.com/394234557) (1:39:28)
 * [Day 5 - Promoting and wrap up](https://vimeo.com/395035477) (1:13:44)
 
+-----
+# Keyman Developer 10 Training Videos (March 2018)
+
+These Keyman Developer 10 videos are from a 2-day training Workshop held in March 2018.
+
+### Day 1
+
+* [Day 1/1 - Intro to Keyman](https://vimeo.com/263230248) (46:06)
+* [Day 1/2 - Complexities of some Asian Scripts](https://vimeo.com/263230384) (9:37)
+* [Day 1/3 - Creating a Touch Keyboard from a Desktop Keyboard Layout](https://vimeo.com/263230540) (1:48:10)
+* [Day 1/4 - LDML Keyboard Standard](https://vimeo.com/263230471) (19:09)
+* [Day 1/5 - Discussion about Developing Keyboards](https://vimeo.com/263230752) (20:20)
+
+### Day 2
+
+* [Day 2/1 - Packing Keyboards for Distribution](https://vimeo.com/263540438) (29:48)
+* [Day 2/2 - Package Troubleshooting](https://vimeo.com/263536149) (7:35)
+* [Day 2/3 - Submitting Keyboards](https://vimeo.com/263536253) (57:16)
+* [Day 2/4 - Using Keyman Keyboards on a Website](https://vimeo.com/263535919) (57:47)
+* [Day 2/5 - Creating Keyboards for Users Using Different Keyboard Layouts](https://vimeo.com/263536040) (23:25)
+
 # Other Videos
 
+* [What is Keyman?](https://www.youtube.com/watch?v=gw-cV9JOxwE) (3:59)
 * [Keyman channel on YouTube](https://www.youtube.com/channel/UCNUEhcaO1Cz6X7RnHs7tpFg)
 * [Keyman channel on Vimeo](https://vimeo.com/channels/keyman)
