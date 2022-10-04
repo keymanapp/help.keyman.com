@@ -4,7 +4,7 @@ title: Keyman Developer Training Videos
 
 # Keyman Developer Features
 
-These videos give a walkthrough on some improvements to Keyman Developer
+These videos give a walkthrough on some improvements to Keyman Developer.
 
 ### Keyman Developer 15
 
@@ -15,7 +15,7 @@ These videos give a walkthrough on some improvements to Keyman Developer
 These videos are part of the Keyman 14 Launch Event
 
 * [Keyman Developer 14.0 Webinar](https://www.youtube.com/watch?v=kwhgx_eX4Es) (57:23)
-* [ Keyman 14.0 Lexical Models Webinar](https://www.youtube.com/watch?v=k_njmw5jPYM) (53:24)
+* [Keyman 14.0 Lexical Models Webinar](https://www.youtube.com/watch?v=k_njmw5jPYM) (53:24)
 
 # Keyman Developer Online Workshop Videos (Feb 2020)
 
