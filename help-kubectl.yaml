@@ -1,0 +1,53 @@
+# apiVersion: v1
+# kind: PersistentVolumeClaim
+# metadata:
+#   name: help-keyman-site
+#   namespace: keyman
+#   finalizers:
+#   - kubernetes.io/pvc-protection
+# spec:
+#   storageClassName: hostpath
+#   accessModes:
+#     - ReadWriteOnce
+#   resources:
+#     requests:
+#       storage: 1Gi
+# ---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: help.keyman.com
+  namespace: keyman
+spec:
+  containers:
+  - name: app-php
+    image: help-keyman-website
+    imagePullPolicy: IfNotPresent
+    ports:
+    - containerPort: 8055
+    volumeMounts:
+    - name: help-site-app
+      mountPath: /var/www/html
+  - name: site-updater
+    image: bitnami/git
+    command: ["cd /mnt; while true; sleep 3600; git fetch && git reset --hard origin/master; done"]
+    volumeMounts:
+    - name: help-site-app
+      mountPath: /mnt
+  initContainers:
+  - name: init-site-data
+    image: bitnami/git
+    command: ["git clone --depth=1 https://github.com/keymanapp/help.keyman.com.git /mnt/"]
+    volumeMounts:
+    - name: help-site-app
+      mountPath: /mnt
+  - name: init-compose
+    image: composer/composer
+    command: ["install"]
+    volumeMounts:
+    - name: help-site-app
+      mountPath: /app
+  volumes:
+  - name: help-site-app
+    persistentVolumeClaim:
+      claimName: help-keyman-site
