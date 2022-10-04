@@ -13,11 +13,11 @@ THIS_SCRIPT="$(greadlink -f "${BASH_SOURCE[0]}" 2>/dev/null || readlink -f "${BA
 ################################ Main script ################################
 
 function _get_docker_image_id() {
-  return $(docker images -q help-keyman-website)
+  echo "$(docker images -q help-keyman-website)"
 }
 
 function _get_docker_container_id() {
-  return $(docker ps -a -q --filter ancestor=help-keyman-website)
+  echo "$(docker ps -a -q --filter ancestor=help-keyman-website)"
 }
 
 function _stop_docker_container() {
@@ -85,8 +85,8 @@ fi
 
 if builder_start_action start; then
   # Start the Docker container
-  if [ ! -z $(_get_docker_container_id) ]; then
-    if [[ $OSTYPE =~ mysys|cygwin ]]; then
+  if [ ! -z $(_get_docker_image_id) ]; then
+    if [[ $OSTYPE =~ msys|cygwin ]]; then
       # Windows needs leading slashes for path
       docker run -d -p 8055:80 -v //$(pwd):/var/www/html/ -e S_KEYMAN_COM=localhost:8054 help-keyman-website
     else
