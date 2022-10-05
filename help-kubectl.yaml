@@ -1,18 +1,18 @@
-# apiVersion: v1
-# kind: PersistentVolumeClaim
-# metadata:
-#   name: help-keyman-site
-#   namespace: keyman
-#   finalizers:
-#   - kubernetes.io/pvc-protection
-# spec:
-#   storageClassName: hostpath
-#   accessModes:
-#     - ReadWriteOnce
-#   resources:
-#     requests:
-#       storage: 1Gi
-# ---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: help-keyman-site
+  namespace: keyman
+  finalizers:
+  - kubernetes.io/pvc-protection
+spec:
+  storageClassName: hostpath
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+---
 apiVersion: v1
 kind: Pod
 metadata:
@@ -41,12 +41,12 @@ spec:
     volumeMounts:
     - name: help-site-app
       mountPath: /mnt
-  - name: init-compose
-    image: composer/composer
-    command: ["install"]
-    volumeMounts:
-    - name: help-site-app
-      mountPath: /app
+  # - name: init-compose
+  #   image: composer/composer
+  #   command: ["install"]
+  #   volumeMounts:
+  #   - name: help-site-app
+  #     mountPath: /app
   volumes:
   - name: help-site-app
     persistentVolumeClaim:
