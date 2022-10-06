@@ -1,53 +1,70 @@
 apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: help-keyman-site
-  namespace: keyman
-  finalizers:
-  - kubernetes.io/pvc-protection
-spec:
-  storageClassName: hostpath
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 1Gi
----
-apiVersion: v1
 kind: Pod
 metadata:
-  name: help.keyman.com
+  name: help-keyman-com
   namespace: keyman
+  labels:
+    run: help-keyman-com
 spec:
   containers:
   - name: app-php
     image: help-keyman-website
     imagePullPolicy: IfNotPresent
     ports:
-    - containerPort: 8055
+    - containerPort: 80
     volumeMounts:
     - name: help-site-app
       mountPath: /var/www/html
-  - name: site-updater
+  - name: updater
     image: bitnami/git
-    command: ["cd /mnt; while true; sleep 3600; git fetch && git reset --hard origin/master; done"]
+    imagePullPolicy: IfNotPresent
+    command: ["sh", "-c"]
+    args:
+    - |
+      cd /mnt
+      while true; do 
+        git fetch && git reset --hard HEAD
+        sleep 3600
+      done
     volumeMounts:
     - name: help-site-app
       mountPath: /mnt
   initContainers:
   - name: init-site-data
     image: bitnami/git
-    command: ["git clone --depth=1 https://github.com/keymanapp/help.keyman.com.git /mnt/"]
+    imagePullPolicy: IfNotPresent
+    env:
+    - name: SITE_GIT_BRANCH
+      value: chore/start-kubernetes
+#      value: origin/master
+    command: ["sh", "-c"]
+    args:
+    - |
+      cd /mnt
+      test -d .git && exit 0
+      echo Initial clone
+      git clone \
+        --filter=blob:none \
+        --no-checkout \
+        --branch=${SITE_GIT_BRANCH} \
+        https://github.com/keymanapp/help.keyman.com.git ./
+      echo Configure sparse-checkout
+      git sparse-checkout set --no-cone \
+        "/*"              \
+        "!.github"        \
+        "!resources"      \
+        "!.editorconfig"  \
+        "!composer.*"     \
+        "!Dockerfile"     \
+        "!Readme.md"      \
+        "!web.config"
+      echo Link vendored PHP
+      ln -sf /var/www/vendor vendor
     volumeMounts:
     - name: help-site-app
       mountPath: /mnt
-  # - name: init-compose
-  #   image: composer/composer
-  #   command: ["install"]
-  #   volumeMounts:
-  #   - name: help-site-app
-  #     mountPath: /app
   volumes:
   - name: help-site-app
     persistentVolumeClaim:
       claimName: help-keyman-site
+
