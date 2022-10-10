@@ -6,6 +6,7 @@ metadata:
   labels:
     run: help-keyman-com
 spec:
+  terminationGracePeriodSeconds: 60
   containers:
   - name: app-php
     image: help-keyman-website
@@ -15,17 +16,33 @@ spec:
     volumeMounts:
     - name: help-site-app
       mountPath: /var/www/html
+    readinessProbe:
+      httpGet:
+        path: /robots.txt
+        port: 80
+      initialDelaySeconds: 5
+      periodSeconds: 15
+    livenessProbe:
+      tcpSocket:
+        port: 80
   - name: updater
     image: bitnami/git
     imagePullPolicy: IfNotPresent
+    env:
+    - name: UPDATE_POLL
+      value: "900"
     command: ["sh", "-c"]
     args:
     - |
       cd /mnt
-      while true; do 
+      git fetch && git reset --hard HEAD
+      while sleep ${UPDATE_POLL}; do
         git fetch && git reset --hard HEAD
-        sleep 3600
       done
+    lifecycle:
+      preStop:
+        exec:
+          command: ["/usr/bin/pkill", "sleep"]
     volumeMounts:
     - name: help-site-app
       mountPath: /mnt
@@ -36,7 +53,7 @@ spec:
     env:
     - name: SITE_GIT_BRANCH
       value: chore/start-kubernetes
-#      value: origin/master
+#      value: master
     command: ["sh", "-c"]
     args:
     - |
