@@ -33,7 +33,7 @@ npm install --global @keymanapp/lexical-model-compiler
 ## The five minute quick start
 
 We'll first use [KMConvert](../context/kmconvert) to create a keyboard project,
-with the minimal metadata required to compile and install.
+with the minimal metadata required to compile and install. In your /keyboards - folder do:
 
 ```shell
 kmconvert template -id sample -name "Sample" -languages en-au
