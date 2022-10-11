@@ -36,7 +36,7 @@ support for user-defined scripts. Unicode is the accepted standard for text enco
 <p>In Keyman Developer keyboard source files, Unicode characters are specified with <code>U+xxxx</code>, where <code>xxxx</code> is a 
 four-digit hexadecimal number.</p>
 
-<p>At the bottom of each page in the tutorial, will be a link to both the previous page and the next page. You can use these links to
+<p>At the bottom of each page in the tutorial, will be a link to the next page. You can use these links to
 work your way through the tutorial. You may also find links to reference information, which you can select to learn more about a
 particular aspect of creating Keyman keyboards.</p>
 
