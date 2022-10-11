@@ -30,11 +30,11 @@ If the rules are correct, all this should work as we wanted.</p>
 <p>Testing the rules in isolation like this will show if the rules are correct or not, but won't show other possible errors that
 might occur in everyday usage of the keyboard. For example, look at what happens if you type the following quote:</p>
 
-<blockquote><samp>'Alors Alice demanda, "O est ma chatte?"'</samp></blockquote>
+<blockquote><samp>'Alors Alice demande, "Où est mon chat ?"'</samp></blockquote>
     
 <p>As you can see, it comes out incorrectly as:</p>
 
-<blockquote><samp>Álors Alice demanda, Ö est ma chatte?"'</samp></blockquote>    
+<blockquote><samp>Álors Alice demande, Öù est mon chat ?"'</samp></blockquote>    
 
 <p>The problem occurs when we have a word in quotes that begins with a vowel: the keyboard will convert it to an accented vowel. We
 will need to come up with a solution to this problem.</p>
