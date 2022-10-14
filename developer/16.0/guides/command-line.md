@@ -13,7 +13,7 @@ Developer, and are also available as a zip download from
 
 ## Linux and macOS installation
 
-In Keyman Developer 15.0, these executables are Windows Portable Executables.
+In Keyman Developer 16.0, these executables are Windows Portable Executables.
 You will need to configure a WINE environment to run the executables. Prefix all
 commands with `wine` (Linux) or `wine64` (macOS).
 
