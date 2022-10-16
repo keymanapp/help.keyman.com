@@ -19,8 +19,8 @@ occurred.</p>
 
 <h2>Compiling the Keyboard</h2>
 
-<p>After compiling the keyboard successfully, we can start testing it. Choose <span class="guimenu">Keyboard</span>, <span class=
-"guimenuitem">Start Test</span> or press <kbd>F5</kbd> to begin testing. The Keyboard test window will appear.</p> 
+<p>After compiling the keyboard successfully, we can start testing it. Choose <span class="guimenu">Debug</span>, <span class=
+"guimenuitem">Start Debugging</span> or press <kbd>F5</kbd> to begin testing. The Keyboard debug window will appear.</p> 
 
 <p>Now we test that all the rules operate as expected. To test the rules, we type the keystrokes that will give us the output; for
 example, we can type a quote <kbd>'</kbd> followed by one of <kbd>A</kbd>, <kbd>E</kbd>, <kbd>I</kbd>, <kbd>O</kbd>, <kbd>U</kbd>, or <kbd>Y</kbd> 
