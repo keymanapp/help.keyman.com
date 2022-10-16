@@ -9,7 +9,7 @@
 
 <h2>Overview of a keyboard file</h2>
 
-<p>A keyboard file is divided into two sections: the <strong>header</strong> and the <strong>rules</strong> section. The header section 
+<p>A keyboard file is divided into two sections: the <strong>header</strong> and the <strong>rules</strong> section. The header section
 defines the name of the keyboard, its
 bitmap, and other general settings. The rules are used to define how the keyboard responds to keystrokes from the user, and are divided
 into groups. We will start by writing the header.</p>
@@ -45,4 +45,7 @@ begin Unicode > use(Main)
 
 <p>An explanation of the various parts of the header follows on the next page.</p>
 
-<p><a href="step-3.php" title="Step 3: The Keyboard Header">Step 3: The Keyboard Header</a></p>
+<ul>
+  <li><a href="step-3">Continue with Step 3: The Keyboard Header</a></li>
+  <li><a href="step-1">Back to Step 1: Planning the Keyboard</a></li>
+</ul>

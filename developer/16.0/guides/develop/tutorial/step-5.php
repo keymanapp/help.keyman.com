@@ -20,7 +20,7 @@ with only certain context by putting this before the plus sign in the rule:</p>
 <pre><code class="language-keyman">"^" + "e" > "ê"
 </code></pre>
 
-<p>With this rule, whenever an <kbd>e</kbd> is typed, if it was preceded by a caret (<samp>^</samp>), the output will be <samp>ê</samp>. 
+<p>With this rule, whenever an <kbd>e</kbd> is typed, if it was preceded by a caret (<samp>^</samp>), the output will be <samp>ê</samp>.
 It is important to remember that the context consists of <span class="emphasis"><em>output from previous rules</em></span>, not the
 previous keystrokes. To emphasize this point, consider the four rules below:</p>
 
@@ -30,8 +30,8 @@ previous keystrokes. To emphasize this point, consider the four rules below:</p>
 "c" + "d" > "e"
 </code></pre>
 
-<p>With these rules, typing <kbd>b</kbd><kbd>c</kbd> would produce the output <samp>cc</samp>, and not <samp>d</samp>, as you might 
-initially expect. This is because the key <kbd>b</kbd> is converted by the second rule into the output <samp>c</samp>, while the third 
+<p>With these rules, typing <kbd>b</kbd><kbd>c</kbd> would produce the output <samp>cc</samp>, and not <samp>d</samp>, as you might
+initially expect. This is because the key <kbd>b</kbd> is converted by the second rule into the output <samp>c</samp>, while the third
 rule expects a context of <samp>b</samp>, and not <samp>c</samp>; we would have to type <kbd>a</kbd><kbd>c</kbd> to get <samp>d</samp>.</p>
 
 <p>However, if a key has no matching rule, the output will be the same as the key: so the output <samp>e</samp> will be produced for either
@@ -64,4 +64,7 @@ c uppercase characters with acute accent
 <p>As you can see, even for a simple keyboard like this we quickly end up with a large number of rules, which makes for clumsiness. We
 can make things simpler using stores, and the <code class="language-keyman">any()</code> and <code class="language-keyman">index()</code> statements.</p>
 
-<p><a href="step-6.php" title="Step 6: Stores, 'any', and 'index'">Step 6: Stores, <code class="language-keyman">any()</code>, and <code class="language-keyman">index()</code></a></p>
+<ul>
+  <li><a href="step-6">Continue with Step 6: Stores, <code class="language-keyman">any()</code>, and <code class="language-keyman">index()</code></a></li>
+  <li><a href="step-4">Back to Step 4: The Keyboard Body</a></li>
+</ul>

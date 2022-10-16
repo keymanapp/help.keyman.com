@@ -37,7 +37,7 @@ store is a required part of each keyboard header, and should be the first store 
 </code></pre>
 
 <p>The <a class="link" href="/developer/language/reference/name" title="&amp;Name store"><code class="language-keyman">&amp;Name</code> store</a> specifies a
-descriptive name for the keyboard, which can be up to eighty characters long. The name we have given to this keyboard is 
+descriptive name for the keyboard, which can be up to eighty characters long. The name we have given to this keyboard is
 <code class="language-keyman">"Quick French"</code>. The <code class="language-keyman">&amp;Name</code> store is not required but is highly recommended!</p>
 
 <h2>The <code class="language-keyman">&amp;Bitmap</code> store</h2>
@@ -59,8 +59,8 @@ in which you will save your keyboard.</p>
 
 <p>The <a href="/developer/language/reference/mnemoniclayout" title="&amp;mnemoniclayout store"><code class="language-keyman">&amp;MnemonicLayout</code> store</a>
 tells Keyman that the layout is meant to conform to the user's keyboard layout; for example, if the user presses the quote key
-<kbd>'</kbd> on their keyboard (whether they are using a US English, UK English, French, German, Swedish, or other keyboard) it should work in 
-the same way. The opposite of this is a positional layout (which is the default if this store omitted), which is intended for keyboards for 
+<kbd>'</kbd> on their keyboard (whether they are using a US English, UK English, French, German, Swedish, or other keyboard) it should work in
+the same way. The opposite of this is a positional layout (which is the default if this store omitted), which is intended for keyboards for
 which there is not necessarily a correspondence between what is printed on the physical keyboard and what is output when that key is pressed.</p>
 
 <h2>The <code class="language-keyman">begin</code> statement</h2>
@@ -73,4 +73,7 @@ process first when it receives a keystroke. The use of multiple groups is an adv
 will use a single group, called Main. The <code class="language-keyman">begin</code> statement is required in every keyboard, and marks the start of the keyboard body. The
 <code class="language-keyman">begin</code> statement also tells Keyman which encoding to use for the keyboard. Nearly all keyboards will use <code class="language-keyman">Unicode</code>, today.</p>
 
-<p><a href="step-4.php" title="Step 4: The Keyboard Body">Step 4: The Keyboard Body</a></p>
+<ul>
+  <li><a href="step-4">Continue with Step 4: The Keyboard Body</a></li>
+  <li><a href="step-2">Back to Step 2: Writing the Header</a></li>
+</ul>

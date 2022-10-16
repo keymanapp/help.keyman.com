@@ -17,7 +17,7 @@ in turn contain one or more rules which define the responses of the keyboard to 
 simple keyboards, the latter type of group will not be required. A group begins with a <a href="/developer/language/reference/group"
 title="group statement"><code class="language-keyman">group</code> statement</a>, and ends either at the start of another group, or at the end of the keyboard file.</p>
 
-<p>We will only use one group in the Quick French keyboard, called <code class="language-keyman">Main</code>. We mark the start of it with the <code class="language-keyman">group</code> statement 
+<p>We will only use one group in the Quick French keyboard, called <code class="language-keyman">Main</code>. We mark the start of it with the <code class="language-keyman">group</code> statement
 below. Add this line to the keyboard.</p>
 
 <pre><code class="language-keyman">group(Main) using keys
@@ -27,7 +27,7 @@ below. Add this line to the keyboard.</p>
 
 <h2>Basic Rules</h2>
 
-<p>A rule tells Keyman the output to produce for a certain input. A rule consists of three parts: the <strong>context</strong>, the 
+<p>A rule tells Keyman the output to produce for a certain input. A rule consists of three parts: the <strong>context</strong>, the
 <strong>key</strong>, and the <strong>output</strong>.</p>
 
 <p>The <strong>context</strong> specifies the conditions under which a rule will act. If what is shown in the document to the left of the
@@ -80,4 +80,7 @@ you use the Unicode codes to write the characters, you must separate each with a
 
 <p>These rules are functionally identical to the one further above.</p>
 
-<p><a href="step-5.php" title="Step 5: Rules with Context">Step 5: Rules with Context</a></p>
+<ul>
+  <li><a href="step-5">Continue with Step 5: Rules with Context</a></li>
+  <li><a href="step-3">Back to Step 3: The Keyboard Header</a></li>
+</ul>

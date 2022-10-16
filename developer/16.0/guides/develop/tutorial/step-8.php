@@ -17,7 +17,7 @@ rule:</p>
 <pre><code class="language-keyman">"'" + "'" > "'"
 </code></pre>
 
-<p>This will certainly produce a single quote after it's typed twice; however it will still produce the same error, because the 
+<p>This will certainly produce a single quote after it's typed twice; however it will still produce the same error, because the
 following keystroke will continue to swallow the quote character from the context. We need to
 distinguish between the output of this rule, when the user wants a quote, and that of a single quote press, when the user wants to
 place an accent on a vowel. To implement this behaviour, we use <a href='/developer/language/reference/deadkey'>deadkeys</a>.</p>
@@ -45,7 +45,7 @@ will find that the error no longer occurs. This is because accented vowels are o
 output if the user types a quote key twice.</p>
 
 <p>But we've introduced another difference to the keyboard now: the quote is no longer displayed before you type the vowel.
-This is because we are converting the quote to a deadkey. If we prefer, we can still distinguish between rules in the above manner 
+This is because we are converting the quote to a deadkey. If we prefer, we can still distinguish between rules in the above manner
 and display the quote, if we just add a quote before the deadkey, like this:</p>
 
 <pre><code class="language-keyman">+ "'" > "'" dk(quote)
@@ -64,4 +64,7 @@ character by typing the key twice.</p>
 
 <p>The Quick French keyboard is now complete. The full source is on the next page.</p>
 
-<p><a href="step-9.php" title="Step 9: The Finished Keyboard">Step 9: The Finished Keyboard</a></p>
+<ul>
+  <li><a href="step-9">Continue with Step 9: The Finished Keyboard</a></li>
+  <li><a href="step-7">Back to Step 7: Testing the Keyboard</a></li>
+</ul>
