@@ -34,9 +34,6 @@ text to determine where the words are. </p>
        you can <a href="#join">choose which strings join words together</a>. </li>
   <li> If the default word breaker creates <strong>not enough splits</strong>,
        you must <a href="#custom">create your own word breaker function</a>. </li>
-  <li> Alternatively, you may choose to <a href="./unicode-breaker-extension">
-       customize and extend the wordbreaker's behavior</a> by adding extra rules
-       and changing how it treats specific characters.</li>
 </ul>
 
 <h2 id="overrides">Overriding script defaults </h2>
@@ -233,9 +230,6 @@ export default source;</code></pre>
 <p>
   <a href="https://github.com/keymanapp/keyman/blob/4211b468949860b8fb4a4707710472ab9e33c581/common/lexical-model-types/index.d.ts#L286-L323">
 The TypeScript definition of <code>WordBreakingFunction</code> and <code>Span</code></a>
-  <a href="./unicode-breaker-extension">Extension and customization of the Unicode word-breaker</a>
-  <a href="https://unicode.org/reports/tr29/#Word_Boundaries">The Unicode Standard Annex #29 §4.1
-    Default Word Boundary Specification</a>
 </p>
 
 <hr>
