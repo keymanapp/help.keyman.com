@@ -15,7 +15,7 @@ The primary benefits of Keyman Developer Server are:
 * Test keyboards, lexical models and packages on mobile devices
 * Share keyboards, lexical models and packages to mobile devices and other users
 
-Keyman Developer Server is new in Keyman Developer 15, and replaces the old Web
+Keyman Developer Server was added in Keyman Developer 15, and replaces the old web
 Test feature.
 
 ![](images/server-iphone.png)
