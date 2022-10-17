@@ -160,9 +160,9 @@ used in French. Also, we want our keyboard to include the angled quotes <samp>«
 Developer to find the character you want, and then drag-and-drop or copy-and-paste its character code into your keyboard.</p>
 
 <p>Note that you must be careful to use the right character: The Unicode standard has many characters with the same shape as
-another, but a different meaning; an example of this is the Greek capital letter Sigma (<code class="language-keyman">U+03A3</code> <samp>Σ<samp>) and 
+another, but a different meaning; an example of this is the Greek capital letter Sigma (<code class="language-keyman">U+03A3</code> <samp>Σ<samp>) and
 the mathematical summation symbol (<code class="language-keyman">U+2211</code>, <samp>∑</samp>). An application supporting Unicode would treat these two
-characters differently. If in doubt whether a character is the right one, you can look up the reference tables at 
+characters differently. If in doubt whether a character is the right one, you can look up the reference tables at
 <a class="ulink" href="http://www.unicode.org/" target="_blank">www.unicode.org</a>.</p>
 
 <h2>Designing the layout</h2>
@@ -210,4 +210,7 @@ letters are accented vowels, we will use two keystrokes for each: one for the ac
 
 <p>Now that we have decided which character to use and how the user can enter them, we can start to write the keyboard.</p>
 
-<p><a href="step-2.php" title="Step 2: Writing the Header">Step 2: Writing the Header</a></p>
+<ul>
+  <li><a href="step-2">Continue with Step 2: Writing the Header</a></li>
+  <li><a href="index">Back to the Introduction</a></li>
+</ul>

@@ -7,7 +7,7 @@
 ?>
 
 <h1>Keyboard Tutorial</h1>
-    
+
 <dl>
   <dt><span class="section"><a href="step-1.php">Step 1: Planning the Keyboard</a></span></dt>
   <dt><span class="section"><a href="step-2.php">Step 2: Writing the Header</a></span></dt>
@@ -33,7 +33,7 @@ language that you will learn are applicable to developing touch layouts as well.
 <p>This keyboard will use Unicode. Unicode is a character encoding standard that supports most of the world's scripts, and includes
 support for user-defined scripts. Unicode is the accepted standard for text encoding in modern applications and operating systems.</p>
 
-<p>In Keyman Developer keyboard source files, Unicode characters are specified with <code>U+xxxx</code>, where <code>xxxx</code> is a 
+<p>In Keyman Developer keyboard source files, Unicode characters are specified with <code>U+xxxx</code>, where <code>xxxx</code> is a
 four-digit hexadecimal number.</p>
 
 <p>At the bottom of each page in the tutorial, will be a link to both the previous page and the next page. You can use these links to
@@ -44,5 +44,6 @@ particular aspect of creating Keyman keyboards.</p>
 
 <p>Let's get started! Move on to the next topic to begin the first step, planning the keyboard.</p>
 
-<p><a href="step-1.php" title="Step 1: Planning the Keyboard">Step 1: Planning the Keyboard</a></p>
-
+<ul>
+  <li><a href="step-1">Continue with Step 1: Planning the Keyboard</a></li>
+</ul>

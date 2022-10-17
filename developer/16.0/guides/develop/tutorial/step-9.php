@@ -66,3 +66,7 @@ dk(dbquote) + '"' > '"'   c Double-quote
 
 c End of keyboard
 </code></pre>
+
+<ul>
+  <li><a href="step-8">Back to Step 8: Deadkeys</a></li>
+</ul>

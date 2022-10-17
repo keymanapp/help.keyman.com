@@ -30,9 +30,9 @@ replace any vowel with a period, when used with the store above:</p>
 output.</p>
 
 <p>The second statement that is used with stores is the <code class="language-keyman">index()</code> statement. It is usually used in the output of
-a rule, and will output the character from a particular store at the same position as the character matched by a specified 
+a rule, and will output the character from a particular store at the same position as the character matched by a specified
 <code class="language-keyman">any()</code> statement. This is best shown with an example; this rule will convert all input to uppercase:</p>
-    
+
 <pre><code class="language-keyman">store(lowercase) "abcdefghijklmnopqrstuvwxyz"
 store(uppercase) "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
@@ -44,7 +44,7 @@ store(uppercase) "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 statement, and outputs the character at the same position in the <code class="language-keyman"><var>uppercase</var></code> store, in this case <samp>J</samp>.</p>
 
 <p>The <code class="language-keyman">index()</code> statement has two parts: the store from which it takes the output character, and the offset of
-the <code class="language-keyman">any()</code> statement that it gets the character position from. This offset is found by counting the characters and 
+the <code class="language-keyman">any()</code> statement that it gets the character position from. This offset is found by counting the characters and
 statements in the context and key parts of the rule up to the <code class="language-keyman">any()</code> statement. Again, a few examples may help to
 illustrate this:</p>
 
@@ -60,12 +60,12 @@ U+0041 any(somestore) "B" + any(otherstore) > index(thirdstore,4)
 c You can have multiple 'index' statements in the output, which can
 c reference the same or different 'any's
 any(store1) + any(store2) > index(store1,2) index(store2,1) index(store3,2)
-</pre></code>  
+</pre></code>
 
 <h2>Using stores in the Quick French keyboard</h2>
 
 <p>We can now reduce the number of rules needed for the Quick French keyboard by using stores. We will make five stores: one for the
-unaccented vowels, and one each for vowels with acute accents, grave accents, circumflexes, and diereses. For clarity, the 
+unaccented vowels, and one each for vowels with acute accents, grave accents, circumflexes, and diereses. For clarity, the
 <code class="language-keyman">group()</code> statement is repeated below:</p>
 
 <pre><code class="language-keyman">group(Main) using keys
@@ -98,4 +98,7 @@ almost finished the keyboard:</p>
 
 <p>All we need to do now is to test the keyboard.</p>
 
-<p><a href="step-7.php" title="Step 7: Testing the Keyboard">Step 7: Testing the Keyboard</a></p>
+<ul>
+  <li><a href="step-7">Continue with Step 7: Testing the Keyboard</a></li>
+  <li><a href="step-5">Back to Step 5: Rules with Context</a></li>
+</ul>
