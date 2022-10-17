@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: help-keyman-site
+  name: help-keyman-com
   namespace: keyman
   finalizers:
   - kubernetes.io/pvc-protection

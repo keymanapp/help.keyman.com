@@ -83,5 +83,5 @@ spec:
   volumes:
   - name: help-site-app
     persistentVolumeClaim:
-      claimName: help-keyman-site
+      claimName: help-keyman-com
 
