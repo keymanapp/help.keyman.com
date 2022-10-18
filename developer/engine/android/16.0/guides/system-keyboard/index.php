@@ -43,10 +43,10 @@ head([
     alt="AddEmbeddedCSS" border="0"/></a></p>
 
 <p>The CSS rules required to style your keyboard are beyond the scope of this post, but the <strong>kmwosk.css</strong>
-    file included in the Keyman Developer 15.0 distribution and in the
+    file included in the Keyman Developer 16.0 distribution and in the
     <a href="https://github.com/keymanapp/keyman/blob/master/web/source/resources/osk/kmwosk.css" target="_blank">
-    KeymanWeb 15.0 source</a>&nbsp;is a good place to start. See this
-    <a href="/developer/engine/web/15.0/reference/osk/classes">reference</a> for more information
+    KeymanWeb 16.0 source</a>&nbsp;is a good place to start. See this
+    <a href="/developer/engine/web/16.0/reference/osk/classes">reference</a> for more information
     about the On-Screen Keyboard.</p>
 
 <p>Do take the time to read through the source of <strong>KMSample2</strong>, as it includes some boilerplate code
@@ -72,6 +72,6 @@ head([
 
 <ul>
     <li><a href="../in-app/">Part 1 of this series</a></li>
-    <li><a href="/developer/15.0/" target="_blank">Keyman Developer Documentation</a></li>
+    <li><a href="/developer/16.0/" target="_blank">Keyman Developer Documentation</a></li>
     <li><a href="http://developer.android.com/index.html" target="_blank">Android Developer Home</a></li>
 </ul>
