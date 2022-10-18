@@ -157,7 +157,7 @@
   <dt><code><a href='isDebugMode.php'>isDebugMode()</a></code></dt>
   <dd>returns whether debugging of Keyman Engine is enabled</dd>
 
-  <dt><code><a href='isHelpBubbleEnabled.php'>isHelpBubbleEnabled()</a></code></dt>
+  <dt><code><strike>isHelpBubbleEnabled()</strike> (Deprecated)</code></dt>
   <dd>returns whether the help bubble is enabled</dd>
 
   <dt><code><a href='isKeyboardLoaded'>isKeyboardLoaded()</a></code></dt>
@@ -217,7 +217,7 @@
   <dt><code><a href='setHapticFeedback'>setHapticFeedback()</a></code></dt>
   <dd>sets whether the device vibrates as the user types</dd>
 
-  <dt><code><a href='setHelpBubbleEnabled.php'>setHelpBubbleEnabled()</a></code></dt>
+  <dt><code><strike>setHelpBubbleEnabled()</strike> (deprecated)</code></dt>
   <dd>enables or disables the help bubble</dd>
 
   <dt><code><a href='setKeyboard'>setKeyboard()</a></code></dt>

@@ -6,7 +6,7 @@
     head(['title' => $class.'.'.$method.'()']);
 ?>
 
-<h1>KMManager.isHelpBubbleEnabled()</h1>
+<h1>KMManager.isHelpBubbleEnabled() (Deprecated)</h1>
 
 <h2 id="Summary" name="Summary">Summary</h2>
 <p>The <code><strong><?php echo $method.'()' ?></strong></code> method returns whether the help bubble is enabled.</p>
@@ -27,7 +27,10 @@
 <pre class="language-javascript line-numbers"><code>    boolean isHelpBubbleEnabled = KMManager.isHelpBubbleEnabled();
 </code></pre>
 
+<h2 id="History" name="History">History</h2>
+<p>Deprecated syntax in Keyman Engine for Android 16.0</p>
+
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="setHelpBubbleEnabled.php"><code>setHelpBubbleEnabled()</code></a></li>
+ <li><a href="setHelpBubbleEnabled.php"><code>setHelpBubbleEnabled()</code></a>  (Deprecated)</li>
 </ul>

@@ -7,7 +7,7 @@
     head(['title' => $class.'.'.$method.'()']);
 ?>
 
-<h1>KMManager.setHelpBubbleEnabled()</h1>
+<h1>KMManager.setHelpBubbleEnabled()  (Deprecated)</h1>
 
 <h2 id="Summary" name="Summary">Summary</h2>
 <p>The <code><strong><?php echo $method.'()' ?></strong></code> enables or disables the help bubble.</p>
@@ -32,7 +32,10 @@
     // Help bubble is now disabled
 </code></pre>
 
+<h2 id="History" name="History">History</h2>
+<p>Deprecated syntax in Keyman Engine for Android 16.0</p>
+
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="isHelpBubbleEnabled.php">isHelpBubbleEnabled()</code></a></li>
+ <li><a href="isHelpBubbleEnabled.php">isHelpBubbleEnabled()</code></a> (Deprecated)</li>
 </ul>
