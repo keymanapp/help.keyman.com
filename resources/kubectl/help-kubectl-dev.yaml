@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: help-keyman-com
+  namespace: keyman
+  finalizers:
+  - kubernetes.io/pvc-protection
+spec:
+  storageClassName: hostpath
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    run: help-keyman-com
+  name: help-keyman-com
+  namespace: keyman
+spec:
+  type: NodePort
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    nodePort: 30080
+  selector:
+    run: help-keyman-com
+

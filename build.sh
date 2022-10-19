@@ -77,8 +77,8 @@ if builder_start_action stop; then
 fi
 
 if builder_start_action build; then
-  # Download docker image
-  docker build -t help-keyman-website .
+  # Download docker image. --mount option requires BuildKit  
+  DOCKER_BUILDKIT=1 docker build -t help-keyman-website .
 
   builder_finish_action success build
 fi

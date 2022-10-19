@@ -35,8 +35,9 @@ jobs:
 
     - name: Build the Docker image
       shell: bash
+      # --mount option requires BuildKit
       run: |
-        docker build -t help-keyman-website .
+        DOCKER_BUILDKIT=1 docker build -t help-keyman-website .
         docker run -d -p 8055:80 -v $(pwd):/var/www/html/ -e S_KEYMAN_COM=localhost:8054 help-keyman-website
       env:
         fail-fast: true
