@@ -46,7 +46,8 @@ head([
     file included in the Keyman Developer 16.0 distribution and in the
     <a href="https://github.com/keymanapp/keyman/blob/master/web/source/resources/osk/kmwosk.css" target="_blank">
     KeymanWeb 16.0 source</a>&nbsp;is a good place to start. See this
-    <a href="/developer/engine/web/16.0/reference/osk/classes">reference</a> for more information
+    <!-- TODO: Update to web/16.0 -->
+    <a href="/developer/engine/web/15.0/reference/osk/classes">reference</a> for more information
     about the On-Screen Keyboard.</p>
 
 <p>Do take the time to read through the source of <strong>KMSample2</strong>, as it includes some boilerplate code
