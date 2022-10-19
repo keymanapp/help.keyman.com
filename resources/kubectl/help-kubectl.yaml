@@ -52,7 +52,7 @@ spec:
     imagePullPolicy: IfNotPresent
     env:
     - name: SITE_GIT_BRANCH
-      value: chore/start-kubernetes
+      value: staging
 #      value: master
     command: ["sh", "-c"]
     args:
