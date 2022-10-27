@@ -76,7 +76,7 @@ appear. Select “Wordlist Lexical Model” and press
 
 <p> Keyman needs to know how to link your model to the appropriate keyboard
 layout, so that they can both work together. To do this, Keyman utilizes
-<strong> BCP 47 </strong> language tags. </p>
+<a href="../../../reference/bcp-47">BCP 47</a> language tags. </p>
 
 <p> To add a language tag, click the <span class="guibutton">Add</span> button
 to bring up the “Select BCP 47 Tag” dialog box.  </p>
@@ -88,80 +88,10 @@ to bring up the “Select BCP 47 Tag” dialog box.  </p>
   </figcaption>
 </figure>
 
-
-<h3> The language subtag </h3>
-
-<p>The only required option is the <dfn>Language subtag</dfn>, which is
-an <a href="https://en.wikipedia.org/wiki/ISO_639-1">ISO 639-1</a> or
-<a href="https://en.wikipedia.org/wiki/ISO_639-3">ISO 639-3</a> code.</p>
-
-<p>ISO 639-1 tags are a two-letter code. ISO 639-3 tags are a three-letter
-code.  First, try to find your language on the list of two-letter ISO 639-1
-codes. <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">This
-Wikipedia page</a> lists all of the two-letter codes.</p>
-
-<p>If you can't find a two-letter code, you'll need to find the closest three-letter code.
-You can use <a href="https://glottolog.org/glottolog/language">Glottolog</a>
-to search for your language, and it will give you an appropriate code. In this
-example, I searched Glottolog for
-“<a href="https://glottolog.org/resource/languoid/id/saan1246">Saanich</a>”
-(name of the First Nations that speak SENĆOŦEN) and found <code>str</code> as
-the code for all Straits Salish languages. </p>
-
-<p>The next two fields are <strong>optional</strong>, however, they allow you to be more specific
-about your language.</p>
-
-<h3> The script subtag </h3>
-
-<p> The <dfn>Script subtag</dfn> allows you to specify the writing system used in
-your language model. If your language only uses one writing system, <strong>leave this
-blank</strong>.</p>
-
-<p> Otherwise, in cases where a language can be written in many different
-writing systems, you can use this field to choose the <a
-  href="https://en.wikipedia.org/wiki/ISO_15924">ISO 15924</a> script tag that your lexical model produces.
-
-<p>For example, Plains Cree can either be written in
-<em>standard Roman orthography</em>, a <strong>Latin</strong> derived script,
-or it can be written in <em>syllabics</em>, which is part of the
-<strong>Canadian Aboriginal syllabics </strong> family of writing systems. If
-I wrote a model that produced syllabics, I would choose <code>Cans</code>, as
-that is the <strong>ISO 15924</strong> tag for Canadian Aboriginal
-syllabics.</p>
-
-
-<h3>The region subtag</h3>
-
-<p> The <dfn>Region tag</dfn> allows you to specify the region your language
-or dialect is spoken in. If your language is only spoken in one region,
-<strong>leave this blank</strong>.</p>
-
-<p> Otherwise, some languages vary between different regions and countries.
-In our example, SENĆOŦEN describes the language that covers entire W̱SÁNEĆ
-region, so this field may be left blank.</p>
-
-<p>However, large languages, like English, Spanish, or French have quite
-different vocabulary and even different grammatical rules from region to
-region and country to country. For example, the variety of Spanish spoken in
-Spain regularly uses words that are uncommon or even vulgar in both in Mexico,
-and in Latin America. Additionally, regions may have vocabulary that doesn't
-exist in the other regions where the language is spoken.</p>
-
-<p>If I were creating a lexical model specific to one country, I would use
-the <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1
-alpha-2</a> country code for the region subtag. For example, <code>ES</code>
-for Spain or <code>MX</code> for Mexico.</p>
-
-<p>If I were creating a lexical model just for Latin American Spanish (a group
-of countries), I would need to specify Latin America's
-<a href="https://en.wikipedia.org/wiki/UN_M49">UN M49</a>
-region code. For Latin America, its code is <code>419</code>.  My lexical
-model would not suggest words that are common in Spain, but vulgar in Latin
-America, however it would predict words like <span lang="es">pupupsas</span>
-and <span lang="es">chuchitos</span>, which are words that are uncommon in
-both Spain and Mexico.</p>
-
-<hr>
+<p> Enter the BCP 47 language tag that you have selected.
+<a href="../../../reference/bcp-47">Learn more about BCP 47
+  language tags
+</a></p>
 
 <p> Once you are finished adding the primary language, click <span
 class="guibutton">OK</span> to return to the <strong>New Lexical Model Project dialog</strong>.
