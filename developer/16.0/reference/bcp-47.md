@@ -17,9 +17,9 @@ A BCP 47 language tag is made up of multiple subtags. There are many possible
 subtags, but only three types are currently used in most places in Keyman
 Developer:
 
-* [language subtag](#the-language-subtag)
-* [script subtag](#the-script-subtag)
-* [region subtag](#the-region-subtag)
+* [language subtag](#toc-the-language-subtag)
+* [script subtag](#toc-the-script-subtag)
+* [region subtag](#toc-the-region-subtag)
 
 BCP 47 tags are case insensitive, but there are conventions for casing which you
 should use for readability; see the subtag descriptions for details.
