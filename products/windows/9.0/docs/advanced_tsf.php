@@ -9,7 +9,7 @@
   as keyboard drivers, handwriting recognition, speech recognition,   as well as spell checking and other text processing functions.</p><p>In Windows 7, the Language Bar is the core user interface for TSF. From the Language Bar, you can select the input language, 
   and control keyboard input, handwriting recognition and speech 
   recognition. In Windows 8, the Language Bar is no longer used, and the interface is tightly integrated into the taskbar.</p><p>
-    <span class="inlinemediaobject"><img src="desktop_images%5Clanguage-bar.png"></span>
+    <span class="inlinemediaobject"><img src="desktop_images/language-bar.png"></span>
   </p><p>In Keyman Desktop 9, all keyboards are registered through the Windows interfaces. This is a significant change over Keyman Desktop 8, but the
   key advantage is that Keyman Desktop now automatically detects applications that have support for TSF and upgrades the experience for those applications.</p><p>For those applications that support TSF, the most important advantage is that Keyman Desktop can read the current 'context' from the application. The 
   'context' is the characters on the screen around the insertion point. Earlier versions of Keyman Desktop remembered the context while inputting text, but as

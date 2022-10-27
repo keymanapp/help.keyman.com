@@ -7,7 +7,7 @@
   ]);
 ?>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Configure Right-to-Left Script Support</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="langsetup_psrtmsofficelanguage.php">Prev</a> </td><th width="60%" align="center">Chapter 4. Language Configuration Tasks Documentation</th><td width="20%" align="right"> <a accesskey="n" href="langsetup_psrtsupplementary.php">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both" id="langsetup_psrtrtl">Configure Right-to-Left Script Support</h2></div></div></div><p>
-    <span class="inlinemediaobject"><img src="images%5Clct_rtlscript_01.png"></span>
+    <span class="inlinemediaobject"><img src="images/lct_rtlscript_01.png"></span>
   </p><p>
     Keyman Desktop will detect if you need to install Right-to-Left Script support on your computer. You will not encounter this dialog if you are running Windows Vista.
   </p><p>
