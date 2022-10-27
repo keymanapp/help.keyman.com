@@ -10,18 +10,20 @@ Description:
 
 Details:
 
-: When Keyman Developer compiles a Keyman package source file ([.KPS](KPS)), it
+: When Keyman Developer compiles a Keyman package source file ([.kps](kps)), it
   creates and automatically adds `kmp.inf` and `kmp.json` into the Keyman
-  Package file ([.KMP](KMP)).
+  Package file ([.kmp](kmp)).
 
-  Keyman mobile products use `kmp.json` to install the touch keyboards (.JS) in
+  Keyman mobile products use `kmp.json` to install the touch keyboards (.js) in
   the package.
 
-  Keyman Desktop 10.0 also uses `kmp.json` to install the keyboards
-  ([.KMX](kmx)) in the package.
+  Keyman on all platforms now use `kmp.json` to install the keyboards
+  ([.kmx](kmx)) in the package.
 
-  Older versions of Keyman use `kmp.inf`, a parallel format of the package
-  metadata. Note: the lexical model compiler does not add `kmp.inf`
+  Older versions of Keyman Desktop for Windows use `kmp.inf`, a parallel format
+  of the package metadata. Note: the lexical model compiler does not add
+  `kmp.inf`, and future versions of Keyman Developer will stop supporting
+  `kmp.inf`.
 
 Package purposes:
 
