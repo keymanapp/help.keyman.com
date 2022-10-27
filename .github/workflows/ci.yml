@@ -29,7 +29,8 @@ jobs:
       shell: bash
       run: |
         echo "TIER_TEST" > tier.txt
-        composer install --no-progress
+        ./build.sh configure
+        # composer install --no-progress
       env:
         fail-fast: true
 
@@ -37,8 +38,7 @@ jobs:
       shell: bash
       # --mount option requires BuildKit
       run: |
-        DOCKER_BUILDKIT=1 docker build -t help-keyman-website .
-        docker run -d -p 8055:80 -v $(pwd):/var/www/html/ -e S_KEYMAN_COM=localhost:8054 help-keyman-website
+        ./build.sh build start
       env:
         fail-fast: true
 
