@@ -24,7 +24,7 @@
   <dt>Model Name</dt>
   <dd>The descriptive name of the lexical model. This should be a unique name to distinguish this lexical model
     from others in the same language.</dd>
-  
+
   <dt>Copyright</dt>
   <dd>A copyright string for the model. This will be set in the the package metadata, and where appropriate in documentation and metadata.</dd>
 
@@ -35,7 +35,7 @@
     increment the major revision (e.g. 2.0). Increment the minor revision (e.g. 1.1) for small changes to the model.</dd>
 
   <dt>Languages</dt>
-  <dd>Specifies the default BCP 47 language tags which will be added to the <a href="../reference/file-types/metadata.php">
+  <dd>Specifies the default BCP 47 language tags which will be added to the <a href="../reference/file-types/metadata">
     package metadata</a> and project metadata. In order to install and use a lexical model with a Keyman keyboard,
     the BCP 47 language tags for both must be identical.
   </dd>
