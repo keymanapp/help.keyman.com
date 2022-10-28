@@ -69,7 +69,8 @@ separately.</p>
 
   <dl id="keyboards-languages-fields">
     <dt>Languages</dt>
-    <dd>Because the language information in the .kmn source is deprecated, the "Languages" section is required.
+    <dd>Because the language information in the .kmn source is deprecated, the "Languages" section is required. Each language
+        listed here is a <a href="../reference/bcp-47">BCP 47 language tag</a>.
         Use the <span class="guibutton">Add</span> button to bring up the "Select BCP 47 Tag" dialog. When Keyman installs the keyboard package,
         it will associate the keyboard with the language(s) you select here. Required.</dd>
   </dl>
@@ -116,7 +117,7 @@ optionally also a shortcut for uninstallation.</p>
 
 <p class='context-main-image'><img src="<?= cdn('img/developer/120/ui/frmPackageEditor_Source.png') ?>" alt="Package Editor - Source tab" /></p>
 
-<p>The source of the .kps file in XML format. All details from previous tabs can be seen in the Source tab, and changes in either the Source tab or the other tabs will be 
+<p>The source of the .kps file in XML format. All details from previous tabs can be seen in the Source tab, and changes in either the Source tab or the other tabs will be
 reflected immediately in the other.</p>
 
 <h2 id="compile">Compile tab</h2>
