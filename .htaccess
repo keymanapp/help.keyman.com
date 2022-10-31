@@ -172,7 +172,7 @@ RewriteRule "^developer/language/reference/(nul|index)(\.php)?$" "developer/lang
 
 # no pages currently reference this but will allow for future automatic re-versioning links in docs (13.0 onward?)
 # Redirect creating-a-touch-keyboard-layout-for-amharic-with-keyman-developer-10
-RewriteRule "^developer/(1[3-9].0)/guides/develop/creating-a-touch-keyboard-layout-for-amharic-with-keyman-developer-10(.*)?$" "developer/$1/guides/develop/creating-a-touch-keyboard-layout-for-amharic.php"
+RewriteRule "^developer/(1[3-9].0)/guides/develop/creating-a-touch-keyboard-layout-for-amharic-with-keyman-developer-10(.*)?$" "developer/$1/guides/develop/creating-a-touch-keyboard-layout-for-amharic"
 
 # Redirect how-to-test-your-keyboard-layout-with-keyman-developer-10-touch-and-desktop
 RewriteRule "^developer/(1[3-9].0)/guides/test/how-to-test-your-keyboard-layout-with-keyman-developer-10-touch-and-desktop(.*)?$" "developer/$1/guides/test/keyboard-touch-and-desktop"
