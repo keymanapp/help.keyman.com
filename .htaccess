@@ -170,8 +170,15 @@ RewriteRule "^keyboard/(?!redir.php)([^/?]+)/([^/?]+)(/)?$" "keyboard/redir.php?
 # Rewrite nul -> _nul, index -> _index
 RewriteRule "^developer/language/reference/(nul|index)(\.php)?$" "developer/language/reference/_$1.php" [END]
 
-# no pages currently reference this but will allow for future automatic re-versioning links in docs
-RewriteRule "^developer/15.0/guides/develop/creating-a-touch-keyboard-layout-for-amharic-with-keyman-developer-10(.*)?$" "developer/15.0/guides/develop/creating-a-touch-keyboard-layout-for-amharic.php" [END]
+# no pages currently reference this but will allow for future automatic re-versioning links in docs (13.0 onward?)
+# Redirect creating-a-touch-keyboard-layout-for-amharic-with-keyman-developer-10
+RewriteRule "^developer/(1[3-9].0)/guides/develop/creating-a-touch-keyboard-layout-for-amharic-with-keyman-developer-10(.*)?$" "developer/$1/guides/develop/creating-a-touch-keyboard-layout-for-amharic"
+
+# Redirect how-to-test-your-keyboard-layout-with-keyman-developer-10-touch-and-desktop
+RewriteRule "^developer/(1[3-9].0)/guides/test/how-to-test-your-keyboard-layout-with-keyman-developer-10-touch-and-desktop(.*)?$" "developer/$1/guides/test/keyboard-touch-and-desktop"
+
+# Redirect how-to-test-your-touch-layout-in-the-google-chrome-mobile-emulator
+RewriteRule "^developer/(1[3-9].0)/guides/test/how-to-test-your-touch-layout-in-the-google-chrome-mobile-emulator(.*)?$"          "developer/$1/guides/test/keyboard-touch-mobile-emulator"
 
 # Remove index or index.php and redirect (and stop processing)
 RewriteCond "$1" -d
