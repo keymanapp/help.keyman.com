@@ -9,17 +9,17 @@ Keyman requires access to your keyboard in order to translate input. Keyman and 
 
 After first selecting Keyman from the system menu, you will see an alert requesting access to your Documents folder:
 
-   ![System Preferences menu](../mac_images/security-documents-alert.png)
+   ![System Preferences menu](../mac_images/privacy-documents-alert.png)
 
 Click OK to allow access to the Documents folder.
 
 Immediately after this alert is dismissed, another alert will appear:
 
-   ![System Preferences menu](../mac_images/security-keyman-alert.png)
+   ![System Preferences menu](../mac_images/privacy-keyman-alert.png)
 
 Unlike the previous alert, you cannot grant Accessibility permission to Keyman by simply clicking a button. This change must be made in the System Preferences (called 'System Settings' beginning with macOS 13 Ventura). After you click OK, you may briefly see another alert from macOS:
 
-   ![System Preferences menu](../mac_images/security-accessibility-alert.png)
+   ![System Preferences menu](../mac_images/privacy-accessibility-alert.png)
 
 and then the Security & Privacy settings window will open over the top of it:
 
@@ -30,7 +30,9 @@ With **Accessibility** selected, unlock the settings by clicking on the lock ico
 After enabling this setting, you must restart the system for it to take effect.
 
 ----
+
 **Note: You must restart your system after making these changes!**
+
 ----
 
 Symptoms that you may experience if Privacy settings are not configured correctly include:
