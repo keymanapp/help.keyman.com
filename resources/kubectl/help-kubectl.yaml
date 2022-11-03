@@ -9,7 +9,7 @@ spec:
   terminationGracePeriodSeconds: 60
   containers:
   - name: app-php
-    image: help-keyman-website
+    image: docker.dallas.languagetechnology.org/keyman/help-keyman-app
     imagePullPolicy: IfNotPresent
     ports:
     - containerPort: 80
@@ -25,46 +25,64 @@ spec:
     livenessProbe:
       tcpSocket:
         port: 80
-  - name: updater
-    image: bitnami/git
+
+  - name: api
+    image: almir/webhook
     imagePullPolicy: IfNotPresent
     env:
-    - name: UPDATE_POLL
-      value: "900"
-    command: ["sh", "-c"]
+    - name: DEPLOY_KEY
+      valueFrom:
+        secretKeyRef:
+          name: help-keyman-com
+          key: deploy_key
+    - name: SITE_GIT_BRANCH
+      valueFrom:
+        configMapKeyRef:
+          name: help-keyman-com
+          key: site-branch
     args:
-    - |
-      cd /mnt
-      git fetch && git reset --hard HEAD
-      while sleep ${UPDATE_POLL}; do
-        git fetch && git reset --hard HEAD
-      done
+    - -verbose
+    - -urlprefix=api
+    - -template
+    - -hooks=/webhooks/hooks.yaml
     lifecycle:
-      preStop:
+      postStart:
         exec:
-          command: ["/usr/bin/pkill", "sleep"]
+          command: ["/sbin/apk", "add", "git"]
+    ports:
+    - containerPort: 9000
     volumeMounts:
+    - name: webhooks
+      mountPath: /webhooks
+      readOnly: true
     - name: help-site-app
       mountPath: /mnt
+
   initContainers:
   - name: init-site-data
     image: bitnami/git
     imagePullPolicy: IfNotPresent
     env:
     - name: SITE_GIT_BRANCH
-      value: staging
-#      value: master
+      valueFrom:
+        configMapKeyRef:
+          name: help-keyman-com
+          key: site-branch
     command: ["sh", "-c"]
     args:
     - |
+      test -d /mnt/.git && exit 0
+      set -e
       cd /mnt
-      test -d .git && exit 0
       echo Initial clone
       git clone \
         --filter=blob:none \
         --no-checkout \
         --branch=${SITE_GIT_BRANCH} \
-        https://github.com/keymanapp/help.keyman.com.git ./
+        https://github.com/keymanapp/help.keyman.com.git \
+        .toplevel
+      mv .toplevel/.git ./
+      rmdir .toplevel
       echo Configure sparse-checkout
       git sparse-checkout set --no-cone \
         "/*"              \
@@ -75,6 +93,7 @@ spec:
         "!Dockerfile"     \
         "!Readme.md"      \
         "!web.config"
+      git checkout
       echo Link vendored PHP
       ln -sf /var/www/vendor vendor
     volumeMounts:
@@ -84,4 +103,55 @@ spec:
   - name: help-site-app
     persistentVolumeClaim:
       claimName: help-keyman-com
-
+  - name: webhooks
+    configMap:
+      name: help-keyman-com
+      items:
+      - key: deployer
+        path: deploy.sh
+        mode: 0555
+      - key: webhooks
+        path: hooks.yaml
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: help-keyman-com
+  namespace: keyman
+data:
+  site-branch: staging
+  deployer: |
+    #!/bin/sh
+    git fetch && git reset --hard HEAD
+  webhooks: |
+    - id: deploy
+      execute-command: /webhooks/deploy.sh
+      command-working-directory: /mnt
+      http-methods: [POST]
+      trigger-rule:
+        and:
+        - or:
+          - match:
+              type: payload-hmac-sha256
+              secret: '{{ getenv "DEPLOY_KEY" }}'
+              parameter:
+                source: header
+                name: X-Hub-Signature-256
+          - match:
+              type: payload-hmac-sha1
+              secret: '{{ getenv "DEPLOY_KEY" }}'
+              parameter:
+                source: header
+                name: X-Hub-Signature
+        - match:
+            type: value
+            value: push
+            parameter:
+              source: payload
+              name: action
+        - match:
+            type: value
+            value: 'refs/heads/{{getenv "SITE_GIT_BRANCH"}}'
+            parameter:
+              source: payload
+              name: ref
