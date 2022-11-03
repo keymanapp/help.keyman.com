@@ -37,17 +37,17 @@ After this, you can access the help.keyman site at http://localhost:8055
 Checks for broken links
 1. Run `./build.sh test`
 
+
 ## How to run help.keyman.com locally with Docker Desktop's Kubernetes singlenode cluster
 
 For testing Kubernetes deployment there are yaml files under `resources/kubectl`, that cover local developer testing. 
 
 ### Pre-requisites
-On the host machine, install [Docker](https://docs.docker.com/get-docker/), then enable Kubernetes in the settings.
+On the host machine, install [Docker](https://docs.docker.com/get-docker/), then enable Kubernetes in the settings. Ensure you have built a help-keyman-app Docker image, and either tag it `docker.dallas.languagetechnology.org/keyman/help-keyman-app` or modify the `app-php` containers `image:` value to match you local copy's name.
 
-Ensure you have built a help-keyman-app Docker image, and either tag it `docker.dallas.languagetechnology.org/keyman/help-keyman-app` or modify the `app-php` containers `image:` value to match you localy copies name.
-
+### Deploying to a desktop cluster
 To deploy the dev version to the cluster do the following:
-1. Ensure your `kubectl` context is set to `docker-desktop`, though the Docker Desktop systray icon or running: 
+1. Ensure your `kubectl` context is set to `docker-desktop`, though the Docker Desktop systray icon or by running:  
 ```bash
 $> kubectl config use-context docker-desktop
 ```
@@ -61,6 +61,7 @@ $> kubectl --namespace keyman apply \
        -f resources/kubectl/help-kubectl-dev.yaml \
        -f resources/kubectl/help-kubectl.yaml
 ```
+### Testing the site and `/api/deploy` webhook endpoint
 The site can be reached on http://localhost:30080/ via web browser, and the deploy api is on http://localhost:30900/api/deploy, and can be activated like so:
 ```bash
 $> curl -v --request POST \
@@ -69,8 +70,11 @@ $> curl -v --request POST \
     --data '{"action":"push","ref":"refs/heads/staging"}' \
     http://localhost:30900/api/deploy
 ```
-This simulates enough of GitHub webhook event, to pass validation on the responder.
-4. Remove the k8s pod and resources, to delete everything do:
+This simulates enough of a GitHub webhook push event to pass validation on the responder.
+
+### Clean up after testing
+
+To remove the k8s pod and resources, and delete everything do:
 ```bash
 $> kubectl --namespace=keyman delete {pod,cm,svc,secret,pvc}/help-keyman-com
 ```
