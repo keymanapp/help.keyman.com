@@ -30,7 +30,7 @@ With **Accessibility** selected, unlock the settings by clicking on the lock ico
 After enabling this setting, you must restart the system for it to take effect.
 
 ----
-### Note: You must restart you system after making these changes!
+**Note: You must restart your system after making these changes!**
 ----
 
 Symptoms that you may experience if Privacy settings are not configured correctly include:
