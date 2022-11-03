@@ -14,6 +14,18 @@ spec:
       storage: 1Gi
 ---
 apiVersion: v1
+kind: Secret
+metadata:
+  name: help-keyman-com
+  namespace: keyman
+data:
+  # This key is for local testing, or development of k8s yaml files 
+  # on a test cluster (e.g. minikude etc). Do *not* deploy to production
+  # decoded it is: 7f913e60-f9ba-430b-9231-91908fa6c06b
+  deploy_key: N2Y5MTNlNjAtZjliYS00MzBiLTkyMzEtOTE5MDhmYTZjMDZi
+type: Opaque  
+---
+apiVersion: v1
 kind: Service
 metadata:
   labels:
@@ -27,6 +39,10 @@ spec:
     port: 80
     protocol: TCP
     nodePort: 30080
+  - name: api
+    port: 9000
+    protocol: TCP
+    nodePort: 30900
   selector:
     run: help-keyman-com
 
