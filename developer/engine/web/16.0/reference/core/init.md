@@ -8,6 +8,18 @@ Initializes KeymanWeb and configures KeymanWeb Options.
 
 Note that this is an asynchronous operation.
 
+`keyman.init()` is automatically called after the page loads, with default
+options, if it has not already been called by scripts on the page. It is safe to
+call `keyman.init()` once more in this situation, in order to set additional
+options.
+
+The [`keyman.initialized` property](initialized) may be checked to determine the
+current initialization state of Keyman Engine for Web.
+
+You should not call functions other than `keyman.init()` until Keyman
+initialization is complete. As `keyman.init()` returns a Promise, the Promise
+fulfilment callback is the appropriate place to perform post-init steps.
+
 ## Syntax
 
 ```js
