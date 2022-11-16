@@ -17,7 +17,8 @@ km-config [-h] [--version] [-v] [-vv] [-i INSTALL] [INSTALL]
 download and/or install .kmp package. INSTALL can
 either be a downloaded .kmp file, a file:// URL
 pointing to a .kmp file, or a keyman:// URL, possibly
-with a bcp47=`language` specified.
+with a bcp47=`language` specified (e.g. keyman://downl
+oad/keyboard/sil_el_ethiopian_latin?bcp47=ssy-latn).
 
 `-h`, `--help` <br>
 __optional__ <br>
@@ -40,7 +41,8 @@ __optional__ <br>
 download and/or install .kmp package. INSTALL can
 either be a downloaded .kmp file, a file:// URL
 pointing to a .kmp file, or a keyman:// URL, possibly
-with a bcp47=`language` specified.
+with a bcp47=`language` specified (e.g. keyman://downl
+oad/keyboard/sil_el_ethiopian_latin?bcp47=ssy-latn).
 
 ## Description
 
