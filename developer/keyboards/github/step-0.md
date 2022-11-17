@@ -59,7 +59,7 @@ The folder structure for each keyboard has the following components:
 
 `xyz\source\help\`
  : contains the `xyz.php` help file and any resources it references. These files are uploaded to help.keyman.com to provide online help for the keyboard. (The `xyz.php` file often duplicates most of the content of the `welcome.htm` file.)
- For more information on creating the PHP help file see [Creating a PHP help file](../../_shared/phphelpfile.md "Creating a PHP help file").
+ For more information on creating the PHP help file see [Creating a PHP help file](../_shared/phphelpfile "Creating a PHP help file").
 
 `xyz\source\welcome\`
  : contains `welcome.htm` and any resources it references. These files are included with the keyboard to provide local help for the keyboard.
