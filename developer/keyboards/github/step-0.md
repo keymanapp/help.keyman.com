@@ -27,9 +27,9 @@ Do not include the version of the keyboard in the filename,
 unless you want to make the new version a completely separate deployment because it has changed so substantially that users would not want to update to it automatically.
 In this situation, a new keyboard name is probably a wiser choice.
 
-Do not include the word "keyboard" in the name of the keyboard (neither the keyboard base name nor the descriptive name). 
+Do not include the word "keyboard" in the name of the keyboard (neither the keyboard base name nor the descriptive name).
 This would be redundant (since everything in this repository is a keyboard) and would look funny if the name is displayed with the word "keyboard" following it.
-Similarly, do not include the word "unicode" in the name of the keyboard. 
+Similarly, do not include the word "unicode" in the name of the keyboard.
 It is expected that all keyboards will produce Unicode output, so it's not necessary to include that in the name.
 
 The keyboard name must also be unique in the repository.
@@ -59,7 +59,7 @@ The folder structure for each keyboard has the following components:
 
 `xyz\source\help\`
  : contains the `xyz.php` help file and any resources it references. These files are uploaded to help.keyman.com to provide online help for the keyboard. (The `xyz.php` file often duplicates most of the content of the `welcome.htm` file.)
- For more information on creating the PHP help file see [Creating a PHP help file](../_shared/phphelpfile).
+ For more information on creating the PHP help file see [Creating a PHP help file](../phphelpfile).
 
 `xyz\source\welcome\`
  : contains `welcome.htm` and any resources it references. These files are included with the keyboard to provide local help for the keyboard.
