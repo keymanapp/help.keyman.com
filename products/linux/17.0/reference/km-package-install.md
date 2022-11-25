@@ -8,7 +8,7 @@ Install a Keyman keyboard package
 ## Syntax
 
 ```bash
-km-package-install [-h] [-s] [-f KMPFILE] [-p PACKAGE] [--version] [-v] [-vv]
+km-package-install [-h] [-s] [-f KMPFILE] [-p PACKAGE] [-l LANGTAG] [--version] [-v] [-vv]
 ```
 
 ### Parameters
@@ -29,6 +29,10 @@ Keyman kmp file
 __optional__ <br>
 Keyman package id
 
+`-l LANGTAG`, `--bcp47 LANGTAG` <br>
+__optional__ <br>
+bcp47 language tag
+
 `--version` <br>
 __optional__ <br>
 show program's version number and exit
@@ -41,10 +45,15 @@ verbose logging
 __optional__ <br>
 very verbose logging
 
+`Example` <br>
+__optional__ <br>
+: km-package-install -s -p sil_el_ethiopian_latin --bcp47 ssy-latn
+
 ## Description
 
 Install a Keyman keyboard package, either a local .kmp file or specify a
-keyboard id to download and install
+keyboard id to download and install, optionally specifying a language for
+which to install the keyboard.
 ## Tab completion
 
 
