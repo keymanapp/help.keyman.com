@@ -418,7 +418,7 @@ km_kbp_get_engine_attrs(km_kbp_state const *state);
       <dt id="state"><code class="token symbol">state</code></dt>
       <dd>
         An opaque pointer to an
-        <a href="#km_kbp_state"><code class="token symbol">km_kbp_state</code></a>.
+        <a href="state-api#state"><code class="token symbol">km_kbp_state</code></a>.
       </dd>
     </dl>
   </section>
