@@ -30,9 +30,11 @@ head([
   uint8_t   type;
   uint8_t   _reserved[sizeof(void*)-sizeof(uint8_t)];
   union {
-    uintptr_t           marker;
-    km_kbp_option_item const * option;
-    km_kbp_usv          character;
+    uintptr_t             marker;
+    km_kbp_option_item    const * option;
+    km_kbp_usv            character;
+    uint8_t               capsLock;
+    km_kbp_backspace_item backspace;
   };
 } km_kbp_action_item;
 </code></pre>
@@ -54,13 +56,20 @@ head([
         this will be different depending on native machine register width.
       </dd>
 
-      <dt id="character"><code class="token symbol">character</code></dt>
-      <dd>A Unicode Scalar Value.</dd>
-
       <dt id="marker"><code class="token symbol">marker</code></dt>
       <dd>A marker value, only meaningful to an engine.</dd>
 
-      <dt id="opt"><code class="token symbol">opt</code></dt>
+      <dt id="opt"><code class="token symbol">option</code></dt>
+
+      <dt id="character"><code class="token symbol">character</code></dt>
+      <dd>A Unicode Scalar Value.</dd>
+
+      <dt id="capsLock"><code class="token symbol">capsLock</code></dt>
+      <dd>CAPSLOCK type, 1 to turn on, 0 to turn off.</dd>
+
+      <dt id="backspace"><code class="token symbol">backspace</code></dt>
+      <dd>Backspace type, Unknown, Character, Marker</dd>
+
       <dd>
         A pointer to
         <a href="#km_kbp_option_item"><code class="token symbol">km_kbp_option_item</code></a>
@@ -471,6 +480,11 @@ km_kbp_process_event(km_kbp_state *state,
         <a href="#km_kbp_modifier_state"><code class="token symbol">km_kbp_modifier_state</code></a>
         enum.
       </dd>
+
+      <dt id="is_key_down"><code class="token symbol">is_key_down</code></dt>
+      <dd>
+        If the key is down value is > 0.
+      </dd>
     </dl>
   </section>
   <section class="returns">
@@ -492,7 +506,49 @@ km_kbp_process_event(km_kbp_state *state,
   </section>
 </article>
 
+<article id="km_kbp_process_queued_actions">
+  <h1>km_kbp_process_queued_actions()</h1>
+  <section class="description">
+    <h2>Description</h2>
+    <p>
+  Process the keyboard processors queued actions for the opaque state object.
+      Updates the state object as appropriate and fills out its action list.
+      The client can add actions externally via the
+      <a href="#km_kbp_state_queue_action_items"><code class="token symbol">km_kbp_state_queue_action_items</code></a>
+      and then request the processing of the actions with this method.
+      </p>
+  </section>
+  <section class="specification">
+    <h2>Specification</h2>
+<pre><code class="language-c">km_kbp_status km_kbp_process_queued_actions(km_kbp_state *state);
+</code></pre>
+  </section>
+  <section class="parameters">
+    <h2>Parameters</h2>
+    <dl>
+      <dt id="state"><code class="token symbol">state</code></dt>
+      <dd>A pointer to the opaque state object.</dd>
 
+    </dl>
+  </section>
+  <section class="returns">
+    <h2>Returns</h2>
+    <dl>
+      <dt id="KM_KBP_STATUS_OK"><code class="token constant">KM_KBP_STATUS_OK</code></dt>
+      <dd>On success.</dd>
+
+      <dt id="KM_KBP_STATUS_NO_MEM"><code class="token constant">KM_KBP_STATUS_NO_MEM</code></dt>
+      <dd>In the event memory is unavailable to allocate internal buffers.</dd>
+
+      <dt id="KM_KBP_STATUS_INVALID_ARGUMENT"><code class="token constant">KM_KBP_STATUS_INVALID_ARGUMENT</code></dt>
+      <dd>
+        In the event the
+        <a href="#state"><code class="token symbol">state</code></a>
+        pointer is null.
+      </dd>
+    </dl>
+  </section>
+</article>
 
 <article id="km_kbp_event">
   <h1>km_kbp_event()</h1>
@@ -547,9 +603,70 @@ km_kbp_event(km_kbp_state *state,
   </section>
 </article>
 
+<article id="km_kbp_state_context">
+  <h1>kbp_state_get_intermediate_context()</h1>
+  <section class="description">
+    <h2>Description</h2>
+    <p>Get access to the state object's context.</p>
+  </section>
+  <section class="specification">
+    <h2>Specification</h2>
+<pre><code class="language-c">km_kbp_status
+kbp_state_get_intermediate_context(km_kbp_state *state, km_kbp_context_item ** context_items);
+</code></pre>
+  </section>
+  <section class="parameters">
+    <h2>Parameters</h2>
+    <dl>
+      <dt id="state"><code class="token symbol">state</code></dt>
+      <dd>A pointer to the opaque state object to be queried.</dd>
+    </dl>
+  </section>
+  <section class="returns">
+    <h2>Returns</h2>
+    <p>
+      A pointer to an opaque context object. This pointer is valid for the
+      lifetime of the state object. If null is passed in, then null is
+      returned.
+    </p>
+  </section>
+</article>
 
-<article id="km_kbp_event_code">
-  <h1>km_kbp_event_code enum</h1>
+<article id="km_kbp_state_imx_register_callback">
+  <h1>km_kbp_state_imx_register_callback()</h1>
+  <section class="description">
+    <h2>Description</h2>
+    <p>
+    Register the IMX callback endpoint for the client.
+    </p>
+  </section>
+  <section class="specification">
+    <h2>Specification</h2>
+<pre><code class="language-c">void km_kbp_state_imx_register_callback(
+                                                  km_kbp_state *state,
+                                                  km_kbp_keyboard_imx_platform imx_callback,
+                                                  void *callback_object);
+</code></pre>
+  </section>
+  <section class="parameters">
+    <h2>Parameters</h2>
+    <dl>
+      <dt id="state"><code class="token symbol">state</code></dt>
+      <dd>A pointer to the opaque state object.</dd>
+
+      <dt id="imx_callback"><code class="token symbol">imx_callback</code></dt>
+      <dd>imx callback.</dd>
+
+      <dt id="callback_object"><code class="token symbol">callback_object</code></dt>
+      <dd>
+        callback object
+      </dd>
+    </dl>
+  </section>
+</article>
+
+<article id="km_kbp_state_imx_deregister_callback">
+  <h1>km_kbp_state_imx_deregister_callback</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -569,6 +686,51 @@ enum km_kbp_event_code {
     <dl>
       <dt id="KM_KBP_EVENT_KEYBOARD_ACTIVATED "><code class="token constant">KM_KBP_EVENT_KEYBOARD_ACTIVATED </code></dt>
       <dd>A keyboard has been activated by the user. The processor may use this event, for example, to switch caps lock state or provide other UX.</dd>
+    </dl>
+  </section>
+</article>
+
+<article id="km_kbp_state_queue_action_items">
+  <h1>km_kbp_state_queue_action_items()</h1>
+  <section class="description">
+    <h2>Description</h2>
+    <p>
+    Queue actions for the current keyboard processor state; normally
+    used in IMX callbacks called during
+    <a href="#km_kbp_process_event"><code class="token symbol">km_kbp_process_event</code></a>.
+    </p>
+  </section>
+  <section class="specification">
+    <h2>Specification</h2>
+<pre><code class="language-c">km_kbp_status km_kbp_state_queue_action_items(km_kbp_state *state, km_kbp_action_item const *action_items);
+</code></pre>
+  </section>
+  <section class="parameters">
+    <h2>Parameters</h2>
+    <dl>
+      <dt id="state"><code class="token symbol">state</code></dt>
+      <dd>A pointer to the opaque state object.</dd>
+      <dt id="action_items"><code class="token symbol">action_items</code></dt>
+      <dd> The action items to be added to the keyboardprocessor queue. Must be terminated with a
+      <a href="#KM_KBP_IT_END"><code class="token constant">KM_KBP_IT_END</code></a>
+       entry.</dd>
+    </dl>
+  </section>
+  <section class="returns">
+    <h2>Returns</h2>
+    <dl>
+
+      <dt id="KM_KBP_STATUS_OK"><code class="token constant">KM_KBP_STATUS_OK</code></dt>
+      <dd>On success.</dd>
+
+      <dt id="KM_KBP_STATUS_INVALID_ARGUMENT"><code class="token constant">KM_KBP_STATUS_INVALID_ARGUMENT</code></dt>
+      <dd>
+        In the event the
+        <a href="#state"><code class="token symbol">state</code></a>
+        or
+        <a href="#km_kbp_action_item"><code class="token symbol">action_items</code></a>
+         pointer is null.
+      </dd>
     </dl>
   </section>
 </article>
