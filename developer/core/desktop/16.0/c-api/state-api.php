@@ -14,7 +14,7 @@ head([
 
 
 <article id="km_kbp_action_item">
-  <h1>km_kbp_action_item</h1>
+  <h1>km_kbp_action_item struct</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -72,7 +72,7 @@ head([
 
 
 <article id="km_kbp_action_type">
-  <h1>km_kbp_action_type</h1>
+  <h1>km_kbp_action_type enum</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -135,7 +135,7 @@ enum km_kbp_action_type {
 
 
 <article id="km_kbp_state_create">
-  <h1>km_kbp_state_create</h1>
+  <h1>km_kbp_state_create()</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -201,7 +201,7 @@ km_kbp_state_create(km_kbp_keyboard *keyboard,
 
 
 <article id="km_kbp_state_clone">
-  <h1>km_kbp_state_clone</h1>
+  <h1>km_kbp_state_clone()</h1>
   <section class="description">
     <h2>Description</h2>
     <p>Clone an existing opaque state object.</p>
@@ -252,7 +252,7 @@ km_kbp_state_clone(km_kbp_state const *state,
 
 
 <article id="km_kbp_state_dispose">
-  <h1>km_kbp_state_dispose</h1>
+  <h1>km_kbp_state_dispose()</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -284,7 +284,7 @@ km_kbp_state_dispose(km_kbp_state *state);
 
 
 <article id="km_kbp_state_context">
-  <h1>km_kbp_state_context</h1>
+  <h1>km_kbp_state_context()</h1>
   <section class="description">
     <h2>Description</h2>
     <p>Get access to the state object's context.</p>
@@ -314,7 +314,7 @@ km_kbp_state_context(km_kbp_state *state);
 
 
 <article id="km_kbp_state_action_items">
-  <h1>km_kbp_state_action_items</h1>
+  <h1>km_kbp_state_action_items()</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -368,7 +368,7 @@ km_kbp_state_context(km_kbp_state *state);
 
 
 <article id="km_kbp_state_to_json">
-  <h1>km_kbp_state_to_json</h1>
+  <h1>km_kbp_state_to_json()</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -435,7 +435,7 @@ km_kbp_state_to_json(km_kbp_state const *state,
 
 
 <article id="km_kbp_process_event">
-  <h1>km_kbp_process_event</h1>
+  <h1>km_kbp_process_event()</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -495,7 +495,7 @@ km_kbp_process_event(km_kbp_state *state,
 
 
 <article id="km_kbp_event">
-  <h1>km_kbp_event</h1>
+  <h1>km_kbp_event()</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -549,7 +549,7 @@ km_kbp_event(km_kbp_state *state,
 
 
 <article id="km_kbp_event_code">
-  <h1>km_kbp_event_code</h1>
+  <h1>km_kbp_event_code enum</h1>
   <section class="description">
     <h2>Description</h2>
     <p>

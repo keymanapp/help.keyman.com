@@ -16,7 +16,7 @@ head([
 
 
 <article id="km_kbp_keyboard_attrs">
-  <h1>km_kbp_keyboard_attrs</h1>
+  <h1>km_kbp_keyboard_attrs struct</h1>
   <section class="description">
     <h2>Description</h2>
     <p>A static structure describing the basic keyboard attributes.</p>
@@ -60,7 +60,7 @@ typedef struct {
 
 
 <article id="km_kbp_keyboard_load">
-  <h1>km_kbp_keyboard_load</h1>
+  <h1>km_kbp_keyboard_load()</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -119,7 +119,7 @@ km_kbp_keyboard_load(km_kbp_path_name kb_path,
 
 
 <article id="km_kbp_keyboard_dispose">
-  <h1>km_kbp_keyboard_dispose</h1>
+  <h1>km_kbp_keyboard_dispose()</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -145,7 +145,7 @@ km_kbp_keyboard_dispose(km_kbp_keyboard *keyboard);
 
 
 <article id="km_kbp_keyboard_get_attrs">
-  <h1>km_kbp_keyboard_get_attrs</h1>
+  <h1>km_kbp_keyboard_get_attrs()</h1>
   <section class="description">
     <h2>Description</h2>
     <p>

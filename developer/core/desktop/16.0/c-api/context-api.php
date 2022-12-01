@@ -30,7 +30,7 @@ head([
 
 
 <article id="km_kbp_context_type">
-  <h1>km_kbp_context_type</h1>
+  <h1>km_kbp_context_type enum</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -75,7 +75,7 @@ head([
 
 
 <article id="km_kbp_context_item">
-  <h1>km_kbp_context_item</h1>
+  <h1>km_kbp_context_item struct</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -124,7 +124,7 @@ head([
 </article>
 
 <article id="KM_KBP_CONTEXT_ITEM_END">
-  <h1>KM_KBP_CONTEXT_ITEM_END</h1>
+  <h1>KM_KBP_CONTEXT_ITEM_END macro</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -141,7 +141,7 @@ head([
 
 
 <article id="km_kbp_context_items_from_utf16">
-  <h1>km_kbp_context_items_from_utf16</h1>
+  <h1>km_kbp_context_items_from_utf16()</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -200,7 +200,7 @@ km_kbp_context_items_from_utf16(km_kbp_cp const *text,
 
 
 <article id="km_kbp_context_items_from_utf8">
-  <h1>km_kbp_context_items_from_utf8</h1>
+  <h1>km_kbp_context_items_from_utf8()</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -250,7 +250,7 @@ km_kbp_context_items_from_utf8(char const *text,
 
 
 <article id="km_kbp_context_items_to_utf16">
-  <h1>km_kbp_context_items_to_utf16</h1>
+  <h1>km_kbp_context_items_to_utf16()</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -316,7 +316,7 @@ km_kbp_context_items_to_utf16(km_kbp_context_item const *item,
 
 
 <article id="km_kbp_context_items_to_utf8">
-  <h1>km_kbp_context_items_to_utf8</h1>
+  <h1>km_kbp_context_items_to_utf8()</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -382,7 +382,7 @@ km_kbp_context_items_to_utf8(km_kbp_context_item const *item,
 
 
 <article id="km_kbp_context_items_dispose">
-  <h1>km_kbp_context_items_dispose</h1>
+  <h1>km_kbp_context_items_dispose()</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -415,7 +415,7 @@ km_kbp_context_items_dispose(km_kbp_context_item *context_items);
 
 
 <article id="km_kbp_context_set">
-  <h1>km_kbp_context_set</h1>
+  <h1>km_kbp_context_set()</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -467,7 +467,7 @@ km_kbp_context_set(km_kbp_context *context,
 
 
 <article id="km_kbp_context_get">
-  <h1>km_kbp_context_get</h1>
+  <h1>km_kbp_context_get()</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -523,7 +523,7 @@ km_kbp_context_get(km_kbp_context const *context_items,
 
 
 <article id="km_kbp_context_clear">
-  <h1>km_kbp_context_clear</h1>
+  <h1>km_kbp_context_clear()</h1>
     <section class="description">
     <h2>Description</h2>
     <p>
@@ -548,7 +548,7 @@ km_kbp_context_clear(km_kbp_context *context);
 
 
 <article id="km_kbp_context_length">
-  <h1>km_kbp_context_length</h1>
+  <h1>km_kbp_context_length()</h1>
   <section class="description">
     <h2>Description</h2>
     <p>Return the number of items in the context.</p>
@@ -577,7 +577,7 @@ km_kbp_context_length(km_kbp_context *);
 
 
 <article id="km_kbp_context_append">
-  <h1>km_kbp_context_append</h1>
+  <h1>km_kbp_context_append()</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -628,7 +628,7 @@ km_kbp_context_append(km_kbp_context *context,
 </article>
 
 <article id="km_kbp_context_shrink">
-  <h1>km_kbp_context_shrink</h1>
+  <h1>km_kbp_context_shrink()</h1>
   <section class="description">
     <h2>Description</h2>
     <p>

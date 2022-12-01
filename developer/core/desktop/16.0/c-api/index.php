@@ -227,7 +227,7 @@ head([
 </article>
 
 <article id="km_kbp_status_codes">
-  <h1>km_kbp_status_codes</h1>
+  <h1>km_kbp_status_codes enum</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -302,7 +302,7 @@ head([
 
 
 <article id="km_kbp_attr">
-  <h1>km_kbp_attr</h1>
+  <h1>km_kbp_attr struct</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -352,7 +352,7 @@ head([
 
 
 <article id="km_kbp_tech_value">
-  <h1>km_kbp_tech_value</h1>
+  <h1>km_kbp_tech_value enum</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -396,7 +396,7 @@ head([
 
 
 <article id="km_kbp_get_engine_attrs">
-  <h1>km_kbp_get_engine_attrs</h1>
+  <h1>km_kbp_get_engine_attrs()</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
