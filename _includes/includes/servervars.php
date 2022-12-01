@@ -48,15 +48,16 @@
     $site_tavultesoft = 'www.tavultesoft.com';
     $site_securetavultesoft = 'secure.tavultesoft.com';
     $resourceDomain="r.keymanweb.com";
+    $staticDomainRoot="https://s.keyman.com";
   } else {
     $TestServer = true;
     $site_tavultesoft = 'testsite.tavultesoft.local';
     $site_securetavultesoft = 'secure.testsite.tavultesoft.local';
     $resourceDomain="r.keymanweb.com";
+    $staticDomainRoot="http://s.keyman.com{$site_suffix}";
   }
 
   $staticDomain = "s.keyman.com{$site_suffix}/help";
-  $staticDomainRoot="http://s.keyman.com{$site_suffix}";
 
   $downloadsDomain = "downloads.keyman.com"; //{$site_suffix}";
 
