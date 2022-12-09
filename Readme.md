@@ -7,11 +7,12 @@ Previously, the site was run in IIS, but is now migrated to Apache. The Docker i
 
 ### Pre-requisites
 
-On the host machine, install [Docker](https://docs.docker.com/get-docker/) and [Composer](https://getcomposer.org/download/):
+On the host machine, install [Docker](https://docs.docker.com/get-docker/):
 
 On Windows, Docker will also need either:
 * hyper-v or
 * [WSL2](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview)
+    * Ubuntu app from the Microsoft Store
 
 ### Builder actions
 
@@ -37,6 +38,39 @@ After this, you can access the help.keyman site at http://localhost:8055
 Checks for broken links
 1. Run `./build.sh test`
 
+
+### (Windows) IIS Rewrite Notes
+This is to map .local names to the port numbers
+
+
+Edit `\windows\system32\inetsrv\config\applicationHost.config`, add following section under `<system.webServer>` (edit `<rewrite>` if it already exists):
+```xml
+        <rewrite>
+            <globalRules>
+                <rule name="help.keyman-local.com forward proxy" stopProcessing="true">
+                    <match url=".*" />
+                    <conditions>
+                        <add input="{HTTP_HOST}" pattern="^help\.keyman-local\.com|help\.keyman\.com\.local$" />
+                    </conditions>
+                    <action type="Rewrite" url="http://localhost:8055/{R:0}" />
+                </rule>
+                <rule name="s.keyman.com proxy" stopProcessing="true">
+                    <match url=".*" />
+                    <conditions>
+                        <add input="{HTTP_HOST}" pattern="^s\.keyman-local\.com|s\.keyman\.com\.local$" />
+                    </conditions>
+                    <action type="Rewrite" url="http://localhost:8054/{R:0}" />
+                </rule>
+                <rule name="web.keyman-local.com proxy" stopProcessing="true">
+                    <match url=".*" />
+                    <conditions>
+                        <add input="{HTTP_HOST}" pattern="^web\.keyman-local\.com|keymanweb\.com\.local$" />
+                    </conditions>
+                    <action type="Rewrite" url="http://localhost:8057/{R:0}" />
+                </rule>
+            </globalRules>
+        </rewrite>
+```
 
 ## How to run help.keyman.com locally with Docker Desktop's Kubernetes singlenode cluster
 
