@@ -152,9 +152,7 @@ fi
 if builder_start_action test; then
   # TODO: lint tests
 
-  #composer check-docker-links
-
-  echo $(_get_pwd)
+  composer check-docker-links
 
   builder_finish_action success test
 fi
