@@ -53,7 +53,7 @@ spec:
             port: 80
 
       - name: api
-        image: almir/webhook
+        image: alpine
         imagePullPolicy: IfNotPresent
         env:
         - name: DEPLOY_KEY
@@ -66,15 +66,15 @@ spec:
             configMapKeyRef:
               name: help-keyman-com
               key: site-branch
-        args:
-        - -verbose
-        - -urlprefix=api
-        - -template
-        - -hooks=/webhooks/hooks.yaml
-        lifecycle:
-          postStart:
-            exec:
-              command: ["/sbin/apk", "add", "git"]
+        command: ["sh", "-c"]
+        args: 
+        - |
+          set -e
+          apk add git webhook
+          exec webhook -verbose \
+            -urlprefix=api \
+            -template \
+            -hooks=/webhooks/hooks.yaml
         ports:
         - containerPort: 9000
         volumeMounts:
@@ -86,7 +86,7 @@ spec:
 
       initContainers:
       - name: init-site-data
-        image: bitnami/git
+        image: alpine
         imagePullPolicy: IfNotPresent
         env:
         - name: SITE_GIT_BRANCH
@@ -99,6 +99,8 @@ spec:
         - |
           test -d /mnt/.git && exit 0
           set -e
+          echo Install git
+          apk add git
           cd /mnt
           echo Initial clone
           git clone \
