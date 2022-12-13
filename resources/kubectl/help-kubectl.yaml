@@ -94,6 +94,11 @@ spec:
             configMapKeyRef:
               name: help-keyman-com
               key: site-branch
+        - name: GIT_SPARSE_FILES
+          valueFrom:
+            configMapKeyRef:
+              name: help-keyman-com
+              key: git-sparse-checkout
         command: ["sh", "-c"]
         args:
         - |
@@ -112,15 +117,7 @@ spec:
           mv .toplevel/.git ./
           rmdir .toplevel
           echo Configure sparse-checkout
-          git sparse-checkout set --no-cone \
-            "/*"              \
-            "!.github"        \
-            "!resources"      \
-            "!.editorconfig"  \
-            "!composer.*"     \
-            "!Dockerfile"     \
-            "!Readme.md"      \
-            "!web.config"
+          echo "$GIT_SPARSE_FILES" | git sparse-checkout set --no-cone --stdin
           git checkout
           echo Link vendored PHP
           ln -sf /var/www/vendor vendor
@@ -149,6 +146,16 @@ metadata:
   namespace: keyman
 data:
   site-branch: staging
+  git-sparse-checkout: |
+    /*
+    !.editorconfig
+    !.github
+    !composer.*
+    !build.sh
+    !Dockerfile
+    !Readme.md
+    !resources
+    !web.config
   deployer: |
     #!/bin/sh
     git fetch && git reset --hard HEAD
