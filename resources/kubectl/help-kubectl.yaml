@@ -1,117 +1,144 @@
-apiVersion: v1
-kind: Pod
+apiVersion: apps/v1
+kind: Deployment
 metadata:
   name: help-keyman-com
   namespace: keyman
   labels:
-    run: help-keyman-com
+    app: help-keyman-com
 spec:
-  terminationGracePeriodSeconds: 60
-  containers:
-  - name: app-php
-    image: docker.dallas.languagetechnology.org/keyman/help-keyman-app
-    imagePullPolicy: IfNotPresent
-    ports:
-    - containerPort: 80
-    volumeMounts:
-    - name: help-site-app
-      mountPath: /var/www/html
-    readinessProbe:
-      httpGet:
-        path: /robots.txt
-        port: 80
-      initialDelaySeconds: 5
-      periodSeconds: 15
-    livenessProbe:
-      tcpSocket:
-        port: 80
-
-  - name: api
-    image: almir/webhook
-    imagePullPolicy: IfNotPresent
-    env:
-    - name: DEPLOY_KEY
-      valueFrom:
-        secretKeyRef:
-          name: help-keyman-com
-          key: deploy_key
-    - name: SITE_GIT_BRANCH
-      valueFrom:
-        configMapKeyRef:
-          name: help-keyman-com
-          key: site-branch
-    args:
-    - -verbose
-    - -urlprefix=api
-    - -template
-    - -hooks=/webhooks/hooks.yaml
-    lifecycle:
-      postStart:
-        exec:
-          command: ["/sbin/apk", "add", "git"]
-    ports:
-    - containerPort: 9000
-    volumeMounts:
-    - name: webhooks
-      mountPath: /webhooks
-      readOnly: true
-    - name: help-site-app
-      mountPath: /mnt
-
-  initContainers:
-  - name: init-site-data
-    image: bitnami/git
-    imagePullPolicy: IfNotPresent
-    env:
-    - name: SITE_GIT_BRANCH
-      valueFrom:
-        configMapKeyRef:
-          name: help-keyman-com
-          key: site-branch
-    command: ["sh", "-c"]
-    args:
-    - |
-      test -d /mnt/.git && exit 0
-      set -e
-      cd /mnt
-      echo Initial clone
-      git clone \
-        --filter=blob:none \
-        --no-checkout \
-        --branch=${SITE_GIT_BRANCH} \
-        https://github.com/keymanapp/help.keyman.com.git \
-        .toplevel
-      mv .toplevel/.git ./
-      rmdir .toplevel
-      echo Configure sparse-checkout
-      git sparse-checkout set --no-cone \
-        "/*"              \
-        "!.github"        \
-        "!resources"      \
-        "!.editorconfig"  \
-        "!composer.*"     \
-        "!Dockerfile"     \
-        "!Readme.md"      \
-        "!web.config"
-      git checkout
-      echo Link vendored PHP
-      ln -sf /var/www/vendor vendor
-    volumeMounts:
-    - name: help-site-app
-      mountPath: /mnt
-  volumes:
-  - name: help-site-app
-    persistentVolumeClaim:
-      claimName: help-keyman-com
-  - name: webhooks
-    configMap:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: help-keyman-com
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: help-keyman-com
       name: help-keyman-com
-      items:
-      - key: deployer
-        path: deploy.sh
-        mode: 0555
-      - key: webhooks
-        path: hooks.yaml
+      namespace: keyman
+    spec:
+      affinity:
+        podAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+          - labelSelector:
+              matchExpressions:
+              - key: app
+                operator: In
+                values:
+                - help-keyman-com
+            topologyKey: kubernetes.io/hostname
+      terminationGracePeriodSeconds: 60
+      containers:
+      - name: app-php
+        image: docker.dallas.languagetechnology.org/keyman/help-keyman-app
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - name: help-site-app
+          mountPath: /var/www/html
+        readinessProbe:
+          httpGet:
+            path: /robots.txt
+            port: 80
+          initialDelaySeconds: 5
+          periodSeconds: 15
+        livenessProbe:
+          tcpSocket:
+            port: 80
+
+      - name: api
+        image: almir/webhook
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: DEPLOY_KEY
+          valueFrom:
+            secretKeyRef:
+              name: help-keyman-com
+              key: deploy_key
+        - name: SITE_GIT_BRANCH
+          valueFrom:
+            configMapKeyRef:
+              name: help-keyman-com
+              key: site-branch
+        args:
+        - -verbose
+        - -urlprefix=api
+        - -template
+        - -hooks=/webhooks/hooks.yaml
+        lifecycle:
+          postStart:
+            exec:
+              command: ["/sbin/apk", "add", "git"]
+        ports:
+        - containerPort: 9000
+        volumeMounts:
+        - name: webhooks
+          mountPath: /webhooks
+          readOnly: true
+        - name: help-site-app
+          mountPath: /mnt
+
+      initContainers:
+      - name: init-site-data
+        image: bitnami/git
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: SITE_GIT_BRANCH
+          valueFrom:
+            configMapKeyRef:
+              name: help-keyman-com
+              key: site-branch
+        command: ["sh", "-c"]
+        args:
+        - |
+          test -d /mnt/.git && exit 0
+          set -e
+          cd /mnt
+          echo Initial clone
+          git clone \
+            --filter=blob:none \
+            --no-checkout \
+            --branch=${SITE_GIT_BRANCH} \
+            https://github.com/keymanapp/help.keyman.com.git \
+            .toplevel
+          mv .toplevel/.git ./
+          rmdir .toplevel
+          echo Configure sparse-checkout
+          git sparse-checkout set --no-cone \
+            "/*"              \
+            "!.github"        \
+            "!resources"      \
+            "!.editorconfig"  \
+            "!composer.*"     \
+            "!Dockerfile"     \
+            "!Readme.md"      \
+            "!web.config"
+          git checkout
+          echo Link vendored PHP
+          ln -sf /var/www/vendor vendor
+        volumeMounts:
+        - name: help-site-app
+          mountPath: /mnt
+
+      volumes:
+      - name: help-site-app
+        persistentVolumeClaim:
+          claimName: help-keyman-com
+      - name: webhooks
+        configMap:
+          name: help-keyman-com
+          items:
+          - key: deployer
+            path: deploy.sh
+            mode: 365
+          - key: webhooks
+            path: hooks.yaml
 ---
 apiVersion: v1
 kind: ConfigMap
