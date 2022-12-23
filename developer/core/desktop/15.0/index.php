@@ -12,7 +12,7 @@ head([
 <p>Keyman Core Desktop is the component of Keyman Engine that implements keyboarding rules. It is
 platform independent and allows support for different keyboard formats to be implemented within
 Keyman Engine. Eventually, Keyman Core will be used in Keyman on Windows, macOS and Linux.
-As of writing, only Keyman for Linux uses Keyman Core.</p>
+As of writing, Keyman for Linux, Keyman for Windows, and Keyman Developer use Keyman Core.</p>
 
 <p>This is an internal API intended for use only within Keyman Engine.</p>
 

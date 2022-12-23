@@ -8,7 +8,7 @@ title: Creating a Touch Keyboard Layout Part 2
   @font-face {
     font-family: SpecialOSK;
     font-display: block;
-    src: url('http://s.keyman.com/kmw/engine/15.0.222/osk/keymanweb-osk.ttf');
+    src: url('https://s.keyman.com/kmw/engine/15.0.222/osk/keymanweb-osk.ttf');
   }
 
 .special-osk {
