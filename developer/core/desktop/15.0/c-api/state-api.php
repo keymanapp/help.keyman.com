@@ -60,16 +60,16 @@ head([
       <dd>A marker value, only meaningful to an engine.</dd>
 
       <dt id="opt"><code class="token symbol">option</code></dt>
-      
+
       <dt id="character"><code class="token symbol">character</code></dt>
       <dd>A Unicode Scalar Value.</dd>
-      
+
       <dt id="capsLock"><code class="token symbol">capsLock</code></dt>
       <dd>CAPSLOCK type, 1 to turn on, 0 to turn off.</dd>
-      
+
       <dt id="backspace"><code class="token symbol">backspace</code></dt>
       <dd>Backspace type, Unknown, Character, Marker</dd>
-      
+
       <dd>
         A pointer to
         <a href="#km_kbp_option_item"><code class="token symbol">km_kbp_option_item</code></a>
@@ -481,10 +481,10 @@ km_kbp_process_event(km_kbp_state *state,
         <a href="#km_kbp_modifier_state"><code class="token symbol">km_kbp_modifier_state</code></a>
         enum.
       </dd>
-      
+
       <dt id="is_key_down"><code class="token symbol">is_key_down</code></dt>
       <dd>
-        If the key is down value is > 0. 
+        If the key is down value is > 0.
       </dd>
     </dl>
   </section>
@@ -514,7 +514,7 @@ km_kbp_process_event(km_kbp_state *state,
     <p>
       Process the keyboard processors queued actions for the opaque state object.
       Updates the state object as appropriate and fills out its action list.
-      The client can add actions externally via the 
+      The client can add actions externally via the
       <a href="#km_kbp_state_queue_action_items"><code class="token symbol">km_kbp_state_queue_action_items</code></a>
       and then request the processing of the actions with this method.
     </p>
@@ -594,8 +594,8 @@ km_kbp_state_context(km_kbp_state *state);
   <section class="specification">
     <h2>Specification</h2>
 <pre><code class="language-c">void km_kbp_state_imx_register_callback(
-                                                  km_kbp_state *state, 
-                                                  km_kbp_keyboard_imx_platform imx_callback, 
+                                                  km_kbp_state *state,
+                                                  km_kbp_keyboard_imx_platform imx_callback,
                                                   void *callback_object);
 </code></pre>
   </section>
@@ -613,7 +613,7 @@ km_kbp_state_context(km_kbp_state *state);
         callback object
       </dd>
     </dl>
-  </section>  
+  </section>
 </article>
 
 <article id="km_kbp_state_imx_deregister_callback">
@@ -644,7 +644,7 @@ km_kbp_state_context(km_kbp_state *state);
     <h2>Description</h2>
     <p>
     Queue actions for the current keyboard processor state; normally
-    used in IMX callbacks called during 
+    used in IMX callbacks called during
     <a href="#km_kbp_process_event"><code class="token symbol">km_kbp_process_event</code></a>.
     </p>
   </section>
@@ -659,8 +659,8 @@ km_kbp_state_context(km_kbp_state *state);
       <dt id="state"><code class="token symbol">state</code></dt>
       <dd>A pointer to the opaque state object.</dd>
       <dt id="action_items"><code class="token symbol">action_items</code></dt>
-      <dd> The action items to be added to the keyboardprocessor queue. Must be terminated with a 
-      <a href="#KM_KBP_IT_END"><code class="token constant">KM_KBP_IT_END</code></a>  
+      <dd> The action items to be added to the keyboardprocessor queue. Must be terminated with a
+      <a href="#KM_KBP_IT_END"><code class="token constant">KM_KBP_IT_END</code></a>
        entry.</dd>
     </dl>
   </section>
@@ -670,12 +670,12 @@ km_kbp_state_context(km_kbp_state *state);
 
       <dt id="KM_KBP_STATUS_OK"><code class="token constant">KM_KBP_STATUS_OK</code></dt>
       <dd>On success.</dd>
-        
+
       <dt id="KM_KBP_STATUS_INVALID_ARGUMENT"><code class="token constant">KM_KBP_STATUS_INVALID_ARGUMENT</code></dt>
       <dd>
         In the event the
         <a href="#state"><code class="token symbol">state</code></a>
-        or 
+        or
         <a href="#km_kbp_action_item"><code class="token symbol">action_items</code></a>
          pointer is null.
       </dd>
