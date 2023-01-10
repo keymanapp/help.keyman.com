@@ -27,7 +27,7 @@ head([
 
 
 <article id="km_kbp_option_scope">
-  <h1>km_kbp_option_scope</h1>
+  <h1>km_kbp_option_scope enum</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -74,7 +74,7 @@ head([
 
 
 <article id="km_kbp_option_item">
-  <h1>km_kbp_option_item</h1>
+  <h1>km_kbp_option_item struct</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -121,7 +121,7 @@ head([
 
 
 <article id="KM_KBP_OPTIONS_END">
-  <h1>KM_KBP_OPTIONS_END</h1>
+  <h1>KM_KBP_OPTIONS_END macro</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -138,7 +138,7 @@ head([
 
 
 <article id="km_kbp_options_list_size">
-  <h1>km_kbp_options_list_size</h1>
+  <h1>km_kbp_options_list_size()</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -177,7 +177,7 @@ km_kbp_options_list_size(km_kbp_option_item const *opts);
 
 
 <article id="km_kbp_state_option_lookup">
-  <h1>km_kbp_state_option_lookup</h1>
+  <h1>km_kbp_state_option_lookup()</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -235,7 +235,7 @@ km_kbp_state_option_lookup(km_kbp_state const *state,
 
 
 <article id="km_kbp_state_options_update">
-  <h1>km_kbp_state_options_update</h1>
+  <h1>km_kbp_state_options_update()</h1>
   <section class="description">
     <h2>Description</h2>
     <p>
@@ -295,7 +295,7 @@ km_kbp_state_options_update(km_kbp_state *state,
 
 
 <article id="km_kbp_state_options_to_json">
-  <h1>km_kbp_state_options_to_json</h1>
+  <h1>km_kbp_state_options_to_json()</h1>
   <section class="description">
     <h2>Description</h2>
     <p>

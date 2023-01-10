@@ -8,14 +8,14 @@
 <h1 class="title" id="classes">Class Names and Identifiers for On-Screen Keyboard and Other KeymanWeb Elements</h1>
 
   <p>
-    The appearance of the <span class="emphasis"><em>KeymanWeb</em></span> on-screen keyboard, menu amd other elements can be customized 
-    by a web designer by redefining (or adding to) the default styles.  Styles and named elements  
+    The appearance of the <span class="emphasis"><em>KeymanWeb</em></span> on-screen keyboard, menu amd other elements can be customized
+    by a web designer by redefining (or adding to) the default styles.  Styles and named elements
     all have the class name (or id) prefix <span class="emphasis"><em>kmw-</em></span> joined to the object and item names,
     for example <span class="emphasis"><em>kmw-key-text</em></span>, to set the basic style for the keycap text on each on-screen keyboard key.
-    Multiple classes are applied to many objects, with top-level classes of <span class="emphasis"><em>tablet</em></span>, 
+    Multiple classes are applied to many objects, with top-level classes of <span class="emphasis"><em>tablet</em></span>,
     <span class="emphasis"><em>phone</em></span> and <span class="emphasis"><em>desktop</em></span> used to set different element styles according to the device type.
     Unique elements, such as the menu and pop-up key frame, are named rather than referred to by class.
-  </p><p>Most visual attributes such as text size and colour, background colour, shading, margins, etc. can be varied 
+  </p><p>Most visual attributes such as text size and colour, background colour, shading, margins, etc. can be varied
     according to preference but developers should avoid changing positional attributes.
   </p><p class="h5">
     Class names applied to on-screen keyboard elements:
@@ -30,6 +30,6 @@
   </p><div class="informaltable"><table border="1"><colgroup><col align="left"><col align="left"></colgroup><thead><tr><th align="left">Class name</th><th align="left">Menu element</th></tr></thead><tbody><tr><td class="rowhead" align="left">#kmw-language-menu</td><td align="left">Language menu container element</td></tr><tr><td class="rowhead" align="left">#kmw-language-menu-background</td><td align="left">Hidden background layer preventing unwanted action while selecting a language or keyboard.</td></tr><tr><td class="rowhead" align="left">#kmw-menu-scroll-container</td><td align="left">Container for language list scroller</td></tr><tr><td class="rowhead" align="left">#kmw-menu-scroller</td><td align="left">Language list scroller</td></tr><tr><td class="rowhead" align="left">#kmw-menu-index</td><td align="left">Container for language index</td></tr><tr><td class="rowhead" align="left">#kmw-menu-footer</td><td align="left">Placeholder at bottom of scroller</td></tr><tr><td class="rowhead" align="left">kbd-list</td><td align="left">Style for language list element</td></tr><tr><td class="rowhead" align="left">kbd-list-open</td><td align="left">Style for list element when expanded</td></tr><tr><td class="rowhead" align="left">kbd-list-closed</td><td align="left">Style for list element when not expanded</td></tr><tr><td class="rowhead" align="left">kmw-list-entry</td><td align="left">Language entry in language list</td></tr><tr><td class="rowhead" align="left">kmw-single-entry</td><td align="left">Single keyboard entry in language list</td></tr><tr><td class="rowhead" align="left">current</td><td align="left">Active keyboard entry in language list</td></tr><tr><td class="rowhead" align="left">selected</td><td align="left">Touched entry in language list</td></tr></tbody></table></div><p class="h5">
     Message box class names:
   </p><div class="informaltable"><table border="1"><colgroup><col align="left"><col align="left"></colgroup><thead><tr><th align="left">Class name</th><th align="left">Element</th></tr></thead><tbody><tr><td class="rowhead" align="left">kmw-wait-box</td><td align="left">Message box</td></tr><tr><td class="rowhead" align="left">kmw-wait-background</td><td align="left">Message box background</td></tr><tr><td class="rowhead" align="left">kmw-wait-text</td><td align="left">Message box wait text</td></tr><tr><td class="rowhead" align="left">kmw-wait-graphic</td><td align="left">Message box wait icon</td></tr><tr><td class="rowhead" align="left">kmw-alert-text</td><td align="left">Message box alert text</td></tr><tr><td class="rowhead" align="left">kmw-alert-close</td><td align="left">Message box close icon</td></tr></tbody></table></div><p>
-    The default styles for any released build of <span class="emphasis"><em>KeymanWeb</em></span> can be found on line, for example, 
-    <a class="ulink" href="http://s.keyman.com/kmw/engine/339/osk/kmwosk.css" target="_blank">http://s.keyman.com/kmw/engine/339/osk/kmwosk.css</a> for Build 339.  
+    The default styles for any released build of <span class="emphasis"><em>KeymanWeb</em></span> can be found on line, for example,
+    <a class="ulink" href="https://s.keyman.com/kmw/engine/339/osk/kmwosk.css" target="_blank">https://s.keyman.com/kmw/engine/339/osk/kmwosk.css</a> for Build 339.
   </p></div>

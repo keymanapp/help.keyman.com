@@ -64,7 +64,7 @@ END
 <h2>The Breakdown</h2>
 
 <ul>
-<li><p>The <code>&lt;script&gt;</code> inclusion <code>&lt;script src='http://s.keyman.com/kmw/engine/426/keymanweb.js'&gt;&lt;/script&gt;</code>
+<li><p>The <code>&lt;script&gt;</code> inclusion <code>&lt;script src='https://s.keyman.com/kmw/engine/426/keymanweb.js'&gt;&lt;/script&gt;</code>
     loads the Keyman Engine for Web 2.0 (build 426) script for the page.</p></li>
 
 <li><p><code>(function(kmw) { kmw.init(); });</code> serves to initialize the web engine with default settings.
@@ -72,7 +72,7 @@ END
     KeymanWeb engine will then link into any detected input elements automatically, regardless of browser or device, as part
     of its initialization.</p></li>
 
-<li><p>The other <code>&lt;script&gt;</code> inclusion, <code>&lt;script src='http://s.keyman.com/kmw/engine/426/kmwuitoggle.js'&gt;&lt;/script&gt;</code>,
+<li><p>The other <code>&lt;script&gt;</code> inclusion, <code>&lt;script src='https://s.keyman.com/kmw/engine/426/kmwuitoggle.js'&gt;&lt;/script&gt;</code>,
       creates the language menu seen on non-mobile devices and the on-screen keyboard toggle button.
       For other options, see our <a href='user-interface-design.php'>User Interface Design</a> page.</p></li>
 

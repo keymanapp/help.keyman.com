@@ -6,6 +6,7 @@ title: Keyman Cloud APIs
 
 * [Keyboard Search API 2.0](search/2.0): Search for keyboards by language, name, or keyword.
 * [Keyboard Result API 1.0](keyboard/1.0): Show details for a single keyboard by id.
+* [Model Result API 1.0](model/1.0): Show details for a single model by id.
 * [Keyman Version API 2.0](version/2.0): Query Keyman application versions by platform and tier.
 * [Package Version API 1.0](package-version/1.0): Query multiple package versions by id.
 * [KeymanWeb Server API 4.0](4.0/): Returns KeymanWeb keyboards and metadata for use in web applications.

@@ -689,7 +689,7 @@ km_kbp_context_shrink(km_kbp_context *context,
   <section class="description">
     <h2>Description</h2>
     <p>
-      Return the length of a terminated 
+      Return the length of a terminated
       <a href="#km_kbp_context_item"><code class="token constant">km_kbp_context_item</code></a>
       array.
     </p>
@@ -705,7 +705,7 @@ km_kbp_context_item_list_size(km_kbp_context_item const *context_items);
     <dl>
       <dt id="context_items"><code class="token symbol">context_items</code></dt>
       <dd>
-      A pointer to a 
+      A pointer to a
         <a href="#KM_KBP_CT_END"><code class="token constant">KM_KBP_CT_END</code></a>
         terminated array of
         <a href="#km_kbp_context_item"><code class="token symbol">km_kbp_context_item</code></a>

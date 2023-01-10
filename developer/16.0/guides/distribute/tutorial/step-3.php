@@ -13,7 +13,7 @@
 
 <ul type="disc">
   <li>
-    <p>In the Project Window in Keyman Developer, click the <span class="guibutton">Packages</span> tab, and click <span class="guibutton">New Package...</span>. Enter the path 
+    <p>In the Project Window in Keyman Developer, click the <span class="guibutton">Packages</span> tab, and click <span class="guibutton">New Package...</span>. Enter the path
     and filename of the package you are creating.</p>
 
     <aside>
@@ -37,7 +37,8 @@
   </li>
   <li>
     <p>If your package includes .js touch layout keyboards, you can associate fonts and languages in the Keyboards tab.
-       A valid BCP 47 language tag must be set or the keyboard will not install on your mobile device.</p>
+       A valid <a href="../../../reference/bcp-47">BCP 47 language tag</a> must be set or the keyboard will not
+       install on your mobile device.</p>
 
     <p><img src="<?php echo cdn("img/developer/100/tutorial_distribute_keyboard_3.png"); ?>" /></p>
 
