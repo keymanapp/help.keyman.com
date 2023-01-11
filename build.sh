@@ -44,8 +44,21 @@ builder_parse "$@"
 cd "$REPO_ROOT"
 
 if builder_start_action configure; then
-  composer install
-  
+  # Remove local vendor/ dir if it already exists
+  pwd
+  if [ -d "vendor/" ]; then
+    echo "Removing existing vendor/ folder"
+    rm -rf vendor/
+  fi
+
+  # Move PHP depdendencies in vendor/
+  # This takes a while cause it also syncs to host
+  HELP_CONTAINER=$(_get_docker_container_id)
+  if [ ! -z "$HELP_CONTAINER" ]; then
+    docker exec -i $HELP_CONTAINER sh -c "cp -r /var/www/vendor /var/www/html/"
+  else
+    echo "No Docker container to configure"
+  fi
   builder_finish_action success configure
 fi
 
