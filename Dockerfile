@@ -25,4 +25,4 @@ RUN chown -R www-data:www-data /var/www/html/
 COPY --from=composer-builder /composer/vendor /var/www/vendor
 RUN a2enmod rewrite; a2enconf keyman-site
 
-# build.sh configure later needed to COPY /var/www/vendor to /var/www/html/vendor
+# build.sh configure later needed to create link to vendor/

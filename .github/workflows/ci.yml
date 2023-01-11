@@ -31,7 +31,7 @@ jobs:
         fail-fast: true
 
     #
-    # Install website PHP dependencies (copies vendor/ to the proper folder)
+    # Create link to vendor/ dependencies
     #
     - name:  Install dependencies
       shell: bash

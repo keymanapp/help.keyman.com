@@ -44,18 +44,10 @@ builder_parse "$@"
 cd "$REPO_ROOT"
 
 if builder_start_action configure; then
-  # Remove local vendor/ dir if it already exists
-  pwd
-  if [ -d "vendor/" ]; then
-    echo "Removing existing vendor/ folder"
-    rm -rf vendor/
-  fi
-
-  # Move PHP depdendencies in vendor/
-  # This takes a while cause it also syncs to host
+  # Create link to vendor/ folder
   HELP_CONTAINER=$(_get_docker_container_id)
   if [ ! -z "$HELP_CONTAINER" ]; then
-    docker exec -i $HELP_CONTAINER sh -c "cp -r /var/www/vendor /var/www/html/"
+    docker exec -i $HELP_CONTAINER sh -c "ln -s /var/www/vendor vendor"
   else
     echo "No Docker container to configure"
   fi
