@@ -44,12 +44,17 @@ builder_parse "$@"
 cd "$REPO_ROOT"
 
 if builder_start_action configure; then
-  # Create link to vendor/ folder
-  HELP_CONTAINER=$(_get_docker_container_id)
-  if [ ! -z "$HELP_CONTAINER" ]; then
-    docker exec -i $HELP_CONTAINER sh -c "ln -s /var/www/vendor vendor"
+  # Skip if link already exists
+  if [ -L vendor ]; then
+    echo "Skipping because vendor already exists"
   else
-    echo "No Docker container to configure"
+    # Create link to vendor/ folder
+    HELP_CONTAINER=$(_get_docker_container_id)
+    if [ ! -z "$HELP_CONTAINER" ]; then
+      docker exec -i $HELP_CONTAINER sh -c "ln -s /var/www/vendor vendor"
+    else
+      echo "No Docker container to configure"
+    fi
   fi
   builder_finish_action success configure
 fi
