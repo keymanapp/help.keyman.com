@@ -15,10 +15,6 @@ On Windows, Docker will also need either:
 
 ### Builder actions
 
-#### Configure
-Install PHP dependencies in vendor/ folder
-1. Run `./build.sh configure`.
-
 #### Stop the Docker container
 1. Run `./build.sh stop`
 
@@ -27,6 +23,10 @@ Install PHP dependencies in vendor/ folder
 
 #### Start the Docker container
 1. Run `./build.sh start`.
+
+#### Configure
+Move PHP dependencies in Docker image from /var/www/vendor/ to /var/www/html/vendor
+1. Run `./build.sh configure`.
 
 After this, you can access the help.keyman site at http://localhost:8055
 
