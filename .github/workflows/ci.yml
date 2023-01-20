@@ -22,22 +22,13 @@ jobs:
       env:
         fail-fast: true
 
+    # Build the docker image and create link to vendor/ dependencies
     - name: Build the Docker image
       shell: bash
       # --mount option requires BuildKit
       run: |
         ./build.sh build start
-      env:
-        fail-fast: true
-
-    #
-    # Create link to vendor/ dependencies
-    #
-    - name:  Install dependencies
-      shell: bash
-      run: |
         echo "TIER_TEST" > tier.txt
-        ./build.sh configure
       env:
         fail-fast: true
 
