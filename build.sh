@@ -44,18 +44,7 @@ builder_parse "$@"
 cd "$REPO_ROOT"
 
 if builder_start_action configure; then
-  # Skip if link already exists
-  if [ -L vendor ]; then
-    echo "Skipping because vendor already exists"
-  else
-    # Create link to vendor/ folder
-    HELP_CONTAINER=$(_get_docker_container_id)
-    if [ ! -z "$HELP_CONTAINER" ]; then
-      docker exec -i $HELP_CONTAINER sh -c "ln -s /var/www/vendor vendor && chown -R www-data:www-data vendor"
-    else
-      echo "No Docker container to configure"
-    fi
-  fi
+  # Nothing to do
   builder_finish_action success configure
 fi
 
@@ -105,6 +94,19 @@ if builder_start_action start; then
   else
     echo "${COLOR_RED}ERROR: Docker container doesn't exist. Run ./build.sh build first${COLOR_RESET}"
     builder_finish_action fail start
+  fi
+
+  # Skip if link already exists
+  if [ -L vendor ]; then
+    echo "Link to vendor/ already exists"
+  else
+    # Create link to vendor/ folder
+    HELP_CONTAINER=$(_get_docker_container_id)
+    if [ ! -z "$HELP_CONTAINER" ]; then
+      docker exec -i $HELP_CONTAINER sh -c "ln -s /var/www/vendor vendor && chown -R www-data:www-data vendor"
+    else
+      echo "No Docker container not running to create link to vendor/"
+    fi
   fi
 
   builder_finish_action success start
