@@ -74,11 +74,11 @@ This simulates enough of a GitHub webhook push event to pass validation on the r
 
 ### Clean up after testing
 
-To remove the k8s pod and resources, and delete everything do:
+To remove the k8s deployment and resources, and delete everything do:
 ```bash
-$> kubectl --namespace=keyman delete {pod,cm,svc,secret,pvc}/help-keyman-com
+$> kubectl --namespace=keyman delete {svc,deploy,cm,secret,pvc}/help-keyman-com
 ```
-Or just delete the pod and keep the resources for further testing:
+Or just restart the deployment for further testing
 ```bash
-$> kubectl --namespace=keyman delete pod/help-keyman-com
+$> kubectl --namespace=keyman rollout restart deploy/help-keyman-com
 ```
