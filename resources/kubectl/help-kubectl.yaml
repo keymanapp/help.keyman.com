@@ -42,6 +42,8 @@ spec:
         volumeMounts:
         - name: help-site-app
           mountPath: /var/www/html
+          subPath: html
+          readOnly: true
         readinessProbe:
           httpGet:
             path: /robots.txt
@@ -55,6 +57,8 @@ spec:
       - name: api
         image: alpine
         imagePullPolicy: IfNotPresent
+        securityContext:
+          runAsGroup: 33
         env:
         - name: DEPLOY_KEY
           valueFrom:
@@ -85,42 +89,32 @@ spec:
           mountPath: /mnt
 
       initContainers:
-      - name: init-site-data
-        image: alpine
+      - name: init-site-repo
+        image: k8s.gcr.io/git-sync/git-sync:v3.6.2
         imagePullPolicy: IfNotPresent
+        securityContext:
+          runAsUser: 0
+          runAsGroup: 33
         env:
-        - name: SITE_GIT_BRANCH
+        - name: GIT_SYNC_BRANCH
           valueFrom:
-            configMapKeyRef:
-              name: help-keyman-com
-              key: site-branch
-        - name: GIT_SPARSE_FILES
-          valueFrom:
-            configMapKeyRef:
-              name: help-keyman-com
-              key: git-sparse-checkout
-        command: ["sh", "-c"]
-        args:
-        - |
-          test -d /mnt/.git && exit 0
-          set -e
-          echo Install git
-          apk add git
-          cd /mnt
-          echo Initial clone
-          git clone \
-            --filter=blob:none \
-            --no-checkout \
-            --branch=${SITE_GIT_BRANCH} \
-            https://github.com/keymanapp/help.keyman.com.git \
-            .toplevel
-          mv .toplevel/.git ./
-          rmdir .toplevel
-          echo Configure sparse-checkout
-          echo "$GIT_SPARSE_FILES" | git sparse-checkout set --no-cone --stdin
-          git checkout
-          echo Link vendored PHP
-          ln -sf /var/www/vendor vendor
+            configMapKeyRef: {name: help-keyman-com, key: site-branch}
+        args: [
+          --repo=https://github.com/keymanapp/help.keyman.com.git,
+          --sparse-checkout-file=/tmp/git/sparse-checkout.config,
+          --one-time, --depth=1, --root=/mnt, --dest=html]
+        volumeMounts:
+        - name: help-site-app
+          mountPath: /mnt
+        - name: git-config
+          mountPath: /tmp/git
+
+      - name: init-site-vendoring
+        image: busybox
+        securityContext:
+          runAsUser: 0
+          runAsGroup: 33
+        command: ['sh', '-c', 'ln -sf /var/www/vendor /mnt/html/vendor']
         volumeMounts:
         - name: help-site-app
           mountPath: /mnt
@@ -129,6 +123,12 @@ spec:
       - name: help-site-app
         persistentVolumeClaim:
           claimName: help-keyman-com
+      - name: git-config
+        configMap:
+          name: help-keyman-com
+          items:
+          - key: git-sparse-checkout
+            path: sparse-checkout.config
       - name: webhooks
         configMap:
           name: help-keyman-com
@@ -162,7 +162,7 @@ data:
   webhooks: |
     - id: deploy
       execute-command: /webhooks/deploy.sh
-      command-working-directory: /mnt
+      command-working-directory: /mnt/html
       http-methods: [POST]
       trigger-rule:
         and:
