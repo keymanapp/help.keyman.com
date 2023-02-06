@@ -40,7 +40,7 @@
   <dt><code>linux</code></dt>
   <dd>Build a .kmx file, with Linux support (supported in 11.0 onward)</dd>
   <dt><code>desktop</code></dt>
-  <dd>Build a .kmx file, with support for Windows, macOS, and Linux</dd>
+  <dd>Build a .kmx file, with support for Windows, macOS, and Linux (default if <code>&amp;targets</code> store is not present)</dd>
   <dt><code>web</code></dt>
   <dd>Build a .js file, with KeymanWeb support</dd>
   <dt><code>iphone</code></dt>
