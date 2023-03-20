@@ -111,7 +111,7 @@ typedef struct {
 
       <dt id="function_name"><code class="token symbol">function_name</code></dt>
       <dd> IMX function name  </dd>
-      
+
       <dt id="imx_id"><code class="token symbol">imx_id</code></dt>
       <dd> unique identifier used to call this function </dd>
 
@@ -274,7 +274,7 @@ km_kbp_keyboard_get_key_list(km_kbp_keyboard const *keyboard,
 
       <dt id="out"><code class="token symbol">out</code></dt>
       <dd>
-        A pointer to the result, an array of 
+        A pointer to the result, an array of
         <a href="#km_kbp_keyboard_key"><code class="token symbol">km_kbp_keyboard_keys</code></a>
       </dd>
     </dl>
@@ -297,7 +297,7 @@ km_kbp_keyboard_get_key_list(km_kbp_keyboard const *keyboard,
     <h2>Description</h2>
     <p>
     Free the allocated memory belonging to a keyboard key list previously
-    returned by <a href="#km_kbp_keyboard_get_key_list"><code class="token symbol">km_kbp_keyboard_get_key_list</code></a>      
+    returned by <a href="#km_kbp_keyboard_get_key_list"><code class="token symbol">km_kbp_keyboard_get_key_list</code></a>
     </p>
   </section>
   <section class="specification">
@@ -322,13 +322,14 @@ km_kbp_keyboard_get_key_list(km_kbp_keyboard const *keyboard,
     <h2>Description</h2>
     <p>
     Returns the list of IMX libraries and function names that are referenced by
-    the keyboard. The matching dispose call needs to be called to free the memory.
+    the keyboard. The matching dispose call <a href="#km_kbp_keyboard_imx_list_dispose"><code class="token symbol">km_kbp_keyboard_imx_list_dispose</code></a>
+    needs to be called to free the memory.
     </p>
   </section>
   <section class="specification">
     <h2>Specification</h2>
 <pre><code class="language-c">km_kbp_status km_kbp_keyboard_get_imx_list(
-                              km_kbp_keyboard const *keyboard, 
+                              km_kbp_keyboard const *keyboard,
                               km_kbp_keyboard_imx** imx_list);
 
 </code></pre>
@@ -341,7 +342,7 @@ km_kbp_keyboard_get_key_list(km_kbp_keyboard const *keyboard,
 
       <dt id="imx_list"><code class="token symbol">imx_list</code></dt>
       <dd>
-        A pointer to the result, an array of 
+        A pointer to the result, an array of
         <a href="#km_kbp_keyboard_imx"><code class="token symbol">km_kbp_keyboard_imx</code></a>
         structure.
       </dd>
@@ -365,7 +366,7 @@ km_kbp_keyboard_get_key_list(km_kbp_keyboard const *keyboard,
     <h2>Description</h2>
     <p>
     Free the allocated memory belonging to a IMX list previously
-returned by <a href="#km_kbp_keyboard_imx_list_dispose"><code class="token symbol">km_kbp_keyboard_imx_list_dispose</code></a>.
+returned by <a href="#km_kbp_keyboard_get_imx_list"><code class="token symbol">km_kbp_keyboard_get_imx_list</code></a>.
     </p>
   </section>
   <section class="specification">

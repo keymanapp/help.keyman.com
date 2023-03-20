@@ -2,12 +2,16 @@
 title: What's New
 ---
 
-Here are some of the new features we have added to Keyman for Linux 15.0:
+Here are some of the new features and major bug fixes we have added to Keyman for Linux 16.0:
 
-* Open a .kmp file with Keyman Config (#3183)
-* Now supports Ubuntu 20.10 (Groovy) (#3876)
-* Improved user interface
-* Improved support for KDE, Gnome, Arch Linux
-
-[![Watch a video](../linux_images/video.png)](https://youtu.be/4W9Z9_IFUII)
-that highlights some of these new features.
+* Improve setting context (#7084)
+* Improved reordering and backspace behavior in Chrome(ium) and other apps that
+  don't support surrounding text (#7079)
+    * Note, this currently requires an update to ibus to be installed, pending
+      upstream merge and distribution of ibus patches #2440 and 781119be. The
+      packages.sil.org and https://launchpad.net/~keymanapp/+archive/ubuntu/keyman
+      repos contain the updated ibus versions.
+* Now supports Ubuntu 22.10 (Kinetic) (#6975)
+* System tray will now show icon defined in keyboard instead of generic Keyman icon (#7678)
+* Keyman 16 will be the last release that supports Ubuntu 18.04 Bionic.
+* Fix uninstallation when using fcitx5 (#6963)
