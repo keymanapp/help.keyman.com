@@ -2,7 +2,7 @@
   require_once('includes/template.php');
 
   head([
-    'title' => "KeymanWeb 16.0 Overview"
+    'title' => "KeymanWeb 17.0 Overview"
   ]);
 
   require_once('includes/__docheader.php');

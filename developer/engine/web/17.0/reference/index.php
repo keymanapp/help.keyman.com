@@ -2,13 +2,13 @@
   require_once('includes/template.php');
 
   head([
-    'title' => "KeymanWeb 16.0"
+    'title' => "KeymanWeb 17.0"
   ]);
 
   require_once("includes/__docheader.php");
 ?>
 
-<h1 class="title" id="">KeymanWeb 16.0 Reference</h1>
+<h1 class="title" id="">KeymanWeb 17.0 Reference</h1>
 
   <dl>
   <dt><a href='overview'>KeymanWeb Overview</a></dt>

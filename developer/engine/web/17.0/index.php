@@ -2,35 +2,35 @@
   require_once('includes/template.php');
 
   head([
-    'title' => "Keyman Engine for Web 16.0 Developer Help"
+    'title' => "Keyman Engine for Web 17.0 Developer Help"
   ]);
 ?>
 
-<h1 class="title" id="">Keyman Engine for Web 16.0 Developer Help</h1>
+<h1 class="title" id="">Keyman Engine for Web 17.0 Developer Help</h1>
 
 <div class='body_text'>
 
 <p style='margin-top: 16px'>
-<p>Keyman Engine for Web 16.0 is the current version of KeymanWeb and supports touch devices with custom touch-layouts as well as desktop computer browsers.</p>
+<p>Keyman Engine for Web 17.0 is the current version of KeymanWeb and supports touch devices with custom touch-layouts as well as desktop computer browsers.</p>
 
   <dl>
     <dt><a href='https://keyman.com/developer/keymanweb/'>Download</a></dt>
-    <dd>Downloading Keyman Engine for Web 16.0</dd>
+    <dd>Downloading Keyman Engine for Web 17.0</dd>
   </dl>
 
   <dl>
   <dt><a href='guide/'>Guide</a></dt>
-  <dd>Keyman Engine for Web 16.0 Guide</dd>
+  <dd>Keyman Engine for Web 17.0 Guide</dd>
   </dl>
 
   <dl>
   <dt><a href='reference'>Reference</a></dt>
-  <dd>Keyman Engine for Web 16.0 Developer Reference</dd>
+  <dd>Keyman Engine for Web 17.0 Developer Reference</dd>
   </dl>
 
   <dl>
   <dt><a href='whats-new'>What's New</a></dt>
-  <dd>What's new in Keyman Engine for Web 16.0</dd>
+  <dd>What's new in Keyman Engine for Web 17.0</dd>
   </dl>
 
   <dl>
