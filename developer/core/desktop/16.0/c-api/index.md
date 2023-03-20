@@ -1,5 +1,6 @@
-C API Reference
-===============
+---
+title: C API Reference
+---
 
 Namespace
 ---------
@@ -65,56 +66,23 @@ Basic types
 
 Fundamental types for representing data passed across the API.
 
-Type
-
-C/C++ type
-
-Purpose
-
-`km_kbp_cp`
-
-`uint16_t/char16_t`
-
-Represents a UTF16 codepoint, most strings are passed as UTF16.
-
-`km_kbp_usv`
-
-`uint32_t/char32_t`
-
-An integral type capable of holding a single Unicode Scalar Value, a decoded UTF codepoint.
-
-`km_kbp_virtual_key`
-
-`uint16_t`
-
-An integral type capable of holding a platform specific virtual key code.
-
-`km_kbp_status`
-
-`uint32_t`
-
-An integral 32 bit wide type capable of holding any valid status code as defined by the `enum` [km\_kbp\_status\_codes](#km_kbp_status_codes).
+| Type | C/C++ type | Purpose |
+|:------|:----------|:--------|
+| `km_kbp_cp` | `uint16_t/char16_t` | Represents a UTF16 codepoint, most strings are passed as UTF16. |
+|`km_kbp_usv`|`uint32_t/char32_t`| An integral type capable of holding a single Unicode Scalar Value, a decoded UTF codepoint.|
+|`km_kbp_virtual_key`|`uint16_t`|An integral type capable of holding a platform specific virtual key code.|
+|`km_kbp_status`|`uint32_t`|An integral 32 bit wide type capable of holding any valid status code as defined by the `enum` [km\_kbp\_status\_codes](#km_kbp_status_codes).|
 
 Resource types
 --------------
 
 Opaque types for representing resources provided or created by the keyboard processor implementation.
 
-Type
-
-Purpose
-
-`km_kbp_keyboard`
-
-Represents a keyboard loaded from disk, that can be executed by the keyboard processor to consume events, update state associated with an insertion point and produce action items. A keyboard object may be referenced by any number of state objects but must be disposed of after all state objects referencing it have first been disposed of.
-
-`km_kbp_state`
-
-Represents all state associated with an insertion point using a keyboard. This tracks context, and current action items resulting from a processed keyboard event. There can be many state objects using the same keyboard. A state object may not live longer than the keyboard it manages state for.
-
-`km_kbp_context`
-
-Represents the pre-context of an insertion point and may be set, queried, append or shrunk by one or more context items. A context object is a sub-part of the state object, and a context handle may not be used after its state object has been disposed of.
+| Type | Purpose |
+|:-----|:--------|
+|`km_kbp_keyboard`|Represents a keyboard loaded from disk, that can be executed by the keyboard processor to consume events, update state associated with an insertion point and produce action items. A keyboard object may be referenced by any number of state objects but must be disposed of after all state objects referencing it have first been disposed of.|
+|`km_kbp_state`|Represents all state associated with an insertion point using a keyboard. This tracks context, and current action items resulting from a processed keyboard event. There can be many state objects using the same keyboard. A state object may not live longer than the keyboard it manages state for.|
+|`km_kbp_context`|Represents the pre-context of an insertion point and may be set, queried, append or shrunk by one or more context items. A context object is a sub-part of the state object, and a context handle may not be used after its state object has been disposed of.|
 
 Library version macros
 ======================
@@ -126,14 +94,15 @@ These macros evaluate to the version of the library your binary was compiled aga
 
 Specification
 -------------
-
+```
     #define KM_KBP_LIB_CURRENT  @lib_curr@
     #define KM_KBP_LIB_AGE      @lib_age@
     #define KM_KBP_LIB_REVISION @lib_rev@
+```
     
 
-km\_kbp\_status\_codes
-======================
+km\_kbp\_status\_codes enum
+===========================
 
 Description
 -----------
@@ -142,7 +111,7 @@ An error code mechanism similar to COM’s `HRESULT` scheme (unlike COM, any non
 
 Specification
 -------------
-
+```
     enum km_kbp_status_codes {
       KM_KBP_STATUS_OK = 0,
       KM_KBP_STATUS_NO_MEM = 1,
@@ -154,7 +123,7 @@ Specification
       KM_KBP_STATUS_INVALID_KEYBOARD = 7,
       KM_KBP_STATUS_OS_ERROR = 0x80000000
     };
-    
+```    
 
 Values
 ------
@@ -195,8 +164,8 @@ An attempt to decode a keyboard file failed.
 
 This allows encapsulating a platform error code: the remaining 31 low bits are the error code returned by the OS for cases where the failure mode is platform specific. For HRESULT codes this only permits failure codes to be passed and not success codes.
 
-km\_kbp\_attr
-=============
+km\_kbp\_attr struct
+====================
 
 Description
 -----------
@@ -205,7 +174,7 @@ A structure describing information about the keyboard processor, implementing th
 
 Specification
 -------------
-
+```
     typedef struct {
       size_t      max_context;
       uint16_t    current;
@@ -214,7 +183,7 @@ Specification
       uint16_t    technology;
       char const *vendor;
     } km_kbp_attr;
-    
+```    
 
 Members
 -------
@@ -243,8 +212,8 @@ A bit field of [`km_kbp_tech_value`](#km_kbp_tech_value) values, specifiying whi
 
 A UTF-8 encoded string identifying the implementer of the processor.
 
-km\_kbp\_tech\_value
-====================
+km\_kbp\_tech\_value enum
+=========================
 
 Description
 -----------
@@ -253,14 +222,14 @@ Values for a bit field indicating which keyboarding technologies a keyboard proc
 
 Specification
 -------------
-
+```
     enum km_kbp_tech_value {
       KM_KBP_TECH_UNSPECIFIED = 0,
       KM_KBP_TECH_MOCK        = 1 << 0,
       KM_KBP_TECH_KMX         = 1 << 1,
       KM_KBP_TECH_LDML        = 1 << 2
     };
-    
+```    
 
 Values
 ------
@@ -277,12 +246,12 @@ The keyboard processor implements a simple en-US keyboard for the purposes of te
 
 The keyboard processor implements a Keyman KMX compatible engine.
 
-`KM_KBP_TECH_LDML`
+`KM_KBP_TECH_UNSPECIFIED`
 
-The keyboard processor implements an [LDML capable](https://www.unicode.org/reports/tr35/tr35-keyboards.html) processing engine.
+The keyboard processor implements a LDML capable processing engine.
 
-km\_kbp\_get\_engine\_attrs
-===========================
+km\_kbp\_get\_engine\_attrs()
+=============================
 
 Description
 -----------
@@ -292,18 +261,18 @@ Get access processors attributes describing version and technology implemented.
 Specification
 -------------
 
-    
+```    
     KMN_API
     km_kbp_attr const *
     km_kbp_get_engine_attrs(km_kbp_state const *state);
-    
+```    
 
 Parameters
 ----------
 
 `state`
 
-An opaque pointer to an [`km_kbp_state`](#km_kbp_state).
+An opaque pointer to an [`km_kbp_state`](state-api#state).
 
 Returns
 -------

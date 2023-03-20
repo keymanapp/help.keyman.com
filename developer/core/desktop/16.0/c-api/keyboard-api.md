@@ -1,10 +1,11 @@
-Keyboards
-=========
+---
+title: Keyboards
+---
 
 A keyboard is a set of rules and transforms in a Processor specific format for transforming key events into action items. The keyboard is parsed and loaded by the processor and made available in an immutable fashion for use with any number of state objects.
 
-km\_kbp\_keyboard\_attrs
-========================
+km\_kbp\_keyboard\_attrs struct
+===============================
 
 Description
 -----------
@@ -14,14 +15,14 @@ A static structure describing the basic keyboard attributes.
 Specification
 -------------
 
-    
+```    
     typedef struct {
       km_kbp_cp const * version_string;
       km_kbp_cp const * id;
       km_kbp_path_name  folder_path;
       km_kbp_option_item const * default_options;
     } km_kbp_keyboard_attrs;
-    
+```    
 
 Members
 -------
@@ -42,8 +43,8 @@ Path to the unpacked folder containing the keyboard and associated resources.
 
 Pointer to an array of [`km_kbp_option_item`](#km_kbp_option_item), terminated with [`KM_KBP_OPTIONS_END`](#KM_KBP_OPTIONS_END).
 
-km\_kbp\_keyboard\_key
-======================
+km\_kbp\_keyboard\_key struct
+=============================
 
 Description
 -----------
@@ -53,12 +54,12 @@ A structure pairing a virtual key and modifier
 Specification
 -------------
 
-    
+```    
     typedef struct {
       km_kbp_virtual_key key;
       uint32_t modifier_flag;
     } km_kbp_keyboard_key;
-    
+```    
 
 Members
 -------
@@ -71,8 +72,8 @@ a virtual key code
 
 The modifier flag
 
-km\_kbp\_keyboard\_imx
-======================
+km\_kbp\_keyboard\_imx struct
+=============================
 
 Description
 -----------
@@ -82,13 +83,13 @@ A structure of IMX library and function name associated with an unique id
 Specification
 -------------
 
-    
+```    
     typedef struct {
       km_kbp_cp const * library_name;
       km_kbp_cp const * function_name;
       uint32_t imx_id;
     } km_kbp_keyboard_imx;
-    
+```    
     
 
 Members
@@ -106,8 +107,8 @@ IMX function name
 
 unique identifier used to call this function
 
-km\_kbp\_keyboard\_load
-=======================
+km\_kbp\_keyboard\_load()
+=========================
 
 Description
 -----------
@@ -116,11 +117,11 @@ Parse and load keyboard from the supplied path and a pointer to the loaded keybo
 
 Specification
 -------------
-
+```
     km_kbp_status
     km_kbp_keyboard_load(km_kbp_path_name kb_path,
                          km_kbp_keyboard **keyboard);
-    
+```    
 
 Parameters
 ----------
@@ -156,8 +157,8 @@ In the event the file doesn't exist or is inaccesible or [`keyboard`](#keyboard)
 
 Bit 31 (high bit) set, bits 0-30 are an OS-specific error code.
 
-km\_kbp\_keyboard\_dispose
-==========================
+km\_kbp\_keyboard\_dispose()
+============================
 
 Description
 -----------
@@ -166,10 +167,10 @@ Free the allocated memory belonging to an opaque keyboard object previously retu
 
 Specification
 -------------
-
+```
     void
     km_kbp_keyboard_dispose(km_kbp_keyboard *keyboard);
-    
+```    
 
 Parameters
 ----------
@@ -178,8 +179,8 @@ Parameters
 
 A pointer to the opaque keyboard object to be disposed of.
 
-km\_kbp\_keyboard\_get\_attrs
-=============================
+km\_kbp\_keyboard\_get\_attrs()
+===============================
 
 Description
 -----------
@@ -188,11 +189,11 @@ Returns the const internal attributes of the keyboard. This structure is valid f
 
 Specification
 -------------
-
+```
     km_kbp_status
     km_kbp_keyboard_get_attrs(km_kbp_keyboard const *keyboard,
                               km_kbp_keyboard_attrs const **out);
-    
+```  
     
 
 Parameters
@@ -217,8 +218,8 @@ On success.
 
 If non-optional parameters are null.
 
-km\_kbp\_keyboard\_get\_key\_list
-=================================
+km\_kbp\_keyboard\_get\_key\_list()
+===================================
 
 Description
 -----------
@@ -227,11 +228,11 @@ Returns the unordered full set of modifier + virtual keys that are handled by th
 
 Specification
 -------------
-
+```
     km_kbp_status
     km_kbp_keyboard_get_key_list(km_kbp_keyboard const *keyboard,
                                 km_kbp_keyboard_key const **out);
-    
+``` 
     
 
 Parameters
@@ -256,8 +257,8 @@ On success.
 
 If non-optional parameters are null.
 
-km\_kbp\_keyboard\_key\_list\_dispose
-=====================================
+km\_kbp\_keyboard\_key\_list\_dispose()
+=======================================
 
 Description
 -----------
@@ -266,9 +267,9 @@ Free the allocated memory belonging to a keyboard key list previously returned b
 
 Specification
 -------------
-
+```
     void km_kbp_keyboard_key_list_dispose(km_kbp_keyboard_key *key_list);
-    
+```    
     
 
 Parameters
@@ -278,21 +279,21 @@ Parameters
 
 A pointer to the keyboard key list to be disposed of.
 
-km\_kbp\_keyboard\_get\_imx\_list
-=================================
+km\_kbp\_keyboard\_get\_imx\_list()
+===================================
 
 Description
 -----------
 
-Returns the list of IMX libraries and function names that are referenced by the keyboard. The matching dispose call needs to be called to free the memory.
+Returns the list of IMX libraries and function names that are referenced by the keyboard. The matching dispose call [`km_kbp_keyboard_imx_list_dispose`](#km_kbp_keyboard_imx_list_dispose) needs to be called to free the memory.
 
 Specification
 -------------
-
+```
     km_kbp_status km_kbp_keyboard_get_imx_list(
-                                  km_kbp_keyboard const *keyboard, 
+                                  km_kbp_keyboard const *keyboard,
                                   km_kbp_keyboard_imx** imx_list);
-    
+```    
     
 
 Parameters
@@ -317,19 +318,19 @@ On success.
 
 If non-optional parameters are null.
 
-km\_kbp\_keyboard\_imx\_list\_dispose
-=====================================
+km\_kbp\_keyboard\_imx\_list\_dispose()
+=======================================
 
 Description
 -----------
 
-Free the allocated memory belonging to a IMX list previously returned by [`km_kbp_keyboard_imx_list_dispose`](#km_kbp_keyboard_imx_list_dispose).
+Free the allocated memory belonging to a IMX list previously returned by [`km_kbp_keyboard_get_imx_list`](#km_kbp_keyboard_get_imx_list).
 
 Specification
 -------------
-
+```
     void km_kbp_keyboard_key_list_dispose(km_kbp_keyboard_key *key_list);
-    
+```    
     
 
 Parameters
@@ -338,3 +339,4 @@ Parameters
 `keyboard`
 
 A pointer to the IMX list to be disposed of.
+
