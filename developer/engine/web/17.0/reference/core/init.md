@@ -94,12 +94,14 @@ The `initOptions` object may contain the following members:
 
 `setActiveOnRegister`
 
-: `string` <span class="optional">optional</span>
+: `boolean` <span class="optional">optional</span>
 
   Specifies whether KeymanWeb will set the newly registered keyboard as active. Default value `true`.
 
   * If `true`, KeymanWeb will automatically activate a keyboard when registered.
   * If `false`, KeymanWeb will not activate a keyboard when registered.
+
+  **Note:** Changed from `string` type to `boolean` type in KeymanWeb 17.0 ([#8458](https://github.com/keymanapp/keyman/pull/8458)).
 
 `useAlerts`
 
