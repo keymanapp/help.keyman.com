@@ -8,7 +8,7 @@ Context can also contain positional Markers (also known as 'deadkeys' in kmn key
 
 Contexts are always owned by their state. They may be set to a list of context\_items or interrogated for their current list of context items.
 
-km\_kbp\_context\_type enum
+km\_kbp\_context\_type enum  {#km_kbp_context_type}
 ===========================
 
 Description
@@ -18,14 +18,14 @@ Description
 
 Specification
 -------------
-```
+```c
     enum km_kbp_context_type {
       KM_KBP_CT_END,
       KM_KBP_CT_CHAR,
       KM_KBP_CT_MARKER
     };
 ```
-Values
+Values {#values}
 ------
 
 `KM_KBP_CT_END`
@@ -40,7 +40,7 @@ The context item contains a Unicode Scalar Value which must be accessed through 
 
 The context item contains a positional marker which must be accessed through the [`km_kbp_context_item.marker`](#km_kbp_context_item) union member.
 
-km\_kbp\_context\_item struct
+km\_kbp\_context\_item struct {#km_kbp_context_item}
 =============================
 
 Description
@@ -50,7 +50,7 @@ A tagged union representing an element of context which can be either a Unicode 
 
 Specification
 -------------
-```
+```c
     typedef struct {
       uint8_t   type;
       uint8_t   _reserved[3];
@@ -90,11 +90,11 @@ Convenience macro to declare a terminating entry in a [`km_kbp_context_item`](#k
 
 Specification
 -------------
-```
+```c
     #define KM_KBP_CONTEXT_ITEM_END {KM_KBP_CT_END, {0,}, {0,}}
 ```
 
-km\_kbp\_context\_items\_from\_utf16()
+km\_kbp\_context\_items\_from\_utf16() {#km_kbp_context_items_from_utf16}
 ======================================
 
 Description
@@ -104,7 +104,7 @@ Convert a UTF16 encoded Unicode string into an array of [`km_kbp_context_item`](
 
 Specification
 -------------
-```
+```c
     km_kbp_status
     km_kbp_context_items_from_utf16(km_kbp_cp const *text,
                                     km_kbp_context_item **out_ptr);
@@ -119,7 +119,7 @@ a pointer to a null terminated array of utf16 encoded data.
 
 `out_ptr`
 
-A pointer to the result variable: A pointer to the start of the [`km_kbp_context_item`](#km_kbp_context_item) array containing the representation of the input string. Terminated with a type of [`KM_KBP_CT_END`](#KM_KBP_CT_END). Must be disposed of with [`km_kbp_context_items_dispose()`](#km_kbp_context_items_dispose)
+A pointer to the result variable: A pointer to the start of the [`km_kbp_context_item`](#km_kbp_context_item) array containing the representation of the input string. Terminated with a type of [`KM_KBP_CT_END`](#values). Must be disposed of with [`km_kbp_context_items_dispose()`](#km_kbp_context_items_dispose)
 
 Returns
 -------
@@ -140,7 +140,7 @@ In the event not enough memory can be allocated for the output buffer.
 
 In the event the UTF16 string cannot be decoded because it contains unpaired surrogate codeunits.
 
-km\_kbp\_context\_items\_from\_utf8()
+km\_kbp\_context\_items\_from\_utf8() {#km_kbp_context_items_from_utf8}
 =====================================
 
 Description
@@ -150,7 +150,7 @@ Convert an UTF8 encoded Unicode string into an array of [`km_kbp_context_item`](
 
 Specification
 -------------
-```
+```c
     km_kbp_status
     km_kbp_context_items_from_utf8(char const *text,
                                     km_kbp_context_item **out_ptr);
@@ -165,7 +165,7 @@ a pointer to a null terminated array of utf8 encoded data.
 
 `out_ptr`
 
-A pointer to the result variable: A pointer to the start of the [`km_kbp_context_item`](#km_kbp_context_item) array containing the representation of the input string. Terminated with a type of [`KM_KBP_CT_END`](#KM_KBP_CT_END).
+A pointer to the result variable: A pointer to the start of the [`km_kbp_context_item`](#km_kbp_context_item) array containing the representation of the input string. Terminated with a type of [`KM_KBP_CT_END`](#values).
 
 Returns
 -------
@@ -182,7 +182,7 @@ In the event it cannot allocate enough memory for the output buffer.
 
 In the event the UTF8 string cannot be decoded.
 
-km\_kbp\_context\_items\_to\_utf16()
+km\_kbp\_context\_items\_to\_utf16() {#km_kbp_context_items_to_utf16}
 ====================================
 
 Description
@@ -192,7 +192,7 @@ Convert a context item array into a UTF-16 encoded string placing it into the su
 
 Specification
 -------------
-```
+```c
     km_kbp_status
     km_kbp_context_items_to_utf16(km_kbp_context_item const *item,
                                   km_kbp_cp *buf,
@@ -204,7 +204,7 @@ Parameters
 
 `context_items`
 
-A pointer to the start of an array [`km_kbp_context_item`](#km_kbp_context_item). Must be terminated with a type of [`KM_KBP_CT_END`](#KM_KBP_CT_END).
+A pointer to the start of an array [`km_kbp_context_item`](#km_kbp_context_item). Must be terminated with a type of [`KM_KBP_CT_END`](#values).
 
 `buf`
 
@@ -212,7 +212,7 @@ A pointer to the buffer to place the UTF-16 string into. May be be null to reque
 
 `buf_size`
 
-A pointer to the result variable: A pointer the size of the supplied buffer in codeunits or filled with the size required if [`buf`](#buf) is null.
+A pointer to the result variable: A pointer the size of the supplied buffer in codeunits or filled with the size required if `buf` is null.
 
 Returns
 -------
@@ -227,9 +227,9 @@ If non-optional parameters are null.
 
 `KM_KBP_STATUS_INSUFFICENT_BUFFER`
 
-If the buffer is not large enough [`buf_size`](#buf_size) will contain the space required. The contents of the buffer are undefined.
+If the buffer is not large enough `buf_size` will contain the space required. The contents of the buffer are undefined.
 
-km\_kbp\_context\_items\_to\_utf8()
+km\_kbp\_context\_items\_to\_utf8() {#km_kbp_context_items_to_utf8}
 ===================================
 
 Description
@@ -239,7 +239,7 @@ Convert a context item array into a UTF-8 encoded string placing it into the sup
 
 Specification
 -------------
-```
+```c
     km_kbp_status
     km_kbp_context_items_to_utf8(km_kbp_context_item const *item,
                                   char *buf,
@@ -251,7 +251,7 @@ Parameters
 
 `context_items`
 
-A pointer to the start of an array [`km_kbp_context_item`](#km_kbp_context_item). Must be terminated with a type of [`KM_KBP_CT_END`](#KM_KBP_CT_END).
+A pointer to the start of an array [`km_kbp_context_item`](#km_kbp_context_item). Must be terminated with a type of [`KM_KBP_CT_END`](#values).
 
 `buf`
 
@@ -259,7 +259,7 @@ A pointer to the buffer to place the UTF-8 string into. May be be null to reques
 
 `buf_size`
 
-A pointer to the result variable: A pointer the size of the supplied buffer in codeunits or filled with the size required if [`buf`](#buf) is null.
+A pointer to the result variable: A pointer the size of the supplied buffer in codeunits or filled with the size required if `buf` is null.
 
 Returns
 -------
@@ -276,7 +276,7 @@ If non-optional parameters are null.
 
 If the buffer is not large enough [`buf_size`](#buf_size) will contain the space required. The contents of the buffer are undefined.
 
-km\_kbp\_context\_items\_dispose()
+km\_kbp\_context\_items\_dispose() {#km_kbp_context_items_dispose}
 ==================================
 
 Description
@@ -286,10 +286,10 @@ Free the allocated memory belonging to a [`km_kbp_context_item`](#km_kbp_context
 
 Specification
 -------------
-```
+```c
     void
     km_kbp_context_items_dispose(km_kbp_context_item *context_items);
-```    
+```  
 
 Parameters
 ----------
@@ -298,7 +298,7 @@ Parameters
 
 A pointer to the start of the [`km_kbp_context_item`](#km_kbp_context_item) array to be disposed of.
 
-km\_kbp\_context\_set()
+km\_kbp\_context\_set() {#km_kbp_context_set}
 =======================
 
 Description
@@ -308,7 +308,7 @@ Replace the contents of the current context with a new sequence of [`km_kbp_cont
 
 Specification
 -------------
-```
+```c
     km_kbp_status
     km_kbp_context_set(km_kbp_context *context,
                        km_kbp_context_item const *context_items);
@@ -323,7 +323,7 @@ A pointer to an opaque context object.
 
 `context_items`
 
-A pointer to the start of the [`km_kbp_context_item`](#km_kbp_context_item) array containing the new context. It must be terminated with an item of type [`KM_KBP_CT_END`](#KM_KBP_CT_END).
+A pointer to the start of the [`km_kbp_context_item`](#km_kbp_context_item) array containing the new context. It must be terminated with an item of type [`KM_KBP_CT_END`](#values).
 
 Returns
 -------
@@ -340,7 +340,7 @@ If non-optional parameters are null.
 
 In the event not enough memory can be allocated to grow the context buffer internally.
 
-km\_kbp\_context\_get()
+km\_kbp\_context\_get() {#km_kbp_context_get}
 =======================
 
 Description
@@ -350,7 +350,7 @@ Copies all items in the context into a new array and returns the new array. This
 
 Specification
 -------------
-```
+```c
     km_kbp_status
     km_kbp_context_get(km_kbp_context const *context_items,
                        km_kbp_context_item **out);
@@ -365,7 +365,7 @@ A pointer to the start of an array [`km_kbp_context_item`](#km_kbp_context_item)
 
 `out`
 
-A pointer to the result variable: A pointer to the start of the [`km_kbp_context_item`](#km_kbp_context_item) array containing a copy of the context. Terminated with a type of [`KM_KBP_CT_END`](#KM_KBP_CT_END). Must be disposed of with [`km_kbp_context_items_dispose()`](#km_kbp_context_item).
+A pointer to the result variable: A pointer to the start of the [`km_kbp_context_item`](#km_kbp_context_item) array containing a copy of the context. Terminated with a type of [`KM_KBP_CT_END`](#values). Must be disposed of with [`km_kbp_context_items_dispose()`](#km_kbp_context_item).
 
 Returns
 -------
@@ -382,7 +382,7 @@ If non-optional parameters are null.
 
 In the event not enough memory can be allocated for the output buffer.
 
-km\_kbp\_context\_clear()
+km\_kbp\_context\_clear() {#km_kbp_context_clear}
 =========================
 
 Description
@@ -392,7 +392,7 @@ Removes all context\_items from the internal array. If `context` is null, has no
 
 Specification
 -------------
-```
+```c
     void
     km_kbp_context_clear(km_kbp_context *context);
 ```    
@@ -404,7 +404,7 @@ Parameters
 
 A pointer to an opaque context object.
 
-km\_kbp\_context\_length()
+km\_kbp\_context\_length() {#km_kbp_context_length}
 ==========================
 
 Description
@@ -414,7 +414,7 @@ Return the number of items in the context.
 
 Specification
 -------------
-```
+```c
     size_t
     km_kbp_context_length(km_kbp_context *);
 ```    
@@ -429,9 +429,9 @@ A pointer to an opaque context object.
 Returns
 -------
 
-The number of items in the context, and will return 0 if passed a null [`context`](#context) pointer.
+The number of items in the context, and will return 0 if passed a null `context` pointer.
 
-km\_kbp\_context\_append()
+km\_kbp\_context\_append() {#km_kbp_context_append}
 ==========================
 
 Description
@@ -441,7 +441,7 @@ Add more items to the end (insertion point) of the context. If these exceed the 
 
 Specification
 -------------
-```
+```c
     km_kbp_status
     km_kbp_context_append(km_kbp_context *context,
                           km_kbp_context_item const *context_items);
@@ -456,7 +456,7 @@ A pointer to an opaque context object.
 
 `context_items`
 
-A pointer to the start of the [`KM_KBP_CT_END`](#KM_KBP_CT_END) terminated array of [`km_kbp_context_item`](#km_kbp_context_item) to append.
+A pointer to the start of the [`KM_KBP_CT_END`](#values) terminated array of [`km_kbp_context_item`](#km_kbp_context_item) to append.
 
 Returns
 -------
@@ -473,7 +473,7 @@ If non-optional parameters are null.
 
 In the event not enough memory can be allocated to grow the context buffer internally.
 
-km\_kbp\_context\_shrink()
+km\_kbp\_context\_shrink() {#km_kbp_context_shrink}
 ==========================
 
 Description
@@ -483,7 +483,7 @@ Remove a specified number of items from the end of the context, optionally add u
 
 Specification
 -------------
-```
+```c
     km_kbp_status
     km_kbp_context_shrink(km_kbp_context *context,
                           size_t num,
@@ -503,7 +503,7 @@ The number of items to remove from the end of context.
 
 `context_items`
 
-Pointer to the start of the [`KM_KBP_CT_END`](#KM_KBP_CT_END) terminated array of [`km_kbp_context_item`](#km_kbp_context_item) to add to the front. Up to [`num`](#num) items will be prepended. This may be null if not required.
+Pointer to the start of the [`KM_KBP_CT_END`](#values) terminated array of [`km_kbp_context_item`](#km_kbp_context_item) to add to the front. Up to `num` items will be prepended. This may be null if not required.
 
 Returns
 -------
@@ -520,7 +520,7 @@ If non-optional parameters are null.
 
 In the event it cannot allocate enough memory to grow the context internally.
 
-km\_kbp\_context\_item\_list\_size()
+km\_kbp\_context\_item\_list\_size() {#km_kbp_context_item_list_size}
 ====================================
 
 Description
@@ -530,7 +530,7 @@ Return the length of a terminated [`km_kbp_context_item`](#km_kbp_context_item) 
 
 Specification
 -------------
-```
+```c
     size_t
     km_kbp_context_item_list_size(km_kbp_context_item const *context_items);
 ```    
@@ -540,7 +540,7 @@ Parameters
 
 `context_items`
 
-A pointer to a [`KM_KBP_CT_END`](#KM_KBP_CT_END) terminated array of [`km_kbp_context_item`](#km_kbp_context_item) values.
+A pointer to a [`KM_KBP_CT_END`](#values) terminated array of [`km_kbp_context_item`](#km_kbp_context_item) values.
 
 Returns
 -------

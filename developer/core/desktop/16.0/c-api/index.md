@@ -17,30 +17,30 @@ Follows a COM HRESULT style model where functions that can fail will always retu
 ### Passing variable length data out
 
 Almost all calls marshalling variable length aggregate data in or out of an API object take the form:
-
-    km_kbp_status fn_name(object_ref, buffer_ptr, size_ptr)
-
-where the `buffer_ptr` is nullable and all other arguments are required (will result in an [`KM_KBP_STATUS_INVALID_ARGUMENT`](#KM_KBP_STATUS_INVALID_ARGUMENT) status being returned if nulled). When `buffer_ptr` is `nullptr` or `0` the function will place the size of the required buffer in the variable pointed to by `size_ptr`.
+```c
+km_kbp_status fn_name(object_ref, buffer_ptr, size_ptr)
+```
+where the `buffer_ptr` is nullable and all other arguments are required (will result in an [`KM_KBP_STATUS_INVALID_ARGUMENT`](#values) status being returned if nulled). When `buffer_ptr` is `nullptr` or `0` the function will place the size of the required buffer in the variable pointed to by `size_ptr`.
 
 ### Resource management
 
 Calls which result in the allocation of resources, regardless of resulting ownership, are of the form:
-
-    km_kbp_status fn_name(object_ref, handle_out_ptr)
-
-where `handle_out_ptr` is a valid pointer to a caller allocated variable to hold the resulting resource handle. This is often a reference to a created object. Unless stated all arguments are required (will result in an [`KM_KBP_STATUS_INVALID_ARGUMENT`](#KM_KBP_STATUS_INVALID_ARGUMENT) status being returned if nulled).
+```c
+km_kbp_status fn_name(object_ref, handle_out_ptr)
+```
+where `handle_out_ptr` is a valid pointer to a caller allocated variable to hold the resulting resource handle. This is often a reference to a created object. Unless stated all arguments are required (will result in an [`KM_KBP_STATUS_INVALID_ARGUMENT`](#values) status being returned if nulled).
 
 All dispose calls are designed to accept `nullptr` or `0` as a valid value and will do nothing in that event.
 
 ### Fixed size attribute access
 
 For accessors to fixed size attributes of an object these will take the form:
-
-    attr_value fn_name(object_ref)
-
+```c
+attr_value fn_name(object_ref)
+```
 `object_ref` is required to be valid and will result in a nonsense value being returned if `nullptr` or `0`.
 
-### Versioning scheme
+### Versioning scheme {#versioning-scheme}
 
 This follows the libtool interface versioning scheme of `current.age.revision`:
 
@@ -61,7 +61,7 @@ For Linux and other OS which support this scheme the dynamic linker will automat
 Common functions, types, and macros
 ===================================
 
-Basic types
+Basic types {#basic_types}
 -----------
 
 Fundamental types for representing data passed across the API.
@@ -72,6 +72,7 @@ Fundamental types for representing data passed across the API.
 |`km_kbp_usv`|`uint32_t/char32_t`| An integral type capable of holding a single Unicode Scalar Value, a decoded UTF codepoint.|
 |`km_kbp_virtual_key`|`uint16_t`|An integral type capable of holding a platform specific virtual key code.|
 |`km_kbp_status`|`uint32_t`|An integral 32 bit wide type capable of holding any valid status code as defined by the `enum` [km\_kbp\_status\_codes](#km_kbp_status_codes).|
+|`km_kbp_modifier_state`|`uint16_t`|An integral type bitmask representing the state of each modifier key. |
 
 Resource types
 --------------
@@ -84,7 +85,7 @@ Opaque types for representing resources provided or created by the keyboard proc
 |`km_kbp_state`|Represents all state associated with an insertion point using a keyboard. This tracks context, and current action items resulting from a processed keyboard event. There can be many state objects using the same keyboard. A state object may not live longer than the keyboard it manages state for.|
 |`km_kbp_context`|Represents the pre-context of an insertion point and may be set, queried, append or shrunk by one or more context items. A context object is a sub-part of the state object, and a context handle may not be used after its state object has been disposed of.|
 
-Library version macros
+Library version macros {#lib-version-macros}
 ======================
 
 Description
@@ -94,14 +95,14 @@ These macros evaluate to the version of the library your binary was compiled aga
 
 Specification
 -------------
-```
+```c
     #define KM_KBP_LIB_CURRENT  @lib_curr@
     #define KM_KBP_LIB_AGE      @lib_age@
     #define KM_KBP_LIB_REVISION @lib_rev@
 ```
     
 
-km\_kbp\_status\_codes enum
+km\_kbp\_status\_codes enum {#km_kbp_status_codes}
 ===========================
 
 Description
@@ -111,7 +112,7 @@ An error code mechanism similar to COM’s `HRESULT` scheme (unlike COM, any non
 
 Specification
 -------------
-```
+```c
     enum km_kbp_status_codes {
       KM_KBP_STATUS_OK = 0,
       KM_KBP_STATUS_NO_MEM = 1,
@@ -125,7 +126,7 @@ Specification
     };
 ```    
 
-Values
+Values {#values}
 ------
 
 `KM_KBP_STATUS_OK`
@@ -164,7 +165,7 @@ An attempt to decode a keyboard file failed.
 
 This allows encapsulating a platform error code: the remaining 31 low bits are the error code returned by the OS for cases where the failure mode is platform specific. For HRESULT codes this only permits failure codes to be passed and not success codes.
 
-km\_kbp\_attr struct
+km\_kbp\_attr struct {#km_kbp_attr}
 ====================
 
 Description
@@ -174,7 +175,7 @@ A structure describing information about the keyboard processor, implementing th
 
 Specification
 -------------
-```
+```c
     typedef struct {
       size_t      max_context;
       uint16_t    current;
@@ -212,7 +213,7 @@ A bit field of [`km_kbp_tech_value`](#km_kbp_tech_value) values, specifiying whi
 
 A UTF-8 encoded string identifying the implementer of the processor.
 
-km\_kbp\_tech\_value enum
+km\_kbp\_tech\_value enum {#km_kbp_tech_value}
 =========================
 
 Description
@@ -222,14 +223,14 @@ Values for a bit field indicating which keyboarding technologies a keyboard proc
 
 Specification
 -------------
-```
+```c
     enum km_kbp_tech_value {
       KM_KBP_TECH_UNSPECIFIED = 0,
       KM_KBP_TECH_MOCK        = 1 << 0,
       KM_KBP_TECH_KMX         = 1 << 1,
       KM_KBP_TECH_LDML        = 1 << 2
     };
-```    
+```
 
 Values
 ------
@@ -250,7 +251,7 @@ The keyboard processor implements a Keyman KMX compatible engine.
 
 The keyboard processor implements a LDML capable processing engine.
 
-km\_kbp\_get\_engine\_attrs()
+km\_kbp\_get\_engine\_attrs() {#km_kbp_get_engine_attrs}
 =============================
 
 Description
@@ -261,11 +262,11 @@ Get access processors attributes describing version and technology implemented.
 Specification
 -------------
 
-```    
+```c    
     KMN_API
     km_kbp_attr const *
     km_kbp_get_engine_attrs(km_kbp_state const *state);
-```    
+```   
 
 Parameters
 ----------

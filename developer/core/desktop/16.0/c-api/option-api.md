@@ -2,11 +2,11 @@
 title: Options
 ---
 
-A state’s default options are set from the keyboard at creation time and the environment. The Platform layer is then is expected to apply any persisted options it is maintaining. Options are passed into and out of API functions as simple C arrays of `km_kbp_option_item` terminated with a [`KM_KBP_OPTIONS_END`](#KM_KBP_OPTIONS_END) sentinel value. A state's options are exposed and manipulatable via the state object.
+A state’s default options are set from the keyboard at creation time and the environment. The Platform layer is then is expected to apply any persisted options it is maintaining. Options are passed into and out of API functions as simple C arrays of `km_kbp_option_item` terminated with a [`KM_KBP_OPTIONS_END`](#km_kbp_options_end) sentinel value. A state's options are exposed and manipulatable via the state object.
 
 During processing when the Platform layer finds a PERSIST action type it should store the updated option in the appropriate place, based on its scope. For RESET the processor will apply the pristine value from the original scope, the Platform layer should update that only if it manages a previously persisted value.
 
-km\_kbp\_option\_scope enum
+km\_kbp\_option\_scope enum {#km_kbp_option_scope}
 ===========================
 
 Description
@@ -16,7 +16,7 @@ Identifies which scope and option should be stored to. Scopes are essentially se
 
 Specification
 -------------
-```
+```c
     enum km_kbp_option_scope {
         KM_KBP_OPT_UNKNOWN      = 0,
         KM_KBP_OPT_KEYBOARD     = 1,
@@ -25,7 +25,7 @@ Specification
       };
 ```    
 
-Values
+Values {#values}
 ------
 
 `KM_KBP_OPT_UNKNOWN`
@@ -44,7 +44,7 @@ The option is store in the global environment store, set and managed by the Keym
 
 The maximum number of different scopes supported by the API.
 
-km\_kbp\_option\_item struct
+km\_kbp\_option\_item struct {#km_kbp_option_item}
 ============================
 
 Description
@@ -54,7 +54,7 @@ A scoped key-value tuple. This is used to permit mass update of a keyboard state
 
 Specification
 -------------
-```
+```c
     struct km_kbp_option_item {
       km_kbp_cp const *   key;
       km_kbp_cp const *   value;
@@ -71,13 +71,13 @@ The name of an option. Pointer to a null-terminated UTF16 encoded string.
 
 `value`
 
-The value of an option. Pointer to an array of [`km_kbp_cp`](#km_kbp_cp) value containing a null-terminated UTF16 encoded string.
+The value of an option. Pointer to an array of [`km_kbp_cp`](index#basic_types) value containing a null-terminated UTF16 encoded string.
 
 `scope`
 
-The scope of the option. A [`km_kbp_option_scope`](#km_kbp_option_scope) value which must be less than [`KM_KBP_OPT_MAX_SCOPES`](#KM_KBP_OPT_MAX_SCOPES).
+The scope of the option. A [`km_kbp_option_scope`](#km_kbp_option_scope) value which must be less than [`KM_KBP_OPT_MAX_SCOPES`](#values).
 
-KM\_KBP\_OPTIONS\_END macro
+KM\_KBP\_OPTIONS\_END macro {#km_kbp_options_end}
 ===========================
 
 Description
@@ -87,11 +87,11 @@ Terminating entry for a c array of [`km_kbp_option_item`](#km_kbp_option_item) v
 
 Specification
 -------------
-```
+```c
     #define KM_KBP_OPTIONS_END { 0, 0, 0 }
 ```
 
-km\_kbp\_options\_list\_size()
+km\_kbp\_options\_list\_size() {#km_kbp_options_list_size}
 ==============================
 
 Description
@@ -101,7 +101,7 @@ Calculate the length of a terminated [`km_kbp_option_item`](#km_kbp_option_item)
 
 Specification
 -------------
-```
+```c
     size_t
     km_kbp_options_list_size(km_kbp_option_item const *opts);
 ```    
@@ -111,24 +111,24 @@ Parameters
 
 `opts`
 
-A pointer to a [`KM_KBP_OPTIONS_END`](#KM_KBP_OPTIONS_END) terminated array of [`km_kbp_option_item`](#km_kbp_option_item) values.
+A pointer to a [`KM_KBP_OPTIONS_END`](#values) terminated array of [`km_kbp_option_item`](#km_kbp_option_item) values.
 
 Returns
 -------
 
 The number of items in the list or 0 if [`opts`](#opts) is null.
 
-km\_kbp\_state\_option\_lookup()
+km\_kbp\_state\_option\_lookup() {#km_kbp_state_option_lookup}
 ================================
 
 Description
 -----------
 
-Lookup an option based on its key and scope from a keyboard state. The scope may never be [`KM_KBP_OPT_UNKNOWN`](#KM_KBP_OPT_UNKNOWN).
+Lookup an option based on its key and scope from a keyboard state. The scope may never be [`KM_KBP_OPT_UNKNOWN`](#values).
 
 Specification
 -------------
-```
+```c
     km_kbp_status
     km_kbp_state_option_lookup(km_kbp_state const *state,
                           uint8_t scope,
@@ -170,17 +170,17 @@ If non-optional parameters are null, or if the scope is invalid.
 
 The key cannot be found.
 
-km\_kbp\_state\_options\_update()
+km\_kbp\_state\_options\_update() {#km_kbp_state_options_update}
 =================================
 
 Description
 -----------
 
-Adds or updates one or more options from a list of [`km_kbp_option_items`](#km_kbp_option_items). All UTF16 strings passed int the [`km_kbp_option_item`](#km_kbp_option_item) are copied. The scope of any [`km_kbp_option_item`s](#km_kbp_option_item) may never be [`KM_KBP_OPT_UNKNOWN`](#KM_KBP_OPT_UNKNOWN).
+Adds or updates one or more options from a list of [`km_kbp_option_items`](#km_kbp_option_item). All UTF16 strings passed int the [`km_kbp_option_item`](#km_kbp_option_item) are copied. The scope of any [`km_kbp_option_item`](#km_kbp_option_item) may never be [`KM_KBP_OPT_UNKNOWN`](#values).
 
 Specification
 -------------
-```
+```c
     km_kbp_status
     km_kbp_state_options_update(km_kbp_state *state,
                           km_kbp_option_item const *new_opts);
@@ -206,7 +206,7 @@ On success.
 
 `KM_KBP_STATUS_INVALID_ARGUMENT`
 
-If non-optional parameters are null or any option has [`KM_KBP_OPT_UNKNOWN`](#KM_KBP_OPT_UNKNOWN) scope.
+If non-optional parameters are null or any option has [`KM_KBP_OPT_UNKNOWN`](#values) scope.
 
 `KM_KBP_STATUS_NO_MEM`
 
@@ -216,7 +216,7 @@ In the event an internal memory allocation fails.
 
 The key cannot be found.
 
-km\_kbp\_state\_options\_to\_json()
+km\_kbp\_state\_options\_to\_json() {#km_kbp_state_options_to_json}
 ===================================
 
 Description
@@ -226,7 +226,7 @@ Export the state objects options to a JSON formatted document and place it in th
 
 Specification
 -------------
-```
+```c
     km_kbp_status
     km_kbp_state_options_to_json(km_kbp_state const *state,
                            char *buf,
@@ -246,7 +246,7 @@ A pointer to the buffer to place the C string containing the JSON document into,
 
 `space`
 
-A pointer to a size\_t variable. This variable must contain the number of bytes available in the buffer pointed to by [`buf`](#buf), unless [`buf`](#buf) is null. On return it will hold how many bytes were used.
+A pointer to a size\_t variable. This variable must contain the number of bytes available in the buffer pointed to by `buf`, unless `buf` is null. On return it will hold how many bytes were used.
 
 Returns
 -------
