@@ -1,5 +1,5 @@
 ---
-title: C API Reference
+title: Reference - Keyman Core API
 ---
 
 Namespace

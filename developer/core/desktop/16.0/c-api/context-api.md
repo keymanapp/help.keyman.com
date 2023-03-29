@@ -8,11 +8,9 @@ Context can also contain positional Markers (also known as 'deadkeys' in kmn key
 
 Contexts are always owned by their state. They may be set to a list of context\_items or interrogated for their current list of context items.
 
-km\_kbp\_context\_type enum  {#km_kbp_context_type}
-===========================
+# `km_kbp_context_type` enum  {#km_kbp_context_type}
 
-Description
------------
+## Description
 
 [`km_kbp_context_item.type`](#km_kbp_context_item) values which identify which data value (if any) the context item carries.
 
@@ -28,17 +26,14 @@ Specification
 Values {#values}
 ------
 
-`KM_KBP_CT_END`
+* `KM_KBP_CT_END`
+: A [`km_kbp_context_item`](#km_kbp_context_item) of this type marks the end of an array of context items.
 
-A [`km_kbp_context_item`](#km_kbp_context_item) of this type marks the end of an array of context items.
+* `KM_KBP_CT_CHAR`
+: The context item contains a Unicode Scalar Value which must be accessed through the [`km_kbp_context_item.character`](#km_kbp_context_item) union member.
 
-`KM_KBP_CT_CHAR`
-
-The context item contains a Unicode Scalar Value which must be accessed through the [`km_kbp_context_item.character`](#km_kbp_context_item) union member.
-
-`KM_KBP_CT_MARKER`
-
-The context item contains a positional marker which must be accessed through the [`km_kbp_context_item.marker`](#km_kbp_context_item) union member.
+* `KM_KBP_CT_MARKER`
+: The context item contains a positional marker which must be accessed through the [`km_kbp_context_item.marker`](#km_kbp_context_item) union member.
 
 km\_kbp\_context\_item struct {#km_kbp_context_item}
 =============================
