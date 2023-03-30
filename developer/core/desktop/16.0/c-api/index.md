@@ -2,35 +2,48 @@
 title: Reference - Keyman Core API
 ---
 
-Namespace
----------
+## Namespace
 
 All calls, types and enums are prefixed with the namespace prefix `km_kbp_`
 
-Idioms
-------
+## Idioms
 
 ### Error handling
 
-Follows a COM HRESULT style model where functions that can fail will always return a status value and all other results are returned via outparams passed to the function. Only attribute accessor functions which cannot fail, may return their results via return results.
+Follows a COM HRESULT style model where functions that can fail will always
+return a status value and all other results are returned via outparams passed to
+the function. Only attribute accessor functions which cannot fail, may return
+their results via return results.
 
 ### Passing variable length data out
 
-Almost all calls marshalling variable length aggregate data in or out of an API object take the form:
+Almost all calls marshalling variable length aggregate data in or out of an API
+object take the form:
+
 ```c
 km_kbp_status fn_name(object_ref, buffer_ptr, size_ptr)
 ```
-where the `buffer_ptr` is nullable and all other arguments are required (will result in an [`KM_KBP_STATUS_INVALID_ARGUMENT`](#values) status being returned if nulled). When `buffer_ptr` is `nullptr` or `0` the function will place the size of the required buffer in the variable pointed to by `size_ptr`.
+where the `buffer_ptr` is nullable and all other arguments are required (will
+result in an [`KM_KBP_STATUS_INVALID_ARGUMENT`](#km_kbp_status_type_values)
+status being returned if nulled). When `buffer_ptr` is `nullptr` or `0` the
+function will place the size of the required buffer in the variable pointed to
+by `size_ptr`.
 
 ### Resource management
 
-Calls which result in the allocation of resources, regardless of resulting ownership, are of the form:
+Calls which result in the allocation of resources, regardless of resulting
+ownership, are of the form:
 ```c
 km_kbp_status fn_name(object_ref, handle_out_ptr)
 ```
-where `handle_out_ptr` is a valid pointer to a caller allocated variable to hold the resulting resource handle. This is often a reference to a created object. Unless stated all arguments are required (will result in an [`KM_KBP_STATUS_INVALID_ARGUMENT`](#values) status being returned if nulled).
+where `handle_out_ptr` is a valid pointer to a caller allocated variable to hold
+the resulting resource handle. This is often a reference to a created object.
+Unless stated all arguments are required (will result in an
+[`KM_KBP_STATUS_INVALID_ARGUMENT`](#km_kbp_status_type_values) status being
+returned if nulled).
 
-All dispose calls are designed to accept `nullptr` or `0` as a valid value and will do nothing in that event.
+All dispose calls are designed to accept `nullptr` or `0` as a valid value and
+will do nothing in that event.
 
 ### Fixed size attribute access
 
@@ -50,19 +63,26 @@ The most recent interface number that the engine implements.
 
 `age`
 
-How many interface numbers back from current the library implements. E.g. 5.2.0 would mean the library provides interface versions 3-5 and 5.0.0 would mean just interface version 5 and nothing older.
+How many interface numbers back from current the library implements. E.g. 5.2.0
+would mean the library provides interface versions 3-5 and 5.0.0 would mean just
+interface version 5 and nothing older.
 
 `revision`
 
-The implementation version of the current interface. This represents improvements to the code that don't change the intended behaviour of the interface such as bug fixes and optimisations.
+The implementation version of the current interface. This represents
+improvements to the code that don't change the intended behaviour of the
+interface such as bug fixes and optimisations.
 
-For Linux and other OS which support this scheme the dynamic linker will automatically choose the most updated version if more than one implementation is available. For Windows or dynamic loaded shared objects on Linux you can use the [`km_kbp_get_engine_attrs`](#km_kbp_get_engine_attrs) call and [Library version macros](#lib-version-macros) to check the loaded DLL supplies the correct interface.
+For Linux and other OS which support this scheme the dynamic linker will
+automatically choose the most updated version if more than one implementation is
+available. For Windows or dynamic loaded shared objects on Linux you can use the
+[`km_kbp_get_engine_attrs`](#km_kbp_get_engine_attrs) call and [Library version
+macros](#lib-version-macros) to check the loaded DLL supplies the correct
+interface.
 
-Common functions, types, and macros
-===================================
+# Common functions, types, and macros
 
-Basic types {#basic_types}
------------
+## Basic types {#basic_types}
 
 Fundamental types for representing data passed across the API.
 
@@ -74,8 +94,7 @@ Fundamental types for representing data passed across the API.
 |`km_kbp_status`|`uint32_t`|An integral 32 bit wide type capable of holding any valid status code as defined by the `enum` [km\_kbp\_status\_codes](#km_kbp_status_codes).|
 |`km_kbp_modifier_state`|`uint16_t`|An integral type bitmask representing the state of each modifier key. |
 
-Resource types
---------------
+## Resource types
 
 Opaque types for representing resources provided or created by the keyboard processor implementation.
 
@@ -85,16 +104,17 @@ Opaque types for representing resources provided or created by the keyboard proc
 |`km_kbp_state`|Represents all state associated with an insertion point using a keyboard. This tracks context, and current action items resulting from a processed keyboard event. There can be many state objects using the same keyboard. A state object may not live longer than the keyboard it manages state for.|
 |`km_kbp_context`|Represents the pre-context of an insertion point and may be set, queried, append or shrunk by one or more context items. A context object is a sub-part of the state object, and a context handle may not be used after its state object has been disposed of.|
 
-Library version macros {#lib-version-macros}
-======================
+# Library version macros {#lib-version-macros}
 
-Description
------------
+## Description
 
-These macros evaluate to the version of the library your binary was compiled against, which may not be the same as the version returned by [`km_kbp_get_engine_attrs`](#km_kbp_get_engine_attrs). See [Versioning scheme](#versioning-scheme).
+These macros evaluate to the version of the library your binary was compiled
+against, which may not be the same as the version returned by
+[`km_kbp_get_engine_attrs`](#km_kbp_get_engine_attrs). See [Versioning
+scheme](#versioning-scheme).
 
-Specification
--------------
+## Specification
+
 ```c
     #define KM_KBP_LIB_CURRENT  @lib_curr@
     #define KM_KBP_LIB_AGE      @lib_age@
@@ -102,16 +122,15 @@ Specification
 ```
     
 
-km\_kbp\_status\_codes enum {#km_kbp_status_codes}
-===========================
+# km\_kbp\_status\_codes enum {#km_kbp_status_codes}
 
-Description
------------
+## Description
 
-An error code mechanism similar to COM’s `HRESULT` scheme (unlike COM, any non-zero value is an error).
+An error code mechanism similar to COM’s `HRESULT` scheme (unlike COM, any
+non-zero value is an error).
 
-Specification
--------------
+## Specification
+
 ```c
     enum km_kbp_status_codes {
       KM_KBP_STATUS_OK = 0,
@@ -126,55 +145,58 @@ Specification
     };
 ```    
 
-Values {#values}
-------
+## Values {#km_kbp_status_type_values}
 
 `KM_KBP_STATUS_OK`
 
-Success code. Call completed as documented.
+: Success code. Call completed as documented.
 
 `KM_KBP_STATUS_NO_MEM`
 
-The call failed to allocate memory during its execution, causing it to fail.
+: The call failed to allocate memory during its execution, causing it to fail.
 
 `KM_KBP_STATUS_IO_ERROR`
 
-The call performed an I/O operation which failed, causing it to fail.
+: The call performed an I/O operation which failed, causing it to fail.
 
 `KM_KBP_STATUS_INVALID_ARGUMENT`
 
-The call detected one of its parameters was invalid or unsafe.
+: The call detected one of its parameters was invalid or unsafe.
 
 `KM_KBP_STATUS_KEY_ERROR`
 
-The provided key or index into a collection object was not present.
+: The provided key or index into a collection object was not present.
 
 `KM_KBP_STATUS_INSUFFICENT_BUFFER`
 
-The provided buffer did not contain enough space to fully encode or copy the result of this call.
+: The provided buffer did not contain enough space to fully encode or copy the
+result of this call.
 
 `KM_KBP_STATUS_INVALID_UTF`
 
-A malformed or partial UTF sequence prevented complete decoding of a unicode string.
+: A malformed or partial UTF sequence prevented complete decoding of a unicode
+string.
 
 `KM_KBP_STATUS_INVALID_KEYBOARD`
 
-An attempt to decode a keyboard file failed.
+: An attempt to decode a keyboard file failed.
 
 `KM_KBP_STATUS_OS_ERROR`
 
-This allows encapsulating a platform error code: the remaining 31 low bits are the error code returned by the OS for cases where the failure mode is platform specific. For HRESULT codes this only permits failure codes to be passed and not success codes.
+: This allows encapsulating a platform error code: the remaining 31 low bits are
+the error code returned by the OS for cases where the failure mode is platform
+specific. For HRESULT codes this only permits failure codes to be passed and not
+success codes.
 
-km\_kbp\_attr struct {#km_kbp_attr}
-====================
+# km\_kbp\_attr struct {#km_kbp_attr}
 
-Description
------------
+## Description
 
-A structure describing information about the keyboard processor, implementing this API.
+A structure describing information about the keyboard processor, implementing
+this API.
 
-Specification
--------------
+## Specification
+
 ```c
     typedef struct {
       size_t      max_context;
@@ -186,43 +208,36 @@ Specification
     } km_kbp_attr;
 ```    
 
-Members
--------
+## Members
 
 `max_context`
-
-Maximum context size supported by processor.
+:Maximum context size supported by processor.
 
 `current`
-
-Current API number supported.
+:Current API number supported.
 
 `revision`
-
-Implementation number of current API.
+: Implementation number of current API.
 
 `age`
+: current - age == Oldest API number supported.
 
-current - age == Oldest API number supported.
-
-`technology`
-
-A bit field of [`km_kbp_tech_value`](#km_kbp_tech_value) values, specifiying which Keyboard technologies the engine supports.
+`technology` 
+: A bit field of [`km_kbp_tech_value`](#km_kbp_tech_value) values,
+specifiying which Keyboard technologies the engine supports.
 
 `vendor`
+: A UTF-8 encoded string identifying the implementer of the processor.
 
-A UTF-8 encoded string identifying the implementer of the processor.
+# km\_kbp\_tech\_value enum {#km_kbp_tech_value}
 
-km\_kbp\_tech\_value enum {#km_kbp_tech_value}
-=========================
+## Description
 
-Description
------------
+Values for a bit field indicating which keyboarding technologies a keyboard
+processor supports.
 
-Values for a bit field indicating which keyboarding technologies a keyboard processor supports.
+## Specification
 
-Specification
--------------
 ```c
     enum km_kbp_tech_value {
       KM_KBP_TECH_UNSPECIFIED = 0,
@@ -232,35 +247,29 @@ Specification
     };
 ```
 
-Values
-------
+## Values
 
-`KM_KBP_TECH_UNSPECIFIED`
-
-The keyboard processor implementation does not disclose which technologies it implements.
+`KM_KBP_TECH_UNSPECIFIED` 
+: The keyboard processor implementation does not disclose which technologies it
+implements.
 
 `KM_KBP_TECH_MOCK`
-
-The keyboard processor implements a simple en-US keyboard for the purposes of testing the API.
-
-`KM_KBP_TECH_UNSPECIFIED`
-
-The keyboard processor implements a Keyman KMX compatible engine.
+: The keyboard processor implements a simple en-US keyboard for the purposes of
+testing the API.
 
 `KM_KBP_TECH_UNSPECIFIED`
+: The keyboard processor implements a Keyman KMX compatible engine.
 
-The keyboard processor implements a LDML capable processing engine.
+`KM_KBP_TECH_UNSPECIFIED`
+: The keyboard processor implements a LDML capable processing engine.
 
-km\_kbp\_get\_engine\_attrs() {#km_kbp_get_engine_attrs}
-=============================
+# km\_kbp\_get\_engine\_attrs() {#km_kbp_get_engine_attrs}
 
-Description
------------
+## Description
 
 Get access processors attributes describing version and technology implemented.
 
-Specification
--------------
+## Specification
 
 ```c    
     KMN_API
@@ -268,14 +277,12 @@ Specification
     km_kbp_get_engine_attrs(km_kbp_state const *state);
 ```   
 
-Parameters
-----------
+## Parameters
 
 `state`
+:An opaque pointer to an [`km_kbp_state`](state-api#state).
 
-An opaque pointer to an [`km_kbp_state`](state-api#state).
+## Returns
 
-Returns
--------
-
-A pointer to a [`km_kbp_attr`](#km_kbp_attr) structure. Do not modify the contents of this structure.
+A pointer to a [`km_kbp_attr`](#km_kbp_attr) structure. Do not modify the
+contents of this structure.
