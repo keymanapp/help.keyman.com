@@ -9,7 +9,7 @@ head([
 <h1 class="title">JSON Introspection Schema</h1>
 <p>
   The
-  <a href="c-api/state-api.php#km_kpb_state_to_json"><code class="token function">km_kpb_state_to_json()</code></a>
+  <a href="c-api/state-api#km_kpb_state_to_json"><code class="token function">km_kpb_state_to_json()</code></a>
   call generates a JSON document describing the internal state of the keyboard
   processor, this is the schema describing that document.
 
