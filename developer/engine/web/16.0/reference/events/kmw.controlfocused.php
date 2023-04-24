@@ -24,7 +24,7 @@ END
 
 params("eventProperties", "object", "An object with the following properties:  "
   . "<ul><li><code>target</code> - the element gaining focus</li>"
-  . "<li><code>activeControl</code> - the currently active control.</li>");
+  . "<li><code>activeControl</code> - the previously-focused control.</li>");
 
 returns("boolean", "<code>true</code> if the event should continue processing, <code>false</code> if it should not. \n".
   "Your event handler should return <code>true</code> aside from exceptional circumstances.");
