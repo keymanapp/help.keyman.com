@@ -1,5 +1,5 @@
 ---
-title: KMMnaager.getGlobeKeyAction()
+title: KMManager.getGlobeKeyAction()
 ---
 
 ## Summary
@@ -25,8 +25,8 @@ Use this method to get the short-press action type of the 'Globe' key.
 
 ## Examples
 
-### Example: Using getGLobeKeyAction()
-The following script illustrate the use of `getGLobeKeyAction()`:
+### Example: Using getGlobeKeyAction()
+The following script illustrate the use of `getGlobeKeyAction()`:
 ```java
 GlobeKeyAction action = KMManager.getGlobeKeyAction(KeyboardType.KEYBOARD_TYPE_SYSTEM);
 ```
