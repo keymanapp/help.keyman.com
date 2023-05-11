@@ -25,17 +25,16 @@ interface.  The keyboards in the selector are populated from the KeymanWeb list 
   echo codebox(<<<END
 <script>
   var KWControl = null;
-  var kmw = keyman;
   
   /* SetupDocument: Called when the page finishes loading */
   function SetupDocument()
   {
-    kmw.init().then(function(){
+    keyman.init().then(function(){
       // Load the keyboards of your choice here.
       loadKeyboards();
 
       KWControl = document.getElementById('KWControl');
-      var kbds = kmw.getKeyboards();
+      var kbds = keyman.getKeyboards();
       for(var kbd in kbds)
       {
         var opt = document.createElement('OPTION');
@@ -45,7 +44,7 @@ interface.  The keyboards in the selector are populated from the KeymanWeb list 
       }
       document.f.multilingual.focus();
 
-      kmw.setActiveKeyboard('', '');
+      keyman.setActiveKeyboard('', '');
     });
   }
   
@@ -55,7 +54,7 @@ interface.  The keyboards in the selector are populated from the KeymanWeb list 
     /* Select the keyboard in KeymanWeb */
     var name = KWControl.value.substr(0, KWControl.value.indexOf("$$"));
     var languageCode = KWControl.value.substr(KWControl.value.indexOf("$$"+2));
-    kmw.setActiveKeyboard(name, languageCode);
+    keyman.setActiveKeyboard(name, languageCode);
     /* Focus onto the multilingual field in the form */
     document.f.multilingual.focus();
   }
