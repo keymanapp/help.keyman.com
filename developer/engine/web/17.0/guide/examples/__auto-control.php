@@ -7,8 +7,8 @@
 
   <script>
     window.addEventListener('load', function () {
-      kmw.init().then(function() {
-        kmw.addKeyboards({
+      keyman.init().then(function() {
+        keyman.addKeyboards({
           id:'laokeys',
           name:'Lao (Phonetic)',
           languages:{
