@@ -47,10 +47,10 @@ echo codebox(<<<END
   <script src='$cdn_path/keymanweb.js'></script>
   <script src='$cdn_path/kmwuitoggle.js'></script>
   <script>
-    (function(kmw) {
-      kmw.init({attachType:'auto'}).then(function() {
-        kmw.addKeyboards('@eng'); // Loads default English keyboard from Keyman Cloud (CDN)
-        kmw.addKeyboards('@tha'); // Loads default Thai keyboard from Keyman Cloud (CDN)
+    (function() {
+      keyman.init({attachType:'auto'}).then(function() {
+        keyman.addKeyboards('@eng'); // Loads default English keyboard from Keyman Cloud (CDN)
+        keyman.addKeyboards('@tha'); // Loads default Thai keyboard from Keyman Cloud (CDN)
       });
     })(keyman);
   </script>
@@ -71,8 +71,8 @@ END
 <li><p>The <code>&lt;script&gt;</code> inclusion <code>&lt;script src='<?=$cdn_path?>/keymanweb.js'&gt;&lt;/script&gt;</code>
     loads the Keyman Engine for Web script for the page.</p></li>
 
-<li><p><code>(function(kmw) { kmw.init(); });</code> serves to initialize the web engine with default settings.
-  By adding the object <code>{attachType:'auto'}</code> as a parameter to our <code>kmw.init()</code> call, the
+<li><p><code>(function() { keyman.init(); });</code> serves to initialize the web engine with default settings.
+  By adding the object <code>{attachType:'auto'}</code> as a parameter to our <code>keyman.init()</code> call, the
     KeymanWeb engine will then link into any detected input elements automatically, regardless of browser or device, as part
     of its initialization.</p></li>
 
@@ -80,7 +80,7 @@ END
       creates the language menu seen on non-mobile devices and the on-screen keyboard toggle button.
       For other options, see our <a href='user-interface-design.php'>User Interface Design</a> page.</p></li>
 
-  <li><p>The calls to <code>kmw.addKeyboards()</code> in the source above link in the two example Keyman keyboards used
+  <li><p>The calls to <code>keyman.addKeyboards()</code> in the source above link in the two example Keyman keyboards used
       in this demo from our CDN server.  For more info on how to include keyboards in your KeymanWeb installation, check
       the <a href='adding-keyboards.php'>Adding Keyboards</a> page.</p></li>
 

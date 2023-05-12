@@ -13,10 +13,10 @@
   ?>
   <script src='<?=$cdn_path?>/kmwuitoggle.js'></script>
   <script>
-    (function(kmw) {
-      kmw.init({attachType:'auto'}).then(function() {
-        kmw.addKeyboards('@en'); // Loads default English keyboard from Keyman Cloud (CDN)
-        kmw.addKeyboards('@th'); // Loads default Thai keyboard from Keyman Cloud (CDN)
+    (function() {
+      keyman.init({attachType:'auto'}).then(function() {
+        keyman.addKeyboards('@en'); // Loads default English keyboard from Keyman Cloud (CDN)
+        keyman.addKeyboards('@th'); // Loads default Thai keyboard from Keyman Cloud (CDN)
       });
     })(keyman);
   </script>
