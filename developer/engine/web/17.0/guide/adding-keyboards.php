@@ -25,7 +25,7 @@ head([
   Once this is done, it can be directly linked into KeymanWeb as follows.</p>
 
 <pre><code>
-kmw.addKeyboards({
+keyman.addKeyboards({
     id:'us',                  // The keyboard's unique identification code.
     name:'English',           // The keyboard's user-readable name.
     language:{
@@ -49,13 +49,13 @@ font:{
 
 <p>To obtain the default Keyman keyboard for a given language, call the following function.</p>
 
-<pre><code>kmw.addKeyboardsForLanguage('Dzongkha');</code></pre>
+<pre><code>keyman.addKeyboardsForLanguage('Dzongkha');</code></pre>
 
 <p>This example would find the default keyboard for the Dzongkha language.  This method will fail if the name doesn't perfectly match any language found in the CDN's repository.</p>
 
 <p>Alternatively, languages may be looked up via their BCP 47 language code as follows:</p>
 
-<pre><code>kmw.addKeyboards('@he')</code></pre>
+<pre><code>keyman.addKeyboards('@he')</code></pre>
 
 <p>The <code>@</code> prefix indicates the use of the BCP 47 language code, which in this case corresponds with Hebrew.</p>
 
@@ -63,6 +63,6 @@ font:{
 
 <p>To obtain a specific keyboard by name or by keyboard name and language code as a pair, see the following:</p>
 
-<pre><code>kmw.addKeyboards('french','european2@sv','european2@no')</code></pre>
+<pre><code>keyman.addKeyboards('french','european2@sv','european2@no')</code></pre>
 
 <p>This will install three keyboards - one for French (named, quite simply, "French") and two copies of the EuroLatin2 keyboard - one for Swedish and one for Norwegian.</p>

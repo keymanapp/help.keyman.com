@@ -16,6 +16,7 @@
   <dt><a href="intro">What is a lexical model? Or: how do I add prediction and autocorrection to my keyboard?</a></dt>
   <dt><a href="tutorial">Tutorial: Developing a lexical model from a word list</a></dt>
   <dt><a href="advanced">Advanced lexical models topics</a></dt>
+  <dt><a href="distribute">Distribute a lexical model</a></dt>
 </dl>
 
 <h2> Reference </h2>

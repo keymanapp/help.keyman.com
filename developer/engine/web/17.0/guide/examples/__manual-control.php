@@ -9,28 +9,28 @@
 
   <script type="text/javascript">
 
-      var KWControl = null;
+    var KWControl = null;
 
-      function SetupDocument()
-      {
-          kmw.init();
-          KWControl = document.getElementById('KWControl');
-          kmw.setActiveKeyboard('laokeys');
-          kmw.osk.hide();
+    function SetupDocument()
+    {
+      keyman.init();
+      KWControl = document.getElementById('KWControl');
+      keyman.setActiveKeyboard('laokeys');
+      keyman.osk.hide();
+    }
+
+    function KWControlClick()
+    {
+      var KWControl = document.getElementById('KWControl');
+
+      if(keyman.osk.isEnabled()) {
+        keyman.osk.hide();
+      } else {
+        keyman.osk.show(true); // Specifies that the OSK should display whenever a valid control has focus, re-enabling the default behavior.
       }
+    }
 
-      function KWControlClick()
-      {
-          var KWControl = document.getElementById('KWControl');
-
-          if(kmw.osk.isEnabled()) {
-              kmw.osk.hide();
-          } else {
-              kmw.osk.show(true); // Specifies that the OSK should display whenever a valid control has focus, re-enabling the default behavior.
-          }
-      }
-
-      window.addEventListener('load', SetupDocument);
+    window.addEventListener('load', SetupDocument);
   </script>
 </head>
 <body>

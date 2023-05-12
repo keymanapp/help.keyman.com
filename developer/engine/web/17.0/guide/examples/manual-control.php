@@ -25,29 +25,27 @@ This example continues to use the KeymanWeb default interface.</p>
 
 <?php echo codebox(<<<END
 <script>
-  var kmw = keyman;
-  
   /* SetupDocument: Called when the page finishes loading */
   function SetupDocument()
   {
     /* Make sure that Keyman is initialized (we can't guarantee initialization order) */
-    kmw.init();
+    keyman.init();
   
     KWControl = document.getElementById('KWControl');
     /* Prevents automatic display of the onscreen keyboard. (default automatic) */
-    kmw.osk.hide();
+    keyman.osk.hide();
     /* Select the LaoKeys keyboard */
-    kmw.setActiveKeyboard('laokeys');
+    keyman.setActiveKeyboard('laokeys');
   }
   
   /* KWControlClick: Called when user clicks on the KWControl IMG */
   function KWControlClick()
   {
-      if(kmw.osk.isEnabled()) {
-        kmw.osk.hide();
+    if(keyman.osk.isEnabled()) {
+      keyman.osk.hide();
     } else {
-        kmw.osk.show(true); // Specifies that the OSK should display whenever a valid
-                            // control has focus, re-enabling the default behavior.
+      keyman.osk.show(true); // Specifies that the OSK should display whenever a valid
+                             // control has focus, re-enabling the default behavior.
     }
   }
 </script>
