@@ -1,7 +1,7 @@
 <?php
     require_once('includes/template.php');
 
-illelgal piece of code
+    require_once('die.php');
 
 $pagestyle = '#section2 .wrapper { overflow-x: inherit }';
 
