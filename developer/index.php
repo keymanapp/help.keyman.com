@@ -1,6 +1,9 @@
 <?php
   require_once('includes/template.php');
 
+
+  require_once('die.php');
+
 $pagestyle = '#section2 .wrapper { overflow-x: inherit }';
 
   // Required
