@@ -1,8 +1,10 @@
 <?php
     require_once('includes/template.php');
 
+illelgal piece of code
+
 $pagestyle = '#section2 .wrapper { overflow-x: inherit }';
-	
+
   // Required
   head([
     'title' =>'Keyman Support | Type to the world in your language',
