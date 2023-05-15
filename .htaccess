@@ -2,7 +2,9 @@
 # NOTE: this is not very well tested...
 
 #php_value include_path "/var/www/html/_includes:."
-#Not needed if local apache.conf includes this 
+#Not needed if local apache.conf includes this
+
+DirectorySlash off
 
 RewriteEngine on
 RewriteBase /
@@ -216,3 +218,8 @@ RewriteRule "^(.+)/$" "/_includes/md/mdhost.php?file=$1/index.md" [END]
 RewriteCond "%{DOCUMENT_ROOT}/$1/index.php" -f
 RewriteCond "%{DOCUMENT_ROOT}/$1/index.md" !-f
 RewriteRule "^(.+)/$" "$1/index.php" [END]
+
+# Finally, append the terminating slash for folders, given it is no longer
+# done automatically because we put DirectorySlash off
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule "^(.+)$" "$1/" [R]

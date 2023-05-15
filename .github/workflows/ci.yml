@@ -46,7 +46,7 @@ jobs:
         set +e
         set +o pipefail
         CONTAINER=`docker container ls -l -q`
-        docker container logs $CONTAINER | grep -q '[php7:error]' && \
+        docker container logs $CONTAINER 2>&1 | grep -q '\[php7:(warn|error)\]' && \
           ( echo 'No PHP errors found' && exit 0 ) || \
           ( echo 'PHP reported errors or warnings; see log below' && exit 1 )
     #
@@ -60,4 +60,4 @@ jobs:
         echo "--- tier.txt ---"
         cat tier.txt
         echo "--- Docker log ---"
-        docker container logs $CONTAINER
+        docker container logs $CONTAINER 2>&1
