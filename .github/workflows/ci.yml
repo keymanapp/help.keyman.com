@@ -48,8 +48,7 @@ jobs:
         CONTAINER=`docker container ls -l -q`
         docker container logs $CONTAINER | grep -q '[php7:error]' && \
           ( echo 'No PHP errors found' && exit 0 ) || \
-          ( echo 'PHP reported errors or warnings; see log below' && exit 1 ) \
-        )
+          ( echo 'PHP reported errors or warnings; see log below' && exit 1 )
     #
     # If any of the tests fail, let's grab a bit more detail on the environment
     #
