@@ -4,6 +4,10 @@
 #php_value include_path "/var/www/html/_includes:."
 #Not needed if local apache.conf includes this
 
+# We turn off automatic addition of slashes for directories because it
+# interferes with the file extension removal for .php files. At the bottom of
+# this file, we have a redirect rule to mimic the same behaviour, _after_ the
+# relevant rewrite rules have been applied
 DirectorySlash off
 
 RewriteEngine on
@@ -222,4 +226,4 @@ RewriteRule "^(.+)/$" "$1/index.php" [END]
 # Finally, append the terminating slash for folders, given it is no longer
 # done automatically because we put DirectorySlash off
 RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule "^(.+)$" "$1/" [R]
+RewriteRule "^(.*)([^/])$" "$1$2/" [R]
