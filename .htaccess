@@ -147,6 +147,8 @@ Redirect "/products/keymanweb" "/products/web"
 
 Redirect "/bookmarklet" "/products/bookmarklet"
 
+Redirect "/kb" "/knowledge-base"
+
 #
 # Keyboard redirects
 #

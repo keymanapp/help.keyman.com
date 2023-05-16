@@ -1,3 +1,0 @@
-
-# Redirect to knowledge-base
-RewriteRule "^(.*)$" "/knowledge-base/$1" [R]
