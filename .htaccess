@@ -149,6 +149,9 @@ Redirect "/bookmarklet" "/products/bookmarklet"
 
 Redirect "/kb" "/knowledge-base"
 
+# Redirect to kb handler
+RewriteRule "^knowledge-base/(\d+)$" "/knowledge-base/index.php?id=$1" [L]
+
 #
 # Keyboard redirects
 #
