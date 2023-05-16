@@ -57,65 +57,65 @@ RedirectMatch "/developer/engine/web/(?!faq|history|current-version|\d+\.\d+)(.*
 
 # current-version:15.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/15.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/15.0$2"
+RewriteRule "^(.+)/current-version(/.*)?$" "$1/15.0$2" [DPI]
 
 # version:14.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/14.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/14.0$2"
+RewriteRule "^(.+)/current-version(/.*)?$" "$1/14.0$2" [DPI]
 
 # version:13.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/13.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/13.0$2"
+RewriteRule "^(.+)/current-version(/.*)?$" "$1/13.0$2" [DPI]
 
 # version:12.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/12.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/12.0$2"
+RewriteRule "^(.+)/current-version(/.*)?$" "$1/12.0$2" [DPI]
 
 # version:11.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/11.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/11.0$2"
+RewriteRule "^(.+)/current-version(/.*)?$" "$1/11.0$2" [DPI]
 
 # version:10.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/10.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/10.0$2"
+RewriteRule "^(.+)/current-version(/.*)?$" "$1/10.0$2" [DPI]
 
 # the following version fallbacks are for APIs such as /developer/cloud versions
 
 # version:9.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/9.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/9.0$2"
+RewriteRule "^(.+)/current-version(/.*)?$" "$1/9.0$2" [DPI]
 
 # version:8.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/8.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/8.0$2"
+RewriteRule "^(.+)/current-version(/.*)?$" "$1/8.0$2" [DPI]
 
 # version:7.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/7.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/7.0$2"
+RewriteRule "^(.+)/current-version(/.*)?$" "$1/7.0$2" [DPI]
 
 # version:6.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/6.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/6.0$2"
+RewriteRule "^(.+)/current-version(/.*)?$" "$1/6.0$2" [DPI]
 
 # version:5.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/5.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/5.0$2"
+RewriteRule "^(.+)/current-version(/.*)?$" "$1/5.0$2" [DPI]
 
 # version:4.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/4.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/4.0$2"
+RewriteRule "^(.+)/current-version(/.*)?$" "$1/4.0$2" [DPI]
 
 # version:3.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/3.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/3.0$2"
+RewriteRule "^(.+)/current-version(/.*)?$" "$1/3.0$2" [DPI]
 
 # version:2.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/2.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/2.0$2"
+RewriteRule "^(.+)/current-version(/.*)?$" "$1/2.0$2" [DPI]
 
 # version:1.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/1.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/1.0$2"
+RewriteRule "^(.+)/current-version(/.*)?$" "$1/1.0$2" [DPI]
 
 # Static redirection
 Redirect "/desktop" "/products/windows"
