@@ -1,4 +1,4 @@
-name: Staging
+name: Docker-build
 on:
   push:
     branches: [ "master", "staging" ]
