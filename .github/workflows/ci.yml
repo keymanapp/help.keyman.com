@@ -43,22 +43,12 @@ jobs:
     - name: Check PHP errors
       shell: bash
       run: |
-        set +e
-        set +o pipefail
         CONTAINER=`docker container ls -l -q`
-        docker container logs $CONTAINER 2>&1 | grep -q 'php7' && \
-          ( echo 'No PHP errors found' && exit 0 ) || \
-          ( echo 'PHP reported errors or warnings; see log below' && exit 1 )
-    #
-    # If any of the tests fail, let's grab a bit more detail on the environment
-    #
-    - name: Report errors
-      if: ${{ failure() }}
-      shell: bash
-      run: |
-        CONTAINER=`docker container ls -l -q`
-        echo "--- tier.txt ---"
-        cat tier.txt
-        echo "--- PHP errors in Docker log ---"
-        docker container logs $CONTAINER 2>&1 | grep 'php7'
-
+        if docker container logs $CONTAINER 2>&1 | grep -q 'php7'; then
+          echo 'No PHP errors found'
+          exit 0
+        else
+          echo 'PHP reported errors or warnings; see log below'
+          docker container logs $CONTAINER 2>&1 | grep 'php7'
+          exit 1
+        fi
