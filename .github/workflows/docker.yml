@@ -9,7 +9,7 @@ on:
     - .github/**
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: help-keyman-com
+  IMAGE_NAME: keymanapp/help-keyman-com
 
 jobs:
   build:
