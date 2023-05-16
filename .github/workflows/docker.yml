@@ -6,6 +6,7 @@ on:
     - Dockerfile
     - composer.*
     - resources/**
+    - .github/**
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: help-keyman-com
