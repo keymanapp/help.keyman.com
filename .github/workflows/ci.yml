@@ -60,4 +60,4 @@ jobs:
         echo "--- tier.txt ---"
         cat tier.txt
         echo "--- PHP errors in Docker log ---"
-        docker container logs $CONTAINER 2>&1 | grep -q '\[php7:(warn|error)\]'
+        docker container logs $CONTAINER 2>&1 | grep '\[php7:'
