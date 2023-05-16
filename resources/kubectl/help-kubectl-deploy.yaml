@@ -73,3 +73,7 @@ spec:
             name: help-keyman-com
             port:
               name: api
+  tls:
+    - hosts:
+        - help.keyman-staging.com
+      secretName: keyman-staging-com
