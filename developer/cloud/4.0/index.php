@@ -18,7 +18,7 @@ head([
 
 <p>Version 4.0 of the API is a RESTful web service available through HTTPS that returns only UTF-8 JSON format data.
   URIs in the data will reflect the protocol that is used to query the web service.</p>
-  
+
 <h3 style='clear:both'>Endpoints</h3>
 
 <p>The two endpoints below can be used interchangeably. api.keyman.com is the modern endpoint; future services will
@@ -40,7 +40,7 @@ be available there.</p>
       <td style='white-space: nowrap; vertical-align: top'>GET <a href='https://api.keyman.com/cloud/4.0/languages' target='_blank'>https://api.keyman.com/cloud/4.0/languages</a></td>
       <td>
         Returns a CloudServices object with a Languages object, that contains a list of all language and keyboard combinations
-        available on the server.  This call will return full details of every language, keyboard 
+        available on the server.  This call will return full details of every language, keyboard
         and font combination.  It is typically around 150KB.
       </td>
     </tr>
@@ -84,8 +84,8 @@ be available there.</p>
 <?php
 params("The parameters below can be provided as query parameters in the URL.",
   "device", "optional", <<<END
-  Can currently be any of the following: <code>"windows"</code>, <code>"macosx"</code>, <code>"iphone"</code>, 
-  <code>"ipad"</code>, <code>"androidphone"</code>, <code>"androidtablet"</code>, <code>"mobile"</code>, <code>"desktop"</code>, 
+  Can currently be any of the following: <code>"windows"</code>, <code>"macosx"</code>, <code>"iphone"</code>,
+  <code>"ipad"</code>, <code>"androidphone"</code>, <code>"androidtablet"</code>, <code>"mobile"</code>, <code>"desktop"</code>,
   <code>"tablet"</code>, <code>"any"</code>.
   The server will filter keyboards according to the device type.  If absent, then <code>"any"</code> is used.
 END
@@ -96,7 +96,7 @@ END
   "languageidtype", "optional", 'Can be <code>"iso6393"</code> or <code>"bcp47"</code>.  If absent, then <code>"iso6393"</code> is used.'.
   '  Reflects the type of any language identifiers returned.',
   "version", "optional", 'The version of Keyman Engine, e.g. <code>"10.0"</code>. If absent, uses <code>"2.0"</code>. The server will filter keyboards'.
-  '  that are available for that version of Keyman Engine. (See <a href="../versioning.php">KeymanWeb Versioning</a> for details on valid version numbers.)'
+  '  that are available for that version of Keyman Engine. (See <a href="../versioning">KeymanWeb Versioning</a> for details on valid version numbers.)'
 );
 ?>
 
@@ -186,5 +186,5 @@ codebox(<<<END
 END
 , "json");
 ?>
-  
+
 </div>
