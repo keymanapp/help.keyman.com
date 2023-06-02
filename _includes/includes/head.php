@@ -112,7 +112,6 @@
     </script>
   <?php
     }
-    require_once('includes/analytics.php');
     if(isset($pagestyle)) echo "<style>$pagestyle</style>";
   ?>
 </head>
