@@ -2,6 +2,6 @@
 **/.DS_Store
 .idea/
 cdn/deploy
-vendor/
+vendor*
 .vscode/
 node_modules/
