@@ -52,19 +52,21 @@ values `U+17BB U+17C7` (ុះ) to the Private Use Area code `U+F19F`):
   if `U+25CC` (◌, dotted circle) is specified on a key cap, it will be
   stripped before matching in the `&displayMap`, so `U+25CC` should not be
   included in `str`.
-* Other fields are documented in the schema reference for the keyboard in the
-  Keyman source at https://github.com/keymanapp/keyman/blob/master/common/schemas/displaymap/README.md
-
-The file can be passed without modification to the [TODO: ____ font tool](http://example.com) to
-generate a Kbd font. The font may need some manual editing as insertion of
-dotted circle (`U+25CC`) as a base may not always be possible automatically, and
-combined marks may not render as a cluster in some scenarios. The open source
-tool [FontForge](https://fontforge.org) is suitable for making these kinds of
-minor adjustments to the generated font.
+* Other fields are documented in the [schema
+  reference](https://github.com/keymanapp/keyman/blob/master/common/schemas/displaymap/README.md)
+  for `displayMap` in the Keyman source.
 
 `&displayMap` fonts and files are intended to be shared across multiple
 keyboards that work with the same script. `kmc analyze osk-char-use` can scan
 multiple keyboards at once when generating the file.
+
+An unsupported tool,
+[ttkbdfont.py](https://github.com/silnrsi/palaso-python/blob/master/scripts/font/ttkbdfont.py),
+can be used to generate a Kbd font. The font may need some manual editing as
+insertion of dotted circle (`U+25CC`) as a base may not always be possible
+automatically, and combined marks may not render as a cluster in some scenarios.
+The open source tool [FontForge](https://fontforge.org) is suitable for making
+these kinds of minor adjustments to the generated font.
 
 Using `&displayMap` means that the design-time model for the On Screen Keyboard
 and Touch Layout can continue to use the correct Unicode values on the keycaps,
