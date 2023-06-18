@@ -1,8 +1,8 @@
 ﻿<?php /*
   Name:             Keyboard_gff_harari
-  Copyright:        Keyboard ©2023 The Geʾez Frontier Foundation 
-  Documentation:    
-  Description:      
+  Copyright:        Keyboard ©2023 The Geʾez Frontier Foundation
+  Documentation:
+  Description:
   Create Date:      17 April 2023
 
 */
@@ -174,7 +174,7 @@ This keyboard is designed for use with the Harari language of Ethiopia in Africa
 
 <div id="Documentation">
 <h3>Keyboard Details</h3>
-	
+
 <p>
 The Harari keyboard uses an intuitive <i>phonetic</i> system where the Harari sounds are matched to the nearest English letters. You can think of how a word sounds in
 Harari and then type it out with English.
@@ -202,11 +202,10 @@ Type Apostrophe twice after a 6<sup>th</sup> order letter to make it appear in y
 <p style='margin-left:40px'><b>Example:</b> typing <span class='keys'>mel''ak</span> produces <span class='highlightExample'>መል'አክ</span></p>
 <p>
 We also use the &ldquo;number sign&rdquo; (&ldquo;#&rdquo; also know as the &ldquo;hash mark&rdquo;) for Ethiopic numbers, so <span class='keys'>#1</span> becomes <span class='highlightExample'>፩</span> and so on. If a <span class='highlightExample'>#</span> is needed in your document before a number, type it twice and: <span class='keys'>##1</span> becomes <span class='highlight'>#1</span>. The double strike works for other punctuation as well,
-so typing <span class='keys'>;</span> once makes <span class='highlightExample'>፤</span> and a second time gives English semicolon <span class='input'>;</span>. 
+so typing <span class='keys'>;</span> once makes <span class='highlightExample'>፤</span> and a second time gives English semicolon <span class='input'>;</span>.
 </p>
 <p style='margin-top:10px'>
-See <a target="_blank" href='HarariTyping-English.pdf'>Typing in Harari (English)</a> or 
-<a target="_blank" href='HarariTyping-Harari.pdf'>Typing in Harari (Harari)</a> 
+See <a target="_blank" href='HarariTyping-English.pdf'>Typing in Harari (English)</a>
 for full details on how to type all Harari letters, numbers and punctuation.
 </p>
 </div>

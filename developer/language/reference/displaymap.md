@@ -107,7 +107,7 @@ applicable on all platforms.
 ## See Also
 
 * [`&visualKeyboard` store](visualkeyboard)
-* [`&touchLayout` store](touchlayout)
+* [`&layoutFile` store](layoutfile)
 * More background on the need for `&displayMap` can be found in [issue #9031](https://github.com/keymanapp/keyman/issues/9031).
 
 ## Version history
