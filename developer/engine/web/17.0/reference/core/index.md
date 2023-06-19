@@ -45,12 +45,6 @@ The KeymanWeb core module is exposed to the developer as `window.keyman`.
 : Adds default or all keyboards for a given language to keymanweb.
 
 
-[`alignInputs` Function](alignInputs)
-
-: _Deprecated._ Adjusts touch-mode element overlays, realigning them over their
-  base elements.
-
-
 [`attachToControl` Function](attachToControl)
 
 : Attach KeymanWeb to HTML element (or IFrame).
