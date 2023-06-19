@@ -56,6 +56,11 @@ The KeymanWeb core module is exposed to the developer as `window.keyman`.
 : Attach KeymanWeb to HTML element (or IFrame).
 
 
+[ `BuildVisualKeyboard` Function](BuildVisualKeyboard)
+
+: Create a copy of the OSK for embedding in documentation or help page.
+
+
 [`detachFromControl` Function](detachFromControl)
 
 : Detach KeymanWeb from HTML element (or IFrame).

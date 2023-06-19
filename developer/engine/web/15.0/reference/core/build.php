@@ -12,7 +12,7 @@
 
 <h2 id="Summary" name="Summary">Summary</h2>
 
-<p>Denotes the release build number of the loaded KeymanWeb instance.</p>
+<p>Denotes the release-version .patch component for the loaded KeymanWeb instance.</p>
 
 <h2 id="Syntax" name="Syntax">Syntax</h2>
 

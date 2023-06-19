@@ -18,11 +18,6 @@
   </dl>
 
   <dl>
-    <dt><a href='BuildVisualKeyboard'><code>BuildVisualKeyboard</code> Function</a></dt>
-    <dd>Create a copy of the OSK for embedding in documentation or help page.</dd>
-  </dl>
-
-  <dl>
   <dt><a href='getRect'><code>getRect</code> Function</a></dt>
   <dd>Get absolute position and size of OSK window.</dd>
   </dl>
