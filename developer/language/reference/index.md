@@ -42,6 +42,9 @@ title: Keyman Keyboard Language Reference
 [`deadkey()`, `dk()` statement](deadkey "deadkey(), dk() statement")
 :   Matches and generates deadkeys
 
+[`&displayMap` store](displaymap)
+:   Specifies a mapping file for on screen keyboard display data
+
 [`&EthnologueCode` store](ethnologuecode "&EthnologueCode store")
 :   The ISO 639-3 (formerly SIL Ethnologue) code for the language
     (Deprecated)
