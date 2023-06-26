@@ -63,6 +63,11 @@
   </dl>
 
   <dl>
+    <dt><a href='BuildVisualKeyboard'><code>BuildVisualKeyboard</code> Function</a></dt>
+    <dd>Create a copy of the OSK for embedding in documentation or help page.</dd>
+  </dl>
+
+  <dl>
   <dt><a href='detachFromControl'><code>detachFromControl</code> Function</a></dt>
   <dd>Detach KeymanWeb from HTML element (or IFrame).</dd>
   </dl>
@@ -91,7 +96,7 @@
   <dt><a href='getActiveLanguage'><code>getActiveLanguage</code> Function</a></dt>
   <dd>Get the language code for the currently selected language.</dd>
   </dl>
-  
+
   <dl>
   <dt><a href='getKeyboard'><code>getKeyboard</code> Function</a></dt>
   <dd>Get keyboard meta data for the selected keyboard and language.</dd>
