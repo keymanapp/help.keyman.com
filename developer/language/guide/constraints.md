@@ -10,7 +10,7 @@ Typical constraints would reject isolated keystrokes, keystrokes
 following a certain context, or certain context and keystroke
 combinations.
 
-## Rejecting keystrokes {#rejecting-keystrokes}
+## Rejecting keystrokes
 
 To make a keystroke produce no output, you use the [`nul`
 statement](../reference/nul). For example, we could use the following
@@ -30,7 +30,7 @@ One difference between the `nul` and `beep` statements is that the `nul`
 statement is only valid as the whole output, while the `beep` statement
 can be used as just a part of the output.
 
-## Rejecting keystrokes after a context {#rejecting-keystrokes-after-a-context}
+## Rejecting keystrokes after a context
 
 In order to reject a keystroke following a certain context, you make the
 rule output just the context. Logically, you use the `context` statement
@@ -45,7 +45,7 @@ user that they typed a bad word.
 
     "ba" + "d" > context beep
 
-## Rejecting both context and keystroke {#rejecting-both-context-and-keystroke}
+## Rejecting both context and keystroke
 
 In certain special situations, you might wish to reject both the context
 and the keystroke. You can use the `nul` statement to achieve this aim:
@@ -58,7 +58,7 @@ the user with a warning beep:
 
     "eras" + "e" > beep
 
-## Typical usage of constraints {#typical-usage-of-constraints}
+## Typical usage of constraints
 
 For a typical keyboard, you might use a constraint in a [`nomatch`
 rule](../reference/nomatch), to prevent the user from typing anything
