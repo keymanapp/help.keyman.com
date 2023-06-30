@@ -11,7 +11,7 @@ can only be included in the last line of a
 
 ## Example {#example}
 
-~~~ language-keyman
+~~~ keyman
 c This is a comment line
 + 'a' > 'b'    c This line changes "a" to "b"
 + 'c' > \
