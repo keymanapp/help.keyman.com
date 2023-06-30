@@ -5,9 +5,9 @@ title: Comments
 Comments must be started with a ` c ` character (case-insensitive), and
 followed by a space character. The comment continues to the end of the
 line and cannot be
-[line-extended](long-lines.php "Long lines and continuations"). Comments
+[line-extended](long-lines "Long lines and continuations"). Comments
 can only be included in the last line of a
-[line-extended](long-lines.php "Long lines and continuations") line.
+[line-extended](long-lines "Long lines and continuations") line.
 
 ## Example {#example}
 
