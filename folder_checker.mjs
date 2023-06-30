@@ -1,8 +1,5 @@
 // console.log("Hello world");
 
-import fs from 'fs';
-
-import path from 'path';
 
 import child_process from 'child_process';
 child_process.execSync('copy Readme.md CopiedReadme.md');
