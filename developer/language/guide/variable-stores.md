@@ -47,23 +47,29 @@ The `if()` statement may be used in many different ways, such as:
 
 -   to provide alternate output for particular keystrokes:
 
-        store(opt1) '0'
-        if(opt1='1') + '$' > '£'
+    ```
+    store(opt1) '0'
+    if(opt1='1') + '$' > '£'
+    ```
 
 -   to conditionally branch to different rule groups, for example to
     process pending context in different ways when the
     <span class="key">spacebar</span> is pressed:
 
-        store(opt2) '0'
-        if(opt2 ='1') + " " > use(ruleGroup1)
-        if(opt2!='1') + " " > use(ruleGroup2)
+    ```
+    store(opt2) '0'
+    if(opt2 ='1') + " " > use(ruleGroup1)
+    if(opt2!='1') + " " > use(ruleGroup2)
+    ```
 
 -   to set or change option values depending on the value of an option,
     or toggle between option settings:
 
-        store(opt3) '0'
-        if(opt3 ='1') + [CTRL ALT "\"] > set(opt3='0')
-        if(opt3!='1') + [CTRL ALT "\"] > set(opt3='1')
+    ```
+    store(opt3) '0'
+    if(opt3 ='1') + [CTRL ALT "\"] > set(opt3='0')
+    if(opt3!='1') + [CTRL ALT "\"] > set(opt3='1')
+    ```
 
 Note how the tests above use `if(opt3='1')` and `if(opt3!='1')` to
 ensure that one or other of the rules always matches. This is better
@@ -84,9 +90,11 @@ using one application will change it for all applications if the "Select
 keyboard layout for all applications" Keyman Configuration option is
 set.
 
-    store(opt1) '0'
-    + [CTRL ALT "1"] > set(opt1='1')
-    + [CTRL ALT "2"] > set(opt1='2')
+```
+store(opt1) '0'
++ [CTRL ALT "1"] > set(opt1='1')
++ [CTRL ALT "2"] > set(opt1='2')
+```
 
 ## save() statement
 
@@ -97,8 +105,10 @@ statement to make a change permanent, as in the following example, which
 will, in effect, permanently change the content of store opt1 from `'0'`
 to `'1'`.
 
-    store(opt1) '0'
-    + [CTRL ALT "1"] > set(opt1='1') save(opt1)
+```
+store(opt1) '0'
++ [CTRL ALT "1"] > set(opt1='1') save(opt1)
+```
 
 ## reset() statement
 
@@ -107,7 +117,9 @@ to the current default value, either the value in the system settings
 from a previously matched rule using a `save()` statement, or else the
 store content as initialized in the keyboard source file.
 
-    + [CTRL ALT "\"] > reset(opt1)
+```
++ [CTRL ALT "\"] > reset(opt1)
+```
 
 ## Setting Options with Keyman Configuration
 
@@ -196,7 +208,7 @@ Configuration file is shown here:
 
 </body>
 </html>
-~~~
+```
 
 Two variable store names used by the keyboard, *option_order* and
 *option_zwsp*, are set using this configuration file. User selection is
