@@ -8,8 +8,8 @@ use of variable stores are:
 
 -   Selection of alternate keyboard mappings, such as entering vowel
     modifiers before or after the vowel characters.
--   User control of whether to use <span class="key">CTRL</span> or
-    <span class="key">ALT</span> as a modifier key.
+-   User control of whether to use <key>CTRL</key> or
+    <key>ALT</key> as a modifier key.
 -   In languages where text is usually entered without word breaks, a
     user may choose whether or not to insert visible or invisible breaks
     at syllable boundaries.
@@ -39,7 +39,7 @@ conditionally, according to whether or not the specified condition is
 true when the rule is to be used. The content of the store being used as
 a variable store can be compared with either a fixed string, or the
 content of another store. Note that since the
-[`match`](../reference/match) and [nomatch](../reference/nomatch) rules
+[`match`](../reference/match) and [`nomatch`](../reference/nomatch) rules
 refer to all matched rules in a group, the `if()` statement cannot be
 used in a `match` or `nomatch` rule.
 
@@ -54,7 +54,7 @@ The `if()` statement may be used in many different ways, such as:
 
 -   to conditionally branch to different rule groups, for example to
     process pending context in different ways when the
-    <span class="key">spacebar</span> is pressed:
+    <key>spacebar</key> is pressed:
 
     ```
     store(opt2) '0'
@@ -220,14 +220,14 @@ are selected during Keyman Configuration:
 ## See also
 
 [Using stores](stores)
-[`if()` statement](../reference/if "if() statement")
+[`if()` statement](../reference/if)
 :   Tests a store or system state for a value
 
-[`reset()` statement](../reference/reset "reset() statement")
+[`reset()` statement](../reference/reset)
 :   Resets a store to its initial value
 
-[`save()` statement](../reference/save "save() statement")
+[`save()` statement](../reference/save)
 :   Persists a store value for next edit session
 
-[`set()` statement](../reference/set "set() statement")
+[`set()` statement](../reference/set)
 :   Sets a store or system state to a specific value
