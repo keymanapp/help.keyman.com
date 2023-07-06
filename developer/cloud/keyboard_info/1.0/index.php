@@ -272,7 +272,7 @@
   this keyboard. If present, must be a two part version string, starting from <code>"6.0"</code> and up.
   Note: for versions below 10.0, this value is used in KeymanWeb, but the version mapping is based on Keyman
   Desktop version numbers. For versions 10.0 and above, all platforms have a synchronized version number.
-  See <a href='/developer/cloud/versioning.php'>KeymanWeb Versioning</a> for more detail.
+  See <a href='/developer/cloud/versioning'>KeymanWeb Versioning</a> for more detail.
   </p>
 
   <p><b>Generation:</b> from .kmp, .js.</p>
