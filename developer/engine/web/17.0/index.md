@@ -1,4 +1,6 @@
-# Keyman Engine for Web 17.0 Developer Help 
+---
+title: Keyman Engine for Web 17.0 Developer Help 
+---
 Keyman Engine for Web 17.0 is the current version of KeymanWeb and
 supports touch devices with custom touch-layouts as well as desktop
 computer browsers.
@@ -37,6 +39,8 @@ computer browsers.
 
 ### Other Versions
 
+-   [16.0](../16.0)
+-   [15.0](../15.0)
 -   [14.0](../14.0)
 -   [13.0](../13.0)
 -   [12.0](../12.0)
