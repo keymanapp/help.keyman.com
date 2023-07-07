@@ -15,7 +15,9 @@ character in a rule.
 
 Stores are created with the [`store()` statement](../reference/store):
 
-    store(storeName) storeContents
+```
+store(storeName) storeContents
+```
 
 Where `storeName` is an identifier you give to the store, and
 `storeContents` is the store's contents, expressed as a string or a
@@ -27,8 +29,7 @@ keyboard source file, and its visibility is unaffected: it can even be
 placed after references to the store in other statements.
 
 Apart from characters, two other elements are allowed in stores:
-[deadkeys](../reference/deadkey "deadkey statement") and [virtual
-keys](virtual-keys "Virtual Keys and Virtual Character Keys").
+[deadkeys](../reference/deadkey) and [virtual keys](virtual-keys).
 
 Stores have a maximum length of 4095 characters (note that non-character
 elements such as virtual keys and deadkeys take more than one character
@@ -36,10 +37,12 @@ in the store).
 
 ### Examples 
 
-    store(vowels) 'aeiouAEIOU'
-    store(vowels_lower) 'ae' U+0069 U+006F U+0075
-    store(φωνήεντα) 'αειου'
-    store(vowel_keys) [K_A] [K_E] [K_I] [K_O] [K_U]
+```
+store(vowels) 'aeiouAEIOU'
+store(vowels_lower) 'ae' U+0069 U+006F U+0075
+store(φωνήεντα) 'αειου'
+store(vowel_keys) [K_A] [K_E] [K_I] [K_O] [K_U]
+```
 
 ## Using stores in rules 
 
@@ -48,8 +51,10 @@ The `any()` statement is used in the context or key section of the rule,
 and will match any character in the specified store, remembering its
 index.
 
+```
     any(storeName) + ... > ...
     ... + any(storeName) > ...
+```
 
 The `index()` statement is used to look up a character in a store at the
 index where a specified `any()` statement matched a character. The
@@ -62,7 +67,9 @@ statement, the `any()` is the second element of the rule so the offset
 is 2. Since the context part of a rule can contain several characters or
 statements, the offset for the `any()` could be greater than two.
 
-    index(storeName, offset)
+```
+index(storeName, offset)
+```
 
 Note that an `index()` statement may reference an `any()` statement
 which uses a different store: the only requirement is that the stores
@@ -73,29 +80,35 @@ used by each have the same length.
 In the following example, the `index()` statement translates the lower
 case vowels to upper case vowels:
 
-    store(lowercase) "aeiou"
-    store(uppercase) "AEIOU"
+```
+store(lowercase) "aeiou"
+store(uppercase) "AEIOU"
 
-    + any(lowercase) > index(uppercase, 1)    c translate vowels to upper case
++ any(lowercase) > index(uppercase, 1)    c translate vowels to upper case
+```
 
 
 A more useful example shows how a vowel followed by a circumflex can be
 translated automatically into the combined character:
 
-    store(vowel) 'aeiouAEIOU'
-    store(vowel_circum) 'âêîôûÂÊÎÔÛ'
-    any(vowel) + '^' > index(vowel_circum, 1)
+```
+store(vowel) 'aeiouAEIOU'
+store(vowel_circum) 'âêîôûÂÊÎÔÛ'
+any(vowel) + '^' > index(vowel_circum, 1)
+```
 
 If we wanted to type the circumflex before the vowel, the code would be:
 (note the offset in the index statement is 2, not 1)
 
-    store(vowel) 'aeiouAEIOU'
-    store(vowel_circum) 'âêîôûÂÊÎÔÛ'
-    '^' +  any(vowel) > index(vowel_circum, 2)
+```
+store(vowel) 'aeiouAEIOU'
+store(vowel_circum) 'âêîôûÂÊÎÔÛ'
+any(vowel) + '^' > index(vowel_circum, 2)
+```
 
 Another example of using `any()` and `index()` is given in the [keyboard
 design
-tutorial](/developer/current-version/guides/develop/tutorial/step-6 "Step 6: Stores, any(), and index()").
+tutorial](/developer/current-version/guides/develop/tutorial/step-6).
 
 ## Outputting stores 
 
@@ -103,24 +116,28 @@ The [`outs()` statement](../reference/outs) can be used to output the
 contents of a store. This can be used in another store, or in the
 context or output of a rule.
 
+```
     outs(storeName)
+```
 
 Stores that contain only a single character are usually used to define
-[named constants](constants "Named Constants"){.link}.
+[named constants](constants).
 
 ### Examples 
 
 The following examples show the `outs()` statement and an example of
 named constants:
 
-    store(vowels_lower) 'aeiou'
-    store(vowels_upper) 'AEIOU'
-    store(vowels) outs(vowels_lower) outs(vowels_upper)
+```
+store(vowels_lower) 'aeiou'
+store(vowels_upper) 'AEIOU'
+store(vowels) outs(vowels_lower) outs(vowels_upper)
 
-    store(vowel_a) 'a'
-    store(vowel_alpha) 'α'
-    + outs(vowel_a) > outs(vowel_alpha)
-    + $vowel_a > $vowel_alpha
+store(vowel_a) 'a'
+store(vowel_alpha) 'α'
++ outs(vowel_a) > outs(vowel_alpha)
++ $vowel_a > $vowel_alpha
+```
 
 The **IPAMenu.kmn** sample keyboard included with Keyman Developer gives
 an example of the use of stores and `outs()` to create a menu-based
@@ -142,7 +159,9 @@ System stores are prefixed with an ampersand (`&`).
 
 This shows the [`&name` store](../reference/name) in use:
 
-    store(&name) "My First Keyboard"
+```
+store(&name) "My First Keyboard"
+```
 
 ## IMX definition stores 
 
@@ -152,8 +171,10 @@ any other purpose.
 
 ### Example 
 
+```
     store(DLLFunction) "myimx.dll:KeyEvent"
     + any(key) > call(DLLFunction)
+```
 
 ## Variable stores 
 
@@ -172,14 +193,16 @@ keyboard is running under.
 Variable stores are sometimes called option stores, and the feature has
 been known in the past as "keyboard options".
 
-    store(opt_composed) '0'
-    store(vowel) 'aeiouAEIOU'
-    store(vowel_circum) 'âêîôûÂÊÎÔÛ'
+```
+store(opt_composed) '0'
+store(vowel) 'aeiouAEIOU'
+store(vowel_circum) 'âêîôûÂÊÎÔÛ'
      
-    + [CTRL ALT K_1] > set(opt_composed='1')
-    + [CTRL ALT K_0] > set(opt_composed='0')
-    if(opt_composed = '0') any(vowel) + '^' > index(vowel, 2) U+0302
-    if(opt_composed = '1') any(vowel) + '^' > index(vowel_circum, 2)
++ [CTRL ALT K_1] > set(opt_composed='1')
++ [CTRL ALT K_0] > set(opt_composed='0')
+if(opt_composed = '0') any(vowel) + '^' > index(vowel, 2) U+0302
+if(opt_composed = '1') any(vowel) + '^' > index(vowel_circum, 2)
+```
 
 More information about variable stores is available in the [variable
 stores guide](variable-stores).
@@ -188,39 +211,39 @@ stores guide](variable-stores).
 
 The following statements are used with stores:
 
-[`any()` statement](../reference/any "any() statement")
+[`any()` statement](../reference/any)
 
 Matches on an array of characters
 
-[`call()` statement](../reference/call "call() statement")
+[`call()` statement](../reference/call)
 
 Calls an Input Method Extension
 
-[`if()` statement](../reference/if "if() statement")
+[`if()` statement](../reference/if)
 
 Tests the content of a variable store
 
-[`index()` statement](../reference/_index "index() statement")
+[`index()` statement](../reference/_index)
 
 Outputs from an array of characters
 
-[`outs()` statement](../reference/outs "outs() statement")
+[`outs()` statement](../reference/outs)
 
 Outputs an array of characters
 
-[`reset()` statement](../reference/reset "reset() statement")
+[`reset()` statement](../reference/reset)
 
 Resets the content of a variable store to the default
 
-[`save()` statement](../reference/save "save() statement")
+[`save()` statement](../reference/save)
 
 Persists the content of a variable store
 
-[`set()` statement](../reference/set "set() statement")
+[`set()` statement](../reference/set)
 
 Updates the content of a variable store
 
-[`store()` statement](../reference/store "store() statement")
+[`store()` statement](../reference/store)
 
 Defines an array of characters
 
