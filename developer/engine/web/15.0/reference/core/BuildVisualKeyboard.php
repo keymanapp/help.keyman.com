@@ -14,7 +14,7 @@
 <p>Create a copy of the OSK for embedding in documentation or help page.</p>
 
 <?php
-  syntax("keyman.osk.BuildVisualKeyboard(keyboardID, staticFlag, layoutFormFactor, layerID)");
+  syntax("keyman.BuildVisualKeyboard(keyboardID, staticFlag, layoutFormFactor, layerID)");
   params("keyboardID", "string", "Identifying name of the keyboard.",
     "staticFlag", "number", "Deprecated parameter; should be set to 1.",
     "layoutFormFactor", "optional string", "A string describing the layout to use for the generated keyboard.  Should be one of the following:".
