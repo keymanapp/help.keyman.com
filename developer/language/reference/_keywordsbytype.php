@@ -22,12 +22,15 @@ While header keywords continue to work, they have been deprecated and should be 
 
   <dt><a href="caps" title="Caps Lock stores and statements"><code>&amp;CapsAlwaysOff</code> store, <code>CAPS ALWAYS OFF</code> statement</a></dt>
   <dd>Manages CAPS LOCK behaviour - pressing Caps Lock key has no effect</dd>
-  
+
   <dt><a href="caps" title="Caps Lock stores and statements"><code>&amp;ShiftFreesCaps</code> store, <code>SHIFT FREES CAPS</code> statement</a></dt>
   <dd>Manages CAPS LOCK behaviour - pressing Shift key turns off Caps Lock</dd>
 
   <dt><a href="copyright" title="&amp;Copyright store and COPYRIGHT statement"><code>&amp;Copyright</code> store and <code>COPYRIGHT</code> statement</a></dt>
   <dd>A copyright message for the keyboard</dd>
+
+  <dt><a href="displaymap"><code>&amp;displayMap</code> store</a></dt>
+  <dd>Specifies a mapping file for on screen keyboard display data</dd>
 
   <dt><a href="ethnologuecode" title="&amp;EthnologueCode store"><code>&amp;EthnologueCode</code> store</a></dt>
   <dd>The ISO 639-3 (formerly SIL Ethnologue) code for the language (Deprecated)</dd>
@@ -98,7 +101,7 @@ While header keywords continue to work, they have been deprecated and should be 
 
   <dt><a href="layer" title="&amp;layer store"><code>&amp;layer</code> store</a></dt>
   <dd>Tests or sets the current touch keyboard layer visible on the on screen keyboard</dd>
-  
+
   <dt><a href="platform" title="&amp;platform store"><code>&amp;platform</code> store</a></dt>
   <dd>Determines the current platform keyboard is operating on</dd>
 </dl>
@@ -114,7 +117,7 @@ While header keywords continue to work, they have been deprecated and should be 
 
   <dt><a href="beep" title="beep statement"><code>beep</code> statement</a></dt>
   <dd>Generates a beep on the speaker (or a flash on web devices)</dd>
-  
+
   <dt><a href="call" title="call() statement"><code>call()</code> statement</a></dt>
   <dd>Calls an Input Method Extension</dd>
 
@@ -132,7 +135,7 @@ While header keywords continue to work, they have been deprecated and should be 
 
   <dt><a href="layer" title="layer() statement"><code>layer()</code> statement</a></dt>
   <dd>Sets the current touch keyboard layer visible on the on screen keyboard</dd>
-  
+
   <dt><a href="notany" title="notany() statement"><code>notany()</code> statement</a></dt>
   <dd>Matches anything not in a particular array of characters</dd>
 
@@ -144,7 +147,7 @@ While header keywords continue to work, they have been deprecated and should be 
 
   <dt><a href="platform" title="platform() statement"><code>platform()</code> statement</a></dt>
   <dd>Determines the current platform keyboard is operating on</dd>
-  
+
   <dt><a href="return" title="return statement"><code>return</code> statement</a></dt>
   <dd>Stops processing of the current keystroke</dd>
 
@@ -160,7 +163,7 @@ While header keywords continue to work, they have been deprecated and should be 
   <dt><a href="use" title="use() statement"><code>use()</code> statement</a></dt>
   <dd>Starts processing in another group</dd>
 </dl>
- 
+
 <h2><a name="id500821" id="id500821"></a>Structural keywords</h2>
 
 <dl>

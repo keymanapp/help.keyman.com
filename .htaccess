@@ -55,7 +55,11 @@ RedirectMatch "/developer/engine/(android|iphone-and-ipad)/(?!current-version|\d
 # /developer/engine/web
 RedirectMatch "/developer/engine/web/(?!faq|history|current-version|\d+\.\d+)(.*)" "/developer/engine/web/current-version/$1"
 
-# current-version:15.0
+# current-version:16.0
+RewriteCond "%{DOCUMENT_ROOT}/$1/16.0" -d
+RewriteRule "^(.+)/current-version(/.*)?$" "$1/16.0$2" [DPI]
+
+# version:15.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/15.0" -d
 RewriteRule "^(.+)/current-version(/.*)?$" "$1/15.0$2" [DPI]
 
