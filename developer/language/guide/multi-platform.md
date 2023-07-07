@@ -13,7 +13,7 @@ and in web browsers. There are differences in how keyboards work for
 each of these platforms and Keyman automatically adapts to each platform
 as far as possible.
 
-### Keyboard Design {#keyboard-design}
+### Keyboard Design
 
 Keyboards are not a "one size fits all" problem in the world of
 computing. Keyboards that work well for desktops and laptops with their
@@ -37,12 +37,12 @@ a given platform, consider use of the
 [`platform()`](/developer/language/reference/platform) statement to
 allow your keyboard the flexibility necessary to accomplish those goals.
 
-## Implementation Note {#implementation-note}
+## Implementation Note
 
 Internally, Keyman for iPhone and iPad and Keyman for Android use
 KeymanWeb to display the touch keyboard, and to process rules. KeymanWeb
 keyboards (.js format) support basically all the same functionality as
-Keyman Desktop keyboards (.kmx format). There are a few store()
+Keyman Desktop keyboards (.kmx format). There are a few `store()`
 statements specific to KeymanWeb that are detailed below.
 
 If you do not provide a touch layout in your keyboard design, KeymanWeb
@@ -52,25 +52,25 @@ is generally suboptimal because keys are organised as in a physical
 layout, resulting in too many keys on each layer, which are small and
 hard to select reliably.
 
-### Additional Stores for KeymanWeb {#additional-stores-for-keymanweb}
+### Additional Stores for KeymanWeb
 
 The following Keyman Keyboard Language system stores provide
 functionality specific to KeymanWeb:
 
--   [`&kmw_embedcss`:](/developer/language/reference/kmw_embedcss "&kmw_embedcss store")
+-   [`&kmw_embedcss`](/developer/language/reference/kmw_embedcss):
     Specifies an additional library of CSS code to be embedded in a web
     or touch keyboard
--   [`&kmw_embedjs`:](/developer/language/reference/kmw_embedjs "&kmw_embedjs store")
+-   [`&kmw_embedjs`](/developer/language/reference/kmw_embedjs):
     Specifies an additional library of Javascript code to be embedded in
     a web or touch keyboard
--   [`&kmw_helpfile`:](/developer/language/reference/kmw_helpfile "&kmw_helpfile store")
+-   [`&kmw_helpfile`](/developer/language/reference/kmw_helpfile):
     Specifies the embedded help html file for web keyboards
--   [`&kmw_helptext`:](/developer/language/reference/kmw_helptext "& store")
+-   [`&kmw_helptext`](/developer/language/reference/kmw_helptext):
     Specifies the embedded help text for web keyboards
--   [`&kmw_rtl`:](/developer/language/reference/kmw_rtl "&kmw_rtl store")
+-   [`&kmw_rtl`](/developer/language/reference/kmw_rtl):
     Specifies the directionality of text controls for web keyboards
 
-### Recommendations for Supporting Multiple Platforms {#recommendations-for-supporting-multiple-platforms}
+### Recommendations for Supporting Multiple Platforms
 
 -   Only Unicode keyboards are supported for KeymanWeb (.js format)
     keyboards.
