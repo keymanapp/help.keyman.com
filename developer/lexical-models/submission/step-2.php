@@ -2,11 +2,7 @@
     require_once('includes/template.php');
 
     // Required
-    head([
-        'title' =>'Step 2: Before Starting Work on a Lexical Model',
-        'css' => ['template.css', 'prism.css', 'kmguides.css'],
-        'showMenu' => true
-    ]);
+    // 
 ?>
 
 <h1 id="get-source">Step 2: Before Starting Work on a Lexical Model</h1>
