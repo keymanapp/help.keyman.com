@@ -2,11 +2,7 @@
     require_once('includes/template.php');
 
     // Required
-    head([
-        'title' =>'Step 5: Submitting a GitHub Pull Request',
-        'css' => ['template.css', 'prism.css', 'kmguides.css'],
-        'showMenu' => true
-    ]);
+    // 
 ?>
 
 <h1 id="advanced-submitting">Step 5: Submitting a GitHub Pull Request</h1>
