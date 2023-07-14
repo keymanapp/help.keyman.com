@@ -18,8 +18,8 @@ nomatch > ...
 `nomatch` is similar to the [`match` rule](match), but instead of the
 rule being fired when a rule was matched, it will be used when no rule
 is matched in the group. A `nomatch` rule can include [`use()`
-statements](use), [`return` statements](return.php), [`beep`
-statements](beep.php) and characters.
+statements](use), [`return` statements](return), [`beep`
+statements](beep) and characters.
 
 Caveat: `nomatch` will not be fired in a `using keys` group if the
 current keystroke does not produce a character in normal use (for
