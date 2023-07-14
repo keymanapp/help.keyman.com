@@ -1,9 +1,9 @@
 ---
-title: Header keywords 
+title: Header keywords
 ---
 
 Header keywords have been replaced by [system
-stores](stores.php). While all these header keywords will
+stores](stores). While all these header keywords will
 continue to be available in future versions of Keyman, new features are
 only be accessible through system stores, and system stores should be
 used in place of header keywords when updating layouts.
