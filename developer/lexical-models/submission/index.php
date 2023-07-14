@@ -2,9 +2,7 @@
   require_once('includes/template.php');
 
   // Required
-  head([
-    'title' =>'Guide: Lexical Model Submissions'
-  ]);
+  // 
 ?>
 
 <h1>Guide for Lexical Model Submissions</h1>
