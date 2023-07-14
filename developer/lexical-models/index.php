@@ -2,9 +2,7 @@
   require_once('includes/template.php');
   
   // Required
-  head([
-    'title' =>'Guide: Working with the Keyman Cloud Lexical Models Repository'
-  ]);
+  // 
 ?>
 
 <h1>Working with the Keyman Cloud Lexical Models Repository</h1>
