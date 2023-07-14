@@ -23,7 +23,7 @@ length of a string, although Keyman does impose limits on strings in various sit
 
     <tr>
       <td>Quoted strings</td>
-      <td>a list of characters, enclosed either by <code>"</code> or <code>'</code> quote characters. Can use any characters 
+      <td>a list of characters, enclosed either by <code>"</code> or <code>'</code> quote characters. Can use any characters
       apart from controls. To use quotes in the string, enclose with the other quote type.</td>
       <td><code>store(vowels) "aeiou"</code><br /><code>+ '"' > 'quote'</code></td>
     </tr>
@@ -56,15 +56,15 @@ length of a string, although Keyman does impose limits on strings in various sit
 
 <p>Strings are concatenated by listing them together, separated by spaces. For example, the following two lines are equivalent:</p>
 
-<pre><code>U+0041 U+0042 d67 d68 "abc" 
+<pre><code>U+0041 U+0042 d67 d68 "abc"
 "ABCDabc"
 </code></pre>
 
-<p>Character codes below <code>U+0020</code> should not be used as their meaning differs between applications. Some legacy keyboards 
+<p>Character codes below <code>U+0020</code> should not be used as their meaning differs between applications. Some legacy keyboards
 may still use codes such as <code>d13</code> for carriage return, but this usage is not portable.</p>
 
 <h2>See also</h2>
 
 <ul>
-  <li><a href="unicode.php" title="Unicode support">Unicode support</li>
+  <li><a href="unicode" title="Unicode support">Unicode support</li>
 </ul>
