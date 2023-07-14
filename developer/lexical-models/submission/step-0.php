@@ -2,11 +2,7 @@
     require_once('includes/template.php');
 
     // Required
-    head([
-        'title' =>'Preliminary Step: Is Your Lexical Model Ready?',
-        'css' => ['template.css', 'prism.css', 'kmguides.css'],
-        'showMenu' => true
-    ]);
+    // 
 ?>
 
 <h1 id="get-source">Preliminary Step: Is Your Lexical Model Ready?</h1>
