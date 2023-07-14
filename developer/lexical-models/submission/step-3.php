@@ -2,11 +2,7 @@
     require_once('includes/template.php');
 
     // Required
-    head([
-        'title' =>'Step 3: Development Tools and Building',
-        'css' => ['template.css', 'prism.css', 'kmguides.css'],
-        'showMenu' => true
-    ]);
+    // 
 ?>
 
 <h1 id="development-tools">Step 3: Development Tools and Building a Lexical Model</h1>
