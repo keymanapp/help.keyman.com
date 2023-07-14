@@ -2,11 +2,7 @@
     require_once('includes/template.php');
 
     // Required
-    head([
-        'title' =>'Step 1: Setup - One Time Only',
-        'css' => ['template.css', 'prism.css', 'kmguides.css'],
-        'showMenu' => true
-    ]);
+    
 ?>
 
 <h1 id="get-source">Step 1: Setup - One Time Only</h1>
