@@ -2,11 +2,7 @@
     require_once('includes/template.php');
 
     // Required
-    head([
-        'title' =>'Step 4: Organizing the Lexical Model Files',
-        'css' => ['template.css', 'prism.css', 'kmguides.css'],
-        'showMenu' => true
-    ]);
+    // 
 ?>
 
 <h1 id="organizing">Step 4: Organizing the Lexical Model Files</h1>
