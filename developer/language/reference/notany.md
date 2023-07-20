@@ -56,5 +56,5 @@ Introduced in version 7.0.
 ## See also
 
 -   [Using stores](../guide/stores)
--   [any() statement](./notany)
--   [store() statement](./store)
+-   [`any()` statement](./any)
+-   [`store()` statement](./store)
