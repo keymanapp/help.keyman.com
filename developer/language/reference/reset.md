@@ -23,7 +23,7 @@ value.
 The `reset()` statement is used on the right hand (output) side of a
 rule to restore a variable to the current default value - either the
 store content as defined in the keyboard source file, or the value
-persisted previously in the system settings by [`save()`](save.php) or
+persisted previously in the system settings by [`save()`](save) or
 by the keyboard configuration dialog.
 
 ## Examples
