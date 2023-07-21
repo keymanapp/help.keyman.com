@@ -8,7 +8,7 @@ Launches Keyman Configuration for installing and showing information about Keyma
 ## Syntax
 
 ```bash
-km-config [-h] [--version] [-v] [-vv] [-i INSTALL] [INSTALL]
+km-config [-h] [-i INSTALL] [--version] [-v] [-vv] [INSTALL]
 ```
 
 ### Parameters
@@ -24,6 +24,14 @@ oad/keyboard/sil_el_ethiopian_latin?bcp47=ssy-latn).
 __optional__ <br>
 show this help message and exit
 
+`-i INSTALL`, `--install INSTALL` <br>
+__optional__ <br>
+download and/or install .kmp package. INSTALL can
+either be a downloaded .kmp file, a file:// URL
+pointing to a .kmp file, or a keyman:// URL, possibly
+with a bcp47=`language` specified (e.g. keyman://downl
+oad/keyboard/sil_el_ethiopian_latin?bcp47=ssy-latn).
+
 `--version` <br>
 __optional__ <br>
 show program's version number and exit
@@ -35,14 +43,6 @@ verbose logging
 `-vv`, `--veryverbose` <br>
 __optional__ <br>
 very verbose logging
-
-`-i INSTALL`, `--install INSTALL` <br>
-__optional__ <br>
-download and/or install .kmp package. INSTALL can
-either be a downloaded .kmp file, a file:// URL
-pointing to a .kmp file, or a keyman:// URL, possibly
-with a bcp47=`language` specified (e.g. keyman://downl
-oad/keyboard/sil_el_ethiopian_latin?bcp47=ssy-latn).
 
 ## Description
 
