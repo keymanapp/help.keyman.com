@@ -24,7 +24,7 @@ store(&layoutfile) "layoutFilename"
 The `&layoutfile` store specifies a touch layout .JSON file to
 incorporate in the Keyman keyboard. If a touch layout is not specified,
 then Keyman will build one from the visual keyboard description file
-referenced in the [`&visualkeyboard` store](visualkeyboard.php). If
+referenced in the [`&visualkeyboard` store](visualkeyboard). If
 neither is specified, then Keyman builds a touch layout based on the US
 English desktop keyboard layout.
 
