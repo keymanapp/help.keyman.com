@@ -24,7 +24,7 @@ store(&windowslanguages) "code [code ...]"
 The `&windowslanguages` store specifies additional Windows system
 languages that a keyboard may be associated with. It is not used on
 other platforms, which instead use the [`&ethnologuecode`
-store](ethnologuecode.php).
+store](ethnologuecode).
 
 [Microsoft language identifier
 reference](http://msdn2.microsoft.com/en-us/library/ms776294.aspx){.ulink
