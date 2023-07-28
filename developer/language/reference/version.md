@@ -58,4 +58,4 @@ accordingly to its major version.
 
 ## See also
 
--   [`&keyboardversion` store](keyboardversion.php)
+-   [`&keyboardversion` store](keyboardversion)

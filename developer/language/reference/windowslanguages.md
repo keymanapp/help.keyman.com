@@ -54,4 +54,4 @@ The `&windowslanguages` store was added in Keyman 8.0.
 
 ## See also
 
--   [`&language` store](language.php)
+-   [`&language` store](language)

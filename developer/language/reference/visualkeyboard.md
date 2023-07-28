@@ -62,4 +62,4 @@ The `&visualkeyboard` store was added in Keyman 8.0.
 
 ## See also
 
--   [`&layoutfile` store](layoutfile.php)
+-   [`&layoutfile` store](layoutfile)
