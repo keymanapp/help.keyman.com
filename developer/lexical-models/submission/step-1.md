@@ -67,4 +67,4 @@ will be needed to compile the lexical model.
 Now let's check Step 2 for all the things to do before starting work on
 a lexical model.
 
-[Step 2: Before Starting Work on a Lexical Model](step-2.php)
+[Step 2: Before Starting Work on a Lexical Model](step-2)
