@@ -17,7 +17,7 @@ store(&visualkeyboard) "visualkeyboardname"
 
 `visualkeyboardname`
 :   The name of the On Screen Keyboard
-    [.kvks](../../10.0/reference/file-types/kvks.php) source file to
+    [.kvks](../../10.0/reference/file-types/kvks) source file to
     reference in the compiled keyboard.
 
 ## Description
