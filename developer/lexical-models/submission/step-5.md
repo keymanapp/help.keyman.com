@@ -5,7 +5,7 @@ title: Step 5: Submitting a GitHub Pull Request
 ## Verify lexical model builds before submission
 
 Following the file layout documented in [Organizing Lexical Model
-Files](step-0.php), your lexical model should be in a folder similar to
+Files](step-0), your lexical model should be in a folder similar to
 
 ``` none
 c:\projects\lexical-models\release\nrc\nrc.en.mtnt\

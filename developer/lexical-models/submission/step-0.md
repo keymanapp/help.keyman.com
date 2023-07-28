@@ -59,7 +59,7 @@ components:
 `source\<wordlist>.tsv`
 :   wordlist source file, in columns for words, counts, and comments.
     This is a [tab-separated
-    value](/developer/current-version/reference/file-types/tsv.php)
+    value](/developer/current-version/reference/file-types/tsv)
     file.
 
 `<lexical-model>.kpj`
@@ -132,4 +132,4 @@ from which the description above was taken.
 In Step 1 we'll get set up for making a submission to the Keyman
 lexical-models repository.
 
-[Step 1: Setup - One Time Only](step-1.php)
+[Step 1: Setup - One Time Only](step-1)

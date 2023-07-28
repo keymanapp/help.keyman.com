@@ -74,4 +74,4 @@ cd /c/projects/lexical-models
 ./build.sh release/nrc/nrc.en.mtnt
 ```
 
-[Step 4: Organizing the Lexical Model Files](step-4.php)
+[Step 4: Organizing the Lexical Model Files](step-4)

@@ -40,4 +40,4 @@ sync](https://help.github.com/articles/syncing-a-fork/){target="_blank"}.
 Now let's check that we have the Keyman development tools for building a
 lexical model.
 
-[Step 3: Development Tools and Building a Lexical Model](step-3.php)
+[Step 3: Development Tools and Building a Lexical Model](step-3)

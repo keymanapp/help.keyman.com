@@ -75,4 +75,4 @@ generated at build time:
 Once you're done creating and testing your lexical model, you're ready
 to share the model with us.
 
-[Step 5: Submitting a GitHub Pull Request](step-5.php)
+[Step 5: Submitting a GitHub Pull Request](step-5)
