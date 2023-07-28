@@ -70,9 +70,9 @@ for more information.</p>
   </tr>
   <tr>
     <td valign='top' colspan='3'>
-      <a href='osk.php'><img border=0 style='width: 50%' src='images/oskeyboard.gif' /></a>
+      <a href='osk'><img border=0 style='width: 50%' src='images/oskeyboard.gif' /></a>
       <br/>
-      <a href='osk.php'><span style='font-size: 12pt; font-weight: bold'>On Screen Keyboard</span></a>
+      <a href='osk'><span style='font-size: 12pt; font-weight: bold'>On Screen Keyboard</span></a>
     </td>
   </tr>
 </table>

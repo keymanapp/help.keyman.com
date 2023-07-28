@@ -27,7 +27,7 @@
 <h2 id="Description" name="Description">Description</h2>
 
 <p>The <code>&amp;kmw_embedjs</code> store allows you to specify a JavaScript file to embed into a Keyman touch or web keyboard.
-This is typically used with the <a href='call.php'><code>call()</code> statement</a>.</p>
+This is typically used with the <a href='call'><code>call()</code> statement</a>.</p>
 
 <p>The code is wrapped in a closure, and global variables should be avoided.</p>
 

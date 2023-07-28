@@ -31,7 +31,7 @@ to check for updated versions of the keyboard and update them automatically. </p
 
 <p>The version string should match as far as possible the package version string, when a keyboard is included in a package.</p>
 
-<p>Note the difference between <code>&amp;keyboardversion</code>, which documents the keyboard version, and <a href='version.php'><code>&amp;version</code></a>, which determines which version of Keyman a keyboard
+<p>Note the difference between <code>&amp;keyboardversion</code>, which documents the keyboard version, and <a href='version'><code>&amp;version</code></a>, which determines which version of Keyman a keyboard
 will run with.</p>
 
 <p>A keyboard version should be updated whenever there are changes to a keyboard. A good principle to follow is to increment the major version number for a keyboard that has significant

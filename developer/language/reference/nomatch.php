@@ -21,8 +21,8 @@
 
 <p><code>nomatch</code> is similar to the <a href='match'><code>match</code> rule</a>, but instead of the rule being fired
 when a rule was matched, it will be used when no rule is matched in the group. A <code>nomatch</code> rule can
-include <a href='use'><code>use()</code> statements</a>, <a href='return.php'><code>return</code> statements</a>,
-<a href='beep.php'><code>beep</code> statements</a> and characters.</p>
+include <a href='use'><code>use()</code> statements</a>, <a href='return'><code>return</code> statements</a>,
+<a href='beep'><code>beep</code> statements</a> and characters.</p>
 
 <p>Caveat: <code>nomatch</code> will not be fired in a <code>using keys</code> group if the current keystroke does not produce a character
 in normal use (for example, modified keys, function keys). This is by design, and is intended to ensure that function keys,

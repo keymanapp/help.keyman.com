@@ -54,7 +54,7 @@ Listed below are some difficulties occasionally experienced when using KeymanWeb
   keyboard onto your computer.  You can download the Keyman Desktop package by clicking the "Help on this
   keyboard" link in the On Screen Keyboard.
 </li>
-<li>An <a href='embedded_fonts.php'>embedded font test page</a> is available for further testing of embedded font support on your computer.</li>
+<li>An <a href='embedded_fonts'>embedded font test page</a> is available for further testing of embedded font support on your computer.</li>
 </ul>
 
 <br/>
@@ -74,13 +74,13 @@ An example of this is visible in the Tibetan script on the right.  Installing Ke
 <a name="two"></a>
 <div class='body_text'>
 <h4 style='clear:right'>Disappearing On-Screen Keyboard</h4>
-<p>If the <a href='osk.php'>On-Screen Keyboard</a> does not appear, or disappears as soon as
+<p>If the <a href='osk'>On-Screen Keyboard</a> does not appear, or disappears as soon as
 you move it, please check the following:
 </p>
 <ul>
 <li>Make sure KeymanWeb is activated by clicking in the text area.</li>
 
-<li>Confirm that the <a href='osk.php'>On-Screen Keyboard</a> is turned on.
+<li>Confirm that the <a href='osk'>On-Screen Keyboard</a> is turned on.
 In the <b>Button</b> interface, the first item in the Keyboard Menu should be <img src="images/ui-bt-hidekb.gif" style='vertical-align: middle' ALT="Hide Keyboard"/>,
   while in the other user interface designs, the On-Screen Keyboard icon
   <img src="images/ui-tb-control6.gif" height=21 style='vertical-align: middle' ALT="On-Screen Keyboard"/> should have a box around it.</li>

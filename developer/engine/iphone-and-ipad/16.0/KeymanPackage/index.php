@@ -29,7 +29,7 @@ both of which offer richer typing for certain fields and methods.</p>
 <h2 id="Fields" name="fields">Fields</h2>
 
 <dl>
-    <dt><code>key: <a href='key.php'>KeymanPackage.Key</a></code></dt>
+    <dt><code>key: <a href='key'>KeymanPackage.Key</a></code></dt>
     <dd>Returns a unique identifier for the package, usable in package-search operations.</dd>
     <dt><code>languages: [Language]</code></dt>
     <dd>An array of languages supported by the keyboards or lexical models contained by the package.
@@ -58,11 +58,11 @@ both of which offer richer typing for certain fields and methods.</p>
 <h2 id="Methods" name="Methods">Methods</h2>
 
 <dl>
-    <dt><code><a href='installableResourceSets.php'>installableResourceSets -> [[AnyLanguageResource]] </a></code></dt>
+    <dt><code><a href='installableResourceSets'>installableResourceSets -> [[AnyLanguageResource]] </a></code></dt>
     <dd>Returns a list of all resources & language pairings supported by this package.</dd>
-    <dt><code><a href='installableResources.php'>installableResources(forLanguage: String) -> [AnyLanguageResource] </a></code></dt>
+    <dt><code><a href='installableResources'>installableResources(forLanguage: String) -> [AnyLanguageResource] </a></code></dt>
     <dd>A language-filtered version of the method above.</dd>
-    <dt><code><a href='pageURL.php'>pageURL(for: KeymanPackagePage) -> URL?</a></code></dt>
+    <dt><code><a href='pageURL'>pageURL(for: KeymanPackagePage) -> URL?</a></code></dt>
     <dd>Provides a link to known .html files contained by the package.
     <br/><br/>
     Supported pages:  <code>.readme</code>, <code>.welcome</code>, <code>.custom(bundledPath: String)</code>, the latter

@@ -29,7 +29,7 @@
 <h2 id="Description" name="Description">Description</h2>
 
 <p>The <code>&amp;language</code> store specifies the Windows system language that a keyboard should be associated with. It is not used on
-other platforms, which previously used the <a href='ethnologuecode.php'><code>&amp;ethnologuecode</code> store</a>.</p>
+other platforms, which previously used the <a href='ethnologuecode'><code>&amp;ethnologuecode</code> store</a>.</p>
 
 <p>If the specified language is available on the user's system, Keyman
 Desktop will install it and register an input method for that language. The Keyman Desktop keyboard will then be

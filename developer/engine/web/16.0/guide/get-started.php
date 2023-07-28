@@ -78,11 +78,11 @@ END
 
 <li><p>The other <code>&lt;script&gt;</code> inclusion, <code>&lt;script src='<?=$cdn_path?>/kmwuitoggle.js'&gt;&lt;/script&gt;</code>,
       creates the language menu seen on non-mobile devices and the on-screen keyboard toggle button.
-      For other options, see our <a href='user-interface-design.php'>User Interface Design</a> page.</p></li>
+      For other options, see our <a href='user-interface-design'>User Interface Design</a> page.</p></li>
 
   <li><p>The calls to <code>kmw.addKeyboards()</code> in the source above link in the two example Keyman keyboards used
       in this demo from our CDN server.  For more info on how to include keyboards in your KeymanWeb installation, check
-      the <a href='adding-keyboards.php'>Adding Keyboards</a> page.</p></li>
+      the <a href='adding-keyboards'>Adding Keyboards</a> page.</p></li>
 
 </ul>
 

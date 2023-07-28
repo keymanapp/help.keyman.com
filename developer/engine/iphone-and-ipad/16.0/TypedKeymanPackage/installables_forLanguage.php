@@ -38,7 +38,7 @@ Added in Keyman Engine for iPhone and iPad 14.0.
 <h2 id="See_also" name="See_also">See also</h2>
 
 <dl>
-    <dt><code><a href='findResource.php'>findResource(withID:) -> TypedLanguageResource? </a></code></dt>
+    <dt><code><a href='findResource'>findResource(withID:) -> TypedLanguageResource? </a></code></dt>
     <dd>Returns the resource matching the specified ID, if contained within the package.</dd>
     <dt><code><a href="installables">installables: [[ TypedLanguageResource ]]</a></code></dt>
     <dd>Returns a list of all resources & language pairings supported by this package.</dd>

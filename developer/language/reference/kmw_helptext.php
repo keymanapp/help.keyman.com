@@ -27,7 +27,7 @@
 <h2 id="Description" name="Description">Description</h2>
 
 <p>The <code>&amp;kmw_helptext</code> store allows you to specify a HTML string that will be displayed in the footer of the On Screen Keyboard on
-desktop web browsers. It is mutually exclusive with the <a href='kmw_helpfile.php'><code>&amp;kmw_helpfile</code> store</a>.</p>
+desktop web browsers. It is mutually exclusive with the <a href='kmw_helpfile'><code>&amp;kmw_helpfile</code> store</a>.</p>
 
 <h2 id="Examples">Examples</h2>
 

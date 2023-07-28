@@ -29,7 +29,7 @@ embed into the keyboard.</p>
 
 <p>The <code>&amp;layoutfile</code> store specifies a touch layout .JSON file to incorporate in the Keyman keyboard. If a touch layout
 is not specified, then Keyman will build one from the visual keyboard description file referenced in the
-<a href='visualkeyboard.php'><code>&amp;visualkeyboard</code> store</a>. If neither is specified, then Keyman builds a touch layout based
+<a href='visualkeyboard'><code>&amp;visualkeyboard</code> store</a>. If neither is specified, then Keyman builds a touch layout based
 on the US English desktop keyboard layout.</p>
 
 <h2 id="Examples">Examples</h2>

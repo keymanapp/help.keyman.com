@@ -17,7 +17,7 @@
 
 <h3 id="Returns" name="Returns">Returns</h3>
 <p>Returns the Keyboard information of the default fallback keyboard. If
-  <a href='setDefaultKeyboard.php'>setDefaultKeyboard()</a> is never called, this method returns keyboard info for the
+  <a href='setDefaultKeyboard'>setDefaultKeyboard()</a> is never called, this method returns keyboard info for the
   <code>sil_euro_latin</code> keyboard package.</p>
 
 <h2 id="Description" name="Description">Description</h2>

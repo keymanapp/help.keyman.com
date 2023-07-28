@@ -28,7 +28,7 @@
 
 <p>The <code>reset()</code> statement is used on the right hand (output) side of a rule to restore a variable to the
 current default value - either the store content as defined in the keyboard source file, or the value persisted previously
-in the system settings by <a href='save.php'><code>save()</code></a> or by the keyboard configuration dialog.</p>
+in the system settings by <a href='save'><code>save()</code></a> or by the keyboard configuration dialog.</p>
 
 <h2 id="Examples">Examples</h2>
 

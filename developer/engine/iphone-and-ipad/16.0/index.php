@@ -176,7 +176,7 @@
   <li><a href="/developer/engine/iphone-and-ipad/2.0/" title="Keyman Engine for iPhone and iPad 2.0">
       Keyman Engine for iPhone and iPad 2.0</a></li>
   <li><a href="/developer/current-version/" title="Keyman Developer">Keyman Developer</a></li>
-  <li><a href='http://keyman.com/developer/keymanweb/keyboards.php' title="Keyboard Library">Keyboard Library</a></li>
+  <li><a href='http://keyman.com/developer/keymanweb/keyboards' title="Keyboard Library">Keyboard Library</a></li>
   <li><a href="/developer/engine/android/current-version/" title="Keyman Engine for Android">Keyman Engine for Android 10.0</a></li>
 </ul>
 

@@ -30,7 +30,7 @@ in place of the on screen keyboard.</p>
 <p>The <code>&amp;kmw_helpfile</code> store allows you to specify a HTML file to embed into a Keyman web keyboard for desktop keyboards.
 This HTML file should not include <code class='language-markup'>&lt;head></code> or <code class='language-markup'>&lt;body></code> tags, as
 will be a snippet only. On a desktop browser, the contents of this file will replace the On Screen Keyboard. It is mutually exclusive with the
-<a href='kmw_helptext.php'><code>&amp;kmw_helptext</code> store</a>.</p>
+<a href='kmw_helptext'><code>&amp;kmw_helptext</code> store</a>.</p>
 
 <h2 id="Examples">Examples</h2>
 

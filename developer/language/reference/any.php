@@ -25,13 +25,13 @@
 </dl>
 
 <h2 id="Description" name="Description">Description</h2>
-  
-<p>The <code><strong>any()</strong></code> statement will match any character that is in the store <code><var>inputStore</var></code>. This 
-statement is only valid on the left side of a rule; the <a href='_index.php'><code>index()</code> statement</a> is used to match again or 
+
+<p>The <code><strong>any()</strong></code> statement will match any character that is in the store <code><var>inputStore</var></code>. This
+statement is only valid on the left side of a rule; the <a href='_index'><code>index()</code> statement</a> is used to match again or
 output the character matched by the <code>any()</code> statement in the output. The <code>any()</code> statement remembers the offset in the store
 where the match occurred for later use with the <code>index()</code> statement.</p>
 
-<p>Note that <a href='outs.php'><code>outs()</code> statements</a> are expanded in stores, so the character offset match is on the fully expanded version
+<p>Note that <a href='outs'><code>outs()</code> statements</a> are expanded in stores, so the character offset match is on the fully expanded version
 of the store. Other specials, such as deadkeys or virtual keys, are only a single character wide when measuring offset.</p>
 
 <h2>Examples</h2>
