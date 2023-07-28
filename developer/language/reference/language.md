@@ -25,7 +25,7 @@ store(&language) "langcode"
 
 The `&language` store specifies the Windows system language that a
 keyboard should be associated with. It is not used on other platforms,
-which previously used the [`&ethnologuecode` store](ethnologuecode.php).
+which previously used the [`&ethnologuecode` store](ethnologuecode).
 
 If the specified language is available on the user's system, Keyman
 Desktop will install it and register an input method for that language.
@@ -79,5 +79,5 @@ ignored on all other platforms.
 
 ## See also
 
--   [`&ethnologuecode` store](ethnologuecode.php)
--   [`&windowslanguages` store](windowslanguages.php)
+-   [`&ethnologuecode` store](ethnologuecode)
+-   [`&windowslanguages` store](windowslanguages)
