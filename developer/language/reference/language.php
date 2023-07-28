@@ -76,6 +76,6 @@ reference</a></p>
 <h2 id="See_also" name="See_also">See also</h2>
 
 <ul>
-  <li><a href="ethnologuecode.php" title="&amp;ethnologuecode"><code>&amp;ethnologuecode</code> store</a></li>
-  <li><a href="windowslanguages.php" title="&amp;windowslanguages"><code>&amp;windowslanguages</code> store</a></li>
+  <li><a href="ethnologuecode" title="&amp;ethnologuecode"><code>&amp;ethnologuecode</code> store</a></li>
+  <li><a href="windowslanguages" title="&amp;windowslanguages"><code>&amp;windowslanguages</code> store</a></li>
 </ul>

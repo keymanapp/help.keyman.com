@@ -56,5 +56,5 @@ desktop web browsers. It is mutually exclusive with the <a href='kmw_helpfile.ph
 <h2 id="See_also" name="See_also">See also</h2>
 
 <ul>
-  <li><a href="kmw_helpfile.php" title="&amp;kmw_helpfile store"><code>&amp;kmw_helpfile</code> store</a></li>
+  <li><a href="kmw_helpfile" title="&amp;kmw_helpfile store"><code>&amp;kmw_helpfile</code> store</a></li>
 </ul>

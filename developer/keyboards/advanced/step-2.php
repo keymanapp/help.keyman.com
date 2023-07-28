@@ -54,6 +54,6 @@ git push origin master
 </p>
 
 <p>
-    <a href="step-3.php" title="Step 3: Development Tools and Building a Keyboard">Step 3: Development Tools and
+    <a href="step-3" title="Step 3: Development Tools and Building a Keyboard">Step 3: Development Tools and
     Building a Keyboard</a>
 </p>

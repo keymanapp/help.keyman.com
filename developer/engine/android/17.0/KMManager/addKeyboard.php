@@ -83,5 +83,5 @@
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="removeKeyboard.php"><code>removeKeyboard()</code></a></li>
+ <li><a href="removeKeyboard"><code>removeKeyboard()</code></a></li>
 </ul>

@@ -69,6 +69,6 @@ git pull
 </p>
 
 <p>
-    <a href="step-2.php" title="Step 2: Development Tools and Building a Keyboard">Step 2: Development Tools and
+    <a href="step-2" title="Step 2: Development Tools and Building a Keyboard">Step 2: Development Tools and
     Building a Keyboard</a>
 </p>

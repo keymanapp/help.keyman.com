@@ -13,7 +13,7 @@
 
 <h2 id="verify-build">Verify keyboard builds before submission</h2>
 <p>
-    Following the file layout documented in <a href="step-3.php">Organizing Keyboard Files</a>, your keyboard layout
+    Following the file layout documented in <a href="step-3">Organizing Keyboard Files</a>, your keyboard layout
     should be in a folder similar to
 </p>
 

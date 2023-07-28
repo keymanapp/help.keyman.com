@@ -39,5 +39,5 @@
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="addKeyboardEventListener.php" title="Title."><code>addKeyboardEventListener()</code></a></li>
+ <li><a href="addKeyboardEventListener" title="Title."><code>addKeyboardEventListener()</code></a></li>
 </ul>

@@ -48,5 +48,5 @@ c:\projects\keyboards\release\s\sample1
 </code></pre>
 
 <p>
-    <a href="step-4.php" title="Step 4: Organizing the Keyboard Files">Step 4: Organizing the Keyboard Files</a>
+    <a href="step-4" title="Step 4: Organizing the Keyboard Files">Step 4: Organizing the Keyboard Files</a>
 </p>

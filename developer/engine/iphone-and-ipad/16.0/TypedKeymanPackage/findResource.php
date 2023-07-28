@@ -24,7 +24,7 @@
 
 <h3 id="Value" name="Value">Value</h3>
 <p>
-An <code>InstallableKeyboard</code> (for a <code>KeyboardKeymanPackage</code>) or  
+An <code>InstallableKeyboard</code> (for a <code>KeyboardKeymanPackage</code>) or
 <code>InstallableLexicalModel</code> (for a <code>LexicalModelKeymanPackage</code>).
 <br/><br/>
 May be <code>nil</code> if no resource matching the specified ID is found within the package.
@@ -36,8 +36,8 @@ Added in Keyman Engine for iPhone and iPad 14.0.
 <h2 id="See_also" name="See_also">See also</h2>
 
 <dl>
-    <dt><code><a href="installables.php">installables: [[ TypedLanguageResource ]]</a></code></dt>
+    <dt><code><a href="installables">installables: [[ TypedLanguageResource ]]</a></code></dt>
     <dd>Returns a list of all resources & language pairings supported by this package.</dd>
-    <dt><code><a href="installables_forLanguage.php">installables(forLanguage: String): [ TypedLanguageResource ]</a></code></dt>
+    <dt><code><a href="installables_forLanguage">installables(forLanguage: String): [ TypedLanguageResource ]</a></code></dt>
     <dd>Provides the same functionality as the field above, but filtered to a specific language code.</dd>
 </dl>

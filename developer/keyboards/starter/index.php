@@ -24,11 +24,11 @@
 </p>
 
 <dl>
-    <dt><a href="step-1.php">Step 1: Get the Source</a></dt>
-    <dt><a href="step-2.php">Step 2: Development Tools and Building the Keyboard</a></dt>
-    <dt><a href="step-3.php">Step 3: Organizing the Keyboard Files</a></dt>
-    <dt><a href="step-4.php">Step 4: Principles for Contributing Keyboards</a></dt>
-    <dt><a href="step-5.php">Step 5: Submitting a GitHub Pull Request</a></dt>
+    <dt><a href="step-1">Step 1: Get the Source</a></dt>
+    <dt><a href="step-2">Step 2: Development Tools and Building the Keyboard</a></dt>
+    <dt><a href="step-3">Step 3: Organizing the Keyboard Files</a></dt>
+    <dt><a href="step-4">Step 4: Principles for Contributing Keyboards</a></dt>
+    <dt><a href="step-5">Step 5: Submitting a GitHub Pull Request</a></dt>
 </dl>
 
 <p>

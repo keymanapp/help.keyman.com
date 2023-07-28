@@ -30,11 +30,11 @@
 The CSS file will be dynamically injected into the page when the keyboard is loaded or activated, and removed when it is
 deactivated.</p>
 
-<p>CSS in this stylesheet should be applied carefully. Keyman already dynamically styles keyboards to target devices, so 
-you should take into account different devices and styles. Avoid adjusting box models, sizing or positioning, as these 
+<p>CSS in this stylesheet should be applied carefully. Keyman already dynamically styles keyboards to target devices, so
+you should take into account different devices and styles. Avoid adjusting box models, sizing or positioning, as these
 will not translate between different devices.</p>
 
-<p>A good use for a custom stylesheet is to style a specific key or set of keys differently, to differentiate them from 
+<p>A good use for a custom stylesheet is to style a specific key or set of keys differently, to differentiate them from
 the rest of the keyboard.</p>
 
 <h2 id="Examples">Examples</h2>
@@ -64,5 +64,5 @@ the rest of the keyboard.</p>
 <h2 id="See_also" name="See_also">See also</h2>
 
 <ul>
-  <li><a href="kmw_embedjs.php" title="&amp;kmw_embedjs store"><code>&amp;kmw_embedjs</code> store</a></li>
+  <li><a href="kmw_embedjs" title="&amp;kmw_embedjs store"><code>&amp;kmw_embedjs</code> store</a></li>
 </ul>

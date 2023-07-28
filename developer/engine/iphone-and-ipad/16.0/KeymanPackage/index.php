@@ -41,12 +41,12 @@ both of which offer richer typing for certain fields and methods.</p>
     <dt><code>resourceType: LanguageResourceType</code></dt>
     <dd>An enum representing the type of LanguageResource contained within the package.
     <br/><br/>
-    May be either <code>.keyboard</code> (for a <code>KeyboardKeymanPackage</code>) or 
+    May be either <code>.keyboard</code> (for a <code>KeyboardKeymanPackage</code>) or
     <code>.lexicalModel</code> (for a <code>LexicalModelKeymanPackage</code>).</dd>
     <dt><code>sourceFolder: URL</code></dt>
     <dd>The base folder for the package's extracted contents.
     <br/><br/>
-    Note:  for packages opened with <code><a href="../ResourceFileManager/prepareKMPInstall.php">
+    Note:  for packages opened with <code><a href="../ResourceFileManager/prepareKMPInstall">
     ResourceFileManager.shared.prepareKMPInstall</a></code>, this may be a temporary location!
     <br/><br/>
     Stability is not guaranteed if you write to any contents of the folder or its subfolders,

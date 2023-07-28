@@ -15,13 +15,13 @@
 
       <tr>
         <td width="20%" align="left">
-          <a accesskey="p" href="../guide/guide_kmw_automatic_control_loaded.php">Prev</a> 
+          <a accesskey="p" href="../guide/guide_kmw_automatic_control_loaded">Prev</a>
         </td>
 
         <th width="60%" align="center">KeymanWeb Guide</th>
 
         <td width="20%" align="right">
-           <a accesskey="n" href="../guide/guide_kmw_full_manual_control.php">Next</a>
+           <a accesskey="n" href="../guide/guide_kmw_full_manual_control">Next</a>
         </td>
       </tr>
     </table>
@@ -36,7 +36,7 @@
     <p>In this example, the web page designer specifies the location and activation of the user interface for the KeymanWeb. They have also
     specified that the LaoKeys keyboard should be activated by default. This example continues to use the KeymanWeb default interface.</p>
 
-    <p>A working example can be seen online at <a class="ulink" href="http://www.keymanweb.com/dev/manual_control.php" target=
+    <p>A working example can be seen online at <a class="ulink" href="http://www.keymanweb.com/dev/manual_control" target=
     "_blank">www.keymanweb.com</a></p><span class="inlinemediaobject"><img src="<?= cdn('img/developer/90/kmw_manual_control.png')?>"></span>
 
     <h4><a name="id535470" id="id535470"></a>Code Walkthrough</h4>
@@ -63,14 +63,14 @@ function KWControlClick()
   var KWControl = document.getElementById('KWControl');
   if(KeymanWeb.IsInterfaceVisible()) KeymanWeb.HideInterface();
   else KeymanWeb.ShowInterface(
-        KeymanWeb.GetAbsoluteX(KWControl) + KWControl.offsetWidth - 1, 
+        KeymanWeb.GetAbsoluteX(KWControl) + KWControl.offsetWidth - 1,
         KeymanWeb.GetAbsoluteY(KWControl));
-     /* 
-       Note the use of KeymanWeb.GetAbsoluteX and GetAbsoluteY - helper 
+     /*
+       Note the use of KeymanWeb.GetAbsoluteX and GetAbsoluteY - helper
        functions for getting browser-independent X and Y offsetLeft and offsetTop
      */
 }
-  
+
 </pre>
 
     <p>Also include the following HTML code:</p>
@@ -85,14 +85,14 @@ function KWControlClick()
 
 &lt;!-- When the page has finished loading, activate the LaoKeys keyboard, see above --&gt;
 &lt;body onload="SetupDocument()"&gt;
-  
+
 </pre>
 
     <p>And finally, include the control img for KeymanWeb:</p>
     <pre class="programlisting">
 &lt;!-- Display the KeymanWeb icon for the user to click on --&gt;
 &lt;img style="border: solid 1px black; padding: 2px 2px 3px 2px" src='kmicon.png' alt='KeymanWeb' onclick='KWControlClick()' id='KWControl' /&gt;
-  
+
 </pre>
   </div>
 
@@ -102,15 +102,15 @@ function KWControlClick()
     <table width="100%" summary="Navigation footer">
       <tr>
         <td width="40%" align="left">
-          <a accesskey="p" href="../guide/guide_kmw_automatic_control_loaded.php">Prev</a> 
+          <a accesskey="p" href="../guide/guide_kmw_automatic_control_loaded">Prev</a>
         </td>
 
         <td width="20%" align="center">
-          <a accesskey="u" href="../guide/index_guide_kmw.php">Up</a>
+          <a accesskey="u" href="../guide/index_guide_kmw">Up</a>
         </td>
 
         <td width="40%" align="right">
-           <a accesskey="n" href="../guide/guide_kmw_full_manual_control.php">Next</a>
+           <a accesskey="n" href="../guide/guide_kmw_full_manual_control">Next</a>
         </td>
       </tr>
 
@@ -118,7 +118,7 @@ function KWControlClick()
         <td width="40%" align="left" valign="top">Automatic Control (pre-loaded) Example </td>
 
         <td width="20%" align="center">
-          <a accesskey="h" href="../index.php">Home</a>
+          <a accesskey="h" href="../index">Home</a>
         </td>
 
         <td width="40%" align="right" valign="top"> Full Manual Control Example</td>

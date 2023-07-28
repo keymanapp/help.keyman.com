@@ -1,18 +1,18 @@
 <?php /*
   Name:             index
   Copyright:        Copyright (C) 2005 Tavultesoft Pty Ltd.
-  Documentation:    
-  Description:      
+  Documentation:
+  Description:
   Create Date:      18 Sep 2009
 
   Modified Date:    18 Sep 2009
   Authors:          mcdurdin
-  Related Files:    
-  Dependencies:     
+  Related Files:
+  Dependencies:
 
-  Bugs:             
-  Todo:             
-  Notes:            
+  Bugs:
+  Todo:
+  Notes:
   History:          18 Sep 2009 - mcdurdin - Polish
 */
   require_once('includes/template.php');
@@ -88,7 +88,7 @@ In the <b>Button</b> interface, the first item in the Keyboard Menu should be <i
 which is generally available as the first selectable keyboard on KeymanWeb desktop user interfaces.</li>
 <li>Scroll up and down (and across if necessary) the website to see if the On-Screen Keyboard is actually being displayed, but is in a different position.</li>
 
-<li>For more information on using the On-Screen Keyboard, <a href="osk.php">click here</a>.</li>
+<li>For more information on using the On-Screen Keyboard, <a href="osk">click here</a>.</li>
 </ul>
 </div>
 

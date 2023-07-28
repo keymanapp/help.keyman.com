@@ -65,5 +65,5 @@ git remote add upstream https://github.com/keymanapp/lexical-models.git
 </p>
 
 <p>
-    <a href="step-2.php" title="Step 2: Before Starting Work on a Lexical Model">Step 2: Before Starting Work on a Lexical Model</a>
+    <a href="step-2" title="Step 2: Before Starting Work on a Lexical Model">Step 2: Before Starting Work on a Lexical Model</a>
 </p>

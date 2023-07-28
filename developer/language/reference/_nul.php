@@ -10,7 +10,7 @@
 
 <h2 id="Summary" name="Summary">Summary</h2>
 
-<p>The <code><strong>nul</strong></code> statement has two purposes: in the output of a rule, it signifies deleting context and keystroke, and at the start of the context 
+<p>The <code><strong>nul</strong></code> statement has two purposes: in the output of a rule, it signifies deleting context and keystroke, and at the start of the context
 it signifies that the context buffer in the application must be empty (or no longer than the context of the rule) in order for the rule to match.</p>
 
 <h2 id="Syntax" name="Syntax">Syntax</h2>
@@ -33,8 +33,8 @@ character at the start of a paragraph, and use a different character in this sit
 empty after cursor movement, menu access, or many other situations. This means that the <code>nul</code> keyword may match in situations where
 you are not expecting it, for example in the middle of a word.</p>
 
-<p>In modern environments, such as touch devices, web keyboards, macOS, and some modern Windows applications, the <code>nul</code> keyword will 
-match at the start of a text buffer, and nowhere else. For example, in Microsoft Word, it will match at the start of the document, after a page, 
+<p>In modern environments, such as touch devices, web keyboards, macOS, and some modern Windows applications, the <code>nul</code> keyword will
+match at the start of a text buffer, and nowhere else. For example, in Microsoft Word, it will match at the start of the document, after a page,
 column or section break, at the start of a header or footer, at the start of a table cell and other similar situations.</p>
 
 <aside>
@@ -79,5 +79,5 @@ column or section break, at the start of a header or footer, at the start of a t
 <h2 id="See_also" name="See_also">See also</h2>
 
 <ul>
-  <li><a href="context.php" title="context statement"><code>context</code> statement</li>
+  <li><a href="context" title="context statement"><code>context</code> statement</li>
 </ul>

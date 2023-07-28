@@ -58,5 +58,5 @@ This is typically used with the <a href='call.php'><code>call()</code> statement
 <h2 id="See_also" name="See_also">See also</h2>
 
 <ul>
-  <li><a href="kmw_embedcss.php" title="&amp;kmw_embedcss store"><code>&amp;kmw_embedcss</code> store</a></li>
+  <li><a href="kmw_embedcss" title="&amp;kmw_embedcss store"><code>&amp;kmw_embedcss</code> store</a></li>
 </ul>

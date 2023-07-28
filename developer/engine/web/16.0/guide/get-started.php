@@ -30,7 +30,7 @@ $cdn_path = get_cdn_path($kmwbuild);
 </ul>
 
 <h2>Demo</h2>
-<p>To setup a basic first page with KeymanWeb, only two lines of code are necessary, but a few more lines will be shown here.  Toward that end, <a href="examples/__first-example.php">an example page</a>:</p>
+<p>To setup a basic first page with KeymanWeb, only two lines of code are necessary, but a few more lines will be shown here.  Toward that end, <a href="examples/__first-example">an example page</a>:</p>
 
 <?php embed_with_iframe("examples/__first-example.php", 250); ?>
 

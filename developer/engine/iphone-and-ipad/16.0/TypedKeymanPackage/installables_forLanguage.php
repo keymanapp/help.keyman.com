@@ -25,10 +25,10 @@ supported by the current package for the specified language code.</p>
 
 <h3 id="Value" name="Value">Value</h3>
 <p>
-An array of <code>InstallableKeyboard</code> (for a <code>KeyboardKeymanPackage</code>) or  
+An array of <code>InstallableKeyboard</code> (for a <code>KeyboardKeymanPackage</code>) or
 <code>InstallableLexicalModel</code> (for a <code>LexicalModelKeymanPackage</code>) instances.
 <br/><br/>
-For most packages, there will only be a single entry in this array.  However, note that multi-keyboard 
+For most packages, there will only be a single entry in this array.  However, note that multi-keyboard
 packages may support multiple keyboards for the same target language.
 </p>
 
@@ -40,6 +40,6 @@ Added in Keyman Engine for iPhone and iPad 14.0.
 <dl>
     <dt><code><a href='findResource.php'>findResource(withID:) -> TypedLanguageResource? </a></code></dt>
     <dd>Returns the resource matching the specified ID, if contained within the package.</dd>
-    <dt><code><a href="installables.php">installables: [[ TypedLanguageResource ]]</a></code></dt>
+    <dt><code><a href="installables">installables: [[ TypedLanguageResource ]]</a></code></dt>
     <dd>Returns a list of all resources & language pairings supported by this package.</dd>
 </dl>

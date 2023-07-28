@@ -41,5 +41,5 @@
 </code></pre>
 
 <p>
-    <a href="step-3.php" title="Step 3: Organizing the Keyboard Files">Step 3: Organizing the Keyboard Files</a>
+    <a href="step-3" title="Step 3: Organizing the Keyboard Files">Step 3: Organizing the Keyboard Files</a>
 </p>

@@ -64,5 +64,5 @@ new functionality, to increment the minor version number for changes that impact
 <h2 id="See_also" name="See_also">See also</h2>
 
 <ul>
-  <li><a href="version.php" title="&amp;version store"><code>&amp;version</code> store</a></li>
+  <li><a href="version" title="&amp;version store"><code>&amp;version</code> store</a></li>
 </ul>

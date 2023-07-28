@@ -23,7 +23,7 @@
 
   <dt><code>source\&lt;wordlist&gt;.tsv</code></dt>
   <dd>wordlist source file, in columns for words, counts, and comments. This is a
-    <a href="/developer/current-version/reference/file-types/tsv.php">tab-separated value</a> file.</dd>
+    <a href="/developer/current-version/reference/file-types/tsv">tab-separated value</a> file.</dd>
 
   <dt><code>&lt;lexical-model&gt;.kpj</code></dt>
   <dd>the Keyman Developer project file for the lexical model<br/>

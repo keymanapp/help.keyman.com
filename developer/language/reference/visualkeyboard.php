@@ -22,7 +22,7 @@ generate the On Screen Keyboard.</p>
 
 <dl>
   <dt><code>visualkeyboardname</code></dt>
-  <dd>The name of the On Screen Keyboard <a href="../../10.0/reference/file-types/kvks.php">.kvks</a>
+  <dd>The name of the On Screen Keyboard <a href="../../10.0/reference/file-types/kvks">.kvks</a>
     source file to reference in the compiled keyboard.</dd>
 </dl>
 
@@ -72,5 +72,5 @@ generate the On Screen Keyboard.</p>
 <h2 id="See_also" name="See_also">See also</h2>
 
 <ul>
-  <li><a href="layoutfile.php" title="&amp;layoutfile store"><code>&amp;layoutfile</code> store</a></li>
+  <li><a href="layoutfile" title="&amp;layoutfile store"><code>&amp;layoutfile</code> store</a></li>
 </ul>

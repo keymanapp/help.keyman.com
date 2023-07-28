@@ -28,7 +28,7 @@
 <h2 id="Description" name="Description">Description</h2>
 
 <p>The <code>&amp;version</code> store allows Keyman to easily distinguish what version of Keyman the keyboard was
-written for and handle it accordingly. The <code>&amp;version</code> store is required. For new keyboards, use 
+written for and handle it accordingly. The <code>&amp;version</code> store is required. For new keyboards, use
 <code>9.0</code> as the version number.</p>
 
 <p>The keyboard version is used by Keyman Desktop for Windows. Versioning on other platforms generally matches the
@@ -65,5 +65,5 @@ current 9.0 feature set.</p>
 <h2 id="See_also" name="See_also">See also</h2>
 
 <ul>
-  <li><a href="keyboardversion.php" title="&amp;keyboardversion store"><code>&amp;keyboardversion</code> store</a></li>
+  <li><a href="keyboardversion" title="&amp;keyboardversion store"><code>&amp;keyboardversion</code> store</a></li>
 </ul>

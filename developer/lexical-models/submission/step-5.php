@@ -13,7 +13,7 @@
 
 <h2 id="verify-build">Verify lexical model builds before submission</h2>
 <p>
-    Following the file layout documented in <a href="step-0.php">Organizing Lexical Model Files</a>, your lexical model
+    Following the file layout documented in <a href="step-0">Organizing Lexical Model Files</a>, your lexical model
     should be in a folder similar to
 </p>
 

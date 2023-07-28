@@ -68,5 +68,5 @@ c:\projects\keyboards-starter\mysample2\release\<strong>m\mysample2</strong>
 </p>
 
 <p>
-    <a href="step-4.php" title="Step 4: Principles for Contributing Keyboards">Step 4: Principles for Contributing Keyboards</a>
+    <a href="step-4" title="Step 4: Principles for Contributing Keyboards">Step 4: Principles for Contributing Keyboards</a>
 </p>

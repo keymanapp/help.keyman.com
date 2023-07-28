@@ -44,6 +44,6 @@ Added in Keyman Engine for iPhone and iPad 14.0.
 <dl>
     <dt><code><a href='findResource.php'>findResource(withID:) -> TypedLanguageResource? </a></code></dt>
     <dd>Returns the resource matching the specified ID, if contained within the package.</dd>
-    <dt><code><a href="installables_forLanguage.php">installables(forLanguage: String): [ TypedLanguageResource ]</a></code></dt>
+    <dt><code><a href="installables_forLanguage">installables(forLanguage: String): [ TypedLanguageResource ]</a></code></dt>
     <dd>Provides the same functionality as this field, but filtered to a specific language code.</dd>
 </dl>

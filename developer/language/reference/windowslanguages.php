@@ -28,7 +28,7 @@ a Keyman keyboard works with in Windows.</p>
 
 <h2 id="Description" name="Description">Description</h2>
 
-<p>The <code>&amp;windowslanguages</code> store specifies additional Windows system languages that a keyboard may be associated with. 
+<p>The <code>&amp;windowslanguages</code> store specifies additional Windows system languages that a keyboard may be associated with.
 It is not used on other platforms, which instead use the <a href='ethnologuecode.php'><code>&amp;ethnologuecode</code> store</a>.</p>
 
 <p><a class="ulink" href="http://msdn2.microsoft.com/en-us/library/ms776294.aspx" target="_blank">Microsoft language identifier
@@ -62,5 +62,5 @@ reference</a></p>
 <h2 id="See_also" name="See_also">See also</h2>
 
 <ul>
-  <li><a href="language.php" title="&amp;language store"><code>&amp;language</code> store</a></li>
+  <li><a href="language" title="&amp;language store"><code>&amp;language</code> store</a></li>
 </ul>

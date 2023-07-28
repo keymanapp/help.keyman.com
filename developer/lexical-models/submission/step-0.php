@@ -43,5 +43,5 @@ include('../_shared/set-output-path.php');
 </p>
 
 <p>
-    <a href="step-1.php" title="Step 1: Setup - One Time Only">Step 1: Setup - One Time Only</a>
+    <a href="step-1" title="Step 1: Setup - One Time Only">Step 1: Setup - One Time Only</a>
 </p>

@@ -9,15 +9,15 @@
 <h1>Keyboard Tutorial</h1>
 
 <dl>
-  <dt><span class="section"><a href="step-1.php">Step 1: Planning the Keyboard</a></span></dt>
-  <dt><span class="section"><a href="step-2.php">Step 2: Writing the Header</a></span></dt>
-  <dt><span class="section"><a href="step-3.php">Step 3: The Keyboard Header</a></span></dt>
-  <dt><span class="section"><a href="step-4.php">Step 4: The Keyboard Body</a></span></dt>
-  <dt><span class="section"><a href="step-5.php">Step 5: Rules with Context</a></span></dt>
-  <dt><span class="section"><a href="step-6.php">Step 6: Stores, 'any', and 'index'</a></span></dt>
-  <dt><span class="section"><a href="step-7.php">Step 7: Testing the Keyboard</a></span></dt>
-  <dt><span class="section"><a href="step-8.php">Step 8: Deadkeys</a></span></dt>
-  <dt><span class="section"><a href="step-9.php">Step 9: The Finished Keyboard</a></span></dt>
+  <dt><span class="section"><a href="step-1">Step 1: Planning the Keyboard</a></span></dt>
+  <dt><span class="section"><a href="step-2">Step 2: Writing the Header</a></span></dt>
+  <dt><span class="section"><a href="step-3">Step 3: The Keyboard Header</a></span></dt>
+  <dt><span class="section"><a href="step-4">Step 4: The Keyboard Body</a></span></dt>
+  <dt><span class="section"><a href="step-5">Step 5: Rules with Context</a></span></dt>
+  <dt><span class="section"><a href="step-6">Step 6: Stores, 'any', and 'index'</a></span></dt>
+  <dt><span class="section"><a href="step-7">Step 7: Testing the Keyboard</a></span></dt>
+  <dt><span class="section"><a href="step-8">Step 8: Deadkeys</a></span></dt>
+  <dt><span class="section"><a href="step-9">Step 9: The Finished Keyboard</a></span></dt>
 </dl>
 
 <h2>Overview</h2>

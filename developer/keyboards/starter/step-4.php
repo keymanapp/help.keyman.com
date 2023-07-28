@@ -28,6 +28,6 @@
 ?>
 
 <p>
-    <a href="step-5.php" title="Step 5: Submitting a GitHub Pull Request">
+    <a href="step-5" title="Step 5: Submitting a GitHub Pull Request">
     Step 5: Submitting a GitHub Pull Request</a>
 </p>

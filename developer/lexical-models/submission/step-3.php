@@ -48,5 +48,5 @@ c:\projects\lexical-models\nrc\nrc.en.mtnt
 </code></pre>
 
 <p>
-    <a href="step-4.php" title="Step 4: Organizing the Lexical Model Files">Step 4: Organizing the Lexical Model Files</a>
+    <a href="step-4" title="Step 4: Organizing the Lexical Model Files">Step 4: Organizing the Lexical Model Files</a>
 </p>

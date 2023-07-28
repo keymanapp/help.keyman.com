@@ -32,8 +32,8 @@ any custom pages you may wish to embed within your packages for use within your 
 <h2 id="Constructor" name="Constructor">Constructor</h2>
 
 <dl>
-    <dt><code>public init?(for package: <a href="../KeymanPackage">KeymanPackage</a>, 
-    page: <a href="../KeymanPackage/pageURL.php">KeymanPackagePage</a></code></dt>
+    <dt><code>public init?(for package: <a href="../KeymanPackage">KeymanPackage</a>,
+    page: <a href="../KeymanPackage/pageURL">KeymanPackagePage</a></code></dt>
     <dd>Retrieves the corresponding page from the package and prepares a view to display it.</dd>
 </dl>
 
@@ -42,6 +42,6 @@ Added in Keyman Engine for iPhone and iPad 14.0.
 
 <h2 id="See_also" name="See_also">See Also</h2>
 <dl>
-    <dt><code><a href="../KeymanPackage/pageURL.php">KeymanPackage.pageURL</a></code></dt>
+    <dt><code><a href="../KeymanPackage/pageURL">KeymanPackage.pageURL</a></code></dt>
     <dd>Retrieves a <code>URL</code> for a .html page contained within a package.</dd>
 </dl>

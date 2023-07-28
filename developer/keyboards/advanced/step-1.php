@@ -60,5 +60,5 @@ git remote add upstream https://github.com/keymanapp/keyboards.git
 </p>
 
 <p>
-    <a href="step-2.php" title="Step 2: Before Starting Work on a Keyboard">Step 2: Before Starting Work on a Keyboard</a>
+    <a href="step-2" title="Step 2: Before Starting Work on a Keyboard">Step 2: Before Starting Work on a Keyboard</a>
 </p>

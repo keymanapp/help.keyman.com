@@ -38,7 +38,7 @@
 <h3 id="resource_identification" name="resource_identification">Resource Identification</h3>
 
 <dl>
-  <dt><code><a href="LanguageResource/LanguageResourceFullID.php">LanguageResourceFullID</a></code></dt>
+  <dt><code><a href="LanguageResource/LanguageResourceFullID">LanguageResourceFullID</a></code></dt>
   <dd>The LanguageResourceFullID protocol and its implementing types <code>FullKeyboardID</code> and
   <code>LexicalModelFullID</code> serve as unique identifiers for language resources, whether
   installed or uninstalled.</dd>
