@@ -2,11 +2,11 @@
     require_once('includes/template.php');
 
     // Required
-    head([
-        'title' =>'Step 3: Organizing the Keyboard Files',
-        'css' => ['template.css', 'prism.css', 'kmguides.css'],
-        'showMenu' => true
-    ]);
+    // head([
+    //     'title' =>'Step 3: Organizing the Keyboard Files',
+    //     'css' => ['template.css', 'prism.css', 'kmguides.css'],
+    //     'showMenu' => true
+    // ]);
 ?>
 
 <h1 id="organizing">Step 3: Organizing the Keyboard Files</h1>
