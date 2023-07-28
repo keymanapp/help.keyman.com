@@ -27,7 +27,7 @@ into a Keyman web keyboard for desktop keyboards. This HTML file should
 not include `<head>` or `<body>` tags, as will be a snippet only. On a
 desktop browser, the contents of this file will replace the On Screen
 Keyboard. It is mutually exclusive with the [`&kmw_helptext`
-store](kmw_helptext.php).
+store](kmw_helptext).
 
 ## Examples
 
@@ -52,4 +52,4 @@ The `&kmw_helpfile` store was added in Keyman 7.0.
 
 ## See also
 
--   [`&kmw_helptext` store](kmw_helptext.php)
+-   [`&kmw_helptext` store](kmw_helptext)

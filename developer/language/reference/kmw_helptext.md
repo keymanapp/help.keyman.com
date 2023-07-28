@@ -24,7 +24,7 @@ store(&kmw_helptext) "htmlString"
 The `&kmw_helptext` store allows you to specify a HTML string that will
 be displayed in the footer of the On Screen Keyboard on desktop web
 browsers. It is mutually exclusive with the [`&kmw_helpfile`
-store](kmw_helpfile.php).
+store](kmw_helpfile).
 
 ## Examples
 
@@ -49,4 +49,4 @@ The `&kmw_helptext` store was added in Keyman 7.0.
 
 ## See also
 
--   [`&kmw_helpfile` store](kmw_helpfile.php)
+-   [`&kmw_helpfile` store](kmw_helpfile)

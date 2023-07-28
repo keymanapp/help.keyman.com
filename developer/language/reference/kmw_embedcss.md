@@ -57,4 +57,4 @@ The `&kmw_embedcss` store was added in Keyman 9.0.
 
 ## See also
 
--   [`&kmw_embedjs` store](kmw_embedjs.php)
+-   [`&kmw_embedjs` store](kmw_embedjs)

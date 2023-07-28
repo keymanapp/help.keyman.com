@@ -23,7 +23,7 @@ store(&kmw_embedjs) "filename"
 
 The `&kmw_embedjs` store allows you to specify a JavaScript file to
 embed into a Keyman touch or web keyboard. This is typically used with
-the [`call()` statement](call.php).
+the [`call()` statement](call).
 
 The code is wrapped in a closure, and global variables should be
 avoided.
@@ -51,4 +51,4 @@ The `&kmw_embedjs` store was added in Keyman 7.0.
 
 ## See also
 
--   [`&kmw_embedcss` store](kmw_embedcss.php)
+-   [`&kmw_embedcss` store](kmw_embedcss)
