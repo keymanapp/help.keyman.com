@@ -53,7 +53,7 @@ and `reset()` for variable stores.
 ## See also
 
 -   [Using variable stores](../guide/variable-stores)
--   [if() statement](./if)
--   [save() statement](./save)
--   [set() statement](./set)
--   [store() statement](./store)
+-   [`if()` statement](./if)
+-   [`save()` statement](./save)
+-   [`set()` statement](./set)
+-   [`store()` statement](./store)

@@ -54,7 +54,7 @@ and `reset()` for variable stores.
 ## See also
 
 -   [Using variable stores](../guide/variable-stores)
--   [if() statement](./if)
--   [reset() statement](./reset) 
--   [set() statement](./set)
--   [store() statement](./store)
+-   [`if()` statement](./if)
+-   [`reset()` statement](./reset) 
+-   [`set()` statement](./set)
+-   [`store()` statement](./store)
