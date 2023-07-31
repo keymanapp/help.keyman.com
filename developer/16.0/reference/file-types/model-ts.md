@@ -30,7 +30,7 @@ language’s spelling system or *orthography*.
 **Keyman Developer** will provide you with a model definition similar to
 the following.
 
-``` 
+``` typescript
 /*
   sencoten 1.0 generated from template.
 
@@ -55,7 +55,7 @@ Let's step through this file, line-by-line.
 On the first line, we're declaring the source code of a new lexical
 model.
 
-``` lang-typescript
+``` typescript
 const source: LexicalModelSource = {
 ```
 
@@ -64,7 +64,7 @@ On the second line, we're saying the lexical model will use the
 more word lists; the `trie` structures the lexical model such that it
 can predict through thousands of words very quickly.
 
-``` lang-typescript
+``` typescript
   format: 'trie-1.0',
 ```
 
@@ -72,7 +72,7 @@ On lines 3–5, we're specifying the word breaking algorithm that we want
 to use. Keyman supplies a default algorithm that conforms to the rules
 expected for many Latin-script languages.
 
-``` lang-typescript
+``` typescript
   wordBreaker: {
     use: 'default',
   },
@@ -80,7 +80,7 @@ expected for many Latin-script languages.
 
 On the sixth line, we're telling the `trie` where to find our wordlist.
 
-``` lang-typescript
+``` typescript
   sources: ['wordlist.tsv'],
 ```
 
@@ -88,14 +88,14 @@ The seventh line marks the termination of the lexical model source code.
 If we specify any customizations, they **must** be declared above this
 line:
 
-``` lang-typescript
+``` typescript
 };
 ```
 
 The eighth line is necessary to allow external applications to read the
 lexical model source code.
 
-``` lang-typescript
+``` typescript
 export default source;
 ```
 
@@ -123,7 +123,7 @@ tricky to describe, but Keyman implements the [Unicode Standard Annex
 Specification](https://unicode.org/reports/tr29/#Word_Boundaries) which
 works well for most languages. If the default doesn't *quite* work for
 your language, you can [tweak
-it](../../guides/lexical-models/advanced/word-breaker.php#join).
+it](../../guides/lexical-models/advanced/word-breaker#join).
 
 However, in languages written in other scripts—especially East Asian
 scripts like Chinese, Japanese, Khmer, Lao, and Thai—there are no
