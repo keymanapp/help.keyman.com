@@ -22,12 +22,12 @@ any(inputStore)
 
 The **`any()`** statement will match any character that is in the store
 `inputStore`. This statement is only valid on the left side of a rule;
-the [`index()` statement](_index.php) is used to match again or output
+the [`index()` statement](_index) is used to match again or output
 the character matched by the `any()` statement in the output. The
 `any()` statement remembers the offset in the store where the match
 occurred for later use with the `index()` statement.
 
-Note that [`outs()` statements](outs.php) are expanded in stores, so the
+Note that [`outs()` statements](outs) are expanded in stores, so the
 character offset match is on the fully expanded version of the store.
 Other specials, such as deadkeys or virtual keys, are only a single
 character wide when measuring offset.
