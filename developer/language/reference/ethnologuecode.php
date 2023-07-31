@@ -40,7 +40,7 @@ codes. However, for legacy reasons, applications that process this store should 
 
 <p>The <code>&amp;EthnologueCode</code> store is deprecated. Keyboard Package
   <a href="/developer/current-version/reference/file-types/metadata#obj-language">metadata</a> should be used instead, which
-  is defined by the BCP 47 language code in the <a href="/developer/current-version/context/keyboard-editor.php#details">keyboard editor</a>.</p>
+  is defined by the BCP 47 language code in the <a href="/developer/current-version/context/keyboard-editor#details">keyboard editor</a>.</p>
 
 <h2 id="Examples">Examples</h2>
 
