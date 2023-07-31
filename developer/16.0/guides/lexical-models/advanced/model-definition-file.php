@@ -13,7 +13,7 @@ source code file that tells us how to define our model.
 
 <p>In the case of the <strong>wordlist lexical models</strong>, the model
 definition file indicates where find to find the
-<a href="../../../reference/file-types/tsv.php">TSV source files</a>, as well as
+<a href="../../../reference/file-types/tsv">TSV source files</a>, as well as
 gives us the option to tell the compiler a little bit more about our
 language’s spelling system or <em>orthography</em>.</p>
 
@@ -54,7 +54,7 @@ quickly. </p>
 <pre><code class="lang-typescript">  format: 'trie-1.0',</code></pre>
 
 <p> On lines 3–5, we're specifying the word breaking algorithm that we want to use.
-Keyman supplies a default algorithm that conforms to the rules expected for many 
+Keyman supplies a default algorithm that conforms to the rules expected for many
 languages.</p>
 <pre><code class="lang-typescript">  wordBreaker: {
   use: 'default',
@@ -78,11 +78,11 @@ require a few customizations. The <code>trie-1.0</code> wordlist model
 supports the following customizations: </p>
 
 <dl>
-  <dt> <a href="punctuation.php"> Punctuation </a> </dt>
+  <dt> <a href="punctuation"> Punctuation </a> </dt>
   <dd> How to define certain punctuation in your language </dd>
-  <dt> <a href="word-breaker.php"> Word breaker </a> </dt>
+  <dt> <a href="word-breaker"> Word breaker </a> </dt>
   <dd> How to determine when words start and end in the writing system </dd>
-  <dt> <a href="search-term-to-key.php"> Search term to key </a> </dt>
+  <dt> <a href="search-term-to-key"> Search term to key </a> </dt>
   <dd> How and when to ignore accents and letter case </dd>
 </dl>
 

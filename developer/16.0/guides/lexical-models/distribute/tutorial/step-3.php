@@ -54,4 +54,4 @@
     <p>You could stop here. This would be a completely valid package, but it would not be as good as it could be. So let's
     continue on to the next step, and fill in some descriptions of the package.</p>
 
-<p><a href="step-4.php" title="Step 4: Filling in package details">Step 4: Filling in package details</a></p>
+<p><a href="step-4" title="Step 4: Filling in package details">Step 4: Filling in package details</a></p>

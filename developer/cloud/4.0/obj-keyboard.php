@@ -17,7 +17,7 @@ head([
 obj_spec("Keyboard",
   "name", "required string", "Name of keyboard",
   "id", "required string", "ID of the keyboard, always matches the filename of the keyboard.",
-  "filename", "required string", "Name of the keyboard .js file which should be combined with <a href='index.php#obj-options'>" .
+  "filename", "required string", "Name of the keyboard .js file which should be combined with <a href='index#obj-options'>" .
     "<code>options.keyboardBaseUri</code></a>.",
   "default", "optional boolean", "<code>true</code> if the keyboard is the recommended default for the language.  ".
     "<code>false</code> if absent.",

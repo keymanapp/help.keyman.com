@@ -91,7 +91,7 @@ any(vowel) index(vowel,1) + "^" > index(vowelcirc,1) index(vowelcirc,2)
 
 <ul>
   <li><a href="../guide/stores" title="Using Stores">Using stores</a></li>
-  <li><a href="any.php" title="any() statement"><code>any()</code> statement</li>
-  <li><a href="context.php" title="context statement"><code>context</code> statement</li>
-  <li><a href="store.php" title="store() statement"><code>store()</code> statement</li>
+  <li><a href="any" title="any() statement"><code>any()</code> statement</li>
+  <li><a href="context" title="context statement"><code>context</code> statement</li>
+  <li><a href="store" title="store() statement"><code>store()</code> statement</li>
 </ul>

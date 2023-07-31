@@ -20,7 +20,7 @@ obj_spec(false,
   "family", "optional string", "Font family that KeymanWeb will provide for this font.",
   "size", "optional string", "Font size (in CSS dimensions).  If not specified, then <code>1em</code>.",
   "source", "optional Array", "Array of downloadable filenames for this font, which should be combined with ".
-  "<a href='index.php#obj-options'><code>options.fontBaseUri</code></a>."
+  "<a href='index#obj-options'><code>options.fontBaseUri</code></a>."
 );
 ?>
 

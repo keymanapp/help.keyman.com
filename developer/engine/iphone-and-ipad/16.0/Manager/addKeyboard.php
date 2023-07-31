@@ -12,7 +12,7 @@
 <h2 id="Summary" name="Summary">Summary</h2>
 <p>The <code><strong><?php echo $method.'()' ?></strong></code> method adds a keyboard into the keyboards list.</p>
 
-<p><strong>Deprecated</strong> in favor of <a href="../ResourceFileManager/install.php">ResourceFileManager.shared.install()</a>, which
+<p><strong>Deprecated</strong> in favor of <a href="../ResourceFileManager/install">ResourceFileManager.shared.install()</a>, which
 automatically includes the functionality of this method.</p>
 
 <h2 id="Syntax" name="Syntax">Syntax</h2>
@@ -50,5 +50,5 @@ Deprecated in Keyman Engine for iPhone and iPad 14.0.
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="removeKeyboard.php"><code>removeKeyboard()</code></a></li>
+ <li><a href="removeKeyboard"><code>removeKeyboard()</code></a></li>
 </ul>

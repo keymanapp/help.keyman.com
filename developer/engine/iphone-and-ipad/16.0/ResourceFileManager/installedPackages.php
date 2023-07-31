@@ -25,6 +25,6 @@ Added in Keyman Engine for iPhone and iPad 14.0.
 <h2 id="See_also" name="See_also">See also</h2>
 
 <dl>
-    <dt><code><a href='getInstalledPackage.php'>getInstalledPackage&lt;Resource: LanguageResource&gt;(for: Resource) -&gt; Resource.Package? </a></code></dt>
+    <dt><code><a href='getInstalledPackage'>getInstalledPackage&lt;Resource: LanguageResource&gt;(for: Resource) -&gt; Resource.Package? </a></code></dt>
     <dd>Finds the installed package for an already-installed resource.</dd>
 </dl>
