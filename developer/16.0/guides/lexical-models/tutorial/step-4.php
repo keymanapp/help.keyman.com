@@ -11,7 +11,7 @@ head([
 
 <p>
   Before use the lexical model, we must compile it. In this step, the <code>.tsv</code> wordlist and
-  <a href="../advanced/model-definition-file.php">the model definition file</a> get <dfn>compiled</dfn>
+  <a href="../advanced/model-definition-file">the model definition file</a> get <dfn>compiled</dfn>
   into a single <code>.model.js</code> file. This file is the one that Keyman
   uses internally to generate suggestions.
   Later on, we will bundle the <code>.model.js</code> file into a
@@ -37,12 +37,12 @@ head([
 <ul>
   <li>
     Now that the model is built, we are ready to
-    <a href="../distribute/packages.php">distribute our lexical model</a>.
+    <a href="../distribute/packages">distribute our lexical model</a>.
   </li>
   <li> (<em>For advanced users</em>)
     We can do some
     <a href="../advanced/">advanced customization</a> by modifying the
-    <a href="../advanced/model-definition-file.php">model definition file</a>.
+    <a href="../advanced/model-definition-file">model definition file</a>.
     Advanced customizations require a some comfort with modifying code!
   </li>
 </ul>

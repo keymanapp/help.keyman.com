@@ -31,5 +31,5 @@ protected void onResume() {
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="onResume.php"><code>onResume()</code></a></li>
+ <li><a href="onResume"><code>onResume()</code></a></li>
 </ul>

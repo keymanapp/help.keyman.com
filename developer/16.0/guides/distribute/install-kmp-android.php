@@ -20,7 +20,7 @@ head([
   the kmp file onto the Android device, skip to Step 2.</p>
 
 <p>If you want to build and deploy your own keyboard, you will need some technical skills for this, and can read our
-    full step-by-step instructional on how to do this <a href="packages.php">here</a>.</p>
+    full step-by-step instructional on how to do this <a href="packages">here</a>.</p>
 
 <p>Once you have a website or email with a link to the keyboard package, follow these steps on your Android device
     to download and install the keyboard package into the Keyman for Android application:</p>

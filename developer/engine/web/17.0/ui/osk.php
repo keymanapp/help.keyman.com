@@ -1,24 +1,24 @@
 <?php /*
   Name:             osk
   Copyright:        Copyright (C) 2005 Tavultesoft Pty Ltd.
-  Documentation:    
-  Description:      
+  Documentation:
+  Description:
   Create Date:      18 Sep 2009
 
   Modified Date:    18 Sep 2009
   Authors:          mcdurdin
-  Related Files:    
-  Dependencies:     
+  Related Files:
+  Dependencies:
 
-  Bugs:             
-  Todo:             
-  Notes:            
+  Bugs:
+  Todo:
+  Notes:
   History:          18 Sep 2009 - mcdurdin - Polish
 */
   $pagename = 'On Screen Keyboard';
   $pagetitle = 'On Screen Keyboard';
   $MainPage = true;
-  
+
   require_once('header.php');
 ?>
 
@@ -28,7 +28,7 @@
 <h4 style='margin-top: 16px'>What is a Keyboard?</h4>
 <p>When using KeymanWeb, the term <span style='font-style:italic' >keyboard</span> refers specifically  to the way the keys are arranged for a specific language (i.e. which letter or character appears when a given key is pressed).  Some languages have more than one keyboard layout; a typewriter-based layout and a phonetic layout, for example.  </p>
 <p>This page gives information about KeymanWeb's On-Screen Keyboard: the map of the keyboard which appears on a website when KeymanWeb is in use.</p>
-<p><a href='../../2.0/guide/what-is-a-keyboard.php'>More about KeymanWeb keyboards</a></p>
+<p><a href='../../2.0/guide/what-is-a-keyboard'>More about KeymanWeb keyboards</a></p>
 </div>
 
 

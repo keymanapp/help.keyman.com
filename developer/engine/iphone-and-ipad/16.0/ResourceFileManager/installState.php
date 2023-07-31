@@ -19,7 +19,7 @@
 <h3 id="Parameters" name="Parameters">Parameters</h3>
 <dl>
   <dt><code><?= $param1 ?></code></dt>
-  <dd>A <code><a href="../KeymanPackage/key.php">KeymanPackage.Key</a></code> that uniquely identifies the package.</dd>
+  <dd>A <code><a href="../KeymanPackage/key">KeymanPackage.Key</a></code> that uniquely identifies the package.</dd>
 </dl>
 
 <h3 id="Returns" name="Returns">Returns</h3>

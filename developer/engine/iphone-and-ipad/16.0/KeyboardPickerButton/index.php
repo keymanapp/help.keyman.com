@@ -23,7 +23,7 @@
 <h2 id="Methods" name="Methods">Methods</h2>
 
 <dl>
-    <dt><code><a href='setTitle.php'>setTitle()</a></code></dt>
+    <dt><code><a href='setTitle'>setTitle()</a></code></dt>
     <dd>clear images if the developer sets a title</dd>
 </dl>
 
