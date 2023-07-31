@@ -132,4 +132,4 @@ from which the description above was taken.
 In Step 1 we'll get set up for making a submission to the Keyman
 lexical-models repository.
 
-[Step 1: Setup - One Time Only](step-1.php)
+[Step 1: Setup - One Time Only](step-1)
