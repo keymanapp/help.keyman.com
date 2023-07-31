@@ -59,7 +59,7 @@ components:
 `source\<wordlist>.tsv`
 :   wordlist source file, in columns for words, counts, and comments.
     This is a [tab-separated
-    value](/developer/current-version/reference/file-types/tsv.php)
+    value](/developer/current-version/reference/file-types/tsv)
     file.
 
 `<lexical-model>.kpj`
