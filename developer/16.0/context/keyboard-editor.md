@@ -255,7 +255,7 @@ be given output if it has a standard code beginning with `K_`, or if it
 is a Unicode value code, starting with `U_`.
 
 Follow this
-[guide](../guides/develop/touch-keyboard-tutorial/making-touch-keyboard.php)
+[guide](../guides/develop/touch-keyboard-tutorial/making-touch-keyboard)
 for learning how to create a Touch Layout keyboard.
 
 In Design view, the editor can show a number of different device types,
