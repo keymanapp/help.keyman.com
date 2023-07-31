@@ -18,7 +18,7 @@ and contains the following members:
 `source`
 :   `Array` <span class="optional">optional</span>
 :   Array of downloadable filenames for this font, which should be
-    combined with [`options.fontBaseUri`](index.php#obj-options).
+    combined with [`options.fontBaseUri`](index#obj-options).
 
 
 ## Example case
