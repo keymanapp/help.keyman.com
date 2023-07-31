@@ -26,7 +26,7 @@
   <dt><code>offset</code></dt>
   <dd>The character offset of the <code>any()</code> statement in the left hand side of the rule to pair with, starting at <code>1</code>. The
   index increments for each character or statement found, with one caveat: <code>outs()</code> statements are expanded prior to calculating the
-  offset. Note that unlike the <a href='context'><code>context()</code></a> statement, the offset calculation does 
+  offset. Note that unlike the <a href='context'><code>context()</code></a> statement, the offset calculation does
   include <a href='if'><code>if()</code></a> statements.
   </dd>
 </dl>
@@ -54,7 +54,7 @@ c this could also be expressed with the context statement:
 any(vowel) + any(diacritic) > context index(diacriticCombining,2)
 </code></pre>
 
-<p>This example does the same as the previous, except it reverses the input order: a diacritic mark first, then a vowel, and uses the 
+<p>This example does the same as the previous, except it reverses the input order: a diacritic mark first, then a vowel, and uses the
 <code><strong>index()</strong></code> statement to swap the results in the output.</p>
 <pre><code>store(vowel) "aeiou"
 store(diacritickey) "`'^"
@@ -90,7 +90,7 @@ any(vowel) index(vowel,1) + "^" > index(vowelcirc,1) index(vowelcirc,2)
 <h2 id="See_also" name="See_also">See also</h2>
 
 <ul>
-  <li><a href="../guide/stores.php" title="Using Stores">Using stores</a></li>
+  <li><a href="../guide/stores" title="Using Stores">Using stores</a></li>
   <li><a href="any.php" title="any() statement"><code>any()</code> statement</li>
   <li><a href="context.php" title="context statement"><code>context</code> statement</li>
   <li><a href="store.php" title="store() statement"><code>store()</code> statement</li>
