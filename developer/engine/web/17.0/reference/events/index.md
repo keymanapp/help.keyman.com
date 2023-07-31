@@ -78,7 +78,7 @@ the object, using *addEventListener()*.
 So to define a user function to handle the KeymanWeb core
 kmw.keyboardchange event, include:
 
-``` programlisting
+``` typescript
 keymanweb.addEventListener('keyboardchange',
   function(p)
   {
@@ -90,7 +90,7 @@ keymanweb.addEventListener('keyboardchange',
 or a user function to modify the user interface when the on-screen
 keyboard is displayed:
 
-``` programlisting
+``` typescript
 osk.addEventListener('show',
   function(p)
   {
