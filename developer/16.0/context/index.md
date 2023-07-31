@@ -21,7 +21,7 @@ title: Context Help
 [New Project Parameters Dialog](new-project-parameters)
 
 [New Lexical Model Project Parameters
-Dialog](new-lm-project-parameters.php)
+Dialog](new-lm-project-parameters)
 
 [About Dialog](about-tike)
 
