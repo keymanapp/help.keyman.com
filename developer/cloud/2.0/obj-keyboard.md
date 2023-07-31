@@ -17,7 +17,7 @@ The `Keyboard` object contains the following members:
 `filename`
 :   `string`
 :   Name of the keyboard .js file which should be combined with
-    [`options.keyboardBaseUri`](index.php#obj-options).
+    [`options.keyboardBaseUri`](index#obj-options).
 
 `default`
 :   `boolean` <span class="optional">optional</span>
