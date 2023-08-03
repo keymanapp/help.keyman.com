@@ -27,4 +27,4 @@
 
 <p> Now to create a lexical model project!</p>
 
-<p><a href="step-2.php" title="Step 2: Creating a lexical model project">Step 2: Creating a lexical model project</a></p>
+<p><a href="step-2" title="Step 2: Creating a lexical model project">Step 2: Creating a lexical model project</a></p>

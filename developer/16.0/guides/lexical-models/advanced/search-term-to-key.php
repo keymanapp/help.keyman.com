@@ -10,7 +10,7 @@
 
 <p> To look up words quickly, the <code>trie</code> model creates a <dfn>
 search key </dfn> that takes the latest word (as determined by the <a
-href="word-breaker.php">word breaker</a> and converts it into an internal form.
+href="word-breaker">word breaker</a> and converts it into an internal form.
 The purpose of this internal form is to make searching for a word work,
 as expected,
 regardless of things such as <strong>accents</strong>,

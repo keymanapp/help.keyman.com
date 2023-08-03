@@ -34,5 +34,5 @@
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="setShouldAllowSetKeyboard.php"><code>setShouldAllowSetKeyboard</code></a></li>
+ <li><a href="setShouldAllowSetKeyboard"><code>setShouldAllowSetKeyboard</code></a></li>
 </ul>

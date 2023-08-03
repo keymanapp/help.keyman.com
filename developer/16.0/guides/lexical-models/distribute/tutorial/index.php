@@ -9,11 +9,11 @@
 <h1>Lexical Model Package Tutorial</h1>
 
 <dl>
-  <dt><a href="step-1.php">Step 1: What do we include?</a></dt>
-  <dt><a href="step-2.php">Step 2: Editing .htm files for the Package</a></dt>
-  <dt><a href="step-3.php">Step 3: Checking a package and adding files</a></dt>
-  <dt><a href="step-4.php">Step 4: Filling in package details</a></dt>
-  <dt><a href="step-5.php">Step 5: Compiling, testing and distributing a Package</a></dt>
+  <dt><a href="step-1">Step 1: What do we include?</a></dt>
+  <dt><a href="step-2">Step 2: Editing .htm files for the Package</a></dt>
+  <dt><a href="step-3">Step 3: Checking a package and adding files</a></dt>
+  <dt><a href="step-4">Step 4: Filling in package details</a></dt>
+  <dt><a href="step-5">Step 5: Compiling, testing and distributing a Package</a></dt>
 </dl>
 
 <h2>Overview</h2>
@@ -31,4 +31,4 @@ lexical models through the package.</p>
 
 <p>Let's get started! Move on to the next topic to begin the first step, choosing what to include in the package.</p>
 
-<p><a href="step-1.php" title="Step 1: What do we include?">Step 1: What do we include?</a></p>
+<p><a href="step-1" title="Step 1: What do we include?">Step 1: What do we include?</a></p>

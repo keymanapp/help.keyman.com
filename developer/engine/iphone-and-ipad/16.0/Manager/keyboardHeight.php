@@ -35,6 +35,6 @@ keymanWeb.frame = CGRect(x: 0.0, y: 0.0, width: kbWidth, height: kbHeight + 1000
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="addKeyboard.php"><code>addKeyboard()</code></a></li>
- <li><a href="switchToNextKeyboard.php"><code>switchToNextKeyboard()</code></a></li>
+ <li><a href="addKeyboard"><code>addKeyboard()</code></a></li>
+ <li><a href="switchToNextKeyboard"><code>switchToNextKeyboard()</code></a></li>
 </ul>

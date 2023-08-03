@@ -1,99 +1,84 @@
 # Development
 
-## How to run help.keyman.com.local with Windows IIS
+## How to run help.keyman.com locally with Apache on Docker
 
-On Windows, you can run in IIS. The live sites currently run on IIS, so this is the best option
-for compatibility.
+Previously, the site was run in IIS, but is now migrated to Apache. The Docker image is configured to host the site that can be accessed at http://localhost:8055.
 
-For Windows 10:
 
-0. Make a local copy of the repository by running `git clone https://github.com/keymanapp/help.keyman.com`
-   (or, if you want to use a different folder name, use something like
-   `git clone https://github.com/keymanapp/help.keyman.com keyman-help`)
-1. In Control Panel\Programs\Programs and Features, click Turn Windows features on or off
-2. In the Windows Features dialog, select "Internet Information Services".
-3. Use the Web Platform Components Installer <https://www.microsoft.com/web/downloads/platform.aspx>
-   to install PHP 5.6 or later and URL Rewrite. To do this, first install the Web Platform Installer
-   extension, then open "Microsoft Web Platform Installer" and under "Products" select PHP (version
-   5.6 or later) and click "Add", then select "URL Rewrite" and click "Add", then "Install". (If the
-   Web Platform Installer is unable to install URL Rewrite, try looking for an .msi file at
-   <https://www.iis.net/downloads/microsoft/url-rewrite#additionalDownloads>.)
-4. In IIS Manager, add a new Website with the Physical path pointing to the folder this `Readme.md`
-   file is in.
-5. In the binding host name field, enter "help.keyman.com.local".
-6. Start an elevated instance of Notepad (that is, use "Run as Administrator" when starting
-   Notepad), load "C:\WINDOWS\System32\drivers\etc\hosts" and add the line
-   `127.0.0.1  help.keyman.com.local`.
-7. Install [Composer](http://getcomposer.org/download/), then run `composer
-   install` in the root folder of your site.
-8. You should now be able to navigate to <http://help.keyman.com.local/> on your computer
-9. If you get an error, it may be a problem with permissions:
+### Pre-requisites
 
-    - With File Explorer navigate to the folder with your local copy of the help repository ("keyman-help.keyman.com", unless you used a shorter name such as "keyman-help" folder in Step 0).
-    - Right click on the name of the folder, and select Properties, then select the Security tab. Under the "Group or user names" box, click the edit button.
-    - Click "Add"
-    - Click inside the "Enter the object names to select" box, then type `\\IUSR; \\IIS_IUSRS`.
-    - Click "Check Names" to verify that the entry is valid. (If a name is not valid, a dialog will pop up telling you that. For a valid name, there may not be any feedback.)
-    - Make sure the new user has "Read & execute" permission.
-    - Should you get a 500.21 error: (Handler "PHP_via_FastCGI" has a bad module "FastCgiModule" in its module list), try using "Turn Windows features on or off" from Control Panel, then going to "Internet Information Services" | "World Wide Web Services" | "Application Development Features" | "CGI" and ticking the empty box for "CGI".
+On the host machine, install [Docker](https://docs.docker.com/get-docker/) and [Composer](https://getcomposer.org/download/):
 
-One way to test help files is to create a folder `test` inside the `keyman-help.keyman.com` folder
-(or whatever folder name was chosen in step 0 above).
-Then the help file (`xyz.php`, for this example) and any supporting files it references are placed in
-the `test` folder.
-Using a browser to navigate to <http://help.keyman.com.local/test/xyz.php> should display the
-help file.
+On Windows, Docker will also need either:
+* hyper-v or
+* [WSL2](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview)
 
-### Prerequisites on Linux
+### Builder actions
 
-Install PHP and the mbstring, curl, and xml extensions:
+#### Stop the Docker container
+1. Run `./build.sh stop`
 
+#### Build the Docker image
+1. Run `./build.sh build`.
+
+#### Start the Docker container
+1. Run `./build.sh start`.
+
+#### Configure
+Move PHP dependencies in Docker image from /var/www/vendor/ to /var/www/html/vendor
+1. Run `./build.sh configure`.
+
+After this, you can access the help.keyman site at http://localhost:8055
+
+#### Remove the Docker container and image
+1. Run `./build.sh clean`.
+
+#### Running tests
+Checks for broken links
+1. Run `./build.sh test`
+
+
+## How to run help.keyman.com locally with Docker Desktop's Kubernetes singlenode cluster
+
+For testing Kubernetes deployment there are yaml files under `resources/kubectl`, that cover local developer testing. 
+
+### Pre-requisites
+On the host machine, install [Docker](https://docs.docker.com/get-docker/), then enable Kubernetes in the settings. Ensure you have built a help-keyman-app Docker image, and either tag it `docker.dallas.languagetechnology.org/keyman/help-keyman-app` or modify the `app-php` containers `image:` value to match you local copy's name.
+
+### Deploying to a desktop cluster
+To deploy the dev version to the cluster do the following:
+1. Ensure your `kubectl` context is set to `docker-desktop`, though the Docker Desktop systray icon or by running:  
 ```bash
-sudo apt update
-sudo apt install php php-mbstring php-curl php-xml
+$> kubectl config use-context docker-desktop
 ```
-
-**NOTE:** when using Docker these packages are not necessary on the development machine to run the
-site, but to populate the `vendor` folder.
-
-### Using composer to install dependencies in vendor/ folder
-
-1. Install [Composer](https://getcomposer.org/download/)
-2. Run `composer install` to install dependencies.
-
-## Using Docker
-
-To run locally with Docker on http://localhost:8055 you can use commands like the following:
-
-**NOTE:** You might have to adjust the base image (`FROM` line in `Dockerfile`) to the installed
-PHP version.
-
-### On Windows
-
-In help.keyman.com repo root:
-
+2. Create a keyman namespace if it does not already exist:
 ```bash
-docker build -t keyman-websites .
-docker run -d -p 8055:80 -v %cd%:/var/www/html/ -e S_KEYMAN_COM=localhost:8054 keyman-websites
+$> kubectl create ns keyman
 ```
-
-In s.keyman.com repo root:
-
+3. Apply the configs for the resources and start the pod:
 ```bash
-docker run -d -p 8054:80 -v %cd%:/var/www/html/ keyman-websites
+$> kubectl --namespace keyman apply \
+       -f resources/kubectl/help-kubectl-dev.yaml \
+       -f resources/kubectl/help-kubectl.yaml
 ```
-
-### On Linux
-
-In help.keyman.com repo root:
-
+### Testing the site and `/api/deploy` webhook endpoint
+The site can be reached on http://localhost:30080/ via web browser, and the deploy api is on http://localhost:30900/api/deploy, and can be activated like so:
 ```bash
-docker build -t keyman-websites .
-docker run -d -p 8055:80 -v $(pwd):/var/www/html/ -e S_KEYMAN_COM=localhost:8054 keyman-websites
+$> curl -v --request POST \
+    -H "Content-Type: application/json" \
+    -H "X-Hub-Signature-256: sha256=49af8531106a369bfee369f91dadec597e8ea3992ec2802bbe655be0ece17f15" \
+    --data '{"action":"push","ref":"refs/heads/staging"}' \
+    http://localhost:30900/api/deploy
 ```
+This simulates enough of a GitHub webhook push event to pass validation on the responder.
 
-In s.keyman.com repo root:
+### Clean up after testing
 
+To remove the k8s deployment and resources, and delete everything do:
 ```bash
-docker run -d -p 8054:80 -v $(pwd):/var/www/html/ keyman-websites
+$> kubectl --namespace=keyman delete {svc,deploy,cm,secret,pvc}/help-keyman-com
+```
+Or just restart the deployment for further testing
+```bash
+$> kubectl --namespace=keyman rollout restart deploy/help-keyman-com
 ```

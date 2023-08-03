@@ -38,7 +38,7 @@
 <h3 id="resource_identification" name="resource_identification">Resource Identification</h3>
 
 <dl>
-  <dt><code><a href="LanguageResource/LanguageResourceFullID.php">LanguageResourceFullID</a></code></dt>
+  <dt><code><a href="LanguageResource/LanguageResourceFullID">LanguageResourceFullID</a></code></dt>
   <dd>The LanguageResourceFullID protocol and its implementing types <code>FullKeyboardID</code> and
   <code>LexicalModelFullID</code> serve as unique identifiers for language resources, whether
   installed or uninstalled.</dd>
@@ -176,7 +176,7 @@
   <li><a href="/developer/engine/iphone-and-ipad/2.0/" title="Keyman Engine for iPhone and iPad 2.0">
       Keyman Engine for iPhone and iPad 2.0</a></li>
   <li><a href="/developer/current-version/" title="Keyman Developer">Keyman Developer</a></li>
-  <li><a href='http://keyman.com/developer/keymanweb/keyboards.php' title="Keyboard Library">Keyboard Library</a></li>
+  <li><a href='http://keyman.com/developer/keymanweb/keyboards' title="Keyboard Library">Keyboard Library</a></li>
   <li><a href="/developer/engine/android/current-version/" title="Keyman Engine for Android">Keyman Engine for Android 10.0</a></li>
 </ul>
 

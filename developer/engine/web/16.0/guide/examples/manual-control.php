@@ -30,14 +30,14 @@ This example continues to use the KeymanWeb default interface.</p>
   {
     /* Make sure that Keyman is initialized (we can't guarantee initialization order) */
     keyman.init();
-  
+
     KWControl = document.getElementById('KWControl');
     /* Prevents automatic display of the onscreen keyboard. (default automatic) */
     keyman.osk.hide();
     /* Select the LaoKeys keyboard */
     keyman.setActiveKeyboard('laokeys');
   }
-  
+
   /* KWControlClick: Called when user clicks on the KWControl IMG */
   function KWControlClick()
   {
@@ -51,7 +51,7 @@ This example continues to use the KeymanWeb default interface.</p>
 </script>
 END
   );
-  
+
 echo "<p>Also include the following HTML code:</p>";
 
 echo codebox(<<<END
@@ -75,7 +75,7 @@ END
 <?php
 
   echo "<p>And finally, include the control img for KeymanWeb:</p>";
-  
+
   echo codebox(<<<END
 <!-- Display the KeymanWeb icon for the user to click on -->
 <img style="border: solid 1px black; padding: 2px 2px 3px 2px" src='kmicon.png' alt='KeymanWeb' onclick='KWControlClick()' id='KWControl' />
@@ -91,4 +91,4 @@ END
 
 <hr>
 
-<p><a href='full-manual-control.php'>On to Full Manual Control Example</a></p>
+<p><a href='full-manual-control'>On to Full Manual Control Example</a></p>

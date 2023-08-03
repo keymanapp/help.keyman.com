@@ -15,13 +15,13 @@
 
       <tr>
         <td width="20%" align="left">
-          <a accesskey="p" href="../guide/index_guide_kmw.php">Prev</a> 
+          <a accesskey="p" href="../guide/index_guide_kmw">Prev</a>
         </td>
 
         <th width="60%" align="center">KeymanWeb Guide</th>
 
         <td width="20%" align="right">
-           <a accesskey="n" href="../guide/guide_kmw_automatic_control_loaded.php">Next</a>
+           <a accesskey="n" href="../guide/guide_kmw_automatic_control_loaded">Next</a>
         </td>
       </tr>
     </table>
@@ -38,21 +38,21 @@
 
     <p>In this example, we use only the LaoKey keyboard.</p>
 
-    <p>A working example can be seen online at <a class="ulink" href="http://www.keymanweb.com/dev/automatic_control.php" target=
+    <p>A working example can be seen online at <a class="ulink" href="http://www.keymanweb.com/dev/automatic_control" target=
     "_blank">www.keymanweb.com</a></p>
 
     <p><span class="inlinemediaobject"><img src="<?= cdn('img/developer/90/kmw_automatic_control.png')?>"></span></p>
 
     <h4><a name="id536564" id="id536564"></a>Code Walkthrough</h4>
     <pre class="programlisting">
-&lt;head&gt;  
-  &lt;!-- Start of Code --&gt;  
-  &lt;script type="text/javascript"&gt;KeymanWeb_Key='your_key_here';&lt;/script&gt;  
-  &lt;script src="keymanweb.js" type="text/javascript"&gt;&lt;/script&gt;  
-  &lt;script src="laokeys_load.js" type="text/javascript"&gt;&lt;/script&gt;  
-  &lt;!-- End of Code --&gt;  
+&lt;head&gt;
+  &lt;!-- Start of Code --&gt;
+  &lt;script type="text/javascript"&gt;KeymanWeb_Key='your_key_here';&lt;/script&gt;
+  &lt;script src="keymanweb.js" type="text/javascript"&gt;&lt;/script&gt;
+  &lt;script src="laokeys_load.js" type="text/javascript"&gt;&lt;/script&gt;
+  &lt;!-- End of Code --&gt;
 &lt;/head&gt;
-  
+
 </pre>
 
     <p>As you can see above, the second line in the code snippet above references the LaoKey keyboard loader JavaScript file. This is a
@@ -61,7 +61,7 @@
     kilobytes of unused Javascript keyboards - the keyboard is downloaded when it is first selected by the user.</p>
 
     <p>If you know that a keyboard will be required for a page, you can skip the loader and load the keyboard directly instead, shown as a
-    <a class="link" href="../guide/guide_kmw_automatic_control_loaded.php" title="Automatic Control (pre-loaded) Example">separate example</a>.</p>
+    <a class="link" href="../guide/guide_kmw_automatic_control_loaded" title="Automatic Control (pre-loaded) Example">separate example</a>.</p>
 
     <h4><a name="id536576" id="id536576"></a>The KeymanWeb_Key</h4>
 
@@ -75,15 +75,15 @@
     <table width="100%" summary="Navigation footer">
       <tr>
         <td width="40%" align="left">
-          <a accesskey="p" href="../guide/index_guide_kmw.php">Prev</a> 
+          <a accesskey="p" href="../guide/index_guide_kmw">Prev</a>
         </td>
 
         <td width="20%" align="center">
-          <a accesskey="u" href="../guide/index_guide_kmw.php">Up</a>
+          <a accesskey="u" href="../guide/index_guide_kmw">Up</a>
         </td>
 
         <td width="40%" align="right">
-           <a accesskey="n" href="../guide/guide_kmw_automatic_control_loaded.php">Next</a>
+           <a accesskey="n" href="../guide/guide_kmw_automatic_control_loaded">Next</a>
         </td>
       </tr>
 
@@ -91,7 +91,7 @@
         <td width="40%" align="left" valign="top">KeymanWeb Guide </td>
 
         <td width="20%" align="center">
-          <a accesskey="h" href="../index.php">Home</a>
+          <a accesskey="h" href="../index">Home</a>
         </td>
 
         <td width="40%" align="right" valign="top"> Automatic Control (pre-loaded) Example</td>

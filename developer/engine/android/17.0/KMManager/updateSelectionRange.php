@@ -46,5 +46,5 @@
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="updateText.php" title="Title."><code>updateText()</code></a></li>
+ <li><a href="updateText" title="Title."><code>updateText()</code></a></li>
 </ul>

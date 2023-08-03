@@ -22,5 +22,5 @@
 <h2> Reference </h2>
 
 <dl>
-  <dt><a href="../../reference/file-types/tsv.php">Wordlist TSV format</a></dt>
+  <dt><a href="../../reference/file-types/tsv">Wordlist TSV format</a></dt>
 </dl>
