@@ -1,9 +1,7 @@
 <?php
   require_once('includes/template.php');
 
-  head([
-    'title' => "&amp;EthnologueCode system store"
-  ]);
+  
 ?>
 
 <h1 class="title" id="reference_ethnologuecode">&amp;EthnologueCode</h1>

@@ -1,9 +1,7 @@
 <?php
   require_once('includes/template.php');
 
-  head([
-    'title' => "&amp;includecodes system store"
-  ]);
+  
 ?>
 
 <h1 class="title" id="reference_includecodes">&amp;includecodes</h1>

@@ -1,9 +1,7 @@
 <?php
   require_once('includes/template.php');
 
-  head([
-    'title' => "&amp;hotkey store"
-  ]);
+  
 ?>
 
 <h1 class="title" id="reference_hotkey">&amp;hotkey</h1>
