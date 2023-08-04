@@ -10,4 +10,4 @@ to target platforms.
 
 [Language guide](guide)
 
-[Language reference](reference.php)
+[Language reference](reference)
