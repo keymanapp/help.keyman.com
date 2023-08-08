@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Nakoda Keyboard Help';
-  $pagetitle = 'Nakoda Keyboard Help';
+  $pagename = 'Nakoda (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }

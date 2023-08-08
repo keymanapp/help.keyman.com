@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Ilnu-Innu Aimun Keyboard Help';
-  $pagetitle = 'Ilnu-Innu Aimun Keyboard Help';
+  $pagename = 'Ilnu-Innu Aimun (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }

@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Bodéwadminwen-Nishnabémwen Keyboard Help';
-  $pagetitle = 'Bodéwadminwen-Nishnabémwen Keyboard Help';
+  $pagename = 'Bodéwadminwen-Nishnabémwen (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }

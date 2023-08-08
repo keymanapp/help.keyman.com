@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Northern Tutchone Keyboard Help';
-  $pagetitle = 'Northern Tutchone Keyboard Help';
+  $pagename = 'Northern Tutchone (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }

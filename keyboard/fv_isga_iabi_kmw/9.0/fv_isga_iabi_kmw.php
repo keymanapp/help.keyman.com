@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Isga Iʔabi Keyboard Help';
-  $pagetitle = 'Isga Iʔabi Keyboard Help';
+  $pagename = 'Isga Iʔabi (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }

@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Shashishalhem Keyboard Help';
-  $pagetitle = 'Shashishalhem Keyboard Help';
+  $pagename = 'Shashishalhem (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }

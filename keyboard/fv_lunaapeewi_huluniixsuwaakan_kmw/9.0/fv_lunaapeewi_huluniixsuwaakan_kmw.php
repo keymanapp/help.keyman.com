@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Lunáapeewi-hulŭniixsuwáakan Keyboard Help';
-  $pagetitle = 'Lunáapeewi-hulŭniixsuwáakan Keyboard Help';
+  $pagename = 'Lunáapeewi-hulŭniixsuwáakan (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }

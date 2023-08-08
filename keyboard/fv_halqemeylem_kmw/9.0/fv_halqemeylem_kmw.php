@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Halq\'eméylem Keyboard Help';
-  $pagetitle = 'Halq\'eméylem Keyboard Help';
+  $pagename = 'Halq\'eméylem (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }
