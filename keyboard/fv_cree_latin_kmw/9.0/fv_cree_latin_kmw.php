@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Cree - Roman Orthography Keyboard Help';
-  $pagetitle = 'Cree - Roman Orthography Keyboard Help';
+  $pagename = 'Cree - Roman Orthography (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }

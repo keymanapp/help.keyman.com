@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Wendat Keyboard Help';
-  $pagetitle = 'Wendat Keyboard Help';
+  $pagename = 'Wendat (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }

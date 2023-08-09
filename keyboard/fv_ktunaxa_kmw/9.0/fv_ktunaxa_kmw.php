@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Ktunaxa Keyboard Help';
-  $pagetitle = 'Ktunaxa Keyboard Help';
+  $pagename = 'Ktunaxa (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }
