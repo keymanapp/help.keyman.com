@@ -27,8 +27,8 @@ information is intended for use by third-party applications, and is also
 used by the compiler to generate metadata for KeymanWeb.
 
 For a list of codes, or more information about Ethnologue, see
-[www.ethnologue.com](http://www.ethnologue.com/){.ulink
-target="_blank"}.
+[www.ethnologue.com](http://www.ethnologue.com/)
+.
 
 Multiple codes can be included by separating them with spaces. You
 should not include punctuation between codes. However, for legacy

@@ -21,7 +21,7 @@ store(&includecodes) "filename"
 ## Description
 
 The `&includecodes` store allows you to reference an external file for
-[named character constants](../guide/constants){.link}. Keyman Developer
+[named character constants](../guide/constants). Keyman Developer
 includes unicodedata.txt, which lists all the named Unicode characters -
 in version 9.0, it includes all the Unicode 8.0 characters.
 
