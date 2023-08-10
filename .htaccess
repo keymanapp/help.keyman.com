@@ -183,7 +183,7 @@ RewriteRule "^keyboard/(?!redir.php)([^/?]+)/([^/?]+)(/)?$" "keyboard/redir.php?
 # special case because of specific filenames : these don't redirect properly otherwise
 
 # Rewrite nul -> _nul, index -> _index
-RewriteRule "^developer/language/reference/(nul|index)(\.php)?$" "developer/language/reference/_$1.php" [END]
+RewriteRule "^developer/language/reference/(nul|index)(\.php|\.md)?$" "developer/language/reference/_$1$2"
 
 # no pages currently reference this but will allow for future automatic re-versioning links in docs (13.0 onward?)
 # Redirect creating-a-touch-keyboard-layout-for-amharic-with-keyman-developer-10

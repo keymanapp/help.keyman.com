@@ -181,5 +181,5 @@ title: Keyman Keyboard Language Reference
 
 ## See also
 
--   [Keywords by type](_keywordsbytype.php)
+-   [Keywords by type](_keywordsbytype)
 -   [Keyman keyboard language guide](../guide)
