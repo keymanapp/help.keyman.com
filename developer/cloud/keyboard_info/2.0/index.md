@@ -10,251 +10,298 @@ resources to the download store.
 
 ### KeyboardInfo Object
 
-<table class="language-javascript display">
-  <tr >
-    <th>Member</th>
-    <th>Notes</th>
-  </tr>
-  <tr class="odd">
-    <td>id</td>
-    <td>
-      <p><strong>string</strong>, the same as the name of the folder, lower
-      case. In the <strong>release/</strong> folder, this name must be a valid
-      Javascript identifier, and follow the rules in the <a
-      href="https://help.keyman.com/developer/keyboards">Keyboard Cloud
-      Repository documentation</a>.</p>
-      <p><strong>Example:</strong> <code>"id": "fv_blackfoot"</code></p>
-      <p><strong>Generation:</strong> from folder name.</p>
-    </td>
-  </tr>
-  <tr class="even">
-    <td>name</td>
-    <td>
-      <p><strong>string</strong>, the human readable name of the keyboard.
-      This will usually differ from the id.</p>
-      <p><strong>Generation:</strong> from .kmp info, package name. If a .kmp
-      is not included, it is sourced from the .js with a regular
-      expression.</p>
-    </td>
-  </tr>
-  <tr class="odd">
-    <td>authorName</td>
-    <td>
-      <p><strong>string</strong>, the name of the author</p>
-      <p><strong>Generation:</strong> from .kmp info</p>
-    </td>
-  </tr>
-  <tr class="even">
-    <td>authorEmail</td>
-    <td>
-      <p><strong>string</strong>, the email address of the author</p>
-      <p><strong>Generation:</strong> from .kmp info</p>
-    </td>
-  </tr>
-  <tr class="odd">
-    <td>description</td>
-    <td>
-      <p><strong>string</strong>, a textual description of the keyboard. This
-      may contain some minimal HTML (p, b, i, u, span, a, ul, ol, li, br, hr,
-      h1-h4 tags).</p>
-      <p><strong>Generation:</strong> from .kmp info</p>
-    </td>
-  </tr>
-  <tr class="even">
-    <td>license</td>
-    <td>
-      <p><strong>string</strong>, the possible values for
-        <strong>license</strong> vary by location in the repository:
-      </p>
-      <ul>
-        <li><strong>release/</strong> and <strong>experimental/</strong>
-          keyboards must be <code>"mit"</code>.</li>
-        <li><strong>legacy/</strong> keyboards will be
-        <code>"freeware"</code>,
-          <code>"shareware"</code> or <code>"commercial"</code>.
-        </li>
-      </ul>
-      <p><strong>Generation:</strong> from LICENSE.md</p>
-    </td>
-  </tr>
-  <tr class="odd">
-    <td>languages</td>
-    <td>
-      <p><strong>array or objects</strong>; an array of BCP 47 codes, or an
-      object with its member names being BCP 47 codes and values being
-        <strong>KeyboardLanguageInfo</strong> objects.
-      </p>
-      <p><strong>Generation:</strong> From .kmp info.</p>
-    </td>
-  </tr>
-  <tr class="even">
-    <td>lastModifiedDate</td>
-    <td>
-      <p><strong>string</strong>, the last time the keyboard was modified, in
-      RFC3339, UTC <code>YYYY-MM-DDThh:mm:ss[.nnn]Z</code></p>
-      <p><strong>Generation:</strong> the time that the .keyboard_info file is
-      generated</p>
-    </td>
-  </tr>
-  <tr class="even">
-    <td>packageFilename</td>
-    <td>
-      <p><strong>string</strong>, filename of the .kmp file that will be
-      distributed, relative to the keyboard base folder, including extension,
-      required for <strong>experimental/</strong> and <strong>legacy/</strong>
-        folders. If no .kmp exists, then keyboard is js only. For
-        <strong>release/</strong> folders, this must be
-        <strong><em>id</em>/build/<em>id</em>.kmp</strong>.
-      </p>
-      <p><strong>Generation:</strong> always <strong><em>id</em>.js</strong>.</p>
-    </td>
-  </tr>
-  <tr class="odd">
-    <td>packageFileSize</td>
-    <td>
-      <p><strong>number</strong>, integer size of the .kmp file that will be
-      distributed.</p>
-      <p><strong>Generation:</strong> From .kmp.</p>
-    </td>
-  </tr>
-  <tr class="even">
-    <td>jsFilename</td>
-    <td>
-      <p><strong>string</strong>, filename of the .js file that will be
-      distributed,  e.g. "gff_amh.js".</p>
-      <p><strong>packageFilename</strong> and/or <strong>jsFilename</strong>
-        must be specified for <strong>legacy</strong> and
-        <strong>experimental</strong> keyboards.
-      </p>
-      <p><strong>Generation:</strong> always <strong><em>id</em>.js</strong>.
-      </p>
-    </td>
-  </tr>
-  <tr class="odd">
-    <td>jsFileSize</td>
-    <td>
-      <p><strong>number</strong>, integer size of the .js file that will be
-      distributed.</p>
-      <p><strong>Generation:</strong> From .js.</p>
-    </td>
-  </tr>
-  <tr class="even">
-    <td>isRTL</td>
-    <td>
-      <p><strong>boolean</strong>, true if the .js keyboard should be
-      right-to-left.</p>
-      <p><strong>Generation:</strong> From .kmx, .js.</p>
-    </td>
-  </tr>
-  <tr class="odd">
-    <td>encodings</td>
-    <td>
-      <p><strong>array</strong>, of up to 2 <strong>strings</strong>,
-        <code>"unicode"</code> and/or <code>"ansi"</code>.
-      </p>
-      <p><strong>Generation:</strong> from .kmx, .js.</p>
-    </td>
-  </tr>
-  <tr class="even">
-    <td>packageIncludes</td>
-    <td>
-      <p><strong>array</strong>, of <strong>strings</strong>. Metadata used
-      mostly by legacy keyboards. This flags whether a package includes:</p>
-      <ul>
-        <li><code>"fonts"</code> - one or more fonts</li>
-        <li><code>"documentation"</code> - documentation, in PDF, RTF or HTML
-        format, excluding welcome.htm and readme</li>
-        <li><code>"visualKeyboard"</code> - a KVK file</li>
-        <li><code>"welcome"</code> - a welcome.htm file</li>
-      </ul>
-      <p><strong>Generation:</strong> from .kmp</p>
-    </td>
-  </tr>
-  <tr class="odd">
-    <td>version</td>
-    <td>
-      <p><strong>string</strong>, the file version of the keyboard /
-      package.</p>
-      <p><strong>Generation:</strong> from .kmp, .js. If no version number is
-      present in the compiled file, assumes <code>"1.0"</code></p>
-    </td>
-  </tr>
-  <tr class="even">
-    <td>minKeymanVersion</td>
-    <td>
-      <p><strong>string</strong>. The minimum version of Keyman that can read
-      this keyboard. If present, must be a two part version string, starting
-      from <code>"6.0"</code> and up. Note: for versions below 10.0, this
-      value is used in KeymanWeb, but the version mapping is based on Keyman
-      Desktop version numbers. For versions 10.0 and above, all platforms have
-      a synchronized version number. See <a
-      href="/developer/cloud/versioning">KeymanWeb Versioning</a> for more
-      detail.</p>
-      <p><strong>Generation:</strong> from .kmp, .js.</p>
-    </td>
-  </tr>
-  <tr class="odd">
-    <td>helpLink</td>
-    <td>
-      <p><strong>string</strong>. If present, the link to this keyboard's help
-      page on help.keyman.com.</p>
-      <p><strong>Generation:</strong> if
-        <strong><em>id</em>/source/help/<em>id</em>.php</strong>
-        exists.
-      </p>
-    </td>
-  </tr>
-  <tr class="even">
-    <td>platformSupport</td>
-    <td>
-      <p>A <strong>KeyboardPlatformInfo</strong> object.</p>
-      <p><strong>Generation:</strong> from .kmp</p>
-    </td>
-  </tr>
-  <tr class="even">
-    <td>sourcePath</td>
-    <td>
-      <p><strong>string</strong>, the relative path of the keyboard in the
-      /keymanapp/keyboards GitHub repository, starting with
-        <code>release/</code>, <code>experimental/</code> or
-        <code>legacy/</code>.
-      </p>
-      <p><strong>Generation:</strong> from path in repository.</p>
-    </td>
-  </tr>
-  <tr class="odd">
-    <td>related</td>
-    <td>
-      <p><strong>object</strong>, with each property an id of a keyboard and
-      corresponding value is a
-        <strong>KeyboardRelatedInfo</strong>.
-      </p>
-    </td>
-  </tr>
-  <tr class="even">
-    <td>deprecated</td>
-    <td>
-      <p><strong>boolean</strong>, true if the keyboard has been
-      deprecated.</p>
-      <p><strong>Generation:</strong> Always generated from related keyboards,
-      currently only visible on api.keyman.com/search.</p>
-    </td>
-  </tr>
-</table>
+* `id`
 
-### KeyboardExampleKeyInfo Object
+  `string`, the same as the name of the folder, lower case. In the **release/**
+  folder, this name must be a valid Javascript identifier, and follow the rules
+  in the [Keyboard Cloud Repository
+  documentation](https://help.keyman.com/developer/keyboards).
 
-| **Member** | **Required?** | **Notes**                                                                                                                                                                                                                                         |
-|------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| modifiers  |               | **array** of `"shift"`, `"ctrl"`, `"alt"`, `"left-ctrl"`, `"left-alt"`, `"right-ctrl"`, `"right-alt"` **strings**.                                                                                                                                |
-| key        | yes           | **string**. A valid `K_` identifier, from the first two lists in <https://help.keyman.com/developer/language/guide/virtual-keys> (i.e., excluding reserved virtual key codes). Touch-specific keys such as `T_xxx` or `U_abcd` are not permitted. |
+  **Example:** `"id": "fv_blackfoot"`
+
+  **Generation:** from folder name.
+
+* `name`
+
+  `string`, the human readable name of the keyboard. This will usually differ
+  from the id.
+
+  **Generation:** from .kmp info, package name. If a .kmp is not included, it is
+  sourced from the .js with a regular expression.
+
+* `authorName`
+
+  `string`, the name of the author
+
+  **Generation:** from .kmp info
+
+* `authorEmail`
+
+  `string`, the email address of the author
+
+  **Generation:** from .kmp info
+
+* `description`
+
+  `string`, a textual description of the keyboard. This may contain some minimal
+  HTML (p, b, i, u, span, a, ul, ol, li, br, hr, h1-h4 tags).
+
+  **Generation:** from .kmp info
+
+* `license`
+
+  `string`, the possible values for **license** vary by location in the
+  repository:
+
+  * **release/** and **experimental/** keyboards must be `"mit"`.
+  * **legacy/** keyboards will be `"freeware"`, `"shareware"` or `"commercial"`.
+
+  **Generation:** from LICENSE.md
+
+* `languages`
+
+  **array or objects**; an array of BCP 47 codes, or an object with its member
+  names being BCP 47 codes and values being **KeyboardLanguageInfo** objects.
+
+  **Generation:** From .kmp info.
+
+* `lastModifiedDate`
+
+  `string`, the last time the keyboard was modified, in RFC3339, UTC
+  `YYYY-MM-DDThh:mm:ss[.nnn]Z`
+
+  **Generation:** the time that the .keyboard_info file is generated
+
+* `packageFilename`
+
+  `string`, filename of the .kmp file that will be distributed, relative to the
+  keyboard base folder, including extension, required for **experimental/** and
+  **legacy/** folders. If no .kmp exists, then keyboard is js only. For
+  **release/** folders, this must be, for keyboard `id`, `id/build/id.kmp`.
+
+  **Generation:** always `id.js`.
+
+* `packageFileSize`
+
+  `number`, size in bytes of the .kmp file that will be distributed.
+
+  **Generation:** From .kmp.
+
+* `jsFilename`
+
+  `string`, filename of the .js file that will be distributed,  e.g.
+  "gff_amh.js".
+
+  **packageFilename** and/or **jsFilename** must be specified for **legacy** and
+  **experimental** keyboards.
+
+  **Generation:** always **_id_.js**.
+
+* `jsFileSize`
+
+  `number`, size in bytes of the .js file that will be distributed.
+
+  **Generation:** From .js.
+
+* `isRTL`
+
+  `boolean`, true if the .js keyboard should be right-to-left.
+
+  **Generation:** From .kmx, .js.
+
+* `encodings`
+
+  `array`, of up to 2 `string`s, `"unicode"` and/or `"ansi"`.
+
+  **Generation:** from .kmx, .js.
+
+* `packageIncludes`
+
+  `array`, of `string`s. Metadata used mostly by legacy keyboards. This flags
+  whether a package includes:
+
+  *   `"fonts"` - one or more fonts
+  *   `"documentation"` - documentation, in PDF, RTF or HTML format, excluding
+      welcome.htm and readme
+  *   `"visualKeyboard"` - a KVK file
+  *   `"welcome"` - a welcome.htm file
+
+  **Generation:** from .kmp
+
+* `version`
+
+  `string`, the file version of the keyboard / package.
+
+  **Generation:** from .kmp, .js. If no version number is present in the
+  compiled file, assumes `"1.0"`
+
+* `minKeymanVersion`
+
+  `string`. The minimum version of Keyman that can read this keyboard. If
+  present, must be a two part version string, starting from `"6.0"` and up.
+  Note: for versions below 10.0, this value is used in KeymanWeb, but the
+  version mapping is based on Keyman Desktop version numbers. For versions 10.0
+  and above, all platforms have a synchronized version number. See [KeymanWeb
+  Versioning](/developer/cloud/versioning) for more detail.
+
+  **Generation:** from .kmp, .js.
+
+* `helpLink`
+
+  `string`. If present, the link to this keyboard's help page on
+  help.keyman.com.
+
+  **Generation:** if **_id_/source/help/_id_.php** exists.
+
+* `platformSupport`
+
+  A [**KeyboardPlatformInfo**] object.
+
+  **Generation:** from .kmp
+
+* `sourcePath`
+
+  `string`, the relative path of the keyboard in the /keymanapp/keyboards GitHub
+  repository, starting with `release/`, `experimental/` or `legacy/`.
+
+  **Generation:** from path in repository.
+
+* `related`
+
+  **object**, with each property an id of a keyboard and corresponding value is
+  a **KeyboardRelatedInfo**.
+
+* `deprecated`
+
+  `boolean`, true if the keyboard has been deprecated.
+
+  **Generation:** Always generated from related keyboards, currently only
+  visible on api.keyman.com/search.
+
+### KeyboardLanguageInfo Object
+
+* `font`
+
+  [**KeyboardFontInfo**] object containing information about a recommended
+  display font for use with text produced by the keyboard.
+
+  **Generation:** This will be generated automatically from the .kmp file.
+
+* `oskFont`
+
+  [**KeyboardFontInfo**] object containing information about a recommended
+  font for use with the on screen keyboard. If not present, uses `font`.
+  If both are not present, then Keyman uses the default system font.
+
+  **Generation:** This will be generated automatically from the .kmp file.
+
+* `examples`
+
+  Array of [**KeyboardExampleInfo**] objects containing sample text that the user
+  can type to give them an idea of how to start to use the keyboard. This replaces
+  `example` field from version 1.0, and is less restrictive in its set of allowed
+  key identifiers.
+
+  **Generation:** This will be generated automatically from the .kmp file.
+
+* `displayName`
+
+  `string`, a descriptive name of the language to display to users in
+  the format: *language (script, region)*. If the BCP 47 code does not
+  contain script or region subtags, only the language name is displayed.
+
+  **Example:**
+  `"displayName": "Central Atlas Tamazight (Tifinagh, Morocco)"`
+
+  **Generation:** This will be generated automatically from the BCP 47
+  code.
+
+* `languageName`
+
+  `string`, the name of the language subtag in the BCP 47 code.
+
+  **Example:** `"languageName": "Central Atlas Tamazight"`
+
+  **Generation:** This will be generated automatically from the BCP 47
+  code.
+
+* `scriptName`
+
+  `string`, the name of the script subtag in the BCP 47 code.
+
+  **Example:** `"scriptName": "Tifinagh"`
+
+  **Generation:** This will be generated automatically from the BCP 47
+  code.
+
+* `regionName`
+
+  `string`, the name of the region subtag in the BCP 47 code.
+
+  **Example:** `"regionName": "Morocco"`
+
+  **Generation:** This will be generated automatically from the BCP 47
+  code.
+
+### KeyboardPlatformInfo Object
+
+* `windows`, `macos`, `desktopWeb`, `ios`, `android`, `mobileWeb`, `linux` members
+
+  `string`, for all members: one of `"dictionary"`, `"full"`, `"basic"`, or
+  `"none"`. If member is missing, `"none"`.
+
+  * `"dictionary"`: keyboard includes dictionary, e.g. IME or
+    suggestion/autocompletion support.
+  * `"full"`: keyboard is designed and optimised for the platform, and works
+    well with it.
+  * `"basic"`: keyboard compiles for the platform but has not been optimised for
+    it (e.g. a Windows keyboard compiled to web, with no touch-specific support,
+    will still work on a touch platform but will have a desktop-shaped touch
+    keyboard with too many keys on it).
+  * `"none"`: keyboard does not work on the platform
+
+### KeyboardFontInfo Object
+
+* `family`
+
+  `string`, family name of the font; can be used by Keyman Engine to locate an
+  already installed font of the same name.
+
+* `source`
+
+  `string`, filename, relative to .keyboard_info file.
+
+### KeyboardExampleInfo Object
+
+* `keys`
+
+  `string`, a list of keystrokes to type to produce a short sample text using
+  this keyboard, space-separated. Modifiers indicated with "+". Spacebar with
+  "space". Plus key with "plus". This is not intended to give a full description
+  of the keyboard but rather a simple example that introduces the user to the
+  way the keyboard works.
+
+* `text`
+
+  `string`, the result of the keystrokes typed, i.e. a Unicode string.
+
+* `note`
+
+  `string`, a text note that helps to explain the example to the user.
 
 ### KeyboardRelatedInfo Object
 
-| **Member**   | **Required?** | **Notes**                                                                                                                                                                                                     |
-|--------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| deprecates   |               | **boolean**, if **true**, then this keyboard is intended to deprecate another keyboard with the parent member name, and Keyman will upgrade it to this keyboard if found, ignoring version numbers.           |
-| deprecatedBy |               | **boolean**, if **true**, then this keyboard has been deprecated by the keyboard referred to. This member should not be set in the source .keyboard_info but will be returned from queries to api.keyman.com. |
+* `deprecates`
+
+  `boolean`, if **true**, then this keyboard is intended to deprecate another
+  keyboard with the parent member name, and Keyman will upgrade it to this
+  keyboard if found, ignoring version numbers.
+
+* `deprecatedBy`
+
+  `boolean`, if **true**, then this keyboard has been deprecated by the keyboard
+  referred to. This member should not be set in the source .keyboard_info but
+  will be returned from queries to api.keyman.com.
 
 ### Schema
 
@@ -263,8 +310,8 @@ A validating schema for the object is online at
 
 ### Validation
 
-The keyboard repository build process generates the .keyboard_info file
-from the package and keyboard metadata, into the build/ folder.
+The kmc compiler generates the .keyboard_info file from the package and keyboard
+metadata, into the build/ folder.
 
 ### Examples
 
@@ -297,7 +344,7 @@ for a Tibetan keyboard.
     "adi" : {
       "font" : {
         "family" : "TibetanWeb",
-        "source" : "DDC_Uchen.ttf"
+        "source" : ["DDC_Uchen.ttf"]
       },
       "oskFont" : {
         "family" : "TibetanWebOsk",
@@ -310,7 +357,7 @@ for a Tibetan keyboard.
     "bod" : {
       "font" : {
         "family" : "TibetanWeb",
-        "source" : "DDC_Uchen.ttf"
+        "source" : ["DDC_Uchen.ttf"]
       },
       "oskFont" : {
         "family" : "TibetanWebOsk",
@@ -319,11 +366,11 @@ for a Tibetan keyboard.
           "ddc_uchen-webfont.svg#ddc_uchenregular"
           ]
       },
-      "example" : {
-        "keys" : "bod sKd",
+      "examples" : [{
+        "keys" : "b o d space s K d",
         "text" : "\u0F56\u0F7C\u0F51\u0F0B\u0F66\u0F90\u0F51",
         "note" : "Name of language"
-      }
+      }]
     }
   },
   "lastModifiedDate" : "2015-02-16T07:34:55Z",
@@ -341,31 +388,52 @@ for a Tibetan keyboard.
 ### Version History
 
 1.0, 2017-09-14
-:   Initial version
+
+: Initial version
 
 1.0.1, 2018-01-31
-:   Add file sizes, isRTL, sourcePath fields so we can supply these to
-    the legacy KeymanWeb Cloud API endpoints. Remove references to .kmx
-    being a valid package format.
+
+: Add file sizes, isRTL, sourcePath fields so we can supply these to
+  the legacy KeymanWeb Cloud API endpoints. Remove references to .kmx
+  being a valid package format.
 
 1.0.2, 2018-02-10
-:   Add dictionary to platform support choices. Fixed default for
-    platform to 'none'.
+
+: Add dictionary to platform support choices. Fixed default for
+  platform to 'none'.
 
 1.0.3, 2018-02-12
-:   Renamed minKeymanDesktopVersion to minKeymanVersion to clarify that
-    this version information applies to all platforms.
 
-1.0.4 2018-11-26
-:   Add helpLink field that contains the link to a keyboard help page on
-    help.keyman.com.
+: Renamed minKeymanDesktopVersion to minKeymanVersion to clarify that
+  this version information applies to all platforms.
 
-1.0.5 2018-12-18
-:   Deprecate languages\[\] array. Update KeyboardLanguageInfo object to
-    include subtag names.
+1.0.4, 2018-11-26
 
-1.0.6 2019-09-06
-:   No changes (originally in
-    [\#36](https://github.com/keymanapp/help.keyman.com/pull/36) removed
-    some unused fields but these are still in use. Reverted in
-    2020-06-10.).
+: Add helpLink field that contains the link to a keyboard help page on
+  help.keyman.com.
+
+1.0.5, 2018-12-18
+
+: Deprecate languages\[\] array. Update KeyboardLanguageInfo object to
+  include subtag names.
+
+1.0.6, 2019-09-06
+
+: No changes (originally in
+  [\#36](https://github.com/keymanapp/help.keyman.com/pull/36) removed
+  some unused fields but these are still in use. Reverted in
+  2020-06-10.).
+
+2.0, 2023-08-16
+
+: A number of changes, in order to simplify the format and make it 100%
+  generated from .kmp metadata. This also means the distinction between
+  keyboard_info.source.json and keyboard_info.distribution.json has been
+  removed, and the schema file is now called keyboard_info.schema.json. The
+  following changes have been made to the JSON structure:
+
+  * Removed `legacyId`, `documentationFilename`, `documentationFileSize`,
+    `links`, `related[].note`, `language.[osk]font.size` fields
+  * `language.[osk]font.source` is now always an `array`.
+  * `language.examples` replaces `language.example`, and structure has been
+    simplified
