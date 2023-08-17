@@ -87,10 +87,15 @@ if builder_start_action start; then
   if [ ! -z $(_get_docker_image_id) ]; then
     if [[ $OSTYPE =~ msys|cygwin ]]; then
       # Windows needs leading slashes for path
-      docker run -d -p 8055:80 -v //$(pwd):/var/www/html/ -e S_KEYMAN_COM=localhost:8054 help-keyman-website
+      SITE_HTML="//$(pwd):/var/www/html/"
     else
-      docker run -d -p 8055:80 -v $(pwd):/var/www/html/ -e S_KEYMAN_COM=localhost:8054 help-keyman-website
+      SITE_HTML="$(pwd):/var/www/html/"
     fi
+    
+    docker run --rm -d -p 8055:80 -v ${SITE_HTML} \
+      -e S_KEYMAN_COM=localhost:8054 \
+      --name help-keyman-com-app \
+      help-keyman-website
   else
     echo "${COLOR_RED}ERROR: Docker container doesn't exist. Run ./build.sh build first${COLOR_RESET}"
     builder_finish_action fail start
