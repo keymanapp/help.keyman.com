@@ -8,10 +8,10 @@
 <h1 class="title">Tutorial: Developing a lexical model from a word list</h1>
 
 <dl>
-  <dt><span class="section"><a href="step-1.php">Step 1: Prerequisites for building a lexical model</a></span></dt>
-  <dt><span class="section"><a href="step-2.php">Step 2: Creating a lexical model project</a></span></dt>
-  <dt><span class="section"><a href="step-3.php">Step 3: Get some language data</a></span></dt>
-  <dt><span class="section"><a href="step-4.php">Step 4: Compile the lexical model</a></span></dt>
+  <dt><span class="section"><a href="step-1">Step 1: Prerequisites for building a lexical model</a></span></dt>
+  <dt><span class="section"><a href="step-2">Step 2: Creating a lexical model project</a></span></dt>
+  <dt><span class="section"><a href="step-3">Step 3: Get some language data</a></span></dt>
+  <dt><span class="section"><a href="step-4">Step 4: Compile the lexical model</a></span></dt>
 </dl>
 
 <h2> Overview </h2>
@@ -29,4 +29,4 @@ come back here to follow this tutorial. </p>
 work your way through the tutorial. You may also find links to reference information, which you can select to learn more about a
 particular aspect of creating Keyman keyboards.</p>
 
-<p><a href="step-1.php" title="Step 1: Prerequisites for building a lexical model">Step 1: Prerequisites for building a lexical model</a></p>
+<p><a href="step-1" title="Step 1: Prerequisites for building a lexical model">Step 1: Prerequisites for building a lexical model</a></p>

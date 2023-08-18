@@ -90,7 +90,7 @@ export default source;</code></pre>
 
 <p> To <strong>join words at hyphens and any other punctuation</strong>,
   provide the <code>joinWordsAt</code> option in the
-  <a href="./model-definition-file.php">model definition file</a>:
+  <a href="./model-definition-file">model definition file</a>:
 </p>
 
 <pre><code class="lang-typescript">const source: LexicalModelSource = {
@@ -132,7 +132,7 @@ export default source;</code></pre>
 
 
 <p> The word breaker function can be specified in the
-  <a href="./model-definition-file.php">model definition file</a> as follows:
+  <a href="./model-definition-file">model definition file</a> as follows:
 </p>
 
 <pre><code class="lang-typescript">const source: LexicalModelSource = {

@@ -1,24 +1,24 @@
 <?php /*
   Name:             index
   Copyright:        Copyright (C) 2005 Tavultesoft Pty Ltd.
-  Documentation:    
-  Description:      
+  Documentation:
+  Description:
   Create Date:      18 Sep 2009
 
   Modified Date:    18 Sep 2009
   Authors:          mcdurdin
-  Related Files:    
-  Dependencies:     
+  Related Files:
+  Dependencies:
 
-  Bugs:             
-  Todo:             
-  Notes:            
+  Bugs:
+  Todo:
+  Notes:
   History:          18 Sep 2009 - mcdurdin - Polish
 */
   $pagename = 'Using KeymanWeb';
   $pagetitle = 'Using KeymanWeb';
   $MainPage = true;
-  
+
   require_once('header.php');
 ?>
 
@@ -69,9 +69,9 @@ for more information.</p>
   </tr>
   <tr>
     <td valign='top' colspan='3'>
-      <a href='osk.php'><img border=0 style='width: 50%' src='images/oskeyboard.gif' /></a>
+      <a href='osk'><img border=0 style='width: 50%' src='images/oskeyboard.gif' /></a>
       <br/>
-      <a href='osk.php'><span style='font-size: 12pt; font-weight: bold'>On Screen Keyboard</span></a>
+      <a href='osk'><span style='font-size: 12pt; font-weight: bold'>On Screen Keyboard</span></a>
     </td>
   </tr>
 </table>

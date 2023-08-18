@@ -66,8 +66,8 @@
       <p>If you want links to your website to open in the user's preferred browser, preface the href link with <code class='language-none'>link:</code>,
       e.g. <code class='language-none'>&lt;a href="link:http://keyman.com/">website&lt;/a></code></p>
 
-      <p>The <code class='language-none'>link:</code> sceheme will open the referred file in the default application - that is, a web browser for 
-      URLs and links, Notepad for .txt files, Adobe Reader for PDFs. You can use <code class='language-none'>link:</code> to open any of the files in 
+      <p>The <code class='language-none'>link:</code> sceheme will open the referred file in the default application - that is, a web browser for
+      URLs and links, Notepad for .txt files, Adobe Reader for PDFs. You can use <code class='language-none'>link:</code> to open any of the files in
       the package, e.g. <code class='language-none'>link:docs.pdf</code> will open the file docs.pdf in Adobe Reader or the default PDF reader on the
       system.</p>
     </aside>
@@ -79,4 +79,4 @@
 
 </dl>
 
-<p><a href="step-3.php" title="Step 3: Checking a package and adding files">Step 3: Checking a package and adding files</a></p>
+<p><a href="step-3" title="Step 3: Checking a package and adding files">Step 3: Checking a package and adding files</a></p>

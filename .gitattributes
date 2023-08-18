@@ -1,2 +1,4 @@
 # Treat SVGs like images, and not like text.
-*.svg    binary
+*.svg       binary
+Dockerfile  text eol=lf
+

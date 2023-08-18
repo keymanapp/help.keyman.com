@@ -17,7 +17,7 @@
 </ul>
 
 <p> Both of these can be customized by adding the punctuation to
-  <a href="./model-definition-file.php">model definition file</a>. Here is a
+  <a href="./model-definition-file">model definition file</a>. Here is a
   full example of a model definition file using default punctuation:</p>
 
 <pre><code class="lang-typescript">const source: LexicalModelSource = {

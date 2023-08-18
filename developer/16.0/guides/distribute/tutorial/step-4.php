@@ -37,7 +37,7 @@
 
     <p>Version numbers should be in the form <code class='language-none'>major.minor[.subversion]</code>. Subversion is optional but is helpful for small bug fix
     releases. Each of the sections of the version should be an integer. Keyman Desktop does integer comparisons on the version
-    numbers, so, for example, version <code class='language-none'>2.01</code> is regarded as older than version <code class='language-none'>2.2</code>. Alphabetic 
+    numbers, so, for example, version <code class='language-none'>2.01</code> is regarded as older than version <code class='language-none'>2.2</code>. Alphabetic
     or date formats should be avoided as the installer for the keyboard cannot determine which version is older reliably.</p>
   </dd>
 
@@ -72,4 +72,4 @@
   <dd>Select the splash image file that you created in Step 2 from the list of files in your package.</dd>
 </dl>
 
-<p><a href="step-5.php" title="Step 5: Shortcuts">Step 5: Shortcuts</a></p>
+<p><a href="step-5" title="Step 5: Shortcuts">Step 5: Shortcuts</a></p>
