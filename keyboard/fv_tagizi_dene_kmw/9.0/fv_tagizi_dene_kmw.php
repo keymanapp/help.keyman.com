@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Tāgizi Dene Keyboard Help';
-  $pagetitle = 'Tāgizi Dene Keyboard Help';
+  $pagename = 'Tāgizi Dene (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }

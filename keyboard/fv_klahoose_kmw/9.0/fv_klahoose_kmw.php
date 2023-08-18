@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Homalco-Klahoose-Sliammon Keyboard Help';
-  $pagetitle = 'Homalco-Klahoose-Sliammon Keyboard Help';
+  $pagename = 'Homalco-Klahoose-Sliammon (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }

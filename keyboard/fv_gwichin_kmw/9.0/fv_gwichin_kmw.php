@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Gwich\'in Keyboard Help';
-  $pagetitle = 'Gwich\'in Keyboard Help';
+  $pagename = 'Gwich\'in (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }

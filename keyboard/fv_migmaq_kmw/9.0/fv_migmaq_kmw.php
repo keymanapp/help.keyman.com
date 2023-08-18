@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Mi\'gmawi\'simg / Mi\'kmawi\'simk Keyboard Help';
-  $pagetitle = 'Mi\'gmawi\'simg / Mi\'kmawi\'simk Keyboard Help';
+  $pagename = 'Mi\'gmawi\'simg / Mi\'kmawi\'simk (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }
