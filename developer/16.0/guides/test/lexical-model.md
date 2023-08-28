@@ -7,8 +7,6 @@ before starting to test a lexical model. This tutorial builds on
 knowledge found in the following two articles:
 
 -   [Testing keyboard layouts on devices](keyboard-touch-and-desktop)
--   [Testing keyboard layouts in the Chrome Mobile
-    Emulator](keyboard-touch-mobile-emulator)
 
 ## Test Process
 
@@ -56,12 +54,7 @@ To start testing a lexical model, follow the steps below:
     same network, and you must make sure you allow Keyman Developer
     through your local computer firewall for port 8008 (the default
     debugging port).
-4.  If you choose to use Google Chrome Mobile Emulator, click **Open
-    debugger in local browser** and follow the steps in the [article on
-    testing with Chrome](keyboard-touch-mobile-emulator) to start
-    testing.  
-    ![](/cdn/dev/img/developer/130/lm/model-test-in-emulator.png "model-test")
-5.  Once you start testing, you can swap between models from the
+4.  Once you start testing, you can swap between models from the
     **Models** menu in the test web page. As you type on the touch
     keyboard, you should see suggestions change in the banner, and you
     should be able to select the suggestions. You can also do the same

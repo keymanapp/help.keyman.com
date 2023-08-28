@@ -323,9 +323,7 @@ Keyman Developer is <code class='language-none'>U_0181</code>
 <h1>Testing your keyboard</h1>
 <p>Other Keyman help pages describe how
 you can test your keyboard:
-<ul><li> <a href=
-"../../test/keyboard-touch-mobile-emulator">
-  On a virtual device in the Chrome web browser on your computer</a></li>
+<ul>
 <li><a href=
 "../../test/keyboard-touch-and-desktop">
   On your own device accessing the keyboard over the network

@@ -149,7 +149,6 @@ layouts.</p>
 <ul>
   <li><a href="creating-a-touch-keyboard-layout-for-amharic-the-nitty-gritty">Creating a touch keyboard layout for Amharic - the nitty gritty</a></li>
   <li><a href="../test/keyboard-touch-and-desktop">How to test your keyboard layout — touch and desktop</a></li>
-  <li><a href='../test/keyboard-touch-mobile-emulator'>How to test your touch layout in the Google Chrome mobile emulator</a></li>
 </ul>
 
 <p>You can distribute your keyboard to other users by following the instructions in this article:</p>
