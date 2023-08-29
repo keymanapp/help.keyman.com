@@ -15,13 +15,13 @@
 
       <tr>
         <td width="20%" align="left">
-          <a accesskey="p" href="../guide/guide_kmw_control_by_control.php">Prev</a> 
+          <a accesskey="p" href="../guide/guide_kmw_control_by_control">Prev</a>
         </td>
 
         <th width="60%" align="center">KeymanWeb Guide</th>
 
         <td width="20%" align="right">
-           <a accesskey="n" href="../guide/index_guide_imx.php">Next</a>
+           <a accesskey="n" href="../guide/index_guide_imx">Next</a>
         </td>
       </tr>
     </table>
@@ -40,7 +40,7 @@
     in Internet Explorer's handling of CSS, the "hover" and "keydown" styles of the visual keyboard are limited to
     changing the colour.</p>
 
-    <p>A working example can be seen online at <a class="ulink" href="http://www.keymanweb.com/dev/defaults.php" target=
+    <p>A working example can be seen online at <a class="ulink" href="http://www.keymanweb.com/dev/defaults" target=
     "_blank">www.keymanweb.com</a></p>
 
     <p><span class="inlinemediaobject"><img src="<?= cdn('img/developer/90/kmw_defaults.png')?>"></span></p>
@@ -49,20 +49,20 @@
 
     <p>Include the following script in the HEAD of your page:</p>
     <pre class="programlisting">
-/* Set defaults for keyboard names, and visual keyboard colours */  
-KeymanWeb_DefaultKeyboardName = "(KeymanWeb Off)";   
-KeymanWeb_DefaultKeyboardHelp = "&lt;p&gt;KeymanWeb is disabled.  To enable KeymanWeb, select a keyboard from the list above.&lt;/p&gt;";   
-KeymanWeb_ControlDownColor = "#ff8080";   
-KeymanWeb_KeyDownColor = "#ffc0c0";   
-KeymanWeb_KeyHoverColor = "#ffe0e0";     
-  
-/* SetupDocument: Called when the page finishes loading */  
+/* Set defaults for keyboard names, and visual keyboard colours */
+KeymanWeb_DefaultKeyboardName = "(KeymanWeb Off)";
+KeymanWeb_DefaultKeyboardHelp = "&lt;p&gt;KeymanWeb is disabled.  To enable KeymanWeb, select a keyboard from the list above.&lt;/p&gt;";
+KeymanWeb_ControlDownColor = "#ff8080";
+KeymanWeb_KeyDownColor = "#ffc0c0";
+KeymanWeb_KeyHoverColor = "#ffe0e0";
+
+/* SetupDocument: Called when the page finishes loading */
 function SetupDocument()
 {
   /* Make sure that Keyman is initialized (we can't guarantee initialization order) */
   KeymanWeb.Init();
 }
-  
+
 </pre>
 
     <p>Also include the following HTML code:</p>
@@ -76,7 +76,7 @@ function SetupDocument()
 
 &lt;!-- When the page has finished loading, activate the LaoKeys keyboard, see above --&gt;
 &lt;body onload="SetupDocument()"&gt;
-  
+
 </pre>
   </div>
 
@@ -86,15 +86,15 @@ function SetupDocument()
     <table width="100%" summary="Navigation footer">
       <tr>
         <td width="40%" align="left">
-          <a accesskey="p" href="../guide/guide_kmw_control_by_control.php">Prev</a> 
+          <a accesskey="p" href="../guide/guide_kmw_control_by_control">Prev</a>
         </td>
 
         <td width="20%" align="center">
-          <a accesskey="u" href="../guide/index_guide_kmw.php">Up</a>
+          <a accesskey="u" href="../guide/index_guide_kmw">Up</a>
         </td>
 
         <td width="40%" align="right">
-           <a accesskey="n" href="../guide/index_guide_imx.php">Next</a>
+           <a accesskey="n" href="../guide/index_guide_imx">Next</a>
         </td>
       </tr>
 
@@ -102,7 +102,7 @@ function SetupDocument()
         <td width="40%" align="left" valign="top">Control by Control Example </td>
 
         <td width="20%" align="center">
-          <a accesskey="h" href="../index.php">Home</a>
+          <a accesskey="h" href="../index">Home</a>
         </td>
 
         <td width="40%" align="right" valign="top"> IMX Developers Guide</td>

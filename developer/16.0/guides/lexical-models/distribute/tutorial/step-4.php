@@ -67,4 +67,4 @@
 
 </dl>
 
-<p><a href="step-5.php" title="Step 5: Compiling, testing and distributing a Package">Step 5: Compiling, testing and distributing a Package</a></p>
+<p><a href="step-5" title="Step 5: Compiling, testing and distributing a Package">Step 5: Compiling, testing and distributing a Package</a></p>

@@ -31,5 +31,5 @@
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="setShouldCheckKeyboardUpdates.php"><code>setShouldCheckKeyboardUpdates</code></a></li>
+ <li><a href="setShouldCheckKeyboardUpdates"><code>setShouldCheckKeyboardUpdates</code></a></li>
 </ul>

@@ -153,4 +153,4 @@ package.</p>
 
 </dl>
 
-<p><a href="step-3.php" title="Step 3: Creating a package and adding files">Step 3: Creating a package and adding files</a></p>
+<p><a href="step-3" title="Step 3: Creating a package and adding files">Step 3: Creating a package and adding files</a></p>

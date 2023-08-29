@@ -3,7 +3,7 @@
 
   head([
     'title' => "Simple Touch Keyboard Tutorial"
-	
+
 
   ]);
 ?>
@@ -12,13 +12,13 @@
 <h1>Creating a Simple Touch keyboard</h1>
 <h2>Introduction and design</h2>
 <p>If you have experience in designing Keyman keyboards for computers, the interface for designing
- mobile keyboards looks very similar, but it hides the reality of additional steps necessary for 
+ mobile keyboards looks very similar, but it hides the reality of additional steps necessary for
  mobile keyboards. This tutorial attempts to walk you through the process.
 <p>The
 <a href="../tutorial/">Quick French tutorial</a> shows how to create a simple desktop keyboard
 for typing accented characters used in French and other European
 languages. It is possible to create a touch screen format of that
-keyboard, but it is probably unnecessary. The default keyboards for 
+keyboard, but it is probably unnecessary. The default keyboards for
 both Android and iOS devices have a way to type these accented
 characters. Press and hold on a vowel, and a
 popup menu will give you a choice of accents to put on that letter.</p>
@@ -31,7 +31,7 @@ Fulfulde is usually written using the Latin alphabet, but there are a
 few characters added to the usual list of alphabetical characters. So
 this is a useful example for any language wanting to add a few
 characters to the standard Latin keyboard. Here are the characters we
-are going to add, together with their Unicode values. 
+are going to add, together with their Unicode values.
 </p>
 
 <table>
@@ -63,7 +63,7 @@ we will likely want to proceed differently than with the desktop
 keyboard. The usual approach for a desktop keyboard is to create a
 deadkey. The keyboards I have used for Fulfulde (going back to
 decades ago) used the <kbd>/</kbd> key as the deadkey. <kbd>/</kbd><kbd>b</kbd> gave &#595;,
-<kbd>/</kbd><kbd>d</kbd> gave &#599;, and so on. 
+<kbd>/</kbd><kbd>d</kbd> gave &#599;, and so on.
 </p>
 <p>It
 would be possible to use that desktop keyboard logic on touch
@@ -79,4 +79,4 @@ analogous letters. So we&rsquo;ll set up a touch screen keyboard that
 lets you press and hold &lsquo;d&rsquo; to see the two hooked d
 characters, press and hold &lsquo;b&rsquo; to see the hooked b
 characters, and so on.</p>
-<a href="making-touch-keyboard.php">Next: Making, testing and distributing the touch keyboard</a>
+<a href="making-touch-keyboard">Next: Making, testing and distributing the touch keyboard</a>

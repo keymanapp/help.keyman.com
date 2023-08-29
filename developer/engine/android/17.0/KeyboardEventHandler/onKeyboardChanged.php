@@ -36,7 +36,7 @@
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="onKeyboardDismissed.php" title="Title."><code>onKeyboardDismissed()</code></a></li>
- <li><a href="onKeyboardLoaded.php" title="Title."><code>onKeyboardLoaded()</code></a></li>
- <li><a href="onKeyboardShown.php" title="Title."><code>onKeyboardShown()</code></a></li>
+ <li><a href="onKeyboardDismissed" title="Title."><code>onKeyboardDismissed()</code></a></li>
+ <li><a href="onKeyboardLoaded" title="Title."><code>onKeyboardLoaded()</code></a></li>
+ <li><a href="onKeyboardShown" title="Title."><code>onKeyboardShown()</code></a></li>
 </ul>
