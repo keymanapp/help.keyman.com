@@ -193,7 +193,7 @@ RewriteRule "^developer/(1[3-9].0)/guides/develop/creating-a-touch-keyboard-layo
 RewriteRule "^developer/(1[3-9].0)/guides/test/how-to-test-your-keyboard-layout-with-keyman-developer-10-touch-and-desktop(.*)?$" "developer/$1/guides/test/keyboard-touch-and-desktop"
 
 # Redirect how-to-test-your-touch-layout-in-the-google-chrome-mobile-emulator (removed in 16.0)
-RewriteRule "^developer/(1[3-5].0)/guides/test/how-to-test-your-touch-layout-in-the-google-chrome-mobile-emulator(.*)?$"          "developer/$1/guides/test/keyboard-touch-mobile-emulator"
+RewriteRule "^developer/(1[3-9].0)/guides/test/how-to-test-your-touch-layout-in-the-google-chrome-mobile-emulator(.*)?$"          "developer/$1/guides/test/keyboard-touch-mobile-emulator"
 
 # Remove index or index.php and redirect (and stop processing)
 RewriteCond "$1" -d
