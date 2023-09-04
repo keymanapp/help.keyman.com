@@ -52,8 +52,6 @@
       Creating A Touch Keyboard Layout For Amharic — The Nitty Gritty</a></li>
   <li><a href="/developer/current-version/guides/test/keyboard-touch-and-desktop">
       How to test your keyboard layout with Keyman Developer — touch and desktop</a></li>
-  <li><a href="/developer/current-version/guides/test/keyboard-touch-mobile-emulator">
-      How to test your touch layout in the Google Chrome mobile emulator</a></li>
 </ul>
 <p>When your keyboard is ready, you should have a compiled keyboard package. The example below shows the
   Thamizha Tamil99 touch layout.</p>

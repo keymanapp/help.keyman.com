@@ -143,8 +143,6 @@ Other articles on developing touch layouts:
     1](../develop/creating-a-touch-keyboard-layout-for-amharic)
 -   [Creating a touch keyboard layout for Amharic - the nitty
     gritty](../develop/creating-a-touch-keyboard-layout-for-amharic-the-nitty-gritty)
--   [How to test your touch layout in the Google Chrome mobile
-    emulator](keyboard-touch-mobile-emulator)
 
 You can distribute your keyboard to other users by following the
 instructions in this article:
