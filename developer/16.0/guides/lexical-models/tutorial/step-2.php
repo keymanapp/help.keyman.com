@@ -125,4 +125,4 @@ to create the project.</p>
 
 <p> Once we have created the project, we can begin to prepare the data! </p>
 
-<p><a href="step-3.php" title="Step 3: Get some language data">Step 3: Get some language data</a></p>
+<p><a href="step-3" title="Step 3: Get some language data">Step 3: Get some language data</a></p>

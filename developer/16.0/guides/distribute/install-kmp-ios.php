@@ -16,7 +16,7 @@ head([
 <p>To install a custom keyboard, you will first need a link to the keyboard package on a website or in your email.</p>
 
 <p>If you want to build and deploy your own keyboard, you will need some technical skills for this, and can read our
-    full step-by-step instructional on how to do this <a href="packages.php">here</a>.</p>
+    full step-by-step instructional on how to do this <a href="packages">here</a>.</p>
 
 <p>Once you have a website or email with a link to the keyboard package, follow these steps on your iPhone or iPad
     to download and install the keyboard package into the Keyman for iPhone and iPad application:</p>

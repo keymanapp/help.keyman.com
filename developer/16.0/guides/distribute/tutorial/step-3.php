@@ -47,4 +47,4 @@
   </li>
 </ul>
 
-<p><a href="step-4.php" title="Step 4: Filling in package details">Step 4: Filling in package details</a></p>
+<p><a href="step-4" title="Step 4: Filling in package details">Step 4: Filling in package details</a></p>

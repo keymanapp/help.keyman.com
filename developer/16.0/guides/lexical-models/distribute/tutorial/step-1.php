@@ -19,4 +19,4 @@ straightforward as possible for the end user. We need to keep this goal in mind 
   <li>Include a 'welcome.htm' file which is displayed before/after install.</li>
 </ol>
 
-<p><a href="step-2.php" title="Step 2: Editing .htm files for the package">Step 2: Editing .htm files for the package</a></p>
+<p><a href="step-2" title="Step 2: Editing .htm files for the package">Step 2: Editing .htm files for the package</a></p>

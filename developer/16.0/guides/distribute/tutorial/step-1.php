@@ -41,4 +41,4 @@ straightforward as possible for the end user.</p>
 
 <p>In general, the more icons that a package earns, the easier that end users will find it to start using.</p>
 
-<p><a href="step-2.php" title="Step 2: Creating Additional Files for the Package">Step 2: Creating Additional Files for the Package</a></p>
+<p><a href="step-2" title="Step 2: Creating Additional Files for the Package">Step 2: Creating Additional Files for the Package</a></p>

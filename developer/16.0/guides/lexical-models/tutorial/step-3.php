@@ -12,7 +12,7 @@
 <p>To predict words in your language, a lexical model needs to know the words in your language!</p>
 
 
-<p> Keyman Developer understands how to read words in a <a href="../../../reference/file-types/tsv.php">TSV file</a>.
+<p> Keyman Developer understands how to read words in a <a href="../../../reference/file-types/tsv">TSV file</a>.
 This kind of file can be saved from a <strong>spreadsheet</strong> application like <a
 href="https://sheets.google.com/">Google Sheets</a> or
 <a href="https://products.office.com/en/excel">Microsoft Excel</a>.
@@ -32,7 +32,7 @@ Explorer (FLEx)</a> to export an appropriate <strong>TSV</strong> file.</p>
 <aside>
   <p><strong>For advanced users</strong>: Ultimately, what Keyman Developer
   requires is a tab-separated values (TSV) file in a specfic format described in
-  the <a href="../../../reference/file-types/tsv.php">file types reference</a>.
+  the <a href="../../../reference/file-types/tsv">file types reference</a>.
   Refer to this reference file if you are coding your own exporter.
   </p>
 </aside>
@@ -119,7 +119,7 @@ words in the language, with each word being separated by a line break.</p>
 </figure>
 
 <p>Now, we download the spreadsheet in the
-<a href="../../../reference/file-types/tsv.php">required format</a>.
+<a href="../../../reference/file-types/tsv">required format</a>.
 To do this, in Google Sheets, select “File” » “Download as” » “Tab-separated
 values (.tsv, current sheet)”.</p>
 
@@ -132,4 +132,4 @@ values (.tsv, current sheet)”.</p>
 
 <p>Now that we have our word list, let's compile our model!</p>
 
-<p><a href="step-4.php" title="Step 4: Compiling the lexical model">Step 4: Compiling the lexical model</a></p>
+<p><a href="step-4" title="Step 4: Compiling the lexical model">Step 4: Compiling the lexical model</a></p>

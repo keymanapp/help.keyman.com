@@ -23,12 +23,12 @@ The Start Menu shortcuts were designed originally for Windows-based keyboard pac
   <li>Documentation shortcuts</li>
   <li>Welcome.htm shortcut</li>
 </ul>
-    
+
 <aside>
   <h3>Note</h3>
-  
+
   <p>While Keyman Developer 8.0 and earlier versions of the documentation advised including an uninstall shortcut to the package, this is no longer recommended.
-  Users should uninstall your package from Keyman Configuration. Adding an uninstall shortcut to the package adds confusion to the 
+  Users should uninstall your package from Keyman Configuration. Adding an uninstall shortcut to the package adds confusion to the
   Start Menu search on Windows, and is not compatible with macOS keyboards.</p>
 </aside>
 
@@ -45,9 +45,9 @@ Help) and (About Product) will be translated into the appropriate shortcuts to s
 
 <aside>
   <h3>Tip</h3>
-  
-  <p>Packages are not listed in the Control Panel Add/Remove Programs applet with Keyman Desktop 7.0 and later versions. Packages 
+
+  <p>Packages are not listed in the Control Panel Add/Remove Programs applet with Keyman Desktop 7.0 and later versions. Packages
   can be uninstalled through the Start Menu shortcut or from Keyman Desktop Configuration.</p>
 </aside>
 
-<p><a href="step-6.php" title="Step 6: Compiling, testing and distributing a Package">Step 6: Compiling, testing and distributing a Package</a></p>
+<p><a href="step-6" title="Step 6: Compiling, testing and distributing a Package">Step 6: Compiling, testing and distributing a Package</a></p>

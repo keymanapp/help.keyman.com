@@ -44,5 +44,5 @@
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="showKeyboardPicker.php"><code>showKeyboardPicker()</code></a></li>
+ <li><a href="showKeyboardPicker"><code>showKeyboardPicker()</code></a></li>
 </ul>
