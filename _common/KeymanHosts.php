@@ -94,6 +94,11 @@
         die("tier is '$this->tier' which is invalid\n");
       }
 
+      // Append reverse-proxy port
+      if (isset($_SERVER['KEYMAN_COM_PROXY_PORT'])) {
+        $site_suffix .= ':'.$_SERVER['KEYMAN_COM_PROXY_PORT'];
+      }
+
       $this->blog_keyman_com = "https://blog.keyman.com";
       $this->donate_keyman_com = "https://donate.keyman.com";
       $this->translate_keyman_com = "https://translate.keyman.com";
