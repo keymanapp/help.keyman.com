@@ -269,7 +269,7 @@ resources to the download store.
 
 * `source`
 
-  `string`, filename, relative to .keyboard_info file.
+  `string[]`, 1 or more filenames, relative to .keyboard_info file.
 
 ### KeyboardExampleInfo Object
 
