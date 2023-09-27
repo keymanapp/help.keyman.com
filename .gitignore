@@ -8,4 +8,5 @@ node_modules/
 
 # Shared files are bootstrapped:
 resources/bootstrap.inc.sh
+resources/.bootstrap-version
 _common/

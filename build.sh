@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-## START STANDARD BUILD SCRIPT INCLUDE
-# adjust relative paths as necessary
+## START STANDARD SITE BUILD SCRIPT INCLUDE
 readonly THIS_SCRIPT="$(readlink -f "${BASH_SOURCE[0]}")"
 readonly BOOTSTRAP="$(dirname "$THIS_SCRIPT")/resources/bootstrap.inc.sh"
-[ -f "$BOOTSTRAP" ] && source "$BOOTSTRAP" || source <(curl -fs https://raw.githubusercontent.com/keymanapp/shared-sites/main/bootstrap.inc.sh?token=$(date +%s))
-## END STANDARD BUILD SCRIPT INCLUDE
+readonly BOOTSTRAP_VERSION=chore/v0.2
+[ -f "$BOOTSTRAP" ] && source "$BOOTSTRAP" || source <(curl -fs https://raw.githubusercontent.com/keymanapp/shared-sites/$BOOTSTRAP_VERSION/bootstrap.inc.sh)
+## END STANDARD SITE BUILD SCRIPT INCLUDE
 
 # TODO: these should probably all be moved to a common defines script too?
 readonly HELP_CONTAINER_NAME=help-keyman-website
