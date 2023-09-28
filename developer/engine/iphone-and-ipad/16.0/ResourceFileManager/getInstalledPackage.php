@@ -35,6 +35,6 @@ Added in Keyman Engine for iPhone and iPad 14.0.
 <h2 id="See_also" name="See_also">See also</h2>
 
 <dl>
-  <dt><a href="installedPackages.php"><code>installedPackages: [KeymanPackage]</code></a></dt>
+  <dt><a href="installedPackages"><code>installedPackages: [KeymanPackage]</code></a></dt>
   <dd>Returns an array of all currently-installed packages.</dd>
 </dl>
