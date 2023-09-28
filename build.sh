@@ -1,25 +1,19 @@
 #!/usr/bin/env bash
-#
-# Setup help.keyman.com site to run via Docker.
-#
-set -eu
+## START STANDARD SITE BUILD SCRIPT INCLUDE
+readonly THIS_SCRIPT="$(readlink -f "${BASH_SOURCE[0]}")"
+readonly BOOTSTRAP="$(dirname "$THIS_SCRIPT")/resources/bootstrap.inc.sh"
+readonly BOOTSTRAP_VERSION=v0.2
+[ -f "$BOOTSTRAP" ] && source "$BOOTSTRAP" || source <(curl -fs https://raw.githubusercontent.com/keymanapp/shared-sites/$BOOTSTRAP_VERSION/bootstrap.inc.sh)
+## END STANDARD SITE BUILD SCRIPT INCLUDE
 
-## START STANDARD BUILD SCRIPT INCLUDE
-# adjust relative paths as necessary
-THIS_SCRIPT="$(greadlink -f "${BASH_SOURCE[0]}" 2>/dev/null || readlink -f "${BASH_SOURCE[0]}")"
-. "$(dirname "$THIS_SCRIPT")/resources/builder.inc.sh"
-## END STANDARD BUILD SCRIPT INCLUDE
-
+# TODO: these should probably all be moved to a common defines script too?
 readonly HELP_CONTAINER_NAME=help-keyman-website
 readonly HELP_CONTAINER_DESC=help-keyman-com-app
 readonly HELP_IMAGE_NAME=help-keyman-website
 readonly HOST_HELP_KEYMAN_COM=help.keyman.com.localhost
 
-. "$REPO_ROOT/_common/keyman-local-ports.inc.sh"
-. "$REPO_ROOT/_common/docker.inc.sh"
-
-# This script runs from its own folder
-cd "$REPO_ROOT"
+source _common/keyman-local-ports.inc.sh
+source _common/docker.inc.sh
 
 ################################ Main script ################################
 
@@ -39,10 +33,10 @@ function test_docker_container() {
   composer check-docker-links
 }
 
-# builder_run_action configure echo "configure - nothing to do"
-builder_run_action clean clean_docker_container $HELP_IMAGE_NAME $HELP_CONTAINER_NAME
-builder_run_action stop  stop_docker_container  $HELP_IMAGE_NAME $HELP_CONTAINER_NAME
-builder_run_action build build_docker_container $HELP_IMAGE_NAME $HELP_CONTAINER_NAME
-builder_run_action start start_docker_container $HELP_IMAGE_NAME $HELP_CONTAINER_NAME $HELP_CONTAINER_DESC $HOST_HELP_KEYMAN_COM $PORT_HELP_KEYMAN_COM
+builder_run_action configure  bootstrap_configure
+builder_run_action clean      clean_docker_container $HELP_IMAGE_NAME $HELP_CONTAINER_NAME
+builder_run_action stop       stop_docker_container  $HELP_IMAGE_NAME $HELP_CONTAINER_NAME
+builder_run_action build      build_docker_container $HELP_IMAGE_NAME $HELP_CONTAINER_NAME
+builder_run_action start      start_docker_container $HELP_IMAGE_NAME $HELP_CONTAINER_NAME $HELP_CONTAINER_DESC $HOST_HELP_KEYMAN_COM $PORT_HELP_KEYMAN_COM
 
-builder_run_action test  test_docker_container  #$IMAGE_NAME $CONTAINER_NAME
+builder_run_action test       test_docker_container
