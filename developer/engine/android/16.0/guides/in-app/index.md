@@ -52,10 +52,10 @@ The archive includes two sample projects and an Android .aar library file. This 
 Use Keyman Developer to build a touch layout. The following blog posts walk through some of the development and
     testing for creating a touch keyboard layout:
 
-* [Creating a Touch Keyboard Layout for Amharic with Keyman Developer 13](/developer/13.0/guides/develop/creating-a-touch-keyboard-layout-for-amharic-with-keyman-developer-10")
+* [Creating a Touch Keyboard Layout for Amharic with Keyman Developer 13](/developer/13.0/guides/develop/creating-a-touch-keyboard-layout-for-amharic)
 * [Creating A Touch Keyboard Layout For Amharic — The Nitty Gritty](/developer/13.0/guides/develop/creating-a-touch-keyboard-layout-for-amharic-the-nitty-gritty)
-* [How to test your keyboard layout with Keyman Developer 13 — touch and desktop](/developer/13.0/guides/test/how-to-test-your-keyboard-layout-with-keyman-developer-10-touch-and-desktop)
-* [How to test your touch layout in the Google Chrome mobile emulator](/developer/13.0/guides/test/how-to-test-your-touch-layout-in-the-google-chrome-mobile-emulator)
+* [How to test your keyboard layout with Keyman Developer 13 — touch and desktop](/developer/13.0/guides/test/keyboard-touch-and-desktop)
+* [How to test your touch layout in the Google Chrome mobile emulator](/developer/13.0/guides/test/keyboard-touch-mobile-emulator)
 
 When your keyboard is ready, you should have a compiled keyboard package file. The example below shows the
     Tamil 99 Basic touch layout.

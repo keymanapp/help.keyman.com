@@ -36,5 +36,5 @@
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="onKeyboardDownloadFinished.php" title="Title."><code>onKeyboardDownloadFinished()</code></a></li>
+ <li><a href="onKeyboardDownloadFinished" title="Title."><code>onKeyboardDownloadFinished()</code></a></li>
 </ul>

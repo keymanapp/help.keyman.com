@@ -14,10 +14,10 @@
 <p>Welcome to the guide for using KeymanWeb 17.0.</p>
 
 <ul>
-  <li><a href="get-started.php">Getting Started with Keyman Web</a></li>
-  <li><a href="user-interface-design.php">User Interface Design</a></li>
-  <li><a href="what-is-a-keyboard.php">What is a Keyboard?</a></li>
-  <li><a href="adding-keyboards.php">Installing Keyboards</a></li>
+  <li><a href="get-started">Getting Started with Keyman Web</a></li>
+  <li><a href="user-interface-design">User Interface Design</a></li>
+  <li><a href="what-is-a-keyboard">What is a Keyboard?</a></li>
+  <li><a href="adding-keyboards">Installing Keyboards</a></li>
   <li><a href="examples/">Additional Examples</a></li>
 </ul>
 
