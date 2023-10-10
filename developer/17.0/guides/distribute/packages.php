@@ -59,10 +59,10 @@ through the keyboard's entry in Keyman Configuration.</p>
   <dd>Displayed before a package is installed, together with brief metadata about the package, to allow the user to determine if they wish to continue installation
   of the package.</dd>
 
-  <dt>kmp.inf (Desktop only)</dt>
+  <dt>kmp.inf (Legacy versions of Keyman)</dt>
   <dd>A Windows .ini format file that lists each of the files in the package, together with metadata.</dd>
 
-  <dt>kmp.json (mobile only)</dt>
+  <dt>kmp.json</dt>
   <dd>A JSON format file contains metadata for the keyboard package such as package version, keyboard versions,
     and lists each of the files in the package. For more explanation of the structure of the JSON file, please read the
     <a href="../../reference/file-types/metadata">metadata</a> documentation.</dd>
@@ -75,7 +75,7 @@ through the keyboard's entry in Keyman Configuration.</p>
 <h2>Step 1) Share the keyboard package file</h2>
 
 <p>Once the keyboard package .kmp file is created, you can share them via external storage devices (USB drive, SD card, etc).
-  You can also share the package file via a cloud storage system (Google Drive, Dropbox or similar service), then share the 
+  You can also share the package file via a cloud storage system (Google Drive, Dropbox or similar service), then share the
   link to your device via text, note or email. Alternatively, you can upload the .kmp file to a public facing website.
   For this example, the keyboard package for Khmer Angkor is being uploaded:</p>
 
