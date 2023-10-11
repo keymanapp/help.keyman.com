@@ -29,7 +29,7 @@ both of which offer richer typing for certain fields and methods.</p>
 <h2 id="Fields" name="fields">Fields</h2>
 
 <dl>
-    <dt><code>key: <a href='key.php'>KeymanPackage.Key</a></code></dt>
+    <dt><code>key: <a href='key'>KeymanPackage.Key</a></code></dt>
     <dd>Returns a unique identifier for the package, usable in package-search operations.</dd>
     <dt><code>languages: [Language]</code></dt>
     <dd>An array of languages supported by the keyboards or lexical models contained by the package.
@@ -41,12 +41,12 @@ both of which offer richer typing for certain fields and methods.</p>
     <dt><code>resourceType: LanguageResourceType</code></dt>
     <dd>An enum representing the type of LanguageResource contained within the package.
     <br/><br/>
-    May be either <code>.keyboard</code> (for a <code>KeyboardKeymanPackage</code>) or 
+    May be either <code>.keyboard</code> (for a <code>KeyboardKeymanPackage</code>) or
     <code>.lexicalModel</code> (for a <code>LexicalModelKeymanPackage</code>).</dd>
     <dt><code>sourceFolder: URL</code></dt>
     <dd>The base folder for the package's extracted contents.
     <br/><br/>
-    Note:  for packages opened with <code><a href="../ResourceFileManager/prepareKMPInstall.php">
+    Note:  for packages opened with <code><a href="../ResourceFileManager/prepareKMPInstall">
     ResourceFileManager.shared.prepareKMPInstall</a></code>, this may be a temporary location!
     <br/><br/>
     Stability is not guaranteed if you write to any contents of the folder or its subfolders,
@@ -58,11 +58,11 @@ both of which offer richer typing for certain fields and methods.</p>
 <h2 id="Methods" name="Methods">Methods</h2>
 
 <dl>
-    <dt><code><a href='installableResourceSets.php'>installableResourceSets -> [[AnyLanguageResource]] </a></code></dt>
+    <dt><code><a href='installableResourceSets'>installableResourceSets -> [[AnyLanguageResource]] </a></code></dt>
     <dd>Returns a list of all resources & language pairings supported by this package.</dd>
-    <dt><code><a href='installableResources.php'>installableResources(forLanguage: String) -> [AnyLanguageResource] </a></code></dt>
+    <dt><code><a href='installableResources'>installableResources(forLanguage: String) -> [AnyLanguageResource] </a></code></dt>
     <dd>A language-filtered version of the method above.</dd>
-    <dt><code><a href='pageURL.php'>pageURL(for: KeymanPackagePage) -> URL?</a></code></dt>
+    <dt><code><a href='pageURL'>pageURL(for: KeymanPackagePage) -> URL?</a></code></dt>
     <dd>Provides a link to known .html files contained by the package.
     <br/><br/>
     Supported pages:  <code>.readme</code>, <code>.welcome</code>, <code>.custom(bundledPath: String)</code>, the latter

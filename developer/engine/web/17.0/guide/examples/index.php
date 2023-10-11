@@ -15,10 +15,10 @@ head([
 
 
 <ul>
-  <li><p><a href='automatic-control.php'>Automatic Control Example</a></p><p>Demonstrates the simplest way to get up and running with KeymanWeb.</p></li>
-  <li><p><a href='manual-control.php'>Manual On-Screen Keyboard Control</a></p><p>Demonstrates some basic API allowing for custom control of the on-screen keyboard's display.</p></li>
-  <li><p><a href='full-manual-control.php'>Manual Language Control Example</a></p><p>Demonstrates API allowing for custom controls to manage the active keyboard.</p></li>
-  <li><p><a href='control-by-control.php'>Control by Control Example</a></p><p>Demonstrates how to set different languages for different controls and how to disable controls via API call.</p></li>
+  <li><p><a href='automatic-control'>Automatic Control Example</a></p><p>Demonstrates the simplest way to get up and running with KeymanWeb.</p></li>
+  <li><p><a href='manual-control'>Manual On-Screen Keyboard Control</a></p><p>Demonstrates some basic API allowing for custom control of the on-screen keyboard's display.</p></li>
+  <li><p><a href='full-manual-control'>Manual Language Control Example</a></p><p>Demonstrates API allowing for custom controls to manage the active keyboard.</p></li>
+  <li><p><a href='control-by-control'>Control by Control Example</a></p><p>Demonstrates how to set different languages for different controls and how to disable controls via API call.</p></li>
 </ul>
 
 <p>Note that in the actual source for these examples, we link to the most current version of KeymanWeb instead of a local

@@ -1,61 +1,55 @@
 ---
-title: How to configure macOS security options for Keyman
+title: How to configure macOS Privacy settings for Keyman
 ---
 
-Keyman requires access to your keyboard in order to translate input. In macOS Catalina, there
-are three different Privacy settings you will need to configure in order for Keyman to work
-correctly:
+Keyman requires access to your keyboard in order to translate input. Keyman and macOS  will prompt you to grant permissions to the following Privacy settings so that Keyman will work correctly:
 
-* **Privacy** / **Input Monitoring**
 * **Privacy** / **Accessibility**
 * **Privacy** / **Files and Folders**
 
-The Keyman installer will configure these privacy settings for you, and prompt you to allow access for Keyman. If you do not allow access at that time, you will need to follow the steps here in order to use Keyman.
+After first selecting Keyman from the system menu, you will see an alert requesting access to your Documents folder:
 
-Symptoms that you may experience if Security & Privacy is not configured correctly include:
+   ![System Preferences menu](../mac_images/privacy-documents-alert.png)
 
-* Some key combinations may not work
-* You may find that some letters are duplicated or not deleted as you expect
+Click OK to allow access to the Documents folder.
 
-**Note:** Keyman may not appear under these settings until it has been run at least one
-time. If Keyman does not appear in the relevant panes in System Preferences, select Keyman
-from the Input Sources menu and try typing in an app.
+Immediately after this alert is dismissed, another alert will appear:
 
-In some situations, even then, Keyman won't appear in the Accessibility setting. In this case,
-macOS should prompt you the first time that Keyman needs access to Accessibility.
+   ![System Preferences menu](../mac_images/privacy-keyman-alert.png)
 
-## Enabling Keyman in macOS Privacy System Preferences
+Unlike the previous alert, you cannot grant Accessibility permission to Keyman by simply clicking a button. This change must be made in the System Preferences (called 'System Settings' beginning with macOS 13 Ventura). After you click OK, you may briefly see another alert from macOS:
 
-1. Open **System Preferences**:
+   ![System Preferences menu](../mac_images/privacy-accessibility-alert.png)
 
-   ![System Preferences menu](../mac_images/apple_menu.png)
-
-2. Select **Security & Privacy**, and choose the **Privacy** tab:
-
-   ![System Preferences](../mac_images/system_preferences.png)
-
-3. Select **Input Monitoring** and unlock the settings with the lock icon,
-
-   ![Input Monitoring - not checked](../mac_images/privacy_input_monitoring_locked.png)
-
-4. Keyman should appear in the list. Tick the Keyman item:
-
-   ![Input Monitoring](../mac_images/privacy_input_monitoring.png)
-
-5. Select **Accessibility**, and ensure that Keyman is ticked there as well:
+and then the Security & Privacy settings window will open over the top of it:
 
    ![Accessibility](../mac_images/privacy_accessibility.png)
 
-6. Select **Files and Folders**, and ensure that Keyman has access to the **Documents** folder there:
+With **Accessibility** selected, unlock the settings by clicking on the lock icon. Then click on the Keyman checkbox to grant Keyman permission.
 
-   ![Files and Folders](../mac_images/privacy_files_and_folders.png)
+After enabling this setting, you must restart the system for it to take effect.
 
-**Note:** You may be prompted to shut down Keyman in order for the changes to take
-effect. If so, follow the prompts to allow the system to close Keyman. You'll need
-to select an alternate input source from the Input Sources, and then switch back to
-Keyman, to start using Keyman again.
+----
+
+**Note: You must restart your system after making these changes!**
+
+----
+
+Symptoms that you may experience if Privacy settings are not configured correctly include:
+
+* Some key combinations may not work
+* Some letters may be duplicated or not deleted as expected
+* The on-screen keyboard may not work
 
 ## Upgrading macOS
 
 You should only have to undertake this procedure once. However, if you upgrade your
-version of macOS, and Keyman stops working, follow these steps to re-enable Keyman.
+version of macOS, and Keyman stops working, you can return to System Preferences to re-enable these settings.
+
+The **Documents Folder**  setting is found here:
+
+   ![Files and Folders](../mac_images/privacy_files_and_folders.png)
+
+And the **Accessibility** setting is found here:
+
+   ![Accessibility](../mac_images/privacy_accessibility.png)
