@@ -28,6 +28,13 @@ builder_describe \
 
 builder_parse "$@"
 
+function build_help_site() {
+  build_docker_container $HELP_IMAGE_NAME $HELP_CONTAINER_NAME
+  # if there is a cached keyboard index, remove it; it will be recreated on first use
+  # TODO: build this file during site build
+  rm -f keyboard/index.cache
+}
+
 function test_docker_container() {
   # TODO: lint tests
   composer check-docker-links
@@ -36,7 +43,7 @@ function test_docker_container() {
 builder_run_action configure  bootstrap_configure
 builder_run_action clean      clean_docker_container $HELP_IMAGE_NAME $HELP_CONTAINER_NAME
 builder_run_action stop       stop_docker_container  $HELP_IMAGE_NAME $HELP_CONTAINER_NAME
-builder_run_action build      build_docker_container $HELP_IMAGE_NAME $HELP_CONTAINER_NAME
+builder_run_action build      build_help_site
 builder_run_action start      start_docker_container $HELP_IMAGE_NAME $HELP_CONTAINER_NAME $HELP_CONTAINER_DESC $HOST_HELP_KEYMAN_COM $PORT_HELP_KEYMAN_COM
 
 builder_run_action test       test_docker_container
