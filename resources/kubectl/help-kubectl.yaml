@@ -114,10 +114,15 @@ spec:
         securityContext:
           runAsUser: 0
           runAsGroup: 33
-        command: |
+        command: ["sh", "-c"]
+        args:
+        - |
           #!/bin/bash
           ln -sf /var/www/vendor /mnt/html/vendor
+          cd /mnt/html
+          ./build.sh configure
           if [ -f /mnt/html/resources/init-container.sh ]; then
+            cd /mnt/html
             /mnt/html/resources/init-container.sh
           fi
         volumeMounts:
