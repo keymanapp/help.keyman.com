@@ -120,6 +120,7 @@ spec:
           #!/bin/bash
           ln -sf /var/www/vendor /mnt/html/vendor
           if [ -f /mnt/html/resources/init-container.sh ]; then
+            cd /mnt/html
             /mnt/html/resources/init-container.sh
           fi
         volumeMounts:
