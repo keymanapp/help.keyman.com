@@ -109,22 +109,23 @@ spec:
         - name: git-config
           mountPath: /tmp/git
 
-      - name: init-shared-sites-repo
-        image: k8s.gcr.io/git-sync/git-sync:v3.6.2
-        securityContext:
-          runAsUser: 0
-          runAsGroup: 33
-        command: ['sh', '-c', './build.sh configure']
-        volumeMounts:
-        - name: help-site-app
-          mountPath: /mnt
-
       - name: init-site-vendoring
         image: busybox
         securityContext:
           runAsUser: 0
           runAsGroup: 33
         command: ['sh', '-c', 'ln -sf /var/www/vendor /mnt/html/vendor']
+        volumeMounts:
+        - name: help-site-app
+          mountPath: /mnt
+
+      # Do after init-site-vendoring to allow for configuring dependencies
+      - name: configure-site
+        image: k8s.gcr.io/git-sync/git-sync:v3.6.2
+        securityContext:
+          runAsUser: 0
+          runAsGroup: 33
+        command: ['sh', '-c', './build.sh configure']
         volumeMounts:
         - name: help-site-app
           mountPath: /mnt
