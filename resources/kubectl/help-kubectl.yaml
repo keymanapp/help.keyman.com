@@ -110,11 +110,16 @@ spec:
           mountPath: /tmp/git
 
       - name: init-site-vendoring
-        image: busybox
+        image: ghcr.io/keymanapp/help-keyman-com
         securityContext:
           runAsUser: 0
           runAsGroup: 33
-        command: ['sh', '-c', 'ln -sf /var/www/vendor /mnt/html/vendor']
+        command: |
+          #!/bin/bash
+          ln -sf /var/www/vendor /mnt/html/vendor
+          if [ -f /mnt/html/resources/init-container.sh ]; then
+            /mnt/html/resources/init-container.sh
+          fi
         volumeMounts:
         - name: help-site-app
           mountPath: /mnt
