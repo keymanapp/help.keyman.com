@@ -119,6 +119,8 @@ spec:
         - |
           #!/bin/bash
           ln -sf /var/www/vendor /mnt/html/vendor
+          cd /mnt/html
+          ./build.sh configure
           if [ -f /mnt/html/resources/init-container.sh ]; then
             cd /mnt/html
             /mnt/html/resources/init-container.sh
