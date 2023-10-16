@@ -1,10 +1,10 @@
 <?php
   require_once('includes/servervars.php');
   require_once('includes/renderLanguageExample.php');
-  
+
   function template_finish($foot) {
     //ob_end_flush();
-    
+
     if($foot == true){
       foot();
     }
@@ -13,6 +13,7 @@
   function head($args=[]){
     // Args are title='My Page Title', css='page.css' showMenu=true/false;
     global $kbdname;
+    global $canonicalLink;
 
     // Get device
     if (strstr($_SERVER['HTTP_USER_AGENT'],'Windows')) {
@@ -26,14 +27,14 @@
     }else{
         $device = 'Unknown';
     }
-    
+
     //echo $args['includeKMW'];
     if(isset($args['includeKMW']) && $args['includeKMW'] != ''){
       $IncludeKeymanWeb = $args['includeKMW'];
     }else{
       $IncludeKeymanWeb = 1;
     }
-    
+
     if(isset($args['title'])){
         $title = $args['title'];
     }else{
@@ -65,16 +66,20 @@
     $favicon = cdn("img/favicon.ico");
     $url = $_SERVER['PHP_SELF'];
     $url = explode('/', parse_url($url, PHP_URL_PATH));
-    
+
     $kbdname ='';
-    
+
     if(sizeof($url) > 1 && $url[1] == 'keyboard') {
       $url = end($url);
-      
+
       if(preg_match('/([a-z0-9_]+)/', $url, $sub))
       {
         $kbdname = 'Keyboard_' . $sub[0];
       }
+    }
+
+    if(isset($args['canonicalLink'])) {
+      $canonicalLink = $args['canonicalLink'];
     }
 
     require_once('head.php');
@@ -84,14 +89,14 @@
     } else {
         require_once ('no-menu.php');
     }
-    
+
     $foot = isset($args['foot']) ? $args['foot'] : true;
     $shutdown = 'template_finish';
     register_shutdown_function($shutdown,$foot);
-    
+
     begin_main($args['pagename']);
   }
-    
+
   function write_breadcrumbs(){
     $crumbs = explode("/",$_SERVER["REQUEST_URI"]);
     $crumbcount = count($crumbs);
@@ -125,22 +130,22 @@
     }
     echo $crumbtrail;
   }
-  
+
   function write_version_history($pagename){
     global $kbdname;
-    
+
     //
     if(empty($kbdname)) return '';
-    
+
     $path = '../';
     $results = scandir($path);
     if(!is_array($results)){
       return '';
     }
     rsort($results);
-    
+
     if(empty($pagename)) $pagename = '';
-    
+
     $string = '<h2>All Documentation Versions</h2><ul id="version-hist">';
     $i = 0;
     foreach ($results as $result){
@@ -156,7 +161,7 @@
     $string.= '</ul><br>';
     return $string;
   }
-  
+
   function begin_main($pagename){
     global $version_history;
     write_breadcrumbs();
@@ -177,15 +182,15 @@ END;
     if(!empty($pagename)){
       $html.='<h2 class="red underline">'.$pagename.'</h2>';
     }
-    
+
     echo $html;
   }
-  
+
   function foot($args=[]){
     // Args are display=true/false;
-    
+
     global $version_history;
-    
+
     if(isset($args['display'])){
       $display = $args['display'];
     }else{
@@ -198,8 +203,8 @@ END;
     }else{
       require_once('no-footer.php');
     }
-  }  
-  
+  }
+
   function renderLanguageExamples($kbdname = '')
   {
     global $languageExamplesRendered, $kbdname;
@@ -217,7 +222,7 @@ END;
     if(!isset($languageExamplesRendered) && !empty($kbdname))
     {
       $languageExamplesRendered = true;
-      
+
       $s = renderLanguageExample($kbdname, '', '', false);
       if(!empty($s)) echo "<div id='keymanExample'>$s</div>";
     }
