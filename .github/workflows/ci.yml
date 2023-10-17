@@ -23,8 +23,13 @@ jobs:
         fail-fast: true
 
     #
-    # Finally, run the tests
+    # Finally, run the tests; note that this is almost all replicated in build.sh; here logging is reduced (TODO sync)
     #
+    - name: PHP unit tests
+      shell: bash
+      run: |
+        docker exec help-keyman-com-app sh -c "vendor/bin/phpunit --testdox"
+
     - name: Lint
       shell: bash
       run: |
