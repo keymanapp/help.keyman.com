@@ -29,8 +29,17 @@ builder_describe \
 builder_parse "$@"
 
 function test_docker_container() {
-  # TODO: lint tests
-  composer check-docker-links
+  # Note: ci.yml replicates these
+
+  # Run unit tests
+  docker exec $HELP_CONTAINER_DESC sh -c "vendor/bin/phpunit --testdox"
+
+  # Lint .php files for obvious errors
+  docker exec $HELP_CONTAINER_DESC sh -c "find . -name '*.php' | grep -v '/vendor/' | xargs -n 1 -d '\\n' php -l"
+
+  # Check all internal links
+  # NOTE: link checker runs on host rather than in docker image
+  npx broken-link-checker http://localhost:8055 --ordered --recursive --host-requests 10 -e --filter-level 3
 }
 
 builder_run_action configure  bootstrap_configure
