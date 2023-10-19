@@ -43,7 +43,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: auto merge PR from keyman-server
-      uses: "pascalgn/automerge-action@01fb84a9d077930bf9d16d1f7fa3fe2ffe45aabe"
+      uses: "pascalgn/automerge-action@22948e0bc22f0aa673800da838595a3e7347e584"
       if: github.actor == 'keyman-server'
       env:
         GITHUB_TOKEN: "${{ secrets.AUTOINC_GITHUB_TOKEN }}"
