@@ -1,5 +1,5 @@
 #
-# Automatically merges pull requests opened by keyman-server
+# Automatically approves pull requests opened by keyman-server
 # The initial use of this action is to upload product help documentation
 # with resources/build/help-keyman-com.sh.
 # That script creates a PR and then this workflow will be
