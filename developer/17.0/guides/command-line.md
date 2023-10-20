@@ -5,29 +5,30 @@ title: Keyman Developer command line tools guide
 Keyman Developer has a set of command line tools for creating keyboards and
 models.
 
-## Windows installation
+## Keyman Developer integration (Windows only)
 
-These tools are included with a default installation of Keyman
-Developer, and are also available as a zip download from
-[keyman.com/developer/download](https://keyman.com/developer/download).
+These tools are included with a default installation of Keyman Developer,
+including a runtime of node.js.
 
-## Linux and macOS installation
+## npm or zip (Windows, macOS, and Linux)
 
-The tools are available as a zip download from
-[keyman.com/developer/download](https://keyman.com/developer/download), or as an
-npm package, [@keymanapp/kmc](https://npmjs.com/package/@keymanapp/kmc).
+These tools are also available as:
+* a zip download from [keyman.com/developer/download](https://keyman.com/developer/download)
+* an npm package, [@keymanapp/kmc](https://npmjs.com/package/@keymanapp/kmc)
 
-You'll need [node.js](https://nodejs.org/). Keyman Developer 17 no longer
-requires WINE, unlike previous versions.
+You'll need [node.js](https://nodejs.org/). Unlike previous versions of Keyman
+Developer, version 17 no longer requires WINE to run on Linux or macOS.
 
 ### Zip download
 
 ```shell
 # To build keyboards and packages:
-mkdir kmcomp
-cd kmcomp
-curl -L https://keyman.com/go/download/kmcomp -o kmcomp.zip
-unzip kmcomp.zip
+mkdir kmc
+cd kmc
+# hint: the download is currently called 'kmcomp', although the
+#       compiler is now called 'kmc'.
+curl -L https://keyman.com/go/download/kmcomp -o kmc.zip
+unzip kmc.zip
 # Optionally, add kmcomp to your PATH
 ```
 
@@ -39,10 +40,14 @@ npm install -g @keymanapp/kmc
 
 ## The five minute quick start
 
+
+### 1. Generate a basic keyboard project
+
 **TODO**: THIS SECTION NEEDS REWRITE ONCE `kmc generate` lands.
 
 We'll first use [KMConvert](../context/kmconvert) to create a keyboard project,
-with the minimal metadata required to compile and install. In your /keyboards - folder do:
+with the minimal metadata required to compile and install. In your /keyboards -
+folder do:
 
 ```shell
 kmconvert template -id sample -name "Sample" -languages en-au
@@ -54,33 +59,43 @@ details.)
 
 This will have created a new folder called `sample/`.
 
+### 2. Build the project
+
 ```shell
 cd sample
 ```
 
-Now, we'll build our keyboard project with [KMComp](../context/kmcomp).
+Now, we'll build our keyboard project with [`kmc`](../context/kmc).
 
 ```shell
-kmcomp sample.kpj
+kmc build .
 ```
 
 And... that's it! We'll now have a compiled keyboard and package in the
 `build/` subfolder. Admittedly, the new keyboard doesn't do very much. But
 that's up to you to fill in.
 
-On Windows, we can install this keyboard using [`kmshell`](/knowledge-base/98):
+### 3. Install the keyboard
+
+**Windows**: we can install this keyboard using [`kmshell`](/knowledge-base/98):
 
 ```cmd
 "%ProgramFiles(x86)%\Keyman\Keyman Desktop\kmshell" -i build\sample.kmp -s
 ```
 
-On Linux, we'd use the following
+Alternatively you can double-click the .kmp package file in Windows Explorer to
+install it.
+
+**Linux**: we'd use the following
 [`km-package-install`](/products/linux/current-version/reference/km-package-install)
 command:
 
 ```shell
 km-package-install -f build/sample.kmp
 ```
+
+**macOS**: open Keyman Configuration and drop the package .kmp file onto the
+Keyman Configuration window.
 
 Now, use your favourite editor to edit the `source/sample.kmn` file, and when
 you wish, compile and reinstall with the commands above. For example, I use
@@ -97,7 +112,7 @@ Keyman Developer generates.
 
 ## Reference and Examples
 
-### KMComp
+### kmc - command line compiler
 
 [kmc](../context/kmc) is the command line compiler. You can use it to compile
 all Keyman files.
