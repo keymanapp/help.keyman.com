@@ -14,16 +14,13 @@ Details:
   creates and automatically adds `kmp.inf` and `kmp.json` into the Keyman
   Package file ([.kmp](kmp)).
 
-  Keyman mobile products use `kmp.json` to install the touch keyboards (.js) in
-  the package.
-
   Keyman on all platforms now use `kmp.json` to install the keyboards
   ([.kmx](kmx)) in the package.
 
   Older versions of Keyman Desktop for Windows use `kmp.inf`, a parallel format
   of the package metadata. Note: the lexical model compiler does not add
-  `kmp.inf`, and future versions of Keyman Developer will stop supporting
-  `kmp.inf`.
+  `kmp.inf`, and new functionality is not included. Future versions of Keyman
+  Developer will stop supporting `kmp.inf`.
 
 Package purposes:
 
@@ -103,13 +100,30 @@ The `Options` object is used by Keyman Desktop to install keyboards
 
 : `string`
 
-  The file for the keyboard package documentation
+  A reference to the HTML file in the package for the keyboard package readme,
+  presented before the package is installed.
 
 `graphicFile`
 
 : `string`
 
-  The image associated with the keyboard package.
+  A reference to an image file, .png or .jpeg recommended formats, associated
+  with the keyboard package, and shown at package installation time.
+
+`welcomeFile`
+
+: `string`
+
+  A reference to the HTML file containing keyboard package documentation,
+  available through the help interfaces in Keyman, and shown once after the
+  package is successfully installed. In the past, this file was always called
+  welcome.htm.
+
+`licenseFile`
+
+: `string`
+
+  A HTML file containing the package license.
 
 ### The Start Menu object
 
