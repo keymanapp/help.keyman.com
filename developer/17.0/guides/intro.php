@@ -40,8 +40,5 @@ Windows.</p>
 
 <h2><a name="id471278" id="id471278"></a>KMComp</h2>
 
-<p>KMComp, the command-line compiler, is a comprehensive tool that lets you compile keyboards, packages, models and projects
+<p>kmc, the command-line compiler, is a comprehensive tool that lets you compile keyboards, packages, models and projects
 from the command-line.</p>
-
-<p>KMComp is available in 32-bit and 64-bit versions, and is a native Windows executable. However, it runs well under WINE in
-Linux and macOS.</p>
