@@ -11,7 +11,7 @@ npm install -g @keymanapp/kmc
 ```
 
 kmc does more than just compile keyboards. It builds packages, lexical models,
-projects, keyboards, windows installers, and more. It provides analysis tools
+projects, keyboards, Windows installers, and more. It provides analysis tools
 for keyboard data.
 
 kmc will be extended to generate new keyboard and lexical model projects,
@@ -64,8 +64,8 @@ If no input file is supplied, kmc will build the current folder.
 ### Examples
 
 `kmc build project.kpj`
-: Compile all components of a keyboard or model project named `project.kpj`
-KMComp will respect the path settings within the project file. This is the
+: Compile all components of a keyboard or model project named `project.kpj`.
+kmc will respect the path settings within the project file. This is the
 recommended way to build, as it will build keyboards, models and packages all in
 one step. You can also call `kmc build <folder>` to build the project in the
 referenced folder, e.g. `kmc build .`.
@@ -157,3 +157,4 @@ Commands:
   help [command]                                   display help for command
 ```
 
+For more information on the purpose of `analyze osk-char-use` and `analyze rewrite-osk-from-char-use`, see [`&displayMap`](/developer/language/reference/displaymap).
