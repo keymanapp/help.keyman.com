@@ -20,7 +20,9 @@ This keyboard is designed for the <b>Dene Zhatié</b> language of the Western S
 
 <h2> Keyboard Layout </h2>
 
+<!--
 <img src="fv_dene_zhatieU_.png" alt="" height="198" width="514" border="0" />
+-->
 
     <ul>
       <li> The special characters of Dene Zhatié have been assigned to a mix of both number and punctuation keys.</li>
