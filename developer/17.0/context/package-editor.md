@@ -60,7 +60,7 @@ section. The fields on the tab are:
 * **Web fonts**
 : It is possible now to specify additional font filenames that will be made
   available to KeymanWeb, for example, providing fonts in WOFF or WOFF2 formats.
-  [More on web fonts](edit-package-web-fonts)
+  [More on web fonts](select-web-fonts)
 
 * **Languages**
 : Because the language information in the .kmn source is deprecated, the
