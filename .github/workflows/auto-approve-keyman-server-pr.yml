@@ -7,15 +7,14 @@
 # will merge it
 #
 name: Auto Approve PRs from keyman-server
-on:
-  pull_request:
-    types: [opened]
+
+on: pull_request_target
+
 jobs:
-  build:
+  auto-approve:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     steps:
-    - name: auto approve PR from keyman-server
-      uses: hmarr/auto-approve-action@v2.0.0
+    - uses: hmarr/auto-approve-action@44888193675f29a83e04faf4002fa8c0b537b1e4 # v3.2.1
       if: github.actor == 'keyman-server'
-      with:
-        github-token: "${{ secrets.GITHUB_TOKEN }}"
