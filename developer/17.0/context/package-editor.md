@@ -57,6 +57,11 @@ section. The fields on the tab are:
   for iOS and Android which font to use in edit fields. It only applies within
   the Keyman app and apps that support this functionality. Optional.
 
+* **Web fonts**
+: It is possible now to specify additional font filenames that will be made
+  available to KeymanWeb, for example, providing fonts in WOFF or WOFF2 formats.
+  [More on web fonts](select-web-fonts)
+
 * **Languages**
 : Because the language information in the .kmn source is deprecated, the
   "Languages" section is required. Each language listed here is a [BCP 47 language
@@ -66,6 +71,28 @@ section. The fields on the tab are:
   Required.
 
   ![Package Editor - Select BCP 47 Tag dialog](/cdn/dev/img/developer/170/ui/frmPackageEditor_Select_BCP_47_Tag.png)
+
+* **Examples**
+: Examples allow you to provide short keystroke sequences to type sample text
+  with your keyboard. This can be the easiest way for a new user to start using
+  your keyboard, and is particularly helpful when your keyboard makes use of
+  keying sequences that may not be immediately obvious.
+
+  As the keying examples may vary by language, you should include the BCP 47 tag
+  for each example, plus a short description (in English) of what the text is
+  about.
+
+  The key sequence must list each key combination, separated by space. The
+  actual text for each key is reasonably arbitrary, to allow you to provide
+  examples for touch keyboards as well as desktop keyboards. There are three
+  special kinds of key strings:
+  * Modifier keys may be specified with the `+` character, e.g. `shift+e` or `right-alt+k`. Use lower case keys. The suggested standard modifiers are: `shift`, `ctrl`, `alt`, `left-alt`, `right-alt`, `left-ctrl`, `right-ctrl`, and `option` (mac).
+  * The <kbd>space</kbd> key itself may be specified with with `space`.
+  * To avoid confusion with modifier keys, the <kbd>+</kbd> key can be specified with `plus`.
+
+  For example, the key sequence <kbd>x</kbd> <kbd>j</kbd> <kbd>m</kbd> <kbd>Shift</kbd>+<kbd>e</kbd> <kbd>r</kbd> may be specified as `x j m shift+e r` or `x j m E r`.
+
+  ![Package Editor - Edit Example dialog](/cdn/dev/img/developer/170/ui/frmPackageEditor_EditExample.png)
 
 ## Details tab
 
@@ -100,6 +127,27 @@ the initial "http://" or "https://".
 A package can optionally include a 140x250 JPEG or PNG image file to be shown
 during installation. This image file must be added to the Files list in step 1,
 then selected from the list here.
+
+### Related packages
+
+If a keyboard package is intended to replace an existing keyboard, or if there
+are related packages, then the identifiers for these packages should be listed
+here.
+
+There are two types of package relationships:
+
+* Deprecation: if the package replaces an existing package, ensure that you
+  select the 'Deprecated' check box. This information will be used on the Keyman
+  website, both to help users select the most recent version of a keyboard, and
+  also to offer upgrades to new packages for existing users of the package.
+
+* Related: if the 'Deprecated' check box is not selected, then this the
+  relationship information is used to provide links to the related packages on
+  the Keyman website. For example, you may create two keyboards for the same
+  language with different keying orders; then it would be appropriate to 
+  cross-reference them with this field.
+
+![Package Editor - Edit Related Packages dialog](/cdn/dev/img/developer/170/ui/frmPackageEditor_EditRelatedPackage.png)
 
 ## Shortcuts tab
 
