@@ -38,3 +38,4 @@ jobs:
         MERGE_FORKS: false
         MERGE_RETRY: 6
         MERGE_RETRY_SLEEP: 30000
+        MERGE_READY_STATE: clean,has_hooks,unknown,unstable,behind
