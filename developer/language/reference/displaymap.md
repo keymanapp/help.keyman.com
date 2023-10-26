@@ -72,6 +72,9 @@ Using `&displayMap` means that the design-time model for the On Screen Keyboard
 and Touch Layout can continue to use the correct Unicode values on the keycaps,
 making the transformation to PUA characters only in the compilation process.
 
+The Kbd font associated with the `&displayMap` should be added to the keyboard's
+package and selected in the package 'Keyboard Font' field.
+
 ## Standard conventions for use of displayMaps
 
 In the Keyman keyboards repository, the PUA range used should start at `U+F100`.
@@ -112,6 +115,8 @@ applicable on all platforms.
 
 ## Version history
 
-* Version 17.0: `&displayMap` support introduced. Keyboards must be compiled
-  with v17 or later compiler, but the results will work in older versions of the
-  compiler.
+* Version 17.0: This functionality was added to Keyman Developer 17.0. The
+  compiled keyboards can be used with earlier versions of Keyman; it is not
+  necessary to target version 17 or later (via `store(&version)`) in the
+  keyboard .kmn source file in order to make use of `&displayMap` in the
+  keyboard.
