@@ -38,7 +38,7 @@ public void onConfigurationChanged(Configuration newConfig) {
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="createInputView.php"><code>createInputView()</code></a></li>
- <li><a href="onStartInput.php"><code>onStartInput()</code></a></li>
- <li><a href="onDestroy.php"><code>onDestroy()</code></a></li>
+ <li><a href="createInputView"><code>createInputView()</code></a></li>
+ <li><a href="onStartInput"><code>onStartInput()</code></a></li>
+ <li><a href="onDestroy"><code>onDestroy()</code></a></li>
 </ul>

@@ -38,19 +38,19 @@ public View onCreateInputView() {
     // create the inputView only once
     if (inputView == null)
         inputView = KMManager.createInputView(this);
-    
+
     // we must remove the inputView from its previous parent before returning it
     ViewGroup parent = (ViewGroup) inputView.getParent();
     if (parent != null)
         parent.removeView(inputView);
-    
+
     return inputView;
 }
 </code></pre>
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="onStartInput.php"><code>onStartInput()</code></a></li>
- <li><a href="onConfigurationChanged.php"><code>onConfigurationChanged()</code></a></li>
- <li><a href="onDestroy.php"><code>onDestroy()</code></a></li>
+ <li><a href="onStartInput"><code>onStartInput()</code></a></li>
+ <li><a href="onConfigurationChanged"><code>onConfigurationChanged()</code></a></li>
+ <li><a href="onDestroy"><code>onDestroy()</code></a></li>
 </ul>

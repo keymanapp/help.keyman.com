@@ -58,6 +58,6 @@ Added in Keyman Engine for iPhone and iPad 14.0.
 <dd>A loaded package file containing one or more keyboards.</dd>
 <dt><code>LexicalModelKeymanPackage</code></dt>
 <dd>A loaded package file containing a lexical model.</dd>
-<dt><a href="install.php"><code>ResourceFileManager.shared.install(resourceWithID:,from:)</code></a></dt>
+<dt><a href="install"><code>ResourceFileManager.shared.install(resourceWithID:,from:)</code></a></dt>
 <dd>This method is used to install specific resources from package files opened by <code>prepareKMPInstall()</code>.</dd>
 </dl>

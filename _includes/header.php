@@ -9,13 +9,15 @@
     $pagetitle = '?';
   }
   if($folders[1] == 'keyboard'){
+    $canonicalLink = "/keyboard/" . $folders[2] . "/current-version";
     head([
       'title' =>$pagetitle,
       'pagename' => isset($pagename) ? $pagename : $pagetitle,
       'css' => ['template.css','keyboard.css','keys.css'],
       'js' => ['kbd-docs.js'],
       'showMenu' => true,
-      'includeKMW' => $IncludeKeymanWeb
+      'includeKMW' => $IncludeKeymanWeb,
+      'canonicalLink' => $canonicalLink,
     ]);
   }else{
     head([

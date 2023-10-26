@@ -36,8 +36,8 @@
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="getKeyboardTextFontTypeface.php"><code>getKeyboardTextFontTypeface()</code></a></li>
- <li><a href="getKeyboardOskFontFilename.php"><code>getKeyboardOskFontFilename()</code></a></li>
- <li><a href="getKeyboardTextFontFilename.php"><code>getKeyboardTextFontFilename()</code></a></li>
- <li><a href="getFontTypeface.php"><code>getFontTypeface()</code></a></li>
+ <li><a href="getKeyboardTextFontTypeface"><code>getKeyboardTextFontTypeface()</code></a></li>
+ <li><a href="getKeyboardOskFontFilename"><code>getKeyboardOskFontFilename()</code></a></li>
+ <li><a href="getKeyboardTextFontFilename"><code>getKeyboardTextFontFilename()</code></a></li>
+ <li><a href="getFontTypeface"><code>getFontTypeface()</code></a></li>
 </ul>

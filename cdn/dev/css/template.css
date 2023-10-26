@@ -979,7 +979,7 @@ input[type="search"] {
 	-moz-columns: 2;
 }
 
-#keyboard-support-list{
+.keyboard-support-list{
 	margin-bottom: 20px;
 	columns: 4;
 	-webkit-columns: 4;
@@ -997,11 +997,11 @@ input[type="search"] {
 	text-align: center;
 }
 
-#keyboard-support-list li, #product-support-list li, #engine-support-list li, #version-history li{
+.keyboard-support-list li, #product-support-list li, #engine-support-list li, #version-history li{
 	list-style: none !important;
 }
 
-#keyboard-support-list li a, #product-support-list li a, #engine-support-list li a, #version-history li a{
+.keyboard-support-list li a, #product-support-list li a, #engine-support-list li a, #version-history li a{
 	color: #B92034;
 	text-decoration: underline;
 }
@@ -1535,7 +1535,7 @@ body[data-device='Unknown'] #osk-tablet-container {
 		margin: 10px 10px 15px 10px;
 		text-align: center;
 	}
-	#keyboard-support-list{
+	.keyboard-support-list{
 		columns: 2;
 		-webkit-columns: 2;
 		-moz-columns: 2;

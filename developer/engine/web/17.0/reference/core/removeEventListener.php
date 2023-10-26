@@ -23,7 +23,7 @@ returns();
 <h2 id="Description" name="Description">Description</h2>
 
 <p>
-  See also:  <a href="addEventListener.php"><code><?="keyman.addEventListener()"?></code></a>.
+  See also:  <a href="addEventListener"><code><?="keyman.addEventListener()"?></code></a>.
 </p>
 <p>To be implemented.
 </p>
