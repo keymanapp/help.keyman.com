@@ -82,7 +82,7 @@ section. The fields on the tab are:
   for each example, plus a short description (in English) of what the text is
   about.
 
-  The key sequence must have list each key combination, separated by space. The
+  The key sequence must list each key combination, separated by space. The
   actual text for each key is reasonably arbitrary, to allow you to provide
   examples for touch keyboards as well as desktop keyboards. There are three
   special kinds of key strings:
@@ -143,7 +143,9 @@ There are two types of package relationships:
 
 * Related: if the 'Deprecated' check box is not selected, then this the
   relationship information is used to provide links to the related packages on
-  the Keyman website.
+  the Keyman website. For example, you may create two keyboards for the same
+  language with different keying orders; then it would be appropriate to 
+  cross-reference them with this field.
 
 ![Package Editor - Edit Related Packages dialog](/cdn/dev/img/developer/170/ui/frmPackageEditor_EditRelatedPackage.png)
 
