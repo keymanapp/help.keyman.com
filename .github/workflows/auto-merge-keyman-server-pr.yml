@@ -21,7 +21,7 @@ on:
   pull_request_review:
     types:
       - submitted
-  status
+  status:
   check_suite:
     types:
       - completed
