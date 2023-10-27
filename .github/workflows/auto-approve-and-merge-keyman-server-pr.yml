@@ -13,7 +13,7 @@ jobs:
     if: github.actor == 'keyman-server' && startsWith(github.head_ref, 'auto/')
     runs-on: ubuntu-latest
     env:
-      GH_TOKEN: ${{ secrets.AUTOINC_GITHUB_TOKEN }}
+      GH_TOKEN: ${{ secrets.AUTO_PR_APPROVAL_BY_KEYMAN_STATUS }}
     permissions: write-all
     steps:
     - name: Checkout
