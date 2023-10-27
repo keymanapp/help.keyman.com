@@ -9,19 +9,19 @@
 name: Auto Approve PRs from keyman-server
 
 on: pull_request_target
+  branches:
+  - 'auto/**'
 
 jobs:
   auto-approve:
+    if: github.actor == 'keyman-server'
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
     steps:
     - name: Approve pull request
-      if: contains(github.event.pull_request.labels.*.name, 'auto')
-      if: github.actor == 'keyman-server'
       run: |
            gh pr review --approve
     - name: Enable auto-merge
-      if: contains(github.event.pull_request.labels.*.name, 'auto')
       run: |
            gh pr merge --merge --auto
