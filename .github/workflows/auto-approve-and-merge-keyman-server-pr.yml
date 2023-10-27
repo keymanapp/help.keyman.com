@@ -6,22 +6,27 @@
 # triggered to approve the PR, and then auto-merge-keyman-server-pr.yml
 # will merge it
 #
-name: Auto Approve PRs from keyman-server
+name: Auto Approve and Merge PRs from keyman-server
 
 on: pull_request_target
-  branches:
-  - 'auto/**'
 
 jobs:
   auto-approve:
-    if: github.actor == 'keyman-server'
+    if: github.actor == 'keyman-server' && startsWith(github.head_ref, 'auto/')
     runs-on: ubuntu-latest
-    permissions:
-      pull-requests: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+    permissions: write-all
     steps:
+    - name: Checkout
+      uses: actions/checkout@v4.1.1
+      with:
+        sparse-checkout: |
+          README.md
+        sparse-checkout-cone-mode: false
     - name: Approve pull request
       run: |
-           gh pr review --approve
+           gh pr review --approve ${{github.head_ref}}
     - name: Enable auto-merge
       run: |
-           gh pr merge --merge --auto
+           gh pr merge --merge --auto ${{github.head_ref}}
