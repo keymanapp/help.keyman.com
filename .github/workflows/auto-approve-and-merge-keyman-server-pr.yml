@@ -1,10 +1,8 @@
 #
-# Automatically approves pull requests opened by keyman-server
-# The initial use of this action is to upload product help documentation
-# with resources/build/help-keyman-com.sh.
-# That script creates a PR and then this workflow will be
-# triggered to approve the PR, and then auto-merge-keyman-server-pr.yml
-# will merge it
+# Automatically approves and queues for merge any pull requests with a branch
+# name starting with auto/, that are opened by keyman-server. This action is
+# used to merge product help documentation from keymanapp/keyman and also for
+# keyboard documentation PRs.
 #
 name: Auto Approve and Merge PRs from keyman-server
 
