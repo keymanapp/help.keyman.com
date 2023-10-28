@@ -3,27 +3,38 @@
 # The initial use of this action is to upload product help documentation
 # with resources/build/help-keyman-com.sh.
 # That script creates a PR and then this workflow will be
-# triggered to approve the PR (from github-actions account), and
-# then automerge it.
+# triggered to merge the PR once approved by the
+# auto-approve-keyman-server-pr.yml script.
 #
 name: Auto Merge PRs from keyman-server
 on:
   pull_request:
-    types: [opened]
-
+    types:
+      - labeled
+      - unlabeled
+      - synchronize
+      - opened
+      - edited
+      - ready_for_review
+      - reopened
+      - unlocked
+  pull_request_review:
+    types:
+      - submitted
+  status:
+  check_suite:
+    types:
+      - completed
 jobs:
-  build:
+  automerge:
     runs-on: ubuntu-latest
     steps:
-    - name: auto approve PR from keyman-server
-      uses: hmarr/auto-approve-action@v2.0.0
-      if: github.actor == 'keyman-server'
-      with:
-        github-token: "${{ secrets.GITHUB_TOKEN }}"
     - name: auto merge PR from keyman-server
-      uses: "pascalgn/automerge-action@01fb84a9d077930bf9d16d1f7fa3fe2ffe45aabe"
+      uses: "pascalgn/automerge-action@22948e0bc22f0aa673800da838595a3e7347e584" # v0.15.6
       if: github.actor == 'keyman-server'
       env:
         GITHUB_TOKEN: "${{ secrets.AUTOINC_GITHUB_TOKEN }}"
         MERGE_LABELS: "auto"
         MERGE_FORKS: false
+        MERGE_RETRY: 6
+        MERGE_RETRY_SLEEP: 30000
