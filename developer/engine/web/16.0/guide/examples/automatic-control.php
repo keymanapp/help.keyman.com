@@ -57,4 +57,4 @@ hundreds of kilobytes of unused Javascript keyboards - the keyboard is downloade
 
 <hr>
 
-<p><a href='manual-control.php'>On to Manual Control Example</a></p>
+<p><a href='manual-control'>On to Manual Control Example</a></p>

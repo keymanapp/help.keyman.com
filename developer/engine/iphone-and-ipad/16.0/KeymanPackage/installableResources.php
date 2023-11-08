@@ -25,10 +25,10 @@ supported by the current package for the specified language code.</p>
 
 <h3 id="Value" name="Value">Value</h3>
 <p>
-An array of <code>InstallableKeyboard</code> (for a <code>KeyboardKeymanPackage</code>) or  
+An array of <code>InstallableKeyboard</code> (for a <code>KeyboardKeymanPackage</code>) or
 <code>InstallableLexicalModel</code> (for a <code>LexicalModelKeymanPackage</code>) instances.
 <br/><br/>
-For most packages, there will only be a single entry in this array.  However, note that multi-keyboard 
+For most packages, there will only be a single entry in this array.  However, note that multi-keyboard
 packages may support multiple keyboards for the same target language.
 </p>
 
@@ -38,9 +38,9 @@ Added in Keyman Engine for iPhone and iPad 14.0.
 <h2 id="See_also" name="See_also">See also</h2>
 
 <dl>
-    <dt><code><a href="installableResourceSets.php">installableResourceSets: [[ AnyLanguageResource ]]</a></code></dt>
+    <dt><code><a href="installableResourceSets">installableResourceSets: [[ AnyLanguageResource ]]</a></code></dt>
     <dd>Returns a list of all resources & language pairings supported by this package.</dd>
-    <dt><code><a href="../TypedKeymanPackage/installables_forLanguage.php">TypedKeymanPackage.installables(forLanguage: String): [ TypedLanguageResource ]</a></code></dt>
+    <dt><code><a href="../TypedKeymanPackage/installables_forLanguage">TypedKeymanPackage.installables(forLanguage: String): [ TypedLanguageResource ]</a></code></dt>
     <dd>Provides the same functionality as this method for <code>TypedKeymanPackage</code> and its subclasses,
     taking advantage of the class's generic specification to return a more strongly-typed array.</dd>
 </dl>
