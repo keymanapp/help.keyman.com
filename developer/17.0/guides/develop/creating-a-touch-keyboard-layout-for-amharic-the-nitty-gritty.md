@@ -8,7 +8,7 @@ title: Creating a Touch Keyboard Layout Part 2
   @font-face {
     font-family: SpecialOSK;
     font-display: block;
-    src: url('https://s.keyman.com/kmw/engine/15.0.222/osk/keymanweb-osk.ttf');
+    src: url('https://s.keyman.com/kmw/engine/17.0.185/osk/keymanweb-osk.ttf');
   }
 
 .special-osk {
@@ -338,6 +338,102 @@ for now the following special labels are recognized:
       <td class="special-osk">&#xE076;</td>
       <td>Zero Width Non Joiner (Android style shape)</td>
     </tr>
+    <tr>
+      <td markdown="1">`*ZWNJGeneric*`</td>
+      <td class="special-osk">&#xE079;</td>
+      <td>Zero Width Non Joiner (not platform-specific)</td>
+    </tr>
+    <tr>
+      <td markdown="1">`*Sp*`</td>
+      <td class="special-osk">&#xE080;</td>
+      <td>Regular space</td>
+    </tr>
+    <tr>
+      <td markdown="1">`*NBSp*`</td>
+      <td class="special-osk">&#xE082;</td>
+      <td>No-Break Space</td>
+    </tr>
+    <tr>
+      <td markdown="1">`*NarNBSp*`</td>
+      <td class="special-osk">&#xE083;</td>
+      <td>Narrow No-Break Space</td>
+    </tr>
+    <tr>
+      <td markdown="1">`*EnQ*`</td>
+      <td class="special-osk">&#xE084;</td>
+      <td>En Quad</td>
+    </tr>
+    <tr>
+      <td markdown="1">`*EmQ*`</td>
+      <td class="special-osk">&#xE085;</td>
+      <td>Em Quad</td>
+    </tr>
+    <tr>
+      <td markdown="1">`*EnSp*`</td>
+      <td class="special-osk">&#xE086;</td>
+      <td>En Space</td>
+    </tr>
+    <tr>
+      <td markdown="1">`*EmSp*`</td>
+      <td class="special-osk">&#xE087;</td>
+      <td>Em Space</td>
+    </tr>
+    <tr>
+      <td markdown="1">`*PunctSp*`</td>
+      <td class="special-osk">&#xE08C;</td>
+      <td>Punctuation Space</td>
+    </tr>
+    <tr>
+      <td markdown="1">`*ThSp*`</td>
+      <td class="special-osk">&#xE08D;</td>
+      <td>Thin Space</td>
+    </tr>
+    <tr>
+      <td markdown="1">`*HSp*`</td>
+      <td class="special-osk">&#xE08E;</td>
+      <td>Hair Space</td>
+    </tr>
+    <tr>
+      <td markdown="1">`*ZWSp*`</td>
+      <td class="special-osk">&#xE081;</td>
+      <td>Zero Width Space</td>
+    </tr>
+    <tr>
+      <td markdown="1">`*ZWJ*`</td>
+      <td class="special-osk">&#xE077;</td>
+      <td>Zero Width Joiner</td>
+    </tr>
+    <tr>
+      <td markdown="1">`*WJ*`</td>
+      <td class="special-osk">&#xE078;</td>
+      <td>Word Joiner</td>
+    </tr>
+    <tr>
+      <td markdown="1">`*CGJ*`</td>
+      <td class="special-osk">&#xE07A;</td>
+      <td>Combining Grapheme Joiner</td>
+    </tr>
+    <tr>
+      <td markdown="1">`*LTRM*`</td>
+      <td class="special-osk">&#xE090;</td>
+      <td>Left-to-right Mark</td>
+    </tr>
+    <tr>
+      <td markdown="1">`*RTLM*`</td>
+      <td class="special-osk">&#xE091;</td>
+      <td>Right-to-left Mark</td>
+    </tr>
+    <tr>
+      <td markdown="1">`*SH*`</td>
+      <td class="special-osk">&#xE0A1;</td>
+      <td>Soft Hyphen</td>
+    </tr>
+    <tr>
+      <td markdown="1">`*HTab*`</td>
+      <td class="special-osk">&#xE0A2;</td>
+      <td>Horizontal Tabulation</td>
+    </tr>
+
   </tbody>
 </table>
 
