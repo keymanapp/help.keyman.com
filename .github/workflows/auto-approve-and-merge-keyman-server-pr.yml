@@ -1,0 +1,30 @@
+#
+# Automatically approves and queues for merge any pull requests with a branch
+# name starting with auto/, that are opened by keyman-server. This action is
+# used to merge product help documentation from keymanapp/keyman and also for
+# keyboard documentation PRs.
+#
+name: Auto Approve and Merge PRs from keyman-server
+
+on: pull_request_target
+
+jobs:
+  auto-approve:
+    if: github.actor == 'keyman-server' && startsWith(github.head_ref, 'auto/')
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.AUTO_PR_APPROVAL_BY_KEYMAN_STATUS }}
+    permissions: write-all
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4.1.1
+      with:
+        sparse-checkout: |
+          README.md
+        sparse-checkout-cone-mode: false
+    - name: Approve pull request
+      run: |
+           gh pr review --approve ${{github.head_ref}}
+    - name: Enable auto-merge
+      run: |
+           gh pr merge --merge --auto ${{github.head_ref}}
