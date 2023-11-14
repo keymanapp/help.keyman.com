@@ -46,21 +46,21 @@
 <p>This example maps a vowel, followed by a diacritic key, to the same vowel, and a corresponding combining diacritic mark.</p>
 <pre><code>store(vowel) "aeiou"
 store(diacritickey) "`'^"
-store(diacritic) U+0300 U+0301 U+0302
+store(diacriticCombining) U+0300 U+0301 U+0302
 
-any(vowel) + any(diacritic) > index(vowel,1) index(diacriticCombining,2)
+any(vowel) + any(diacritickey) > index(vowel,1) index(diacriticCombining,2)
 
 c this could also be expressed with the context statement:
-any(vowel) + any(diacritic) > context index(diacriticCombining,2)
+any(vowel) + any(diacritickey) > context index(diacriticCombining,2)
 </code></pre>
 
 <p>This example does the same as the previous, except it reverses the input order: a diacritic mark first, then a vowel, and uses the 
 <code><strong>index()</strong></code> statement to swap the results in the output.</p>
 <pre><code>store(vowel) "aeiou"
 store(diacritickey) "`'^"
-store(diacritic) U+0300 U+0301 U+0302
+store(diacriticCombining) U+0300 U+0301 U+0302
 
-any(diacritic) + any(vowel) > index(vowel,2) index(diacriticCombining,1)
+any(diacritickey) + any(vowel) > index(vowel,2) index(diacriticCombining,1)
 </code></pre>
 
 <p>The following example shows how the index statement can be used in the left hand side of a rule. If a repeating vowel is found, then
