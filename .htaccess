@@ -13,13 +13,6 @@ DirectorySlash off
 RewriteEngine on
 RewriteBase /
 
-# Redirect http://help.keyman.com to https://help.keyman.com,
-# but only if on a live site (help.keyman.com) and not
-# matching `/.well-known/(.*)$` (for Let's Encrypt)
-<If "%{REQUEST_SCHEME} == 'http' && %{HTTP_HOST} == 'help.keyman.com' && %{REQUEST_URI} !~ m#^/.well-known/(.*)$#" >
-    Redirect "/" "https://help.keyman.com"
-</If>
-
 # Custom error messages (need to pass the original request)
 ErrorDocument 404 /_includes/errors/404.php?uri=%{REQUEST_URI}
 
