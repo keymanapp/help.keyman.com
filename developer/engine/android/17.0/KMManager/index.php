@@ -52,6 +52,9 @@
   <dt><code><a href='canRemoveKeyboard'>canRemoveKeyboard()</a></code></dt>
   <dd>returns whether removing a keyboard is enabled, like in the keyboard picker menu</dd>
 
+  <dt><code><a href='copyHTMLBannerAssets'>copyHTMLBannerAssets()</a></code></dt>
+  <dd>copies a folder of HTML banner assets so it's available for your keyboard app's resources</dd>
+
   <dt><code><a href='createInputView'>createInputView()</a></code></dt>
   <dd>creates the input view to be used in InputMethodService</dd>
 
@@ -219,6 +222,9 @@
 
   <dt><code><strike>setHelpBubbleEnabled()</strike> (deprecated)</code></dt>
   <dd>enables or disables the help bubble</dd>
+
+  <dt><code><a href='setHTMLBanner'>setHTMLBanner()</a></code></dt>
+  <dd>sets the contents of an HTML banner for Keyman Engine to display when suggestions aren't available</dd>
 
   <dt><code><a href='setKeyboard'>setKeyboard()</a></code></dt>
   <dd>sets the keyboard to be used</dd>
