@@ -24,10 +24,6 @@ On Windows, Docker will also need either:
 #### Start the Docker container
 1. Run `./build.sh start`.
 
-#### Configure
-Move PHP dependencies in Docker image from /var/www/vendor/ to /var/www/html/vendor
-1. Run `./build.sh configure`.
-
 After this, you can access the help.keyman site at http://localhost:8055
 
 #### Remove the Docker container and image
@@ -40,10 +36,10 @@ Checks for broken links
 
 ## How to run help.keyman.com locally with Docker Desktop's Kubernetes singlenode cluster
 
-For testing Kubernetes deployment there are yaml files under `resources/kubectl`, that cover local developer testing. 
+For testing Kubernetes deployment there are yaml files under a private repo that cover local developer testing. 
 
 ### Pre-requisites
-On the host machine, install [Docker](https://docs.docker.com/get-docker/), then enable Kubernetes in the settings. Ensure you have built a help-keyman-app Docker image, and either tag it `docker.dallas.languagetechnology.org/keyman/help-keyman-app` or modify the `app-php` containers `image:` value to match you local copy's name.
+On the host machine, install [Docker](https://docs.docker.com/get-docker/), then enable Kubernetes in the settings. Ensure you have built a help-keyman-app Docker image, and either tag it `docker.dallas.languagetechnology.org/keyman/help-keyman-app` or modify the `app-php` containers `image:` value to match your local copy's name.
 
 ### Deploying to a desktop cluster
 To deploy the dev version to the cluster do the following:
@@ -57,9 +53,11 @@ $> kubectl create ns keyman
 ```
 3. Apply the configs for the resources and start the pod:
 ```bash
+$> cd [path to private repo]/staging/help.keyman.com/
 $> kubectl --namespace keyman apply \
-       -f resources/kubectl/help-kubectl-dev.yaml \
-       -f resources/kubectl/help-kubectl.yaml
+       -f config.yaml \
+       -f services.yaml \
+       -f apps.yaml 
 ```
 ### Testing the site and `/api/deploy` webhook endpoint
 The site can be reached on http://localhost:30080/ via web browser, and the deploy api is on http://localhost:30900/api/deploy, and can be activated like so:
