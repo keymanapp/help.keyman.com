@@ -32,5 +32,5 @@
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="setHelpBubbleEnabled.php"><code>setHelpBubbleEnabled()</code></a>  (Deprecated)</li>
+ <li><a href="setHelpBubbleEnabled"><code>setHelpBubbleEnabled()</code></a>  (Deprecated)</li>
 </ul>

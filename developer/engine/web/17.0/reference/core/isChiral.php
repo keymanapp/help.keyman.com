@@ -25,8 +25,8 @@
   will return <code>false</code> (non-chiral).  It is always accurate for the currently-active keyboard.
 </p>
 <p>With the present system architecture, this is a bit complicated in that a keyboard is only set to 'active' after the
-<a href="../events/kmw.keyboardloaded.php"><code language="none">keyboardloaded</code></a> event completes and after the
-<a href="../events/kmw.keyboardchange.php"><code language="none">keyboardchange</code></a> event has completed for the
+<a href="../events/kmw.keyboardloaded"><code language="none">keyboardloaded</code></a> event completes and after the
+<a href="../events/kmw.keyboardchange"><code language="none">keyboardchange</code></a> event has completed for the
 first activation of a keyboard.  However, both events return the name of the keyboard involved in the event, and this can
-be passed as an argument to <code>isChiral</code> from the <a href="../events/kmw.keyboardloaded.php"><code language="none">keyboardloaded</code></a>
+be passed as an argument to <code>isChiral</code> from the <a href="../events/kmw.keyboardloaded"><code language="none">keyboardloaded</code></a>
 event's handler to obtain the correct keyboard chirality information.</p>

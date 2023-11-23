@@ -29,5 +29,5 @@
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="setKeyboard.php"><code>setKeyboard()</code></a></li>
+ <li><a href="setKeyboard"><code>setKeyboard()</code></a></li>
 </ul>

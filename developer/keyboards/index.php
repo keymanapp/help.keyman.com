@@ -1,6 +1,6 @@
 <?php
     require_once('includes/template.php');
-  
+
     // Required
     head([
         'title' =>'Guide: Working with the Keyman Cloud Keyboard Repository'
@@ -38,7 +38,7 @@
     <p>
     Many previous keyboards were stored on websites that no longer exist. Configuring your keyboard in the
     keyboards repository helps ensure that users can download your keyboard from
-    <a href="https://keyman.com/developer/keymanweb/keyboards.php" target="_blank">keyman.com</a> and find the
+    <a href="https://keyman.com/developer/keymanweb/keyboards" target="_blank">keyman.com</a> and find the
     documentation on <a href="https://help.keyman.com/keyboard/" target="_blank">help.keyman.com</a>.
     The source files for your keyboard will remain in the GitHub repository mentioned above so you'll
     be able to find the keyboard source for future updates.
@@ -61,13 +61,13 @@
 <h2>How the Repository is Organized</h2>
 
 <p>
-    The "release" section of the repository (contained in the "release" folder) contains keyboards that have complete source files and documentation. 
+    The "release" section of the repository (contained in the "release" folder) contains keyboards that have complete source files and documentation.
 </p>
 <p>
     The "experimental" section of the repository (in the "experimental" folder) contains keyboards that are under active development, but don't yet have all the files necessary for release, or are being tested by user community members before finalizing the design.
 </p>
 <p>
-    The "legacy" section of the repository (in the "legacy" folder) contains older keyboards that are functional, but don't contain complete source and documentation. 
+    The "legacy" section of the repository (in the "legacy" folder) contains older keyboards that are functional, but don't contain complete source and documentation.
 </p>
 <p>
     Within each section of the repository, there is a level of subfolders that serve to group the keyboards

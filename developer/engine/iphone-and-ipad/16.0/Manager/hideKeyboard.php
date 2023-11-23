@@ -26,6 +26,6 @@
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
-    <li><a href="showKeyboard.php"><code>showKeyboard()</code></a></li>
+    <li><a href="showKeyboard"><code>showKeyboard()</code></a></li>
 </ul>
 
