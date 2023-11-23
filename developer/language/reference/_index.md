@@ -57,12 +57,12 @@ vowel, and a corresponding combining diacritic mark.
 ```
 store(vowel) "aeiou"
 store(diacritickey) "`'^"
-store(diacritic) U+0300 U+0301 U+0302
+store(diacriticCombining) U+0300 U+0301 U+0302
 
-any(vowel) + any(diacritic) > index(vowel,1) index(diacriticCombining,2)
+any(vowel) + any(diacritickey) > index(vowel,1) index(diacriticCombining,2)
 
 c this could also be expressed with the context statement:
-any(vowel) + any(diacritic) > context index(diacriticCombining,2)
+any(vowel) + any(diacritickey) > context index(diacriticCombining,2)
 ```
 
 This example does the same as the previous, except it reverses the input
@@ -72,9 +72,9 @@ statement to swap the results in the output.
 ```
 store(vowel) "aeiou"
 store(diacritickey) "`'^"
-store(diacritic) U+0300 U+0301 U+0302
+store(diacriticCombining) U+0300 U+0301 U+0302
 
-any(diacritic) + any(vowel) > index(vowel,2) index(diacriticCombining,1)
+any(diacritickey) + any(vowel) > index(vowel,2) index(diacriticCombining,1)
 ```
 
 The following example shows how the index statement can be used in the
