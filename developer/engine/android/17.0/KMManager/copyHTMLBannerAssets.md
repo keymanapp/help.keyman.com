@@ -24,7 +24,7 @@ Returns `true` if HTML assets were copied, `false` otherwise.
 
 ## Description
 When suggestions aren't available for a keyboard, an HTML banner is displayed instead.
-Use this method to specify any HTMl assets the banner will use to theme your keyboard app.
+Use this method to specify any HTML assets the banner will use to theme your keyboard app.
 
 This can be called towards the end of `SystemKeyboard.onCreate()`.
 
