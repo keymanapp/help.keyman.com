@@ -26,7 +26,9 @@ Returns `true` if HTML banner is set, `false` otherwise.
 When suggestions aren't available for a keyboard, an HTML banner is displayed instead.
 Use this method to specify the HTML content to display in the banner to theme your keyboard app.
 
-Note: This needs to be updated whenever the keyboard is reloaded, so call this in `SystemKeyboard.onInitializeInterface(()`.
+If the banner theme references assets (like .svg or .css files), ensure you've also called [copyHTMLBannerAssets()](copyHTMLBannerAssets).
+
+Note: The HTML banner needs to be updated whenever the keyboard is reloaded, so call this in `SystemKeyboard.onInitializeInterface(()`.
 
 ## Examples
 
