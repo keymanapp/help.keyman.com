@@ -98,10 +98,11 @@ Every key on the keyboard is identified by a virtual key code. Virtual
 keys are identified by square brackets `[ ]` containing a combination of
 zero or more shift-key codes and a virtual key code.
 
-Virtual keys are used in the key section of a rule. Virtual keys are not
+Virtual keys are only used in the key section of a rule. Virtual keys are not
 valid in the context of a rule, as the context consists solely of
-characters. As virtual keys can only be output on a few platforms, they
-should not be used in the output section of a rule.
+characters, nor in the output of the rule (note: Keyman for Windows did
+unofficially support output of virtual keys until version 14.0, but it never
+worked reliably).
 
 A typical use of virtual keys is to make rules to recognise
 non-character keys, such as <kbd>Backspace</kbd> or <kbd>Tab</kbd>; for
@@ -713,8 +714,6 @@ c override default bksp behaviour for 'ng'
 + [SHIFT CTRL K_A] > 'à'
 + [RALT K_E] > 'è'
 ```
-
-Virtual keys may not be used in the output or context parts of a rule.
 
 ## Virtual keys and touch layouts {#virtual-keys-and-touch-layouts}
 
