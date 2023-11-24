@@ -24,7 +24,7 @@ Returns `true` if HTML banner is set, `false` otherwise.
 
 ## Description
 When suggestions aren't available for a keyboard, an HTML banner is displayed instead.
-Use this method to specify the HTMl content to display in the banner to theme your keyboard app.
+Use this method to specify the HTML content to display in the banner to theme your keyboard app.
 
 Note: This needs to be updated whenever the keyboard is reloaded, so call this in `SystemKeyboard.onInitializeInterface(()`.
 
@@ -33,7 +33,7 @@ Note: This needs to be updated whenever the keyboard is reloaded, so call this i
 ### Example: Using `setHTMLBanner()`
 
 The following script illustrates the use of `setHTMLBanner()`:
-```java
+```javascript
     String KMGRAY_BANNER = "<div style=\"background: #b4b4b8; width: 100%; height: 100%; position: absolute; left: 0; top: 0\"></div>";
     // Sets the HTML banner content
     KMManager.setHTMLBanner(KeyboardType.KEYBOARD_TYPE_SYSTEM, KMGRAY_BANNER);

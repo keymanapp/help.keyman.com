@@ -33,7 +33,7 @@ This can be called towards the end of `SystemKeyboard.onCreate()`.
 ### Example: Using `copyHTMLBannerAssets()`
 
 The following script illustrates the use of `copyHTMLBannerAssets()`:
-```java
+```javascript
     // Copies HTML banner assets located in /assets/banner/
     KMManager.copyHTMLBannerAssets(this, "banner");
 ```
