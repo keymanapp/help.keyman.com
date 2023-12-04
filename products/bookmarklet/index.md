@@ -15,4 +15,4 @@ title: Keyman Bookmarklet
 * You may need to wait a second or two for KeymanWeb to load. Then click in the text field you wish to type into. The KeymanWeb user interface will appear and you can type in your language.
 
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/Pn8Ya18j6yA?feature=player_embedded" frameborder="0" allowfullscreen style="margin-left:auto;margin-right:auto;display:block;margin-bottom:20px;position:relative;z-index:-10;"></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Pn8Ya18j6yA?feature=player_embedded" frameborder="0" allowfullscreen style="margin-left:auto;margin-right:auto;display:block;margin-bottom:20px;position:relative;"></iframe>
