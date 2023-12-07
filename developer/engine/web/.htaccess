@@ -1,0 +1,3 @@
+
+# Redirect legacy /content/ paths to corresponding subfolder
+RedirectMatch "content(\/)?(.*)" "/developer/engine/web/2.0/$2"

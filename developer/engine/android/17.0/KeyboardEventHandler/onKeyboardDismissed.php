@@ -29,7 +29,7 @@
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="onKeyboardChanged.php" title="Title."><code>onKeyboardChanged()</code></a></li>
- <li><a href="onKeyboardLoaded.php" title="Title."><code>onKeyboardLoaded()</code></a></li>
- <li><a href="onKeyboardShown.php" title="Title."><code>onKeyboardShown()</code></a></li>
+ <li><a href="onKeyboardChanged" title="Title."><code>onKeyboardChanged()</code></a></li>
+ <li><a href="onKeyboardLoaded" title="Title."><code>onKeyboardLoaded()</code></a></li>
+ <li><a href="onKeyboardShown" title="Title."><code>onKeyboardShown()</code></a></li>
 </ul>
