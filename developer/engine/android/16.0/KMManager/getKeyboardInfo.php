@@ -73,9 +73,9 @@
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="getCurrentKeyboardIndex.php"><code>getCurrentKeyboardIndex()</code></a></li>
- <li><a href="getCurrentKeyboardInfo.php"><code>getCurrentKeyboardInfo()</code></a></li>
- <li><a href="getKeyboardIndex.php"><code>getKeyboardIndex()</code></a></li>
- <li><a href="getKeyboardsList.php"><code>getKeyboardsList()</code></a></li>
- <li><a href="keyboardExists.php"><code>keyboardExists()</code></a></li>
+ <li><a href="getCurrentKeyboardIndex"><code>getCurrentKeyboardIndex()</code></a></li>
+ <li><a href="getCurrentKeyboardInfo"><code>getCurrentKeyboardInfo()</code></a></li>
+ <li><a href="getKeyboardIndex"><code>getKeyboardIndex()</code></a></li>
+ <li><a href="getKeyboardsList"><code>getKeyboardsList()</code></a></li>
+ <li><a href="keyboardExists"><code>keyboardExists()</code></a></li>
 </ul>

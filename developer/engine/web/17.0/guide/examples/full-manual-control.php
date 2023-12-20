@@ -25,7 +25,7 @@ interface.  The keyboards in the selector are populated from the KeymanWeb list 
   echo codebox(<<<END
 <script>
   var KWControl = null;
-  
+
   /* SetupDocument: Called when the page finishes loading */
   function SetupDocument()
   {
@@ -40,14 +40,14 @@ interface.  The keyboards in the selector are populated from the KeymanWeb list 
         var opt = document.createElement('OPTION');
         opt.value = kbds[kbd].InternalName + "$$" + kbds[kbd].LanguageCode;
         opt.innerHTML = kbds[kbd].Name;
-        KWControl.appendChild(opt);    
+        KWControl.appendChild(opt);
       }
       document.f.multilingual.focus();
 
       keyman.setActiveKeyboard('', '');
     });
   }
-  
+
   /* KWControlChange: Called when user selects an item in the KWControl SELECT */
   function KWControlChange()
   {
@@ -85,7 +85,7 @@ END
 <?php
 
   echo "<p>And finally, include the keyboard SELECT and the clickable help img:</p>";
-  
+
   echo codebox(<<<END
 <!-- Display the KWControl selector with different keyboards listed -->
 <p>Keyboard: <select id='KWControl' onchange='KWControlChange()'><option value=''>English</option></select>
@@ -99,4 +99,4 @@ END
 
 <hr>
 
-<p><a href='control-by-control.php'>On to Control by Control Example</a></p>
+<p><a href='control-by-control'>On to Control by Control Example</a></p>

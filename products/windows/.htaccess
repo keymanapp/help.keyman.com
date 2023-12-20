@@ -1,0 +1,3 @@
+
+# Redirect versionhistory.php (from Keyman static docs)
+RedirectMatch "versionhistory.php" "/products/windows/version-history/"

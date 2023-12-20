@@ -1,7 +1,29 @@
-FROM php:7.4-apache
-RUN a2enmod rewrite
+# syntax=docker/dockerfile:1
+FROM php:7.4-apache@sha256:c9d7e608f73832673479770d66aacc8100011ec751d1905ff63fae3fe2e0ca6d AS composer-builder
 
-RUN sed -ri -e 's!DirectoryIndex index.php index.html!DirectoryIndex index.md index.php index.html!g' -e 's!</FilesMatch>!</FilesMatch>\n\n<FilesMatch \\.md$>\n\tSetHandler text/html\n</FilesMatch>!g' /etc/apache2/conf-available/docker-php.conf
+# Install Zip to use composer
+RUN apt-get update && apt-get install -y \
+    zlib1g-dev \
+    libzip-dev \
+    unzip
+RUN docker-php-ext-install zip
 
-# ENV APACHE_LOGLEVEL trace3
-# RUN sed -ri -e 's!LogLevel warn!LogLevel warn rewrite:${APACHE_LOGLEVEL}}!g' /etc/apache2/apache2.conf
+# Install and update composer
+COPY --from=composer /usr/bin/composer /usr/bin/composer
+RUN composer self-update
+
+USER www-data
+WORKDIR /composer
+COPY composer.* /composer/
+RUN composer install
+
+# Site
+FROM php:7.4-apache@sha256:c9d7e608f73832673479770d66aacc8100011ec751d1905ff63fae3fe2e0ca6d
+COPY resources/keyman-site.conf /etc/apache2/conf-available/
+RUN cp /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini
+RUN chown -R www-data:www-data /var/www/html/
+
+COPY --from=composer-builder /composer/vendor /var/www/vendor
+RUN a2enmod rewrite headers; a2enconf keyman-site
+
+# RUN echo LogLevel alert rewrite:trace6 >> /etc/apache2/apache2.conf
