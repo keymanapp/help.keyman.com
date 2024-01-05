@@ -25,10 +25,10 @@ this is a useful example for any language wanting to add a few
 characters to the standard Latin keyboard. Here are the characters we
 are going to add, together with their Unicode values.
 
-|             |          |     |          |     |     |          |     |          |
-|-------------|----------|-----|----------|-----|-----|----------|-----|----------|
-| `        ɓ` | `U+0253` | `Ɓ` | `U+0181` |     | `ɗ` | `U+0257` | `Ɗ` | `U+018A` |
-| `        ŋ` | `U+014B` | `Ŋ` | `U+014A` |     | `ƴ` | `U+01B4` | `Ƴ` | `U+01B3` |
+|     |          |     |          |     |     |          |     |          |
+|-----|----------|-----|----------|-----|-----|----------|-----|----------|
+| `ɓ` | `U+0253` | `Ɓ` | `U+0181` |     | `ɗ` | `U+0257` | `Ɗ` | `U+018A` |
+| `ŋ` | `U+014B` | `Ŋ` | `U+014A` |     | `ƴ` | `U+01B4` | `Ƴ` | `U+01B3` |
 
 Here we will likely want to proceed differently than with the desktop
 keyboard. The usual approach for a desktop keyboard is to create a
