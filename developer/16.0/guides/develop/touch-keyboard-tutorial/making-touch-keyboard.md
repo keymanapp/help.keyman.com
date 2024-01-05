@@ -244,13 +244,13 @@ keys](/cdn/dev/img/developer/100/simpleTouchKeyboard_19.png)
 
 ## Replacing the Unicode and Code automatically
 
-1.  Hold the ***`Ctrl`*** key while dragging and
+1.  Hold the <kbd>Ctrl</kbd> key while dragging and
     dropping a character from the Character Map to the touch layout
     editor, and it will replace the Code as well as the character.
-2.  Hold the ***`Shift`*** key while dropping, and it
+2.  Hold the <kbd>Shift</kbd> key while dropping, and it
     will only add the character to the key.
 3.  Finally, hold
-    ***`Ctrl`***+***`Shift`***, this
+    <kbd>Ctrl</kbd>+<kbd>Shift</kbd>, this
     will add the character to the key AND update the Code to match the
     full set of characters represented on the key.
 
