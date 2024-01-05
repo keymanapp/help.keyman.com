@@ -33,7 +33,7 @@ are going to add, together with their Unicode values.
 Here we will likely want to proceed differently than with the desktop
 keyboard. The usual approach for a desktop keyboard is to create a
 deadkey. The keyboards I have used for Fulfulde (going back to decades
-ago) used the ```/``` key as the deadkey.
+ago) used the <kbd>/</kbd> key as the deadkey.
 ***`/`*** ***`b`*** gave ɓ,
 ***`/`*** ***`d`*** gave ɗ, and so on.
 
