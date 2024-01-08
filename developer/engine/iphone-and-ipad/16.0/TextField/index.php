@@ -23,7 +23,7 @@
 <h2 id="Methods" name="Methods">Methods</h2>
 
 <dl>
-    <dt><code><a href='dismissKeyboard.php'>dismissKeyboard()</a></code></dt>
+    <dt><code><a href='dismissKeyboard'>dismissKeyboard()</a></code></dt>
     <dd>dismisses the keyboard if this textview is the first responder</dd>
 </dl>
 
@@ -33,7 +33,7 @@
 </dl>
 
 <dl>
-    <dt><code><a href='setKeymanDelegate.php'>setKeymanDelegate()</a></code></dt>
+    <dt><code><a href='setKeymanDelegate'>setKeymanDelegate()</a></code></dt>
     <dd>sets the TextFieldDelegate instead of the normal UITextFieldDelegate</dd>
 </dl>
 

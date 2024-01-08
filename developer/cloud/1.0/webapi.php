@@ -3,7 +3,7 @@
   $pagetitle = 'KeymanWeb Server Data API';
   $MainPage = true;
   require_once('header.php');
-  
+
   echo <<<END
 <div class='body_text'>
 
@@ -39,8 +39,8 @@ be available there.</p>
     <tr>
       <td>GET https://api.keyman.com/cloud/1.0/languages</td>
       <td>
-        Returns a Languages object, that contains a list of all language and keyboard combinations 
-        available on the server.  This call will return full details of every language, keyboard 
+        Returns a Languages object, that contains a list of all language and keyboard combinations
+        available on the server.  This call will return full details of every language, keyboard
         and font combination.  It is typically around 100KB.
       </td>
     </tr>
@@ -86,7 +86,7 @@ be available there.</p>
     <tr>
       <td>version</td>
       <td>Optional.  The version of Keyman Engine, e.g. "10.0". If absent, uses "2.0". The server will filter keyboards
-      that are available for that version of Keyman Engine. (See <a href="../versioning.php">KeymanWeb Versioning</a> for details on valid version numbers.)</td>
+      that are available for that version of Keyman Engine. (See <a href="../versioning">KeymanWeb Versioning</a> for details on valid version numbers.)</td>
     </tr>
   </tbody>
 </table>
@@ -99,13 +99,13 @@ be available there.</p>
      <li>languages: Array of Language objects (required)</li>
    </ul>
   </li>
-  
+
   <li>Keyboards object.  A list of languages available on the server or for a given language.  Contains the following members:
     <ul>
       <li>keyboards: Array of Keyboard objects (required)</li>
     </ul>
   </li>
-  
+
   <li>Language object.  Contains the following members:
     <ul>
       <li>name: Name of language (required)</li>
@@ -113,7 +113,7 @@ be available there.</p>
       <li>keyboards: Array of Keyboard objects (optional)</li>
     </ul>
   </li>
-  
+
   <li>Keyboard object.  Contains the following members:
     <ul>
       <li>name: Name of keyboard (required)</li>
@@ -127,7 +127,7 @@ be available there.</p>
       <li>languages: array of Language objects that are linked to the keyboard. (optional)</li>
     </ul>
   </li>
-  
+
   <li>Font object:
     <ul>
       <li>name: Font face name as compiled into the font. (required)</li>
@@ -143,7 +143,7 @@ be available there.</p>
 
 <blockquote><pre>
 GET https://api.keyman.com/cloud/1.0/languages
-</pre></blockquote>  
+</pre></blockquote>
 
 <p>Returns:</p>
 
@@ -167,8 +167,8 @@ GET https://api.keyman.com/cloud/1.0/languages
   ]
 }
 </pre></blockquote>
-  
-</div>  
+
+</div>
 END;
   require_once('footer.php');
 ?>
