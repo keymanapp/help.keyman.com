@@ -23,5 +23,5 @@ returns();
 
 <h2 id="Description" name="Description">Description</h2>
 
-<p>See also <a href="addHotKey.php"><code>keyman.addHotKey()</code></a>
+<p>See also <a href="addHotKey"><code>keyman.addHotKey()</code></a>
 </p>
