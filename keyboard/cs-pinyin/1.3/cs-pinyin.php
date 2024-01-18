@@ -15,6 +15,10 @@ This full version may be used with Keyman Desktop Professional 7.0 or Keyman Des
   require_once('header.php');
 ?>
 <style>
+body {
+	margin: 30px; 
+	font-family: 'Arial Unicode MS', Helvetica, sans-serif; 
+	font-size: 10pt;color: #2D2C2C;}
 img {border: none; }
 
 p {font-size: 10pt; margin:5px 0px 0px;}
