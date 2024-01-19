@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Māori Keyboard Help';
-  $pagetitle = 'Māori Keyboard Help';
+  $pagename = 'Māori (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }

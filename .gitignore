@@ -5,3 +5,11 @@ cdn/deploy
 vendor*
 .vscode/
 node_modules/
+
+# Shared files are bootstrapped:
+resources/bootstrap.inc.sh
+resources/.bootstrap-version
+_common/
+
+# Cache of keyboard metadata, deleted on site rebuild
+keyboard/index.cache
