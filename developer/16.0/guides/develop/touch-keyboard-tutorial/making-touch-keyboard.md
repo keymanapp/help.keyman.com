@@ -265,9 +265,9 @@ compile](/cdn/dev/img/developer/100/simpleTouchKeyboard_20.png)
 
 If you see a warning like:
 
-***Warning: line 0  warning 2092: Key " T_new_579" on layer "default",
-platform "phone", is a custom key but has no corresponding rule in the
-source.***
+```
+***Warning: line 0  warning 2092: Key " T_new_579" on layer "default", platform "phone", is a custom key but has no corresponding rule in the source.***
+```
 
 This shows you forgot to enter the correct keycode for a new key you
 added. Double check your longpress popup keys for one with a “T_new_NNN”
@@ -275,8 +275,9 @@ code, and add in the desired “U_NNNN” code.
 
 You might also see a message like
 
-***Error: line 0  error 405A: Key " U+0181" on "phone", layer "default" has
-an invalid identifier.***
+```
+***Error: line 0  error 405A: Key " U+0181" on "phone", layer "default" has an invalid identifier.***
+```
 
 This shows you attempted to change the keycode but mistyped the code.
 I’ve gotten this more than once, because I am used to typing `U+0181`to
