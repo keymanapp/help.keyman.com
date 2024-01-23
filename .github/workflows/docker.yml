@@ -48,6 +48,11 @@ jobs:
           labels: |
             org.opencontainers.image.description=PHP api runtime
 
+      # Run the local build.sh configure
+      - name: Configure site
+        id: configure-site
+        run: ./build.sh configure
+
       # Build and push Docker image with Buildx (don't push on PR)
       - name: Build and push Docker image
         id: build-and-push
