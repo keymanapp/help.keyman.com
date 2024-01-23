@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Diné Bizaad Keyboard Help';
-  $pagetitle = 'Diné Bizaad Keyboard Help';
+  $pagename = 'Diné Bizaad (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }

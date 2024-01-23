@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Kanien\'kéha-Kanyen\'kéha Keyboard Help';
-  $pagetitle = 'Kanien\'kéha-Kanyen\'kéha Keyboard Help';
+  $pagename = 'Kanien\'kéha-Kanyen\'kéha (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }

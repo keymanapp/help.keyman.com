@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Nuxalk Keyboard Help';
-  $pagetitle = 'Nuxalk Keyboard Help';
+  $pagename = 'Nuxalk (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }

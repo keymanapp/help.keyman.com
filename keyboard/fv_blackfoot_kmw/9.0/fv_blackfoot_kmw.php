@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Blackfoot Keyboard Help';
-  $pagetitle = 'Blackfoot Keyboard Help';
+  $pagename = 'Blackfoot (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }

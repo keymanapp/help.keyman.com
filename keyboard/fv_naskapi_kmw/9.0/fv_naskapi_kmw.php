@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'ᓇᔅᑲᐱ Keyboard Help';
-  $pagetitle = 'ᓇᔅᑲᐱ Keyboard Help';
+  $pagename = 'ᓇᔅᑲᐱ (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }
