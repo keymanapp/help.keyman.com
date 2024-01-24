@@ -18,13 +18,18 @@ jobs:
       shell: bash
       run: |
         echo "TIER_TEST" > tier.txt
-        ./build.sh build start
+        ./build.sh configure build start
       env:
         fail-fast: true
 
     #
-    # Finally, run the tests
+    # Finally, run the tests; note that this is almost all replicated in build.sh; here logging is reduced (TODO sync)
     #
+    - name: PHP unit tests
+      shell: bash
+      run: |
+        docker exec help-keyman-com-app sh -c "vendor/bin/phpunit --testdox"
+
     - name: Lint
       shell: bash
       run: |
@@ -35,7 +40,7 @@ jobs:
       run: |
         set +e;
         set +o pipefail;
-        npx broken-link-checker http://localhost:8055 --ordered --recursive --host-requests 50 -e --filter-level 3 | \
+        npx broken-link-checker http://localhost:8055 --ordered --recursive --requests 50 --host-requests 50 -e --filter-level 3 | \
           grep -E "BROKEN|Getting links from" | \
           grep -B 1 "BROKEN"
         exit ${PIPESTATUS[0]}
