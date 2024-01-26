@@ -4,8 +4,8 @@ title: Step 5: Submitting a GitHub Pull Request
   
 ## Verify keyboard builds before submission
 
-Following the file layout documented in [Organizing Keyboard
-Files](step-0), your keyboard layout should be in a folder similar
+Following the file layout documented in [Organizing the Keyboard
+Files](step-4), your keyboard layout should be in a folder similar
 to
 
 ``` none
