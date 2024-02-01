@@ -49,8 +49,8 @@ echo codebox(<<<END
   <script>
     (function() {
       keyman.init({attachType:'auto'}).then(function() {
-        keyman.addKeyboards('@eng'); // Loads default English keyboard from Keyman Cloud (CDN)
-        keyman.addKeyboards('@tha'); // Loads default Thai keyboard from Keyman Cloud (CDN)
+        keyman.addKeyboards('@en'); // Loads default English keyboard from Keyman Cloud (CDN)
+        keyman.addKeyboards('@th'); // Loads default Thai keyboard from Keyman Cloud (CDN)
       });
     })(keyman);
   </script>
