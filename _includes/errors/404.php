@@ -3,10 +3,11 @@
 
   head([
     'title' => "Page not found",
-    'index' => false   
+    'index' => false
   ]);
   
-  $page = $_SERVER["REQUEST_URI"];
+  // IIS uses REQUEST_URI and _SERVER; Apache using uri and _REQUEST
+  $page = empty($_REQUEST['uri']) ? $_SERVER["REQUEST_URI"] : $_REQUEST['uri'];
   
   function E($v)
   {
