@@ -276,7 +276,7 @@ code, and add in the desired “U_NNNN” code.
 You might also see a message like
 
 ```
-***Error: line 0  error 405A: Key " U+0181" on "phone", layer "default" has an invalid identifier.***
+Error: line 0  error 405A: Key " U+0181" on "phone", layer "default" has an invalid identifier.
 ```
 
 This shows you attempted to change the keycode but mistyped the code.
