@@ -156,7 +156,7 @@ the computer, and a virtual keyboard, where tapping a key only registers
 a tap on an arbitrary part of the screen). In adding a mobile key, we
 have to enter what the key does, not just add a character to the keycap.
 To make our new key insert the Unicode character 01B4, I’ll go to the
-“code” box and change the string to “U\__01B4”. (“U\__” followed by a
+“code” box and change the string to “U_01B4”. (“U_” followed by a
 Unicode hex value is the code for “insert the character with this
 Unicode value”). [See the Keyman Language guide on virtual
 keys](../../../../language/guide/virtual-keys#toc-virtual-keys-and-touch-layouts)
