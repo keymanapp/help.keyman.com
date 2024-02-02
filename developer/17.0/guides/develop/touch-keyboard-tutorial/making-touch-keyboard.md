@@ -266,7 +266,7 @@ compile](/cdn/dev/img/developer/100/simpleTouchKeyboard_20.png)
 If you see a warning like:
 
 ```
-***Warning: line 0  warning 2092: Key " T_new_579" on layer "default", platform "phone", is a custom key but has no corresponding rule in the source.***
+Warning: line 0  warning 2092: Key " T_new_579" on layer "default", platform "phone", is a custom key but has no corresponding rule in the source.
 ```
 
 This shows you forgot to enter the correct keycode for a new key you
