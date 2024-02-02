@@ -122,10 +122,10 @@ instead.](/cdn/dev/img/developer/120/lm/whatis-correct-thr.png)
 
 When typing quickly on a small phone screen, mistakes are inevitable.
 Say I try to write the word “the” on my phone. I press
-<span class="kbd ios">t</span>, then <span class="kbd ios">h</span>, but
-as I try to type <span class="kbd ios">e</span>, I press a few
+<kbd>t</kbd>, then <kbd>h</kbd>, but
+as I try to type <kbd>e</kbd>, I press a few
 millimeters to the right of the intended key and press
-<span class="kbd ios">r</span> instead. With a lexical model, the
+<kbd>r</kbd> instead. With a lexical model, the
 predictive text feature understands that in English, “thr” is not a
 complete word in-and-of-itself; however, a word that is typed quite
 similarly, “the”, is a very common word. Therefore, the lexical model
@@ -135,7 +135,7 @@ provides enough information to assume that the user intended to type
 
 However, the predictive text feature is not overly presumptuous; what if
 the typist really did want to type “thr”? As a result, “thr” is
-suggested as a <span class="dfn">keep suggestion</span>. When the typist
+suggested as a _keep suggestion_. When the typist
 selects the “keep” suggestion, whatever they had originally typed is
 kept, even if the lexical model suggests what it thinks is a far more
 likely correction.
@@ -146,7 +146,7 @@ To make a lexical model, you need some information about your language.
 At bare minimum, you need a list of words in your language. Keyman
 Developer supports importing a word list as a spreadsheet of words in
 your language that you wish to use for predictions and corrections. This
-will create a <span class="dfn">word list lexical model</span>.
+will create a _word list lexical model_.
 
 If you have such a list of words, you can continue to the
 [tutorial](../tutorial) to create a word list lexical model for your
