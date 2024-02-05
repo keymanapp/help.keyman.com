@@ -50,8 +50,6 @@ Is right-to-left
     -   "Keyboard is right-to-left" is checked in the Keyboard editor
     -   A .js keyboard is added to package
 
-<!-- -->
-
 Keyboard font
 :   When font files are added to the package, this dropdown tells the
     Keyman apps for iOS and Android which font to use when rendering the
@@ -62,8 +60,6 @@ Display font
     Keyman apps for iOS and Android which font to use in edit fields. It
     only applies within the Keyman app and apps that support this
     functionality. Optional.
-
-<!-- -->
 
 Languages
 :   Because the language information in the .kmn source is deprecated,
