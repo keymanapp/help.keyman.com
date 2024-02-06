@@ -13,12 +13,9 @@ multiple source files, which are all managed within this one editor.
 The following image shows the first tab of the editor, the Details tab,
 for a brand new keyboard, with those three initial tabs.
 
-![Keyboard Editor - New file, Details
-tab](/cdn/dev/img/developer/100/ui/frmKeymanWizard_New.png)
+![Keyboard Editor - New file, Details tab](/cdn/dev/img/developer/100/ui/frmKeymanWizard_New.png)
 
-
- ## Note
-
+> ## Note
 Users of earlier versions of Keyman Developer may initially have trouble
 finding tabs such as the Icon tab or the On-Screen tab, as they are not
 initially visible. The Features grid on the Details tab allows you to
@@ -51,15 +48,13 @@ because that reflects both the Details and the Layout tab.
 
 ## Details tab
 
-![Keyboard Editor - Details
-tab](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Details.png)
+![Keyboard Editor - Details tab](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Details.png)
 
 The Details tab grows as you add more options to a keyboard. The fields
 here are:
 
 Name
-:   The name of the keyboard, corresponding to the [`&name`
-    store](/developer/language/reference/name).
+:   The name of the keyboard, corresponding to the [`&name` store](/developer/language/reference/name).
 
 Targets
 :   The intended target devices and operating systems, corresponding to
@@ -75,8 +70,7 @@ Copyright
 
 Message
 :   Enter a message that will be shown at install time for the keyboard
-    (on Windows, macOS). [`&message`
-    store](/developer/language/reference/message).
+    (on Windows, macOS). [`&message` store](/developer/language/reference/message).
 
 Keyboard is right-to-left
 :   Check this box to indicate that the keyboard is a right-to-left
@@ -112,8 +106,7 @@ Features
 
 ## Layout tab
 
-![Keyboard Editor - Layout tab, Design
-view](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Layout_Design.png)
+![Keyboard Editor - Layout tab, Design view](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Layout_Design.png)
 
 The Layout tab gives you a simple interface to quickly create a keyboard
 using a visual representation of a desktop/laptop computer keyboard. You
@@ -135,10 +128,9 @@ There are two ways to assign characters to the keys:
     onto the appropriate key. This will set the key to output that
     character.
 
-## Hint
-
+> ## Hint
 To add the character to a key with existing characters, hold
-<span class="kbd">Ctrl</span> while dropping it onto the key.
+<kbd>Ctrl</kbd> while dropping it onto the key.
 
 Note that any key that does not have a character assigned to it will
 output what the selected Windows layout specifies.
@@ -159,7 +151,7 @@ Display 102nd Key (as on European keyboards)
     the backslash key will move down one row, but not otherwise change
     in behaviour.
 
-You can press and release <span class="kbd">Ctrl</span> to select
+You can press and release <kbd>Ctrl</kbd> to select
 another key on the keyboard using your keyboard.
 
 ![Keyboard Editor - Layout tab, Code
@@ -175,8 +167,7 @@ editor shown within this view.
 
 ## On-Screen tab
 
-![Keyboard Editor - On-Screen
-tab](/cdn/dev/img/developer/100/ui/frmKeymanWizard_OnScreenKeyboard.png)
+![Keyboard Editor - On-Screen tab](/cdn/dev/img/developer/100/ui/frmKeymanWizard_OnScreenKeyboard.png)
 
 This tab allows you to edit the visual representation of your keyboard
 layout. The content on this tab is stored in the .kvks file associated
@@ -243,8 +234,7 @@ Auto-fill underlying layout
 
 ## Touch Layout tab
 
-![Keyboard Editor - Touch Layout tab, Design
-view](/cdn/dev/img/developer/100/ui/frmKeymanWizard_TouchLayout_Design.png)
+![Keyboard Editor - Touch Layout tab, Design view](/cdn/dev/img/developer/100/ui/frmKeymanWizard_TouchLayout_Design.png)
 
 The Touch Layout tab is used to create the visible representation of the
 keyboard layout for touch devices. It works similarly to the On Screen
@@ -263,8 +253,7 @@ including iPhone and iPad, in different orientations, to allow you to
 visualize the keyboard layout before you load it onto a device. The
 following image shows all aspects of the touch design view.
 
-![Keyboard Editor - Touch Layout tab, Design view
-closeup](/cdn/dev/img/developer/100/ui/frmKeymanWizard_TouchLayout_Design_2.png)
+![Keyboard Editor - Touch Layout tab, Design view closeup](/cdn/dev/img/developer/100/ui/frmKeymanWizard_TouchLayout_Design_2.png)
 
 ### Top bar controls
 
@@ -399,26 +388,26 @@ Code
     determined by the processing of those rules. It is usually best to
     include explicit rules to manage the output from each key, but if no
     rules matching the key code are included in the keyboard program,
-    and the key code matches the pattern `U_``xxxx``[_``yyyy``...]`
+    and the key code matches the pattern `U_xxxx[_yyyy...]`
     (where `xxxx` and `yyyy` are 4 to 6-digit hex strings), then the
-    Unicode characters `U+``xxxx` and `U+``yyyy` will be output. As of
+    Unicode characters `U+xxxx` and `U+yyyy` will be output. As of
     Keyman 15, you can use more than one Unicode character value in the
     id (earlier versions permitted only one). The key code is always
     required, and a default code will usually be generated automatically
     by Keyman Developer.
 
     -   `K_xxxx` is used for a standard Keyman Desktop key name, e.g.
-        `K_W`, `K_ENTER`. You cannot make up your own `K_``xxxx` names.
+        `K_W`, `K_ENTER`. You cannot make up your own `K_xxxx` names.
         Many of the `K_` ids have overloaded output behaviour, for
         instance, if no rule is matched for `K_W`, Keyman will output
         'w' when it is touched. The standard key names are listed in
-        [Virtual Keys and Virtual Character
-        Keys](/developer/language/guide/virtual-keys){.link}. Typically,
+        [Virtual Keys and Virtual Character Keys](/developer/language/guide/virtual-keys). 
+        Typically,
         you would use only the "common" virtual key codes.
-    -   `T_``xxxx` is used for any user defined names, e.g. `T_SCHWA`.
+    -   `T_xxxx` is used for any user defined names, e.g. `T_SCHWA`.
         If you wanted to use it, `T_ENTER` would also be valid. If no
         rule matches it, the key will have no output behaviour.
-    -   `U_``####``[_``####``]` is used as a shortcut for a key that
+    -   `U_####[_####]` is used as a shortcut for a key that
         will output those Unicode values, if no rule matches it. This is
         similar to the overloaded behaviour for `K_` ids. Thus `####`
         must be valid Unicode characters. E.g. `U_0259` would generate a
@@ -470,22 +459,18 @@ dragged between the main keyboard area and the long press area. The bar
 below the long press area contains the corresponding controls for the
 long press keys.
 
-![Keyboard Editor - Touch Layout tab, Code
-view](/cdn/dev/img/developer/100/ui/frmKeymanWizard_TouchLayout_Code.png)
+![Keyboard Editor - Touch Layout tab, Code view](/cdn/dev/img/developer/100/ui/frmKeymanWizard_TouchLayout_Code.png)
 
 The Code view allows you to edit the JSON source of the touch layout
 file. This makes certain operations simpler, such as batched rearranging
 of keys, or using another text editor to make bulk changes. The Code
 view uses the standard [editor](editor).
 
-The format of the layout file is described in [Creating a touch keyboard
-layout
-guide](../guides/develop/creating-a-touch-keyboard-layout-for-amharic-the-nitty-gritty).
+The format of the layout file is described in [Creating a touch keyboard layout guide](../guides/develop/creating-a-touch-keyboard-layout-for-amharic-the-nitty-gritty).
 
 ## Icon tab
 
-![Keyboard Editor - Icon
-tab](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Icon.png)
+![Keyboard Editor - Icon tab](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Icon.png)
 
 The icon tab allows you to edit the icon associated with the keyboard.
 An external icon editor will allow you to create more sophisticated
@@ -551,19 +536,17 @@ keys to produce characters.
 
 ## Include Codes tab
 
-This tab allows you to edit the [named
-constants](/developer/language/guide/constants) for the keyboard.
+This tab allows you to edit the [named constants](/developer/language/guide/constants) for the keyboard.
 
 ## Build tab
 
-![Keyboard Editor - Build
-tab](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Build.png)
+![Keyboard Editor - Build tab](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Build.png)
 
 A set of common controls is across the top of this tab:
 
 Compile Keyboard
 :   You can compile the keyboard for testing and installation by
-    clicking the <span class="guibutton">Compile</span> button, or
+    clicking the <kbd>Compile</kbd> button, or
     selecting Keyboard, Compile Keyboard. This will compile the keyboard
     for all the selected Targets from the Details tab.
 
@@ -626,5 +609,4 @@ web page.
 The Send to email function makes it easier to open the addresses on your
 mobile device without having to enter them manually.
 
-Learn more about [testing on the web and mobile
-devices](../guides/test/).
+Learn more about [testing on the web and mobile devices](../guides/test/).
