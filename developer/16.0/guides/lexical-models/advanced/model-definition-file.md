@@ -6,8 +6,7 @@ This is a small [TypeScript](https://www.typescriptlang.org/) source
 code file that tells us how to define our model.
 
 In the case of the **wordlist lexical models**, the model definition
-file indicates where find to find the [TSV source
-files](../../../reference/file-types/tsv), as well as gives us the
+file indicates where find to find the [TSV source files](../../../reference/file-types/tsv), as well as gives us the
 option to tell the compiler a little bit more about our language’s
 spelling system or *orthography*.
 
@@ -18,7 +17,7 @@ following. If you want to create the file yourself, copy-paste the
 following template, and save it as `model.ts`. Place this file in the
 same folder as `wordlist.tsv`.
 
-``` lang-typescript
+```typescript
 /*
   sencoten 1.0 generated from template.
 
@@ -42,7 +41,7 @@ Let's step through this file, line-by-line.
 On the first line, we're declaring the source code of a new lexical
 model.
 
-``` lang-typescript
+```typescript
 const source: LexicalModelSource = {
 ```
 
@@ -51,7 +50,7 @@ On the second line, we're saying the lexical model will use the
 more word lists; the `trie` structures the lexical model such that it
 can predict through thousands of words very quickly.
 
-``` lang-typescript
+```typescript
   format: 'trie-1.0',
 ```
 
@@ -59,7 +58,7 @@ On lines 3–5, we're specifying the word breaking algorithm that we want
 to use. Keyman supplies a default algorithm that conforms to the rules
 expected for many languages.
 
-``` lang-typescript
+```typescript
   wordBreaker: {
   use: 'default',
 },
@@ -67,7 +66,7 @@ expected for many languages.
 
 On the sixth line, we're telling the `trie` where to find our wordlist.
 
-``` lang-typescript
+```typescript
   sources: ['wordlist.tsv'],
 ```
 
@@ -75,14 +74,14 @@ The seventh line marks the termination of the lexical model source code.
 If we specify any customizations, they **must** be declared above this
 line:
 
-``` lang-typescript
+```typescript
 };
 ```
 
 The eighth line is necessary to allow external applications to read the
 lexical model source code.
 
-``` lang-typescript
+```typescript
 export default source;
 ```
 
@@ -103,5 +102,4 @@ following customizations:
 :   How and when to ignore accents and letter case
 
 To see all of the things possible in a model definition file, see the
-[`LexicalModelSource`
-interface](https://github.com/keymanapp/keyman/blob/stable-14.0/developer/js/source/lexical-model-compiler/lexical-model.ts#L95-L146).
+[`LexicalModelSource` interface](https://github.com/keymanapp/keyman/blob/stable-14.0/developer/js/source/lexical-model-compiler/lexical-model.ts#L95-L146).
