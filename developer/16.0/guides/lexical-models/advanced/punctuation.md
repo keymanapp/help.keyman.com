@@ -11,7 +11,7 @@ Both of these can be customized by adding the punctuation to [model
 definition file](./model-definition-file). Here is a full example of a
 model definition file using default punctuation:
 
-``` lang-typescript
+```typescript
 const source: LexicalModelSource = {
   format: 'trie-1.0',
   sources: ['wordlist.tsv'],
@@ -40,7 +40,7 @@ Let's customize this to use `«` and `»` for the open and close quote,
 respectively. To do this, change the part labeled
 `quotesForKeepSuggestion`:
 
-``` lang-typescript
+```typescript
 punctuation: {
   quotesForKeepSuggestion: {
     open: "«", close: "»"
@@ -54,7 +54,7 @@ Many languages insert a space after a word. Some languages, a like Thai
 or Khmer, do not use spaces. To suppress the space, you may set
 `insertAfterWord` to the empty string:
 
-``` lang-typescript
+```typescript
 punctuation: {
   insertAfterWord: "",
 },
@@ -63,7 +63,7 @@ punctuation: {
 You can even use an alternate spacing character, if required by your
 language:
 
-``` lang-typescript
+```typescript
 punctuation: {
   insertAfterWord: "\u200B", // U+200B ZERO WIDTH SPACE
 },
