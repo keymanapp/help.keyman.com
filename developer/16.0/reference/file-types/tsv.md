@@ -3,11 +3,11 @@ title: TSV files
 ---
 
 Used by:
-:   <span class="application">Keyman Developer</span> and
-    <span class="application">Lexical Model compiler</span>.
+:   Keyman Developer and
+    Lexical Model compiler.
 
 Description:
-:   A .tsv file or a <span class="dfn">tab-separated values file</span>
+:   A .tsv file or a _tab-separated values file_
     contains a word list. This word list is used to predict and correct
     words using the predictive text functionality.
 
@@ -15,15 +15,14 @@ Details:
 :   A .tsv file is a plain-text file containing of tabular data.
     Spreadsheet programs such as Microsoft Excel and Google Sheets can
     export into TSV format. TSVs can also be programmatically generated
-    from other data sources. For advanced users, see [File
-    Format](#file-format) for more details.
+    from other data sources. For advanced users, see [File Format](#file-format) for more details.
 
 Distributed with lexical model:
 :   No. This is a development file and should not be distributed.
 
 ## File format
 
-**For advanced users only**: this documentation is intended for users
+> **For advanced users only**: this documentation is intended for users
 who wish to develop their own word list exporters. Most users can use
 existing word list exporters.
 
@@ -51,7 +50,7 @@ following **tab-separated values** (TSV) format:
 -   column 3 (*optional*): **comment**: an informative comment, ignored
     by this tool.
 
-Source:
+> Source:
 [build-trie.js@029fb7c8](https://github.com/keymanapp/keyman/blob/029fb7c822c5a5619eaca845ecd2e5a2497d3056/developer/js/lexical-model-compiler/build-trie.ts#L21-L40)
 
 ## Additional notes
