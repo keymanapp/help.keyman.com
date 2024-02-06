@@ -13,12 +13,12 @@ available in that editor is also available here.
 Aside from standard Windows keys, the following keystrokes are defined
 for the editor:
 
-|                                                                                               |                                                      | 
-|---------------------------------------------------------------------------------------------|---------------------------------------------------------|
-Keystroke                                                                                   | Action                                                  |
-| <span class="kbd">Ctrl</span> + <span class="kbd">Shift</span> + <span class="kbd">M</span> | Toggle Message Window visibility                        |
-| <span class="kbd">Ctrl</span> + <span class="kbd">Shift</span> + <span class="kbd">C</span> | Open Character Map                                      |
-| <span class="kbd">Ctrl</span> + <span class="kbd">Shift</span> + <span class="kbd">I</span> | Toggle Character Identifier visibility                  |
-| <span class="kbd">Ctrl</span> + <span class="kbd">F</span>                                  | Find text                                               |
-| <span class="kbd">Ctrl</span> + <span class="kbd">H</span>                                  | Replace text                                            |
-| <span class="kbd">Ctrl</span> + <span class="kbd">Shift</span> + <span class="kbd">U</span> | Convert the selection to/from characters to code values |
+
+| Keystroke                                         | Action                                                 |
+|---------------------------------------------------|--------------------------------------------------------|
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd> | Toggle Message Window visibility                       |
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd> | Open Character Map                                     |
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> | Toggle Character Identifier visibility                 |
+| <kbd>Ctrl</kbd> + <kbd>F</kbd>                    | Find text                                              |
+| <kbd>Ctrl</kbd> + <kbd>H</kbd>                    | Replace text                                           |
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>U</kbd> | Convert the selection to/from characters to code values|

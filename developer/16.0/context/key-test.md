@@ -2,8 +2,7 @@
 title: Virtual Key Identifier
 ---
   
-![Virtual Key Identifier
-dialog](/cdn/dev/img/developer/100/ui/frmKeyTest.png)
+![Virtual Key Identifier dialog](/cdn/dev/img/developer/100/ui/frmKeyTest.png)
 
 This dialog lets you check the virtual key code for any key combination
 (except Window reserved key combinations such as
@@ -12,16 +11,16 @@ insert the virtual key code into the last active edit window at the
 current cursor position.
 
 Press
-<kbd>Ctrl</kbd></span>/<kbd>Shift</kbd></span>/<kbd>Alt</kbd></span>
+<kbd>Ctrl</kbd>/<kbd>Shift</kbd>/<kbd>Alt</kbd>
 and the key you wish to discover. You can see the virtual key codes for
 left and right
-<kbd>Ctrl</kbd></span>/</span>/<kbd>Alt</kbd></span>
+<kbd>Ctrl</kbd>/<kbd>Alt</kbd>
  combinations
 by checking the "Distinguish between left and right ctrl/alt" checkbox.
 
 To close the dialog, click the Close button or press
-<span><kbd>Shift</kbd></span>+</span><kbd>Esc</kbd></span>.
+<kbd>Shift</kbd>+<kbd>Esc</kbd>.
 
-Press <span><kbd>Shift</kbd></span>+<span><kbd>Enter</kbd></span> to
+Press <kbd>Shift</kbd>+<kbd>Enter</kbd> to
 insert the current virtual key code into your source at the insertion
 point.
