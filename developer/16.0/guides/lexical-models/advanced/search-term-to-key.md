@@ -26,7 +26,7 @@ returns a new string, being the “regularized” key. As an example,
 consider the **default key function**; that is, the key function that is
 used if you do not specify one:
 
-``` lang-typescript
+```typescript
 searchTermToKey: function (term: string): string {
   // Use this pattern to remove common diacritical marks (accents).
   // See: https://www.compart.com/en/unicode/block/U+0300
