@@ -6,16 +6,14 @@ The `trie` family of lexical models needs to know what a word is in
 running text. In languages using the Latin script—like, English, French,
 and SENĆOŦEN—finding words is easy. Words are separated by spaces or
 punctuation. The actual rules for where to find words can get quite
-tricky to describe, but Keyman implements the [Unicode Standard Annex
-\#29 §4.1 Default Word Boundary
-Specification](https://unicode.org/reports/tr29/#Word_Boundaries) which
-works well for most languages.
+tricky to describe, but Keyman implements the [Unicode Standard Annex #29 §4.1 Default Word Boundary Specification](https://unicode.org/reports/tr29/#Word_Boundaries) 
+which works well for most languages.
 
 However, in languages written in other scripts—especially East Asian
 scripts like Chinese, Japanese, Khmer, Lao, and Thai—there are is no
 obvious break in between words. For these languages, there must be
 special rules for determining when words start and stop. This is what a
-<span class="dfn">word breaker function</span> is responsible for. It is
+_word breaker function_ is responsible for. It is
 a little bit of code that looks at some text to determine where the
 words are.
 
@@ -36,7 +34,7 @@ You can customize the word breaker in three ways:
 ## Overriding script defaults
 
 The default word breaker makes assumptions about how each
-<span class="dfn">script</span> (alphabet, syllabary, or writing system)
+_script_ (alphabet, syllabary, or writing system)
 works. You can override the defaults by specifying the
 `overrideScriptDefaults` option.
 
@@ -59,7 +57,7 @@ do not occur in the middle of words, but instead, at spaces.
 
 Your model definition file should look like this:
 
-``` lang-typescript
+```typescript
 const source: LexicalModelSource = {
   format: 'trie-1.0',
   sources: ['wordlist.tsv'],
@@ -86,10 +84,9 @@ However, the default word breaker will produce three words:
 `amiskwaciy`, `-`, and `wâskahikan`.
 
 To **join words at hyphens and any other punctuation**, provide the
-`joinWordsAt` option in the [model definition
-file](./model-definition-file):
+`joinWordsAt` option in the [model definition file](./model-definition-file):
 
-``` lang-typescript
+```typescript
 const source: LexicalModelSource = {
   format: 'trie-1.0',
   sources: ['wordlist.tsv'],
@@ -105,7 +102,7 @@ export default source;
 
 You can specify one or more strings to join words at:
 
-``` lang-typescript
+```typescript
 const source: LexicalModelSource = {
   format: 'trie-1.0',
   sources: ['wordlist.tsv'],
@@ -125,10 +122,9 @@ export default source;
 default word breaker is probably sufficient. Only customize this if you
 know the default word breaker really does not work for your language!
 
-The word breaker function can be specified in the [model definition
-file](./model-definition-file) as follows:
+The word breaker function can be specified in the [model definition file](./model-definition-file) as follows:
 
-``` lang-typescript
+```typescript
 const source: LexicalModelSource = {
   format: 'trie-1.0',
   sources: ['wordlist.tsv'],
@@ -151,14 +147,14 @@ their start point, and they must be non-overlapping.
 
 ### A `Span` object
 
-A <span class="dfn">span</span> is an indivisible piece of a sentence.
+A _span_ is an indivisible piece of a sentence.
 This is typically a word, but it can also be a series of spaces, an
 emoji, or a series of punctuation characters. **A span that looks like a
 word is treated like a word in the `trie-1.0` model**.
 
 A `span` has the following properties:
 
-``` lang-typescript
+```typescript
 {
   start: number;
   end: number;
@@ -180,7 +176,7 @@ Here is a full example of word breaker function that returns an array of
 spans in an ASCII (English) string. Note: this is just an example—please
 use the default word breaker for English text!
 
-``` lang-typescript
+```typescript
 const source: LexicalModelSource = {
   format: 'trie-1.0',
   sources: ['wordlist.tsv'],
@@ -225,11 +221,9 @@ export default source;
 - [The TypeScript definition of `WordBreakingFunction` and
 `Span`](https://github.com/keymanapp/keyman/blob/4211b468949860b8fb4a4707710472ab9e33c581/common/lexical-model-types/index.d.ts#L286-L323)  
 
-- [Extension and customization of the Unicode
-word-breaker](./unicode-breaker-extension)  
+- [Extension and customization of the Unicode word-breaker](./unicode-breaker-extension)  
 
-- [The Unicode Standard Annex \#29 §4.1 Default Word Boundary
-Specification](https://unicode.org/reports/tr29/#Word_Boundaries)
+- [The Unicode Standard Annex \#29 §4.1 Default Word Boundary Specification](https://unicode.org/reports/tr29/#Word_Boundaries)
 
 ------------------------------------------------------------------------
 
