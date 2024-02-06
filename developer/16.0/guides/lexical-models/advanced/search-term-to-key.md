@@ -2,18 +2,18 @@
 title: Search term to key
 ---
 
-To look up words quickly, the `trie` model creates a <span class="dfn">
-search key </span> that takes the latest word (as determined by the
+To look up words quickly, the `trie` model creates a _search key_
+that takes the latest word (as determined by the
 [word breaker](word-breaker) and converts it into an internal form. The
 purpose of this internal form is to make searching for a word work, as
 expected, regardless of things such as **accents**, **diacritics**,
 **letter case**, and minor **spelling variations**. The internal form is
-called the <span class="dfn">key</span>. Typically, the key is always in
+called the _key_. Typically, the key is always in
 lowercase, and lacks all accents and diacritics. For example, the key
 for “naïve" is `naive` and the key for “Canada” is `canada`.
 
 The form of the word that is stored is “regularized” through the use of
-a <span class="dfn">key function</span>, which you can define in
+a _key function_, which you can define in
 TypeScript code.
 
 Note: this function runs both **on every word when the wordlist is
@@ -72,7 +72,7 @@ necessary to write your own key function.
 To use this in your model definition file, provide a function as the
 `searchTermToKey` property of the lexical model source:
 
-``` lang-typescript
+```typescript
 const source: LexicalModelSource = {
   format: 'trie-1.0',
   sources: ['wordlist.tsv'],
