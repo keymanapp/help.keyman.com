@@ -10,7 +10,7 @@ title: Customization and extension of the Unicode word breaker
   </p>
 </aside>
 
-As mentioned on the [main word breaker page](./word-breaker.php),
+As mentioned on the [main word breaker page](./word-breaker),
 our currently-supported lexical models need to know what a word
 is in running text.  After all, it is quite difficult to look up a word in a
 dictionary when unclear about what the start and end of that word even is.
@@ -52,7 +52,7 @@ minority language in question does use them.  In addition, hyphens sometimes occ
 within words.
 
 The word breaker function can be specified in the
-[model definition file](./model-definition-file.php) as follows:
+[model definition file](./model-definition-file) as follows:
 
 ```typescript
 const source: LexicalModelSource = {
