@@ -3,7 +3,7 @@ title: keyman-touch-layout files
 ---
 
 Used by:
-:   <span class="application">Keyman Developer</span>.
+:   Keyman Developer.
 
 Description:
 :   A .keyman-touch-layout file is a JSON format file that describes a

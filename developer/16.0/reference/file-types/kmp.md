@@ -14,8 +14,7 @@ Description:
 
 Details:
 :   A .KMP file is compiled from a Keyman Package source file
-    ([.KPS](kps)) using the Package Editor in
-    <span class="application">Keyman Developer</span>. Normal contents
+    ([.KPS](kps)) using the Package Editor in Keyman Developer. Normal contents
     of a Keyman keyboard Package are one or more keyboards with fonts,
     documentation, and On Screen Keyboard ([.KVK](kvk)) files. Keyman
     Developer will also include a [metadata](metadata) file in the
@@ -32,6 +31,6 @@ Distributed with keyboard:
 
 Distributed with lexical model:
 :   A Keyman lexical model Package file (.KMP) includes one lexical
-    model file ([.MODEL.JS)](model-js), and documentation files. Do not
+    model file [(.MODEL.JS)](model-js), and documentation files. Do not
     include lexical model source files ([.MODEL.TS](model-ts) or
     [.TSV](tsv)) in the Package.
