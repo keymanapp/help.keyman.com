@@ -53,7 +53,7 @@ install. This can either be a link on a web page, or a link in an email.
 In this tutorial, a very simple .html web page with a link to the
 nrc.str.sencoten.kmp file is created:
 
-``` markup
+```html
 <html>
   <head>
   </head>

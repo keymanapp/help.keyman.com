@@ -3,14 +3,14 @@ title: KVKS files
 ---
 
 Used by:
-:   <span class="application">Keyman Developer</span>.
+:   Keyman Developer.
 
 Description:
 :   A .KVKS file is a Keyman On Screen Keyboard source file.
 
 Details:
 :   A .KVKS file is edited with the Keyboard Editor in
-    <span class="application">Keyman Developer</span> during the
+    Keyman Developer during the
     keyboard creation process. The file is XML format with UTF-8
     encoding.
 

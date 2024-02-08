@@ -3,7 +3,7 @@ title: MODEL.TS files
 ---
 
 Used by:
-:   <span class="application">Keyman Developer</span>.
+:   Keyman Developer.
 
 Description:
 :   A .MODEL.TS file is a [lexical model](../../guides/lexical-models)
@@ -13,7 +13,7 @@ Description:
 Details:
 :   A .MODEL.TS file is written in the
     [TypeScript](https://www.typescriptlang.org/) language.
-    <span class="application">Keyman Developer</span> compiles this
+    Keyman Developer compiles this
     Keyman lexical model source file which can also reference a
     ([.TSV](tsv)) wordlist to make a lexical model
     ([.MODEL.JS](model-js)) file.
@@ -129,24 +129,24 @@ However, in languages written in other scripts—especially East Asian
 scripts like Chinese, Japanese, Khmer, Lao, and Thai—there are no
 obvious break in between words. For these languages, there must be
 special rules for determining when words start and stop. This is what a
-<span class="dfn">word breaking function</span> is responsible for. It
+<span class="dfn">word breaking function is responsible for. It
 is a little bit of code that looks at some text to determine where the
 words are.
 
 ### Search term to key
 
 To look up words quickly, the `trie` model creates a <span class="dfn">
-search key </span> that takes the latest word (as determined by the
+search key  that takes the latest word (as determined by the
 [word breaking](#toc-word-breaking) and converts it into a “regular”
 form. The purpose of this “regular” form is to make searching for a word
 work, regardless of things such as **accents**, **diacritics**,
 **lettercase**, and minor **spelling variations**. The ”regular” form is
-called the <span class="dfn">key</span>. Typically, the key is always in
+called the <span class="dfn">key. Typically, the key is always in
 lowercase, and lacks all accents and diacritics. For example, the key of
 “naïve" is "naive" and the key of Canada is “canada”.
 
 The form of the word that is stored is “regularized” through the use of
-a <span class="dfn">key function</span>, which you can define in
+a <span class="dfn">key function, which you can define in
 TypeScript code.
 
 The key function takes a string, the raw search term, and returns a

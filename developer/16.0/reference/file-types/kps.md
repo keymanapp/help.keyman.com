@@ -3,14 +3,14 @@ title: KPS files
 ---
 
 Used by:
-:   <span class="application">Keyman Developer</span>.
+:   Keyman Developer.
 
 Description:
 :   A .KPS file is a Keyman package source file.
 
 Details:
 :   A .KPS file is created using the Package Editor in
-    <span class="application">Keyman Developer</span>. It specifies what
+    Keyman Developer. It specifies what
     files are to be included in the package. It is compiled into a
     Keyman Package file ([.KMP](kmp)).
 
