@@ -3,7 +3,7 @@ title: KMN files
 ---
 
 Used by:
-:   <span class="application">Keyman Developer</span>.
+:   Keyman Developer.
 
 Description:
 :   A .KMN file is a keyboard source file. This holds all the code used

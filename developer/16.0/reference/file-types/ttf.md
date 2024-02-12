@@ -3,7 +3,7 @@ title: TTF files
 ---
 
 Used by:
-:   <span class="application">Keyman Developer</span>.
+:   Keyman Developer.
 
 Description:
 :   A .ttf file is a TrueType font file. This file is distributed with a
