@@ -13,7 +13,7 @@
 <p>The <code><strong><?= $method.'()' ?></strong></code> method returns the current state
   of availability for a dictionary.</p>
 <p><strong>Deprecated</strong>, as keyboards and lexical models are no longer directly downloaded in favor
-of packages.  Refer to <code><a href="../ResourceFileManager/installState.php">
+of packages.  Refer to <code><a href="../ResourceFileManager/installState">
 ResourceFileManager.shared.installState()</a></code></p>
 
 <h2 id="Syntax" name="Syntax">Syntax</h2>

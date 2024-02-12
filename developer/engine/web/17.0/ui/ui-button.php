@@ -1,24 +1,24 @@
 <?php /*
   Name:             ui-button
   Copyright:        Copyright (C) 2005 Tavultesoft Pty Ltd.
-  Documentation:    
-  Description:      
+  Documentation:
+  Description:
   Create Date:      18 Sep 2009
 
   Modified Date:    18 Sep 2009
   Authors:          mcdurdin
-  Related Files:    
-  Dependencies:     
+  Related Files:
+  Dependencies:
 
-  Bugs:             
-  Todo:             
-  Notes:            
+  Bugs:
+  Todo:
+  Notes:
   History:          18 Sep 2009 - mcdurdin - Polish
 */
   $pagename = 'Using the KeymanWeb Button Interface';
   $pagetitle = 'Button Interface';
   $MainPage = true;
-  
+
   require_once('header.php');
 ?>
 
@@ -63,9 +63,9 @@ KeymanWeb's Button user interface allows multiple keyboards to be integrated int
 
 <img src="images/ui-osk.gif" style='float:left; margin: 4px 8px 4px 4px'  />
 
-<p>The <a href="osk.php">On-Screen Keyboard</a> <i>(left)</i> is a dynamic display showing the layout of the keyboard you are using.  At the top of the Keyboard Menu (assuming the On-Screen Keyboard is not already visible) is the item <img src="images/ui-bt-showkb.gif" style='vertical-align: middle' ALT="Show Keyboard"/>.  Clicking on this once will cause the On-Screen Keyboard to appear and change the menu item to <img src="images/ui-bt-hidekb.gif" style='vertical-align: middle' ALT="Hide Keyboard"/>.  This works in reverse if the On-Screen Keyboard is already displayed.</p>
+<p>The <a href="osk">On-Screen Keyboard</a> <i>(left)</i> is a dynamic display showing the layout of the keyboard you are using.  At the top of the Keyboard Menu (assuming the On-Screen Keyboard is not already visible) is the item <img src="images/ui-bt-showkb.gif" style='vertical-align: middle' ALT="Show Keyboard"/>.  Clicking on this once will cause the On-Screen Keyboard to appear and change the menu item to <img src="images/ui-bt-hidekb.gif" style='vertical-align: middle' ALT="Hide Keyboard"/>.  This works in reverse if the On-Screen Keyboard is already displayed.</p>
 
-<p>To avoid obscuring the display, the On-Screen Keyboard will not actually be displayed unless you have clicked in a text box which incorporates KeymanWeb. For more information about using the On-Screen Keyboard, <a href="osk.php">click here</a>.</p>
+<p>To avoid obscuring the display, the On-Screen Keyboard will not actually be displayed unless you have clicked in a text box which incorporates KeymanWeb. For more information about using the On-Screen Keyboard, <a href="osk">click here</a>.</p>
 
 </div>
 

@@ -34,5 +34,5 @@
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="canAddNewKeyboard.php"><code>canAddNewKeyboard</code></a></li>
+ <li><a href="canAddNewKeyboard"><code>canAddNewKeyboard</code></a></li>
 </ul>
