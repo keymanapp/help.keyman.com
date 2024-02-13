@@ -171,7 +171,8 @@ Redirect "/kb" "/knowledge-base"
 # Redirect to kb handler
 RewriteRule "^knowledge-base/(\d+)$" "/knowledge-base/index.php?id=$1" [L]
 
-# Ready
+# Control rules
+RewriteRule "^_control/info$" "_control/info.php" [END]
 RewriteRule "^_control/ready$" "_control/ready.php" [END]
 
 #
