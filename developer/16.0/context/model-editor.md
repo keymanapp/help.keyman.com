@@ -11,8 +11,9 @@ A lexical model can have multiple source files, all of which can be
 managed in this one editor. The source files currently supported by the
 editor are:
 
-| File type         | Tabs            | Description                                                                                                             |
-|-------------------|-----------------|-------------------------------------------------------------------------------------------------------------------------|
+| File type         | Tabs            | Description          |
+|-------------------|-----------------|-------------------|
+
 | `file.model.ts` | Details, Source | The primary lexical model source file, a TypeScript module.                                                             |
 | `wordlist.tsv`  | wordlist.tsv    | One or more wordlists, UTF-8 format tab-separated value files. These files are referenced in the .model.ts source file. |
 
