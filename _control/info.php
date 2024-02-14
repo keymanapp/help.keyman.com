@@ -4,3 +4,6 @@
     // require_once('includes/template.php');
 
   echo "<p>TIER: " . KeymanHosts::Instance()->Tier() . "</p>";
+
+  echo "<p><a href='./alive'>Alive</a></p>";
+  echo "<p><a href='./ready'>Ready</a></p>";
