@@ -20,8 +20,8 @@
 <h3 id="Parameters" name="Parameters">Parameters</h3>
 <dl>
   <dt><code><?= $param1 ?></code></dt>
-  <dd>Either a <a href="../LanguageResource/LanguageResourceFullID.php"><code>FullKeyboardID</code></a>
-  or a <a href="../LanguageResource/LanguageResourceFullID.php"><code>FullLexicalModelID</code></a>
+  <dd>Either a <a href="../LanguageResource/LanguageResourceFullID"><code>FullKeyboardID</code></a>
+  or a <a href="../LanguageResource/LanguageResourceFullID"><code>FullLexicalModelID</code></a>
   corresponding to the resource to be installed from the package.</dd>
   <dt><code><?= $param2 ?></code></dt>
   <dd>The opened package file</dd>
@@ -55,12 +55,12 @@ Added in Keyman Engine for iPhone and iPad 14.0.
 <h2 id="See_also" name="See_also">See also</h2>
 
 <dl>
-  <dt><a href="../LanguageResource/LanguageResourceFullID.php"><code>LanguageResourceFullID</code></a></dt>
+  <dt><a href="../LanguageResource/LanguageResourceFullID"><code>LanguageResourceFullID</code></a></dt>
   <dd>A loaded package file containing one or more keyboards.</dd>
   <dt><code>KeyboardKeymanPackage</code></dt>
   <dd>A loaded package file containing one or more keyboards.</dd>
   <dt><code>LexicalModelKeymanPackage</code></dt>
   <dd>A loaded package file containing a lexical model.</dd>
-  <dt><a href="prepareKMPInstall.php"><code>ResourceFileManager.shared.prepareKMPInstall(from:)</code></a></dt>
+  <dt><a href="prepareKMPInstall"><code>ResourceFileManager.shared.prepareKMPInstall(from:)</code></a></dt>
   <dd>This method is used to open packages for use by <code>install()</code>.</dd>
 </dl>

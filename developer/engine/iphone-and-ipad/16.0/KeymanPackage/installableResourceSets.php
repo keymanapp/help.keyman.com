@@ -23,7 +23,7 @@ supported by the current package.</p>
 
 <dl>
   <dt><code>resourceIndex</code></dt>
-  <dd>Some legacy keyboard packages may support multiple keyboards.  
+  <dd>Some legacy keyboard packages may support multiple keyboards.
       This index enumerates the unique keyboards (or lexical models) contained within the package.</dd>
   <dt><code>languageIndex</code></dt>
   <dd>Some resources support multiple languages.  For example, Keyman's default keyboard - <code>sil_euro_latin</code>
@@ -42,13 +42,13 @@ Added in Keyman Engine for iPhone and iPad 14.0.
 <h2 id="See_also" name="See_also">See also</h2>
 
 <dl>
-    <dt><code><a href="../TypedKeymanPackage/installables.php">
+    <dt><code><a href="../TypedKeymanPackage/installables">
     KeyboardKeymanPackage.installables: [[ InstallableKeyboard ]]</a></code></dt>
     <dd>The equivalent field for keyboard packages.</dd>
-    <dt><code><a href="../TypedKeymanPackage/installables.php">LexicalModelKeymanPackage.installables: [[ InstallableLexicalModel ]]
+    <dt><code><a href="../TypedKeymanPackage/installables">LexicalModelKeymanPackage.installables: [[ InstallableLexicalModel ]]
     </a></code></dt>
     <dd>The equivalent field for lexical model packages.</dd>
-    <dt><code><a href="installableResources.php">installableResources(forLanguage: String): [ AnyLanguageResource ]</a></code></dt>
+    <dt><code><a href="installableResources">installableResources(forLanguage: String): [ AnyLanguageResource ]</a></code></dt>
     <dd>Provides the same functionality as this field, but filtered to a specific language code.</dd>
 </dl>
 

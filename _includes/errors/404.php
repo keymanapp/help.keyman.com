@@ -3,11 +3,12 @@
 
   head([
     'title' => "Page not found",
-    'index' => false   
+    'index' => false,
+    'crumbs' => false,
   ]);
-  
+
   $page = $_SERVER["REQUEST_URI"];
-  
+
   function E($v)
   {
     $s = @htmlspecialchars($v, ENT_QUOTES, 'UTF-8');
@@ -15,13 +16,13 @@
       $s = @htmlspecialchars($v, ENT_QUOTES, 'ISO-8859-1');
     return $s;
   }
-  
+
 ?>
 <h1>Page not found</h1>
 
 <p>Sorry, we couldn't find the page <a href="<?= E($page) ?>"><?= E($page) ?></a>.</p>
 
-<p>Please use the blue Support tab at the bottom of this page to tell us about this problem.</p>
+<p>Please tell us about this problem on the <a href="https://community.software.sil.org/c/keyman" target="_blank">Keyman Community</a>.</p>
 
 <h2>Search Keyman Help</h2>
 

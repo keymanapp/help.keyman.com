@@ -1,6 +1,5 @@
 <?php
   global $pagestyle;
-  if(!isset($_SESSION)) session_start();
   require_once('servervars.php');
   require_once('page-version.php');
 
@@ -56,6 +55,7 @@
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link rel='shortcut icon' href="<?php echo $favicon; ?>">
+  <?php if(!empty($canonicalLink)) echo "  <link rel=\"canonical\" href=\"$canonicalLink\">\n"; ?>
   <?php PageVersion::WriteHead(); ?>
   <?php foreach($css as $cssFile){ ?>
     <link rel="stylesheet" type="text/css" href="<?php echo $cssFile; ?>">

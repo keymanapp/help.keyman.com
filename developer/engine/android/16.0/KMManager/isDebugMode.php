@@ -29,5 +29,5 @@
 
 <h2 id="See_also" name="See_also">See also</h2>
 <ul>
- <li><a href="setDebugMode.php"><code>setDebugMode()</code></a></li>
+ <li><a href="setDebugMode"><code>setDebugMode()</code></a></li>
 </ul>
