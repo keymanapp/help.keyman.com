@@ -9,7 +9,7 @@ RewriteEngine on
 RewriteBase /
 
 # Custom error messages (need to pass the original request)
-ErrorDocument 404 /_includes/errors/404.php?uri=%{REQUEST_URI}
+ErrorDocument 404 /_includes/errors/404
 
 # Handle IIS bug which created links to /DEVELOPER instead of /developer
 RedirectMatch "/DEVELOPER(.*)" "/developer$1"
@@ -166,8 +166,6 @@ Redirect "/kb" "/knowledge-base"
 # Redirect to kb handler
 RewriteRule "^knowledge-base/(\d+)$" "/knowledge-base/index.php?id=$1" [L]
 
-# Ready
-RewriteRule "^_control/ready$" "_control/ready.php" [END]
 
 #
 # PHP and Markdown rewriting
