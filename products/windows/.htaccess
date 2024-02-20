@@ -5,6 +5,8 @@ RedirectMatch "versionhistory.php" "/products/windows/version-history/"
 # 14.0 docs redirects
 RedirectMatch "/products/windows/14.0/docs/context_installkeyboard.php" "/products/windows/14.0/context/install-keyboard"
 RedirectMatch "/products/windows/14.0/docs/basic_enable_keyboard.php" "/products/windows/14.0/basic/enable-or-disable-keyboard"
+RedirectMatch "/products/windows/14.0/docs/context_configuration_keyboards.php" "/products/windows/14.0/context/configuration-keyboards"
+RedirectMatch "/products/windows/14.0/docs/start_tutorial.php" "/products/windows/14.0/start/tutorial"
 RedirectMatch "/products/windows/14.0/docs/basic_config_menu.php" "/products/windows/14.0/basic/config/"
 RedirectMatch "/products/windows/14.0/docs/context_onlineupdate.php" "/products/windows/14.0/context/online-update"
 RedirectMatch "/products/windows/14.0/docs/context_font_helper.php" "/products/windows/14.0/start/font"
