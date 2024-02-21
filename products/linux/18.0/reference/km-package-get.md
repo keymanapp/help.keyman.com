@@ -16,17 +16,20 @@ km-package-get [-h] [--version] [-v] [-vv] id
 `id` <br>
 Keyman keyboard id
 
-#### options:
 `-h`, `--help` <br>
+__optional__ <br>
 show this help message and exit
 
 `--version` <br>
+__optional__ <br>
 show program's version number and exit
 
 `-v`, `--verbose` <br>
+__optional__ <br>
 verbose logging
 
 `-vv`, `--veryverbose` <br>
+__optional__ <br>
 very verbose logging
 
 ## Description
