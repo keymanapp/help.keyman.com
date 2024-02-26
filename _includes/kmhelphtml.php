@@ -1,21 +1,22 @@
 <?php /*
   Name:             kmhelphtml
   Copyright:        Copyright (C) 2005 Tavultesoft Pty Ltd.
-  Documentation:    
-  Description:      
+  Documentation:
+  Description:
   Create Date:      18 Mar 2008
 
   Modified Date:    18 Mar 2008
   Authors:          mcdurdin
-  Related Files:    
-  Dependencies:     
+  Related Files:
+  Dependencies:
 
-  Bugs:             
-  Todo:             
-  Notes:            
+  Bugs:
+  Todo:
+  Notes:
   History:          18 Mar 2008 - mcdurdin - Fixup bugs when preg_match_all fails
                     18 Mar 2008 - mcdurdin - Fixup nl bug
 */
+  // DEPRECATED: This is used only by Keyman Desktop 6.0 documentation
   echo 'kmhelphtml.php';
   $nl = "\r\n";
   $howtocount = 0;
@@ -44,11 +45,11 @@
       case "VTABLE": echo VTABLE( $args ); break;
       case "TABLE": echo TABLE( $args ); break;
       case "HOWTO": echo HOWTO( $args ); break;
-      
+
       case "FEATURELIST": echo FEATURELIST( $args ); break;
       case "FEATURE": echo FEATURE( $args ); break;
       case "ENDFEATURELIST": echo ENDFEATURELIST( $args ); break;
-      
+
       default: dispatcher2( $func, $args );
     }
   }
@@ -217,10 +218,10 @@
       //echo "<pre>"; print_r($linkarr); echo "</pre>";
       while(sizeof($linkarr[1]) < 4) array_push($linkarr[1], "");
       list( $left, $lurl, $right, $rurl ) = $linkarr[1];
-  
+
       $s = "<table class=\"PageNav\"><tr>" . $nl .
            "<td class=\"Prev\">" . $nl;
-  
+
       if( $left == "" )
         $s .= "&nbsp;" . $nl;
       else {
@@ -229,11 +230,11 @@
         $s .= $left . $nl;
         $s .= "</a>" . $nl;
       }
-  
+
       $s .= "</td>" . $nl .
             "<td class=\"Next\">" . $nl;
-  
-  
+
+
       if( $right == "" )
         $s .= "&nbsp;" . $nl;
       else {
@@ -242,7 +243,7 @@
         $s .= "<img src=\"../img/rightarrow.gif\" alt=\"Next\" width=8 height=8 border=0>" . $nl;
         $s .= "</a>" . $nl;
       }
-  
+
       $s .= "</td>" . $nl .
             "</tr></table>" . $nl;
     }
@@ -501,10 +502,10 @@ function FEATURELIST($cols)
 {
     global $featurecount, $featurecolcount, $nl;
 
-    
+
     $colarray = explode(",", $cols);
 
-    $featurecount = 0; 
+    $featurecount = 0;
     $featurecolcount = count($colarray);
 
     $s = "<table cellspacing=0 cellpadding=0 class='fl'>" . $nl;
@@ -512,7 +513,7 @@ function FEATURELIST($cols)
 
     for($i = 0; $i < $featurecolcount; $i++)
       $s .= '<th class="flcol">' . $colarray[$i] . '</th>';
-     
+
     $s .= '</tr>';
 
     return $s;
@@ -523,23 +524,23 @@ function FEATURE($args) {
 
     if($featurecount % 2 == 0) $cls = "even"; else $cls = "odd";
     $featurecount++;
-    
+
     $id = uniqid("div");
- 
+
     $argarray = explode( $nl, $args );
     $ftext = $argarray[0];
     for($i = 1; $i <= $featurecolcount; $i++)
     {
-      $s = $argarray[$i]; 
-      if(strstr($s, "Y")) $fcol[$i-1] = "<img src='../img/fullcircle.gif'>"; 
-      else if(strstr($s, "T")) $fcol[$i-1] = "<img src='../img/tick.gif'>"; 
+      $s = $argarray[$i];
+      if(strstr($s, "Y")) $fcol[$i-1] = "<img src='../img/fullcircle.gif'>";
+      else if(strstr($s, "T")) $fcol[$i-1] = "<img src='../img/tick.gif'>";
       else if($s[0] == ':') $fcol[$i-1] = substr($s, 1);
       else $fcol[$i-1] = "&nbsp;";
     }
 
-    $desc = "";    
+    $desc = "";
     for($i = $featurecolcount+1; $i < count($argarray); $i++) $desc = $desc . $argarray[$i] . " ";
- 
+
     $s = '<tr><td class="fl '.$cls.'"><li><a style="text-decoration: none"; href="javascript: togglehowto(' . "'" . $id . "'" . ')">' .
 #         '<img id="' . $id . "img" . '" src="/images/expand.gif" border=0 align="middle"> ' .
          $ftext . '</a>';
@@ -552,7 +553,7 @@ function FEATURE($args) {
 
     $s .= '<tr><td class="flhidden" style="width: '. (500+count($fcol)*75) . '" colspan="' . (count($fcol) + 1) . '"><div id="' . $id . '" class="hiddenobj">' .
          $desc . '</div></td></tr>';
-    
+
     return $s;
 }
 

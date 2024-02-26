@@ -16,6 +16,13 @@ function get_file_titles($base) {
       continue;
     }
 
+    if(preg_match('/developer\/(current-version|\d+\.\d+)\/reference\/api/', $file)) {
+      // Performance cost -- there are many files in this folder. This is a
+      // temporary fix until we move to better API documentation hosting in the
+      // future
+      continue;
+    }
+
     if(is_dir($file)) {
       if(file_exists($file.'/index.md')) {
         $dirs[$basefile] = get_file_title_md($file.'/index.md');
@@ -59,6 +66,8 @@ function get_file_title_md($filename) {
 
   if(preg_match('/^title: (.+)$/mi', $s, $sub)) {
     $title = $sub[1];
+  } else if(preg_match('/^(#)+ (.+)$/m', $s, $sub)) {
+    $title = $sub[2];
   } else {
     $title = 'Untitled page.md';
   }

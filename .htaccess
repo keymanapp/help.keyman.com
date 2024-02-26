@@ -195,6 +195,10 @@ RewriteCond "$1.php" -f
 RewriteCond "$1" !-d
 RewriteRule "^(.+)\.php$" "$1" [R,L]
 
+# Remove .php extension and redirect - but only for Keyman Developer API docs for now
+RewriteCond "$1.md" -f
+RewriteRule "^(developer/(current-version|\d+\.\d+)/reference/api/.+)\.md$" "$1" [R,END]
+
 # Redirect folder without / to include /
 RewriteCond "{DOCUMENT_ROOT}/$1" -d
 RewriteCond "{DOCUMENT_ROOT}/$1.php" !-f
