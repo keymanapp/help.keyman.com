@@ -10,3 +10,4 @@ title: Keyman Developer Reference
 * [Error codes](errors)
 * [Tools](tools)
 * [Custom editor themes](editor-themes)
+* [User settings](user-settings)
