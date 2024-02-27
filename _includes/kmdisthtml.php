@@ -1,4 +1,5 @@
 <?php
+  // DEPRECATED: This is used only by Keyman Desktop 6.0 documentation
 
   function dispatcher( $func, $args ) {
     switch( $func ) {
