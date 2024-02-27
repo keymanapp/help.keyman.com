@@ -2,6 +2,9 @@
 title: Get started with kmc
 ---
 
+This package provides a command-line interface to the Keyman Developer compiler
+toolchain, `kmc`.
+
 ## Install kmc
 
 `kmc` is available as:
@@ -65,13 +68,10 @@ This will have created a new folder called `khmer_angkor/`.
 
 ### 2. Build the project
 
-```shell
-cd khmer_angkor
-```
-
 Now, we'll build our keyboard project with kmc.
 
 ```shell
+cd khmer_angkor
 kmc build .
 ```
 
@@ -81,36 +81,56 @@ Keyman apps, and `build/khmer_angkor.js` can be added to KeymanWeb.
 
 ### 3. Install the keyboard
 
-**Windows**: we can install this keyboard using [`kmshell`](/knowledge-base/98):
+**Windows**: we can install this keyboard using [`kmshell`][windows-install-keyboard]:
 
 ```cmd
-"%ProgramFiles(x86)%\Keyman\Keyman Desktop\kmshell" -i build\sample.kmp -s
+"%ProgramFiles(x86)%\Keyman\Keyman Desktop\kmshell" -i build\khmer_angkor.kmp -s
 ```
 
 Alternatively you can double-click the .kmp package file in Windows Explorer to
 install it.
 
 **Linux**: we'd use the following
-[`km-package-install`](/products/linux/current-version/reference/km-package-install)
+[`km-package-install`][linux-install-keyboard]
 command:
 
 ```shell
-km-package-install -f build/sample.kmp
+km-package-install -f build/khmer_angkor.kmp
 ```
 
-**macOS**: open Keyman Configuration and drop the package .kmp file onto the
-Keyman Configuration window.
+**macOS**: open Keyman Configuration and drop the package khmer_angkor.kmp file
+onto the Keyman Configuration window.
+
+**Android**: send khmer_angkor.kmp to your Android device, and install it from the
+hamburger menu in the Keyman app.
+
+**iOS**: send khmer_angkor.kmp to your iOS device, and install it from the
+hamburger menu in the Keyman app.
+
+**Web**: copy khmer_angkor.js to your website, then [load it with KeymanWeb][load-keymanweb-keyboard]:
+
+```js
+keyman.addKeyboards({
+  id:'khmer_angkor',        // The keyboard's unique identification code.
+  name:'Khmer Angkor',      // The keyboard's user-readable name.
+  language:{
+    id:'km',                // A BCP 47 code uniquely identifying the language.
+    name:'Khmer'            // The language's name.
+  },
+  filename:'./khmer-angkor.js',
+});
+```
 
 ## File layout
 
-See [file layout](../../file-layout) for details on the standard source file layout
+See [file layout][file-layout] for details on the standard source file layout
 that Keyman Developer works best with.
 
 ## Reference and Examples
 
 ### kmc - command line compiler
 
-[kmc](reference) is the command line compiler. You can use it to compile
+[kmc][kmc] is the command line compiler. You can use it to compile
 all Keyman files.
 
 The most common command will be `kmc build`:
@@ -122,7 +142,7 @@ recommended way to build, as it will build keyboards, models and packages all in
 one step. You can also call `kmc build <folder>` to build the project in the
 referenced folder, e.g. `kmc build .`.
 
-* [kmc reference](reference)
+* [kmc reference][kmc]
 
 ### KMConvert
 
@@ -136,3 +156,9 @@ graphical version of the most common functionality in KMConvert.
 
 **Note:** KMConvert is currently a Windows executable, and will be integrated
 into kmc in an upcoming version of Keyman.
+
+[kmc]: ./reference
+[file-layout]: ../../file-layout
+[load-keymanweb-keyboard]: /developer/engine/web/current-version/guide/adding-keyboards
+[linux-install-keyboard]: /products/linux/current-version/reference/km-package-install
+[windows-install-keyboard]: /knowledge-base/98

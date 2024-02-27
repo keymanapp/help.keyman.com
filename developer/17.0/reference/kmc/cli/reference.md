@@ -174,6 +174,34 @@ The following parameters are available:
   project (which can also be controlled at a project level with the
   `skipMetadataFiles` option). This option is only valid for compiling projects.
 
+### Examples
+
+```shell
+kmc build project.kpj
+```
+
+Compile all components of a keyboard or model project named `project.kpj`.
+kmc will respect the path settings within the project file. This is the
+recommended way to build, as it will build keyboards, models and packages all in
+one step. You can also call `kmc build <folder>` to build the project in the
+referenced folder, e.g. `kmc build .`.
+
+```shell
+kmc build keyboard.kmn
+```
+
+Compile a keyboard file to a .kmx (desktop targets) and/or .js (web/touch
+targets). If an output file is not specified, writes to the same folder as the
+keyboard.
+
+```shell
+kmc build package.kps
+```
+
+Compile a package file to a .kmp (all targets). All included keyboards must
+already be compiled.
+
+
 ## `kmc build windows-package-installer` additional options
 
 * `--msi <msiFilename>`
@@ -207,6 +235,27 @@ The following parameters are available:
 
 : Installer property: start Keyman Configuration after installation completes
 
+### Examples
+
+* Windows (command prompt):
+
+```bat
+kmc build windows-package-installer .\khmer_angkor.kps --msi "C:\Program Files (x86)\Common Files\Keyman\Cached Installer Files\keymandesktop.msi" --exe .\setup-redist.exe --license .\LICENSE.md --out-file .\khmer.exe
+```
+
+* Bash (Linux, WSL, macOS, etc):
+
+```shell
+kmc build windows-package-installer \
+  ./khmer_angkor/source/khmer_angkor.kps \
+  --msi ./redist/keymandesktop.msi \
+  --exe ./redist/setup-redist.exe \
+  --license ./redist/LICENSE.md \
+  --out-file ./khmer.exe
+```
+
+Note: paths shown above may vary.
+
 ## `kmc analyze osk-char-use` options
 
 * `-b, --base`
@@ -238,31 +287,3 @@ For more information on the purpose of `analyze osk-char-use` and
 For more information on the purpose of `analyze osk-char-use` and
 `analyze rewrite-osk-from-char-use`, see
 [`&displayMap`](/developer/language/reference/displaymap).
-
-### Examples
-
-```shell
-kmc build project.kpj
-```
-
-Compile all components of a keyboard or model project named `project.kpj`.
-kmc will respect the path settings within the project file. This is the
-recommended way to build, as it will build keyboards, models and packages all in
-one step. You can also call `kmc build <folder>` to build the project in the
-referenced folder, e.g. `kmc build .`.
-
-```shell
-kmc build keyboard.kmn
-```
-
-Compile a keyboard file to a .kmx (desktop targets) and/or .js (web/touch
-targets). If an output file is not specified, writes to the same folder as the
-keyboard.
-
-```
-kmc build package.kps
-```
-
-Compile a package file to a .kmp (all targets). All included keyboards must
-already be compiled.
-
