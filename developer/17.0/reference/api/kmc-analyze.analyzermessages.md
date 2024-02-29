@@ -4,6 +4,7 @@
 
 ## AnalyzerMessages class
 
+Compiler messages for `kmc analyze`
 
 **Signature:**
 
@@ -15,8 +16,6 @@ export declare class AnalyzerMessages
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [Fatal\_UnexpectedException](./kmc-analyze.analyzermessages.fatal_unexpectedexception.md) | <code>static</code> | (o: { e: any; }) =&gt; import("@keymanapp/common-types").CompilerEvent |  |
-|  [FATAL\_UnexpectedException](./kmc-analyze.analyzermessages.fatal_unexpectedexception.md) | <code>static</code> | number |  |
-|  [Info\_ScanningFile](./kmc-analyze.analyzermessages.info_scanningfile.md) | <code>static</code> | (o: { type: string; name: string; }) =&gt; import("@keymanapp/common-types").CompilerEvent |  |
-|  [INFO\_ScanningFile](./kmc-analyze.analyzermessages.info_scanningfile.md) | <code>static</code> | number |  |
+|  [FATAL\_UnexpectedException](./kmc-analyze.analyzermessages.fatal_unexpectedexception.md) | <p><code>static</code></p><p><code>readonly</code></p> | number | Raised when the compiler experiences an internal error. These should be reported to the Keyman team for resolution via https://github.com/keymanapp/keyman/issues/new |
+|  [INFO\_ScanningFile](./kmc-analyze.analyzermessages.info_scanningfile.md) | <p><code>static</code></p><p><code>readonly</code></p> | number | Informative message reporting on the current file being scanned |
 

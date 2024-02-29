@@ -4,6 +4,8 @@
 
 ## AnalyzeOskRewritePua.analyze() method
 
+Analyze a keyboard file or files, and provide a remapped output. Accepts a .kmn, .kvks, .keyman-touch-layout file formats. For .kmn, will rewrite associated On Screen Keyboard file formats. Can be called multiple times to rewrite multiple files. Use the [AnalyzeOskRewritePua.data](./kmc-analyze.analyzeoskrewritepua.data.md) property to retrieve the output file content for writing. This does not modify the source file.
+
 **Signature:**
 
 ```typescript
@@ -14,10 +16,12 @@ analyze(file: string, mapping: Osk.StringResult[]): Promise<boolean>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  file | string |  |
-|  mapping | Osk.StringResult\[\] |  |
+|  file | string | relative or absolute path to a Keyman source file |
+|  mapping | Osk.StringResult\[\] | OSK keycap map provided by [AnalyzeOskCharacterUse](./kmc-analyze.analyzeoskcharacteruse.md) |
 
 **Returns:**
 
 Promise&lt;boolean&gt;
+
+true if the file is successfully loaded and rewritten
 

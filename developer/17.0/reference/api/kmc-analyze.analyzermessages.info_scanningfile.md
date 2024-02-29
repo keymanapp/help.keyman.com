@@ -4,8 +4,10 @@
 
 ## AnalyzerMessages.INFO\_ScanningFile property
 
+Informative message reporting on the current file being scanned
+
 **Signature:**
 
 ```typescript
-static INFO_ScanningFile: number;
+static readonly INFO_ScanningFile: number;
 ```

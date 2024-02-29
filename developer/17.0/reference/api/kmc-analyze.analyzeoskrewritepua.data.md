@@ -4,6 +4,8 @@
 
 ## AnalyzeOskRewritePua.data property
 
+Returns the file data for OSK files rewritten with PUA characters, for use with `&displayMap`<!-- -->.
+
 **Signature:**
 
 ```typescript

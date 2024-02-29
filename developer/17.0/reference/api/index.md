@@ -8,7 +8,7 @@
 
 |  Package | Description |
 |  --- | --- |
-|  [@keymanapp/kmc-analyze](./kmc-analyze.md) |  |
+|  [@keymanapp/kmc-analyze](./kmc-analyze.md) | kmc-analyze - keyboard analysis classes, including tools for <code>&amp;displayMap</code>. |
 |  [@keymanapp/kmc-keyboard-info](./kmc-keyboard-info.md) |  |
 |  [@keymanapp/kmc-kmn](./kmc-kmn.md) |  |
 |  [@keymanapp/kmc-ldml](./kmc-ldml.md) |  |
