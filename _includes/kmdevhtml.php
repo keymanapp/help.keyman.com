@@ -1,4 +1,6 @@
 <?php
+  // DEPRECATED: This is used only by Keyman Developer 6.0 documentation
+
   //include_once( "version.out" );
 
   $nl = "\r\n";

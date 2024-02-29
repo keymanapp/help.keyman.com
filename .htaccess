@@ -1,8 +1,3 @@
-# This file is used when running with Apache. Adapted from web.config.
-# NOTE: this is not very well tested...
-
-#php_value include_path "/var/www/html/_includes:."
-#Not needed if local apache.conf includes this
 
 # We turn off automatic addition of slashes for directories because it
 # interferes with the file extension removal for .php files. At the bottom of
@@ -14,7 +9,7 @@ RewriteEngine on
 RewriteBase /
 
 # Custom error messages (need to pass the original request)
-ErrorDocument 404 /_includes/errors/404.php?uri=%{REQUEST_URI}
+ErrorDocument 404 /_includes/errors/404
 
 # Handle IIS bug which created links to /DEVELOPER instead of /developer
 RedirectMatch "/DEVELOPER(.*)" "/developer$1"
@@ -199,6 +194,10 @@ RewriteRule "^((.+)/)?index(\.php)?$" "$1" [R,L]
 RewriteCond "$1.php" -f
 RewriteCond "$1" !-d
 RewriteRule "^(.+)\.php$" "$1" [R,L]
+
+# Remove .php extension and redirect - but only for Keyman Developer API docs for now
+RewriteCond "$1.md" -f
+RewriteRule "^(developer/(current-version|\d+\.\d+)/reference/api/.+)\.md$" "$1" [R,END]
 
 # Redirect folder without / to include /
 RewriteCond "{DOCUMENT_ROOT}/$1" -d
