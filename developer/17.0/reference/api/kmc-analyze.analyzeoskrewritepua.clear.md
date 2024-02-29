@@ -4,6 +4,8 @@
 
 ## AnalyzeOskRewritePua.clear() method
 
+Clears data collected from previous calls to [AnalyzeOskRewritePua.analyze()](./kmc-analyze.analyzeoskrewritepua.analyze.md)
+
 **Signature:**
 
 ```typescript

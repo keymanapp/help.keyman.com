@@ -17,5 +17,5 @@ constructor(callbacks: CompilerCallbacks, options?: AnalyzeOskCharacterUseOption
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  callbacks | CompilerCallbacks |  |
-|  options | AnalyzeOskCharacterUseOptions | _(Optional)_ |
+|  options | [AnalyzeOskCharacterUseOptions](./kmc-analyze.analyzeoskcharacteruseoptions.md) | _(Optional)_ |
 

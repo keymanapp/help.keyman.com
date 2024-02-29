@@ -4,8 +4,10 @@
 
 ## AnalyzerMessages.FATAL\_UnexpectedException property
 
+Raised when the compiler experiences an internal error. These should be reported to the Keyman team for resolution via https://github.com/keymanapp/keyman/issues/new
+
 **Signature:**
 
 ```typescript
-static FATAL_UnexpectedException: number;
+static readonly FATAL_UnexpectedException: number;
 ```
