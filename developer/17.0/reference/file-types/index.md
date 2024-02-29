@@ -40,3 +40,6 @@ title: File Types
 
 [keyman-touch-layout files](keyman-touch-layout)
 :   Keyman touch layout source files (JSON file format)
+
+[XML files](xml)
+:   LDML keyboard source files (XML file format)

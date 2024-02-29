@@ -67,7 +67,8 @@ html{
 
 html p,
 html dd,
-html li {
+html li,
+html td {
   font-family: 'Calibri', sans-serif;
   font-size: 14pt;
 }
@@ -852,10 +853,22 @@ input[type="search"] {
   padding: 4px 10px 4px 10px;
 }
 
-#section2 p, #section2 dl, #section2 .itemizedlist {
+#section2 p,
+#section2 dl,
+#section2 .itemizedlist {
 	padding: 0px 10px 10px 10px;
+}
+
+#section2 p,
+#section2 dl,
+#section2 .itemizedlist,
+#section2 td {
 	line-height: 1.4;
 	font-size: 14pt;
+}
+
+#section2 td p {
+	padding: 0 10px 10px 0;
 }
 
 #section2 p a{
