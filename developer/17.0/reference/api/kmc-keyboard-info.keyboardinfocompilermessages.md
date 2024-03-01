@@ -24,9 +24,9 @@ export declare class KeyboardInfoCompilerMessages
 |  [ERROR\_FontFileCannotBeRead](./kmc-keyboard-info.keyboardinfocompilermessages.error_fontfilecannotberead.md) | <code>static</code> | number |  |
 |  [Error\_InvalidAuthorEmail](./kmc-keyboard-info.keyboardinfocompilermessages.error_invalidauthoremail.md) | <code>static</code> | (o: { email: string; }) =&gt; import("@keymanapp/common-types").CompilerEvent |  |
 |  [ERROR\_InvalidAuthorEmail](./kmc-keyboard-info.keyboardinfocompilermessages.error_invalidauthoremail.md) | <code>static</code> | number |  |
-|  [Error\_LicenseFileDoesNotExist](./kmc-keyboard-info.keyboardinfocompilermessages.error_licensefiledoesnotexist.md) | <code>static</code> | (o: { filename: string; }) =&gt; import("@keymanapp/common-types").CompilerEvent |  |
 |  [Error\_LicenseFileIsDamaged](./kmc-keyboard-info.keyboardinfocompilermessages.error_licensefileisdamaged.md) | <code>static</code> | (o: { filename: string; }) =&gt; import("@keymanapp/common-types").CompilerEvent |  |
 |  [ERROR\_LicenseFileIsDamaged](./kmc-keyboard-info.keyboardinfocompilermessages.error_licensefileisdamaged.md) | <code>static</code> | number |  |
+|  [Error\_LicenseFileIsMissing](./kmc-keyboard-info.keyboardinfocompilermessages.error_licensefileismissing.md) | <code>static</code> | (o: { filename: string; }) =&gt; import("@keymanapp/common-types").CompilerEvent |  |
 |  [ERROR\_LicenseFileIsMissing](./kmc-keyboard-info.keyboardinfocompilermessages.error_licensefileismissing.md) | <code>static</code> | number |  |
 |  [Error\_LicenseIsNotValid](./kmc-keyboard-info.keyboardinfocompilermessages.error_licenseisnotvalid.md) | <code>static</code> | (o: { filename: string; message: string; }) =&gt; import("@keymanapp/common-types").CompilerEvent |  |
 |  [ERROR\_LicenseIsNotValid](./kmc-keyboard-info.keyboardinfocompilermessages.error_licenseisnotvalid.md) | <code>static</code> | number |  |

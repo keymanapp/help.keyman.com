@@ -4,17 +4,20 @@
 
 ## kmc-kmn package
 
+kmc-kmn - Keyman keyboard compiler
+
 ## Classes
 
 |  Class | Description |
 |  --- | --- |
-|  [CompilerMessages](./kmc-kmn.compilermessages.md) |  |
-|  [KmnCompiler](./kmc-kmn.kmncompiler.md) |  |
-|  [KmnCompilerMessages](./kmc-kmn.kmncompilermessages.md) | <p>This class defines messages from kmcmplib. They should correspond to codes in kmn\_compiler\_errors.h, exclusive severity bits. For example:</p>
-```
-  kmcmplib.CERR_BadCallParams = CERR_FATAL | 0x002 = 0x8002
-  ERROR_BadCallParams = SevError | 0x0002 = 0x300000 | 0x2000 | 0x002 = 0x302002
-```
-<p>CERR\_ messages that are actually fatals have been renamed to FATAL\_.</p><p>Message text is defined by kmcmplib and passed through a callback.</p> |
-|  [KmwCompilerMessages](./kmc-kmn.kmwcompilermessages.md) |  |
+|  [KmnCompiler](./kmc-kmn.kmncompiler.md) | Compiles a .kmn file to a .kmx, .kvk, and/or .js. The compiler does not read or write from filesystem or network directly, but relies on callbacks for all external IO. |
+|  [KmwCompilerMessages](./kmc-kmn.kmwcompilermessages.md) | Error messages reported by the KeymanWeb .kmn compiler. |
+
+## Interfaces
+
+|  Interface | Description |
+|  --- | --- |
+|  [KmnCompilerArtifacts](./kmc-kmn.kmncompilerartifacts.md) | Internal in-memory result from a successful compilation |
+|  [KmnCompilerOptions](./kmc-kmn.kmncompileroptions.md) | Options for the .kmn compiler |
+|  [KmnCompilerResult](./kmc-kmn.kmncompilerresult.md) | Build artifacts from the .kmn compiler |
 

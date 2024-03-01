@@ -12,7 +12,6 @@ kmc-analyze - keyboard analysis classes, including tools for `&displayMap`<!-- -
 |  --- | --- |
 |  [AnalyzeOskCharacterUse](./kmc-analyze.analyzeoskcharacteruse.md) | Analyze the characters used in On Screen Keyboard files (.kvks, .keyman-touch-layout) for use with <code>&amp;displayMap</code>. |
 |  [AnalyzeOskRewritePua](./kmc-analyze.analyzeoskrewritepua.md) | Rewrite On Screen Keyboard files (.kvks, .keyman-touch-layout) with PUA codepoints, based on analysis provided by [AnalyzeOskCharacterUse](./kmc-analyze.analyzeoskcharacteruse.md) class. |
-|  [AnalyzerMessages](./kmc-analyze.analyzermessages.md) | Compiler messages for <code>kmc analyze</code> |
 
 ## Interfaces
 
