@@ -1,3 +1,3 @@
 <?php
-require_once('includes/template.php');
+require_once('includes/util.php');
 util_loadpage('../messages');
