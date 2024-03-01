@@ -1,7 +1,7 @@
 ---
-title: kmw.controlfocused Event
+title: keyman.controlfocused Event
 ---
-  
+
 ## Summary
 
 Called when an input element receives focus.

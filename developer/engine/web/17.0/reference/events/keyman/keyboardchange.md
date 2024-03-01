@@ -1,7 +1,7 @@
 ---
-title: kmw.keyboardchange Event
+title: keyman.keyboardchange Event
 ---
-  
+
 ## Summary
 
 Called when keyboard input language changed.

@@ -1,7 +1,7 @@
 ---
-title: kmw.keyboardloaded Event
+title: keyman.keyboardloaded Event
 ---
-  
+
 ## Summary
 
 Called when keyboard code loaded.

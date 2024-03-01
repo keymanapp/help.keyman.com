@@ -1,7 +1,7 @@
 ---
-title: kmw.controlblurred Event
+title: keyman.controlblurred Event
 ---
-  
+
 ## Summary
 
 Called when an input element loses focus.
