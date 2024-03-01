@@ -20,9 +20,9 @@ export declare class ModelInfoCompilerMessages
 |  [ERROR\_FileIsNotValid](./kmc-model-info.modelinfocompilermessages.error_fileisnotvalid.md) | <code>static</code> | number |  |
 |  [Error\_InvalidAuthorEmail](./kmc-model-info.modelinfocompilermessages.error_invalidauthoremail.md) | <code>static</code> | (o: { email: string; }) =&gt; import("@keymanapp/common-types").CompilerEvent |  |
 |  [ERROR\_InvalidAuthorEmail](./kmc-model-info.modelinfocompilermessages.error_invalidauthoremail.md) | <code>static</code> | number |  |
-|  [Error\_LicenseFileDoesNotExist](./kmc-model-info.modelinfocompilermessages.error_licensefiledoesnotexist.md) | <code>static</code> | (o: { filename: string; }) =&gt; import("@keymanapp/common-types").CompilerEvent |  |
 |  [Error\_LicenseFileIsDamaged](./kmc-model-info.modelinfocompilermessages.error_licensefileisdamaged.md) | <code>static</code> | (o: { filename: string; }) =&gt; import("@keymanapp/common-types").CompilerEvent |  |
 |  [ERROR\_LicenseFileIsDamaged](./kmc-model-info.modelinfocompilermessages.error_licensefileisdamaged.md) | <code>static</code> | number |  |
+|  [Error\_LicenseFileIsMissing](./kmc-model-info.modelinfocompilermessages.error_licensefileismissing.md) | <code>static</code> | (o: { filename: string; }) =&gt; import("@keymanapp/common-types").CompilerEvent |  |
 |  [ERROR\_LicenseFileIsMissing](./kmc-model-info.modelinfocompilermessages.error_licensefileismissing.md) | <code>static</code> | number |  |
 |  [Error\_LicenseIsNotValid](./kmc-model-info.modelinfocompilermessages.error_licenseisnotvalid.md) | <code>static</code> | (o: { filename: string; message: string; }) =&gt; import("@keymanapp/common-types").CompilerEvent |  |
 |  [ERROR\_LicenseIsNotValid](./kmc-model-info.modelinfocompilermessages.error_licenseisnotvalid.md) | <code>static</code> | number |  |

@@ -4,46 +4,27 @@
 
 ## KmwCompilerMessages class
 
+Error messages reported by the KeymanWeb .kmn compiler.
+
 **Signature:**
 
 ```typescript
 export declare class KmwCompilerMessages extends KmnCompilerMessages 
 ```
-**Extends:** [KmnCompilerMessages](./kmc-kmn.kmncompilermessages.md)
+**Extends:** KmnCompilerMessages
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [Error\_InvalidBegin](./kmc-kmn.kmwcompilermessages.error_invalidbegin.md) | <code>static</code> | () =&gt; CompilerEvent |  |
-|  [Error\_InvalidKeyCode](./kmc-kmn.kmwcompilermessages.error_invalidkeycode.md) | <code>static</code> | (o: { keyId: string; }) =&gt; CompilerEvent |  |
-|  [Error\_InvalidTouchLayoutFile](./kmc-kmn.kmwcompilermessages.error_invalidtouchlayoutfile.md) | <code>static</code> | (o: { filename: string; }) =&gt; CompilerEvent |  |
 |  [Error\_InvalidTouchLayoutFileFormat](./kmc-kmn.kmwcompilermessages.error_invalidtouchlayoutfileformat.md) | <code>static</code> | (o: { msg: string; }) =&gt; CompilerEvent |  |
 |  [ERROR\_InvalidTouchLayoutFileFormat](./kmc-kmn.kmwcompilermessages.error_invalidtouchlayoutfileformat.md) | <code>static</code> | number |  |
 |  [Error\_NotAnyRequiresVersion14](./kmc-kmn.kmwcompilermessages.error_notanyrequiresversion14.md) | <code>static</code> | (o: { line: number; }) =&gt; CompilerEvent |  |
 |  [ERROR\_NotAnyRequiresVersion14](./kmc-kmn.kmwcompilermessages.error_notanyrequiresversion14.md) | <code>static</code> | number |  |
-|  [Error\_NotSupportedInKeymanWebContext](./kmc-kmn.kmwcompilermessages.error_notsupportedinkeymanwebcontext.md) | <code>static</code> | (o: { line: number; code: String; }) =&gt; CompilerEvent |  |
-|  [Error\_NotSupportedInKeymanWebOutput](./kmc-kmn.kmwcompilermessages.error_notsupportedinkeymanweboutput.md) | <code>static</code> | (o: { line: number; code: string; }) =&gt; CompilerEvent |  |
-|  [Error\_NotSupportedInKeymanWebStore](./kmc-kmn.kmwcompilermessages.error_notsupportedinkeymanwebstore.md) | <code>static</code> | (o: { code: string; store: string; }) =&gt; CompilerEvent |  |
 |  [Error\_TouchLayoutFileDoesNotExist](./kmc-kmn.kmwcompilermessages.error_touchlayoutfiledoesnotexist.md) | <code>static</code> | (o: { filename: string; }) =&gt; CompilerEvent |  |
 |  [ERROR\_TouchLayoutFileDoesNotExist](./kmc-kmn.kmwcompilermessages.error_touchlayoutfiledoesnotexist.md) | <code>static</code> | number |  |
 |  [Error\_TouchLayoutIdentifierRequires15](./kmc-kmn.kmwcompilermessages.error_touchlayoutidentifierrequires15.md) | <code>static</code> | (o: { keyId: string; platformName: string; layerId: string; }) =&gt; CompilerEvent |  |
 |  [ERROR\_TouchLayoutIdentifierRequires15](./kmc-kmn.kmwcompilermessages.error_touchlayoutidentifierrequires15.md) | <code>static</code> | number |  |
-|  [Error\_TouchLayoutInvalidIdentifier](./kmc-kmn.kmwcompilermessages.error_touchlayoutinvalididentifier.md) | <code>static</code> | (o: { keyId: string; platformName: string; layerId: string; }) =&gt; CompilerEvent |  |
-|  [Error\_VirtualCharacterKeysNotSupportedInKeymanWeb](./kmc-kmn.kmwcompilermessages.error_virtualcharacterkeysnotsupportedinkeymanweb.md) | <code>static</code> | (o: { line: number; }) =&gt; CompilerEvent |  |
-|  [Error\_VirtualKeysNotValidForMnemonicLayouts](./kmc-kmn.kmwcompilermessages.error_virtualkeysnotvalidformnemoniclayouts.md) | <code>static</code> | (o: { line: number; }) =&gt; CompilerEvent |  |
 |  [Hint\_TouchLayoutUsesUnsupportedGesturesDownlevel](./kmc-kmn.kmwcompilermessages.hint_touchlayoutusesunsupportedgesturesdownlevel.md) | <code>static</code> | (o: { keyId: string; }) =&gt; CompilerEvent |  |
 |  [HINT\_TouchLayoutUsesUnsupportedGesturesDownlevel](./kmc-kmn.kmwcompilermessages.hint_touchlayoutusesunsupportedgesturesdownlevel.md) | <code>static</code> | number |  |
-|  [Hint\_UnreachableKeyCode](./kmc-kmn.kmwcompilermessages.hint_unreachablekeycode.md) | <code>static</code> | (o: { line: number; key: string; }) =&gt; CompilerEvent |  |
-|  [Warn\_DontMixChiralAndNonChiralModifiers](./kmc-kmn.kmwcompilermessages.warn_dontmixchiralandnonchiralmodifiers.md) | <code>static</code> | () =&gt; CompilerEvent |  |
-|  [Warn\_EmbedJsFileMissing](./kmc-kmn.kmwcompilermessages.warn_embedjsfilemissing.md) | <code>static</code> | (o: { line: number; jsFilename: string; e: any; }) =&gt; CompilerEvent |  |
-|  [Warn\_ExtendedShiftFlagsNotSupportedInKeymanWeb](./kmc-kmn.kmwcompilermessages.warn_extendedshiftflagsnotsupportedinkeymanweb.md) | <code>static</code> | (o: { line: number; flags: string; }) =&gt; CompilerEvent |  |
-|  [Warn\_HelpFileMissing](./kmc-kmn.kmwcompilermessages.warn_helpfilemissing.md) | <code>static</code> | (o: { line: number; helpFilename: string; e: any; }) =&gt; CompilerEvent |  |
-|  [Warn\_OptionStoreNameInvalid](./kmc-kmn.kmwcompilermessages.warn_optionstorenameinvalid.md) | <code>static</code> | (o: { name: string; }) =&gt; CompilerEvent |  |
-|  [Warn\_TouchLayoutCustomKeyNotDefined](./kmc-kmn.kmwcompilermessages.warn_touchlayoutcustomkeynotdefined.md) | <code>static</code> | (o: { keyId: string; platformName: string; layerId: string; }) =&gt; CompilerEvent |  |
-|  [Warn\_TouchLayoutFontShouldBeSameForAllPlatforms](./kmc-kmn.kmwcompilermessages.warn_touchlayoutfontshouldbesameforallplatforms.md) | <code>static</code> | () =&gt; CompilerEvent |  |
-|  [Warn\_TouchLayoutMissingLayer](./kmc-kmn.kmwcompilermessages.warn_touchlayoutmissinglayer.md) | <code>static</code> | (o: { keyId: string; platformName: string; layerId: string; nextLayer: string; }) =&gt; CompilerEvent |  |
-|  [Warn\_TouchLayoutMissingRequiredKeys](./kmc-kmn.kmwcompilermessages.warn_touchlayoutmissingrequiredkeys.md) | <code>static</code> | (o: { layerId: string; platformName: string; missingKeys: string; }) =&gt; CompilerEvent |  |
-|  [Warn\_TouchLayoutSpecialLabelOnNormalKey](./kmc-kmn.kmwcompilermessages.warn_touchlayoutspeciallabelonnormalkey.md) | <code>static</code> | (o: { keyId: string; platformName: string; layerId: string; label: string; }) =&gt; CompilerEvent |  |
-|  [Warn\_TouchLayoutUnidentifiedKey](./kmc-kmn.kmwcompilermessages.warn_touchlayoutunidentifiedkey.md) | <code>static</code> | (o: { layerId: string; }) =&gt; CompilerEvent |  |
 

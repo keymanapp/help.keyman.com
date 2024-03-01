@@ -4,6 +4,8 @@
 
 ## KmnCompiler.run() method
 
+Compiles a .kmn file to .kmx, .kvk, and/or .js files. Returns an object containing binary artifacts on succes. The files are passed in by name, and the compiler will use callbacks as passed to the [KmnCompiler.init()](./kmc-kmn.kmncompiler.init.md) function to read any input files by disk.
+
 **Signature:**
 
 ```typescript
@@ -14,10 +16,12 @@ run(infile: string, outfile: string): Promise<KmnCompilerResult>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  infile | string |  |
-|  outfile | string |  |
+|  infile | string | Path to source file. Path will be parsed to find relative references in the .kmn file, such as icon or On Screen Keyboard file |
+|  outfile | string | Path to output file. The file will not be written to, but will be included in the result for use by [KmnCompiler.write()](./kmc-kmn.kmncompiler.write.md)<!-- -->. |
 
 **Returns:**
 
-Promise&lt;KmnCompilerResult&gt;
+Promise&lt;[KmnCompilerResult](./kmc-kmn.kmncompilerresult.md)<!-- -->&gt;
+
+Binary artifacts on success, null on failure.
 
