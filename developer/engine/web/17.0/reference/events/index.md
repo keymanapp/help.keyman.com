@@ -1,22 +1,22 @@
 ---
-title: Events - main index
+title: Events - Keyman Engine for Web
 ---
 
-A number of KeymanWeb events are exposed to allow the designer of a user
+A number of events are exposed to allow the designer of a user
 interface to control the appearance and behavior of user interface
 elements. Standard event-processing requires all arguments to be passed
 as an array (object) with named member variables.
 
-There are two components of the engine that specify events:  the primary
-`keyman` object and the primary on-screen keyboard object, accessible at
-`keyman.osk`.
+Two components of Keyman Engine for Web specify events: 
+* `keyman` object -- the main component
+* `keyman.osk` object -- the on-screen keyboard component
 
 Object events are handled in user code by passing the handler entry to
 the object, using *addEventListener()*.
 
 ---
 
-### Base-engine events (on `keyman`)
+### `keyman` events
 
 [`beforekeyboardchange`](keyman/beforekeyboardchange)
 :   Called when keyboard input language about to change.
@@ -56,21 +56,21 @@ the object, using *addEventListener()*.
 [`unloaduserinterface`](keyman/unloaduserinterface)
 :   Called when allow ui clean-up.
 
-For example, to define a user function to handle the KeymanWeb core
-kmw.keyboardchange event, include:
+For example, to define a user function to handle the KeymanWeb
+`keyboardchange` event, include:
 
 ``` typescript
 keyman.addEventListener('keyboardchange',
   function(p)
   {
-    ui.updateMenu(p['internalName'],p['languageCode']);
+    ui.updateMenu(p.internalName,p.languageCode);
   });
 
 ```
 
 ---
 
-### OSK events (on `keyman.osk`)
+### `keyman.osk` On Screen Keyboard events
 
 [`configclick`](osk/configclick)
 :   Called when allows the UI to present KeymanWeb configuration
@@ -97,14 +97,14 @@ keyman.addEventListener('keyboardchange',
 :   Called when OSK displayed.
 
 
-For example, to facilitate a user function to modify the user interface when the on-screen
+For example, to add an event handler that modifies the user interface when the on-screen
 keyboard is displayed:
 
 ``` typescript
 keyman.osk.addEventListener('show',
   function(p)
   {
-    ui.updateUI(p['x'],p['y'],p['userLocated']);
+    ui.updateUI(p.x, p.y, p.userLocated);
   });
 
 ```
