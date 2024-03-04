@@ -1,7 +1,7 @@
 ---
-title: kmw.loaduserinterface Event
+title: keyman.loaduserinterface Event
 ---
-  
+
 ## Summary
 
 Called to initiate the ui initialization process.

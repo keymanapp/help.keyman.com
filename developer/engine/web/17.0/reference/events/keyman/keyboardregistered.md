@@ -1,7 +1,7 @@
 ---
-title: kmw.keyboardregistered Event
+title: keyman.keyboardregistered Event
 ---
-  
+
 ## Summary
 
 Called when a keyboard 'stub' is processed (for listing as available

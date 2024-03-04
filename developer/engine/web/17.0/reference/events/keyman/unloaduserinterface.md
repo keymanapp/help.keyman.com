@@ -1,7 +1,7 @@
 ---
-title: kmw.unloaduserinterface Event
+title: keyman.unloaduserinterface Event
 ---
-  
+
 ## Summary
 
 Called when allow ui clean-up.
