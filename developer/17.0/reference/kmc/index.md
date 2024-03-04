@@ -12,4 +12,4 @@ kmc is the Keyman Developer command line compiler interface.
 # kmc Reference
 
 * [kmc Command Line Reference](cli/reference)
-<!-- * [kmc module API Reference](api) -->
+* [kmc module API Reference](api)
