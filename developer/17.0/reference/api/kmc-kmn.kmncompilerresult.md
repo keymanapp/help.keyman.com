@@ -17,7 +17,7 @@ export interface KmnCompilerResult extends KeymanCompilerResult
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [artifacts](./kmc-kmn.kmncompilerresult.artifacts.md) |  | [KmnCompilerArtifacts](./kmc-kmn.kmncompilerartifacts.md) |  |
-|  [displayMap?](./kmc-kmn.kmncompilerresult.displaymap.md) |  | Osk.PuaMap | _(Optional)_ |
-|  [extra](./kmc-kmn.kmncompilerresult.extra.md) |  | KmnCompilerResultExtra |  |
+|  [artifacts](./kmc-kmn.kmncompilerresult.artifacts.md) |  | [KmnCompilerArtifacts](./kmc-kmn.kmncompilerartifacts.md) | Internal in-memory build artifacts from a successful compilation. Caller can write these to disk with [KmnCompiler.write()](./kmc-kmn.kmncompiler.write.md) |
+|  [displayMap?](./kmc-kmn.kmncompilerresult.displaymap.md) |  | [Osk.PuaMap](./kmc-kmn.osk.puamap.md) | _(Optional)_ Mapping data for <code>&amp;displayMap</code>, intended for use by kmc-analyze |
+|  [extra](./kmc-kmn.kmncompilerresult.extra.md) |  | KmnCompilerResultExtra | Internal additional metadata used by secondary compile phases such as KmwCompiler, not intended for external use |
 

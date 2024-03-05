@@ -4,6 +4,8 @@
 
 ## KmnCompilerResult.displayMap property
 
+Mapping data for `&displayMap`<!-- -->, intended for use by kmc-analyze
+
 **Signature:**
 
 ```typescript

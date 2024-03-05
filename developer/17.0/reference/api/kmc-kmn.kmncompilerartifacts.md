@@ -4,7 +4,7 @@
 
 ## KmnCompilerArtifacts interface
 
-Internal in-memory result from a successful compilation
+Internal in-memory build artifacts from a successful compilation
 
 **Signature:**
 
@@ -17,7 +17,7 @@ export interface KmnCompilerArtifacts extends KeymanCompilerArtifacts
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [js?](./kmc-kmn.kmncompilerartifacts.js.md) |  | KeymanCompilerArtifactOptional | _(Optional)_ |
-|  [kmx?](./kmc-kmn.kmncompilerartifacts.kmx.md) |  | KeymanCompilerArtifactOptional | _(Optional)_ |
-|  [kvk?](./kmc-kmn.kmncompilerartifacts.kvk.md) |  | KeymanCompilerArtifactOptional | _(Optional)_ |
+|  [js?](./kmc-kmn.kmncompilerartifacts.js.md) |  | KeymanCompilerArtifactOptional | _(Optional)_ Javascript keyboard filedata and filename - installable into KeymanWeb, Keyman mobile products |
+|  [kmx?](./kmc-kmn.kmncompilerartifacts.kmx.md) |  | KeymanCompilerArtifactOptional | _(Optional)_ Binary keyboard filedata and filename - installable into Keyman desktop projects |
+|  [kvk?](./kmc-kmn.kmncompilerartifacts.kvk.md) |  | KeymanCompilerArtifactOptional | _(Optional)_ Binary on screen keyboard filedata and filename - installable into Keyman desktop projects alongside .kmx |
 
