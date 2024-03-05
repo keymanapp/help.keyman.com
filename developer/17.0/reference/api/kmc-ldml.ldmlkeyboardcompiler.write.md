@@ -4,6 +4,10 @@
 
 ## LdmlKeyboardCompiler.write() method
 
+Write artifacts from a successful compile to disk, via callbacks methods. The artifacts written may include:
+
+- .kmx file - binary keyboard used by Keyman on desktop platforms - .kvk file - binary on screen keyboard used by Keyman on desktop platforms - .js file - Javascript keyboard for web and touch platforms
+
 **Signature:**
 
 ```typescript
@@ -14,9 +18,11 @@ write(artifacts: LdmlKeyboardCompilerArtifacts): Promise<boolean>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  artifacts | LdmlKeyboardCompilerArtifacts |  |
+|  artifacts | LdmlKeyboardCompilerArtifacts | object containing artifact binary data to write out |
 
 **Returns:**
 
 Promise&lt;boolean&gt;
+
+true on success
 

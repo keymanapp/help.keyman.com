@@ -4,6 +4,8 @@
 
 ## KmnCompilerResult.artifacts property
 
+Internal in-memory build artifacts from a successful compilation. Caller can write these to disk with [KmnCompiler.write()](./kmc-kmn.kmncompiler.write.md)
+
 **Signature:**
 
 ```typescript

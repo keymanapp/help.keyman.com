@@ -4,6 +4,8 @@
 
 ## KmnCompilerArtifacts.kmx property
 
+Binary keyboard filedata and filename - installable into Keyman desktop projects
+
 **Signature:**
 
 ```typescript

@@ -4,6 +4,8 @@
 
 ## LdmlKeyboardCompiler class
 
+Compiles a LDML keyboard .xml file to a .kmx (KMXPlus), .kvk, and/or .js. The compiler does not read or write from filesystem or network directly, but relies on callbacks for all external IO.
+
 **Signature:**
 
 ```typescript
@@ -15,12 +17,7 @@ export declare class LdmlKeyboardCompiler implements KeymanCompiler
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [compile(source, postValidate)](./kmc-ldml.ldmlkeyboardcompiler.compile.md) |  | Transforms in-memory LDML keyboard xml file to an intermediate representation of a .kmx file. |
-|  [getUsetParser()](./kmc-ldml.ldmlkeyboardcompiler.getusetparser.md) |  | Construct or return a UnicodeSetParser, aka KmnCompiler |
-|  [init(callbacks, options)](./kmc-ldml.ldmlkeyboardcompiler.init.md) |  |  |
-|  [load(filename)](./kmc-ldml.ldmlkeyboardcompiler.load.md) |  | Loads a LDML Keyboard xml file and compiles into in-memory xml structures. |
-|  [loadTestData(filename)](./kmc-ldml.ldmlkeyboardcompiler.loadtestdata.md) |  | Loads a LDML Keyboard test data xml file and compiles into in-memory xml structures. |
-|  [run(inputFilename, outputFilename)](./kmc-ldml.ldmlkeyboardcompiler.run.md) |  |  |
-|  [validate(source)](./kmc-ldml.ldmlkeyboardcompiler.validate.md) |  | Validates that the LDML keyboard source file and lints. Actually just compiles the keyboard and returns <code>true</code> if everything is good... |
-|  [write(artifacts)](./kmc-ldml.ldmlkeyboardcompiler.write.md) |  |  |
+|  [init(callbacks, options)](./kmc-ldml.ldmlkeyboardcompiler.init.md) |  | Initialize the compiler, including loading the WASM host for uset parsing. Copies options. |
+|  [run(inputFilename, outputFilename)](./kmc-ldml.ldmlkeyboardcompiler.run.md) |  | Compiles a LDML keyboard .xml file to .kmx, .kvk, and/or .js files. Returns an object containing binary artifacts on succes. The files are passed in by name, and the compiler will use callbacks as passed to the [LdmlKeyboardCompiler.init()](./kmc-ldml.ldmlkeyboardcompiler.init.md) function to read any input files by disk. |
+|  [write(artifacts)](./kmc-ldml.ldmlkeyboardcompiler.write.md) |  | <p>Write artifacts from a successful compile to disk, via callbacks methods. The artifacts written may include:</p><p>- .kmx file - binary keyboard used by Keyman on desktop platforms - .kvk file - binary on screen keyboard used by Keyman on desktop platforms - .js file - Javascript keyboard for web and touch platforms</p> |
 

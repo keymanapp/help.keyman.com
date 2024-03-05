@@ -8,16 +8,11 @@
 
 |  Class | Description |
 |  --- | --- |
-|  [KMXPlusMetadataCompiler](./kmc-ldml.kmxplusmetadatacompiler.md) |  |
-|  [LdmlKeyboardCompiler](./kmc-ldml.ldmlkeyboardcompiler.md) |  |
-|  [LdmlKeyboardCompilerMessages](./kmc-ldml.ldmlkeyboardcompilermessages.md) |  |
-|  [LdmlKeyboardKeymanWebCompiler](./kmc-ldml.ldmlkeyboardkeymanwebcompiler.md) |  |
-|  [LdmlKeyboardVisualKeyboardCompiler](./kmc-ldml.ldmlkeyboardvisualkeyboardcompiler.md) |  |
-|  [TouchLayoutCompiler](./kmc-ldml.touchlayoutcompiler.md) |  |
+|  [LdmlKeyboardCompiler](./kmc-ldml.ldmlkeyboardcompiler.md) | Compiles a LDML keyboard .xml file to a .kmx (KMXPlus), .kvk, and/or .js. The compiler does not read or write from filesystem or network directly, but relies on callbacks for all external IO. |
 
 ## Interfaces
 
 |  Interface | Description |
 |  --- | --- |
-|  [LdmlCompilerOptions](./kmc-ldml.ldmlcompileroptions.md) |  |
+|  [LdmlCompilerOptions](./kmc-ldml.ldmlcompileroptions.md) | Options for the .xml LDML keyboard compiler |
 
