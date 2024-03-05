@@ -57,7 +57,11 @@ The following parameters are available:
 
 * `kmc analyze osk-rewrite-from-char-use -m mapping-file [infile...]`
 
-: Rewrites On Screen Keyboard files from source mappingWrites a
+: Rewrites On Screen Keyboard files from source mapping
+
+* `kmc message [message...]`
+
+: Describes one or more compiler messages in greater detail
 
 ## `kmc` global options
 
@@ -287,3 +291,32 @@ For more information on the purpose of `analyze osk-char-use` and
 For more information on the purpose of `analyze osk-char-use` and
 `analyze rewrite-osk-from-char-use`, see
 [`&displayMap`](/developer/language/reference/displaymap).
+
+## `kmc message` options
+
+One or more message identifiers can be specified for text or json formats.
+
+Message identifiers are 5 hex digit codes, optonally preceded by `KM`, for
+example `KM02001`.
+
+For Markdown format, all messages are always emitted, to `out-path`, and no
+messages can be specified on the command line, with one file per message, and
+index files also generated. The Markdown mode is used to generate the online
+documentation on help.keyman.com.
+
+* `-f, --format <format>`
+
+: Output format, one of:
+  * `text`: plain text output to console or file, of specified messages
+  * `json`: JSON formatted to console or file, of specified messages
+  * `markdown`: Markdown formatted text output, to a folder, of all messages
+
+* `-o, --out-path <out-path>`
+
+: Output folder name for Markdown format (required for Markdown), or optional
+  output filename for text and json formats.
+
+* `-a, --all-messages`
+
+: Emit descriptions for all messages (text, json formats)
+
