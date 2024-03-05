@@ -8,7 +8,7 @@
 
 <h1>Step 2: Creating Additional Files for the Package</h1>
 
-<p>You should create some additional files for a package. Below are a list of the typical files that you would create for a
+<p>You should create or select some additional files for a package. Below are a list of the typical files that you would create for or include in a
 package.</p>
 
 <dl>
@@ -20,9 +20,8 @@ package.</p>
     <aside>
       <h3>Tip</h3>
 
-      <p>As the package has not been installed at this stage, you should avoid using fonts that may only be available in the package.
-      You may find that it is necessary to create an image of the text if you want the readme to be in a language not common to
-      Windows.</p>
+      <p>As the package has not been installed at this stage, and you are using fonts that may not yet be available on the target device,
+      you should use CSS @font-face declarations to ensure that the text is readable on all devices.</p>
     </aside>
 
     <p>Create the HTML file in any HTML editor.</p>
@@ -71,7 +70,7 @@ package.</p>
       </ul>
     </aside>
 
-    <p>You should avoid including instructions for the use of Keyman Desktop itself - although a basic "click the Keyman icon
+    <p>You should avoid including instructions for the use of Keyman itself - although a basic "click the Keyman icon
     and choose Quick French" would be helpful.</p>
 
     <aside>
@@ -104,7 +103,7 @@ package.</p>
 
   <dd>
     <p>A font is the single most important item to include with a keyboard – if the characters of the language you are supporting are
-    not in fonts included with Windows. Installing fonts in Windows is tedious, so make sure that your users don't have to locate
+    not in fonts included with target operating systems. Installing fonts is tedious, so make sure that your users don't have to locate
     and install fonts themselves!</p>
 
     <p>.TTF, .OTF, and .TTC fonts will be installed by the package installer, and uninstalled when the package is uninstalled. A list
@@ -114,7 +113,7 @@ package.</p>
   <dt>Keyboards</dt>
 
   <dd>
-    <p>Add the .kmx compiled Keyman Desktop keyboards to the package. You can add multiple keyboards to the package, but be judicious.</p>
+    <p>Add the .kmx compiled Keyman keyboards to the package. You can add multiple keyboards to the package, but be judicious.</p>
 
     <aside>
       <h3>Tip</h3>
