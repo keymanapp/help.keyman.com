@@ -4,6 +4,8 @@
 
 ## WindowsPackageInstallerCompiler.run() method
 
+Compiles a .kps file to .exe Windows package installer file. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [WindowsPackageInstallerCompiler.init()](./kmc-package.windowspackageinstallercompiler.init.md) function to read any input files by disk.
+
 **Signature:**
 
 ```typescript
@@ -19,5 +21,7 @@ run(inputFilename: string, outputFilename?: string): Promise<WindowsPackageInsta
 
 **Returns:**
 
-Promise&lt;WindowsPackageInstallerCompilerResult&gt;
+Promise&lt;[WindowsPackageInstallerCompilerResult](./kmc-package.windowspackageinstallercompilerresult.md)<!-- -->&gt;
+
+Binary artifacts on success, null on failure.
 

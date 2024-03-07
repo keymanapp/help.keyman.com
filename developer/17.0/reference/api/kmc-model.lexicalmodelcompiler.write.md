@@ -4,6 +4,10 @@
 
 ## LexicalModelCompiler.write() method
 
+Write artifacts from a successful compile to disk, via callbacks methods. The artifacts written may include:
+
+- .model.js file - Javascript lexical model for web and touch platforms
+
 **Signature:**
 
 ```typescript
@@ -14,9 +18,11 @@ write(artifacts: LexicalModelCompilerArtifacts): Promise<boolean>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  artifacts | LexicalModelCompilerArtifacts |  |
+|  artifacts | [LexicalModelCompilerArtifacts](./kmc-model.lexicalmodelcompilerartifacts.md) | object containing artifact binary data to write out |
 
 **Returns:**
 
 Promise&lt;boolean&gt;
+
+always returns true
 

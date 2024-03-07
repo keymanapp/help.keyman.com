@@ -4,6 +4,8 @@
 
 ## KeyboardInfoCompiler.init() method
 
+Initialize the compiler. Copies options.
+
 **Signature:**
 
 ```typescript
@@ -14,10 +16,12 @@ init(callbacks: CompilerCallbacks, options: KeyboardInfoCompilerOptions): Promis
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  callbacks | CompilerCallbacks |  |
-|  options | [KeyboardInfoCompilerOptions](./kmc-keyboard-info.keyboardinfocompileroptions.md) |  |
+|  callbacks | CompilerCallbacks | Callbacks for external interfaces, including message reporting and file io |
+|  options | [KeyboardInfoCompilerOptions](./kmc-keyboard-info.keyboardinfocompileroptions.md) | Compiler options |
 
 **Returns:**
 
 Promise&lt;boolean&gt;
+
+false if initialization fails
 

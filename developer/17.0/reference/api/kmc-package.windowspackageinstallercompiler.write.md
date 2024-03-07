@@ -4,6 +4,10 @@
 
 ## WindowsPackageInstallerCompiler.write() method
 
+Write artifacts from a successful compile to disk, via callbacks methods. The artifacts written may include:
+
+- .exe file - binary Windows package installer executable file
+
 **Signature:**
 
 ```typescript
@@ -14,9 +18,11 @@ write(artifacts: WindowsPackageInstallerCompilerArtifacts): Promise<boolean>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  artifacts | WindowsPackageInstallerCompilerArtifacts |  |
+|  artifacts | [WindowsPackageInstallerCompilerArtifacts](./kmc-package.windowspackageinstallercompilerartifacts.md) | object containing artifact binary data to write out |
 
 **Returns:**
 
 Promise&lt;boolean&gt;
+
+true on success
 

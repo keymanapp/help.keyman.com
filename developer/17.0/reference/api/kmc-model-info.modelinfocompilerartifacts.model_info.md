@@ -4,6 +4,8 @@
 
 ## ModelInfoCompilerArtifacts.model\_info property
 
+Binary model info filedata and filename - used by keyman.com
+
 **Signature:**
 
 ```typescript

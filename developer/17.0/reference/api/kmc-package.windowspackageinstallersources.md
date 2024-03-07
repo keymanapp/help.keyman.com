@@ -4,6 +4,8 @@
 
 ## WindowsPackageInstallerSources interface
 
+Sources and metadata for the Windows package installer compiler
+
 **Signature:**
 
 ```typescript

@@ -4,6 +4,8 @@
 
 ## ModelInfoCompiler.init() method
 
+Initialize the compiler. Copies options.
+
 **Signature:**
 
 ```typescript
@@ -14,10 +16,12 @@ init(callbacks: CompilerCallbacks, options: ModelInfoCompilerOptions): Promise<b
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  callbacks | CompilerCallbacks |  |
-|  options | [ModelInfoCompilerOptions](./kmc-model-info.modelinfocompileroptions.md) |  |
+|  callbacks | CompilerCallbacks | Callbacks for external interfaces, including message reporting and file io |
+|  options | [ModelInfoCompilerOptions](./kmc-model-info.modelinfocompileroptions.md) | Compiler options |
 
 **Returns:**
 
 Promise&lt;boolean&gt;
+
+false if initialization fails
 
