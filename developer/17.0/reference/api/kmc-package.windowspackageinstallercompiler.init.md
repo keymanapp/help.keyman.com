@@ -4,6 +4,8 @@
 
 ## WindowsPackageInstallerCompiler.init() method
 
+Initialize the compiler. Copies options.
+
 **Signature:**
 
 ```typescript
@@ -14,10 +16,12 @@ init(callbacks: CompilerCallbacks, options: WindowsPackageInstallerCompilerOptio
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  callbacks | CompilerCallbacks |  |
-|  options | WindowsPackageInstallerCompilerOptions |  |
+|  callbacks | CompilerCallbacks | Callbacks for external interfaces, including message reporting and file io |
+|  options | [WindowsPackageInstallerCompilerOptions](./kmc-package.windowspackageinstallercompileroptions.md) | Compiler options |
 
 **Returns:**
 
 Promise&lt;boolean&gt;
+
+false if initialization fails
 

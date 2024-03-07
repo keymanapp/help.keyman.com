@@ -4,6 +4,8 @@
 
 ## KeyboardInfoCompilerResult.artifacts property
 
+Internal in-memory build artifacts from a successful compilation. Caller can write these to disk with [KeyboardInfoCompiler.write()](./kmc-keyboard-info.keyboardinfocompiler.write.md)
+
 **Signature:**
 
 ```typescript

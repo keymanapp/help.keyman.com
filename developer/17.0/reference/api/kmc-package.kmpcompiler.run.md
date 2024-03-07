@@ -4,6 +4,8 @@
 
 ## KmpCompiler.run() method
 
+Compiles a .kps file to .kmp file. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [KmpCompiler.init()](./kmc-package.kmpcompiler.init.md) function to read any input files by disk.
+
 **Signature:**
 
 ```typescript
@@ -19,5 +21,7 @@ run(inputFilename: string, outputFilename?: string): Promise<KmpCompilerResult>;
 
 **Returns:**
 
-Promise&lt;KmpCompilerResult&gt;
+Promise&lt;[KmpCompilerResult](./kmc-package.kmpcompilerresult.md)<!-- -->&gt;
+
+Binary artifacts on success, null on failure.
 
