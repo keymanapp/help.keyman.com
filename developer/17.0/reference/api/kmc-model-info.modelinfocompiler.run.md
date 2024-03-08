@@ -4,7 +4,9 @@
 
 ## ModelInfoCompiler.run() method
 
-Builds .model\_info file with metadata from the model and package source file. This function is intended for use within the lexical-models repository. While many of the parameters could be deduced from each other, they are specified here to reduce the number of places the filenames are constructed.
+Builds .model\_info file with metadata from the model and package source file. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [ModelInfoCompiler.init()](./kmc-model-info.modelinfocompiler.init.md) function to read any input files by disk.
+
+This function is intended for use within the lexical-models repository. While many of the parameters could be deduced from each other, they are specified here to reduce the number of places the filenames are constructed.
 
 **Signature:**
 
@@ -22,4 +24,6 @@ run(inputFilename: string, outputFilename?: string): Promise<ModelInfoCompilerRe
 **Returns:**
 
 Promise&lt;[ModelInfoCompilerResult](./kmc-model-info.modelinfocompilerresult.md)<!-- -->&gt;
+
+Binary artifacts on success, null on failure.
 

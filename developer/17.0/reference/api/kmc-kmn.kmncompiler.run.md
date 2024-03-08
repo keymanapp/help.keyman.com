@@ -4,7 +4,7 @@
 
 ## KmnCompiler.run() method
 
-Compiles a .kmn file to .kmx, .kvk, and/or .js files. Returns an object containing binary artifacts on succes. The files are passed in by name, and the compiler will use callbacks as passed to the [KmnCompiler.init()](./kmc-kmn.kmncompiler.init.md) function to read any input files by disk.
+Compiles a .kmn file to .kmx, .kvk, and/or .js files. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [KmnCompiler.init()](./kmc-kmn.kmncompiler.init.md) function to read any input files by disk.
 
 **Signature:**
 

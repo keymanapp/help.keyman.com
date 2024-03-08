@@ -4,6 +4,8 @@
 
 ## KeyboardInfoCompilerOptions.sources property
 
+Description of sources and metadata required to build a .keyboard\_info file
+
 **Signature:**
 
 ```typescript
