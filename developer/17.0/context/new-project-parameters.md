@@ -2,7 +2,8 @@
 title: New Project Parameters Dialog
 ---
 
-![New Project Parameters dialog](/cdn/dev/img/developer/120/ui/frmNewProjectParameters.efdd6549232a56ad84ef7571366b5801.png)
+![New Project Parameters dialog](/cdn/dev/img/developer/120/ui/frmNewProjectParameters.png)
+
 
 Allows you to quickly fill in common parameters for a new keyboard
 project, adding keyboard, package, documentation and metadata files,

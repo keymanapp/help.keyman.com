@@ -2,7 +2,8 @@
 title: Startup Window
 ---
 
-![Startup window](/cdn/dev/img/developer/100/ui/frmStartup.4ad8404bf7b451ff4cca860896142486.png)
+![Startup window](/cdn/dev/img/developer/100/ui/frmStartup.png)
+
 
 When you start <kbd>Keyman Developer</kbd>, the
 splash screen above is displayed for a short period of time while the

@@ -2,7 +2,8 @@
 title: New Project Dialog
 ---
 
-![New Project dialog](/cdn/dev/img/developer/120/ui/frmNewProject.75cfc2a2d8f00b2790937cf3729dddd7.png)
+![New Project dialog](/cdn/dev/img/developer/120/ui/frmNewProject.png)
+
 
 Creates a new keyboard or lexical model project, optionally from a template or by importing from another source.
 
