@@ -2,7 +2,7 @@
 title: New Lexical Model Project Parameters Dialog
 ---
 
-![New Lexical Model Project Parameters dialog](/cdn/deploy/img/developer/120/ui/frmNewLMProjectParameters.9f0c6da7d4898fdaec60bb6a88da84d7.png)
+![New Lexical Model Project Parameters dialog](/cdn/dev/img/developer/120/ui/frmNewLMProjectParameters.9f0c6da7d4898fdaec60bb6a88da84d7.png)
 
 Allows you to quickly fill in common parameters for a new lexical model
 project, adding author name, model name, version, and language

@@ -64,8 +64,7 @@ section. The fields on the tab are:
 
 * **Languages**
 : Because the language information in the .kmn source is deprecated, the
-  "Languages" section is required. Each language listed here is a [BCP 47 language
-  tag](../reference/bcp-47). Use the **Add** button to
+  "Languages" section is required. Each language listed here is a [BCP 47 language tag](../reference/bcp-47). Use the **Add** button to
   bring up the "Select BCP 47 Tag" dialog. When Keyman installs the keyboard
   package, it will associate the keyboard with the language(s) you select here.
   Required.

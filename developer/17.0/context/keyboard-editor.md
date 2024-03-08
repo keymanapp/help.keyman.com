@@ -138,7 +138,7 @@ There are two ways to assign characters to the keys:
 ## Hint
 
 To add the character to a key with existing characters, hold
-<span class="kbd">Ctrl</span> while dropping it onto the key.
+<kbd>Ctrl</kbd> while dropping it onto the key.
 
 Note that any key that does not have a character assigned to it will
 output what the selected Windows layout specifies.
@@ -159,7 +159,7 @@ Display 102nd Key (as on European keyboards)
     the backslash key will move down one row, but not otherwise change
     in behaviour.
 
-You can press and release <span class="kbd">Ctrl</span> to select
+You can press and release <kbd>Ctrl</kbd> to select
 another key on the keyboard using your keyboard.
 
 ![Keyboard Editor - Layout tab, Code
@@ -175,8 +175,7 @@ editor shown within this view.
 
 ## On-Screen tab
 
-![Keyboard Editor - On-Screen
-tab](/cdn/dev/img/developer/100/ui/frmKeymanWizard_OnScreenKeyboard.png)
+![Keyboard Editor - On-Screen tab](/cdn/dev/img/developer/100/ui/frmKeymanWizard_OnScreenKeyboard.png)
 
 This tab allows you to edit the visual representation of your keyboard
 layout. The content on this tab is stored in the .kvks file associated
@@ -243,8 +242,7 @@ Auto-fill underlying layout
 
 ## Touch Layout tab
 
-![Keyboard Editor - Touch Layout tab, Design
-view](/cdn/dev/img/developer/100/ui/frmKeymanWizard_TouchLayout_Design.png)
+![Keyboard Editor - Touch Layout tab, Design view](/cdn/dev/img/developer/100/ui/frmKeymanWizard_TouchLayout_Design.png)
 
 The Touch Layout tab is used to create the visible representation of the
 keyboard layout for touch devices. It works similarly to the On Screen
@@ -263,8 +261,7 @@ including iPhone and iPad, in different orientations, to allow you to
 visualize the keyboard layout before you load it onto a device. The
 following image shows all aspects of the touch design view.
 
-![Keyboard Editor - Touch Layout tab, Design view
-closeup](/cdn/dev/img/developer/100/ui/frmKeymanWizard_TouchLayout_Design_2.png)
+![Keyboard Editor - Touch Layout tab, Design view closeup](/cdn/dev/img/developer/100/ui/frmKeymanWizard_TouchLayout_Design_2.png)
 
 ### Top bar controls
 
@@ -470,17 +467,14 @@ dragged between the main keyboard area and the long press area. The bar
 below the long press area contains the corresponding controls for the
 long press keys.
 
-![Keyboard Editor - Touch Layout tab, Code
-view](/cdn/dev/img/developer/100/ui/frmKeymanWizard_TouchLayout_Code.png)
+![Keyboard Editor - Touch Layout tab, Code view](/cdn/dev/img/developer/100/ui/frmKeymanWizard_TouchLayout_Code.png)
 
 The Code view allows you to edit the JSON source of the touch layout
 file. This makes certain operations simpler, such as batched rearranging
 of keys, or using another text editor to make bulk changes. The Code
 view uses the standard [editor](editor).
 
-The format of the layout file is described in [Creating a touch keyboard
-layout
-guide](../guides/develop/creating-a-touch-keyboard-layout-for-amharic-the-nitty-gritty).
+The format of the layout file is described in [Creating a touch keyboard layout guide](../guides/develop/creating-a-touch-keyboard-layout-for-amharic-the-nitty-gritty).
 
 ## Icon tab
 
@@ -551,19 +545,17 @@ keys to produce characters.
 
 ## Include Codes tab
 
-This tab allows you to edit the [named
-constants](/developer/language/guide/constants) for the keyboard.
+This tab allows you to edit the [named constants](/developer/language/guide/constants) for the keyboard.
 
 ## Build tab
 
-![Keyboard Editor - Build
-tab](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Build.png)
+![Keyboard Editor - Build tab](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Build.png)
 
 A set of common controls is across the top of this tab:
 
 Compile Keyboard
 :   You can compile the keyboard for testing and installation by
-    clicking the <span class="guibutton">Compile</span> button, or
+    clicking the <kbd>Compile</kbd> button, or
     selecting Keyboard, Compile Keyboard. This will compile the keyboard
     for all the selected Targets from the Details tab.
 
@@ -626,5 +618,4 @@ web page.
 The Send to email function makes it easier to open the addresses on your
 mobile device without having to enter them manually.
 
-Learn more about [testing on the web and mobile
-devices](../guides/test/).
+Learn more about [testing on the web and mobile devices](../guides/test/).

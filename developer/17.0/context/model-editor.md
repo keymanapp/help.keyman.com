@@ -21,7 +21,7 @@ editor are:
 The following image shows the first tab of the editor, the Details tab.
 Changes made to this tab are reflected immediately in the Source tab.
 
-![Model Editor - Details tab](/cdn/deploy/img/developer/130/ui/frmModelEditor_Details.ca5e794b04209c60854111b86dffc2eb.png)
+![Model Editor - Details tab](/cdn/dev/img/developer/130/ui/frmModelEditor_Details.ca5e794b04209c60854111b86dffc2eb.png)
 
 The fields here have corresponding definitions in the [.model.ts source file](../reference/file-types/model-ts), which can be seen in the
 **Source** tab:
@@ -69,7 +69,7 @@ accept UTF-16 encoded files, but this encoding is not recommended as it
 is more difficult to manage in version control systems such as Git,
 which is the system used by the Keyman Cloud lexical model repository.
 
-![Model Editor - Wordlist tab - Design view](/cdn/deploy/img/developer/130/ui/frmModelEditor_Wordlist_Design.3d5806a162509669143d8d9076d35435.png)
+![Model Editor - Wordlist tab - Design view](/cdn/dev/img/developer/130/ui/frmModelEditor_Wordlist_Design.3d5806a162509669143d8d9076d35435.png)
 
 Every line of the tab-separated format file is shown here, and can be
 edited directly. For most wordlists, it will be more effective to use an
@@ -81,7 +81,7 @@ The **Sort by frequency** button has no effect on the functioning of the
 wordlist, but can help you, the editor, by showing more common words
 earlier in the list.
 
-![Model Editor - Wordlist tab - Code view](/cdn/deploy/img/developer/130/ui/frmModelEditor_Wordlist_Code.8949586895480db1efe81e3bf2428c5f.png)
+![Model Editor - Wordlist tab - Code view](/cdn/dev/img/developer/130/ui/frmModelEditor_Wordlist_Code.8949586895480db1efe81e3bf2428c5f.png)
 
 Note: The wordlist Code editor will accept the Tab key to insert a Tab
 character. In other code editors in Keyman Developer, the Tab key
@@ -89,7 +89,7 @@ inserts spaces.
 
 ## Source tab
 
-![Model Editor - Source tab](/cdn/deploy/img/developer/130/ui/frmModelEditor_Source.a2acf54f09987aec8f01d0e4c3090a53.png)
+![Model Editor - Source tab](/cdn/dev/img/developer/130/ui/frmModelEditor_Source.a2acf54f09987aec8f01d0e4c3090a53.png)
 
 This tab shows the source view of the model, written in the Typescript
 programming language. The format of this file is documented in the
@@ -97,7 +97,7 @@ programming language. The format of this file is documented in the
 
 ## Build tab
 
-![Model Editor - Build tab](/cdn/deploy/img/developer/130/ui/frmModelEditor_Build.ba427b3deb25d34951cf0f7001ea1d8b.png)
+![Model Editor - Build tab](/cdn/dev/img/developer/130/ui/frmModelEditor_Build.ba427b3deb25d34951cf0f7001ea1d8b.png)
 
 A set of common controls is across the top of this tab:
 

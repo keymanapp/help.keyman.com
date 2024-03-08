@@ -2,19 +2,17 @@
 title: Using the Character Map
 ---
   
-![Character Map
-tool](/cdn/dev/img/developer/100/ui/frmCharacterMapNew.png)
+![Character Map tool](/cdn/dev/img/developer/100/ui/frmCharacterMapNew.png)
 
 To display the Character Map:
 
--   Press <span class="kbd">Ctrl&gt;</span>+<span class="kbd" li="">
-    </span>
--   Select View \| Character Map
+-   Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>c</kbd>
+-   Select <kbd>View</kbd> &#8594; <kbd>Character Map</kbd>
 
 The Character Map will appear by default docked to the right hand side
 of the IDE but can be undocked or re-docked on any side of the window.
 
-### <span id="id579283"></span>Using the Character Map
+### Using the Character Map
 
 To insert a character:
 
@@ -26,14 +24,13 @@ To insert a character:
     -   double-clicking on the character, or
     -   right-clicking on the character and selecting Insert Character.
 
-    ### Note
-
+    > ### Note
     If the Insert Mode is set to Code or Name, pressing Enter or
     double-clicking on the character will insert the Unicode code or
     name of the character, not the character itself. These options are
     most useful when writing or editing keyboard source files (.KMN).
 
-### <span id="id579313"></span>Insert Modes
+### Insert Modes
 
 There are three insert modes: Code, Character and Name:
 
@@ -47,7 +44,7 @@ To change the insert mode:
 2.  Highlight the Insert Mode submenu.
 3.  Choose the desired mode from the Insert Mode submenu.
 
-### <span id="id579387"></span>Character Map Options
+### Character Map Options
 
 When you right click on the Character Map, the following menu options
 are displayed:
@@ -77,7 +74,7 @@ Display Quality
     -   Antialiased - uses the Windows standard font smoothing
     -   ClearType - uses the Windows ClearType font smoothing method
 
-### <span id="id579511"></span>Characters and Fonts
+### Characters and Fonts
 
 When a character is not available in the selected font, the Character
 Map will fall back to Code2000, Code2001, Code2002, Arial Unicode MS and
@@ -89,10 +86,9 @@ resort, will show a square box if no suitable font can be found.
 If a character is not displayed from other than the selected font, it
 will be shown in blue instead of black.
 
-### <span id="id579525"></span>Filtering
+### Filtering
 
-![Character Map Filter
-dialog](/cdn/dev/img/developer/100/ui/frmCharacterMapFilter.png)
+![Character Map Filter dialog](/cdn/dev/img/developer/100/ui/frmCharacterMapFilter.png)
 
 The Character Map can be filtered by Unicode character name or character
 range. Filters can be entered in the Filter By field at the bottom of
@@ -117,28 +113,26 @@ finishing Unicode value.
 
 The filtering options for Unicode Character Names are:
 
-### <span id="id579535"></span>Examples
+### Examples
 
-|                          |                                                                                                                                                                                                    |
-|--------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Filter                   | Result                                                                                                                                                                                             |
-| `LATIN CAPITAL LETTER A` | Finds all Latin capital A variations                                                                                                                                                               |
-| `LATIN * LETTER A`       | finds all Latin capital and lower case A variations                                                                                                                                                |
-| `LATIN * LETTER [AEIOU]` | finds all all Latin A,E,I,O or U vowel combinations                                                                                                                                                |
-| `<Thai`                  | finds the Thai Unicode block                                                                                                                                                                       |
-| `>LAO`                   | finds all characters with names starting in "LAO" in the current font                                                                                                                              |
+|                          |                         |
+|--------------------------|-------------------------|
+| Filter                   | Result                  |
+| `LATIN CAPITAL LETTER A` | Finds all Latin capital A variations         |
+| `LATIN * LETTER A`       | finds all Latin capital and lower case A variations |
+| `LATIN * LETTER [AEIOU]` | finds all all Latin A,E,I,O or U vowel combinations |
+| `<Thai`                  | finds the Thai Unicode block        |
+| `>LAO`                   | finds all characters with names starting in "LAO" in the current   |
 | `YI_`                    | finds all characters with names starting in "YI " - you must use `_` (underscore) and not ` ` (space) at the end of a search string. Note that without the `_`, this search also matches YIN_YANG. |
-| `LATIN * LETTER A$`      | finds only "a" and "A"                                                                                                                                                                             |
-| `1000-119F`              | finds all characters between U+1000 and U+119F (inclusive) - the Myanmar alphabet in this case                                                                                                     |
+| `LATIN * LETTER A$`      | finds only "a" and "A"             |
+| `1000-119F`              | finds all characters between U+1000 and U+119F (inclusive) - the Myanmar alphabet in this     |
 
-### <span id="id579672"></span>Goto
+### Goto
 
 The Goto tool can be used to move directly to a specific Unicode
 character or value.
 
-1.  Right click on a character and select Goto.  
-    The <span class="guilabel">Enter Unicode character value or
-    name</span> dialog box will be displayed:
+1.  Right click on a character and select Goto. The <kbd>Enter Unicode character value or name</kbd> dialog box will be displayed:
 2.  Enter the Unicode character value - e.g. `006B` or `U+006B`  
     OR enter the start of the character name, e.g. `LAO_LETTER` will go
     to **LAO_LETTER_KO**, being the first character that matches. You

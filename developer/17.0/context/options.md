@@ -4,7 +4,7 @@ title: Options Dialog
 
 ## General tab
 
-![Options dialog - General tab](/cdn/deploy/img/developer/120/ui/frmOptions_General.1c06f87249deec5c523683e2c591f390.png)
+![Options dialog - General tab](/cdn/dev/img/developer/120/ui/frmOptions_General.1c06f87249deec5c523683e2c591f390.png)
 
 The following options are configurable in TIKE in the
 <kbd>General</kbd> tab:
@@ -51,7 +51,7 @@ SMTP settings
 
 ## Editor tab
 
-![Options dialog - Editor tab](/cdn/deploy/img/developer/120/ui/frmOptions_Editor.d06167e9dfbd868a8f0c6efb02f0f142.png)
+![Options dialog - Editor tab](/cdn/dev/img/developer/120/ui/frmOptions_Editor.d06167e9dfbd868a8f0c6efb02f0f142.png)
 
 Use tab character
 :   Sets whether to use the Tab character or spaces for indents.
@@ -77,7 +77,7 @@ Editor theme
 
 ## Debugger tab
 
-![Options dialog - Debugger tab](/cdn/deploy/img/developer/120/ui/frmOptions_Debugger.e08156c683984826c1ed3f3e131c87de.png)
+![Options dialog - Debugger tab](/cdn/dev/img/developer/120/ui/frmOptions_Debugger.e08156c683984826c1ed3f3e131c87de.png)
 
 Enable test window (from version 5.0)
 :   Enables the Keyman 5-style Test window instead of the debugger.
@@ -97,7 +97,7 @@ Automatically recompile if no debug information available
 
 ## Character Map tab
 
-![Options dialog - Character Map tab](/cdn/deploy/img/developer/120/ui/frmOptions_CharacterMap.63fcb20b6e0b39eb3ccaab04676df102.png)
+![Options dialog - Character Map tab](/cdn/dev/img/developer/120/ui/frmOptions_CharacterMap.63fcb20b6e0b39eb3ccaab04676df102.png)
 
 Find character under cursor automatically
 :   The character beneath the cursor in the edit window will be
