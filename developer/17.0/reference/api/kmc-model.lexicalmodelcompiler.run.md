@@ -4,6 +4,8 @@
 
 ## LexicalModelCompiler.run() method
 
+Compiles a .model.ts file to .model.js. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [LexicalModelCompiler.init()](./kmc-model.lexicalmodelcompiler.init.md) function to read any input files by disk.
+
 **Signature:**
 
 ```typescript
@@ -19,5 +21,7 @@ run(inputFilename: string, outputFilename?: string): Promise<LexicalModelCompile
 
 **Returns:**
 
-Promise&lt;LexicalModelCompilerResult&gt;
+Promise&lt;[LexicalModelCompilerResult](./kmc-model.lexicalmodelcompilerresult.md)<!-- -->&gt;
+
+Binary artifacts on success, null on failure.
 
