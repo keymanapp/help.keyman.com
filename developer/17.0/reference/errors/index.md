@@ -1,4 +1,4 @@
 ---
-title: error
+title: Errors
 redirect: ../messages/index.php
 ---
