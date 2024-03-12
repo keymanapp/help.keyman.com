@@ -17,7 +17,6 @@ title: Compiler Messages Reference for @keymanapp/kmc-ldml
 [KM0000B](km0000b) | `ERROR_GestureKeyNotFoundInKeyBag` | Key '&lt;param&gt;' not found in key bag, referenced from other '&lt;param&gt;' in &lt;param&gt;
 [KM0000D](km0000d) | `ERROR_InvalidVersion` | Version number '&lt;param&gt;' must be a semantic version format string\.
 [KM0000E](km0000e) | `ERROR_MustBeAtLeastOneLayerElement` | The source file must contain at least one layer element\.
-[KM0000F](km0000f) | `FATAL_SectionCompilerFailed` | This is an internal error; the message will vary
 [KM00010](km00010) | `ERROR_DisplayIsRepeated` | display  has more than one display entry\.
 [KM00011](km00011) | `ERROR_KeyMissingToGapOrSwitch` | key id='&lt;param&gt;' must have either output=, gap=, or layerId=\.
 [KM00012](km00012) | `ERROR_ExcessHardware` | layers formId=&lt;param&gt;: Can only have one non\-'touch' element
