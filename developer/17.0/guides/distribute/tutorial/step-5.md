@@ -4,7 +4,7 @@ title: Step 5: Shortcuts
 
 Click on the Shortcuts tab in the Package Editor.
 
-![](/cdn/deploy/img/developer/100/tutorial_distribute_keyboard_shortcuts.e09c6a6a217607c38b0f67563482f649.png)
+![](/cdn/dev/img/developer/100/tutorial_distribute_keyboard_shortcuts.png)
 
 While it may be a good idea to include Start Menu shortcuts for your
 package, on recent versions of Windows these are not very visible to end
@@ -26,7 +26,7 @@ Configuration. Adding an uninstall shortcut to the package adds
 confusion to the Start Menu search on Windows, and is not compatible
 with macOS keyboards.
 
-Click <kbd>New</kbd> to add a new shortcut to the
+Click **New** to add a new shortcut to the
 package. Enter a description for the shortcut, and select the program or
 file to start from the Program list. Four predefined program entries
 (Start Product), (Product Configuration), (Product Help) and (About

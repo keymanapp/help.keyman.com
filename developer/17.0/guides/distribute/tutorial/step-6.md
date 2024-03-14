@@ -2,19 +2,18 @@
 title: Step 6: Compiling, testing and distributing a Package
 ---
 
-In the Package Editor, click on the
-<kbd>Compile</kbd> tab.
+In the Package Editor, click on the **Compile** tab.
 
-![](/cdn/deploy/img/developer/100/tutorial_distribute_keyboard_compile.92f724568ce3ce5fba6aa7b23038f03d.png)
+![](/cdn/dev/img/developer/100/tutorial_distribute_keyboard_compile.png)
 
-Click <kbd>Compile Package</kbd> to compile the
+Click **Compile Package** to compile the
 package into a .kmp file. Compiling takes all the files listed for the
 package, compresses them (using a .ZIP-compatible format) and adds the
 package information, all into a single file. If any files are not
 available, an error will be listed in the Messages window.
 
 After compiling, you can test the package installation in Keyman
-Desktop, by clicking <kbd>Install Package</kbd>. You
+Desktop, by clicking **Install Package**. You
 should test that all the keyboards and fonts install successfully, that
 the Readme and Welcome files are displayed during the install, and that
 the documentation is accessible to the end user. Make sure that the On

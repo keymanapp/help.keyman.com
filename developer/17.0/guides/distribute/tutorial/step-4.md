@@ -5,7 +5,7 @@ title: Step 4: Filling in package details
 Click on the Details tab in the Package Editor. You should fill in as
 many details as you can on this page.
 
-![](/cdn/deploy/img/developer/100/tutorial_distribute_keyboard_details.6ca74e6645fb41e1f0a3d6e75e0f4fb2.png)
+![](/cdn/dev/img/developer/100/tutorial_distribute_keyboard_details.png)
 
 Package Name
 
@@ -28,7 +28,7 @@ Version
     the first part and set the second part to, e.g. `2.0`; when making a
     bug fix or a minor update, increment the second part, e.g. `1.1`.
 
-    Version numbers should be in the form `major.minor[.subversion]`.
+Version numbers should be in the form `major.minor[.subversion]`.
     Subversion is optional but is helpful for small bug fix releases.
     Each of the sections of the version should be an integer. Keyman
     Desktop does integer comparisons on the version numbers, so, for

@@ -24,10 +24,10 @@ A great package will also:
 Packages uploaded to the Tavultesoft website will get basic icon ratings
 reflecting their ease of install/use:
 
--   ![](/cdn/deploy/img/developer/100/tutorial_package_includesfonts.d75ce2fb0b5bb14e2da88a020c13dce6.gif) includes fonts
--   ![](/cdn/deploy/img/developer/100/tutorial_package_includesdocs.244c5f35c68f63b112de68be020d8824.gif) includes documentation
--   ![](/cdn/deploy/img/developer/100/tutorial_package_includesosk.21921655b0a453479beec722d163e83e.gif) includes on screen keyboards
--   ![](/cdn/deploy/img/developer/100/tutorial_package_includeswelcome.f15b42fff1feb2f2fb86126fcd9508dc.gif) includes welcome.htm
+-   ![](/cdn/dev/img/developer/100/tutorial_package_includesfonts.gif) includes fonts
+-   ![](/cdn/dev/img/developer/100/tutorial_package_includesdocs.gif) includes documentation
+-   ![](/cdn/dev/img/developer/100/tutorial_package_includesosk.gif) includes on screen keyboards
+-   ![](/cdn/dev/img/developer/100/tutorial_package_includeswelcome.gif) includes welcome.htm
 
 In general, the more icons that a package earns, the easier that end
 users will find it to start using.

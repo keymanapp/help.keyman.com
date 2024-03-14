@@ -123,7 +123,5 @@ Upload the web page to your public facing website. Once done, you can
 install the keyboard package onto your mobile devices by following these
 steps:
 
--   [Installing custom keyboards to your iPhone or
-    iPad](install-kmp-ios)
--   [Installing custom keyboards to your Android
-    device](install-kmp-android)
+-   [Installing custom keyboards to your iPhone or iPad](install-kmp-ios)
+-   [Installing custom keyboards to your Android device](install-kmp-android)
