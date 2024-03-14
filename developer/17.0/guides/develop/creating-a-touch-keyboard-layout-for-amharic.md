@@ -68,10 +68,10 @@ layout keyboard.
 
 Where a key did not occur in the original layout and does not correspond
 to a desktop layout key, identifiers will usually be something like
-T\_&lt;name&gt; where &lt;name&gt; will typically be a Unicode character
+T_&lt;name&gt; where &lt;name&gt; will typically be a Unicode character
 name, or an obvious contraction of it. Note that this is just a rule of
 thumb and key identifiers can be anything that makes sense. Such keys
-are distinct from the K\_&lt;name&gt; identifiers that are associated
+are distinct from the K_&lt;name&gt; identifiers that are associated
 with physical keys, and should normally have a mapping rule added
 explicitly to the mapping program. If no rule is added, output will
 default to the keycap text, but this is not recommended.

@@ -52,10 +52,10 @@ part of the Quick French keyboard).
 + "a" > "ä"
 ```
 
-In this rule, the key is `"a"`, and the output is `"ä"`. A simple rule
+In this rule, the key is <kbd>a</kbd>, and the output is `"ä"`. A simple rule
 begins with a plus sign, followed by the key, a greater-than symbol
 (suggesting "becomes"), and finally the output. As you might guess, this
-rule will change a lowercase **a** key typed by the
+rule will change a lowercase <kbd>a</kbd> key typed by the
 user into **ä**.
 
 The key and output can be written as a character in single or double

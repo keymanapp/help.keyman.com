@@ -184,7 +184,7 @@ only: the output of this rule is dependent only on what came before the
 current keystroke, and becomes the context for any further groups that
 are called from this one.
 
-Let's suppose the **a** key has been pressed with
+Let's suppose the <kbd>a</kbd> key has been pressed with
 
 no context. The `first` group will have nothing to match on, so the
 `nomatch` rule fires and passes control to the `main` group. Here the
@@ -192,10 +192,10 @@ no context. The `first` group will have nothing to match on, so the
 menu of a-like characters.
 
 Now the user is presented with a menu of options to choose from. Suppose
-he types **1** Once again the `first` group gains
+he types <kbd>1</kbd> Once again the `first` group gains
 control first, but this time matches the first rule, with the `a_menu`
 string on the context, so control is passed to the `a_menu` group to
-handle the keystroke. Here the **1** is matched as
+handle the keystroke. Here the <kbd>1</kbd> is matched as
 
 an entry in the `choices` store, and the corresponding character in the
 `a_chars` store - in this case "æ" - is output. Finally, control goes

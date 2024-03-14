@@ -41,7 +41,7 @@ store(uppercase) "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 + any(lowercase) > index(uppercase,1)
 ```
 
-When a letter, such as **j** is typed, the `any()`
+When a letter, such as <kbd>j</kbd> is typed, the `any()`
 statement finds its position in the `lowercase` store; the `index()`
 statement then gets this index from the `any()` statement, and outputs
 the character at the same position in the `uppercase` store, in this

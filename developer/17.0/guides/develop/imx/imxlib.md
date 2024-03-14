@@ -37,7 +37,7 @@ here from the `KeymanIMConfigure()` callback.
 You can use `PrepIM()`, declared in imlib.cpp to get access to the the
 Keyman functions. When using imlib.cpp, the functions are declared as
 pointers, so you need to dereference them to call them in C (e.g. for
-KMGetContext, call `(*KMGetcontext)(buf,len);`
+KMGetContext, call `(*KMGetcontext)(buf,len);`)
 
 ## KMGetContext
 
