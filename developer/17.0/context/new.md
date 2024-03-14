@@ -2,7 +2,7 @@
 title: New File Dialog
 ---
 
-![New File dialog](/cdn/dev/img/developer/120/ui/frmNew.4a0d546e5aa489e824c5bfd8dfa8a90f.png)
+![New File dialog](/cdn/dev/img/developer/120/ui/frmNew.png)
 
 Creates a new file, and optionally adds it to the current project.
 

@@ -11,7 +11,7 @@ installation of a keyboard in Keyman simple.
 
 ![Package Editor - Files tab](/cdn/dev/img/developer/170/ui/frmPackageEditor_Files.png)
 
-Use the **Add** button to select the files to be included in the package, such
+Use the <kbd>Add...</kbd> button to select the files to be included in the package, such
 as .kmx and .js keyboard files, documentation, and related fonts; but you can
 include any type of file here as well.
 
@@ -40,10 +40,8 @@ section. The fields on the tab are:
   format) keyboards. This reflects the checkbox in the [Details
   tab](./keyboard-editor#details-fields) of the Keyboard editor.
 
-  ### Note
-
+> ### Note
   **Is right-to-left** will only be true if the following occur:
-
   * "Keyboard is right-to-left" is checked in the Keyboard editor
   * The compiled .js keyboard is added to the package
 
@@ -86,10 +84,10 @@ section. The fields on the tab are:
   examples for touch keyboards as well as desktop keyboards. There are three
   special kinds of key strings:
   * Modifier keys may be specified with the `+` character, e.g. `shift+e` or `right-alt+k`. Use lower case keys. The suggested standard modifiers are: `shift`, `ctrl`, `alt`, `left-alt`, `right-alt`, `left-ctrl`, `right-ctrl`, and `option` (mac).
-  * The <kbd>space</kbd> key itself may be specified with with `space`.
-  * To avoid confusion with modifier keys, the <kbd>+</kbd> key can be specified with `plus`.
+  * The **space** key itself may be specified with `space`.
+  * To avoid confusion with modifier keys, the **"+"** key can be specified with `plus`.
 
-  For example, the key sequence <kbd>x</kbd> <kbd>j</kbd> <kbd>m</kbd> <kbd>Shift</kbd>+<kbd>e</kbd> <kbd>r</kbd> may be specified as `x j m shift+e r` or `x j m E r`.
+  For example, the key sequence <kbd>x</kbd>, <kbd>j</kbd>, <kbd>m</kbd>, <kbd>Shift</kbd>+<kbd>e</kbd>, <kbd>r</kbd> may be specified as `x j m shift+e r` or `x j m E r`.
 
   ![Package Editor - Edit Example dialog](/cdn/dev/img/developer/170/ui/frmPackageEditor_EditExample.png)
 
@@ -107,7 +105,7 @@ Version numbers should be in the form `major.minor[.patch]`. Patch is optional
 but is helpful for small bug fix releases. Each of the sections of the version
 should be an integer. Keyman Desktop does integer comparisons on the version
 number components, so, for example, version 2.04 is regarded as newer than
-version 2.1\. Alphabetic or date formats should be avoided as the installer for
+version 2.1. Alphabetic or date formats should be avoided as the installer for
 the keyboard cannot determine which version is older reliably.
 
 You can also tick the checkbox labelled "Package version follows keyboard

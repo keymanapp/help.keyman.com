@@ -7,7 +7,7 @@ title: Using the Character Map
 To display the Character Map:
 
 -   Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>c</kbd>
--   Select <kbd>View</kbd> &#8594; <kbd>Character Map</kbd>
+-   Select **View** &#8594; **Character Map**
 
 The Character Map will appear by default docked to the right hand side
 of the IDE but can be undocked or re-docked on any side of the window.
@@ -16,8 +16,7 @@ of the IDE but can be undocked or re-docked on any side of the window.
 
 To insert a character:
 
-1.  Position the text cursor where you want to insert the character.
-
+1.  Position the text cursor where you want to insert the character
 2.  Locate the desired character in the Character Map and insert it by:
 
     -   selecting the character and pressing the Enter key, or
@@ -93,7 +92,7 @@ will be shown in blue instead of black.
 The Character Map can be filtered by Unicode character name or character
 range. Filters can be entered in the Filter By field at the bottom of
 the Character Map; a quick reference user interface dialog to help you
-edit the filter is available by clicking the \[...\] button.
+edit the filter is available by clicking the [...] button.
 
 When no filter is applied, the Character Map will show all characters
 from the Unicode 8.0 standard.
@@ -132,7 +131,7 @@ The filtering options for Unicode Character Names are:
 The Goto tool can be used to move directly to a specific Unicode
 character or value.
 
-1.  Right click on a character and select Goto. The <kbd>Enter Unicode character value or name</kbd> dialog box will be displayed:
+1.  Right click on a character and select Goto. The **Enter Unicode character value or name** dialog box will be displayed.
 2.  Enter the Unicode character value - e.g. `006B` or `U+006B`  
     OR enter the start of the character name, e.g. `LAO_LETTER` will go
     to **LAO_LETTER_KO**, being the first character that matches. You

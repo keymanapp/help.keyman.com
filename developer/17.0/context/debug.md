@@ -70,8 +70,8 @@ Pause
 System keyboard
 :   The system keyboard layout currently being used. You can test your
     keyboard with a different underlying layout by selecting
-    <kbd>Select System Keyboard</kbd> from the
-    <kbd>Debug</kbd> menu.
+    **Select System Keyboard** from the
+    **Debug** menu.
 
 ## Debug State box
 
@@ -155,7 +155,7 @@ Debugging
 
 ## Test mode
 
-Enter test mode by clicking the <kbd>Test Mode</kbd>
+Enter test mode by clicking the **Test Mode**
 button on the debugger toolbar.
 
 The test mode lets you test your keyboard without the debugger being

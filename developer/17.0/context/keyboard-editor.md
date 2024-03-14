@@ -13,18 +13,14 @@ multiple source files, which are all managed within this one editor.
 The following image shows the first tab of the editor, the Details tab,
 for a brand new keyboard, with those three initial tabs.
 
-![Keyboard Editor - New file, Details
-tab](/cdn/dev/img/developer/100/ui/frmKeymanWizard_New.png)
+![Keyboard Editor - New file, Details tab](/cdn/dev/img/developer/100/ui/frmKeymanWizard_New.png)
 
-
- ## Note
-
+> ## Note
 Users of earlier versions of Keyman Developer may initially have trouble
 finding tabs such as the Icon tab or the On-Screen tab, as they are not
 initially visible. The Features grid on the Details tab allows you to
 add these extra features into the keyboard. 
             
-
 ## Keyboard component files
 
 A keyboard contains multiple source files. The following table lists the
@@ -33,16 +29,16 @@ defaults and can be modified, by editing the corresponding line in the
 source file (and renaming the file). However, where possible the default
 names should be used.
 
-| File type                    | Tabs            | Feature                    | Store name                                                        | Description                                                                         |
-|------------------------------|-----------------|----------------------------|-------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| `file``.kmn`                 | Details, Layout |                            |                                                                   | The primary keyboard source file. Required.                                         |
-| `file``.kvks`                | On-Screen       | Desktop On Screen Keyboard | [`&visualkeyboard`](/developer/language/reference/visualkeyboard) | The visual presentation of the keyboard for desktop computers.                      |
-| `file``.ico`, `file``.bmp`   | Icon            | Icon                       | [`&bitmap`](/developer/language/reference/bitmap)                 | An icon that represents the keyboard in the user interface on desktop computers.    |
-| `file``.keyman-touch-layout` | Touch Layout    | Touch-Optimised Keyboard   | [`&layoutfile`](/developer/language/reference/layoutfile)         | The touch layout visual description file                                            |
-| `file``-code.js`             | Embedded JS     | Embedded Javascript        | [`&kmw_embedjs`](/developer/language/reference/kmw_embedjs)       | Additional Javascript code for [IMX](../guides/develop/imx) functionality           |
-| `file``.css`                 | Embedded CSS    | Embedded CSS               | [`&kmw_embedcss`](/developer/language/reference/kmw_embedcss)     | Additional CSS stylesheet for custom touch and web layout styling                   |
-| `file``-help.htm`            | Web Help        | Web Help                   | [`&kmw_helpfile`](/developer/language/reference/kmw_helpfile)     | HTML file that replaces the On Screen Keyboard on desktop web layouts               |
-| `file``-codes.txt`           | Include Codes   | Include Codes              | [`&includecodes`](/developer/language/reference/includecodes)     | Code dictionary for use with [named constants](/developer/language/guide/constants) |
+| File type      | Tabs            | Feature                    | Store name      | Description    |
+|-------------------|-----------------|--------------------|----------------------|------------------------|
+| `file.kmn`   | Details, Layout |  | The primary keyboard source file. Required.       | |
+| `file.kvks`  | On-Screen       | Desktop On Screen Keyboard | [`&visualkeyboard`](/developer/language/reference/visualkeyboard) | The visual presentation of the keyboard for desktop computers. |
+| `file.ico`, `file.bmp`     | Icon      | Icon     | [`&bitmap`](/developer/language/reference/bitmap)    | An icon that represents the keyboard in the user interface on desktop computers.  |
+| `file.keyman-touch-layout` | Touch Layout    | Touch-Optimised Keyboard   | [`&layoutfile`](/developer/language/reference/layoutfile)         | The touch layout visual description file                                            |
+| `file-code.js`  | Embedded JS   | Embedded Javascript   | [`&kmw_embedjs`](/developer/language/reference/kmw_embedjs) | Additional Javascript code for [IMX](../guides/develop/imx) functionality  |
+| `file.css`  | Embedded CSS    | Embedded CSS  | [`&kmw_embedcss`](/developer/language/reference/kmw_embedcss)  | Additional CSS stylesheet for custom touch and web layout styling  |
+| `file-help.htm`      | Web Help    | Web Help   | [`&kmw_helpfile`](/developer/language/reference/kmw_helpfile) | HTML file that replaces the On Screen Keyboard on desktop web layouts  |
+| `file-codes.txt`  | Include Codes | Include Codes | [`&includecodes`](/developer/language/reference/includecodes) | Code dictionary for use with [named constants](/developer/language/guide/constants) |
 
 Three tabs include both visual and code editors: the Layout, Touch
 Layout and JSON Metadata tabs. Changes to one view will be immediately
@@ -51,15 +47,13 @@ because that reflects both the Details and the Layout tab.
 
 ## Details tab
 
-![Keyboard Editor - Details
-tab](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Details.png)
+![Keyboard Editor - Details tab](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Details.png)
 
 The Details tab grows as you add more options to a keyboard. The fields
 here are:
 
 Name
-:   The name of the keyboard, corresponding to the [`&name`
-    store](/developer/language/reference/name).
+:   The name of the keyboard, corresponding to the [`&name` store](/developer/language/reference/name).
 
 Targets
 :   The intended target devices and operating systems, corresponding to
@@ -75,23 +69,19 @@ Copyright
 
 Message
 :   Enter a message that will be shown at install time for the keyboard
-    (on Windows, macOS). [`&message`
-    store](/developer/language/reference/message).
+    (on Windows, macOS). [`&message` store](/developer/language/reference/message).
 
 Keyboard is right-to-left
 :   Check this box to indicate that the keyboard is a right-to-left
-    keyboard, for web and touch layouts. [`&kmw_rtl`
-    store](/developer/language/reference/kmw_rtl).
+    keyboard, for web and touch layouts. [`&kmw_rtl` store](/developer/language/reference/kmw_rtl).
 
 Web Help Text
 :   A single line of text, with basic HTML allowed, shown at the bottom
-    of the desktop web On Screen Keyboard. [`&kmw_helptext`
-    store](/developer/language/reference/kmw_helptext).
+    of the desktop web On Screen Keyboard. [`&kmw_helptext` store](/developer/language/reference/kmw_helptext).
 
 Keyboard version
 :   The version of the keyboard. Read the reference documentation for
-    [`&keyboardversion`
-    store](/developer/language/reference/keyboardversion) to understand
+    [`&keyboardversion` store](/developer/language/reference/keyboardversion) to understand
     the legal values for this field. This is not the same as the
     [`&version` store](/developer/language/reference/version), which
     controls the Keyman (and Keyman Developer) version for which a
@@ -112,8 +102,7 @@ Features
 
 ## Layout tab
 
-![Keyboard Editor - Layout tab, Design
-view](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Layout_Design.png)
+![Keyboard Editor - Layout tab, Design view](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Layout_Design.png)
 
 The Layout tab gives you a simple interface to quickly create a keyboard
 using a visual representation of a desktop/laptop computer keyboard. You
@@ -162,8 +151,7 @@ Display 102nd Key (as on European keyboards)
 You can press and release <kbd>Ctrl</kbd> to select
 another key on the keyboard using your keyboard.
 
-![Keyboard Editor - Layout tab, Code
-view](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Layout_Code.png)
+![Keyboard Editor - Layout tab, Code view](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Layout_Code.png)
 
 The Code view shows the source code of the keyboard file. This is where
 all the information in the Details and Layout tab is stored, and
@@ -369,14 +357,14 @@ Key Type
 :   The general appearance of each key is determined by the key type,
     which is selected (in Keyman Developer 10) from a drop-down list:
 
-    | Key Type             | Description                                                                                                                                                                                              |
-    |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Default (normal) key | A standard letter or character key on the keyboard                                                                                                                                                       |
-    | Special (shift) key  | The grey control type keys, layer shifts, Enter, Backspace, etc.                                                                                                                                         |
-    | Active special key   | A variation on the Special keys, which shows a highlight, typically used to indicate that a shift key for example is down.                                                                               |
-    | Dead-key             | While this key type has no difference in function to default keys, it will have a different style to indicate that it is different; the logic in the keyboard source may well be a deadkey, for example. |
-    | Blank key            | This type of key cannot be selected in use and shows as a blank key.                                                                                                                                     |
-    | Spacer               | Leaves a space in the keyboard at the point it is inserted, in the background colour of the keyboard area.                                                                                               |
+    | Key Type             | Description                |
+    |----------------------|----------------------------|
+    | Default (normal) key | A standard letter or character key on the keyboard             |
+    | Special (shift) key  | The grey control type keys, layer shifts, Enter, Backspace, etc.        |
+    | Active special key   | A variation on the Special keys, which shows a highlight, typically used to indicate that a shift key for example is down.      |
+    | Dead-key      | While this key type has no difference in function to default keys, it will have a different style to indicate that it is different; the logic in the keyboard source may well be a deadkey, for example. |
+    | Blank key    | This type of key cannot be selected in use and shows as a blank key.           |
+    | Spacer       | Leaves a space in the keyboard at the point it is inserted, in the background colour of the keyboard area. |
 
 Shift
 :   Determines the shift state that Keyman Engine will receive from the
@@ -396,26 +384,25 @@ Code
     determined by the processing of those rules. It is usually best to
     include explicit rules to manage the output from each key, but if no
     rules matching the key code are included in the keyboard program,
-    and the key code matches the pattern `U_``xxxx``[_``yyyy``...]`
+    and the key code matches the pattern `U_xxxx[yyyy...]`
     (where `xxxx` and `yyyy` are 4 to 6-digit hex strings), then the
-    Unicode characters `U+``xxxx` and `U+``yyyy` will be output. As of
+    Unicode characters `U+xxxx` and `U+yyyy` will be output. As of
     Keyman 15, you can use more than one Unicode character value in the
     id (earlier versions permitted only one). The key code is always
     required, and a default code will usually be generated automatically
     by Keyman Developer.
 
     -   `K_xxxx` is used for a standard Keyman Desktop key name, e.g.
-        `K_W`, `K_ENTER`. You cannot make up your own `K_``xxxx` names.
+        `K_W`, `K_ENTER`. You cannot make up your own `K_xxxx` names.
         Many of the `K_` ids have overloaded output behaviour, for
         instance, if no rule is matched for `K_W`, Keyman will output
         'w' when it is touched. The standard key names are listed in
-        [Virtual Keys and Virtual Character
-        Keys](/developer/language/guide/virtual-keys){.link}. Typically,
+        [Virtual Keys and Virtual Character Keys](/developer/language/guide/virtual-keys). Typically,
         you would use only the "common" virtual key codes.
-    -   `T_``xxxx` is used for any user defined names, e.g. `T_SCHWA`.
+    -   `T_xxxx` is used for any user defined names, e.g. `T_SCHWA`.
         If you wanted to use it, `T_ENTER` would also be valid. If no
         rule matches it, the key will have no output behaviour.
-    -   `U_``####``[_``####``]` is used as a shortcut for a key that
+    -   `U_####[####]` is used as a shortcut for a key that
         will output those Unicode values, if no rule matches it. This is
         similar to the overloaded behaviour for `K_` ids. Thus `####`
         must be valid Unicode characters. E.g. `U_0259` would generate a
@@ -478,8 +465,7 @@ The format of the layout file is described in [Creating a touch keyboard layout 
 
 ## Icon tab
 
-![Keyboard Editor - Icon
-tab](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Icon.png)
+![Keyboard Editor - Icon tab](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Icon.png)
 
 The icon tab allows you to edit the icon associated with the keyboard.
 An external icon editor will allow you to create more sophisticated
