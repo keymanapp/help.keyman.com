@@ -18,7 +18,7 @@ In Keyman Developer project view, select the "Models" tab.
 alt="The “Project - Models” tab in Keyman Developer" style="width: 700px"/>
 </figure>
 
-Click on the <kbd>Build models</kbd> button to
+Click on the **Build models** button to
 compile the lexical model. The Message window will display the results
 of the compilation. If you have no typing errors, the lexical model
 should compile successfully. If successful, this will create a

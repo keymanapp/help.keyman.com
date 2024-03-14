@@ -5,9 +5,9 @@ title: Step 2: Creating a lexical model project
 ## Create the new project
 
 Start Keyman Developer. On the “Welcome” screen, click on
-<kbd>New Project...</kbd>. The “New Project” dialog
+**New Project...**. The “New Project” dialog
 will appear. Select “Wordlist Lexical Model” and press
-<kbd>OK</kbd>.
+**OK**.
 
 <div markdown="1" style="text-align: center">
 
@@ -67,7 +67,7 @@ Keyman needs to know how to link your model to the appropriate keyboard
 layout, so that they can both work together. To do this, Keyman utilizes
 [BCP 47](../../../reference/bcp-47) language tags.
 
-To add a language tag, click the <kbd>Add</kbd>
+To add a language tag, click the **Add**
 button to bring up the “Select BCP 47 Tag” dialog box.
 
 <div markdown="1" style="float: right; height: 300px; text-align: center">
@@ -81,12 +81,12 @@ button to bring up the “Select BCP 47 Tag” dialog box.
 Enter the BCP 47 language tag that you have selected. [Learn more about BCP 47 language tags](../../../reference/bcp-47)
 
 Once you are finished adding the primary language, click
-<kbd>OK</kbd> to return to the **New Lexical Model
+**OK** to return to the **New Lexical Model
 Project dialog**.
 
 ## The Model ID
 
-Keyman will create a <kbd>model ID</kbd> which is how
+Keyman will create a **model ID** which is how
 Keyman sorts and organizes different lexical models. If you choose to
 share your model publicly, the model ID is vital for both people and
 Keyman to identify and use your lexical model!
@@ -106,7 +106,7 @@ automatically changes to the much more manageable `nrc.str.sencoten`.
 
 Verify that all of the information is correct. Once all of the required
 information has been filled in and verified, click
-<kbd>OK</kbd> to create the project.
+**OK** to create the project.
 
 Once we have created the project, we can begin to prepare the data!
 
