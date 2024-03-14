@@ -2,7 +2,7 @@
 title: Message Window
 ---
 
-![Message window](/cdn/dev/img/developer/100/ui/frmMessages.cf604504166eb7147d118b03cb32b576.png)
+![Message window](/cdn/dev/img/developer/100/ui/frmMessages.png)
 
 The message window appears at the bottom of the screen, or floating in a toolbar window. It contains a list of error and warning messages returned from a compilation session.
 

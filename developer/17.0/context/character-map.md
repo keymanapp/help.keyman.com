@@ -122,10 +122,10 @@ The filtering options for Unicode Character Names are:
 | `LATIN * LETTER A`       | finds all Latin capital and lower case A variations |
 | `LATIN * LETTER [AEIOU]` | finds all all Latin A,E,I,O or U vowel combinations |
 | `<Thai`                  | finds the Thai Unicode block        |
-| `>LAO`                   | finds all characters with names starting in "LAO" in the current   |
+| `>LAO`                   | finds all characters with names starting in "LAO" in the current font  |
 | `YI_`                    | finds all characters with names starting in "YI " - you must use `_` (underscore) and not ` ` (space) at the end of a search string. Note that without the `_`, this search also matches YIN_YANG. |
 | `LATIN * LETTER A$`      | finds only "a" and "A"             |
-| `1000-119F`              | finds all characters between U+1000 and U+119F (inclusive) - the Myanmar alphabet in this     |
+| `1000-119F`              | finds all characters between U+1000 and U+119F (inclusive) - the Myanmar alphabet in this case    |
 
 ### Goto
 
