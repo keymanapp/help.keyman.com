@@ -70,6 +70,10 @@ is more difficult to manage in version control systems such as Git,
 which is the system used by the Keyman Cloud lexical model repository.
 
 ![Model Editor - Wordlist tab - Design view](/cdn/dev/img/developer/130/ui/frmModelEditor_Wordlist_Design.png)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 958d4c8ba5c41c08b066b33db5eae02dbc2040ee
 
 Every line of the tab-separated format file is shown here, and can be
 edited directly. For most wordlists, it will be more effective to use an
@@ -82,6 +86,10 @@ wordlist, but can help you, the editor, by showing more common words
 earlier in the list.
 
 ![Model Editor - Wordlist tab - Code view](/cdn/dev/img/developer/130/ui/frmModelEditor_Wordlist_Code.png)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 958d4c8ba5c41c08b066b33db5eae02dbc2040ee
 
 Note: The wordlist Code editor will accept the Tab key to insert a Tab
 character. In other code editors in Keyman Developer, the Tab key
@@ -90,6 +98,10 @@ inserts spaces.
 ## Source tab
 
 ![Model Editor - Source tab](/cdn/dev/img/developer/130/ui/frmModelEditor_Source.png)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 958d4c8ba5c41c08b066b33db5eae02dbc2040ee
 
 This tab shows the source view of the model, written in the Typescript
 programming language. The format of this file is documented in the
@@ -98,6 +110,10 @@ programming language. The format of this file is documented in the
 ## Build tab
 
 ![Model Editor - Build tab](/cdn/dev/img/developer/130/ui/frmModelEditor_Build.png)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 958d4c8ba5c41c08b066b33db5eae02dbc2040ee
 
 A set of common controls is across the top of this tab:
 
