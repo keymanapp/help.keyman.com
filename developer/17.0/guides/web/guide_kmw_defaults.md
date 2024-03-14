@@ -25,7 +25,7 @@ visual keyboard are limited to changing the colour.
 A working example can be seen online at
 [www.keymanweb.com](http://www.keymanweb.com/dev/defaults)
 
-![](/cdn/dev/img/developer/90/kmw_defaults.png)</span>
+![](/cdn/dev/img/developer/90/kmw_defaults.png)
 
 #### Code Walkthrough
 

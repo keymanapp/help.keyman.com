@@ -43,8 +43,7 @@ potentially hundreds of kilobytes of unused Javascript keyboards - the
 keyboard is downloaded when it is first selected by the user.
 
 If you know that a keyboard will be required for a page, you can skip
-the loader and load the keyboard directly instead, shown as a [separate
-example](../guide/guide_kmw_automatic_control_loaded){.link}.
+the loader and load the keyboard directly instead, shown as a [separate example](../guide/guide_kmw_automatic_control_loaded).
 
 #### The KeymanWeb_Key
 
