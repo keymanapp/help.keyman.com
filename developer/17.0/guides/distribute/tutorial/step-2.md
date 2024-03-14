@@ -13,17 +13,17 @@ readme.htm
     is displayed in the package install dialog and should be an html
     file for optimal formatting.
 
-> ### Tip
-As the package has not been installed at this stage, and you are using fonts that may not yet be available on the target device, you should use CSS @font-face declarations to ensure that the text is readable on all devices.
+    > ### Tip
+    As the package has not been installed at this stage, and you are using fonts that may not yet be available on the  target device, you should use CSS @font-face declarations to ensure that the text is readable on all devices.
 
-Create the HTML file in any HTML editor.
+    Create the HTML file in any HTML editor.
 
-> ### Tip
-If using Microsoft Word, choose HTML (clean) when saving to create a smaller file.
+    > ### Tip
+    If using Microsoft Word, choose HTML (clean) when saving to create a smaller file.
 
-Note, if your HTML editor puts images into a subfolder, you will need to edit the HTML source so that all files are in the same folder -- the package builder will not maintain subfolders. You can easily edit the HTML source in Keyman Developer.
+    Note, if your HTML editor puts images into a subfolder, you will need to edit the HTML source so that all files are in the same folder -- the package builder will not maintain subfolders. You can easily edit the HTML source in Keyman Developer.
 
-Also, if your welcome or readme files use embedded external images, stylesheets, javascript or other files, you will need to add these files to your package as well.
+    Also, if your welcome or readme files use embedded external images, stylesheets, javascript or other files, you will need to add these files to your package as well.
 
 welcome.htm
 
@@ -35,15 +35,11 @@ welcome.htm
     user's screen - avoid extra wide tables or wide fixed width
     elements.
 
-    At this stage of the installation, fonts in the package have been
-    installed, so you can include text that uses those fonts.
+    At this stage of the installation, fonts in the package have been installed, so you can include text that uses those fonts.
 
-    Welcome.htm will also be accessible after installation from Keyman
-    Configuration under the Package Options menu, and from the Keyboard
-    Help item and On Screen Keyboard toolbar button.
+    Welcome.htm will also be accessible after installation from Keyman Configuration under the Package Options menu, and from the Keyboard Help item and On Screen Keyboard toolbar button.
 
-    The intention of welcome.htm is to provide instructions on getting
-    started with your keyboards.
+    The intention of welcome.htm is to provide instructions on getting started with your keyboards.
 
     > ### Tip
     Useful information to include in welcome.htm is:
