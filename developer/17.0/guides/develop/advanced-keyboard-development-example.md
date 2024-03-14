@@ -31,7 +31,8 @@ used to represent differing sounds used in language. Because of this, it
 seemed reasonable to place all glyphs derived from "a" on the "a" key,
 and so on. We have implemented a few of the vowel symbols in this
 keyboard:
-![](/cdn/deploy/img/developer/100/ipa.96c383de79a4a695746b7f2cce2373e6.gif)
+![](/cdn/dev/img/developer/100/ipa.gif)
+
 
 ## Overview of the Keyboard
 
@@ -183,17 +184,19 @@ only: the output of this rule is dependent only on what came before the
 current keystroke, and becomes the context for any further groups that
 are called from this one.
 
-Let's suppose the <kbd>a</kbd> key has been pressed with
+Let's suppose the **a** key has been pressed with
+
 no context. The `first` group will have nothing to match on, so the
 `nomatch` rule fires and passes control to the `main` group. Here the
 "a" key is matched, and the `a_menu` store is output, displaying the
 menu of a-like characters.
 
 Now the user is presented with a menu of options to choose from. Suppose
-he types <kbd>1</kbd> Once again the `first` group gains
+he types **1** Once again the `first` group gains
 control first, but this time matches the first rule, with the `a_menu`
 string on the context, so control is passed to the `a_menu` group to
-handle the keystroke. Here the <kbd>1</kbd> is matched as
+handle the keystroke. Here the **1** is matched as
+
 an entry in the `choices` store, and the corresponding character in the
 `a_chars` store - in this case "æ" - is output. Finally, control goes
 from here to the `final` group, which fails to match anything in the
