@@ -10,7 +10,8 @@ A widely used Keyman Desktop phonetic keyboard for Amharic (developed by Geez Fr
 
 The desktop layout has a default layer and a shift layer which are fairly similar:
 
-![](/cdn/deploy/img/developer/100/touch_amharic_keyboard.8a1eb05c13b423f79d39c13e85104191.png)
+![](/cdn/dev/img/developer/100/touch_amharic_keyboard.png)
+
 
 Several keycaps have more than one Geez script letter, indicating that pressing the key twice changes the character output. Geez script is better understood as an Abugida, rather than an alphabet, since each consonant-vowel syllable is a modification of the original letter rather than having separate letters for consonant and vowel. So when entering Amharic, the form of a consonant changes from the default syllable form to the appropriate syllable character for the consonant and vowel pressed. However, as each vowel can also occur in stand-alone syllables as either pharyngeal or glottal forms, the two separate syllables for each vowel are shown on the "a", "e", "i", "o" and "u" keys.
 
@@ -87,7 +88,8 @@ The final tablet default keyboard layer, as displayed in the Touch
 Layout editor in the current release of Keyman Developer 10, now appears
 as:
 
-![](/cdn/deploy/img/developer/100/touch_amharic_keyboard_2.159f86097805cd74c5ef85e5117c8b5f.png)
+![](/cdn/dev/img/developer/100/touch_amharic_keyboard_2.png)
+
 
 Here the editor is shown with the "s" key selected, displaying the
 pop-up key array with the four different Geez characters that can be
@@ -96,7 +98,8 @@ typed vowel.
 
 For the small format (e.g. iPhone) layout, the two keyboard layers are:
 
-![](/cdn/deploy/img/developer/100/touch_amharic_keyboard_3.5051c70f92601570dbd91583753c7798.png)
+![](/cdn/dev/img/developer/100/touch_amharic_keyboard_3.png)
+
 
 For these layouts, the row length has been reduced to the minimum number
 of ten keys, moving backspace to another row. The numerals only appear
