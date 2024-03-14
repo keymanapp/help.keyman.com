@@ -7,8 +7,7 @@ title: Step 1: Planning the Keyboard
 First of all, we need to decide which characters we want the keyboard to
 produce. Next, we must find out the codes used to represent them, using
 a program such as Character Map, or with the Character Map in Keyman
-Developer (go to <kbd>View</kbd>,
-<kbd>Character Map</kbd>).
+Developer (go to **View**, **Character Map**).
 
 French uses the same 26 letters as English, with some additions. As our
 keyboard is based on English, we only need to work with these additional
@@ -58,7 +57,7 @@ accent, and one for the vowel.
 
 | Character   | Keystrokes                    |
 |-------------|-------------------------------|
-| `À, à, ...` | back-quote (<kbd>\`</kbd>), then the vowel key.    |
+| `À, à, ...` | back-quote (<kbd>`</kbd>), then the vowel key.    |
 | `Á, á, ...` | quote (<kbd>'</kbd>), then the vowel key.          |
 | `Â, â, ...` | caret (<kbd>^</kbd>), then the vowel key.          |
 | `Ä, ä, ...` | double-quote (<kbd>"</kbd>), then the vowel key.   |

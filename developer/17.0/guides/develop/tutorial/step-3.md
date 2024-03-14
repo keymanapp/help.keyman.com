@@ -9,12 +9,12 @@ c Simplified French Keyboard for Keyman 9.0
 ```
 
 Most of the header in this example is made up of
-[comments](/developer/language/guide/comments){.link}. A comment is used
+[comments](/developer/language/guide/comments). A comment is used
 to make notes about the keyboard, or to provide information on the
 workings of the keyboard. The comments are readable by anyone looking at
 the source code of the keyboard.
 
-A comment always starts with a lowercase ` c `, followed by one or more
+A comment always starts with a lowercase `c`, followed by one or more
 spaces, and continues to the end of the line. Keyman Developer will
 ignore comments when compiling a keyboard.
 
@@ -28,7 +28,7 @@ lines. As you can see we have used both kinds of comments in the header.
 store(&Version) "9.0"             c This keyboard is for use with Keyman 9.0
 ```
 
-The [`&Version` store](/developer/language/reference/version){.link}
+The [`&Version` store](/developer/language/reference/version)
 identifies the Keyman version for which this keyboard was written; this
 keyboard is for use with Keyman 9.0. The `&Version` store is an optional
 part of the keyboard header, but if present, it should be the first

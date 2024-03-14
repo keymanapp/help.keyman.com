@@ -20,7 +20,7 @@ We will only use one group in the Quick French keyboard, called `Main`.
 We mark the start of it with the `group` statement below. Add this line
 to the keyboard.
 
-``` keyman
+```keyman
 group(Main) using keys
 ```
 
@@ -55,8 +55,8 @@ part of the Quick French keyboard).
 In this rule, the key is `"a"`, and the output is `"ä"`. A simple rule
 begins with a plus sign, followed by the key, a greater-than symbol
 (suggesting "becomes"), and finally the output. As you might guess, this
-rule will change a lowercase <kbd>a</kbd> key typed by the
-user into ä.
+rule will change a lowercase **a** key typed by the
+user into **ä**.
 
 The key and output can be written as a character in single or double
 quotes (as above), or as its Unicode character code, or using a named
