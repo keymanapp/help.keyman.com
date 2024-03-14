@@ -70,8 +70,7 @@ Pause
 System keyboard
 :   The system keyboard layout currently being used. You can test your
     keyboard with a different underlying layout by selecting
-    **Select System Keyboard** from the
-    **Debug** menu.
+    **Select System Keyboard** from the **Debug** menu.
 
 ## Debug State box
 
