@@ -2,9 +2,7 @@
 title: Step 4: Filling in package details
 ---
 
-In the Package Editor, click on the
-<kbd>Details</kbd> tab. You should fill in as many
-details as you can on this page.
+In the Package Editor, click on the **Details** tab. You should fill in as many details as you can on this page.
 
 ![](/cdn/dev/img/developer/120/lm/tutorial_distribute_model_details.png)
 

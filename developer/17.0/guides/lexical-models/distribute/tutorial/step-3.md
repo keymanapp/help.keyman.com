@@ -4,7 +4,7 @@ title: Step 3: Checking a package and adding files
 
 We are finally ready to open up the Package Editor and check the package
 contents. In the Project Window in Keyman Developer, click the
-<kbd>Packaging</kbd> tab.
+**Packaging** tab.
 
 > ### Tip
 This tutorial makes a package named `nrc.str.sencoten.model.kps`, but
@@ -15,14 +15,14 @@ and will be compiled in a file with extension .kmp.
 
 ## Files
 
-In the Package Editor, click on the <kbd>Files</kbd>
+In the Package Editor, click on the **Files**
 tab.
 
 ![Lexical Model Package Files](/cdn/dev/img/developer/120/lm/tutorial_distribute_model_3_files.png)
 
 Keyman Developer already included your lexical model, welcome.htm, and
 readme.htm files in your package. In the Files tab, click
-<kbd>Add</kbd> to add all the additional files we
+**Add** to add all the additional files we
 discussed in the previous step to the package. For example, if your
 welcome or readme files use embedded files, include them in your
 package. You can add multiple files at once, and from multiple folders.
@@ -34,7 +34,7 @@ in a lexical model package.
 
 ## Lexical Models
 
-In the Package Editor, click on the <kbd>Lexical Models</kbd> tab.
+In the Package Editor, click on the **Lexical Models** tab.
 
 ![Lexical Model Info](/cdn/dev/img/developer/120/lm/tutorial_distribute_model_3.png)
 

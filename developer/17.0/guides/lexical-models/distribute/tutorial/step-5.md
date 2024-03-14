@@ -2,11 +2,11 @@
 title: Step 5: Compiling, testing and distributing a Package
 ---
 
-In the Package Editor, click on the <kbd>Compile</kbd> tab.
+In the Package Editor, click on the **Compile** tab.
 
 ![](/cdn/dev/img/developer/120/lm/tutorial_distribute_model_compile.png)
 
-Click <kbd>Compile Package</kbd> to compile the
+Click **Compile Package** to compile the
 package into a .kmp file. Compiling takes all the files listed for the
 package, compresses them (using a .ZIP-compatible format) and adds the
 package information, all into a single file. If any files are not
