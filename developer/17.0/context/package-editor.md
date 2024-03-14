@@ -37,8 +37,7 @@ section. The fields on the tab are:
 
 * **Is right-to-left**
 : Currently, this is only applicable to Android, iOS and Web (that is, .js
-  format) keyboards. This reflects the checkbox in the [Details
-  tab](./keyboard-editor#details-fields) of the Keyboard editor.
+  format) keyboards. This reflects the checkbox in the [Details tab](./keyboard-editor#details-fields) of the Keyboard editor.
 
 > ### Note
   **Is right-to-left** will only be true if the following occur:
@@ -84,8 +83,8 @@ section. The fields on the tab are:
   examples for touch keyboards as well as desktop keyboards. There are three
   special kinds of key strings:
   * Modifier keys may be specified with the `+` character, e.g. `shift+e` or `right-alt+k`. Use lower case keys. The suggested standard modifiers are: `shift`, `ctrl`, `alt`, `left-alt`, `right-alt`, `left-ctrl`, `right-ctrl`, and `option` (mac).
-  * The **space** key itself may be specified with `space`.
-  * To avoid confusion with modifier keys, the **"+"** key can be specified with `plus`.
+  * The <kbd>space</kbd> key itself may be specified with `space`.
+  * To avoid confusion with modifier keys, the <kbd>+</kbd> key can be specified with `plus`.
 
   For example, the key sequence <kbd>x</kbd>, <kbd>j</kbd>, <kbd>m</kbd>, <kbd>Shift</kbd>+<kbd>e</kbd>, <kbd>r</kbd> may be specified as `x j m shift+e r` or `x j m E r`.
 

@@ -51,10 +51,6 @@ SMTP settings
 ## Editor tab
 
 ![Options dialog - Editor tab](/cdn/dev/img/developer/120/ui/frmOptions_Editor.png)
-<<<<<<< HEAD
-=======
-
->>>>>>> 958d4c8ba5c41c08b066b33db5eae02dbc2040ee
 
 Use tab character
 :   Sets whether to use the Tab character or spaces for indents.
@@ -81,10 +77,6 @@ Editor theme
 ## Debugger tab
 
 ![Options dialog - Debugger tab](/cdn/dev/img/developer/120/ui/frmOptions_Debugger.png)
-<<<<<<< HEAD
-=======
-
->>>>>>> 958d4c8ba5c41c08b066b33db5eae02dbc2040ee
 
 Enable test window (from version 5.0)
 :   Enables the Keyman 5-style Test window instead of the debugger.
@@ -105,10 +97,6 @@ Automatically recompile if no debug information available
 ## Character Map tab
 
 ![Options dialog - Character Map tab](/cdn/dev/img/developer/120/ui/frmOptions_CharacterMap.png)
-<<<<<<< HEAD
-=======
-
->>>>>>> 958d4c8ba5c41c08b066b33db5eae02dbc2040ee
 
 Find character under cursor automatically
 :   The character beneath the cursor in the edit window will be
