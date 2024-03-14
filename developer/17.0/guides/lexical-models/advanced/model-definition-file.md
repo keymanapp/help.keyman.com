@@ -102,4 +102,4 @@ following customizations:
 :   How and when to ignore accents and letter case
 
 To see all of the things possible in a model definition file, see the
-[`LexicalModelSource` interface](https://github.com/keymanapp/keyman/blob/stable-14.0/developer/js/source/lexical-model-compiler/lexical-model.ts#L95-L146).
+[`LexicalModelSource` interface](https://github.com/keymanapp/keyman/blob/stable-15.0/developer/js/source/lexical-model-compiler/lexical-model.ts#L95-L146).
