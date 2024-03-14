@@ -30,8 +30,9 @@ store(&Version) "9.0"             c This keyboard is for use with Keyman 9.0
 
 The [`&Version` store](/developer/language/reference/version){.link}
 identifies the Keyman version for which this keyboard was written; this
-keyboard is for use with Keyman 9.0. The `&Version` store is a required
-part of each keyboard header, and should be the first store in the file.
+keyboard is for use with Keyman 9.0. The `&Version` store is an optional
+part of the keyboard header, but if present, it should be the first
+store in the file.
 
 ## The `&Name` store
 
