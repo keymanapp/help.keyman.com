@@ -63,7 +63,7 @@ be any value from `0x0001` to `0xFFFE`.
 
 > ### Note
 Changes in 8.0.333.0: a potential buffer overflow has been corrected.
-The size of the buffer pointed to by `buf` should be `WCHAR[``len``+1]`
+The size of the buffer pointed to by `buf` should be `WCHAR[len+1]`
 to allow for terminating null. Keyman now counts supplementary plane
 characters as 2 UTF-16 codepoints rather than as a single codepoint.
 Keyman no longer returns partial deadkey code sequences.
@@ -199,10 +199,10 @@ The IMC window must not take focus at any time.
 
 ## Limitations
 
--   Clicks outside the window will cancel the IM and lose context.
--   Switching applications will cancel the IM and lose context.
+-  Clicks outside the window will cancel the IM and lose context.
+-  Switching applications will cancel the IM and lose context.
 
 ## See also
 
--   [DLL Interface for Keyman - Introduction](index)
--   [DLL Exports](imxdll)
+-  [DLL Interface for Keyman - Introduction](index)
+-  [DLL Exports](imxdll)

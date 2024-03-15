@@ -14,7 +14,9 @@ store(vowels) "aeiou"
 ```
 
 This creates a store called `vowels`, which contains the five lowercase
-vowels. Note that we could also have written the content of the store
+vowels. 
+> #### Note:
+We could also have written the content of the store
 using ANSI or Unicode character codes, in the same way as the output.
 
 The `any()` statement is used to match a character from a specific
@@ -93,7 +95,7 @@ store( dresisvowels ) U+00E4 U+00EB U+00EF U+00F6 U+00FC   U+00C4 U+00CB U+00CF 
 ```
 
 This is far clearer than the long list of rules that we used earlier.
-Obviously we should add one or two more ordinary rules to produce upper-
+Obviously we should add one or two more ordinary rules to produce uppercase
 and lower-case ç, ý, and also the angled quotes « and ». Then we
 will have almost finished the keyboard:
 

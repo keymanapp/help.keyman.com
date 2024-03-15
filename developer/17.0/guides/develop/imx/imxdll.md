@@ -18,12 +18,26 @@ BOOL WINAPI KeyEvent(HWND hwndFocus, WORD KeyStroke, WCHAR KeyChar, DWORD ShiftF
 Note that `KeyEvent()` is a placeholder for any name that you wish to
 use. You can have multiple exports for Keyman use in a single DLL.
 
-|        |       |
-|--------|-------|
-|hwndFocus | The currently focused window. You will probably never have a need to use this.|
-|KeyStroke|The virtual key code for the current key.|
-|KeyChar|The character code for the current key (based on US English layout). This will be `0` if _KeyStroke_ does not generate a character (e.g. function keys).|
-|ShiftFlags|The shift state for the current key. The following shift states are possible: <div markdown="1" style="width: 200px"> ![](./img/imxdll-1.png) </div>|
+|            |       |
+|------------|-------|
+| hwndFocus  | The currently focused window. You will probably never have a need to use this. |
+| KeyStroke  | The virtual key code for the current key. |
+| KeyChar    |  The character code for the current key (based on US English layout). <br/> This will be `0` if _KeyStroke_ does not generate a character (e.g. function keys). |
+| ShiftFlags |The shift state for the current key. The following shift states are possible:<br/> (see the table below) |
+
+|     Flag     |   Value  | Description                            |
+|--------------|----------|----------------------------------------|
+| LCTRLFLAG    | `0x0001` | Left Control Flag                      |
+| RCTRLFLAG    | `0x0002` | Right Control Flag                     |
+| LALTFLAG     | `0x0005` | Left Alt Flag                          |
+| RALTFLAG     | `0x0008` | Right Alt Flag                         |
+| K_SHIFTFLAG  | `0x0010` | Shift flag                             |
+| K_CTRLFLAG   | `0x0020` | Ctrl flag (unused here; see l/r flags) |
+| K_ALTFLAG    | `0x0040` | Alt flag (unused here; see l/r flags)  |
+| CAPITALFLAG  | `0x0100` | Caps lock on                           |
+| NUMLOCKFLAG  | `0x0400` | Num lock on                            |
+| SCROLLFLAG   | `0x1000` | Scroll lock on                         |
+| ISVIRTUALKEY | `0x4000` | It is a Virtual Key Sequence           |
 
 ## Optional DLL Exports
 
@@ -36,7 +50,7 @@ The following exports are available:
 
 ### KeymanIMInit
 
-```
+```c
 BOOL WINAPI KeymanIMInit(PSTR keyboardname);
 ```
 
@@ -97,5 +111,5 @@ loaded. You should not attempt to call Keyman32.dll from this function.
 
 ## See also
 
--   [DLL Interface for Keyman - Introduction](index)
--   [The imlib.cpp library module](imxlib)
+-  [DLL Interface for Keyman - Introduction](index)
+-  [The imlib.cpp library module](imxlib)

@@ -6,7 +6,7 @@ title: Advanced Keyboard Development Example
 
 Whenever you want to do much more in a keyboard than simple character
 substitution, you will generally need to make use of advanced features
-such as stores, deadkeys, and multiple groups. The [tutorial](tutorial)
+such as **stores**, **deadkeys**, and **multiple groups**. The [tutorial](tutorial)
 has already shown some basic usage of stores and deadkeys, but has not
 covered other possibilities of their use. In this topic we will examine
 a keyboard that demonstrates some other uses of stores and deadkeys, and
@@ -29,8 +29,8 @@ Association](https://www.internationalphoneticassociation.org/).
 Most of the IPA glyphs are derived from glyphs in the Latin alphabet,
 used to represent differing sounds used in language. Because of this, it
 seemed reasonable to place all glyphs derived from "a" on the "a" key,
-and so on. We have implemented a few of the vowel symbols in this
-keyboard:
+and so on. We have implemented a few of the vowel symbols in this keyboard:
+
 ![](/cdn/dev/img/developer/100/ipa.gif)
 
 
@@ -184,9 +184,7 @@ only: the output of this rule is dependent only on what came before the
 current keystroke, and becomes the context for any further groups that
 are called from this one.
 
-Let's suppose the <kbd>a</kbd> key has been pressed with
-
-no context. The `first` group will have nothing to match on, so the
+Let's suppose the <kbd>a</kbd> key has been pressed with no context. The `first` group will have nothing to match on, so the
 `nomatch` rule fires and passes control to the `main` group. Here the
 "a" key is matched, and the `a_menu` store is output, displaying the
 menu of a-like characters.
@@ -195,9 +193,9 @@ Now the user is presented with a menu of options to choose from. Suppose
 he types <kbd>1</kbd> Once again the `first` group gains
 control first, but this time matches the first rule, with the `a_menu`
 string on the context, so control is passed to the `a_menu` group to
-handle the keystroke. Here the <kbd>1</kbd> is matched as
+handle the keystroke. 
 
-an entry in the `choices` store, and the corresponding character in the
+Here the <kbd>1</kbd> is matched as an entry in the `choices` store, and the corresponding character in the
 `a_chars` store - in this case "æ" - is output. Finally, control goes
 from here to the `final` group, which fails to match anything in the
 context (which now includes the output from the previous group).

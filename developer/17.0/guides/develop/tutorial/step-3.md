@@ -57,8 +57,8 @@ tells Keyman which image to use for the keyboard's icon. The picture
 should be in the standard Windows .ico format, and should contain at
 least a single 16x16 pixel image. It can also contain higher resolution
 images for high resolution "High DPI" displays. If you use a modern icon
-editor, the icon can use alpha transparency. For this keyboard we will
-be using the following bitmap:
+editor, the icon can use alpha transparency.  
+For this keyboard we will be using the following bitmap:
 ![](/cdn/dev/img/developer/100/tutorial_keyboard_qfrench.gif); it is
 found in the Keyman Developer folder, under
 `Samples\Examples\qfrench.ico` - you should copy it into the same folder
@@ -90,7 +90,7 @@ The [`begin` statement](/developer/language/reference/begin) tells
 Keyman which group of rules to process first when it receives a
 keystroke. The use of multiple groups is an advanced feature, and
 unnecessary for this tutorial, so we will use a single group, called
-Main. The `begin` statement is required in every keyboard, and marks the
+`Main`. The `begin` statement is required in every keyboard, and marks the
 start of the keyboard body. The `begin` statement also tells Keyman
 which encoding to use for the keyboard. Nearly all keyboards will use
 `Unicode`, today.

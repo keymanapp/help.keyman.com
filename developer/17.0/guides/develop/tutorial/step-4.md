@@ -9,19 +9,21 @@ certain keystrokes.
 
 ## Groups
 
-There are two types of groups: groups that process the keys pressed and
-the context, and groups that process the context only. For simple
-keyboards, the latter type of group will not be required. A group begins
+There are two types of groups: 
+* groups that process the keys pressed and the context.
+* groups that process only the context.  
+
+For simple keyboards, the latter type of group will not be required. A group begins
 with a [`group` statement](/developer/language/reference/group), and
 ends either at the start of another group, or at the end of the keyboard
 file.
 
 We will only use one group in the Quick French keyboard, called `Main`.
 We mark the start of it with the `group` statement below. Add this line
-to the keyboard.
+to the keyboard if it's not already there.
 
 ```keyman
-group(Main) using keys
+group(Main) using keys          
 ```
 
 The `using keys` clause tells Keyman that this group will process
@@ -33,13 +35,11 @@ A rule tells Keyman the output to produce for a certain input. A rule
 consists of three parts: the **context**, the **key**, and the
 **output**.
 
-The **context** specifies the conditions under which a rule will act. If
+* The **context** specifies the conditions under which a rule will act. If
 what is shown in the document to the left of the cursor matches the
 context of a rule, the rule will be processed.
-
-The **key** specifies which keystroke the rule will act upon.
-
-The **output** determines the characters that are produced by a rule.
+* The **key** specifies which keystroke the rule will act upon.
+* The **output** determines the characters that are produced by a rule.
 The output replaces the matched context in the document.
 
 ## Simple rules
@@ -83,7 +83,7 @@ for example, write a rule such as the following:
 + "f" > "ph"
 ```
 
-This would change any <kbd>f</kbd> keys typed into ph.
+This would change any <kbd>f</kbd> keys typed into **ph**.
 If the output of a rule consists of more than one character, you can
 write the characters in different ways if necessary, with a space
 separating each part. You can specify multiple characters in quotes, but
@@ -96,7 +96,7 @@ each with a space:
 + "f" > U+0070 "h"
 ```
 
-These rules are functionally identical to the one further above.
+These rules are functionally identical to the one [further above](#toc-simple-rules).
 
 -   [Continue with Step 5: Rules with Context](step-5)
 -   [Back to Step 3: The Keyboard Header](step-3)

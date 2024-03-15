@@ -20,9 +20,9 @@ keyboard input, or be passive.
 
 The DLL should be placed in any of the following locations:
 
--   The same directory as the .kmx file (e.g. use a package to install it)
--   The Keyman program directory (same place as keyman32.dll)
--   Anywhere on the path (such as the Windows directory)
+-  The same directory as the .kmx file (e.g. use a package to install it)
+-  The Keyman program directory (same place as keyman32.dll)
+-  Anywhere on the path (such as the Windows directory)
 
 The best option is the first, as you can then include the DLL in a
 Keyman package for easy installation and uninstallation.
@@ -68,8 +68,8 @@ They should always be stored under HKEY_CURRENT_USER, as the user will
 not have permission to change machine-wide settings, and the settings
 should not affect other users. The following locations are recommended:
 
-> HKEY_CURRENT_USER\Software\Tavultesoft\Keyman Engine\9.0\IMX\\[DLLName]
-  
+> HKEY_CURRENT_USER\Software\Tavultesoft\Keyman Engine\9.0\IMX\\[DLLName]  
+
 > HKEY_CURRENT_USER\Software\Tavultesoft\Keyman Engine\9.0\Installed Keyboards\\[kbdname]
 
 The first key should be used for settings that pertain to any keyboard
@@ -80,24 +80,22 @@ Keyman or other dll values.
 
 ## The .kmn interface
 
-Inside a .kmn file, you define the DLL group function interface as
-follows:
+Inside a .kmn file, you define the DLL group function interface as follows:
 
-``` keyman
+```keyman
 store(DLLFunction) "myfile.dll:KeyEvent"
 ```
 
 You can use this anywhere where you would place the use statement
 (except in the begin statement), with the call statement. For example,
 
-``` keyman
+```keyman
 + 'a' > call(DLLFunction)
 ```
 
-A single .kmn file can reference multiple DLL group functions, in a
-single or multiple DLLs.
+A single .kmn file can reference multiple DLL group functions, in a single or multiple DLLs.
 
 ## See also
 
--   [DLL Exports](imxdll)
--   [The imlib.cpp library module](imxlib)
+-  [DLL Exports](imxdll)
+-  [The imlib.cpp library module](imxlib)

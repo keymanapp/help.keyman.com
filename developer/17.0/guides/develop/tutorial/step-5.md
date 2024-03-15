@@ -32,10 +32,10 @@ this point, consider the four rules below:
 ```
 
 With these rules, typing <kbd>b</kbd> <kbd>c</kbd> would produce the
-output cc, and not d, as you might initially expect. This is because
+output `cc`, and not `d`, as you might initially expect. This is because
 the key <kbd>b</kbd> is converted by the second rule into
-the output c, while the third rule expects a context of b, and not
-c; we would have to type <kbd>a</kbd> <kbd>c</kbd> to get d.
+the output `c`, while the third rule expects a context of b, and not
+c; we would have to type <kbd>a</kbd> <kbd>c</kbd> to get `d`.
 
 However, if a key has no matching rule, the output will be the same as
 the key: so the output `e` will be produced for either of the inputs <kbd>c</kbd> <kbd>d</kbd> (because <kbd>c</kbd> by itself has no rule), and <kbd>b</kbd> <kbd>d</kbd>.

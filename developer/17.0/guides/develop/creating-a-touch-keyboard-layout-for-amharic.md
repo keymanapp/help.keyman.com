@@ -6,7 +6,7 @@ This article describes the approach taken and some of the issues encountered whe
 
 A widely used Keyman Desktop phonetic keyboard for Amharic (developed by Geez Frontier Foundation) was also compiled and made available for use with KeymanWeb. When used with web browsers on desktop computers, the behaviour of the keyboard was identical to use with Keyman Desktop, but use of the same Amharic keyboard on smart phones or other touch screen devices revealed a number of weaknesses in the layout.
 
-#### Background
+### Background
 
 The desktop layout has a default layer and a shift layer which are fairly similar:
 
@@ -33,7 +33,7 @@ to configure dynamic touch screen layouts to display contextually
 appropriate character alternates in separate key windows as each key is
 touched.
 
-#### Design goals
+### Design goals
 
 With the above background, the following design goals were set for
 developing a touch screen layout for Amharic:
@@ -44,7 +44,7 @@ developing a touch screen layout for Amharic:
 -   For tablet devices, increase key size slightly by removing most non-letter keys from each row, moving them either to dynamic ("pop-up") key windows, or to the symbol layer.
 -   For phones and other small-format devices, further increase the key size by not displaying the digits in the default (alphabetic) layer, and moving many of the less commonly used characters to dynamic windows, reducing the number of key rows by one for each layer.
 
-#### Implementation
+### Implementation
 
 Achieving the design goals required making a number of decisions for
 each format (tablet and phone), in particular:
@@ -53,7 +53,7 @@ each format (tablet and phone), in particular:
 -   Which keys can be removed from the symbol layer?
 -   Which "pop-up" keys should be grouped with each base character?
 
-Keyman Developer 10's Touch Layout editor greatly simplifies the process
+Keyman Developer 17's Touch Layout editor greatly simplifies the process
 of developing the JSON layout file that specifies the touch layout for
 each device, making it easy to move keys around, create pop-up key
 arrays, and adjust key widths, labels and other parameters. While the
@@ -68,10 +68,10 @@ layout keyboard.
 
 Where a key did not occur in the original layout and does not correspond
 to a desktop layout key, identifiers will usually be something like
-T_&lt;name&gt; where &lt;name&gt; will typically be a Unicode character
+T\_&lt;name&gt; where &lt;name&gt; will typically be a Unicode character
 name, or an obvious contraction of it. Note that this is just a rule of
 thumb and key identifiers can be anything that makes sense. Such keys
-are distinct from the K_&lt;name&gt; identifiers that are associated
+are distinct from the K\_&lt;name&gt; identifiers that are associated
 with physical keys, and should normally have a mapping rule added
 explicitly to the mapping program. If no rule is added, output will
 default to the keycap text, but this is not recommended.
@@ -85,11 +85,10 @@ selected from a pop-up key array attached to each numeral key, as well
 as being output by pressing the single quote key before a digit key.
 
 The final tablet default keyboard layer, as displayed in the Touch
-Layout editor in the current release of Keyman Developer 10, now appears
+Layout editor in the previous release of Keyman Developer 10, now appears
 as:
 
 ![](/cdn/dev/img/developer/100/touch_amharic_keyboard_2.png)
-
 
 Here the editor is shown with the "s" key selected, displaying the
 pop-up key array with the four different Geez characters that can be
@@ -100,13 +99,12 @@ For the small format (e.g. iPhone) layout, the two keyboard layers are:
 
 ![](/cdn/dev/img/developer/100/touch_amharic_keyboard_3.png)
 
-
 For these layouts, the row length has been reduced to the minimum number
 of ten keys, moving backspace to another row. The numerals only appear
 on the second layer, as is usual with phone layouts. All less-frequently
 used keys are now available only in pop-up key windows.
 
-#### Summary
+### Summary
 
 With these principles guiding all the changes made, the Amharic keyboard
 now adapts to various device form factors, making use of device-specific
