@@ -92,7 +92,7 @@ will be shown in blue instead of black.
 The Character Map can be filtered by Unicode character name or character
 range. Filters can be entered in the Filter By field at the bottom of
 the Character Map; a quick reference user interface dialog to help you
-edit the filter is available by clicking the [...] button.
+edit the filter is available by clicking the \[...\] button.
 
 When no filter is applied, the Character Map will show all characters
 from the Unicode 8.0 standard.

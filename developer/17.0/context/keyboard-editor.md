@@ -384,7 +384,7 @@ Code
     determined by the processing of those rules. It is usually best to
     include explicit rules to manage the output from each key, but if no
     rules matching the key code are included in the keyboard program,
-    and the key code matches the pattern `U_xxxx[yyyy...]`
+    and the key code matches the pattern `U_xxxx[_yyyy...]`
     (where `xxxx` and `yyyy` are 4 to 6-digit hex strings), then the
     Unicode characters `U+xxxx` and `U+yyyy` will be output. As of
     Keyman 15, you can use more than one Unicode character value in the
@@ -402,7 +402,7 @@ Code
     -   `T_xxxx` is used for any user defined names, e.g. `T_SCHWA`.
         If you wanted to use it, `T_ENTER` would also be valid. If no
         rule matches it, the key will have no output behaviour.
-    -   `U_####[####]` is used as a shortcut for a key that
+    -   `U_####[_####]` is used as a shortcut for a key that
         will output those Unicode values, if no rule matches it. This is
         similar to the overloaded behaviour for `K_` ids. Thus `####`
         must be valid Unicode characters. E.g. `U_0259` would generate a
