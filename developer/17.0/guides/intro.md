@@ -10,7 +10,8 @@ that runs on Windows, macOS, the web, mobile web, iOS and Android and
 Linux.
 
 There are two core applications included in Keyman Developer: the Keyman
-Developer IDE (formerly called TIKE), and KMComp, the command line
+Developer IDE (formerly called TIKE), and kmc, the command line
+
 compiler.
 
 [Watch a video](https://youtu.be/kwhgx_eX4Es) that highlights some of
@@ -37,7 +38,8 @@ they can be opened with any text editor. However, the Keyman Developer
 IDE provides much tooling to simplify editing each of the types of
 files. The Keyman Developer IDE runs on Windows.
 
-## KMComp
+## kmc, the command line compiler
+
 
 kmc, the command-line compiler, is a comprehensive tool that lets you
 compile keyboards, packages, models and projects from the command-line.
