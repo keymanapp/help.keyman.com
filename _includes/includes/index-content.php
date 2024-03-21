@@ -91,11 +91,13 @@ function build_index_content() {
 
   $index_content = "<ul>";
   foreach($items as $file => $title) {
+    $hetitle = htmlentities($title);
+    $hesttitle = htmlentities(strip_tags($title));
     $cleanfile = str_replace('.md', '', str_replace('.php', '', $file));
     if($file == $this_file) {
-      $index_content .= "<li class='current'>$title</li>";
+      $index_content .= "<li class='current'>$hetitle</li>";
     } else {
-      $index_content .= "<li><a href='$cleanfile' title='".strip_tags($title)."'>$title</a></li>";
+      $index_content .= "<li><a href='$cleanfile' title='$hestitle'>$hetitle</a></li>";
     }
   }
   $index_content .= "</ul>";
@@ -106,10 +108,13 @@ function build_index_content() {
       $title = get_file_title_md($base . 'index.md');
     else
       $title = get_file_title($base . 'index.php');
+    $hetitle = htmlentities($title);
+    $hesttitle = htmlentities(strip_tags($title));
+
     if(($this_file == 'index.php' || $this_file == 'index.md') && $depth == 0) {
-      $index_content = "<ul><li><div class='current'>$title</div>$index_content</li></ul>";
+      $index_content = "<ul><li><div class='current'>$hetitle</div>$index_content</li></ul>";
     } else {
-      $index_content = "<ul><li><a href='$path'>$title</a>$index_content</li></ul>";
+      $index_content = "<ul><li><a href='$path'>$hetitle</a>$index_content</li></ul>";
     }
     $path = '../' . $path;
     $base = $base . '../';

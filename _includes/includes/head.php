@@ -37,7 +37,7 @@
       echo '    <meta name="robots" content="none">';
     }
   ?>
-  <title><?php echo $title; ?></title>
+  <title><?php echo htmlentities($title); ?></title>
   <?php
 /* Our local CDN version is identical to this file:
   <script
