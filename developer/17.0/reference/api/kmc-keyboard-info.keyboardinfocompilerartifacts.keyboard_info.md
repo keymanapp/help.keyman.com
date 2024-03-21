@@ -4,6 +4,8 @@
 
 ## KeyboardInfoCompilerArtifacts.keyboard\_info property
 
+Binary keyboard info filedata and filename - used by keyman.com
+
 **Signature:**
 
 ```typescript

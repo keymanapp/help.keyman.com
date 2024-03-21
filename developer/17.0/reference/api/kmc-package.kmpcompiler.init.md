@@ -4,6 +4,8 @@
 
 ## KmpCompiler.init() method
 
+Initialize the compiler. Copies options.
+
 **Signature:**
 
 ```typescript
@@ -14,10 +16,12 @@ init(callbacks: CompilerCallbacks, options: KmpCompilerOptions): Promise<boolean
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  callbacks | CompilerCallbacks |  |
-|  options | KmpCompilerOptions |  |
+|  callbacks | CompilerCallbacks | Callbacks for external interfaces, including message reporting and file io |
+|  options | [KmpCompilerOptions](./kmc-package.kmpcompileroptions.md) | Compiler options |
 
 **Returns:**
 
 Promise&lt;boolean&gt;
+
+false if initialization fails
 

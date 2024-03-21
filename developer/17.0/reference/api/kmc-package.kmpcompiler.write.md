@@ -4,6 +4,10 @@
 
 ## KmpCompiler.write() method
 
+Write artifacts from a successful compile to disk, via callbacks methods. The artifacts written may include:
+
+- .kmp file - binary keyboard package used by Keyman on desktop and touch platforms
+
 **Signature:**
 
 ```typescript
@@ -14,9 +18,11 @@ write(artifacts: KmpCompilerArtifacts): Promise<boolean>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  artifacts | KmpCompilerArtifacts |  |
+|  artifacts | [KmpCompilerArtifacts](./kmc-package.kmpcompilerartifacts.md) | object containing artifact binary data to write out |
 
 **Returns:**
 
 Promise&lt;boolean&gt;
+
+true on success
 
