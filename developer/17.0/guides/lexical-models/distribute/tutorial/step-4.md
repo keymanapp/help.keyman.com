@@ -13,25 +13,25 @@ Package Name
 
 Model Version
 
-:   Update the version (intial version can default to 1.0). A version
-    number for the model and package is important - it helps your users
-    know that they are using the most recent update of your package. The
-    version format you should use is `1.0`.
+: Update the version (intial version can default to 1.0). A version
+  number for the model and package is important - it helps your users
+  know that they are using the most recent update of your package. The
+  version format you should use is `1.0`.
 
-    When making a major change to your lexical model package, increment
-    the first part and set the second part to `0`, e.g. from `1.0` to
-    `2.0`.
+  When making a major change to your lexical model package, increment
+  the first part and set the second part to `0`, e.g. from `1.0` to
+  `2.0`.
 
-    When making a bug fix or a minor update, increment the second part,
-    e.g. from `1.0` to `1.1`.
+  When making a bug fix or a minor update, increment the second part,
+  e.g. from `1.0` to `1.1`.
 
-    Version numbers should be in the form `major.minor[.subversion]`.
-    Subversion is optional but is helpful for small bug fix releases.
-    Each of the sections of the version should be an integer. Keyman
-    does integer comparisons on the version numbers, so, for example,
-    version `2.01` is regarded as older than version `2.2`. Alphabetic
-    or date formats should be avoided as the installer for the model
-    cannot determine which version is older reliably.
+  Version numbers should be in the form `major.minor[.subversion]`.
+  Subversion is optional but is helpful for small bug fix releases.
+  Each of the sections of the version should be an integer. Keyman
+  does integer comparisons on the version numbers, so, for example,
+  version `2.01` is regarded as older than version `2.2`. Alphabetic
+  or date formats should be avoided as the installer for the model
+  cannot determine which version is older reliably.
 
 Copyright
 
