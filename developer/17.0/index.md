@@ -8,6 +8,7 @@ and tutorials, and full reference information.
 
 ## Guides and Tutorials
 -   [What is Keyman Developer?](guides/intro)
+-   [What's new in 17.0](whats-new)
 -   [Developing Keyman keyboard layouts](guides/develop)
 -   [Testing Keyman keyboards](guides/test)
 -   [Distributing Keyman keyboards](guides/distribute)
