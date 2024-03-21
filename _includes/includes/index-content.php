@@ -16,7 +16,7 @@ function get_file_titles($base) {
       continue;
     }
 
-    if(preg_match('/developer\/(current-version|\d+\.\d+)\/reference\/api/', $file)) {
+    if(preg_match('/developer\/(current-version|latest-version|\d+\.\d+)\/reference\/api/', $file)) {
       // Performance cost -- there are many files in this folder. This is a
       // temporary fix until we move to better API documentation hosting in the
       // future
