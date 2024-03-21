@@ -97,7 +97,7 @@ function build_index_content() {
     if($file == $this_file) {
       $index_content .= "<li class='current'>$hetitle</li>";
     } else {
-      $index_content .= "<li><a href='$cleanfile' title='$hestitle'>$hetitle</a></li>";
+      $index_content .= "<li><a href='$cleanfile' title='$hesttitle'>$hetitle</a></li>";
     }
   }
   $index_content .= "</ul>";
