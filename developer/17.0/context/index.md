@@ -1,7 +1,7 @@
 ---
 title: Context Help
 ---
-  
+
 [Project Window](project)
 
 [Keyboard Editor](keyboard-editor)
@@ -9,6 +9,10 @@ title: Context Help
 [Model Editor](model-editor)
 
 [Debug Window](debug)
+
+[LDML Keyboard Debug Window](ldml-debug)
+
+[LDML Keyboard Editor](ldml-editor)
 
 [Package Editor](package-editor)
 
@@ -21,6 +25,8 @@ title: Context Help
 [New Project Parameters Dialog](new-project-parameters)
 
 [New Lexical Model Project Parameters Dialog](new-lm-project-parameters)
+
+[New LDML Project Parmaeters dialog](new-ldml-project-parameters)
 
 [About Dialog](about-tike)
 
