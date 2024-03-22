@@ -9,8 +9,9 @@ punctuation. The actual rules for where to find words can get quite
 tricky to describe, but Keyman implements the [Unicode Standard Annex #29 §4.1 Default Word Boundary Specification](https://unicode.org/reports/tr29/#Word_Boundaries) 
 which works well for most languages.
 
-However, in languages written in other scripts—especially East Asian
-scripts like Chinese, Japanese, Khmer, Lao, and Thai—there are is no
+However, in languages written in other scripts — especially East Asian
+scripts like Chinese, Japanese, Khmer, Lao, and Thai — there are no
+
 obvious break in between words. For these languages, there must be
 special rules for determining when words start and stop. This is what a
 _word breaker function_ is responsible for. It is
