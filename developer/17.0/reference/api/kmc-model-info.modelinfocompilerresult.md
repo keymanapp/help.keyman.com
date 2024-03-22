@@ -4,6 +4,8 @@
 
 ## ModelInfoCompilerResult interface
 
+Build artifacts from the .model\_info compiler
+
 **Signature:**
 
 ```typescript
@@ -15,5 +17,5 @@ export interface ModelInfoCompilerResult extends KeymanCompilerResult
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [artifacts](./kmc-model-info.modelinfocompilerresult.artifacts.md) |  | [ModelInfoCompilerArtifacts](./kmc-model-info.modelinfocompilerartifacts.md) |  |
+|  [artifacts](./kmc-model-info.modelinfocompilerresult.artifacts.md) |  | [ModelInfoCompilerArtifacts](./kmc-model-info.modelinfocompilerartifacts.md) | Internal in-memory build artifacts from a successful compilation. Caller can write these to disk with [ModelInfoCompiler.write()](./kmc-model-info.modelinfocompiler.write.md) |
 

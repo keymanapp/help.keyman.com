@@ -4,7 +4,9 @@
 
 ## KeyboardInfoCompiler.run() method
 
-Builds a .keyboard\_info file with metadata from the keyboard and package source file. This function is intended for use within the keyboards repository. While many of the parameters could be deduced from each other, they are specified here to reduce the number of places the filenames are constructed. For full documentation, see: https://help.keyman.com/developer/cloud/keyboard\_info/
+Builds a .keyboard\_info file with metadata from the keyboard and package source file. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [KeyboardInfoCompiler.init()](./kmc-keyboard-info.keyboardinfocompiler.init.md) function to read any input files by disk.
+
+This function is intended for use within the keyboards repository. While many of the parameters could be deduced from each other, they are specified here to reduce the number of places the filenames are constructed. For full documentation, see: https://help.keyman.com/developer/cloud/keyboard\_info/
 
 **Signature:**
 
@@ -22,4 +24,6 @@ run(inputFilename: string, outputFilename?: string): Promise<KeyboardInfoCompile
 **Returns:**
 
 Promise&lt;[KeyboardInfoCompilerResult](./kmc-keyboard-info.keyboardinfocompilerresult.md)<!-- -->&gt;
+
+Binary artifacts on success, null on failure.
 

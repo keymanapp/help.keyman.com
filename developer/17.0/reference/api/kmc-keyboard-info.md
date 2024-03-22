@@ -8,15 +8,14 @@
 
 |  Class | Description |
 |  --- | --- |
-|  [KeyboardInfoCompiler](./kmc-keyboard-info.keyboardinfocompiler.md) |  |
-|  [KeyboardInfoCompilerMessages](./kmc-keyboard-info.keyboardinfocompilermessages.md) |  |
+|  [KeyboardInfoCompiler](./kmc-keyboard-info.keyboardinfocompiler.md) | Compiles source data from a keyboard project to a .keyboard\_info. The compiler does not read or write from filesystem or network directly, but relies on callbacks for all external IO. |
 
 ## Interfaces
 
 |  Interface | Description |
 |  --- | --- |
-|  [KeyboardInfoCompilerArtifacts](./kmc-keyboard-info.keyboardinfocompilerartifacts.md) |  |
-|  [KeyboardInfoCompilerOptions](./kmc-keyboard-info.keyboardinfocompileroptions.md) |  |
-|  [KeyboardInfoCompilerResult](./kmc-keyboard-info.keyboardinfocompilerresult.md) |  |
-|  [KeyboardInfoSources](./kmc-keyboard-info.keyboardinfosources.md) |  |
+|  [KeyboardInfoCompilerArtifacts](./kmc-keyboard-info.keyboardinfocompilerartifacts.md) | Internal in-memory build artifacts from a successful compilation |
+|  [KeyboardInfoCompilerOptions](./kmc-keyboard-info.keyboardinfocompileroptions.md) | Options for the .keyboard\_info compiler |
+|  [KeyboardInfoCompilerResult](./kmc-keyboard-info.keyboardinfocompilerresult.md) | Build artifacts from the .keyboard\_info compiler |
+|  [KeyboardInfoSources](./kmc-keyboard-info.keyboardinfosources.md) | Description of sources and metadata required to build a .keyboard\_info file |
 

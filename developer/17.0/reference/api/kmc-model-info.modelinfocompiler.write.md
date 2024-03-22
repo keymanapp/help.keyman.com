@@ -4,6 +4,10 @@
 
 ## ModelInfoCompiler.write() method
 
+Write artifacts from a successful compile to disk, via callbacks methods. The artifacts written may include:
+
+- .model\_info file - metadata file used by keyman.com
+
 **Signature:**
 
 ```typescript
@@ -14,9 +18,11 @@ write(artifacts: ModelInfoCompilerArtifacts): Promise<boolean>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  artifacts | [ModelInfoCompilerArtifacts](./kmc-model-info.modelinfocompilerartifacts.md) |  |
+|  artifacts | [ModelInfoCompilerArtifacts](./kmc-model-info.modelinfocompilerartifacts.md) | object containing artifact binary data to write out |
 
 **Returns:**
 
 Promise&lt;boolean&gt;
+
+true on success
 

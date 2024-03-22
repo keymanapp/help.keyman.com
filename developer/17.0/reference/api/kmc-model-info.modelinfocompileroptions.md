@@ -4,6 +4,8 @@
 
 ## ModelInfoCompilerOptions interface
 
+Options for the .model\_info compiler
+
 **Signature:**
 
 ```typescript
@@ -15,5 +17,5 @@ export interface ModelInfoCompilerOptions extends CompilerOptions
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [sources](./kmc-model-info.modelinfocompileroptions.sources.md) |  | [ModelInfoSources](./kmc-model-info.modelinfosources.md) |  |
+|  [sources](./kmc-model-info.modelinfocompileroptions.sources.md) |  | [ModelInfoSources](./kmc-model-info.modelinfosources.md) | Description of sources and metadata required to build a .model\_info file |
 
