@@ -43,7 +43,7 @@ minority language in question does use them.  In addition, hyphens sometimes occ
 within words.
 
 The word breaker function can be specified in the
-[model definition file](./model-definition-file.php) as follows:
+[model definition file](./model-definition-file) as follows:
 
 ```typescript
 const source: LexicalModelSource = {
