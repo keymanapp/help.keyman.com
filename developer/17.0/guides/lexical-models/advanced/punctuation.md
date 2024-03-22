@@ -7,8 +7,7 @@ The lexical models use two different kinds of punctuation:
 -   Quotation marks around the “keep” suggestion.
 -   What kind of space to insert after words, if any.
 
-Both of these can be customized by adding the punctuation to [model definition file](./model-definition-file). Here is a full example of a
-model definition file using default punctuation:
+Both of these can be customized by adding the punctuation to [model definition file](./model-definition-file). Here is a full example of a model definition file using default punctuation:
 
 ```typescript
 const source: LexicalModelSource = {
@@ -35,8 +34,7 @@ it's displayed in the suggestion bar. By defaut, the quotations used are
 quote** is `“` U+201C LEFT DOUBLE QUOTATION MARK, and the **close
 quote** is `”` U+201D RIGHT DOUBLE QUOTATION MARK.
 
-Let's customize this to use `«` and `»` for the open and close quote,
-respectively. To do this, change the part labeled
+Let's customize this to use `«` and `»` for the open and close quote, respectively. To do this, change the part labeled
 `quotesForKeepSuggestion`:
 
 ```typescript
@@ -49,9 +47,7 @@ punctuation: {
 
 ## Customizing `insertAfterWord`
 
-Many languages insert a space after a word. Some languages, a like Thai
-or Khmer, do not use spaces. To suppress the space, you may set
-`insertAfterWord` to the empty string:
+Many languages insert a space after a word. Some languages, like Thai or Khmer, do not use spaces. To suppress the space, you may set `insertAfterWord` to the empty string:
 
 ```typescript
 punctuation: {
@@ -59,8 +55,7 @@ punctuation: {
 },
 ```
 
-You can even use an alternate spacing character, if required by your
-language:
+You can even use an alternate spacing character, if required by your language:
 
 ```typescript
 punctuation: {

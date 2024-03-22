@@ -12,14 +12,10 @@ called the _key_. Typically, the key is always in
 lowercase, and lacks all accents and diacritics. For example, the key
 for “naïve" is `naive` and the key for “Canada” is `canada`.
 
-The form of the word that is stored is “regularized” through the use of
-a _key function_, which you can define in
-TypeScript code.
+The form of the word that is stored is “regularized” through the use of a _key function_, which you can define in TypeScript code.
 
-Note: this function runs both **on every word when the wordlist is
-compiled** and **on the input, whenever a suggestion is requested**.
-This way, whatever a user types is *matched* to something stored in the
-lexical model, without the user having to type things in a specific way.
+> ### Note: 
+This function runs both **on every word when the wordlist is compiled** and **on the input, whenever a suggestion is requested**. This way, whatever a user types is *matched* to something stored in the lexical model, without the user having to type things in a specific way.
 
 The key function takes a string which is the raw search term, and
 returns a new string, being the “regularized” key. As an example,
@@ -69,8 +65,7 @@ necessary to write your own key function.
 
 ## Use in your model definition file
 
-To use this in your model definition file, provide a function as the
-`searchTermToKey` property of the lexical model source:
+To use this in your model definition file, provide a function as the `searchTermToKey` property of the lexical model source:
 
 ```typescript
 const source: LexicalModelSource = {
@@ -89,14 +84,9 @@ export default source;
 
 ## Suggested customizations
 
--   For all writing systems, **normalize into NFKD** or **NFKC** form
-    using `wordform = wordform.normalize('NFKD')`.
--   For Latin-based scripts, **lowercase** the word, and **remove
-    diacritics**.
--   For scripts that use the U+200C zero-width joiner (ZWJ) and/or the
-    U+200D zero-width non-joiner (ZWNJ) (e.g., Brahmic scripts),
-    **remove the ZWJ or ZWNJ** from the **end** of the input with
-    `wordform = wordform.replace(/[\u200C\u200D]+$/`
+- For all writing systems, **normalize into NFKD** or **NFKC** form using `wordform = wordform.normalize('NFKD')`.
+- For Latin-based scripts, **lowercase** the word, and **remove diacritics**.
+- For scripts that use the U+200C zero-width joiner (ZWJ) and/or the U+200D zero-width non-joiner (ZWNJ) (e.g., Brahmic scripts), **remove the ZWJ or ZWNJ** from the **end** of the input with `wordform = wordform.replace(/[\u200C\u200D]+$/`
 
 ------------------------------------------------------------------------
 

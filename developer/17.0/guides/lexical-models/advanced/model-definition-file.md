@@ -6,9 +6,7 @@ This is a small [TypeScript](https://www.typescriptlang.org/) source
 code file that tells us how to define our model.
 
 In the case of the **wordlist lexical models**, the model definition
-file indicates where find to find the [TSV source files](../../../reference/file-types/tsv), as well as gives us the
-option to tell the compiler a little bit more about our language’s
-spelling system or *orthography*.
+file indicates where to find the [TSV source files](../../../reference/file-types/tsv), as well as gives us the option to tell the compiler a little bit more about our language’s spelling system or *orthography*.
 
 ## The model definition template
 
@@ -88,18 +86,17 @@ export default source;
 ## Customizing our lexical model
 
 The template, as described in the previous section, is a good starting
-point, and may be all you need for you language. However, most language
+point, and may be all you need for your language. However, most language
 require a few customizations. The `trie-1.0` wordlist model supports the
 following customizations:
 
 [Punctuation](punctuation)
-:   How to define certain punctuation in your language
+:   How to define certain punctuation in your language.
 
 [Word breaker](word-breaker)
-:   How to determine when words start and end in the writing system
+:   How to determine when words start and end in the writing system.
 
 [Search term to key](search-term-to-key)
-:   How and when to ignore accents and letter case
+:   How and when to ignore accents and letter case.
 
-To see all of the things possible in a model definition file, see the
-[`LexicalModelSource` interface](https://github.com/keymanapp/keyman/blob/stable-15.0/developer/js/source/lexical-model-compiler/lexical-model.ts#L95-L146).
+To see all of the things possible in a model definition file, see the [`LexicalModelSource` interface](https://github.com/keymanapp/keyman/blob/stable-15.0/developer/js/source/lexical-model-compiler/lexical-model.ts#L95-L146).

@@ -10,27 +10,13 @@ tricky to describe, but Keyman implements the [Unicode Standard Annex #29 §4.1 
 which works well for most languages.
 
 However, in languages written in other scripts — especially East Asian
-scripts like Chinese, Japanese, Khmer, Lao, and Thai — there are no
-
-obvious break in between words. For these languages, there must be
-special rules for determining when words start and stop. This is what a
-_word breaker function_ is responsible for. It is
-a little bit of code that looks at some text to determine where the
-words are.
+scripts like Chinese, Japanese, Khmer, Lao, and Thai — there are no obvious break in between words. For these languages, there must be special rules for determining when words start and stop. This is what a _word breaker function_ is responsible for. It is a little bit of code that looks at some text to determine where the words are.
 
 You can customize the word breaker in three ways:
-
--   If your language uses its writing system in an unconventional way
-    (e.g., use spaces to separate words in Thai, Lao, Burmese, or
-    Khmer), you can [override the script's default
-    behaviour](#overrides)
--   If the default word breaker creates **too many splits**, you can
-    [choose which strings join words together](#join).
--   If the default word breaker creates **not enough splits**, you must
-    [create your own word breaker function](#custom).
--   Alternatively, you may choose to [customize and extend the
-    wordbreaker's behavior](./unicode-breaker-extension) by adding extra
-    rules and changing how it treats specific characters.
+- If your language uses its writing system in an unconventional way (e.g., use spaces to separate words in Thai, Lao, Burmese, or Khmer), you can [override the script's default behaviour](#overrides)
+- If the default word breaker creates **too many splits**, you can [choose which strings join words together](#join).
+- If the default word breaker creates **not enough splits**, you must [create your own word breaker function](#custom).
+- Alternatively, you may choose to [customize and extend the wordbreaker's behavior](./unicode-breaker-extension) by adding extra rules and changing how it treats specific characters.
 
 ## Overriding script defaults
 
@@ -42,8 +28,7 @@ works. You can override the defaults by specifying the
 There is currently only one override:
 
 `'break-words-at-spaces'`
-:   Only breaks words at spaces for scripts that otherwise do not use
-    spaces in between words.
+:   Only breaks words at spaces for scripts that otherwise do not use spaces in between words.
 
 ### Break words at spaces
 
@@ -79,10 +64,9 @@ The default word breaker is very liberal in what it considers is a word.
 For instance, the default word breaker will split words at hyphens.
 Consider the following Plains Cree example; this is a single word:
 
-amiskwaciy-wâskahikan
+:   amiskwaciy-wâskahikan
 
-However, the default word breaker will produce three words:
-`amiskwaciy`, `-`, and `wâskahikan`.
+However, the default word breaker will produce three words: `amiskwaciy`, `-`, and `wâskahikan`.
 
 To **join words at hyphens and any other punctuation**, provide the
 `joinWordsAt` option in the [model definition file](./model-definition-file):
@@ -119,7 +103,8 @@ export default source;
 
 ## Writing a custom word breaker function
 
-> **Note**: If your language uses spaces to denote word breaks, the
+> **Note**: 
+If your language uses spaces to denote word breaks, the
 default word breaker is probably sufficient. Only customize this if you
 know the default word breaker really does not work for your language!
 
@@ -150,8 +135,7 @@ their start point, and they must be non-overlapping.
 
 A _span_ is an indivisible piece of a sentence.
 This is typically a word, but it can also be a series of spaces, an
-emoji, or a series of punctuation characters. **A span that looks like a
-word is treated like a word in the `trie-1.0` model**.
+emoji, or a series of punctuation characters. **A span that looks like a word is treated like a word in the `trie-1.0` model**.
 
 A `span` has the following properties:
 
@@ -174,7 +158,10 @@ which the span begins, and the index at which the *next* span begins.
 ## Example for English
 
 Here is a full example of word breaker function that returns an array of
-spans in an ASCII (English) string. Note: this is just an example—please
+spans in an ASCII (English) string. 
+
+> **Note**
+This is just an example—please
 use the default word breaker for English text!
 
 ```typescript
