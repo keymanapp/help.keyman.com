@@ -11,8 +11,7 @@ The LDML editor in this release is very basic, supporting syntax highlighting
 and basic editing, but specific support for the keyboard3 format is scheduled
 for release in version 18.0.
 
-LDML keyboards can be tested by pressing <kbd>F5</kbd>. This opens the [LDML
-Debug window](ldml-debug).
+LDML keyboards can be tested by pressing <kbd>F5</kbd>. This opens the [LDML Debug window](ldml-debug).
 
 The text editor supports standard Windows editing keystrokes. It uses the Monaco
 component from Visual Studio Code, so much of the functionality available in

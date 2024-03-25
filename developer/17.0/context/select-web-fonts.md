@@ -11,7 +11,7 @@ fonts from its own infrastructure, so they will need to be shared in the Keyman
 content delivery network repository
 [s.keyman.com](https://github.com/keymanapp/s.keyman.com).
 
-Separate fonts can be specified for the On Screen Keyboard and the recommended
+Separate fonts can be specified for the On-Screen Keyboard and the recommended
 Display font.
 
 ![Select Web Fonts dialog](/cdn/dev/img/developer/170/ui/frmPackageEditor_SelectWebFonts.png)

@@ -34,11 +34,11 @@ title: Context Help
 
 [Options Dialog](options)
 
-[Splash Screen](startup)
-
 [KMComp Command-line Options](kmcomp)
 
 [KMConvert Command-line Options](kmconvert)
+
+[kmc Command-line Options](kmc)
 
 [kmlmc Command-line Options](kmlmc)
 
@@ -51,3 +51,7 @@ title: Context Help
 [Message Window](messages)
 
 [Keyman Developer Server](server) (web test host)
+
+[Keyman Developer](keyman-developer)
+
+[Select Web fonts](select-web-fonts)
