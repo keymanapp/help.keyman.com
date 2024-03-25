@@ -165,7 +165,7 @@ editor shown within this view.
 
 ## On-Screen tab
 
-![Keyboard Editor - On-Screen tab](/cdn/dev/img/developer/170/ui/OnScreenKeyboard17.0.png)
+![Keyboard Editor - On-Screen tab](/cdn/dev/img/developer/170/ui/OnScreenKeyboard.png)
 
 This tab allows you to edit the visual representation of your keyboard
 layout. The content on this tab is stored in the .kvks file associated
@@ -232,7 +232,7 @@ Auto-fill underlying layout
 
 ## Touch Layout tab
 
-![Keyboard Editor - Touch Layout tab, Design view](/cdn/dev/img/developer/170/ui/TouchLayout_Design17.0.png)
+![Keyboard Editor - Touch Layout tab, Design view](/cdn/dev/img/developer/170/ui/TouchLayout_Design.png)
 
 The Touch Layout tab is used to create the visible representation of the
 keyboard layout for touch devices. It works similarly to the On Screen
@@ -251,7 +251,7 @@ including iPhone and iPad, in different orientations, to allow you to
 visualize the keyboard layout before you load it onto a device. The
 following image shows all aspects of the touch design view.
 
-![Keyboard Editor - Touch Layout tab, Design view closeup](/cdn/dev/img/developer/170/ui/TouchLayout_Design_2-17.0.png)
+![Keyboard Editor - Touch Layout tab, Design view closeup](/cdn/dev/img/developer/170/ui/TouchLayout_Design_2.png)
 
 ### Left sidebar controls
 

@@ -21,7 +21,7 @@ editor are:
 The following image shows the first tab of the editor, the Details tab.
 Changes made to this tab are reflected immediately in the Source tab.
 
-![Model Editor - Details tab](/cdn/dev/img/developer/170/ui/frmModelEditor_Details1.png)
+![Model Editor - Details tab](/cdn/dev/img/developer/170/ui/frmModelEditor_Details.png)
 
 The fields here have corresponding definitions in the [.model.ts source file](../reference/file-types/model-ts), which can be seen in the
 **Source** tab:

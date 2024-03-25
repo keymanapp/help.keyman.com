@@ -4,7 +4,7 @@ title: Options Dialog
 
 ## General tab
 
-![Options dialog - General tab](/cdn/dev/img/developer/170/ui/frmOptions_General1.png)
+![Options dialog - General tab](/cdn/dev/img/developer/170/ui/frmOptions_General.png)
 
 The following options are configurable in TIKE in the **General** tab:
 
@@ -50,7 +50,7 @@ SMTP Settings...
 
 ## Editor tab
 
-![Options dialog - Editor tab](/cdn/dev/img/developer/170/ui/frmOptions_Editor1.png)
+![Options dialog - Editor tab](/cdn/dev/img/developer/170/ui/frmOptions_Editor.png)
 
 Use tab character
 :   Sets whether to use the Tab character or spaces for indents.
@@ -76,7 +76,7 @@ Editor theme
 
 ## Debugger tab
 
-![Options dialog - Debugger tab](/cdn/dev/img/developer/170/ui/frmOptions_Debugger1.png)
+![Options dialog - Debugger tab](/cdn/dev/img/developer/170/ui/frmOptions_Debugger.png)
 
 Enable test window (from version 5.0)
 :   Enables the Keyman 5-style Test window instead of the debugger.
@@ -99,7 +99,7 @@ Automatically reset debugger before recompiling
 
 ## Character Map tab
 
-![Options dialog - Character Map tab](/cdn/dev/img/developer/170/ui/frmOptions_CharacterMap1.png)
+![Options dialog - Character Map tab](/cdn/dev/img/developer/170/ui/frmOptions_CharacterMap.png)
 
 Find character under cursor automatically
 :   The character beneath the cursor in the edit window will be
