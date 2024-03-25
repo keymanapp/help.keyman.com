@@ -31,9 +31,9 @@ the screen, then only those that fit will be shown in the grid.
 
 The debug menu and debug toolbar control the debugger.
 
-![Debug toolbar](/cdn/dev/img/developer/170/ui/Debug_Toolbar17.0.png)
+![Debug toolbar](/cdn/dev/img/developer/170/ui/Debug_Toolbar.png)
 
-![Debug menu](/cdn/dev/img/developer/170/ui/Debug_Menu17.0.png)
+![Debug menu](/cdn/dev/img/developer/170/ui/Debug_Menu.png)
 
 Set/Clear breakpoint
 :   A breakpoint can be put on a line of code to ask Keyman Developer to
