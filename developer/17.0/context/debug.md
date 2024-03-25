@@ -4,7 +4,7 @@ title: Debug Window
   
 ![Debug window - Debug State](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Debug_State.png)
 
-The debug window is shown at the bottom of an keyboard editor when
+The debug window is shown at the bottom of the keyboard editor when
 debugging the keyboard. There are several user interface areas: The
 debugger input window, the debugger status window, a debugger toolbar
 (usually docked under the menu), and the status bar will show the
@@ -31,9 +31,9 @@ the screen, then only those that fit will be shown in the grid.
 
 The debug menu and debug toolbar control the debugger.
 
-![Debug toolbar](/cdn/dev/img/developer/100/ui/Debug_Toolbar.png)
+![Debug toolbar](/cdn/dev/img/developer/170/ui/Debug_Toolbar17.0.png)
 
-![Debug menu](/cdn/dev/img/developer/100/ui/Debug_Menu.png)
+![Debug menu](/cdn/dev/img/developer/170/ui/Debug_Menu17.0.png)
 
 Set/Clear breakpoint
 :   A breakpoint can be put on a line of code to ask Keyman Developer to
@@ -62,15 +62,13 @@ Run
     into single step mode again.
 
 Pause
-:   Use the Pause button or press Shift+Esc to pause the debugger. When
-    the debugger is paused, it will not accept any input, and ordinary
-    shortcut keys (Shift+F5, Alt+Tab, etc.) will function as usual.
-    Press Pause again to resume debugging.
+:   Use the Pause button or press <kbd>Shift</kbd> + <kbd>Esc</kbd> to pause the debugger. When
+    the debugger is paused, it will not accept any input, and ordinary shortcut keys (<kbd>Shift</kbd> + <kbd>F5</kbd>, <kbd>Alt</kbd> + <kbd>Tab</kbd>, etc.) will function as usual. Press Pause again to resume debugging.
 
-System keyboard
+<!-- System keyboard
 :   The system keyboard layout currently being used. You can test your
     keyboard with a different underlying layout by selecting
-    **Select System Keyboard** from the **Debug** menu.
+    **Select System Keyboard** from the **Debug** menu. -->
 
 ## Debug State box
 

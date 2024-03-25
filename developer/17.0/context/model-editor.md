@@ -21,7 +21,7 @@ editor are:
 The following image shows the first tab of the editor, the Details tab.
 Changes made to this tab are reflected immediately in the Source tab.
 
-![Model Editor - Details tab](/cdn/dev/img/developer/130/ui/frmModelEditor_Details.png)
+![Model Editor - Details tab](/cdn/dev/img/developer/170/ui/frmModelEditor_Details1.png)
 
 The fields here have corresponding definitions in the [.model.ts source file](../reference/file-types/model-ts), which can be seen in the
 **Source** tab:
@@ -36,6 +36,18 @@ Word breaker
     `default`, `ascii`, or `custom`. Corresponds to the `wordBreaker`
     property in the [.model.ts source file](../reference/file-types/model-ts).
 
+Insert after word
+: *update is coming*
+
+Quotation marks
+: *update is coming*
+
+Right-to-left script
+: *update is coming*
+
+Language uses casing
+: *update is coming*
+
 Comments
 :   This field corresponds to the first lines of comments in the model
     source, and is visible only to the model designer.
@@ -49,7 +61,7 @@ Wordlists
     model source. Corresponds to the `sources` property in the
     [.model.ts source file](../reference/file-types/model-ts).
 
-> Note: 
+> ### Note 
 If the [.model.ts](../reference/file-types/model-ts) file cannot
 be parsed by the model editor, the field shown here will be read only
 and you will need to make changes only in the **Source** tab. This can
@@ -83,7 +95,8 @@ earlier in the list.
 
 ![Model Editor - Wordlist tab - Code view](/cdn/dev/img/developer/130/ui/frmModelEditor_Wordlist_Code.png)
 
-Note: The wordlist Code editor will accept the Tab key to insert a Tab
+> ### Note
+The wordlist Code editor will accept the Tab key to insert a Tab
 character. In other code editors in Keyman Developer, the Tab key
 inserts spaces.
 
@@ -97,7 +110,7 @@ programming language. The format of this file is documented in the
 
 ## Build tab
 
-![Model Editor - Build tab](/cdn/dev/img/developer/130/ui/frmModelEditor_Build.png)
+![Model Editor - Build tab](/cdn/dev/img/developer/170/ui/frmModelEditor_Build.png)
 
 A set of common controls is across the top of this tab:
 
@@ -108,13 +121,13 @@ Compile Model
     single Javascript file, named as shown in the **Target filename**
     field.
 
-Open Containing Folder
-:   Opens the folder which contains the model source files.
+Open source, build, and project folder
+:   Opens the folder which contains the model source, build, and project files.
 
-Add to Project
+<!-- Add to Project
 :   If the model file is not already part of the project, adds it to the
     project. (Note: this button can sometimes have the caption "Current
-    editor file".)
+    editor file".) -->
 
 ### Test Lexical Model in Web Browser
 
@@ -131,20 +144,23 @@ Keyboard for testing
 
 Test Lexical Model
 :   Starts the Keyman Developer Web Server for the current lexical
-    model.
-
-Addresses
-:   Lists the various IP addresses and hostnames that Keyman Developer
+    model. This will list the various IP addresses and hostnames that Keyman Developer
     is listening on
 
-Open debugger in local browser
+Configure...
+:   Pressing this allows the [Options](./options) dialog to pop-up.
+
+Open in browser
 :   Starts your default browser with the selected address to allow
     testing of the model directly
 
-Send addresses to email
+Send to email...
 :   Sends the list of web addresses as an email so that you can more
     easily open the test site on your mobile device, or share with
     someone else on your network.
+
+Copy link
+:   Once the IP addresses are shown, feel free to copy any one of the links.
 
 To test on other platforms, open one of the debug host addresses listed
 on your device. Your device will need to be on the same network as the
