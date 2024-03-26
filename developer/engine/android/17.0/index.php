@@ -10,7 +10,7 @@
 <h2 id="Overview" name="Overview">Overview</h2>
 
 <p>Keyman Engine for Android 17.0 is a Java library for Android 5.0 and later versions which enables a fully customisable keyboard layout, both within an app and system-wide.
-Keyboard layouts for Keyman Engine can be created with <a href='/developer/13.0'>Keyman Developer</a>, and a <a href='http://keyman.com/developer/keymanweb/keyboards'>library of existing keyboard layouts</a>
+Keyboard layouts for Keyman Engine can be created with <a href='/developer/17.0'>Keyman Developer</a>, and a <a href='http://keyman.com/developer/keymanweb/keyboards'>library of existing keyboard layouts</a>
 is also available.</p>
 
 <p>For keyboard developers updating from an older versions of Keyman Engine for Android,
