@@ -2,15 +2,11 @@
 title: New LDML Keyboard Project Parameters Dialog
 ---
 
-Allows you to quickly fill in common parameters for a new LDML keyboard project,
-adding keyboard, package, documentation and metadata files, following the [file
-layout](/developer/keyboards/) used in the [Keyman keyboards
-repository](https://github.com/keymanapp/keyboards).
+Allows you to quickly fill in common parameters for a new LDML keyboard project, adding keyboard, package, documentation and metadata files, following the [file layout](/developer/keyboards/) used in the [Keyman keyboards repository](https://github.com/keymanapp/keyboards).
 
 Projects can also be created from the command line with [KMConvert](kmconvert).
 
-![Keyboard Editor - New file, Details
-tab](/cdn/dev/img/developer/170/ui/frmNewLDMLProjectParameters.png)
+![Keyboard Editor - New file, Details tab](/cdn/dev/img/developer/170/ui/frmNewLDMLProjectParameters.png)
 
 ### Parameters
 
