@@ -1,51 +1,39 @@
-<?php
-  require_once('includes/template.php');
+---
+title: Keyman Engine for Android
+---
 
-  head([
-    'title' => 'Keyman Engine for Android'
-  ]);
-?>
-<h1 class="center">Keyman Engine for Android</h1>
+## Overview
 
-<h2 id="Overview" name="Overview">Overview</h2>
-
-<p>Keyman Engine for Android 17.0 is a Java library for Android 5.0 and later versions which enables a fully customisable keyboard layout, both within an app and system-wide.
-Keyboard layouts for Keyman Engine can be created with <a href='/developer/17.0'>Keyman Developer</a>, and a <a href='http://keyman.com/developer/keymanweb/keyboards'>library of existing keyboard layouts</a>
+Keyman Engine for Android 17.0 is a Java library for Android 5.0 and later versions which enables a fully customisable keyboard layout, both within an app and system-wide.
+Keyboard layouts for Keyman Engine can be created with [Keyman Developer](/developer/17.0), and a [library of existing keyboard layouts](http://keyman.com/developer/keymanweb/keyboards)
 is also available.</p>
 
-<p>For keyboard developers updating from an older versions of Keyman Engine for Android,
-see <a href='whatsnew'>What's New</a> for breaking changes</a>
+For keyboard developers updating from an older versions of Keyman Engine for Android,
+see [What's New](whatsnew) for breaking changes</a>
 
-<h2 id="Guides" name="Guides"><a href='guides/'>Guides</a></h2>
+## [Guides](guides/)
 
-<ul>
-  <li><a href='guides/in-app/'>Build an in-app keyboard</a></li>
-  <li><a href='guides/system-keyboard/'>Build a system keyboard app</a></li>
-</ul>
+* [Build an in-app keyboard](guides/in-app/)
+* [Build a system keyboard app](guides/system-keyboard/)
 
-<h2 id="Classes" name="Classes">Classes</h2>
+## Classes
 
-<dl>
-  <dt><code><a href='KMManager/'>KMManager</a></code></dt>
-  <dd>The core class for controlling Keyman Engine</dd>
+[KMManager](KMManager/)
+: The core class for controlling Keyman Engine
 
-  <dt><code><a href='KeyboardEventHandler/'>KeyboardEventHandler</a></code></dt>
-  <dd>Provides keyboard and lexical-model events and methods to notify registered listeners</dd>
-</dl>
+[KeyboardEventHandler](KeyboardEventHandler/)
+: Provides keyboard and lexical-model events and methods to notify registered listeners
 
-<h2 id="See_also" name="See_also">See also</h2>
+# See_also
 
-<ul>
-  <li><a href="/developer/engine/android/16.0/" title="Keyman Engine for Android 16.0">Keyman Engine for Android 16.0</a></li>
-  <li><a href="/developer/engine/android/15.0/" title="Keyman Engine for Android 15.0">Keyman Engine for Android 15.0</a></li>
-  <li><a href="/developer/engine/android/14.0/" title="Keyman Engine for Android 14.0">Keyman Engine for Android 14.0</a></li>
-  <li><a href="/developer/engine/android/13.0/" title="Keyman Engine for Android 13.0">Keyman Engine for Android 13.0</a></li>
-  <li><a href="/developer/engine/android/12.0/" title="Keyman Engine for Android 12.0">Keyman Engine for Android 12.0</a></li>
-  <li><a href="/developer/engine/android/11.0/" title="Keyman Engine for Android 11.0">Keyman Engine for Android 11.0</a></li>
-  <li><a href="/developer/engine/android/10.0/" title="Keyman Engine for Android 10.0">Keyman Engine for Android 10.0</a></li>
-  <li><a href="/developer/engine/android/2.0/" title="Keyman Engine for Android 2.0">Keyman Engine for Android 2.0</a></li>
-  <li><a href="/developer/16.0/" title="Keyman Developer 16.0">Keyman Developer 16.0</a></li>
-  <li><a href='http://keyman.com/developer/keymanweb/keyboards' title="Keyboard Library">Keyboard Library</a></li>
-  <li><a href="/developer/engine/iphone-and-ipad/16.0/" title="Keyman Engine for iPhone and iPad 16.0">
-    Keyman Engine for iPhone and iPad 16.0</a></li>
-</ul>
+* [Keyman Engine for Android 16.0](/developer/engine/android/16.0/)
+* [Keyman Engine for Android 15.0](/developer/engine/android/15.0/)
+* [Keyman Engine for Android 14.0](/developer/engine/android/14.0/)
+* [Keyman Engine for Android 13.0](/developer/engine/android/13.0/)
+* [Keyman Engine for Android 12.0](/developer/engine/android/12.0/)
+* [Keyman Engine for Android 11.0](/developer/engine/android/11.0/)
+* [Keyman Engine for Android 10.0](/developer/engine/android/10.0/)
+* [Keyman Engine for Android 2.0](/developer/engine/android/2.0)
+* [Keyman Developer 17.0](/developer/17.0/)
+* [Keyboard Library](http://keyman.com/developer/keymanweb/keyboards)
+* [Keyman Engine for iPhone and iPad](/developer/engine/iphone-and-ipad/current-version/)
