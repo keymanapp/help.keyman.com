@@ -20,6 +20,7 @@
         } else {
           $this->currentVersion = $this::getCurrentVersion($this->versions);
           if($this->versionedPath == 'current-version') $this->versionedPath = $this->currentVersion;
+          if($this->versionedPath == 'latest-version') $this->versionedPath = $this->versions[0];
         }
       }
     }
@@ -97,7 +98,7 @@
     /// Test that the url is in a versioned folder (only support products|developer at present)
     ///
     static private function ParseURL($url, &$basePath, &$versionedPath, &$subPath) {
-      if(preg_match('/^(\/(products|developer).*)\/(\d+\.\d+|current-version)\/(.*)$/', $url, $matches)) {
+      if(preg_match('/^(\/(products|developer).*)\/(\d+\.\d+|latest-version|current-version)\/(.*)$/', $url, $matches)) {
         $basePath = $matches[1];
         $versionedPath = $matches[3];
         $subPath = $matches[4];

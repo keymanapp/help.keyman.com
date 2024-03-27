@@ -4,8 +4,7 @@ title: platform() statement
 
 ## Summary
 
-The `**platform()**` statement tests the device on which the Keyman keyboard is
-running.
+The `platform()` statement allows rules to match based on the device on which the Keyman keyboard is running.
 
 ## Syntax
 

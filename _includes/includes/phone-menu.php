@@ -63,14 +63,14 @@
         <div class="phone-menu-item">
             <h3>Contact and Search</h3>
             <ul>
-               <li><a href="http://keyman.com/contact">Contact Us</a></li>
+               <li><a href="<?= \Keyman\Site\Common\KeymanHosts::Instance()->keyman_com ?>/contact">Contact Us</a></li>
                <li><a href="/search/">Search Help</a></li>
            </ul>
         </div>
         <div class="phone-menu-item">
             <h3>Keyman.com Homepage</h3>
             <ul>
-               <li><a href="http://keyman.com">Keyman.com</a></li>
+               <li><a href="<?= \Keyman\Site\Common\KeymanHosts::Instance()->keyman_com ?>">Keyman.com</a></li>
            </ul>
         </div>
     </div>

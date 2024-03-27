@@ -53,83 +53,92 @@ RewriteRule "^keyboard/(?!redir.php)([^/?]+)/([^/?]+)(/)?$" "keyboard/redir.php?
 # RewriteCond "%{DOCUMENT_ROOT}/$1/XX.0" -d
 # RewriteRule "^(.+)/current-version(/.*)?$" "$1/XX.0$2"
 
-
 # Redirect unversioned paths to current-version/ path
 
 # /products first
-RedirectMatch "/products/(android|iphone-and-ipad|linux|mac|web|windows)/(?!current-version|version-history|\d+\.\d+)(.*)" "/products/$1/current-version/$2"
+RedirectMatch "/products/(android|iphone-and-ipad|linux|mac|web|windows)/(?!latest-version|current-version|version-history|\d+\.\d+)(.*)" "/products/$1/current-version/$2"
 
 # /developer/engine/ for Android and iOS
-RedirectMatch "/developer/engine/(android|iphone-and-ipad)/(?!current-version|\d+\.\d+)(.*)" "/developer/engine/$1/current-version/$2"
+RedirectMatch "/developer/engine/(android|iphone-and-ipad)/(?!latest-version|current-version|\d+\.\d+)(.*)" "/developer/engine/$1/current-version/$2"
 
 # /developer/engine/web
-RedirectMatch "/developer/engine/web/(?!faq|history|current-version|\d+\.\d+)(.*)" "/developer/engine/web/current-version/$1"
+RedirectMatch "/developer/engine/web/(?!latest-version|faq|history|current-version|\d+\.\d+)(.*)" "/developer/engine/web/current-version/$1"
+
+# latest-version:18.0
+# alpha or beta version reference
+RewriteCond "%{DOCUMENT_ROOT}/$1/18.0" -d
+RewriteRule "^(.+)/latest-version(/.*)?$" "$1/18.0$2" [DPI]
+
+# latest-version:17.0
+# alpha or beta version reference
+RewriteCond "%{DOCUMENT_ROOT}/$1/17.0" -d
+RewriteRule "^(.+)/latest-version(/.*)?$" "$1/17.0$2" [DPI]
 
 # current-version:16.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/16.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/16.0$2" [DPI]
+RewriteRule "^(.+)/(?:current|latest)-version(/.*)?$" "$1/16.0$2" [DPI]
 
 # version:15.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/15.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/15.0$2" [DPI]
+RewriteRule "^(.+)/(?:current|latest)-version(/.*)?$" "$1/15.0$2" [DPI]
 
 # version:14.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/14.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/14.0$2" [DPI]
+RewriteRule "^(.+)/(?:current|latest)-version(/.*)?$" "$1/14.0$2" [DPI]
 
 # version:13.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/13.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/13.0$2" [DPI]
+RewriteRule "^(.+)/(?:current|latest)-version(/.*)?$" "$1/13.0$2" [DPI]
 
 # version:12.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/12.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/12.0$2" [DPI]
+RewriteRule "^(.+)/(?:current|latest)-version(/.*)?$" "$1/12.0$2" [DPI]
 
 # version:11.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/11.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/11.0$2" [DPI]
+RewriteRule "^(.+)/(?:current|latest)-version(/.*)?$" "$1/11.0$2" [DPI]
 
 # version:10.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/10.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/10.0$2" [DPI]
+RewriteRule "^(.+)/(?:current|latest)-version(/.*)?$" "$1/10.0$2" [DPI]
 
 # the following version fallbacks are for APIs such as /developer/cloud versions
 
 # version:9.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/9.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/9.0$2" [DPI]
+RewriteRule "^(.+)/(?:current|latest)-version(/.*)?$" "$1/9.0$2" [DPI]
 
 # version:8.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/8.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/8.0$2" [DPI]
+RewriteRule "^(.+)/(?:current|latest)-version(/.*)?$" "$1/8.0$2" [DPI]
 
 # version:7.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/7.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/7.0$2" [DPI]
+RewriteRule "^(.+)/(?:current|latest)-version(/.*)?$" "$1/7.0$2" [DPI]
 
 # version:6.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/6.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/6.0$2" [DPI]
+RewriteRule "^(.+)/(?:current|latest)-version(/.*)?$" "$1/6.0$2" [DPI]
 
 # version:5.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/5.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/5.0$2" [DPI]
+RewriteRule "^(.+)/(?:current|latest)-version(/.*)?$" "$1/5.0$2" [DPI]
 
 # version:4.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/4.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/4.0$2" [DPI]
+RewriteRule "^(.+)/(?:current|latest)-version(/.*)?$" "$1/4.0$2" [DPI]
 
 # version:3.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/3.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/3.0$2" [DPI]
+RewriteRule "^(.+)/(?:current|latest)-version(/.*)?$" "$1/3.0$2" [DPI]
 
 # version:2.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/2.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/2.0$2" [DPI]
+RewriteRule "^(.+)/(?:current|latest)-version(/.*)?$" "$1/2.0$2" [DPI]
 
 # version:1.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/1.0" -d
-RewriteRule "^(.+)/current-version(/.*)?$" "$1/1.0$2" [DPI]
+RewriteRule "^(.+)/(?:current|latest)-version(/.*)?$" "$1/1.0$2" [DPI]
 
 # Static redirection
 Redirect "/desktop" "/products/windows"
@@ -166,6 +175,10 @@ Redirect "/kb" "/knowledge-base"
 # Redirect to kb handler
 RewriteRule "^knowledge-base/(\d+)$" "/knowledge-base/index.php?id=$1" [L]
 
+# Redirect error code shortlinks
+# We could choose to enable this in the future, but for now we use the kmn.sh
+# redirects instead.
+# RedirectMatch "/go/(km\d+)$" "/developer/latest-version/reference/errors/$1"
 
 #
 # PHP and Markdown rewriting
