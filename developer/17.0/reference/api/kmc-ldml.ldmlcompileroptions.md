@@ -4,6 +4,8 @@
 
 ## LdmlCompilerOptions interface
 
+Options for the .xml LDML keyboard compiler
+
 **Signature:**
 
 ```typescript

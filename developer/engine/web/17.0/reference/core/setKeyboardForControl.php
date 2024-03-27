@@ -26,4 +26,11 @@ returns();
   the page.  This may be undone by setting both <code>keyboard</code> and <code>languageCode</code> to null, reverting the
   control back to default keyboard-management behavior.</p>
 
+<p>Note that either <strong>both</strong> parameters should be set or <strong>neither</strong>.  In particular, if
+<code>languageCode</code> is specified but not <code>keyboard</code>, this method will not automatically select an appropriate
+keyboard, even if one has previously been registered with that language code.</p>
+
 <p>Due to system limitations, this function will fail if called on an IFRAME element.</p>
+
+<p>See also <a href="../../guide/examples/control-by-control">Control-by-Control Example (guide)</a>
+</p>

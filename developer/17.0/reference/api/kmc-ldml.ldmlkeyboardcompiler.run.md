@@ -4,6 +4,8 @@
 
 ## LdmlKeyboardCompiler.run() method
 
+Compiles a LDML keyboard .xml file to .kmx, .kvk, and/or .js files. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [LdmlKeyboardCompiler.init()](./kmc-ldml.ldmlkeyboardcompiler.init.md) function to read any input files by disk.
+
 **Signature:**
 
 ```typescript
@@ -20,4 +22,6 @@ run(inputFilename: string, outputFilename?: string): Promise<LdmlKeyboardCompile
 **Returns:**
 
 Promise&lt;LdmlKeyboardCompilerResult&gt;
+
+Binary artifacts on success, null on failure.
 

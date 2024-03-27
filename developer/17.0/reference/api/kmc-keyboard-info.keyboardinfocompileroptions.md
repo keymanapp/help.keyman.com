@@ -4,6 +4,8 @@
 
 ## KeyboardInfoCompilerOptions interface
 
+Options for the .keyboard\_info compiler
+
 **Signature:**
 
 ```typescript
@@ -15,5 +17,5 @@ export interface KeyboardInfoCompilerOptions extends CompilerOptions
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [sources](./kmc-keyboard-info.keyboardinfocompileroptions.sources.md) |  | [KeyboardInfoSources](./kmc-keyboard-info.keyboardinfosources.md) |  |
+|  [sources](./kmc-keyboard-info.keyboardinfocompileroptions.sources.md) |  | [KeyboardInfoSources](./kmc-keyboard-info.keyboardinfosources.md) | Description of sources and metadata required to build a .keyboard\_info file |
 

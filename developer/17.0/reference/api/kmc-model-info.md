@@ -8,15 +8,14 @@
 
 |  Class | Description |
 |  --- | --- |
-|  [ModelInfoCompiler](./kmc-model-info.modelinfocompiler.md) |  |
-|  [ModelInfoCompilerMessages](./kmc-model-info.modelinfocompilermessages.md) |  |
-|  [ModelInfoSources](./kmc-model-info.modelinfosources.md) |  |
+|  [ModelInfoCompiler](./kmc-model-info.modelinfocompiler.md) | Compiles source data from a lexical model project to a .model\_info. The compiler does not read or write from filesystem or network directly, but relies on callbacks for all external IO. |
+|  [ModelInfoSources](./kmc-model-info.modelinfosources.md) | Description of sources and metadata required to build a .model\_info file |
 
 ## Interfaces
 
 |  Interface | Description |
 |  --- | --- |
-|  [ModelInfoCompilerArtifacts](./kmc-model-info.modelinfocompilerartifacts.md) |  |
-|  [ModelInfoCompilerOptions](./kmc-model-info.modelinfocompileroptions.md) |  |
-|  [ModelInfoCompilerResult](./kmc-model-info.modelinfocompilerresult.md) |  |
+|  [ModelInfoCompilerArtifacts](./kmc-model-info.modelinfocompilerartifacts.md) | Internal in-memory build artifacts from a successful compilation |
+|  [ModelInfoCompilerOptions](./kmc-model-info.modelinfocompileroptions.md) | Options for the .model\_info compiler |
+|  [ModelInfoCompilerResult](./kmc-model-info.modelinfocompilerresult.md) | Build artifacts from the .model\_info compiler |
 

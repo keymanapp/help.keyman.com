@@ -4,6 +4,8 @@
 
 ## KmnCompilerResult.extra property
 
+Internal additional metadata used by secondary compile phases such as KmwCompiler, not intended for external use
+
 **Signature:**
 
 ```typescript

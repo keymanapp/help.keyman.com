@@ -11,13 +11,18 @@ kmc-kmn - Keyman keyboard compiler
 |  Class | Description |
 |  --- | --- |
 |  [KmnCompiler](./kmc-kmn.kmncompiler.md) | Compiles a .kmn file to a .kmx, .kvk, and/or .js. The compiler does not read or write from filesystem or network directly, but relies on callbacks for all external IO. |
-|  [KmwCompilerMessages](./kmc-kmn.kmwcompilermessages.md) | Error messages reported by the KeymanWeb .kmn compiler. |
 
 ## Interfaces
 
 |  Interface | Description |
 |  --- | --- |
-|  [KmnCompilerArtifacts](./kmc-kmn.kmncompilerartifacts.md) | Internal in-memory result from a successful compilation |
+|  [KmnCompilerArtifacts](./kmc-kmn.kmncompilerartifacts.md) | Internal in-memory build artifacts from a successful compilation |
 |  [KmnCompilerOptions](./kmc-kmn.kmncompileroptions.md) | Options for the .kmn compiler |
 |  [KmnCompilerResult](./kmc-kmn.kmncompilerresult.md) | Build artifacts from the .kmn compiler |
+
+## Namespaces
+
+|  Namespace | Description |
+|  --- | --- |
+|  [Osk](./kmc-kmn.osk.md) |  |
 

@@ -4,6 +4,10 @@
 
 ## KeyboardInfoCompiler.write() method
 
+Write artifacts from a successful compile to disk, via callbacks methods. The artifacts written may include:
+
+- .keyboard\_info file - metadata file used by keyman.com
+
 **Signature:**
 
 ```typescript
@@ -14,9 +18,11 @@ write(artifacts: KeyboardInfoCompilerArtifacts): Promise<boolean>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  artifacts | [KeyboardInfoCompilerArtifacts](./kmc-keyboard-info.keyboardinfocompilerartifacts.md) |  |
+|  artifacts | [KeyboardInfoCompilerArtifacts](./kmc-keyboard-info.keyboardinfocompilerartifacts.md) | object containing artifact binary data to write out |
 
 **Returns:**
 
 Promise&lt;boolean&gt;
+
+true on success
 

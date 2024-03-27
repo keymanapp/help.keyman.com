@@ -4,6 +4,8 @@
 
 ## KmnCompilerArtifacts.js property
 
+Javascript keyboard filedata and filename - installable into KeymanWeb, Keyman mobile products
+
 **Signature:**
 
 ```typescript

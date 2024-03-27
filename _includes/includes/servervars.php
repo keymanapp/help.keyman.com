@@ -23,46 +23,19 @@
     require_once($_SERVER['DOCUMENT_ROOT'].'/cdn/deploy/cdn.php');
   }
 
-  $site_url = 'help.keyman.com';
   $keyman_com = \Keyman\Site\Common\KeymanHosts::Instance()->keyman_com;
-
-  // We allow the site to strip off everything post its basic siteurl
-
-  function GetHostSuffix() {
-    global $site_url;
-    $name = $_SERVER['SERVER_NAME'];
-    if(stripos($name, $site_url.'.') == 0) {
-      return substr($name, strlen($site_url), 1024);
-    }
-    return '';
-  }
-
-  $site_suffix = GetHostSuffix();
 
   // $site_protocol is used only by util.php at this time.
   $site_protocol = (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443) ? 'https://' : 'http://';
 
-  if($site_suffix == '') {
-    $TestServer = false;
+  $TestServer = false;
 
-    $site_tavultesoft = 'www.tavultesoft.com';
-    $site_securetavultesoft = 'secure.tavultesoft.com';
-    $resourceDomain="r.keymanweb.com";
-    $staticDomainRoot="https://s.keyman.com";
-  } else {
-    $TestServer = true;
-    $site_tavultesoft = 'testsite.tavultesoft.local';
-    $site_securetavultesoft = 'secure.testsite.tavultesoft.local';
-    $resourceDomain="r.keymanweb.com";
-    $staticDomainRoot="http://s.keyman.com{$site_suffix}";
-  }
-
-  $staticDomain = "s.keyman.com{$site_suffix}/help";
-
-  $downloadsDomain = "downloads.keyman.com"; //{$site_suffix}";
+  $site_tavultesoft = 'www.tavultesoft.com';
+  $site_securetavultesoft = 'secure.tavultesoft.com';
+  $downloadsDomain = "downloads.keyman.com";
 
   function cdn($file) {
-    global $cdn, $staticDomain, $TestServer;
+    global $cdn, $TestServer;
     $use_cdn = !$TestServer || (isset($_REQUEST['cdn']) && $_REQUEST['cdn'] == 'force');
     if($use_cdn && $cdn && array_key_exists('/'.$file, $cdn)) {
       return "/cdn/deploy{$cdn['/'.$file]}";

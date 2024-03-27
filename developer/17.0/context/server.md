@@ -4,7 +4,7 @@ title: Keyman Developer Server
 
 # Introduction
 
-Keyman Developer Server provides a web-based front end for testing and sharing
+Keyman Developer Server provides a web-based front-end for testing and sharing
 keyboards, lexical models and packages.
 
 The primary benefits of Keyman Developer Server are:
@@ -29,7 +29,7 @@ Keyman Developer Server is always installed as a part of Keyman Developer.
 When you start Keyman Developer, Keyman Developer Server will start in the
 background.
 
-**Note:** The first time Keyman Developer Server starts, you may be presented
+> **Note:** The first time Keyman Developer Server starts, you may be presented
 with a warning from your firewall or security software about Node.js Javascript
 Runtime running from the Keyman Developer folder. This is the Keyman Developer
 Server host process, and you should choose to allow Keyman Developer Server to
@@ -112,7 +112,7 @@ You will be presented with the default page for Server.
 
 You will need to select your keyboard from the **Keyboard** menu. The keyboard will
 be presented and you can test it either by typing using your hardware keyboard,
-or interacting with the On Screen Keyboard.
+or interacting with the On-Screen Keyboard.
 
 ![](images/server-iphone.png)
 
@@ -204,13 +204,13 @@ indicated with dotted circles.
 ![](images/text-area.png)
 
 The text area is immediately below this. You can enter text into this text area
-using your hardware keyboard or using the On Screen Keyboard.
+using your hardware keyboard or using the On-Screen Keyboard.
 
-### On Screen Keyboard
+### On-Screen Keyboard
 
 ![](images/on-screen-keyboard.png)
 
-The On Screen Keyboard, shown directly below, is fully interactive, including
+The On-Screen Keyboard, shown directly below, is fully interactive, including
 support for longpress and other gestures on touch, using your mouse on a
 desktop device. The layout of the On Screen Keyboard and the device frame are
 controlled from the **Device** menu.
