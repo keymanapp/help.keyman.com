@@ -33,7 +33,7 @@ yes | ./sdkmanager.bat --licenses
 ```
 
 ### 3. Download Keyman Engine for Android and Build Sample projects
-* Download the [Keyman for Androdi SDK](https://keyman.com/engine)
+* Download the [Keyman for Android SDK](https://keyman.com/engine)
         and extract the files to a new folder.
 
 The archive includes two sample projects and an Android .aar library file. This guide will use the first
