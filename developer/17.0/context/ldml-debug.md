@@ -9,14 +9,13 @@ Keyman keyboard debug window.
 
 ## Debugger input window
 
-![Debug window - Debug
-State](/cdn/dev/img/developer/100/ui/frmDebug.png)
+![Debug window - Debug State](/cdn/dev/img/developer/100/ui/frmDebug.png)
 
 The debugger input window is used for typing input to test the keyboard.
 In the top half of this window, input you type while testing your
 keyboard will be displayed, exactly the same as in use, with one
 exception: deadkeys will be shown visually with an
-![OBJ](/cdn/dev/img/developer/90/ui/obj.gif){.inline} symbol.
+![OBJ](/cdn/dev/img/developer/90/ui/obj.gif) symbol.
 
 The lower half of the window shows a grid of the characters to the virtual left
 of the insertion point, or the selected characters if you make a selection.

@@ -15,13 +15,11 @@ of the IDE but can be undocked or re-docked on any side of the window.
 ### Using the Character Map
 
 To insert a character:
-
-1.  Position the text cursor where you want to insert the character
-2.  Locate the desired character in the Character Map and insert it by:
-
-    -   selecting the character and pressing the Enter key, or
-    -   double-clicking on the character, or
-    -   right-clicking on the character and selecting Insert Character.
+1. Position the text cursor where you want to insert the character
+2. Locate the desired character in the Character Map and insert it by:
+    - selecting the character and pressing the Enter key, or
+    - double-clicking on the character, or
+    - right-clicking on the character and selecting Insert Character.
 
     > ### Note
     If the Insert Mode is set to Code or Name, pressing Enter or
@@ -33,15 +31,15 @@ To insert a character:
 
 There are three insert modes: Code, Character and Name:
 
--   Code inserts the character's Unicode code
--   Character inserts the character itself
--   Name inserts the character's Unicode name
+- Code: inserts the character's Unicode code
+- Character: inserts the character itself
+- Name: inserts the character's Unicode name
 
 To change the insert mode:
 
-1.  Right-click on the Character Map.
-2.  Highlight the Insert Mode submenu.
-3.  Choose the desired mode from the Insert Mode submenu.
+1. Right-click on the Character Map.
+2. Highlight the Insert Mode submenu.
+3. Choose the desired mode from the Insert Mode submenu.
 
 ### Character Map Options
 
@@ -53,31 +51,31 @@ Insert Character
     document.
 
 Filter...
-:   Displays the Filter dialog box. See Filtering below.
+:   Displays the Filter dialog box. See [Filtering](#toc-filtering) below.
 
 Goto...
-:   Displays the Goto dialog box. See Using Goto below.
+:   Displays the Goto dialog box. See Using [Goto](#toc-goto) below.
 
 Font...
-:   Allows you to choose a different font for viewing the Character Map.
+:   Allows you to choose a different font for viewing the Character Map. <br/>
     Note: This does not affect the font being used in your document!
 
 Insert Mode
-:   Allows you to select the character insert mode you want. See Insert
-    Modes above.
+:   Allows you to select the character insert mode you want. See [Insert
+    Modes](#toc-insert-modes) above.
 
 Display Quality
 :   Allows you to select a different font display quality for the
-    Character Map. The options are:
-    -   Plain - no font smoothing
-    -   Antialiased - uses the Windows standard font smoothing
-    -   ClearType - uses the Windows ClearType font smoothing method
+    Character Map. The options are:  <br/>
+    - Plain: no font smoothing  
+    - Antialiased: uses the Windows standard font smoothing  
+    - ClearType: uses the Windows ClearType font smoothing method
 
 ### Characters and Fonts
 
 When a character is not available in the selected font, the Character
-Map will fall back to Code2000, Code2001, Code2002, Arial Unicode MS and
-Lucida Sans Unicode fonts. If the character is not found in these
+Map will fall back to **Code2000**, **Code2001**, **Code2002**, **Arial Unicode MS** and
+**Lucida Sans Unicode** fonts. If the character is not found in these
 fallback fonts, the Character Map will use font linking to attempt to
 find a character from other fonts installed on the system, and as a last
 resort, will show a square box if no suitable font can be found.
@@ -122,7 +120,7 @@ The filtering options for Unicode Character Names are:
 | `LATIN * LETTER [AEIOU]` | finds all all Latin A,E,I,O or U vowel combinations |
 | `<Thai`                  | finds the Thai Unicode block        |
 | `>LAO`                   | finds all characters with names starting in "LAO" in the current font  |
-| `YI_`                    | finds all characters with names starting in "YI " - you must use `_` (underscore) and not ` ` (space) at the end of a search string. Note that without the `_`, this search also matches YIN_YANG. |
+| `YI_`                    | finds all characters with names starting in "YI " - you must use `_` (underscore) and not `( )` space at the end of a search string. <br/> Note that without the `_`, this search also matches YIN_YANG. |
 | `LATIN * LETTER A$`      | finds only "a" and "A"             |
 | `1000-119F`              | finds all characters between U+1000 and U+119F (inclusive) - the Myanmar alphabet in this case    |
 
@@ -131,10 +129,8 @@ The filtering options for Unicode Character Names are:
 The Goto tool can be used to move directly to a specific Unicode
 character or value.
 
-1.  Right click on a character and select Goto. The **Enter Unicode character value or name** dialog box will be displayed.
-2.  Enter the Unicode character value - e.g. `006B` or `U+006B`  
-    OR enter the start of the character name, e.g. `LAO_LETTER` will go
+1. Right click on a character and select Goto. The **Enter Unicode character value or name** dialog box will be displayed.
+2. Enter the Unicode character value - e.g. `006B` or `U+006B` OR enter the start of the character name, e.g. `LAO_LETTER` will go
     to **LAO_LETTER_KO**, being the first character that matches. You
     can substitute spaces for underscores if you prefer.
-3.  Click OK. The character map will attempt to move to the character
-    you specified.
+3. Click OK. The character map will attempt to move to the character you specified.
