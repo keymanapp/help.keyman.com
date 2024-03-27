@@ -9,7 +9,7 @@ use Keyman\Site\Common\KeymanHosts;
         <img id="show-phone-menu" src="<?php echo cdn("img/phonehide.png"); ?>" />
         <a id="home-link" href="/"><img id="logo" src="<?php echo cdn(KeymanHosts::Instance()->Tier() == KeymanHosts::TIER_PRODUCTION ? "img/logo2.png" : "img/logo2dev.png"); ?>" alt='Keyman Logo' /></a>
         <img id="header-bottom" src="<?php echo cdn("img/headerbar.png"); ?>" alt='Header bottom' />
-        <a id="help" href="http://keyman.com"><p id="keyman-help">Keyman.com</p><img src="<?php echo cdn("img/helpIcon.png"); ?>"></a>
+        <a id="help" href="<?= \Keyman\Site\Common\KeymanHosts::Instance()->keyman_com ?>"><p id="keyman-help">Keyman.com</p><img src="<?php echo cdn("img/helpIcon.png"); ?>"></a>
     </div>
     <div id="top-menu-bg"></div>
     <div id="top-menu1">
@@ -53,7 +53,7 @@ use Keyman\Site\Common\KeymanHosts;
                 </div>
             </div>
             <div class="menu-item" id="tavultesoft">
-                <a href="http://keyman.com/contact/" ><h3>Contact Us</h3></a>
+                <a href="<?= \Keyman\Site\Common\KeymanHosts::Instance()->keyman_com ?>/contact/" ><h3>Contact Us</h3></a>
             </div>
 
             <div class="menu-pseudo-item" id="menu-search">
