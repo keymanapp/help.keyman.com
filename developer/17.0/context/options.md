@@ -4,33 +4,15 @@ title: Options Dialog
 
 ## General tab
 
-![Options dialog - General tab](/cdn/dev/img/developer/120/ui/frmOptions_General.png)
+![Options dialog - General tab](/cdn/dev/img/developer/170/ui/frmOptions_General.png)
 
 The following options are configurable in TIKE in the **General** tab:
-
-Show splash screen
-:   If checked, displays a splash screen when Keyman Developer is
-    started.
-
-Allow multiple instances of TIKE
-:   Allow Keyman Developer to be started multiple times, instead of
-    loading other files in the current instance when selected from
-    Explorer.
 
 Open keyboard files in source view.
 :   Instead of opening a keyboard file in the Details tab, open directly
     into the Layout tab, Source pane.
 
-Save visual keyboard source files (.kvks) as XML
-:   Keyman Developer will default to saving .kvks files as XML when
-    editing, which makes them easier to share in version control systems
-    such as Git. The compiled .kvk files will be binary and will work
-    with earlier versions of Keyman Desktop. However, if you are sharing
-    keyboard source files with developers using earlier versions of
-    Keyman Developer, you should clear this checkbox so they can load
-    the files.
-
-External Editor
+External Editor Path
 :   You can open any Keyman source file shown in the project in an
     external text editor by right-clicking on the file and selecting
     "Open in External Editor". The files available for editing
@@ -39,18 +21,36 @@ External Editor
     command line parameters to the editor, you will need to wrap the
     command in a batch file and reference the batch file here.
 
-Proxy settings
+<!-- Show splash screen
+:   If checked, displays a splash screen when Keyman Developer is
+    started. 
+
+Allow multiple instances of TIKE
+:   Allow Keyman Developer to be started multiple times, instead of
+    loading other files in the current instance when selected from
+    Explorer.
+
+Save visual keyboard source files (.kvks) as XML
+:   Keyman Developer will default to saving .kvks files as XML when
+    editing, which makes them easier to share in version control systems
+    such as Git. The compiled .kvk files will be binary and will work
+    with earlier versions of Keyman Desktop. However, if you are sharing
+    keyboard source files with developers using earlier versions of
+    Keyman Developer, you should clear this checkbox so they can load
+    the files.-->
+
+Proxy Settings...
 :   Configure the HTTP proxy settings for online functionality within
     Keyman Developer, such as uploading files to Tavultesoft.
 
-SMTP settings
+SMTP Settings...
 :   Configure your SMTP server settings for email functionality within
     Keyman Developer, such as emailing debug URLs for the touch layout
     debugger.
 
 ## Editor tab
 
-![Options dialog - Editor tab](/cdn/dev/img/developer/120/ui/frmOptions_Editor.png)
+![Options dialog - Editor tab](/cdn/dev/img/developer/170/ui/frmOptions_Editor.png)
 
 Use tab character
 :   Sets whether to use the Tab character or spaces for indents.
@@ -76,7 +76,7 @@ Editor theme
 
 ## Debugger tab
 
-![Options dialog - Debugger tab](/cdn/dev/img/developer/120/ui/frmOptions_Debugger.png)
+![Options dialog - Debugger tab](/cdn/dev/img/developer/170/ui/frmOptions_Debugger.png)
 
 Enable test window (from version 5.0)
 :   Enables the Keyman 5-style Test window instead of the debugger.
@@ -94,9 +94,12 @@ Automatically recompile if no debug information available
 :   When the debugger starts, rebuild a keyboard without prompting if
     the keyboard has no debug symbols included.
 
+Automatically reset debugger before recompiling
+: *update is coming*
+
 ## Character Map tab
 
-![Options dialog - Character Map tab](/cdn/dev/img/developer/120/ui/frmOptions_CharacterMap.png)
+![Options dialog - Character Map tab](/cdn/dev/img/developer/170/ui/frmOptions_CharacterMap.png)
 
 Find character under cursor automatically
 :   The character beneath the cursor in the edit window will be
@@ -112,3 +115,13 @@ Update database
     and blocks.txt. These files can be downloaded from the Unicode
     website at
     [http://www.unicode.org/ucd/](http://www.unicode.org/ucd/). This lets you update the character map with a newer version of Unicode. Keyman Developer 10.0 was released with Unicode version 10.0 data.
+
+## Server tab
+
+![Options dialog - Server tab](/cdn/dev/img/developer/170/ui/frmOptions_Server.png)
+
+Keyman Developer Server
+: *update soon*
+
+List local URLs for Server
+: *update soon*
