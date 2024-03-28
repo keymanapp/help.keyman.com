@@ -9,7 +9,7 @@ Compiles source data from a keyboard project to a .keyboard\_info. The compiler 
 **Signature:**
 
 ```typescript
-export declare class KeyboardInfoCompiler implements KeymanCompiler 
+export declare class KeyboardInfoCompiler implements KeymanCompiler
 ```
 **Implements:** KeymanCompiler
 

@@ -9,7 +9,7 @@ Options for the .keyboard\_info compiler
 **Signature:**
 
 ```typescript
-export interface KeyboardInfoCompilerOptions extends CompilerOptions 
+export interface KeyboardInfoCompilerOptions extends CompilerOptions
 ```
 **Extends:** CompilerOptions
 

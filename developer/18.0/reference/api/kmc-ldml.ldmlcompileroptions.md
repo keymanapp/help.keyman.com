@@ -9,7 +9,7 @@ Options for the .xml LDML keyboard compiler
 **Signature:**
 
 ```typescript
-export interface LdmlCompilerOptions extends CompilerOptions 
+export interface LdmlCompilerOptions extends CompilerOptions
 ```
 **Extends:** CompilerOptions
 

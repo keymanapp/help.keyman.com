@@ -9,7 +9,7 @@ Internal in-memory build artifacts from a successful compilation
 **Signature:**
 
 ```typescript
-export interface KmnCompilerArtifacts extends KeymanCompilerArtifacts 
+export interface KmnCompilerArtifacts extends KeymanCompilerArtifacts
 ```
 **Extends:** KeymanCompilerArtifacts
 

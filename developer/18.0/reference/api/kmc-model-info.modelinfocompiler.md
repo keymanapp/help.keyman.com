@@ -9,7 +9,7 @@ Compiles source data from a lexical model project to a .model\_info. The compile
 **Signature:**
 
 ```typescript
-export declare class ModelInfoCompiler implements KeymanCompiler 
+export declare class ModelInfoCompiler implements KeymanCompiler
 ```
 **Implements:** KeymanCompiler
 
