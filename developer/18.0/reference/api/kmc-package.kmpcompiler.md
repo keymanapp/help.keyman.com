@@ -9,7 +9,7 @@ Compiles a .kps file to a .kmp archive. The compiler does not read or write from
 **Signature:**
 
 ```typescript
-export declare class KmpCompiler implements KeymanCompiler
+export declare class KmpCompiler implements KeymanCompiler 
 ```
 **Implements:** KeymanCompiler
 

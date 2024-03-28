@@ -9,7 +9,7 @@ Sources and metadata for the Windows package installer compiler
 **Signature:**
 
 ```typescript
-export interface WindowsPackageInstallerSources
+export interface WindowsPackageInstallerSources 
 ```
 
 ## Properties

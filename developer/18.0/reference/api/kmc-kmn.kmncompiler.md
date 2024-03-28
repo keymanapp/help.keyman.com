@@ -9,7 +9,7 @@ Compiles a .kmn file to a .kmx, .kvk, and/or .js. The compiler does not read or 
 **Signature:**
 
 ```typescript
-export declare class KmnCompiler implements KeymanCompiler, UnicodeSetParser
+export declare class KmnCompiler implements KeymanCompiler, UnicodeSetParser 
 ```
 **Implements:** KeymanCompiler, UnicodeSetParser
 

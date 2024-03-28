@@ -9,7 +9,7 @@ Build artifacts from the .keyboard\_info compiler
 **Signature:**
 
 ```typescript
-export interface KeyboardInfoCompilerResult extends KeymanCompilerResult
+export interface KeyboardInfoCompilerResult extends KeymanCompilerResult 
 ```
 **Extends:** KeymanCompilerResult
 
