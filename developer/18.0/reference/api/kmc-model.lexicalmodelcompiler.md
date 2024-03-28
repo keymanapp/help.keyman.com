@@ -9,7 +9,7 @@ Compiles a .model.ts file to a .model.js. The compiler does not read or write fr
 **Signature:**
 
 ```typescript
-export declare class LexicalModelCompiler implements KeymanCompiler 
+export declare class LexicalModelCompiler implements KeymanCompiler
 ```
 **Implements:** KeymanCompiler
 

@@ -9,7 +9,7 @@ Compiles a LDML keyboard .xml file to a .kmx (KMXPlus), .kvk, and/or .js. The co
 **Signature:**
 
 ```typescript
-export declare class LdmlKeyboardCompiler implements KeymanCompiler 
+export declare class LdmlKeyboardCompiler implements KeymanCompiler
 ```
 **Implements:** KeymanCompiler
 

@@ -9,7 +9,7 @@ Build artifacts from the .kmn compiler
 **Signature:**
 
 ```typescript
-export interface KmnCompilerResult extends KeymanCompilerResult 
+export interface KmnCompilerResult extends KeymanCompilerResult
 ```
 **Extends:** KeymanCompilerResult
 
