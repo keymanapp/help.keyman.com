@@ -9,7 +9,7 @@ Build artifacts from the .model\_info compiler
 **Signature:**
 
 ```typescript
-export interface ModelInfoCompilerResult extends KeymanCompilerResult
+export interface ModelInfoCompilerResult extends KeymanCompilerResult 
 ```
 **Extends:** KeymanCompilerResult
 

@@ -9,7 +9,7 @@ Compiles a .kps file to a .exe installer. The compiler does not read or write fr
 **Signature:**
 
 ```typescript
-export declare class WindowsPackageInstallerCompiler implements KeymanCompiler
+export declare class WindowsPackageInstallerCompiler implements KeymanCompiler 
 ```
 **Implements:** KeymanCompiler
 

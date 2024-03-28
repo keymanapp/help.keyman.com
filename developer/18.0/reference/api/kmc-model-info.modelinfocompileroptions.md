@@ -9,7 +9,7 @@ Options for the .model\_info compiler
 **Signature:**
 
 ```typescript
-export interface ModelInfoCompilerOptions extends CompilerOptions
+export interface ModelInfoCompilerOptions extends CompilerOptions 
 ```
 **Extends:** CompilerOptions
 
