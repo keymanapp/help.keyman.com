@@ -4,10 +4,12 @@
 
 ## ModelInfoSources class
 
+Description of sources and metadata required to build a .model\_info file
+
 **Signature:**
 
 ```typescript
-export declare class ModelInfoSources 
+export declare class ModelInfoSources
 ```
 
 ## Properties

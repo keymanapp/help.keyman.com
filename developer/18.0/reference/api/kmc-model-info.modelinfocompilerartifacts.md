@@ -4,10 +4,12 @@
 
 ## ModelInfoCompilerArtifacts interface
 
+Internal in-memory build artifacts from a successful compilation
+
 **Signature:**
 
 ```typescript
-export interface ModelInfoCompilerArtifacts extends KeymanCompilerArtifacts 
+export interface ModelInfoCompilerArtifacts extends KeymanCompilerArtifacts
 ```
 **Extends:** KeymanCompilerArtifacts
 
@@ -15,5 +17,5 @@ export interface ModelInfoCompilerArtifacts extends KeymanCompilerArtifacts
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [model\_info](./kmc-model-info.modelinfocompilerartifacts.model_info.md) |  | KeymanCompilerArtifact |  |
+|  [model\_info](./kmc-model-info.modelinfocompilerartifacts.model_info.md) |  | KeymanCompilerArtifact | Binary model info filedata and filename - used by keyman.com |
 

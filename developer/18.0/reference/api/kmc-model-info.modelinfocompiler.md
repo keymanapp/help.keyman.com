@@ -4,10 +4,12 @@
 
 ## ModelInfoCompiler class
 
+Compiles source data from a lexical model project to a .model\_info. The compiler does not read or write from filesystem or network directly, but relies on callbacks for all external IO.
+
 **Signature:**
 
 ```typescript
-export declare class ModelInfoCompiler implements KeymanCompiler 
+export declare class ModelInfoCompiler implements KeymanCompiler
 ```
 **Implements:** KeymanCompiler
 
@@ -21,7 +23,7 @@ export declare class ModelInfoCompiler implements KeymanCompiler
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [init(callbacks, options)](./kmc-model-info.modelinfocompiler.init.md) |  |  |
-|  [run(inputFilename, outputFilename)](./kmc-model-info.modelinfocompiler.run.md) |  | Builds .model\_info file with metadata from the model and package source file. This function is intended for use within the lexical-models repository. While many of the parameters could be deduced from each other, they are specified here to reduce the number of places the filenames are constructed. |
-|  [write(artifacts)](./kmc-model-info.modelinfocompiler.write.md) |  |  |
+|  [init(callbacks, options)](./kmc-model-info.modelinfocompiler.init.md) |  | Initialize the compiler. Copies options. |
+|  [run(inputFilename, outputFilename)](./kmc-model-info.modelinfocompiler.run.md) |  | <p>Builds .model\_info file with metadata from the model and package source file. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [ModelInfoCompiler.init()](./kmc-model-info.modelinfocompiler.init.md) function to read any input files by disk.</p><p>This function is intended for use within the lexical-models repository. While many of the parameters could be deduced from each other, they are specified here to reduce the number of places the filenames are constructed.</p> |
+|  [write(artifacts)](./kmc-model-info.modelinfocompiler.write.md) |  | <p>Write artifacts from a successful compile to disk, via callbacks methods. The artifacts written may include:</p><p>- .model\_info file - metadata file used by keyman.com</p> |
 

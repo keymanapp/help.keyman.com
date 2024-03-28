@@ -4,10 +4,12 @@
 
 ## KeyboardInfoCompilerResult interface
 
+Build artifacts from the .keyboard\_info compiler
+
 **Signature:**
 
 ```typescript
-export interface KeyboardInfoCompilerResult extends KeymanCompilerResult 
+export interface KeyboardInfoCompilerResult extends KeymanCompilerResult
 ```
 **Extends:** KeymanCompilerResult
 
@@ -15,5 +17,5 @@ export interface KeyboardInfoCompilerResult extends KeymanCompilerResult
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [artifacts](./kmc-keyboard-info.keyboardinfocompilerresult.artifacts.md) |  | [KeyboardInfoCompilerArtifacts](./kmc-keyboard-info.keyboardinfocompilerartifacts.md) |  |
+|  [artifacts](./kmc-keyboard-info.keyboardinfocompilerresult.artifacts.md) |  | [KeyboardInfoCompilerArtifacts](./kmc-keyboard-info.keyboardinfocompilerartifacts.md) | Internal in-memory build artifacts from a successful compilation. Caller can write these to disk with [KeyboardInfoCompiler.write()](./kmc-keyboard-info.keyboardinfocompiler.write.md) |
 

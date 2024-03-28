@@ -4,10 +4,12 @@
 
 ## WindowsPackageInstallerCompiler class
 
+Compiles a .kps file to a .exe installer. The compiler does not read or write from filesystem or network directly, but relies on callbacks for all external IO.
+
 **Signature:**
 
 ```typescript
-export declare class WindowsPackageInstallerCompiler implements KeymanCompiler 
+export declare class WindowsPackageInstallerCompiler implements KeymanCompiler
 ```
 **Implements:** KeymanCompiler
 
@@ -15,7 +17,7 @@ export declare class WindowsPackageInstallerCompiler implements KeymanCompiler
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [init(callbacks, options)](./kmc-package.windowspackageinstallercompiler.init.md) |  |  |
-|  [run(inputFilename, outputFilename)](./kmc-package.windowspackageinstallercompiler.run.md) |  |  |
-|  [write(artifacts)](./kmc-package.windowspackageinstallercompiler.write.md) |  |  |
+|  [init(callbacks, options)](./kmc-package.windowspackageinstallercompiler.init.md) |  | Initialize the compiler. Copies options. |
+|  [run(inputFilename, outputFilename)](./kmc-package.windowspackageinstallercompiler.run.md) |  | Compiles a .kps file to .exe Windows package installer file. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [WindowsPackageInstallerCompiler.init()](./kmc-package.windowspackageinstallercompiler.init.md) function to read any input files by disk. |
+|  [write(artifacts)](./kmc-package.windowspackageinstallercompiler.write.md) |  | <p>Write artifacts from a successful compile to disk, via callbacks methods. The artifacts written may include:</p><p>- .exe file - binary Windows package installer executable file</p> |
 

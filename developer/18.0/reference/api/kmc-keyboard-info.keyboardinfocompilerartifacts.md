@@ -4,10 +4,12 @@
 
 ## KeyboardInfoCompilerArtifacts interface
 
+Internal in-memory build artifacts from a successful compilation
+
 **Signature:**
 
 ```typescript
-export interface KeyboardInfoCompilerArtifacts extends KeymanCompilerArtifacts 
+export interface KeyboardInfoCompilerArtifacts extends KeymanCompilerArtifacts
 ```
 **Extends:** KeymanCompilerArtifacts
 
@@ -15,5 +17,5 @@ export interface KeyboardInfoCompilerArtifacts extends KeymanCompilerArtifacts
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [keyboard\_info](./kmc-keyboard-info.keyboardinfocompilerartifacts.keyboard_info.md) |  | KeymanCompilerArtifact |  |
+|  [keyboard\_info](./kmc-keyboard-info.keyboardinfocompilerartifacts.keyboard_info.md) |  | KeymanCompilerArtifact | Binary keyboard info filedata and filename - used by keyman.com |
 

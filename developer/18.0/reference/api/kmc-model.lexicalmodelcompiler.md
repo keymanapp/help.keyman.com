@@ -4,10 +4,12 @@
 
 ## LexicalModelCompiler class
 
+Compiles a .model.ts file to a .model.js. The compiler does not read or write from filesystem or network directly, but relies on callbacks for all external IO.
+
 **Signature:**
 
 ```typescript
-export declare class LexicalModelCompiler implements KeymanCompiler 
+export declare class LexicalModelCompiler implements KeymanCompiler
 ```
 **Implements:** KeymanCompiler
 
@@ -15,10 +17,7 @@ export declare class LexicalModelCompiler implements KeymanCompiler
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [generateLexicalModelCode(model\_id, modelSource, sourcePath)](./kmc-model.lexicalmodelcompiler.generatelexicalmodelcode.md) |  | Returns the generated code for the model that will ultimately be loaded by the LMLayer worker. This code contains all model parameters, and specifies word breakers and auxilary functions that may be required. |
-|  [init(callbacks, \_options)](./kmc-model.lexicalmodelcompiler.init.md) |  |  |
-|  [loadFromFilename(filename)](./kmc-model.lexicalmodelcompiler.loadfromfilename.md) |  | Loads a lexical model's source module from the given filename. |
-|  [run(inputFilename, outputFilename)](./kmc-model.lexicalmodelcompiler.run.md) |  |  |
-|  [transpileSources(sources)](./kmc-model.lexicalmodelcompiler.transpilesources.md) |  |  |
-|  [write(artifacts)](./kmc-model.lexicalmodelcompiler.write.md) |  |  |
+|  [init(callbacks, \_options)](./kmc-model.lexicalmodelcompiler.init.md) |  | Initialize the compiler. There are currently no options specific to the lexical model compiler |
+|  [run(inputFilename, outputFilename)](./kmc-model.lexicalmodelcompiler.run.md) |  | Compiles a .model.ts file to .model.js. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [LexicalModelCompiler.init()](./kmc-model.lexicalmodelcompiler.init.md) function to read any input files by disk. |
+|  [write(artifacts)](./kmc-model.lexicalmodelcompiler.write.md) |  | <p>Write artifacts from a successful compile to disk, via callbacks methods. The artifacts written may include:</p><p>- .model.js file - Javascript lexical model for web and touch platforms</p> |
 

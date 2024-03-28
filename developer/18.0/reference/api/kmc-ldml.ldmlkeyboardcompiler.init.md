@@ -4,6 +4,8 @@
 
 ## LdmlKeyboardCompiler.init() method
 
+Initialize the compiler, including loading the WASM host for uset parsing. Copies options.
+
 **Signature:**
 
 ```typescript
@@ -14,10 +16,12 @@ init(callbacks: CompilerCallbacks, options: LdmlCompilerOptions): Promise<boolea
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  callbacks | CompilerCallbacks |  |
-|  options | [LdmlCompilerOptions](./kmc-ldml.ldmlcompileroptions.md) |  |
+|  callbacks | CompilerCallbacks | Callbacks for external interfaces, including message reporting and file io |
+|  options | [LdmlCompilerOptions](./kmc-ldml.ldmlcompileroptions.md) | Compiler options |
 
 **Returns:**
 
 Promise&lt;boolean&gt;
+
+false if initialization fails
 
