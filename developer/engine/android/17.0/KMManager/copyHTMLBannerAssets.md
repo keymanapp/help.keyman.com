@@ -26,7 +26,7 @@ Returns `true` if HTML assets were copied, `false` otherwise.
 When suggestions aren't available for a keyboard, an HTML banner is displayed instead.
 Use this method to specify any HTML assets the banner will use to theme your keyboard app. Some examples of assets would be .svg images or .css files used in your banner.
 
-This can be called towards the end of `SystemKeyboard.onCreateInputView()`.
+This can be called towards the end of `SystemKeyboard.onCreate()`.
 
 You still need to call [setHTMLBanner()](setHTMLBanner) for Keyman Engine to assign the HTML banner for in-app and system keyboards.
 
