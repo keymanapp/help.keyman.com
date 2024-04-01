@@ -15,7 +15,6 @@ title: Compiler Messages Reference for @keymanapp/kmc-ldml
 [KM00009](km00009) | `ERROR_InvalidScanCode` | Form '&lt;param&gt;' has invalid/unknown scancodes '&lt;param&gt;'
 [KM0000A](km0000a) | `WARN_CustomForm` | Custom &lt;form id="&lt;param&gt;"&gt; element\. Key layout may not be as expected\.
 [KM0000B](km0000b) | `ERROR_GestureKeyNotFoundInKeyBag` | Key '&lt;param&gt;' not found in key bag, referenced from other '&lt;param&gt;' in &lt;param&gt;
-[KM0000C](km0000c) | `ERROR_TransformFromMatchesNothing` | Invalid transfom from="&lt;param&gt;": Matches an empty string\.
 [KM0000D](km0000d) | `ERROR_InvalidVersion` | Version number '&lt;param&gt;' must be a semantic version format string\.
 [KM0000E](km0000e) | `ERROR_MustBeAtLeastOneLayerElement` | The source file must contain at least one layer element\.
 [KM00010](km00010) | `ERROR_DisplayIsRepeated` | display  has more than one display entry\.
@@ -42,5 +41,7 @@ title: Compiler Messages Reference for @keymanapp/kmc-ldml
 [KM00026](km00026) | `HINT_CharClassImplicitDenorm` | File has character classes which span non\-NFD character\(s\), including Illegal \(U\+NAN\)\. These will not match any text\.
 [KM00027](km00027) | `WARN_CharClassExplicitDenorm` | File has character classes which include non\-NFD characters\(s\), including Illegal \(U\+NAN\)\. These will not match any text\.
 [KM00028](km00028) | `ERROR_UnparseableReorderSet` | Illegal UnicodeSet "&lt;param&gt;" in reorder "&lt;param&gt;
-[KM00029](km00029) | `ERROR_UnparseableTransformFrom` | Invalid transfom from "&lt;param&gt;": "&lt;param&gt;"
-[KM00030](km00030) | `ERROR_InvalidQuadEscape` | Invalid escape "\\u0000", use "\\u\{&lt;param&gt;\}" instead\.
+[KM00030](km00030) | `ERROR_InvalidQuadEscape` | Invalid escape "\\u0000"\. Hint: Use "\\u\{&lt;param&gt;\}"
+[KM00F00](km00f00) | `ERROR_UnparseableTransformFrom` | Invalid transform from="&lt;param&gt;": "&lt;param&gt;"
+[KM00F01](km00f01) | `ERROR_IllegalTransformDollarsign` | Invalid transform from="&lt;param&gt;": Unescaped dollar\-sign \($\) is not valid transform syntax\.
+[KM00F02](km00f02) | `ERROR_TransformFromMatchesNothing` | Invalid transfom from="&lt;param&gt;": Matches an empty string\.
