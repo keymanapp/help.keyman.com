@@ -11,7 +11,7 @@ Creates a new keyboard or lexical model project, optionally from a template or b
 Creates a keyboard project that matches the folder structure used in the Keyman [keyboards repository](https://github.com/keymanapp/keyboards) and includes all [basic files](/developer/keyboards/) needed for a keyboard project. Clicking OK will open the [New Project Parameters dialog](new-project-parameters).
 
 ## LDML Keyboard
-*update soon*
+Creates a keyboard project that matches the folder structure used in the Keyman [keyboards repository](https://github.com/keymanapp/keyboards) and includes all [basic files](/developer/keyboards/) needed for a LDML keyboard project. Clicking OK will open the [New LDML Keyboard Project Parameters dialog](new-ldml-project-parameters).
 
 ## Import Windows Keyboard
 
