@@ -37,16 +37,24 @@ Word breaker
     property in the [.model.ts source file](../reference/file-types/model-ts).
 
 Insert after word
-: *update is coming*
+: Many languages insert a space after a word. Some languages, like Thai or Khmer, do not use spaces. To suppress the space, you may set insertAfterWord to the empty string:
+
+    ```keyman
+    punctuation: {
+    insertAfterWord: "",
+    },
+    ```
+
+    [Read more](https://help.keyman.com/developer/17.0/guides/lexical-models/advanced/punctuation#toc-customizing-insertafterword)
 
 Quotation marks
-: *update is coming*
+: These are the quotation marks that surround the "keep" suggestion when it's displayed in the suggestion banner. [Read about Quotation marks here](https://help.keyman.com/developer/17.0/guides/lexical-models/advanced/punctuation#toc-customizing-quotesforkeepsuggestion).
 
 Right-to-left script
-: *update is coming*
+: Check this box to indicate that the lexical-model is for a right-to-left script.
 
 Language uses casing
-: *update is coming*
+: Tick this box for uppercase, capitalize, or any casing in the predicted word.
 
 Comments
 :   This field corresponds to the first lines of comments in the model
