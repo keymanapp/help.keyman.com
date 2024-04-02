@@ -1,5 +1,5 @@
 ---
-title: setHTMLBanner
+title: KMManager.setHTMLBanner
 ---
 
 ## Summary
