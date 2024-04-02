@@ -26,7 +26,7 @@
       <?php } ?>
       <div id="no-menu-spacer"></div>
       <img id="header-bottom" src="<?php echo cdn("img/headerbar.png"); ?>" alt='Header bottom' />
-      <a id="help" href="//keyman.com">
+      <a id="help" href="<?= \Keyman\Site\Common\KeymanHosts::Instance()->keyman_com ?>">
         <p id="keyman-help">Keyman.com</p><img src="<?php echo cdn("img/helpIcon.png"); ?>">
       </a>
     </div>

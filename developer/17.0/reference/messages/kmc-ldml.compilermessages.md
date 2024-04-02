@@ -41,5 +41,7 @@ title: Compiler Messages Reference for @keymanapp/kmc-ldml
 [KM00026](km00026) | `HINT_CharClassImplicitDenorm` | File has character classes which span non\-NFD character\(s\), including Illegal \(U\+NAN\)\. These will not match any text\.
 [KM00027](km00027) | `WARN_CharClassExplicitDenorm` | File has character classes which include non\-NFD characters\(s\), including Illegal \(U\+NAN\)\. These will not match any text\.
 [KM00028](km00028) | `ERROR_UnparseableReorderSet` | Illegal UnicodeSet "&lt;param&gt;" in reorder "&lt;param&gt;
-[KM00029](km00029) | `ERROR_UnparseableTransformFrom` | Invalid transfom from "&lt;param&gt;": "&lt;param&gt;"
-[KM00030](km00030) | `ERROR_InvalidQuadEscape` | Invalid escape "\\u0000", use "\\u\{&lt;param&gt;\}" instead\.
+[KM00030](km00030) | `ERROR_InvalidQuadEscape` | Invalid escape "\\u0000"\. Hint: Use "\\u\{&lt;param&gt;\}"
+[KM00F00](km00f00) | `ERROR_UnparseableTransformFrom` | Invalid transform from="&lt;param&gt;": "&lt;param&gt;"
+[KM00F01](km00f01) | `ERROR_IllegalTransformDollarsign` | Invalid transform from="&lt;param&gt;": Unescaped dollar\-sign \($\) is not valid transform syntax\.
+[KM00F02](km00f02) | `ERROR_TransformFromMatchesNothing` | Invalid transfom from="&lt;param&gt;": Matches an empty string\.

@@ -1,5 +1,5 @@
 ---
-title: copyHTMLBannerAssets
+title: KMManager.copyHTMLBannerAssets
 ---
 
 ## Summary
