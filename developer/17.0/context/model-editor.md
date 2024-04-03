@@ -45,10 +45,10 @@ Insert after word
     },
     ```
 
-    [Read more](https://help.keyman.com/developer/17.0/guides/lexical-models/advanced/punctuation#toc-customizing-insertafterword)
+[Read more](../guides/lexical-models/advanced/punctuation#toc-customizing-insertafterword)
 
 Quotation marks
-: These are the quotation marks that surround the "keep" suggestion when it's displayed in the suggestion banner. [Read about Quotation marks here](https://help.keyman.com/developer/17.0/guides/lexical-models/advanced/punctuation#toc-customizing-quotesforkeepsuggestion).
+: These are the quotation marks that surround the "keep" suggestion when it's displayed in the suggestion banner. [Read about Quotation marks here](../guides/lexical-models/advanced/punctuation#toc-customizing-quotesforkeepsuggestion).
 
 Right-to-left script
 : Check this box to indicate that the lexical-model is for a right-to-left script.
