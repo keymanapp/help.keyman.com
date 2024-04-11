@@ -121,7 +121,17 @@ Update database
 ![Options dialog - Server tab](/cdn/dev/img/developer/170/ui/frmOptions_Server.png)
 
 Keyman Developer Server
-: *update soon*
+:   ![Keyman Developer Server Options dialog](/cdn/dev/img/developer/170/ui/frmKeyman_Developer_Server_Options.png)   
+    
+    Testing out custom keyboards on a server with the new configuration of Keyman Develper Server will only enhanced the usability of the keyboard, with many features including:
+
+    * Seamless integration with the IDE (Start, Stop, Live reload, Recompile...)
+    * Port configuration
+    * Allow testing cross devices
+    * Wider range support for NGROK
+    
+    [Find out more](https://github.com/keymanapp/keyman/pull/6073)
 
 List local URLs for Server
-: *update soon*
+:   Untick the box to close showing any local URLs for keyboard testing
+    ![Keyman Developer Server Options dialog](/cdn/dev/img/developer/170/ui/frmList_Local_URLs.png) 
