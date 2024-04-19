@@ -120,18 +120,40 @@ Update database
 
 ![Options dialog - Server tab](/cdn/dev/img/developer/170/ui/frmOptions_Server.png)
 
-Keyman Developer Server
-:   ![Keyman Developer Server Options dialog](/cdn/dev/img/developer/170/ui/frmKeyman_Developer_Server_Options.png)   
+There are two configurations in the Keyman Developer Server section:
+1. Configure Server...
+2. List local URLs for Server
+
+Configure Server...
+    
+:   After clicking the button, a new window will pop-up 
+
+    ![Keyman Developer Server Options dialog](/cdn/dev/img/developer/170/ui/frmKeyman_Developer_Server_Options.png)   
     
     You can customize the Keyman Developer server for testing the usability of your keyboard. Features of the Keyman Developer server include:
 
     * Seamless integration with the IDE (Start, Stop, Live reload, Recompile...)
     * Port configuration
     * Allow testing cross devices
-    * Wider range support for NGROK
-    
+    * Wider range support for NGROK...
+        
     [Find out more](https://github.com/keymanapp/keyman/pull/6073)
+    
+    Understanding the three tick boxes will enhance the usability of Keyman Developer:
+    - **Leave Server running after closing IDE**: allows keyboard testing on local URLs after closing Keyman Developer.
+    - **Use ngrok to provide public url for web debugger**: configure NGROK as instructed, once it looks something like this:
+    ![Keyman Developer NGROK](/cdn/dev/img/developer/170/ui/frmNGROK_Config.png) 
+
+        Please restart the machine, and the URL (*link ending in .ngrok-free.app*) will appear in the specified locations:
+        ![Keyman Developer NGROK URL 1](/cdn/dev/img/developer/170/ui/frmNGROK_Server_1.png)
+        ![Keyman Developer NGROK URL 2](/cdn/dev/img/developer/170/ui/frmNGROK_Server_2.png)
+
+        Now, freely share it across multiple devices using the link or QR code.
+        ![Keyboard Test on Mobile](/cdn/dev/img/developer/170/ui/NGROK_Phone.png)
+
+    - **Show server console window on start**: once ticked, Keyman Developer's server console will appear as an independent window as a node application with the default message:
+        `Starting Keyman Developer Server 17.0.290-beta, listening on port 8008.`
 
 List local URLs for Server
-:   Untick the box to close showing any local URLs for keyboard testing
+:   Below Configure Server, untick the box, and it will quit displaying any local URLs for keyboard testing.
     ![Keyman Developer Server Options dialog](/cdn/dev/img/developer/170/ui/frmList_Local_URLs.png) 
