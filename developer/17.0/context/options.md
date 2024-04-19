@@ -123,7 +123,7 @@ Update database
 Keyman Developer Server
 :   ![Keyman Developer Server Options dialog](/cdn/dev/img/developer/170/ui/frmKeyman_Developer_Server_Options.png)   
     
-    Testing out custom keyboards on a server with the new configuration of Keyman Develper Server will only enhanced the usability of the keyboard, with many features including:
+    You can customize the Keyman Developer server for testing the usability of your keyboard. Features of the Keyman Developer server include:
 
     * Seamless integration with the IDE (Start, Stop, Live reload, Recompile...)
     * Port configuration
