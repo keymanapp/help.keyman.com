@@ -45,3 +45,5 @@ title: Compiler Messages Reference for @keymanapp/kmc-ldml
 [KM00F00](km00f00) | `ERROR_UnparseableTransformFrom` | Invalid transform from="&lt;param&gt;": "&lt;param&gt;"
 [KM00F01](km00f01) | `ERROR_IllegalTransformDollarsign` | Invalid transform from="&lt;param&gt;": Unescaped dollar\-sign \($\) is not valid transform syntax\.
 [KM00F02](km00f02) | `ERROR_TransformFromMatchesNothing` | Invalid transfom from="&lt;param&gt;": Matches an empty string\.
+[KM00F03](km00f03) | `ERROR_IllegalTransformPlus` | Invalid transform from="&lt;param&gt;": Unescaped plus \(\+\) is not valid transform syntax\.
+[KM00F04](km00f04) | `ERROR_IllegalTransformAsterisk` | Invalid transform from="&lt;param&gt;": Unescaped asterisk \(\*\) is not valid transform syntax\.
