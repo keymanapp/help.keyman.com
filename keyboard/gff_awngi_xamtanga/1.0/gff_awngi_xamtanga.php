@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'GFF Awngi &amp; Khimtanga';
-  $pagetitle = 'The Ge&rsquo;ez Frontier Foundation Keyboard for Awngi & Khimtanga Languages';
+  $pagename = 'GFF Awngi & Khimtanga';
+  $pagetitle = 'The Ge’ez Frontier Foundation Keyboard for Awngi & Khimtanga Languages';
   $pagestyle = <<<END
   img.indented { text-indent: 10%}
 
@@ -292,7 +292,7 @@ hitting the punctuation key two or more times until it appears.</p>
   <tr><td colspan="10" style="border-color: #ffffff;"/></tr>
   <tr>
     <th style="background-color: #e0dacf; border: thin solid #666;">Keystrokes</th>
-    <th>#100</th><th>#1000</th><th>#10000</th>
+    <th>#100</th><th>#1000</th><th>#10000</th>’
   </tr>
   <tr>
     <th>Numeral</th>
