@@ -158,4 +158,4 @@ List local URLs for Server
 :   Below Configure Server, untick the box, and it will quit displaying any local URLs for keyboard testing.
     ![Keyman Developer Server Options dialog](/cdn/dev/img/developer/170/ui/frmList_Local_URLs.png) 
 
-Explore more: [Keyman Developer Server](http://localhost:8055/developer/17.0/context/server#toc-configuring-keyman-developer-server)
+Explore more: [Keyman Developer Server](server#toc-configuring-keyman-developer-server)
