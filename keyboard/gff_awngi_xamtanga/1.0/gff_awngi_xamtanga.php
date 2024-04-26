@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'GFF Awngi &amp; Khimtanga';
-  $pagetitle = 'The Ge&rsquo;ez Frontier Foundation Keyboard for Awngi & Khimtanga Languages';
+  $pagename = 'GFF Awngi & Khimtanga';
+  $pagetitle = 'The Ge’ez Frontier Foundation Keyboard for Awngi & Khimtanga Languages';
   $pagestyle = <<<END
   img.indented { text-indent: 10%}
 
