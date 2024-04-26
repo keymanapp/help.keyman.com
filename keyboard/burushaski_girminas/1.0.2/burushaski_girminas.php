@@ -8,7 +8,7 @@
 
 <p>
 Please use the keyboard as you would use any other American English keyboard except for phoneme unique to 
-Burush�ski, Shina and Khowar. Following is the chart that can be used as a guidance. The 
+Burushãski, Shina and Khowar. Following is the chart that can be used as a guidance. The 
 keyboard is designed and developed after careful consideration of the linguistic context in which burusho people live. 
 </p>
 <p>
