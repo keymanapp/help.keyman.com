@@ -90,7 +90,7 @@ any(vowel) index(vowel,1) + "^" > index(vowelcirc,1) index(vowelcirc,2)
 
 ## Platforms
 
-The `index()` statement can be used in keyboards on all platforms. rule.
+The `index()` statement can be used in keyboards on all platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
 |---------|-------|-------|-------------|------------|-----|---------|
