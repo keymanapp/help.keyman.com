@@ -63,7 +63,7 @@ kmc build my_keyboard.kmn -o my_keyboard.kmx
 
 ## Compiling a package
 
-To compile a keyboard, `kmcomp` builds used command lines such as:
+To compile a package, `kmcomp` builds used command lines such as:
 
 ```bash
 kmcomp my_keyboard.kps
@@ -95,7 +95,7 @@ kmcomp                 | kmc                                   | notes
 `-t`                   | N/A                                   | Build specified target from .kpj, not supported in kmc
 `-color`               | `--color`                             | Force colorization for log messages
 `-no-color`            | `--no-color`                          | No colorization for log messages
-`-no-compiler-version` | `--no-compiler-version`               | Exclude compiler vesrion metadata from output files
+`-no-compiler-version` | `--no-compiler-version`               | Exclude compiler version metadata from output files
 
 ## Compiling a lexical model
 
