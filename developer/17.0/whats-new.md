@@ -14,6 +14,15 @@ Keyman Developer 17 has a number of significant changes:
   one of these keyboards, you should pull the changes from the repository
   before submitting future updates.
 
+* Keyboard project files (.kpj) now have a new format which does not list
+  individual files, but instead includes all files in the same folder and
+  subfolders relative to the project file. This prevents projects from
+  including unrelated files, and reduces the number of files that change
+  when keyboards are updated.
+
+* Keyman Developer will now open each project in a new window, allowing
+  the user to rapidly switch between multiple projects at the same time.
+
 * The Keyman Keyboard and Lexical Model Cloud repositories have new build
   scripts which run `kmc`. These run much, much faster than previously!
 
