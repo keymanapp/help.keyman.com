@@ -11,34 +11,43 @@ List installed Keyman keyboard packages
 km-package-list-installed [-h] [-l] [-s] [-o] [-u] [--version] [-v] [-vv]
 ```
 
+### Parameters
+
+`-h`, `--help` <br>
+__optional__ <br>
+show this help message and exit
+
+`-l`, `--long` <br>
+__optional__ <br>
+additionally show description
+
+`-s`, `--shared` <br>
+__optional__ <br>
+show keyboard packages installed in shared area
+
+`-o`, `--os` <br>
+__optional__ <br>
+show keyboard packages installed by the OS
+
+`-u`, `--user` <br>
+__optional__ <br>
+show keyboard packages installed in user area
+
+`--version` <br>
+__optional__ <br>
+show program's version number and exit
+
+`-v`, `--verbose` <br>
+__optional__ <br>
+verbose logging
+
+`-vv`, `--veryverbose` <br>
+__optional__ <br>
+very verbose logging
+
 ## Description
 
 Show installed Keyman keyboard packages with name, version, id.
-#### options:
-.TP
-?-h, --help
-?show this help message and exit
-.TP
-?-l, --long
-?additionally show description
-.TP
-?-s, --shared
-?show keyboard packages installed in shared area
-.TP
-?-o, --os
-?show keyboard packages installed by the OS
-.TP
-?-u, --user
-?show keyboard packages installed in user area
-.TP
-?--version
-?show program's version number and exit
-.TP
-?-v, --verbose
-?verbose logging
-.TP
-?-vv, --veryverbose
-?very verbose logging
 ## See also
 
 - [`km-package-install`](km-package-install)
