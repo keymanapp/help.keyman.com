@@ -94,7 +94,10 @@ The `index()` statement can be used in keyboards on all platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
 |---------|-------|-------|-------------|------------|-----|---------|
-| ✔       | ✔     | ✔     | ✔           | ✔          | ✔   | ✔       |
+| ✔       | ✔     | ✔    | ✔          | ✔          | ✔  | ✔       |
+
+> ### Note
+For **mobile** and **mobile web**, the statement is **only** accessible as the output section of the rule.
 
 ## Version history
 
