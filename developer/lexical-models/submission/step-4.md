@@ -52,7 +52,7 @@ files:
 
 `<lexical model>.kps`
 :   The package source file. See the Keyman Developer
-    [reference](/developer/current-version/guides/lexical-models/distribute/tutorial){target="_blank"}
+    [reference](/developer/current-version/guides/lexical-models/distribute/tutorial)
     for what to include within the package source file. Remember that
     when you reference any built files within the package, make sure you
     reference them from your **`build`** folder.
