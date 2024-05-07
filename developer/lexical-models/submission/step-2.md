@@ -33,9 +33,9 @@ git push origin master
 ```
 
 Learn more about [managing your
-fork](https://help.github.com/articles/fork-a-repo/){target="_blank"}
+fork](https://help.github.com/articles/fork-a-repo/)
 and [keeping your fork in
-sync](https://help.github.com/articles/syncing-a-fork/){target="_blank"}.
+sync](https://help.github.com/articles/syncing-a-fork/).
 
 Now let's check that we have the Keyman development tools for building a
 lexical model.
