@@ -11,42 +11,54 @@ Install a Keyman keyboard package
 km-package-install [-h] [-s] [-f KMPFILE] [-p PACKAGE] [-l LANGTAG] [--force] [--version] [-v] [-vv]
 ```
 
+### Parameters
+
+`-h`, `--help` <br>
+__optional__ <br>
+show this help message and exit
+
+`-s`, `--shared` <br>
+__optional__ <br>
+Install to shared area `/usr/local`
+
+`-f KMPFILE`, `--file KMPFILE` <br>
+__optional__ <br>
+Keyman kmp file
+
+`-p PACKAGE`, `--package PACKAGE` <br>
+__optional__ <br>
+Keyman package id
+
+`-l LANGTAG`, `--bcp47 LANGTAG` <br>
+__optional__ <br>
+bcp47 language tag
+
+`--force` <br>
+__optional__ <br>
+force installation of keyboard even if it is a
+downgrade to an older version of the keyboard
+
+`--version` <br>
+__optional__ <br>
+show program's version number and exit
+
+`-v`, `--verbose` <br>
+__optional__ <br>
+verbose logging
+
+`-vv`, `--veryverbose` <br>
+__optional__ <br>
+very verbose logging
+
+`Example` <br>
+__optional__ <br>
+: km-package-install -s -p sil_el_ethiopian_latin --bcp47 ssy-latn
+
 ## Description
 
 Install a Keyman keyboard package, either a local .kmp file or specify a
 keyboard id to download and install, optionally specifying a language for
 which to install the keyboard.
-#### options:
-.TP
-?-h, --help
-?show this help message and exit
-.TP
-?-s, --shared
-?Install to shared area `/usr/local`
-.TP
-?-f KMPFILE, --file KMPFILE
-?Keyman kmp file
-.TP
-?-p PACKAGE, --package PACKAGE
-?Keyman package id
-.TP
-?-l LANGTAG, --bcp47 LANGTAG
-?bcp47 language tag
-.TP
-?--force
-?force installation of keyboard even if it is a
-downgrade to an older version of the keyboard
-.TP
-?--version
-?show program's version number and exit
-.TP
-?-v, --verbose
-?verbose logging
-.TP
-?-vv, --veryverbose
-?very verbose logging
-
-Example: km-package-install -s -p sil_el_ethiopian_latin --bcp47 ssy-latn
 ## Tab completion
 
 
