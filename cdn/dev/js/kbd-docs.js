@@ -75,7 +75,7 @@ function loaded(){
 
     var url = location.pathname.split('/');
     var keyboardName = url[url.length-3], keyboardVersion = url[url.length-2];
-    var keyboardPath = keyman.options['keyboards'] + keyboardName + '/' + keyboardVersion + '/' + keyboardName + '-' + keyboardVersion + '.js';
+    var keyboardPath = keyman.config.options['keyboards'] + keyboardName + '/' + keyboardVersion + '/' + keyboardName + '-' + keyboardVersion + '.js';
 
     var fontFamily = null, fontSource = null;
 
