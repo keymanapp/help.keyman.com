@@ -4,8 +4,10 @@ title: Keyboard Design Principles
 
 ## Introduction
 
-Making the first keyboard can be excitingly overwhelming at first. We
-hope this method will enlighten your idea of keyboard design; from
+Making the first keyboard can be overwhelming at first. We
+
+hope this method will improve your process for keyboard design; from
+
 planning a layout to launching a quality keyboard for your community.
 The DISCUS Principles aren't just a concept; by using them, you will see
 how easy it is to produce excellent keyboards!
@@ -49,11 +51,13 @@ We must not forget to associate the product with feelings. It is important to th
 
 It is already overwhelming enough to get started with a new keyboard, so we should look for a way to encourage users to keep using it by making it simple and solve issues. You should raise some questions as such:
 
--   **Should some characters be ommited?**  
+-   **Should some characters be omitted?**  
+
 
     Be mindful of every character you add to your keyboard. The temptation to include lots of extra characters does sound beneficial, but it might not help as much. Overall, don't overload keys with too many variants.
 
--   **Who is your target Users?**  
+-   **Who are your target users?**  
+
 
     Does one keyboard need two languages?
 
@@ -70,11 +74,11 @@ It is already overwhelming enough to get started with a new keyboard, so we shou
     1.  <kbd>a</kbd>+<kbd>\`</kbd>=<kbd>à</kbd>
     2.  <kbd>\`</kbd>+<kbd>a</kbd>=<kbd>à</kbd>
 
-    It helps to simplify the typing experience if users unintentionally type one of the sequences or if it is a habitual choice. All of the hassle would be handled without users knowing.
+    Whether these patterns arise from user preference or from occasional accidentally-reordered keystrokes, supporting both can simplify the typing experience for users.
 
--   **If typing mistake happens, is there a automatic way to correct it?**  
+-   **If a typing mistake happens, is there a automatic way to correct it?**  
 
-    Similarly, some languages have different inputs for one word, but it wasn't until we started to automate correcting these mistakes on the latest keyboards that it was possible to get one correct encoded word from many ways of typing. For example:
+    Similarly, some languages support different inputs for one word.  It's possible to add rules to automate correcting these patterns to result in a single, correctly-encoded form of the word regardless of the way it is typed. For example:
 
     1.  <kbd>ប</kbd>+<kbd>
         េ</kbd>+<kbd>ី</kbd>
@@ -86,7 +90,8 @@ It is already overwhelming enough to get started with a new keyboard, so we shou
 
 ### C: Consistency
 
-The importance of knowing the language for the keyboard is a massive contributor to a quality keyboard. You should consider the rules for writing the language and the structure of the script. If cohesion is what you seek, then be sure to use the questions below:
+Fluency in the language for the keyboard can provide many insights for designing a quality keyboard. You should consider the rules for writing the language and the structure of the script. If cohesion is what you seek, then be sure to use the questions below:
+
 
 -   Is alphabetic order sensible? How about grouping by sound?
 -   Which letters are rare?
