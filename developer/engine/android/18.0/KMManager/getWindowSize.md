@@ -25,7 +25,7 @@ Use this method to get the size of the entire display. It may or may not include
 
 ### Example: Using `getWindowSize()`
 
-The following script illustrates the use of `getWindowSize()`:
+The following code illustrates the use of `getWindowSize()`:
 ```java
     Point size = KMManager.getWindowSize(context);
     int screenHeight = size.y;

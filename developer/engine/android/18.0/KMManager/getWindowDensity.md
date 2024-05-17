@@ -25,7 +25,7 @@ Use this method to get the [density](https://developer.android.com/reference/and
 
 ### Example: Using `getWindowDensity()`
 
-The following script illustrates the use of `getWindowDensity()`:
+The following code illustrates the use of `getWindowDensity()`:
 ```java
     float density = KMManager.getWindowDensity(context);
 ```

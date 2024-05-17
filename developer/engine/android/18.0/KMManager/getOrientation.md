@@ -15,14 +15,12 @@ KMManager.getOrientation(Context context)
 `context`
 : The context.
 
-### ReturnsPoint = 
+### Returns
 Returns the device orientation as an int, one of: 
 
-`Configuration.ORIENTATION_PORTRAIT` (`1`), 
-
-`Configuration.ORIENTATION_LANDSCAPE` (`2`)
-
-`Configuration.ORIENTATION_UNDEFINED` (`0`)
+* `Configuration.ORIENTATION_PORTRAIT` (`1`)
+* `Configuration.ORIENTATION_LANDSCAPE` (`2`)
+* `Configuration.ORIENTATION_UNDEFINED` (`0`)
 
 ## Description
 Use this method to get the current orientation of the device
@@ -31,7 +29,7 @@ Use this method to get the current orientation of the device
 
 ### Example: Using `getOrientation()`
 
-The following script illustrates the use of `getOrientation()`:
+The following code illustrates the use of `getOrientation()`:
 ```java
     int orientation = KMManager.getOrientation(context);
 ```
