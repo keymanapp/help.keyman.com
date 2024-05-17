@@ -8,7 +8,9 @@
 
   // Variables used to manage and trigger debugging tests.
   // Simply defining the variable below is enough to trigger debug mode.
-  // $kmw_dev_path = 'http://localhost/release/unminified/web';
+  // Advice:  copy a locally-compiled /web/build/publish/debug folder as
+  // /cdn/dev/local-web, then uncomment the following line.
+  // $kmw_dev_path = cdn("local-web/keymanweb.js");
 
   if(!isset($title)){
     $title = 'Keyman | Type to the world in your language';
@@ -103,7 +105,7 @@
   <?php
     } else {
   ?>
-      <script src='<?=$kmw_dev_path?>/keymanweb.js'></script>
+      <script src='<?=$kmw_dev_path?>'></script>
   <?php
     }
   ?>
