@@ -53,7 +53,7 @@
       global $PageVersion;
       if(!$PageVersion->active) return;
 
-      if($PageVersion->subPath == '' || $PageVersion->subPath[strlen($PageVersion->subPath)] == '/') {
+      if($PageVersion->subPath == '' || $PageVersion->subPath[strlen($PageVersion->subPath)-1] == '/') {
         $file = $PageVersion->subPath.'index';
       } else {
         $file = $PageVersion->subPath;
@@ -105,7 +105,7 @@
         $subPath = $matches[4];
         return true;
       }
-        return false;
+      return false;
     }
 
     ///
