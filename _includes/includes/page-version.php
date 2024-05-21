@@ -18,9 +18,9 @@
         if(sizeof($this->versions) == 0) {
           $this->active = false;
         } else {
-          $this->currentVersion = $this::getCurrentVersion($this->versions);
-          if($this->versionedPath == 'current-version') $this->versionedPath = $this->currentVersion;
-          if($this->versionedPath == 'latest-version') $this->versionedPath = $this->versions[0];
+            $this->currentVersion = $this::getCurrentVersion($this->versions);
+            if($this->versionedPath == 'current-version') $this->versionedPath = $this->currentVersion;
+            if($this->versionedPath == 'latest-version') $this->versionedPath = $this->versions[0];
         }
       }
     }
@@ -53,7 +53,7 @@
       global $PageVersion;
       if(!$PageVersion->active) return;
 
-      if($PageVersion->subPath == '' || $PageVersion->subPath[strlen($PageVersion->subPath)-1] == '/') {
+      if($PageVersion->subPath == '' || $PageVersion->subPath[strlen($PageVersion->subPath)] == '/') {
         $file = $PageVersion->subPath.'index';
       } else {
         $file = $PageVersion->subPath;
@@ -64,16 +64,17 @@
       echo "<div>";
 
       foreach($PageVersion->versions as $version) {
+        $found = true;
         $folder = "{$_SERVER['DOCUMENT_ROOT']}{$PageVersion->basePath}/{$version}/";
         if(!file_exists("{$folder}{$file}.php") && !file_exists("{$folder}/{$file}.md")) {
           // We don't have the same content in that version, so point to home page
           if($version == $PageVersion->currentVersion) {
             $text = "Version $version (home page, current version)";
-            $target = "{$PageVersion->basePath}/current-version/";
+            $target = "{$PageVersion->basePath}/current-version/{$PageVersion->subPath}";
           } else {
-            $text = "Version $version (home page)";
-            $target = "{$PageVersion->basePath}/$version/";
-          }
+              $text = "Version $version (home page)";
+              $target = "{$PageVersion->basePath}/$version/";
+            }
         } else {
           if($version == $PageVersion->currentVersion) {
             $text = "Version $version (current version)";
@@ -84,7 +85,7 @@
           }
         }
 
-        if($version == $PageVersion->versionedPath) {
+        if($version == $PageVersion->versionedPath && !$found) {
           echo "<span>$text</span>";
         } else {
           echo "<a href='$target'>$text</a>";
@@ -93,7 +94,7 @@
 
       echo "</div></div>";
     }
-
+  
     ///
     /// Test that the url is in a versioned folder (only support products|developer at present)
     ///
@@ -104,7 +105,7 @@
         $subPath = $matches[4];
         return true;
       }
-      return false;
+        return false;
     }
 
     ///
@@ -120,7 +121,7 @@
 
       usort($versions, 'version_compare_reverse');
 
-      return $versions;
+      return $versions; // versions [18.0,17.0,16.0,...,1.0]
     }
 
     ///
@@ -137,7 +138,6 @@
           in_array($matches[1], $versions)) {
         $currentVersion = $matches[1];
       }
-
       return $currentVersion;
     }
   }
