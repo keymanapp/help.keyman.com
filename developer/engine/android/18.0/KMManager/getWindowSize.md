@@ -19,7 +19,11 @@ KMManager.getWindowSize(Context context)
 Returns the window size (native resolution) of the display as (int x, int y).
 
 ## Description
-Use this method to get the size of the entire display. It may or may not include [system decoration areas](https://developer.android.com/reference/android/view/Display)
+Use this method to get the size of the entire display. 
+
+For API level 29 and below, the size of the [entire display minus system decoration areas](https://developer.android.com/reference/android/view/Display#getSize(android.graphics.Point) is returned.
+
+For API level 30 and above, it may or may not include [system decoration areas](https://developer.android.com/reference/android/view/Display)
 
 ## Examples
 
