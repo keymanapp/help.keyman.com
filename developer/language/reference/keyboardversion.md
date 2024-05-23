@@ -28,8 +28,8 @@ keyboard and update them automatically.
 The version string should match as far as possible the package version
 string, when a keyboard is included in a package.
 
-Note the difference between `&keyboardversion`, which documents the
-keyboard version, and [`&version`](version), which determines which
+**Note:** there is a difference between `&keyboardversion`, which documents 
+the keyboard version, and [`&version`](version), which determines which
 version of Keyman a keyboard will run with.
 
 A keyboard version should be updated whenever there are changes to a
