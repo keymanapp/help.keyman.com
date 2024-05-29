@@ -97,9 +97,9 @@ process dramatically by following the guidelines we’ve already written.
 These design patterns and requirements assume some knowledge of Keyman
 Developer and Keyman lexical model development. Keyman Developer is
 downloadable from
-[https://keyman.com/developer](https://keyman.com/developer){target="_blank"},
+[https://keyman.com/developer](https://keyman.com/developer),
 and the documentation is online at
-[https://help.keyman.com/developer/current-version/guides/lexical-models/tutorial](../../current-version/guides/lexical-models/tutorial){target="_blank"}.
+[https://help.keyman.com/developer/current-version/guides/lexical-models/tutorial](../../current-version/guides/lexical-models/tutorial).
 
 ## Set lexical model project output path
 
@@ -116,7 +116,7 @@ Project --&gt; Project Settings...
 
 When you share your lexical model with the world, you will need to
 assign a specific [open source
-license](https://opensource.org/licenses){target="_blank"}. There are
+license](https://opensource.org/licenses). There are
 hundreds of prewritten licenses, but for lexical models to be included
 in this repository, you must use the MIT license:
 
@@ -126,7 +126,7 @@ MIT license
     warranty.
 
 The MIT license is explored in detail at
-[choosealicense.com](https://choosealicense.com/licenses/){target="_blank"},
+[choosealicense.com](https://choosealicense.com/licenses/),
 from which the description above was taken.
 
 In Step 1 we'll get set up for making a submission to the Keyman

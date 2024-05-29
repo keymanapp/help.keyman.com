@@ -1,6 +1,6 @@
 <?php
   $pagename = "GFF Tigre";
-  $pagetitle = "The Ge&rsquo;ez Frontier Foundation Keyboard for Tigre";
+  $pagetitle = "The Geʾez Frontier Foundation Keyboard for Tigre";
   $pagestyle = <<<END
   img.indented { text-indent: 10%}
 

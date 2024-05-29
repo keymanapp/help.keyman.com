@@ -2,10 +2,9 @@
 title: Debug Window
 ---
   
-![Debug window - Debug
-State](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Debug_State.png){width="100%"}
+![Debug window - Debug State](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Debug_State.png)
 
-The debug window is shown at the bottom of an keyboard editor when
+The debug window is shown at the bottom of the keyboard editor when
 debugging the keyboard. There are several user interface areas: The
 debugger input window, the debugger status window, a debugger toolbar
 (usually docked under the menu), and the status bar will show the
@@ -13,14 +12,13 @@ current debugger status.
 
 ## Debugger input window
 
-![Debug window - Debug
-State](/cdn/dev/img/developer/100/ui/frmDebug.png)
+![Debug window - Debug State](/cdn/dev/img/developer/100/ui/frmDebug.png)
 
 The debugger input window is used for typing input to test the keyboard.
 In the top half of this window, input you type while testing your
 keyboard will be displayed, exactly the same as in use, with one
 exception: deadkeys will be shown visually with an
-![OBJ](/cdn/dev/img/developer/90/ui/obj.gif){.inline} symbol.
+![OBJ](/cdn/dev/img/developer/90/ui/obj.gif) symbol.
 
 The lower half of the window shows a grid of the characters to the
 virtual left of the insertion point, or the selected characters if you
@@ -33,9 +31,9 @@ the screen, then only those that fit will be shown in the grid.
 
 The debug menu and debug toolbar control the debugger.
 
-![Debug toolbar](/cdn/dev/img/developer/100/ui/Debug_Toolbar.png)
+![Debug toolbar](/cdn/dev/img/developer/170/ui/Debug_Toolbar.png)
 
-![Debug menu](/cdn/dev/img/developer/100/ui/Debug_Menu.png)
+![Debug menu](/cdn/dev/img/developer/170/ui/Debug_Menu.png)
 
 Set/Clear breakpoint
 :   A breakpoint can be put on a line of code to ask Keyman Developer to
@@ -64,26 +62,22 @@ Run
     into single step mode again.
 
 Pause
-:   Use the Pause button or press Shift+Esc to pause the debugger. When
-    the debugger is paused, it will not accept any input, and ordinary
-    shortcut keys (Shift+F5, Alt+Tab, etc.) will function as usual.
-    Press Pause again to resume debugging.
+:   Use the Pause button or press <kbd>Shift</kbd> + <kbd>Esc</kbd> to pause the debugger. When
+    the debugger is paused, it will not accept any input, and ordinary shortcut keys (<kbd>Shift</kbd> + <kbd>F5</kbd>, <kbd>Alt</kbd> + <kbd>Tab</kbd>, etc.) will function as usual. Press Pause again to resume debugging.
 
-System keyboard
+<!-- System keyboard
 :   The system keyboard layout currently being used. You can test your
     keyboard with a different underlying layout by selecting
-    <span class="guimenuitem">Select System Keyboard</span> from the
-    <span class="guimenu">Debug</span> menu.
+    **Select System Keyboard** from the **Debug** menu. -->
 
-## <span id="id559582"></span>Debug State box
+## Debug State box
 
 The debug state box shows the internal state of the keyboard
 interpreter.
 
 ### State
 
-![Debug window - Debug
-State](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Debug_State.png){width="100%"}
+![Debug window - Debug State](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Debug_State.png)
 
 This window shows the current keystroke state, and the sequence of
 keystrokes that were typed to arrive at this state. Clearing the text in
@@ -92,39 +86,35 @@ Restart button.
 
 The Restart button is disabled while stepping through an event.
 
-### <span id="id559580"></span>Elements
+### Elements
 
-![Debug window - Debug
-Elements](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Debug_Elements.png){width="100%"}
+![Debug window - Debug Elements](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Debug_Elements.png)
 
 This shows the elements that make up rule currently being processed: the
 context, the key, and also what the output will be. If the rule uses
 stores, the contents of the store will be shown in the right-hand
 column, with the matched letter in red.
 
-### <span id="id559630"></span>Call Stack
+### Call Stack
 
-![Debug window - Debug Call
-stack](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Debug_CallStack.png){width="100%"}
+![Debug window - Debug Call stack](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Debug_CallStack.png)
 
 Here all the lines that have been processed to this point are shown in a
 list. You can double-click on any entry in the list to display the line
 in the keyboard source.
 
-### <span id="id559622"></span>Deadkeys
+### Deadkeys
 
-![Debug window - Debug
-Deadkeys](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Debug_Deadkeys.png){width="100%"}
+![Debug window - Debug Deadkeys](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Debug_Deadkeys.png)
 
 This lists all the deadkeys that are currently in the context. You can
 select one from the list to see it highlighted in the debug input box.
 This information can also be seen in the character grid in the lower
 half of the debugger input window.
 
-### <span id="id559640"></span>Regression Testing
+### Regression Testing
 
-![Debug window - Debug Regression
-Test](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Debug_RegressionTest.png){width="100%"}
+![Debug window - Debug Regression Test](/cdn/dev/img/developer/100/ui/frmKeymanWizard_Debug_RegressionTest.png)
 
 The idea in regression testing is to record a sequence of keystrokes and
 the output the keyboard produced, in order to test for the same
@@ -139,7 +129,7 @@ If the output produced while running a test is different to that stored
 when recording it, Keyman will halt the test on the line where the
 failure occurred, and activate Single Step mode.
 
-### <span id="id559616"></span>Status bar
+### Status bar
 
 The input status is shown in the second pane of the status bar. It can
 show one of the following messages:
@@ -162,7 +152,7 @@ Debugging
 
 ## Test mode
 
-Enter test mode by clicking the <span class="guilabel">Test Mode</span>
+Enter test mode by clicking the **Test Mode**
 button on the debugger toolbar.
 
 The test mode lets you test your keyboard without the debugger being

@@ -1,5 +1,5 @@
 <?php
-$pagename = 'Cab&eacute;car Keyboard Help';
+$pagename = 'Cabécar Keyboard Help';
 $pagetitle = $pagename;
 // Header
 require_once('header.php');

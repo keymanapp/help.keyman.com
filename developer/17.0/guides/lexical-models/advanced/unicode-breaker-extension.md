@@ -2,25 +2,18 @@
 title: Customization and extension of the Unicode word breaker
 ---
 
-<aside>
-  <p>
-    <strong>Note</strong>:  While this offers a great amount of flexibility and
-    customization that may assist predictions for your language, note that this
-    approach may get quite technical!
-  </p>
-</aside>
+> ### Note:  
+While this offers a great amount of flexibility and customization that may assist predictions for your language, note that this approach may get quite technical!
 
-As mentioned on the [main word breaker page](./word-breaker.php),
+As mentioned on the [main word breaker page](./word-breaker),
 our currently-supported lexical models need to know what a word
-is in running text.  After all, it is quite difficult to look up a word in a
+is in running text. After all, it is quite difficult to look up a word in a
 dictionary when unclear about what the start and end of that word even is.
 
 In languages using the Latin script—like, English, French,
 and SENĆOŦEN—finding words is easy. Words are separated by spaces or
 punctuation. The actual rules for where to find words can get quite tricky to
-describe, but Keyman implements the [Unicode Standard Annex #29 §4.1 Default
- Word Boundary Specification](https://unicode.org/reports/tr29/#Word_Boundaries)
-which works well for most languages.
+describe, but Keyman implements the [Unicode Standard Annex #29 §4.1 Default Word Boundary Specification](https://unicode.org/reports/tr29/#Word_Boundaries) which works well for most languages.
 
 This guide is about techniques that may be used to customize and extend
 the behaviors of that specification to be better tailored to your language.
@@ -30,9 +23,7 @@ the specification itself.
 There are three ways - all of them optional - to extend and customize
 the word-breaking rules themselves:
 
-* If you need to prevent splits in very specific scenarios and/or add
-       splits in other specific scenarios, you may specify
-       [context-based rules](#rules) to obtain the desired behavior.
+* If you need to prevent splits in very specific scenarios and/or add splits in other specific scenarios, you may specify [context-based rules](#rules) to obtain the desired behavior.
 * If certain characters are not handled appropriately for their role in
        your language, you may [map characters](#map) to different
        word-breaking character classes - including custom ones.  This will
@@ -44,15 +35,15 @@ the word-breaking rules themselves:
        [define custom character classes](#define) for use in custom
        rules.
 
-## <a name="example" id="example"></a> A first example
+## A first example
 
 This example was designed to address the needs of a minority language in the country
-of Cambodia.  The majority language does not use spaces for wordbreaking, while the
+of Cambodia. The majority language does not use spaces for wordbreaking, while the
 minority language in question does use them.  In addition, hyphens sometimes occur
 within words.
 
 The word breaker function can be specified in the
-[model definition file](./model-definition-file.php) as follows:
+[model definition file](./model-definition-file) as follows:
 
 ```typescript
 const source: LexicalModelSource = {
@@ -124,15 +115,13 @@ This example's customization is designed to accomplish two goals:
   a custom-tailored property that ensures only hyphens are affected in order to add
   a special, end-of-context rule that may be useful when typing - the rule above
   referencing `"eot"`.
-</ol>
 
 More on the wordbreaking character properties will be covered later.
 
-## <a name="rules" id="rules"></a> Custom word-breaking rules
+## Custom word-breaking rules
 
 When defining additional rules for use in word-breaking, it is advisable to reference
-the [rules of the Unicode Standard Annex #29 §4.1 Default Word Boundary Specification](
-https://unicode.org/reports/tr29/#Word_Boundary_Rules)</a>.
+the [rules of the Unicode Standard Annex #29 §4.1 Default Word Boundary Specification](https://unicode.org/reports/tr29/#Word_Boundary_Rules).
 
 Rules WB1 through WB4 of the specification will always apply first, before any
 custom rules.  Custom rules will then be applied in order of their definition within
@@ -167,7 +156,6 @@ This is simply a series of characters, up to two characters before and after a p
 
 The expansions `MidNumLetQ` and `AHLetter` are defined at https://unicode.org/reports/tr29/#WB_Rule_Macros.
 
-<a name="WB6" id="WB6"></a>
 If written as a custom rule, rule WB6 takes the following form.  Note the use of the function `context.propertyMatch`,
 which takes 4 parameters - two to match characters before and two to match characters after a potential boundary:
 
@@ -195,7 +183,7 @@ the potential boundary.
 ### Word-breaking property names
 The names used in each array must be defined in one of the following places:
 * https://unicode.org/reports/tr29/#Table_Word_Break_Property_Values
-* `customProperties` - your <a href="#define">declaration of any custom property types</a>
+* `customProperties` - your [declaration of any custom property types](#define)
 * One of the special property types `"Other"`, `"sot"`, or `"eot"`:
     * `Other`:  a character without an associated word-breaking property value
     * `sot`:  "start of text" - a marker indicating the beginning of the string being word-broken
@@ -248,20 +236,12 @@ require multiple context property-matching attempts.
 You may define any number of these rule objects in any order for use within the wordbreaker within
 the `rules` array.
 
-<aside>
-<p>
-<strong>Important note</strong>: When no other rule successfully matches a potential word-boundary
-position, the spec's rule WB999 applies as a catch-all and will enforce a split.  Preventing a
-word-break always requires a successfully-matching rule, though this is covered for most cases by
-the Unicode specification's ruleset.
-</p>
-</aside>
+> **Important note**: When no other rule successfully matches a potential word-boundary position, the spec's rule WB999 applies as a catch-all and will enforce a split.  Preventing a word-break always requires a successfully-matching rule, though this is covered for most cases by the Unicode specification's ruleset.
 
 Defining custom rules is a powerful tool, but it is detailed work and may be somewhat tedious
-to get right.  Feel free to [ask for help at our Community Site](
-https://community.software.sil.org/c/keyman/19) for assistance.
+to get right.  Feel free to [ask for help at our Community Site](https://community.software.sil.org/c/keyman/19) for assistance.
 
-## <a name="map" id="map"></a> Character property remapping
+## Character property remapping
 
 Many writing systems in the world are shared by multiple languages, using most of the same
 characters in common.  However, sometimes there may be notable differences in how specific
@@ -272,7 +252,7 @@ character with one set by the lexical model.
 ### Default character properties
 
 For reference, [this text file](https://www.unicode.org/Public/UCD/latest/ucd/auxiliary/WordBreakProperty.txt)
-provides the standard word-breaking properties for all characters.  This is one of many
+provides the standard word-breaking properties for all characters. This is one of many
 files Unicode provides publicly here: https://www.unicode.org/reports/tr41/#Props0.
 
 That text file contains many lines of the following form:
@@ -311,14 +291,13 @@ propertyMapping: (char) => {
 },
 ```
 
-If you search the [property definition text file](
-https://www.unicode.org/Public/UCD/latest/ucd/auxiliary/WordBreakProperty.txt)
+If you search the [property definition text file](https://www.unicode.org/Public/UCD/latest/ucd/auxiliary/WordBreakProperty.txt)
 for `1780` or `17b3`, you will find neither.  These correspond to many letters
 from the Khmer character set - notably, the 'base' characters used in Khmer's
 grapheme clusters.  The other Khmer characters tend to attach at various positions
-around these base characters.  The majority language for the script - Khmer -
+around these base characters. The majority language for the script - Khmer -
 does not follow conventional word-breaking rules; most notably, they do not add
-whitespace between each word.  (There are other strategies that get utilized for
+whitespace between each word. (There are other strategies that get utilized for
 such scripts.)
 
 As breaks sometimes occur between the base characters while other times do not,
@@ -326,9 +305,7 @@ properties for these base characters were not explicitly defined and are thus
 treated as class `Other`.
 - As other Khmer characters tend to attach around the base characters, they do
   have specified word-breaking properties - they `Extend` the grapheme cluster.
-- Searching `17b4` in [the text file mentioned above](
-  https://www.unicode.org/Public/UCD/latest/ucd/auxiliary/WordBreakProperty.txt)
-  will show the closest results to the characters under discussion.
+- Searching `17b4` in [the text file mentioned above](https://www.unicode.org/Public/UCD/latest/ucd/auxiliary/WordBreakProperty.txt) will show the closest results to the characters under discussion.
 
 However, there are minority languages that prefer to use whitespaces between words,
 meaning that there should never be wordbreaks applied directly between neighboring
@@ -360,7 +337,7 @@ if(hyphens.includes(char)) {
 } // ...
 ```
 
-## <a name="define" id="define"></a> Defining and using new word-breaking properties
+## Defining and using new word-breaking properties
 
 There may be some cases in which none of the default character word-breaking
 properties provide the exact behavior that you're wanting, or perhaps you
@@ -432,7 +409,7 @@ is the point of text insertion.  For this example, assuming that a user has just
 `full-`, there will be no word-break on the hyphen until either more input is received or
 the user changes the site of text entry.
 
-**Important note**: you must declare any custom properties within the `customProperties` array.
+**Important note**: You must declare any custom properties within the `customProperties` array.
 If any are missing, the missing custom properties will fail to match against any word-breaking rule.
 Make sure you don't misspell it anywhere in your customization code!
 
@@ -440,7 +417,7 @@ Make sure you don't misspell it anywhere in your customization code!
 
 There is one notable issue with this example, though - whenever you remap a character to
 a new property, it is no longer considered to have its old property, and so it will no
-longer match rules based on its default property.  This is why the original example
+longer match rules based on its default property. This is why the original example
 included a couple of extra rules:
 
 ```typescript
@@ -470,11 +447,9 @@ _replace_ the behavior of WB6 and WB7 - it merely _extends_ it to include the ne
 
 ### A more complex case
 
-A meatier example may be found as [the specification's hypothetical rule WB5a](
-https://unicode.org/reports/tr29/#WB999):
+A meatier example may be found as [the specification's hypothetical rule WB5a](https://unicode.org/reports/tr29/#WB999):
 
-> "Break between apostrophe and vowels
-(French, Italian)"
+> "Break between apostrophe and vowels (French, Italian)"
 >
 > WB5a:   **Apostrophe ÷ Vowels**.
 

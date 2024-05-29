@@ -16,6 +16,13 @@ function get_file_titles($base) {
       continue;
     }
 
+    if(preg_match('/developer\/(current-version|latest-version|\d+\.\d+)\/reference\/api/', $file)) {
+      // Performance cost -- there are many files in this folder. This is a
+      // temporary fix until we move to better API documentation hosting in the
+      // future
+      continue;
+    }
+
     if(is_dir($file)) {
       if(file_exists($file.'/index.md')) {
         $dirs[$basefile] = get_file_title_md($file.'/index.md');
@@ -59,6 +66,8 @@ function get_file_title_md($filename) {
 
   if(preg_match('/^title: (.+)$/mi', $s, $sub)) {
     $title = $sub[1];
+  } else if(preg_match('/^(#)+ (.+)$/m', $s, $sub)) {
+    $title = $sub[2];
   } else {
     $title = 'Untitled page.md';
   }
@@ -82,11 +91,13 @@ function build_index_content() {
 
   $index_content = "<ul>";
   foreach($items as $file => $title) {
+    $hetitle = htmlentities($title);
+    $hesttitle = htmlentities(strip_tags($title));
     $cleanfile = str_replace('.md', '', str_replace('.php', '', $file));
     if($file == $this_file) {
-      $index_content .= "<li class='current'>$title</li>";
+      $index_content .= "<li class='current'>$hetitle</li>";
     } else {
-      $index_content .= "<li><a href='$cleanfile' title='".strip_tags($title)."'>$title</a></li>";
+      $index_content .= "<li><a href='$cleanfile' title='$hesttitle'>$hetitle</a></li>";
     }
   }
   $index_content .= "</ul>";
@@ -97,10 +108,13 @@ function build_index_content() {
       $title = get_file_title_md($base . 'index.md');
     else
       $title = get_file_title($base . 'index.php');
+    $hetitle = htmlentities($title);
+    $hesttitle = htmlentities(strip_tags($title));
+
     if(($this_file == 'index.php' || $this_file == 'index.md') && $depth == 0) {
-      $index_content = "<ul><li><div class='current'>$title</div>$index_content</li></ul>";
+      $index_content = "<ul><li><div class='current'>$hetitle</div>$index_content</li></ul>";
     } else {
-      $index_content = "<ul><li><a href='$path'>$title</a>$index_content</li></ul>";
+      $index_content = "<ul><li><a href='$path'>$hetitle</a>$index_content</li></ul>";
     }
     $path = '../' . $path;
     $base = $base . '../';

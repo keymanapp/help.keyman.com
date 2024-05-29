@@ -14,7 +14,7 @@ work you do on a lexical model.
 
 Make sure you have Keyman Developer 12.0 or later. You can download
 Keyman Developer from
-[https://keyman.com/developer](https://keyman.com/developer){target="_blank"}.
+[https://keyman.com/developer](https://keyman.com/developer).
 With Keyman Developer, you will have these two ways of building lexical
 models.
 

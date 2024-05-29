@@ -1,5 +1,5 @@
 <?php 
-  $pagename = 'Burush&atilde;ski Alphabet - Roman/latin Keyboard Help';
+  $pagename = 'Burushãski Alphabet - Roman/latin Keyboard Help';
   $pagetitle = $pagename;
   // Header we will tidy up later  
   require_once('header.php');

@@ -1,6 +1,6 @@
 <?php
   $pagename = "GFF Eritrean Tigrinya";
-  $pagetitle = "The Ge&rsquo;ez Frontier Foundation Keyboard for Eritrean Tigrinya";
+  $pagetitle = "The Geʾez Frontier Foundation Keyboard for Eritrean Tigrinya";
   $pagestyle = <<<END
   img.indented { text-indent: 10%}
 

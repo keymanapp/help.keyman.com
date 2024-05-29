@@ -11,15 +11,14 @@ If you are not familiar with Android development, you will find the
 resource, and working through some of their tutorials first will help you with the rest of this guide.
 
 ### 1. Install Free Tools
-* Install [Keyman Developer 15 or later](https://keyman.com/developer/).</li>
-* Install <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">
-            Java SE Development Kit</a>.
-* Install <a href="https://developer.android.com/studio/index.html">Android Studio</a>.</li>
-    Android Studio runs on several platforms. Keyman Developer 10 runs on Windows 7 or later.
+* Install [Keyman Developer 17 or later](https://keyman.com/developer/).
+* Install [OpenJDK 11](https://learn.microsoft.com/en-us/java/openjdk/download#openjdk-11).
+* Install [Android Studio](https://developer.android.com/studio/index.html).
+    Android Studio runs on several platforms. Keyman Developer runs on Windows 10 or later.
 
 ### 2. Configure Android Studio
-* For Windows users, from <strong>Control Panel>System>System Properties>Environment Variables</strong>,<br/>
-        create a system variable <strong>ANDROID_HOME</strong> to the location of your Android SDK. The default
+* For Windows users, from **Control Panel>System>System Properties>Environment Variables**,<br/>
+        create a system variable **ANDROID_HOME** to the location of your Android SDK. The default
         installation location is<br/>
         c:\Users\[USER]\AppData\Local\Android\sdk where [USER] is your Windows username.
 * For Linux users, add the following to ~/.bashrc
@@ -34,15 +33,15 @@ yes | ./sdkmanager.bat --licenses
 ```
 
 ### 3. Download Keyman Engine for Android and Build Sample projects
-* Download the <a href="https://keyman.com/engine/">Keyman for Android SDK</a>
+* Download the [Keyman for Android SDK](https://keyman.com/engine)
         and extract the files to a new folder.
 
 The archive includes two sample projects and an Android .aar library file. This guide will use the first
-    example project, <strong>KMSample1</strong>.
+    example project, **KMSample1**.
 
-* If <strong>KMSample1.zip</strong> exists, extract it to a new folder. Otherwise, the KMSample1 project
-        can be found at <strong>Samples/KMSample1</strong>
-* In Android Studio, select <strong>File&gt;Open</strong> and choose the KMSample1 project folder from
+* If **KMSample1.zip** exists, extract it to a new folder. Otherwise, the KMSample1 project
+        can be found at **Samples/KMSample1**
+* In Android Studio, select **File&gt;Open** and choose the KMSample1 project folder from
         the previous step.
 
 * When the project loads, you may be prompted to install Android SDKs; go ahead and follow the prompts to
@@ -131,6 +130,6 @@ And there you have it: your first Keyman Engine for Android app!
 
 ## See Also
 * [Guide: Build a system keyboard app](../system-keyboard/)
-* [Keyman Developer Documentation](/developer/16.0/)
+* [Keyman Developer Documentation](/developer/17.0/)
 * [Keyman Engine for Android Documentation](/developer/engine/android/17.0/)
 * [Android Developer Home](https://developer.android.com/index.html)
