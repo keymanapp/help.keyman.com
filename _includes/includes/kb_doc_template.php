@@ -3,8 +3,6 @@
   require_once('includes/renderLanguageExample.php');
   use Keyman\Site\Common\KeymanHosts;
 
-  define('KEYMAN', KeymanHosts::Instance()->keyman_com);
-
   function template_finish($foot) {
     //ob_end_flush();
 
@@ -172,16 +170,14 @@
     This functions works to show the keyboard download link
     on the keyboard help documentation of help.keyman.com
   */
-  function download_keyboard($pagename) {
+  function build_download_keyboard_link_html() {
     global $keyboardname, $kbdid; // from head() function
     
     if(empty($kbdid)) return '';
     
-    if(empty($pagename)) $pagename = '';
-    
     $string = '<h2>Download this keyboard</h2><ul id="download-keyboard">';
             
-    $string.= "<li><a href='{$KeymanHosts->keyman_com}/keyboards/$kbdid'>Download $keyboardname</a></li>";
+    $string.= "<li><a href='".KeymanHosts::Instance()->keyman_com."/keyboards/$kbdid'>Download $keyboardname</a></li>";
             
     $string.= '</ul>';
     
@@ -189,10 +185,10 @@
   }
 
   function begin_main($pagename){
-    global $version_history, $download;
+    global $version_history, $download_link_html;
     write_breadcrumbs();
     $version_history = write_version_history($pagename);
-    $download = download_keyboard($pagename);
+    $download_link_html = build_download_keyboard_link_html();
 
     $html = <<<END
       <div class="main">
@@ -216,7 +212,7 @@
   function foot($args=[]){
     // Args are display=true/false;
 
-    global $version_history, $download;
+    global $version_history, $download_link_html;
 
     if(isset($args['display'])){
       $display = $args['display'];
@@ -225,7 +221,9 @@
     }
     if($display == true){
       if(!empty($version_history))
-        echo $version_history, $download;
+        echo $version_history;
+      if(!empty($download_link_html))
+        echo $download_link_html;
       require_once('footer.php');
     }else{
       require_once('no-footer.php');
