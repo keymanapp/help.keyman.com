@@ -13,7 +13,7 @@
 
   function head($args=[]){
     // Args are title='My Page Title', css='page.css' showMenu=true/false;
-    global $kbdname, $kbdid, $keyboardname;
+    global $kbdname, $kbdid;
     global $canonicalLink;
 
     // Get device
@@ -78,7 +78,6 @@
       {
         $kbdname = 'Keyboard_' . $sub[0];
         $kbdid = $sub[0];
-        $keyboardname = $sub[0] . ' keyboard';
       }
     }
 
@@ -171,13 +170,13 @@
     on the keyboard help documentation of help.keyman.com
   */
   function build_download_keyboard_link_html() {
-    global $keyboardname, $kbdid; // from head() function
+    global $kbdid; // from head() function
     
     if(empty($kbdid)) return '';
     
     $string = '<h2>Download this keyboard</h2><ul id="download-keyboard">';
             
-    $string.= "<li><a href='".KeymanHosts::Instance()->keyman_com."/keyboards/$kbdid'>Download $keyboardname</a></li>";
+    $string.= "<li><a href='".KeymanHosts::Instance()->keyman_com."/keyboards/$kbdid'>Download $kbdid keyboard</a></li>";
             
     $string.= '</ul>';
     
