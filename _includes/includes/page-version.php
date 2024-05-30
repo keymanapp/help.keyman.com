@@ -18,9 +18,9 @@
         if(sizeof($this->versions) == 0) {
           $this->active = false;
         } else {
-          $this->currentVersion = $this::getCurrentVersion($this->versions);
-          if($this->versionedPath == 'current-version') $this->versionedPath = $this->currentVersion;
-          if($this->versionedPath == 'latest-version') $this->versionedPath = $this->versions[0];
+            $this->currentVersion = $this::getCurrentVersion($this->versions);
+            if($this->versionedPath == 'current-version') $this->versionedPath = $this->currentVersion;
+            if($this->versionedPath == 'latest-version') $this->versionedPath = $this->versions[0];
         }
       }
     }
@@ -60,21 +60,18 @@
       }
 
       // Build the menu
-      echo "<div id='version-selector'>Other versions";
-      echo "<div>";
+      $html = "<div id='version-selector'>Other versions";
+      $html .= "<div>";
+
+      $found = false;
 
       foreach($PageVersion->versions as $version) {
         $folder = "{$_SERVER['DOCUMENT_ROOT']}{$PageVersion->basePath}/{$version}/";
         if(!file_exists("{$folder}{$file}.php") && !file_exists("{$folder}/{$file}.md")) {
-          // We don't have the same content in that version, so point to home page
-          if($version == $PageVersion->currentVersion) {
-            $text = "Version $version (home page, current version)";
-            $target = "{$PageVersion->basePath}/current-version/";
-          } else {
-            $text = "Version $version (home page)";
-            $target = "{$PageVersion->basePath}/$version/";
-          }
+          // Skip links to versions that don't have this exact page
+          continue;
         } else {
+          $found = true;
           if($version == $PageVersion->currentVersion) {
             $text = "Version $version (current version)";
             $target = "{$PageVersion->basePath}/current-version/{$PageVersion->subPath}";
@@ -85,13 +82,16 @@
         }
 
         if($version == $PageVersion->versionedPath) {
-          echo "<span>$text</span>";
+          $html .= "<span>$text</span>";
         } else {
-          echo "<a href='$target'>$text</a>";
+          $html .= "<a href='$target'>$text</a>";
         }
       }
 
-      echo "</div></div>";
+      $html .= "</div></div>";
+      if($found) {
+        echo $html;
+      }
     }
 
     ///
@@ -120,7 +120,7 @@
 
       usort($versions, 'version_compare_reverse');
 
-      return $versions;
+      return $versions; // versions [18.0,17.0,16.0,...,1.0]
     }
 
     ///
@@ -137,7 +137,6 @@
           in_array($matches[1], $versions)) {
         $currentVersion = $matches[1];
       }
-
       return $currentVersion;
     }
   }
