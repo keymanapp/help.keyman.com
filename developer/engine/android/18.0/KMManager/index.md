@@ -140,11 +140,20 @@ The KMManager is the core class which provides most of the methods and constants
 [`getMaySendCrashReport()`](getMaySendCrashReport)
 : returns whether Keyman Engine is allowed to send crash reports over the network to sentry.keyman.com
 
+[`getOrientation()`](getOrientation)
+: returns the device's current orientation (Portrait vs Landscape)
+
 [`getSpacebarText()`](getSpacebarText)
 : returns the current text display pattern for the spacebar
 
 [`getVersion()`](getVersion)
 : returns the version number of Keyman Engine
+
+[`getWindowDensity()`](getWindowDensity)
+: returns the density of the window
+
+[`getWindowSize()`](getWindowSize)
+: returns the size of an area the window would occupy
 
 [`hasConnection()`](hasConnection)
 : returns whether the device has active network connection
