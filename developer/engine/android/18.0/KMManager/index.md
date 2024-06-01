@@ -59,7 +59,7 @@ The KMManager is the core class which provides most of the methods and constants
 [`deregisterLexicalModel()`](deregisterLexicalModel)
 : deregisters the specified lexical model from the LMLayer so it isn't used
 
-`executeHardwareKeystroke()`
+[`executeHardwareKeystroke()`](executeHardwareKeystroke)
 : process the keystroke generated from a physical keyboard
 
 [`getAssociatedLexicalModel()`](getAssociatedLexicalModel)
