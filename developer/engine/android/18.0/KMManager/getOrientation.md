@@ -12,6 +12,8 @@ The `getOrientation()` method returns the current orientation of the device.
 KMManager.getOrientation(Context context)
 ```
 
+### Parameters
+
 `context`
 : The context.
 
