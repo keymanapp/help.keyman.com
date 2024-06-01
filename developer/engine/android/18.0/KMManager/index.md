@@ -125,8 +125,8 @@ The KMManager is the core class which provides most of the methods and constants
 [`getLatestKeyboardFileVersion()`](getLatestKeyboardFileVersion)
 : returns the specified keyboard's latest file version number
 
-`getLexicalModelInfo()`
-: returns information dictionary of the specified lexical model
+[`getLexicalModelInfo()`](getLexicalModelInfo)
+: returns dictionary information of the specified lexical model
 
 `getLexicalModelsList()`
 : returns the array of lexical models list
