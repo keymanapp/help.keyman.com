@@ -119,7 +119,7 @@ The KMManager is the core class which provides most of the methods and constants
 [`getKeyboardTextFontTypeface()`](getKeyboardTextFontTypeface)
 : creates a new typeface from the selected keyboard's text font
 
-`getKMKeyboard()`
+[`getKMKeyboard()`](getKMKeyboard)
 : returns the KMKeyboard depending whether it's an in-app or system keyboard
 
 [`getLatestKeyboardFileVersion()`](getLatestKeyboardFileVersion)
