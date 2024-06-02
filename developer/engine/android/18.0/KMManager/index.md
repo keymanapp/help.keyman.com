@@ -128,7 +128,7 @@ The KMManager is the core class which provides most of the methods and constants
 [`getLexicalModelInfo()`](getLexicalModelInfo)
 : returns dictionary information of the specified lexical model
 
-`getLexicalModelsList()`
+[`getLexicalModelsList()`](getLexicalModelsList)
 : returns the array of lexical models list
 
 [`getLanguageCorrectionPreferenceKey()`](getLanguageCorrectionPreferenceKey)
