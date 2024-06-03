@@ -212,7 +212,7 @@ The KMManager is the core class which provides most of the methods and constants
 [`setCanAddNewKeyboard()`](setCanAddNewKeyboard)
 : sets whether adding a new keyboard is allowed
 
-`setCanRemoveKeyboard()`
+[`setCanRemoveKeyboard()`](setCanRemoveKeyboard)
 : sets whether removing a keyboard is allowed, like in the keyboard picker menu
 
 [`setDebugMode()`](setDebugMode)
