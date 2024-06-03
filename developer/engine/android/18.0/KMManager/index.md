@@ -176,7 +176,7 @@ The KMManager is the core class which provides most of the methods and constants
 [`keyboardExists()`](keyboardExists)
 : returns whether the specified keyboard exists in keyboards list
 
-`lexicalModelExists()`
+[`lexicalModelExists()`](lexicalModelExists)
 : returns whether the specified lexical model exists in lexical models list
 
 [`onConfigurationChanged()`](onConfigurationChanged)
