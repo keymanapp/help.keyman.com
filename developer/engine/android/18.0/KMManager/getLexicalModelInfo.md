@@ -12,6 +12,8 @@ The `getLexicalModelInfo()` method returns returns dictionary information of the
 KMManager.getLexicalModelInfo(Context context, int index)
 ```
 
+### Parameters
+
 `context`
 : The context.
 
