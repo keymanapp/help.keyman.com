@@ -126,7 +126,7 @@ The *keyboards-starter* repo contains a set of `.md` and
 your keyboard. They're available at the
 **`template/release/t/template/`** folder. Remember to rename
 `template.keyboard_info` with your keyboard name. The `.md` files use
-[Markdown](https://daringfireball.net/projects/markdown/){target="_blank"},
+[Markdown](https://daringfireball.net/projects/markdown/),
 an easy-to-read plain text format that can be converted to HTML.
 
 ## Include these files
