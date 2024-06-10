@@ -27,10 +27,12 @@ https://api.keyman.com/version/$platform/$level
 
 ### Parameters
 
-* `platform`
+`platform`
+
 : The platform to query against. Possible values are: `android`, `ios`, `linux`, `mac`, `web` or `windows`.
 
-* `level` <span class="optional">(optional)</span>
+`level` <span class="optional">(optional)</span>
+
 : The stability level to query, default `stable`. Possible values are: `stable`, `beta`, `alpha` or `all`.
 
 If `platform` is not passed, then the API falls back to version 1.0.
