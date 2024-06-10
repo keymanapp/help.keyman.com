@@ -22,9 +22,9 @@ kmc [replaces kmcomp](kmcomp-migration) from earlier versions of Keyman Develope
 
 The following parameters are available:
 
-## kmc commands
+## `kmc` commands
 
-* `kmc build [infile...]`, `kmc build file [infile...]`
+`kmc build [infile...]`, `kmc build file [infile...]`
 
 : Compile one or more Keyman files. Takes Keyman keyboard source files, and
   compiles them into the binary formats used by the Keyman apps. Supports
@@ -42,39 +42,39 @@ The following parameters are available:
   File lists can be referenced with @filelist.txt. If no input file is supplied,
   kmc will attempt to build a project file in the current folder.
 
-* `kmc build ldml-test-data`
+`kmc build ldml-test-data`
 
 : Converts LDML keyboard test .xml file to .json.
 
-* `kmc build windows-package-installer`
+`kmc build windows-package-installer`
 
 : Builds a .exe installer for a keyboard, together with the Keyman installer,
   for Windows only.
 
-* `kmc analyze osk-char-use [infile...]`
+`kmc analyze osk-char-use [infile...]`
 
 : Analyze on screen keyboard files for character usage
 
-* `kmc analyze osk-rewrite-from-char-use -m mapping-file [infile...]`
+`kmc analyze osk-rewrite-from-char-use -m mapping-file [infile...]`
 
 : Rewrites On Screen Keyboard files from source mapping
 
-* `kmc message [message...]`
+`kmc message [message...]`
 
 : Describes one or more compiler messages in greater detail
 
 ## `kmc` global options
 
-* `-h`, `--help`
+`-h`, `--help`
 
 : Display help on kmc; note that `kmc --help` can be used for further detail on
   subcommands, e.g. `kmc build --help`
 
-* `-V`, `--version`
+`-V`, `--version`
 
 : Prints the version number of kmc
 
-* `--no-error-reporting`, `--error-reporting`
+`--no-error-reporting`, `--error-reporting`
 
 : Enable or disable error reporting to keyman.com, overriding [user
   settings](../../user-settings). Error reporting is for fatal errors in the
@@ -82,7 +82,7 @@ The following parameters are available:
   reports, although some filenames and paths may be present in the diagnostic
   data attached to the report.
 
-* `-l <logLevel>`, `--log-level <logLevel>`
+`-l <logLevel>`, `--log-level <logLevel>`
 
 : Controls the level of logging to console for messages relating to the
   compilation process. The options are:
@@ -102,21 +102,21 @@ The following parameters are available:
 
 ## `kmc build` options
 
-* `--color`, `--no-color`
+`--color`, `--no-color`
 
 : Controls colorization for log messages, using ANSI color controls. If both of
   these settings are omitted, kmc will attempt to detect from console, and will
   use colorization for interactive terminals, and no colorization when
   redirection is being used.
 
-* `-d`, `--debug`
+`-d`, `--debug`
 
 : Include debug information in output files. Debug information is used for
   interactive debugging of .kmx files within the Keyman Developer IDE. This
   flag also produces pretty printed .js files for web keyboards, making
   interactive debugging of web keyboards simpler.
 
-* `-w`, `--compiler-warnings-as-errors` vs `-W`, `--no-compiler-warnings-as-errors`
+`-w`, `--compiler-warnings-as-errors` vs `-W`, `--no-compiler-warnings-as-errors`
 
 : Controls whether or not warnings fail the build; overrides project-level
   warnings-as-errors option. Most compiler warnings are an indication that
@@ -124,7 +124,7 @@ The following parameters are available:
   produce a result. This strict compilation mode helps to ensure that problems
   are caught early, and is recommended.
 
-* `-m <number>`, `--message <number>`
+`-m <number>`, `--message <number>`
 
 : Adjusts the severity of info, hint or warning messages. Error and fatal error
   messages can not be adjusted. Message severity can be adjusted to:
@@ -140,18 +140,18 @@ The following parameters are available:
   This option may be repeated to adjust multiple messages. The `-m` option must
   be specified each time.
 
-* `--no-compiler-version`
+`--no-compiler-version`
 
 : Excludes compiler version metadata from output. This is helpful for producing
   files that will be identical regardless of the compiler version, for
   regression testing.
 
-* `--no-warn-deprecated-code`
+`--no-warn-deprecated-code`
 
 : Turns off warnings (CWARN_HeaderStatementIsDeprecated,
   CWARN_LanguageHeadersDeprecatedInKeyman10) for deprecated code styles
 
-* `--log-format <logFormat>`
+`--log-format <logFormat>`
 
 : Output log format. The available options are:
   * `formatted` (default): emits log messages in a human-readable format
@@ -163,7 +163,7 @@ The following parameters are available:
     * code
     * message
 
-* `-o <filename>`, `--out-file <filename>`
+`-o <filename>`, `--out-file <filename>`
 
 : Overrides the default path and filename for the output file(s). Note that
   some compilers emit multiple files, in which case, the output filenames
@@ -171,7 +171,7 @@ The following parameters are available:
 
 ## `kmc build file` additional options
 
-* `--for-publishing`
+`--for-publishing`
 
 : Verifies that project meets @keymanapp repository requirements. This also
   causes a .keyboard-info or .model-info file to be emitted when compiling the
@@ -208,46 +208,48 @@ already be compiled.
 
 ## `kmc build windows-package-installer` additional options
 
-* `--msi <msiFilename>`
+`--msi <msiFilename>`
 
 : Full path of keymandesktop.msi to bundle into the installer. This file can be
   downloaded from https://downloads.keyman.com/windows/stable (/version).
 
-* `--exe <exeFilename>`
+`--exe <exeFilename>`
 
 : Location of setup.exe. This file can be downloaded from
   https://downloads.keyman.com/windows/stable (/version).
 
-* `--license <licenseFilename>`
+`--license <licenseFilename>`
 
 : Location of license.txt for Keyman for Windows.
 
-* `--title-image [titleImageFilename]`
+`--title-image [titleImageFilename]`
 
 : Location of title image file. This should be a .png, .jpg, or .bmp file which
   replaces the standard 'Keyman for Windows' image in the bootstrap installer.
 
-* `--app-name [applicationName]`
+`--app-name [applicationName]`
 
 : Installer property: name of the application to be installed (default: "Keyman")
 
-* `--start-disabled`
+`--start-disabled`
 
 : Installer property: do not enable keyboards after installation completes
 
-* `--start-with-configuration`
+`--start-with-configuration`
 
 : Installer property: start Keyman Configuration after installation completes
 
 ### Examples
 
-* Windows (command prompt):
+#### Windows, command prompt (all one line)
 
 ```bat
-kmc build windows-package-installer .\khmer_angkor.kps --msi "C:\Program Files (x86)\Common Files\Keyman\Cached Installer Files\keymandesktop.msi" --exe .\setup-redist.exe --license .\LICENSE.md --out-file .\khmer.exe
+kmc build windows-package-installer .\khmer_angkor.kps
+  --msi "C:\Program Files (x86)\Common Files\Keyman\Cached Installer Files\keymandesktop.msi"
+  --exe .\setup-redist.exe --license .\LICENSE.md --out-file .\khmer.exe
 ```
 
-* Bash (Linux, WSL, macOS, etc):
+#### Bash (Linux, WSL, macOS, etc)
 
 ```shell
 kmc build windows-package-installer \
@@ -262,19 +264,19 @@ Note: paths shown above may vary.
 
 ## `kmc analyze osk-char-use` options
 
-* `-b, --base`
+`-b, --base`
 
 : First PUA codepoint to use, in hexadecimal (default F100)
 
-* `--include-counts`
+`--include-counts`
 
 : Include number of times each character is referenced (default: false)
 
-* `--strip-dotted-circle`
+`--strip-dotted-circle`
 
 : Strip U+25CC (dotted circle base) from results (default: false)
 
-* `-m, --mapping-file <filename>`
+`-m, --mapping-file <filename>`
 
 : Result file to write to (.json, .md, or .txt)
 
@@ -284,7 +286,7 @@ For more information on the purpose of `analyze osk-char-use` and
 
 ## `kmc analyze osk-rewrite-from-char-use` options
 
-* `-m, --mapping-file <filename>`
+`-m, --mapping-file <filename>`
 
 : JSON mapping file to read from.
 
@@ -304,19 +306,19 @@ messages can be specified on the command line, with one file per message, and
 index files also generated. The Markdown mode is used to generate the online
 documentation on help.keyman.com.
 
-* `-f, --format <format>`
+`-f, --format <format>`
 
 : Output format, one of:
   * `text`: plain text output to console or file, of specified messages
   * `json`: JSON formatted to console or file, of specified messages
   * `markdown`: Markdown formatted text output, to a folder, of all messages
 
-* `-o, --out-path <out-path>`
+`-o, --out-path <out-path>`
 
 : Output folder name for Markdown format (required for Markdown), or optional
   output filename for text and json formats.
 
-* `-a, --all-messages`
+`-a, --all-messages`
 
 : Emit descriptions for all messages (text, json formats)
 
