@@ -25,10 +25,8 @@ how easy it is to produce excellent keyboards:
 ### D: Discoverability
 
 We can't fit every character on one keyboard, despite having
-gestures like long-press, flicks, and multi-taps. It may cause frustration
-and confusion for new users, but being too upfront won't produce
-something unique; in fact, it could look bland. Here are two methods of
-Discoverability:
+gestures like long-press, flicks, and multi-taps. Here are two 
+principles about Discoverability:
 
 -   **Make it easy to find every letters (even rare ones)**
 
