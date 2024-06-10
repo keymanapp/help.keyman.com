@@ -9,8 +9,18 @@ Making the first keyboard can be overwhelming at first. We
 hope this guide will improve your process for keyboard design; from
 
 planning a layout to launching a quality keyboard for your community.
+
+## The DISCUS Principles
+
 The DISCUS Principles aren't just a concept; by using them, you will see
-how easy it is to produce excellent keyboards!
+how easy it is to produce excellent keyboards:
+
+* [D: Discoverability](#toc-d-discoverability)
+* [I: Intuition](#toc-i-intuition)
+* [S: Simplicity](#toc-s-simplicity)
+* [C: Consistency](#toc-c-consistency)
+* [U: Usability](#toc-u-usability)
+* [S: Standards](#toc-s-standards)
 
 ### D: Discoverability
 
