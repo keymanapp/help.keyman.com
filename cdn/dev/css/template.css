@@ -926,10 +926,6 @@ input[type="search"] {
   margin-right: 9px;
 }
 
-/*#section2 pre[class*="language-"] code[class*="language-"] {
-  line-height: 1.4;
-}*/
-
 #section2 p > code[class*="language-"],
 #section2 li > code[class*="language-"],
 #section2 dt > code[class*="language-"],
