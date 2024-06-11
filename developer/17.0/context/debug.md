@@ -121,7 +121,7 @@ the output the keyboard produced, in order to test for the same
 behaviour when you make changes to the keyboard.
 
 Use Start Log/Stop Log to record the input and output. You can then use
-Run Test to run the test again, or go the Options menu to clear the log,
+Start Test to run the test again, or go the Options menu to clear the log,
 or save or load a test, or use the batch mode to run several tests in a
 row.
 

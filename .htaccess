@@ -69,12 +69,11 @@ RedirectMatch "/developer/engine/web/(?!latest-version|faq|history|current-versi
 RewriteCond "%{DOCUMENT_ROOT}/$1/18.0" -d
 RewriteRule "^(.+)/latest-version(/.*)?$" "$1/18.0$2" [DPI]
 
-# latest-version:17.0
-# alpha or beta version reference
+# current-version:17.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/17.0" -d
-RewriteRule "^(.+)/latest-version(/.*)?$" "$1/17.0$2" [DPI]
+RewriteRule "^(.+)/(?:current|latest)-version(/.*)?$" "$1/17.0$2" [DPI]
 
-# current-version:16.0
+# version:16.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/16.0" -d
 RewriteRule "^(.+)/(?:current|latest)-version(/.*)?$" "$1/16.0$2" [DPI]
 

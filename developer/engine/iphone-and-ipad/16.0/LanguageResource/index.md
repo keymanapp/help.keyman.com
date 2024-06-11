@@ -69,7 +69,7 @@ underscores only.
 
 : The ID of the resource's source package. Is 'optional' for legacy reasons.
 
-`packageKey: KeymanPackage.Key`
+`packageKey: `[`KeymanPackage.Key`](../KeymanPackage/key)
 
 : The unique identifier for the resource's source package.
 
@@ -82,7 +82,7 @@ underscores only.
 : The filename of the package component used internally within Keyman Engine
 to load the resource.
 
-`fullID: [AnyLanguageResourceFullID](LanguageResourceFullID)`
+`fullID: `[`AnyLanguageResourceFullID`](LanguageResourceFullID)
 
 : A unique identifier used in language resource searches and comparisons.
 
@@ -93,11 +93,11 @@ itself was added in Keyman Engine for iPhone and iPad 14.0.
 
 ## See Also
 
-`[KeymanPackage](../KeymanPackage)`
+[`KeymanPackage`](../KeymanPackage)
 
 : Represents packages containing language resources.
 
-`[LanguageResourceFullID](LanguageResourceFullID)`
+[`LanguageResourceFullID`](LanguageResourceFullID)
 
 : Unique identifiers used in language resource searches and comparisons.
 

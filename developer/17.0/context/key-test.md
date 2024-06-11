@@ -2,7 +2,7 @@
 title: Virtual Key Identifier
 ---
   
-![Virtual Key Identifier dialog](/cdn/dev/img/developer/100/ui/frmKeyTest.png)
+![Virtual Key Identifier dialog](/cdn/dev/img/developer/170/ui/frmKeyTest.png)
 
 This dialog lets you check the virtual key code for any key combination
 (except Window reserved key combinations such as
