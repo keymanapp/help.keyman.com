@@ -16,7 +16,8 @@ if(&baselayout = layoutName) ... > ...
 
 ### Parameters
 
-* `layoutName`
+`layoutName`
+
 : The name or identifier of the layout to compare against. This should be an ISO
 639 Language Name and ISO3166 Country Code pair, separated by `-` (hyphen), e.g.
 `"en-US"`, or it can be the name of a Windows keyboard DLL, e.g. `"kbdus.dll"`.
