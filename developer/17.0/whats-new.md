@@ -6,6 +6,11 @@ Keyman Developer 17 has a number of significant changes:
 
 * `kmcomp` has been removed and replaced with `kmc`. Learn more in our [kmcomp migration guide](reference/kmc/cli/kmcomp-migration).
 
+* Windows installer packages should now be built with 
+  `kmc build windows-package-installer` and can no longer be built within
+  the Keyman Developer IDE. More details on how to use this are in the
+  [`kmc` reference documentation](reference/kmc/cli/reference#toc-kmc-build-windows-package-installer-additional-options).
+
 * `.keyboard_info` files are now generated entirely from the package and
   keyboard files. Extra fields are available in packages for license file,
   welcome file, typing examples, related packages (including deprecated
