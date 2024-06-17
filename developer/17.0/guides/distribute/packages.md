@@ -88,7 +88,7 @@ kmp.json
     not in other apps.
 
 > ### Tip
-Read [Step 2: Organizing the Keyboard Files](https://help.keyman.com/developer/keyboards/github/step-2) 
+Read [Step 2: Organizing the Keyboard Files](../../../keyboards/github/step-2)
 to know which files to include or exclude in the keybord folder. 
 
 ## Step 1) Share the keyboard package file
