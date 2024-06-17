@@ -25,4 +25,5 @@ need to adjust paths accordingly.
 
 Other guide on submitting keyboards to the Keyman keyboards repo:
 
+-   [GitHub Keyboard Submission Guide](../github)
 -   [Starting Guide for Submitting a Single Keyboard](../starter)
