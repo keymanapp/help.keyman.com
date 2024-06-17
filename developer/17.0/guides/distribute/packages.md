@@ -87,6 +87,10 @@ kmp.json
     be available only within the Keyman app and the on-screen-keyboard,
     not in other apps.
 
+> ### Tip
+Read [Step 2: Organizing the Keyboard Files](../../../keyboards/github/step-2)
+to know which files to include or exclude in the keybord folder. 
+
 ## Step 1) Share the keyboard package file
 
 Once the keyboard package .kmp file is created, you can share them via
