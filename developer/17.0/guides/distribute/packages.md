@@ -87,11 +87,11 @@ kmp.json
     be available only within the Keyman app and the on-screen-keyboard,
     not in other apps.
 
+## Share the keyboard package file
+
 > ### Tip
 Read [Step 2: Organizing the Keyboard Files](../../../keyboards/github/step-2)
 to know which files to include or exclude in the keybord folder. 
-
-## Step 1) Share the keyboard package file
 
 Once the keyboard package .kmp file is created, you can share them via
 external storage devices (USB drive, SD card, etc). You can also share
@@ -103,7 +103,7 @@ being uploaded:
 
 1.  khmer_angkor.kmp (the keyboard package .kmp file)
 
-## Step 2) Create a link to the KMP file
+## Putting the keyboard package on a website
 
 Once all the files have been uploaded, you will need to provide a link
 to the keyboard package .kmp file for your device to download and
