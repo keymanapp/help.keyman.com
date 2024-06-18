@@ -1,5 +1,5 @@
 ---
-title: Keyman Developer standard keyboard source file layout
+title: Keyman Developer structure for standard keyboard source file folders
 ---
 
 Keyman Developer generates keyboard project files in a standard layout. [Keyman

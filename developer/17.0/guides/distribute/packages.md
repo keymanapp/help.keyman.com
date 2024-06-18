@@ -89,6 +89,10 @@ kmp.json
 
 ## Share the keyboard package file
 
+> ### Tip
+Read [Step 2: Organizing the Keyboard Files](../../../keyboards/github/step-2)
+to know which files to include or exclude in the keybord folder. 
+
 Once the keyboard package .kmp file is created, you can share them via
 external storage devices (USB drive, SD card, etc). You can also share
 the package file via a cloud storage system (Google Drive, Dropbox or
