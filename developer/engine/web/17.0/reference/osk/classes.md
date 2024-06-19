@@ -81,14 +81,14 @@ Note the `[id*='K_RBRKT']` part.  There can be a few variations here:
 So, to match all keys reached by longpress, you could use:
 
 ```css
-div.kmw-key.kmw-key-default[id^='phone-']
+div.kmw-key.kmw-key-default[id^='popup-']
 ```
 
 Also, `:not(...)` can be used to invert a selector.  The following selector will match all base keys, but not
 any longpress keys.
 
 ```css
-div.kmw-key.kmw-key-default:not([id^='phone-'])
+div.kmw-key.kmw-key-default:not([id^='popup-'])
 ```
 
 
