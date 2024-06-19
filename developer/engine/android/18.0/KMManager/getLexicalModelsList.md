@@ -7,7 +7,7 @@ The **getLexicalModelsList()** method returns the array of lexical models list.
 
 ## Syntax
 ```java
-KMManager.getLexicalModelsList(Context context)
+ArrayList<HashMap<String, String>> KMManager.getLexicalModelsList(Context context)
 ```
 
 ### Parameters

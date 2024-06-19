@@ -7,7 +7,7 @@ The **lexicalModelExists()** method returns whether the specified lexical model 
 
 ## Syntax
 ```java
-KMManager.lexicalModelExists(Context context, String packageID, String languageID, String modelID) 
+bool KMManager.lexicalModelExists(Context context, String packageID, String languageID, String modelID) 
 ```
 
 ### Parameters
@@ -35,8 +35,8 @@ Use this method to determine if a lexical model with given package ID, language 
 The following script illustrate the use of `lexicalModelExists()`:
 ```java
     // Determine if the specified lexical model exists for English (en)
-    boolean exists = KMManager.lexicalModelExists(context, "nrc", "en", "en.mtnt";
+    boolean exists = KMManager.lexicalModelExists(context, "nrc.en.mtnt", "en", "nrc.en.mtnt");
 ```
 
 ## See also
-* [getLexicalModelInfo](getLexicalModelInfo())
+* [`getLexicalModelInfo()`](getLexicalModelInfo)

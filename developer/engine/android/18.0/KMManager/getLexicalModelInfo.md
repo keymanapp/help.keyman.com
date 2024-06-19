@@ -9,7 +9,7 @@ The `getLexicalModelInfo()` method returns returns dictionary information of the
 ## Syntax
 
 ```java
-KMManager.getLexicalModelInfo(Context context, int index)
+HashMap<String,String> KMManager.getLexicalModelInfo(Context context, int index)
 ```
 
 ### Parameters
@@ -18,14 +18,14 @@ KMManager.getLexicalModelInfo(Context context, int index)
 : The context.
 
 `index`
-: Non-negative position of the installed lexical model
+: Zero-based index of the installed lexical model
 
 ### Returns
 Returns a dictionary containing information on the specified lexical model.
 
 
 ## Description
-Use this method to get details about a sepcified lexical mode. (language and keyboard information)
+Use this method to get details about a specified lexical model. (language and keyboard information)
 
 ## Examples
 

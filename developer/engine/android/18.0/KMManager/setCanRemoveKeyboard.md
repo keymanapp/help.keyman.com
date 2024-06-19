@@ -7,8 +7,8 @@ The **setCanRemoveKeyboard()** method sets whether removing a keyboard is allowe
 
 ## Syntax
 
-```javascript
-    KMManager.setCanRemoveKeyboard(boolean newValue)
+```java
+    void KMManager.setCanRemoveKeyboard(boolean newValue)
 ```
 
 ## Parameters
@@ -17,7 +17,7 @@ The **setCanRemoveKeyboard()** method sets whether removing a keyboard is allowe
 : `true` if removing a keyboard is allowed, `false` otherwise.
 
 ## Description
-Use this method to grant Keyman Engine for Android permission to remove keyboards from the keyboard list. If set to `false`, the installed keyboard list is permanent.
+Use this method to grant the end user permission to remove keyboards from the keyboard list. If set to `false`, the installed keyboard list is permanent.
 
 ## Examples
 
@@ -30,4 +30,4 @@ The following script illustrates the use of `setCanRemoveKeyboard()`:
 ```
 
 ## See also
-* [canRemoveKeyboard()](canRemoveKeyboard)
+* [`canRemoveKeyboard()`](canRemoveKeyboard)

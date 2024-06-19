@@ -7,7 +7,7 @@ The `getKMKeyboard()` method returns the KMKeyboard type depending whether it's 
 
 ## Syntax
 ```java
-KMManager.getKMKeyboard(KeyboardType type)
+KMKeyboard KMManager.getKMKeyboard(KeyboardType type)
 ```
 ### Parameters 
 type

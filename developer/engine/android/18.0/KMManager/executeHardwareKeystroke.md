@@ -7,7 +7,7 @@ The **executeHardwareKeystroke()** method passes the keystroke generated from a 
 
 ## Syntax
 ```java
-KMManager.executeHardwareKeystroke(int code, int shift, KeyboardType keyboard, int lstates, int eventModifiers)
+bool KMManager.executeHardwareKeystroke(int code, int shift, KeyboardType keyboard, int lstates, int eventModifiers)
 ```
 
 ### Parameters
@@ -32,15 +32,16 @@ KMManager.executeHardwareKeystroke(int code, int shift, KeyboardType keyboard, i
 : `KeyboardType.KEYBOARD_TYPE_INAPP` or `KeyboardType.KEYBOARD_TYPE_SYSTEM`
 
 `lstates`
-: lock state
+: lock state. If neither the on or off state is specified for a lock key, then it is treated as unknown state for keyboard rule matching.
 
-| value  | Description    |
+| Value  | Description    |
 |--------|----------------|
-| 0x0200 | No caps        |
-| 0x0400 | Num lock       |
-| 0x0800 | No Num         |
-| 0x1000 | Scroll         |
-| 0x2000 | No scroll lock |
+| `0x0100` | Caps lock      |
+| `0x0200` | No caps lock   |
+| `0x0400` | Num lock       |
+| `0x0800` | No Num lock    |
+| `0x1000` | Scroll         |
+| `0x2000` | No scroll lock |
 
 `eventModifiers`
 : [KeyEvent Flags](https://developer.android.com/reference/android/view/KeyEvent#getMetaState\(\)) indicating which meta keys are currently pressed.
