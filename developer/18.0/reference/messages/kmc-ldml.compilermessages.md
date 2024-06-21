@@ -15,13 +15,15 @@ title: Compiler Messages Reference for @keymanapp/kmc-ldml
 [KM00009](km00009) | `ERROR_InvalidScanCode` | Form '&lt;param&gt;' has invalid/unknown scancodes '&lt;param&gt;'
 [KM0000A](km0000a) | `WARN_CustomForm` | Custom &lt;form id="&lt;param&gt;"&gt; element\. Key layout may not be as expected\.
 [KM0000B](km0000b) | `ERROR_GestureKeyNotFoundInKeyBag` | Key '&lt;param&gt;' not found in key bag, referenced from other '&lt;param&gt;' in &lt;param&gt;
+[KM0000C](km0000c) | `HINT_NoDisplayForMarker` | Key element with id "&lt;param&gt;" has only marker output, but there is no matching display element by output or keyId\. Keycap may be blank\.
 [KM0000D](km0000d) | `ERROR_InvalidVersion` | Version number '&lt;param&gt;' must be a semantic version format string\.
 [KM0000E](km0000e) | `ERROR_MustBeAtLeastOneLayerElement` | The source file must contain at least one layer element\.
+[KM0000F](km0000f) | `HINT_NoDisplayForSwitch` | Key element with id "&lt;param&gt;" is a layer switch key, but there is no matching display element by keyId\. Keycap may be blank\.
 [KM00010](km00010) | `ERROR_DisplayIsRepeated` | display  has more than one display entry\.
 [KM00011](km00011) | `ERROR_KeyMissingToGapOrSwitch` | key id='&lt;param&gt;' must have either output=, gap=, or layerId=\.
 [KM00012](km00012) | `ERROR_ExcessHardware` | layers formId=&lt;param&gt;: Can only have one non\-'touch' element
 [KM00013](km00013) | `ERROR_InvalidHardware` | layers has invalid value formId=&lt;param&gt;
-[KM00014](km00014) | `ERROR_InvalidModifier` | layer has invalid modifiers='&lt;param&gt;' on layer id=&lt;param&gt;
+[KM00014](km00014) | `ERROR_InvalidModifier` | layer has invalid modifiers='&lt;param&gt;'
 [KM00015](km00015) | `ERROR_MissingFlicks` | key id=&lt;param&gt; refers to missing flickId=&lt;param&gt;
 [KM00016](km00016) | `ERROR_DuplicateVariable` | duplicate variables: id=&lt;param&gt;
 [KM00018](km00018) | `ERROR_InvalidTransformsType` | Invalid transforms types: '&lt;param&gt;'
