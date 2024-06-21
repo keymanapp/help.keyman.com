@@ -66,8 +66,6 @@ The folder structure for each keyboard has the following components:
 
 `xyz\xyz.kpj`
  : the Keyman Developer project file for the keyboard
-The `xyz.kpj` project file will contain references to the `xyz.kmn` and `xyz.kps` files.
-It must set the output path to `$PROJECTPATH\build`.
 This file must have the same base name as the folder/keyboard.
 Do not include the `xyz.kpj.user` file in the repository.
 
@@ -87,20 +85,14 @@ Do not include the `xyz.kpj.user` file in the repository.
    the keyboard are required.
 
 
-`xyz\xyz.keyboard_info`
- : a [metadata file](../../cloud/keyboard_info) detailing the keyboard's origin, version, requirements, and capabilities
-This file is used in the process of making your keyboard readily available for public download.
-Please see the [.keyboard_info section](../../cloud/keyboard_info) for more details.
-
 ## Copy Template Files
 
 If you used "Project", "New Project", "Basic" as mentioned above,
 Keyman Developer will have created files in your keyboard project folder similar to those mentioned in the next paragraph,
 so you can skip this step because you won't need to copy them.
 
-The **keyboards** repo contains a set of `.md` and `.keyboard_info` files you can copy and fill with details relevant to your keyboard.
+The **keyboards** repo contains a set of `.md` files you can copy and fill with details relevant to your keyboard.
 They're available at the `release/template/` folder.
-Remember to rename `template.keyboard_info` with your keyboard name (`xyz.keyboard_info` in the above example) after you copy it.
 The `.md` files use [Markdown](https://daringfireball.net/projects/markdown/),
 an easy-to-read plain text format that can be converted to HTML.
 
