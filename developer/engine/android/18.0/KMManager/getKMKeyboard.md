@@ -3,7 +3,7 @@ title: KMManager.getKMKeyboard()
 ---
 
 ## Summary
-The `getKMKeyboard()` method returns the KMKeyboard type depending whether it's an in-app or system keyboard.
+The `getKMKeyboard()` method returns the [KMKeyboard](../KMKeyboard) type depending whether it's an in-app or system keyboard.
 
 ## Syntax
 ```java
