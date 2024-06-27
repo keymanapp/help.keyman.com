@@ -86,6 +86,6 @@ release/shared/fonts/sil/charis - where the "charis" folder contains the files f
 
 The purpose of all this is to get the proper path when referencing these "shared" font files from the keyboard package. You won't be including any of the shared font files in your keyboard submission, but the paths to the fonts will be correct because you created the same folder structure used in Keyman's keyboards repository.
 
-When specifying the font files for the keyboard package (on the Packaging tab in Keyman Developer), navigate to the correct subfolder under the "shared" folder ("charis" in this example), so that the package source (.kps) file with have the correct path.
+When specifying the font files for the keyboard package (on the Packaging tab in Keyman Developer), navigate to the correct subfolder under the "shared" folder ("charis" in this example), so that the package source (.kps) file will have the correct path.
 
 Once you have compiled the keyboard and built the keyboard package successfully, you're ready to move on to submitting your keyboard project folder. (In this example, the "ausephon" folder would be submitted, but the "charis" folder would not be submitted.)
