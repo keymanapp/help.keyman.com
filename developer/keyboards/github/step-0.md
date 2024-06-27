@@ -65,12 +65,15 @@ The folder structure for each keyboard has the following components:
  : contains `welcome.htm` and any resources it references. These files are included with the keyboard to provide local help for the keyboard.
 
 `xyz\xyz.kpj`
- : the Keyman Developer project file for the keyboard
+ : the Keyman Developer project file for the keyboard.
 This file must have the same base name as the folder/keyboard.
+As of June 2024, this file uses the format which Keyman Developer version 17 creates.
 Do not include the `xyz.kpj.user` file in the repository.
 
 `xyz\README.md`
  : description of the keyboard, target languages, target devices, author, etc.
+We recommend omitting any reference to the current version number so that this file doesn't need to be edited when the keyboard is updated.
+Similarly, we recommend omitting the date from the copyright statement, or just omitting the whole copyright statement.
 
 `xyz\HISTORY.md`
  : list of major changes to the keyboard (repository commits cover details)
