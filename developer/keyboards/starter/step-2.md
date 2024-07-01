@@ -14,7 +14,7 @@ is the starting point for any work you do on a keyboard.
 
 Make sure you have Keyman Developer 11.0 or later. You can download
 Keyman Developer from
-[https://keyman.com/developer](https://keyman.com/developer){target="_blank"}.
+[https://keyman.com/developer](https://keyman.com/developer).
 With Keyman Developer, you will have these two ways of building
 keyboards.
 
