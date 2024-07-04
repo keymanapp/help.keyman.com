@@ -112,9 +112,8 @@ of these files should be included in a git repository.
 `build/sample.keyboard_info`
 : A [metadata file](/developer/cloud/keyboard_info) detailing the
     keyboard's origin, version, requirements, and capabilities.  
-  This file greatly assists the process of making your keyboard
-  readily available for public download. Please see the
-  [.keyboard_info section](/developer/cloud/keyboard_info) for more
+  This file is built automatically by the kmc compiler. Please see
+  [.keyboard_info specification](/developer/cloud/keyboard_info) for more
   details.
 
 `build/sample.kmp`
