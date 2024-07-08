@@ -9,7 +9,7 @@ http://help.keyman.com.localhost.
 
 ### Pre-requisites
 
-On the host machine, install [Docker](https://docs.docker.com/get-docker/) and [Composer](https://getcomposer.org/download/):
+On the host machine, install [Docker](https://docs.docker.com/get-docker/):
 
 On Windows, Docker will also need either:
 * hyper-v or

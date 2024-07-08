@@ -11,9 +11,9 @@ dramatically by following the guidelines we’ve already written.
 These design patterns and requirements assume some knowledge of Keyman
 Developer and Keyman keyboard development. Keyman Developer is
 downloadable from
-[https://keyman.com/developer](https://keyman.com/developer){target="_blank"},
+[https://keyman.com/developer](https://keyman.com/developer),
 and the documentation is online at
-[https://help.keyman.com/developer](https://help.keyman.com/developer){target="_blank"}.
+[https://help.keyman.com/developer](https://help.keyman.com/developer).
 
 ## Designing your keyboard layout
 
@@ -22,7 +22,7 @@ layouts; [read the
 tutorials](https://help.keyman.com/developer/current-version/guides/),
 [our blog](https://blog.keyman.com/category/developing-keyboards/); the
 [Keyboard Quality
-Whitepaper](/developer/whitepaper1.1.pdf){target="_blank"} (desktop
+Whitepaper](/developer/whitepaper1.1.pdf) (desktop
 focused keyboards) will be helpful for learning how to develop your
 keyboards and documentation to a high standard.
 
@@ -44,7 +44,7 @@ Project --&gt; Project Settings...
 
 When you share your keyboard with the world, you will need to assign a
 specific [open source
-license](https://opensource.org/licenses){target="_blank"}. There are
+license](https://opensource.org/licenses). There are
 hundreds of prewritten licenses, but for keyboards to be included in
 this repository, you must use the MIT license:
 
@@ -54,7 +54,7 @@ MIT license
     warranty.
 
 The MIT license is explored in detail at
-[choosealicense.com](https://choosealicense.com/licenses/){target="_blank"},
+[choosealicense.com](https://choosealicense.com/licenses/),
 from which the description above was taken.
 
 [Step 5: Submitting a GitHub Pull Request](step-5)
