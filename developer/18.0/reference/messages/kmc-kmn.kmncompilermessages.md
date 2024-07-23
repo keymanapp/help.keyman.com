@@ -89,14 +89,14 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM02059](km02059) | `ERROR_InvalidTouchLayoutFile` | Touch layout file &lt;param&gt; is not valid
 [KM0205A](km0205a) | `ERROR_TouchLayoutInvalidIdentifier` | Key "&lt;param&gt;" on "&lt;param&gt;", layer "&lt;param&gt;" has an invalid identifier\.
 [KM0205B](km0205b) | `ERROR_InvalidKeyCode` | Invalid key identifier "&lt;param&gt;"
-[KM0205C](km0205c) | `ERROR_90FeatureOnlyLayoutFile` | Touch layout file reference requires store\(version\) '9\.0'or higher
-[KM0205D](km0205d) | `ERROR_90FeatureOnlyKeyboardVersion` | KeyboardVersion system store requires store\(version\) '9\.0'or higher
+[KM0205C](km0205c) | `ERROR_90FeatureOnlyLayoutFile` | Touch layout file reference requires store\(version\) '9\.0' or higher
+[KM0205D](km0205d) | `ERROR_90FeatureOnlyKeyboardVersion` | KeyboardVersion system store requires store\(version\) '9\.0' or higher
 [KM0205E](km0205e) | `ERROR_KeyboardVersionFormatInvalid` | KeyboardVersion format is invalid, expecting dot\-separated integers
 [KM0205F](km0205f) | `ERROR_ContextExHasInvalidOffset` | context\(\) statement has offset out of range
-[KM02060](km02060) | `ERROR_90FeatureOnlyEmbedCSS` | Embedding CSS requires store\(version\) '9\.0'or higher
-[KM02061](km02061) | `ERROR_90FeatureOnlyTargets` | TARGETS system store requires store\(version\) '9\.0'or higher
+[KM02060](km02060) | `ERROR_90FeatureOnlyEmbedCSS` | Embedding CSS requires store\(version\) '9\.0' or higher
+[KM02061](km02061) | `ERROR_90FeatureOnlyTargets` | TARGETS system store requires store\(version\) '9\.0' or higher
 [KM02062](km02062) | `ERROR_ContextAndIndexInvalidInMatchNomatch` | context and index statements cannot be used in a match or nomatch statement
-[KM02063](km02063) | `ERROR_140FeatureOnlyContextAndNotAnyWeb` | For web and touch platforms, context\(\) statement referring to notany\(\) requires store\(version\) '14\.0'or higher
+[KM02063](km02063) | `ERROR_140FeatureOnlyContextAndNotAnyWeb` | For web and touch platforms, context\(\) statement referring to notany\(\) requires store\(version\) '14\.0' or higher
 [KM02064](km02064) | `ERROR_ExpansionMustFollowCharacterOrVKey` | An expansion must follow a character or a virtual key
 [KM02065](km02065) | `ERROR_VKeyExpansionMustBeFollowedByVKey` | A virtual key expansion must be terminated by a virtual key
 [KM02066](km02066) | `ERROR_CharacterExpansionMustBeFollowedByCharacter` | A character expansion must be terminated by a character key
@@ -119,6 +119,8 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM02077](km02077) | `ERROR_VirtualKeyExpansionTooLong` | Virtual key expansion is too large
 [KM02078](km02078) | `ERROR_CharacterRangeTooLong` | Character range is too large and cannot be expanded
 [KM02079](km02079) | `ERROR_NonBMPCharactersNotSupportedInKeySection` | Characters with codepoints over U\+FFFF are not supported in the key part of the rule
+[KM0207A](km0207a) | `ERROR_InvalidTarget` | Unrecognized compile target
+[KM0207B](km0207b) | `ERROR_NoTargetsSpecified` | At least one compile target must be specified
 [KM02080](km02080) | `WARN_TooManyWarnings` | Too many warnings or errors
 [KM02081](km02081) | `WARN_OldVersion` | The keyboard file is an old version
 [KM02082](km02082) | `WARN_BitmapNotUsed` | The 'bitmaps' statement is obsolete and only the first bitmap referred to will be used, you should use 'bitmap'\.
