@@ -118,6 +118,7 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM02076](km02076) | `ERROR_ExtendedStringTooLong` | Extended string is too long
 [KM02077](km02077) | `ERROR_VirtualKeyExpansionTooLong` | Virtual key expansion is too large
 [KM02078](km02078) | `ERROR_CharacterRangeTooLong` | Character range is too large and cannot be expanded
+[KM02079](km02079) | `ERROR_NonBMPCharactersNotSupportedInKeySection` | Characters with codepoints over U\+FFFF are not supported in the key part of the rule
 [KM02080](km02080) | `WARN_TooManyWarnings` | Too many warnings or errors
 [KM02081](km02081) | `WARN_OldVersion` | The keyboard file is an old version
 [KM02082](km02082) | `WARN_BitmapNotUsed` | The 'bitmaps' statement is obsolete and only the first bitmap referred to will be used, you should use 'bitmap'\.
