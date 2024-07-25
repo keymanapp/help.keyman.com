@@ -163,6 +163,7 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM020AD](km020ad) | `WARN_KeyShouldIncludeNCaps` | Other rules which reference this key include CAPS or NCAPS modifiers, so this rule must include NCAPS modifier to avoid inconsistent matches
 [KM020AE](km020ae) | `HINT_UnreachableRule` | This rule will never be matched as another rule takes precedence
 [KM020AF](km020af) | `WARN_VirtualKeyInOutput` | Virtual keys are not supported in output
+[KM020B0](km020b0) | `HINT_IndexStoreLong` | The store referenced in index\(\) is longer than the store referenced in any\(\)
 [KM020C0](km020c0) | `FATAL_BufferOverflow` | The compiler memory buffer overflowed
 [KM020C1](km020c1) | `FATAL_Break` | Compiler interrupted by user
 [KM02900](km02900) | `FATAL_UnexpectedException` | This is an internal error; the message will vary
