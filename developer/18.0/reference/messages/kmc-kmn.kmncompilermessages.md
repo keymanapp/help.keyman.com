@@ -4,11 +4,9 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 
  Code | Identifier | Message
 ------|------------|---------
-[KM02001](km02001) | `INFO_EndOfFile` | \(no error \- reserved code\)
 [KM02002](km02002) | `FATAL_BadCallParams` | CompileKeyboardFile was called with bad parameters
 [KM02004](km02004) | `FATAL_CannotAllocateMemory` | Out of memory
 [KM02005](km02005) | `ERROR_InfileNotExist` | Cannot find the input file
-[KM02007](km02007) | `FATAL_UnableToWriteFully` | Unable to write the file completely
 [KM02008](km02008) | `ERROR_CannotReadInfile` | Cannot read the input file
 [KM02009](km02009) | `FATAL_SomewhereIGotItWrong` | Internal error: contact Keyman
 [KM0200A](km0200a) | `ERROR_InvalidToken` | Invalid token found
@@ -110,8 +108,8 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM0206E](km0206e) | `ERROR_OutputInReadonlyGroup` | Output is not permitted in a readonly group
 [KM0206F](km0206f) | `ERROR_NewContextGroupMustBeReadonly` | Group used in begin newContext must be readonly
 [KM02070](km02070) | `ERROR_PostKeystrokeGroupMustBeReadonly` | Group used in begin postKeystroke must be readonly
-[KM02071](km02071) | `ERROR_DuplicateGroup` | A group with this name has already been defined\.
-[KM02072](km02072) | `ERROR_DuplicateStore` | A store with this name has already been defined\.
+[KM02071](km02071) | `ERROR_DuplicateGroup` | A group with the name 'undefined' has already been defined on line undefined\.
+[KM02072](km02072) | `ERROR_DuplicateStore` | A store with the name 'undefined' has already been defined on line undefined\.
 [KM02073](km02073) | `ERROR_RepeatedBegin` | Begin has already been set
 [KM02074](km02074) | `ERROR_VirtualKeyInContext` | Virtual keys are not permitted in context
 [KM02075](km02075) | `ERROR_OutsTooLong` | Store cannot be inserted with outs\(\) as it makes the extended string too long
@@ -119,7 +117,7 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM02077](km02077) | `ERROR_VirtualKeyExpansionTooLong` | Virtual key expansion is too large
 [KM02078](km02078) | `ERROR_CharacterRangeTooLong` | Character range is too large and cannot be expanded
 [KM02079](km02079) | `ERROR_NonBMPCharactersNotSupportedInKeySection` | Characters with codepoints over U\+FFFF are not supported in the key part of the rule
-[KM0207A](km0207a) | `ERROR_InvalidTarget` | Unrecognized compile target
+[KM0207A](km0207a) | `ERROR_InvalidTarget` | Unrecognized compile target 'undefined'
 [KM0207B](km0207b) | `ERROR_NoTargetsSpecified` | At least one compile target must be specified
 [KM02080](km02080) | `WARN_TooManyWarnings` | Too many warnings or errors
 [KM02081](km02081) | `WARN_OldVersion` | The keyboard file is an old version
@@ -131,7 +129,7 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM02087](km02087) | `WARN_ANSIInUnicodeGroup` | An ANSI character was found in a Unicode group
 [KM02088](km02088) | `WARN_UnicodeSurrogateUsed` | A Unicode surrogate character was found\. You should use Unicode scalar values to represent values &gt; U\+FFFF
 [KM02089](km02089) | `WARN_ReservedCharacter` | A Unicode character was found that should not be used
-[KM0208A](km0208a) | `INFO_Info` | Information
+[KM0208A](km0208a) | `INFO_MinimumCoreEngineVersion` | The compiler has assigned a minimum engine version of undefined\.undefined based on features used in this keyboard
 [KM0208B](km0208b) | `WARN_VirtualKeyWithMnemonicLayout` | Virtual key used instead of virtual character key with a mnemonic layout
 [KM0208C](km0208c) | `WARN_VirtualCharKeyWithPositionalLayout` | Virtual character key used with a positional layout instead of mnemonic layout
 [KM0208D](km0208d) | `WARN_StoreAlreadyUsedAsOptionOrCall` | Store already used as an option or in a call statement and should not be used as a normal store
@@ -161,11 +159,10 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM020AB](km020ab) | `WARN_NulNotFirstStatementInContext` | nul must be the first statement in the context
 [KM020AC](km020ac) | `WARN_IfShouldBeAtStartOfContext` | if, platform and baselayout should be at start of context \(after nul, if present\)
 [KM020AD](km020ad) | `WARN_KeyShouldIncludeNCaps` | Other rules which reference this key include CAPS or NCAPS modifiers, so this rule must include NCAPS modifier to avoid inconsistent matches
-[KM020AE](km020ae) | `HINT_UnreachableRule` | This rule will never be matched as another rule takes precedence
+[KM020AE](km020ae) | `HINT_UnreachableRule` | This rule will never be matched as the rule on line undefined takes precedence
 [KM020AF](km020af) | `WARN_VirtualKeyInOutput` | Virtual keys are not supported in output
 [KM020B0](km020b0) | `HINT_IndexStoreLong` | The store referenced in index\(\) is longer than the store referenced in any\(\)
 [KM020C0](km020c0) | `FATAL_BufferOverflow` | The compiler memory buffer overflowed
-[KM020C1](km020c1) | `FATAL_Break` | Compiler interrupted by user
 [KM02900](km02900) | `FATAL_UnexpectedException` | This is an internal error; the message will vary
 [KM02901](km02901) | `FATAL_MissingWasmModule` | This is an internal error; the message will vary
 [KM02903](km02903) | `FATAL_CallbacksNotSet` | This is an internal error; the message will vary
