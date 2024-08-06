@@ -80,7 +80,10 @@ function loaded(){
     // so that the OSK knows about the fonts.
     keyman.addKeyboards(keyboardName).then(function () {
       // Ensure that the keyboard has been fetched.
-      return keyman.setActiveKeyboard(keyboardName, '');
+      //
+      // Note:  INTERNAL API - not documented.  This loads the keyboard (given
+      // the `addKeyboards` call), but does not _activate_ it.
+      return keyman.keyboardRequisitioner.cache.fetchKeyboard(keyboardName);
     }).then(function () {
       var addKeyboards = function(element, platform) {
         var
