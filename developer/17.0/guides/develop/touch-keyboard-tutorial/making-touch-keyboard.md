@@ -96,7 +96,7 @@ do so, I could choose “template-latin”.
 I select the template and click OK. Keyman Developer now adds a new tab
 in the left column, the Touch Layout tab.
 
-![touch layout](/cdn/dev/img/developer/100/simpleTouchKeyboard_6.png)
+![touch layout](/cdn/dev/img/developer/170/simpleTouchKeyboard_6.png)
 
 That is where we need to go now to add characters to our touch layout.
 But before doing that, there is one important thing to take note of in
@@ -106,74 +106,93 @@ as I add characters, I will have to make sure I add all the characters
 to both layouts, or I’ll discover that my keyboard does not work for all
 device sizes.
 
-In the image, you see that Keyman Developer is currently showing the
-tablet layout. The box at top left that says “layout” is where I’d
-choose which layout I’d design in.
-
-![platform list](/cdn/dev/img/developer/100/simpleTouchKeyboard_7.png)
+In the image, you see in the Platform box that Keyman Developer is currently showing the
+tablet layout. This box is where I’d choose which layout I’d design in.
 
 But I’m going to make this keyboard simple, and just have one layout for
-both tablets and phones. So beside the platform box, I am going to click
-the “Del” box,  to delete the tablet layout. When there is only one
+both tablets and phones. So in the platform box, I am going to click
+the “minus” button, to delete the tablet layout. When there is only one
 mobile layout, Keyman Developer will compile that layout for all mobile
 devices. (I could also have chosen to delete the phone layout and done
 my layout design in the tablet layout).
 
+![platform list](/cdn/dev/img/developer/170/simpleTouchKeyboard_7.png)
+
 ## Adding longpress characters
 
 Now I can start adding characters. I’ll click on the “y” key in the
-layout, then I’ll look for the “add longpress popup” button at the lower
+layout, then I’ll look at the “longpress keys” area at the lower
 left.
 
-![add longpress](/cdn/dev/img/developer/100/simpleTouchKeyboard_8.png)
+![add longpress](/cdn/dev/img/developer/170/simpleTouchKeyboard_8.png)
 
 I click that, and Keyman Developer adds a new key below the keyboard
 layout.
 
-![longpress added](/cdn/dev/img/developer/100/simpleTouchKeyboard_9.png)
+![longpress added](/cdn/dev/img/developer/170/simpleTouchKeyboard_9.png)
 
-First, I need to put something in the keycap image for my new key. I’ll
-click inside the empty box of the new key, then I’ll go look for my y
+I'm going to use this key for the y with hook. I click inside it to make it active, then I’ll go look for my y
 with hook character in the character map to the right. If I type “y
 hook” in the search box, Keyman Developer shows the character I’m
 looking for.
 
-![adding keycap](/cdn/dev/img/developer/100/simpleTouchKeyboard_10.png)
+![adding keycap](/cdn/dev/img/developer/170/simpleTouchKeyboard_10.png)
 
-If I double click on the lower case y with hook, that adds the character
-to the keycap box of my new key.
+If I double click on the lower case y with hook, that copies the character
+to the keycap box of my new key. (I could also click and drag the character from the character map to the key).
 
-![keycap added](/cdn/dev/img/developer/100/simpleTouchKeyboard_11.png)
+![keycap added](/cdn/dev/img/developer/170/simpleTouchKeyboard_11.png)
 
-## Adding the output
+## New key info
 
-Now there is still one very important thing I need to do. If you have
-ever designed desktop keyboards in the layout view, you would think
-putting the character you want on the keycap is all you need to do. But
-mobile keys don’t work that way. (Technically there is a difference
-between a physical keyboard, where pressing a key sends a unique code to
-the computer, and a virtual keyboard, where tapping a key only registers
-a tap on an arbitrary part of the screen). In adding a mobile key, we
-have to enter what the key does, not just add a character to the keycap.
-To make our new key insert the Unicode character 01B4, I’ll go to the
-“code” box and change the string to “U_01B4”. (“U_” followed by a
-Unicode hex value is the code for “insert the character with this
-Unicode value”). [See the Keyman Language guide on virtual
-keys](../../../../language/guide/virtual-keys#toc-virtual-keys-and-touch-layouts)
+There are several important pieces of information that got copied over. If we
+look at the properties of the new key to the right, we see that this new key has
+the “text” ƴ (what appears on the keycap), the “Unicode value” U+01B4 and the
+“ID” U_01B4. All of these were copied from the character map.
 
-![keycode added](/cdn/dev/img/developer/100/simpleTouchKeyboard_12.png)
+NOTE: If you copy one character from the character map to a new key, then
+realize you copied the wrong character, dragging a second character may not
+replace all the needed information into the key. If a key has a character in it
+already, it works better to hold <kbd>Ctrl</kbd> as you drag the new character
+into it.
 
-Now I can also add the upper case hook y here, so users won’t have to
-hold Shift before getting to an upper case y with hook. To add another
-new key to this longpress popup row, I click on the green triangle with
-a plus sign to the lower right of my new key, this adds a second new
-key.
+I could add the other three characters; hook b, hook d, and eng, as longpress
+characters as well. I could  select the regular letter I want to longpress,
+click plus in the longpress keys area and copy the needed character. Here for
+example is the b with hook:
 
-![adding new key to
-row](/cdn/dev/img/developer/100/simpleTouchKeyboard_13.png)
+![keycap added](/cdn/dev/img/developer/170/simpleTouchKeyboard_12.png)
 
-![new key added to
-row](/cdn/dev/img/developer/100/simpleTouchKeyboard_14.png)
+After I have added my four lowercase characters as longpress keys, the keyboard
+looks like this.  Even when I don't have that letter selected, I can see which
+keys have longpress keys by the dot beside the letter.
+
+![keycap added](/cdn/dev/img/developer/170/simpleTouchKeyboard_12-2.png)
+
+[See the Keyman Language guide on virtual keys](../../../../language/guide/virtual-keys#toc-virtual-keys-and-touch-layouts)
+
+## Adding uppercase characters
+
+I could do two different things for the upper case letters. I could add them as
+longpress keys beside their lowercase equivalents, by  pressing the plus key
+again to add a second longpress character to each letter.
+
+This would mean users would not have to press Shift to be able to type the upper
+case hook y. But since a user needs to press Shift for all the regular Latin
+upper case letters, it might make more sense to put the uppercase letters into
+the Shift layer.
+
+I can change to the shift layer by finding the layer box at lower left, and
+choosing `shift` instead of `default`.
+
+![changing to shift layer](/cdn/dev/img/developer/170/simpleTouchKeyboard_13.png)
+
+Now I see the upper case letters on the keyboard, and I can add longpress
+characters  to these in the same way I did on the default layer. I click the
+letter, then click `+` to add a key, then copy the character info from the
+character map. Adding my upper case y hook to Y would look like this:
+
+![new key added to row](/cdn/dev/img/developer/170/simpleTouchKeyboard_14.png)
 
 (If I had clicked on the green triangle to the left of my first key, the
 new key would be added to the left of that key).

@@ -25,6 +25,10 @@ store(&version) "version"
 The `&version` store allows Keyman to distinguish what version of
 Keyman the keyboard was written for and handle it accordingly.
 
+**Note:** there is a difference between [`&keyboardversion`](keyboardversion), 
+which documents the keyboard version, and `&version`, which 
+determines which version of Keyman a keyboard will run with.
+
 The `&version` store is optional. For most keyboards, it should be omitted.
 
 If the `&version` store is omitted, the compiler will infer the lowest 

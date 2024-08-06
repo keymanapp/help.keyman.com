@@ -51,8 +51,10 @@ The following information is also required, but most users will use
 **default values**.
 
 Copyright
-:   Who owns the rights to this model and its data? Typically, you can
-    use the automatically generated default value: *© 2024 **Your Full
+:   Who owns the rights to this model and its data? This field should
+    contain the word "Copyright", the copyright symbol "©", and the full name of the rights 
+    owner. Do not put the year of copyright in this field (see Full Copyright). Typically, 
+    you can use the automatically generated default value:  *Copyright © **Your Full
     Name or Your Organization***.
 
 Version

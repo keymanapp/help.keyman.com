@@ -95,7 +95,10 @@ Automatically recompile if no debug information available
     the keyboard has no debug symbols included.
 
 Automatically reset debugger before recompiling
-: *update is coming*
+:   If you are debugging a keyboard, make a change to the keyboard, and recompile it, 
+    then the debugger needs to be reset in order to get access to the new keyboard. 
+    Keyman Developer will normally prompt you to do this, but if you set this option, 
+    then it will reset the debugger automatically instead.
 
 ## Character Map tab
 
@@ -114,7 +117,9 @@ Update database
 :   Rebuilds the Unicode character database from source unicodedata.txt
     and blocks.txt. These files can be downloaded from the Unicode
     website at
-    [http://www.unicode.org/ucd/](http://www.unicode.org/ucd/). This lets you update the character map with a newer version of Unicode. Keyman Developer 10.0 was released with Unicode version 10.0 data.
+    [http://www.unicode.org/ucd/](http://www.unicode.org/ucd/). 
+    This lets you update the character map with a newer version of Unicode. 
+    Keyman Developer 17.0 was released with Unicode version 15.1 data.
 
 ## Server tab
 

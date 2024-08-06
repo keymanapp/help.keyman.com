@@ -93,14 +93,6 @@ The folder structure for each keyboard has the following components:
     may wish to omit the date range in order to reduce unnecessary
     maintenance work when changes to the keyboard are required.
 
-`<keyboard>.keyboard_info`
-:   a [metadata file](/developer/cloud/keyboard_info) detailing the
-    keyboard's origin, version, requirements, and capabilities  
-    This file greatly assists the process of making your keyboard
-    readily available for public download. Please see the
-    [.keyboard_info section](/developer/cloud/keyboard_info) for more
-    details.
-
 ## Copy Template Files
 
 If you used "Project", "New Project", "Basic" as mentioned above, Keyman
@@ -108,10 +100,9 @@ Developer will have created files in your keyboard project folder
 similar to those mentioned in the next paragraph, so you can skip that
 step because you won't need to copy them.
 
-The **keyboards** repo contains a set of `.md` and `.keyboard_info`
+The **keyboards** repo contains a set of `.md` 
 files you can copy and fill with details relevant to your keyboard.
-They're available at the **`release/template/`** folder. Remember to
-rename `template.keyboard_info` with your keyboard name. The `.md` files
+They're available at the **`release/template/`** folder. The `.md` files
 use
 [Markdown](https://daringfireball.net/projects/markdown/),
 an easy-to-read plain text format that can be converted to HTML.
