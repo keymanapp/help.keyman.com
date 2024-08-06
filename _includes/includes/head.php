@@ -100,7 +100,6 @@
       }
     }
     if(!isset($kmw_dev_path)) {
-      $kmw_version_number = '16.0.147'; // TEMP: work around keymanapp/keyman#11467, roll back to 16.0-stable until fixed
   ?>
       <script src='https://s.keyman.com/kmw/engine/<?=$kmw_version_number?>/keymanweb.js'></script>
   <?php
