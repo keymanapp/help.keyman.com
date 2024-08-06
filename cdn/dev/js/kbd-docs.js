@@ -175,7 +175,8 @@ function loaded(){
     }
 
     // Even with KMW loading the fonts for itself, we wish for them to be available on all page elements,
-    // not just in Web's OSK.  We _could_ use the retrieved stub to get that, but... "ain't broke, don't fix it."
+    // not just in Web's OSK. 
+    // TODO: consider using the retrieved stub to get that in future
     $.ajax({
       url: 'https://api.keyman.com/keyboard/' + keyboardName,
       success:function(data) {
