@@ -48,7 +48,7 @@
         </div>
         <div class="footer-third sil-logo">
             <br>
-            <a href="https://www.keyman.com/about/"><img id="sil-logo" src="<?php echo cdn("img/sil-logo-blue-2017_1.png"); ?>" alt='SIL' /></a>
+            <a href="https://www.keyman.com/about/"><img id="sil-logo" src="<?php echo cdn("img/sil-logos-2024/sil-logo-abbysinica.png"); ?>" width="50%" alt='SIL' /></a>
             <p>Created by <a href="https://www.keyman.com/about/">SIL International</a></p>
         </div>
     </div>
