@@ -77,19 +77,6 @@ function display_history($platform, $version = '1.0'){
   echo $Parsedown->text($contents);
 }
 
-function fetch_history($version = '1.0') {
-  $url = build_downloads_keyman_com_url("api/history/$version"); 
-
-  $contents = @file_get_contents($url);
-
-  if($contents === FALSE) {
-    //header('HTTP/1.0 400 Invalid parameter');
-    $contents = "Unable to retrieve current history data for this platform.";
-  }
-
-  return $contents;
-}
-
 function assignHeadingIDs($content) {
   $pattern = '/<(h[23])>(.*?)<\/\1>/i';
 
@@ -106,7 +93,7 @@ function assignHeadingIDs($content) {
 }
 
 function display_version($version = '1.0'){
-  $contents = fetch_history($version);
+  $contents = get_history("", $version);
 
   // API version 2.0 handles Keyman 14.0+
   if ($version == '2.0') {
@@ -120,7 +107,7 @@ function display_version($version = '1.0'){
     $contents = preg_replace($regex_dated_version_src, $regex_dated_version_dst, $contents);
 
     // Include previous Keyman history (minus its title)
-    $previous_contents = fetch_history('1.0');
+    $previous_contents = get_history('1.0');
     $previous_contents = preg_replace('/^#.*/', '<br>', $previous_contents);
     $contents = $contents . $previous_contents;
   }
