@@ -1,4 +1,5 @@
 <?php
+
   require_once("com.keyman.help.editpage.inc.php");
 
   function getPageUrlForEditLink() {
@@ -8,6 +9,7 @@
       isset($_REQUEST['file']) ? $_REQUEST['file'] : ''
     );
   }
+
 ?>
           </article>
         </div>
@@ -48,7 +50,7 @@
         </div>
         <div class="footer-third sil-logo">
             <br>
-            <a href="https://www.keyman.com/about/"><img id="sil-logo" src="<?php echo cdn("img/sil-logos-2024/sil-logo-abbysinica.png"); ?>" width="50%" alt='SIL' /></a>
+            <a href="https://www.keyman.com/about/"><img id="sil-logo" src="<?php echo include 'image-randomizer.php'; ?>" width="50%" alt='SIL' /></a>
             <p>Created by <a href="https://www.keyman.com/about/">SIL International</a></p>
         </div>
     </div>
