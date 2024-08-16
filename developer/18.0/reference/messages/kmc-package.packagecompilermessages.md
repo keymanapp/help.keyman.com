@@ -35,3 +35,4 @@ title: Compiler Messages Reference for @keymanapp/kmc-package
 [KM0401E](km0401e) | `ERROR_InvalidPackageFile` | Package source file is invalid: unknown error
 [KM0401F](km0401f) | `ERROR_FileRecordIsMissingName` | File record in the package with description 'undefined' is missing a filename\.
 [KM04020](km04020) | `ERROR_InvalidAuthorEmail` | Invalid author email: &lt;param&gt;
+[KM04021](km04021) | `ERROR_PackageFileHasEmptyVersion` | Package version is not following keyboard version, but the package version field is blank\.
