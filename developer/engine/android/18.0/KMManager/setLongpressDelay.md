@@ -13,7 +13,7 @@ KMManager.setLongpressDelay(int longpressDelay)
 ```
 ### Parameter
 `longpressDelay`
-: The number of milliseconds
+: The number of milliseconds, ranging from 300 ms to 1500 ms.
 
 ## Description
 Use this method to store how many milliseconds to trigger a longpress as a preference.
