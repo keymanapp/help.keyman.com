@@ -20,3 +20,7 @@ Details:
 Distributed with keyboard:
 :   This is the keyboard file. It must be distributed with your package
     to allow people to type using the keyboard you have developed.
+
+Reference:
+* [KMX binary file format specification](https://github.com/keymanapp/keyman/blob/master/docs/file-formats/kmx-file-format.md)
+* [KMX+ binary file format specification](https://github.com/keymanapp/keyman/blob/master/docs/file-formats/kmx-plus-file-format.md)
