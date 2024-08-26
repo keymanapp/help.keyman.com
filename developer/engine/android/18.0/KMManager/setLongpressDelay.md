@@ -25,7 +25,7 @@ This preference is stored at the Keyman app level, and is applied to all Keyman 
 
 The following code illustrates the use of `setLongpressDelay()`:
 ```java
-    int currentDelayTimeMS = 250;
+    int currentDelayTimeMS = 300;
 
     // Store currentDelayTimeMS
     KMManager.setLongpressDelay(currentDelayTimeMS);
