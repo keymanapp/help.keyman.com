@@ -76,3 +76,60 @@ function display_history($platform, $version = '1.0'){
   // Does the magic.
   echo $Parsedown->text($contents);
 }
+
+function assignHeadingIDs($content) {
+  $pattern = '/<(h[23])>(.*?)<\/\1>/i';
+
+  $callback = function ($matches) {
+      $tag = $matches[1];
+      $text = $matches[2];
+      $id = strtolower(preg_replace('/[^a-zA-Z0-9]+/', '-', trim($text)));
+      return "<$tag id=\"$id\">$text</$tag>";
+  };
+
+  $content = preg_replace_callback($pattern, $callback, $content);
+
+  return $content;
+}
+
+function display_version($version = '1.0'){
+  $contents = get_history("", $version);
+
+  // API version 2.0 handles Keyman 14.0+
+  if ($version == '2.0') {
+
+    // Adjust the publish dates of API 2.0 for displaying on website
+    $regex_dated_version_src = "/(\d+.\d+(.\d+)? (?:stable|beta|alpha)) (\d{4}-\d{2}-\d{2})/";
+    $regex_dated_version_dst = "\${1}\n Published \${3}.";
+
+    // The actual replacements.
+    //$contents = preg_replace($regex_header_line, "", $contents);
+    $contents = preg_replace($regex_dated_version_src, $regex_dated_version_dst, $contents);
+
+    // Include previous Keyman history (minus its title)
+    $previous_contents = get_history('1.0');
+    $previous_contents = preg_replace('/^#.*/', '<br>', $previous_contents);
+    $contents = $contents . $previous_contents;
+  }
+
+  $regex_dated_version_src = "/(\d{4}-\d{2}-\d{2}) (\d+.\d+(.\d+)? (?:stable|beta|alpha))/";
+  $regex_dated_version_dst = "\${2}\n Published \${1}.";
+
+  // The actual replacements.
+  //$contents = preg_replace($regex_header_line, "", $contents);
+  $contents = preg_replace($regex_dated_version_src, $regex_dated_version_dst, $contents);
+
+  // Tighten formatting -- h3, remove redundant paragraphs
+  $contents = preg_replace('/^## /m', '### ', $contents);
+  $contents = preg_replace("/\n\n\\* /", "\n* ", $contents);
+
+  $Parsedown = new \ParsedownExtra();
+  $processedContent = $Parsedown->text($contents);
+
+  // Assign IDs to headings
+  $processedContent = assignHeadingIDs($processedContent);
+
+  echo $processedContent;
+}
+
+?>
