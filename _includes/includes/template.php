@@ -58,7 +58,7 @@
         $css[] = $file;
       }
     }else{
-        $css = array(cdn('css/template.css'), cdn('css/prism.css'), cdn('css/prism-keyman.css'));
+        $css = array(cdn('css/template.css'), cdn('css/prism.css'));
     }
     if(isset($args['js'])){
       $js = array();

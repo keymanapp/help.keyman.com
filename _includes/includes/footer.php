@@ -61,6 +61,5 @@
 </div>
 <div id="KeymanWebControl"></div>
 <script src='<?= cdn('js/prism.js')?>'></script>
-<script src='<?= cdn('js/prism-keyman.js')?>'></script>
 </body>
 </html>
