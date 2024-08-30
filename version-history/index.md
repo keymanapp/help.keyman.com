@@ -11,5 +11,5 @@ title: Keyman Version History by platform
 * [Keyman Developer Version History](/developer/version-history)
 
 
-# Keyman History of all versions
-* [Keyman History](/version-history/all-versions)
+## All platforms
+* [Keyman version history - all platforms, from 14.0](/version-history/all-versions)

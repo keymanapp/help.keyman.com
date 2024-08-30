@@ -39,7 +39,9 @@ function display_history($platform, $version = '1.0'){
       'developer' => '# Keyman Developer Version History'
     ];
 
-    $contents = $platform_title[$platform] . $contents;
+    if($platform != '') {
+      $contents = $platform_title[$platform] . $contents;
+    }
 
     // Adjust the publish dates of API 2.0 for displaying on website
     $regex_dated_version_src = "/(\d+.\d+(.\d+)? (?:stable|beta|alpha)) (\d{4}-\d{2}-\d{2})/";
@@ -50,14 +52,10 @@ function display_history($platform, $version = '1.0'){
     $contents = preg_replace($regex_dated_version_src, $regex_dated_version_dst, $contents);
 
     // Include previous Keyman history (minus its title)
-    $previous_contents = get_history($platform, '1.0');
+    $previous_contents = $platform ? get_history($platform, '1.0') : get_history('1.0');
     $previous_contents = preg_replace('/^#.*/', '<br>', $previous_contents);
     $contents = $contents . $previous_contents;
   }
-
-  // Adjust the publish dates of API 1.0 for displaying on website
-  // Only needed if using header.php, not if using template.php.
-  //$regex_header_line = "/^# [^\n]+/";
 
   $regex_dated_version_src = "/(\d{4}-\d{2}-\d{2}) (\d+.\d+(.\d+)? (?:stable|beta|alpha))/";
   $regex_dated_version_dst = "\${2}\n Published \${1}.";
@@ -70,11 +68,17 @@ function display_history($platform, $version = '1.0'){
   $contents = preg_replace('/^## /m', '### ', $contents);
   $contents = preg_replace("/\n\n\\* /", "\n* ", $contents);
 
+  // Include links to PRs
+  $contents = preg_replace('/\(#(\d+)\)/', '([#${1}](https://github.com/keymanapp/keyman/pull/${1}))', $contents);
+
   // Performs the parsing + prettification of Markdown for display through PHP.
   $Parsedown = new \ParsedownExtra();
+  $processedContent = $Parsedown->text($contents);
 
-  // Does the magic.
-  echo $Parsedown->text($contents);
+  // Assign IDs to headings
+  $processedContent = assignHeadingIDs($processedContent);
+
+  echo $processedContent;
 }
 
 function assignHeadingIDs($content) {
@@ -90,46 +94,6 @@ function assignHeadingIDs($content) {
   $content = preg_replace_callback($pattern, $callback, $content);
 
   return $content;
-}
-
-function display_version($version = '1.0'){
-  $contents = get_history("", $version);
-
-  // API version 2.0 handles Keyman 14.0+
-  if ($version == '2.0') {
-
-    // Adjust the publish dates of API 2.0 for displaying on website
-    $regex_dated_version_src = "/(\d+.\d+(.\d+)? (?:stable|beta|alpha)) (\d{4}-\d{2}-\d{2})/";
-    $regex_dated_version_dst = "\${1}\n Published \${3}.";
-
-    // The actual replacements.
-    //$contents = preg_replace($regex_header_line, "", $contents);
-    $contents = preg_replace($regex_dated_version_src, $regex_dated_version_dst, $contents);
-
-    // Include previous Keyman history (minus its title)
-    $previous_contents = get_history('1.0');
-    $previous_contents = preg_replace('/^#.*/', '<br>', $previous_contents);
-    $contents = $contents . $previous_contents;
-  }
-
-  $regex_dated_version_src = "/(\d{4}-\d{2}-\d{2}) (\d+.\d+(.\d+)? (?:stable|beta|alpha))/";
-  $regex_dated_version_dst = "\${2}\n Published \${1}.";
-
-  // The actual replacements.
-  //$contents = preg_replace($regex_header_line, "", $contents);
-  $contents = preg_replace($regex_dated_version_src, $regex_dated_version_dst, $contents);
-
-  // Tighten formatting -- h3, remove redundant paragraphs
-  $contents = preg_replace('/^## /m', '### ', $contents);
-  $contents = preg_replace("/\n\n\\* /", "\n* ", $contents);
-
-  $Parsedown = new \ParsedownExtra();
-  $processedContent = $Parsedown->text($contents);
-
-  // Assign IDs to headings
-  $processedContent = assignHeadingIDs($processedContent);
-
-  echo $processedContent;
 }
 
 ?>
