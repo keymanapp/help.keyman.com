@@ -9,10 +9,16 @@ http://help.keyman.com.localhost.
 
 ### Pre-requisites
 
-On the host machine, install [Docker](https://docs.docker.com/get-docker/):
+#### All host machines
 
-On Windows, Docker will also need either:
-* hyper-v or
+The host machine needs the following:
+* [Git](https://git-scm.com/downloads)
+* Bash (on Windows, you can use Git Bash that comes with [Git](https://git-scm.com/download/win))
+* [Docker Desktop](https://docs.docker.com/get-docker/)
+
+#### Additional steps
+On Windows host machines, do one of these two options:
+* [Enable Hyper-V on Windows 11](https://techcommunity.microsoft.com/t5/educator-developer-blog/step-by-step-enabling-hyper-v-for-use-on-windows-11/ba-p/3745905)
 * [WSL2](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview)
 
 ### Builder actions

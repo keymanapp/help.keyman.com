@@ -9,3 +9,7 @@ title: Keyman Version History by platform
 * [Keyman for iPhone and iPad Version History](/products/iphone-and-ipad/version-history)
 * [KeymanWeb Version History](/developer/engine/web/history)
 * [Keyman Developer Version History](/developer/version-history)
+
+
+# Keyman History of all versions
+* [Keyman History](/version-history/all-versions)

@@ -2,11 +2,11 @@
 title: Compiler Messages Reference
 ---
 
-* [kmc-ldml.CompilerMessages](kmc-ldml.compilermessages)
+* [kmc-ldml.LdmlCompilerMessages](kmc-ldml.ldmlcompilermessages)
 * [common-types.CommonTypesMessages](common-types.commontypesmessages)
 * [kmc-kmn.KmnCompilerMessages](kmc-kmn.kmncompilermessages)
 * [kmc-model.ModelCompilerMessages](kmc-model.modelcompilermessages)
-* [kmc-package.CompilerMessages](kmc-package.compilermessages)
+* [kmc-package.PackageCompilerMessages](kmc-package.packagecompilermessages)
 * [kmc.InfrastructureMessages](kmc.infrastructuremessages)
 * [kmc-analyze.AnalyzerMessages](kmc-analyze.analyzermessages)
 * [kmc-kmn.KmwCompilerMessages](kmc-kmn.kmwcompilermessages)

@@ -10,9 +10,7 @@ that runs on Windows, macOS, the web, mobile web, iOS and Android and
 Linux.
 
 There are two core applications included in Keyman Developer: the Keyman
-Developer IDE (formerly called TIKE), and kmc, the command line
-
-compiler.
+Developer IDE (formerly called TIKE), and the command line compiler kmc.
 
 [Watch a video](https://youtu.be/kwhgx_eX4Es) that highlights some of
 the Keyman Developer features.
