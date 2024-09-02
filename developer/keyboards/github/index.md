@@ -1,5 +1,5 @@
 ---
-title: Guide: Keyboard Submissions using GitHub
+title: GitHub Keyboard Submission Guide
 ---
 
 This guide is intended for keyboard developers who are submitting only one or two keyboards. 

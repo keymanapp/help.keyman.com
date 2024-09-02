@@ -4,7 +4,7 @@
   head([
     'title' => "Page not found",
     'index' => false,
-    'crumbs' => false,
+    'crumbs' => true,
   ]);
 
   $page = $_SERVER["REQUEST_URI"];
@@ -16,7 +16,7 @@
       $s = @htmlspecialchars($v, ENT_QUOTES, 'ISO-8859-1');
     return $s;
   }
-
+  
 ?>
 <h1>Page not found</h1>
 

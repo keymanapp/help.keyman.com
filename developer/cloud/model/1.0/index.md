@@ -8,7 +8,8 @@ Documents the [`api.keyman.com/model/<model_id>`](https://api.keyman.com/model) 
 
 ### Parameters
 
-* `model_id`
+`model_id`
+
 : The identifier of the model to return
 
 ### Results
@@ -75,5 +76,6 @@ A valid response will return an array of matching
 
 ### Version History
 
-* 1.0, 2018-01-01
+1.0, 2018-01-01
+
 : Initial version

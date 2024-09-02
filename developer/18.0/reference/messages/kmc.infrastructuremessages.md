@@ -29,8 +29,9 @@ title: Compiler Messages Reference for @keymanapp/kmc
 [KM05017](km05017) | `ERROR_MessageNamespaceNotFound` | Invalid parameter: \-\-message &lt;param&gt; does not have a recognized namespace
 [KM05018](km05018) | `ERROR_MessageCodeNotFound` | Invalid parameter: \-\-message undefined is not a recognized code
 [KM05019](km05019) | `ERROR_MessageCannotBeCoerced` | Invalid parameter: \-\-message &lt;param&gt; is not of type 'info', 'hint' or 'warn', and cannot be coerced
-[KM0501A](km0501a) | `ERROR_UnrecognizedMessageCode` | Invalid parameter: message identifier '&lt;param&gt;' must match format '\[KM\]\#\#\#\#\#'
+[KM0501A](km0501a) | `ERROR_UnrecognizedMessageCode` | Invalid parameter: message identifier '&lt;param&gt;' must match format '\[KM\]\#\#\#\#\#' or be a search for a \.\.\.
 [KM0501B](km0501b) | `ERROR_MustSpecifyMessageCode` | Must specify at least one message code or \-a for all messages
 [KM0501C](km0501c) | `ERROR_MessagesCannotBeFilteredForMarkdownFormat` | Messages cannot be filtered for markdown format
 [KM0501D](km0501d) | `ERROR_OutputPathMustBeSpecifiedForMarkdownFormat` | Output path must be specified with \-o for markdown output format
 [KM0501E](km0501e) | `ERROR_OutputPathMustExistAndBeADirectory` | Output path &lt;param&gt; must exist and must be a folder
+[KM0501F](km0501f) | `ERROR_MessageNamespaceNameNotFound` | Invalid parameter: \-\-message &lt;param&gt; does not have a recognized namespace

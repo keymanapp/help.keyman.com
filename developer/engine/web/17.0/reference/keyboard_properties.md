@@ -12,55 +12,72 @@ may need to interact with custom developed keyboards if, for example, they use a
 Each registered keyboard object defines some or all of the following exposed
 string properties:
 
-* `KN`
+`KN`
+
 : `string`, (`name`) visible name of the keyboard, required.
 
-* `KI`
+`KI`
+
 : `string`, (`internalName`) identifier of the keyboard, starting with `Keyboard_`, required.
 
-* `KMINVER`
+`KMINVER`
+
 : `string`, minimum version that the keyboard will run on, `2.0` if not present, optional.
 
-* `KV`
+`KV`
+
 : `object`, on screen keyboard definition, optional.
 
-* `KDU`
+`KDU`
+
 : `number`, `1` to display underlying characters on On Screen Keyboard, `0` or omitted to hide them, optional
 
-* `KH`
+`KH`
+
 : `string`, Keyboard help, in HTML; if present replaces `KV` in the On Screen Keyboard, optional
 
-* `KM`
+`KM`
+
 : `number`, `1` to use mnemonic layout, `0` or omitted for positional, optional
 
-* `KBVER`
+`KBVER`
+
 : `string`, version of the keyboard (should be dotted decimal format), optional
 
-* `KMBM`
+`KMBM`
+
 : `number`, bitmask denoting modifiers used in the keyboard, if not present defaults to 0x0070, optional
 
-* `KVKL`
+`KVKL`
+
 : `object`, touch layout definition, optional.
 
-* `KVER`
+`KVER`
+
 : `string`, version of Keyman Developer used to compile the keyboard, optional
 
-* `KVS`
+`KVS`
+
 : `string[]`, array of all variable store names found in the keyboard (15.0 and later), optional
 
-* `KS`
+`KS`
+
 : `number`, `1` means Unicode characters U+10000-U+10FFFF, including the Supplementary Multilingual Plane (SMP), are used in the keyboard, optional
 
-* `KVKD`
+`KVKD`
+
 : `object`, Virtual key dictionary listing custom touch keys used in the keyboard, optional
 
-* `KCSS`
+`KCSS`
+
 : `string`, Custom CSS defined by the keyboard, optional
 
-* `KFont`
+`KFont`
+
 : `object`, Embedded font specification for mapped input elements and on-screen keyboard, optional
 
-* `KOskFont`
+`KOskFont`
+
 : `object`, Embedded font specification for on-screen keyboard, optional
 
 For most keyboards which require an embedded font, the same font will be used
@@ -71,8 +88,10 @@ keyboard.
 
 The `KFont` and `KOskFont` members are objects with the following members:
 
-* `family`
+`family`
+
 : `string`, font-family name for embedded font, e.g. `'LatinWeb'`
 
-* `files`
+`files`
+
 : `string` or `string[]`, Font file name or names, e.g. `['DejaVuSans.ttf','DejaVuSans.woff','DejaVuSans.eot']`

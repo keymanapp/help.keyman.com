@@ -924,16 +924,20 @@ input[type="search"] {
 #section2 pre[class*="language-"] {
   margin-left: 9px;
   margin-right: 9px;
-  padding: 9px;
-  line-height: 1.4;
 }
 
-#section2 pre[class*="language-"] code[class*="language-"] {
-  line-height: 1.4;
-}
-
-#section2 code[class*="language-"] {
+#section2 p > code[class*="language-"],
+#section2 li > code[class*="language-"],
+#section2 dt > code[class*="language-"],
+#section2 dd > code[class*="language-"] {
 	font-size: 10.5pt
+}
+
+#section2 h1 > code[class*="language-"],
+#section2 h2 > code[class*="language-"],
+#section2 h3 > code[class*="language-"],
+#section2 h4 > code[class*="language-"] {
+	background: none;
 }
 
 .product-index {

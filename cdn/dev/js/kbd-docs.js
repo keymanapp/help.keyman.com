@@ -74,8 +74,87 @@ function loaded(){
     // Insert keyboard into osk div
 
     var url = location.pathname.split('/');
-    var keyboardName = url[url.length-3], keyboardVersion = url[url.length-2];
-    var keyboardPath = keyman.util.getOption('keyboards') + keyboardName + '/' + keyboardVersion + '/' + keyboardName + '-' + keyboardVersion + '.js';
+    var keyboardName = url[url.length-3]; //, keyboardVersion = url[url.length-2];
+
+    // Ensure that the Web engine itself fetches the cloud metadata about the keyboard
+    // so that the OSK knows about the fonts.
+    keyman.addKeyboards(keyboardName).then(function () {
+      // Ensure that the keyboard has been fetched.
+      //
+      // Note:  INTERNAL API - not documented.  This loads the keyboard (given
+      // the `addKeyboards` call), but does not _activate_ it.
+      return keyman.keyboardRequisitioner.cache.fetchKeyboard(keyboardName);
+    }).then(function () {
+      var addKeyboards = function(element, platform) {
+        var
+          osk = $(element),
+          states = osk.data('states'),
+          addKeyboard = function(name, platform, title) {
+
+            // TODO: These hacks are pretty awful
+            keyman.getOskWidth = function() {
+              return platform == 'desktop' ? 960 :
+                      platform == 'phone' ? 520 : 720;
+            };
+
+            keyman.getOskHeight = function() {
+              return platform == 'desktop' ? 320 :
+                      platform == 'phone' ? 240 : 360;
+            };
+
+            var note = null;
+
+            var kbd = keyman.BuildVisualKeyboard(keyboardName, 1, platform, name);
+            if (kbd) {
+              osk.append('<h3>'+title+'</h3>', kbd);
+              if(note) osk.append(note);
+            }
+
+            keyman.getOskWidth = keyman.getOskHeight = null;
+          },
+          toTitleCase = function(str) {
+            return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+          };
+
+        if(osk.length == 0) return; // no place for it
+        if(!states) states='default shift';
+        states=states.split(' ');
+        var title = platform == 'desktop' ? {
+          'default':'Unshifted',
+          'leftalt':'Left Alt',
+          'rightalt':'AltGr (Right Alt)',
+          'alt':'Alt',
+          'leftctrl':'Left Control',
+          'rightctrl':'Right Control',
+          'ctrl':'Control',
+          'ctrl-alt':'Control+Alt',
+          'leftctrl-leftalt':'Left Control+Left Alt',
+          'rightctrl-rightalt':'Right Control+Right Alt',
+          'leftctrl-leftalt-shift':'Left Control+Left Alt+Shift',
+          'rightctrl-rightalt-shift':'Right Control+Right Alt+Shift',
+          'shift':'Shifted',
+          'shift-alt':'Alt+Shift',
+          'shift-ctrl':'Control+Shift',
+          'shift-ctrl-alt':'Control+Alt+Shift',
+          'leftalt-shift':'Left Alt+Shift',
+          'rightalt-shift':'AltGr (Right Alt)+Shift',
+          'leftctrl-shift':'Left Control+Shift',
+          'rightctrl-shift':'Right Control+Shift'
+        } : null;
+        for(var i in states) {
+          if(!title) {
+            addKeyboard(states[i], platform, toTitleCase(states[i]));
+          } else if(title[states[i]]) {
+            addKeyboard(states[i], platform, title[states[i]]);
+          }
+        }
+      };
+
+      addKeyboards('#osk', 'desktop');
+      addKeyboards('#osk-phone', 'phone');
+      addKeyboards('#osk-tablet', 'tablet');
+    });
+    //var keyboardPath = keyman.util.getOption('keyboards') + keyboardName + '/' + keyboardVersion + '/' + keyboardName + '-' + keyboardVersion + '.js';
 
     var fontFamily = null, fontSource = null;
 
@@ -95,6 +174,9 @@ function loaded(){
       return null;
     }
 
+    // Even with KMW loading the fonts for itself, we wish for them to be available on all page elements,
+    // not just in Web's OSK. 
+    // TODO: consider using the retrieved stub to get that in future
     $.ajax({
       url: 'https://api.keyman.com/keyboard/' + keyboardName,
       success:function(data) {
@@ -122,83 +204,6 @@ function loaded(){
           }
         }
       }
-    });
-
-    $.ajax({
-      url:keyboardPath,
-      success:function() {
-
-        var addKeyboards = function(element, platform) {
-          var
-            osk = $(element),
-            states = osk.data('states'),
-            addKeyboard = function(name, platform, title) {
-
-              // TODO: These hacks are pretty awful
-              keyman.getOskWidth = function() {
-                return platform == 'desktop' ? 960 :
-                        platform == 'phone' ? 520 : 720;
-              };
-
-              keyman.getOskHeight = function() {
-                return platform == 'desktop' ? 320 :
-                        platform == 'phone' ? 240 : 360;
-              };
-
-              var note = null;
-
-              var kbd = keyman.BuildVisualKeyboard(keyboardName, 1, platform, name);
-              if (kbd) {
-                osk.append('<h3>'+title+'</h3>', kbd);
-                if(note) osk.append(note);
-              }
-
-              keyman.getOskWidth = keyman.getOskHeight = null;
-            },
-            toTitleCase = function(str) {
-              return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
-            };
-
-          if(osk.length == 0) return; // no place for it
-          if(!states) states='default shift';
-          states=states.split(' ');
-          var title = platform == 'desktop' ? {
-            'default':'Unshifted',
-            'leftalt':'Left Alt',
-            'rightalt':'AltGr (Right Alt)',
-            'alt':'Alt',
-            'leftctrl':'Left Control',
-            'rightctrl':'Right Control',
-            'ctrl':'Control',
-            'ctrl-alt':'Control+Alt',
-            'leftctrl-leftalt':'Left Control+Left Alt',
-            'rightctrl-rightalt':'Right Control+Right Alt',
-            'leftctrl-leftalt-shift':'Left Control+Left Alt+Shift',
-            'rightctrl-rightalt-shift':'Right Control+Right Alt+Shift',
-            'shift':'Shifted',
-            'shift-alt':'Alt+Shift',
-            'shift-ctrl':'Control+Shift',
-            'shift-ctrl-alt':'Control+Alt+Shift',
-            'leftalt-shift':'Left Alt+Shift',
-            'rightalt-shift':'AltGr (Right Alt)+Shift',
-            'leftctrl-shift':'Left Control+Shift',
-            'rightctrl-shift':'Right Control+Shift'
-          } : null;
-          for(var i in states) {
-            if(!title) {
-              addKeyboard(states[i], platform, toTitleCase(states[i]));
-            } else if(title[states[i]]) {
-              addKeyboard(states[i], platform, title[states[i]]);
-            }
-          }
-        };
-
-        addKeyboards('#osk', 'desktop');
-        addKeyboards('#osk-phone', 'phone');
-        addKeyboards('#osk-tablet', 'tablet');
-      },
-      dataType:'script',
-      cache:true
     });
   })();
 

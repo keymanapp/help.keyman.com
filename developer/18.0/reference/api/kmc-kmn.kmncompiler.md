@@ -13,12 +13,6 @@ export declare class KmnCompiler implements KeymanCompiler, UnicodeSetParser
 ```
 **Implements:** KeymanCompiler, UnicodeSetParser
 
-## Constructors
-
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)()](./kmc-kmn.kmncompiler._constructor_.md) |  | Constructs a new instance of the <code>KmnCompiler</code> class |
-
 ## Methods
 
 |  Method | Modifiers | Description |

@@ -21,6 +21,9 @@ see [What's New](whatsnew) for breaking changes</a>
 [KMManager](KMManager/)
 : The core class for controlling Keyman Engine
 
+[KMKeyboard](KMKeyboard/)
+: Keyman's child class of an Android [WebView](https://developer.android.com/reference/android/webkit/WebView) for a keyboard
+
 [KeyboardEventHandler](KeyboardEventHandler/)
 : Provides keyboard and lexical-model events and methods to notify registered listeners
 

@@ -1,7 +1,7 @@
 ---
 title: &kmw_embedcss
 ---
-  
+
 ## Summary
 
 The **`&kmw_embedcss`** store specifies an external CSS file that should
@@ -31,8 +31,11 @@ dynamically styles keyboards to target devices, so you should take into
 account different devices and styles. Avoid adjusting box models, sizing
 or positioning, as these will not translate between different devices.
 
-A good use for a custom stylesheet is to style a specific key or set of
-keys differently, to differentiate them from the rest of the keyboard.
+A good use for a custom stylesheet is to style a specific key or set of keys
+differently, to differentiate them from the rest of the keyboard.  See [Class
+Names and Identifiers for On-Screen Keyboard and Other KeymanWeb
+Elements](/developer/engine/web/current-version/reference/osk/classes) for
+useful class-name and ID structure data useful for creating such a stylesheet.
 
 ## Examples
 
@@ -57,4 +60,5 @@ The `&kmw_embedcss` store was added in Keyman 9.0.
 
 ## See also
 
--   [`&kmw_embedjs` store](kmw_embedjs)
+- [`&kmw_embedjs` store](kmw_embedjs)
+- [Class Names and Identifiers for On-Screen Keyboard and Other KeymanWeb Elements](/developer/engine/web/current-version/reference/osk/classes)

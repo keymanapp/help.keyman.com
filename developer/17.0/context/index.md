@@ -16,6 +16,8 @@ title: Context Help
 
 [Package Editor](package-editor)
 
+[Add/Edit Language Example dialog](edit-language-example)
+
 [Text Editor](editor)
 
 [New File Dialog](new)

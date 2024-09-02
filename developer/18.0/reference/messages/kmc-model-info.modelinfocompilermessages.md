@@ -13,3 +13,4 @@ title: Compiler Messages Reference for @keymanapp/kmc-model-info
 [KM08007](km08007) | `ERROR_LicenseFileIsDamaged` | License file &lt;param&gt; could not be loaded or decoded\.
 [KM08008](km08008) | `ERROR_LicenseIsNotValid` | An error was encountered parsing license file &lt;param&gt;: &lt;param&gt;\.
 [KM08009](km08009) | `ERROR_NoLicenseFound` | No license for the model was found\. MIT license is required for publication to Keyman lexical\-models repository\.
+[KM0800A](km0800a) | `ERROR_DescriptionIsMissing` | The Info\.Description field in the package &lt;param&gt; is required, but is missing or empty\.

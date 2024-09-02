@@ -117,7 +117,7 @@ The filtering options for Unicode Character Names are:
 | Filter                   | Result                  |
 | `LATIN CAPITAL LETTER A` | Finds all Latin capital A variations         |
 | `LATIN * LETTER A`       | finds all Latin capital and lower case A variations |
-| `LATIN * LETTER [AEIOU]` | finds all all Latin A,E,I,O or U vowel combinations |
+| `LATIN * LETTER [AEIOU]` | finds all Latin A,E,I,O or U vowel combinations |
 | `<Thai`                  | finds the Thai Unicode block        |
 | `>LAO`                   | finds all characters with names starting in "LAO" in the current font  |
 | `YI_`                    | finds all characters with names starting in "YI " - you must use `_` (underscore) and not `( )` space at the end of a search string. <br/> Note that without the `_`, this search also matches YIN_YANG. |

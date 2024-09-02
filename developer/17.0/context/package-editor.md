@@ -26,16 +26,20 @@ The Keyboards tab shows you some status information of keyboards you've added to
 the package. There are also optional font dropdowns and a required "Languages"
 section. The fields on the tab are:
 
-* **Description**
+**Description**
+
 : The keyboard name (`&name` system store).
 
-* **Files**
+**Files**
+
 : This shows the associated keyboard files (.kmx and .js files)
 
-* **Version**
+**Version**
+
 : The keyboard version (`&keyboardversion` system store).
 
-* **Is right-to-left**
+**Is right-to-left**
+
 : Currently, this is only applicable to Android, iOS and Web (that is, .js
   format) keyboards. This reflects the checkbox in the [Details tab](./keyboard-editor#details-fields) of the Keyboard editor.
 
@@ -44,22 +48,26 @@ section. The fields on the tab are:
   * "Keyboard is right-to-left" is checked in the Keyboard editor
   * The compiled .js keyboard is added to the package
 
-* **Keyboard font**
+**Keyboard font**
+
 : When font files are added to the package, this dropdown tells the Keyman apps
   which font to use when rendering the On Screen Keyboard touch keyboard.
   Optional.
 
-* **Display font**
+**Display font**
+
 : When font files are added to the package, this dropdown tells the Keyman apps
   for iOS and Android which font to use in edit fields. It only applies within
   the Keyman app and apps that support this functionality. Optional.
 
-* **Web fonts**
+**Web fonts**
+
 : It is possible now to specify additional font filenames that will be made
   available to KeymanWeb, for example, providing fonts in WOFF or WOFF2 formats.
   [More on web fonts](select-web-fonts)
 
-* **Languages**
+**Languages**
+
 : Because the language information in the .kmn source is deprecated, the
   "Languages" section is required. Each language listed here is a [BCP 47 language tag](../reference/bcp-47). Use the **Add** button to
   bring up the "Select BCP 47 Tag" dialog. When Keyman installs the keyboard
@@ -68,7 +76,8 @@ section. The fields on the tab are:
 
   ![Package Editor - Select BCP 47 Tag dialog](/cdn/dev/img/developer/170/ui/frmPackageEditor_Select_BCP_47_Tag.png)
 
-* **Examples**
+**Examples**
+
 : Examples allow you to provide short keystroke sequences to type sample text
   with your keyboard. This can be the easiest way for a new user to start using
   your keyboard, and is particularly helpful when your keyboard makes use of
@@ -140,7 +149,7 @@ There are two types of package relationships:
 * Related: if the 'Deprecated' check box is not selected, then this the
   relationship information is used to provide links to the related packages on
   the Keyman website. For example, you may create two keyboards for the same
-  language with different keying orders; then it would be appropriate to 
+  language with different keying orders; then it would be appropriate to
   cross-reference them with this field.
 
 ![Package Editor - Edit Related Packages dialog](/cdn/dev/img/developer/170/ui/frmPackageEditor_EditRelatedPackage.png)

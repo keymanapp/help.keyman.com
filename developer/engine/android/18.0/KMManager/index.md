@@ -59,7 +59,7 @@ The KMManager is the core class which provides most of the methods and constants
 [`deregisterLexicalModel()`](deregisterLexicalModel)
 : deregisters the specified lexical model from the LMLayer so it isn't used
 
-`executeHardwareKeystroke()`
+[`executeHardwareKeystroke()`](executeHardwareKeystroke)
 : process the keystroke generated from a physical keyboard
 
 [`getAssociatedLexicalModel()`](getAssociatedLexicalModel)
@@ -119,16 +119,16 @@ The KMManager is the core class which provides most of the methods and constants
 [`getKeyboardTextFontTypeface()`](getKeyboardTextFontTypeface)
 : creates a new typeface from the selected keyboard's text font
 
-`getKMKeyboard()`
+[`getKMKeyboard()`](getKMKeyboard)
 : returns the KMKeyboard depending whether it's an in-app or system keyboard
 
 [`getLatestKeyboardFileVersion()`](getLatestKeyboardFileVersion)
 : returns the specified keyboard's latest file version number
 
-`getLexicalModelInfo()`
-: returns information dictionary of the specified lexical model
+[`getLexicalModelInfo()`](getLexicalModelInfo)
+: returns dictionary information of the specified lexical model
 
-`getLexicalModelsList()`
+[`getLexicalModelsList()`](getLexicalModelsList)
 : returns the array of lexical models list
 
 [`getLanguageCorrectionPreferenceKey()`](getLanguageCorrectionPreferenceKey)
@@ -140,11 +140,20 @@ The KMManager is the core class which provides most of the methods and constants
 [`getMaySendCrashReport()`](getMaySendCrashReport)
 : returns whether Keyman Engine is allowed to send crash reports over the network to sentry.keyman.com
 
+[`getOrientation()`](getOrientation)
+: returns the device's current orientation (Portrait vs Landscape)
+
 [`getSpacebarText()`](getSpacebarText)
 : returns the current text display pattern for the spacebar
 
 [`getVersion()`](getVersion)
 : returns the version number of Keyman Engine
+
+[`getWindowDensity()`](getWindowDensity)
+: returns the density of the window
+
+[`getWindowSize()`](getWindowSize)
+: returns the size of an area the window would occupy
 
 [`hasConnection()`](hasConnection)
 : returns whether the device has active network connection
@@ -167,7 +176,7 @@ The KMManager is the core class which provides most of the methods and constants
 [`keyboardExists()`](keyboardExists)
 : returns whether the specified keyboard exists in keyboards list
 
-`lexicalModelExists()`
+[`lexicalModelExists()`](lexicalModelExists)
 : returns whether the specified lexical model exists in lexical models list
 
 [`onConfigurationChanged()`](onConfigurationChanged)
@@ -203,7 +212,7 @@ The KMManager is the core class which provides most of the methods and constants
 [`setCanAddNewKeyboard()`](setCanAddNewKeyboard)
 : sets whether adding a new keyboard is allowed
 
-`setCanRemoveKeyboard()`
+[`setCanRemoveKeyboard()`](setCanRemoveKeyboard)
 : sets whether removing a keyboard is allowed, like in the keyboard picker menu
 
 [`setDebugMode()`](setDebugMode)

@@ -346,12 +346,12 @@ Keyman Developer's **Tools** menu, with three items:
 : Opens the public URL to your current Keyman Developer Server instance in the
   default browser on your computer.
 
-* **Copy URL to clipboard**
+**Copy URL to clipboard**
 
 : Copies the public URL to the clipboard so you can share it via email, instant
   message, or other medium.
 
-* **Configure...**
+**Configure...**
 
 : Opens the Keyman Developer Server Options dialog box.
 

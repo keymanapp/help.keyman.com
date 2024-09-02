@@ -14,3 +14,4 @@ title: Compiler Messages Reference for @keymanapp/kmc-keyboard-info
 [KM0900A](km0900a) | `ERROR_NoLicenseFound` | No license for the keyboard was found\. MIT license is required for publication to Keyman keyboards repository\.
 [KM0900E](km0900e) | `ERROR_FontFileCannotBeRead` | Font &lt;param&gt; could not be parsed to extract a font family\.
 [KM0900F](km0900f) | `ERROR_FontFileMetaDataIsInvalid` | Font &lt;param&gt; meta data invalid: &lt;param&gt;\.
+[KM09010](km09010) | `ERROR_DescriptionIsMissing` | The Info\.Description field in the package &lt;param&gt; is required, but is missing or empty\.
