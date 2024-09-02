@@ -8,9 +8,7 @@
 
   // Variables used to manage and trigger debugging tests.
   // Simply defining the variable below is enough to trigger debug mode.
-  // Advice:  copy a locally-compiled /web/build/publish/debug folder as
-  // /cdn/dev/local-web, then uncomment the following line.
-  // $kmw_dev_path = cdn("local-web/keymanweb.js");
+  // $kmw_dev_path = 'http://localhost/release/unminified/web';
 
   if(!isset($title)){
     $title = 'Keyman | Type to the world in your language';
@@ -100,12 +98,13 @@
       }
     }
     if(!isset($kmw_dev_path)) {
+      $kmw_version_number = '16.0.147'; // TEMP: work around keymanapp/keyman#11467, roll back to 16.0-stable until fixed
   ?>
       <script src='https://s.keyman.com/kmw/engine/<?=$kmw_version_number?>/keymanweb.js'></script>
   <?php
     } else {
   ?>
-      <script src='<?=$kmw_dev_path?>'></script>
+      <script src='<?=$kmw_dev_path?>/keymanweb.js'></script>
   <?php
     }
   ?>
