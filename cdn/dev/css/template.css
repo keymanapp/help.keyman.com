@@ -1177,12 +1177,10 @@ table.platform {
 #osk-phone,
 #osk-tablet{
 	position: relative;
-	z-index: -2;
 }
 
 #osk .kmw-osk-inner-frame{
 	height: 320px !important;
-	font-size: 2em !important;
   padding: 4px 0 4px 4px;
 }
 
@@ -1190,14 +1188,12 @@ table.platform {
   padding-top: 6px !important;
 	height: 256px !important;
   width: 528px !important;
-	font-size: 1.5em !important;
 }
 
 #osk-tablet .kmw-osk-inner-frame{
   padding-top: 6px !important;
 	width: 726px !important;
   height: 372px !important;
-	font-size: 1.5em !important;
 }
 
 #osk-container,
@@ -1415,7 +1411,6 @@ body[data-device='Unknown'] #osk-tablet-container {
 	}
 	#osk .kmw-osk-inner-frame{
 		height: 280px;
-		font-size: 1.8em !important;
 	}
 	.footer-tab-holder{
 		display: none;
@@ -1568,7 +1563,6 @@ body[data-device='Unknown'] #osk-tablet-container {
 	}
 	#osk .kmw-osk-inner-frame{
 		height: 140px;
-		font-size: 1em !important;
 	}
 	#keymanExample{
 		overflow-x: scroll;
