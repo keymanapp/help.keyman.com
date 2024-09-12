@@ -39,7 +39,7 @@
   <dt>Which languages are not supported?</dt>
 
   <dd>KeymanWeb supports any language.  Keyboards are available for over 600 languages right now.
-  The full list of keyboards available today is online at <a href='http://keyman.com/developer/web/keyboards.php'>keyman.com</a>.
+  The full list of keyboards available today is online at <a href='https://keyman.com/developer/keymanweb/keyboards'>keyman.com</a>.
   These are also all available on the <a href='http://keymanweb.com'>KeymanWeb Live site</a>.
   If you require another language, please <a href='/contact/'>contact us</a> for information.</dd>
 
