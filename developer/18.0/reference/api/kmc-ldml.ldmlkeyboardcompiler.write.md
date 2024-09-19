@@ -6,7 +6,7 @@
 
 Write artifacts from a successful compile to disk, via callbacks methods. The artifacts written may include:
 
-- .kmx file - binary keyboard used by Keyman on desktop platforms - .kvk file - binary on screen keyboard used by Keyman on desktop platforms - .js file - Javascript keyboard for web and touch platforms
+- .kmx file - binary keyboard used by Keyman on desktop platforms - .kvk file - binary on screen keyboard used by Keyman on desktop platforms
 
 **Signature:**
 
