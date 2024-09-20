@@ -11,3 +11,4 @@ title: Compiler Messages Reference for @keymanapp/common-types
 [KM01005](km01005) | `ERROR_ImportWrongRoot` | Invalid import file &lt;param&gt;: expected &lt;param&gt; as root element\.
 [KM01006](km01006) | `ERROR_ImportMergeFail` | Problem importing &lt;param&gt;: not sure how to handle non\-array &lt;param&gt;\.&lt;param&gt;
 [KM01007](km01007) | `ERROR_TestDataUnexpectedArray` | Problem reading test data: expected single &lt;param&gt; element, found multiple
+[KM01008](km01008) | `ERROR_InvalidXml` | The XML file could not be read: 

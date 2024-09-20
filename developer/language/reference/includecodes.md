@@ -23,7 +23,7 @@ store(&includecodes) "filename"
 The `&includecodes` store allows you to reference an external file for
 [named character constants](../guide/constants). Keyman Developer
 includes unicodedata.txt, which lists all the named Unicode characters -
-in version 9.0, it includes all the Unicode 8.0 characters.
+as of version 17.0, it includes all the Unicode 15.1 characters.
 
 The file format is based on unicodedata.txt. Fields are delimited by
 semicolon (;) and only the first two fields are used by Keyman
@@ -79,4 +79,4 @@ The `&includecodes` store can be used in keyboards for all platforms.
 
 ## Version history
 
-The &includecodes statement was introduced in Keyman 5.0.
+The `&includecodes` statement was introduced in Keyman 5.0.
