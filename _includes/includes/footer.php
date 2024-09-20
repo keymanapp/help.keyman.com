@@ -1,6 +1,6 @@
 <?php
 
-  include 'image-randomizer.php';
+  use Keyman\Site\Common\ImageRandomizer;
   require_once("com.keyman.help.editpage.inc.php");
 
   function getPageUrlForEditLink() {
@@ -51,7 +51,7 @@
         </div>
         <div class="footer-third sil-logo">
             <br>
-            <a href="https://www.keyman.com/about/"><img id="sil-logo" src="<?php echo randomizer("img/sil-logos-2024/") ?>" width="50%" alt='SIL' /></a>
+            <a href="https://www.keyman.com/about/"><img id="sil-logo" src="<?php echo ImageRandomizer::randomizer(); ?>" width="50%" alt='SIL' /></a>
             <p>Created by <a href="https://www.keyman.com/about/">SIL Global</a></p>
         </div>
     </div>
