@@ -16,8 +16,7 @@ tool:
 
 1.  Install PrimerPrep (info at
     https://software.sil.org/primerprep, download from https://software.sil.org/primerprep/downloads)
-2.  Run PrimerPrep (note that on the first run it often takes a couple
-    of minutes; subsequent starts are faster)
+2.  Run PrimerPrep (note that the first run might be slow; subsequent starts are faster)
 3.  Click on the Add Text(s) button; select one or more plain text
     (UTF-8) files in the language to analyze
 4.  The word list with frequency counts appears in the pane to the right
