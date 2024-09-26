@@ -1,28 +1,14 @@
-<?php
+---
+title: Manual Control - Custom Interface
+---
 
-require_once('includes/template.php');
-require_once('includes/__iframeheader.php');
+In this example, the web page designer has opted for their own user interface instead of the KeymanWeb interface. The keyboards in the selector are populated from the KeymanWeb list of keyboards. Please click [this link](__full-manual-control) to open the test page.
 
-head([
-  'title' => "Manual Control - Custom Interface"
-]);
+## Code Walkthrough
 
-require_once('includes/__docheader.php');
-?>
+Include the following script in the HEAD of your page:
 
-<h1>Manual Language Control</h1>
-
-<p>In this example, the web page designer has opted for their own user interface instead of the KeymanWeb
-interface.  The keyboards in the selector are populated from the KeymanWeb list of keyboards.</p>
-
-<?php embed_with_iframe("__full-manual-control.php", 250); ?>
-
-<h2>Code Walkthrough</h2>
-
-<p>Include the following script in the HEAD of your page:</p>
-
-<?php
-  echo codebox(<<<END
+```js
 <script>
   var KWControl = null;
 
@@ -59,11 +45,11 @@ interface.  The keyboards in the selector are populated from the KeymanWeb list 
     document.f.multilingual.focus();
   }
 </script>
-END
-  );
-  echo "<p>Also include the following HTML code:</p>";
+```
 
-  echo codebox(<<<END
+Also include the following HTML code:
+
+```html
 <head>
     <!-- Load the KeymanWeb engine -->
     <script src="keymanweb.js" type="text/javascript"></script>
@@ -74,29 +60,23 @@ END
 
 <!-- When the page has finished loading, populate the keyboard selector, see above -->
 <body onload="SetupDocument()">
-END
-  );
-?>
+```
 
-<ul>
-  <li>File: <a href="js/unified_loader.js">unified_loader.js</a></li>
-</ul>
+- File: [unified_loader.js](js/unified_loader.js)
 
-<?php
+And finally, include the keyboard SELECT and the clickable help img:
 
-  echo "<p>And finally, include the keyboard SELECT and the clickable help img:</p>";
-
-  echo codebox(<<<END
+```html
 <!-- Display the KWControl selector with different keyboards listed -->
 <p>Keyboard: <select id='KWControl' onchange='KWControlChange()'><option value=''>English</option></select>
-END
-  );
-?>
+```
 
-<p>On programmatically setting the keyboard:  <a href="../../reference/core/setActiveKeyboard"><code><?="keyman.setActiveKeyboard()"?></code></a>.</p>
-<p>On getting KeymanWeb's managed list of keyboards:
-  <a href="../../reference/core/getKeyboards"><code><?="keyman.getKeyboards()"?></code></a>.</p>
+On programmatically setting the keyboard:
+- [`keyman.setActiveKeyboard()`](../../reference/core/setActiveKeyboard).
 
-<hr>
+On getting KeymanWeb's managed list of keyboards:
+- [`keyman.getKeyboards()`](../../reference/core/getKeyboards).
 
-<p><a href='control-by-control'>On to Control by Control Example</a></p>
+------------------------------------------------------------------------
+
+[On to Control by Control Example](control-by-control)
