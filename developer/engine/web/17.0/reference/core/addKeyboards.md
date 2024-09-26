@@ -35,8 +35,7 @@ The keyboard spec can be a string or an object. Multiple keyboard specs can be
 specified in a single call, which can reduce the round-trip cost of multiple
 calls to Keyman Cloud servers (when using Keyman Cloud).
 
-For general information and example uses of this method, please see the [Adding
-Keyboards](../../guide/adding-keyboards.php) page from the guide section.
+For general information and example uses of this method, please see the [Adding Keyboards](../../guide/adding-keyboards) page from the guide section.
 
 ### Using a `string`
 
