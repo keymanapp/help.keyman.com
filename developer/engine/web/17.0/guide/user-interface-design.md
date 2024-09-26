@@ -1,19 +1,12 @@
-<?php
-  require_once('includes/template.php');
+---
+title: User Interface Design
+---
 
-  // Required
-  head([
-    'title' =>'User Interface Design',
-    'css' => ['template.css'],
-    'showMenu' => true
-  ]);
-?>
-
-<h1>User Interface Design</h1>
-<div class='body_text'>
-
-<p style='margin-top: 16px'>
-This page displays all the different KeymanWeb user interface options available for non-mobile consumption.  Use whichever one best complements your website.  Depending on the number of keyboards you are using and the way your website is designed, the various interfaces will be more or less suitable.</p>
+This page displays all the different KeymanWeb user interface options
+available for non-mobile consumption. Use whichever one best complements
+your website. Depending on the number of keyboards you are using and the
+way your website is designed, the various interfaces will be more or
+less suitable.
 
 <table border=0 cellpadding=12>
   <tr>
@@ -108,6 +101,3 @@ This page displays all the different KeymanWeb user interface options available 
   </tr>
 
 </table>
-
-
-</div>

@@ -36,8 +36,7 @@ calls to Keyman Cloud servers (when using Keyman Cloud).
 
 The first call to `addKeyboardsForLanguage()` makes an additional call to the Keyman API to load the current list of keyboard/language associations. This determines the default keyboards that are added for the language.
 
-For general information and example uses of this method, please see the [Adding
-Keyboards](../../guide/adding-keyboards.php) page from the guide section.
+For general information and example uses of this method, please see the [Adding Keyboards](../../guide/adding-keyboards) page from the guide section.
 
 ### Using a `string`
 
