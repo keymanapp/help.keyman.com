@@ -1,5 +1,5 @@
 ---
-title: Manual Language Control
+title: Manual Control - Custom Interface
 ---
 
 In this example, the web page designer has opted for their own user interface instead of the KeymanWeb interface. The keyboards in the selector are populated from the KeymanWeb list of keyboards. Please click [this link](__full-manual-control) to open the test page.

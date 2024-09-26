@@ -1,5 +1,5 @@
 ---
-title: Manual On-Screen Keyboard Control
+title: Manual Mode Example
 ---
 
 In this example, the web page designer specifies when KeymanWeb's on-screen keyboard may be displayed on non-mobile devices. They have also specified that the LaoKeys keyboard should be activated by default. This example continues to use the KeymanWeb default interface. Please click [this link](__manual-control) to open the test page.

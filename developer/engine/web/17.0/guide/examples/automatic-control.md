@@ -1,5 +1,5 @@
 ---
-title: Automatic Linking
+title: Automatic Mode Example
 ---
 
 This page shows how to include a local keyboard from an arbitrary location in your website's file structure.
