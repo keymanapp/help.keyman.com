@@ -11,5 +11,6 @@ if [[ ! $1 =~ "debug" ]]; then
   php -d include_path=/var/www/html/_includes:. cdnrefresh.php
   cd ..
 else
-  echo "Skip Generating CDN"
+  echo "Skip Generating CDN and clean CDN cache"
+  rm -rf ../cdn/deploy
 fi
