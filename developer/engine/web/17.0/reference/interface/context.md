@@ -56,5 +56,5 @@ This operates by first replacing the original context `"abc"` with the requested
 
 ## See also
 
-- [`keyman.interface.contextMatch()`](contextMatch),
+- [`keyman.interface.contextMatch()`](contextMatch)
 - [`keyman.interface.output()`](output)
