@@ -27,7 +27,7 @@ keyman.util.attachDOMEvent(Pelem, eventName, handler, useCapture);
 :   The event handler being attached.
 
 `useCapture`
-:   Type: `boolean` <span class="optional">optional</span>
+:   Type: `boolean` *optional*
 :   Set this to `true` if the event should be captured in the bubbling phase; otherwise, use `false` or leave this parameter empty.
 
 ### Return Value
