@@ -2,8 +2,7 @@
 title: On-Screen Keyboard Module
 ---
 
-The On-Screen Keyboard module is exposed to the developer as
-`window.keyman.osk`.
+The On-Screen Keyboard module is exposed to the developer as `window.keyman.osk`.
 
 [`addEventListener` Function](addEventListener)
 :   Adds an event listener for user-handling of On-Screen keyboard events.
