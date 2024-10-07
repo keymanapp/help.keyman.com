@@ -36,7 +36,7 @@ clicked again or the physical Shift key is pressed. Although text entry
 using this method can be less efficient, it can be useful when a
 non-English physical keyboard is attached to the computer in use.
 
-### **Moving and Hiding the On-Screen Keyboard**
+### Moving and Hiding the On-Screen Keyboard
 
 The On-Screen Keyboard can be moved to any area of the website which is
 being displayed. It can be placed in a more convenient position for
@@ -62,7 +62,7 @@ through either a menu item or a button) depending on which User
 Interface is configured on your website. Please refer to the specific
 [User Interface pages](../ui) for more details.
 
-### **Resizing the On-Screen Keyboard**
+### Resizing the On-Screen Keyboard
 
 You can also change the size of the On-Screen Keyboard. For example, you
 may choose to make the On-Screen Keyboard smaller, instead of moving it,
