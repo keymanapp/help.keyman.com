@@ -38,7 +38,7 @@
 
 <h3>For More Information...</h3>
 <ul style='margin-top: 4px'>
-  <li><a href="../faq.php">Frequently Asked Questions</a></li>
+  <li><a href="../faq">Frequently Asked Questions</a></li>
   <li><a href='http://www.tavultesoft.com/forums/'>Keyman Engine for Web Forums</a></li>
   <li><a href='history.php'>Keyman Engine for Web Version History</a></li>
 </ul>
