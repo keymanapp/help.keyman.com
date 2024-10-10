@@ -5,7 +5,12 @@ rm -f keyboard/index.cache
 cd keyboard
 php -d include_path=/var/www/html/_includes:. _build_cache.php
 
-echo "---- Generating CDN ---"
-cd ../cdn
-php -d include_path=/var/www/html/_includes:. cdnrefresh.php
-cd ..
+if [[ ! $1 =~ "debug" ]]; then
+  echo "---- Generating CDN ---"
+  cd ../cdn
+  php -d include_path=/var/www/html/_includes:. cdnrefresh.php
+  cd ..
+else
+  echo "Skip Generating CDN and clean CDN cache"
+  rm -rf ../cdn/deploy
+fi
