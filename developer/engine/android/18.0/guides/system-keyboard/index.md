@@ -22,7 +22,7 @@ keyboard. Without any further modifications, the app should run and
 you'll be able to configure your device to use your app as the system
 keyboard.
 
-[![Emulator](/cdn/deploy/img/engine/android/14.0/guides/system-keyboard/emulator-800wi.19fea7a7015355ed2ca05bfd2de1dc3b.png "Emulator")](/cdn/deploy/img/engine/android/14.0/guides/system-keyboard/emulator-800wi.19fea7a7015355ed2ca05bfd2de1dc3b.png)
+[<img src="/cdn/dev/img/engine/android/14.0/guides/system-keyboard/emulator-800wi.png" title="Emulator" alt="Emulator">](/cdn/dev/img/engine/android/14.0/guides/system-keyboard/emulator-800wi.png)
 
 ### 3. Extending the app
 
@@ -32,7 +32,8 @@ one; again, follow the instructions from Part 1 to make this change.
 You can also customise the look and feel of the on screen keyboard by
 including a custom CSS file in your keyboard through Keyman Developer.
 
-[![AddEmbeddedCSS](/cdn/deploy/img/engine/android/10.0/guides/system-keyboard/add-embedded-css-800wi.b146f1e3835ae098e8b3bb0c8fea7db4.png "AddEmbeddedCSS")](/cdn/deploy/img/engine/android/10.0/guides/system-keyboard/add-embedded-css.76a8852248e2e2d0c3f037a714f98daa.png)
+[<img src="/cdn/dev/img/engine/android/10.0/guides/system-keyboard/add-embedded-css.png" title="AddEmbeddedCSS" alt="AddEmbeddedCSS">](/cdn/dev/img/engine/android/10.0/guides/system-keyboard/add-embedded-css.png)
+
 
 The CSS rules required to style your keyboard are beyond the scope of
 this post, but the **kmwosk.css** file included in the Keyman Developer
@@ -52,7 +53,8 @@ the Android Input Method Settings and Input Method Menu, as a pointer to
 the two configuration steps that your users will need to undertake in
 order to start using your keyboard.
 
-[![MainActivityLayout](/cdn/deploy/img/engine/android/14.0/guides/system-keyboard/main-activity-layout-800wi.4885d471ff1fcac997de42bffa5b6e3c.png "MainActivityLayout")](/cdn/deploy/img/engine/android/14.0/guides/system-keyboard/main-activity-layout-800wi.4885d471ff1fcac997de42bffa5b6e3c.png)
+[<img src="/cdn/dev/img/engine/android/14.0/guides/system-keyboard/main-activity-layout-800wi.png" title="MainActivityLayout" alt="MainActivityLayout">](/cdn/dev/img/engine/android/14.0/guides/system-keyboard/main-activity-layout-800wi.png)
+
 
 You will probably want to make that a lot prettier, and include more
 detailed instructions!
