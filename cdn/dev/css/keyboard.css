@@ -53,7 +53,7 @@
 }
 
 #osk .desktop.kmw-osk-inner-frame .kmw-key-square {
-  
+
   border-bottom: solid 2px rgb(204,204,204);
 }
 
@@ -93,3 +93,7 @@ samp {
   margin-top: 20px;
 }
 
+#osk .kmw-key-square {
+  /* #1548: z-index interference */
+  z-index: inherit;
+}
