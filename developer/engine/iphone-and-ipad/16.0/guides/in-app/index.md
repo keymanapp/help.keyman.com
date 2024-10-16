@@ -13,7 +13,7 @@ If you are not familiar with iOS development, you will find the ["Start Developi
 ### 1. Install Free Tools
 
 1.  Install [Keyman Developer 10 or later](https://keyman.com/developer/) on a Windows machine.
-    -   Alternatively, it is possible to compile keyboards with a command-line tool under WINE, but we do not yet support a GUI interface for keyboard development on macOS.
+    -   Alternatively, it is possible to compile keyboards with the command-line tool [kmc](https://help.keyman.com/developer/current-version/reference/kmc/cli/reference), but we do not yet support a GUI interface for keyboard development on macOS.
 2.  Install
     [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12).
 
