@@ -9,7 +9,7 @@ The **LanguageResource** protocol and the types that implement it
 lexical models installed within Keyman Engine.
 
 Generally speaking, this is a lower-level type than
-[`LanguageResourceFullID`](LanguageResourceFullID.php), requiring extra metadata
+[`LanguageResourceFullID`](LanguageResourceFullID), requiring extra metadata
 only discovered during installation from a resource's package and only used
 internally within Keyman Engine.
 
