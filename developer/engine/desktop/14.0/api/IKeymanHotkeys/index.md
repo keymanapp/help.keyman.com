@@ -28,7 +28,6 @@ Engine.
 [`Apply()`](Apply)
 :   Applies changes to the hotkeys in the collection to Keyman Engine.
 
-<!-- -->
 
 [`Reset()`](Reset)
 :   Resets all hotkeys in the collection to empty.
