@@ -10,15 +10,9 @@ RewriteBase /
 
 # Custom error messages (need to pass the original request)
 ErrorDocument 404 /_includes/errors/404
-ErrorDocument 400 /_includes/errors/400
-
 
 # Handle IIS bug which created links to /DEVELOPER instead of /developer
 RedirectMatch "/DEVELOPER(.*)" "/developer$1"
-
-# Handles UPPERCASE in the URL
-RewriteCond "%{DOCUMENT_ROOT}/developer/$1" [A-Z]
-RewriteRule "^developer/?(.*)$" "/${lowercase:$1}" [R=301,L]
 
 #
 # Keyboard redirects -- must go before current-version
