@@ -14,7 +14,7 @@ versions 14.0 and up.
 
 `IDispatch`  
 
-> **`IKeymanObject`**  
+> [`IKeymanObject`](IKeymanObject)  
 >
 > > [`IKeyman`](IKeyman)  
 > > [`IKeymanCollection`](IKeymanCollection)  
