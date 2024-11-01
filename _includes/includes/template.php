@@ -47,9 +47,12 @@
     }
 
     if(isset($args['title'])){
-        $title = $args['title'];
+      $title = $args['title'];
     }else{
-        $title = 'Keyman Help | Type to the world in your language';
+      $title = 'Keyman Help | Type to the world in your language';
+    }
+    if(isset($args['language'])){
+      $language = $args['language'];
     }
     if(isset($args['css'])){
       $css = array();
