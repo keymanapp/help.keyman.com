@@ -30,7 +30,7 @@ On Windows host machines, do one of these two options:
 1. Run `./build.sh build`.
 
 #### Start the Docker container
-1. Run `./build.sh start`.
+1. Run `./build.sh start --debug`.
 
 After this, you can access the help.keyman site at http://localhost:8055
 
