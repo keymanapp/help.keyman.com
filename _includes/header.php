@@ -12,6 +12,7 @@
     $canonicalLink = "/keyboard/" . $folders[2] . "/current-version";
     head([
       'title' =>$pagetitle,
+      'language' => isset($language) ? $language : '',
       'pagename' => isset($pagename) ? $pagename : $pagetitle,
       'css' => ['template.css','keyboard.css','keys.css'],
       'js' => ['kbd-docs.js'],
@@ -22,6 +23,7 @@
   }else{
     head([
       'title' =>$pagetitle,
+      'language' => isset($language) ? $language : '',
       'pagename' => isset($pagename) ? $pagename : $pagetitle,
       'css' => ['template.css','keyboard.css','keys.css'],
       'showMenu' => true,
