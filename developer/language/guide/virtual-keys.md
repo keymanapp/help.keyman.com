@@ -34,9 +34,7 @@ different ways:
 With a _character code_, in a _positional_ keyboard.
 
 : The key definition references the value on the key cap of a US English
-  hardware keyboard. Caps Lock and Shift are accounted for (see
-  [issue #5460](https://github.com/keymanapp/keyman/issues/5460#issuecomment-966602098)
-  for how to use this correctly with KeymanWeb, using [`&CasedKeys`](#cased-keys)).
+  hardware keyboard. Caps Lock and Shift are accounted for.
 
     ```
     c matches NCAPS SHIFT C01 (aka NCAPS SHIFT K_A on US keyboard)

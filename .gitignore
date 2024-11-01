@@ -11,5 +11,8 @@ resources/bootstrap.inc.sh
 resources/.bootstrap-version
 _common/
 
+# State files
+_control/debug
+
 # Cache of keyboard metadata, deleted on site rebuild
 keyboard/index.cache
