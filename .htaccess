@@ -58,8 +58,8 @@ RewriteRule "^keyboard/(?!redir.php)([^/?]+)/([^/?]+)(/)?$" "keyboard/redir.php?
 # /products first
 RedirectMatch "/products/(android|iphone-and-ipad|linux|mac|web|windows)/(?!latest-version|current-version|version-history|\d+\.\d+)(.*)" "/products/$1/current-version/$2"
 
-# /developer/engine/ for Android and iOS
-RedirectMatch "/developer/engine/(android|iphone-and-ipad)/(?!latest-version|current-version|\d+\.\d+)(.*)" "/developer/engine/$1/current-version/$2"
+# /developer/engine/ for Android, iOS, Windows
+RedirectMatch "/developer/engine/(android|iphone-and-ipad|windows)/(?!latest-version|current-version|\d+\.\d+)(.*)" "/developer/engine/$1/current-version/$2"
 
 # /developer/engine/web
 RedirectMatch "/developer/engine/web/(?!latest-version|faq|history|current-version|\d+\.\d+)(.*)" "/developer/engine/web/current-version/$1"
