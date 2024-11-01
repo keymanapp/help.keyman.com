@@ -2,9 +2,6 @@
 title: Keyman Developer Reference
 ---
 
-<!--
-TODO: seed 18.0 documentation
-
 * [Keyman keyboard language guide and reference](/developer/language)
 * [Command line compiler - kmc](kmc)
 * [Compiler messages](messages)
@@ -14,4 +11,3 @@ TODO: seed 18.0 documentation
 * [Tools](tools)
 * [Custom editor themes](editor-themes)
 * [User settings](user-settings)
--->

@@ -138,7 +138,7 @@ You have to consider these factors if you want to follow our standard when devel
 
 -   Folder Structure
 
-    It is ideal to start with a new folder. If you are looking to publish the keyboard, then we suggest using the folder structure provided [here](../advanced).
+    It is ideal to start with a new folder. If you are looking to publish the keyboard, then we suggest using the folder structure provided [here](/developer/current-version/reference/file-layout).
 
 ## Get Involved
 - [Distribute your keyboard to Keyman](../#toc-get-involved)

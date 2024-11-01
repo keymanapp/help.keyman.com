@@ -137,6 +137,9 @@ The KMManager is the core class which provides most of the methods and constants
 [`getLanguagePredictionPreferenceKey()`](getLanguagePredictionPreferenceKey)
 : returns a String to use as a shared preference key to store whether the LMLayer should enable suggestions for a given language.
 
+[`getLongpressDelay()`](getLongpressDelay)
+: returns from stored preference the number of milliseconds to trigger a longpress gesture
+
 [`getMaySendCrashReport()`](getMaySendCrashReport)
 : returns whether Keyman Engine is allowed to send crash reports over the network to sentry.keyman.com
 
@@ -209,6 +212,9 @@ The KMManager is the core class which provides most of the methods and constants
 [`removeKeyboardEventListener()`](removeKeyboardEventListener)
 : removes the specified listener from the list of keyboard event listeners
 
+[`sendOptionsToKeyboard()`](sendOptionsToKeyboard)
+: sends options like longpress delay to the KeymanWeb keyboard
+
 [`setCanAddNewKeyboard()`](setCanAddNewKeyboard)
 : sets whether adding a new keyboard is allowed
 
@@ -241,6 +247,9 @@ The KMManager is the core class which provides most of the methods and constants
 
 ~~`setKeymanLicense()`~~ `(Deprecated)`
 : sets the developer license/key pair to unlock Keyman Engine
+
+[`setLongpressDelay()`](setLongpressDelay)
+: stores the longpress delay in milliseconds as a preference.
 
 [`setMaySendCrashReport()`](setMaySendCrashReport)
 : sets whether Keyman Engine can send crash reports over the network to sentry.keyman.com

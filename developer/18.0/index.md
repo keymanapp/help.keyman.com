@@ -6,13 +6,9 @@ Need help using Keyman Developer to create your keyboard layouts? You'll
 find everything you need here, including product documentation, guides
 and tutorials, and full reference information.
 
-<!--
-
-TODO: seed rest of 18.0 documentation
-
 ## Guides and Tutorials
 -   [What is Keyman Developer?](guides/intro)
--   [What's new in 17.0](whats-new)
+-   [What's new in 18.0](whats-new)
 -   [Developing Keyman keyboard layouts](guides/develop)
 -   [Testing Keyman keyboards](guides/test)
 -   [Distributing Keyman keyboards](guides/distribute)
@@ -27,8 +23,6 @@ TODO: seed rest of 18.0 documentation
 -   [Keyman Developer user interface](context/)
 -   [Additional Notes](main/)
 -   [Version History](../version-history/)
-
--->
 
 ## Ask for Help
 -   [Ask other users in the SIL Keyman Community](https://community.software.sil.org/c/keyman)

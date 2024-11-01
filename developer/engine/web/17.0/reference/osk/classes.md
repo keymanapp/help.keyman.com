@@ -91,9 +91,6 @@ any longpress keys.
 div.kmw-key.kmw-key-default:not([id^='popup-'])
 ```
 
-
-
-
 ### Element identifiers and class names for desktop on-screen keyboard elements:
 
 |  Class name or id       | Desktop OSK element                             |
