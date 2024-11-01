@@ -41,7 +41,7 @@
     }else{
       $title = 'Keyman | Type to the world in your language';
     }
-    if(isset($args['language']) && !empty($args['language'])){
+    if(!empty($args['language'])){
       $language = $args['language'];
     }
     if(isset($args['css'])){

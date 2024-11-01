@@ -31,7 +31,7 @@
 ?>
 <!DOCTYPE html>
 <?php
-  if(!isset($language) || empty($language)) {
+  if(empty($language)) {
     echo "<html>\n";
   } else {
     echo "<html lang='" . $language . "'>\n";
