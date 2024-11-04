@@ -30,8 +30,13 @@
   }
 ?>
 <!DOCTYPE html>
-
-<html>
+<?php
+  if(empty($language)) {
+    echo "<html>\n";
+  } else {
+    echo "<html lang='" . $language . "'>\n";
+  }
+?>
 <head>
   <meta charset="utf-8">
   <?php

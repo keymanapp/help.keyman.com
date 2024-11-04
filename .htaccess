@@ -1,4 +1,13 @@
 
+php_value display_errors off
+php_value display_startup_errors off
+php_value include_path ".:/var/www/html/_includes/"
+
+<IfFile /var/www/html/_control/debug>
+  php_value display_startup_errors on
+  php_value display_errors stderr
+</IfFile>
+
 # We turn off automatic addition of slashes for directories because it
 # interferes with the file extension removal for .php files. At the bottom of
 # this file, we have a redirect rule to mimic the same behaviour, _after_ the
