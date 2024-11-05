@@ -14,3 +14,5 @@ title: Compiler Messages Reference for @keymanapp/kmc-model
 [KM03008](km03008) | `ERROR_UTF16BEUnsupported` | UTF\-16BE is unsupported
 [KM03009](km03009) | `ERROR_UnknownWordBreaker` | Unknown word breaker: &lt;param&gt;
 [KM0300A](km0300a) | `ERROR_UnsupportedScriptOverride` | Unsupported script override: &lt;param&gt;
+[KM0300B](km0300b) | `ERROR_ModelFileNotFound` | Lexical model source file &lt;param&gt; was not found
+[KM0300C](km0300c) | `ERROR_WordlistFileNotFound` | Wordlist file &lt;param&gt; was not found
