@@ -1,0 +1,12 @@
+
+# Redirect legacy core/web and core/desktop paths to current locations
+RedirectMatch "web(\/)?(.*)" "/developer/engine/web/$2"
+RedirectMatch "desktop\/([0-9.]+)(\/)?(.*)" "/developer/core/$1/$3"
+
+
+
+# Desktop engine content hasn't changed between 11.0 and 13.0 -> 11.0
+RedirectMatch "(12|13)\.0(.*)" "/developer/core/11.0$2"
+
+# Redirect unversioned paths to current-version/ path
+RedirectMatch "/developer/core/(?!current-version|\d+\.\d+)(.*)" "/developer/core/current-version/$2"
