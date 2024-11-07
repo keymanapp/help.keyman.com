@@ -29,4 +29,4 @@ The following script illustrate the use of `getLexicalModelsList()`:
 ```
 
 ## See also
-* [getLexicalModelInfo](getLexicalModelInfo())
+* [getLexicalModelInfo()](getLexicalModelInfo)
