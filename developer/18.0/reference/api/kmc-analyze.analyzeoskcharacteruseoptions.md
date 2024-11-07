@@ -17,6 +17,7 @@ export interface AnalyzeOskCharacterUseOptions
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [includeCounts?](./kmc-analyze.analyzeoskcharacteruseoptions.includecounts.md) |  | boolean | _(Optional)_ If true, reports number of references to each character found in each source file |
+|  [mergeMapFile?](./kmc-analyze.analyzeoskcharacteruseoptions.mergemapfile.md) |  | string | _(Optional)_ Filename of an existing mapping file to merge the results into |
 |  [puaBase?](./kmc-analyze.analyzeoskcharacteruseoptions.puabase.md) |  | number | _(Optional)_ First character to use in PUA for remapping with &amp;displayMap, defaults to U+F100 |
 |  [stripDottedCircle?](./kmc-analyze.analyzeoskcharacteruseoptions.stripdottedcircle.md) |  | boolean | _(Optional)_ If true, strips U+25CC from the key cap before further analysis |
 
