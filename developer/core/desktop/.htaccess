@@ -1,6 +1,0 @@
-
-# Desktop engine content hasn't changed between 11.0 and 13.0 -> 11.0 
-RedirectMatch "(12|13)\.0(.*)" "/developer/core/desktop/11.0$2"
-
-# Redirect unversioned paths to current-version/ path
-RedirectMatch "/developer/core/desktop/(?!current-version|\d+\.\d+)(.*)" "/developer/core/desktop/current-version/$2"
