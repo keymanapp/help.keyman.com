@@ -12,3 +12,5 @@ title: Compiler Messages Reference
 * [kmc-kmn.KmwCompilerMessages](kmc-kmn.kmwcompilermessages)
 * [kmc-model-info.ModelInfoCompilerMessages](kmc-model-info.modelinfocompilermessages)
 * [kmc-keyboard-info.KeyboardInfoCompilerMessages](kmc-keyboard-info.keyboardinfocompilermessages)
+* [kmc-generate.GeneratorMessages](kmc-generate.generatormessages)
+* [kmc-copy.CopierMessages](kmc-copy.copiermessages)

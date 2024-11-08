@@ -35,3 +35,6 @@ title: Compiler Messages Reference for @keymanapp/kmc
 [KM0501D](km0501d) | `ERROR_OutputPathMustBeSpecifiedForMarkdownFormat` | Output path must be specified with \-o for markdown output format
 [KM0501E](km0501e) | `ERROR_OutputPathMustExistAndBeADirectory` | Output path &lt;param&gt; must exist and must be a folder
 [KM0501F](km0501f) | `ERROR_MessageNamespaceNameNotFound` | Invalid parameter: \-\-message &lt;param&gt; does not have a recognized namespace
+[KM05020](km05020) | `ERROR_GenerateRequiresId` | The generate command requires a single 'id' parameter
+[KM05021](km05021) | `ERROR_CopyRequiresSource` | The copy command requires a single 'source' parameter
+[KM05022](km05022) | `ERROR_CopyRequiresOutPath` | The copy command requires the \-\-out\-path, \-o parameter
