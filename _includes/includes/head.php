@@ -121,4 +121,5 @@
     }
     if(isset($pagestyle)) echo "<style>$pagestyle</style>";
   ?>
+    <script type='text/javascript' src="<?php echo cdn('js/videoloader.js') ?>"></script>
 </head>

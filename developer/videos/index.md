@@ -10,7 +10,11 @@ These videos give a walkthrough on some improvements to Keyman Developer.
 
 * [Character Map + Touch Layout Editor integration improvements](https://www.youtube.com/watch?v=qoLpuah72kw) (2:15)
 
+    <img id="keymanThumbnails" data-video="https://www.youtube.com/embed/qoLpuah72kw" src="https://img.youtube.com/vi/qoLpuah72kw/maxresdefault.jpg" width="600px">
+
 ### Keyman Developer 14
+
+<iframe width="600" height="315" src="https://www.youtube.com/embed/qoLpuah72kw" title="Keyman Developer 15 feature - Character Map + Touch Layout Editor integration improvements" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 These videos are part of the Keyman 14 Launch Event
 
