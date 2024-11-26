@@ -205,7 +205,7 @@
             <article>
       END;
     if(!empty($pagename)){
-      $html.='<h2 class="red underline">'.$pagename.'</h2>';
+      $html.='<h1 class="red underline">'.$pagename.'</h1>';
     }
 
     echo $html;

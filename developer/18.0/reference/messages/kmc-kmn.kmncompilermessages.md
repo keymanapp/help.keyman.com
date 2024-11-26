@@ -85,7 +85,7 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM02057](km02057) | `ERROR_VirtualCharacterKeysNotSupportedInKeymanWeb` | Virtual character keys not currently supported in KeymanWeb
 [KM02058](km02058) | `ERROR_VirtualKeysNotValidForMnemonicLayouts` | Virtual keys are not valid for mnemonic layouts
 [KM02059](km02059) | `ERROR_InvalidTouchLayoutFile` | Touch layout file &lt;param&gt; is not valid
-[KM0205A](km0205a) | `ERROR_TouchLayoutInvalidIdentifier` | Key "&lt;param&gt;" on "&lt;param&gt;", layer "&lt;param&gt;" has an invalid identifier\.
+[KM0205A](km0205a) | `ERROR_TouchLayoutInvalidIdentifier` | Key "&lt;param&gt;" on "&lt;param&gt;", layer "&lt;param&gt;" \(&lt;param&gt;\) has an invalid identifier\.
 [KM0205B](km0205b) | `ERROR_InvalidKeyCode` | Invalid key identifier "&lt;param&gt;"
 [KM0205C](km0205c) | `ERROR_90FeatureOnlyLayoutFile` | Touch layout file reference requires store\(version\) '9\.0' or higher
 [KM0205D](km0205d) | `ERROR_90FeatureOnlyKeyboardVersion` | KeyboardVersion system store requires store\(version\) '9\.0' or higher
@@ -136,13 +136,13 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM0208E](km0208e) | `WARN_StoreAlreadyUsedAsStoreOrCall` | Store already used as a normal store or in a call statement and should not be used as an option
 [KM0208F](km0208f) | `WARN_StoreAlreadyUsedAsStoreOrOption` | Store already used as a normal store or as an option and should not be used in a call statement
 [KM02090](km02090) | `WARN_PunctuationInEthnologueCode` | Punctuation should not be used to separate Ethnologue codes; instead use spaces
-[KM02091](km02091) | `WARN_TouchLayoutMissingLayer` | Key "&lt;param&gt;" on platform "&lt;param&gt;", layer "&lt;param&gt;", references a missing layer "&lt;param&gt;"
-[KM02092](km02092) | `WARN_TouchLayoutCustomKeyNotDefined` | Key "&lt;param&gt;" on platform "&lt;param&gt;", layer "&lt;param&gt;", is a custom key but has no corresponding rule in the source\.
+[KM02091](km02091) | `WARN_TouchLayoutMissingLayer` | Key "&lt;param&gt;" on platform "&lt;param&gt;", layer "&lt;param&gt;" \(&lt;param&gt;\), references a missing layer "&lt;param&gt;"
+[KM02092](km02092) | `WARN_TouchLayoutCustomKeyNotDefined` | Key "&lt;param&gt;" on platform "&lt;param&gt;", layer "&lt;param&gt;"  \(&lt;param&gt;\), is a custom key but has no corresponding rule in the source\.
 [KM02093](km02093) | `WARN_TouchLayoutMissingRequiredKeys` | Layer "&lt;param&gt;" on platform "&lt;param&gt;" is missing the required key\(s\) '&lt;param&gt;'\.
 [KM02094](km02094) | `WARN_HelpFileMissing` | File &lt;param&gt; could not be loaded: 
 [KM02095](km02095) | `WARN_EmbedJsFileMissing` | File &lt;param&gt; could not be loaded: 
 [KM02098](km02098) | `WARN_ExtendedShiftFlagsNotSupportedInKeymanWeb` | Extended shift flags &lt;param&gt; are not supported in KeymanWeb
-[KM02099](km02099) | `WARN_TouchLayoutUnidentifiedKey` | A key on layer "&lt;param&gt;" has no identifier\.
+[KM02099](km02099) | `WARN_TouchLayoutUnidentifiedKey` | A key \(&lt;param&gt;\) on layer "&lt;param&gt;" has no identifier\.
 [KM0209A](km0209a) | `HINT_UnreachableKeyCode` | The rule will never be matched for key &lt;param&gt; because its key code is never fired\.
 [KM0209C](km0209c) | `WARN_PlatformNotInTargets` | The specified platform is not a target platform
 [KM0209D](km0209d) | `WARN_HeaderStatementIsDeprecated` | Header statements are deprecated; use instead the equivalent system store
@@ -154,7 +154,7 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM020A5](km020a5) | `WARN_LanguageHeadersDeprecatedInKeyman10` | This language header has been deprecated in Keyman 10\. Instead, add language metadata in the package file
 [KM020A6](km020a6) | `HINT_NonUnicodeFile` | Keyman Developer has detected that the file has ANSI encoding\. Consider converting this file to UTF\-8
 [KM020A8](km020a8) | `WARN_HotkeyHasInvalidModifier` | Hotkey has modifiers that are not supported\. Use only SHIFT, CTRL and ALT
-[KM020A9](km020a9) | `WARN_TouchLayoutSpecialLabelOnNormalKey` | Key "&lt;param&gt;" on platform "&lt;param&gt;", layer "&lt;param&gt;" does not have the key type "Special" or "Special \(active\)" but has the label "&lt;param&gt;"\. This feature is only supported in Keyman 14 or later
+[KM020A9](km020a9) | `WARN_TouchLayoutSpecialLabelOnNormalKey` | Key "&lt;param&gt;" on platform "&lt;param&gt;", layer "&lt;param&gt;"  \(&lt;param&gt;\) does not have the key type "Special" or "Special \(active\)" but has the label "&lt;param&gt;"\. This feature is only supported in Keyman 14 or later
 [KM020AA](km020aa) | `WARN_OptionStoreNameInvalid` | The option store &lt;param&gt; should be named with characters in the range A\-Z, a\-z, 0\-9 and \_ only\.
 [KM020AB](km020ab) | `WARN_NulNotFirstStatementInContext` | nul must be the first statement in the context
 [KM020AC](km020ac) | `WARN_IfShouldBeAtStartOfContext` | if, platform and baselayout should be at start of context \(after nul, if present\)
