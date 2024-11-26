@@ -339,6 +339,16 @@ div.interface-hierarchy blockquote {
 	color: #B92034;
 }
 
+/* Version Banner */
+
+div#version-banner {
+	margin: 10px 10px 0px 10px;
+	background: #f2f2f2;
+	padding: 20px;
+	border-radius: 4px;
+	font-size: 12pt;
+}
+
 /* Version Selector */
 
 #version-selector {
