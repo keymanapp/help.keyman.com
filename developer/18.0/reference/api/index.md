@@ -9,6 +9,8 @@
 |  Package | Description |
 |  --- | --- |
 |  [@keymanapp/kmc-analyze](./kmc-analyze.md) | kmc-analyze - keyboard analysis classes, including tools for <code>&amp;displayMap</code>. |
+|  [@keymanapp/kmc-copy](./kmc-copy.md) |  |
+|  [@keymanapp/kmc-generate](./kmc-generate.md) |  |
 |  [@keymanapp/kmc-keyboard-info](./kmc-keyboard-info.md) |  |
 |  [@keymanapp/kmc-kmn](./kmc-kmn.md) | kmc-kmn - Keyman keyboard compiler |
 |  [@keymanapp/kmc-ldml](./kmc-ldml.md) |  |

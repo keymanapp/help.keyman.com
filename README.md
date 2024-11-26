@@ -1,5 +1,25 @@
 # Development
 
+## Documentation sources
+
+Many of the pages on this site are deployed from other repositories and should
+be edited in the source repository rather than here:
+
+* From https://github.com/keymanapp/keyboards:
+  * /keyboard
+* From https://github.com/keymanapp/keyman (see [resources/build/help-keyman-com.sh](https://github.com/keymanapp/keyman/blob/master/resources/build/help-keyman-com.sh)):
+  * /products/android/
+  * /products/iphone-and-ipad/
+  * /products/linux/
+  * /products/mac/
+  * /products/windows/
+  * /developer/(*.*)/ (versioned folders)
+  * /developer/engine/android/
+  * /developer/engine/iphone-and-ipad/
+  * /developer/engine/web/
+  * /developer/engine/windows/
+  * /developer/core/
+
 ## How to run help.keyman.com locally with Apache on Docker
 
 Previously, the site was run in IIS, but is now migrated to Apache. The Docker image is configured to host the site that can be accessed at http://localhost:8055.
