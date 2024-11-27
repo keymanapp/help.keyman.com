@@ -25,16 +25,10 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM02017](km02017) | `ERROR_ZeroLengthString` | A string of zero characters was found
 [KM02018](km02018) | `ERROR_TooManyIndexToKeyRefs` | Too many index commands refering to key string
 [KM02019](km02019) | `ERROR_UnterminatedString` | Unterminated string in line
-[KM0201A](km0201a) | `ERROR_StringInVirtualKeySection` | extend string illegal in virtual key section
-[KM0201B](km0201b) | `ERROR_AnyInVirtualKeySection` | 'any' command is illegal in virtual key section
 [KM0201C](km0201c) | `ERROR_InvalidAny` | Invalid 'any' command
 [KM0201D](km0201d) | `ERROR_StoreDoesNotExist` | Store referenced does not exist
-[KM0201E](km0201e) | `ERROR_BeepInVirtualKeySection` | 'beep' command is illegal in virtual key section
-[KM0201F](km0201f) | `ERROR_IndexInVirtualKeySection` | 'index' command is illegal in virtual key section
 [KM02020](km02020) | `ERROR_InvalidIndex` | Invalid 'index' command
-[KM02021](km02021) | `ERROR_OutsInVirtualKeySection` | 'outs' command is illegal in virtual key section
 [KM02022](km02022) | `ERROR_InvalidOuts` | Invalid 'outs' command
-[KM02024](km02024) | `ERROR_ContextInVirtualKeySection` | 'context' command is illegal in virtual key section
 [KM02025](km02025) | `ERROR_InvalidUse` | Invalid 'use' command
 [KM02026](km02026) | `ERROR_GroupDoesNotExist` | Group does not exist
 [KM02027](km02027) | `ERROR_VirtualKeyNotAllowedHere` | Virtual key is not allowed here
@@ -52,7 +46,6 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM02033](km02033) | `ERROR_ReservedCharacter` | A reserved character was found
 [KM02034](km02034) | `ERROR_InvalidCharacter` | A character was found that is outside the valid Unicode range \(U\+0000 \- U\+10FFFF\)
 [KM02035](km02035) | `ERROR_InvalidCall` | The 'call' command is invalid
-[KM02036](km02036) | `ERROR_CallInVirtualKeySection` | 'call' command is illegal in virtual key section
 [KM02037](km02037) | `ERROR_CodeInvalidInKeyStore` | The command is invalid inside a store that is used in a key part of the rule
 [KM02038](km02038) | `ERROR_CannotLoadIncludeFile` | Cannot load the included file: it is either invalid or does not exist
 [KM02039](km02039) | `ERROR_60FeatureOnly_EthnologueCode` | EthnologueCode system store requires VERSION 6\.0 or higher
@@ -67,7 +60,6 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM02045](km02045) | `ERROR_VersionAlreadyIncluded` | Only one VERSION or store\(version\) line allowed in a source file\.
 [KM02046](km02046) | `ERROR_70FeatureOnly` | This feature requires store\(version\) '7\.0' or higher
 [KM02047](km02047) | `ERROR_80FeatureOnly` | This feature requires store\(version\) '8\.0' or higher
-[KM02048](km02048) | `ERROR_InvalidInVirtualKeySection` | This statement is not valid in a virtual key section
 [KM02049](km02049) | `ERROR_InvalidIf` | The if\(\) statement is not valid
 [KM0204A](km0204a) | `ERROR_InvalidReset` | The reset\(\) statement is not valid
 [KM0204B](km0204b) | `ERROR_InvalidSet` | The set\(\) statement is not valid
