@@ -9,9 +9,9 @@ Compiles a .kmn file to a .kmx, .kvk, and/or .js. The compiler does not read or 
 **Signature:**
 
 ```typescript
-export declare class KmnCompiler implements KeymanCompiler, UnicodeSetParser 
+export declare class KmnCompiler implements KeymanCompiler, LdmlKeyboardTypes.UnicodeSetParser 
 ```
-**Implements:** KeymanCompiler, UnicodeSetParser
+**Implements:** KeymanCompiler, LdmlKeyboardTypes.UnicodeSetParser
 
 ## Methods
 
