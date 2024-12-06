@@ -228,6 +228,7 @@ END;
       <article>
 END;
     echo $html;
+    PageVersion::WriteBanner();
   }
 
   function foot($args=[]){

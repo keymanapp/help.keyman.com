@@ -8,6 +8,8 @@
     public $versions, $basePath, $versionedPath, $subPath, $path;
     public $currentVersion;
 
+    public $file, $currentFolder, $currentFileExists;
+
     function __construct() {
       $url = $_SERVER['REQUEST_URI'];
 
@@ -18,11 +20,32 @@
         if(sizeof($this->versions) == 0) {
           $this->active = false;
         } else {
-            $this->currentVersion = $this::getCurrentVersion($this->versions);
-            if($this->versionedPath == 'current-version') $this->versionedPath = $this->currentVersion;
-            if($this->versionedPath == 'latest-version') $this->versionedPath = $this->versions[0];
+          $this->currentVersion = $this::getCurrentVersion($this->versions);
+          if($this->versionedPath == 'current-version') $this->versionedPath = $this->currentVersion;
+          if($this->versionedPath == 'latest-version') $this->versionedPath = $this->versions[0];
+
+          if($this->subPath == '' || $this->subPath[strlen($this->subPath)-1] == '/') {
+            $this->file = $this->subPath.'index';
+          } else {
+            $this->file = $this->subPath;
+          }
+
+          $this->currentFolder = "{$_SERVER['DOCUMENT_ROOT']}{$this->basePath}/{$this->currentVersion}/";
+          $this->currentFileExists = file_exists("{$this->currentFolder}{$this->file}.php") || file_exists("{$this->currentFolder}/{$this->file}.md");
         }
       }
+    }
+
+    function isCurrentPageOlder() {
+      return version_compare($this->versionedPath, $this->currentVersion, '<');
+    }
+
+    function isCurrentPageNewer() {
+      return version_compare($this->versionedPath, $this->currentVersion, '>');
+    }
+
+    function isCurrentPageCurrent() {
+      return version_compare($this->versionedPath, $this->currentVersion, '==');
     }
 
     ///
@@ -31,19 +54,40 @@
     ///
     static function WriteHead() {
       global $PageVersion;
+      if(!$PageVersion->active || !$PageVersion->currentFileExists) return;
+      echo "<link rel='canonical' href='{$PageVersion->basePath}/current-version/{$PageVersion->subPath}'>";
+    }
+
+    ///
+    /// Write a banner if there are different versions of this content
+    ///
+    static function WriteBanner() {
+      global $PageVersion;
       if(!$PageVersion->active) return;
 
-      if($PageVersion->subPath == '' || $PageVersion->subPath[strlen($PageVersion->subPath)-1] == '/') {
-        $file = $PageVersion->subPath.'index';
-      } else {
-        $file = $PageVersion->subPath;
+      if($PageVersion->isCurrentPageCurrent() || !$PageVersion->currentFileExists) {
+        // Don't show the banner if we are on the current version
+        return;
       }
 
-      $folder = "{$_SERVER['DOCUMENT_ROOT']}{$PageVersion->basePath}/{$PageVersion->currentVersion}/";
-      if(file_exists("{$folder}{$file}.php") || file_exists("{$folder}/{$file}.md")) {
-        // Only give a canonical link if the content exists in the current version
-        echo "<link rel='canonical' href='{$PageVersion->basePath}/current-version/{$PageVersion->subPath}'>";
+      if($PageVersion->isCurrentPageOlder()) {
+        $message = 'You are viewing an old version of this documentation';
+      } else {
+        $message = 'You are viewing an incomplete pre-release version of this documentation';
       }
+
+      $alertIcon =
+        '<svg class="octicon octicon-alert mr-2" viewBox="0 0 16 16" version="1.1" width="22" height="22" '.
+        'style="vertical-align: bottom; padding-right: 4px" aria-hidden="true">'.
+        '<path fill="orange" d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 '.
+        '1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 '.
+        '0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 '.
+        '0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>';
+      $html =
+        "<div id='version-banner'>$alertIcon $message. ".
+        "<a href='{$PageVersion->basePath}/current-version/{$PageVersion->subPath}'>Click here</a>".
+        " to open the current version, {$PageVersion->currentVersion}.</div>";
+      echo $html;
     }
 
     ///
@@ -53,12 +97,6 @@
       global $PageVersion;
       if(!$PageVersion->active) return;
 
-      if($PageVersion->subPath == '' || $PageVersion->subPath[strlen($PageVersion->subPath)-1] == '/') {
-        $file = $PageVersion->subPath.'index';
-      } else {
-        $file = $PageVersion->subPath;
-      }
-
       // Build the menu
       $html = "<div id='version-selector'>Other versions";
       $html .= "<div>";
@@ -67,7 +105,7 @@
 
       foreach($PageVersion->versions as $version) {
         $folder = "{$_SERVER['DOCUMENT_ROOT']}{$PageVersion->basePath}/{$version}/";
-        if(!file_exists("{$folder}{$file}.php") && !file_exists("{$folder}/{$file}.md")) {
+        if(!file_exists("{$folder}{$PageVersion->file}.php") && !file_exists("{$folder}/{$PageVersion->file}.md")) {
           // Skip links to versions that don't have this exact page
           continue;
         } else {

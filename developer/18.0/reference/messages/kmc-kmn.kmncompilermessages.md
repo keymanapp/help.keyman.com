@@ -25,16 +25,10 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM02017](km02017) | `ERROR_ZeroLengthString` | A string of zero characters was found
 [KM02018](km02018) | `ERROR_TooManyIndexToKeyRefs` | Too many index commands refering to key string
 [KM02019](km02019) | `ERROR_UnterminatedString` | Unterminated string in line
-[KM0201A](km0201a) | `ERROR_StringInVirtualKeySection` | extend string illegal in virtual key section
-[KM0201B](km0201b) | `ERROR_AnyInVirtualKeySection` | 'any' command is illegal in virtual key section
 [KM0201C](km0201c) | `ERROR_InvalidAny` | Invalid 'any' command
 [KM0201D](km0201d) | `ERROR_StoreDoesNotExist` | Store referenced does not exist
-[KM0201E](km0201e) | `ERROR_BeepInVirtualKeySection` | 'beep' command is illegal in virtual key section
-[KM0201F](km0201f) | `ERROR_IndexInVirtualKeySection` | 'index' command is illegal in virtual key section
 [KM02020](km02020) | `ERROR_InvalidIndex` | Invalid 'index' command
-[KM02021](km02021) | `ERROR_OutsInVirtualKeySection` | 'outs' command is illegal in virtual key section
 [KM02022](km02022) | `ERROR_InvalidOuts` | Invalid 'outs' command
-[KM02024](km02024) | `ERROR_ContextInVirtualKeySection` | 'context' command is illegal in virtual key section
 [KM02025](km02025) | `ERROR_InvalidUse` | Invalid 'use' command
 [KM02026](km02026) | `ERROR_GroupDoesNotExist` | Group does not exist
 [KM02027](km02027) | `ERROR_VirtualKeyNotAllowedHere` | Virtual key is not allowed here
@@ -52,7 +46,6 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM02033](km02033) | `ERROR_ReservedCharacter` | A reserved character was found
 [KM02034](km02034) | `ERROR_InvalidCharacter` | A character was found that is outside the valid Unicode range \(U\+0000 \- U\+10FFFF\)
 [KM02035](km02035) | `ERROR_InvalidCall` | The 'call' command is invalid
-[KM02036](km02036) | `ERROR_CallInVirtualKeySection` | 'call' command is illegal in virtual key section
 [KM02037](km02037) | `ERROR_CodeInvalidInKeyStore` | The command is invalid inside a store that is used in a key part of the rule
 [KM02038](km02038) | `ERROR_CannotLoadIncludeFile` | Cannot load the included file: it is either invalid or does not exist
 [KM02039](km02039) | `ERROR_60FeatureOnly_EthnologueCode` | EthnologueCode system store requires VERSION 6\.0 or higher
@@ -67,7 +60,6 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM02045](km02045) | `ERROR_VersionAlreadyIncluded` | Only one VERSION or store\(version\) line allowed in a source file\.
 [KM02046](km02046) | `ERROR_70FeatureOnly` | This feature requires store\(version\) '7\.0' or higher
 [KM02047](km02047) | `ERROR_80FeatureOnly` | This feature requires store\(version\) '8\.0' or higher
-[KM02048](km02048) | `ERROR_InvalidInVirtualKeySection` | This statement is not valid in a virtual key section
 [KM02049](km02049) | `ERROR_InvalidIf` | The if\(\) statement is not valid
 [KM0204A](km0204a) | `ERROR_InvalidReset` | The reset\(\) statement is not valid
 [KM0204B](km0204b) | `ERROR_InvalidSet` | The set\(\) statement is not valid
@@ -85,7 +77,7 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM02057](km02057) | `ERROR_VirtualCharacterKeysNotSupportedInKeymanWeb` | Virtual character keys not currently supported in KeymanWeb
 [KM02058](km02058) | `ERROR_VirtualKeysNotValidForMnemonicLayouts` | Virtual keys are not valid for mnemonic layouts
 [KM02059](km02059) | `ERROR_InvalidTouchLayoutFile` | Touch layout file &lt;param&gt; is not valid
-[KM0205A](km0205a) | `ERROR_TouchLayoutInvalidIdentifier` | Key "&lt;param&gt;" on "&lt;param&gt;", layer "&lt;param&gt;" has an invalid identifier\.
+[KM0205A](km0205a) | `ERROR_TouchLayoutInvalidIdentifier` | Key "&lt;param&gt;" on "&lt;param&gt;", layer "&lt;param&gt;" \(&lt;param&gt;\) has an invalid identifier\.
 [KM0205B](km0205b) | `ERROR_InvalidKeyCode` | Invalid key identifier "&lt;param&gt;"
 [KM0205C](km0205c) | `ERROR_90FeatureOnlyLayoutFile` | Touch layout file reference requires store\(version\) '9\.0' or higher
 [KM0205D](km0205d) | `ERROR_90FeatureOnlyKeyboardVersion` | KeyboardVersion system store requires store\(version\) '9\.0' or higher
@@ -136,13 +128,13 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM0208E](km0208e) | `WARN_StoreAlreadyUsedAsStoreOrCall` | Store already used as a normal store or in a call statement and should not be used as an option
 [KM0208F](km0208f) | `WARN_StoreAlreadyUsedAsStoreOrOption` | Store already used as a normal store or as an option and should not be used in a call statement
 [KM02090](km02090) | `WARN_PunctuationInEthnologueCode` | Punctuation should not be used to separate Ethnologue codes; instead use spaces
-[KM02091](km02091) | `WARN_TouchLayoutMissingLayer` | Key "&lt;param&gt;" on platform "&lt;param&gt;", layer "&lt;param&gt;", references a missing layer "&lt;param&gt;"
-[KM02092](km02092) | `WARN_TouchLayoutCustomKeyNotDefined` | Key "&lt;param&gt;" on platform "&lt;param&gt;", layer "&lt;param&gt;", is a custom key but has no corresponding rule in the source\.
+[KM02091](km02091) | `WARN_TouchLayoutMissingLayer` | Key "&lt;param&gt;" on platform "&lt;param&gt;", layer "&lt;param&gt;" \(&lt;param&gt;\), references a missing layer "&lt;param&gt;"
+[KM02092](km02092) | `WARN_TouchLayoutCustomKeyNotDefined` | Key "&lt;param&gt;" on platform "&lt;param&gt;", layer "&lt;param&gt;"  \(&lt;param&gt;\), is a custom key but has no corresponding rule in the source\.
 [KM02093](km02093) | `WARN_TouchLayoutMissingRequiredKeys` | Layer "&lt;param&gt;" on platform "&lt;param&gt;" is missing the required key\(s\) '&lt;param&gt;'\.
 [KM02094](km02094) | `WARN_HelpFileMissing` | File &lt;param&gt; could not be loaded: 
 [KM02095](km02095) | `WARN_EmbedJsFileMissing` | File &lt;param&gt; could not be loaded: 
 [KM02098](km02098) | `WARN_ExtendedShiftFlagsNotSupportedInKeymanWeb` | Extended shift flags &lt;param&gt; are not supported in KeymanWeb
-[KM02099](km02099) | `WARN_TouchLayoutUnidentifiedKey` | A key on layer "&lt;param&gt;" has no identifier\.
+[KM02099](km02099) | `WARN_TouchLayoutUnidentifiedKey` | A key \(&lt;param&gt;\) on layer "&lt;param&gt;" has no identifier\.
 [KM0209A](km0209a) | `HINT_UnreachableKeyCode` | The rule will never be matched for key &lt;param&gt; because its key code is never fired\.
 [KM0209C](km0209c) | `WARN_PlatformNotInTargets` | The specified platform is not a target platform
 [KM0209D](km0209d) | `WARN_HeaderStatementIsDeprecated` | Header statements are deprecated; use instead the equivalent system store
@@ -154,7 +146,7 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM020A5](km020a5) | `WARN_LanguageHeadersDeprecatedInKeyman10` | This language header has been deprecated in Keyman 10\. Instead, add language metadata in the package file
 [KM020A6](km020a6) | `HINT_NonUnicodeFile` | Keyman Developer has detected that the file has ANSI encoding\. Consider converting this file to UTF\-8
 [KM020A8](km020a8) | `WARN_HotkeyHasInvalidModifier` | Hotkey has modifiers that are not supported\. Use only SHIFT, CTRL and ALT
-[KM020A9](km020a9) | `WARN_TouchLayoutSpecialLabelOnNormalKey` | Key "&lt;param&gt;" on platform "&lt;param&gt;", layer "&lt;param&gt;" does not have the key type "Special" or "Special \(active\)" but has the label "&lt;param&gt;"\. This feature is only supported in Keyman 14 or later
+[KM020A9](km020a9) | `WARN_TouchLayoutSpecialLabelOnNormalKey` | Key "&lt;param&gt;" on platform "&lt;param&gt;", layer "&lt;param&gt;"  \(&lt;param&gt;\) does not have the key type "Special" or "Special \(active\)" but has the label "&lt;param&gt;"\. This feature is only supported in Keyman 14 or later
 [KM020AA](km020aa) | `WARN_OptionStoreNameInvalid` | The option store &lt;param&gt; should be named with characters in the range A\-Z, a\-z, 0\-9 and \_ only\.
 [KM020AB](km020ab) | `WARN_NulNotFirstStatementInContext` | nul must be the first statement in the context
 [KM020AC](km020ac) | `WARN_IfShouldBeAtStartOfContext` | if, platform and baselayout should be at start of context \(after nul, if present\)
