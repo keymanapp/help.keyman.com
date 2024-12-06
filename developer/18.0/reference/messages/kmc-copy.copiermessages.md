@@ -20,7 +20,6 @@ title: Compiler Messages Reference for @keymanapp/kmc-copy
 [KM0B00E](km0b00e) | `ERROR_InvalidProjectFile` | Project file '&lt;param&gt;' is not valid: &lt;param&gt;
 [KM0B00F](km0b00f) | `ERROR_ProjectFileCouldNotBeRead` | Project file '&lt;param&gt;' could not be read
 [KM0B010](km0b010) | `INFO_DryRun` | Dry run requested\. No changes have been saved
-[KM0B011](km0b011) | `ERROR_InvalidGitHubSource` | Source project specification '&lt;param&gt;' is not a valid GitHub reference
 [KM0B012](km0b012) | `ERROR_CannotDownloadFolderFromGitHub` | The folder '&lt;param&gt;' could not be downloaded: &lt;param&gt; &lt;param&gt;
 [KM0B013](km0b013) | `ERROR_FolderDownloadedFromGitHubIsNotAValidFolder` | The path '&lt;param&gt;' does not appear to be a folder on GitHub
 [KM0B014](km0b014) | `WARN_CannotDownloadFileFromGitHub` | The file '&lt;param&gt;' could not be downloaded: &lt;param&gt; &lt;param&gt;
