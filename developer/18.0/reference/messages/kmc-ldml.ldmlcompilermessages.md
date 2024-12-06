@@ -45,6 +45,7 @@ title: Compiler Messages Reference for @keymanapp/kmc-ldml
 [KM00028](km00028) | `ERROR_UnparseableReorderSet` | Illegal UnicodeSet "&lt;param&gt;" in reorder "&lt;param&gt;
 [KM00029](km00029) | `ERROR_InvalidVariableIdentifier` | Invalid variable identifier "&lt;param&gt;"\. Identifiers must be between 1 and 32 characters, and can use A\-Z, a\-z, 0\-9, and \_\.
 [KM0002A](km0002a) | `ERROR_InvalidMarkerIdentifier` | Invalid marker identifier "m\{&lt;param&gt;\}"\. Identifiers must be between 1 and 32 characters, and can use A\-Z, a\-z, 0\-9, and \_\.
+[KM0002B](km0002b) | `WARN_StringDenorm` | File contains string "&lt;param&gt;" that is neither NFC nor NFD\.
 [KM00030](km00030) | `ERROR_InvalidQuadEscape` | Invalid escape "\\u0000"\. Hint: Use "\\u\{&lt;param&gt;\}"
 [KM00F00](km00f00) | `ERROR_UnparseableTransformFrom` | Invalid transform from="&lt;param&gt;": "&lt;param&gt;"
 [KM00F01](km00f01) | `ERROR_IllegalTransformDollarsign` | Invalid transform from="&lt;param&gt;": Unescaped dollar\-sign \($\) is not valid transform syntax\.

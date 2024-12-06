@@ -88,9 +88,12 @@ The folder structure for each keyboard has the following components:
 :   the open source license for the keyboard. This file should include a
     copyright message, including a date or range of dates encompassing
     the timeframe in which the keyboard was first created until the most
-    recent version, e.g. `Copyright (C) 2016-2021 K Author`. You may
-    choose to add copyright messages to other files, but if you do, you
-    may wish to omit the date range in order to reduce unnecessary
+    recent version, e.g. `Copyright (C) 2016-2021 K Author`. The license
+    text must be copied verbatim from the [MIT license](https://github.com/keymanapp/keyboards/blob/master/release/template/LICENSE.md)
+    and may not be modified in any way.
+    
+    You may choose to add copyright messages to other files, but if you do, 
+    you may wish to omit the date range in order to reduce unnecessary
     maintenance work when changes to the keyboard are required.
 
 ## Copy Template Files
