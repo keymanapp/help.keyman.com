@@ -1,7 +1,13 @@
-window.addEventListener('DOMContentLoaded', (e) => {
-    let t = document.getElementById("keymanThumbnails");
-    t.addEventListener("click", function() {
-      let video_id = keymanThumbnails.getAttribute('data-video')
-      keymanThumbnails.outerHTML = "<iframe width='600' height='315' src='" + video_id + "'></iframe>"
+const thumbnailsList = document.querySelectorAll("#keymanThumbnails");
+
+window.addEventListener('DOMContentLoaded', () => {
+  thumbnailsList.forEach(each => {
+  	each.addEventListener('click', () => {
+
+  		if(each.hasAttribute('data-video')) {
+        let videoId = each.getAttribute('data-video')
+    		each.outerHTML = "<iframe width='600' height='315' src='" + videoId + "' allowfullscreen></iframe>";
+      }
+    })
   })
 })
