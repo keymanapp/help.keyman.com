@@ -28,8 +28,8 @@
     $v = array_pop($versions);
   }
 
-  $filename = "$v/$q.php";
-  if(!file_exists($filename)) {
+  $filename = "$v/$q";
+  if(!file_exists("$filename.php")) {
     //Debug purposes: echo "Failed to find target filename\n";
     header('Location: /keyboard');
     exit;
