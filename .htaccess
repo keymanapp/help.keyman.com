@@ -180,7 +180,7 @@ Redirect "/bookmarklet" "/products/bookmarklet"
 
 Redirect "/kb" "/knowledge-base"
 
-# Redirect to kb handler
+# Rewrite to kb handler
 RewriteRule "^knowledge-base/(\d+)$" "/knowledge-base/index.php?id=$1" [L]
 
 # Redirect error code shortlinks
@@ -213,12 +213,13 @@ RewriteRule "^((.+)/)?index(\.php)?$" "$1" [R,L]
 
 # Remove .php extension and redirect
 RewriteCond "$1.php" -f
-RewriteCond "$1" !-d
 RewriteRule "^(.+)\.php$" "$1" [R,L]
 
-# Remove .php extension and redirect - but only for Keyman Developer API docs for now
+# Remove .php extension and redirect - but only for Keyman Developer API docs
+# for now because this is the only current place where .md files are referenced
+# directly (so we don't want to promote use of .md in URLs)
 RewriteCond "$1.md" -f
-RewriteRule "^(developer/(current-version|\d+\.\d+)/reference/api/.+)\.md$" "$1" [R,END]
+RewriteRule "^(developer/(current-version|latest-version|\d+\.\d+)/reference/api/.+)\.md$" "$1" [R,END]
 
 # Redirect folder without / to include /
 RewriteCond "{DOCUMENT_ROOT}/$1" -d
@@ -227,7 +228,9 @@ RewriteCond "{DOCUMENT_ROOT}/$1.md" !-f
 RewriteRule "^(.+[^/])$" "$1/" [R,END]
 
 #
-# PHP rewriting
+# Rewrite bare URLs to load appropriate .php:
+# * mdhost.php for .md Markdown files, or
+# * the referenced .php itself
 #
 
 # Rewrite file to file.md
