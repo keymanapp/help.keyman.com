@@ -1842,3 +1842,66 @@ article dl dd span.optional {
 #toc .toc-active a {
     color: #69B7D2;
 }
+
+
+/* GFM-style alerts */
+
+.markdown-alert.markdown-alert-note,
+.markdown-alert p.markdown-alert-title.title-note {
+	border-left-color: #316da9;
+	color: #316da9;
+}
+
+.markdown-alert.markdown-alert-tip,
+.markdown-alert p.markdown-alert-title.title-tip {
+	border-left-color: green;
+	color: green;
+}
+
+.markdown-alert.markdown-alert-important,
+.markdown-alert p.markdown-alert-title.title-important {
+	border-left-color: purple;
+	color: purple;
+}
+
+.markdown-alert.markdown-alert-warning,
+.markdown-alert p.markdown-alert-title.title-warning {
+	border-left-color: orange;
+	color: orange;
+}
+
+.markdown-alert.markdown-alert-caution,
+.markdown-alert p.markdown-alert-title.title-caution {
+	border-left-color: red;
+	color: red;
+}
+
+.markdown-alert {
+	color: inherit;
+	border-left: .25em solid #888;
+	border-radius: 8px;
+	margin-left: 12px;
+	margin-bottom: 16px;
+	background: #fcfcff;
+	background: rgba(248, 248, 248, 0.9);
+	padding: 8px 4px 0px 4px;
+	border-radius: 4px;
+}
+
+.markdown-alert .markdown-alert-title {
+	display: flex;
+	font-weight: 500;
+	align-items: center;
+	line-height: 1;
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+	margin-right: .5rem;
+	display: inline-block;
+	overflow: visible !important;
+	vertical-align: text-bottom;
+}
+
+div.markdown-alert p {
+	color: black;
+}
