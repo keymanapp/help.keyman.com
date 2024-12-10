@@ -64,5 +64,7 @@
 </div>
 <div id="KeymanWebControl"></div>
 <script src='<?= cdn('js/prism.js')?>'></script>
+
+<script type='text/javascript' src="<?php echo cdn('js/videoloader.js') ?>"></script>
 </body>
 </html>
