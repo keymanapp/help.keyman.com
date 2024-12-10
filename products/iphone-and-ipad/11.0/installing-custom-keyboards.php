@@ -33,7 +33,7 @@
   <img src="<?= cdn('img/app/11.0/dist-install1-i.png')?>">
   <br/>
 
-  To learn how to create a custom installable keyboard, <a href="http://help.keyman.com/developer/11.0/distribute/">click here</a>.
+  To learn how to create a custom installable keyboard, <a href="../../../developer/current-version/guides/distribute/">click here</a>.
 </p>
 
 <ul>

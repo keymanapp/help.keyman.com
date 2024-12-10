@@ -23,7 +23,7 @@
   <br/>
   Once the keyboard has been downloaded, you should be able to use it as normal.
   <br/>
-  To learn how to create a custom installable keyboard, <a href="http://help.keyman.com/developer/9.0/distribute/">click here</a>.
+  To learn how to create a custom installable keyboard, <a href="../../../developer/current-version/guides/distribute/">click here</a>.
 </p>
 
 <ul>
