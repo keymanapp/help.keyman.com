@@ -52,8 +52,8 @@
       echo "<a href='".link_from_id($nid)."'>Next article &gt;</a> ";
     }
     echo "</p><hr>";
-    $Parsedown = new \ParsedownExtra();
-    echo $Parsedown->text($kb);
+    $ParsedownAndAlerts = new \Keyman\Site\Common\GFMAlerts();
+    echo $ParsedownAndAlerts->text($kb);
   } else {
     echo "<h1>Knowledge Base index</h1>";
     echo "<ul>";
