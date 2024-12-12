@@ -31,7 +31,9 @@ Here are some of the new features we have added to Keyman 14.0 for Windows:
     and fix bugs more quickly
 
 [![](../desktop_images/video.png) Watch a video](https://youtu.be/bu7pBcrS0u8)
-that highlights some of these new features.
+that highlights some of these new features:
+
+:<img class="video-thumbnail" data-video="https://www.youtube.com/embed/bu7pBcrS0u8" src="https://img.youtube.com/vi/bu7pBcrS0u8/maxresdefault.jpg" width="600px">
 
 ## Breaking Changes
 -   Keyman Engine no longer supports the keyboard usage page
