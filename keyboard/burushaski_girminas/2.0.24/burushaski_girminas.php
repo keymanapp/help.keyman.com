@@ -21,7 +21,7 @@
   <tr>
     <td width="96%" height="1802"align="left" valign="top"><p class="style11">
       <h3 class="style11"><a name="desktop"></a>Typing  characters with Buruśaaski Girminas Keyboard (Desktop, Laptop) </h3>
-      <p><span class="style11">First of all, please click download link to <a href="https://keyman.com/keyboards/Buruśaaski_girminas?bcp47=bsk-latn" target="new">download</a> the Buruśaaski Girminas for your desktop or laptop.
+      <p><span class="style11">First of all, please click download link to <a href="https://keyman.com/keyboards/burushaski_girminas" target="new">download</a> the Buruśaaski Girminas for your desktop or laptop.
         </hp>
       </span></p>
       <p>For  diacritic vowels with&nbsp;<strong>tilde</strong>, there is only one rule -- on your keyboard press tilde (~)&nbsp; followed by your desired vowel.&nbsp; The <strong>tilde</strong> is used for nasalized vowels in Buruśaski in very limited situations. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
