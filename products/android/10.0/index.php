@@ -261,7 +261,7 @@ head([
     Once the keyboard has been downloaded, you should be able to use it as normal.
     <br/>
     To learn how to create a custom installable keyboard,
-    <a href="../../../developer/10.0/guides/distribute/">click here</a>.
+    <a href="/developer/10.0/guides/distribute/">click here</a>.
   </p>
 
   <h2>Granting storage permission</h2>
