@@ -64,7 +64,7 @@
 
   <dd>
     <p>Enter the name of the website where you will have information about this keyboard. If you want to host it on keyman.com,
-    you could enter https://keyman.com/</p>
+    you could enter http://www.keyman.com/</p>
   </dd>
 
   <dt>Image file</dt>
