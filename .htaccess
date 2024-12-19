@@ -23,6 +23,14 @@ ErrorDocument 404 /_includes/errors/404
 # Handle IIS bug which created links to /DEVELOPER instead of /developer
 RedirectMatch "/DEVELOPER(.*)" "/developer$1"
 
+RedirectMatch "/PRODUCTS(.*)" "/products$1"
+
+RedirectMatch "(.*)/ENGINE(.*)" "$1/engine$2"
+
+RedirectMatch "(.*)/WEB(.*)" "$1/web$2"
+
+RedirectMatch "(.*)/DESKTOP(.*)" "$1/windows$2"
+
 #
 # Keyboard redirects -- must go before current-version
 #
