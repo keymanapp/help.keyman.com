@@ -60,7 +60,7 @@
   <dd>Build only the <code>target</code> file from the project (only for .kpj)</dd>
 
   <dt><code>-addhelplink path</code></dt>
-  <dd>path to help file on https://help.keyman.com/keyboards</dd>
+  <dd>path to help file on https://help.keyman.com/keyboard</dd>
 
   <dt><code>-color</code></dt>
   <dd>If specified, forces color log mesages on.</dd>
