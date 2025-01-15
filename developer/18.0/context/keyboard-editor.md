@@ -397,8 +397,7 @@ ID
     similar to the overloaded behaviour for `K_` ids. Thus `####`
     must be valid Unicode characters. 
     The square bracket characters `[` and `]` indicate an optional portion of the sequence
-    and are not to be included in the shortcut. 
-    E.g. `U_0259` would generate a
+    and are not to be included in the shortcut. E.g. `U_0259` would generate a
     schwa if no rule matches. It is still valid to have a rule such
     as `+ [U_0259] > ...`
 
