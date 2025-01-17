@@ -61,7 +61,7 @@ Usage: kmcomp [-s[s]] [-nologo] [-c] [-d] [-w] [-v[s|d]] [-source-path path] [-s
 :   Build only the `target` file from the project (only for .kpj)
 
 `-addhelplink path`
-:   path to help file on https://help.keyman.com/keyboards
+:   path to help file on https://help.keyman.com/keyboard
 
 `-color`
 :   If specified, forces color log mesages on.
