@@ -36,3 +36,7 @@ title: Compiler Messages Reference for @keymanapp/kmc-package
 [KM04020](km04020) | `ERROR_InvalidAuthorEmail` | Invalid author email: &lt;param&gt;
 [KM04021](km04021) | `ERROR_PackageFileHasEmptyVersion` | Package version is not following keyboard version, but the package version field is blank\.
 [KM04022](km04022) | `ERROR_RequiredParameterMissing` | Source parameter '&lt;param&gt;' is required\.
+[KM04023](km04023) | `WARN_CannotFindMatchingKeyboardForVisualKeyboard` | Cannot find matching keyboard for visual keyboard file '&lt;param&gt;'\.
+[KM04024](km04024) | `WARN_CannotFindFontForKeyboard` | Cannot find font file '&lt;param&gt;' for keyboard '&lt;param&gt;'\.
+[KM04025](km04025) | `WARN_CannotReadFont` | Cannot parse font file '&lt;param&gt;' to get facename\.
+[KM04026](km04026) | `WARN_VisualKeyboardFileIsInvalid` | Visual keyboard file '&lt;param&gt;' is invalid\.
