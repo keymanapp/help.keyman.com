@@ -10,3 +10,4 @@ title: Compiler Messages Reference for @keymanapp/kmc-generate
 [KM0A004](km0a004) | `ERROR_OutputPathAlreadyExists` | Output path &lt;param&gt; already exists, not overwriting
 [KM0A005](km0a005) | `ERROR_CannotWriteOutputFile` | This is an internal error; the message will vary
 [KM0A006](km0a006) | `WARN_ModelIdDoesNotFollowLexicalModelConventions` | The id &lt;param&gt; does not follow the recommended model id conventions\. The id should be all lower case, include only alphanumeric characters and underscore \(\_\), not start with a digit, and should have the structure &lt;author&gt;\.&lt;bcp47&gt;\.&lt;uniq&gt;
+[KM0A007](km0a007) | `ERROR_InvalidTarget` | The specified target platform '&lt;param&gt;' is not a valid target\.
