@@ -397,7 +397,7 @@ head([
     Once the keyboard has been downloaded, you should be able to use it as normal.
     <br/>
     To learn how to create a custom installable keyboard,
-    <a href="https://help.keyman.com/developer/9.0/distribute/">click here</a>.
+    <a href="https://help.keyman.com/developer/9.0/guides/distribute/">click here</a>.
   </p>
   <h2>Use the Keyman Browser</h2>
   <p>
