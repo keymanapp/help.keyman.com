@@ -92,7 +92,7 @@ With a virtual character key, in a mnemonic keyboard.
     + [SHIFT ','] >
     ```
 
-## Virtual keys
+## Virtual keys {#using-virtual-keys}
 
 Every key on the keyboard is identified by a virtual key code. Virtual
 keys are identified by square brackets `[ ]` containing a combination of
@@ -167,7 +167,7 @@ The presence of this store also ensures that Caps Lock is handled correctly for
 KeymanWeb keyboards (see
 [#5460](https://github.com/keymanapp/keyman/issues/5460#issuecomment-966602098)).
 
-## Virtual character keys
+## Virtual character keys {#virtual-character-keys}
 
 Keyman 6.0 introduced a new feature known as [mnemonic layouts](../reference/mnemoniclayout "mnemoniclayout system store").
 This feature requires that the "white" alphabet/numeric/punctuation keys
@@ -181,7 +181,7 @@ appears on a given keycap, not just the unshifted character. For
 instance, if you use `['A']`, you will be matching the unshifted <kbd>A</kbd> key;
 you must still explicitly state the shift state for the key.
 
-## Reference
+## Reference {#reference}
 
 The general format for a virtual character key is:
 
@@ -247,7 +247,7 @@ The possible shift codes are:
 | <kbd>Caps Lock</kbd> on                                                              | `CAPS`  |
 | <kbd>Caps Lock</kbd> off                                                             | `NCAPS` |
 
-#### Using Right Alt / AltGr
+#### Using Right Alt / AltGr {#using-right-alt-altgr .title}
 
 A caveat for using `RALT`: When using many European keyboards, Windows
 internally translates the Right <kbd>Alt</kbd> (or <kbd>AltGr</kbd>) key to `LCTRL`+`RALT`.
@@ -263,7 +263,7 @@ the following shift combinations in the same keyboard:
 | `LCTRL ALT`  |
 | `LCTRL RALT` |
 
-#### Caps Lock
+#### Caps Lock {#caps-lock}
 
 If neither `CAPS` or `NCAPS` is specified, then the <kbd>Caps Lock</kbd> key is
 ignored. This means that if you do have a rule that uses `CAPS`, you
@@ -549,7 +549,7 @@ Notes:
   * Right hand blue key `[K_?C1]` / `[B11]` is found on Brazilian Portuguese ABNT layout.
 
 
-### Common virtual key codes
+### Common virtual key codes {#common-virtual-key-codes}
 
 The following table lists all of the common virtual key codes:
 
@@ -704,7 +704,7 @@ are included in Keyman for completeness:
 | `K_PAUSE`   | Pause               |
 | `K_PRTSCN`  | Print Screen        |
 
-## Examples
+## Examples {#examples}
 
 ```keyman
 c override default bksp behaviour for 'ng'
@@ -714,7 +714,7 @@ c override default bksp behaviour for 'ng'
 + [RALT K_E] > 'è'
 ```
 
-## Virtual keys and touch layouts
+## Virtual keys and touch layouts {#virtual-keys-and-touch-layouts}
 
 Touch layouts do not have physical keyboards, so the concept of virtual
 keys is in some ways less relevant. However, for compatibility and ease
