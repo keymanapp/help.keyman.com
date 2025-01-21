@@ -169,7 +169,7 @@ KeymanWeb keyboards (see
 
 ## Virtual character keys {#virtual-character-keys}
 
-Keyman 6.0 introduced a new feature known as [mnemonic layouts](../reference/mnemoniclayout "mnemoniclayout system store").
+Keyman 6.0 introduced a new feature known as [mnemonic layouts](../reference/mnemoniclayout "mnemoniclayout system store"){.link}.
 This feature requires that the "white" alphabet/numeric/punctuation keys
 in the primary section of the keyboard are referenced by the character
 on the key cap rather than the key position (as with non-mnemonic
