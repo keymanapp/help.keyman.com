@@ -12,7 +12,7 @@ $pagestyle = '#section2 .wrapper { overflow-x: inherit }';
     'showMenu' => true
   ]);
 ?>
-<h2 class="center">Keyman Developer Help Index</h2>
+<h1><center>Keyman Developer Help Index</center></h1>
 
 <div class="product-index">
 
