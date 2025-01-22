@@ -169,8 +169,7 @@ KeymanWeb keyboards (see
 
 ## Virtual character keys {#virtual-character-keys}
 
-Keyman 6.0 introduced a new feature known as [mnemonic
-layouts](../reference/mnemoniclayout "mnemoniclayout system store"){.link}.
+Keyman 6.0 introduced a new feature known as [mnemonic layouts](../reference/mnemoniclayout "mnemoniclayout system store"){.link}.
 This feature requires that the "white" alphabet/numeric/punctuation keys
 in the primary section of the keyboard are referenced by the character
 on the key cap rather than the key position (as with non-mnemonic
@@ -225,8 +224,8 @@ Key codes can start with `K_`, `T_`, `U_` or can be an ISO9995 code.
     range `0020-10FFFF`, with sequences separated by `_`. E.g. `U_0259` would
     generate a schwa if no rule matches. It is still valid to have a rule such
     as `+ [U_0259] > ...`. These codes are only valid for touch layouts.
-    **Note**: For characters outside the BMP, use Unicode codepoints, not
-    surrogate pairs (e.g. use `U_10000`, never `U_D800_DC00`).
+    > [!Note]
+    > For characters outside the BMP, use Unicode codepoints, not surrogate pairs (e.g. use `U_10000`, never `U_D800_DC00`).
 
 ISO9995 codes
 :   These codes refer to keys by position on a standard 101-105 key keyboard.
