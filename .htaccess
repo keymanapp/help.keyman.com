@@ -21,13 +21,11 @@ RewriteBase /
 ErrorDocument 404 /_includes/errors/404
 
 # Handle IIS bug which created links to /DEVELOPER instead of /developer
-RedirectMatch "/DEVELOPER(.*)" "/developer$1"
-
 RedirectMatch "/DEVELOPER/ENGINE/ANDROID(.*)" "/developer/engine/android$1"
-
 RedirectMatch "/DEVELOPER/ENGINE/WEB(.*)" "/developer/engine/web$1"
-
 RedirectMatch "/DEVELOPER/ENGINE/DESKTOP(.*)" "/developer/engine/desktop$1"
+RedirectMatch "/DEVELOPER/ENGINE(.*)" "/developer/engine$1"
+RedirectMatch "/DEVELOPER(.*)" "/developer$1"
 
 #
 # Keyboard redirects -- must go before current-version
