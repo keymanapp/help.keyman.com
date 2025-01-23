@@ -12,7 +12,7 @@ $pagestyle = '#section2 .wrapper { overflow-x: inherit }';
     'toc' => false
   ]);
 ?>
-<h2 class="center">Keyman Products Help Index</h2>
+<h1><center>Keyman Products Help Index</center></h1>
 <div class="product-index">
     <div class="product" id="product-windows">
         <a href="windows">
