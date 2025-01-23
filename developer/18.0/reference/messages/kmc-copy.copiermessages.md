@@ -30,3 +30,8 @@ title: Compiler Messages Reference for @keymanapp/kmc-copy
 [KM0B019](km0b019) | `ERROR_CannotDownloadRepoFromGitHub` | The repository at '&lt;param&gt;' could not be accessed: &lt;param&gt; &lt;param&gt;
 [KM0B01A](km0b01a) | `ERROR_CouldNotFindDefaultBranchOnGitHub` | The default branch could not be found for the GitHub repository '&lt;param&gt;'
 [KM0B01B](km0b01b) | `INFO_CannotDownloadBinaryFileFromGitHub` | The Keyman binary file '&lt;param&gt;' could not be downloaded: &lt;param&gt; &lt;param&gt;\. This is not normally a problem
+[KM0B01C](km0b01c) | `VERBOSE_DownloadingFile` | Downloading '&lt;param&gt;' from '&lt;param&gt;'
+[KM0B01D](km0b01d) | `VERBOSE_DownloadingFolder` | Downloading folder '&lt;param&gt;' from '&lt;param&gt;'
+[KM0B01E](km0b01e) | `ERROR_InvalidKeyboardId` | The specified keyboard id '&lt;param&gt;' contains characters that are not permitted for a keyboard id or filename\.
+[KM0B01F](km0b01f) | `ERROR_InvalidLexicalModelId` | The specified lexical model id '&lt;param&gt;' contains characters that are not permitted or does not match the required pattern of 'author\.bcp47\.uniq'\.
+[KM0B020](km0b020) | `WARN_FilenameCollides` | The output file '&lt;param&gt;' has two different possible source files\.

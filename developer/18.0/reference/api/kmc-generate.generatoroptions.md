@@ -19,7 +19,6 @@ export interface GeneratorOptions
 |  [author?](./kmc-generate.generatoroptions.author.md) |  | string | _(Optional)_ name of the author of the keyboard |
 |  [copyright?](./kmc-generate.generatoroptions.copyright.md) |  | string | _(Optional)_ name of the copyright holder for the keyboard or lexical model (do not include (c) symbol or date) |
 |  [description?](./kmc-generate.generatoroptions.description.md) |  | string | _(Optional)_ description of the keyboard, Markdown permissible |
-|  [icon?](./kmc-generate.generatoroptions.icon.md) |  | boolean | _(Optional)_ set to true to generate an icon for a Keyman keyboard with the first characters of the first specified BCP 47 tag |
 |  [id](./kmc-generate.generatoroptions.id.md) |  | string | identifier (basename) of the keyboard or model |
 |  [keymanVersion?](./kmc-generate.generatoroptions.keymanversion.md) |  | string | _(Optional)_ version of Keyman to reference in source files, defaults to KEYMAN\_VERSION.VERSION |
 |  [languageTags?](./kmc-generate.generatoroptions.languagetags.md) |  | string\[\] | _(Optional)_ array of bcp 47 tags which are supported by the keyboard or lexical model |
