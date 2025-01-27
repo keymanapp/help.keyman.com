@@ -70,11 +70,8 @@ function loaded(){
     link.css('margin-top',diff);
   }
 
-  (function(){
+  function loadKeymanWebKeyboard(keyboardName) {
     // Insert keyboard into osk div
-
-    var url = location.pathname.split('/');
-    var keyboardName = url[url.length-3]; //, keyboardVersion = url[url.length-2];
 
     // Ensure that the Web engine itself fetches the cloud metadata about the keyboard
     // so that the OSK knows about the fonts.
@@ -153,10 +150,16 @@ function loaded(){
       addKeyboards('#osk', 'desktop');
       addKeyboards('#osk-phone', 'phone');
       addKeyboards('#osk-tablet', 'tablet');
+    }).catch(function(e) {
+      console.error(e);
     });
     //var keyboardPath = keyman.util.getOption('keyboards') + keyboardName + '/' + keyboardVersion + '/' + keyboardName + '-' + keyboardVersion + '.js';
+  }
 
+  (function() {
     var fontFamily = null, fontSource = null;
+    var url = location.pathname.split('/');
+    var keyboardName = url[url.length-3]; //, keyboardVersion = url[url.length-2];
 
     // This retrieves font info from latest version of keyboard; we don't currently have that available for earlier versions. No worries.
     // TODO: this would be better integrated into using KeymanWeb to retrieve this information directly. However, it will do for now.
@@ -175,12 +178,17 @@ function loaded(){
     }
 
     // Even with KMW loading the fonts for itself, we wish for them to be available on all page elements,
-    // not just in Web's OSK. 
+    // not just in Web's OSK.
     // TODO: consider using the retrieved stub to get that in future
     $.ajax({
       url: 'https://api.keyman.com/keyboard/' + keyboardName,
       success:function(data) {
         if(typeof data != 'object') return;
+
+        if(data.platformSupport?.desktopWeb || data.platformSupport?.mobileWeb) {
+          loadKeymanWebKeyboard(keyboardName);
+        }
+
         for(var lang in data.languages) {
           if(data.languages[lang].font) {
             // pick the first font
