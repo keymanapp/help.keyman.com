@@ -45,7 +45,7 @@ but remember that when you reference any built files within the package, make su
 
 Font and documentation files
  : Any files you reference in the package source .kps file, such as fonts, documentation, should be included in the `source` folder.
- For more information on including fonts with your keyboard, see [Including fonts in your keyboard package](#including-fonts-in-your-keyboard-package) below.
+ For more information on including fonts with your keyboard, see [Including fonts in your keyboard package](#toc-including-fonts-in-your-keyboard-package) below.
 
 ## Do not include these files
 
