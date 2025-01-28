@@ -2,7 +2,7 @@
 title: Keyboard search API 2.0 Specification
 ---
 
-Documents the [api.keyman.com/search/2.0](https://api.keyman.com/search/2.0) endpoint. Searches are run across keyboard names, identifiers and details, language names, script names and country names, and returns an array of keyboards that match.
+Documents the **api.keyman.com/search/2.0** endpoint. Searches are run across keyboard names, identifiers and details, language names, script names and country names, and returns an array of keyboards that match.
 
 Note: unlike the [Search 1.0 endpoint](../1.0), this endpoint always returns an array of keyboards. Version 1.0 would return arrays of matching languages and countries as well, but this has been consolidated into a flat array rather than a conceptual tree of results, which is easier for end users to understand and use.
 

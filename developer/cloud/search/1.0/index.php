@@ -10,7 +10,7 @@
 ?>
 <h2>Keyboard search API 1.0 Specification</h2>
 
-<p>Documents the <a href='https://api.keyman.com/search'>api.keyman.com/search</a> endpoint.</p>
+<p>Documents the <b>api.keyman.com/search</b> endpoint.</p>
 
 <p>This API is deprecated and has been replaced with <a href='../2.0'>version 2.0</a>.</p>
 
