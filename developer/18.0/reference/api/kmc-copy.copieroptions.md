@@ -19,4 +19,5 @@ export interface CopierOptions
 |  [dryRun](./kmc-copy.copieroptions.dryrun.md) |  | boolean | dryRun: show what would happen |
 |  [logLevel?](./kmc-copy.copieroptions.loglevel.md) |  | CompilerLogLevel | _(Optional)_ Reporting level to console, used by NodeCompilerCallbacks (not used in compiler modules; all messages are still reported to the internal log) |
 |  [outPath](./kmc-copy.copieroptions.outpath.md) |  | string | output path where project folder will be created |
+|  [relocateExternalFiles?](./kmc-copy.copieroptions.relocateexternalfiles.md) |  | boolean | _(Optional)_ Copy referenced files that are outside the project folder into an 'external' folder within the new project, rather than just referencing them in their current location |
 
