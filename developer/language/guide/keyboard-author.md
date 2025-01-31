@@ -2,6 +2,13 @@
 title: Glossary for Keyboard Author 
 ---
 
+## D {#d-glossary}
+
+### Deadkey (Or Dead Key, shorthand dk)
+A key that does not produce text output on its own but impacts the text produced by the next keystroke. For example, if the apostrophe key is defined as a dead key, then typing the apostrophe followed by <kbd>e</kbd>, could produce the output <kbd>é</kbd>.
+In Keyman keyboard language, the deadkey statement represents a marker, and is Keyman's implementation for supporting deadkeys.
+See [how to use `deadkey()`](../reference/deadkey)
+
 ## E {#e-glossary}
 
 ### Encoding
@@ -21,6 +28,9 @@ A font is a graphical representation of text that may include a different typefa
 A gesture is a finger motion like long press, flick, and multitap that can be used in Keyman.
 
 ## K {#k-glossary}
+
+### Key Code (Or Virtual Key Code)
+The value used by the operating system to identify the physical key that was pressed. For example, Microsoft Windows identifies the S key with key code 0x53 and macOS identifies the S key with key code 0x01.
 
 ### Keyman Keyboard
 A software component that accepts incoming keystrokes and produces text output appropriate to a certain script. A Keyman Keyboard is built using Keyman Developer and contains rules that determine what text to output for a given keystroke and context. Keyboard may also mean:
