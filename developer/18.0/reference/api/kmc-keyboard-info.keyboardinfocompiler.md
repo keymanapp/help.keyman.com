@@ -13,12 +13,6 @@ export declare class KeyboardInfoCompiler implements KeymanCompiler
 ```
 **Implements:** KeymanCompiler
 
-## Constructors
-
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)()](./kmc-keyboard-info.keyboardinfocompiler._constructor_.md) |  | Constructs a new instance of the <code>KeyboardInfoCompiler</code> class |
-
 ## Methods
 
 |  Method | Modifiers | Description |

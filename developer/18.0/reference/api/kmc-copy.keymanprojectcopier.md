@@ -22,7 +22,6 @@ export declare class KeymanProjectCopier implements KeymanCompiler
 |  [options](./kmc-copy.keymanprojectcopier.options.md) |  | [CopierOptions](./kmc-copy.copieroptions.md) |  |
 |  [outPath](./kmc-copy.keymanprojectcopier.outpath.md) |  | string |  |
 |  [outputId](./kmc-copy.keymanprojectcopier.outputid.md) |  | string |  |
-|  [relocateExternalFiles](./kmc-copy.keymanprojectcopier.relocateexternalfiles.md) |  | boolean |  |
 |  [sourceId](./kmc-copy.keymanprojectcopier.sourceid.md) |  | string |  |
 
 ## Methods
