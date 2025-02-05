@@ -9,8 +9,9 @@ Options for the Keyman Developer project generator
 **Signature:**
 
 ```typescript
-export interface GeneratorOptions 
+export interface GeneratorOptions extends CompilerBaseOptions 
 ```
+**Extends:** CompilerBaseOptions
 
 ## Properties
 
@@ -22,7 +23,6 @@ export interface GeneratorOptions
 |  [id](./kmc-generate.generatoroptions.id.md) |  | string | identifier (basename) of the keyboard or model |
 |  [keymanVersion?](./kmc-generate.generatoroptions.keymanversion.md) |  | string | _(Optional)_ version of Keyman to reference in source files, defaults to KEYMAN\_VERSION.VERSION |
 |  [languageTags?](./kmc-generate.generatoroptions.languagetags.md) |  | string\[\] | _(Optional)_ array of bcp 47 tags which are supported by the keyboard or lexical model |
-|  [logLevel?](./kmc-generate.generatoroptions.loglevel.md) |  | CompilerLogLevel | _(Optional)_ Reporting level to console, used by NodeCompilerCallbacks (not used in compiler modules; all messages are still reported to the internal log) |
 |  [name?](./kmc-generate.generatoroptions.name.md) |  | string | _(Optional)_ descriptive name of the keyboard or lexical model |
 |  [outPath](./kmc-generate.generatoroptions.outpath.md) |  | string | output path where project folder will be created |
 |  [targets?](./kmc-generate.generatoroptions.targets.md) |  | KeymanTargets.KeymanTarget\[\] | _(Optional)_ supported platforms, only used in Keyman keyboard project generator |
