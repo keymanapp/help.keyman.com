@@ -35,3 +35,4 @@ title: Compiler Messages Reference for @keymanapp/kmc-copy
 [KM0B01E](km0b01e) | `ERROR_InvalidKeyboardId` | The specified keyboard id '&lt;param&gt;' contains characters that are not permitted for a keyboard id or filename\.
 [KM0B01F](km0b01f) | `ERROR_InvalidLexicalModelId` | The specified lexical model id '&lt;param&gt;' contains characters that are not permitted or does not match the required pattern of 'author\.bcp47\.uniq'\.
 [KM0B020](km0b020) | `WARN_FilenameCollides` | The output file '&lt;param&gt;' has two different possible source files\.
+[KM0B021](km0b021) | `VERBOSE_CopyingFile` | Copying file '&lt;param&gt;' to '&lt;param&gt;'
