@@ -12,7 +12,7 @@
     'index' => false
   ]);
 ?>
-<h1><center>Keyboard Layouts Help Index</center></h1><br>
+<h1 class="major-title">Keyboard Layouts Help Index</h1><br>
 <ul class="keyboard-support-list" id="keyboard-support-list">
 <?php
   asort($items['active']);

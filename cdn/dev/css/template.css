@@ -282,6 +282,7 @@ div.interface-hierarchy blockquote {
     z-index: 5;
 }
 
+
 #show-phone-menu{
 	display: none;
 }
@@ -843,6 +844,10 @@ input[type="search"] {
 	text-align: left;
 	font-size: 28pt;
 	padding: 40px 10px 10px 10px;
+}
+
+.major-title {
+	text-align: center !important;
 }
 
 #section2 h2{
