@@ -121,15 +121,15 @@ title: Keyman language history
 
 ## Keyman 16
 
-*   Initial support for LDML keyboard format in compiled files. Note that this
-    is not a change to the Keyman keyboard language.
+*   Initial support for [LDML keyboard](/developer/current-version/context/ldml-editor)
+    format in compiled files. Note that this is not a change to the Keyman keyboard language.
 
 ## Keyman 17
 
-*   Support for [flick and multi-tap gestures](/developer/current-version/reference/file-types)
+*   Support for [flick and multi-tap gestures](/developer/current-version/context/keyboard-editor#toc-long-press-flicks-and-multitaps-controls)
     in touch layouts
 *   Support for additional special key caps in
-    [touch layouts](/developer/current-version/reference/file-types/keyman-touch-layout):
+    [touch layouts](/developer/current-version/reference/file-types/keyman-touch-layout#toc-key-text):
     `*Sp*`, `*NBSp*`, `*NarNBSp*`, `*EnQ*`, `*EmQ*`, `*EnSp*`, `*EmSp*`,
     `*PunctSp*`, `*ThSp*`, `*HSp*`, `*ZWSp*`, `*ZWJ*`, `*WJ*`, `*CGJ*`,
     `*LTRM*`, `*RTLM*`, `*SH*`, `*HTab*`
