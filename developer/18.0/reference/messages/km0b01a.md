@@ -8,4 +8,7 @@ title: KM0B01A: ERROR_CouldNotFindDefaultBranchOnGitHub
 | Module     | [kmc-copy.CopierMessages](kmc-copy.copiermessages) |
 | Identifier | `ERROR_CouldNotFindDefaultBranchOnGitHub` |
 
-The repository may be private, or you may have a typo in the owner or repository name.
+
+The repository may be private, or you may have a typo in the owner or
+repository name.
+
