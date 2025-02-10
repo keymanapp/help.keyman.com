@@ -40,3 +40,5 @@ title: Compiler Messages Reference for @keymanapp/kmc-package
 [KM04024](km04024) | `WARN_CannotFindFontForKeyboard` | Cannot find font file '&lt;param&gt;' for keyboard '&lt;param&gt;'\.
 [KM04025](km04025) | `WARN_CannotReadFont` | Cannot parse font file '&lt;param&gt;' to get facename\.
 [KM04026](km04026) | `WARN_VisualKeyboardFileIsInvalid` | Visual keyboard file '&lt;param&gt;' is invalid\.
+[KM04027](km04027) | `WARN_PackageVersionIsUnrecognizedFormat` | Package version '&lt;param&gt;' has an unrecognized format\.
+[KM04028](km04028) | `ERROR_PackageMustNotContainItself` | The package may not include a \.kmp file of the same name '&lt;param&gt;'\.

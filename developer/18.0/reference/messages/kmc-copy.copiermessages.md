@@ -4,7 +4,7 @@ title: Compiler Messages Reference for @keymanapp/kmc-copy
 
  Code | Identifier | Message
 ------|------------|---------
-[KM0B001](km0b001) | `FATAL_UnexpectedException` | 
+[KM0B001](km0b001) | `FATAL_UnexpectedException` | This is an internal error; the message will vary
 [KM0B002](km0b002) | `INFO_CopyingProject` | Copying project of type &lt;param&gt; with id &lt;param&gt;
 [KM0B003](km0b003) | `ERROR_CannotCreateFolder` | This is an internal error; the message will vary
 [KM0B004](km0b004) | `ERROR_OutputPathAlreadyExists` | Output path &lt;param&gt; already exists, not overwriting
