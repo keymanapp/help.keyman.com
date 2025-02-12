@@ -1,17 +1,22 @@
-<?php
-    $pagename = 'Tengwar Keyboard Help';
-    $pagetitle = $pagename;
-    require_once('header.php');
+<?php 
+  $pagename = 'Tengwar Keyboard Help';
+  $pagetitle = $pagename;
+  require_once('header.php');
 ?>
 
+
 <p>
-    Tengwar
+    This package contains two keyboards for entering Tengwar data coded according to the ConScript proposal of Michael Everson. One keyboard supports PUA characters in the BMP. The other keyboard supports PUA characters in Plane 15. No fonts are included in the package.
 </p>
 
-<h2>Desktop Keyboard Layout</h2>
-<div id="osk" data-states='default shift rightalt rightalt-shift'>
-    <img src="typing-guide-desktop.png" alt="" srcset=""><br>
-    <img src="typing-guide-desktop-shifted.png" alt="" srcset=""><br>
-    <img src="typing-guide-desktop-alternate.png" alt="" srcset=""><br>
-    <img src="typing-guide-desktop-alternate-shifted.png" alt="" srcset="">
-</div>
+<p>
+    The <a href="https://keyman.com/keyboards/tengwar_quenya">https://keyman.com/keyboards/tengwar_quenya</a>
+ keyboard may be a better option.
+</p>
+
+  <h2>Desktop Keyboard layout</h2>
+	<h3>Default (unshifted)</h3>
+	<p><a href="LayoutU_.png"><img class="keyboard" src="LayoutU_.png" alt="Default (unshifted) state" /></a></p>
+	<h3>Shift</h3>
+	<p><a href="LayoutU_S.png"><img class="keyboard" src="LayoutU_S.png" alt="Shift state" /></a></p>
+
