@@ -98,7 +98,7 @@
     $kmw_version_number = '13.0.108';
     if(KeymanHosts::Instance()->Tier() != KeymanHosts::TIER_TEST) {
       // For performance reasons, we don't check KeymanWeb version on Test Tier
-      $kmw_version = @file_get_contents('https://api.keyman.com/version/web/stable');
+      $kmw_version = @file_get_contents(KeymanHosts::Instance()->SERVER_api_keyman_com . '/version/web/stable');
       if($kmw_version !== FALSE) {
         $kmw_version = @json_decode($kmw_version);
         if($kmw_version !== NULL) $kmw_version_number = $kmw_version->version;
@@ -106,7 +106,7 @@
     }
     if(!isset($kmw_dev_path)) {
   ?>
-      <script src='https://s.keyman.com/kmw/engine/<?=$kmw_version_number?>/keymanweb.js'></script>
+      <script src='<?=KeymanHosts::Instance()->s_keyman_com?>/kmw/engine/<?=$kmw_version_number?>/keymanweb.js'></script>
   <?php
     } else {
   ?>
@@ -115,7 +115,7 @@
     }
   ?>
     <script>
-      keyman.init({keyboards:'https://s.keyman.com/keyboard/'});
+      keyman.init({keyboards:'<?=KeymanHosts::Instance()->s_keyman_com?>/keyboard/'});
     </script>
   <?php
     }

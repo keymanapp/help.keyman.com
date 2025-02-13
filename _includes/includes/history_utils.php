@@ -6,14 +6,16 @@
  * Time: 11:51 AM
  */
 
+use Keyman\Site\Common\KeymanHosts;
+
 require_once("includes/servervars.php");
 require_once __DIR__ . '/../../vendor/autoload.php';
 
 function get_history($platform, $version = '1.0') {
   // Reads straight from a file.  Likely to be useful for the history-exposing API.
-  $url = build_downloads_keyman_com_url("api/history/$platform/$version"); // Longform: "api/historydata.php?platform=$platform?version=$version".
+  $url = "/api/history/$platform/$version"; // Longform: "api/historydata.php?platform=$platform?version=$version".
 
-  $contents = @file_get_contents($url);
+  $contents = @file_get_contents(KeymanHosts::Instance()->SERVER_downloads_keyman_com . $url);
 
   if($contents === FALSE) {
     //header('HTTP/1.0 400 Invalid parameter');
