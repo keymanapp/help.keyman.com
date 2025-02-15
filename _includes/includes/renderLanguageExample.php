@@ -16,12 +16,13 @@
   History:          21 Dec 2009 - mcdurdin - Fixup rendering of special keys
 */
   require_once('servervars.php');
+  use Keyman\Site\Common\KeymanHosts;
 
   function renderLanguageExample($keyboard, $language, $morehelp = '', $toBrowser = true)
   {
 
     $keyboard = str_replace('Keyboard_','',$keyboard);
-    $string = "https://api.keyman.com/cloud/3.0/keyboards/".$keyboard;
+    $string = KeymanHosts::Instance()->SERVER_api_keyman_com . "/cloud/3.0/keyboards/".$keyboard;
     if(($json = @file_get_contents($string)) === FALSE) {
       return '';
     }

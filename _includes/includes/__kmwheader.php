@@ -2,6 +2,7 @@
 <?php
 
 require_once("includes/servervars.php");
+use Keyman\Site\Common\KeymanHosts;
 
 // Variables used to manage and trigger debugging tests.
 // Simply defining the variable below is enough to trigger debug mode.
@@ -9,7 +10,7 @@ require_once("includes/servervars.php");
 
 function get_version($tier)
 {
-  $kmwbuild = @file_get_contents("https://api.keyman.com/version/web/$tier");
+  $kmwbuild = @file_get_contents(KeymanHosts::Instance()->SERVER_api_keyman_com . "/version/web/$tier");
 
   if($kmwbuild) {
     $kmwbuild = json_decode($kmwbuild);
