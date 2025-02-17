@@ -43,17 +43,6 @@
     return "/cdn/dev/{$file}";
   }
 
-  function build_downloads_keyman_com_url($file) {
-    global $downloadsDomain, $TestServer;
-
-    $use_https = !$TestServer;
-    if($use_https == true) {
-      return "https://$downloadsDomain/$file";
-    } else {
-      return "http://$downloadsDomain/$file";
-    }
-  }
-
   /* The following function is needed for some pages but was only contained in an obsolete header file */
   $codeboxcount = 0;
   function codebox($s, $lang='')
