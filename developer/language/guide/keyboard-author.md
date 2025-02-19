@@ -2,6 +2,16 @@
 title: Glossary for Keyboard Author 
 ---
 
+## B {#b-glossary}
+
+### BCP 47 language tag
+A standard way of referencing a language for packages and lexical models in Keyman. A BCP 47 language tag is made up of multiple subtags. There are many possible subtags, but only three types are currently used in most places in Keyman Developer:
+* [language subtag](../../current-version/reference/bcp-47#toc-the-language-subtag)
+* [script subtag](../../current-version/reference/bcp-47#toc-the-script-subtag)
+* [region subtag](../../current-version/reference/bcp-47#toc-the-region-subtag)
+
+[Some examples of the BCP 47 language tag](../../current-version/reference/bcp-47) being used in Keyman Developer.
+
 ## D {#d-glossary}
 
 ### Deadkey (Or Dead Key, shorthand dk)
@@ -19,8 +29,16 @@ A technique for detecting keystrokes and identify which key has been pressed thr
 ### File types
 Keyman Developer uses the [Keyman file types](../../current-version/reference/file-types/) to compile and build a keyboard.
 
+### File layout
+Your Keyman keyboard is grouped into one of the three folders:
+* release: keyboards with full source that pass our stringent quality checks, Unicode only, generally no PUA
+* legacy: binary distributions of keyboards, migrated from Tavultesoft servers, Unicode and non-Unicode
+* experimental: keyboards that have not yet passed the quality check, available from the 'experimental' category in Keyman apps with Keyman 10 and later. Unicode only, but PUA is acceptable.
+
+Visit [Keyman Developer structure for standard keyboard source file folders](../../current-version/reference/file-layout) for more information.
+
 ### Font
-A font is a graphical representation of text that may include a different typeface, point size, weight, color, or design. If you've read or received a message via Keyman that is displayed as square boxes, the most likely cause is that your device does not support the language or script. [More about font](https://keyman.com/fonts/).
+A font is a graphical representation of text that may include a different typeface, point size, weight, color, or design. If you've read or received a message via Keyman that is displayed as square boxes, the most likely cause is that your device does not support the language or script. This is how to properly [include font(s) into the keyboard package](../../keyboards/github/step-2#toc-including-fonts-in-your-keyboard-package), and [how to fix square boxes related to font](https://keyman.com/fonts/).
 
 ## G {#g-glossary}
 
