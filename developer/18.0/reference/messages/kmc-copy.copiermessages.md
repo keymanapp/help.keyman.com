@@ -4,8 +4,7 @@ title: Compiler Messages Reference for @keymanapp/kmc-copy
 
  Code | Identifier | Message
 ------|------------|---------
-[KM0B001](km0b001) | `FATAL_UnexpectedException` | 
-[KM0B002](km0b002) | `INFO_CopyingProject` | Copying project of type &lt;param&gt; with id &lt;param&gt;
+[KM0B001](km0b001) | `FATAL_UnexpectedException` | This is an internal error; the message will vary
 [KM0B003](km0b003) | `ERROR_CannotCreateFolder` | This is an internal error; the message will vary
 [KM0B004](km0b004) | `ERROR_OutputPathAlreadyExists` | Output path &lt;param&gt; already exists, not overwriting
 [KM0B005](km0b005) | `ERROR_CannotWriteOutputFile` | This is an internal error; the message will vary
@@ -35,3 +34,4 @@ title: Compiler Messages Reference for @keymanapp/kmc-copy
 [KM0B01E](km0b01e) | `ERROR_InvalidKeyboardId` | The specified keyboard id '&lt;param&gt;' contains characters that are not permitted for a keyboard id or filename\.
 [KM0B01F](km0b01f) | `ERROR_InvalidLexicalModelId` | The specified lexical model id '&lt;param&gt;' contains characters that are not permitted or does not match the required pattern of 'author\.bcp47\.uniq'\.
 [KM0B020](km0b020) | `WARN_FilenameCollides` | The output file '&lt;param&gt;' has two different possible source files\.
+[KM0B021](km0b021) | `VERBOSE_CopyingFile` | Copying file '&lt;param&gt;' to '&lt;param&gt;'
