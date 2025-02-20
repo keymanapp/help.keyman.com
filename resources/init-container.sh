@@ -10,6 +10,7 @@ php -d include_path=/var/www/html/_includes:. _build_cache.php
 
 if [[ ! $1 =~ "debug" ]]; then
   echo "---- Generating CDN ---"
+  rm -rf "$THIS_SCRIPT_PATH/../cdn/deploy"
   cd "$THIS_SCRIPT_PATH/../cdn"
   php -d include_path=/var/www/html/_includes:. cdnrefresh.php
   cd ..
