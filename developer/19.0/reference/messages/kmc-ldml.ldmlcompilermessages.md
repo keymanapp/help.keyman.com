@@ -53,3 +53,4 @@ title: Compiler Messages Reference for @keymanapp/kmc-ldml
 [KM00F03](km00f03) | `ERROR_IllegalTransformPlus` | Invalid transform from="&lt;param&gt;": Unescaped plus \(\+\) is not valid transform syntax\.
 [KM00F04](km00f04) | `ERROR_IllegalTransformAsterisk` | Invalid transform from="&lt;param&gt;": Unescaped asterisk \(\*\) is not valid transform syntax\.
 [KM00F05](km00f05) | `ERROR_IllegalTransformToUset` | Invalid transform to="&lt;param&gt;": Set variable \(\\$\[…\]\) cannot be used in 'to=' unless part of a map\.
+[KM00F06](km00f06) | `ERROR_UnparseableTransformTo` | Invalid transform to="&lt;param&gt;": "&lt;param&gt;"
