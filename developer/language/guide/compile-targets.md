@@ -7,7 +7,7 @@ compiled for a specific target. If the prefix is omitted, then the line will be 
 for all targets.
 
 Compile targets are deprecated in Keyman 17.0, and will be not be supported for keyboards
-that target Keyman 18.0 or later.
+that target Keyman 19.0 or later.
 
 A more flexible mechanism is available with [`platform()` statements](../reference/platform). While `platform()`
 statements cannot provide alternate metadata for different platforms, they do support a
