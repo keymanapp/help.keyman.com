@@ -1,9 +1,8 @@
 <?php
   require_once __DIR__ . '/../../vendor/autoload.php';
-  require_once __DIR__ . '/../../_common/KeymanSentry.php';
+  require_once __DIR__ . '/../2020/HelpKeymanComSentry.php';
 
-  const SENTRY_DSN = 'https://fcc8fe39792f49f3a94ea831cad5c9d6@o1005580.ingest.sentry.io/5983515';
-  \Keyman\Site\Common\KeymanSentry::init(SENTRY_DSN);
+  \Keyman\Site\com\keyman\help\HelpKeymanComSentry::init();
 
   require_once('includes/servervars.php');
   require_once('index-content.php');

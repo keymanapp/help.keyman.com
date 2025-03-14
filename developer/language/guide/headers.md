@@ -41,7 +41,7 @@ used in place of header keywords when updating layouts.
 [`&keyboardversion` store](../reference/keyboardversion)
 :   Specifies the version of the keyboard
 
-[`&kmw_embecss` store](../reference/kmw_embedcss)
+[`&kmw_embedcss` store](../reference/kmw_embedcss)
 :   Specifies an additional library of CSS code to be embedded in a web
     or touch keyboard
 

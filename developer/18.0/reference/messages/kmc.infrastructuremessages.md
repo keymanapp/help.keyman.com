@@ -6,7 +6,7 @@ title: Compiler Messages Reference for @keymanapp/kmc
 ------|------------|---------
 [KM05001](km05001) | `FATAL_UnexpectedException` | This is an internal error; the message will vary
 [KM05002](km05002) | `INFO_BuildingFile` | Building &lt;param&gt;
-[KM05003](km05003) | `ERROR_FileDoesNotExist` | File &lt;param&gt; does not exist
+[KM05003](km05003) | `ERROR_FileDoesNotExist` | File or folder '&lt;param&gt;' does not exist
 [KM05004](km05004) | `ERROR_FileTypeNotRecognized` | Unrecognised input file &lt;param&gt;, expecting &lt;param&gt;, or project folder
 [KM05005](km05005) | `ERROR_OutFileNotValidForProjects` | \-\-out\-file should not be specified for project builds
 [KM05006](km05006) | `INFO_FileBuiltSuccessfully` | &lt;param&gt; built successfully\.

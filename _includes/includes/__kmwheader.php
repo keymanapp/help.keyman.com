@@ -72,6 +72,7 @@ function get_kmwbuild()
     return $kmwbuild;
   }
 
+  // TODO: rewrite this -- it's kinda outdated
   // In case of no match, the defaults:
   switch($maj_version) {
     case 11:
@@ -81,8 +82,7 @@ function get_kmwbuild()
     case 2:
       return "2.0.473";
     default:
-      global $TestServer;
-      if($TestServer) {
+      if(KeymanHosts::Instance()->Tier() != KeymanHosts::TIER_PRODUCTION) {
         return false;   // We should never get this except briefly while documenting a new major version.
                         // Maybe we could get away with "$maj_version.0.1", but that wouldn't be as detectable of an error.
       } else {
