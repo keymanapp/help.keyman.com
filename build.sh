@@ -3,7 +3,7 @@
 readonly THIS_SCRIPT="$(readlink -f "${BASH_SOURCE[0]}")"
 readonly BOOTSTRAP="$(dirname "$THIS_SCRIPT")/resources/bootstrap.inc.sh"
 readonly BOOTSTRAP_VERSION=feat/move-sentry-js-to-common
-[ -f "$BOOTSTRAP" ] && source "$BOOTSTRAP" || source <(curl -fs https://raw.githubusercontent.com/keymanapp/shared-sites/$BOOTSTRAP_VERSION/bootstrap.inc.sh)
+[ -f "$BOOTSTRAP" ] && source "$BOOTSTRAP" || source <(curl -H "Cache-Control: no-cache" -fs https://raw.githubusercontent.com/keymanapp/shared-sites/$BOOTSTRAP_VERSION/bootstrap.inc.sh)
 ## END STANDARD SITE BUILD SCRIPT INCLUDE
 
 # TODO: these should probably all be moved to a common defines script too?
