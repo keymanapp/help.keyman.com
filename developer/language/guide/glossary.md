@@ -39,9 +39,9 @@ Keyman has the following file types:
 * [KVK](../../current-version/reference/file-types/kvk): a Keyman On Screen Keyboard file.
 * [KVKS](../../current-version/reference/file-types/kvks): a Keyman On Screen Keyboard source file.
 * [TSV](../../current-version/reference/file-types/tsv): or a tab-separated values file contains a word list. This word list is used to predict and correct words using the predictive text functionality.
-* [TTF](../../current-version/reference/file-types/ttf): is a TrueType font file. This file is distributed with a keyboard package to be used as a keyboard font or display font.
-* [MODEL.JS](../../current-version/reference/file-types/model-js): is compiled in Keyman Developer from the Keyman lexical model source (.MODEL.TS) file and (.TSV) wordlist.
-* [MODEL.TS](../../current-version/reference/file-types/model-ts): is a [lexical model](#toc-lexical-model) definition source file.
+* [TTF](../../current-version/reference/file-types/ttf): a TrueType font file. This file is distributed with a keyboard package to be used as a keyboard font or display font.
+* [MODEL.JS](../../current-version/reference/file-types/model-js): compiled in Keyman Developer from the Keyman lexical model source (.MODEL.TS) file and (.TSV) wordlist.
+* [MODEL.TS](../../current-version/reference/file-types/model-ts): a [lexical model](#toc-lexical-model) definition source file.
 * [More File types](../../current-version/reference/file-types/).
 
 ### File layout
@@ -79,7 +79,7 @@ A software component that accepts incoming keystrokes and produces text output a
 * Touch Keyboard - the keyboard displayed for text input on a mobile device with a touchscreen such as a smartphone or tablet.
 
 ### Keyboard Layout
-A keyboard layout is any specific physical, visual, or functional arrangement of the keys of a computer. In general every key on a keyboard can be identified by either its position on the keyboard or the character it would print out. In Keyman a key can be referenced by its position on the US English Keyboard ( K_A, K_B, etc.). In this case a [positional keyboard layout](#toc-positional-keyboard-layout) is used. A key can also be referenced by its output ( “A” , “B”, etc.). In this case a [mnemonic keyboard layout](#toc-mnemonic-keyboard-layout) is used.
+Any specific physical, visual, or functional arrangement of the keys of a computer. In general every key on a keyboard can be identified by either its position on the keyboard or the character it would print out. In Keyman a key can be referenced by its position on the US English Keyboard ( K_A, K_B, etc.). In this case a [positional keyboard layout](#toc-positional-keyboard-layout) is used. A key can also be referenced by its output ( “A” , “B”, etc.). In this case a [mnemonic keyboard layout](#toc-mnemonic-keyboard-layout) is used.
 
 ### Keyboard Repository
 Keyman repository is grouped into one of the three folders:
@@ -95,16 +95,16 @@ Keyman repository is grouped into one of the three folders:
 The Keyman keyboard programming language is a language designed around transforming inputs to outputs, through rules rather than through static tables. Please refer to the [overview of the Keyman language](overview).
 
 ### Lexical Model
-Lexical Model is a wordlist and a set of rules of how the word is interpreted. The way your keyboard knows how to suggest predictions and corrections for your language is through its lexical model. [Visit the Lexical Model page](../../current-version/guides/lexical-models/intro/#toc-what-is-a-lexical-model-).
+A wordlist and a set of rules of how the word is interpreted. The way your keyboard knows how to suggest predictions and corrections for your language is through its lexical model. [Visit the Lexical Model page](../../current-version/guides/lexical-models/intro/#toc-what-is-a-lexical-model-).
 
 ## M {#m-glossary}
 
 ### Mnemonic Keyboard Layout
 In a mnemonic keyboard layout keys are identified by the character it prints out. For example, the key that prints out the character **'z'**:
 
-* on a US English Keyboard, **'z'** is printed out by pressing K_Z (labeled 'Z' : the leftmost character key on the bottom row)
-* on a German Keyboard, **'z'** is printed out by pressing K_Y (labeled 'Z' : a key somewhat in the middle of the first row)
-* on a French Keyboard, **'z'** is printed out by pressing K_W (labeled 'Z' : the second key to the left of the first row)
+* On a US English Keyboard, **'z'** is printed out by pressing K_Z (labeled 'Z' : the leftmost character key on the bottom row)
+* On a German Keyboard, **'z'** is printed out by pressing K_Y (labeled 'Z' : a key somewhat in the middle of the first row)
+* On a French Keyboard, **'z'** is printed out by pressing K_W (labeled 'Z' : the second key to the left of the first row)
 
 If we, for example, specified a Keyboard rule in Keyman Developer for a US layout (`+ K_Z  >  'z'`) and used that mnemonic layout with a German physical keyboard for key K_Y (where the keycap is labeled 'Z'), still a **'z'** will be printed out.
 
