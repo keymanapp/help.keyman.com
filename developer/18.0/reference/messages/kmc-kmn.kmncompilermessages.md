@@ -156,6 +156,7 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM020B0](km020b0) | `HINT_IndexStoreLong` | The store referenced in index\(\) is longer than the store referenced in any\(\)
 [KM020B1](km020b1) | `ERROR_ContextExCannotReferenceIf` | The offset in context\(\) points to a non\-character if\(\) statement in the context
 [KM020B2](km020b2) | `ERROR_ContextExCannotReferenceNul` | The offset in context\(\) points to a non\-character nul statement in the context
+[KM020B3](km020b3) | `ERROR_TextBeforeOrAfterNulInOutput` | A rule with a nul statement in the output cannot also output text or text\-emitting statements
 [KM020C0](km020c0) | `FATAL_BufferOverflow` | The compiler memory buffer overflowed
 [KM02900](km02900) | `FATAL_UnexpectedException` | This is an internal error; the message will vary
 [KM02901](km02901) | `FATAL_MissingWasmModule` | This is an internal error; the message will vary
