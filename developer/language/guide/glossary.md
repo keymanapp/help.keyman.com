@@ -16,7 +16,7 @@ More information about BCP 47 language tag and full details on [how they are use
 
 ## D {#d-glossary}
 
-### Deadkey (Or Dead Key, shorthand dk)
+### Deadkey (Or Dead Key, shorthand: dk)
 A key that does not produce text output on its own but impacts the text produced by the next keystroke. For example, if the apostrophe key is defined as a dead key, then typing the apostrophe followed by <kbd>e</kbd>, could produce the output <kbd>é</kbd>.
 In Keyman keyboard language, the deadkey statement is used for deadkeys, and is Keyman's implementation for supporting deadkeys.
 See [how to use `deadkey()`](../reference/deadkey)
@@ -45,12 +45,33 @@ Keyman has the following file types:
 * [More File types](../../current-version/reference/file-types/).
 
 ### File layout
-Your Keyman keyboard is grouped into one of the three folders:
-* release: keyboards with full source that pass our stringent quality checks, Unicode only, generally no PUA
-* legacy: binary distributions of keyboards, migrated from Tavultesoft servers, Unicode and non-Unicode
-* experimental: keyboards that have not yet passed the quality check, available from the 'experimental' category in Keyman apps with Keyman 10 and later. Unicode only, but PUA is acceptable.
+In Keyman Developer, a keyboard project follow closely to the structure of folders and files:
+```plain
+keyboard
+│   HISTORY.md:        A place to record changes you make to the project over time.
+│   LICENSE.md:        Explains the rights that you give to others.
+│   README.md:         Provides an introduction to the keyboard project when others stumble across it.
+│   keyboard.kpj:      The main project file, contains references to all the components: keyboards, models, and packages.
+│   keyboard.kpj.user: A user preference file. You can safely delete it at any time.
+│
+├───build
+|       keyboard.keyboard_info: A metadata file detailing the keyboard's origin, version, requirements, and capabilities.
+│       keyboard.kmp:           The installable package file.
+│       keyboard.kmx:           The compiled keyboard. This intermediate file should not be distributed.
+│       keyboard.kvk:           The compiled on screen keyboard. This intermediate file should not be distributed.
+│       keyboard.js:            The keyboard compiled to Javascript for use with KeymanWeb.
+│
+└───source
+        keyboard.ico:                 The icon of the keyboard.
+        readme.htm:                   Introductory web page for end users of your keyboard.
+        welcome.htm:                  A web page which describes how to use your keyboard.
+        keyboard.keyman-touch-layout: A touch layout file description.
+        keyboard.kmn:                 The keyboard source file.
+        keyboard.kps:                 The package source, which is used to create a compressed .kmp.
+        keyboard.kvks:                The on screen keyboard template for desktop platforms.
+```
 
-Visit [Keyman Developer structure for standard keyboard source file folders](../../current-version/reference/file-layout) for more information.
+For more details on [Keyman Developer structure for standard keyboard source file folders](../../current-version/reference/file-layout).
 
 ### Font
 A font is a graphical representation of text that may include a different typeface, point size, weight, color, or design. If you've read or received a message via Keyman that is displayed as square boxes, the most likely cause is that your device does not support the language or script. This is how to properly [include font(s) into the keyboard package](../../keyboards/github/step-2#toc-including-fonts-in-your-keyboard-package), and [how to fix square boxes related to font](https://keyman.com/fonts/).
@@ -66,7 +87,7 @@ A gesture is a finger motion like long press, flick, and multitap that can be us
 Keyman uses the same keycode across all operating system. More on [Virtual Key Code](./virtual-keys#using-virtual-keys).
 
 ### Keyboard
-Keyboard may also mean:
+Keyboard may mean:
 * Physical Keyboard - the hardware keyboard used for text input with a computer.
 * On-screen Keyboard - or OSK, a keyboard displayed graphically which represents the layout of the keys on the physical keyboard and what characters they will produce.
 * Touch Keyboard - the keyboard displayed for text input on a mobile device with a touchscreen such as a smartphone or tablet.
@@ -79,11 +100,13 @@ A software component that accepts incoming keystrokes and produces text output a
 * Touch Keyboard - the keyboard displayed for text input on a mobile device with a touchscreen such as a smartphone or tablet.
 
 ### Keyboard Layout
-Any specific physical, visual, or functional arrangement of the keys of a computer. In general every key on a keyboard can be identified by either its position on the keyboard or the character it would print out. In Keyman a key can be referenced by its position on the US English Keyboard ( K_A, K_B, etc.). In this case a [positional keyboard layout](#toc-positional-keyboard-layout) is used. A key can also be referenced by its output ( “A” , “B”, etc.). In this case a [mnemonic keyboard layout](#toc-mnemonic-keyboard-layout) is used.
+Any specific physical, visual, or functional arrangement of the keys of a computer. In general every key on a keyboard can be identified by either its position on the keyboard or the character it would print out. In Keyman:
+* A key can be referenced by its position on the US English Keyboard ( K_A, K_B, etc.). In this case a [positional keyboard layout](#toc-positional-keyboard-layout) is used. 
+* A key can also be referenced by its output ( “A” , “B”, etc.). In this case a [mnemonic keyboard layout](#toc-mnemonic-keyboard-layout) is used.
 
 ### Keyboard Repository
-Keyman repository is grouped into one of the three folders:
-* release: keyboards with full source that pass our stringent quality checks, Unicode only, generally no PUA
+In the Keyman [keyboards repository](https://github.com/keymanapp/keyboards), keyboards are grouped into one of the three folders:
+* release: keyboards with full source that pass our stringent quality checks, [Unicode](https://en.wikipedia.org/wiki/Unicode) only, generally no [PUA](https://en.wikipedia.org/wiki/Private_Use_Areas)
 * legacy: binary distributions of keyboards, migrated from Tavultesoft servers, Unicode and non-Unicode
 * experimental: keyboards that have not yet passed the quality check, available from the 'experimental' category in Keyman apps with Keyman 10 and later. Unicode only, but PUA is acceptable.
 
@@ -100,13 +123,13 @@ A wordlist and a set of rules of how the word is interpreted. The way your keybo
 ## M {#m-glossary}
 
 ### Mnemonic Keyboard Layout
-In a mnemonic keyboard layout keys are identified by the character it prints out. For example, the key that prints out the character **'z'**:
+In a mnemonic keyboard layout, contrary to a [positional keyboard layout](#toc-positional-keyboard-layout), keys are identified by the character it prints out. For example, the key that prints out the character **'z'**:
 
 * On a US English Keyboard, **'z'** is printed out by pressing K_Z (labeled 'Z' : the leftmost character key on the bottom row)
 * On a German Keyboard, **'z'** is printed out by pressing K_Y (labeled 'Z' : a key somewhat in the middle of the first row)
 * On a French Keyboard, **'z'** is printed out by pressing K_W (labeled 'Z' : the second key to the left of the first row)
 
-If we, for example, specified a Keyboard rule in Keyman Developer for a US layout (`+ K_Z  >  'z'`) and used that mnemonic layout with a German physical keyboard for key K_Y (where the keycap is labeled 'Z'), still a **'z'** will be printed out.
+If we, for example, specified a Keyboard rule in Keyman Developer for a US layout (`+ K_Z  >  'z'`) and used that mnemonic layout with a German physical keyboard, then to print out **'z'** the key K_Y (where the keycap is labeled 'Z') will have to be pressed.
 
 This means when we specify a key in a mnemonic layout we talk about a key that produces a certain output (e.g. 'z') no matter where it is positioned at in different keyboard layouts.
 
@@ -116,13 +139,13 @@ Keys on a Computer Keyboard like <kbd>Shift</kbd>, <kbd>Ctrl</kbd>, <kbd>Alt</kb
 ## P {#p-glossary}
 
 ### Positional Keyboard Layout
-In a positional keyboard layout keys of a keyboard are identified by the position on the keyboard. For example, the leftmost character key on the bottom row is always called **K_Z**:
+In a positional keyboard layout, contrary to a [mnemonic keyboard layout](#toc-mnemonic-keyboard-layout), keys are identified by the position on the keyboard. For example, the leftmost character key on the bottom row is always called **K_Z**:
 
 * On a US English Keyboard, the key is called **K_Z**, the keycap is labeled 'Z' and it prints out 'z'
 * On a German Keyboard, the key is called **K_Z**, the keycap is labeled 'Y' and it prints out 'y'
 * On a French Keyboard the key is called **K_Z**, the keycap is labeled 'W' and it prints out 'w'
 
-If we, for example, specified a Keyboard rule in Keyman Developer for a US layout (`+ K_Z  >  'z'`) and used that positional layout with a German physical keyboard for key K_Z (where the keycap is labeled 'Y') will print out **'z'**.
+If we, for example, specified a Keyboard rule in Keyman Developer for a US layout (`+ K_Z  >  'z'`) and used that positional layout with a German physical keyboard, then to print out **'z'** the key K_Z (where the keycap is labeled 'Y') will have to be pressed.
 
 This means when we specify a key in a positional layout we talk about a certain position (e.g. K_Z) no matter may be written on a keycap for a specific keyboard layout.
 
