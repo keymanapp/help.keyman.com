@@ -122,7 +122,7 @@ A wordlist and a set of rules of how the word is interpreted. The way your keybo
 
 ## M {#m-glossary}
 
-### Mnemonic Keyboard Layout
+### Mnemonic Keyboard Layout [`store(&mnemoniclayout)`](../reference/mnemoniclayout)
 In a mnemonic keyboard layout, contrary to a [positional keyboard layout](#toc-positional-keyboard-layout), keys are identified by the character it prints out. For example, the key that prints out the character **'z'**:
 
 * On a US English Keyboard, **'z'** is printed out by pressing K_Z (labeled 'Z' : the leftmost character key on the bottom row)
@@ -138,7 +138,7 @@ Keys on a Computer Keyboard like <kbd>Shift</kbd>, <kbd>Ctrl</kbd>, <kbd>Alt</kb
 
 ## P {#p-glossary}
 
-### Positional Keyboard Layout
+### Positional Keyboard Layout [`store(&mnemoniclayout)`](../reference/mnemoniclayout)
 In a positional keyboard layout, contrary to a [mnemonic keyboard layout](#toc-mnemonic-keyboard-layout), keys are identified by the position on the keyboard. For example, the leftmost character key on the bottom row is always called **K_Z**:
 
 * On a US English Keyboard, the key is called **K_Z**, the keycap is labeled 'Z' and it prints out 'z'
