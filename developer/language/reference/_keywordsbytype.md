@@ -148,11 +148,11 @@ system store.
 [`platform()` statement](platform)
 :   Determines the current platform keyboard is operating on
 
-[`return` statement](return)
-:   Stops processing of the current keystroke
-
 [`reset()` statement](reset)
 :   Resets a store to its initial value
+
+[`return` statement](return)
+:   Stops processing of the current keystroke
 
 [`save()` statement](save)
 :   Persists a store value for next edit session

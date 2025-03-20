@@ -38,3 +38,9 @@ title: Compiler Messages Reference for @keymanapp/kmc
 [KM05020](km05020) | `ERROR_GenerateRequiresId` | The generate command requires a single 'id' parameter
 [KM05021](km05021) | `ERROR_CopyRequiresSource` | The copy command requires a single 'source' parameter
 [KM05022](km05022) | `ERROR_CopyRequiresOutPath` | The copy command requires the \-\-out\-path, \-o parameter
+[KM05023](km05023) | `INFO_CopyingProject` | Copying project '&lt;param&gt;' to '&lt;param&gt;'
+[KM05024](km05024) | `INFO_ProjectCopiedSuccessfully` | '&lt;param&gt;' copied to '&lt;param&gt;' successfully\.
+[KM05025](km05025) | `INFO_ProjectNotCopiedSuccessfully` | Failed to copy '&lt;param&gt;' to '&lt;param&gt;'\.
+[KM05026](km05026) | `INFO_GeneratingProject` | Generating new project '&lt;param&gt;' in '&lt;param&gt;'\.
+[KM05027](km05027) | `INFO_ProjectGeneratedSuccessfully` | New project '&lt;param&gt;' generated successfully\.
+[KM05028](km05028) | `INFO_ProjectNotGeneratedSuccessfully` | Failed to generate new project '&lt;param&gt;'\.

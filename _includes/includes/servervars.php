@@ -23,20 +23,20 @@
     require_once($_SERVER['DOCUMENT_ROOT'].'/cdn/deploy/cdn.php');
   }
 
-  $keyman_com = \Keyman\Site\Common\KeymanHosts::Instance()->keyman_com;
+  use Keyman\Site\Common\KeymanHosts;
+
+  $keyman_com = KeymanHosts::Instance()->keyman_com;
 
   // $site_protocol is used only by util.php at this time.
   $site_protocol = (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443) ? 'https://' : 'http://';
-
-  $TestServer = false;
-
   $site_tavultesoft = 'www.tavultesoft.com';
-  $site_securetavultesoft = 'secure.tavultesoft.com';
-  $downloadsDomain = "downloads.keyman.com";
 
   function cdn($file) {
-    global $cdn, $TestServer;
-    $use_cdn = !$TestServer || (isset($_REQUEST['cdn']) && $_REQUEST['cdn'] == 'force');
+    global $cdn;
+    $use_cdn =
+      KeymanHosts::Instance()->Tier() == KeymanHosts::TIER_PRODUCTION ||
+      KeymanHosts::Instance()->Tier() == KeymanHosts::TIER_STAGING ||
+      (isset($_REQUEST['cdn']) && $_REQUEST['cdn'] == 'force');
     if($use_cdn && $cdn && array_key_exists('/'.$file, $cdn)) {
       return "/cdn/deploy{$cdn['/'.$file]}";
     }

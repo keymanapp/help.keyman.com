@@ -4,7 +4,7 @@ title: Creating a PHP help file from welcome.htm
 
 The `welcome.htm` file provides the help that is packaged with the keyboard.
 The PHP file provides the help available online.
-As of 2022 it is still necessary to provide this information in two different formats.
+As of 2025 it is still necessary to provide this information in two different formats.
 Hopefully at some point in the future this duplication can be eliminated.
 
 Follow these steps to use the information in the `welcome.htm` file to create the PHP help file.
@@ -15,20 +15,27 @@ In these instructions `xyz` will be used as the keyboard project name and `Xyz` 
 2. Copy `welcome.htm` and any referenced files (images, etc.) into that `source/help/` folder.
 3. Rename `welcome.htm` to become `xyz.php` (that is, the keyboard project name plus `.php`).
 4. Edit the `xyz.php` file.
-5. Replace the `<html>` and `<head>` tags with a PHP header as in the following example. Note that the `$pagename` value will be displayed as a heading in an `<h1>` tag and `$pagetitle` will be displayed in the title bar/tab in the browser. (This example uses the same text that is entered for `$pagename` as the text for `$pagetitle`. If necessary, you can use different text for the `$pagetitle` by replacing `$pagename` on the righthand side of the equals sign with a quoted string.)
+5. Delete the `<head>`, `<meta>`, `<title>`, and `<style>` tags, along with their contents and closing tags. Delete the `<html>` and `<body>` opening tags too.
+6. Create a PHP header at the beginning of your document as in the following example. Note that the `$pagename` value will be displayed as a heading in an `<h1>` tag and `$pagetitle` will be displayed in the title bar/tab in the browser. (This example uses the same text that is entered for `$pagename` as the text for `$pagetitle`. If necessary, you can use different text for the `$pagetitle` by replacing `$pagename` on the right-hand side of the equals sign with a quoted string.)
 
 ```php
 <?php
   $pagename = 'Xyz Keyboard Help';
   $pagetitle = $pagename;
   require_once('header.php');
+
+  $pagestyle = <<<END
+  /* Repaste any custom CSS from your welcome.htm document here. */
+  /* (See next section for details.) */
+  END;
+  
 ?>
 ```
 
-6. (Optional) The PHP help file supports keyboard images that are dynamically generated from the keyboard information. If you wish to replace references to actual keyboard image files, you can make the change as noted in the Dynamically Constructed Keyboard Images section below and remove any unused image files from the `source/help/` folder.
-7. Remove the `</body>` and `</html>` tags at the end of the text copied from `welcome.htm`.
-8. (Optional) If your `welcome.htm` file has CSS formatting, you may want to transfer that to the PHP file. See the section below for details.
-9. Save your modified `xyz.php` file.
+7. (Optional) The PHP help file supports keyboard images that are dynamically generated from the keyboard information. If you wish to replace references to actual keyboard image files, you can make the change as noted in the Dynamically Constructed Keyboard Images section below and remove any unused image files from the `source/help/` folder.
+8. Remove the `</body>` and `</html>` closing tags at the end of the text copied from `welcome.htm`.
+9. (Optional) If your `welcome.htm` file has CSS formatting, you may want to transfer that to the PHP file. See the section below for details.
+10. Save your modified `xyz.php` file.
 
 ## CSS Formatting
 
