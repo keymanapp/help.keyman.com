@@ -11,42 +11,42 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM02009](km02009) | `FATAL_SomewhereIGotItWrong` | Internal error: contact Keyman
 [KM0200A](km0200a) | `ERROR_InvalidToken` | Invalid token found
 [KM0200B](km0200b) | `ERROR_InvalidBegin` | A "begin unicode" statement is required to compile a KeymanWeb keyboard
-[KM0200C](km0200c) | `ERROR_InvalidName` | Invalid 'name' command
-[KM0200D](km0200d) | `ERROR_InvalidVersion` | Invalid 'version' command
-[KM0200E](km0200e) | `ERROR_InvalidLanguageLine` | Invalid 'language' command
-[KM0200F](km0200f) | `ERROR_LayoutButNoLanguage` | Layout command found but no language command
-[KM02010](km02010) | `ERROR_InvalidLayoutLine` | Invalid 'layout' command
+[KM0200C](km0200c) | `ERROR_InvalidName` | Invalid 'name' statement
+[KM0200D](km0200d) | `ERROR_InvalidVersion` | Invalid 'version' statement
+[KM0200E](km0200e) | `ERROR_InvalidLanguageLine` | Invalid 'language' statement
+[KM0200F](km0200f) | `ERROR_LayoutButNoLanguage` | Layout statement found but no language statement
+[KM02010](km02010) | `ERROR_InvalidLayoutLine` | Invalid 'layout' statement
 [KM02011](km02011) | `ERROR_NoVersionLine` | No version line found for file
-[KM02012](km02012) | `ERROR_InvalidGroupLine` | Invalid 'group' command
-[KM02013](km02013) | `ERROR_InvalidStoreLine` | Invalid 'store' command
-[KM02014](km02014) | `ERROR_InvalidCodeInKeyPartOfRule` | Invalid command or code found in key part of rule
-[KM02015](km02015) | `ERROR_InvalidDeadkey` | Invalid 'deadkey' or 'dk' command
+[KM02012](km02012) | `ERROR_InvalidGroupLine` | Invalid 'group' statement
+[KM02013](km02013) | `ERROR_InvalidStoreLine` | Invalid 'store' statement
+[KM02014](km02014) | `ERROR_InvalidCodeInKeyPartOfRule` | Invalid statement or code found in key part of rule
+[KM02015](km02015) | `ERROR_InvalidDeadkey` | Invalid 'deadkey' or 'dk' statement
 [KM02016](km02016) | `ERROR_InvalidValue` | Invalid value in extended string
 [KM02017](km02017) | `ERROR_ZeroLengthString` | A string of zero characters was found
-[KM02018](km02018) | `ERROR_TooManyIndexToKeyRefs` | Too many index commands refering to key string
+[KM02018](km02018) | `ERROR_TooManyIndexToKeyRefs` | Too many index statements refering to key string
 [KM02019](km02019) | `ERROR_UnterminatedString` | Unterminated string in line
-[KM0201C](km0201c) | `ERROR_InvalidAny` | Invalid 'any' command
+[KM0201C](km0201c) | `ERROR_InvalidAny` | Invalid 'any' statement
 [KM0201D](km0201d) | `ERROR_StoreDoesNotExist` | Store referenced does not exist
-[KM02020](km02020) | `ERROR_InvalidIndex` | Invalid 'index' command
-[KM02022](km02022) | `ERROR_InvalidOuts` | Invalid 'outs' command
-[KM02025](km02025) | `ERROR_InvalidUse` | Invalid 'use' command
+[KM02020](km02020) | `ERROR_InvalidIndex` | Invalid 'index' statement
+[KM02022](km02022) | `ERROR_InvalidOuts` | Invalid 'outs' statement
+[KM02025](km02025) | `ERROR_InvalidUse` | Invalid 'use' statement
 [KM02026](km02026) | `ERROR_GroupDoesNotExist` | Group does not exist
 [KM02027](km02027) | `ERROR_VirtualKeyNotAllowedHere` | Virtual key is not allowed here
-[KM02028](km02028) | `ERROR_InvalidSwitch` | Invalid 'switch' command
+[KM02028](km02028) | `ERROR_InvalidSwitch` | Invalid 'switch' statement
 [KM02029](km02029) | `ERROR_NoTokensFound` | No tokens found in line
 [KM0202A](km0202a) | `ERROR_InvalidLineContinuation` | Invalid line continuation
 [KM0202B](km0202b) | `ERROR_LineTooLong` | Line too long
-[KM0202C](km0202c) | `ERROR_InvalidCopyright` | Invalid 'copyright' command
+[KM0202C](km0202c) | `ERROR_InvalidCopyright` | Invalid 'copyright' statement
 [KM0202D](km0202d) | `ERROR_CodeInvalidInThisSection` | This line is invalid in this section of the file
-[KM0202E](km0202e) | `ERROR_InvalidMessage` | Invalid 'message' command
-[KM0202F](km0202f) | `ERROR_InvalidLanguageName` | Invalid 'languagename' command
-[KM02030](km02030) | `ERROR_InvalidBitmapLine` | Invalid 'bitmaps' command
+[KM0202E](km0202e) | `ERROR_InvalidMessage` | Invalid 'message' statement
+[KM0202F](km0202f) | `ERROR_InvalidLanguageName` | Invalid 'languagename' statement
+[KM02030](km02030) | `ERROR_InvalidBitmapLine` | Invalid 'bitmaps' statement
 [KM02031](km02031) | `ERROR_CannotReadBitmapFile` | Cannot open the bitmap or icon file for reading
 [KM02032](km02032) | `ERROR_IndexDoesNotPointToAny` | An index\(\) in the output does not have a corresponding any\(\) statement
 [KM02033](km02033) | `ERROR_ReservedCharacter` | A reserved character was found
 [KM02034](km02034) | `ERROR_InvalidCharacter` | A character was found that is outside the valid Unicode range \(U\+0000 \- U\+10FFFF\)
-[KM02035](km02035) | `ERROR_InvalidCall` | The 'call' command is invalid
-[KM02037](km02037) | `ERROR_CodeInvalidInKeyStore` | The command is invalid inside a store that is used in a key part of the rule
+[KM02035](km02035) | `ERROR_InvalidCall` | The 'call' statement is invalid
+[KM02037](km02037) | `ERROR_CodeInvalidInKeyStore` | The statement is invalid inside a store that is used in a key part of the rule
 [KM02038](km02038) | `ERROR_CannotLoadIncludeFile` | Cannot load the included file: it is either invalid or does not exist
 [KM02039](km02039) | `ERROR_60FeatureOnly_EthnologueCode` | EthnologueCode system store requires VERSION 6\.0 or higher
 [KM0203A](km0203a) | `ERROR_60FeatureOnly_MnemonicLayout` | MnemonicLayout functionality requires VERSION 6\.0 or higher
