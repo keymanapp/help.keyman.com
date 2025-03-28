@@ -18,12 +18,26 @@ nul [...] [+ key] > output
 
 ## Description
 
+### `nul` in output
+
 The `nul` statement will delete the context and key on the left hand side of the
 rule from the output; it is equivalent to having an empty output (which is not
-allowed). The `nul` statement probably will not be used often, because there are
-not many times you would want to delete the context and keystroke. The `nul`
-command must be the only character or command on the right hand side of the
-rule.
+allowed).
+
+If the `nul` statement is used on the right hand side of the rule, text or
+text-emitting statements cannot be used with it. The following statements can
+be used together with `nul` in the output:
+
+* [`beep()`](beep)
+* [`call()`](call)
+* [`reset()`](reset)
+* [`return\`](return)
+* [`save()`](save)
+* [`set()`](set)
+* [`use()`](use)
+
+
+### `nul` in context
 
 `nul` can be used in the context in one special situation. It is used at the
 start of the context to tell Keyman to find a match only if the `nul` statement
@@ -82,7 +96,9 @@ The `nul` statement can be used in keyboards on all platforms.
 
 ## Version history
 
-The `nul` statement was introduced in Keyman 3.0.
+* Keyman 18: Clarification of acceptable uses of `nul` and other statements in
+  output.
+* The `nul` statement was introduced in Keyman 3.0.
 
 ## See also
 
