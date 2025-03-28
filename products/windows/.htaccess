@@ -10,4 +10,4 @@ RedirectMatch "/products/windows/14.0/docs/start_tutorial.php" "/products/window
 RedirectMatch "/products/windows/14.0/docs/basic_config_menu.php" "/products/windows/14.0/basic/config/"
 RedirectMatch "/products/windows/14.0/docs/context_onlineupdate.php" "/products/windows/14.0/context/online-update"
 RedirectMatch "/products/windows/14.0/docs/context_font_helper.php" "/products/windows/14.0/start/font"
-RedirectMatch "/products/windows/14.0/docs/start_download-install_keyman.php" "products/windows/14.0/start/download-and-install-keyman"
+RedirectMatch "/products/windows/14.0/docs/start_download-install_keyman.php" "/products/windows/14.0/start/download-and-install-keyman"
