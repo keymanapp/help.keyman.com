@@ -30,7 +30,6 @@ Encoding or Character encoding is the process of assigning numbers to graphical 
 
 ### File types
 Keyman has the following file types:
-* [ICO](../../current-version/reference/file-types/ico): an icon which is used in the user interface to indicate that the keyboard is active.
 * [KPJ](../../current-version/reference/file-types/kpj): a Keyman Developer Project file.
 * [KMN](../../current-version/reference/file-types/kmn): a keyboard source file. This holds all the code used by a Keyman Desktop keyboard, in plain text.
 * [KMX](../../current-version/reference/file-types/kmx): compiled in Keyman Developer from the Keyman source file (.KMN) and icon for the keyboard (.ICO/.BMP).
@@ -39,39 +38,12 @@ Keyman has the following file types:
 * [KVK](../../current-version/reference/file-types/kvk): a Keyman On Screen Keyboard file.
 * [KVKS](../../current-version/reference/file-types/kvks): a Keyman On Screen Keyboard source file.
 * [TSV](../../current-version/reference/file-types/tsv): or a tab-separated values file contains a word list. This word list is used to predict and correct words using the predictive text functionality.
-* [TTF](../../current-version/reference/file-types/ttf): a TrueType font file. This file is distributed with a keyboard package to be used as a keyboard font or display font.
 * [MODEL.JS](../../current-version/reference/file-types/model-js): compiled in Keyman Developer from the Keyman lexical model source (.MODEL.TS) file and (.TSV) wordlist.
 * [MODEL.TS](../../current-version/reference/file-types/model-ts): a [lexical model](#toc-lexical-model) definition source file.
 * [More File types](../../current-version/reference/file-types/).
 
 ### File layout
-In Keyman Developer, a keyboard project follow closely to the structure of folders and files:
-```plain
-keyboard
-│   HISTORY.md:        A place to record changes you make to the project over time.
-│   LICENSE.md:        Explains the rights that you give to others.
-│   README.md:         Provides an introduction to the keyboard project when others stumble across it.
-│   keyboard.kpj:      The main project file, contains references to all the components: keyboards, models, and packages.
-│   keyboard.kpj.user: A user preference file. You can safely delete it at any time.
-│
-├───build
-|       keyboard.keyboard_info: A metadata file detailing the keyboard's origin, version, requirements, and capabilities.
-│       keyboard.kmp:           The installable package file.
-│       keyboard.kmx:           The compiled keyboard. This intermediate file should not be distributed.
-│       keyboard.kvk:           The compiled on screen keyboard. This intermediate file should not be distributed.
-│       keyboard.js:            The keyboard compiled to Javascript for use with KeymanWeb.
-│
-└───source
-        keyboard.ico:                 The icon of the keyboard.
-        readme.htm:                   Introductory web page for end users of your keyboard.
-        welcome.htm:                  A web page which describes how to use your keyboard.
-        keyboard.keyman-touch-layout: A touch layout file description.
-        keyboard.kmn:                 The keyboard source file.
-        keyboard.kps:                 The package source, which is used to create a compressed .kmp.
-        keyboard.kvks:                The on screen keyboard template for desktop platforms.
-```
-
-For more details on [Keyman Developer structure for standard keyboard source file folders](../../current-version/reference/file-layout).
+Keyman Developer has a [standard folders and files structure](../../current-version/reference/file-layout) for Keyman keyboard projects.
 
 ### Font
 A font is a graphical representation of text that may include a different typeface, point size, weight, color, or design. If you've read or received a message via Keyman that is displayed as square boxes, the most likely cause is that your device does not support the language or script. This is how to properly [include font(s) into the keyboard package](../../keyboards/github/step-2#toc-including-fonts-in-your-keyboard-package), and [how to fix square boxes related to font](https://keyman.com/fonts/).
