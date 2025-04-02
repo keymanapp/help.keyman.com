@@ -119,7 +119,7 @@ In a positional keyboard layout, contrary to a [mnemonic keyboard layout](#toc-m
 
 If we, for example, specified a Keyboard rule in Keyman Developer for a US layout (`+ K_Z  >  'z'`) and used that positional layout with a German physical keyboard, then to print out **'z'** the key K_Z (where the keycap is labeled 'Y') will have to be pressed.
 
-This means when we specify a key in a positional layout we talk about a certain position (e.g. K_Z) no matter may be written on a keycap for a specific keyboard layout.
+This means when we specify a key in a positional layout we talk about a certain position (e.g. K_Z) no matter what is written on a keycap for a specific keyboard layout.
 
 Another way of identifying positional layouts is [virtual keys](./virtual-keys#toc-virtual-key-visual-layout).
 
