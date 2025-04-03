@@ -15,9 +15,6 @@ title: Compiler Messages Reference for @keymanapp/kmc-copy
 [KM0B00A](km0b00a) | `WARN_FileNotFound` | The file '&lt;param&gt;' could not be found, skipping file copy\. Any references have been updated to '&lt;param&gt;'
 [KM0B00B](km0b00b) | `WARN_NoWordlistsFound` | No wordlists could be found in the lexical model source file '&lt;param&gt;'\. The file may be too complex for kmc\-copy to parse
 [KM0B00C](km0b00c) | `ERROR_PackageFileCouldNotBeRead` | The package source file '&lt;param&gt;' could not be loaded\. The file may have an invalid format
-[KM0B00D](km0b00d) | `ERROR_UnsupportedProjectVersion` | Project version &lt;param&gt; for '&lt;param&gt;' is not supported by this version of Keyman Developer
-[KM0B00E](km0b00e) | `ERROR_InvalidProjectFile` | Project file '&lt;param&gt;' is not valid: &lt;param&gt;
-[KM0B00F](km0b00f) | `ERROR_ProjectFileCouldNotBeRead` | Project file '&lt;param&gt;' could not be read
 [KM0B010](km0b010) | `INFO_DryRun` | Dry run requested\. No changes have been saved
 [KM0B012](km0b012) | `ERROR_CannotDownloadFolderFromGitHub` | The folder '&lt;param&gt;' could not be downloaded: &lt;param&gt; &lt;param&gt;
 [KM0B013](km0b013) | `ERROR_FolderDownloadedFromGitHubIsNotAValidFolder` | The path '&lt;param&gt;' does not appear to be a folder on GitHub
