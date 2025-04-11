@@ -16,7 +16,7 @@ title: Compiler Messages Reference for @keymanapp/kmc-ldml
 [KM0000A](km0000a) | `WARN_CustomForm` | Custom &lt;form id="&lt;param&gt;"&gt; element\. Key layout may not be as expected\.
 [KM0000B](km0000b) | `ERROR_GestureKeyNotFoundInKeyBag` | Key '&lt;param&gt;' not found in key bag, referenced from other '&lt;param&gt;' in &lt;param&gt;
 [KM0000C](km0000c) | `HINT_NoDisplayForMarker` | Key element with id "&lt;param&gt;" has only marker output, but there is no matching display element by output or keyId\. Keycap may be blank\.
-[KM0000D](km0000d) | `ERROR_InvalidVersion` | Version number '&lt;param&gt;' must be a semantic version format string\.
+[KM0000D](km0000d) | `ERROR_InvalidVersion` | Version number '&lt;param&gt;' must be a semantic version format string with 'major\.minor\.patch' components\.
 [KM0000E](km0000e) | `ERROR_MustBeAtLeastOneLayerElement` | The source file must contain at least one layer element\.
 [KM0000F](km0000f) | `HINT_NoDisplayForSwitch` | Key element with id "&lt;param&gt;" is a layer switch key, but there is no matching display element by keyId\. Keycap may be blank\.
 [KM00010](km00010) | `ERROR_DisplayIsRepeated` | display  has more than one display entry\.

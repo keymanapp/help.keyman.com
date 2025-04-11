@@ -3,7 +3,7 @@ title: Compiler Messages Reference
 ---
 
 * [kmc-ldml.LdmlCompilerMessages](kmc-ldml.ldmlcompilermessages)
-* [common-types.CommonTypesMessages](common-types.commontypesmessages)
+* [developer-utils.DeveloperUtilsMessages](developer-utils.developerutilsmessages)
 * [kmc-kmn.KmnCompilerMessages](kmc-kmn.kmncompilermessages)
 * [kmc-model.ModelCompilerMessages](kmc-model.modelcompilermessages)
 * [kmc-package.PackageCompilerMessages](kmc-package.packagecompilermessages)

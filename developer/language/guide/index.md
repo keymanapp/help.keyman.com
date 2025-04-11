@@ -5,6 +5,7 @@ title: Language Structure
 ## Language elements
 
 * [Keyman Language Overview](overview)
+* [Glossary](glossary)
 * [Using rules](rules)
 * [Using constraint rules](constraints)
 * [Using groups](groups)
