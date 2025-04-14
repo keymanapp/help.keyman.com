@@ -30,6 +30,8 @@ if(&systemStore comparison constant) ... > ...
    * [`&layer`](layer) - test the currently visible layer on a touch keyboard
    * [`&baselayout`](baselayout) - test the hardware base layout the user has
      configured
+   * [`&newLayer`](newlayer) - test the name of the new layer, if the previous keystroke changed the layer, or to an empty string otherwise
+   * [`&oldLayer`](oldlayer) - test the name of the previously selected layer, if the previous keystroke changed the layer, or to an empty string otherwise
 
 `comparison`
 : Either `=` or `!=`, for equal and not equal, respectively.
