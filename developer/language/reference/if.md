@@ -30,6 +30,8 @@ if(&systemStore comparison constant) ... > ...
    * [`&layer`](layer) - test the currently visible layer on a touch keyboard
    * [`&baselayout`](baselayout) - test the hardware base layout the user has
      configured
+   * [`&newLayer`](newlayer) - test the name of the new layer, if the previous keystroke changed the layer, or to an empty string otherwise
+   * [`&oldLayer`](oldlayer) - test the name of the previously selected layer, if the previous keystroke changed the layer, or to an empty string otherwise
 
 `comparison`
 : Either `=` or `!=`, for equal and not equal, respectively.
@@ -123,6 +125,8 @@ Keyman for macOS 11.0.221 added support for `if()`, `set()`, `save()` and `reset
 * [`baselayout()` statement and &baselayout system store](baselayout)
 * [`layer()` statement and &layer system store](layer)
 * [`platform()` statement and &platform system store](platform)
+* [`&newLayer` statement](newlayer)
+* [`&oldLayer` statement](oldlayer)
 * [`reset()` statement](reset)
 * [`save()` statement](save)
 * [`set()` statement](set)
