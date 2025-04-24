@@ -77,12 +77,16 @@ RedirectMatch "/developer/engine/(android|iphone-and-ipad|windows)/(?!latest-ver
 # /developer/engine/web
 RedirectMatch "/developer/engine/web/(?!latest-version|faq|history|current-version|\d+\.\d+)(.*)" "/developer/engine/web/current-version/$1"
 
-# latest-version:18.0
+# latest-version:19.0
 # alpha or beta version reference
-RewriteCond "%{DOCUMENT_ROOT}/$1/18.0" -d
-RewriteRule "^(.+)/latest-version(/.*)?$" "$1/18.0$2" [DPI]
+RewriteCond "%{DOCUMENT_ROOT}/$1/19.0" -d
+RewriteRule "^(.+)/latest-version(/.*)?$" "$1/19.0$2" [DPI]
 
-# current-version:17.0
+# current-version:18.0
+RewriteCond "%{DOCUMENT_ROOT}/$1/18.0" -d
+RewriteRule "^(.+)/(?:current|latest)-version(/.*)?$" "$1/18.0$2" [DPI]
+
+# version:17.0
 RewriteCond "%{DOCUMENT_ROOT}/$1/17.0" -d
 RewriteRule "^(.+)/(?:current|latest)-version(/.*)?$" "$1/17.0$2" [DPI]
 
