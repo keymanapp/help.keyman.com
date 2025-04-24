@@ -125,6 +125,8 @@ Keyman for macOS 11.0.221 added support for `if()`, `set()`, `save()` and `reset
 * [`baselayout()` statement and &baselayout system store](baselayout)
 * [`layer()` statement and &layer system store](layer)
 * [`platform()` statement and &platform system store](platform)
+* [`&newLayer` statement](newlayer)
+* [`&oldLayer` statement](oldlayer)
 * [`reset()` statement](reset)
 * [`save()` statement](save)
 * [`set()` statement](set)
