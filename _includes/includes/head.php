@@ -82,7 +82,7 @@
    else window.onload = downloadJSAtOnload;
   </script>
   <?php if(isset($IncludeKeymanWeb) && $IncludeKeymanWeb == true){
-    $kmw_version_number = '13.0.108';
+    $kmw_version_number = '18.0.235';
     if(KeymanHosts::Instance()->Tier() != KeymanHosts::TIER_TEST) {
       // For performance reasons, we don't check KeymanWeb version on Test Tier
       $kmw_version = @file_get_contents(KeymanHosts::Instance()->SERVER_api_keyman_com . '/version/web/stable');
