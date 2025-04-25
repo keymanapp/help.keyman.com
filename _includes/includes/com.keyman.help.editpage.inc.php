@@ -6,11 +6,11 @@
     $app =  "https://github.com/keymanapp/keyman/edit/master";
 
     $map = [
-      'android' => 'android/help/',
-      'iphone-and-ipad' => 'ios/help/',
-      'linux' => 'linux/help/',
-      'mac' => 'mac/help/',
-      'windows' => 'windows/src/desktop/help/'
+      'android' => 'android/docs/help/',
+      'iphone-and-ipad' => 'ios/docs/help/',
+      'linux' => 'linux/docs/help/',
+      'mac' => 'mac/docs/help/',
+      'windows' => 'windows/docs/help/'
     ];
     $maps = join('|', array_keys($map));
 
