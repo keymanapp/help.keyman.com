@@ -31,7 +31,7 @@ be used together with `nul` in the output:
 * [`beep()`](beep)
 * [`call()`](call)
 * [`reset()`](reset)
-* [`return\`](return)
+* [`return`](return)
 * [`save()`](save)
 * [`set()`](set)
 * [`use()`](use)
