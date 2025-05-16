@@ -4,7 +4,7 @@ title: forms
 
 ## Summary
 
-The **`forms`** element…
+The **`forms`** element contains `form` elements.
 
 ## Syntax
 
@@ -20,7 +20,7 @@ The **`forms`** element…
 
 ## Description
 
-The `forms` element is used to…
+The `forms` element is used to contain the [`form`](form) elements for the keyboard. There may only be one `forms` element in the file.
 
 ## Examples
 
@@ -28,6 +28,7 @@ The `forms` element is used to…
 
 ```xml
 <forms>
+    …
 </forms>
 ```
 

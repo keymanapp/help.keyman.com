@@ -4,7 +4,7 @@ title: display
 
 ## Summary
 
-The **`display`** element…
+The **`display`** element is used to overide the keytops for certain keys.
 
 ## Syntax
 

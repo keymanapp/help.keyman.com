@@ -4,7 +4,7 @@ title: info
 
 ## Summary
 
-The **`info`** element…
+The **`info`** element contains additional metadata about this keyboard.
 
 ## Syntax
 

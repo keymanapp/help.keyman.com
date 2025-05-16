@@ -4,12 +4,13 @@ title: flicks
 
 ## Summary
 
-The **`flicks`** element…
+The **`flicks`** element contains a collection of [`<flick>`](flick) elements.
 
 ## Syntax
 
 ```xml
 <flicks>
+    …
 </flicks>
 ```
 
@@ -20,7 +21,7 @@ The **`flicks`** element…
 
 ## Description
 
-The `flicks` element is used to…
+The `flicks` element is used to contain all [`<flick>`](flick) elements for the keyboard. There may only be one of these elements.
 
 ## Examples
 
@@ -28,6 +29,7 @@ The `flicks` element is used to…
 
 ```xml
 <flicks>
+    …
 </flicks>
 ```
 

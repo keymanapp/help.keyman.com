@@ -4,7 +4,7 @@ title: displayOptions
 
 ## Summary
 
-The **`displayOptions`** element…
+The **`displayOptions`** element is used to provide setting information for keytop displays.
 
 ## Syntax
 

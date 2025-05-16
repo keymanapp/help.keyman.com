@@ -4,7 +4,7 @@ title: layer
 
 ## Summary
 
-The **`layer`** element…
+The **`layer`** element represents a single layer of the keyboard.
 
 ## Syntax
 
@@ -20,7 +20,7 @@ The **`layer`** element…
 
 ## Description
 
-The `layer` element is used to…
+The `layer` element is used to represent a single layer of the keyboard, such as a certain modifier combination. It is contained within the layers element, and it contains one or more row elements.
 
 ## Examples
 

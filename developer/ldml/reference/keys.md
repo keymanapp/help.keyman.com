@@ -20,7 +20,7 @@ The **`keys`** element…
 
 ## Description
 
-The `keys` element is used to…
+The `keys` element is used to contain all [`<key>`](key) elements for the keyboard. There may only be one of these elements.
 
 ## Examples
 

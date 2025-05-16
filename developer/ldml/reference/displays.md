@@ -4,7 +4,7 @@ title: displays
 
 ## Summary
 
-The **`displays`** element…
+The **`displays`** element contains a collection of [`<display>`](display) elements as well as an optional [`<displayOptions>`](displayOptions) element.
 
 ## Syntax
 
@@ -20,7 +20,7 @@ The **`displays`** element…
 
 ## Description
 
-The `displays` element is used to…
+The `displays` element is used to contain all [`<display>`](key) elements and the optional [`<displayOptions>`](displayOptions) element for the keyboard. There may only be one of these elements.
 
 ## Examples
 

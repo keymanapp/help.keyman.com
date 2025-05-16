@@ -4,7 +4,7 @@ title: form
 
 ## Summary
 
-The **`form`** element…
+The **`form`** element is used to define or override the scan code layout of a hardware keyboard.
 
 ## Syntax
 
@@ -13,6 +13,8 @@ The **`form`** element…
 </form>
 ```
 
+Parent Element: [`<forms>`](forms)
+
 ### Attributes
 
 `id`
@@ -20,7 +22,9 @@ The **`form`** element…
 
 ## Description
 
-The `form` element is used to…
+The `form` element is used to define or override the scan code layout of a hardware keyboard.
+
+Note that keyboard developers will not normally need or want to use this element, but rather to use the pre-defined hardware forms.
 
 ## Examples
 

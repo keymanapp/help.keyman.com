@@ -4,7 +4,7 @@ title: import
 
 ## Summary
 
-The **`import`** element…
+The **`import`** element is used to import elements from another file at this location.
 
 ## Syntax
 

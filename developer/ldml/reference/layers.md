@@ -20,7 +20,7 @@ The **`layers`** element…
 
 ## Description
 
-The `layers` element is used to…
+The `layers` element is used to contain all [`<layer>`](layer) elements for the keyboard. There may only be one of these elements.
 
 ## Examples
 
