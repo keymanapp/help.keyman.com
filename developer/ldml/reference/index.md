@@ -66,7 +66,7 @@ title: LDML Reference
 :   A variable type representing a group of characters or strings.
 
 [`<settings>`](settings)
-:   …
+:   An element provides additional settings for the keyboard.
 
 [`<special>`](special)
 :   A element used for extensions to the keyboard format.

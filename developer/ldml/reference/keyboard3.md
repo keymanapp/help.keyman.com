@@ -48,3 +48,10 @@ The `keyboard3` element was added in LDML v46. The `draft` attribute was added i
 [CLDR Releases]: https://cldr.unicode.org/index/downloads
 [CLDR keyboard process]: https://cldr.unicode.org/index/process/keyboard-repository-process
 [BCP 47]: ../../current-version/reference/bcp-47
+
+## See Also
+
+- LDML Specification: [`<keyboard3>` in UTS#35 Part 7][tr35-element-keyboard3]
+
+[tr35-element-keyboard3]: https://www.unicode.org/reports/tr35/tr35-keyboards.html#element-keyboard3
+

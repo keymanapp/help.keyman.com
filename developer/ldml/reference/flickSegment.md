@@ -48,3 +48,10 @@ The `flickSegment` element was added in LDML v46
 <!-- ## See also
 
 - … -->
+
+## See Also
+
+- LDML Specification: [`<flickSegment>` in UTS#35 Part 7][tr35-element-flickSegment]
+
+[tr35-element-flickSegment]: https://www.unicode.org/reports/tr35/tr35-keyboards.html#element-flicksegment
+
