@@ -65,20 +65,14 @@ group(nextLayer) readonly
 While the `&newLayer` store is accessible on all platforms, it only has
 meaning on touch platforms (mobile web, iOS, Android).
 
-<table class='platform'>
-  <thead>
-    <tr><th>Windows</th><th>macOS</th><th>Linux</th><th>Desktop web</th><th>Mobile web</th><th>iOS</th><th>Android</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr>
-  </tbody>
-</table>
-
-## See Also
-
-* [`&oldLayer` store](oldlayer)
+| Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
+|---------|-------|-------|-------------|------------|-----|---------|
+|     ✔   |   ✔   |   ✔   |      ✔      |      ✔     |  ✔  |    ✔   |
 
 ## Version history
 
 * Version 15.0: `&newLayer` support introduced
 
+## See Also
+
+* [`&oldLayer` store](oldlayer)

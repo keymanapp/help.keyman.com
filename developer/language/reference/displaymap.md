@@ -98,20 +98,9 @@ store(&displayMap) '../../../common/fonts/kbd/KbdKhmr.json'
 The `&displayMap` store is used only in the compile process and the results are
 applicable on all platforms.
 
-<table class='platform'>
-  <thead>
-    <tr><th>Windows</th><th>macOS</th><th>Linux</th><th>Desktop web</th><th>Mobile web</th><th>iOS</th><th>Android</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr>
-  </tbody>
-</table>
-
-## See Also
-
-* [`&visualKeyboard` store](visualkeyboard)
-* [`&layoutFile` store](layoutfile)
-* More background on the need for `&displayMap` can be found in [issue #9031](https://github.com/keymanapp/keyman/issues/9031).
+| Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
+|---------|-------|-------|-------------|------------|-----|---------|
+|     ✔   |   ✔   |   ✔   |      ✔      |      ✔     |  ✔  |    ✔   |
 
 ## Version history
 
@@ -120,3 +109,9 @@ applicable on all platforms.
   necessary to target version 17 or later (via `store(&version)`) in the
   keyboard .kmn source file in order to make use of `&displayMap` in the
   keyboard.
+
+## See Also
+
+* [`&visualKeyboard` store](visualkeyboard)
+* [`&layoutFile` store](layoutfile)
+* More background on the need for `&displayMap` can be found in [issue #9031](https://github.com/keymanapp/keyman/issues/9031).

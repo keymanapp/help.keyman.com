@@ -101,23 +101,19 @@ The `if()` statement can be used in keyboards on the following platforms.
 Currently, only Windows and Linux support the options.htm form to set variable stores
 through a configuration user interface.
 
-<table class='platform'>
-  <thead>
-    <tr><th>Feature</th><th>Windows</th><th>macOS</th><th>Linux</th><th>Desktop web</th><th>Mobile web</th><th>iOS</th><th>Android</th></tr>
-  </thead>
-  <tbody>
-    <tr><th>`if()`</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr>
-    <tr><th>options.htm</th><td>✔</td><td>✘</td><td>✔</td><td>✘</td><td>✘</td><td>✘</td><td>✘</td></tr>
-  </tbody>
-</table>
+| Feature     | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
+|-------------|---------|-------|-------|-------------|------------|-----|---------|
+| `if()`      |    ✔    |   ✔   |   ✔   |      ✔      |      ✔    |   ✔  |    ✔   |
+| options.htm |    ✔    |   ✘   |   ✔   |      ✘      |      ✘    |   ✘  |    ✘   |
 
 ## Version history
 
-The `if()` statement was introduced in Keyman 8.0.
+Keyman for macOS 11.0.221 added support for `if()`, `set()`, `save()` and `reset()`
+for variable stores.
 
 Keyman 9.0: Added support for variable system stores.
 
-Keyman for macOS 11.0.221 added support for `if()`, `set()`, `save()` and `reset()` for variable stores.
+The `if()` statement was introduced in Keyman 8.0.
 
 ## See also
 

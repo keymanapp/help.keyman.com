@@ -1,7 +1,7 @@
 ---
 title: save()
 ---
-  
+
 ## Summary
 
 The **`save()`** statement persists a variable store for future
@@ -46,15 +46,15 @@ The `save()` statement can be used in keyboards on all platforms.
 
 ## Version history
 
-The `save()` statement was introduced in Keyman 8.0.
-
 Keyman for macOS 11.0.221 added support for `if()`, `set()`, `save()`
 and `reset()` for variable stores.
+
+The `save()` statement was introduced in Keyman 8.0.
 
 ## See also
 
 -   [Using variable stores](../guide/variable-stores)
 -   [`if()` statement](./if)
--   [`reset()` statement](./reset) 
+-   [`reset()` statement](./reset)
 -   [`set()` statement](./set)
 -   [`store()` statement](./store)

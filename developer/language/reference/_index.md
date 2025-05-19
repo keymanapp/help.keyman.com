@@ -102,9 +102,9 @@ output section of the rule.
 
 ## Version history
 
-The `index()` statement was introduced in Keyman 3.0.
-
 As of version 6.0, `index()` can also be used in the left-hand side of a rule.
+
+The `index()` statement was introduced in Keyman 3.0.
 
 ## See also
 
