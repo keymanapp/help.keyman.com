@@ -1,7 +1,7 @@
 ---
 title: &hotkey
 ---
-  
+
 ## Summary
 
 The **`&hotkey`** store defines a default hotkey that can be used to
@@ -28,12 +28,15 @@ The hotkey can be any standard, non-modifier key, with any combination
 of the Shift, Control and Alt keys also pressed. Only `SHIFT`, `CTRL`
 and `ALT` modifiers are permitted.
 
-The `&hotkey` store is optional. Earlier versions of Keyman also used
-the now-deprecated `HOTKEY` statement.
+The `&hotkey` store is optional.
 
 Note that the default hotkey can be changed by a user after a keyboard
 is installed. Don't rely on it never changing in any documentation that
 you include with the keyboard.
+
+[!NOTE]
+**The older `HOTKEY` statement is deprecated and will be not be supported for
+keyboards that target Keyman 19.0 or later.**
 
 ## Format Note
 
@@ -59,12 +62,12 @@ The `&hotkey` store is used in keyboards on the following platforms.
 
 ## Version history
 
-Hotkeys were introduced in Keyman 1.0.
+Keyman Developer 13 no longer requires the virtual key to be in quotes
+as well as square brackets.
 
 The virtual key hotkey format was introduced in Keyman 3.1.
 
-Keyman Developer 13 no longer requires the virtual key to be in quotes
-as well as square brackets.
+Hotkeys were introduced in Keyman 1.0.
 
 ## See also
 

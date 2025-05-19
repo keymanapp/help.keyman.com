@@ -1,7 +1,7 @@
 ---
 title: &bitmap
 ---
-  
+
 ## Summary
 
 The **`&bitmap`** store defines an icon which is used in the user
@@ -32,11 +32,12 @@ Specify the full filename, including the file extension, in quotes. If
 the icon is in a different folder, then use a relative path to reference
 it.
 
-The older `BITMAP` and `BITMAPS` header statements are deprecated and
-should not be used.
-
 The `&bitmap` store is not required. A generic keyboard icon will be
 displayed if no bitmap is specified.
+
+[!NOTE]
+**The older `BITMAP` and `BITMAPS` header statements are deprecated and
+will be not be supported for keyboards that target Keyman 19.0 or later.**
 
 ## Examples
 

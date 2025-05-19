@@ -4,11 +4,6 @@ title: Keywords by Type
 
 ## <span id="id500426"></span>System stores
 
-Header keywords have been replaced by [system
-stores](../guide/stores){.link}. While header keywords continue to work,
-they have been deprecated and should be replaced by the corresponding
-system store.
-
 [`&Bitmap` store, `BITMAP` statement, `BITMAPS` statement](bitmap)
 :   An image that appears in the language menu
 
@@ -93,6 +88,12 @@ system store.
 [`&windowslanguages` store](windowslanguages)
 :   Specifies a set of Windows language codes to which the keyboard can
     be associated (Deprecated)
+
+[!NOTE]
+**The older header statements are deprecated and will be not be supported for
+keyboards that target Keyman 19.0 or later.
+[system stores](stores#toc-system-stores) should be used in place of
+header keywords.**
 
 ## Variable system stores
 

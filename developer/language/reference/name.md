@@ -1,7 +1,7 @@
 ---
 title: &name
 ---
-  
+
 ## Summary
 
 The **`&name`** store specifies the name of the keyboard presented in
@@ -31,8 +31,10 @@ example, rather than call your keyboard `"Dutch"`, which may confuse
 users who may have a system Dutch keyboard already installed, you could
 call your keyboard `"Dan's Dutch"` or `"Double Dutch"`.
 
-The `NAME` statement is deprecated, and the `&name` store should be used
-instead.
+[!NOTE]
+**The `NAME` statement is deprecated and will be not be supported for
+keyboards that target Keyman 19.0 or later. Instead use the `&name`
+store.**
 
 ## Examples
 
