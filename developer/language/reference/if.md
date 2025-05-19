@@ -11,9 +11,7 @@ The `if()` statement can also be used to test the value of certain system stores
 ## Syntax
 
 ```
-if(storeName comparison store2) ... > ...
 if(storeName comparison constant) ... > ...
-if(&systemStore comparison store2) ... > ...
 if(&systemStore comparison constant) ... > ...
 ```
 
@@ -35,9 +33,6 @@ if(&systemStore comparison constant) ... > ...
 
 `comparison`
 : Either `=` or `!=`, for equal and not equal, respectively.
-
-`store2`
-: The name of a store to compare to
 
 `constant`
 : A string value to compare to
