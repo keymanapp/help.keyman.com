@@ -6,8 +6,9 @@ Keyman supports a prefix at the start of the line to identify lines that should 
 compiled for a specific target. If the prefix is omitted, then the line will be compiled
 for all targets.
 
-**Compile targets are deprecated in Keyman 17.0, and will be not be supported for keyboards
-that target Keyman 19.0 or later.**
+> [!NOTE]
+> Compile targets are deprecated in Keyman 17.0, and will be not be supported for keyboards
+> that target Keyman 19.0 or later.
 
 A more flexible mechanism is available with [`platform()` statements](../reference/platform). While `platform()`
 statements cannot provide alternate metadata for different platforms, they do support a
