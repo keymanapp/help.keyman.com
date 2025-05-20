@@ -133,3 +133,9 @@ title: Keyman language history
     `*Sp*`, `*NBSp*`, `*NarNBSp*`, `*EnQ*`, `*EmQ*`, `*EnSp*`, `*EmSp*`,
     `*PunctSp*`, `*ThSp*`, `*HSp*`, `*ZWSp*`, `*ZWJ*`, `*WJ*`, `*CGJ*`,
     `*LTRM*`, `*RTLM*`, `*SH*`, `*HTab*`
+
+## Keyman 19
+
+*   Support for decimal, hexadecimal, and octal [character code
+    formats](strings) has been removed.
+*   Support for [compile targets](compile-targets) has been removed.
