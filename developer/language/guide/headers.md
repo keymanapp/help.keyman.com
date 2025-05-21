@@ -22,11 +22,6 @@ title: Header system stores
 [`&Copyright` store](../reference/copyright)
 :   A copyright message for the keyboard
 
-<!-- should we remove EthnologueCode from here?-->
-[`&EthnologueCode` store](../reference/ethnologuecode)
-:   The ISO 639-3 (formerly SIL Ethnologue) code for the language
-    (Deprecated)
-
 [`&Hotkey` store](../reference/hotkey)
 :   Sets a default activation hotkey for the keyboard
 
@@ -52,11 +47,6 @@ title: Header system stores
 
 [`&kmw_rtl` store](../reference/kmw_rtl)
 :   Specifies the directionality of text controls for web keyboards
-
-<!-- should this be removed from this file?-->
-[`&Language` store](../reference/language)
-:   Specifies the system language to install or associate with the
-    keyboard (Deprecated)
 
 [`&layer` store](../reference/layer)
 :   Tests or sets the current touch keyboard layer visible on the on
@@ -91,13 +81,22 @@ title: Header system stores
 [`&VisualKeyboard` store](../reference/visualkeyboard)
 :   Specifies the .kvk visual keyboard file associated with the keyboard
 
-<!-- should this be removed from this file?-->
+## Deprecated System Stores
+
+[`&EthnologueCode` store](../reference/ethnologuecode)
+:   The ISO 639-3 (formerly SIL Ethnologue) code for the language
+    (Deprecated)
+
+[`&Language` store](../reference/language)
+:   Specifies the system language to install or associate with the
+    keyboard (Deprecated)
+
 [`&windowslanguages` store](../reference/windowslanguages)
 :   Specifies a set of Windows language codes to which the keyboard can
     be associated (Deprecated)
 
-[!NOTE]
-**The older header keywords are deprecated and will be not be supported for
-keyboards that target Keyman 19.0 or later.
-[system stores](stores#toc-system-stores) should be used in place of
-header keywords.**
+>[!NOTE]
+> The older header keywords are deprecated and will be not be supported for
+> keyboards that target Keyman 19.0 or later.
+> [system stores](stores#toc-system-stores) should be used in place of
+> header keywords.
