@@ -44,7 +44,7 @@ any(vowel) U+0302 > index(vowelWithCircumflex, 1)
 The `match` rule can be used in keyboards on all platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 |     ✔   |   ✔   |   ✔   |      ✔      |      ✔     |  ✔  |    ✔   |
 
 ## Version history

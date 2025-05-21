@@ -89,7 +89,7 @@ applied on character key rules (e.g. `+ 'a' > 'b'`) in KeymanWeb (see
 ## Platforms
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 |     ✔   |   ✔   |   ✔   |      ✔      |      ✔     |  ✔  |    ✔   |
 
 ## Version history

@@ -1,7 +1,7 @@
 ---
 title: &kmw_helptext
 ---
-  
+
 ## Summary
 
 The **`&kmw_helptext`** store specifies a HTML string that will be
@@ -40,7 +40,7 @@ The `&kmw_helptext` store will be used in keyboards on desktop web
 platforms. It is ignored on all other platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✘       | ✘     | ✘     | ✔           | ✘          | ✘   | ✘       |
 
 ## Version history

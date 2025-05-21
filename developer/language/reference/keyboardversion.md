@@ -1,7 +1,7 @@
 ---
 title: &keyboardversion
 ---
-  
+
 ## Summary
 
 The **`&keyboardversion`** store documents the version of the keyboard.
@@ -28,7 +28,7 @@ keyboard and update them automatically.
 The version string should match as far as possible the package version
 string, when a keyboard is included in a package.
 
-**Note:** there is a difference between `&keyboardversion`, which documents 
+**Note:** there is a difference between `&keyboardversion`, which documents
 the keyboard version, and [`&version`](version), which determines which
 version of Keyman a keyboard will run with.
 
@@ -52,7 +52,7 @@ store(&keyboardversion) '1.1.2'
 The `&keyboardversion` store can be used in keyboards on all platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✔       | ✔     | ✔     | ✔           | ✔          | ✔   | ✔       |
 
 ## Version history

@@ -66,7 +66,7 @@ While the `&newLayer` store is accessible on all platforms, it only has
 meaning on touch platforms (mobile web, iOS, Android).
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 |     ✔   |   ✔   |   ✔   |      ✔      |      ✔     |  ✔  |    ✔   |
 
 ## Version history

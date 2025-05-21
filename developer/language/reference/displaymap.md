@@ -99,7 +99,7 @@ The `&displayMap` store is used only in the compile process and the results are
 applicable on all platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 |     ✔   |   ✔   |   ✔   |      ✔      |      ✔     |  ✔  |    ✔   |
 
 ## Version history

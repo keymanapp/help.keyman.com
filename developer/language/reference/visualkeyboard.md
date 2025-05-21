@@ -1,7 +1,7 @@
 ---
 title: &visualkeyboard
 ---
-  
+
 ## Summary
 
 The **`&visualkeyboard`** store specifies an On Screen Keyboard source
@@ -51,7 +51,7 @@ Developer.
 The `&visualkeyboard` store is used in all platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✔       | ✔     | ✔     | ✔           | ✔          | ✔   | ✔       |
 
 ## Version history

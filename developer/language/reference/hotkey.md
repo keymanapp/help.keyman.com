@@ -34,9 +34,9 @@ Note that the default hotkey can be changed by a user after a keyboard
 is installed. Don't rely on it never changing in any documentation that
 you include with the keyboard.
 
-[!NOTE]
-**The older `HOTKEY` statement is deprecated and will be not be supported for
-keyboards that target Keyman 19.0 or later.**
+> [!NOTE]
+> The older `HOTKEY` statement is deprecated and will be not be supported for
+> keyboards that target Keyman 19.0 or later.
 
 ## Format Note
 
@@ -57,7 +57,7 @@ store(&hotkey) [ALT SHIFT K_PAUSE]   c Alt+Shift+Pause
 The `&hotkey` store is used in keyboards on the following platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✔       | ✘     | ✘     | ✘           | ✘          | ✘   | ✘       |
 
 ## Version history

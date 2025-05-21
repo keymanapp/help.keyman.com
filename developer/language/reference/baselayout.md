@@ -58,7 +58,7 @@ platforms other than Windows match only on `'en-US'` or `'kbdus.dll'` at
 present.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 |    ✔    |   ✘   |   ✘   |      ✘      |      ✘    |   ✘  |    ✘   |
 
 ## Version history

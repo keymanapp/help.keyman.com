@@ -31,10 +31,10 @@ example, rather than call your keyboard `"Dutch"`, which may confuse
 users who may have a system Dutch keyboard already installed, you could
 call your keyboard `"Dan's Dutch"` or `"Double Dutch"`.
 
-[!NOTE]
-**The `NAME` statement is deprecated and will be not be supported for
-keyboards that target Keyman 19.0 or later. Instead use the `&name`
-store.**
+> [!NOTE]
+> The `NAME` statement is deprecated and will be not be supported for
+> keyboards that target Keyman 19.0 or later. Instead use the `&name`
+> store.
 
 ## Examples
 
@@ -49,7 +49,7 @@ store(&name) "Double Dutch"
 The `&name` store can be used in keyboards on all platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✔       | ✔     | ✔     | ✔           | ✔          | ✔   | ✔       |
 
 ## Version history

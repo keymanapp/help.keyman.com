@@ -1,7 +1,7 @@
 ---
 title: outs()
 ---
-  
+
 ## Summary
 
 The **`outs()`** statement emits the contents of a given store to the
@@ -11,7 +11,7 @@ current point in the program source.
 
 ```
 store(store1) ... outs(storeName) ...
-... outs(storeName) ... + ... >  ... 
+... outs(storeName) ... + ... >  ...
 ... > ... outs(storeName) ...
 ```
 
@@ -48,7 +48,7 @@ store(letters) outs(cons) outs(vowels)
 
 c using outs in the context
 
-outs(vowels) + any(conskeys) > context index(cons, 6)  
+outs(vowels) + any(conskeys) > context index(cons, 6)
 ```
 
 ## Platforms
@@ -56,7 +56,7 @@ outs(vowels) + any(conskeys) > context index(cons, 6)
 The `outs()` statement can be used in keyboards on all platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✔       | ✔     | ✔     | ✔           | ✔          | ✔   | ✔       |
 
 ## Version history

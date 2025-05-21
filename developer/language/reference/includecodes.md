@@ -1,7 +1,7 @@
 ---
 title: &includecodes
 ---
-  
+
 ## Summary
 
 The **`&includecodes`** store imports an external file of character
@@ -74,7 +74,7 @@ store(&includecodes) "codes.txt"
 The `&includecodes` store can be used in keyboards for all platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✔       | ✔     | ✔     | ✔           | ✔          | ✔   | ✔       |
 
 ## Version history

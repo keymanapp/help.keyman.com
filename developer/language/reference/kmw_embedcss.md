@@ -51,7 +51,7 @@ The `&kmw_embedcss` store will be used in keyboards on web and touch
 platforms. It is ignored on all other platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✘       | ✘     | ✘     | ✔           | ✔          | ✔   | ✔       |
 
 ## Version history

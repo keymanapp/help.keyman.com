@@ -102,7 +102,7 @@ Currently, only Windows and Linux support the options.htm form to set variable s
 through a configuration user interface.
 
 | Feature     | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|-------------|---------|-------|-------|-------------|------------|-----|---------|
+|-------------|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | `if()`      |    ✔    |   ✔   |   ✔   |      ✔      |      ✔    |   ✔  |    ✔   |
 | options.htm |    ✔    |   ✘   |   ✔   |      ✘      |      ✘    |   ✘  |    ✘   |
 
