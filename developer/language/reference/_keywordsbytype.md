@@ -92,7 +92,7 @@ title: Keywords by Type
 [!NOTE]
 **The older header statements are deprecated and will be not be supported for
 keyboards that target Keyman 19.0 or later.
-[system stores](stores#toc-system-stores) should be used in place of
+[system stores](../guide/stores#toc-system-stores) should be used in place of
 header keywords.**
 
 ## Variable system stores
