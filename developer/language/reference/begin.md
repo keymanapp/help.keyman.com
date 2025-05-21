@@ -101,7 +101,7 @@ The `begin` statement can be used in keyboards on all platforms. In version 15,
 not all platforms support all entry points.
 
 | Entrypoint    |Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------------|--------|-------|-------|-------------|------------|-----|---------|
+|---------------|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | Unicode	      |   ✔    |   ✔   |   ✔   |      ✔      |      ✔    |   ✔  |    ✔    |
 | NewContext    |   ✘    |   ✘   |   ✘   |      ✔      |      ✔    |   ✔  |    ✔    |
 | PostKeystroke |   ✘    |   ✘   |   ✘   |      ✔      |      ✔    |   ✔  |    ✔    |
