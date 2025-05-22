@@ -25,6 +25,15 @@ $pagestyle = '#section2 .wrapper { overflow-x: inherit }';
           </p>
       </a>
   </div>
+  <div class="product" id="product-ldml">
+      <a href="ldml/">
+          <img height="100" style="padding: 25px;" src="<?php echo cdn("img/icon-ldml.png"); ?>" />
+          <h3>LDML Format</h3>
+          <p>
+            Documentation and reference for the Locale Data Markup Language (LDML) format.
+          </p>
+      </a>
+  </div>
   <div class="product" id="product-developer">
       <a href="current-version/">
           <img src="<?php echo cdn("img/icon-developer.png"); ?>" />
