@@ -1,7 +1,7 @@
 ---
 title: return
 ---
-  
+
 ## Summary
 
 The **`return`** statement stops processing rules for the current
@@ -33,7 +33,7 @@ nomatch > return
 The `return` statement is supported only on desktop keyboards.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✔       | ✔     | ✔     | ✘           | ✘          | ✘   | ✘       |
 
 ## Version history

@@ -93,8 +93,8 @@ any(vowel) index(vowel,1) + "^" > index(vowelcirc,1) index(vowelcirc,2)
 The `index()` statement can be used in keyboards on all platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
-| ✔       | ✔     | ✔    | ✔          | ✔          | ✔  | ✔       |
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
+| ✔       | ✔     | ✔     | ✔           | ✔          | ✔   | ✔      |
 
 > ### Note
 For **mobile** and **mobile web**, the statement is **only** accessible as the
@@ -102,9 +102,9 @@ output section of the rule.
 
 ## Version history
 
-The `index()` statement was introduced in Keyman 3.0.
-
 As of version 6.0, `index()` can also be used in the left-hand side of a rule.
+
+The `index()` statement was introduced in Keyman 3.0.
 
 ## See also
 

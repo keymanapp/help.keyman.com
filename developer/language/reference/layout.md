@@ -4,9 +4,9 @@ title: LAYOUT
 
 ## Summary
 
-[!NOTE]
-**The `LAYOUT` statement is deprecated and will be not be supported for
-keyboards that target Keyman 19.0 or later.**
+> [!NOTE]
+> The `LAYOUT` statement is deprecated and will be not be supported for
+> keyboards that target Keyman 19.0 or later.
 
 ## Syntax
 
@@ -19,7 +19,7 @@ LAYOUT id
 The `LAYOUT` statement is not used on any platform.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✘       | ✘     | ✘     | ✘           | ✘          | ✘   | ✘       |
 
 ## Version history

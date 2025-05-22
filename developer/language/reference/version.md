@@ -41,10 +41,10 @@ Unicode identifiers in the touch layout (e.g. `U_0061_0300`) are processed
 too late in the compile process to affect the minimum version inference, and
 so in this situation, `&version` must be set to `15.0` or later.
 
-[!NOTE]
-**The `VERSION 'x.y'` format of this statement is deprecated and will be
-not be supported for keyboards that target Keyman 19.0 or later. Instead
-use the `&version` store format.**
+> [!NOTE]
+> The `VERSION 'x.y'` format of this statement is deprecated and will be
+> not be supported for keyboards that target Keyman 19.0 or later. Instead
+> use the `&version` store format.
 
 ## Examples
 
@@ -59,7 +59,7 @@ store(&version) '15.0'
 The `&version` store can be used in keyboards on all platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✔       | ✔     | ✔     | ✔           | ✔          | ✔   | ✔       |
 
 ## Version history

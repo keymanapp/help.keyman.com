@@ -1,7 +1,7 @@
 ---
 title: &mnemoniclayout
 ---
-  
+
 ## Summary
 
 The **`&mnemoniclayout`** store controls whether a keyboard is
@@ -83,7 +83,7 @@ While mnemonic keyboards work on Mac or Linux, you cannot select a
 different base keyboard.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✔       | 1/2   | ✘     | 1/2         | ✘          | ✘   | ✘       |
 
 ## Version history

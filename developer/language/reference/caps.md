@@ -33,10 +33,10 @@ While technically a value of `0` could be used in the store value, this
 is equivalent to omitting the store altogether, and the store should
 usually be omitted in this case.
 
-[!NOTE]
-**The legacy `CAPS ALWAYS OFF`, `CAPS ON ONLY` and `SHIFT FREES CAPS`
-headers are deprecated and will be not be supported for keyboards that
-target Keyman 19.0 or later.**
+> [!NOTE]
+> The legacy `CAPS ALWAYS OFF`, `CAPS ON ONLY` and `SHIFT FREES CAPS`
+> headers are deprecated and will be not be supported for keyboards that
+> target Keyman 19.0 or later.
 
 ## Examples
 
@@ -54,7 +54,7 @@ The Caps Lock statements can be used in keyboards on the following
 platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✔       | ✔     | ✘     | ✘           | ✘          | ✘   | ✘       |
 
 While Caps Lock statements can be used in Keyman for Linux and KMFL they

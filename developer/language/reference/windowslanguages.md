@@ -7,13 +7,13 @@ title: &windowslanguages
 The **`&windowslanguages`** store specifies a list of alternate
 languages that a Keyman keyboard works with in Windows.
 
-[!NOTE]
-**The `&windowslanguages` store is deprecated and will be not be supported for
-keyboards that target Keyman 19.0 or later. Keyboard Package
-[metadata](/developer/current-version/reference/file-types/metadata#obj-language)
-should be used instead, which is defined by the BCP 47 language code in
-the [keyboard
-editor](/developer/current-version/context/keyboard-editor#details).**
+> [!NOTE]
+> The `&windowslanguages` store is deprecated and will be not be supported for
+> keyboards that target Keyman 19.0 or later. Keyboard Package
+> [metadata](/developer/current-version/reference/file-types/metadata#obj-language)
+> should be used instead, which is defined by the BCP 47 language code in
+> the [keyboard
+> editor](/developer/current-version/context/keyboard-editor#details).
 
 ## Syntax
 
@@ -51,7 +51,7 @@ store(&windowslanguages) 'x0409 x0809'
 The `&windowslanguages` store is used only in Windows platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✔       | ✘     | ✘     | ✘           | ✘          | ✘   | ✘       |
 
 ## Version history

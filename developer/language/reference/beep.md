@@ -1,7 +1,7 @@
 ---
 title: beep
 ---
-  
+
 ## Summary
 
 The **`beep`** statement emits a sound or otherwise provides feedback to
@@ -43,7 +43,7 @@ The `beep` statement can be used in keyboards on all platforms. The
 feedback given may differ depending on the platform.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✔       | ✔     | ✔     | ✔           | ✔          | ✔   | ✔       |
 
 ## Version history

@@ -1,7 +1,7 @@
 ---
 title: call()
 ---
-  
+
 ## Summary
 
 The **`call()`** statement calls an external library.
@@ -66,7 +66,7 @@ The `call()` statement can be used in keyboards on the following
 platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✔       | ✘     | ✘     | ✔           | ✔          | ✔   | ✔       |
 
 ## <span id="id486825"></span>Version history

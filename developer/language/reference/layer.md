@@ -1,7 +1,7 @@
 ---
 title: &layer / layer() statement
 ---
-  
+
 ## Summary
 
 The **`&layer`** system variable store can be used to set or test the
@@ -52,7 +52,7 @@ The `&layer` store is used in touch platforms. It is ignored on all
 other platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✘       | ✘     | ✘     | ✘           | ✔          | ✔   | ✔       |
 
 ## Version history

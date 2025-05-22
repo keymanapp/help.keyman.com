@@ -100,23 +100,19 @@ group(post) readonly
 The `begin` statement can be used in keyboards on all platforms. In version 15,
 not all platforms support all entry points.
 
-<table class='platform'>
-  <thead>
-    <tr><th>Entrypoint</th><th>Windows</th><th>macOS</th><th>Linux</th><th>Desktop web</th><th>Mobile web</th><th>iOS</th><th>Android</th></tr>
-  </thead>
-  <tbody>
-    <tr><th>Unicode</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr>
-    <tr><th>NewContext</th><td>✘</td><td>✘</td><td>✘</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr>
-    <tr><th>PostKeystroke</th><td>✘</td><td>✘</td><td>✘</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr>
-    <tr><th>ANSI</th><td>✔</td><td>✘</td><td>✘</td><td>✘</td><td>✘</td><td>✘</td><td>✘</td></tr>
-  </tbody>
-</table>
+| Entrypoint    |Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
+|---------------|:------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
+| Unicode       |   ✔    |   ✔   |   ✔   |      ✔      |      ✔    |   ✔  |    ✔    |
+| NewContext    |   ✘    |   ✘   |   ✘   |      ✔      |      ✔    |   ✔  |    ✔    |
+| PostKeystroke |   ✘    |   ✘   |   ✘   |      ✔      |      ✔    |   ✔  |    ✔    |
+| ANSI          |   ✔    |   ✘   |   ✘   |      ✘      |      ✘    |   ✘  |    ✘    |
+
 
 ## Version history
 
+* Version 15.0: `NewContext` and `PostKeystroke` support introduced.
 * This line originated in SIL-CC, and a simplified version was used in Keyman
   for consistency. The ANSI/Unicode distinction was introduced in Keyman 5.
-* Version 15.0: `NewContext` and `PostKeystroke` support introduced.
 
 ## See also
 

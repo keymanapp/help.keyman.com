@@ -19,10 +19,10 @@ store(&copyright) "message"
 :   A copyright message that will be displayed verbatim in the copyright
     area of the keyboard metadata display in the Keyman user interface.
 
-[!NOTE]
-**The `COPYRIGHT` header is deprecated and will be not be supported for
-keyboards that target Keyman 19.0 or later. Instead the `&copyright`
-store should be used.**
+> [!NOTE]
+> The `COPYRIGHT` header is deprecated and will be not be supported for
+> keyboards that target Keyman 19.0 or later. Instead the `&copyright`
+> store should be used.
 
 ## Examples
 
@@ -37,7 +37,7 @@ store(&copyright) "Copyright © 2001 Joe Bloggs"
 The `&copyright` store can be used in keyboards on all platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✔       | ✔     | ✔     | ✔           | ✔          | ✔   | ✔       |
 
 ## Version history

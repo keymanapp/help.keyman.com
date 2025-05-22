@@ -7,12 +7,12 @@ title: &language
 The **`&language`** store specifies the Windows system language that a
 keyboard should be associated with on install.
 
-[!NOTE]
-**The `&language` store as well as the older `LANGUAGE` statement are
-deprecated, and will be not be supported for keyboards that target
-Keyman 19.0 or later. The Keyboard Package
-[metadata](/developer/current-version/reference/file-types/metadata#obj-language)
-should be used to define the language data instead.**
+> [!NOTE]
+> The `&language` store as well as the older `LANGUAGE` statement are
+> deprecated, and will be not be supported for keyboards that target
+> Keyman 19.0 or later. The Keyboard Package
+> [metadata](/developer/current-version/reference/file-types/metadata#obj-language)
+> should be used to define the language data instead.
 
 ## Syntax
 
@@ -61,7 +61,7 @@ The `&language` store is used on the following platforms. It will be
 ignored on all other platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✔       | ✘     | ✘     | ✘           | ✘          | ✘   | ✘       |
 
 ## Version history

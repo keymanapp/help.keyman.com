@@ -35,9 +35,9 @@ it.
 The `&bitmap` store is not required. A generic keyboard icon will be
 displayed if no bitmap is specified.
 
-[!NOTE]
-**The older `BITMAP` and `BITMAPS` header statements are deprecated and
-will be not be supported for keyboards that target Keyman 19.0 or later.**
+> [!NOTE]
+> The older `BITMAP` and `BITMAPS` header statements are deprecated and
+> will be not be supported for keyboards that target Keyman 19.0 or later.
 
 ## Examples
 
@@ -53,7 +53,7 @@ The `&bitmap` store is used on the following platforms. It is ignored on
 all other platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✔       | ✔     | ✔     | ✘           | ✘          | ✘   | ✘       |
 
 ## Version history

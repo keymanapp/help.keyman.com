@@ -1,7 +1,7 @@
 ---
 title: &targets
 ---
-  
+
 ## Summary
 
 The **`&targets`** store specifies the target platforms for which a
@@ -62,7 +62,7 @@ The following targets are available:
 `tablet`
 :   Build a .js file, with support for any Keyman product on any tablet
 
-  
+
 
 Currently, the compile targets can be broken down into two categories:
 
@@ -94,7 +94,7 @@ store(&targets) 'any'
 The `&targets` store is used on all platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✔       | ✔     | ✔     | ✔           | ✔          | ✔   | ✔       |
 
 ## Version history
