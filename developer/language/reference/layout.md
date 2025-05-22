@@ -1,10 +1,12 @@
 ---
 title: LAYOUT
 ---
-  
+
 ## Summary
 
-The **`LAYOUT`** statement is obsolete. It has no effect in a keyboard.
+[!NOTE]
+**The `LAYOUT` statement is deprecated and will be not be supported for
+keyboards that target Keyman 19.0 or later.**
 
 ## Syntax
 

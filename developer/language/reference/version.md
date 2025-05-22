@@ -1,7 +1,7 @@
 ---
 title: &version
 ---
-  
+
 ## Summary
 
 The **`&version`** store determines the Keyman version which the
@@ -25,15 +25,15 @@ store(&version) "version"
 The `&version` store allows Keyman to distinguish what version of
 Keyman the keyboard was written for and handle it accordingly.
 
-**Note:** there is a difference between [`&keyboardversion`](keyboardversion), 
-which documents the keyboard version, and `&version`, which 
+**Note:** there is a difference between [`&keyboardversion`](keyboardversion),
+which documents the keyboard version, and `&version`, which
 determines which version of Keyman a keyboard will run with.
 
 The `&version` store is optional. For most keyboards, it should be omitted.
 
-If the `&version` store is omitted, the compiler will infer the lowest 
-version that supports the full set of features used in the keyboard, and 
-assign that version number value to this store internally. The compiler will 
+If the `&version` store is omitted, the compiler will infer the lowest
+version that supports the full set of features used in the keyboard, and
+assign that version number value to this store internally. The compiler will
 also report on the version it infers in the compile process.
 
 There is one scenario where the `&version` store is required: multi-part
@@ -41,15 +41,17 @@ Unicode identifiers in the touch layout (e.g. `U_0061_0300`) are processed
 too late in the compile process to affect the minimum version inference, and
 so in this situation, `&version` must be set to `15.0` or later.
 
-The `VERSION 'x.y'` format of this statement is deprecated, instead use 
-the `&version` store format.
+[!NOTE]
+**The `VERSION 'x.y'` format of this statement is deprecated and will be
+not be supported for keyboards that target Keyman 19.0 or later. Instead
+use the `&version` store format.**
 
 ## Examples
 
 ### Example: Using `&version`
 
 ```
-store(&version) '15.0' 
+store(&version) '15.0'
 ```
 
 ## Platforms
@@ -62,10 +64,10 @@ The `&version` store can be used in keyboards on all platforms.
 
 ## Version history
 
-* Keyman 3.0: The `VERSION` statement was introduced.
-* Keyman 5.0: The `&version` store was added.
 * Keyman 10.0: The `&version` store was made optional
+* Keyman 5.0: The `&version` store was added.
+* Keyman 3.0: The `VERSION` statement was introduced.
 
 ## See also
 
--   [`&keyboardversion` store](keyboardversion)
+- [`&keyboardversion` store](keyboardversion)

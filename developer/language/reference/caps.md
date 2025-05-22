@@ -1,7 +1,7 @@
 ---
 title: Caps Lock stores
 ---
-  
+
 ## Summary
 
 The Caps Lock stores control the behaviour of Caps Lock on desktop
@@ -33,8 +33,10 @@ While technically a value of `0` could be used in the store value, this
 is equivalent to omitting the store altogether, and the store should
 usually be omitted in this case.
 
-The legacy `CAPS ALWAYS OFF`, `CAPS ON ONLY` and `SHIFT FREES CAPS`
-headers are deprecated and should no longer be used.
+[!NOTE]
+**The legacy `CAPS ALWAYS OFF`, `CAPS ON ONLY` and `SHIFT FREES CAPS`
+headers are deprecated and will be not be supported for keyboards that
+target Keyman 19.0 or later.**
 
 ## Examples
 
@@ -60,6 +62,8 @@ don't yet work properly as of version 14.0.
 
 ## Version history
 
-The Caps Lock stores were introduced in Keyman 5.0.
+The Caps Lock stores were introduced in Keyman 5.0, deprecating
+`CAPS ALWAYS OFF`, `CAPS ON ONLY` and `SHIFT FREES CAPS` header
+statements.
 
 The Caps Lock headers were introduced in Keyman 4.0.

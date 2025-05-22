@@ -1,11 +1,19 @@
 ---
 title: &EthnologueCode
 ---
-  
+
 ## Summary
 
 The **`&EthnologueCode`** store specifies the language code a keyboard
 is designed for, from the ISO 639-3 standard.
+
+[!NOTE]
+**The `&EthnologueCode` store is deprecated and will be not be supported for
+keyboards that target Keyman 19.0 or later. Keyboard Package
+[metadata](/developer/current-version/reference/file-types/metadata#obj-language)
+should be used instead, which is defined by the BCP 47 language code in
+the [keyboard
+editor](/developer/current-version/context/keyboard-editor#details).**
 
 ## Syntax
 
@@ -37,12 +45,6 @@ punctuation found.
 
 A proposed addition to this field is to add script or country
 identifiers as needed.
-
-The `&EthnologueCode` store is deprecated. Keyboard Package
-[metadata](/developer/current-version/reference/file-types/metadata#obj-language)
-should be used instead, which is defined by the BCP 47 language code in
-the [keyboard
-editor](/developer/current-version/context/keyboard-editor#details).
 
 ## Examples
 
