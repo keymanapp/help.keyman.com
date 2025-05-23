@@ -59,9 +59,18 @@
 <div class="footer-tab-holder" id='footer-tab-support'>
   <div class="footer-tab"><h4><a href='https://community.software.sil.org/c/keyman'>Support</a></h4></div>
 </div>
+
+<?php
+  $pageUrlForEditLink = getPageUrlForEditLink();
+  if($pageUrlForEditLink) {
+?>
 <div class="footer-tab-holder" id='footer-tab-edit'>
-  <div class="footer-tab"><h4><a href='<?php echo getPageUrlForEditLink(); ?>' target='_blank'>Edit page</a></h4></div>
+  <div class="footer-tab"><h4><a href='<?= $pageUrlForEditLink; ?>' target='_blank'>Edit page</a></h4></div>
 </div>
+<?php
+  }
+?>
+
 <div id="KeymanWebControl"></div>
 <script src='<?= cdn('js/prism.js')?>'></script>
 
