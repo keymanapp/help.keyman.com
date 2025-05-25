@@ -25,7 +25,7 @@ title: Compiler Messages Reference for @keymanapp/kmc-ldml
 [KM00013](km00013) | `ERROR_InvalidHardware` | layers has invalid value formId=&lt;param&gt;
 [KM00014](km00014) | `ERROR_InvalidModifier` | layer has invalid modifiers='&lt;param&gt;'
 [KM00015](km00015) | `ERROR_MissingFlicks` | key id=&lt;param&gt; refers to missing flickId=&lt;param&gt;
-[KM00016](km00016) | `ERROR_DuplicateVariable` | duplicate variables: id=&lt;param&gt;
+[KM00016](km00016) | `ERROR_DuplicateVariable` | duplicate variable: id=&lt;param&gt;
 [KM00018](km00018) | `ERROR_InvalidTransformsType` | Invalid transforms types: '&lt;param&gt;'
 [KM00019](km00019) | `ERROR_DuplicateTransformsType` | Duplicate transforms types: '&lt;param&gt;'
 [KM0001A](km0001a) | `ERROR_MixedTransformGroup` | transformGroup cannot contain both reorder and transform elements
