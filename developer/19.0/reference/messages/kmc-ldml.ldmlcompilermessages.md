@@ -26,8 +26,8 @@ title: Compiler Messages Reference for @keymanapp/kmc-ldml
 [KM00014](km00014) | `ERROR_InvalidModifier` | layer has invalid modifiers='&lt;param&gt;'
 [KM00015](km00015) | `ERROR_MissingFlicks` | key id=&lt;param&gt; refers to missing flickId=&lt;param&gt;
 [KM00016](km00016) | `ERROR_DuplicateVariable` | duplicate variable: id=&lt;param&gt;
-[KM00018](km00018) | `ERROR_InvalidTransformsType` | Invalid transforms types: '&lt;param&gt;'
-[KM00019](km00019) | `ERROR_DuplicateTransformsType` | Duplicate transforms types: '&lt;param&gt;'
+[KM00018](km00018) | `ERROR_InvalidTransformsType` | Invalid transforms type: '&lt;param&gt;'
+[KM00019](km00019) | `ERROR_DuplicateTransformsType` | Duplicate transforms type: '&lt;param&gt;'
 [KM0001A](km0001a) | `ERROR_MixedTransformGroup` | transformGroup cannot contain both reorder and transform elements
 [KM0001B](km0001b) | `ERROR_EmptyTransformGroup` | transformGroup must have either reorder or transform elements
 [KM0001C](km0001c) | `ERROR_MissingStringVariable` | Reference to undefined string variable: $\{&lt;param&gt;\}
@@ -46,6 +46,8 @@ title: Compiler Messages Reference for @keymanapp/kmc-ldml
 [KM00029](km00029) | `ERROR_InvalidVariableIdentifier` | Invalid variable identifier "&lt;param&gt;"\. Identifiers must be between 1 and 32 characters, and can use A\-Z, a\-z, 0\-9, and \_\.
 [KM0002A](km0002a) | `ERROR_InvalidMarkerIdentifier` | Invalid marker identifier "m\{&lt;param&gt;\}"\. Identifiers must be between 1 and 32 characters, and can use A\-Z, a\-z, 0\-9, and \_\.
 [KM0002B](km0002b) | `WARN_StringDenorm` | File contains string "&lt;param&gt;" that is neither NFC nor NFD\.
+[KM0002C](km0002c) | `ERROR_DuplicateLayerWidth` | Two or more layers have minDeviceWidth=&lt;param&gt;
+[KM0002D](km0002d) | `ERROR_InvalidLayerWidth` | Invalid Layers minDeviceWidth=&lt;param&gt;
 [KM00030](km00030) | `ERROR_InvalidQuadEscape` | Invalid escape "\\u0000"\. Hint: Use "\\u\{&lt;param&gt;\}"
 [KM00F00](km00f00) | `ERROR_UnparseableTransformFrom` | Invalid transform from="&lt;param&gt;": "&lt;param&gt;"
 [KM00F01](km00f01) | `ERROR_IllegalTransformDollarsign` | Invalid transform from="&lt;param&gt;": Unescaped dollar\-sign \($\) is not valid transform syntax\.
