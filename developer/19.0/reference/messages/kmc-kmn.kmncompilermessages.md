@@ -161,7 +161,7 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM02900](km02900) | `FATAL_UnexpectedException` | This is an internal error; the message will vary
 [KM02901](km02901) | `FATAL_MissingWasmModule` | This is an internal error; the message will vary
 [KM02903](km02903) | `FATAL_CallbacksNotSet` | This is an internal error; the message will vary
-[KM02904](km02904) | `FATAL_UnicodeSetOutOfRange` | This is an internal error; the message will vary
+[KM02904](km02904) | `FATAL_UnicodeSetOutOfRange` | UnicodeSet buffer was too small
 [KM02905](km02905) | `ERROR_UnicodeSetHasStrings` | uset contains strings, not allowed
 [KM02906](km02906) | `ERROR_UnicodeSetHasProperties` | uset contains properties, not allowed
 [KM02907](km02907) | `ERROR_UnicodeSetSyntaxError` | uset had a Syntax Error while parsing
