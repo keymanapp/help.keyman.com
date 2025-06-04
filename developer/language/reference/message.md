@@ -1,7 +1,7 @@
 ---
 title: &message
 ---
-  
+
 ## Summary
 
 The **`&message`** store provides a generic notice that will be
@@ -24,8 +24,10 @@ store(&message) "messageText"
 This is a generic message, such as a shareware notice that you can
 display when the keyboard is installed. This statement is optional.
 
-The `MESSAGE` statement is deprecated and the `&message` store should be
-used instead.
+> [!NOTE]
+> The `MESSAGE` statement is deprecated and will be not be supported for
+> keyboards that target Keyman 19.0 or later. Instead use the `&message`
+> store.
 
 ## Examples
 
@@ -41,7 +43,7 @@ The `&message` statement can be used in keyboards on all platforms, but
 will be displayed only on the following platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 |    ✔   |   ✔   |   ✘   |      ✘     |     ✘      | ✘  |    ✘   |
 
 ## Version history

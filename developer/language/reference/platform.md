@@ -173,14 +173,9 @@ match.
 
 The `platform()` statement can be used in keyboards on all platforms.
 
-<table class='platform'>
-  <thead>
-    <tr><th>Windows</th><th>macOS</th><th>Linux</th><th>Desktop web</th><th>Mobile web</th><th>iOS</th><th>Android</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr>
-  </tbody>
-</table>
+| Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
+| ✔       | ✔     | ✔     | ✔           | ✔          | ✔   | ✔       |
 
 ## Version history
 

@@ -1,7 +1,7 @@
 ---
 title: reset()
 ---
-  
+
 ## Summary
 
 The **`reset()`** statement restores a variable store to its original
@@ -40,7 +40,7 @@ store(opt1) '1'
 The `reset()` statement can be used in keyboards on all platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✔       | ✔     | ✔     | ✔           | ✔          | ✔   | ✔       |
 
 ## Version history

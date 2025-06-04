@@ -1,7 +1,7 @@
 ---
 title: &layoutfile
 ---
-  
+
 ## Summary
 
 The **`&layoutfile`** store specifies a touch layout description file to
@@ -53,7 +53,7 @@ The `&layoutfile` store will be used in touch platforms. It is ignored
 on all other platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✘       | ✘     | ✘     | ✘           | ✔          | ✔   | ✔       |
 
 ## Version history

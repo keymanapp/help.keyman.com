@@ -1,7 +1,7 @@
 ---
 title: nomatch
 ---
-  
+
 ## Summary
 
 The **`nomatch`** rule is fired if no other rule is matched or fired in
@@ -49,7 +49,7 @@ group(main) using keys
 The `nomatch` rule can be used in keyboards on all platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✔       | ✔     | ✔     | ✔           | ✔          | ✔   | ✔       |
 
 ## Version history

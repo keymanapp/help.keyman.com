@@ -31,7 +31,7 @@ be used together with `nul` in the output:
 * [`beep()`](beep)
 * [`call()`](call)
 * [`reset()`](reset)
-* [`return\`](return)
+* [`return`](return)
 * [`save()`](save)
 * [`set()`](set)
 * [`use()`](use)
@@ -91,7 +91,7 @@ nul + 'a' > 'A'
 The `nul` statement can be used in keyboards on all platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|--------:|
 | ✔       | ✔     | ✔     | ✔           | ✔          | ✔   | ✔       |
 
 ## Version history
