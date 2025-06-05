@@ -11,6 +11,7 @@
     $base = "https://github.com/keymanapp/help.keyman.com/edit/master";
     $app =  "https://github.com/keymanapp/keyman/edit/master";
 
+    // Map from help.keyman.com URL to path in keymanapp/keyman repository
     $map = [
       'products/android' => 'android/docs/help/',
       'products/iphone-and-ipad' => 'ios/docs/help/',
@@ -37,7 +38,8 @@
       return "$app/{$map[$matches[1]]}{$matches[3]}.md";
     }
     else if(preg_match('/^(products\/|developer\/engine\/.+|(developer\/(\d+\.\d+)))/', $file, $matches)) {
-      // disable editing versions of help earlier than current-version
+      // disable editing versions of help earlier than current-version; also
+      // matches index pages and other pages in the area.
       return null;
     }
     else if(preg_match('/^\/keyboard\/([a-z0-9_]+)\/(\d+\.\d+)\/(.*)$/', $self, $matches)) {
