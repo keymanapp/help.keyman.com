@@ -1,0 +1,74 @@
+<?php
+  $pagename = 'Sahu (SIL) Keyboard Help';
+  $pagetitle = 'Sahu (SIL) Keyboard Help';
+  require_once('header.php');
+?>
+
+<h2>Font</h2>
+<p>
+  The Sahu (SIL) keyboard is a Latin script keyboard that uses the Charis font.
+</p>
+
+<h2>Keyboard</h2>
+<p>
+  This keyboard layout is designed for the Sahu language in Indonesia.
+</>
+<p>  
+  Implosive characters are marked with the combining macron below ' &#817; ' (U+0331)
+</p>
+<p>
+  The '~' key is also used as  modifier
+</p>  
+
+<h3>Desktop Keyboard</h2>
+<p>
+  For desktop keyboards, type the following to get the combining macron below:
+</p>
+
+<ul>
+  <li>bb &rarr; b&#817;</li>
+  <li>dd &rarr; d&#817;</li>
+  <li>gg &rarr; g&#817;</li>
+  <li>jj &rarr; j&#817;</li>
+</ul>
+
+<ul>
+  <li>BB &rarr; B&#817;</li>
+  <li>DD &rarr; D&#817;</li>
+  <li>GG &rarr; G&#817;</li>
+  <li>JJ &rarr; J&#817;</li>
+</ul>
+
+<p>
+  The '~' key can be used to type the following combinations:
+</p>
+
+<ul>
+  <li>a~ &rarr; &#x0276;</li>
+  <li>b~ &rarr; &#x0253;</li>
+  <li>c~ &rarr; &#x02A6;</li>
+  <li>d~ &rarr; &#x0257;</li>
+  <li>e~ &rarr; &#x025B;</li>
+  <li>g~ &rarr; &#x0260;</li>
+  <li>i~ &rarr; &#x0268;</li>
+  <li>j~ &rarr; &#x02A5;</li>
+  <li>n~ &rarr; &#x014B;</li>
+  <li>o~ &rarr; &#x0254;</li>
+  <li>s~ &rarr; &#x02A7;</li>
+  <li>u~ &rarr; &#x028A;</li>
+  <li>y~ &rarr; &#x0272;</li>
+  <li>?~ &rarr; &#x02A1;</li>
+</ul>
+
+<h3>Touch Keyboard</h2>
+<p>
+  The touch layout keyboard adds longpress keys to the desktop base key combinations.
+</p>
+
+<p>
+  A glottal-stop marker &apos; is added to the default layer.
+</p>
+
+<p>
+  &#x02A1; is accessible from a longpress on the period '.' key.
+</p>
