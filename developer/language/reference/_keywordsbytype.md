@@ -2,7 +2,7 @@
 title: Keywords by Type
 ---
 
-## <span id="id500426"></span>System stores
+## System stores
 
 [`&Bitmap` store, `BITMAP` statement, `BITMAPS` statement](bitmap)
 :   An image that appears in the language menu
@@ -90,10 +90,7 @@ title: Keywords by Type
     be associated (Deprecated)
 
 > [!NOTE]
-> The older header statements are deprecated and will not be supported for
-> keyboards that target Keyman 19.0 or later.
-> [system stores](stores#toc-system-stores) should be used in place of
-> header keywords.
+> The older header statements are deprecated and will not be supported for keyboards that target Keyman 19.0 or later. [system stores](stores#toc-system-stores) should be used in place of header keywords.
 
 ## Variable system stores
 
@@ -107,7 +104,7 @@ title: Keywords by Type
 [`&platform` store](platform)
 :   Determines the current platform keyboard is operating on
 
-## <span id="id500643"></span>Rule keywords
+## Rule keywords
 
 [`any()` statement](any)
 :   Matches on an array of characters
@@ -164,7 +161,7 @@ title: Keywords by Type
 [`use()` statement](use)
 :   Starts processing in another group
 
-## <span id="id500821"></span>Structural keywords
+## Structural keywords
 
 [`begin` statement](begin)
 :   Defines the starting group for the keyboard layout
