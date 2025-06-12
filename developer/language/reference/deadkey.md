@@ -67,9 +67,23 @@ dk()* any(char) dk()* + [K_BKSP] > nul
 
 ### Example: Using `deadkey()`
 
-```
+```c
 + '`' > dk(backquote)
 dk(backquote) + 'e' > 'è'
+```
+
+### Example: Using `dk()`
+An example for turning the two sequences (w and ew) into the same character, but distinguish them so that you can treat them differently in future matches.
+```c
+c "w" produces "ư"
++ "w" > "ư"
+"ư" + "w" > "w" c going back to "w"
+
+c "e" + "w" also produces "ư" but uses dk(e)
+"e" + "w" > "ư" dk(e)
+
+c therefore, the next "w" will turn "ư" to "e"; result: "ew"
+"ư" dk(e) + "w" > "uw"
 ```
 
 ## Platforms
