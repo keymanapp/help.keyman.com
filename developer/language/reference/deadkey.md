@@ -83,7 +83,7 @@ c "e" + "w" also produces "ư" but uses dk(e)
 "e" + "w" > "ư" dk(e)
 
 c therefore, the next "w" will turn "ư" to "e"; result: "ew"
-"ư" dk(e) + "w" > "uw"
+"ư" dk(e) + "w" > "ew"
 ```
 
 ## Platforms
