@@ -166,9 +166,8 @@ title: Keyman Keyboard Language Reference
 
 ## Deprecations
 
-> [!NOTE]
-> The following stores and statements are deprecated and will be not be
-> supported for keyboards that target Keyman 19.0 or later.
+> [!NOTE] 
+> The following stores and statements are deprecated and will be not be supported for keyboards that target Keyman 19.0 or later.
 
 [`BITMAP` statement, `BITMAPS` statement](bitmap "BITMAP statement")
 :   Deprecated
