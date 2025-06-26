@@ -57,14 +57,9 @@ The `baselayout()` statement can be used in keyboards on all platforms, but all
 platforms other than Windows match only on `'en-US'` or `'kbdus.dll'` at
 present.
 
-<table class='platform'>
-  <thead>
-    <tr><th>Windows</th><th>macOS</th><th>Linux</th><th>Desktop web</th><th>Mobile web</th><th>iOS</th><th>Android</th></tr>
-  </thead>
-  <tbody>
-  <tr><td>✔</td><td>✘</td><td>✘</td><td>✘</td><td>✘</td><td>✘</td><td>✘</td></tr>
-  </tbody>
-</table>
+| Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
+|    ✔    |   ✘   |   ✘   |      ✘      |      ✘    |   ✘  |    ✘   |
 
 ## Version history
 

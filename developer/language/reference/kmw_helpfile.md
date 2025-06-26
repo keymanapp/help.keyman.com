@@ -1,7 +1,7 @@
 ---
 title: &kmw_helpfile
 ---
-  
+
 ## Summary
 
 The **`&kmw_helpfile`** store specifies an external HTML snippet file
@@ -43,7 +43,7 @@ The `&kmw_helpfile` store will be used in keyboards on desktop web
 platforms. It is ignored on all other platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✘       | ✘     | ✘     | ✔           | ✘          | ✘   | ✘       |
 
 ## Version history

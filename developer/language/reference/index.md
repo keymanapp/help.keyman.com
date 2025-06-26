@@ -17,16 +17,16 @@ title: Keyman Keyboard Language Reference
 [`begin` statement](begin "begin statement")
 :   Defines the starting group for the keyboard layout
 
-[`&Bitmap` store, `BITMAP` statement, `BITMAPS` statement](bitmap "&Bitmap store and BITMAP statement")
+[`&Bitmap` store](bitmap "&Bitmap store")
 :   An image that appears in the language menu
 
 [`call()` statement](call "call() statement")
 :   Calls an Input Method Extension
 
-[`&CapsAlwaysOff` store, `CAPS ALWAYS OFF` statement](caps "Caps Lock stores and statements")
+[`&CapsAlwaysOff` store](caps "Caps Lock stores")
 :   Manages CAPS LOCK behaviour - pressing Caps Lock key has no effect
 
-[`&CapsOnOnly` store, `CAPS ON ONLY` statement](caps "Caps Lock stores and statements")
+[`&CapsOnOnly` store](caps "Caps Lock stores")
 :   Manages CAPS LOCK behaviour - pressing Caps Lock key only switches
     on Caps Lock state
 
@@ -36,7 +36,7 @@ title: Keyman Keyboard Language Reference
 [`context` statement](context "context statement")
 :   Outputs the context part of a rule
 
-[`&Copyright` store and `COPYRIGHT` statement](copyright "&Copyright store and COPYRIGHT statement")
+[`&Copyright` store](copyright "&Copyright store")
 :   A copyright message for the keyboard
 
 [`deadkey()`, `dk()` statement](deadkey "deadkey(), dk() statement")
@@ -45,14 +45,10 @@ title: Keyman Keyboard Language Reference
 [`&displayMap` store](displaymap)
 :   Specifies a mapping file for on screen keyboard display data
 
-[`&EthnologueCode` store](ethnologuecode "&EthnologueCode store")
-:   The ISO 639-3 (formerly SIL Ethnologue) code for the language
-    (Deprecated)
-
 [`group()` statement](group "group() statement")
 :   Starts a new group of rules
 
-[`&Hotkey` store and `HOTKEY` statement](hotkey "&Hotkey store and HOTKEY statement")
+[`&Hotkey` store](hotkey "&Hotkey store")
 :   Sets a default activation hotkey for the keyboard
 
 [`&includecodes` store](includecodes "&includecodes store")
@@ -84,10 +80,6 @@ title: Keyman Keyboard Language Reference
 [`&kmw_rtl` store](kmw_rtl "&kmw_rtl store")
 :   Specifies the directionality of text controls for web keyboards
 
-[`&Language` store, `LANGUAGE` statement](language "&Language store, LANGUAGE statement")
-:   Specifies the system language to install or associate with the
-    keyboard (Deprecated)
-
 [`&layer` store](layer "&layer store")
 :   Tests or sets the current touch keyboard layer visible on the on
     screen keyboard
@@ -96,9 +88,6 @@ title: Keyman Keyboard Language Reference
 :   Sets the current touch keyboard layer visible on the on screen
     keyboard
 
-[`LAYOUT` statement](layout "LAYOUT statement")
-:   Windows system layout for the keyboard (Obsolete)
-
 [`&layoutfile` store](layoutfile "&layoutfile store")
 :   Specifies the JSON format touch keyboard layout filename
 
@@ -106,13 +95,13 @@ title: Keyman Keyboard Language Reference
 :   A system rule that is fired after another rule is matched in the
     same group
 
-[`&Message` store and `MESSAGE` statement](message "&Message store and MESSAGE statement")
+[`&Message` store](message "&Message store")
 :   A message that appears when the keyboard is installed
 
-[`&mnemoniclayout` system store](mnemoniclayout "&mnemoniclayout store")
+[`&mnemoniclayout` store](mnemoniclayout "&mnemoniclayout store")
 :   Sets a keyboard to be mnemonic or positional
 
-[`&Name` store and `NAME` statement](name "&Name store and NAME statement")
+[`&Name` store](name "&Name store")
 :   The name of the keyboard
 
 [`&newLayer` store](newlayer)
@@ -157,7 +146,7 @@ title: Keyman Keyboard Language Reference
 [`set()` statement](set "set() statement")
 :   Sets a store or system state to a specific value
 
-[`&ShiftFreesCaps` store, `SHIFT FREES CAPS` statement](caps "Caps Lock stores and statements")
+[`&ShiftFreesCaps` store](caps "Caps Lock stores")
 :   Manages CAPS LOCK behaviour - pressing Shift key turns off Caps Lock
 
 [`store()` statement](store "store() statement")
@@ -169,15 +158,55 @@ title: Keyman Keyboard Language Reference
 [`use()` statement](use "use() statement")
 :   Starts processing in another group
 
-[`&Version` store and `VERSION` statement](version "&Version store and VERSION statement")
+[`&Version` store](version "&Version store")
 :   The Keyman keyboard version
 
 [`&VisualKeyboard` store](visualkeyboard "& store")
 :   Specifies the .kvk visual keyboard file associated with the keyboard
 
+## Deprecations
+
+> [!NOTE] 
+> The following stores and statements are deprecated and will be not be supported for keyboards that target Keyman 19.0 or later.
+
+[`BITMAP` statement, `BITMAPS` statement](bitmap "BITMAP statement")
+:   Deprecated
+
+[`CAPS ALWAYS OFF` statement](caps "Caps Lock statements")
+:   Deprecated
+
+[`CAPS ON ONLY` statement](caps "Caps Lock statements")
+:   Deprecated
+
+[`COPYRIGHT` statement](copyright "COPYRIGHT statement")
+:   Deprecated
+
+[`&EthnologueCode` store](ethnologuecode "&EthnologueCode store")
+:   Deprecated
+
+[`HOTKEY` statement](hotkey "HOTKEY statement")
+:   Deprecated
+
+[`&Language` store, `LANGUAGE` statement](language "&Language store, LANGUAGE statement")
+:   Deprecated
+
+[`LAYOUT` statement](layout "LAYOUT statement")
+:   Deprecated
+
+[`MESSAGE` statement](message "MESSAGE statement")
+:   Deprecated
+
+[`NAME` statement](name "NAME statement")
+:   Deprecated
+
+[`SHIFT FREES CAPS` statement](caps "Caps Lock statements")
+:   Deprecated
+
+[`VERSION` statement](version "VERSION statement")
+:   Deprecated
+
 [`&windowslanguages` store](windowslanguages "&windowslanguages store")
-:   Specifies a set of Windows language codes to which the keyboard can
-    be associated (Deprecated)
+:   Deprecated
 
 ## See also
 

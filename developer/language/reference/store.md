@@ -1,7 +1,7 @@
 ---
 title: store()
 ---
-  
+
 ## Summary
 
 The **`store()`** statement defines a store.
@@ -84,18 +84,18 @@ store(opt1) '0'
 The `store()` statement can be used in keyboards on all platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✔       | ✔     | ✔     | ✔           | ✔          | ✔   | ✔       |
 
 ## Version history
 
-The `store()` statement was introduced in Keyman 3.0.
-
-Version 5.0 added system stores and IMX definition stores.
+Version 8.0 added variable stores.
 
 Version 6.0 added `deadkey()` and virtual key support within stores.
 
-Version 8.0 added variable stores.
+Version 5.0 added system stores and IMX definition stores.
+
+The `store()` statement was introduced in Keyman 3.0.
 
 ## See also
 

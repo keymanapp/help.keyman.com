@@ -1,7 +1,7 @@
 ---
 title: &kmw_rtl
 ---
-  
+
 ## Summary
 
 The **`&kmw_rtl`** store specifies whether a keyboard works with a
@@ -39,7 +39,7 @@ The `&kmw_rtl` store will be used in web platforms. It is ignored on all
 other platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✘       | ✘     | ✘     | ✔           | ✔          | ✘   | ✘       |
 
 ## Version history

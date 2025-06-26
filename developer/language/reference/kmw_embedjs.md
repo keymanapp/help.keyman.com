@@ -1,7 +1,7 @@
 ---
 title: &kmw_embedjs
 ---
-  
+
 ## Summary
 
 The **`&kmw_embedjs`** store specifies an external JavaScript file that
@@ -42,7 +42,7 @@ The `&kmw_embedjs` store will be used in keyboards on web and touch
 platforms. It is ignored on all other platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-|---------|-------|-------|-------------|------------|-----|---------|
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✘       | ✘     | ✘     | ✔           | ✔          | ✔   | ✔       |
 
 ## Version history

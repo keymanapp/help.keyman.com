@@ -65,7 +65,7 @@ any(cons) context(1) + any(key) > context(1) index(keyout, 3)
 The `context` statement can be used in keyboards on all platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
-| ------- | ----- | ----- | ----------- | ---------- | --- | ------- |
+|:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✔       | ✔     | ✔     | ✔           | ✔          | ✔   | ✔       |
 
 ## Version history
