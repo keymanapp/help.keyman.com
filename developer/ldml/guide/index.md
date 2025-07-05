@@ -10,14 +10,14 @@ title: LDML Guide
 
 ## Jumping in
 
-* Keybag
-* Displays
-* Layout
+* [Keybag](keybag)
+* [Displays](displays)
+* [Layouts](layouts)
 
 ## Going further
 
 * Settings, Options
-* Variables
-* Transforms
-* Markers
-* Reorders
+* [Variables](variables)
+* [Transforms](transforms)
+* [Markers](markers)
+* [Reorders](reorders)
