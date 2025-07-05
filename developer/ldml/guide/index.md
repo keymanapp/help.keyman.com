@@ -6,13 +6,13 @@ title: LDML Guide
 
 * [LDML Language Overview](overview)
 * [Glossary](glossary)
-* Planning your Keyboard
+* [Planning](planning) your Keyboard
 
 ## Jumping in
 
-* Repertoire
 * Keybag
 * Displays
+* Layout
 
 ## Going further
 
