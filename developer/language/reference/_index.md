@@ -85,7 +85,7 @@ on top of both vowels when <key>^</key> is pressed.
 ```
 store(vowel)     "aeiou"
 store(vowelcirc) "âêîôû"
-any(vowel) index(vowel,1) + "^" > index(vowelcirc,1) index(vowelcirc,2)
+any(vowel) index(vowel,1) + "^" > index(vowelcirc,1)
 ```
 
 ## Platforms
@@ -96,7 +96,7 @@ The `index()` statement can be used in keyboards on all platforms.
 |:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✔       | ✔     | ✔     | ✔           | ✔          | ✔   | ✔      |
 
-> ### Note
+> [!Note]
 For **mobile** and **mobile web**, the statement is **only** accessible as the
 output section of the rule.
 
