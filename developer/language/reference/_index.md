@@ -96,7 +96,7 @@ The `index()` statement can be used in keyboards on all platforms.
 |:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✔       | ✔     | ✔     | ✔           | ✔          | ✔   | ✔      |
 
-> [!Note]
+> ### Note
 For **mobile** and **mobile web**, the statement is **only** accessible as the
 output section of the rule.
 
