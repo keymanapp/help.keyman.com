@@ -17,3 +17,4 @@ _control/debug
 
 # Cache of keyboard metadata, deleted on site rebuild
 keyboard/index.cache
+.phpunit.result.cache
