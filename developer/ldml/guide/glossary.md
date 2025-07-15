@@ -16,3 +16,4 @@ There are many possible subtags, but only three types are currently used in most
 
 More information about BCP 47 language tag and full details on [how they are used in Keyman Developer](../../current-version/reference/bcp-47).
 
+Now, go on to begin [planning](./planning) your LDML keyboard.

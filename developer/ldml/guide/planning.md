@@ -31,3 +31,4 @@ hardware keyboard can be used in touch but not vice versa.)
 - What are the "characters" that will be covered by this keyboard for this language? This may go beyond the usual Unicode definition of characters, on to characters as the users will perceive them. For example, your language might use `ch` as a single letter.
 - Which characters are the most important to access? That is, those that would be right on the keyboard or on a shift layer, versus others that might be reached via a gesture or multiple key combination.
 
+Next, let's take a look at an [overview](./overview) of the LDML format.

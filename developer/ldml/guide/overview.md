@@ -73,6 +73,7 @@ The root element of a keyboard file is the [`keyboard3`][keyboard3] element.
 Note the `xmlns` and `conformsTo` elements both refer to a version of CLDR,
 in this case v47. For compatibility, you should set these to the earliest possible
 version number.
+
 <!-- TODO LDML-DOCS: more guidance on how to choose version # vs. keyman versions -->
 
 The `locale` attribute is the _primary_ [BCP 47] locale for the keyboard.
@@ -88,9 +89,12 @@ locale id(s) for your keyboard.
 </keyboard3>
 ```
 
+Now that you have the outer structure in place, it's time to fill the [keybag].
+
 [CLDR]: https://cldr.unicode.org
 [UTS#35 Part 7]: https://www.unicode.org/reports/tr35/tr35-keyboards.html
 [BCP 47]: ../../current-version/reference/bcp-47
 [keyboard3]: ../reference/keyboard3
 [UTS18escaping]: https://www.unicode.org/reports/tr18/#Hex_notation
 [XML]: https://www.w3.org/XML/
+[keybag]: ./keybag
