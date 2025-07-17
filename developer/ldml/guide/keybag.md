@@ -24,13 +24,13 @@ Keys are defined by the [key] element within the [keys] element, as seen in a si
 <keys>
     <key id="A" output="A" />
     <key id="B" output="B" />
-    <key id="C" output="C" />
+    <key id="uppercase-c" output="C" />
     <key id="lambda" output="λ" />
     <key id="ক" output="ক" />
 </keys>
 ```
 
-Note that the identifier doesn't have to be plain ASCII.
+Note that the identifier doesn't have to be plain ASCII, as in the last key.
 
 In the following sections we will discuss more advanced uses of keys.
 
