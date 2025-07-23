@@ -12,16 +12,37 @@ Some situations where you might want to customize the display are as follows.  T
 
 - Invisible characters: A key may output invisible text of some sort, such as a space, control, or a keyboard [marker](./markers.md).  Such keys can have a customized keycap that displays something helpful for the users. For example, `sp` for a space key.
 
-- Non-output keys: A key which switches layers, such as one that changes to a shift or alternate layer.
+- Switch keys: A key which switches layers, such as one that changes to a shift or alternate layer.
 
 - Visible characters with challenging display:  doubled combining marks or combining marks without a base character might need special handling, such as choosing a different base character. A combining circumflex U+0302 could be represented by a caret `^` or perhaps by use of U+25CC followed by the combining character: `◌̂`
 
-## displayOptions
-
-
-
 ## Example displays element
 
+```xml
+<displays>
+    <!-- show the key which outputs a no-break space as 'NBSP' -->
+    <display output="\u{00A0}" display="NBSP" />
+    <!-- show the marker 'grave' as a backquote -->
+    <display output="\m{grave}" display="`" />
+    <!-- show the key named 'other-layer' as the word 'other' -->
+    <display keyId="other-layer" display="other" />
+</displays>
+```
+
+## displayOptions
+
+The `displayOptions` has a single configurable option at present, the baseCharacter.
+
+In Lao for example, it's sometimes preferred to use `x` as the base for showing combining marks, rather than the dotted circle ◌.
+
+This is a hint for platforms to suggest using an alternative character. It doesn't require any specific behavior.
+
+```xml
+<displays>
+    <!-- other 'display' elements-->
+    <displayOptions baseCharacter="x"/>
+</displays>
+```
 
 
 With the key display customized, it's time now to arrange the keys into [layouts](./layouts).

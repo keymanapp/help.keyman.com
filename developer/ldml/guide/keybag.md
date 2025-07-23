@@ -34,12 +34,50 @@ Note that the identifier doesn't have to be plain ASCII, as in the last key.
 
 In the following sections we will discuss more advanced uses of keys.
 
-## Gap
+## Key Geometry
+
+### Width
+
+Keys are normally the same width (width="1" or width="1.0"). In some cases, a key is given a larger width for layout reasons.
+The Khmer letter naa "ណ" is a little wider, so the key could be made wider to match. Widths are in tenths of a key width.
+
+```xml
+    <key id="naa" width="1.8" output="ណ" />
+```
+
+### Gap
+
+Sometimes on a key layout, it's useful to have a space where there aren't any keys.
+This can be used with the layout to represent, for example, a place where one layer has a key but another doesn't.
+
+There's a pre-defined key named `gap` that has the gap attribute set. It's possible to add
+additional gap keys if desired. The following defines `gap` as its normal definition, and then defines a 3-key wide gap.
+
+```xml
+<key id="gap" gap="true" /> <!-- This is implied, but we can define it explicitly.-->
+<key id="widegap" gap="true" width="3" />
+```
+
+### Stretch
+
+The stretch attribute defines a key that expands to fill all available horizontal space.
+This is used with the spacebar.
+
+```xml
+<key id="space" output=" " stretch="true" />
+```
 
 ## Marker key
 
-## Key width
+Markers are discussed in more detail [markers](./markers) and [transforms](./transforms).
+For this discussion, it's used with a key that doesn't generate any actual output, but represents an invisible
+non-text data item that is used for later processing.
 
+```xml
+<key id="accent-grave" output="\m{grave}" />
+```
+
+The marker's id here is `grave`.
 
 Next, we will learn about customizing key [displays].
 
