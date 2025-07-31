@@ -16,7 +16,7 @@ Start with the [glossary](./glossary) and read these in order, or skip around as
 * [Overview](overview) of the LDML format
 * The [Keybag](keybag)
 * Customizing key [Displays](displays)
-* Defining [Layouts](layouts)
+* Defining [Layers](layers)
 
 ## Going further
 
