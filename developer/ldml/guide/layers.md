@@ -23,14 +23,46 @@ Touch layer groups always have the attribute `formId="touch"`, and are distingui
 
 Now we come to discuss the actual [`layer`](../reference/layer) element.
 
-Each layer has an optional id, and a required modifier set.  The id is used to distinguish layers when using keys that switch layers. Also, the layer with the id of `base` is the default layer for touch keyboards.
+### Layer ID
+
+The ID is required for touch layers, but is optional for hardware layers. The layer with the ID of `base` is the starting layer.
+
+Keys can switch layers by referencing this layer in their `layerId` attribute.
 
 ### Modifiers
 
-Each layer has a set of modifiers defined. For hardware keyboards, this specifies which layer will be selected based on the modifiers in the hardware keyboards.
+The modifiers are required for hardware layers, but are optional for touch layers.
+
+Each layer has a set of modifiers defined. For hardware keyboards, this specifies which layer will be selected based on the modifiers held down. `none` is used for the layer with no modifiers.
+
+For example, `modifiers="none"` or `modifiers="shift"`.  See [`layer`](../reference/layer) for further details.
+
+### Rows
+
+Each layer contains one or more [`row`](../reference/row) elements, in order from top to bottom.
+
+For example, most hardware keyboards have five rows including the space bar.
+Note that for hardware layouts, only the "alphanumeric" keys, that is, the keys which produce a character or space, are included.  Shift, Control, and any other device-specific hardware keys are not included.
+
+For touch keyboards, the number of rows is completely up to the keyboard author. Different layers or layer groups do not have to have the same number of rows.
+
+The `keys` attribute of each `row` is a space-separated list of key IDs.
+
+Example:
+
+```xml
+<layer modifiers="none">
+    <row keys="c-tikka 1 2 3 4 5 6 7 8 9 0 hyphen equal" />
+    <row keys="q w e r t y u i o p g-tikka h-maqtugha" />
+    <row keys="a s d f g h j k l semi-colon hash" />
+    <row keys="z-tikka z x c v b n m comma period slash" />
+    <row keys="space" />
+</layer>
+```
 
 ## Overview of Layers and Layer Groups
 
 Here is a reference image to help you understand layers and layer groups.
 
 ![Image showing three layer groups. First, a layer group for hardware, with a base and shifted layer.  Then, a layer group for touch or mobile devices, that is less than (in this example) 100 millimeters wide, having a "123" key to switch to numbers. Finally, a layer group for wider or tablet devices, that is a width of 100 or greater millimeters, having a separate number row above the keyboard.](/cdn/dev/img/developer/ldml/layers.png)
+

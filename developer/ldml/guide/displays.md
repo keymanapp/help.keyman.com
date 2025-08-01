@@ -24,8 +24,8 @@ Some situations where you might want to customize the display are as follows.  T
     <display output="\u{00A0}" display="NBSP" />
     <!-- show the marker 'grave' as a backquote -->
     <display output="\m{grave}" display="`" />
-    <!-- show the key named 'other-layer' as the word 'other' -->
-    <display keyId="other-layer" display="other" />
+    <!-- show the key named 'switch-numbers' as '123' -->
+    <display keyId="switch-numbers" display="123" />
 </displays>
 ```
 

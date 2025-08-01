@@ -34,6 +34,16 @@ Note that the identifier doesn't have to be plain ASCII, as in the last key.
 
 In the following sections we will discuss more advanced uses of keys.
 
+## Switch Keys
+
+A key within a touch layout can switch to a different [layer](./layers) by use of the `layerId` attribute, which names another layer. For example, this key switches to the "numbers" layer:
+
+```xml
+<key id="switch-numbers" layerId="numbers" />
+```
+
+Such a key would otherwise have a blank keycap (because it doesn't produce any output), so it is recommended to use a [`display`](./displays) element to give it an identifiable appearance.
+
 ## Key Geometry
 
 ### Width
