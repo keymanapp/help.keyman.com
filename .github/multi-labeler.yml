@@ -1,0 +1,43 @@
+version: v1
+
+# This file adds labels based on the scopes in
+# keymanapp/keyman:resources/scopes/commit-types.json
+# Currently it must be manually kept up to date. Not all labels are added, only
+# common ones. The others are commented out.
+
+
+labels:
+  #
+  # conventional commit / semantic PR styles
+  #
+
+  - label: 'auto'
+    matcher:
+      title: '^auto(\(|:)'
+  - label: 'change'
+    matcher:
+      title: '^change(\(|:)'
+  - label: 'chore'
+    matcher:
+      title: '^chore(\(|:)'
+  - label: 'docs'
+    matcher:
+      title: '^docs(\(|:)'
+  - label: 'feat'
+    matcher:
+      title: '^feat(\(|:)'
+  - label: 'fix'
+    matcher:
+      title: '^fix(\(|:)'
+  - label: 'maint'
+    matcher:
+      title: '^maint(\(|:)'
+  - label: 'refactor'
+    matcher:
+      title: '^refactor(\(|:)'
+  - label: 'style'
+    matcher:
+      title: '^style(\(|:)'
+  - label: 'test'
+    matcher:
+      title: '^test(\(|:)'
