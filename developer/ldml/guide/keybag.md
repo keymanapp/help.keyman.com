@@ -30,7 +30,7 @@ Keys are defined by the [key] element within the [keys] element, as seen in a si
 </keys>
 ```
 
-Note that the identifier doesn't have to be plain ASCII, as in the last key.
+Note that the identifier doesn't have to be plain ASCII, as in the last key shown above, which has the ID of `ক`.
 
 In the following sections we will discuss more advanced uses of keys.
 
@@ -42,7 +42,7 @@ A key within a touch layout can switch to a different [layer](./layers) by use o
 <key id="switch-numbers" layerId="numbers" />
 ```
 
-Such a key would otherwise have a blank keycap (because it doesn't produce any output), so it is recommended to use a [`display`](./displays) element to give it an identifiable appearance.
+Such a key would otherwise have a blank keycap (because it doesn't produce any output), so it is recommended to use a [`display`](./displays) element to give it an identifiable appearance. See the [displays](./displays#example-displays-element) section for an example.
 
 ## Key Geometry
 
@@ -57,10 +57,9 @@ The Khmer letter naa "ណ" is a little wider, so the key could be made wider to 
 
 ### Gap
 
-Sometimes on a key layout, it's useful to have a space where there aren't any keys.
-This can be used with the layout to represent, for example, a place where one layer has a key but another doesn't.
+Sometimes on a key layout, it can be useful to have a blank area without any keys. For example, a shifted layer may not have a shifted key defined for each base key.  The `gap="true"` attribute indicates that a key is a gap and has no output and no key cap display.
 
-There's a pre-defined key named `gap` that has the gap attribute set. It's possible to add
+There is a pre-defined key named `gap` that has the gap attribute set. It is possible to add
 additional gap keys if desired. The following defines `gap` as its normal definition, and then defines a 3-key wide gap.
 
 ```xml
@@ -93,3 +92,5 @@ Next, we will learn about customizing key [displays].
 
 [repertoire]: ./planning#repertoire
 [displays]: ./displays
+[keys]: ../reference/keys
+[key]: ../reference/key
