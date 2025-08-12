@@ -149,4 +149,4 @@ Note that for the `id='osk'` desktop display, you are restricted to specific val
 For the `id='osk-phone'` and `id='osk-tablet'` displays, the value you use must match the value in the `.keyboard-touch-layout` file.
 
 ## See also
-* [Write a Keyman Keyboard help documentation](../current-version/guides/develop/write-keyboard-help-documentation)
+* [Write a Keyman Keyboard help document](../current-version/guides/develop/write-keyboard-help-document)
