@@ -38,3 +38,4 @@ any(lat_norm_replacement) + '~' > index(lat_vowels, 1) U+0303   c ʋ̃
 * [store()](../reference/store)
 * [any()](../reference/any)
 * [index()](../reference/index)
+* [Xinaliq Keyboard Help](../../../keyboard/xinaliq#toc-how-to-use-this-keyboard)
