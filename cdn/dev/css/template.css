@@ -1192,6 +1192,7 @@ table.platform {
 #osk-phone,
 #osk-tablet{
 	position: relative;
+	z-index: 0;
 }
 
 #osk .kmw-osk-inner-frame{
