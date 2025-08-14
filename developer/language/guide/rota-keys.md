@@ -2,10 +2,10 @@
 title: Rotational key rules
 ---
 
-Rotational keys or rota (aka. doublepressing) is a single key pressed to output sequences of characters or letters.
+Rotational keys, or "rotas" are combinations of one or more keys pressed together to produce a character or letter output, following the sequences defined by Keyman rules, and they will always end up back to the first letter as part of a rotation.
 
 To easily understand this, check and test the rules:
-```
+```keyman
 begin Unicode > use(main)
 group(main) using keys
 
@@ -16,7 +16,7 @@ group(main) using keys
 ```
 
 It can be more complex:
-```
+```keyman
 begin Unicode > use(main)
 group(main) using keys
 
@@ -38,4 +38,4 @@ any(lat_norm_replacement) + '~' > index(lat_vowels, 1) U+0303   c ʋ̃
 * [store()](../reference/store)
 * [any()](../reference/any)
 * [index()](../reference/index)
-* [Xinaliq Keyboard Help](../../../keyboard/xinaliq#toc-how-to-use-this-keyboard)
+* [Xinaliq Keyboard Help](/keyboard/xinaliq/1.1.4/xinaliq#toc-how-to-use-this-keyboard)
