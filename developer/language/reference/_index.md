@@ -110,5 +110,5 @@ The `index()` statement was introduced in Keyman 3.0.
 
 -   [Using stores](../guide/stores)
 -   [`any()` statement](../reference/any)
--   [`context` statement](../reference/context.md)
--   [`store()` statement](../reference/store.md)
+-   [`context` statement](../reference/context)
+-   [`store()` statement](../reference/store)
