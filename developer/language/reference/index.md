@@ -162,7 +162,7 @@ title: Keyman Keyboard Language Reference
 :   The Keyman keyboard version
 
 [`&VisualKeyboard` store](visualkeyboard "& store")
-:   Specifies the .kvk visual keyboard file associated with the keyboard
+:   Specifies the .kvks visual keyboard file associated with the keyboard
 
 ## Deprecations
 
