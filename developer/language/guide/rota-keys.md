@@ -15,23 +15,22 @@ group(main) using keys
 'čč' + 'c' > 'c'              c back to c
 ```
 
-It can be more complex:
+The rules below allows the combination of <kbd>z</kbd> with one of the diacritics (\`,',~) to output v with hook and an accent (ʋ̀, ʋ́, ʋ̃). If the next key is one of the `store(diacritic_key)`, then it will produce <kbd>z</kbd>.
+
+<img src="img/rotas.jpg" style="width:50%; align-items:center" />
+
 ```keyman
 begin Unicode > use(main)
 group(main) using keys
 
-+ [K_Z] > 'ʋ'
-
 store(lat_norm_replacement) "zxc;ZXC:"
-store(lat_vowels) "ʋɛɔɩƲƐƆɭ"
+store(lat_vowel) "ʋɛɔɩƲƐƆɭ"
+store(diacritic_key) "`'~"
+store(diacritic) U+0300 U+0301 U+0303
 
-any(lat_norm_replacement) + '`' > index(lat_vowels, 1) U+0300   c ʋ̀
-any(lat_norm_replacement) + "'" > index(lat_vowels, 1) U+0301   c ʋ́ 
-any(lat_norm_replacement) + '~' > index(lat_vowels, 1) U+0303   c ʋ̃
+any(lat_norm_replacement) + any(diacritic_key)> index(lat_vowel, 1) index(diacritic, 2) dk(one)  c z + ' > ʋ́
 
-'ʋ̀' + 'z' > 'z'
-'ʋ́' + 'z' > 'z'
-'ʋ̃' + 'z' > 'z'
+any(diacritic_key) dk(one) > index(lat_norm_replacement, 1) c ʋ́ + ' > z
 ```
 
 ## See also
