@@ -77,7 +77,7 @@ version number.
 <!-- TODO LDML-DOCS: more guidance on how to choose version # vs. keyman versions -->
 
 The `locale` attribute is the _primary_ [BCP 47] locale for the keyboard.
-See [choosing a locale](choosing-locale) for more information about choosing
+See [choosing a locale](locales) for more information about choosing
 locale id(s) for your keyboard.
 
 ```xml

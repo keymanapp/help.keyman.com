@@ -14,7 +14,7 @@ Start with the [glossary](./glossary) and read these in order, or skip around as
 ## Jumping in
 
 * [Overview](overview) of the LDML format
-  * [Choosing a Locale](choosing-locale)
+  * [Choosing a Locale](locales)
 * The [Keybag](keybag)
 * Customizing key [Displays](displays)
 * Defining [Layers](layers)
