@@ -9,6 +9,12 @@ The primary locale id is stored in the `locale` attribute of the [`keyboard3`][k
 (outer) element, while any additional locale ids are stored in the optional [`locales`][locales]
 element.
 
+Examples:
+
+- `km` — Khmer
+- `suz-Sunu` — Sunuwar language, in the Sunuwar script
+- `fa-t-k0-isiri` — Persian ISIRI keyboard
+
 [BCP 47]: ../../current-version/reference/bcp-47
 [keyboard3]: ../reference/keyboard3
 [locales]: ../reference/locales
