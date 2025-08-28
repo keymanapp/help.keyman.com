@@ -13,7 +13,7 @@ started with Keyman 12.
 Keyman can automatically download lexical models that are shared through
 our open source lexical model repository on github.com:
 
-[**https://github.com/keymanapp/lexical-models**](https://github.com/keymanapp/lexical-models){target="_blank"}
+[**https://github.com/keymanapp/lexical-models**](https://github.com/keymanapp/lexical-models)
 
 From these source files, we build the lexical models that can be
 downloaded from the Keyman mobile apps.

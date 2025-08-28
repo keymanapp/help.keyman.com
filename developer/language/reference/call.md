@@ -69,7 +69,7 @@ platforms.
 |:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
 | ✔       | ✘     | ✘     | ✔           | ✔          | ✔   | ✔       |
 
-## <span id="id486825"></span>Version history
+## Version history
 
 Keyman 8.0: Added support for x64.
 
