@@ -9,11 +9,11 @@ We recommend to start with [Planning](./planning) and read these pags in order, 
 ## Getting Started
 
 * [Planning](planning) your Keyboard
+* [Overview](overview) of the LDML format
+  * [Choosing a Locale](locales)
 
 ## Jumping in
 
-* [Overview](overview) of the LDML format
-  * [Choosing a Locale](locales)
 * The [Keybag](keybag)
 * Customizing key [Displays](displays)
 * Defining [Layers](layers)

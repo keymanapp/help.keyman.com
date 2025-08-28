@@ -30,7 +30,7 @@ Keys are defined by the [key] element within the [keys] element, as seen in a si
 </keys>
 ```
 
-Note that the identifier doesn't have to be plain ASCII, as in the last key shown above, which has the ID of `ক`.
+Note that the identifier doesn't have to be plain ASCII, as shown in the last key above, which has the ID of `ক`.
 
 In the following sections we will discuss more advanced uses of keys.
 
@@ -42,17 +42,16 @@ A key within a touch layout can switch to a different [layer](./layers) by use o
 <key id="switch-numbers" layerId="numbers" />
 ```
 
-Such a key would otherwise have a blank keycap (because it doesn't produce any output), so it is recommended to use a [`display`](./displays) element to give it an identifiable appearance. See the [displays](./displays#example-displays-element) section for an example.
+Such a key would by default have a blank keycap (because it doesn't produce any output), so it is recommended to use a [`display`](./displays) element to give it an identifiable appearance. See the [displays](./displays#example-displays-element) section for an example.
 
 ## Key Geometry
 
 ### Width
 
-Keys are normally the same width (width="1" or width="1.0"). In some cases, a key is given a larger width for layout reasons.
-The Khmer letter naa "ណ" is a little wider, so the key could be made wider to match. Widths are in tenths of a key width.
+In a touch keyboard, keys are normally the same width (width="1" or width="1.0"). In some cases, a key is given a larger width for layout reasons, such as for the shift key. Widths are in tenths of a key width.
 
 ```xml
-    <key id="naa" width="1.8" output="ណ" />
+    <key id="wideshift" width="3" toLayer="uppercase" />
 ```
 
 ### Gap
@@ -63,14 +62,14 @@ There is a pre-defined key named `gap` that has the gap attribute set. It is pos
 additional gap keys if desired. The following defines `gap` as its normal definition, and then defines a 3-key wide gap.
 
 ```xml
-<key id="gap" gap="true" /> <!-- This is implied, but we can define it explicitly.-->
+<key id="gap" gap="true" /> <!-- gap=true is implied, but we can define it explicitly.-->
 <key id="widegap" gap="true" width="3" />
 ```
 
 ### Stretch
 
 The stretch attribute defines a key that expands to fill all available horizontal space.
-This is used with the spacebar.
+This is used, for example, with the spacebar.
 
 ```xml
 <key id="space" output=" " stretch="true" />
@@ -78,7 +77,7 @@ This is used with the spacebar.
 
 ## Marker key
 
-Markers are discussed in more detail [markers](./markers) and [transforms](./transforms).
+Markers are discussed in more detail in [markers](./markers) and [transforms](./transforms).
 For this discussion, it's used with a key that doesn't generate any actual output, but represents an invisible
 non-text data item that is used for later processing.
 

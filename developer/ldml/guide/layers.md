@@ -4,12 +4,14 @@ title: Defining Layers
 
 A layer defines are how keys are arranged for display and use.
 For hardware layouts, a layer determines which hardware key connects to which key from the keybag.
-For touch layouts, or hardware keyboards in an on-screen visual presentation, the layer controls how the keys are displayed on the screen for interaction with the finger or mouse.
+For touch layouts, the layer controls how the keys are displayed on the screen for interaction with the finger or mouse.
 
 ## Layer Groups (`layers`)
 
 A layer group or [`layers`](../reference/layers) element occurs one or more times in the keyboard file.
-There may be at most one layer group for the hardware keyboard, and then one or more layer group for different widths (sizes) of touch layouts, such as for a phone versus a tablet.  As noted, a hardware layout can be used for on-screen/touch, but a touch layout cannot be used for hardware, so we recommend starting with a hardware layout.
+There may be at most one layer group for the hardware keyboard, and then one or more layer group for different widths (sizes) of touch layouts, such as for a phone versus a tablet.
+
+If no touch layer group is present, then the hardware layout will be used in touch devices, but a touch layout cannot be used for hardware, so we recommend starting with a hardware layout.
 
 ### Hardware Layer Groups
 
@@ -66,3 +68,6 @@ Here is a reference image to help you understand layers and layer groups.
 
 ![Image showing three layer groups. First, a layer group for hardware, with a base and shifted layer.  Then, a layer group for touch or mobile devices, that is less than (in this example) 100 millimeters wide, having a "123" key to switch to numbers. Finally, a layer group for wider or tablet devices, that is a width of 100 or greater millimeters, having a separate number row above the keyboard.](/cdn/dev/img/developer/ldml/layers.png)
 
+-----
+
+You've now completed a brief tour of the LDML format for Keyman. See [going further](./index#toc-going-further) for additional topics to explore.

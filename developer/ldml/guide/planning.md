@@ -2,8 +2,8 @@
 title: Planning your Keyboard
 ---
 
-Whether you are building an entirely novel keyboard from zero, or implmenting one that already exists in another environment, planning is important.
-Make sure you have all of the important information at hand so that you can begin down this journey.
+Whether you are building an entirely novel keyboard from zero, or implementing one that already exists in another environment, planning is important.
+Make sure you have all of the important information at hand so that you can begin on this journey.
 
 ## Questions
 
