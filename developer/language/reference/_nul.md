@@ -83,7 +83,7 @@ nul + 'a' > 'A'
 
 > [!Hint]
 > This is not the recommended approach to casing. See
-> [Casing Support](../guide/casing-support.md) for better ways to implement
+> [Casing Support](../guide/casing-support) for better ways to implement
 > this.
 
 ## Platforms
