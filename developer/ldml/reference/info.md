@@ -15,8 +15,7 @@ The **`info`** element contains additional metadata about this keyboard.
 
 ### Attributes
 
-`id`
-:   The …
+`id` :   The …
 
 ## Description
 
@@ -43,5 +42,6 @@ The `info` element was added in LDML v46
 
 - LDML Specification: [`<info>` in UTS#35 Part 7][tr35-element-info]
 
-[tr35-element-info]: https://www.unicode.org/reports/tr35/tr35-keyboards.html#element-info
+[tr35-element-info]:
+    https://www.unicode.org/reports/tr35/tr35-keyboards.html#element-info
 

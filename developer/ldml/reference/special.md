@@ -15,8 +15,7 @@ The **`special`** element…
 
 ### Attributes
 
-`id`
-:   The …
+`id` :   The …
 
 ## Description
 

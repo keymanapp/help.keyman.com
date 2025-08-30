@@ -15,12 +15,12 @@ The **`layers`** element…
 
 ### Attributes
 
-`id`
-:   The …
+`id` :   The …
 
 ## Description
 
-The `layers` element is used to contain all [`<layer>`](layer) elements for the keyboard. There may only be one of these elements.
+The `layers` element is used to contain all [`<layer>`](layer) elements for the
+keyboard. There may only be one of these elements.
 
 ## Examples
 
@@ -43,5 +43,6 @@ The `layers` element was added in LDML v46
 
 - LDML Specification: [`<layers>` in UTS#35 Part 7][tr35-element-layers]
 
-[tr35-element-layers]: https://www.unicode.org/reports/tr35/tr35-keyboards.html#element-layers
+[tr35-element-layers]:
+    https://www.unicode.org/reports/tr35/tr35-keyboards.html#element-layers
 

@@ -66,8 +66,14 @@ Example:
 
 Here is a reference image to help you understand layers and layer groups.
 
-![Image showing three layer groups. First, a layer group for hardware, with a base and shifted layer.  Then, a layer group for touch or mobile devices, that is less than (in this example) 100 millimeters wide, having a "123" key to switch to numbers. Finally, a layer group for wider or tablet devices, that is a width of 100 or greater millimeters, having a separate number row above the keyboard.](/cdn/dev/img/developer/ldml/layers.png)
+![Image showing three layer groups. First, a layer group for hardware, with a
+base and shifted layer.  Then, a layer group for touch or mobile devices, that
+is less than (in this example) 100 millimeters wide, having a "123" key to
+switch to numbers. Finally, a layer group for wider or tablet devices, that is a
+width of 100 or greater millimeters, having a separate number row above the
+keyboard.](/cdn/dev/img/developer/ldml/layers.png)
 
 -----
 
-You've now completed a brief tour of the LDML format for Keyman. See [going further](./index#toc-going-further) for additional topics to explore.
+You've now completed a brief tour of the LDML format for Keyman. See [going
+further](./index#toc-going-further) for additional topics to explore.
