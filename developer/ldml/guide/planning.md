@@ -20,14 +20,23 @@ To aid you in the planning, here are a series of questions that can be asked:
 
 ### Form and Function
 
-- Will this be a hardware-only or touch-only keyboard? (It is recommended to
-work on the hardware format first, as a hardware keyboard can be used in touch
-but not vice versa.)
+- Will this be a touch-only keyboard, or one usable via either a hardware
+  keyboard or used as a touch keyboard?
+
+    A [hardware keyboard] refers to the assignment of a particular physical
+    arrangement of keys.
+
+    A [touch keyboard] refers to a keyboard arrangement meant to be shown on
+    screen, activated by finger touch or other [gestures].
+
+    It is recommended to work on the hardware format first, as a hardware
+    keyboard layout can be used as a touch keyboard, but not vice versa.
+
 - What is the base physical type for hardware, such as US or ISO?
 - Does the keyboard follow an existing organization of keys, such as QWERTY,
   AZERTY, QWERTZ etc?
 - Which width(s) will you start with for the touch layout?
-- What gestures will you make use of, such as long press, flicks, and multitap?
+- What [gestures] will you make use of, such as long press, flicks, and multitap?
 
 ### Repertoire
 
@@ -40,3 +49,7 @@ but not vice versa.)
   reached via a gesture or multiple key combination.
 
 Next, let's take a look at an [overview](./overview) of the LDML format.
+
+[hardware keyboard]: ./glossary#hardware-keyboard
+[touch keyboard]: ./glossary#touch-keyboard
+[gestures]: ./glossary#gestures
