@@ -85,7 +85,7 @@ on top of both vowels when <key>^</key> is pressed.
 ```
 store(vowel)     "aeiou"
 store(vowelcirc) "âêîôû"
-any(vowel) index(vowel,1) + "^" > index(vowelcirc,1) index(vowelcirc,2)
+any(vowel) index(vowel,1) + "^" > index(vowelcirc,1)
 ```
 
 ## Platforms
@@ -110,5 +110,5 @@ The `index()` statement was introduced in Keyman 3.0.
 
 -   [Using stores](../guide/stores)
 -   [`any()` statement](../reference/any)
--   [`context` statement](../reference/context.md)
--   [`store()` statement](../reference/store.md)
+-   [`context` statement](../reference/context)
+-   [`store()` statement](../reference/store)

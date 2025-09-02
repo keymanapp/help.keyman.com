@@ -134,7 +134,7 @@ based on the context.
 Browser tests apply only to KeymanWeb. Be careful when targeting specific
 browsers, as language support in browsers tends to change rapidly. (Note: even
 though Keyman for Android and Keyman for iPhone and iPad use KeymanWeb
-internally, browser tests will not match in those apps.
+internally, browser tests will not match in those apps.)
 
 `ie`
 : Keyman Engine for Web in Internet Explorer (deprecated)
