@@ -1,12 +1,6 @@
 <?php
 
-  // Mappings for files that got renamed at some point. Has to be in
-  // both directions.
-  global $FileMappings;
-  $FileMappings = [
-    'whats-new' => 'whatsnew',
-    'whatsnew' => 'whats-new',
-  ];
+  include 'includes/page-version-file-mappings.php';
 
   global $PageVersion; // thank you PHP for weird scopes!
   $PageVersion = new PageVersion();
@@ -103,14 +97,23 @@
       echo $html;
     }
 
-    static private function GetVersionedFilePath($baseFolder, $file, $version, $currentVersion) {
-      global $FileMappings;
+    static private function GetFileMapping($file) {
+      global $PageVersionFileMappings;
+      foreach($PageVersionFileMappings as $mapping) {
+        if($mapping[0] == $file) return $mapping[1];
+        if($mapping[1] == $file) return $mapping[0];
+      }
+      return null;
+    }
+
+    static function GetVersionedFilePath($baseFolder, $file, $version, $currentVersion) {
+      // ENHANCE: this needs more work for mappings that contain paths!
       $folder = "{$_SERVER['DOCUMENT_ROOT']}{$baseFolder}/{$version}/";
       $subPath = $file;
 
       $file_exists = file_exists("{$folder}{$file}.php") || file_exists("{$folder}{$file}.md");
-      if(!$file_exists && array_key_exists($file, $FileMappings)) {
-        $file = $FileMappings[$file];
+      if(!$file_exists && ($mappedFile = PageVersion::GetFileMapping($file))) {
+        $file = $mappedFile;
         $subPath = $file;
         $file_exists = file_exists("{$folder}{$file}.php") || file_exists("{$folder}{$file}.md");
       }
