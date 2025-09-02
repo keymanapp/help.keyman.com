@@ -15,12 +15,12 @@ The **`key`** element represents a single key in the keybag.
 
 ### Attributes
 
-`id`
-:   The …
+`id` :   The …
 
 ## Description
 
-The `key` element is used to represent a single key in the keybag. Keys are referenced from layers and from gestures.
+The `key` element is used to represent a single key in the keybag. Keys are
+referenced from layers and from gestures.
 
 ## Examples
 
@@ -43,5 +43,6 @@ The `key` element was added in LDML v46
 
 - LDML Specification: [`<key>` in UTS#35 Part 7][tr35-element-key]
 
-[tr35-element-key]: https://www.unicode.org/reports/tr35/tr35-keyboards.html#element-key
+[tr35-element-key]:
+    https://www.unicode.org/reports/tr35/tr35-keyboards.html#element-key
 

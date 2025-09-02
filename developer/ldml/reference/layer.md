@@ -15,12 +15,13 @@ The **`layer`** element represents a single layer of the keyboard.
 
 ### Attributes
 
-`id`
-:   The …
+`id` :   The …
 
 ## Description
 
-The `layer` element is used to represent a single layer of the keyboard, such as a certain modifier combination. It is contained within the layers element, and it contains one or more row elements.
+The `layer` element is used to represent a single layer of the keyboard, such as
+a certain modifier combination. It is contained within the layers element, and
+it contains one or more row elements.
 
 ## Examples
 
@@ -43,5 +44,6 @@ The `layer` element was added in LDML v46
 
 - LDML Specification: [`<layer>` in UTS#35 Part 7][tr35-element-layer]
 
-[tr35-element-layer]: https://www.unicode.org/reports/tr35/tr35-keyboards.html#element-layer
+[tr35-element-layer]:
+    https://www.unicode.org/reports/tr35/tr35-keyboards.html#element-layer
 

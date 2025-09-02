@@ -15,8 +15,7 @@ The **`version`** element…
 
 ### Attributes
 
-`id`
-:   The …
+`id` :   The …
 
 ## Description
 
@@ -43,5 +42,6 @@ The `version` element was added in LDML v46
 
 - LDML Specification: [`<version>` in UTS#35 Part 7][tr35-element-version]
 
-[tr35-element-version]: https://www.unicode.org/reports/tr35/tr35-keyboards.html#element-version
+[tr35-element-version]:
+    https://www.unicode.org/reports/tr35/tr35-keyboards.html#element-version
 

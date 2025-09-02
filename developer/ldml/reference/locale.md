@@ -15,8 +15,7 @@ The **`locale`** element…
 
 ### Attributes
 
-`id`
-:   The …
+`id` :   The …
 
 ## Description
 
@@ -43,5 +42,6 @@ The `locale` element was added in LDML v46
 
 - LDML Specification: [`<locale>` in UTS#35 Part 7][tr35-element-locale]
 
-[tr35-element-locale]: https://www.unicode.org/reports/tr35/tr35-keyboards.html#element-locale
+[tr35-element-locale]:
+    https://www.unicode.org/reports/tr35/tr35-keyboards.html#element-locale
 
