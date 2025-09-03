@@ -37,7 +37,7 @@ $pagestyle = '#section2 .wrapper { overflow-x: inherit }';
           <img src="<?php echo cdn("img/icon-dev.png"); ?>" />
           <h3>Developer Area</h3>
           <p>
-            Find support and documentation for Keyman Developer, as well as our Keyman Engine products: Keyman Engine for Desktop, Keyman Engine for Web, Keyman Engine for Android and Keyman Engine for iPhone and iPad.
+            Find support and documentation for Keyman Developer, as well as our Keyman Engine products: Keyman Engine for Windows, Keyman Engine for Web, Keyman Engine for Android and Keyman Engine for iPhone and iPad.
           </p>
       </a>
   </div>
