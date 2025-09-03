@@ -15,23 +15,35 @@ group(main) using keys
 'čč' + 'c' > 'c'              c back to c
 ```
 
-The rules below allows the combination of <kbd>z</kbd> with one of the diacritics (\`,',~) to output v with hook and an accent (ʋ̀, ʋ́, ʋ̃). If the next key is one of the `store(diacritic_key)`, then it will produce <kbd>z</kbd>.
-
-<img src="img/rotas.jpg" style="width:50%; align-items:center" />
+The rule below allows the combination of a vowel with one of the diacritics (',\`,^) to output the vowel and an accent (à, ô, ú). After that, the rotation will happen if one of the specified diacritics is typed. Only then will it revert back to the initial vowel.
 
 ```keyman
-begin Unicode > use(main)
-group(main) using keys
 
-store(lat_norm_replacement) "zxc;ZXC:"
-store(lat_vowel) "ʋɛɔɩƲƐƆɭ"
-store(diacritic_key) "`'~"
-store(diacritic) U+0300 U+0301 U+0303
+store(vowel)  'aeiou'
+store(acute)  'áéíóú'
+store(grave)  'àèìòù'
+store(circum) 'âêîôû'
 
-any(lat_norm_replacement) + any(diacritic_key)> index(lat_vowel, 1) index(diacritic, 2) dk(one)  c z + ' > ʋ́
+any(vowel) + "'" > index(acute, 1)
+any(acute) + "'" > index(vowel, 1)     c Point of rotation
 
-any(diacritic_key) dk(one) > index(lat_norm_replacement, 1) c ʋ́ + ' > z
+any(vowel) + "`" > index(grave, 1)
+any(grave) + "`" > index(vowel, 1)     c Point of rotation
+
+any(vowel)  + "^" > index(circum, 1)
+any(circum) + "^" > index(vowel, 1)    c Point of rotation
 ```
+
+Now, this rule is a bit different. The vowel directly changes to the accented vowels when <kbd>/</kbd> is typed; it will do this four times and then reverts back to the initial vowel.
+
+```keyman
+
+any(vowel) + '/' > index(acute, 1)
+any(acute) + '/' > index(grave, 1)
+any(grave) + '/' > index(circum, 1)
+any(circum) + '/' > index(vowel, 1)
+```
+
 
 ## See also
 * [store()](../reference/store)
