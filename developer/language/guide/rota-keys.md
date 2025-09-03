@@ -18,7 +18,6 @@ group(main) using keys
 The rule below allows the combination of a vowel with one of the diacritics (',\`,^) to output the vowel and an accent (à, ô, ú). After that, the rotation will happen if one of the specified diacritics is typed. Only then will it revert back to the initial vowel.
 
 ```keyman
-
 store(vowel)  'aeiou'
 store(acute)  'áéíóú'
 store(grave)  'àèìòù'
@@ -34,10 +33,9 @@ any(vowel)  + "^" > index(circum, 1)
 any(circum) + "^" > index(vowel, 1)    c Point of rotation
 ```
 
-Now, this rule is a bit different. The vowel directly changes to the accented vowels when <kbd>/</kbd> is typed; it will do this four times and then reverts back to the initial vowel.
+Now, this rule is a bit different. The vowel directly changes to the accented vowel when <kbd>/</kbd> is typed; it will do this four times and then reverts back to the initial vowel.
 
 ```keyman
-
 any(vowel) + '/' > index(acute, 1)
 any(acute) + '/' > index(grave, 1)
 any(grave) + '/' > index(circum, 1)
