@@ -42,9 +42,12 @@ any(grave) + '/' > index(circum, 1)
 any(circum) + '/' > index(vowel, 1)
 ```
 
+## Some keyboards with rotas
+* [Xinaliq Keyboard](https://github.com/keymanapp/keyboards/blob/master/release/x/xinaliq/source/xinaliq.kmn#L133)
+* [Khmer (SIL) Keyboard](https://github.com/keymanapp/keyboards/blob/master/release/sil/sil_khmer/source/sil_khmer.kmn#L146)
+* [Cipher Music (SIL) keyboard](https://github.com/keymanapp/keyboards/blob/master/release/sil/sil_cipher_music/source/sil_cipher_music.kmn#L25)
 
 ## See also
 * [store()](../reference/store)
 * [any()](../reference/any)
 * [index()](../reference/index)
-* [Xinaliq Keyboard Help](/keyboard/xinaliq/1.1.4/xinaliq#toc-how-to-use-this-keyboard)
