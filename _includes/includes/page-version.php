@@ -1,5 +1,7 @@
 <?php
 
+  include 'includes/page-version-file-mappings.php';
+
   global $PageVersion; // thank you PHP for weird scopes!
   $PageVersion = new PageVersion();
 
@@ -31,7 +33,8 @@
           }
 
           $this->currentFolder = "{$_SERVER['DOCUMENT_ROOT']}{$this->basePath}/{$this->currentVersion}/";
-          $this->currentFileExists = file_exists("{$this->currentFolder}{$this->file}.php") || file_exists("{$this->currentFolder}/{$this->file}.md");
+          $path = PageVersion::GetVersionedFilePath($this->basePath, $this->file, $this->currentVersion, $this->currentVersion);
+          $this->currentFileExists = $path ? true : false;
         }
       }
     }
@@ -54,8 +57,11 @@
     ///
     static function WriteHead() {
       global $PageVersion;
-      if(!$PageVersion->active || !$PageVersion->currentFileExists) return;
-      echo "<link rel='canonical' href='{$PageVersion->basePath}/current-version/{$PageVersion->subPath}'>";
+      if(!$PageVersion->active || !$PageVersion->currentFileExists) {
+        return;
+      }
+      $target = PageVersion::GetVersionedFilePath($PageVersion->basePath, $PageVersion->file, $PageVersion->currentVersion, $PageVersion->currentVersion);
+      echo "<link rel='canonical' href='{$target}'>";
     }
 
     ///
@@ -83,11 +89,41 @@
         '1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 '.
         '0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 '.
         '0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>';
+      $target = PageVersion::GetVersionedFilePath($PageVersion->basePath, $PageVersion->file, $PageVersion->currentVersion, $PageVersion->currentVersion);
       $html =
         "<div id='version-banner'>$alertIcon $message. ".
-        "<a href='{$PageVersion->basePath}/current-version/{$PageVersion->subPath}'>Click here</a>".
+        "<a href='{$target}'>Click here</a>".
         " to open the current version, {$PageVersion->currentVersion}.</div>";
       echo $html;
+    }
+
+    static private function GetFileMapping($file) {
+      global $PageVersionFileMappings;
+      foreach($PageVersionFileMappings as $mapping) {
+        if($mapping[0] == $file) return $mapping[1];
+        if($mapping[1] == $file) return $mapping[0];
+      }
+      return null;
+    }
+
+    static function GetVersionedFilePath($baseFolder, $file, $version, $currentVersion) {
+      // ENHANCE: this needs more work for mappings that contain paths!
+      $folder = "{$_SERVER['DOCUMENT_ROOT']}{$baseFolder}/{$version}/";
+      $subPath = $file;
+
+      $file_exists = file_exists("{$folder}{$file}.php") || file_exists("{$folder}{$file}.md");
+      if(!$file_exists && ($mappedFile = PageVersion::GetFileMapping($file))) {
+        $file = $mappedFile;
+        $subPath = $file;
+        $file_exists = file_exists("{$folder}{$file}.php") || file_exists("{$folder}{$file}.md");
+      }
+      if (!$file_exists) {
+        return null;
+      }
+      if ($version == $currentVersion) {
+        return "{$baseFolder}/current-version/{$subPath}";
+      }
+      return "{$baseFolder}/$version/{$subPath}";
     }
 
     ///
@@ -104,19 +140,17 @@
       $found = false;
 
       foreach($PageVersion->versions as $version) {
-        $folder = "{$_SERVER['DOCUMENT_ROOT']}{$PageVersion->basePath}/{$version}/";
-        if(!file_exists("{$folder}{$PageVersion->file}.php") && !file_exists("{$folder}/{$PageVersion->file}.md")) {
+        $target = PageVersion::GetVersionedFilePath($PageVersion->basePath, $PageVersion->file, $version, $PageVersion->currentVersion);
+        if (!$target) {
           // Skip links to versions that don't have this exact page
           continue;
+        }
+
+        $found = true;
+        if($version == $PageVersion->currentVersion) {
+          $text = "Version $version (current version)";
         } else {
-          $found = true;
-          if($version == $PageVersion->currentVersion) {
-            $text = "Version $version (current version)";
-            $target = "{$PageVersion->basePath}/current-version/{$PageVersion->subPath}";
-          } else {
-            $text = "Version $version";
-            $target = "{$PageVersion->basePath}/$version/{$PageVersion->subPath}";
-          }
+          $text = "Version $version";
         }
 
         if($version == $PageVersion->versionedPath) {
