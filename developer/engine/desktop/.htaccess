@@ -1,0 +1,3 @@
+
+# Redirect desktop to windows
+RedirectMatch "/developer/engine/desktop/(.*)" "/developer/engine/windows/$1"

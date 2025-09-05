@@ -63,9 +63,9 @@ $pagestyle = '#section2 .wrapper { overflow-x: inherit }';
       </a>
   </div>
   <div class="product" id="product-wordpress">
-      <a href="engine/desktop">
+      <a href="engine/windows">
           <img src="<?php echo cdn("img/icon-enginedesktop.png"); ?>" />
-          <h3>Keyman Engine for Desktop</h3>
+          <h3>Keyman Engine for Windows</h3>
           <p>
             Build a fully branded and customised desktop keyboarding product for Windows.
           </p>
