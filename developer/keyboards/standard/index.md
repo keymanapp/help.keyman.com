@@ -33,7 +33,7 @@ principles about Discoverability that you can apply:
 
 -   **Reduce experimentation**
 
-    Keyboards for languages with more characters than keys are rarely obvious to first-time users. It is normal for users to adjust to a new keyboard, but make sure that the rules, key sequences, and rotas (rotation keys) are easily recognized.
+    Keyboards for languages with more characters than keys are rarely obvious to first-time users. It is normal for users to adjust to a new keyboard, but make sure that the rules, key sequences, and [rotas (rotation keys)](../../language/guide/rota-keys) are easily recognized.
 
 ### I: Intuition
 
