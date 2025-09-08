@@ -23,4 +23,5 @@ title: Language Structure
 * [Named constants](constants)
 * [Compile targets](compile-targets) (Keyman, KeymanWeb, KeymanOnly, SilKey, KMFL)
 * [Multi-platform keyboard design considerations](multi-platform)
+* [Rotational keys](rota-keys)
 * [Keyman language history](history)
