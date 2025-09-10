@@ -65,8 +65,9 @@ is pressed, the keyboard deletes both characters together:
 platform('touch') U+17D2 any(consonant) + [K_BKSP] > nul
 ```
 
-The <kbd>Backspace</kbd> key at the start of a text block in a complex document
-may delete the text block, for example, it may delete a bullet from in a bullet
+Pressing the <kbd>Backspace</kbd> key at the start of a text block in a complex document
+may delete a break (or formatting) before the text block; 
+for example, it may delete a bullet from a bullet
 list. You should avoid overriding this behavior, which is application-specific.
 
 ```
