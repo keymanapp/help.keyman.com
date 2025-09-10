@@ -140,6 +140,8 @@ group(final) using keys
 c Empty final group causes keystroke to be emitted
 ```
 
+See [Control keys and control characters](control-keys) for more details.
+
 ## Statements and rules used with groups
 
 The following statements and special rules are used with groups:
