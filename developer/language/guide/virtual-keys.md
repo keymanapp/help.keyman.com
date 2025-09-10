@@ -140,6 +140,11 @@ combination, as this is overridden by <kbd>Ctrl</kbd>+<kbd>Alt</kbd> (producing
 Right <kbd>Alt</kbd>). This can have ramifications in keyboards such as German,
 which makes use of the <kbd>Ctrl</kbd>+<kbd>AltGr</kbd> combination.
 
+## Control keys
+
+The keys <kbd>Backspace</kbd>, <kbd>Enter</kbd>, and <kbd>Tab</kbd> have additional
+nuance. See [Control keys and control characters](control-keys) for more detail.
+
 ## Cased Keys
 
 The [`&CasedKeys` system store](../reference/casedkeys) lets you define a set of
