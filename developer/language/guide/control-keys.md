@@ -10,7 +10,7 @@ work with control characters such as Carriage Return (CR, `U+000D`), Line Feed
 
 # Control keys
 
-When a keyboard not have any reference to control keys, Keyman does not attempt
+When a keyboard does not have any reference to control keys, Keyman does not attempt
 to interpret or modify key events for these keys, and passes the event on to the
 application, which will handle them as normal.
 
@@ -76,7 +76,7 @@ nul + [K_BKSP] > nul     c DO NOT DO THIS
 
 # Control characters in output
 
-It is best to never to emit control characters from a Keyman rule. Applications
+It is best to never emit control characters from a Keyman rule. Applications
 may not be expecting control characters from the keyboard and there may be
 unexpected consequences, such as inserting a new line character into a single
 line text field. See the [Control keys](#control-keys) section for a strategy
@@ -121,7 +121,7 @@ touching the control character:
   U+094D > U+0905 c a
 ```
 
-This behavior is present from v6.0 through v18.0 of Keyman, but may be improved
+This behavior is present from v6.0 of Keyman, but may be improved
 in a future version, so that working around this in the keyboard becomes
 unnecessary [issue #14718](https://github.com/keymanapp/keyman/issues/14718).
 
