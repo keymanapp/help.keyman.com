@@ -46,10 +46,6 @@ differing behaviour.
 The [`set()` statement](set) can be used to control persistent variables
 in a keyboard.
 
-Note: While Keyman supports consecutive deadkeys between two real
-characters, as of build 2.0.390, KeymanWeb does not. This may be
-addressed in a future version.
-
 Deadkeys can be used in stores and matched with [`any()`](any) and
 output with [`index()`](index).
 
@@ -112,6 +108,7 @@ The `deadkey()` statement can be used in keyboards on all platforms.
 * Keyman 5.0 and later support named deadkeys. The use of numbered deadkeys is
   still supported, but not recommended; named deadkeys make the keyboard source
   much more readable.
+* Keyman 10.0 added support for consecutive deadkeys between two characters to KeymanWeb.
 * Keyman 19.0 expanded the validity of deadkey names, allowing any valid Unicode
   character; disallowing space, comma, non-characters, parentheses, square
   brackets.
