@@ -139,3 +139,5 @@ title: Keyman language history
 *   Support for decimal, hexadecimal, and octal [character code
     formats](strings) has been removed.
 *   Support for [compile targets](compile-targets) has been removed.
+*   Validity of store, group, and deadkey names has been tightened (disallowing
+    space, comma, non-characters, parentheses, square brackets)

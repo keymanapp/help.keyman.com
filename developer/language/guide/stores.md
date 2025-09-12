@@ -1,5 +1,5 @@
 ---
-title: Using Stores 
+title: Using Stores
 ---
 
 Stores provide a facility to match a character against an array of
@@ -11,7 +11,7 @@ The most common use of stores is to reduce the number of rules required
 in a keyboard by matching multiple characters rather than a single
 character in a rule.
 
-## Creating stores 
+## Creating stores
 
 Stores are created with the [`store()` statement](../reference/store):
 
@@ -22,6 +22,18 @@ store(storeName) storeContents
 Where `storeName` is an identifier you give to the store, and
 `storeContents` is the store's contents, expressed as a string or a
 sequence of Unicode character constants.
+
+Store names may contain nearly any Unicode character. Only control characters,
+non-characters (e.g. U+FFFF), space characters (e.g. U+0020, U+00A0),
+parentheses (`(`,`)`), brackets (`[`,`]`), and commas (`,`) are not allowed.
+Whitespace is allowed but not required, around the parentheses for the store
+statement:
+
+```
+c these are both valid:
+store(vowels_lower)'aeiou'
+store ( vowels_upper ) 'AEIOU'
+```
 
 All stores must be given unique identifiers, and are visible throughout
 the keyboard file. A `store()` statement can be placed anywhere in a
@@ -35,7 +47,7 @@ Stores have a maximum length of 4095 characters (note that non-character
 elements such as virtual keys and deadkeys take more than one character
 in the store).
 
-### Examples 
+### Examples
 
 ```
 store(vowels) 'aeiouAEIOU'
@@ -44,7 +56,7 @@ store(φωνήεντα) 'αειου'
 store(vowel_keys) [K_A] [K_E] [K_I] [K_O] [K_U]
 ```
 
-## Using stores in rules 
+## Using stores in rules
 
 Stores are most often used with the `any()` and `index()` statements.
 The `any()` statement is used in the context or key section of the rule,
@@ -75,7 +87,7 @@ Note that an `index()` statement may reference an `any()` statement
 which uses a different store: the only requirement is that the stores
 used by each have the same length.
 
-### Examples 
+### Examples
 
 In the following example, the `index()` statement translates the lower
 case vowels to upper case vowels:
@@ -110,7 +122,7 @@ Another example of using `any()` and `index()` is given in the [keyboard
 design
 tutorial](/developer/current-version/guides/develop/tutorial/step-6).
 
-## Outputting stores 
+## Outputting stores
 
 The [`outs()` statement](../reference/outs) can be used to output the
 contents of a store. This can be used in another store, or in the
@@ -123,7 +135,7 @@ context or output of a rule.
 Stores that contain only a single character are usually used to define
 [named constants](constants).
 
-### Examples 
+### Examples
 
 The following examples show the `outs()` statement and an example of
 named constants:
@@ -144,7 +156,7 @@ an example of the use of stores and `outs()` to create a menu-based
 keyboard for entry of characters from the International Phonetic
 Alphabet.
 
-## System stores 
+## System stores
 
 System stores are stores with a name beginning with `&`, which have a
 special purpose, usually defining properties or behaviour of the
@@ -155,7 +167,7 @@ header statements used in earlier versions of Keyman. In Keyman 9.0 and
 later, system stores are also used to reflect and update system state.
 System stores are prefixed with an ampersand (`&`).
 
-### Example 
+### Example
 
 This shows the [`&name` store](../reference/name) in use:
 
@@ -163,20 +175,20 @@ This shows the [`&name` store](../reference/name) in use:
 store(&name) "My First Keyboard"
 ```
 
-## IMX definition stores 
+## IMX definition stores
 
 Stores can be used to define an IMX interface function to be used with
 [`call()`](../reference/call). These stores should not then be used for
 any other purpose.
 
-### Example 
+### Example
 
 ```
     store(DLLFunction) "myimx.dll:KeyEvent"
     + any(key) > call(DLLFunction)
 ```
 
-## Variable stores 
+## Variable stores
 
 In Keyman 8.0 and later versions, variable stores are supported. These
 allow a keyboard to have a store which is updated dynamically while the
@@ -197,7 +209,7 @@ been known in the past as "keyboard options".
 store(opt_composed) '0'
 store(vowel) 'aeiouAEIOU'
 store(vowel_circum) 'âêîôûÂÊÎÔÛ'
-     
+
 + [CTRL ALT K_1] > set(opt_composed='1')
 + [CTRL ALT K_0] > set(opt_composed='0')
 if(opt_composed = '0') any(vowel) + '^' > index(vowel, 2) U+0302
@@ -207,7 +219,7 @@ if(opt_composed = '1') any(vowel) + '^' > index(vowel_circum, 2)
 More information about variable stores is available in the [variable
 stores guide](variable-stores).
 
-## Store statements     
+## Store statements
 
 The following statements are used with stores:
 
@@ -247,11 +259,13 @@ Updates the content of a variable store
 
 Defines an array of characters
 
-## Version history 
+## Version history
 
--   Introduced in Keyman 3.0
--   Keyman 5.0 added system stores
--   Keyman 6.0 added support for deadkeys and virtual keys in stores
--   Keyman 7.0 extended maximum store length to 4095 characters
--   Keyman 8.0 introduced variable stores
--   Keyman 9.0 introduced variable system stores
+* Introduced in Keyman 3.0
+* Keyman 5.0 added system stores
+* Keyman 6.0 added support for deadkeys and virtual keys in stores
+* Keyman 7.0 extended maximum store length to 4095 characters
+* Keyman 8.0 introduced variable stores
+* Keyman 9.0 introduced variable system stores
+* Keyman 19.0 tightened the validity of store names (disallowing space, comma,
+  non-characters, parentheses, square brackets)
