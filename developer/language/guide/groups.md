@@ -43,7 +43,7 @@ group(mygroup) using keys        c context and keystroke
 Group names may contain nearly any Unicode character. Only control characters,
 non-characters (e.g. U+FFFF), space characters (e.g. U+0020, U+00A0),
 parentheses (`(`,`)`), brackets (`[`,`]`), and commas (`,`) are not allowed.
-Whitespace is allowed but not required, around the parentheses for the group
+Whitespace is allowed, but not required, around the parentheses for the group
 statement:
 
 ```

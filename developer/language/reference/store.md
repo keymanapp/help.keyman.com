@@ -55,7 +55,7 @@ Standard stores
 Store names may contain nearly any Unicode character. Only control characters,
 non-characters (e.g. U+FFFF), space characters (e.g. U+0020, U+00A0),
 parentheses (`(`,`)`), brackets (`[`,`]`), and commas (`,`) are not allowed.
-Whitespace is allowed but not required, around the parentheses for the store
+Whitespace is allowed, but not required, around the parentheses for the store
 statement:
 
 ```
