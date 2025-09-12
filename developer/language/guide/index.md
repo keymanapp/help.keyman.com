@@ -16,6 +16,7 @@ title: Language Structure
 * [Keys, virtual keys and virtual character keys](virtual-keys)
 * [Range expansions](expansions) (new in 14.0)
 * [Casing support](casing-support) (new in 15.0)
+* [Control keys and control characters](control-keys) (<kbd>Enter</kbd>, <kbd>Tab</kbd>, <kbd>Backspace</kbd>)
 * [US English keyboard layout](us-english) (reference for positional keyboards)
 * [Unicode and ANSI keyboards](unicode)
 * [Comments](comments)
@@ -23,4 +24,5 @@ title: Language Structure
 * [Named constants](constants)
 * [Compile targets](compile-targets) (Keyman, KeymanWeb, KeymanOnly, SilKey, KMFL)
 * [Multi-platform keyboard design considerations](multi-platform)
+* [Rotational keys](rota-keys)
 * [Keyman language history](history)

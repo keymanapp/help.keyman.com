@@ -56,7 +56,7 @@
                 <li><a href="/developer/engine/web/">Keyman Engine for Web</a></li>
                 <li><a href="/developer/engine/iphone-and-ipad/">Keyman Engine for iPhone and iPad</a></li>
                 <li><a href="/developer/engine/android/">Keyman Engine for Android</a></li>
-                <li><a href="/developer/engine/desktop/">Keyman Engine for Desktop</a></li>
+                <li><a href="/developer/engine/windows/">Keyman Engine for Windows</a></li>
                 <li><a href="/developer/cloud/">Keyman Cloud</a></li>
             </ul>
         </div>

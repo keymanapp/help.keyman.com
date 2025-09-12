@@ -42,3 +42,5 @@ title: Compiler Messages Reference for @keymanapp/kmc-package
 [KM04026](km04026) | `WARN_VisualKeyboardFileIsInvalid` | Visual keyboard file '&lt;param&gt;' is invalid\.
 [KM04027](km04027) | `WARN_PackageVersionIsUnrecognizedFormat` | Package version '&lt;param&gt;' has an unrecognized format\.
 [KM04028](km04028) | `ERROR_PackageMustNotContainItself` | The package may not include a \.kmp file of the same name '&lt;param&gt;'\.
+[KM04029](km04029) | `ERROR_MissingModelId` | The lexical model at index &lt;param&gt; has a missing or empty ID field\.
+[KM0402A](km0402a) | `ERROR_MissingKeyboardId` | The keyboard at index &lt;param&gt; has a missing or empty ID field\.
