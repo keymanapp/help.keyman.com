@@ -21,6 +21,18 @@ group(groupName) readonly
 : The unique name of the group, which can be referenced by [`use()`
 statements](use).
 
+Group names may contain nearly any Unicode character. Only control characters,
+non-characters (e.g. U+FFFF), space characters (e.g. U+0020, U+00A0),
+parentheses (`(`,`)`), brackets (`[`,`]`), and commas (`,`) are not allowed.
+Whitespace is allowed, but not required, around the parentheses for the group
+statement:
+
+```
+c these are both valid:
+group(main)using keys
+group ( main )
+```
+
 The `group()` statement tells Keyman to start a new set of rules. Keyman
 supports three sorts of groups: key processing groups, read-only groups, and
 context processing groups. Key processing groups can include context checking,
@@ -90,6 +102,8 @@ The `group()` statement can be used in keyboards on all platforms.
 
 * The group construct was introduced in Keyman 3.0.
 * The `readonly` group type was introduced in Keyman 15.0.
+* Keyman 19.0 tightened the validity of group names (disallowing space, comma,
+  non-characters, parentheses, square brackets)
 
 ## See also
 

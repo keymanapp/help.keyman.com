@@ -52,6 +52,18 @@ Standard stores
 :   All other stores are standard stores, and can be used with
     [`any()`](any), [`index()`](index) and [`outs()`](outs) statements.
 
+Store names may contain nearly any Unicode character. Only control characters,
+non-characters (e.g. U+FFFF), space characters (e.g. U+0020, U+00A0),
+parentheses (`(`,`)`), brackets (`[`,`]`), and commas (`,`) are not allowed.
+Whitespace is allowed, but not required, around the parentheses for the store
+statement:
+
+```
+c these are both valid:
+store(vowels_lower)'aeiou'
+store ( vowels_upper ) 'AEIOU'
+```
+
 ## Examples
 
 ### Example: Using standard stores
@@ -89,13 +101,12 @@ The `store()` statement can be used in keyboards on all platforms.
 
 ## Version history
 
-Version 8.0 added variable stores.
-
-Version 6.0 added `deadkey()` and virtual key support within stores.
-
-Version 5.0 added system stores and IMX definition stores.
-
-The `store()` statement was introduced in Keyman 3.0.
+* The `store()` statement was introduced in Keyman 3.0.
+* Version 5.0 added system stores and IMX definition stores.
+* Version 6.0 added `deadkey()` and virtual key support within stores.
+* Version 8.0 added variable stores.
+* Keyman 19.0 tightened the validity of store names (disallowing space, comma,
+  non-characters, parentheses, square brackets)
 
 ## See also
 

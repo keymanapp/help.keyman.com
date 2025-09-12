@@ -40,6 +40,18 @@ group(mygroup) using keys        c context and keystroke
   'a' + 'a' > 'c'
 ```
 
+Group names may contain nearly any Unicode character. Only control characters,
+non-characters (e.g. U+FFFF), space characters (e.g. U+0020, U+00A0),
+parentheses (`(`,`)`), brackets (`[`,`]`), and commas (`,`) are not allowed.
+Whitespace is allowed, but not required, around the parentheses for the group
+statement:
+
+```
+c these are both valid:
+group(main)using keys
+group ( main )
+```
+
 ## `using keys` clause
 
 To tell Keyman that the group should include key processing, you should include
@@ -163,3 +175,8 @@ The following statements and special rules are used with groups:
 
 [`use()` statement](../reference/use)
 : Starts processing in another group
+
+## Version history
+
+* Keyman 19.0 tightened the validity of store names (disallowing space, comma,
+  non-characters, parentheses, square brackets)
