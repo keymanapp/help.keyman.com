@@ -37,13 +37,13 @@ In the `.php` file, include the main code:
 <?php 
   $pagename = 'khmer Keyboard Help';
   $pagetitle = $pagename;
-  require_once('header.php');
 
   $pagestyle = <<<END
     /* Any custom CSS from your welcome.htm document. */
     /* (See CSS formatting section for details.) */
   END;
 
+  require_once('header.php');
 ?>
 
 <div>
