@@ -157,6 +157,13 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM020B1](km020b1) | `ERROR_ContextExCannotReferenceIf` | The offset in context\(\) points to a non\-character if\(\) statement in the context
 [KM020B2](km020b2) | `ERROR_ContextExCannotReferenceNul` | The offset in context\(\) points to a non\-character nul statement in the context
 [KM020B3](km020b3) | `ERROR_TextBeforeOrAfterNulInOutput` | A rule with a nul statement in the output cannot also output text or text\-emitting statements
+[KM020B4](km020b4) | `ERROR_NameMustBeAtLeastOneCharLong` | The name parameter is required
+[KM020B5](km020b5) | `ERROR_NameMustBeAtMostNCharsLong` | The referenced name '&lt;param&gt;' must be at most &lt;param&gt; characters long
+[KM020B6](km020b6) | `ERROR_NameContainsInvalidCharacter` | The referenced name '&lt;param&gt;' contains an invalid character
+[KM020B7](km020b7) | `ERROR_NameMustNotContainSpaces` | The referenced name '&lt;param&gt;' must not contain spaces
+[KM020B8](km020b8) | `ERROR_NameMustNotContainComma` | The referenced name '&lt;param&gt;' must not contain commas
+[KM020B9](km020b9) | `ERROR_NameMustNotContainParentheses` | The referenced name '&lt;param&gt;' must not contain opening or closing parentheses
+[KM020BA](km020ba) | `ERROR_NameMustNotContainSquareBrackets` | The referenced name '&lt;param&gt;' must not contain opening or closing square brackets
 [KM020C0](km020c0) | `FATAL_BufferOverflow` | The compiler memory buffer overflowed
 [KM02900](km02900) | `FATAL_UnexpectedException` | This is an internal error; the message will vary
 [KM02901](km02901) | `FATAL_MissingWasmModule` | This is an internal error; the message will vary
