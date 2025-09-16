@@ -17,7 +17,7 @@ title: Language Structure
 * [Range expansions](expansions) (new in 14.0)
 * [Casing support](casing-support) (new in 15.0)
 * [Control keys and control characters](control-keys) (<kbd>Enter</kbd>, <kbd>Tab</kbd>, <kbd>Backspace</kbd>)
-* [US English keyboard layout](us-english) (reference for positional keyboards)
+* [Hardware keyboard forms](hardware-forms)
 * [Unicode and ANSI keyboards](unicode)
 * [Comments](comments)
 * [Long lines](long-lines)
