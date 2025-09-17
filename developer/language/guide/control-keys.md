@@ -80,7 +80,7 @@ nul + [K_BKSP] > nul     c DO NOT DO THIS
 It is best to never emit control characters from a Keyman rule. Applications
 may not be expecting control characters from the keyboard and there may be
 unexpected consequences, such as inserting a new line character into a single
-line text field. See the [Control keys](#control-keys) section for a strategy
+line text field. See the [Control keys](#toc-control-keys) section for a strategy
 for emitting default key events instead.
 
 This does mean that you cannot really change the behavior of control keys with
@@ -118,7 +118,7 @@ touching the control character:
 
   group(full-svara-after-lf)
 
-  c here we know we that we have an LF immediately prior
+  c here we know that we have an LF immediately prior
   U+094D > U+0905 c a
 ```
 
