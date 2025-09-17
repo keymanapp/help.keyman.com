@@ -2,7 +2,7 @@
 title: Rotational key rules
 ---
 
-Rotational keys, or "rotas" are combinations of one or more keys pressed together to produce a character or letter output, following the sequences defined by Keyman rules, and they will always end up back to the first letter as part of a rotation.
+Rotational keys, or "rotas" are combinations of one or more keys pressed in sequence to produce a character or letter output, following the sequences defined by Keyman rules, and they will always end up back to the first letter as part of a rotation.
 
 To easily understand this, check and test the rules:
 ```keyman
