@@ -35,7 +35,6 @@ Most modern Korean and Japanese layouts are similar to US (ANSI) layout, with so
   display: inline-block;
   box-sizing: border-box;
   position: relative;
-  cursor: pointer;
   -webkit-user-select: none;
 
   border-radius: 0.3em;
@@ -79,13 +78,7 @@ Most modern Korean and Japanese layouts are similar to US (ANSI) layout, with so
   border: none !important;
   box-shadow: none !important;
   border-radius: 0 !important;
-  background: url(
-  'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 675"><path d="M 35 35   L 440 35   A 30 30, 0,0,1, 470 65   L 470,645   A 30 30, 0,0,1, 440,675   L 220,675   A 30 30, 0,0,1, 190 645 L 190,355 A 30 30, 0,0,0, 160,325 L 35,325 A 30 30, 0,0,1, 5,295 L 5,65 A 30 30, 0,0,1, 35 35" stroke="rgb(136,136,136)" stroke-width="0" fill="rgb(102,102,102)" /><path d="M 35 5   L 435 5   A 30 30, 0,0,1, 465 35   L 465,615   A 30 30, 0,0,1, 435,645   L 220,645   A 30 30, 0,0,1, 190 615 L 190,325 A 30 30, 0,0,0, 160,295 L 35,295 A 30 30, 0,0,1, 5,265 L 5,35 A 30 30, 0,0,1, 35 5" stroke="rgb(136,136,136)" stroke-width="6" fill="rgb(204,204,204)" /></svg>') 0 / auto 100% !important;
-
-  clip-path:
-    path();
-    /* polygon(0 0, 4.8em 0, 4.8em 6.7em, 2.0em 6.7em, 2.0em 3.2em, 0 3.2em); */
-
+  background: url('enter-key.svg') 0 / auto 100% !important;
 }
 
 .key--bottom-left > * {
@@ -177,8 +170,7 @@ Most modern Korean and Japanese layouts are similar to US (ANSI) layout, with so
 }
 
 .keyboard.keyboard--dark .key--iso-enter {
-  background: url(
-  'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 675"><path d="M 35 35   L 440 35   A 30 30, 0,0,1, 470 65   L 470,645   A 30 30, 0,0,1, 440,675   L 220,675   A 30 30, 0,0,1, 190 645 L 190,355 A 30 30, 0,0,0, 160,325 L 35,325 A 30 30, 0,0,1, 5,295 L 5,65 A 30 30, 0,0,1, 35 35" stroke-width="0" fill="rgb(34,34,34)" /><path d="M 35 5   L 435 5   A 30 30, 0,0,1, 465 35   L 465,615   A 30 30, 0,0,1, 435,645   L 220,645   A 30 30, 0,0,1, 190 615 L 190,325 A 30 30, 0,0,0, 160,295 L 35,295 A 30 30, 0,0,1, 5,265 L 5,35 A 30 30, 0,0,1, 35 5" stroke="rgb(68,68,68)" stroke-width="6" fill="rgb(51,51,51)" /></svg>') 0 / auto 100% !important;
+  background: url('enter-key-dark.svg') 0 / auto 100% !important;
 
 }
 
