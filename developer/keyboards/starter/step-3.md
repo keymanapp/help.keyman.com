@@ -1,6 +1,9 @@
 ---
-title: Step 3: Organizing the Keyboard Files
+title: Step 3: Organizing the Keyboard Files (deprecated)
 ---
+
+**Note:** This guide is deprecated. Consider using the [GitHub Keyboard
+Submission Guide](../github) instead.
 
 ## Use ASCII characters for keyboard base names
 

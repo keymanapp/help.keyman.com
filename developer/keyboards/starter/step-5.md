@@ -1,6 +1,9 @@
 ---
-title: Step 5: Submitting a GitHub Pull Request
+title: Step 5: Submitting a GitHub Pull Request (deprecated)
 ---
+
+**Note:** This guide is deprecated. Consider using the [GitHub Keyboard
+Submission Guide](../github) instead.
 
 ## Verify keyboard builds before submission
 

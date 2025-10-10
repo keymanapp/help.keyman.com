@@ -1,6 +1,9 @@
 ---
-title: Step 2: Development Tools and Building a Keyboard
+title: Step 2: Development Tools and Building a Keyboard (deprecated)
 ---
+
+**Note:** This guide is deprecated. Consider using the [GitHub Keyboard
+Submission Guide](../github) instead.
 
 While Keyman Developer is not required to submit or build keyboard
 layouts, the IDE has many features that will make keyboard development a

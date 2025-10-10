@@ -1,6 +1,9 @@
 ---
-title: Step 1: Get the Source
+title: Step 1: Get the Source (deprecated)
 ---
+
+**Note:** This guide is deprecated. Consider using the [GitHub Keyboard
+Submission Guide](../github) instead.
 
 ## Create a GitHub account and install Git
 
