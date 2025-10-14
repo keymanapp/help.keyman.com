@@ -181,7 +181,7 @@ function loaded(){
     // not just in Web's OSK.
     // TODO: consider using the retrieved stub to get that in future
     $.ajax({
-      url: 'https://api.keyman.com/keyboard/' + keyboardName,
+      url: keymanHosts.api + '/keyboard/' + keyboardName,
       success:function(data) {
         if(typeof data != 'object') return;
 
@@ -203,7 +203,7 @@ function loaded(){
 "	font-family:\""+fontFamily+"\";\n"+
 "	font-style:normal;\n"+
 "	font-weight:normal;\n"+
-"	src:url('https://s.keyman.com/font/deploy/"+fontSource+"') format('"+fontType+"');\n"+
+"	src:url('" + keymanHosts.s + "/font/deploy/"+fontSource+"') format('"+fontType+"');\n"+
 "}\n"+
 ".kmw-key-text { font-family: \""+fontFamily+"\"; }\n"+
 "</style>"
