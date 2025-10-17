@@ -58,7 +58,9 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
   <script type='text/javascript' src='<?php echo cdn('js/keyrenderer.js'); ?>'></script>
   <script type="text/javascript">
-   // Add a script element as a child of the body
+    <?= KeymanHosts::Instance()->emitJavascriptConst(); ?>
+
+    // Add a script element as a child of the body
 
     function downloadJS(src) {
       var element = document.createElement("script");
