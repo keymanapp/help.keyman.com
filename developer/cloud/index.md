@@ -13,9 +13,9 @@ title: Keyman Cloud APIs
 
 ## File and Data Formats
 
-* [.keyboard_info 1.0 file specification](keyboard_info/1.0): JSON-based description of
+* [.keyboard_info 2.0 file specification](keyboard_info/2.0): JSON-based description of
   keyboard file metadata used in Keyman repositories
-* [.model_info 1.0 file specification](model_info/1.0): JSON-based description of model
+* [.model_info 2.0 file specification](model_info/2.0): JSON-based description of model
   file metadata used in Keyman repositories
 
 ## Deprecated APIs
