@@ -1,0 +1,31 @@
+%% Mermaid diagram - https://mermaid.live
+sequenceDiagram
+    actor U as User
+    note over C: IBus Client
+    box LightGrey App
+    participant C as Text Editor
+    end
+    box LightGrey IBus
+    participant D as IBusDaemon
+    participant E as EngineDBus
+    end
+    box LightGrey Keyman
+    participant K as ibus-keyman
+    end
+    U-)C: 1. sets input location
+    C-)D: 2. SetSurroundingText
+    D-)E: 3. SetSurroundingText
+    E-)K: 4. set-surrounding-text
+    U-)C: 5. type "e"
+    C-)D: 6. ProcessKeyEvent("e")
+    D-)+E: 7. ProcessKeyEvent("e")
+    E-)+K: 8. process-key-event "e"
+    K->>K: 9. process rules for "e",<br/>return "é"
+    K--)E: 10. ibus_engine_delete_surrounding_text(-1, 1)
+    E--)D: 11. DeleteSurroundingText(-1, 1)
+    D--)C: 12. DeleteSurroundingText(-1, 1)
+    K--)E: 13. ibus_engine_commit_text("é")
+    E--)D: 14. CommitText("é")
+    D--)C: 15. CommitText("é")
+    K-)-E: 16. return true
+    E-)-D: 17. return true
