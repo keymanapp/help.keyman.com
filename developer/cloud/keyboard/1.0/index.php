@@ -22,10 +22,3 @@
 <h3>Results</h3>
 
 <p>A valid response will return a <a href='../../keyboard_info'><code>keyboard_info</code></a> object.</p>
-
-<h3>Version History</h3>
-
-<dl>
-  <dt>1.0, 2018-01-01</dt>
-  <dd>Initial version</dd>
-</dl>
