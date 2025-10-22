@@ -13,4 +13,4 @@ title: Version History
 * Relaxed the URL definitions in the schema so extension is no longer tested ([#105](https://github.com/keymanapp/api.keyman.com/pull/105)).
 
 ### 1.0 beta, 2019-01-31 
-* Initial version, seeded from .keyboard_info specification
+* Initial version, seeded from .keyboard_info specification. ([#1](https://github.com/keymanapp/help.keyman.com/pull/1))
