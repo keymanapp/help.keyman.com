@@ -204,18 +204,3 @@ The following is a comprehensive example .model_info file for an example lexical
   "sourcePath": "release/gff/gff.byn.gff_blin"
 }
 ```
-
-### .model_info version history
-
-#### 2023-08-11 2.0 stable
-* Removed:
-    `.links`
-    `.related[].note`
-  - Source .model_info files are no longer needed, so source vs distribution
-    model_info distinction is removed
-
-#### 2020-09-21 1.0.1
-* Relaxed the URL definitions in the schema so extension is no longer tested
-
-#### 2019-01-31 1.0 beta
-* Initial version, seeded from .keyboard_info specification
