@@ -73,9 +73,3 @@ search endpoint.
 
 A valid response will return an array of matching
 [`model_info`](../../model_info) objects.
-
-### Version History
-
-1.0, 2018-01-01
-
-: Initial version
