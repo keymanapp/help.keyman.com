@@ -87,15 +87,3 @@ https://api.keyman.com/schemas/package-version.json
 * `"error": "not available for platform"` -- the package is found but does not work on the target platform
 * `"error": "not available as package"` -- the package is old and is not available in package format
 * Other error codes may be possible
-
-## History
-
-### 1.0, 2020-05-01
-
-* Initial version.
-
-### 1.0.1 - 2020-09-21
-
-* Fixed bugs with missing .kmp files
-* Added deprecation links
-* Updated .kmp URLs to use keyman.com/go/package format

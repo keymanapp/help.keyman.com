@@ -1,6 +1,9 @@
 ---
-title: Step 4: Principles for Contributing Keyboards
+title: Step 4: Principles for Contributing Keyboards (deprecated)
 ---
+
+**Note:** This guide is deprecated. Consider using the [GitHub Keyboard
+Submission Guide](../github) instead.
 
 ## Contributing keyboards
 
