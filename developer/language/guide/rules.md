@@ -18,15 +18,58 @@ will only be fired if the context and the keystroke both match. The
 *output* will replace the context matched on the left hand side of the
 rule.
 
-### Example: key sequences
-```
-+ 'A' > 'Ж'
-+ 'B' > 'Z'
-'Z' + 'Ж' > 'տ'
-```
-
 In advanced [groups](groups), the *keystroke* section of the rule may be
 omitted for processing on the context and output.
+
+## Examples
+
+Here are some simple examples of Keyman keyboard rules.
+
+### A basic keystroke rule
+
+The following rule transforms the <kbd>x</kbd> key to the Khmer letter "ខ".
+
+```keyman
++ [K_X] > 'ខ'
+```
+
+### A keystroke that modifies existing content
+
+If you want to modify the output based on what is already in the text store
+(also known as "on screen"), then you would include a context section. For
+example, in a Dinka keyboard, the following rule transforms "ee" on screen, when
+<kbd>;</kbd> is pressed, to "ëë":
+
+```keyman
+'ee' + ';' > 'ëë'
+```
+
+### A sequence of keystrokes
+
+It is common to think of keyboard rules in terms of keystroke sequences. For
+example, in a Cyrillic keyboard, you may want <kbd>S</kbd><kbd>H</kbd> to
+produce "Ш". However, the <kbd>S</kbd> key by itself produces "С", and the
+<kbd>H</kbd> key on its own produces "Х".
+
+Instead of thinking of a sequence of keystrokes, think of what is on screen
+already, and how it needs to change when you type the next keystroke.
+
+So, we would start with the following two rules for the keys on their own:
+
+```keyman
++ [SHIFT K_S] > 'С'
++ [SHIFT K_H] > 'Х'
+```
+
+Then, instead of something like `'S' + 'H' > 'Ш'`, we would instead start with
+the _output_ of the <kbd>S</kbd> key ("С"), followed by the <kbd>H</kbd> key:
+
+```keyman
+'С' + [SHIFT K_H] > 'Ш'
+```
+
+This new rule would take precedence over the <kbd>H</kbd> rule on its own,
+because it has a longer context.
 
 ## Rule Order {#rule-order}
 
