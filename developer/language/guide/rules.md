@@ -18,6 +18,13 @@ will only be fired if the context and the keystroke both match. The
 *output* will replace the context matched on the left hand side of the
 rule.
 
+### Example: key sequences
+```
++ 'A' > 'Ж'
++ 'B' > 'Z'
+'Z' + 'Ж' > 'տ'
+```
+
 In advanced [groups](groups), the *keystroke* section of the rule may be
 omitted for processing on the context and output.
 
