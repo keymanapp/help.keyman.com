@@ -21,6 +21,56 @@ rule.
 In advanced [groups](groups), the *keystroke* section of the rule may be
 omitted for processing on the context and output.
 
+## Examples
+
+Here are some simple examples of Keyman keyboard rules.
+
+### A basic keystroke rule
+
+The following rule transforms the <kbd>x</kbd> key to the Khmer letter "ខ".
+
+```keyman
++ [K_X] > 'ខ'
+```
+
+### A keystroke that modifies existing content
+
+If you want to modify the output based on what is already in the text store
+(also known as "on screen"), then you would include a context section. For
+example, in a Dinka keyboard, the following rule transforms "ee" on screen, when
+<kbd>;</kbd> is pressed, to "ëë":
+
+```keyman
+'ee' + ';' > 'ëë'
+```
+
+### A sequence of keystrokes
+
+It is common to think of keyboard rules in terms of keystroke sequences. For
+example, in an Armenian keyboard, you may want <kbd>D</kbd><kbd>Z</kbd> to
+produce "Ձ" (U+0541). However, the <kbd>D</kbd> key by itself produces "Դ"
+(U+0534), and the <kbd>Z</kbd> key on its own produces "Զ" (U+0536).
+
+Instead of thinking of a sequence of keystrokes, think of what is on screen
+already, and how it needs to change when you type the next keystroke.
+
+So, we would start with the following two rules for the keys on their own:
+
+```keyman
++ [SHIFT K_D] > 'Դ'   c U+0534
++ [SHIFT K_Z] > 'Զ'   c U+0536
+```
+
+Then, instead of something like `'D' + 'Z' > 'Ձ'`, we would instead start with
+the _output_ of the <kbd>D</kbd> key ("Դ"), followed by the <kbd>Z</kbd> key:
+
+```keyman
+'Դ' + [SHIFT K_Z] > 'Ձ'  c U+0541
+```
+
+This new rule would take precedence over the <kbd>Z</kbd> rule on its own,
+because it has a longer context.
+
 ## Rule Order {#rule-order}
 
 Rules have a special order. They are ordered first by length of context,
