@@ -72,6 +72,12 @@ shell, and from this folder, run:
 ./build.sh build
 ```
 
+If you'll be running tests locally, the Docker image will need to be built with dev dependencies:
+
+```sh
+./build.sh build --debug
+```
+
 #### Start the Docker container
 
 To start up the website, in bash, run:
@@ -101,7 +107,11 @@ In bash, run:
 
 #### Running tests
 
-To check for broken links and .php file conformance, when the site is running,
+When the site is running, the test action will do the following:
+* PHP unit tests
+* Check .php file conformance
+* Check for internal broken links
+
 in bash, run:
 
 ```sh
