@@ -2,6 +2,13 @@
 **/.DS_Store
 .idea/
 cdn/deploy
+
+tier.txt
+
+# unit test artifacts
+blc.log
+.phpunit.result.cache
+
 vendor*
 .vscode/
 node_modules/
