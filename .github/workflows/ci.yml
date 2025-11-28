@@ -18,7 +18,7 @@ jobs:
       shell: bash
       run: |
         echo "TIER_TEST" > tier.txt
-        ./build.sh configure build start
+        ./build.sh configure build start --debug
       env:
         fail-fast: true
 
@@ -37,13 +37,21 @@ jobs:
 
     - name: Check broken links
       shell: bash
+      continue-on-error: false
       run: |
-        set +e;
-        set +o pipefail;
-        npx broken-link-checker http://localhost:8055 --ordered --recursive --requests 50 --host-requests 50 -e --filter-level 3 | \
+        set +e
+        set +o pipefail
+        npx broken-link-checker http://localhost:8055 --ordered --recursive --requests 50 --host-requests 50 -e --filter-level 3 | tee blc.log
+        echo "BLC_RESULT=${PIPESTATUS[0]}" >> "$GITHUB_ENV"
+
+    - name: Report on broken links
+      run: |
+        set +e
+        set +o pipefail
+        cat blc.log | \
           grep -E "BROKEN|Getting links from" | \
-          grep -B 1 "BROKEN"
-        exit ${PIPESTATUS[0]}
+          grep -B 1 "BROKEN";
+        exit "${BLC_RESULT}"
 
     - name: Check PHP errors
       shell: bash
