@@ -41,7 +41,7 @@ jobs:
       run: |
         set +e
         set +o pipefail
-        npx broken-link-checker http://localhost:8055 --ordered --recursive --requests 50 --host-requests 50 -e --filter-level 3 | tee blc.log
+        npx broken-link-checker http://localhost:8055 --ordered --recursive --host-requests 50 -e --filter-level 3 | tee blc.log
         echo "BLC_RESULT=${PIPESTATUS[0]}" >> "$GITHUB_ENV"
 
     - name: Report on broken links
