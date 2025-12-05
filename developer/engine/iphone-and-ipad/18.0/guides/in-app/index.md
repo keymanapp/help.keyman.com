@@ -4,7 +4,7 @@ title: Guide: build an in-app keyboard
 
 Keyman Engine for iPhone and iPad allows you to use any Keyman touch
 keyboard in your iOS app, or even to create your own system keyboard app
-for purchase in the App Store.  
+for purchase in the App Store.
 This guide will walk you through the steps for creating your first iOS
 app with Keyman Engine for iPhone and iPad.
 
