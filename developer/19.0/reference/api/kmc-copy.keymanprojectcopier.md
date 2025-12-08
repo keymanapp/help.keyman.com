@@ -13,23 +13,234 @@ export declare class KeymanProjectCopier implements KeymanCompiler
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [asyncCallbacks](./kmc-copy.keymanprojectcopier.asynccallbacks.md) |  | CopierAsyncCallbacks |  |
-|  [callbacks](./kmc-copy.keymanprojectcopier.callbacks.md) |  | CompilerCallbacks |  |
-|  [cloudSource](./kmc-copy.keymanprojectcopier.cloudsource.md) |  | KeymanCloudSource |  |
-|  [githubRef](./kmc-copy.keymanprojectcopier.githubref.md) |  | GitHubRef |  |
-|  [options](./kmc-copy.keymanprojectcopier.options.md) |  | [CopierOptions](./kmc-copy.copieroptions.md) |  |
-|  [outPath](./kmc-copy.keymanprojectcopier.outpath.md) |  | string |  |
-|  [outputId](./kmc-copy.keymanprojectcopier.outputid.md) |  | string |  |
-|  [sourceId](./kmc-copy.keymanprojectcopier.sourceid.md) |  | string |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[asyncCallbacks](./kmc-copy.keymanprojectcopier.asynccallbacks.md)
+
+
+</td><td>
+
+
+</td><td>
+
+CopierAsyncCallbacks
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[callbacks](./kmc-copy.keymanprojectcopier.callbacks.md)
+
+
+</td><td>
+
+
+</td><td>
+
+CompilerCallbacks
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[cloudSource](./kmc-copy.keymanprojectcopier.cloudsource.md)
+
+
+</td><td>
+
+
+</td><td>
+
+KeymanCloudSource
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[githubRef](./kmc-copy.keymanprojectcopier.githubref.md)
+
+
+</td><td>
+
+
+</td><td>
+
+GitHubRef
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[options](./kmc-copy.keymanprojectcopier.options.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[CopierOptions](./kmc-copy.copieroptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[outPath](./kmc-copy.keymanprojectcopier.outpath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[outputId](./kmc-copy.keymanprojectcopier.outputid.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[sourceId](./kmc-copy.keymanprojectcopier.sourceid.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [init(callbacks, options)](./kmc-copy.keymanprojectcopier.init.md) |  |  |
-|  [isLocalOrigin()](./kmc-copy.keymanprojectcopier.islocalorigin.md) |  |  |
-|  [run(source)](./kmc-copy.keymanprojectcopier.run.md) |  | Copy a Keyman project. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [KeymanProjectCopier.init()](./kmc-copy.keymanprojectcopier.init.md) function to read any input files by disk. |
-|  [write(artifacts)](./kmc-copy.keymanprojectcopier.write.md) |  | Write artifacts from a successful compile to disk, via callbacks methods. The artifacts written will include all files from the project, across multiple folders. Folders will be created as needed |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[init(callbacks, options)](./kmc-copy.keymanprojectcopier.init.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[isLocalOrigin()](./kmc-copy.keymanprojectcopier.islocalorigin.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[run(source)](./kmc-copy.keymanprojectcopier.run.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Copy a Keyman project. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [KeymanProjectCopier.init()](./kmc-copy.keymanprojectcopier.init.md) function to read any input files by disk.
+
+
+</td></tr>
+<tr><td>
+
+[write(artifacts)](./kmc-copy.keymanprojectcopier.write.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Write artifacts from a successful compile to disk, via callbacks methods. The artifacts written will include all files from the project, across multiple folders. Folders will be created as needed
+
+
+</td></tr>
+</tbody></table>
 

@@ -12,10 +12,51 @@ export declare function remapVisualKeyboard(vk: VisualKeyboard.VisualKeyboard, m
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  vk | VisualKeyboard.VisualKeyboard |  |
-|  map | [PuaMap](./kmc-kmn.osk.puamap.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+vk
+
+
+</td><td>
+
+VisualKeyboard.VisualKeyboard
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+map
+
+
+</td><td>
+
+[PuaMap](./kmc-kmn.osk.puamap.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -15,9 +15,83 @@ export interface KmnCompilerResult extends KeymanCompilerResult
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [artifacts](./kmc-kmn.kmncompilerresult.artifacts.md) |  | [KmnCompilerArtifacts](./kmc-kmn.kmncompilerartifacts.md) | Internal in-memory build artifacts from a successful compilation. Caller can write these to disk with [KmnCompiler.write()](./kmc-kmn.kmncompiler.write.md) |
-|  [displayMap?](./kmc-kmn.kmncompilerresult.displaymap.md) |  | [Osk.PuaMap](./kmc-kmn.osk.puamap.md) | _(Optional)_ Mapping data for <code>&amp;displayMap</code>, intended for use by kmc-analyze |
-|  [extra](./kmc-kmn.kmncompilerresult.extra.md) |  | KmnCompilerResultExtra | Internal additional metadata used by secondary compile phases such as KmwCompiler, not intended for external use |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[artifacts](./kmc-kmn.kmncompilerresult.artifacts.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[KmnCompilerArtifacts](./kmc-kmn.kmncompilerartifacts.md)
+
+
+</td><td>
+
+Internal in-memory build artifacts from a successful compilation. Caller can write these to disk with [KmnCompiler.write()](./kmc-kmn.kmncompiler.write.md)
+
+
+</td></tr>
+<tr><td>
+
+[displayMap?](./kmc-kmn.kmncompilerresult.displaymap.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Osk.PuaMap](./kmc-kmn.osk.puamap.md)
+
+
+</td><td>
+
+_(Optional)_ Mapping data for `&displayMap`<!-- -->, intended for use by kmc-analyze
+
+
+</td></tr>
+<tr><td>
+
+[extra](./kmc-kmn.kmncompilerresult.extra.md)
+
+
+</td><td>
+
+
+</td><td>
+
+KmnCompilerResultExtra
+
+
+</td><td>
+
+Internal additional metadata used by secondary compile phases such as KmwCompiler, not intended for external use
+
+
+</td></tr>
+</tbody></table>
 

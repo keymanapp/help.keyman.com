@@ -15,7 +15,45 @@ export interface ModelInfoCompilerResult extends KeymanCompilerResult
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [artifacts](./kmc-model-info.modelinfocompilerresult.artifacts.md) |  | [ModelInfoCompilerArtifacts](./kmc-model-info.modelinfocompilerartifacts.md) | Internal in-memory build artifacts from a successful compilation. Caller can write these to disk with [ModelInfoCompiler.write()](./kmc-model-info.modelinfocompiler.write.md) |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[artifacts](./kmc-model-info.modelinfocompilerresult.artifacts.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ModelInfoCompilerArtifacts](./kmc-model-info.modelinfocompilerartifacts.md)
+
+
+</td><td>
+
+Internal in-memory build artifacts from a successful compilation. Caller can write these to disk with [ModelInfoCompiler.write()](./kmc-model-info.modelinfocompiler.write.md)
+
+
+</td></tr>
+</tbody></table>
 

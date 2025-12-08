@@ -15,7 +15,45 @@ export interface KmpCompilerArtifacts extends KeymanCompilerArtifacts
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [kmp](./kmc-package.kmpcompilerartifacts.kmp.md) |  | KeymanCompilerArtifact | Binary keyboard package filedata and filename - installable into Keyman desktop and mobile projects |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[kmp](./kmc-package.kmpcompilerartifacts.kmp.md)
+
+
+</td><td>
+
+
+</td><td>
+
+KeymanCompilerArtifact
+
+
+</td><td>
+
+Binary keyboard package filedata and filename - installable into Keyman desktop and mobile projects
+
+
+</td></tr>
+</tbody></table>
 

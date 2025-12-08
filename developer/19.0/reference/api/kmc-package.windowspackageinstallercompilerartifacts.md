@@ -15,7 +15,45 @@ export interface WindowsPackageInstallerCompilerArtifacts extends KeymanCompiler
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [exe](./kmc-package.windowspackageinstallercompilerartifacts.exe.md) |  | KeymanCompilerArtifact | Binary package installer filedata and filename - installable into Keyman desktop and mobile projects |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[exe](./kmc-package.windowspackageinstallercompilerartifacts.exe.md)
+
+
+</td><td>
+
+
+</td><td>
+
+KeymanCompilerArtifact
+
+
+</td><td>
+
+Binary package installer filedata and filename - installable into Keyman desktop and mobile projects
+
+
+</td></tr>
+</tbody></table>
 

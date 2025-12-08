@@ -15,9 +15,65 @@ export declare class LexicalModelCompiler implements KeymanCompiler
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [init(callbacks, \_options)](./kmc-model.lexicalmodelcompiler.init.md) |  | Initialize the compiler. There are currently no options specific to the lexical model compiler |
-|  [run(inputFilename, outputFilename)](./kmc-model.lexicalmodelcompiler.run.md) |  | Compiles a .model.ts file to .model.js. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [LexicalModelCompiler.init()](./kmc-model.lexicalmodelcompiler.init.md) function to read any input files by disk. |
-|  [write(artifacts)](./kmc-model.lexicalmodelcompiler.write.md) |  | <p>Write artifacts from a successful compile to disk, via callbacks methods. The artifacts written may include:</p><p>- .model.js file - Javascript lexical model for web and touch platforms</p> |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[init(callbacks, \_options)](./kmc-model.lexicalmodelcompiler.init.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Initialize the compiler. There are currently no options specific to the lexical model compiler
+
+
+</td></tr>
+<tr><td>
+
+[run(inputFilename, outputFilename)](./kmc-model.lexicalmodelcompiler.run.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Compiles a .model.ts file to .model.js. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [LexicalModelCompiler.init()](./kmc-model.lexicalmodelcompiler.init.md) function to read any input files by disk.
+
+
+</td></tr>
+<tr><td>
+
+[write(artifacts)](./kmc-model.lexicalmodelcompiler.write.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Write artifacts from a successful compile to disk, via callbacks methods. The artifacts written may include:
+
+- .model.js file - Javascript lexical model for web and touch platforms
+
+
+</td></tr>
+</tbody></table>
 

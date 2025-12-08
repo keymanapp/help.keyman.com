@@ -14,10 +14,102 @@ export interface StringResult
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [pua](./kmc-kmn.osk.stringresult.pua.md) |  | string | hexadecimal single character in PUA range, without 'U+' prefix, e.g. 'F100' |
-|  [str](./kmc-kmn.osk.stringresult.str.md) |  | string | the key cap string |
-|  [unicode](./kmc-kmn.osk.stringresult.unicode.md) |  | string | unicode code points in <str> for reference, without 'U+' prefix, e.g. '0061 0301' |
-|  [usages](./kmc-kmn.osk.stringresult.usages.md) |  | [StringRefUsage](./kmc-kmn.osk.stringrefusage.md)<!-- -->\[\] \| string\[\] | files in which the string is referenced; will be an array of  if includeCounts is true, otherwise will be an array of strings listing files in which the key cap may be found |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[pua](./kmc-kmn.osk.stringresult.pua.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+hexadecimal single character in PUA range, without 'U+' prefix, e.g. 'F100'
+
+
+</td></tr>
+<tr><td>
+
+[str](./kmc-kmn.osk.stringresult.str.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+the key cap string
+
+
+</td></tr>
+<tr><td>
+
+[unicode](./kmc-kmn.osk.stringresult.unicode.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+unicode code points in <str> for reference, without 'U+' prefix, e.g. '0061 0301'
+
+
+</td></tr>
+<tr><td>
+
+[usages](./kmc-kmn.osk.stringresult.usages.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[StringRefUsage](./kmc-kmn.osk.stringrefusage.md)<!-- -->\[\] \| string\[\]
+
+
+</td><td>
+
+files in which the string is referenced; will be an array of  if includeCounts is true, otherwise will be an array of strings listing files in which the key cap may be found
+
+
+</td></tr>
+</tbody></table>
 

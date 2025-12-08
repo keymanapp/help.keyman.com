@@ -8,21 +8,99 @@ kmc-kmn - Keyman keyboard compiler
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [KmnCompiler](./kmc-kmn.kmncompiler.md) | Compiles a .kmn file to a .kmx, .kvk, and/or .js. The compiler does not read or write from filesystem or network directly, but relies on callbacks for all external IO. |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[KmnCompiler](./kmc-kmn.kmncompiler.md)
+
+
+</td><td>
+
+Compiles a .kmn file to a .kmx, .kvk, and/or .js. The compiler does not read or write from filesystem or network directly, but relies on callbacks for all external IO.
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [KmnCompilerArtifacts](./kmc-kmn.kmncompilerartifacts.md) | Internal in-memory build artifacts from a successful compilation |
-|  [KmnCompilerOptions](./kmc-kmn.kmncompileroptions.md) | Options for the .kmn compiler |
-|  [KmnCompilerResult](./kmc-kmn.kmncompilerresult.md) | Build artifacts from the .kmn compiler |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[KmnCompilerArtifacts](./kmc-kmn.kmncompilerartifacts.md)
+
+
+</td><td>
+
+Internal in-memory build artifacts from a successful compilation
+
+
+</td></tr>
+<tr><td>
+
+[KmnCompilerOptions](./kmc-kmn.kmncompileroptions.md)
+
+
+</td><td>
+
+Options for the .kmn compiler
+
+
+</td></tr>
+<tr><td>
+
+[KmnCompilerResult](./kmc-kmn.kmncompilerresult.md)
+
+
+</td><td>
+
+Build artifacts from the .kmn compiler
+
+
+</td></tr>
+</tbody></table>
 
 ## Namespaces
 
-|  Namespace | Description |
-|  --- | --- |
-|  [Osk](./kmc-kmn.osk.md) |  |
+<table><thead><tr><th>
+
+Namespace
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[Osk](./kmc-kmn.osk.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

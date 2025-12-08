@@ -16,9 +16,39 @@ write(artifacts: KeyboardInfoCompilerArtifacts): Promise<boolean>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  artifacts | [KeyboardInfoCompilerArtifacts](./kmc-keyboard-info.keyboardinfocompilerartifacts.md) | object containing artifact binary data to write out |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+artifacts
+
+
+</td><td>
+
+[KeyboardInfoCompilerArtifacts](./kmc-keyboard-info.keyboardinfocompilerartifacts.md)
+
+
+</td><td>
+
+object containing artifact binary data to write out
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

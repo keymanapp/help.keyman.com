@@ -14,9 +14,39 @@ run(source: string): Promise<CopierResult>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  source | string | Source file or folder to copy. Can be a local file or folder, https://github.com/.../repo\[/path\], or cloud:id |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+source
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Source file or folder to copy. Can be a local file or folder, https://github.com/.../repo\[/path\], or cloud:id
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

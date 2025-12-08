@@ -17,18 +17,186 @@ export declare class KeymanKeyboardGenerator extends BasicGenerator implements K
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [SFile\_Keyboard](./kmc-generate.keymankeyboardgenerator.sfile_keyboard.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) |  |
-|  [SFile\_KeyboardKMN](./kmc-generate.keymankeyboardgenerator.sfile_keyboardkmn.md) | <p><code>static</code></p><p><code>readonly</code></p> | string |  |
-|  [SFile\_KeyboardKPS](./kmc-generate.keymankeyboardgenerator.sfile_keyboardkps.md) | <p><code>static</code></p><p><code>readonly</code></p> | string |  |
-|  [SFile\_KeyboardKVKS](./kmc-generate.keymankeyboardgenerator.sfile_keyboardkvks.md) | <p><code>static</code></p><p><code>readonly</code></p> | string |  |
-|  [SFile\_Project](./kmc-generate.keymankeyboardgenerator.sfile_project.md) | <p><code>static</code></p><p><code>readonly</code></p> | string |  |
-|  [SFile\_TouchLayout](./kmc-generate.keymankeyboardgenerator.sfile_touchlayout.md) | <p><code>static</code></p><p><code>readonly</code></p> | string |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[SFile\_Keyboard](./kmc-generate.keymankeyboardgenerator.sfile_keyboard.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+(not declared)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SFile\_KeyboardKMN](./kmc-generate.keymankeyboardgenerator.sfile_keyboardkmn.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SFile\_KeyboardKPS](./kmc-generate.keymankeyboardgenerator.sfile_keyboardkps.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SFile\_KeyboardKVKS](./kmc-generate.keymankeyboardgenerator.sfile_keyboardkvks.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SFile\_Project](./kmc-generate.keymankeyboardgenerator.sfile_project.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SFile\_TouchLayout](./kmc-generate.keymankeyboardgenerator.sfile_touchlayout.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [run()](./kmc-generate.keymankeyboardgenerator.run.md) |  | Generate a Keyman Keyboard project. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [AbstractGenerator.init()](./kmc-generate.abstractgenerator.init.md) function to read any input files by disk. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[run()](./kmc-generate.keymankeyboardgenerator.run.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Generate a Keyman Keyboard project. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [AbstractGenerator.init()](./kmc-generate.abstractgenerator.init.md) function to read any input files by disk.
+
+
+</td></tr>
+</tbody></table>
 

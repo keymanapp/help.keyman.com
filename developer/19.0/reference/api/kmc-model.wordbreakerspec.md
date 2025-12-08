@@ -18,9 +18,93 @@ export interface WordBreakerSpec
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [joinWordsAt?](./kmc-model.wordbreakerspec.joinwordsat.md) | <code>readonly</code> | string\[\] | <p>_(Optional)_ If present, joins words that were split by the word breaker together at the given strings. e.g.,</p><p>joinWordsAt: \['-'\] // to keep hyphenated items together</p><p> 14.0</p> |
-|  [overrideScriptDefaults?](./kmc-model.wordbreakerspec.overridescriptdefaults.md) | <code>readonly</code> | OverrideScriptDefaults | <p>_(Optional)_ Overrides word splitting behaviour for certain scripts. For example, specifing that spaces break words in certain South-East Asian scripts that otherwise do not use spaces.</p><p> 14.0</p> |
-|  [use](./kmc-model.wordbreakerspec.use.md) | <code>readonly</code> | [SimpleWordBreakerSpec](./kmc-model.simplewordbreakerspec.md) |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[joinWordsAt?](./kmc-model.wordbreakerspec.joinwordsat.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_ If present, joins words that were split by the word breaker together at the given strings. e.g.,
+
+joinWordsAt: \['-'\] // to keep hyphenated items together
+
+ 14.0
+
+
+</td></tr>
+<tr><td>
+
+[overrideScriptDefaults?](./kmc-model.wordbreakerspec.overridescriptdefaults.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+OverrideScriptDefaults
+
+
+</td><td>
+
+_(Optional)_ Overrides word splitting behaviour for certain scripts. For example, specifing that spaces break words in certain South-East Asian scripts that otherwise do not use spaces.
+
+ 14.0
+
+
+</td></tr>
+<tr><td>
+
+[use](./kmc-model.wordbreakerspec.use.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[SimpleWordBreakerSpec](./kmc-model.simplewordbreakerspec.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

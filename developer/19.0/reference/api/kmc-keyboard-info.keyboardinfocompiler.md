@@ -15,9 +15,67 @@ export declare class KeyboardInfoCompiler implements KeymanCompiler
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [init(callbacks, options)](./kmc-keyboard-info.keyboardinfocompiler.init.md) |  | Initialize the compiler. Copies options. |
-|  [run(inputFilename, outputFilename)](./kmc-keyboard-info.keyboardinfocompiler.run.md) |  | <p>Builds a .keyboard\_info file with metadata from the keyboard and package source file. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [KeyboardInfoCompiler.init()](./kmc-keyboard-info.keyboardinfocompiler.init.md) function to read any input files by disk.</p><p>This function is intended for use within the keyboards repository. While many of the parameters could be deduced from each other, they are specified here to reduce the number of places the filenames are constructed. For full documentation, see: https://help.keyman.com/developer/cloud/keyboard\_info/</p> |
-|  [write(artifacts)](./kmc-keyboard-info.keyboardinfocompiler.write.md) |  | <p>Write artifacts from a successful compile to disk, via callbacks methods. The artifacts written may include:</p><p>- .keyboard\_info file - metadata file used by keyman.com</p> |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[init(callbacks, options)](./kmc-keyboard-info.keyboardinfocompiler.init.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Initialize the compiler. Copies options.
+
+
+</td></tr>
+<tr><td>
+
+[run(inputFilename, outputFilename)](./kmc-keyboard-info.keyboardinfocompiler.run.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Builds a .keyboard\_info file with metadata from the keyboard and package source file. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [KeyboardInfoCompiler.init()](./kmc-keyboard-info.keyboardinfocompiler.init.md) function to read any input files by disk.
+
+This function is intended for use within the keyboards repository. While many of the parameters could be deduced from each other, they are specified here to reduce the number of places the filenames are constructed. For full documentation, see: https://help.keyman.com/developer/cloud/keyboard\_info/
+
+
+</td></tr>
+<tr><td>
+
+[write(artifacts)](./kmc-keyboard-info.keyboardinfocompiler.write.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Write artifacts from a successful compile to disk, via callbacks methods. The artifacts written may include:
+
+- .keyboard\_info file - metadata file used by keyman.com
+
+
+</td></tr>
+</tbody></table>
 

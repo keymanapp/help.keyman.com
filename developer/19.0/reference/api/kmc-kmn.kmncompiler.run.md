@@ -14,10 +14,55 @@ run(infile: string, outfile: string): Promise<KmnCompilerResult>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  infile | string | Path to source file. Path will be parsed to find relative references in the .kmn file, such as icon or On Screen Keyboard file |
-|  outfile | string | Path to output file. The file will not be written to, but will be included in the result for use by [KmnCompiler.write()](./kmc-kmn.kmncompiler.write.md)<!-- -->. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+infile
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Path to source file. Path will be parsed to find relative references in the .kmn file, such as icon or On Screen Keyboard file
+
+
+</td></tr>
+<tr><td>
+
+outfile
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Path to output file. The file will not be written to, but will be included in the result for use by [KmnCompiler.write()](./kmc-kmn.kmncompiler.write.md)<!-- -->.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

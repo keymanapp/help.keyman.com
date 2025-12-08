@@ -14,14 +14,178 @@ export declare class ModelInfoSources
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [forPublishing](./kmc-model-info.modelinfosources.forpublishing.md) |  | boolean | Return an error if project does not meet requirements of lexical-models repository |
-|  [kmpFileName](./kmc-model-info.modelinfosources.kmpfilename.md) |  | string | The compiled package filename and relative path (.kmp) |
-|  [kmpJsonData](./kmc-model-info.modelinfosources.kmpjsondata.md) |  | KmpJsonFile.KmpJsonFile | The data from the .kps file, transformed to kmp.json |
-|  [kpsFilename](./kmc-model-info.modelinfosources.kpsfilename.md) |  | string | The source package filename and relative path (.kps) |
-|  [lastCommitDate?](./kmc-model-info.modelinfosources.lastcommitdate.md) |  | string | _(Optional)_ Last modification date for files in the project folder 'YYYY-MM-DDThh:mm:ssZ' |
-|  [model\_id](./kmc-model-info.modelinfosources.model_id.md) |  | string | The identifier for the model |
-|  [modelFileName](./kmc-model-info.modelinfosources.modelfilename.md) |  | string | The compiled model filename and relative path (.js) |
-|  [sourcePath](./kmc-model-info.modelinfosources.sourcepath.md) |  | string | The path in the keymanapp/lexical-models repo where this model may be found |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[forPublishing](./kmc-model-info.modelinfosources.forpublishing.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Return an error if project does not meet requirements of lexical-models repository
+
+
+</td></tr>
+<tr><td>
+
+[kmpFileName](./kmc-model-info.modelinfosources.kmpfilename.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The compiled package filename and relative path (.kmp)
+
+
+</td></tr>
+<tr><td>
+
+[kmpJsonData](./kmc-model-info.modelinfosources.kmpjsondata.md)
+
+
+</td><td>
+
+
+</td><td>
+
+KmpJsonFile.KmpJsonFile
+
+
+</td><td>
+
+The data from the .kps file, transformed to kmp.json
+
+
+</td></tr>
+<tr><td>
+
+[kpsFilename](./kmc-model-info.modelinfosources.kpsfilename.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The source package filename and relative path (.kps)
+
+
+</td></tr>
+<tr><td>
+
+[lastCommitDate?](./kmc-model-info.modelinfosources.lastcommitdate.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Last modification date for files in the project folder 'YYYY-MM-DDThh:mm:ssZ'
+
+
+</td></tr>
+<tr><td>
+
+[model\_id](./kmc-model-info.modelinfosources.model_id.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The identifier for the model
+
+
+</td></tr>
+<tr><td>
+
+[modelFileName](./kmc-model-info.modelinfosources.modelfilename.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The compiled model filename and relative path (.js)
+
+
+</td></tr>
+<tr><td>
+
+[sourcePath](./kmc-model-info.modelinfosources.sourcepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The path in the keymanapp/lexical-models repo where this model may be found
+
+
+</td></tr>
+</tbody></table>
 

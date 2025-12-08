@@ -14,28 +14,406 @@ export declare class AbstractGenerator
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [callbacks](./kmc-generate.abstractgenerator.callbacks.md) | <p><code>protected</code></p><p><code>readonly</code></p> | CompilerCallbacks |  |
-|  [filenameMap](./kmc-generate.abstractgenerator.filenamemap.md) | <p><code>protected</code></p><p><code>readonly</code></p> | { \[index: string\]: string; } | map of all files to be transformed, filled by this class and subclasses |
-|  [fullCopyright](./kmc-generate.abstractgenerator.fullcopyright.md) | <code>protected</code> | string | extension of options.copyright including copyright year |
-|  [includedPrefixes](./kmc-generate.abstractgenerator.includedprefixes.md) | <p><code>protected</code></p><p><code>readonly</code></p> | string\[\] | identifiers for lines to include when transforming template files, filled by child classes |
-|  [options](./kmc-generate.abstractgenerator.options.md) | <p><code>protected</code></p><p><code>readonly</code></p> | [GeneratorOptions](./kmc-generate.generatoroptions.md) |  |
-|  [SFile\_GitIgnore](./kmc-generate.abstractgenerator.sfile_gitignore.md) | <p><code>protected</code></p><p><code>static</code></p><p><code>readonly</code></p> | (not declared) |  |
-|  [SFile\_HistoryMD](./kmc-generate.abstractgenerator.sfile_historymd.md) | <p><code>protected</code></p><p><code>static</code></p><p><code>readonly</code></p> | (not declared) |  |
-|  [SFile\_LicenseMD](./kmc-generate.abstractgenerator.sfile_licensemd.md) | <p><code>protected</code></p><p><code>static</code></p><p><code>readonly</code></p> | (not declared) |  |
-|  [SFile\_ReadmeHTM](./kmc-generate.abstractgenerator.sfile_readmehtm.md) | <p><code>protected</code></p><p><code>static</code></p><p><code>readonly</code></p> | string |  |
-|  [SFile\_ReadmeMD](./kmc-generate.abstractgenerator.sfile_readmemd.md) | <p><code>protected</code></p><p><code>static</code></p><p><code>readonly</code></p> | (not declared) |  |
-|  [SFile\_WelcomeHTM](./kmc-generate.abstractgenerator.sfile_welcomehtm.md) | <p><code>protected</code></p><p><code>static</code></p><p><code>readonly</code></p> | string |  |
-|  [SPath\_Source](./kmc-generate.abstractgenerator.spath_source.md) | <p><code>protected</code></p><p><code>static</code></p><p><code>readonly</code></p> | (not declared) |  |
-|  [templateBasePath](./kmc-generate.abstractgenerator.templatebasepath.md) | <p><code>protected</code></p><p><code>readonly</code></p> | string | base path for template files in this module |
-|  [tokenMap](./kmc-generate.abstractgenerator.tokenmap.md) | <p><code>protected</code></p><p><code>readonly</code></p> | { \[index: string\]: string; } | tokens to rewrite in output files |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[callbacks](./kmc-generate.abstractgenerator.callbacks.md)
+
+
+</td><td>
+
+`protected`
+
+`readonly`
+
+
+</td><td>
+
+CompilerCallbacks
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[filenameMap](./kmc-generate.abstractgenerator.filenamemap.md)
+
+
+</td><td>
+
+`protected`
+
+`readonly`
+
+
+</td><td>
+
+{ \[index: string\]: string; }
+
+
+</td><td>
+
+map of all files to be transformed, filled by this class and subclasses
+
+
+</td></tr>
+<tr><td>
+
+[fullCopyright](./kmc-generate.abstractgenerator.fullcopyright.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+extension of options.copyright including copyright year
+
+
+</td></tr>
+<tr><td>
+
+[includedPrefixes](./kmc-generate.abstractgenerator.includedprefixes.md)
+
+
+</td><td>
+
+`protected`
+
+`readonly`
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+identifiers for lines to include when transforming template files, filled by child classes
+
+
+</td></tr>
+<tr><td>
+
+[options](./kmc-generate.abstractgenerator.options.md)
+
+
+</td><td>
+
+`protected`
+
+`readonly`
+
+
+</td><td>
+
+[GeneratorOptions](./kmc-generate.generatoroptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SFile\_GitIgnore](./kmc-generate.abstractgenerator.sfile_gitignore.md)
+
+
+</td><td>
+
+`protected`
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+(not declared)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SFile\_HistoryMD](./kmc-generate.abstractgenerator.sfile_historymd.md)
+
+
+</td><td>
+
+`protected`
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+(not declared)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SFile\_LicenseMD](./kmc-generate.abstractgenerator.sfile_licensemd.md)
+
+
+</td><td>
+
+`protected`
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+(not declared)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SFile\_ReadmeHTM](./kmc-generate.abstractgenerator.sfile_readmehtm.md)
+
+
+</td><td>
+
+`protected`
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SFile\_ReadmeMD](./kmc-generate.abstractgenerator.sfile_readmemd.md)
+
+
+</td><td>
+
+`protected`
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+(not declared)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SFile\_WelcomeHTM](./kmc-generate.abstractgenerator.sfile_welcomehtm.md)
+
+
+</td><td>
+
+`protected`
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SPath\_Source](./kmc-generate.abstractgenerator.spath_source.md)
+
+
+</td><td>
+
+`protected`
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+(not declared)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[templateBasePath](./kmc-generate.abstractgenerator.templatebasepath.md)
+
+
+</td><td>
+
+`protected`
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+base path for template files in this module
+
+
+</td></tr>
+<tr><td>
+
+[tokenMap](./kmc-generate.abstractgenerator.tokenmap.md)
+
+
+</td><td>
+
+`protected`
+
+`readonly`
+
+
+</td><td>
+
+{ \[index: string\]: string; }
+
+
+</td><td>
+
+tokens to rewrite in output files
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [defaultArtifacts()](./kmc-generate.abstractgenerator.defaultartifacts.md) | <code>protected</code> | Fills in the artifact outputPath used by all generators |
-|  [init(callbacks, options)](./kmc-generate.abstractgenerator.init.md) |  | Initialize the generator. Copies options. |
-|  [write(artifacts)](./kmc-generate.abstractgenerator.write.md) |  | Write artifacts from a successful compile to disk, via callbacks methods. The artifacts written will include all files from the project, across multiple folders. Folders will be created as needed |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[defaultArtifacts()](./kmc-generate.abstractgenerator.defaultartifacts.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Fills in the artifact outputPath used by all generators
+
+
+</td></tr>
+<tr><td>
+
+[init(callbacks, options)](./kmc-generate.abstractgenerator.init.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Initialize the generator. Copies options.
+
+
+</td></tr>
+<tr><td>
+
+[write(artifacts)](./kmc-generate.abstractgenerator.write.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Write artifacts from a successful compile to disk, via callbacks methods. The artifacts written will include all files from the project, across multiple folders. Folders will be created as needed
+
+
+</td></tr>
+</tbody></table>
 

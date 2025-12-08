@@ -15,7 +15,45 @@ export interface KeyboardInfoCompilerOptions extends CompilerOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [sources](./kmc-keyboard-info.keyboardinfocompileroptions.sources.md) |  | [KeyboardInfoSources](./kmc-keyboard-info.keyboardinfosources.md) | Description of sources and metadata required to build a .keyboard\_info file |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[sources](./kmc-keyboard-info.keyboardinfocompileroptions.sources.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[KeyboardInfoSources](./kmc-keyboard-info.keyboardinfosources.md)
+
+
+</td><td>
+
+Description of sources and metadata required to build a .keyboard\_info file
+
+
+</td></tr>
+</tbody></table>
 

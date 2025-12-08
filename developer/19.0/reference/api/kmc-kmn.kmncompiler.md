@@ -15,10 +15,79 @@ export declare class KmnCompiler implements KeymanCompiler, LdmlKeyboardTypes.Un
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [init(callbacks, options)](./kmc-kmn.kmncompiler.init.md) |  | Initialize the compiler, including loading the WASM host for kmcmplib. Copies options. |
-|  [run(infile, outfile)](./kmc-kmn.kmncompiler.run.md) |  | Compiles a .kmn file to .kmx, .kvk, and/or .js files. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [KmnCompiler.init()](./kmc-kmn.kmncompiler.init.md) function to read any input files by disk. |
-|  [verifyInitialized()](./kmc-kmn.kmncompiler.verifyinitialized.md) |  | Verify that wasm is spun up OK. |
-|  [write(artifacts)](./kmc-kmn.kmncompiler.write.md) |  | <p>Write artifacts from a successful compile to disk, via callbacks methods. The artifacts written may include:</p><p>- .kmx file - binary keyboard used by Keyman on desktop platforms - .kvk file - binary on screen keyboard used by Keyman on desktop platforms - .js file - Javascript keyboard for web and touch platforms</p> |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[init(callbacks, options)](./kmc-kmn.kmncompiler.init.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Initialize the compiler, including loading the WASM host for kmcmplib. Copies options.
+
+
+</td></tr>
+<tr><td>
+
+[run(infile, outfile)](./kmc-kmn.kmncompiler.run.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Compiles a .kmn file to .kmx, .kvk, and/or .js files. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [KmnCompiler.init()](./kmc-kmn.kmncompiler.init.md) function to read any input files by disk.
+
+
+</td></tr>
+<tr><td>
+
+[verifyInitialized()](./kmc-kmn.kmncompiler.verifyinitialized.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Verify that wasm is spun up OK.
+
+
+</td></tr>
+<tr><td>
+
+[write(artifacts)](./kmc-kmn.kmncompiler.write.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Write artifacts from a successful compile to disk, via callbacks methods. The artifacts written may include:
+
+- .kmx file - binary keyboard used by Keyman on desktop platforms - .kvk file - binary on screen keyboard used by Keyman on desktop platforms - .js file - Javascript keyboard for web and touch platforms
+
+
+</td></tr>
+</tbody></table>
 

@@ -6,23 +6,111 @@
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [parseMapping(mapping)](./kmc-kmn.osk.parsemapping.md) |  |
-|  [remapTouchLayout(source, map)](./kmc-kmn.osk.remaptouchlayout.md) |  |
-|  [remapVisualKeyboard(vk, map)](./kmc-kmn.osk.remapvisualkeyboard.md) |  |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[parseMapping(mapping)](./kmc-kmn.osk.parsemapping.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[remapTouchLayout(source, map)](./kmc-kmn.osk.remaptouchlayout.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[remapVisualKeyboard(vk, map)](./kmc-kmn.osk.remapvisualkeyboard.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [StringRef](./kmc-kmn.osk.stringref.md) |  |
-|  [StringRefUsage](./kmc-kmn.osk.stringrefusage.md) |  |
-|  [StringResult](./kmc-kmn.osk.stringresult.md) | Represents a single key cap found by <code>AnalyzeOskCharacterUse</code> |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[StringRef](./kmc-kmn.osk.stringref.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[StringRefUsage](./kmc-kmn.osk.stringrefusage.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[StringResult](./kmc-kmn.osk.stringresult.md)
+
+
+</td><td>
+
+Represents a single key cap found by `AnalyzeOskCharacterUse`
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [PuaMap](./kmc-kmn.osk.puamap.md) |  |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[PuaMap](./kmc-kmn.osk.puamap.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

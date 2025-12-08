@@ -14,15 +14,107 @@ export declare class AnalyzeOskCharacterUse
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(callbacks, options)](./kmc-analyze.analyzeoskcharacteruse._constructor_.md) |  | Constructs a new instance of the <code>AnalyzeOskCharacterUse</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(callbacks, options)](./kmc-analyze.analyzeoskcharacteruse._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `AnalyzeOskCharacterUse` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [analyze(file)](./kmc-analyze.analyzeoskcharacteruse.analyze.md) |  | <p>Analyzes a single source file for Unicode character usage. Can parse .kmn, .kvks, .keyman-touch-layout file formats. Can be called multiple times to collect results from more than one file. Use [AnalyzeOskCharacterUse.getStrings()](./kmc-analyze.analyzeoskcharacteruse.getstrings.md) to retrieve results.</p><p>Note: <code>analyze()</code> collects key cap data, so calling this for a .kmn file will retrieve the key caps from the .kvks and .keyman-touch-layout files that it references, rather than key cap data from the .kmn file itself.</p> |
-|  [clear()](./kmc-analyze.analyzeoskcharacteruse.clear.md) |  | Clears analysis data collected from previous calls to [AnalyzeOskCharacterUse.analyze()](./kmc-analyze.analyzeoskcharacteruse.analyze.md) |
-|  [getStrings(format)](./kmc-analyze.analyzeoskcharacteruse.getstrings.md) |  | <p>Returns the collected results from earlier calls to [AnalyzeOskCharacterUse.analyze()](./kmc-analyze.analyzeoskcharacteruse.analyze.md)<!-- -->. This generates a mapping from a key cap (one or more characters) to a PUA code, for use with <code>&amp;displayMap</code>.</p><p>Three output formats are supported:</p><p>- .txt: tab-separated string format, with three columns: PUA, Key Cap, and plain string. The PUA and Key Cap columns are formatted as Unicode Scalar Values, e.g. U+0061, and the plain string is the original key cap string.</p><p>- .md: formatted for documentation purposes. Generates a Markdown table (GFM) with PUA, Key Cap, and plain string. The PUA and Key Cap columns are formatted as Unicode Scalar Values, e.g. U+0061, and the plain string is the original key cap string.</p><p>- .json: returns the final aggregated data as an array of strings, which can be joined to form a JSON blob of an object with a single member, <code>map</code>, which is an array of  objects.</p> |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[analyze(file)](./kmc-analyze.analyzeoskcharacteruse.analyze.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Analyzes a single source file for Unicode character usage. Can parse .kmn, .kvks, .keyman-touch-layout file formats. Can be called multiple times to collect results from more than one file. Use [AnalyzeOskCharacterUse.getStrings()](./kmc-analyze.analyzeoskcharacteruse.getstrings.md) to retrieve results.
+
+Note: `analyze()` collects key cap data, so calling this for a .kmn file will retrieve the key caps from the .kvks and .keyman-touch-layout files that it references, rather than key cap data from the .kmn file itself.
+
+
+</td></tr>
+<tr><td>
+
+[clear()](./kmc-analyze.analyzeoskcharacteruse.clear.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Clears analysis data collected from previous calls to [AnalyzeOskCharacterUse.analyze()](./kmc-analyze.analyzeoskcharacteruse.analyze.md)
+
+
+</td></tr>
+<tr><td>
+
+[getStrings(format)](./kmc-analyze.analyzeoskcharacteruse.getstrings.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Returns the collected results from earlier calls to [AnalyzeOskCharacterUse.analyze()](./kmc-analyze.analyzeoskcharacteruse.analyze.md)<!-- -->. This generates a mapping from a key cap (one or more characters) to a PUA code, for use with `&displayMap`<!-- -->.
+
+Three output formats are supported:
+
+- .txt: tab-separated string format, with three columns: PUA, Key Cap, and plain string. The PUA and Key Cap columns are formatted as Unicode Scalar Values, e.g. U+0061, and the plain string is the original key cap string.
+
+- .md: formatted for documentation purposes. Generates a Markdown table (GFM) with PUA, Key Cap, and plain string. The PUA and Key Cap columns are formatted as Unicode Scalar Values, e.g. U+0061, and the plain string is the original key cap string.
+
+- .json: returns the final aggregated data as an array of strings, which can be joined to form a JSON blob of an object with a single member, `map`<!-- -->, which is an array of  objects.
+
+
+</td></tr>
+</tbody></table>
 

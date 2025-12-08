@@ -6,13 +6,53 @@
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [LdmlKeyboardCompiler](./kmc-ldml.ldmlkeyboardcompiler.md) | Compiles a LDML keyboard .xml file to a .kmx (KMXPlus), .kvk. The compiler does not read or write from filesystem or network directly, but relies on callbacks for all external IO. |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[LdmlKeyboardCompiler](./kmc-ldml.ldmlkeyboardcompiler.md)
+
+
+</td><td>
+
+Compiles a LDML keyboard .xml file to a .kmx (KMXPlus), .kvk. The compiler does not read or write from filesystem or network directly, but relies on callbacks for all external IO.
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [LdmlCompilerOptions](./kmc-ldml.ldmlcompileroptions.md) | Options for the .xml LDML keyboard compiler |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[LdmlCompilerOptions](./kmc-ldml.ldmlcompileroptions.md)
+
+
+</td><td>
+
+Options for the .xml LDML keyboard compiler
+
+
+</td></tr>
+</tbody></table>
 

@@ -14,9 +14,39 @@ write(artifacts: CopierArtifacts): Promise<boolean>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  artifacts | CopierArtifacts | object containing artifact binary data to write out |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+artifacts
+
+
+</td><td>
+
+CopierArtifacts
+
+
+</td><td>
+
+object containing artifact binary data to write out
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 
