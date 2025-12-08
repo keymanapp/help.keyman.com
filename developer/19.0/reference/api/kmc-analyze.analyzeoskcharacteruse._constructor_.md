@@ -14,8 +14,51 @@ constructor(callbacks: CompilerCallbacks, options?: AnalyzeOskCharacterUseOption
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  callbacks | CompilerCallbacks |  |
-|  options | [AnalyzeOskCharacterUseOptions](./kmc-analyze.analyzeoskcharacteruseoptions.md) | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+callbacks
+
+
+</td><td>
+
+CompilerCallbacks
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[AnalyzeOskCharacterUseOptions](./kmc-analyze.analyzeoskcharacteruseoptions.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 

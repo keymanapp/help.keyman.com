@@ -15,7 +15,45 @@ export interface WindowsPackageInstallerCompilerOptions extends KmpCompilerOptio
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [sources](./kmc-package.windowspackageinstallercompileroptions.sources.md) |  | [WindowsPackageInstallerSources](./kmc-package.windowspackageinstallersources.md) | Sources and metadata for the Windows package installer compiler |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[sources](./kmc-package.windowspackageinstallercompileroptions.sources.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[WindowsPackageInstallerSources](./kmc-package.windowspackageinstallersources.md)
+
+
+</td><td>
+
+Sources and metadata for the Windows package installer compiler
+
+
+</td></tr>
+</tbody></table>
 

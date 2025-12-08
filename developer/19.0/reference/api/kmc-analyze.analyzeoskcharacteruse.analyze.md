@@ -16,9 +16,39 @@ analyze(file: string): Promise<boolean>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  file | string | relative or absolute path to a Keyman source file |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+file
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+relative or absolute path to a Keyman source file
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

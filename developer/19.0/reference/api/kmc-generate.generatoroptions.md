@@ -15,16 +15,216 @@ export interface GeneratorOptions extends CompilerBaseOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [author?](./kmc-generate.generatoroptions.author.md) |  | string | _(Optional)_ name of the author of the keyboard |
-|  [copyright?](./kmc-generate.generatoroptions.copyright.md) |  | string | _(Optional)_ name of the copyright holder for the keyboard or lexical model (do not include (c) symbol or date) |
-|  [description?](./kmc-generate.generatoroptions.description.md) |  | string | _(Optional)_ description of the keyboard, Markdown permissible |
-|  [id](./kmc-generate.generatoroptions.id.md) |  | string | identifier (basename) of the keyboard or model |
-|  [keymanVersion?](./kmc-generate.generatoroptions.keymanversion.md) |  | string | _(Optional)_ version of Keyman to reference in source files, defaults to KEYMAN\_VERSION.VERSION |
-|  [languageTags?](./kmc-generate.generatoroptions.languagetags.md) |  | string\[\] | _(Optional)_ array of bcp 47 tags which are supported by the keyboard or lexical model |
-|  [name?](./kmc-generate.generatoroptions.name.md) |  | string | _(Optional)_ descriptive name of the keyboard or lexical model |
-|  [outPath](./kmc-generate.generatoroptions.outpath.md) |  | string | output path where project folder will be created |
-|  [targets?](./kmc-generate.generatoroptions.targets.md) |  | KeymanTargets.KeymanTarget\[\] | _(Optional)_ supported platforms, only used in Keyman keyboard project generator |
-|  [version?](./kmc-generate.generatoroptions.version.md) |  | string | _(Optional)_ version of the keyboard or model, 1.0 default for Keyman keyboard, lexical model, 1.0.0 default for LDML keyboard |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[author?](./kmc-generate.generatoroptions.author.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ name of the author of the keyboard
+
+
+</td></tr>
+<tr><td>
+
+[copyright?](./kmc-generate.generatoroptions.copyright.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ name of the copyright holder for the keyboard or lexical model (do not include (c) symbol or date)
+
+
+</td></tr>
+<tr><td>
+
+[description?](./kmc-generate.generatoroptions.description.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ description of the keyboard, Markdown permissible
+
+
+</td></tr>
+<tr><td>
+
+[id](./kmc-generate.generatoroptions.id.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+identifier (basename) of the keyboard or model
+
+
+</td></tr>
+<tr><td>
+
+[keymanVersion?](./kmc-generate.generatoroptions.keymanversion.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ version of Keyman to reference in source files, defaults to KEYMAN\_VERSION.VERSION
+
+
+</td></tr>
+<tr><td>
+
+[languageTags?](./kmc-generate.generatoroptions.languagetags.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_ array of bcp 47 tags which are supported by the keyboard or lexical model
+
+
+</td></tr>
+<tr><td>
+
+[name?](./kmc-generate.generatoroptions.name.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ descriptive name of the keyboard or lexical model
+
+
+</td></tr>
+<tr><td>
+
+[outPath](./kmc-generate.generatoroptions.outpath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+output path where project folder will be created
+
+
+</td></tr>
+<tr><td>
+
+[targets?](./kmc-generate.generatoroptions.targets.md)
+
+
+</td><td>
+
+
+</td><td>
+
+KeymanTargets.KeymanTarget\[\]
+
+
+</td><td>
+
+_(Optional)_ supported platforms, only used in Keyman keyboard project generator
+
+
+</td></tr>
+<tr><td>
+
+[version?](./kmc-generate.generatoroptions.version.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ version of the keyboard or model, 1.0 default for Keyman keyboard, lexical model, 1.0.0 default for LDML keyboard
+
+
+</td></tr>
+</tbody></table>
 

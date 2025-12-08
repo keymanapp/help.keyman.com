@@ -15,13 +15,175 @@ export interface LexicalModelSource extends LexicalModelDeclaration
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [applyCasing?](./kmc-model.lexicalmodelsource.applycasing.md) | <code>readonly</code> | CasingFunction | <p>_(Optional)_ Specifies the casing rules for a language. Should implement three casing forms: - 'lower' -- a fully-lowercased version of the text appropriate for the language's use of the writing system. - 'upper' -- a fully-uppercased version of the text - 'initial' -- a version preserving the input casing aside from the initial character, which is uppercased (like with proper nouns and sentence-initial words in English sentences.)</p><p>This is only utilized if <code>languageUsesCasing</code> is defined and set to <code>true</code>.  14.0</p> |
-|  [languageUsesCasing?](./kmc-model.lexicalmodelsource.languageusescasing.md) | <code>readonly</code> | boolean | _(Optional)_ When set to <code>true</code>, suggestions will attempt to match the case of the input text even if the lexicon entries use a different casing scheme due to search term keying effects.  14.0 |
-|  [punctuation?](./kmc-model.lexicalmodelsource.punctuation.md) | <code>readonly</code> | LexicalModelPunctuation | _(Optional)_ Punctuation and spacing suggested by the model. |
-|  [rootClass?](./kmc-model.lexicalmodelsource.rootclass.md) | <code>readonly</code> | string | _(Optional)_ The name of the type to instantiate (without parameters) as the base object for a custom predictive model. |
-|  [searchTermToKey?](./kmc-model.lexicalmodelsource.searchtermtokey.md) | <code>readonly</code> | [WordformToKeySpec](./kmc-model.wordformtokeyspec.md) | _(Optional)_ How to simplify words, to convert them into simplified search keys This often involves removing accents, lowercasing, etc. |
-|  [sources](./kmc-model.lexicalmodelsource.sources.md) | <code>readonly</code> | Array&lt;string&gt; |  |
-|  [wordBreaker?](./kmc-model.lexicalmodelsource.wordbreaker.md) | <code>readonly</code> | [WordBreakerSpec](./kmc-model.wordbreakerspec.md) \| [SimpleWordBreakerSpec](./kmc-model.simplewordbreakerspec.md) | <p>_(Optional)_ Which word breaker to use. Choose from:</p><p>- 'default' -- breaks according to Unicode UAX \#29 §4.1 Default Word Boundary Specification, which works well for \*most\* languages. - 'ascii' -- a very simple word breaker, for demonstration purposes only. - word breaking function -- provide your own function that breaks words. - class-based word-breaker - may be supported in the future.</p> |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[applyCasing?](./kmc-model.lexicalmodelsource.applycasing.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+CasingFunction
+
+
+</td><td>
+
+_(Optional)_ Specifies the casing rules for a language. Should implement three casing forms: - 'lower' -- a fully-lowercased version of the text appropriate for the language's use of the writing system. - 'upper' -- a fully-uppercased version of the text - 'initial' -- a version preserving the input casing aside from the initial character, which is uppercased (like with proper nouns and sentence-initial words in English sentences.)
+
+This is only utilized if `languageUsesCasing` is defined and set to `true`<!-- -->.  14.0
+
+
+</td></tr>
+<tr><td>
+
+[languageUsesCasing?](./kmc-model.lexicalmodelsource.languageusescasing.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ When set to `true`<!-- -->, suggestions will attempt to match the case of the input text even if the lexicon entries use a different casing scheme due to search term keying effects.  14.0
+
+
+</td></tr>
+<tr><td>
+
+[punctuation?](./kmc-model.lexicalmodelsource.punctuation.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+LexicalModelPunctuation
+
+
+</td><td>
+
+_(Optional)_ Punctuation and spacing suggested by the model.
+
+
+</td></tr>
+<tr><td>
+
+[rootClass?](./kmc-model.lexicalmodelsource.rootclass.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The name of the type to instantiate (without parameters) as the base object for a custom predictive model.
+
+
+</td></tr>
+<tr><td>
+
+[searchTermToKey?](./kmc-model.lexicalmodelsource.searchtermtokey.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[WordformToKeySpec](./kmc-model.wordformtokeyspec.md)
+
+
+</td><td>
+
+_(Optional)_ How to simplify words, to convert them into simplified search keys This often involves removing accents, lowercasing, etc.
+
+
+</td></tr>
+<tr><td>
+
+[sources](./kmc-model.lexicalmodelsource.sources.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Array&lt;string&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[wordBreaker?](./kmc-model.lexicalmodelsource.wordbreaker.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[WordBreakerSpec](./kmc-model.wordbreakerspec.md) \| [SimpleWordBreakerSpec](./kmc-model.simplewordbreakerspec.md)
+
+
+</td><td>
+
+_(Optional)_ Which word breaker to use. Choose from:
+
+- 'default' -- breaks according to Unicode UAX \#29 §4.1 Default Word Boundary Specification, which works well for \*most\* languages. - 'ascii' -- a very simple word breaker, for demonstration purposes only. - word breaking function -- provide your own function that breaks words. - class-based word-breaker - may be supported in the future.
+
+
+</td></tr>
+</tbody></table>
 

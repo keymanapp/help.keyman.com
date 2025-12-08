@@ -14,10 +14,55 @@ analyze(file: string, mapping: Osk.StringResult[]): Promise<boolean>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  file | string | relative or absolute path to a Keyman source file |
-|  mapping | Osk.StringResult\[\] | OSK keycap map provided by [AnalyzeOskCharacterUse](./kmc-analyze.analyzeoskcharacteruse.md) |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+file
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+relative or absolute path to a Keyman source file
+
+
+</td></tr>
+<tr><td>
+
+mapping
+
+
+</td><td>
+
+Osk.StringResult\[\]
+
+
+</td><td>
+
+OSK keycap map provided by [AnalyzeOskCharacterUse](./kmc-analyze.analyzeoskcharacteruse.md)
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

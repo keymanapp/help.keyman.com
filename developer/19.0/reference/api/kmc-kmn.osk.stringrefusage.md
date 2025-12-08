@@ -12,8 +12,60 @@ export interface StringRefUsage
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [count](./kmc-kmn.osk.stringrefusage.count.md) |  | number |  |
-|  [filename](./kmc-kmn.osk.stringrefusage.filename.md) |  | string |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[count](./kmc-kmn.osk.stringrefusage.count.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[filename](./kmc-kmn.osk.stringrefusage.filename.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

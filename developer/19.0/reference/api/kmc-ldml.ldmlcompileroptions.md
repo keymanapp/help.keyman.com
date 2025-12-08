@@ -15,7 +15,45 @@ export interface LdmlCompilerOptions extends CompilerOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [readerOptions](./kmc-ldml.ldmlcompileroptions.readeroptions.md) |  | LDMLKeyboardXMLSourceFileReaderOptions | Paths and other options required for reading .xml files |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[readerOptions](./kmc-ldml.ldmlcompileroptions.readeroptions.md)
+
+
+</td><td>
+
+
+</td><td>
+
+LDMLKeyboardXMLSourceFileReaderOptions
+
+
+</td><td>
+
+Paths and other options required for reading .xml files
+
+
+</td></tr>
+</tbody></table>
 

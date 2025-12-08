@@ -6,16 +6,86 @@
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [KeyboardInfoCompiler](./kmc-keyboard-info.keyboardinfocompiler.md) | Compiles source data from a keyboard project to a .keyboard\_info. The compiler does not read or write from filesystem or network directly, but relies on callbacks for all external IO. |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[KeyboardInfoCompiler](./kmc-keyboard-info.keyboardinfocompiler.md)
+
+
+</td><td>
+
+Compiles source data from a keyboard project to a .keyboard\_info. The compiler does not read or write from filesystem or network directly, but relies on callbacks for all external IO.
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [KeyboardInfoCompilerArtifacts](./kmc-keyboard-info.keyboardinfocompilerartifacts.md) | Internal in-memory build artifacts from a successful compilation |
-|  [KeyboardInfoCompilerOptions](./kmc-keyboard-info.keyboardinfocompileroptions.md) | Options for the .keyboard\_info compiler |
-|  [KeyboardInfoCompilerResult](./kmc-keyboard-info.keyboardinfocompilerresult.md) | Build artifacts from the .keyboard\_info compiler |
-|  [KeyboardInfoSources](./kmc-keyboard-info.keyboardinfosources.md) | Description of sources and metadata required to build a .keyboard\_info file |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[KeyboardInfoCompilerArtifacts](./kmc-keyboard-info.keyboardinfocompilerartifacts.md)
+
+
+</td><td>
+
+Internal in-memory build artifacts from a successful compilation
+
+
+</td></tr>
+<tr><td>
+
+[KeyboardInfoCompilerOptions](./kmc-keyboard-info.keyboardinfocompileroptions.md)
+
+
+</td><td>
+
+Options for the .keyboard\_info compiler
+
+
+</td></tr>
+<tr><td>
+
+[KeyboardInfoCompilerResult](./kmc-keyboard-info.keyboardinfocompilerresult.md)
+
+
+</td><td>
+
+Build artifacts from the .keyboard\_info compiler
+
+
+</td></tr>
+<tr><td>
+
+[KeyboardInfoSources](./kmc-keyboard-info.keyboardinfosources.md)
+
+
+</td><td>
+
+Description of sources and metadata required to build a .keyboard\_info file
+
+
+</td></tr>
+</tbody></table>
 

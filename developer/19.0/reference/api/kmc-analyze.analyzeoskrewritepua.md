@@ -14,20 +14,129 @@ export declare class AnalyzeOskRewritePua
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(callbacks)](./kmc-analyze.analyzeoskrewritepua._constructor_.md) |  | Constructs a new instance of the <code>AnalyzeOskRewritePua</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(callbacks)](./kmc-analyze.analyzeoskrewritepua._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `AnalyzeOskRewritePua` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [data](./kmc-analyze.analyzeoskrewritepua.data.md) | <code>readonly</code> | { \[index: string\]: Uint8Array; } | Returns the file data for OSK files rewritten with PUA characters, for use with <code>&amp;displayMap</code>. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[data](./kmc-analyze.analyzeoskrewritepua.data.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+{ \[index: string\]: Uint8Array; }
+
+
+</td><td>
+
+Returns the file data for OSK files rewritten with PUA characters, for use with `&displayMap`<!-- -->.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [analyze(file, mapping)](./kmc-analyze.analyzeoskrewritepua.analyze.md) |  | Analyze a keyboard file or files, and provide a remapped output. Accepts a .kmn, .kvks, .keyman-touch-layout file formats. For .kmn, will rewrite associated On Screen Keyboard file formats. Can be called multiple times to rewrite multiple files. Use the [AnalyzeOskRewritePua.data](./kmc-analyze.analyzeoskrewritepua.data.md) property to retrieve the output file content for writing. This does not modify the source file. |
-|  [clear()](./kmc-analyze.analyzeoskrewritepua.clear.md) |  | Clears data collected from previous calls to [AnalyzeOskRewritePua.analyze()](./kmc-analyze.analyzeoskrewritepua.analyze.md) |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[analyze(file, mapping)](./kmc-analyze.analyzeoskrewritepua.analyze.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Analyze a keyboard file or files, and provide a remapped output. Accepts a .kmn, .kvks, .keyman-touch-layout file formats. For .kmn, will rewrite associated On Screen Keyboard file formats. Can be called multiple times to rewrite multiple files. Use the [AnalyzeOskRewritePua.data](./kmc-analyze.analyzeoskrewritepua.data.md) property to retrieve the output file content for writing. This does not modify the source file.
+
+
+</td></tr>
+<tr><td>
+
+[clear()](./kmc-analyze.analyzeoskrewritepua.clear.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Clears data collected from previous calls to [AnalyzeOskRewritePua.analyze()](./kmc-analyze.analyzeoskrewritepua.analyze.md)
+
+
+</td></tr>
+</tbody></table>
 

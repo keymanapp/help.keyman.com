@@ -15,7 +15,45 @@ export interface ModelInfoCompilerOptions extends CompilerOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [sources](./kmc-model-info.modelinfocompileroptions.sources.md) |  | [ModelInfoSources](./kmc-model-info.modelinfosources.md) | Description of sources and metadata required to build a .model\_info file |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[sources](./kmc-model-info.modelinfocompileroptions.sources.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ModelInfoSources](./kmc-model-info.modelinfosources.md)
+
+
+</td><td>
+
+Description of sources and metadata required to build a .model\_info file
+
+
+</td></tr>
+</tbody></table>
 

@@ -15,7 +15,45 @@ export interface KmpCompilerResult extends KeymanCompilerResult
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [artifacts](./kmc-package.kmpcompilerresult.artifacts.md) |  | [KmpCompilerArtifacts](./kmc-package.kmpcompilerartifacts.md) | Internal in-memory build artifacts from a successful compilation. Caller can write these to disk with [KmpCompiler.write()](./kmc-package.kmpcompiler.write.md) |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[artifacts](./kmc-package.kmpcompilerresult.artifacts.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[KmpCompilerArtifacts](./kmc-package.kmpcompilerartifacts.md)
+
+
+</td><td>
+
+Internal in-memory build artifacts from a successful compilation. Caller can write these to disk with [KmpCompiler.write()](./kmc-package.kmpcompiler.write.md)
+
+
+</td></tr>
+</tbody></table>
 

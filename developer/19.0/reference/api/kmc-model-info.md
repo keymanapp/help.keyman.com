@@ -6,16 +6,86 @@
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [ModelInfoCompiler](./kmc-model-info.modelinfocompiler.md) | Compiles source data from a lexical model project to a .model\_info. The compiler does not read or write from filesystem or network directly, but relies on callbacks for all external IO. |
-|  [ModelInfoSources](./kmc-model-info.modelinfosources.md) | Description of sources and metadata required to build a .model\_info file |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ModelInfoCompiler](./kmc-model-info.modelinfocompiler.md)
+
+
+</td><td>
+
+Compiles source data from a lexical model project to a .model\_info. The compiler does not read or write from filesystem or network directly, but relies on callbacks for all external IO.
+
+
+</td></tr>
+<tr><td>
+
+[ModelInfoSources](./kmc-model-info.modelinfosources.md)
+
+
+</td><td>
+
+Description of sources and metadata required to build a .model\_info file
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [ModelInfoCompilerArtifacts](./kmc-model-info.modelinfocompilerartifacts.md) | Internal in-memory build artifacts from a successful compilation |
-|  [ModelInfoCompilerOptions](./kmc-model-info.modelinfocompileroptions.md) | Options for the .model\_info compiler |
-|  [ModelInfoCompilerResult](./kmc-model-info.modelinfocompilerresult.md) | Build artifacts from the .model\_info compiler |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ModelInfoCompilerArtifacts](./kmc-model-info.modelinfocompilerartifacts.md)
+
+
+</td><td>
+
+Internal in-memory build artifacts from a successful compilation
+
+
+</td></tr>
+<tr><td>
+
+[ModelInfoCompilerOptions](./kmc-model-info.modelinfocompileroptions.md)
+
+
+</td><td>
+
+Options for the .model\_info compiler
+
+
+</td></tr>
+<tr><td>
+
+[ModelInfoCompilerResult](./kmc-model-info.modelinfocompilerresult.md)
+
+
+</td><td>
+
+Build artifacts from the .model\_info compiler
+
+
+</td></tr>
+</tbody></table>
 

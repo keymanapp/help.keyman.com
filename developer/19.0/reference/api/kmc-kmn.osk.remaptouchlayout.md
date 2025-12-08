@@ -12,10 +12,51 @@ export declare function remapTouchLayout(source: TouchLayout.TouchLayoutFile, ma
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  source | TouchLayout.TouchLayoutFile |  |
-|  map | [PuaMap](./kmc-kmn.osk.puamap.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+source
+
+
+</td><td>
+
+TouchLayout.TouchLayoutFile
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+map
+
+
+</td><td>
+
+[PuaMap](./kmc-kmn.osk.puamap.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

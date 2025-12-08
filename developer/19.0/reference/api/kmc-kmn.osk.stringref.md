@@ -12,8 +12,60 @@ export interface StringRef
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [str](./kmc-kmn.osk.stringref.str.md) |  | string |  |
-|  [usages](./kmc-kmn.osk.stringref.usages.md) |  | [StringRefUsage](./kmc-kmn.osk.stringrefusage.md)<!-- -->\[\] |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[str](./kmc-kmn.osk.stringref.str.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[usages](./kmc-kmn.osk.stringref.usages.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[StringRefUsage](./kmc-kmn.osk.stringrefusage.md)<!-- -->\[\]
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

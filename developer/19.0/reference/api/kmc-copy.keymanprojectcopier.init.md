@@ -12,10 +12,51 @@ init(callbacks: CompilerCallbacks, options: CopierOptions): Promise<boolean>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  callbacks | CompilerCallbacks |  |
-|  options | [CopierOptions](./kmc-copy.copieroptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+callbacks
+
+
+</td><td>
+
+CompilerCallbacks
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[CopierOptions](./kmc-copy.copieroptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

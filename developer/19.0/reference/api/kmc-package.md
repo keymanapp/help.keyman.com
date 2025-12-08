@@ -6,20 +6,130 @@
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [KmpCompiler](./kmc-package.kmpcompiler.md) | Compiles a .kps file to a .kmp archive. The compiler does not read or write from filesystem or network directly, but relies on callbacks for all external IO. |
-|  [WindowsPackageInstallerCompiler](./kmc-package.windowspackageinstallercompiler.md) | Compiles a .kps file to a .exe installer. The compiler does not read or write from filesystem or network directly, but relies on callbacks for all external IO. |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[KmpCompiler](./kmc-package.kmpcompiler.md)
+
+
+</td><td>
+
+Compiles a .kps file to a .kmp archive. The compiler does not read or write from filesystem or network directly, but relies on callbacks for all external IO.
+
+
+</td></tr>
+<tr><td>
+
+[WindowsPackageInstallerCompiler](./kmc-package.windowspackageinstallercompiler.md)
+
+
+</td><td>
+
+Compiles a .kps file to a .exe installer. The compiler does not read or write from filesystem or network directly, but relies on callbacks for all external IO.
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [KmpCompilerArtifacts](./kmc-package.kmpcompilerartifacts.md) | Internal in-memory build artifacts from a successful compilation |
-|  [KmpCompilerOptions](./kmc-package.kmpcompileroptions.md) | Options for the .kps compiler |
-|  [KmpCompilerResult](./kmc-package.kmpcompilerresult.md) | Build artifacts from the .kps compiler |
-|  [WindowsPackageInstallerCompilerArtifacts](./kmc-package.windowspackageinstallercompilerartifacts.md) | Internal in-memory build artifacts from a successful compilation |
-|  [WindowsPackageInstallerCompilerOptions](./kmc-package.windowspackageinstallercompileroptions.md) | Options for the .kps Windows package installer compiler |
-|  [WindowsPackageInstallerCompilerResult](./kmc-package.windowspackageinstallercompilerresult.md) | Build artifacts from the .kps Windows package installer compiler |
-|  [WindowsPackageInstallerSources](./kmc-package.windowspackageinstallersources.md) | Sources and metadata for the Windows package installer compiler |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[KmpCompilerArtifacts](./kmc-package.kmpcompilerartifacts.md)
+
+
+</td><td>
+
+Internal in-memory build artifacts from a successful compilation
+
+
+</td></tr>
+<tr><td>
+
+[KmpCompilerOptions](./kmc-package.kmpcompileroptions.md)
+
+
+</td><td>
+
+Options for the .kps compiler
+
+
+</td></tr>
+<tr><td>
+
+[KmpCompilerResult](./kmc-package.kmpcompilerresult.md)
+
+
+</td><td>
+
+Build artifacts from the .kps compiler
+
+
+</td></tr>
+<tr><td>
+
+[WindowsPackageInstallerCompilerArtifacts](./kmc-package.windowspackageinstallercompilerartifacts.md)
+
+
+</td><td>
+
+Internal in-memory build artifacts from a successful compilation
+
+
+</td></tr>
+<tr><td>
+
+[WindowsPackageInstallerCompilerOptions](./kmc-package.windowspackageinstallercompileroptions.md)
+
+
+</td><td>
+
+Options for the .kps Windows package installer compiler
+
+
+</td></tr>
+<tr><td>
+
+[WindowsPackageInstallerCompilerResult](./kmc-package.windowspackageinstallercompilerresult.md)
+
+
+</td><td>
+
+Build artifacts from the .kps Windows package installer compiler
+
+
+</td></tr>
+<tr><td>
+
+[WindowsPackageInstallerSources](./kmc-package.windowspackageinstallersources.md)
+
+
+</td><td>
+
+Sources and metadata for the Windows package installer compiler
+
+
+</td></tr>
+</tbody></table>
 

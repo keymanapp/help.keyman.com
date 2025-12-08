@@ -15,7 +15,45 @@ export interface LexicalModelCompilerResult extends KeymanCompilerResult
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [artifacts](./kmc-model.lexicalmodelcompilerresult.artifacts.md) |  | [LexicalModelCompilerArtifacts](./kmc-model.lexicalmodelcompilerartifacts.md) | Internal in-memory build artifacts from a successful compilation. Caller can write these to disk with [LexicalModelCompiler.write()](./kmc-model.lexicalmodelcompiler.write.md) |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[artifacts](./kmc-model.lexicalmodelcompilerresult.artifacts.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[LexicalModelCompilerArtifacts](./kmc-model.lexicalmodelcompilerartifacts.md)
+
+
+</td><td>
+
+Internal in-memory build artifacts from a successful compilation. Caller can write these to disk with [LexicalModelCompiler.write()](./kmc-model.lexicalmodelcompiler.write.md)
+
+
+</td></tr>
+</tbody></table>
 

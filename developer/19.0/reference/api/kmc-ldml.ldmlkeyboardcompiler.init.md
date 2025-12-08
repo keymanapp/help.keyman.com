@@ -14,10 +14,55 @@ init(callbacks: CompilerCallbacks, options: LdmlCompilerOptions): Promise<boolea
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  callbacks | CompilerCallbacks | Callbacks for external interfaces, including message reporting and file io |
-|  options | [LdmlCompilerOptions](./kmc-ldml.ldmlcompileroptions.md) | Compiler options |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+callbacks
+
+
+</td><td>
+
+CompilerCallbacks
+
+
+</td><td>
+
+Callbacks for external interfaces, including message reporting and file io
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[LdmlCompilerOptions](./kmc-ldml.ldmlcompileroptions.md)
+
+
+</td><td>
+
+Compiler options
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 
