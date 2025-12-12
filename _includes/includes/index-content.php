@@ -1,11 +1,48 @@
 <?php
 
+/**
+ * Sort the list of file titles according to the predefined order in
+ * __index.txt. If a filename in __index.txt is prefixed with a hyphen (-), then
+ * exclude it from the list. If a filename is missing from __index.txt, it will
+ * be appended to the bottom of the list.
+ */
+function get_file_titles_by_index($base, $unsorted_items) {
+  $order = str_replace("\r\n", "\n", @file_get_contents($base.'__index.txt'));
+  $order = explode("\n", $order);
+  foreach($order as $item) {
+    if(substr($item, 0, 1) == '-') {
+      // remove the item from the list
+      $item = substr($item, 1);
+      if(array_key_exists($item, $unsorted_items)) {
+        $unsorted_items[$item] = '';
+      }
+    }
+    else if(array_key_exists($item, $unsorted_items)) {
+      $items[$item] = $unsorted_items[$item];
+      $unsorted_items[$item] = '';
+    }
+  }
+
+  asort($unsorted_items, SORT_FLAG_CASE|SORT_STRING);
+  foreach($unsorted_items as $item => $title) {
+    if($title != '') {
+      $items[$item] = $title;
+    }
+  }
+  return $items;
+}
+
 function get_file_titles($base) {
+  $hasIndex = false;
   $files = glob($base.'*');
   $items = array(); $dirs = array();
   foreach($files as $file) {
     $basefile = basename($file);
     if($basefile == '.' || $basefile == '..') {
+      continue;
+    }
+    if($basefile == '__index.txt') {
+      $hasIndex = true;
       continue;
     }
     if($basefile == '_nav.php' || $basefile == 'index.php' || $basefile == 'index.md') {
@@ -35,6 +72,10 @@ function get_file_titles($base) {
     } else if(preg_match('/\.php$/', $file) && !file_exists(str_replace('.php', '.md', $file))) {
       $items[$basefile] = get_file_title($file);
     }
+  }
+
+  if($hasIndex) {
+    return get_file_titles_by_index($base, $items + $dirs);
   }
 
   asort($items, SORT_FLAG_CASE|SORT_STRING);
