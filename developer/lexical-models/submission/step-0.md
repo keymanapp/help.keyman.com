@@ -81,13 +81,6 @@ components:
 `LICENSE.md`
 :   the open source license for the lexical model
 
-`<lexical model>.model_info`
-:   a [metadata file](/developer/cloud/model_info) detailing the lexical
-    model's origin, version, requirements, and capabilities  
-    This file greatly assists the process of making your lexical model
-    readily available for public download. Please see the [.model_info
-    section](/developer/cloud/model_info) for more details.
-
 ## Contributing lexical models
 
 We do have a baseline for accepting contributed lexical models. While we
