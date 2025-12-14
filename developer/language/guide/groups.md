@@ -133,26 +133,38 @@ future versions of the language.
 
 ## Empty final group
 
-If the final group processed is a context and keystroke group (`using keys`),
-and there is no `nomatch` rule, and the keystroke is not matched in the group,
-the keystroke will be output to the screen, regardless of whether or not it was
-matched in earlier groups.
+There is a side-effect of keystroke processing, when the last group that is
+processed during a keystroke event has the following properties:
 
-This can be used for example if you want to process a change at the end of a
-word which might be the last word in a line or in a text field, where the user
+1. it is a context and keystroke group (`using keys`), and
+2. is has no `nomatch` rule, and
+3. it has no rule matching the keystroke
+
+In this situation, the keystroke will be emitted to the application, even if it
+was matched in earlier groups.
+
+See [Control keys and control characters](control-keys) for further discussion.
+
+### Example with Enter or Tab
+
+This is can helpful, for example, if you want to process a change at the end of
+a word which might be the last word in a line or in a text field, where the user
 presses <kbd>Enter</kbd> or <kbd>Tab</kbd>:
 
 ```
+begin Unicode > use(main)
+
 group(main) using keys
 
 + 's' > 'σ'
 'σ + [K_ENTER] > 'ς' use(final)
+'σ + [K_TAB] > 'ς' use(final)
 
 group(final) using keys
-c Empty final group causes keystroke to be emitted
+c Empty group causes keystroke to be emitted
 ```
 
-See [Control keys and control characters](control-keys) for more details.
+Note: the name of the group is not significant.
 
 ## Statements and rules used with groups
 
