@@ -22,9 +22,39 @@ getStrings(format?: '.txt' | '.md' | '.json'): string[];
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  format | '.txt' \| '.md' \| '.json' | _(Optional)_ file format to return - can be '.txt', '.md', or '.json' |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+format
+
+
+</td><td>
+
+'.txt' \| '.md' \| '.json'
+
+
+</td><td>
+
+_(Optional)_ file format to return - can be '.txt', '.md', or '.json'
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

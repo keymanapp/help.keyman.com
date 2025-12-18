@@ -15,15 +15,101 @@ export declare class ModelInfoCompiler implements KeymanCompiler
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)()](./kmc-model-info.modelinfocompiler._constructor_.md) |  | Constructs a new instance of the <code>ModelInfoCompiler</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)()](./kmc-model-info.modelinfocompiler._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `ModelInfoCompiler` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [init(callbacks, options)](./kmc-model-info.modelinfocompiler.init.md) |  | Initialize the compiler. Copies options. |
-|  [run(inputFilename, outputFilename)](./kmc-model-info.modelinfocompiler.run.md) |  | <p>Builds .model\_info file with metadata from the model and package source file. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [ModelInfoCompiler.init()](./kmc-model-info.modelinfocompiler.init.md) function to read any input files by disk.</p><p>This function is intended for use within the lexical-models repository. While many of the parameters could be deduced from each other, they are specified here to reduce the number of places the filenames are constructed.</p> |
-|  [write(artifacts)](./kmc-model-info.modelinfocompiler.write.md) |  | <p>Write artifacts from a successful compile to disk, via callbacks methods. The artifacts written may include:</p><p>- .model\_info file - metadata file used by keyman.com</p> |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[init(callbacks, options)](./kmc-model-info.modelinfocompiler.init.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Initialize the compiler. Copies options.
+
+
+</td></tr>
+<tr><td>
+
+[run(inputFilename, outputFilename)](./kmc-model-info.modelinfocompiler.run.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Builds .model\_info file with metadata from the model and package source file. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [ModelInfoCompiler.init()](./kmc-model-info.modelinfocompiler.init.md) function to read any input files by disk.
+
+This function is intended for use within the lexical-models repository. While many of the parameters could be deduced from each other, they are specified here to reduce the number of places the filenames are constructed.
+
+
+</td></tr>
+<tr><td>
+
+[write(artifacts)](./kmc-model-info.modelinfocompiler.write.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Write artifacts from a successful compile to disk, via callbacks methods. The artifacts written may include:
+
+- .model\_info file - metadata file used by keyman.com
+
+
+</td></tr>
+</tbody></table>
 

@@ -15,7 +15,45 @@ export interface ModelInfoCompilerArtifacts extends KeymanCompilerArtifacts
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [model\_info](./kmc-model-info.modelinfocompilerartifacts.model_info.md) |  | KeymanCompilerArtifact | Binary model info filedata and filename - used by keyman.com |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[model\_info](./kmc-model-info.modelinfocompilerartifacts.model_info.md)
+
+
+</td><td>
+
+
+</td><td>
+
+KeymanCompilerArtifact
+
+
+</td><td>
+
+Binary model info filedata and filename - used by keyman.com
+
+
+</td></tr>
+</tbody></table>
 

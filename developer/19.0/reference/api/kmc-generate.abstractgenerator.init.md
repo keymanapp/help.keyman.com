@@ -14,10 +14,55 @@ init(callbacks: CompilerCallbacks, options: GeneratorOptions): Promise<boolean>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  callbacks | CompilerCallbacks | Callbacks for external interfaces, including message reporting and file io |
-|  options | [GeneratorOptions](./kmc-generate.generatoroptions.md) | Generator options |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+callbacks
+
+
+</td><td>
+
+CompilerCallbacks
+
+
+</td><td>
+
+Callbacks for external interfaces, including message reporting and file io
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[GeneratorOptions](./kmc-generate.generatoroptions.md)
+
+
+</td><td>
+
+Generator options
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

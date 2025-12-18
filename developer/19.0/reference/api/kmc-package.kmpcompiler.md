@@ -15,15 +15,109 @@ export declare class KmpCompiler implements KeymanCompiler
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [normalizePath](./kmc-package.kmpcompiler.normalizepath.md) | <code>readonly</code> | (path: string) =&gt; string |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[normalizePath](./kmc-package.kmpcompiler.normalizepath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+(path: string) =&gt; string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [init(callbacks, options)](./kmc-package.kmpcompiler.init.md) |  | Initialize the compiler. Copies options. |
-|  [run(inputFilename, outputFilename)](./kmc-package.kmpcompiler.run.md) |  | Compiles a .kps file to .kmp file. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [KmpCompiler.init()](./kmc-package.kmpcompiler.init.md) function to read any input files by disk. |
-|  [write(artifacts)](./kmc-package.kmpcompiler.write.md) |  | <p>Write artifacts from a successful compile to disk, via callbacks methods. The artifacts written may include:</p><p>- .kmp file - binary keyboard package used by Keyman on desktop and touch platforms</p> |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[init(callbacks, options)](./kmc-package.kmpcompiler.init.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Initialize the compiler. Copies options.
+
+
+</td></tr>
+<tr><td>
+
+[run(inputFilename, outputFilename)](./kmc-package.kmpcompiler.run.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Compiles a .kps file to .kmp file. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [KmpCompiler.init()](./kmc-package.kmpcompiler.init.md) function to read any input files by disk.
+
+
+</td></tr>
+<tr><td>
+
+[write(artifacts)](./kmc-package.kmpcompiler.write.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Write artifacts from a successful compile to disk, via callbacks methods. The artifacts written may include:
+
+- .kmp file - binary keyboard package used by Keyman on desktop and touch platforms
+
+
+</td></tr>
+</tbody></table>
 

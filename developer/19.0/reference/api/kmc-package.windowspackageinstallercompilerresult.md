@@ -15,7 +15,45 @@ export interface WindowsPackageInstallerCompilerResult extends KeymanCompilerRes
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [artifacts](./kmc-package.windowspackageinstallercompilerresult.artifacts.md) |  | [WindowsPackageInstallerCompilerArtifacts](./kmc-package.windowspackageinstallercompilerartifacts.md) | Internal in-memory build artifacts from a successful compilation. Caller can write these to disk with [WindowsPackageInstallerCompiler.write()](./kmc-package.windowspackageinstallercompiler.write.md) |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[artifacts](./kmc-package.windowspackageinstallercompilerresult.artifacts.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[WindowsPackageInstallerCompilerArtifacts](./kmc-package.windowspackageinstallercompilerartifacts.md)
+
+
+</td><td>
+
+Internal in-memory build artifacts from a successful compilation. Caller can write these to disk with [WindowsPackageInstallerCompiler.write()](./kmc-package.windowspackageinstallercompiler.write.md)
+
+
+</td></tr>
+</tbody></table>
 

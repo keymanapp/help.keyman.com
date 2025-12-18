@@ -6,15 +6,101 @@
 
 ## Packages
 
-|  Package | Description |
-|  --- | --- |
-|  [@keymanapp/kmc-analyze](./kmc-analyze.md) | kmc-analyze - keyboard analysis classes, including tools for <code>&amp;displayMap</code>. |
-|  [@keymanapp/kmc-copy](./kmc-copy.md) |  |
-|  [@keymanapp/kmc-generate](./kmc-generate.md) |  |
-|  [@keymanapp/kmc-keyboard-info](./kmc-keyboard-info.md) |  |
-|  [@keymanapp/kmc-kmn](./kmc-kmn.md) | kmc-kmn - Keyman keyboard compiler |
-|  [@keymanapp/kmc-ldml](./kmc-ldml.md) |  |
-|  [@keymanapp/kmc-model](./kmc-model.md) |  |
-|  [@keymanapp/kmc-model-info](./kmc-model-info.md) |  |
-|  [@keymanapp/kmc-package](./kmc-package.md) |  |
+<table><thead><tr><th>
+
+Package
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[@keymanapp/kmc-analyze](./kmc-analyze.md)
+
+
+</td><td>
+
+kmc-analyze - keyboard analysis classes, including tools for `&displayMap`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+[@keymanapp/kmc-copy](./kmc-copy.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[@keymanapp/kmc-generate](./kmc-generate.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[@keymanapp/kmc-keyboard-info](./kmc-keyboard-info.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[@keymanapp/kmc-kmn](./kmc-kmn.md)
+
+
+</td><td>
+
+kmc-kmn - Keyman keyboard compiler
+
+
+</td></tr>
+<tr><td>
+
+[@keymanapp/kmc-ldml](./kmc-ldml.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[@keymanapp/kmc-model](./kmc-model.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[@keymanapp/kmc-model-info](./kmc-model-info.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[@keymanapp/kmc-package](./kmc-package.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

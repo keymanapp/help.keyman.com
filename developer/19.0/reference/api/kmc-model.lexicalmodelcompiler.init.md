@@ -14,10 +14,53 @@ init(callbacks: CompilerCallbacks, _options: CompilerOptions): Promise<boolean>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  callbacks | CompilerCallbacks | Callbacks for external interfaces, including message reporting and file io |
-|  \_options | CompilerOptions |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+callbacks
+
+
+</td><td>
+
+CompilerCallbacks
+
+
+</td><td>
+
+Callbacks for external interfaces, including message reporting and file io
+
+
+</td></tr>
+<tr><td>
+
+\_options
+
+
+</td><td>
+
+CompilerOptions
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -6,16 +6,86 @@
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [AbstractGenerator](./kmc-generate.abstractgenerator.md) | Common functionality for generating projects. Do not instantiate this class, rather instantiate a subclass |
-|  [KeymanKeyboardGenerator](./kmc-generate.keymankeyboardgenerator.md) | Generate a Keyman keyboard project. The generator does not read or write from filesystem or network directly, but relies on callbacks for all external IO. |
-|  [LdmlKeyboardGenerator](./kmc-generate.ldmlkeyboardgenerator.md) | Generate a LDML keyboard project. The generator does not read or write from filesystem or network directly, but relies on callbacks for all external IO. |
-|  [LexicalModelGenerator](./kmc-generate.lexicalmodelgenerator.md) | Generate a Keyman lexical model project. The generator does not read or write from filesystem or network directly, but relies on callbacks for all external IO. |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[AbstractGenerator](./kmc-generate.abstractgenerator.md)
+
+
+</td><td>
+
+Common functionality for generating projects. Do not instantiate this class, rather instantiate a subclass
+
+
+</td></tr>
+<tr><td>
+
+[KeymanKeyboardGenerator](./kmc-generate.keymankeyboardgenerator.md)
+
+
+</td><td>
+
+Generate a Keyman keyboard project. The generator does not read or write from filesystem or network directly, but relies on callbacks for all external IO.
+
+
+</td></tr>
+<tr><td>
+
+[LdmlKeyboardGenerator](./kmc-generate.ldmlkeyboardgenerator.md)
+
+
+</td><td>
+
+Generate a LDML keyboard project. The generator does not read or write from filesystem or network directly, but relies on callbacks for all external IO.
+
+
+</td></tr>
+<tr><td>
+
+[LexicalModelGenerator](./kmc-generate.lexicalmodelgenerator.md)
+
+
+</td><td>
+
+Generate a Keyman lexical model project. The generator does not read or write from filesystem or network directly, but relies on callbacks for all external IO.
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [GeneratorOptions](./kmc-generate.generatoroptions.md) | Options for the Keyman Developer project generator |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[GeneratorOptions](./kmc-generate.generatoroptions.md)
+
+
+</td><td>
+
+Options for the Keyman Developer project generator
+
+
+</td></tr>
+</tbody></table>
 

@@ -17,17 +17,165 @@ export declare class LexicalModelGenerator extends BasicGenerator implements Key
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [SFile\_Model](./kmc-generate.lexicalmodelgenerator.sfile_model.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) |  |
-|  [SFile\_ModelTs](./kmc-generate.lexicalmodelgenerator.sfile_modelts.md) | <p><code>static</code></p><p><code>readonly</code></p> | string |  |
-|  [SFile\_Package](./kmc-generate.lexicalmodelgenerator.sfile_package.md) | <p><code>static</code></p><p><code>readonly</code></p> | string |  |
-|  [SFile\_Project](./kmc-generate.lexicalmodelgenerator.sfile_project.md) | <p><code>static</code></p><p><code>readonly</code></p> | string |  |
-|  [SFile\_WordlistTsv](./kmc-generate.lexicalmodelgenerator.sfile_wordlisttsv.md) | <p><code>static</code></p><p><code>readonly</code></p> | string |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[SFile\_Model](./kmc-generate.lexicalmodelgenerator.sfile_model.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+(not declared)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SFile\_ModelTs](./kmc-generate.lexicalmodelgenerator.sfile_modelts.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SFile\_Package](./kmc-generate.lexicalmodelgenerator.sfile_package.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SFile\_Project](./kmc-generate.lexicalmodelgenerator.sfile_project.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SFile\_WordlistTsv](./kmc-generate.lexicalmodelgenerator.sfile_wordlisttsv.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [run()](./kmc-generate.lexicalmodelgenerator.run.md) |  | Generate a Lexical Model project. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [AbstractGenerator.init()](./kmc-generate.abstractgenerator.init.md) function to read any input files by disk. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[run()](./kmc-generate.lexicalmodelgenerator.run.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Generate a Lexical Model project. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [AbstractGenerator.init()](./kmc-generate.abstractgenerator.init.md) function to read any input files by disk.
+
+
+</td></tr>
+</tbody></table>
 

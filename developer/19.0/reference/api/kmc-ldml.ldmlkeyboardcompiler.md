@@ -15,9 +15,65 @@ export declare class LdmlKeyboardCompiler implements KeymanCompiler
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [init(callbacks, options)](./kmc-ldml.ldmlkeyboardcompiler.init.md) |  | Initialize the compiler, including loading the WASM host for uset parsing. Copies options. |
-|  [run(inputFilename, outputFilename)](./kmc-ldml.ldmlkeyboardcompiler.run.md) |  | Compiles a LDML keyboard .xml file to .kmx, .kvk files. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [LdmlKeyboardCompiler.init()](./kmc-ldml.ldmlkeyboardcompiler.init.md) function to read any input files by disk. |
-|  [write(artifacts)](./kmc-ldml.ldmlkeyboardcompiler.write.md) |  | <p>Write artifacts from a successful compile to disk, via callbacks methods. The artifacts written may include:</p><p>- .kmx file - binary keyboard used by Keyman on desktop platforms - .kvk file - binary on screen keyboard used by Keyman on desktop platforms</p> |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[init(callbacks, options)](./kmc-ldml.ldmlkeyboardcompiler.init.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Initialize the compiler, including loading the WASM host for uset parsing. Copies options.
+
+
+</td></tr>
+<tr><td>
+
+[run(inputFilename, outputFilename)](./kmc-ldml.ldmlkeyboardcompiler.run.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Compiles a LDML keyboard .xml file to .kmx, .kvk files. Returns an object containing binary artifacts on success. The files are passed in by name, and the compiler will use callbacks as passed to the [LdmlKeyboardCompiler.init()](./kmc-ldml.ldmlkeyboardcompiler.init.md) function to read any input files by disk.
+
+
+</td></tr>
+<tr><td>
+
+[write(artifacts)](./kmc-ldml.ldmlkeyboardcompiler.write.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Write artifacts from a successful compile to disk, via callbacks methods. The artifacts written may include:
+
+- .kmx file - binary keyboard used by Keyman on desktop platforms - .kvk file - binary on screen keyboard used by Keyman on desktop platforms
+
+
+</td></tr>
+</tbody></table>
 

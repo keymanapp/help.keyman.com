@@ -15,7 +15,45 @@ export interface LexicalModelCompilerArtifacts extends KeymanCompilerArtifacts
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [js](./kmc-model.lexicalmodelcompilerartifacts.js.md) |  | KeymanCompilerArtifact | Javascript model filedata and filename - installable into KeymanWeb, Keyman mobile products |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[js](./kmc-model.lexicalmodelcompilerartifacts.js.md)
+
+
+</td><td>
+
+
+</td><td>
+
+KeymanCompilerArtifact
+
+
+</td><td>
+
+Javascript model filedata and filename - installable into KeymanWeb, Keyman mobile products
+
+
+</td></tr>
+</tbody></table>
 

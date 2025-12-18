@@ -15,7 +15,45 @@ export interface KeyboardInfoCompilerArtifacts extends KeymanCompilerArtifacts
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [keyboard\_info](./kmc-keyboard-info.keyboardinfocompilerartifacts.keyboard_info.md) |  | KeymanCompilerArtifact | Binary keyboard info filedata and filename - used by keyman.com |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[keyboard\_info](./kmc-keyboard-info.keyboardinfocompilerartifacts.keyboard_info.md)
+
+
+</td><td>
+
+
+</td><td>
+
+KeymanCompilerArtifact
+
+
+</td><td>
+
+Binary keyboard info filedata and filename - used by keyman.com
+
+
+</td></tr>
+</tbody></table>
 

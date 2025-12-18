@@ -14,12 +14,140 @@ export interface KeyboardInfoSources
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [forPublishing](./kmc-keyboard-info.keyboardinfosources.forpublishing.md) |  | boolean | Return an error if project does not meet requirements of keyboards repository |
-|  [jsFilename?](./kmc-keyboard-info.keyboardinfosources.jsfilename.md) |  | string | _(Optional)_ The compiled keyboard filename and relative path (.js only) |
-|  [kmpFilename](./kmc-keyboard-info.keyboardinfosources.kmpfilename.md) |  | string | The compiled package filename and relative path (.kmp) |
-|  [kpsFilename](./kmc-keyboard-info.keyboardinfosources.kpsfilename.md) |  | string | The source package filename and relative path (.kps) |
-|  [lastCommitDate?](./kmc-keyboard-info.keyboardinfosources.lastcommitdate.md) |  | string | _(Optional)_ Last modification date for files in the project folder 'YYYY-MM-DDThh:mm:ssZ' |
-|  [sourcePath](./kmc-keyboard-info.keyboardinfosources.sourcepath.md) |  | string | The path in the keymanapp/keyboards repo where this keyboard may be found |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[forPublishing](./kmc-keyboard-info.keyboardinfosources.forpublishing.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Return an error if project does not meet requirements of keyboards repository
+
+
+</td></tr>
+<tr><td>
+
+[jsFilename?](./kmc-keyboard-info.keyboardinfosources.jsfilename.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The compiled keyboard filename and relative path (.js only)
+
+
+</td></tr>
+<tr><td>
+
+[kmpFilename](./kmc-keyboard-info.keyboardinfosources.kmpfilename.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The compiled package filename and relative path (.kmp)
+
+
+</td></tr>
+<tr><td>
+
+[kpsFilename](./kmc-keyboard-info.keyboardinfosources.kpsfilename.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The source package filename and relative path (.kps)
+
+
+</td></tr>
+<tr><td>
+
+[lastCommitDate?](./kmc-keyboard-info.keyboardinfosources.lastcommitdate.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Last modification date for files in the project folder 'YYYY-MM-DDThh:mm:ssZ'
+
+
+</td></tr>
+<tr><td>
+
+[sourcePath](./kmc-keyboard-info.keyboardinfosources.sourcepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The path in the keymanapp/keyboards repo where this keyboard may be found
+
+
+</td></tr>
+</tbody></table>
 

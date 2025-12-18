@@ -15,7 +15,45 @@ export interface KeyboardInfoCompilerResult extends KeymanCompilerResult
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [artifacts](./kmc-keyboard-info.keyboardinfocompilerresult.artifacts.md) |  | [KeyboardInfoCompilerArtifacts](./kmc-keyboard-info.keyboardinfocompilerartifacts.md) | Internal in-memory build artifacts from a successful compilation. Caller can write these to disk with [KeyboardInfoCompiler.write()](./kmc-keyboard-info.keyboardinfocompiler.write.md) |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[artifacts](./kmc-keyboard-info.keyboardinfocompilerresult.artifacts.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[KeyboardInfoCompilerArtifacts](./kmc-keyboard-info.keyboardinfocompilerartifacts.md)
+
+
+</td><td>
+
+Internal in-memory build artifacts from a successful compilation. Caller can write these to disk with [KeyboardInfoCompiler.write()](./kmc-keyboard-info.keyboardinfocompiler.write.md)
+
+
+</td></tr>
+</tbody></table>
 

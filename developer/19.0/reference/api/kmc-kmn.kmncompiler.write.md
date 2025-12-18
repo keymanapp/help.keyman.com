@@ -16,9 +16,39 @@ write(artifacts: KmnCompilerArtifacts): Promise<boolean>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  artifacts | [KmnCompilerArtifacts](./kmc-kmn.kmncompilerartifacts.md) | object containing artifact binary data to write out |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+artifacts
+
+
+</td><td>
+
+[KmnCompilerArtifacts](./kmc-kmn.kmncompilerartifacts.md)
+
+
+</td><td>
+
+object containing artifact binary data to write out
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

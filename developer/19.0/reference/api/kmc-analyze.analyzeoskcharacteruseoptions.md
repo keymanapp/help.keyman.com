@@ -14,10 +14,102 @@ export interface AnalyzeOskCharacterUseOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [includeCounts?](./kmc-analyze.analyzeoskcharacteruseoptions.includecounts.md) |  | boolean | _(Optional)_ If true, reports number of references to each character found in each source file |
-|  [mergeMapFile?](./kmc-analyze.analyzeoskcharacteruseoptions.mergemapfile.md) |  | string | _(Optional)_ Filename of an existing mapping file to merge the results into |
-|  [puaBase?](./kmc-analyze.analyzeoskcharacteruseoptions.puabase.md) |  | number | _(Optional)_ First character to use in PUA for remapping with &amp;displayMap, defaults to U+F100 |
-|  [stripDottedCircle?](./kmc-analyze.analyzeoskcharacteruseoptions.stripdottedcircle.md) |  | boolean | _(Optional)_ If true, strips U+25CC from the key cap before further analysis |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[includeCounts?](./kmc-analyze.analyzeoskcharacteruseoptions.includecounts.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ If true, reports number of references to each character found in each source file
+
+
+</td></tr>
+<tr><td>
+
+[mergeMapFile?](./kmc-analyze.analyzeoskcharacteruseoptions.mergemapfile.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Filename of an existing mapping file to merge the results into
+
+
+</td></tr>
+<tr><td>
+
+[puaBase?](./kmc-analyze.analyzeoskcharacteruseoptions.puabase.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ First character to use in PUA for remapping with &amp;displayMap, defaults to U+F100
+
+
+</td></tr>
+<tr><td>
+
+[stripDottedCircle?](./kmc-analyze.analyzeoskcharacteruseoptions.stripdottedcircle.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ If true, strips U+25CC from the key cap before further analysis
+
+
+</td></tr>
+</tbody></table>
 

@@ -15,9 +15,83 @@ export interface CopierOptions extends CompilerBaseOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [dryRun](./kmc-copy.copieroptions.dryrun.md) |  | boolean | dryRun: show what would happen |
-|  [outPath](./kmc-copy.copieroptions.outpath.md) |  | string | output path where project folder will be created |
-|  [relocateExternalFiles?](./kmc-copy.copieroptions.relocateexternalfiles.md) |  | boolean | _(Optional)_ Copy referenced files that are outside the project folder into an 'external' folder within the new project, rather than just referencing them in their current location |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[dryRun](./kmc-copy.copieroptions.dryrun.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+dryRun: show what would happen
+
+
+</td></tr>
+<tr><td>
+
+[outPath](./kmc-copy.copieroptions.outpath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+output path where project folder will be created
+
+
+</td></tr>
+<tr><td>
+
+[relocateExternalFiles?](./kmc-copy.copieroptions.relocateexternalfiles.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Copy referenced files that are outside the project folder into an 'external' folder within the new project, rather than just referencing them in their current location
+
+
+</td></tr>
+</tbody></table>
 

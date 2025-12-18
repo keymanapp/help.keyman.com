@@ -8,14 +8,64 @@ kmc-analyze - keyboard analysis classes, including tools for `&displayMap`<!-- -
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [AnalyzeOskCharacterUse](./kmc-analyze.analyzeoskcharacteruse.md) | Analyze the characters used in On Screen Keyboard files (.kvks, .keyman-touch-layout) for use with <code>&amp;displayMap</code>. |
-|  [AnalyzeOskRewritePua](./kmc-analyze.analyzeoskrewritepua.md) | Rewrite On Screen Keyboard files (.kvks, .keyman-touch-layout) with PUA codepoints, based on analysis provided by [AnalyzeOskCharacterUse](./kmc-analyze.analyzeoskcharacteruse.md) class. |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[AnalyzeOskCharacterUse](./kmc-analyze.analyzeoskcharacteruse.md)
+
+
+</td><td>
+
+Analyze the characters used in On Screen Keyboard files (.kvks, .keyman-touch-layout) for use with `&displayMap`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+[AnalyzeOskRewritePua](./kmc-analyze.analyzeoskrewritepua.md)
+
+
+</td><td>
+
+Rewrite On Screen Keyboard files (.kvks, .keyman-touch-layout) with PUA codepoints, based on analysis provided by [AnalyzeOskCharacterUse](./kmc-analyze.analyzeoskcharacteruse.md) class.
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [AnalyzeOskCharacterUseOptions](./kmc-analyze.analyzeoskcharacteruseoptions.md) | Options for character analysis |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[AnalyzeOskCharacterUseOptions](./kmc-analyze.analyzeoskcharacteruseoptions.md)
+
+
+</td><td>
+
+Options for character analysis
+
+
+</td></tr>
+</tbody></table>
 

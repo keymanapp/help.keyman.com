@@ -6,25 +6,151 @@
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [LexicalModelCompiler](./kmc-model.lexicalmodelcompiler.md) | Compiles a .model.ts file to a .model.js. The compiler does not read or write from filesystem or network directly, but relies on callbacks for all external IO. |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[LexicalModelCompiler](./kmc-model.lexicalmodelcompiler.md)
+
+
+</td><td>
+
+Compiles a .model.ts file to a .model.js. The compiler does not read or write from filesystem or network directly, but relies on callbacks for all external IO.
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [LexicalModelCompilerArtifacts](./kmc-model.lexicalmodelcompilerartifacts.md) | Internal in-memory build artifacts from a successful compilation |
-|  [LexicalModelCompilerResult](./kmc-model.lexicalmodelcompilerresult.md) | Build artifacts from the lexical model compiler |
-|  [LexicalModelSource](./kmc-model.lexicalmodelsource.md) | Base interface for a lexical model source definition |
-|  [WordBreakerSpec](./kmc-model.wordbreakerspec.md) | <p>Keyman 14.0+ word breaker specification:</p><p>Can support all old word breaking specification, but can also be extended with options.</p><p> 14.0</p> |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[LexicalModelCompilerArtifacts](./kmc-model.lexicalmodelcompilerartifacts.md)
+
+
+</td><td>
+
+Internal in-memory build artifacts from a successful compilation
+
+
+</td></tr>
+<tr><td>
+
+[LexicalModelCompilerResult](./kmc-model.lexicalmodelcompilerresult.md)
+
+
+</td><td>
+
+Build artifacts from the lexical model compiler
+
+
+</td></tr>
+<tr><td>
+
+[LexicalModelSource](./kmc-model.lexicalmodelsource.md)
+
+
+</td><td>
+
+Base interface for a lexical model source definition
+
+
+</td></tr>
+<tr><td>
+
+[WordBreakerSpec](./kmc-model.wordbreakerspec.md)
+
+
+</td><td>
+
+Keyman 14.0+ word breaker specification:
+
+Can support all old word breaking specification, but can also be extended with options.
+
+ 14.0
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [CasedWordformToKeySpec](./kmc-model.casedwordformtokeyspec.md) | Simplifies input text to facilitate finding entries within a lexical model's lexicon, using the model's <code>applyCasing</code> function to assist in the keying process.  14.0 |
-|  [SimpleWordBreakerSpec](./kmc-model.simplewordbreakerspec.md) | <p>Simplified word breaker specification.</p><p> 11.0</p> |
-|  [SimpleWordformToKeySpec](./kmc-model.simplewordformtokeyspec.md) | Simplifies input text to facilitate finding entries within a lexical model's lexicon.  11.0 |
-|  [WordformToKeySpec](./kmc-model.wordformtokeyspec.md) | Simplifies input text to facilitate finding entries within a lexical model's lexicon. |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CasedWordformToKeySpec](./kmc-model.casedwordformtokeyspec.md)
+
+
+</td><td>
+
+Simplifies input text to facilitate finding entries within a lexical model's lexicon, using the model's `applyCasing` function to assist in the keying process.  14.0
+
+
+</td></tr>
+<tr><td>
+
+[SimpleWordBreakerSpec](./kmc-model.simplewordbreakerspec.md)
+
+
+</td><td>
+
+Simplified word breaker specification.
+
+ 11.0
+
+
+</td></tr>
+<tr><td>
+
+[SimpleWordformToKeySpec](./kmc-model.simplewordformtokeyspec.md)
+
+
+</td><td>
+
+Simplifies input text to facilitate finding entries within a lexical model's lexicon.  11.0
+
+
+</td></tr>
+<tr><td>
+
+[WordformToKeySpec](./kmc-model.wordformtokeyspec.md)
+
+
+</td><td>
+
+Simplifies input text to facilitate finding entries within a lexical model's lexicon.
+
+
+</td></tr>
+</tbody></table>
 

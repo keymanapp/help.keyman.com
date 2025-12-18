@@ -6,13 +6,51 @@
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [KeymanProjectCopier](./kmc-copy.keymanprojectcopier.md) |  |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[KeymanProjectCopier](./kmc-copy.keymanprojectcopier.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [CopierOptions](./kmc-copy.copieroptions.md) | Options for the Keyman Developer project copier |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CopierOptions](./kmc-copy.copieroptions.md)
+
+
+</td><td>
+
+Options for the Keyman Developer project copier
+
+
+</td></tr>
+</tbody></table>
 
