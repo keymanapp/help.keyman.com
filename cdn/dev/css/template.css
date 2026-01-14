@@ -964,7 +964,7 @@ input[type="search"] {
 	margin-top: 20px;
 	background: #e3e3e3;
 	text-align: center;
-	max-height: 362px;
+	max-height: 400px;
 	display: inline-block;
 	vertical-align: top;
 	width: 300px;
@@ -996,12 +996,8 @@ input[type="search"] {
 	padding: 0 8px;
 	line-height: 1.3;
 	color: #333;
-}
-
-.product p{
-	text-align: left;
 	font-size: 12pt !important;
-	height: 130px;
+	height: 200px;
 }
 
 #engine-support-list{
