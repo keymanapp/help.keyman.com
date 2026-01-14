@@ -38,11 +38,11 @@
   // Required
   head([
     'title' =>'Keyman Support | ' . $title,
-    'css' => ['template.css','prism.css'],
+    'css' => ['template.css','prism.css', 'kb-search.css'],
     'showMenu' => true,
     'index' => false
   ]);
-
+  echo "<h1>Knowledge Base index</h1>";
   if($id) {
     echo "<p>";
     $pid = intval($id,10) - 1;
@@ -55,19 +55,46 @@
     $ParsedownAndAlerts = new \Keyman\Site\Common\GFMAlerts();
     echo $ParsedownAndAlerts->text($kb);
   } else {
-    echo "<h1>Knowledge Base index</h1>";
-    echo "<ul>";
+    echo "<div class='search-bar'>";
+    echo "<form>";
+    echo "<span class='search-icon'>🔍</span>";
+    echo "<input type='text' id='searchInput' name='q' placeholder='What would you like to find?'>";
+    echo "</form>";
+    echo "</div>";
+
+    echo "<ul id='KMKB'>";
     $kbs = glob("kb*.md");
+    $query = trim($_GET['q'] ?? '');
     foreach($kbs as $kb) {
       if(preg_match("/^kb(\d+)\.md$/", $kb, $matches)) {
         $id = $matches[1];
         $handle = fopen($kb, "r");
         $title = fgets($handle);
         $title = substr($title, 2);
+
+        $searchTarget = strtolower("KMKB{$id} {$title}");
+        if ($query !== '' && stripos($searchTarget, $query) === false) {
+          continue; // skip this if there isn't a query and a query match
+        }
+
         fclose($handle);
         echo "<li><a href='".link_from_id($id)."'>KMKB{$matches[1]}: " . htmlspecialchars($title) . "</a></li>";
       }
     }
-
-    echo "</ul>";
   }
+    echo "</ul>";
+?>
+
+<script>
+  const input = document.getElementById('searchInput')
+  const showResult = document.getElementById('KMKB')
+
+  const query = input.value
+  
+  if (query) {
+    const res = fetch(`index.php?q=${encodeURIComponent(query)}`)
+    const html = res.text()
+
+    showResult.innerHTML = html
+  }
+</script>
