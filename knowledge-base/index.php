@@ -55,16 +55,16 @@
     $ParsedownAndAlerts = new \Keyman\Site\Common\GFMAlerts();
     echo $ParsedownAndAlerts->text($kb);
   } else {
+    $query = trim($_GET['q'] ?? '');
     echo "<div class='search-bar'>";
     echo "<form>";
     echo "<span class='search-icon'>🔍</span>";
-    echo "<input type='text' id='searchInput' name='q' placeholder='What would you like to find?'>";
+    echo "<input type='text' id='searchInput' name='q' value='" .htmlspecialchars($query). "' placeholder='What would you like to find?'>";
     echo "</form>";
     echo "</div>";
 
     echo "<ul id='KMKB'>";
     $kbs = glob("kb*.md");
-    $query = trim($_GET['q'] ?? '');
     foreach($kbs as $kb) {
       if(preg_match("/^kb(\d+)\.md$/", $kb, $matches)) {
         $id = $matches[1];
@@ -84,17 +84,3 @@
   }
     echo "</ul>";
 ?>
-
-<script>
-  const input = document.getElementById('searchInput')
-  const showResult = document.getElementById('KMKB')
-
-  const query = input.value
-  
-  if (query) {
-    const res = fetch(`index.php?q=${encodeURIComponent(query)}`)
-    const html = res.text()
-
-    showResult.innerHTML = html
-  }
-</script>
