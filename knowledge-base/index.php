@@ -71,13 +71,13 @@
         $handle = fopen($kb, "r");
         $title = fgets($handle);
         $title = substr($title, 2);
+        fclose($handle);
 
         $searchTarget = strtolower("KMKB{$id} {$title}");
         if ($query !== '' && stripos($searchTarget, $query) === false) {
           continue; // skip this if there isn't a query and a query match
         }
 
-        fclose($handle);
         echo "<li><a href='".link_from_id($id)."'>KMKB{$matches[1]}: " . htmlspecialchars($title) . "</a></li>";
       }
     }
