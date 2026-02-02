@@ -79,13 +79,13 @@ any(diacritickey) + any(vowel) > index(vowel,2) index(diacriticCombining,1)
 ```
 
 The following example shows how the index statement can be used in the left hand
-side of a rule. If a repeating vowel is found, then this rule puts a circumflex
+side of a rule. If a repeating vowel is found, then this rule adds a circumflex
 on top of both vowels when <key>^</key> is pressed.
 
 ```
 store(vowel)     "aeiou"
 store(vowelcirc) "âêîôû"
-any(vowel) index(vowel,1) + "^" > index(vowelcirc,1)
+any(vowel) index(vowel,1) + "^" > index(vowelcirc,1) index(vowelcirc,1)
 ```
 
 ## Platforms
