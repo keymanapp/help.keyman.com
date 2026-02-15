@@ -3,7 +3,11 @@
 readonly THIS_SCRIPT="$(readlink -f "${BASH_SOURCE[0]}")"
 readonly BOOTSTRAP="$(dirname "$THIS_SCRIPT")/resources/bootstrap.inc.sh"
 readonly BOOTSTRAP_VERSION=v1.0.10
-[ -f "$BOOTSTRAP" ] && source "$BOOTSTRAP" || source <(curl -H "Cache-Control: no-cache" -fs https://raw.githubusercontent.com/keymanapp/shared-sites/$BOOTSTRAP_VERSION/bootstrap.inc.sh)
+if ! [ -f "$BOOTSTRAP" ] || ! source "$BOOTSTRAP"; then
+  curl -H "Cache-Control: no-cache" --fail --silent --show-error -w "curl: Finished attempt to download %{url}" "https://raw.githubusercontent.com/keymanapp/shared-sites/$BOOTSTRAP_VERSION/bootstrap.inc.sh" -o "$BOOTSTRAP.tmp" || exit 1
+  source "$BOOTSTRAP.tmp"
+  rm -f "$BOOTSTRAP.tmp"
+fi
 ## END STANDARD SITE BUILD SCRIPT INCLUDE
 
 # TODO: these should probably all be moved to a common defines script too?
