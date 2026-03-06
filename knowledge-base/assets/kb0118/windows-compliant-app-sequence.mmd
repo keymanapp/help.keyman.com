@@ -14,13 +14,13 @@ sequenceDiagram
     Keyman->>TSF: ITfContext.GetStatus()
     Keyman->>TSF: ITfContext.GetSelection()
     TSF->>App: Request current selection
-    App-->>TSF: Return caret/selection
+    App-->>TSF: Return selection
     TSF-->>Keyman: Return GetSelection
 
 
-    Note right of Keyman: Keyman applies keyboard rules and computes output
+    Note right of Keyman: Keyman applies keyboard rules and inserts or modifies the text in the selection
 
-    Keyman->>TSF: ITfContext.SetText()
-    TSF->>App: Delete or replace text in range
+    Keyman->>TSF: ITfContext.SetSelection()
+    TSF->>App: Modified selection is applied to the application
 
     App-->>User: Display “∆” in document
