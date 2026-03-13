@@ -13,3 +13,7 @@ title: Compiler Messages Reference for @keymanapp/common-types
 [KM01007](km01007) | `ERROR_TestDataUnexpectedArray` | Problem reading test data: expected single &lt;param&gt; element, found multiple
 [KM01008](km01008) | `ERROR_InvalidXml` | The XML file could not be read: 
 [KM01009](km01009) | `ERROR_InvalidPackageFile` | Package source file is invalid: unknown error
+[KM0100A](km0100a) | `ERROR_InvalidProjectFile` | Project file is not valid: &lt;param&gt;
+[KM0100B](km0100b) | `ERROR_UnsupportedProjectVersion` | Project version &lt;param&gt; is not supported by this version of Keyman Developer\.
+[KM0100C](km0100c) | `ERROR_ProjectFileCouldNotBeRead` | Project file could not be read
+[KM0100D](km0100d) | `ERROR_NotAPackageFile` | Package source file is not a valid \.kps file because it is missing the &lt;Package&gt; root element\.
