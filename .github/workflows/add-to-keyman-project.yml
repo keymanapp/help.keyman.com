@@ -13,6 +13,7 @@ jobs:
     name: Add new issues and pull requests to project
     runs-on: ubuntu-latest
     steps:
+      # TODO: Update to Node 24 when actions/add-to-project#712 is resolved
       - uses: actions/add-to-project@v1.0.2
         with:
           project-url: https://github.com/orgs/keymanapp/projects/1
