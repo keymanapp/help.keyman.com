@@ -72,8 +72,18 @@ Using `&displayMap` means that the design-time model for the On Screen Keyboard
 and Touch Layout can continue to use the correct Unicode values on the keycaps,
 making the transformation to PUA characters only in the compilation process.
 
-The Kbd font associated with the `&displayMap` should be added to the keyboard's
-package and selected in the package 'Keyboard Font' field.
+## Font selection
+
+* The Kbd font associated with the `&displayMap` should be added to the
+  keyboard's package and selected in the package 'Keyboard Font' field
+  (`OSKFont` property in the .kps XML source).
+* There is no need to add the font also to the list in the `Keyboard Font` /
+  `Web Fonts` dialog box (`WebOSKFonts` property in the .kps XML source).
+* The .kvks file and .keyman-touch-layout file can also reference fonts. These
+  fonts are used only at design time, so they should be any font that supports
+  the script, and should not be the `&displayMap` Kbd font, because the
+  transform to use the `&displayMap` Kbd font is done during the compilation
+  of the keyboard and package.
 
 ## Standard conventions for use of displayMaps
 
