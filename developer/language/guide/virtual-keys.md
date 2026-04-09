@@ -229,6 +229,7 @@ Key codes can start with `K_`, `T_`, `U_` or can be an ISO9995 code.
     range `0020-10FFFF`, with sequences separated by `_`. E.g. `U_0259` would
     generate a schwa if no rule matches. It is still valid to have a rule such
     as `+ [U_0259] > ...`. These codes are only valid for touch layouts.
+
     > [!Note]
     > For characters outside the BMP, use Unicode codepoints, not surrogate pairs (e.g. use `U_10000`, never `U_D800_DC00`).
 
