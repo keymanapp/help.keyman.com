@@ -22,22 +22,30 @@ store(&keyboardversion) "version"
 ## Description
 
 The `&keyboardversion` store documents the version of the keyboard.
-Keyman uses this on touch platforms to check for updated versions of the
-keyboard and update them automatically.
+Keyman uses this to check for updated versions of the keyboard and update 
+them automatically.
 
-The version string should match as far as possible the package version
-string, when a keyboard is included in a package.
+Generally, this version string should also be used by the distribution 
+package, by setting the `FollowKeyboardVersion` option in the package
+properties.
 
 **Note:** there is a difference between `&keyboardversion`, which documents
 the keyboard version, and [`&version`](version), which determines which
 version of Keyman a keyboard will run with.
 
-A keyboard version should be updated whenever there are changes to a
-keyboard. A good principle to follow is to increment the major version
-number for a keyboard that has significant new functionality, to
-increment the minor version number for changes that impact functionality
-but not in a significant manner, and optionally to use a third number
-for bug fixes.
+The keyboard version must be updated whenever there are changes to a
+keyboard.
+
+A good principle to follow is to increment the major version number for a 
+keyboard that has significant new functionality, to increment the minor 
+version number for changes that impact functionality but not in a 
+significant manner, and optionally to use a third number for bug fixes.
+This pattern is similar to the [semantic versioning](https://semver.org) 
+model.
+
+The version string may only include digits (`0123456789`) and period (`.`).
+Each component is treated as an integer (leading zeros, such as `2.01`, are 
+not sigificant and should be avoided to prevent confusion).
 
 ## Examples
 
