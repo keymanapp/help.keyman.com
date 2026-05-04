@@ -1,4 +1,4 @@
-# help.keyman.com
+TEST # help.keyman.com
 
 This is the source for the website https://help.keyman.com/. This site runs on
 Apache in a Docker container.
