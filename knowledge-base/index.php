@@ -55,8 +55,7 @@
       echo "<a href='".link_from_id($nid)."'>Next article &gt;</a> ";
     }
     echo "</p>";
-
-    } else {
+  } else {
     $query = trim($_GET['q'] ?? '');
     echo "<h1>Knowledge Base index</h1>";
     echo "<div class='search-bar'>";
@@ -84,6 +83,6 @@
         echo "<li><a href='".link_from_id($id)."'>KMKB{$matches[1]}: " . htmlspecialchars($title) . "</a></li>";
       }
     }
-  }
     echo "</ul>";
+  }
 ?>
