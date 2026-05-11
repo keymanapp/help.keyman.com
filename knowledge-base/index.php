@@ -7,7 +7,7 @@
   use function com\keyman\help\kb\link_from_id;
 
   $id = null;
-  $title = 'Knowledge Base index';
+  $kb_title = 'Knowledge Base index';
 
   if(isset($_REQUEST['id'])) {
     $id = $_REQUEST['id'];
@@ -24,12 +24,12 @@
     } else {
       // We test the first line of the file for a title.
 
-      $text = explode('\n', $kb);
+      $text = explode("\n", $kb);
       if(count($text) > 0) {
         if(substr($text[0], 0, 2) == '# ') {
-          $title = trim(substr($text[0], 2));
+          $kb_title = trim(substr($text[0], 2)) . sprintf(" (KMKB%04.4d)", intval($id));
         } else {
-          $title = $filename;
+          $kb_title = $filename;
         }
       }
     }
@@ -37,25 +37,27 @@
 
   // Required
   head([
-    'title' =>'Keyman Support | ' . $title,
+    'title' =>'Keyman Support | ' . $kb_title,
     'css' => ['template.css','prism.css', 'kb-search.css'],
     'showMenu' => true,
     'index' => false
   ]);
-  echo "<h1>Knowledge Base index</h1>";
   if($id) {
-    echo "<p>";
+    $ParsedownAndAlerts = new \Keyman\Site\Common\GFMAlerts();
+    echo $ParsedownAndAlerts->text($kb);
+
+    echo "<hr><p>";
+    echo "<a href='/kb'>Knowledge Base index</a> &nbsp; | &nbsp; ";
     $pid = intval($id,10) - 1;
-    if($pid > 0) echo "<a href='".link_from_id($pid)."'>&lt; Previous article</a> &nbsp; ";
+    if($pid > 0) echo "<a href='".link_from_id($pid)."'>&lt; Previous article</a> &nbsp; | &nbsp; ";
     $nid = intval($id,10) + 1;
     if(file_exists(filename_from_id($nid))) {
       echo "<a href='".link_from_id($nid)."'>Next article &gt;</a> ";
     }
-    echo "</p><hr>";
-    $ParsedownAndAlerts = new \Keyman\Site\Common\GFMAlerts();
-    echo $ParsedownAndAlerts->text($kb);
+    echo "</p>";
   } else {
     $query = trim($_GET['q'] ?? '');
+    echo "<h1>Knowledge Base index</h1>";
     echo "<div class='search-bar'>";
     echo "<form>";
     echo "<span class='search-icon'>🔍</span>";
@@ -81,6 +83,6 @@
         echo "<li><a href='".link_from_id($id)."'>KMKB{$matches[1]}: " . htmlspecialchars($title) . "</a></li>";
       }
     }
-  }
     echo "</ul>";
+  }
 ?>

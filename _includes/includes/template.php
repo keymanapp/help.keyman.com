@@ -100,10 +100,19 @@
   }
 
   function write_breadcrumbs(){
+    global $kb_title;
     $request_uri = explode("?",$_SERVER["REQUEST_URI"]);
     $crumbs = explode("/",$request_uri[0]);
     $crumbcount = count($crumbs);
     $crumbtrail = '';
+    if(sizeof($crumbs) > 1 && $crumbs[1] == 'knowledge-base') {
+      if(isset($_REQUEST['id'])) {
+        // KB articles are served by a single file, so we need to look for the
+        // global variable $kb_title to get the appropriate title, which is set
+        // in /knowledge-base/index.php.
+        $crumbs[2] = isset($kb_title) ? $kb_title : '';
+      }
+    }
     for($i=1; $i<$crumbcount; $i++){
       $crumb = ucfirst(str_replace(array(".php","_","-"),array(""," "," "),$crumbs[$i]) . ' ');
 
