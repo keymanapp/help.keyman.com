@@ -18,7 +18,9 @@ store(storeName) value
 :   The name of the store to be defined.
 
 `value`
-:   An extended string value.
+:   An extended string value. This will be the initial default value.
+    Any persisted value stored previously with [`save()`](save) will
+    take precedence over `value`.
 
 ## Description
 
