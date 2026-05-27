@@ -96,7 +96,4 @@ title: Header system stores
     be associated (Deprecated)
 
 >[!NOTE]
-> The older header keywords are deprecated and will be not be supported for
-> keyboards that target Keyman 19.0 or later.
-> [system stores](stores#toc-system-stores) should be used in place of
-> header keywords.
+> The older header keywords are deprecated and will be not be supported for keyboards that target Keyman 19.0 or later. [system stores](stores#toc-system-stores) should be used in place of header keywords.
