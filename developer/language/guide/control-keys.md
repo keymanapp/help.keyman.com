@@ -129,6 +129,37 @@ unnecessary [issue #14718](https://github.com/keymanapp/keyman/issues/14718).
 Using control characters in the context in a [`readonly`
 group](groups#readonly-clause) is safe; no special handling is required.
 
+# Non-breaking space (NBSP) in context
+
+Non-breaking space (NBSP) is used in the digital world to prevent automatic line breaks from being inserted between two words. Said another way, it prevents two words being separated on to two separate lines. In some applications NBSP are returned in the context to Keyman. Therefore in this case NBSP should be considered in a rule that detecs a blank space.
+
+A example taken from the greek_tonzio keyboard. This keyboard uses stores; see  [`store()`](../reference/store)
+
+```
+c Characters usually found before words  These characters are Space, parenthesis, quotes etc and to this we add the nbsp 
+store(beforeWordChars)  U+0020 U+0028 U+002D U+0027 \
+                        U+0022 U+003A U+007B U+00AB \
+                        U+00B6 U+00A9 U+000A U+00A0 
+
+c These are the characters [ ἀ ἐ ἠ ἰ ὀ ὑ ὠ Ἀ Ἐ Ἠ Ἰ Ὀ Ὑ Ὠ]                        
+store(fwnWithBreathing) U+1F00 U+1F10 U+1F20 U+1F30 U+1F40 U+1F51 U+1F60 \
+                        U+1F08 U+1F18 U+1F28 U+1F38 U+1F48 U+1F59 U+1F68
+```
+
+Then we can have a rule that adds the breathing when the encountering a "before word" character
+```
+c ------- GENERAL RULE: AUTOMATIC PSILI AT BEGINNING OF WORD STARTING WITH VOWEL ------
+any(beforeWordChars) + any(vowels) > context index(fwnWithBreathing,2)
+```
+
+A simple example: when "E" is pressed output a ἐ after a space, and ouput ε otherwise.
+```
+store(spaceChrs)  U+0020 U+00A0 
+c This nbsp Unicode Character is U+00A0 and space is U+0020. 
++ [K_E] > U+03B5
+any(beforeWordChars) + [K_E] > context U+1f10
+```
+
 # References
 
 * [Issue #14148](https://github.com/keymanapp/keyman/issues/14148#issuecomment-3269582559)
