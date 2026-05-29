@@ -20,6 +20,12 @@ store(storeName) value
 `value`
 :   An extended string value.
 
+    If used to declare a [variable store](../guide/variable-stores), this 
+    will be the initial default value. Any persisted value stored 
+    previously with [`save()`](save) will take precedence over `value`. 
+    Note that variable stores should not be used with [`any()`](any), 
+    [`index()`](index), or [`outs()`](outs).
+
 ## Description
 
 The `store()` statement lets you store a string of characters or keys in
