@@ -134,8 +134,17 @@ group](groups#readonly-clause) is safe; no special handling is required.
 Non-breaking space (NBSP, U+00A0) is used in the digital world to prevent automatic line
 breaks from being inserted between two words. Said another way, it prevents two words
 being separated on to two separate lines. In some applications NBSP are returned in the
-context to Keyman. Therefore in this case NBSP should be considered in a rule that detects
+context to Keyman see issue with Firefox [#14945](https://github.com/keymanapp/keyman/issues/14945).
+Therefore in this case NBSP should be considered in a rule that detects
 a blank space.
+
+A simple example: when <kbd>e</kbd> is pressed, output an `ἐ` after a space, and output `ε` otherwise:
+```
+store(spaceChrs)  U+0020 U+00A0 
+c The nbsp Unicode Character is U+00A0 and space is U+0020.
+any(spaceChrs) + [K_E] > context U+1f10 
++ [K_E] > U+03B5
+```
 
 A example taken from the [greek_tonzio keyboard](https://github.com/keymanapp/keyboards/tree/master/release/g/greek_tonizo). This keyboard uses stores; see  [`store()`](../reference/store):
 
@@ -154,14 +163,6 @@ Then we can have a rule that adds the breathing when the encountering a "before 
 ```
 c ------- GENERAL RULE: AUTOMATIC PSILI AT BEGINNING OF WORD STARTING WITH VOWEL ------
 any(beforeWordChars) + any(vowels) > context index(fwnWithBreathing,2)
-```
-
-A simple example: when <kbd>e</kbd> is pressed, output an `ἐ` after a space, and output `ε` otherwise:
-```
-store(spaceChrs)  U+0020 U+00A0 
-c This nbsp Unicode Character is U+00A0 and space is U+0020. 
-+ [K_E] > U+03B5
-any(spaceChrs) + [K_E] > context U+1f10
 ```
 
 # References
