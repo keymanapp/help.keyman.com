@@ -131,9 +131,13 @@ group](groups#readonly-clause) is safe; no special handling is required.
 
 # Non-breaking space (NBSP) in context
 
-Non-breaking space (NBSP) is used in the digital world to prevent automatic line breaks from being inserted between two words. Said another way, it prevents two words being separated on to two separate lines. In some applications NBSP are returned in the context to Keyman. Therefore in this case NBSP should be considered in a rule that detecs a blank space.
+Non-breaking space (NBSP, U+00A0) is used in the digital world to prevent automatic line
+breaks from being inserted between two words. Said another way, it prevents two words
+being separated on to two separate lines. In some applications NBSP are returned in the
+context to Keyman. Therefore in this case NBSP should be considered in a rule that detects
+a blank space.
 
-A example taken from the greek_tonzio keyboard. This keyboard uses stores; see  [`store()`](../reference/store)
+A example taken from the [greek_tonzio keyboard](https://github.com/keymanapp/keyboards/tree/master/release/g/greek_tonizo). This keyboard uses stores; see  [`store()`](../reference/store):
 
 ```
 c Characters usually found before words  These characters are Space, parenthesis, quotes etc and to this we add the nbsp 
@@ -146,18 +150,18 @@ store(fwnWithBreathing) U+1F00 U+1F10 U+1F20 U+1F30 U+1F40 U+1F51 U+1F60 \
                         U+1F08 U+1F18 U+1F28 U+1F38 U+1F48 U+1F59 U+1F68
 ```
 
-Then we can have a rule that adds the breathing when the encountering a "before word" character
+Then we can have a rule that adds the breathing when the encountering a "before word" character:
 ```
 c ------- GENERAL RULE: AUTOMATIC PSILI AT BEGINNING OF WORD STARTING WITH VOWEL ------
 any(beforeWordChars) + any(vowels) > context index(fwnWithBreathing,2)
 ```
 
-A simple example: when "E" is pressed output a ἐ after a space, and ouput ε otherwise.
+A simple example: when <kbd>e</kbd> is pressed, output an `ἐ` after a space, and output `ε` otherwise:
 ```
 store(spaceChrs)  U+0020 U+00A0 
 c This nbsp Unicode Character is U+00A0 and space is U+0020. 
 + [K_E] > U+03B5
-any(beforeWordChars) + [K_E] > context U+1f10
+any(spaceChrs) + [K_E] > context U+1f10
 ```
 
 # References
