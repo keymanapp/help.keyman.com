@@ -134,7 +134,7 @@ group](groups#readonly-clause) is safe; no special handling is required.
 Non-breaking space (NBSP, U+00A0) is used in the digital world to prevent automatic line
 breaks from being inserted between two words. Said another way, it prevents two words
 being separated on to two separate lines. In some applications NBSP are returned in the
-context to Keyman see issue with Firefox [#14945](https://github.com/keymanapp/keyman/issues/14945).
+context to Keyman (for example, see issue with Firefox [#14945](https://github.com/keymanapp/keyman/issues/14945)).
 Therefore in this case NBSP should be considered in a rule that detects
 a blank space.
 
