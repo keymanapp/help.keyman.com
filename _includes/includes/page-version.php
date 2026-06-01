@@ -6,6 +6,8 @@
   $PageVersion = new PageVersion();
 
   class PageVersion {
+    // TODO: - avoid public fields and use getters/setters instead
+
     public $active;
     public $versions, $basePath, $versionedPath, $subPath, $path;
     public $currentVersion;
@@ -71,15 +73,9 @@
       global $PageVersion;
       if(!$PageVersion->active) return;
 
-      if($PageVersion->isCurrentPageCurrent() || !$PageVersion->currentFileExists) {
+      if($PageVersion->isCurrentPageCurrent()) {
         // Don't show the banner if we are on the current version
         return;
-      }
-
-      if($PageVersion->isCurrentPageOlder()) {
-        $message = 'You are viewing an old version of this documentation';
-      } else {
-        $message = 'You are viewing an incomplete pre-release version of this documentation';
       }
 
       $alertIcon =
@@ -89,11 +85,27 @@
         '1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 '.
         '0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 '.
         '0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>';
-      $target = PageVersion::GetVersionedFilePath($PageVersion->basePath, $PageVersion->file, $PageVersion->currentVersion, $PageVersion->currentVersion);
+        
+      if(!$PageVersion->currentFileExists) {
+        $message = "You are viewing documentation of version {$PageVersion->versionedPath}, which is not included in the latest version";
+      } else if($PageVersion->isCurrentPageOlder()) {
+        $message = 'You are viewing an old version of this documentation';
+      } else {
+        $message = 'You are viewing an incomplete pre-release version of this documentation';
+      }
+
+      if(!$PageVersion->currentFileExists) {
+        # redirect to the base folder for the current version, as we don't have a mapping for this page
+        $target = "{$PageVersion->basePath}/current-version/";
+        $actionText = "to open the index page for version {$PageVersion->currentVersion}.";
+      } else {
+        $target = PageVersion::GetVersionedFilePath($PageVersion->basePath, $PageVersion->file, $PageVersion->currentVersion, $PageVersion->currentVersion);
+        $actionText = "to open the current version, {$PageVersion->currentVersion}.";
+      }
       $html =
         "<div id='version-banner'>$alertIcon $message. ".
-        "<a href='{$target}'>Click here</a>".
-        " to open the current version, {$PageVersion->currentVersion}.</div>";
+        "<a href='{$target}'>Click here</a> $actionText".
+        "</div>";
       echo $html;
     }
 
