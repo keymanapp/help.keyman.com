@@ -7,6 +7,7 @@
  * be appended to the bottom of the list.
  */
 function get_file_titles_by_index($base, $unsorted_items) {
+  $items = [];
   $order = str_replace("\r\n", "\n", @file_get_contents($base.'__index.txt'));
   $order = explode("\n", $order);
   foreach($order as $item) {
