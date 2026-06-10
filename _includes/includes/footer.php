@@ -1,10 +1,26 @@
 <?php
   use Keyman\Site\Common\ImageRandomizer;
+  function getPageUrlForEditLink() {
+    $params = '';
+    if(isset($_REQUEST['id'])) $params .= '&id='.rawurlencode($_REQUEST['id']);
+    if(isset($_REQUEST['file'])) $params .= '&file='.rawurlencode($_REQUEST['file']);
+    return '/go/edit-page?page=' . rawurlencode($_SERVER['PHP_SELF']) . $params;
+  }
+  $pageUrlForEditLink = getPageUrlForEditLink();
+
 ?>
           </article>
         </div>
     </div>
 </div>
+
+<div class="footer-tab-holder" id='footer-tab-support'>
+  <div class="footer-tab"><h4><a href='https://community.software.sil.org/c/keyman'>Support</a></h4></div>
+</div>
+<div class="footer-tab-holder" id='footer-tab-edit'>
+  <div class="footer-tab"><h4><a href='<?= $pageUrlForEditLink; ?>' target='_blank'>Edit page</a></h4></div>
+</div>
+
 <div class="footer">
     <div class="wrapper">
         <div class="footer-third">
@@ -45,26 +61,6 @@
         </div>
     </div>
 </div>
-<div class="footer-tab-holder" id='footer-tab-support'>
-  <div class="footer-tab"><h4><a href='https://community.software.sil.org/c/keyman'>Support</a></h4></div>
-</div>
-
-<?php
-  function getPageUrlForEditLink() {
-    $params = '';
-    if(isset($_REQUEST['id'])) $params .= '&id='.rawurlencode($_REQUEST['id']);
-    if(isset($_REQUEST['file'])) $params .= '&file='.rawurlencode($_REQUEST['file']);
-    return '/go/edit-page?page=' . rawurlencode($_SERVER['PHP_SELF']) . $params;
-  }
-  $pageUrlForEditLink = getPageUrlForEditLink();
-  if($pageUrlForEditLink) {
-?>
-<div class="footer-tab-holder" id='footer-tab-edit'>
-  <div class="footer-tab"><h4><a href='<?= $pageUrlForEditLink; ?>' target='_blank'>Edit page</a></h4></div>
-</div>
-<?php
-  }
-?>
 
 <div id="KeymanWebControl"></div>
 <script src='<?= cdn('js/prism.js')?>'></script>
