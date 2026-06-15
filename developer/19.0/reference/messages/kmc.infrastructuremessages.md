@@ -42,3 +42,6 @@ title: Compiler Messages Reference for @keymanapp/kmc
 [KM05026](km05026) | `INFO_GeneratingProject` | Generating new project '&lt;param&gt;' in '&lt;param&gt;'\.
 [KM05027](km05027) | `INFO_ProjectGeneratedSuccessfully` | New project '&lt;param&gt;' generated successfully\.
 [KM05028](km05028) | `INFO_ProjectNotGeneratedSuccessfully` | Failed to generate new project '&lt;param&gt;'\.
+[KM05029](km05029) | `INFO_ValidatingProject` | Validating &lt;param&gt;
+[KM0502A](km0502a) | `INFO_ProjectValidatedSuccessfully` | &lt;param&gt; validated successfully\.
+[KM0502B](km0502b) | `INFO_ProjectNotValidatedSuccessfully` | &lt;param&gt; failed to validate\.
