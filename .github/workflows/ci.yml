@@ -80,3 +80,16 @@ jobs:
         source ./_common/tests.inc.sh
         set -e
         do_test_print_container_error_logs "$CONTAINER_DESC"
+
+    - name: Verify .bootstrap-required-version
+      if: ${{ !cancelled() }}
+      shell: bash
+      run: |
+        # We want to avoid merging a bootstrap version that is not based on a published tag
+        # in the shared-sites repo. We will do this with a heuristic based on the normal
+        # shape of the tags, which is `v#.#.#`. Any other shape we will assume is a test
+        # branch.
+        cat resources/.bootstrap-required-version | grep -qP '^v\d+\.\d+\.\d+$' || (
+          echo "::error file=resources/.bootstrap-required-version,line=1,col=1::This branch cannot be merged, because resources/.bootstrap-required-version references \`$(cat resources/.bootstrap-required-version)\`, which does not appear to be a published tag -- is it a test branch?"
+          exit 1
+        )
