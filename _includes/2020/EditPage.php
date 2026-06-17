@@ -10,13 +10,21 @@
   use \Keyman\Site\Common\KeymanHosts;
 
   class EditPage {
+
+    static function getQuickLinkToEditPage($page, $id, $file) {
+      $params = '';
+      if(!empty($id)) $params .= '&id='.rawurlencode($id);
+      if(!empty($file)) $params .= '&file='.rawurlencode($file);
+      return '/go/edit-page?page=' . rawurlencode($page) . $params;
+    }
+
     /**
      * Build a link to GitHub to edit a page
      * @param $page   the url to the page (required)
      * @param $file   the actual markdown file to edit (optional, for _mdhost.php)
      * @param $id     the actual knowledge base article id (optional, for /knowledge-base)
      */
-    function getPageUrlForEditLink($page, $id, $file) {
+    static function getPageUrlForEditLink($page, $id, $file) {
       $repo_help = "https://github.com/keymanapp/help.keyman.com/edit/master";
       $repo_app =  "https://github.com/keymanapp/keyman/edit/master";
       $repo_keyboards =  "https://github.com/keymanapp/keyboards/edit/master";

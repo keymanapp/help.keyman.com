@@ -1,5 +1,6 @@
 <?php
   use Keyman\Site\Common\ImageRandomizer;
+  use Keyman\Site\com\keyman\help\EditPage;
 ?>
           </article>
         </div>
@@ -50,13 +51,13 @@
 </div>
 
 <?php
-  function getPageUrlForEditLink() {
-    $params = '';
-    if(isset($_REQUEST['id'])) $params .= '&id='.rawurlencode($_REQUEST['id']);
-    if(isset($_REQUEST['file'])) $params .= '&file='.rawurlencode($_REQUEST['file']);
-    return '/go/edit-page?page=' . rawurlencode($_SERVER['PHP_SELF']) . $params;
+  function getQuickLinkToEditPage() {
+    $page = $_SERVER['PHP_SELF'];
+    $id = isset($_GET['id']) ? $_GET['id'] : null;
+    $file = isset($_GET['file']) ? $_GET['file'] : null;
+    return EditPage::getQuickLinkToEditPage($page, $id, $file);
   }
-  $pageUrlForEditLink = getPageUrlForEditLink();
+  $pageUrlForEditLink = getQuickLinkToEditPage();
   if($pageUrlForEditLink) {
 ?>
 <div class="footer-tab-holder" id='footer-tab-edit'>

@@ -37,7 +37,7 @@
     } else {
       $hpage = htmlentities($page);
     }
-    echo "<p>The page <a href='$hpage'>$hpage</a> is not setup for direct editing; it may be an old version of content.</p>";
+    echo "<p>The web page <b>/$hpage</b> has not been configured for direct editing; it may be an old version of content.</p>";
   } else {
     // echo $link;
     header("Location: $link");
