@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       KEYMANHOSTS_TIER: TIER_TEST
+      CONTAINER_DESC: help-keyman-com-app
+      CONTAINER_PORT: 8055
 
     steps:
     - name: Checkout
@@ -23,45 +25,71 @@ jobs:
         fail-fast: true
 
     #
-    # Finally, run the tests; note that this is almost all replicated in build.sh; here logging is reduced (TODO sync)
+    # Run tests -- these step definitions are NEARLY identical across:
+    #   help.keyman.com, keyman.com, keymanweb.com, api.keyman.com
     #
-    - name: PHP unit tests
+    # No differences on this site
+    #
+    - name: Test setup
       shell: bash
       run: |
-        docker exec help-keyman-com-app sh -c "vendor/bin/phpunit --testdox"
+        source ./_common/tests.inc.sh
+        set -e
+        do_test_record_start_time
+        echo "TEST_START_TIME=${TEST_START_TIME}" >> "$GITHUB_ENV"
+
+    - name: PHP test
+      if: ${{ !cancelled() }}
+      shell: bash
+      run: |
+        source ./_common/tests.inc.sh
+        set -e
+        do_test_unit_tests "$CONTAINER_DESC"
 
     - name: Lint
+      if: ${{ !cancelled() }}
       shell: bash
       run: |
-        ( set +e; set +o pipefail; find . -name '*.php' | grep -v '/vendor/' | xargs -n 1 -d '\n' php -l | grep -v "No syntax errors detected"; exit ${PIPESTATUS[2]} )
+        source ./_common/tests.inc.sh
+        set -e
+        do_test_lint "$CONTAINER_DESC"
 
     - name: Check broken links
+      if: ${{ !cancelled() }}
       shell: bash
-      continue-on-error: false
       run: |
-        set +e
-        set +o pipefail
-        npx broken-link-checker http://localhost:8055 --ordered --recursive --host-requests 50 -e --filter-level 3 | tee blc.log
-        echo "BLC_RESULT=${PIPESTATUS[0]}" >> "$GITHUB_ENV"
+        source ./_common/tests.inc.sh
+        set -e
+        do_test_links "http://localhost:${CONTAINER_PORT}" /
+
+      # We split the reporting of broken links into a separate step for ease of
+      # viewing because the broken links are otherwise hidden in a sea of good
+      # links in a very long report
 
     - name: Report on broken links
+      if: ${{ !cancelled() }}
       run: |
-        set +e
-        set +o pipefail
-        cat blc.log | \
-          grep -E "BROKEN|Getting links from" | \
-          grep -B 1 "BROKEN";
-        exit "${BLC_RESULT}"
+        source ./_common/tests.inc.sh
+        set -e
+        do_test_print_link_report
 
     - name: Check PHP errors
+      if: ${{ !cancelled() }}
       shell: bash
       run: |
-        CONTAINER=`docker container ls -l -q`
-        if docker container logs $CONTAINER 2>&1 | grep -q 'php7'; then
-          echo 'PHP reported errors or warnings:'
-          docker container logs $CONTAINER 2>&1 | grep 'php7'
+        source ./_common/tests.inc.sh
+        set -e
+        do_test_print_container_error_logs "$CONTAINER_DESC"
+
+    - name: Verify .bootstrap-required-version
+      if: ${{ !cancelled() }}
+      shell: bash
+      run: |
+        # We want to avoid merging a bootstrap version that is not based on a published tag
+        # in the shared-sites repo. We will do this with a heuristic based on the normal
+        # shape of the tags, which is `v#.#.#`. Any other shape we will assume is a test
+        # branch.
+        cat resources/.bootstrap-required-version | grep -qP '^v\d+\.\d+\.\d+$' || (
+          echo "::error file=resources/.bootstrap-required-version,line=1,col=1::This branch cannot be merged, because resources/.bootstrap-required-version references \`$(cat resources/.bootstrap-required-version)\`, which does not appear to be a published tag -- is it a test branch?"
           exit 1
-        else
-          echo 'No PHP errors found'
-          exit 0
-        fi
+        )

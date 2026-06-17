@@ -6,7 +6,7 @@ cdn/deploy
 tier.txt
 
 # unit test artifacts
-blc.log
+linkinator-results.json
 .phpunit.result.cache
 
 vendor*
