@@ -1319,47 +1319,52 @@ body[data-device='Unknown'] #osk-tablet-container {
  * FOOTER TABS
  * ***********************************/
 
-.footer-tab-holder{
-	width: 70px;
-	height: 20px;
-	padding: 9px;
-	position: fixed;
-	top: 100%;
-	left: 100%;
-	z-index: 4;
-}
+	.footer-tab{
+		font-size: 10pt;
+		top: -34px;
+		right: -10px;
+		background: #69B7D2;
+		height: 20px;
+		padding: 5px 0px;
+		text-align: center;
+		border-top-left-radius: 7px;
+		border-top-right-radius: 7px;
+		width: 70px;
+		cursor: pointer;
+		border-top: solid 1px #444;
+		border-left: solid 1px #444;
+		border-right: solid 1px #444;
+	}
 
-#footer-tab-support {
-	margin-left: -340px;
-}
+	.footer-tab a{
+		color: #444;
+		text-decoration: none;
+	}
 
-#footer-tab-edit {
-	margin-left: -260px;
-}
+@media only screen and (min-width: 1025px) {
+	.footer-tab-holder{
+		width: 70px;
+		height: 20px;
+		padding: 9px;
+		position: fixed;
+		top: 100%;
+		left: 100%;
+		z-index: 4;
+	}
 
-.footer-tab{
-	float: right;
-	position: relative;
-	font-size: 10pt;
-	top: -34px;
-	right: -10px;
-	background: #69B7D2;
-	height: 20px;
-	padding: 5px 0px;
-	text-align: center;
-	border-top-left-radius: 7px;
-	border-top-right-radius: 7px;
-	width: 70px;
-	margin-left: 210px;
-	cursor: pointer;
-	border-top: solid 1px #444;
-	border-left: solid 1px #444;
-	border-right: solid 1px #444;
-}
+	#footer-tab-support {
+		margin-left: -340px;
+	}
 
-.footer-tab a{
-	color: #444;
-	text-decoration: none;
+	#footer-tab-edit {
+		margin-left: -260px;
+	}
+
+	.footer-tab{
+		float: right;
+		position: relative;
+		margin-left: 210px;
+	}
 }
 
 /**************************************
@@ -1425,7 +1430,10 @@ body[data-device='Unknown'] #osk-tablet-container {
 		height: 280px;
 	}
 	.footer-tab-holder{
-		display: none;
+		clear: left;
+		float: right;
+		height: 22px;
+		margin-right: 8px;
 	}
 }
 
@@ -1585,7 +1593,10 @@ body[data-device='Unknown'] #osk-tablet-container {
 		width: 1000px;
 	}
 	.footer-tab-holder{
-		display: none;
+		clear: left;
+		float: right;
+		height: 22px;
+		margin-right: 8px;
 	}
 }
 
