@@ -1,16 +1,6 @@
 <?php
-
   use Keyman\Site\Common\ImageRandomizer;
-  require_once("com.keyman.help.editpage.inc.php");
-
-  function getPageUrlForEditLink() {
-    return \com\keyman\help\editpage\getPageUrlForEditLink(
-      $_SERVER['PHP_SELF'],
-      isset($_REQUEST['id']) ? $_REQUEST['id'] : '',
-      isset($_REQUEST['file']) ? $_REQUEST['file'] : ''
-    );
-  }
-
+  use Keyman\Site\com\keyman\help\EditPage;
 ?>
           </article>
         </div>
@@ -61,7 +51,13 @@
 </div>
 
 <?php
-  $pageUrlForEditLink = getPageUrlForEditLink();
+  function getQuickLinkToEditPage() {
+    $page = $_SERVER['PHP_SELF'];
+    $id = isset($_GET['id']) ? $_GET['id'] : null;
+    $file = isset($_GET['file']) ? $_GET['file'] : null;
+    return EditPage::getQuickLinkToEditPage($page, $id, $file);
+  }
+  $pageUrlForEditLink = getQuickLinkToEditPage();
   if($pageUrlForEditLink) {
 ?>
 <div class="footer-tab-holder" id='footer-tab-edit'>

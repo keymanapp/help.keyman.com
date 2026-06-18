@@ -60,7 +60,7 @@ jobs:
       run: |
         source ./_common/tests.inc.sh
         set -e
-        do_test_links "http://localhost:${CONTAINER_PORT}" /
+        do_test_links "http://localhost:${CONTAINER_PORT}" / /go/edit-page
 
       # We split the reporting of broken links into a separate step for ease of
       # viewing because the broken links are otherwise hidden in a sea of good
