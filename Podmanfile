@@ -1,4 +1,6 @@
 # syntax=docker/dockerfile:1
+# Please keep the content of this file in sync with Dockerfile.
+# Take care to have here the full path to the images. Podman cannot handle Docker's short form.
 
 ARG BUILDER_CONFIGURATION="release"
 FROM docker.io/library/php:7.4-apache@sha256:c9d7e608f73832673479770d66aacc8100011ec751d1905ff63fae3fe2e0ca6d AS composer-builder
@@ -14,6 +16,7 @@ RUN docker-php-ext-install zip
 COPY --from=docker.io/library/composer /usr/bin/composer /usr/bin/composer
 RUN composer self-update
 
+# Do not switch the user! Podman needs root to install composer.
 WORKDIR /composer
 COPY composer.* /composer/
 # Consume the build argment
@@ -24,8 +27,6 @@ RUN if [ "$BUILDER_CONFIGURATION" = "debug" ]; then \
     else \
       COMPOSER_NO_DEV=1 composer install ; \
     fi
-
-USER www-data
 
 # Site
 FROM docker.io/library/php:7.4-apache@sha256:c9d7e608f73832673479770d66aacc8100011ec751d1905ff63fae3fe2e0ca6d

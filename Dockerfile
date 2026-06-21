@@ -1,4 +1,5 @@
 # syntax=docker/dockerfile:1
+# Please keep the content of this file in sync with Podmanfile.
 
 ARG BUILDER_CONFIGURATION="release"
 FROM php:7.4-apache@sha256:c9d7e608f73832673479770d66aacc8100011ec751d1905ff63fae3fe2e0ca6d AS composer-builder
