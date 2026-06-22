@@ -38,6 +38,10 @@ distributed for these platforms.
 store(&visualkeyboard) 'greek.kvks'
 ```
 
+The `&visualkeyboard` store takes precedence over the
+[`&kmw_helpfile` store](kmw_helpfile); if both are present, only the
+`&visualkeyboard` store will be used.
+
 In Keyman Developer 9.0 and earlier versions, the `&visualkeyboard`
 store referenced a binary .kvk file. Keyman Developer 10.0 will still
 compile keyboards that reference the binary .kvk files, but it is
@@ -62,4 +66,5 @@ The `&visualkeyboard` store was added in Keyman 8.0.
 
 ## See also
 
--   [`&layoutfile` store](layoutfile)
+- [`&layoutfile` store](layoutfile)
+- [`&kmw_helpfile` store](kmw_helpfile)

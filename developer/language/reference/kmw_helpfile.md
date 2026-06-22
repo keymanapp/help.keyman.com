@@ -29,6 +29,10 @@ desktop browser, the contents of this file will replace the On Screen
 Keyboard. It is mutually exclusive with the [`&kmw_helptext`
 store](kmw_helptext).
 
+The [`&visualkeyboard` store](visualkeyboard) store takes precedence over the
+`&kmw_helpfile` store; if both are present, only the `&visualkeyboard` store
+will be used.
+
 ## Examples
 
 ### Example: Using `&kmw_helpfile`
@@ -52,4 +56,5 @@ The `&kmw_helpfile` store was added in Keyman 7.0.
 
 ## See also
 
--   [`&kmw_helptext` store](kmw_helptext)
+- [`&kmw_helptext` store](kmw_helptext)
+- [`&visualkeyboard` store](visualkeyboard)
