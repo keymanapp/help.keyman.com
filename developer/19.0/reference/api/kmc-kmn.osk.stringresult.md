@@ -107,7 +107,7 @@ unicode code points in <str> for reference, without 'U+' prefix, e.g. '0061 0301
 
 </td><td>
 
-files in which the string is referenced; will be an array of  if includeCounts is true, otherwise will be an array of strings listing files in which the key cap may be found
+files in which the string is referenced; will be an array of [Osk.StringRefUsage](./kmc-kmn.osk.stringrefusage.md) if includeCounts is true, otherwise will be an array of strings listing files in which the key cap may be found
 
 
 </td></tr>

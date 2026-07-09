@@ -6,8 +6,6 @@
 
 Simplified word breaker specification.
 
- 11.0
-
 **Signature:**
 
 ```typescript

@@ -4,6 +4,8 @@
 
 ## Osk.PuaMap type
 
+Maps a source OSK key cap string to a PUA character
+
 **Signature:**
 
 ```typescript

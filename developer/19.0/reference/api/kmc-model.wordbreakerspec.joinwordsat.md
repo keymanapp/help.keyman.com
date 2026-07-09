@@ -8,8 +8,6 @@ If present, joins words that were split by the word breaker together at the give
 
 joinWordsAt: \['-'\] // to keep hyphenated items together
 
- 14.0
-
 **Signature:**
 
 ```typescript
