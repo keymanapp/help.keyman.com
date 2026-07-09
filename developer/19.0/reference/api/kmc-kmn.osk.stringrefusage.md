@@ -4,6 +4,8 @@
 
 ## Osk.StringRefUsage interface
 
+Records the number of references to an OSK key cap string for a specific file
+
 **Signature:**
 
 ```typescript

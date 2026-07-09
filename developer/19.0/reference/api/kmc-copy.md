@@ -24,6 +24,8 @@ Description
 
 </td><td>
 
+Copy a project and rename internal references
+
 
 </td></tr>
 </tbody></table>

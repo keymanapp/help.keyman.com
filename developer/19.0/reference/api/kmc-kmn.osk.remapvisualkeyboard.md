@@ -4,6 +4,8 @@
 
 ## Osk.remapVisualKeyboard() function
 
+Remap key caps in the `vk` visual keyboard object to use PUA characters from `map`
+
 **Signature:**
 
 ```typescript
@@ -40,6 +42,8 @@ VisualKeyboard.VisualKeyboard
 
 </td><td>
 
+source visual keyboard object to remap, updated in place
+
 
 </td></tr>
 <tr><td>
@@ -54,6 +58,8 @@ map
 
 </td><td>
 
+PUA string mapping to apply
+
 
 </td></tr>
 </tbody></table>
@@ -61,4 +67,5 @@ map
 **Returns:**
 
 boolean
+
 

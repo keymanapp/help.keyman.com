@@ -87,8 +87,6 @@ Keyman 14.0+ word breaker specification:
 
 Can support all old word breaking specification, but can also be extended with options.
 
- 14.0
-
 
 </td></tr>
 </tbody></table>
@@ -113,7 +111,7 @@ Description
 
 </td><td>
 
-Simplifies input text to facilitate finding entries within a lexical model's lexicon, using the model's `applyCasing` function to assist in the keying process.  14.0
+Simplifies input text to facilitate finding entries within a lexical model's lexicon, using the model's `applyCasing` function to assist in the keying process.
 
 
 </td></tr>
@@ -126,8 +124,6 @@ Simplifies input text to facilitate finding entries within a lexical model's lex
 
 Simplified word breaker specification.
 
- 11.0
-
 
 </td></tr>
 <tr><td>
@@ -137,7 +133,7 @@ Simplified word breaker specification.
 
 </td><td>
 
-Simplifies input text to facilitate finding entries within a lexical model's lexicon.  11.0
+Simplifies input text to facilitate finding entries within a lexical model's lexicon.
 
 
 </td></tr>
