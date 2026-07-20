@@ -4,6 +4,8 @@
 
 ## Osk.StringRef interface
 
+Tracks usage of a single OSK key cap string across multiple files
+
 **Signature:**
 
 ```typescript

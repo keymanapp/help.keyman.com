@@ -112,7 +112,7 @@ Three output formats are supported:
 
 - .md: formatted for documentation purposes. Generates a Markdown table (GFM) with PUA, Key Cap, and plain string. The PUA and Key Cap columns are formatted as Unicode Scalar Values, e.g. U+0061, and the plain string is the original key cap string.
 
-- .json: returns the final aggregated data as an array of strings, which can be joined to form a JSON blob of an object with a single member, `map`<!-- -->, which is an array of  objects.
+- .json: returns the final aggregated data as an array of strings, which can be joined to form a JSON blob of an object with a single member, `map`<!-- -->, which is an array of [Osk.StringResult](./kmc-kmn.osk.stringresult.md) objects.
 
 
 </td></tr>

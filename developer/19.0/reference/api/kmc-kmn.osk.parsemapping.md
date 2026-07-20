@@ -4,6 +4,8 @@
 
 ## Osk.parseMapping() function
 
+Parse a map object loaded from a displaymap file into a PuaMap
+
 **Signature:**
 
 ```typescript
@@ -40,6 +42,8 @@ any
 
 </td><td>
 
+source object to parse, must be in displayMap JSON format
+
 
 </td></tr>
 </tbody></table>
@@ -47,4 +51,5 @@ any
 **Returns:**
 
 [PuaMap](./kmc-kmn.osk.puamap.md)
+
 

@@ -4,6 +4,8 @@
 
 ## KeymanProjectCopier class
 
+Copy a project and rename internal references
+
 **Signature:**
 
 ```typescript
