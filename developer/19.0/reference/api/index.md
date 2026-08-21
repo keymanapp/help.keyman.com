@@ -30,6 +30,15 @@ kmc-analyze - keyboard analysis classes, including tools for `&displayMap`<!-- -
 </td></tr>
 <tr><td>
 
+[@keymanapp/kmc-convert](./kmc-convert.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
 [@keymanapp/kmc-copy](./kmc-copy.md)
 
 
