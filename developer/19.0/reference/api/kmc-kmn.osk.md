@@ -24,6 +24,8 @@ Description
 
 </td><td>
 
+Parse a map object loaded from a displaymap file into a PuaMap
+
 
 </td></tr>
 <tr><td>
@@ -33,6 +35,8 @@ Description
 
 </td><td>
 
+Remap key caps in the `source` touch layout object to use PUA characters from `map`
+
 
 </td></tr>
 <tr><td>
@@ -41,6 +45,8 @@ Description
 
 
 </td><td>
+
+Remap key caps in the `vk` visual keyboard object to use PUA characters from `map`
 
 
 </td></tr>
@@ -66,6 +72,8 @@ Description
 
 </td><td>
 
+Tracks usage of a single OSK key cap string across multiple files
+
 
 </td></tr>
 <tr><td>
@@ -74,6 +82,8 @@ Description
 
 
 </td><td>
+
+Records the number of references to an OSK key cap string for a specific file
 
 
 </td></tr>
@@ -109,6 +119,8 @@ Description
 
 
 </td><td>
+
+Maps a source OSK key cap string to a PUA character
 
 
 </td></tr>

@@ -1,4 +1,5 @@
 # Treat SVGs like images, and not like text.
 *.svg       binary
 Dockerfile  text eol=lf
+Podmanfile  text eol=lf
 *.sh        eol=lf

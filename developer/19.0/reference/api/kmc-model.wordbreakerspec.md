@@ -8,8 +8,6 @@ Keyman 14.0+ word breaker specification:
 
 Can support all old word breaking specification, but can also be extended with options.
 
- 14.0
-
 **Signature:**
 
 ```typescript
@@ -60,8 +58,6 @@ _(Optional)_ If present, joins words that were split by the word breaker togethe
 
 joinWordsAt: \['-'\] // to keep hyphenated items together
 
- 14.0
-
 
 </td></tr>
 <tr><td>
@@ -82,8 +78,6 @@ OverrideScriptDefaults
 </td><td>
 
 _(Optional)_ Overrides word splitting behaviour for certain scripts. For example, specifing that spaces break words in certain South-East Asian scripts that otherwise do not use spaces.
-
- 14.0
 
 
 </td></tr>

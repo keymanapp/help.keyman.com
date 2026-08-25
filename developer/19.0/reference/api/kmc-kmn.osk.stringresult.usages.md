@@ -4,7 +4,7 @@
 
 ## Osk.StringResult.usages property
 
-files in which the string is referenced; will be an array of  if includeCounts is true, otherwise will be an array of strings listing files in which the key cap may be found
+files in which the string is referenced; will be an array of [Osk.StringRefUsage](./kmc-kmn.osk.stringrefusage.md) if includeCounts is true, otherwise will be an array of strings listing files in which the key cap may be found
 
 **Signature:**
 

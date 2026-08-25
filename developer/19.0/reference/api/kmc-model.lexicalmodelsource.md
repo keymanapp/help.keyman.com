@@ -55,7 +55,7 @@ CasingFunction
 
 _(Optional)_ Specifies the casing rules for a language. Should implement three casing forms: - 'lower' -- a fully-lowercased version of the text appropriate for the language's use of the writing system. - 'upper' -- a fully-uppercased version of the text - 'initial' -- a version preserving the input casing aside from the initial character, which is uppercased (like with proper nouns and sentence-initial words in English sentences.)
 
-This is only utilized if `languageUsesCasing` is defined and set to `true`<!-- -->.  14.0
+This is only utilized if `languageUsesCasing` is defined and set to `true`<!-- -->.
 
 
 </td></tr>
@@ -76,7 +76,7 @@ boolean
 
 </td><td>
 
-_(Optional)_ When set to `true`<!-- -->, suggestions will attempt to match the case of the input text even if the lexicon entries use a different casing scheme due to search term keying effects.  14.0
+_(Optional)_ When set to `true`<!-- -->, suggestions will attempt to match the case of the input text even if the lexicon entries use a different casing scheme due to search term keying effects.
 
 
 </td></tr>

@@ -4,7 +4,7 @@
 
 ## LexicalModelSource.languageUsesCasing property
 
-When set to `true`<!-- -->, suggestions will attempt to match the case of the input text even if the lexicon entries use a different casing scheme due to search term keying effects.  14.0
+When set to `true`<!-- -->, suggestions will attempt to match the case of the input text even if the lexicon entries use a different casing scheme due to search term keying effects.
 
 **Signature:**
 

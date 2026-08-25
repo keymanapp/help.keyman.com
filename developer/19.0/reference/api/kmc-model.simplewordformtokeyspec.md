@@ -4,7 +4,7 @@
 
 ## SimpleWordformToKeySpec type
 
-Simplifies input text to facilitate finding entries within a lexical model's lexicon.  11.0
+Simplifies input text to facilitate finding entries within a lexical model's lexicon.
 
 **Signature:**
 

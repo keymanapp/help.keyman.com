@@ -6,8 +6,6 @@
 
 Overrides word splitting behaviour for certain scripts. For example, specifing that spaces break words in certain South-East Asian scripts that otherwise do not use spaces.
 
- 14.0
-
 **Signature:**
 
 ```typescript
