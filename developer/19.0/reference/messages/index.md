@@ -14,3 +14,4 @@ title: Compiler Messages Reference
 * [kmc-keyboard-info.KeyboardInfoCompilerMessages](kmc-keyboard-info.keyboardinfocompilermessages)
 * [kmc-generate.GeneratorMessages](kmc-generate.generatormessages)
 * [kmc-copy.CopierMessages](kmc-copy.copiermessages)
+* [kmc-convert.ConverterMessages](kmc-convert.convertermessages)
