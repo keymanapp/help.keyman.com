@@ -22,7 +22,6 @@ title: Compiler Messages Reference for @keymanapp/kmc
 [KM05011](km05011) | `ERROR_CannotCreateFolder` | This is an internal error; the message will vary
 [KM05012](km05012) | `ERROR_InvalidProjectFolder` | The folder &lt;param&gt; does not appear to be a Keyman Developer project\.
 [KM05014](km05014) | `HINT_ProjectIsVersion10` | The project file is an older version and can be upgraded to version 17\.0
-[KM05015](km05015) | `ERROR_OutFileCanOnlyBeSpecifiedWithSingleInfile` | Parameter \-\-out\-file can only be used with a single input file\.
 [KM05016](km05016) | `ERROR_InvalidMessageFormat` | Invalid parameter: \-\-message &lt;param&gt; must match format '\[KM\]\#\#\#\#\#\[:Disable\|Info\|Hint\|Warn\|Error\]'
 [KM05017](km05017) | `ERROR_MessageNamespaceNotFound` | Invalid parameter: \-\-message &lt;param&gt; does not have a recognized namespace
 [KM05018](km05018) | `ERROR_MessageCodeNotFound` | Invalid parameter: \-\-message undefined is not a recognized code
@@ -45,3 +44,4 @@ title: Compiler Messages Reference for @keymanapp/kmc
 [KM05029](km05029) | `INFO_ValidatingProject` | Validating &lt;param&gt;
 [KM0502A](km0502a) | `INFO_ProjectValidatedSuccessfully` | &lt;param&gt; validated successfully\.
 [KM0502B](km0502b) | `INFO_ProjectNotValidatedSuccessfully` | &lt;param&gt; failed to validate\.
+[KM0502C](km0502c) | `ERROR_OutFileMustBeAFolder` | Parameter \-\-out\-file must refer to a folder\.
