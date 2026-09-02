@@ -8,7 +8,7 @@ title: Compiler Messages Reference for @keymanapp/kmc-ldml
 [KM00002](km00002) | `ERROR_InvalidLocale` | Invalid BCP 47 locale form '&lt;param&gt;'
 [KM00003](km00003) | `ERROR_HardwareLayerHasTooManyRows` | 'hardware' layer has too many rows
 [KM00004](km00004) | `ERROR_RowOnHardwareLayerHasTooManyKeys` | Row \#&lt;param&gt; on 'hardware' &lt;param&gt; layer for modifier &lt;param&gt; has too many keys
-[KM00005](km00005) | `ERROR_KeyNotFoundInKeyBag` | Key '&lt;param&gt;' in position \#&lt;param&gt; on row \#&lt;param&gt; of layer &lt;param&gt;, form '&lt;param&gt;' not found in key bag
+[KM00005](km00005) | `ERROR_KeyNotFoundInKeyBag` | Key '&lt;param&gt;' in position \#&lt;param&gt; on row \#&lt;param&gt; of layer '&lt;param&gt;', form '&lt;param&gt;' not found in key bag
 [KM00006](km00006) | `HINT_OneOrMoreRepeatedLocales` | After minimization, one or more locales is repeated and has been removed
 [KM00007](km00007) | `ERROR_InvalidFile` | The source file has an invalid structure: &lt;param&gt;
 [KM00008](km00008) | `HINT_LocaleIsNotMinimalAndClean` | Locale '&lt;param&gt;' is not minimal or correctly formatted and should be '&lt;param&gt;'
@@ -48,6 +48,10 @@ title: Compiler Messages Reference for @keymanapp/kmc-ldml
 [KM0002C](km0002c) | `ERROR_DuplicateLayerWidth` | Two or more layers have minDeviceWidth=&lt;param&gt;
 [KM0002D](km0002d) | `ERROR_InvalidLayerWidth` | Invalid Layers minDeviceWidth=&lt;param&gt;
 [KM00030](km00030) | `ERROR_InvalidQuadEscape` | Invalid escape "&lt;param&gt;"
+[KM00031](km00031) | `ERROR_TouchLayerRequiresId` | Layer for touch form with minDeviceWidth=&lt;param&gt; requires an "id" attribute
+[KM00032](km00032) | `HINT_TouchLayerHasModifiers` | Touch layer with id "&lt;param&gt;" for touch form with minDeviceWidth=&lt;param&gt; should not have a "modifiers" attribute
+[KM00033](km00033) | `HINT_HardwareLayerHasId` | Layer for hardware form "&lt;param&gt;" should not have an "id" attribute \(currently "&lt;param&gt;"\)
+[KM00034](km00034) | `ERROR_HardwareLayerRequiresModifiers` | Layers for hardware form "&lt;param&gt;" require a "modifiers" attribute
 [KM00F00](km00f00) | `ERROR_UnparseableTransformFrom` | Invalid transform from="&lt;param&gt;": "&lt;param&gt;"
 [KM00F01](km00f01) | `ERROR_IllegalTransformDollarsign` | Invalid transform from="&lt;param&gt;": Unescaped dollar\-sign \($\) is not valid transform syntax\.
 [KM00F02](km00f02) | `ERROR_TransformFromMatchesNothing` | Invalid transfom from="&lt;param&gt;": Matches an empty string\.
