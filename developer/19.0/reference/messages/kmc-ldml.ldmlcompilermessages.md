@@ -52,6 +52,7 @@ title: Compiler Messages Reference for @keymanapp/kmc-ldml
 [KM00032](km00032) | `HINT_TouchLayerHasModifiers` | Touch layer with id "&lt;param&gt;" for touch form with minDeviceWidth=&lt;param&gt; should not have a "modifiers" attribute
 [KM00033](km00033) | `HINT_HardwareLayerHasId` | Layer for hardware form "&lt;param&gt;" should not have an "id" attribute \(currently "&lt;param&gt;"\)
 [KM00034](km00034) | `ERROR_HardwareLayerRequiresModifiers` | Layers for hardware form "&lt;param&gt;" require a "modifiers" attribute
+[KM00035](km00035) | `HINT_MultipleTouchFormsWithoutMinDeviceWidth` | When multiple touch forms are present, 'minDeviceWidth' is required to differentiate them
 [KM00F00](km00f00) | `ERROR_UnparseableTransformFrom` | Invalid transform from="&lt;param&gt;": "&lt;param&gt;"
 [KM00F01](km00f01) | `ERROR_IllegalTransformDollarsign` | Invalid transform from="&lt;param&gt;": Unescaped dollar\-sign \($\) is not valid transform syntax\.
 [KM00F02](km00f02) | `ERROR_TransformFromMatchesNothing` | Invalid transfom from="&lt;param&gt;": Matches an empty string\.
