@@ -39,15 +39,15 @@ RewriteRule "^keyboard/redir.php(.*)$" - [END]
 # Rewrite /keyboard/[name][/] to /keyboard/redir.php?q=[name]
 # only if index.php does not exist in the folder
 RewriteCond "%{DOCUMENT_ROOT}/keyboard/$1/index.php" !-f
-RewriteRule "^keyboard/(?!redir.php)([^/?]+)(/)?$" "keyboard/redir.php?q=$1" [END]
+RewriteRule "^keyboard/(?!redir.php)([^/?]+)(/)?$" "keyboard/redir.php?q=$1" [BCTLS,END]
 
 # Rewrite /keyboard/name/current-version[/] to /keyboard/redir.php?q=[name]
-RewriteRule "^keyboard/(?!redir.php)([^/?]+)/current-version(/)?$" "keyboard/redir.php?q=$1" [END]
+RewriteRule "^keyboard/(?!redir.php)([^/?]+)/current-version(/)?$" "keyboard/redir.php?q=$1" [BCTLS,END]
 
 # Rewrite /keyboard/[name]/[version][/] to /keyboard/redir.php?q=[name]&amp;v=[version]
 # only if index.php does not exist in the folder
 RewriteCond "%{DOCUMENT_ROOT}/keyboard/$1/$2/index.php" !-f
-RewriteRule "^keyboard/(?!redir.php)([^/?]+)/([^/?]+)(/)?$" "keyboard/redir.php?q=$1&v=$2" [END]
+RewriteRule "^keyboard/(?!redir.php)([^/?]+)/([^/?]+)(/)?$" "keyboard/redir.php?q=$1&v=$2" [BCTLS,END]
 
 # versioning: these rules automatically redirect /foo/current-version to the
 # newest version of the documentation under /foo, e.g. 13.0, /foo/13.0, and fall
@@ -243,7 +243,7 @@ RewriteRule "^(.+[^/])$" "$1/" [R,END]
 
 # Rewrite file to file.md
 RewriteCond "%{DOCUMENT_ROOT}/$1.md" -f
-RewriteRule "^(.+)$" "/_includes/md/mdhost.php?file=$1.md" [END]
+RewriteRule "^(.+)$" "/_includes/md/mdhost.php?file=$1.md" [BCTLS,END]
 
 # Rewrite file to file.php
 RewriteCond "%{DOCUMENT_ROOT}/$1.php" -f
@@ -252,7 +252,7 @@ RewriteRule "^(.+)$" "$1.php" [END]
 
 # Rewrite folder/ to folder/index.md
 RewriteCond "%{DOCUMENT_ROOT}/$1/index.md" -f
-RewriteRule "^(.+)/$" "/_includes/md/mdhost.php?file=$1/index.md" [END]
+RewriteRule "^(.+)/$" "/_includes/md/mdhost.php?file=$1/index.md" [BCTLS,END]
 
 # Rewrite folder/ to folder/index.php
 RewriteCond "%{DOCUMENT_ROOT}/$1/index.php" -f
