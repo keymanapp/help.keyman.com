@@ -164,6 +164,7 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM020B8](km020b8) | `ERROR_NameMustNotContainComma` | The referenced name '&lt;param&gt;' must not contain commas
 [KM020B9](km020b9) | `ERROR_NameMustNotContainParentheses` | The referenced name '&lt;param&gt;' must not contain opening or closing parentheses
 [KM020BA](km020ba) | `ERROR_NameMustNotContainSquareBrackets` | The referenced name '&lt;param&gt;' must not contain opening or closing square brackets
+[KM020BB](km020bb) | `WARN_DeprecatedStatement` | The statement '&lt;param&gt;' has been deprecated in Keyman &lt;param&gt;
 [KM020C0](km020c0) | `FATAL_BufferOverflow` | The compiler memory buffer overflowed
 [KM02900](km02900) | `FATAL_UnexpectedException` | This is an internal error; the message will vary
 [KM02901](km02901) | `FATAL_MissingWasmModule` | This is an internal error; the message will vary

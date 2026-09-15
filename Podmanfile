@@ -4,6 +4,7 @@
 
 ARG BUILDER_CONFIGURATION="release"
 FROM docker.io/library/php:7.4-apache@sha256:c9d7e608f73832673479770d66aacc8100011ec751d1905ff63fae3fe2e0ca6d AS composer-builder
+ENV BUILDER_PLATFORM=docker-composer
 
 # Install Zip to use composer
 RUN apt-get update && apt-get install -y \
@@ -30,8 +31,17 @@ RUN if [ "$BUILDER_CONFIGURATION" = "debug" ]; then \
 
 # Site
 FROM docker.io/library/php:7.4-apache@sha256:c9d7e608f73832673479770d66aacc8100011ec751d1905ff63fae3fe2e0ca6d
+ENV BUILDER_PLATFORM=docker
+
 COPY resources/keyman-site.conf /etc/apache2/conf-available/
-RUN cp /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini
+
+ARG BUILDER_CONFIGURATION
+RUN if [ "$BUILDER_CONFIGURATION" = "debug" ]; then \
+      cp /usr/local/etc/php/php.ini-development /usr/local/etc/php/php.ini ; \
+    else \
+      cp /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini ; \
+    fi
+
 RUN chown -R www-data:www-data /var/www/html/
 
 COPY --from=composer-builder /composer/vendor /var/www/vendor

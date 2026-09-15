@@ -61,13 +61,13 @@
         return null;
       }
       else if(preg_match('/^\/keyboard\/([a-z0-9_]+)\/([0-9.]+)\/(.*)$/', $page, $matches)) {
-        // return "$repo_keyboards/(legacy|release|experimental)/${matches[1]}/source/help/${matches[3]}"
+        // return "$repo_keyboards/(legacy|release|experimental)/{$matches[1]}/source/help/{$matches[3]}"
         // We need to split between legacy, experimental, and release, which requires an API
         // call to lookup the source path
         //
         // Note that we will likely need to sync submitted changes to these
         // files with welcome.htm for the keyboard.
-        $keyboard = @file_get_contents(KeymanHosts::Instance()->SERVER_api_keyman_com . "/keyboard/${matches[1]}");
+        $keyboard = @file_get_contents(KeymanHosts::Instance()->SERVER_api_keyman_com . "/keyboard/{$matches[1]}");
         if(!$keyboard) {
           // failed to load, maybe missing or network error
           return null;
@@ -77,7 +77,7 @@
           // failed to decode, unlikely, or no source available
           return null;
         }
-        return "$repo_keyboards/$keyboard->sourcePath/source/help/${matches[3]}";
+        return "$repo_keyboards/$keyboard->sourcePath/source/help/{$matches[3]}";
       }
       else if($page == '/_includes/md/mdhost.php') {
         // Markdown file
