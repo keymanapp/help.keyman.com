@@ -10,7 +10,7 @@ keyboard should be associated with on install.
 > [!NOTE]
 > The `&language` store as well as the older `LANGUAGE` statement are
 > deprecated, and will be not be supported for keyboards that target
-> Keyman 19.0 or later. The Keyboard Package
+> Keyman 20.0 or later. The Keyboard Package
 > [metadata](/developer/current-version/reference/file-types/metadata#obj-language)
 > should be used to define the language data instead.
 

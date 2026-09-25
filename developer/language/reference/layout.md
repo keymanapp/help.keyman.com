@@ -6,7 +6,7 @@ title: LAYOUT
 
 > [!NOTE]
 > The `LAYOUT` statement is deprecated and will be not be supported for
-> keyboards that target Keyman 19.0 or later.
+> keyboards that target Keyman 20.0 or later.
 
 ## Syntax
 

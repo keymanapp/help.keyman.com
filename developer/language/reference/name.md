@@ -33,7 +33,7 @@ call your keyboard `"Dan's Dutch"` or `"Double Dutch"`.
 
 > [!NOTE]
 > The `NAME` statement is deprecated and will be not be supported for
-> keyboards that target Keyman 19.0 or later. Instead use the `&name`
+> keyboards that target Keyman 20.0 or later. Instead use the `&name`
 > store.
 
 ## Examples

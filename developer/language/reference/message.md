@@ -26,7 +26,7 @@ display when the keyboard is installed. This statement is optional.
 
 > [!NOTE]
 > The `MESSAGE` statement is deprecated and will be not be supported for
-> keyboards that target Keyman 19.0 or later. Instead use the `&message`
+> keyboards that target Keyman 20.0 or later. Instead use the `&message`
 > store.
 
 ## Examples
