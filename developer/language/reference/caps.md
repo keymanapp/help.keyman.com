@@ -55,15 +55,14 @@ platforms.
 
 | Windows | macOS | Linux | Desktop web | Mobile web | iOS | Android |
 |:-------:|:-----:|:-----:|:-----------:|:----------:|:---:|:-------:|
-| ✔       | ✔     | ✘     | ✘           | ✘          | ✘   | ✘       |
-
-While Caps Lock statements can be used in Keyman for Linux and KMFL they
-don't yet work properly as of version 14.0.
+| ✔       | ✔     | ✔     | ✘           | ✘          | ✘   | ✘       |
 
 ## Version history
 
-The Caps Lock stores were introduced in Keyman 5.0, deprecating
+Keyman 18.0: Caps Lock stores are supported in Keyman for Linux.
+
+Keyman 5.0: The Caps Lock stores were introduced in Keyman 5.0, deprecating
 `CAPS ALWAYS OFF`, `CAPS ON ONLY` and `SHIFT FREES CAPS` header
 statements.
 
-The Caps Lock headers were introduced in Keyman 4.0.
+Keyman 4.0: The Caps Lock headers were introduced in Keyman 4.0.
