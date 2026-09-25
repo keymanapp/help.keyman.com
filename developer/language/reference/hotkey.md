@@ -36,7 +36,7 @@ you include with the keyboard.
 
 > [!NOTE]
 > The older `HOTKEY` statement is deprecated and will be not be supported for
-> keyboards that target Keyman 19.0 or later.
+> keyboards that target Keyman 20.0 or later.
 
 ## Format Note
 

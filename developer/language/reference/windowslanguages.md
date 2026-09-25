@@ -9,7 +9,7 @@ languages that a Keyman keyboard works with in Windows.
 
 > [!NOTE]
 > The `&windowslanguages` store is deprecated and will be not be supported for
-> keyboards that target Keyman 19.0 or later. Keyboard Package
+> keyboards that target Keyman 20.0 or later. Keyboard Package
 > [metadata](/developer/current-version/reference/file-types/metadata#obj-language)
 > should be used instead, which is defined by the BCP 47 language code in
 > the [keyboard
