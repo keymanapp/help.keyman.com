@@ -8,7 +8,7 @@ for all targets.
 
 > [!NOTE]
 > Compile targets are deprecated in Keyman 17.0, and will be not be supported for keyboards
-> that target Keyman 19.0 or later.
+> that target Keyman 20.0 or later.
 
 A more flexible mechanism is available with [`platform()` statements](../reference/platform). While `platform()`
 statements cannot provide alternate metadata for different platforms, they do support a
@@ -48,5 +48,6 @@ $keymanonly: + 'a' > 'a' return
 
 ## Version history
 
+* Version 17.0. Deprecated; move to using `platform()` statements
 * Version 7.1. Add support for `$keymanweb` and `$keymanonly` targets
 * Version 3.2. Add support for `$keyman` and `$weaver` (SILKey) targets

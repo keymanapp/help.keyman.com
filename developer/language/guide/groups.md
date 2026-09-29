@@ -190,5 +190,5 @@ The following statements and special rules are used with groups:
 
 ## Version history
 
-* Keyman 19.0 tightened the validity of store names (disallowing space, comma,
+* Keyman 19.0 tightened the validity of group names (disallowing space, comma,
   non-characters, parentheses, square brackets)

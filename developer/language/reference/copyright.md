@@ -21,7 +21,7 @@ store(&copyright) "message"
 
 > [!NOTE]
 > The `COPYRIGHT` header is deprecated and will be not be supported for
-> keyboards that target Keyman 19.0 or later. Instead the `&copyright`
+> keyboards that target Keyman 20.0 or later. Instead the `&copyright`
 > store should be used.
 
 ## Examples

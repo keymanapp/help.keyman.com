@@ -36,7 +36,7 @@ usually be omitted in this case.
 > [!NOTE]
 > The legacy `CAPS ALWAYS OFF`, `CAPS ON ONLY` and `SHIFT FREES CAPS`
 > headers are deprecated and will be not be supported for keyboards that
-> target Keyman 19.0 or later.
+> target Keyman 20.0 or later.
 
 ## Examples
 
