@@ -146,6 +146,29 @@ identifiers for lines to include when transforming template files, filled by chi
 </td></tr>
 <tr><td>
 
+[SFile\_GitIgnore\_NoDot](./kmc-generate.abstractgenerator.sfile_gitignore_nodot.md)
+
+
+</td><td>
+
+`protected`
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+(not declared)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
 [SFile\_GitIgnore](./kmc-generate.abstractgenerator.sfile_gitignore.md)
 
 
