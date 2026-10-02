@@ -22,7 +22,7 @@ U+0041 U+0042 U+000043 U+44 "abc"
 
 Character codes below `U+0020` should not be used as their meaning differs between applications. Some legacy keyboards may still use codes such as `U+000D` for carriage return, but this usage is not portable.
 
-The following string formats have been removed in Keyman Developer 19:
+The following string formats have been deprecated in Keyman Developer 19 and are scheduled for removal in Keyman Developer 20:
 
 | Type | Description | Example |
 | --- | --- | --- |
@@ -32,7 +32,7 @@ The following string formats have been removed in Keyman Developer 19:
 
 ## History
 
-* Support for decimal, hexadecimal, and octal character code formats have been removed in Keyman Developer 19.
+* Support for decimal, hexadecimal, and octal character code formats have been deprecated in Keyman Developer 19.
 
 ## See also
 
