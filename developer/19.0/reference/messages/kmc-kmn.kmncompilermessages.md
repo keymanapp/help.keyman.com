@@ -113,7 +113,6 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM0207B](km0207b) | `ERROR_NoTargetsSpecified` | At least one compile target must be specified
 [KM02080](km02080) | `WARN_TooManyWarnings` | Too many warnings or errors
 [KM02081](km02081) | `WARN_OldVersion` | The keyboard file is an old version
-[KM02082](km02082) | `WARN_BitmapNotUsed` | The 'bitmaps' statement is obsolete and only the first bitmap referred to will be used, you should use 'bitmap'\.
 [KM02083](km02083) | `WARN_CustomLanguagesNotSupported` | Languages over 0x1FF, 0x1F are not supported correctly by Windows\. You should use no LANGUAGE line instead\.
 [KM02084](km02084) | `WARN_KeyBadLength` | There are too many characters in the keystroke part of the rule\.
 [KM02085](km02085) | `WARN_IndexStoreShort` | The store referenced in index\(\) is shorter than the store referenced in any\(\)
@@ -137,13 +136,13 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM02099](km02099) | `WARN_TouchLayoutUnidentifiedKey` | A key \(&lt;param&gt;\) on layer "&lt;param&gt;" has no identifier\.
 [KM0209A](km0209a) | `HINT_UnreachableKeyCode` | The rule will never be matched for key &lt;param&gt; because its key code is never fired\.
 [KM0209C](km0209c) | `WARN_PlatformNotInTargets` | The specified platform is not a target platform
-[KM0209D](km0209d) | `WARN_HeaderStatementIsDeprecated` | Header statements are deprecated; use instead the equivalent system store
+[KM0209D](km0209d) | `WARN_HeaderStatementIsDeprecated` | Header statements are deprecated; use instead the equivalent system store\. Header statements are scheduled to be removed in Keyman 20\.
 [KM0209E](km0209e) | `WARN_UseNotLastStatementInRule` | A rule with use\(\) statements in the output should not have other content following the use\(\) statements
 [KM0209F](km0209f) | `WARN_TouchLayoutFontShouldBeSameForAllPlatforms` | The touch layout font should be the same for all platforms\.
 [KM020A2](km020a2) | `WARN_KVKFileIsInSourceFormat` | \.kvk file should be binary but is an XML file
 [KM020A3](km020a3) | `WARN_DontMixChiralAndNonChiralModifiers` | This keyboard contains Ctrl,Alt and LCtrl,LAlt,RCtrl,RAlt sets of modifiers\. Use only one or the other set for web target\.
 [KM020A4](km020a4) | `WARN_MixingLeftAndRightModifiers` | Left and right modifiers should not both be used in the same rule
-[KM020A5](km020a5) | `WARN_LanguageHeadersDeprecatedInKeyman10` | This language header has been deprecated in Keyman 10\. Instead, add language metadata in the package file
+[KM020A5](km020a5) | `WARN_LanguageHeadersDeprecatedInKeyman10` | This language header was deprecated in Keyman 10\. Instead, add language metadata in the package file\. This header is scheduled to be removed in Keyman 20\.
 [KM020A6](km020a6) | `HINT_NonUnicodeFile` | Keyman Developer has detected that the file has ANSI encoding\. Consider converting this file to UTF\-8
 [KM020A8](km020a8) | `WARN_HotkeyHasInvalidModifier` | Hotkey has modifiers that are not supported\. Use only SHIFT, CTRL and ALT
 [KM020A9](km020a9) | `WARN_TouchLayoutSpecialLabelOnNormalKey` | Key "&lt;param&gt;" on platform "&lt;param&gt;", layer "&lt;param&gt;"  \(&lt;param&gt;\) does not have the key type "Special" or "Special \(active\)" but has the label "&lt;param&gt;"\. This feature is only supported in Keyman 14 or later
@@ -164,7 +163,9 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM020B8](km020b8) | `ERROR_NameMustNotContainComma` | The referenced name '&lt;param&gt;' must not contain commas
 [KM020B9](km020b9) | `ERROR_NameMustNotContainParentheses` | The referenced name '&lt;param&gt;' must not contain opening or closing parentheses
 [KM020BA](km020ba) | `ERROR_NameMustNotContainSquareBrackets` | The referenced name '&lt;param&gt;' must not contain opening or closing square brackets
-[KM020BB](km020bb) | `WARN_DeprecatedStatement` | The statement '&lt;param&gt;' has been deprecated in Keyman &lt;param&gt;
+[KM020BC](km020bc) | `WARN_DeprecatedValueFormat` | The decimal \(d\#\#\#\), octal \(\#\#\#\), and hexadecimal \(x\#\#\#\) value formats were deprecated in Keyman 19 and are scheduled to be removed in Keyman 20\.
+[KM020BD](km020bd) | `WARN_DeprecatedCompileTarget` | Compile target '&lt;param&gt;' was deprecated in Keyman 19 and will cause the line to always be ignored by kmc in Keyman 20\.
+[KM020BE](km020be) | `ERROR_StoreContainsUnsupportedStatement` | A store can contain only characters, deadkeys, virtual keys, and 'outs\(\)' statements\.
 [KM020C0](km020c0) | `FATAL_BufferOverflow` | The compiler memory buffer overflowed
 [KM02900](km02900) | `FATAL_UnexpectedException` | This is an internal error; the message will vary
 [KM02901](km02901) | `FATAL_MissingWasmModule` | This is an internal error; the message will vary
