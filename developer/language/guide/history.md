@@ -137,7 +137,16 @@ title: Keyman language history
 ## Keyman 19
 
 *   Validity of store, group, and deadkey names has been tightened (disallowing
-    space, comma, non-characters, parentheses, square brackets)
+    space, comma, non-characters, parentheses, square brackets).
+*   Additional checks are performed on the use of statements and virtual keys
+    within stores.
+*   [Legacy header statements](../reference/#deprecations) (such as
+    `VERSION`) have been marked as deprecated. Use system stores instead.
+*   Decimal, hexadecimal, and octal
+    [character code formats](strings) have been deprecated.
+*   [Compile targets](compile-targets) have been deprecated.
+*   `&ethnologuecode`, `&language`, `&windowslanguages` system stores have been
+    deprecated.
 
 ## Keyman 20 (tentative)
 
