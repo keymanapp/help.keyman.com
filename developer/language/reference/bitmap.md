@@ -37,7 +37,7 @@ displayed if no bitmap is specified.
 
 > [!NOTE]
 > The older `BITMAP` and `BITMAPS` header statements are deprecated and
-> will be not be supported for keyboards that target Keyman 19.0 or later.
+> will be not be supported for keyboards that target Keyman 20.0 or later.
 
 ## Examples
 

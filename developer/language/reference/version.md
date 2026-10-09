@@ -40,12 +40,12 @@ also report on the version it infers in the compile process.
 > the `&version` store is required: multi-part Unicode identifiers in the touch
 > layout (e.g. `U_0061_0300`) are processed too late in the compile process to
 > affect the minimum version inference, and so in this situation, `&version`
-> must be set to `15.0` or later. In Keyman Developer 18.0, the compiler has 
+> must be set to `15.0` or later. In Keyman Developer 18.0, the compiler has
 > been updated to resolve this, so the `&version` store is no longer required.
 
 > [!NOTE]
 > The `VERSION 'x.y'` format of this statement is deprecated and will be
-> not be supported for keyboards that target Keyman 19.0 or later. Instead
+> not be supported for keyboards that target Keyman 20.0 or later. Instead
 > use the `&version` store format.
 
 ## Examples
