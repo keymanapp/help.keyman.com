@@ -1,0 +1,34 @@
+<?php /*
+  Name:        BU keyboard
+  Copyright:   Albert Bickford
+  Description: The BU Keyboard provides access to a wide range of characters for Latin-based scripts in Unicode, including:
+
+<ul>
+<li>English, Spanish, French, German, and other major European languages</li>
+<li>nearly complete set of IPA and Americanist phonetic symbols, include obscure and obsolete symbols</li>
+<li>special characters commonly-used in typesetting</li>
+<li>arrows</li>
+<li>common mathematical, numeric, and currency symbols</li>
+</ul>
+
+
+
+  Authors:     Albert Bickford (SIL)
+*/
+  $pagename = 'BU Phonetic Keyboard Help';
+  $pagetitle = $pagename;
+  require_once('header.php');
+?>
+
+<p>The BU Phonetic Keyboard provides access to a wide range of characters for Latin-based scripts in Unicode (<a href='https://www.unicode.org/'>www.unicode.org</a>), including:</p>
+<ul>
+<li>English, Spanish, French, German, and other major European languages</li>
+<li>nearly complete set of IPA and Americanist phonetic symbols, include obscure and obsolete symbols</li>
+<li>special characters commonly-used in typesetting</li>
+<li>arrows</li>
+<li>common mathematical, numeric, and currency symbols</li>
+</ul>
+
+<p><a href='bukeys.pdf' target='_blank'>PDF format documentation</a><br/>
+
+
