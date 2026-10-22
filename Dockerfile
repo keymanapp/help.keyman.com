@@ -2,7 +2,7 @@
 # Please keep the content of this file in sync with Podmanfile.
 
 ARG BUILDER_CONFIGURATION="release"
-FROM php:8.4-apache@sha256:51da594c844a97f31b1cd6b1ac6660982f40788f4fe13e75f7fd39e2f9b58651 AS composer-builder
+FROM php:8.4-apache@sha256:56e7dab56ae21ec10aae951f93cbe7069c1ca68a714dd22ca78724268c78f5de AS composer-builder
 ENV BUILDER_PLATFORM=docker-composer
 
 # Install Zip to use composer
@@ -29,7 +29,7 @@ RUN if [ "$BUILDER_CONFIGURATION" = "debug" ]; then \
     fi
 
 # Site
-FROM php:8.4-apache@sha256:51da594c844a97f31b1cd6b1ac6660982f40788f4fe13e75f7fd39e2f9b58651
+FROM php:8.4-apache@sha256:56e7dab56ae21ec10aae951f93cbe7069c1ca68a714dd22ca78724268c78f5de
 ENV BUILDER_PLATFORM=docker
 
 COPY resources/keyman-site.conf /etc/apache2/conf-available/
