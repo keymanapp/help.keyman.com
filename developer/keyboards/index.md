@@ -57,6 +57,16 @@ the keyboards that start with that letter. In addition, there are some
 folders (fv and gff, for example) that correspond to organizations which
 have contributed a number of keyboards.
 
+## Examples
+
+Many people have already contributed keyboards. If you find examples 
+of the process, file structure, and interactions with the keyboard 
+review team helpful, we encourage you to look at previous submissions:
+
+* [#4197](https://github.com/keymanapp/keyboards/pull/4197) - an example
+  of a really clear keyboard submission comment
+* [other successful keyboard submissions](https://github.com/keymanapp/keyboards/pulls?q=is%3Apr+state%3Amerged+-label%3Ainfrastructure)
+
 ## Get Involved
 
 -   [Advanced Keyboard Submission Guide](advanced) 
