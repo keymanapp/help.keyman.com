@@ -166,6 +166,7 @@ title: Compiler Messages Reference for @keymanapp/kmc-kmn
 [KM020BC](km020bc) | `WARN_DeprecatedValueFormat` | The decimal \(d\#\#\#\), octal \(\#\#\#\), and hexadecimal \(x\#\#\#\) value formats were deprecated in Keyman 19 and are scheduled to be removed in Keyman 20\.
 [KM020BD](km020bd) | `WARN_DeprecatedCompileTarget` | Compile target '&lt;param&gt;' was deprecated in Keyman 19 and will cause the line to always be ignored by kmc in Keyman 20\.
 [KM020BE](km020be) | `ERROR_StoreContainsUnsupportedStatement` | A store can contain only characters, deadkeys, virtual keys, and 'outs\(\)' statements\.
+[KM020BF](km020bf) | `WARN_CallUsedOnUnsupportedPlatform` | The \`call\(\)\` statement is not supported on macOS or Linux platforms\.
 [KM020C0](km020c0) | `FATAL_BufferOverflow` | The compiler memory buffer overflowed
 [KM02900](km02900) | `FATAL_UnexpectedException` | This is an internal error; the message will vary
 [KM02901](km02901) | `FATAL_MissingWasmModule` | This is an internal error; the message will vary

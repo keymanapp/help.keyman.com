@@ -11,7 +11,7 @@ title: Compiler Messages Reference for @keymanapp/kmc
 [KM05005](km05005) | `ERROR_OutFileNotValidForProjects` | \-\-out\-file should not be specified for project builds
 [KM05006](km05006) | `INFO_FileBuiltSuccessfully` | &lt;param&gt; built successfully\.
 [KM05007](km05007) | `INFO_FileNotBuiltSuccessfully` | &lt;param&gt; failed to build\.
-[KM05009](km05009) | `HINT_FilenameHasDifferingCase` | File on disk '&lt;param&gt;' does not match case of '&lt;param&gt;' in source file; this is an error on platforms with case\-sensitive filesystems\.
+[KM05009](km05009) | `WARN_FilenameHasDifferingCase` | File on disk '&lt;param&gt;' does not match case of '&lt;param&gt;' in source file; this is an error on platforms with case\-sensitive filesystems\.
 [KM0500A](km0500a) | `ERROR_UnknownFileFormat` | Unknown file format &lt;param&gt;; only Markdown \(\.md\), JSON \(\.json\), and Text \(\.txt\) are supported\.
 [KM0500B](km0500b) | `INFO_ProjectBuiltSuccessfully` | Project &lt;param&gt; built successfully\.
 [KM0500C](km0500c) | `INFO_ProjectNotBuiltSuccessfully` | Project &lt;param&gt; failed to build\.
