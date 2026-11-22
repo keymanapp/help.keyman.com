@@ -1,7 +1,3 @@
-# This bot is too busy (300K+ visits/month across all keyman.com domains)
-User-agent: AhrefsBot
-Disallow: /
-
-# This bot is too busy (300K+ visits/month across all keyman.com domains)
-User-agent: TurnitinBot
+# Disallow all bots since we don't need anything idexed on the staging site
+User-agent: *
 Disallow: /
