@@ -34,7 +34,7 @@ title: Compiler Messages Reference for @keymanapp/kmc
 [KM0501F](km0501f) | `ERROR_MessageNamespaceNameNotFound` | Invalid parameter: \-\-message &lt;param&gt; does not have a recognized namespace
 [KM05020](km05020) | `ERROR_GenerateRequiresId` | The generate command requires a single 'id' parameter
 [KM05021](km05021) | `ERROR_CopyRequiresSource` | The copy command requires a single 'source' parameter
-[KM05022](km05022) | `ERROR_CopyRequiresOutPath` | The copy command requires the \-\-out\-path, \-o parameter
+[KM05022](km05022) | `ERROR_CopyRequiresOutPath` | The 'id' parameter should be provided; if it is not, then the \-\-out\-path parameter is required
 [KM05023](km05023) | `INFO_CopyingProject` | Copying project '&lt;param&gt;' to '&lt;param&gt;'
 [KM05024](km05024) | `INFO_ProjectCopiedSuccessfully` | '&lt;param&gt;' copied to '&lt;param&gt;' successfully\.
 [KM05025](km05025) | `INFO_ProjectNotCopiedSuccessfully` | Failed to copy '&lt;param&gt;' to '&lt;param&gt;'\.
@@ -45,3 +45,7 @@ title: Compiler Messages Reference for @keymanapp/kmc
 [KM0502A](km0502a) | `INFO_ProjectValidatedSuccessfully` | &lt;param&gt; validated successfully\.
 [KM0502B](km0502b) | `INFO_ProjectNotValidatedSuccessfully` | &lt;param&gt; failed to validate\.
 [KM0502C](km0502c) | `ERROR_OutFileMustBeAFolder` | Parameter \-\-out\-file must refer to a folder\.
+[KM0502D](km0502d) | `INFO_ConvertingFile` | Converting &lt;param&gt; to &lt;param&gt;
+[KM0502E](km0502e) | `INFO_FileConvertedSuccessfully` | &lt;param&gt; converted successfully to &lt;param&gt;\.
+[KM0502F](km0502f) | `INFO_FileNotConvertedSuccessfully` | &lt;param&gt; could not be converted\.
+[KM05030](km05030) | `WARN_CopyWithoutIdIsDeprecated` | Deprecated usage: you should pass the target id as the second parameter on the command line rather than the final component of the output path\.

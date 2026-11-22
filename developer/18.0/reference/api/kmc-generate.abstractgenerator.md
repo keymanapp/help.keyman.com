@@ -21,6 +21,7 @@ export declare class AbstractGenerator
 |  [fullCopyright](./kmc-generate.abstractgenerator.fullcopyright.md) | <code>protected</code> | string | extension of options.copyright including copyright year |
 |  [includedPrefixes](./kmc-generate.abstractgenerator.includedprefixes.md) | <p><code>protected</code></p><p><code>readonly</code></p> | string\[\] | identifiers for lines to include when transforming template files, filled by child classes |
 |  [options](./kmc-generate.abstractgenerator.options.md) | <p><code>protected</code></p><p><code>readonly</code></p> | [GeneratorOptions](./kmc-generate.generatoroptions.md) |  |
+|  [SFile\_GitIgnore\_NoDot](./kmc-generate.abstractgenerator.sfile_gitignore_nodot.md) | <p><code>protected</code></p><p><code>static</code></p><p><code>readonly</code></p> | (not declared) |  |
 |  [SFile\_GitIgnore](./kmc-generate.abstractgenerator.sfile_gitignore.md) | <p><code>protected</code></p><p><code>static</code></p><p><code>readonly</code></p> | (not declared) |  |
 |  [SFile\_HistoryMD](./kmc-generate.abstractgenerator.sfile_historymd.md) | <p><code>protected</code></p><p><code>static</code></p><p><code>readonly</code></p> | (not declared) |  |
 |  [SFile\_LicenseMD](./kmc-generate.abstractgenerator.sfile_licensemd.md) | <p><code>protected</code></p><p><code>static</code></p><p><code>readonly</code></p> | (not declared) |  |
