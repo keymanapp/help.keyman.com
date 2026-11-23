@@ -9,7 +9,7 @@ Initialize the converter. Copies options.
 **Signature:**
 
 ```typescript
-init(callbacks: CompilerCallbacks, options: CompilerOptions): Promise<boolean>;
+init(callbacks: CompilerCallbacks, options: ConverterOptions): Promise<boolean>;
 ```
 
 ## Parameters
@@ -53,7 +53,7 @@ options
 
 </td><td>
 
-CompilerOptions
+[ConverterOptions](./kmc-convert.converteroptions.md)
 
 
 </td><td>

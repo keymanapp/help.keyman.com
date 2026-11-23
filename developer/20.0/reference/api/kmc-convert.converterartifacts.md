@@ -11,3 +11,47 @@ export interface ConverterArtifacts extends KeymanCompilerArtifacts
 ```
 **Extends:** KeymanCompilerArtifacts
 
+## Properties
+
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[defaultOutput](./kmc-convert.converterartifacts.defaultoutput.md)
+
+
+</td><td>
+
+
+</td><td>
+
+KeymanCompilerArtifact
+
+
+</td><td>
+
+Full filename of the primary output file, which will vary by converter type; data will be empty. Used primarily for logging and infrastructure
+
+
+</td></tr>
+</tbody></table>
+

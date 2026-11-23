@@ -55,5 +55,24 @@ _(Optional)_ Fail if the keyboard conversion is not 100% complete
 
 
 </td></tr>
+<tr><td>
+
+[target](./kmc-convert.converteroptions.target.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Target file format extension, required, e.g. '.kmn'
+
+
+</td></tr>
 </tbody></table>
 
