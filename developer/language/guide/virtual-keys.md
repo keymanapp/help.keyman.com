@@ -239,7 +239,7 @@ ISO9995 codes
     `C02` is equivalent to `K_S`.
 
 ### Shift Codes
-The possible shift codes are:
+The possible shift codes (modifier keys) are:
 
 | Shift Key                                                                 | Code    |
 |---------------------------------------------------------------------------|---------|
@@ -252,6 +252,18 @@ The possible shift codes are:
 | Right <kbd>Alt</kbd> key or <kbd>AltGr</kbd> on European keyboards (not found on all keyboards) | `RALT`  |
 | <kbd>Caps Lock</kbd> on                                                              | `CAPS`  |
 | <kbd>Caps Lock</kbd> off                                                             | `NCAPS` |
+
+#### Recommended modifier keys
+
+In practice, we recommend that you make use of only following modifier keys (alone or in combination): 
+* `SHIFT`
+* `RALT`
+* `CAPS`
+* `NCAPS`
+
+The left <kbd>Control</kbd> and left <kbd>Alt</kbd> modifiers should be reserved for system 
+functions (such as hotkeys), and the Right <kbd>Control</kbd> key is not present on many laptop 
+keyboards. Similarly, do not use `ALT` or `CTRL` modifiers which match either side.
 
 #### Using Right Alt / AltGr {#using-right-alt-altgr .title}
 
